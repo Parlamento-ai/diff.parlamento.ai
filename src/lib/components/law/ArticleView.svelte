@@ -29,8 +29,8 @@
 
 <article
 	id={eId}
-	class="py-1 px-4 border-l-2 transition-colors
-		{highlighted ? colorMap[highlightColor] : 'border-transparent'}"
+	class="py-1 px-4 border-l-2 transition-colors duration-300
+		{highlighted ? colorMap[highlightColor] : 'border-transparent bg-transparent'}"
 >
 	<h4 class="text-sm font-semibold text-gray-800">{heading}</h4>
 	{#if wordDiff}

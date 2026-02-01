@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
 	import LawView from '$lib/components/law/LawView.svelte';
 	import DiffView from '$lib/components/diff/DiffView.svelte';
+	import { dur } from '$lib/utils/reduced-motion';
 
 	let { data } = $props();
 
@@ -94,7 +96,7 @@
 
 	<!-- Diff panel (desktop) -->
 	{#if hasDiffs}
-		<aside class="hidden lg:block w-[360px] shrink-0">
+		<aside class="hidden lg:block w-[360px] shrink-0" transition:slide={{ axis: 'x', duration: dur(300) }}>
 			<div class="sticky top-20 card-layout max-h-[calc(100vh-6rem)] overflow-y-auto">
 				<DiffView diffs={data.diffs} vote={data.vote} />
 			</div>
@@ -104,7 +106,7 @@
 
 <!-- Diff panel (mobile) -->
 {#if hasDiffs}
-	<div class="lg:hidden mt-4 card-layout">
+	<div class="lg:hidden mt-4 card-layout" transition:slide={{ duration: dur(300) }}>
 		<DiffView diffs={data.diffs} vote={data.vote} collapsed={true} />
 	</div>
 {/if}

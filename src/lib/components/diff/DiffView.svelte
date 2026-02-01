@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
+	import { flip } from 'svelte/animate';
 	import type { ArticleDiff, Vote } from '$lib/types';
 	import ArticleDiffCard from './ArticleDiffCard.svelte';
+	import { dur } from '$lib/utils/reduced-motion';
 
 	let {
 		diffs,
@@ -92,7 +95,9 @@
 
 	<div class="p-3 space-y-3 {isOpen ? '' : 'hidden lg:block'}">
 		{#each diffs as diff (diff.articleId)}
-			<ArticleDiffCard {diff} />
+			<div transition:fade={{ duration: dur(200) }} animate:flip={{ duration: dur(250) }}>
+				<ArticleDiffCard {diff} />
+			</div>
 		{/each}
 
 		{#if diffs.length === 0}

@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
+	import { flip } from 'svelte/animate';
 	import type { Article, WordToken } from '$lib/types';
 	import ArticleView from './ArticleView.svelte';
+	import { dur } from '$lib/utils/reduced-motion';
 
 	let {
 		heading,
@@ -23,15 +26,17 @@
 	<h3 class="text-base font-bold text-gray-900 mb-2 px-4">{heading}</h3>
 	<div>
 		{#each articles as article (article.eId)}
-			<ArticleView
-				eId={article.eId}
-				heading={article.heading}
-				content={article.content}
-				highlighted={changedArticleIds.has(article.eId)}
-				{highlightColor}
-				wordDiff={accumulatedDiffs[article.eId]}
-				{cleanView}
-			/>
+			<div transition:slide={{ duration: dur(250) }} animate:flip={{ duration: dur(250) }}>
+				<ArticleView
+					eId={article.eId}
+					heading={article.heading}
+					content={article.content}
+					highlighted={changedArticleIds.has(article.eId)}
+					{highlightColor}
+					wordDiff={accumulatedDiffs[article.eId]}
+					{cleanView}
+				/>
+			</div>
 		{/each}
 	</div>
 </section>
