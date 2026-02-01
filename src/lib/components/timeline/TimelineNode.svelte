@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { DocumentType } from '$lib/types';
-
 	import type { Vote } from '$lib/types';
 
 	let {
@@ -25,21 +24,21 @@
 		voteResult?: Vote['result'];
 	} = $props();
 
-	const colorMap: Record<DocumentType, { dot: string; badge: string; line: string }> = {
+	const colorMap: Record<DocumentType, { dot: string; activeDot: string; badge: string }> = {
 		act: {
-			dot: 'bg-emerald-500 border-emerald-300',
-			badge: 'bg-emerald-100 text-emerald-800',
-			line: 'bg-emerald-200'
+			dot: 'bg-white border-addition-500',
+			activeDot: 'bg-brand border-brand-dark',
+			badge: 'bg-addition-50 text-addition-800'
 		},
 		bill: {
-			dot: 'bg-blue-500 border-blue-300',
-			badge: 'bg-blue-100 text-blue-800',
-			line: 'bg-blue-200'
+			dot: 'bg-white border-blue-500',
+			activeDot: 'bg-blue-100 border-blue-800',
+			badge: 'bg-blue-50 text-blue-800'
 		},
 		amendment: {
-			dot: 'bg-amber-500 border-amber-300',
-			badge: 'bg-amber-100 text-amber-800',
-			line: 'bg-amber-200'
+			dot: 'bg-white border-amber-500',
+			activeDot: 'bg-amber-100 border-amber-800',
+			badge: 'bg-amber-50 text-amber-800'
 		}
 	};
 
@@ -48,17 +47,17 @@
 
 <a
 	{href}
-	class="group relative flex items-start gap-3 py-3 px-2 rounded-lg transition-colors
+	class="group relative flex items-start gap-3 py-3 px-2 rounded-md transition-colors
 		{active ? 'bg-gray-100' : 'hover:bg-gray-50'}"
 >
 	<!-- Dot + Line -->
 	<div class="flex flex-col items-center shrink-0">
 		<div
-			class="w-4 h-4 rounded-full border-2 {colors.dot} transition-transform
-				{active ? 'scale-125 ring-2 ring-offset-2 ring-gray-300' : 'group-hover:scale-110'}"
+			class="w-4 h-4 rounded-full border-2 transition-transform
+				{active ? colors.activeDot + ' scale-125 shadow-sm' : colors.dot + ' group-hover:scale-110'}"
 		></div>
 		{#if !isLast}
-			<div class="w-0.5 h-full min-h-8 {colors.line} mt-1"></div>
+			<div class="w-0 h-full min-h-8 border-l-2 border-dashed border-gray-300 mt-1"></div>
 		{/if}
 	</div>
 
@@ -66,14 +65,14 @@
 	<div class="flex-1 min-w-0 -mt-0.5">
 		<div class="flex items-center gap-2 flex-wrap">
 			<span class="text-sm font-medium text-gray-900 {active ? 'font-semibold' : ''}">{label}</span>
-			<span class="text-xs px-1.5 py-0.5 rounded {colors.badge}">{type}</span>
+			<span class="badge {colors.badge}">{type}</span>
 		</div>
 		<p class="text-xs text-gray-500 mt-0.5">{date}</p>
 		{#if author}
 			<p class="text-xs text-gray-400 truncate">{author}</p>
 		{/if}
 		{#if voteResult}
-			<p class="text-xs mt-0.5 {voteResult === 'approved' ? 'text-emerald-500' : voteResult === 'rejected' ? 'text-red-400' : 'text-gray-400'}">
+			<p class="text-xs font-medium mt-0.5 {voteResult === 'approved' ? 'text-addition-500' : voteResult === 'rejected' ? 'text-deletion-500' : 'text-gray-400'}">
 				{voteResult === 'approved' ? '\u2713 Aprobado' : voteResult === 'rejected' ? '\u2717 Rechazado' : voteResult === 'withdrawn' ? 'Retirado' : voteResult}
 			</p>
 		{/if}

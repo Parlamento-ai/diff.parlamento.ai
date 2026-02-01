@@ -20,11 +20,11 @@
 		pending: 'Pendiente'
 	};
 	const resultColors: Record<string, string> = {
-		approved: 'bg-emerald-50 border-emerald-200 text-emerald-800',
-		rejected: 'bg-red-50 border-red-200 text-red-800',
-		withdrawn: 'bg-gray-50 border-gray-200 text-gray-600',
-		inadmissible: 'bg-gray-50 border-gray-200 text-gray-600',
-		pending: 'bg-amber-50 border-amber-200 text-amber-800'
+		approved: 'bg-addition-100 text-addition-800',
+		rejected: 'bg-deletion-100 text-deletion-800',
+		withdrawn: 'bg-gray-100 text-gray-600',
+		inadmissible: 'bg-gray-100 text-gray-600',
+		pending: 'bg-amber-100 text-amber-800'
 	};
 
 	let isOpen = $state(true);
@@ -36,11 +36,13 @@
 
 <div>
 	{#if vote}
-		<div class="px-4 py-3 border-b {resultColors[vote.result] || 'bg-gray-50 border-gray-200'}">
+		<div class="px-4 py-3 border-b border-gray-200 {resultColors[vote.result] || 'bg-gray-100 text-gray-600'}">
 			<div class="flex items-center gap-2 text-sm font-semibold">
-				<span>{vote.result === 'approved' ? '\u2713' : '\u2717'}</span>
+				<span class="badge {vote.result === 'approved' ? 'bg-addition-200' : 'bg-deletion-200'}">
+					{vote.result === 'approved' ? '\u2713' : '\u2717'}
+				</span>
 				<span>{resultLabels[vote.result] || vote.result}</span>
-				<span class="font-normal opacity-75">{vote.for.length}-{vote.against.length}-{vote.abstain.length}</span>
+				<span class="font-mono font-normal opacity-75">{vote.for.length}-{vote.against.length}-{vote.abstain.length}</span>
 			</div>
 			{#if vote.for.length > 0}
 				<p class="text-xs mt-1 opacity-75">
@@ -68,7 +70,7 @@
 		class="flex items-center justify-between w-full px-4 py-2 bg-gray-50 border-b border-gray-200 lg:hidden"
 		onclick={() => (isOpen = !isOpen)}
 	>
-		<span class="text-xs font-semibold uppercase tracking-wider text-gray-500">
+		<span class="text-xs font-mono font-semibold uppercase tracking-wider text-gray-500">
 			Comparado ({diffs.length} {diffs.length === 1 ? 'cambio' : 'cambios'})
 		</span>
 		<svg
@@ -83,7 +85,7 @@
 
 	<!-- Desktop header -->
 	<div class="hidden lg:block px-4 py-2 border-b border-gray-200">
-		<h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400">
+		<h2 class="text-xs font-mono font-semibold uppercase tracking-wider text-gray-400">
 			Comparado ({diffs.length} {diffs.length === 1 ? 'cambio' : 'cambios'})
 		</h2>
 	</div>
@@ -95,7 +97,7 @@
 
 		{#if diffs.length === 0}
 			<p class="text-sm text-gray-400 italic text-center py-8">
-				Sin cambios en esta versión
+				Sin cambios en esta version
 			</p>
 		{/if}
 	</div>

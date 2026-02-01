@@ -221,7 +221,13 @@ function extractPreface(doc: Record<string, unknown>): { title: string; preface:
 	if (preface) {
 		const longTitle = preface.longTitle as Record<string, unknown> | undefined;
 		if (longTitle) {
-			title = extractText(longTitle);
+			const ltP = longTitle.p as Record<string, unknown> | undefined;
+			const docTitle = ltP?.docTitle as Record<string, unknown> | string | undefined;
+			if (docTitle) {
+				title = typeof docTitle === 'string' ? docTitle : extractText(docTitle);
+			} else {
+				title = extractText(longTitle);
+			}
 		}
 		const p = preface.p;
 		if (p) {

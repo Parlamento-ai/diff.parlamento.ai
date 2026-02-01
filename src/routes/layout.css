@@ -1,3 +1,152 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/* ─── Design Tokens ─── */
+@theme {
+	--color-brand: #B9F8CF;
+	--color-brand-dark: #0E542C;
+
+	--color-addition-50: #ECFDF5;
+	--color-addition-100: #D1FAE5;
+	--color-addition-200: #A7F3D0;
+	--color-addition-500: #10B981;
+	--color-addition-800: #065F46;
+
+	--color-deletion-50: #FEF2F2;
+	--color-deletion-100: #FEE2E2;
+	--color-deletion-200: #FECACA;
+	--color-deletion-500: #EF4444;
+	--color-deletion-800: #991B1B;
+
+	--color-shadow: #111827;
+
+	--font-heading: 'Instrument Sans', system-ui, sans-serif;
+	--font-body: 'Source Sans 3', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+	--shadow-sm: 2px 2px 0 var(--color-shadow);
+	--shadow-md: 3px 3px 0 var(--color-shadow);
+	--shadow-lg: 4px 4px 0 var(--color-shadow);
+	--shadow-pressed: 1px 1px 0 var(--color-shadow);
+}
+
+/* ─── Base Typography ─── */
+body {
+	font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-heading);
+}
+
+code, pre, .font-mono {
+	font-family: var(--font-mono);
+}
+
+/* ─── Component Classes ─── */
+.btn-primary {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.5rem;
+	background-color: var(--color-brand);
+	color: var(--color-brand-dark);
+	font-family: var(--font-heading);
+	font-weight: 600;
+	font-size: 0.875rem;
+	border: 2px solid var(--color-shadow);
+	border-radius: 8px;
+	box-shadow: var(--shadow-md);
+	cursor: pointer;
+	transition: all 0.1s ease;
+	text-decoration: none;
+}
+.btn-primary:hover {
+	filter: brightness(1.03);
+}
+.btn-primary:active {
+	transform: translate(1px, 1px);
+	box-shadow: var(--shadow-pressed);
+}
+
+.btn-secondary {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.5rem 1rem;
+	background-color: white;
+	color: var(--color-shadow);
+	font-family: var(--font-heading);
+	font-weight: 500;
+	font-size: 0.875rem;
+	border: 2px solid var(--color-shadow);
+	border-radius: 8px;
+	box-shadow: var(--shadow-sm);
+	cursor: pointer;
+	transition: all 0.1s ease;
+	text-decoration: none;
+}
+.btn-secondary:hover {
+	background-color: #f9fafb;
+}
+.btn-secondary:active {
+	transform: translate(1px, 1px);
+	box-shadow: var(--shadow-pressed);
+}
+
+.card {
+	background-color: white;
+	border: 2px solid var(--color-shadow);
+	border-radius: 8px;
+	box-shadow: var(--shadow-md);
+}
+
+.card-layout {
+	background-color: white;
+	border: 1px solid #d1d5db;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.card-hover {
+	transition: all 0.15s ease;
+}
+.card-hover:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	transform: translateY(-1px);
+}
+.card-hover:active {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+	transform: translateY(0);
+}
+
+.badge {
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 0.125rem 0.5rem;
+	border: 1px solid var(--color-shadow);
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.divider-diff {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin: 1.5rem 0;
+}
+.divider-diff::before,
+.divider-diff::after {
+	content: '';
+	flex: 1;
+	height: 1px;
+	background: linear-gradient(90deg, var(--color-addition-200), var(--color-deletion-200));
+}
+.divider-diff::before {
+	background: linear-gradient(90deg, transparent, var(--color-addition-200));
+}
+.divider-diff::after {
+	background: linear-gradient(90deg, var(--color-deletion-200), transparent);
+}

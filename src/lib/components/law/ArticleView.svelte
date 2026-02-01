@@ -21,9 +21,9 @@
 	} = $props();
 
 	const colorMap: Record<string, string> = {
-		amber: 'border-amber-300 bg-amber-50',
-		green: 'border-emerald-300 bg-emerald-50',
-		red: 'border-red-300 bg-red-50'
+		amber: 'border-amber-400 bg-amber-50',
+		green: 'border-addition-500 bg-addition-50',
+		red: 'border-deletion-500 bg-deletion-50'
 	};
 </script>
 

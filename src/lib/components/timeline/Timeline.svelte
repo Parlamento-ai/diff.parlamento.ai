@@ -14,7 +14,7 @@
 </script>
 
 <nav class="flex flex-col" aria-label="Historia legislativa">
-	<h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 px-2 mb-2">
+	<h2 class="text-xs font-mono font-semibold uppercase tracking-wider text-gray-400 px-2 mb-2">
 		Historia legislativa
 	</h2>
 	{#each entries as entry, i (entry.slug)}
