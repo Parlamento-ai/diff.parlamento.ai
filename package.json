@@ -44,6 +44,7 @@
 		"fast-xml-parser": "^5.3.4",
 		"highlight.js": "^11.11.1",
 		"marked": "^17.0.1",
-		"marked-highlight": "^2.2.3"
+		"marked-highlight": "^2.2.3",
+		"svelte-meta-tags": "^4.5.0"
 	}
 }
