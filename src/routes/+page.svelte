@@ -222,6 +222,99 @@
 				<span>Imagen estatica. No se puede buscar, filtrar ni computar. No indica quien voto ni en que etapa del tramite ocurrio cada cambio.</span>
 			</div>
 		</div>
+
+	</section>
+
+	<!-- ═══ WHY PDF MUST GO ═══ -->
+	<section class="max-w-4xl mx-auto px-4 py-12">
+		<div class="text-center mb-10">
+			<h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+				El PDF no es la <span class="text-deletion-500 line-through">respuesta</span>
+			</h2>
+			<p class="text-gray-500 mt-3 max-w-2xl mx-auto leading-relaxed">
+				Hoy, si quieres seguir la historia completa de una ley, te toca descargar decenas de archivos sueltos, uno por cada etapa. Ninguno se conecta con el otro.
+			</p>
+		</div>
+
+		<!-- Finder window with PDFs -->
+		<div class="mb-8">
+			<!-- Window chrome -->
+			<div class="flex items-center gap-2 px-3 py-1.5 bg-[#323232] rounded-t-lg">
+				<div class="flex gap-1.5">
+					<span class="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></span>
+					<span class="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></span>
+					<span class="w-2.5 h-2.5 rounded-full bg-[#28c840]"></span>
+				</div>
+				<span class="text-[11px] text-gray-400 ml-1 truncate">~/Descargas/Boletin_11179-13_Ley_Coccion_Pastas</span>
+			</div>
+			<!-- Toolbar -->
+			<div class="flex items-center gap-3 px-3 py-1.5 bg-[#3d3d3d] border-b border-[#4a4a4a] text-[10px] text-gray-400">
+				<span>Nombre</span>
+				<span class="ml-auto">6 elementos</span>
+			</div>
+			<!-- File list -->
+			<div class="bg-[#1e1e1e] rounded-b-lg px-1 py-1">
+				{#each [
+					{ name: 'comparado_comision_gastronomia_v1.pdf', size: '245 KB', date: '12-03-2025' },
+					{ name: 'comparado_comision_gastronomia_v2.pdf', size: '310 KB', date: '18-03-2025' },
+					{ name: 'indicaciones_aprobadas_sala.pdf', size: '189 KB', date: '02-04-2025' },
+					{ name: 'comparado_comision_presupuesto.pdf', size: '278 KB', date: '15-05-2025' },
+					{ name: 'comparado_mixta_final.pdf', size: '412 KB', date: '03-06-2025' },
+					{ name: 'texto_refundido_v3_FINAL(2).pdf', size: '534 KB', date: '20-06-2025' },
+				] as file, i}
+					<div class="flex items-center gap-3 px-3 py-1.5 rounded {i % 2 === 0 ? 'bg-[#262626]' : ''} finder-row">
+						<!-- PDF icon -->
+						<svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none">
+							<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
+							<path d="M14 1v5h5" fill="#c0392b"/>
+							<path d="M14 1l5 5h-5z" fill="#c0392b" opacity="0.5"/>
+							<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
+						</svg>
+						<span class="text-[12px] text-gray-300 truncate flex-1 font-mono">{file.name}</span>
+						<span class="text-[10px] text-gray-500 shrink-0 hidden sm:block w-16 text-right">{file.date}</span>
+						<span class="text-[10px] text-gray-500 shrink-0 w-12 text-right">{file.size}</span>
+					</div>
+				{/each}
+			</div>
+			<!-- Caption -->
+			<div class="mt-4 text-center">
+				<p class="text-sm text-gray-500">6 archivos, 3 etapas, <strong class="text-gray-900">cero conexion entre ellos</strong>.</p>
+				<p class="text-xs text-gray-400 mt-1">¿Cual es la ultima version? ¿Que cambio entre la v1 y la v2? Solo hay una forma de saberlo: abrir cada uno y comparar a mano.</p>
+			</div>
+		</div>
+
+		<!-- Three pain points -->
+		<div class="grid sm:grid-cols-3 gap-4">
+			<div class="card p-5 text-center">
+				<!-- Search off icon -->
+				<svg class="w-7 h-7 text-deletion-500 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<circle cx="11" cy="11" r="8"/>
+					<line x1="21" y1="21" x2="16.65" y2="16.65"/>
+					<line x1="8" y1="8" x2="14" y2="14"/>
+				</svg>
+				<h3 class="text-sm font-bold text-gray-900 mb-1">No buscable</h3>
+				<p class="text-xs text-gray-500 leading-relaxed">No puedes filtrar por articulo ni por tipo de cambio. Hay que leer todo.</p>
+			</div>
+			<div class="card p-5 text-center">
+				<!-- Code off icon -->
+				<svg class="w-7 h-7 text-deletion-500 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<polyline points="16 18 22 12 16 6"/>
+					<polyline points="8 6 2 12 8 18"/>
+					<line x1="3" y1="3" x2="21" y2="21"/>
+				</svg>
+				<h3 class="text-sm font-bold text-gray-900 mb-1">No computable</h3>
+				<p class="text-xs text-gray-500 leading-relaxed">Ningun sistema puede leerlo y reconstruir el historial automaticamente.</p>
+			</div>
+			<div class="card p-5 text-center">
+				<!-- Unlink icon -->
+				<svg class="w-7 h-7 text-deletion-500 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M15 7h3a5 5 0 0 1 0 10h-3m-6 0H6a5 5 0 0 1 0-10h3"/>
+					<line x1="2" y1="2" x2="22" y2="22"/>
+				</svg>
+				<h3 class="text-sm font-bold text-gray-900 mb-1">Sin trazabilidad</h3>
+				<p class="text-xs text-gray-500 leading-relaxed">No registra votos, autores ni la relacion entre etapas del tramite.</p>
+			</div>
+		</div>
 	</section>
 
 	<!-- ═══ THE PROBLEM ═══ -->
@@ -395,5 +488,11 @@
 	}
 	.pdf-text {
 		font-family: 'Times New Roman', 'DejaVu Serif', Georgia, serif;
+	}
+	.finder-row {
+		transition: background-color 0.1s ease;
+	}
+	.finder-row:hover {
+		background-color: #2d4f8a !important;
 	}
 </style>
