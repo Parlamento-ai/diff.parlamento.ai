@@ -6,6 +6,9 @@
 
 	const changedSet = $derived(new Set(data.changedArticleIds));
 	const hasDiffs = $derived(data.diffs.length > 0);
+	const hasAccumulatedDiffs = $derived(Object.keys(data.accumulatedDiffs).length > 0);
+
+	let showCleanView = $state(false);
 
 	const versionColorMap: Record<string, string> = {
 		act: 'bg-emerald-100 text-emerald-800',
@@ -25,9 +28,20 @@
 			{#if data.versionAuthor}
 				<span class="text-xs text-gray-400">— {data.versionAuthor}</span>
 			{/if}
+			{#if hasAccumulatedDiffs}
+				<button
+					onclick={() => showCleanView = !showCleanView}
+					class="ml-auto text-xs px-2.5 py-1 rounded-md border transition-colors
+						{showCleanView
+							? 'bg-blue-50 border-blue-300 text-blue-700'
+							: 'bg-gray-50 border-gray-200 text-gray-500 hover:bg-gray-100'}"
+				>
+					{showCleanView ? 'Cambios' : 'Resultado'}
+				</button>
+			{/if}
 		</div>
 
-		<LawView law={data.law} changedArticleIds={changedSet} />
+		<LawView law={data.law} changedArticleIds={changedSet} accumulatedDiffs={data.accumulatedDiffs} cleanView={showCleanView} />
 	</div>
 
 	<!-- Diff panel (desktop) -->

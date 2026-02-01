@@ -1,14 +1,21 @@
 <script lang="ts">
+	import type { WordToken } from '$lib/types';
+	import WordDiffRenderer from '$lib/components/diff/WordDiffRenderer.svelte';
+
 	let {
 		eId,
 		heading,
 		content,
-		highlighted = false
+		highlighted = false,
+		wordDiff,
+		cleanView = false
 	}: {
 		eId: string;
 		heading: string;
 		content: string;
 		highlighted?: boolean;
+		wordDiff?: WordToken[];
+		cleanView?: boolean;
 	} = $props();
 </script>
 
@@ -18,5 +25,11 @@
 		{highlighted ? 'border-amber-400 bg-amber-50/50' : 'border-transparent'}"
 >
 	<h4 class="text-sm font-semibold text-gray-800">{heading}</h4>
-	<p class="text-sm text-gray-700 mt-1 leading-relaxed">{content}</p>
+	{#if wordDiff}
+		<p class="text-sm text-gray-700 mt-1 leading-relaxed">
+			<WordDiffRenderer tokens={wordDiff} {cleanView} />
+		</p>
+	{:else}
+		<p class="text-sm text-gray-700 mt-1 leading-relaxed">{content}</p>
+	{/if}
 </article>

@@ -1,13 +1,17 @@
 <script lang="ts">
-	import type { LawState } from '$lib/types';
+	import type { LawState, WordToken } from '$lib/types';
 	import SectionView from './SectionView.svelte';
 
 	let {
 		law,
-		changedArticleIds = new Set()
+		changedArticleIds = new Set(),
+		accumulatedDiffs = {},
+		cleanView = false
 	}: {
 		law: LawState;
 		changedArticleIds?: Set<string>;
+		accumulatedDiffs?: Record<string, WordToken[]>;
+		cleanView?: boolean;
 	} = $props();
 </script>
 
@@ -24,6 +28,8 @@
 			heading={section.heading}
 			articles={section.articles}
 			{changedArticleIds}
+			{accumulatedDiffs}
+			{cleanView}
 		/>
 	{/each}
 </div>

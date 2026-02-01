@@ -44,7 +44,7 @@ export const load: PageServerLoad = async ({ params }) => {
 	// Documents that have changeSets (bills + amendments, not acts)
 	const changeDocuments = boletin.documents.filter((d) => d.changeSet);
 
-	const { law, changedArticleIds, currentChangeSet } = reconstructState(
+	const { law, changedArticleIds, currentChangeSet, accumulatedDiffs } = reconstructState(
 		original,
 		boletin.documents,
 		versionIndex
@@ -80,7 +80,8 @@ export const load: PageServerLoad = async ({ params }) => {
 		versionLabel: currentEntry.label,
 		versionType: currentEntry.type,
 		versionDate: currentEntry.date,
-		versionAuthor: currentEntry.author
+		versionAuthor: currentEntry.author,
+		accumulatedDiffs
 	};
 };
 

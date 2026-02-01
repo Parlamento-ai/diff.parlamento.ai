@@ -1,4 +1,5 @@
-import type { AknDocument, LawState, Section, Article, ChangeSet, ReconstructedState } from '$lib/types';
+import type { AknDocument, LawState, Section, Article, ChangeSet, ReconstructedState, WordToken } from '$lib/types';
+import { computeWordDiff } from '$lib/utils/word-diff';
 
 function cloneLawState(state: LawState): LawState {
 	return {
@@ -99,6 +100,14 @@ export function reconstructState(
 		throw new Error('Original document must have a body');
 	}
 
+	// Snapshot original article contents before applying any changes
+	const originalContents = new Map<string, string>();
+	for (const sec of original.body.sections) {
+		for (const art of sec.articles) {
+			originalContents.set(art.eId, art.content);
+		}
+	}
+
 	const law = cloneLawState(original.body);
 	let changedArticleIds = new Set<string>();
 	let currentChangeSet: ChangeSet | undefined;
@@ -119,5 +128,22 @@ export function reconstructState(
 		}
 	}
 
-	return { law, changedArticleIds, currentChangeSet };
+	// Compute accumulated diffs: original vs current for every article
+	const accumulatedDiffs: Record<string, WordToken[]> = {};
+	for (const sec of law.sections) {
+		for (const art of sec.articles) {
+			const orig = originalContents.get(art.eId);
+			if (orig === undefined) {
+				// Inserted article — all tokens are "added"
+				accumulatedDiffs[art.eId] = art.content
+					.split(/\s+/)
+					.filter(Boolean)
+					.map((text) => ({ text, type: 'added' as const }));
+			} else if (orig !== art.content) {
+				accumulatedDiffs[art.eId] = computeWordDiff(orig, art.content);
+			}
+		}
+	}
+
+	return { law, changedArticleIds, currentChangeSet, accumulatedDiffs };
 }

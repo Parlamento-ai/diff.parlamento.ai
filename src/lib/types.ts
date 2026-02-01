@@ -72,6 +72,7 @@ export interface ReconstructedState {
 	law: LawState;
 	changedArticleIds: Set<string>;
 	currentChangeSet?: ChangeSet;
+	accumulatedDiffs: Record<string, WordToken[]>;
 }
 
 export interface WordToken {
