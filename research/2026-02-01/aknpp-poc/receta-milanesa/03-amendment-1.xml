@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: amendment 1 — "La enmienda napolitana"
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Diputada Santafesina, experta en quesos, propone reconocer oficialmente
+  la "milanesa a la napolitana" como variante legítima. Se añade un nuevo artículo 8 bis
+  que la define: milanesa frita cubierta con salsa de tomate, jamón cocido y muzzarella,
+  gratinada al horno.
+
+  Votación: APROBADO 6-2. El Porteño vota en contra argumentando que la napo
+  "deshonra la fritura original" y la Patagónica objeta por salud.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-napolitana">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind1"/>
+          <FRBRuri value="/poc/amendment/mil-2025-01-ind1"/>
+          <FRBRdate date="2025-04-10" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputada-santafesina"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind1/esp@2025-04-10"/>
+          <FRBRuri value="/poc/amendment/mil-2025-01-ind1/esp@2025-04-10"/>
+          <FRBRdate date="2025-04-10" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind1/esp@2025-04-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda de la <docProponent>Diputada Santafesina</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/mil-2025-01">que moderniza la receta de Milanesa Argentina</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 6, a continuación del artículo 8, el siguiente artículo 8 bis:</p>
+        <p>"Artículo 8 bis. Milanesa a la napolitana. Se reconoce como variante oficial la
+        milanesa a la napolitana, consistente en una milanesa frita según los artículos
+        precedentes, cubierta con salsa de tomate casera, una feta de jamón cocido y
+        muzzarella, gratinada al horno hasta que el queso funda y dore. La denominación
+        'milanesa a la napolitana' será de uso exclusivo para esta variante."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La milanesa a la napolitana es una creación porteña que lleva décadas en los menús
+        de restaurantes y hogares argentinos. Negarle reconocimiento oficial es ignorar una
+        realidad gastronómica. Como santafesina y experta en quesos, puedo afirmar que la
+        muzzarella derretida sobre la milanesa no la deshonra — la eleva. La napolitana
+        merece su lugar junto a la milanesa clásica.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      APROBADO — agrega la napolitana como variante oficial
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/milanesa-argentina/esp@2025-03-15"
+      result="/poc/receta/milanesa-argentina/esp@2025-04-10">
+
+      <aknpp:vote date="2025-04-10"
+                  result="approved"
+                  source="/poc/debate/mil-2025-01-comision-1">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+          <aknpp:voter href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+          <aknpp:voter href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+          <aknpp:voter href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+          <aknpp:voter href="/poc/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
+          <aknpp:voter href="/poc/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
+          <aknpp:voter href="/poc/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- art_8bis: nuevo artículo reconociendo la milanesa napolitana -->
+      <aknpp:articleChange article="art_8bis" type="insert" after="art_8">
+        <aknpp:new>Se reconoce como variante oficial la milanesa a la napolitana, consistente en una milanesa frita según los artículos precedentes, cubierta con salsa de tomate casera, una feta de jamón cocido y muzzarella, gratinada al horno hasta que el queso funda y dore. La denominación 'milanesa a la napolitana' será de uso exclusivo para esta variante.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

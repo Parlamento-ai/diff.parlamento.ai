@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: act (ley promulgada / receta final)
+
+  Estado: Resultado de aplicar el bill + enmiendas aprobadas (1 y 3).
+  Las enmiendas 2 (horno), 4 (vegana) y 5 (a caballo) NO se aplicaron.
+
+  Cambios netos respecto al original:
+    - art_1bis: NUEVO. Milanesa de pollo reconocida (de enmienda 3)
+    - art_4: CAMBIADO. Pan rallado comercial permitido (del bill)
+    - art_5: CAMBIADO. Doble empanado permitido (del bill)
+    - art_7: CAMBIADO. Múltiples aceites y manteca permitidos (del bill)
+    - art_8bis: NUEVO. Milanesa napolitana reconocida (de enmienda 1)
+    - art_10: CAMBIADO. Papas fritas permitidas (del bill)
+
+  Sin cambios:
+    - art_1 (corte de carne)
+    - art_2 (preparación)
+    - art_3 (marinado)
+    - art_6 (reposo)
+    - art_8 (tiempo de fritura)
+    - art_9 (escurrido)
+    - art_11 (servicio)
+
+  Enmiendas que NO produjeron cambio:
+    - Enmienda 2 (horno): RECHAZADA 2-6
+    - Enmienda 4 (vegana): RECHAZADA 0-8
+    - Enmienda 5 (a caballo): RETIRADA
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-milanesa-argentina">
+
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/milanesa-argentina"/>
+          <FRBRuri value="/poc/receta/milanesa-argentina"/>
+          <FRBRdate date="2022-06-20" name="publicación"/>
+          <FRBRauthor href="/poc/persona/diputado-porteno"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/milanesa-argentina/esp@2025-09-01"/>
+          <FRBRuri value="/poc/receta/milanesa-argentina/esp@2025-09-01"/>
+          <FRBRdate date="2025-09-01" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/milanesa-argentina/esp@2025-09-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <lifecycle source="#congreso">
+        <eventRef eId="e1" date="2022-06-20" type="generation" source="#autor"/>
+        <eventRef eId="e2" date="2025-03-15" type="amendment" source="/poc/bill/mil-2025-01"/>
+        <eventRef eId="e3" date="2025-04-10" type="amendment" source="/poc/amendment/mil-2025-01-ind1"/>
+        <eventRef eId="e4" date="2025-04-20" type="amendment" source="/poc/amendment/mil-2025-01-ind2"/>
+        <eventRef eId="e5" date="2025-05-20" type="amendment" source="/poc/amendment/mil-2025-01-ind3"/>
+        <eventRef eId="e6" date="2025-06-01" type="amendment" source="/poc/amendment/mil-2025-01-ind4"/>
+        <eventRef eId="e7" date="2025-06-15" type="amendment" source="/poc/amendment/mil-2025-01-ind5"/>
+        <eventRef eId="e8" date="2025-09-01" type="generation" source="#congreso"/>
+      </lifecycle>
+      <references source="#congreso">
+        <TLCPerson eId="autor" href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
+        <TLCOrganization eId="congreso" href="/poc/org/congreso" showAs="Congreso de Gastronomía"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 6: <docTitle>Milanesa Argentina</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de milanesa argentina, modificada por Ley de Modernización (2025).</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: La Carne -->
+      <section eId="sec_carne">
+        <heading>Título I — La Carne</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Corte</heading>
+          <content><p>Nalga o bola de lomo de res, cortada en filetes de 5mm de espesor máximo. Queda prohibido el uso de carne picada, carne de ave, cerdo o cualquier sustituto.</p></content>
+        </article>
+
+        <article eId="art_1bis">
+          <heading>Artículo 1 bis. Milanesa de pollo</heading>
+          <content><p>Se reconoce como variante oficial la milanesa de pollo, elaborada con pechuga de pollo deshuesada cortada en filetes de 5mm de espesor máximo. Deberá seguir todos los procedimientos de los Títulos II, III y IV. La denominación 'milanesa de pollo' será obligatoria para esta variante.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Preparación</heading>
+          <content><p>Los filetes se golpean con mazo de carne hasta alcanzar espesor uniforme de 3-4mm. Queda prohibido el uso de ablandadores químicos.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Marinado</heading>
+          <content><p>Los filetes se pasan por huevo batido con sal, pimienta y perejil picado. Prohibido el uso de huevo en polvo o mezclas comerciales para rebozado.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: El Empanado -->
+      <section eId="sec_empanado">
+        <heading>Título II — El Empanado</heading>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Pan rallado</heading>
+          <content><p>Pan rallado fino de pan del día anterior procesado en el hogar, o pan rallado comercial de calidad comprobada. Queda prohibido el uso de panko japonés.</p></content>
+        </article>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Técnica de empanado</heading>
+          <content><p>Se pasa primero por huevo, luego por pan rallado, presionando firmemente. Se permite el doble empanado como técnica opcional para mayor crocancia.</p></content>
+        </article>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Reposo</heading>
+          <content><p>La milanesa empanada debe reposar 15 minutos en heladera antes de freír para fijar el empanado. Obligatorio.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: La Cocción -->
+      <section eId="sec_coccion">
+        <heading>Título III — La Cocción</heading>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Aceite</heading>
+          <content><p>Se fríe en abundante aceite de girasol, maíz o alto oleico a 180°C. El aceite debe cubrir completamente la milanesa. Se permite el uso de manteca como medio de fritura. Queda prohibida la fritura superficial.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Tiempo</heading>
+          <content><p>Fritura de 2-3 minutos por lado hasta dorado uniforme. La milanesa no debe quedar pálida ni oscurecerse. Prohibido el uso de freidora eléctrica.</p></content>
+        </article>
+
+        <article eId="art_8bis">
+          <heading>Artículo 8 bis. Milanesa a la napolitana</heading>
+          <content><p>Se reconoce como variante oficial la milanesa a la napolitana, consistente en una milanesa frita según los artículos precedentes, cubierta con salsa de tomate casera, una feta de jamón cocido y muzzarella, gratinada al horno hasta que el queso funda y dore. La denominación 'milanesa a la napolitana' será de uso exclusivo para esta variante.</p></content>
+        </article>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Escurrido</heading>
+          <content><p>Al retirar, se coloca sobre papel absorbente durante 2 minutos. Prohibido el escurrido sobre rejilla metálica.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO IV: Presentación -->
+      <section eId="sec_presentacion">
+        <heading>Título IV — Presentación</heading>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Guarnición</heading>
+          <content><p>Se acompaña con ensalada mixta (lechuga, tomate, cebolla) y un limón cortado en cuartos. Obligatorios. Se permite servir con papas fritas como guarnición complementaria.</p></content>
+        </article>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Servicio</heading>
+          <content><p>Se sirve inmediatamente después de freír, en plato individual. Prohibido mantener en horno caliente o recalentar. Se come con cuchillo y tenedor, nunca con las manos.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

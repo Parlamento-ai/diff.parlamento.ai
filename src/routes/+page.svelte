@@ -1,10 +1,32 @@
 <script lang="ts">
+	import FlagCl from '~icons/circle-flags/cl';
+	import FlagEs from '~icons/circle-flags/es';
+	import FlagFr from '~icons/circle-flags/fr';
+	import FlagDe from '~icons/circle-flags/de';
+	import FlagGb from '~icons/circle-flags/gb';
+	import FlagUs from '~icons/circle-flags/us';
+	import FlagIt from '~icons/circle-flags/it';
+	import FlagBr from '~icons/circle-flags/br';
+	import FlagEu from '~icons/circle-flags/eu';
+
 	let visible = $state(false);
 
 	$effect(() => {
 		const timeout = setTimeout(() => visible = true, 100);
 		return () => clearTimeout(timeout);
 	});
+
+	const names = [
+		{ flag: FlagCl, country: 'Chile', name: 'Comparado' },
+		{ flag: FlagEs, country: 'España', name: 'Texto comparado' },
+		{ flag: FlagFr, country: 'France', name: 'Tableau comparatif' },
+		{ flag: FlagDe, country: 'Deutschland', name: 'Synopse' },
+		{ flag: FlagGb, country: 'UK', name: 'Redline' },
+		{ flag: FlagUs, country: 'USA', name: 'Side-by-side' },
+		{ flag: FlagIt, country: 'Italia', name: 'Testo a fronte' },
+		{ flag: FlagBr, country: 'Brasil', name: 'Quadro comparativo' },
+		{ flag: FlagEu, country: 'EU', name: 'Consolidated comparison' },
+	];
 </script>
 
 <div class="overflow-hidden">
@@ -86,6 +108,118 @@
 						<span class="text-gray-500">Abstencion: 1</span>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ═══ WHAT IS A COMPARADO ═══ -->
+	<section class="max-w-4xl mx-auto px-4 py-12">
+		<div class="text-center mb-10">
+			<h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+				¿Que es un texto comparado?
+			</h2>
+			<p class="text-gray-500 mt-3 max-w-2xl mx-auto leading-relaxed">
+				En cada pais tiene un nombre distinto, pero el concepto es el mismo: un documento que pone <strong class="text-gray-700">lado a lado</strong> el texto original de una ley y el texto modificado, para que cualquier persona pueda ver que cambio.
+			</p>
+		</div>
+
+		<!-- Names with flags -->
+		<div class="flex flex-wrap justify-center gap-x-6 gap-y-4 mb-10">
+			{#each names as { flag, country, name }}
+				<div class="flex items-center gap-2.5">
+					<svelte:component this={flag} class="w-6 h-6 shrink-0" />
+					<div class="leading-tight">
+						<span class="block text-[11px] font-mono text-gray-400">{country}</span>
+						<span class="text-sm font-semibold text-gray-900">{name}</span>
+					</div>
+				</div>
+			{/each}
+		</div>
+
+		<!-- Traditional PDF mock -->
+		<div class="text-center mb-4">
+			<p class="text-sm text-gray-400 font-mono">// Asi se ve un comparado tradicional</p>
+		</div>
+		<div class="pdf-mock relative">
+			<!-- PDF viewer chrome -->
+			<div class="flex items-center gap-2 px-3 py-1.5 bg-[#323232] rounded-t-lg">
+				<div class="flex gap-1.5">
+					<span class="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></span>
+					<span class="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></span>
+					<span class="w-2.5 h-2.5 rounded-full bg-[#28c840]"></span>
+				</div>
+				<span class="text-[11px] text-gray-400 ml-1 truncate">comparado_ley_19799_indicaciones_comision_trabajo_v2_FINAL_rev3.pdf</span>
+			</div>
+			<!-- PDF grey surround -->
+			<div class="bg-[#525659] px-4 sm:px-8 py-6 rounded-b-lg">
+				<!-- The "page" -->
+				<div class="bg-white shadow-2xl pdf-page px-6 sm:px-10 py-8 relative overflow-hidden">
+					<!-- Bureaucratic header -->
+					<div class="text-center mb-5 pdf-text">
+						<p class="text-[10px] uppercase tracking-[0.2em] text-gray-400">Republica de Pastalandia</p>
+						<p class="text-[9px] uppercase tracking-[0.15em] text-gray-400 mt-0.5">Senado &mdash; Comision de Gastronomia y Tradiciones</p>
+						<div class="w-12 h-px bg-gray-300 mx-auto my-2"></div>
+						<p class="text-xs font-bold text-gray-700 uppercase tracking-wide">Cuadro Comparado</p>
+						<p class="text-[9px] text-gray-400 mt-1">Boletin N° 11.179-13 &mdash; Segundo Tramite Constitucional</p>
+					</div>
+
+					<!-- Table with visible borders like a real gov PDF -->
+					<table class="w-full border-collapse pdf-text text-[11px] sm:text-xs leading-snug">
+						<thead>
+							<tr>
+								<th class="border border-gray-400 bg-gray-100 px-2 py-1.5 text-left text-[9px] uppercase tracking-wider text-gray-600 w-1/2">Texto vigente</th>
+								<th class="border border-gray-400 bg-gray-100 px-2 py-1.5 text-left text-[9px] uppercase tracking-wider text-gray-600 w-1/2">Texto propuesto por la Comision</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="border border-gray-300 px-2 py-2 align-top text-gray-700">
+									<strong>Articulo 22.-</strong> El tiempo minimo de coccion de la pasta seca no podra ser inferior a <span class="underline decoration-red-400">doce</span> minutos, salvo disposicion reglamentaria en contrario.
+								</td>
+								<td class="border border-gray-300 px-2 py-2 align-top text-gray-700">
+									<strong>Articulo 22.-</strong> El tiempo minimo de coccion de la pasta seca no podra ser inferior a <span class="underline decoration-red-400">ocho</span> minutos, salvo disposicion reglamentaria en contrario.
+								</td>
+							</tr>
+							<tr>
+								<td class="border border-gray-300 px-2 py-2 align-top text-gray-400 italic">
+									(no existe)
+								</td>
+								<td class="border border-gray-300 px-2 py-2 align-top text-gray-700">
+									<strong>Articulo 22 bis.-</strong> Autorizase el uso de salsa pesto como acompañamiento oficial en actos protocolares de la Republica.
+								</td>
+							</tr>
+							<tr>
+								<td class="border border-gray-300 px-2 py-2 align-top text-gray-700">
+									<strong>Articulo 23.-</strong> Sin alteracion.
+								</td>
+								<td class="border border-gray-300 px-2 py-2 align-top text-gray-700">
+									<strong>Articulo 23.-</strong> Sin alteracion.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<!-- Stamp / signature area -->
+					<div class="mt-6 flex items-end justify-between pdf-text">
+						<div class="text-[8px] text-gray-300 leading-relaxed">
+							<p>Secretaria de la Comision</p>
+							<p>S.C.L., 15 de enero de 2026</p>
+						</div>
+						<div class="stamp text-[9px] text-red-300/60 border-2 border-red-300/40 rounded px-2 py-1 uppercase tracking-wider font-bold -rotate-6">
+							Tramitacion
+						</div>
+					</div>
+
+					<!-- Page number -->
+					<div class="text-center mt-4 text-[8px] text-gray-300 pdf-text">— 1 —</div>
+				</div>
+			</div>
+			<!-- Caption below -->
+			<div class="mt-4 flex items-center gap-3 text-[11px] text-gray-400 justify-center">
+				<svg class="w-4 h-4 text-gray-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+				</svg>
+				<span>Imagen estatica. No se puede buscar, filtrar ni computar. No indica quien voto ni en que etapa del tramite ocurrio cada cambio.</span>
 			</div>
 		</div>
 	</section>
@@ -255,4 +389,11 @@
 	.hero-visible .hero-stagger-2 { opacity: 1; transform: translateY(0); transition-delay: 80ms; }
 	.hero-visible .hero-stagger-3 { opacity: 1; transform: translateY(0); transition-delay: 160ms; }
 	.hero-visible .hero-stagger-4 { opacity: 1; transform: translateY(0); transition-delay: 240ms; }
+
+	.pdf-page {
+		font-variant-ligatures: none;
+	}
+	.pdf-text {
+		font-family: 'Times New Roman', 'DejaVu Serif', Georgia, serif;
+	}
 </style>

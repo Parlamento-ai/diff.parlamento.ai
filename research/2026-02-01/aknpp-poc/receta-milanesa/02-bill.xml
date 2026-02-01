@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: bill (proyecto que moderniza la receta)
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Diputada Rosarina propone "modernizar" la milanesa argentina para
+  hacerla más accesible sin perder su esencia.
+  Cambios propuestos:
+    - art_4: Permitir pan rallado comercial de calidad junto al casero
+    - art_5: Permitir doble empanado como técnica opcional
+    - art_7: Permitir aceite de girasol, maíz o alto oleico; levantar prohibición de manteca
+    - art_10: Permitir papas fritas como guarnición legítima junto a la ensalada
+
+  Votación: Aprobado 5-3.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <bill name="modernizacion-milanesa">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/bill/mil-2025-01"/>
+          <FRBRuri value="/poc/bill/mil-2025-01"/>
+          <FRBRdate date="2025-03-15" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputada-rosarina"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/bill/mil-2025-01/esp@2025-03-15"/>
+          <FRBRuri value="/poc/bill/mil-2025-01/esp@2025-03-15"/>
+          <FRBRdate date="2025-03-15" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/bill/mil-2025-01/esp@2025-03-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de ley que <docTitle>moderniza la receta de Milanesa Argentina</docTitle></p>
+      </longTitle>
+      <p>Proposición de ley de la <docProponent>Diputada Rosarina</docProponent>.</p>
+      <p>Modifica la <ref href="/poc/receta/milanesa-argentina">Receta N° 6 sobre Milanesa Argentina</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que el pan rallado casero de calidad es cada vez más difícil de preparar en hogares con poco tiempo, y existen opciones comerciales de excelente calidad.</p>
+      <p>2. Que el doble empanado es una técnica legítima que produce una milanesa más crocante, apreciada por millones de argentinos.</p>
+      <p>3. Que limitar el aceite a girasol excluye opciones igualmente válidas como el aceite de maíz y el alto oleico, y que la manteca produce resultados excepcionales.</p>
+      <p>4. Que prohibir las papas fritas como guarnición contradice una de las combinaciones más queridas de la gastronomía argentina: milanesa con papas fritas.</p>
+      <p>5. Que la milanesa es patrimonio de todo el pueblo argentino y debe reflejar cómo se la come realmente.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/milanesa-argentina#art_4">artículo 4</ref> de la
+          Receta N° 6, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 4. Pan rallado. Pan rallado fino de pan del día anterior procesado en el hogar, o pan rallado comercial de calidad comprobada. Queda prohibido el uso de panko japonés."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_2">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/milanesa-argentina#art_5">artículo 5</ref> de la
+          Receta N° 6, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 5. Técnica de empanado. Se pasa primero por huevo, luego por pan rallado, presionando firmemente. Se permite el doble empanado como técnica opcional para mayor crocancia."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_3">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/milanesa-argentina#art_7">artículo 7</ref> de la
+          Receta N° 6, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 7. Aceite. Se fríe en abundante aceite de girasol, maíz o alto oleico a 180°C. El aceite debe cubrir completamente la milanesa. Se permite el uso de manteca como medio de fritura. Queda prohibida la fritura superficial."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_4">
+        <heading>Artículo 4</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/milanesa-argentina#art_10">artículo 10</ref> de la
+          Receta N° 6, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 10. Guarnición. Se acompaña con ensalada mixta (lechuga, tomate, cebolla) y un limón cortado en cuartos. Obligatorios. Se permite servir con papas fritas como guarnición complementaria."</mod></p>
+        </content>
+      </article>
+    </body>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/milanesa-argentina/esp@2022-06-20"
+      result="/poc/receta/milanesa-argentina/esp@2025-03-15">
+
+      <aknpp:vote date="2025-03-15"
+                  result="approved"
+                  source="/poc/debate/mil-2025-01-pleno">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+          <aknpp:voter href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+          <aknpp:voter href="/poc/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
+          <aknpp:voter href="/poc/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
+          <aknpp:voter href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
+          <aknpp:voter href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+          <aknpp:voter href="/poc/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- art_4: pan rallado casero obligatorio → permite comercial de calidad -->
+      <aknpp:articleChange article="art_4" type="substitute">
+        <aknpp:old>Pan rallado fino de pan del día anterior, procesado en el hogar. Queda prohibido el uso de pan rallado comercial o panko japonés.</aknpp:old>
+        <aknpp:new>Pan rallado fino de pan del día anterior procesado en el hogar, o pan rallado comercial de calidad comprobada. Queda prohibido el uso de panko japonés.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_5: una sola capa obligatoria → permite doble empanado -->
+      <aknpp:articleChange article="art_5" type="substitute">
+        <aknpp:old>Se pasa primero por huevo, luego por pan rallado, presionando firmemente. Una sola capa. Prohibido el doble empanado.</aknpp:old>
+        <aknpp:new>Se pasa primero por huevo, luego por pan rallado, presionando firmemente. Se permite el doble empanado como técnica opcional para mayor crocancia.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_7: solo girasol → permite maíz, alto oleico y manteca -->
+      <aknpp:articleChange article="art_7" type="substitute">
+        <aknpp:old>Se fríe en abundante aceite de girasol a 180°C. El aceite debe cubrir completamente la milanesa. Queda prohibida la fritura superficial, el uso de aceite de oliva o manteca para freír.</aknpp:old>
+        <aknpp:new>Se fríe en abundante aceite de girasol, maíz o alto oleico a 180°C. El aceite debe cubrir completamente la milanesa. Se permite el uso de manteca como medio de fritura. Queda prohibida la fritura superficial.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_10: papas fritas prohibidas → permitidas como complemento -->
+      <aknpp:articleChange article="art_10" type="substitute">
+        <aknpp:old>Se acompaña con ensalada mixta (lechuga, tomate, cebolla) y un limón cortado en cuartos. Obligatorios. Prohibido servir con papas fritas como guarnición principal.</aknpp:old>
+        <aknpp:new>Se acompaña con ensalada mixta (lechuga, tomate, cebolla) y un limón cortado en cuartos. Obligatorios. Se permite servir con papas fritas como guarnición complementaria.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </bill>
+</akomaNtoso>

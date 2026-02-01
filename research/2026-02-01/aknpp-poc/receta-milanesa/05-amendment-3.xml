@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: amendment 3 — "La enmienda del pollo"
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Diputada Bonaerense propone reconocer oficialmente la "milanesa de pollo"
+  con pechuga deshuesada como variante válida, con denominación obligatoria.
+
+  Votación: APROBADO 5-3. El Porteño argumenta "la milanesa es de carne o no es milanesa"
+  pero pierde. El Mendocino objeta que el pollo no marida con vino tinto.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-pollo">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind3"/>
+          <FRBRuri value="/poc/amendment/mil-2025-01-ind3"/>
+          <FRBRdate date="2025-05-20" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputada-bonaerense"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind3/esp@2025-05-20"/>
+          <FRBRuri value="/poc/amendment/mil-2025-01-ind3/esp@2025-05-20"/>
+          <FRBRdate date="2025-05-20" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind3/esp@2025-05-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda de la <docProponent>Diputada Bonaerense</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/mil-2025-01">que moderniza la receta de Milanesa Argentina</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 6, a continuación del artículo 1, el siguiente artículo 1 bis:</p>
+        <p>"Artículo 1 bis. Milanesa de pollo. Se reconoce como variante oficial la milanesa
+        de pollo, elaborada con pechuga de pollo deshuesada cortada en filetes de 5mm de
+        espesor máximo. Deberá seguir todos los procedimientos de los Títulos II, III y IV.
+        La denominación 'milanesa de pollo' será obligatoria para esta variante."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La milanesa de pollo es una realidad en millones de hogares argentinos. Madres y
+        padres de todo el país la preparan semanalmente para sus familias. Es más económica,
+        más fácil de preparar y los chicos la prefieren. Negarle reconocimiento oficial es
+        ignorar la mesa real de las familias argentinas. Como bonaerense y madre de tres,
+        puedo afirmar que la milanesa de pollo se come en cada casa de la provincia.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      APROBADO — reconoce la milanesa de pollo como variante oficial
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/milanesa-argentina/esp@2025-04-10"
+      result="/poc/receta/milanesa-argentina/esp@2025-05-20">
+
+      <aknpp:vote date="2025-05-20"
+                  result="approved"
+                  source="/poc/debate/mil-2025-01-comision-3">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/diputada-bonaerense" showAs="Dip. Bonaerense"/>
+          <aknpp:voter href="/poc/persona/diputada-rosarina" showAs="Dip. Rosarina"/>
+          <aknpp:voter href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+          <aknpp:voter href="/poc/persona/diputado-tucumano" showAs="Dip. Tucumano"/>
+          <aknpp:voter href="/poc/persona/diputada-santafesina" showAs="Dip. Santafesina"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
+          <aknpp:voter href="/poc/persona/diputado-mendocino" showAs="Dip. Mendocino"/>
+          <aknpp:voter href="/poc/persona/diputada-patagonica" showAs="Dip. Patagónica"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- art_1bis: nuevo artículo reconociendo la milanesa de pollo -->
+      <aknpp:articleChange article="art_1bis" type="insert" after="art_1">
+        <aknpp:new>Se reconoce como variante oficial la milanesa de pollo, elaborada con pechuga de pollo deshuesada cortada en filetes de 5mm de espesor máximo. Deberá seguir todos los procedimientos de los Títulos II, III y IV. La denominación 'milanesa de pollo' será obligatoria para esta variante.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

@@ -47,7 +47,7 @@
     <amendmentBody>
       <amendmentContent>
         <p>Modifícase el artículo 4 de la Receta N° 5, sustituyendo su texto por el siguiente:</p>
-        <p>"Artículo 4. Cortes obligatorios. Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas."</p>
+        <p>"Artículo 4. Cortes obligatorios. Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas."</p>
       </amendmentContent>
 
       <amendmentJustification>
@@ -89,8 +89,8 @@
 
       <!-- art_4: restaurar oreja y rabo como obligatorios -->
       <aknpp:articleChange article="art_4" type="substitute">
-        <aknpp:old>Costilla de cerdo ahumada, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:old>
-        <aknpp:new>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:new>
+        <aknpp:old>Costilla de cerdo ahumada, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:old>
+        <aknpp:new>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:new>
       </aknpp:articleChange>
 
     </aknpp:changeSet>

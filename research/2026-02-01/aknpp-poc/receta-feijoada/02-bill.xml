@@ -8,10 +8,11 @@
   más accesible a los hogares brasileños modernos.
   Cambios propuestos:
     - art_2: Permitir olla a presión como alternativa, reducir a 1 hora
-    - art_4: Reducir cortes obligatorios a costilla, linguiça y charque (eliminar oreja y rabo)
+    - art_4: Reducir cortes obligatorios a costilla, linguiça calabresa ou paio y charque (eliminar oreja y rabo)
     - art_6: Permitir embutidos industriales junto a los artesanales
     - art_8: Permitir arroz precocido y arroz con condimentos
     - art_9: Permitir farofa industrializada como alternativa
+    - art_11: Hacer la naranja opcional en vez de obligatoria
 
   Votación: Aprobado 5-3.
 -->
@@ -58,7 +59,8 @@
       <p>2. Que la oreja y el rabo de cerdo son cortes cada vez más difíciles de encontrar en supermercados urbanos.</p>
       <p>3. Que la prohibición de embutidos industriales excluye productos de calidad aceptable ampliamente disponibles.</p>
       <p>4. Que exigir arroz preparado desde cero y farofa artesanal añade complejidad innecesaria a un plato ya de por sí laborioso.</p>
-      <p>5. Que la feijoada es patrimonio de todo Brasil, no solo de Rio de Janeiro.</p>
+      <p>5. Que la naranja no es un acompañamiento universal de la feijoada en todos los estados, y su obligatoriedad no refleja la diversidad regional.</p>
+      <p>6. Que la feijoada es patrimonio de todo Brasil, no solo de Rio de Janeiro.</p>
     </preamble>
 
     <body>
@@ -76,7 +78,7 @@
         <content>
           <p>Sustitúyese el <ref href="/poc/receta/feijoada-carioca#art_4">artículo 4</ref> de la
           Receta N° 5 por el siguiente:</p>
-          <p><mod>"Artículo 4. Cortes obligatorios. Costilla de cerdo ahumada, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas."</mod></p>
+          <p><mod>"Artículo 4. Cortes obligatorios. Costilla de cerdo ahumada, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas."</mod></p>
         </content>
       </article>
 
@@ -104,6 +106,15 @@
           <p>Modifícase el <ref href="/poc/receta/feijoada-carioca#art_9">artículo 9</ref> de la
           Receta N° 5, sustituyendo su texto por el siguiente:</p>
           <p><mod>"Artículo 9. Farofa. Harina de mandioca tostada en mantequilla con cebolla y huevo, o alternativamente, farofa industrializada de calidad. Obligatoria."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_6">
+        <heading>Artículo 6</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/feijoada-carioca#art_11">artículo 11</ref> de la
+          Receta N° 5, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 11. Guarniciones. Naranjas cortadas en gajos (opcionales), molho de pimenta casero (obligatorio). Prohibidas las salsas embotelladas."</mod></p>
         </content>
       </article>
     </body>
@@ -143,8 +154,8 @@
 
       <!-- art_4: 5 cortes obligatorios → solo 3 (elimina oreja y rabo) -->
       <aknpp:articleChange article="art_4" type="substitute">
-        <aknpp:old>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça), carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:old>
-        <aknpp:new>Costilla de cerdo ahumada, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:new>
+        <aknpp:old>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, linguiça calabresa ou paio, carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:old>
+        <aknpp:new>Costilla de cerdo ahumada, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:new>
       </aknpp:articleChange>
 
       <!-- art_6: prohibición total de industriales → permite industriales certificados -->
@@ -163,6 +174,12 @@
       <aknpp:articleChange article="art_9" type="substitute">
         <aknpp:old>Harina de mandioca tostada en mantequilla con cebolla y huevo. Obligatoria. Prohibida la farofa industrializada.</aknpp:old>
         <aknpp:new>Harina de mandioca tostada en mantequilla con cebolla y huevo, o alternativamente, farofa industrializada de calidad. Obligatoria.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_11: naranja obligatoria → opcional -->
+      <aknpp:articleChange article="art_11" type="substitute">
+        <aknpp:old>Naranjas cortadas en gajos (obligatorias), molho de pimenta casero (obligatorio). Prohibidas las salsas embotelladas.</aknpp:old>
+        <aknpp:new>Naranjas cortadas en gajos (opcionales), molho de pimenta casero (obligatorio). Prohibidas las salsas embotelladas.</aknpp:new>
       </aknpp:articleChange>
 
     </aknpp:changeSet>

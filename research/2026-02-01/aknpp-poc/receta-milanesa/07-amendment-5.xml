@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: amendment 5 — "El compromiso cordobés"
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Diputado Cordobés propone reconocer la "milanesa a caballo" — milanesa
+  con huevo frito encima — como variante oficial en un nuevo artículo 8 ter.
+  La propuesta es RETIRADA después de que el Porteño la llama "un delirio cordobés"
+  y la Bonaerense dice "eso ya es otra cosa, como poner dulce de leche en la pizza."
+
+  Votación: RETIRADA antes de votación.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="compromiso-cordobes">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind5"/>
+          <FRBRuri value="/poc/amendment/mil-2025-01-ind5"/>
+          <FRBRdate date="2025-06-15" name="presentación"/>
+          <FRBRauthor href="/poc/persona/diputado-cordobes"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind5/esp@2025-06-15"/>
+          <FRBRuri value="/poc/amendment/mil-2025-01-ind5/esp@2025-06-15"/>
+          <FRBRdate date="2025-06-15" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/mil-2025-01-ind5/esp@2025-06-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/diputado-cordobes" showAs="Dip. Cordobés"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Diputado Cordobés</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/mil-2025-01">que moderniza la receta de Milanesa Argentina</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 6, a continuación del artículo 8 bis, el siguiente artículo 8 ter:</p>
+        <p>"Artículo 8 ter. Milanesa a caballo. Se reconoce como variante oficial la milanesa
+        a caballo, consistente en una milanesa frita según los artículos precedentes, coronada
+        con dos huevos fritos con yema líquida. La denominación 'milanesa a caballo' será de
+        uso exclusivo para esta variante."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La milanesa a caballo es un clásico cordobés que se ha expandido a todo el país.
+        El huevo frito con la yema corriendo sobre la milanesa crocante es una experiencia
+        gastronómica única. Si reconocemos la napolitana, debemos reconocer también la
+        milanesa a caballo. En Córdoba no se concibe una milanga sin su huevo frito arriba.
+        Es nuestra identidad.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RETIRADA — la enmienda nunca llegó a votarse
+      base y result son iguales porque no produce cambio
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/milanesa-argentina/esp@2025-05-20"
+      result="/poc/receta/milanesa-argentina/esp@2025-05-20">
+
+      <aknpp:vote date="2025-06-15"
+                  result="withdrawn"
+                  source="/poc/debate/mil-2025-01-comision-5">
+        <aknpp:for/>
+        <aknpp:against/>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta retirada: agregar milanesa a caballo como variante -->
+      <aknpp:articleChange article="art_8ter" type="insert" after="art_8bis">
+        <aknpp:new>Se reconoce como variante oficial la milanesa a caballo, consistente en una milanesa frita según los artículos precedentes, coronada con dos huevos fritos con yema líquida. La denominación 'milanesa a caballo' será de uso exclusivo para esta variante.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

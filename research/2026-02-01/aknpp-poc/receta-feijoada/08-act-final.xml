@@ -12,6 +12,7 @@
     - art_6: CAMBIADO. Embutidos industriales permitidos (del bill, no revertido)
     - art_8: SIN CAMBIO. Arroz tradicional restaurado por enmienda 3
     - art_9: CAMBIADO. Farofa industrializada permitida (del bill, no revertido)
+    - art_11: CAMBIADO. Naranja opcional en vez de obligatoria (del bill, no revertido)
 
   Sin cambios:
     - art_1 (frijoles negros)
@@ -20,7 +21,6 @@
     - art_7 (cocción de carnes)
     - art_8 (arroz — el bill lo cambió, la enmienda 3 lo revirtió)
     - art_10 (col rizada)
-    - art_11 (guarniciones)
     - art_12 (servicio)
 
   Enmiendas que NO produjeron cambio:
@@ -101,7 +101,7 @@
 
         <article eId="art_4">
           <heading>Artículo 4. Cortes obligatorios</heading>
-          <content><p>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</p></content>
+          <content><p>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, linguiça calabresa ou paio y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</p></content>
         </article>
 
         <article eId="art_5">
@@ -116,7 +116,7 @@
 
         <article eId="art_7">
           <heading>Artículo 7. Cocción de las carnes</heading>
-          <content><p>Las carnes se incorporan escalonadamente según su dureza — primero las más duras (oreja, rabo), luego las intermedias (costilla, charque), finalmente las blandas (linguiça, tocino).</p></content>
+          <content><p>Las carnes se incorporan escalonadamente según su dureza — primero las más duras (oreja, rabo), luego las intermedias (costilla, charque), finalmente las blandas (linguiça calabresa ou paio, tocino).</p></content>
         </article>
       </section>
 
@@ -146,7 +146,7 @@
 
         <article eId="art_11">
           <heading>Artículo 11. Guarniciones</heading>
-          <content><p>Naranjas cortadas en gajos (obligatorias), molho de pimenta casero (obligatorio). Prohibidas las salsas embotelladas.</p></content>
+          <content><p>Naranjas cortadas en gajos (opcionales), molho de pimenta casero (obligatorio). Prohibidas las salsas embotelladas.</p></content>
         </article>
 
         <article eId="art_12">

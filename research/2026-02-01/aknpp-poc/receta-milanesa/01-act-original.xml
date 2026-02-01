@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 6: Milanesa Argentina
+  Documento: act (ley vigente / receta original)
+  Estado: Receta publicada en el Boletín Oficial de Gastronomía, 20/06/2022
+
+  La receta original es la ortodoxa argentina, estricta y sin concesiones.
+  11 artículos en 4 títulos: La Carne, El Empanado, La Cocción, Presentación.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-milanesa-argentina">
+
+    <meta>
+      <identification source="#autor">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/milanesa-argentina"/>
+          <FRBRuri value="/poc/receta/milanesa-argentina"/>
+          <FRBRdate date="2022-06-20" name="publicación"/>
+          <FRBRauthor href="/poc/persona/diputado-porteno"/>
+          <FRBRcountry value="ar"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/milanesa-argentina/esp@2022-06-20"/>
+          <FRBRuri value="/poc/receta/milanesa-argentina/esp@2022-06-20"/>
+          <FRBRdate date="2022-06-20" name="versión"/>
+          <FRBRlanguage language="esp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/milanesa-argentina/esp@2022-06-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#autor">
+        <TLCPerson eId="autor" href="/poc/persona/diputado-porteno" showAs="Dip. Porteño"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 6: <docTitle>Milanesa Argentina</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de milanesa argentina, publicada en el Boletín Oficial de Gastronomía.</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: La Carne -->
+      <section eId="sec_carne">
+        <heading>Título I — La Carne</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Corte</heading>
+          <content><p>Nalga o bola de lomo de res, cortada en filetes de 5mm de espesor máximo. Queda prohibido el uso de carne picada, carne de ave, cerdo o cualquier sustituto.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Preparación</heading>
+          <content><p>Los filetes se golpean con mazo de carne hasta alcanzar espesor uniforme de 3-4mm. Queda prohibido el uso de ablandadores químicos.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Marinado</heading>
+          <content><p>Los filetes se pasan por huevo batido con sal, pimienta y perejil picado. Prohibido el uso de huevo en polvo o mezclas comerciales para rebozado.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: El Empanado -->
+      <section eId="sec_empanado">
+        <heading>Título II — El Empanado</heading>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Pan rallado</heading>
+          <content><p>Pan rallado fino de pan del día anterior, procesado en el hogar. Queda prohibido el uso de pan rallado comercial o panko japonés.</p></content>
+        </article>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Técnica de empanado</heading>
+          <content><p>Se pasa primero por huevo, luego por pan rallado, presionando firmemente. Una sola capa. Prohibido el doble empanado.</p></content>
+        </article>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Reposo</heading>
+          <content><p>La milanesa empanada debe reposar 15 minutos en heladera antes de freír para fijar el empanado. Obligatorio.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: La Cocción -->
+      <section eId="sec_coccion">
+        <heading>Título III — La Cocción</heading>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Aceite</heading>
+          <content><p>Se fríe en abundante aceite de girasol a 180°C. El aceite debe cubrir completamente la milanesa. Queda prohibida la fritura superficial, el uso de aceite de oliva o manteca para freír.</p></content>
+        </article>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Tiempo</heading>
+          <content><p>Fritura de 2-3 minutos por lado hasta dorado uniforme. La milanesa no debe quedar pálida ni oscurecerse. Prohibido el uso de freidora eléctrica.</p></content>
+        </article>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Escurrido</heading>
+          <content><p>Al retirar, se coloca sobre papel absorbente durante 2 minutos. Prohibido el escurrido sobre rejilla metálica.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO IV: Presentación -->
+      <section eId="sec_presentacion">
+        <heading>Título IV — Presentación</heading>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Guarnición</heading>
+          <content><p>Se acompaña con ensalada mixta (lechuga, tomate, cebolla) y un limón cortado en cuartos. Obligatorios. Prohibido servir con papas fritas como guarnición principal.</p></content>
+        </article>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Servicio</heading>
+          <content><p>Se sirve inmediatamente después de freír, en plato individual. Prohibido mantener en horno caliente o recalentar. Se come con cuchillo y tenedor, nunca con las manos.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>
