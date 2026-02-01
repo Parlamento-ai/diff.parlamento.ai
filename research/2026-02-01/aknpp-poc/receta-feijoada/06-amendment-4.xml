@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  Documento: amendment 4 — "La enmienda del microondas"
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Senadora Paulista, ya derrotada en el tema del arroz, intenta una
+  jugada desesperada: permitir el recalentamiento en microondas como equivalente
+  a la cocción lenta del artículo 2.
+
+  Votación: RECHAZADO 0-8. Unanimidad total en contra.
+  Incluso la proponente vota en contra tras leer el ambiente de la sala.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-microondas">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind4"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind4"/>
+          <FRBRdate date="2025-05-01" name="presentación"/>
+          <FRBRauthor href="/poc/persona/senadora-paulista"/>
+          <FRBRcountry value="br"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind4/por@2025-05-01"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind4/por@2025-05-01"/>
+          <FRBRdate date="2025-05-01" name="versión"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind4/por@2025-05-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda de la <docProponent>Senadora Paulista</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/fei-2025-01">que simplifica la receta de Feijoada Carioca</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modifícase el artículo 2 de la Receta N° 5, sustituyendo su texto por el siguiente:</p>
+        <p>"Artículo 2. Cocción. Cocción lenta en olla de barro durante 3 horas a fuego bajo, en olla a presión durante 1 hora, o recalentamiento en microondas de feijoada previamente preparada. Se recomienda preferentemente la cocción lenta."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La realidad de los hogares brasileños es que la feijoada se prepara en grandes
+        cantidades los fines de semana y se recalienta durante la semana. El microondas es
+        la herramienta más común para este recalentamiento. Prohibirlo implícitamente como
+        método de cocción es ignorar cómo los brasileños realmente consumen la feijoada
+        en su día a día.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RECHAZADO — unanimidad total contra el microondas
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/feijoada-carioca/por@2025-04-15"
+      result="/poc/receta/feijoada-carioca/por@2025-04-15">
+
+      <aknpp:vote date="2025-05-01"
+                  result="rejected"
+                  source="/poc/debate/fei-2025-01-comision-4">
+        <aknpp:for/>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta rechazada: permitir microondas como método de cocción -->
+      <aknpp:articleChange article="art_2" type="substitute">
+        <aknpp:old>Cocción lenta en olla de barro durante 3 horas a fuego bajo o, alternativamente, en olla a presión durante 1 hora. Se recomienda preferentemente la cocción lenta.</aknpp:old>
+        <aknpp:new>Cocción lenta en olla de barro durante 3 horas a fuego bajo, en olla a presión durante 1 hora, o recalentamiento en microondas de feijoada previamente preparada. Se recomienda preferentemente la cocción lenta.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

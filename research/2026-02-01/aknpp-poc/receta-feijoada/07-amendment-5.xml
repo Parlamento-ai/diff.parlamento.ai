@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  Documento: amendment 5 — "El compromiso bahiano"
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Senador Baiano propone añadir aceite de dendê (aceite de palma) como
+  ingrediente opcional en un nuevo artículo 5 bis. La propuesta es RETIRADA tras
+  objeciones de sostenibilidad (Sen. Amazónica) y pureza culinaria (Sen. Carioca,
+  quien argumenta que "eso lo convertiría más en acarajé que en feijoada").
+
+  Votación: RETIRADA antes de votación.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="compromiso-bahiano">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind5"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind5"/>
+          <FRBRdate date="2025-05-20" name="presentación"/>
+          <FRBRauthor href="/poc/persona/senador-baiano"/>
+          <FRBRcountry value="br"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind5/por@2025-05-20"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind5/por@2025-05-20"/>
+          <FRBRdate date="2025-05-20" name="versión"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind5/por@2025-05-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Senador Baiano</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/fei-2025-01">que simplifica la receta de Feijoada Carioca</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 5, a continuación del artículo 5, el siguiente artículo 5 bis:</p>
+        <p>"Artículo 5 bis. Aceite de dendê. Opcionalmente, se podrá añadir una cucharada de
+        aceite de dendê (aceite de palma rojo) al final de la cocción, como tributo a la
+        tradición afrobrasileña de Bahía."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La feijoada tiene raíces profundas en la cocina afrobrasileña. El aceite de dendê
+        es el ingrediente sagrado de la gastronomía bahiana y un puente con la herencia
+        africana de Brasil. Añadirlo como opción, no como obligación, es un acto de
+        reconocimiento cultural sin alterar la esencia del plato para quienes prefieren
+        la versión tradicional carioca.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RETIRADA — la enmienda nunca llegó a votarse
+      base y result son iguales porque no produce cambio
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/feijoada-carioca/por@2025-04-15"
+      result="/poc/receta/feijoada-carioca/por@2025-04-15">
+
+      <aknpp:vote date="2025-05-20"
+                  result="withdrawn"
+                  source="/poc/debate/fei-2025-01-comision-5">
+        <aknpp:for/>
+        <aknpp:against/>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta retirada: agregar aceite de dendê como opcional -->
+      <aknpp:articleChange article="art_5bis" type="insert" after="art_5">
+        <aknpp:new>Opcionalmente, se podrá añadir una cucharada de aceite de dendê (aceite de palma rojo) al final de la cocción, como tributo a la tradición afrobrasileña de Bahía.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

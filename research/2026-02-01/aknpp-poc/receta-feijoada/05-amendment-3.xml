@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  Documento: amendment 3 — "El blindaje carioca"
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Senador Carioca contraataca. Revierte el cambio del bill al artículo 8,
+  restaurando la obligatoriedad del arroz tradicional. Para el carioca, el arroz
+  salteado en ajo y aceite es innegociable.
+
+  Votación: APROBADO 5-3. La Senadora Paulista, el Senador Goiano y la Senadora
+  Amazónica votaron en contra.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="blindaje-carioca">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind3"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind3"/>
+          <FRBRdate date="2025-04-15" name="presentación"/>
+          <FRBRauthor href="/poc/persona/senador-carioca"/>
+          <FRBRcountry value="br"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind3/por@2025-04-15"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind3/por@2025-04-15"/>
+          <FRBRdate date="2025-04-15" name="versión"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind3/por@2025-04-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Senador Carioca</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/fei-2025-01">que simplifica la receta de Feijoada Carioca</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modifícase el artículo 8 de la Receta N° 5, restableciendo su texto original:</p>
+        <p>"Artículo 8. Arroz blanco. Arroz de grano largo salteado en ajo y aceite, cocido al vapor. Obligatorio. Prohibido el arroz integral, el arroz con condimentos o el arroz precocido."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>El arroz de la feijoada no es un simple acompañamiento, es parte integral del plato.
+        El arroz salteado en ajo y aceite, suelto y perfumado, es lo que absorbe el caldo
+        oscuro de los frijoles. Permitir arroz precocido o con condimentos es destruir
+        la experiencia fundamental de la feijoada carioca. Un arroz precocido no absorbe
+        nada, no tiene alma. Es como servir un vino de cartón en una copa de cristal.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      APROBADO — revierte el cambio al arroz
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/feijoada-carioca/por@2025-03-10"
+      result="/poc/receta/feijoada-carioca/por@2025-04-15">
+
+      <aknpp:vote date="2025-04-15"
+                  result="approved"
+                  source="/poc/debate/fei-2025-01-comision-3">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- art_8: revertir a arroz tradicional obligatorio -->
+      <aknpp:articleChange article="art_8" type="substitute">
+        <aknpp:old>Arroz de grano largo cocido al vapor. Obligatorio. Se permite el uso de arroz precocido y arroz con condimentos como alternativa. Prohibido el arroz integral.</aknpp:old>
+        <aknpp:new>Arroz de grano largo salteado en ajo y aceite, cocido al vapor. Obligatorio. Prohibido el arroz integral, el arroz con condimentos o el arroz precocido.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

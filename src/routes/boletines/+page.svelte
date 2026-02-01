@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BoletinCard from '$lib/components/boletin/BoletinCard.svelte';
+	import FlagBr from '~icons/circle-flags/br';
 	import FlagCl from '~icons/circle-flags/cl';
 	import FlagEs from '~icons/circle-flags/es';
 	import FlagFr from '~icons/circle-flags/fr';
@@ -9,6 +10,7 @@
 
 	const flagMap: Record<string, Component> = {
 		'empanadas-de-pino': FlagCl,
+		'feijoada-carioca': FlagBr,
 		'pan-de-campo': FlagCl,
 		'paella-valenciana': FlagEs,
 		'ratatouille-nicoise': FlagFr
@@ -16,12 +18,13 @@
 
 	const emojiMap: Record<string, string> = {
 		'empanadas-de-pino': '🥟',
+		'feijoada-carioca': '🫘',
 		'pan-de-campo': '🍞',
 		'paella-valenciana': '🥘',
 		'ratatouille-nicoise': '🍆'
 	};
 
-	const order = ['paella-valenciana', 'ratatouille-nicoise', 'empanadas-de-pino', 'pan-de-campo'];
+	const order = ['paella-valenciana', 'ratatouille-nicoise', 'feijoada-carioca', 'empanadas-de-pino', 'pan-de-campo'];
 	const sorted = $derived(
 		[...data.boletines].sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug))
 	);
