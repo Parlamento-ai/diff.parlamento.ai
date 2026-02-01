@@ -52,7 +52,7 @@
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 						</svg>
 					</a>
-					<a href="#problema" class="btn-secondary">
+					<a href="#el-pdf" class="btn-secondary">
 						Por que esto importa
 					</a>
 				</div>
@@ -226,7 +226,7 @@
 	</section>
 
 	<!-- ═══ WHY PDF MUST GO ═══ -->
-	<section class="max-w-4xl mx-auto px-4 py-12">
+	<section id="el-pdf" class="max-w-4xl mx-auto px-4 py-12">
 		<div class="text-center mb-10">
 			<h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
 				El PDF no es la <span class="text-deletion-500 line-through">respuesta</span>
@@ -283,92 +283,77 @@
 			</div>
 		</div>
 
-		<!-- Three pain points -->
-		<div class="grid sm:grid-cols-3 gap-4">
-			<div class="card p-5 text-center">
-				<!-- Search off icon -->
-				<svg class="w-7 h-7 text-deletion-500 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-					<circle cx="11" cy="11" r="8"/>
-					<line x1="21" y1="21" x2="16.65" y2="16.65"/>
-					<line x1="8" y1="8" x2="14" y2="14"/>
-				</svg>
-				<h3 class="text-sm font-bold text-gray-900 mb-1">No buscable</h3>
-				<p class="text-xs text-gray-500 leading-relaxed">No puedes filtrar por articulo ni por tipo de cambio. Hay que leer todo.</p>
+		<!-- Manual reconstruction -->
+		<div class="mb-8">
+			<p class="text-sm font-mono text-gray-400 mb-5 text-center">// Para saber en que esta la ley hoy, tienes que hacer esto:</p>
+			<div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-2 justify-center">
+				<!-- Step 1: the law -->
+				<div class="flex items-center gap-2 px-3 py-2 bg-blue-50 border border-blue-200 rounded-lg">
+					<svg class="w-5 h-5 text-blue-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+						<path d="M6 2h12v20H6z" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M9 6h6M9 10h6M9 14h3" stroke-linecap="round"/>
+					</svg>
+					<span class="text-xs font-semibold text-blue-800">Ley original</span>
+				</div>
+				<!-- Arrow -->
+				<span class="text-gray-300 text-lg hidden sm:block">+</span>
+				<span class="text-gray-300 text-lg sm:hidden">+</span>
+				<!-- Step 2: PDF 1 -->
+				<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
+					<svg class="w-4 h-4 text-deletion-400 shrink-0" viewBox="0 0 24 24" fill="none">
+						<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
+						<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
+					</svg>
+					<span class="text-[11px] font-mono text-gray-600">v1</span>
+				</div>
+				<span class="text-gray-300 text-lg">+</span>
+				<!-- Step 3: PDF 2 -->
+				<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
+					<svg class="w-4 h-4 text-deletion-400 shrink-0" viewBox="0 0 24 24" fill="none">
+						<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
+						<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
+					</svg>
+					<span class="text-[11px] font-mono text-gray-600">v2</span>
+				</div>
+				<span class="text-gray-300 text-lg">+</span>
+				<!-- Step 4: PDF 3 -->
+				<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
+					<svg class="w-4 h-4 text-deletion-400 shrink-0" viewBox="0 0 24 24" fill="none">
+						<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
+						<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
+					</svg>
+					<span class="text-[11px] font-mono text-gray-600">...</span>
+				</div>
+				<!-- Arrow to result -->
+				<span class="text-gray-300 text-lg">=</span>
+				<!-- Result: unknown -->
+				<div class="flex items-center gap-2 px-3 py-2 bg-amber-50 border border-amber-200 rounded-lg border-dashed">
+					<span class="text-lg">🤷</span>
+					<span class="text-xs font-semibold text-amber-800">¿Ley actual?</span>
+				</div>
 			</div>
-			<div class="card p-5 text-center">
-				<!-- Code off icon -->
-				<svg class="w-7 h-7 text-deletion-500 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-					<polyline points="16 18 22 12 16 6"/>
-					<polyline points="8 6 2 12 8 18"/>
-					<line x1="3" y1="3" x2="21" y2="21"/>
-				</svg>
-				<h3 class="text-sm font-bold text-gray-900 mb-1">No computable</h3>
-				<p class="text-xs text-gray-500 leading-relaxed">Ningun sistema puede leerlo y reconstruir el historial automaticamente.</p>
-			</div>
-			<div class="card p-5 text-center">
-				<!-- Unlink icon -->
-				<svg class="w-7 h-7 text-deletion-500 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-					<path d="M15 7h3a5 5 0 0 1 0 10h-3m-6 0H6a5 5 0 0 1 0-10h3"/>
-					<line x1="2" y1="2" x2="22" y2="22"/>
-				</svg>
-				<h3 class="text-sm font-bold text-gray-900 mb-1">Sin trazabilidad</h3>
-				<p class="text-xs text-gray-500 leading-relaxed">No registra votos, autores ni la relacion entre etapas del tramite.</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- ═══ THE PROBLEM ═══ -->
-	<section id="problema" class="max-w-4xl mx-auto px-4 py-12">
-		<div class="text-center mb-10">
-			<h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
-				El problema
-			</h2>
-			<p class="text-gray-500 mt-3 max-w-2xl mx-auto leading-relaxed">
-				Cuando se modifica una ley, no existe un formato estandar ni una herramienta publica que permita ver que cambio. Cada parlamento hace lo suyo, muchos solo publican PDFs.
+			<p class="text-xs text-gray-400 mt-5 text-center max-w-lg mx-auto leading-relaxed">
+				Tomas la ley original, abres cada PDF, aplicas los cambios mentalmente uno por uno, y rezas no haberte saltado ninguno. <strong class="text-gray-600">Eso es lo que hace hoy un abogado, un periodista o un ciudadano que quiere entender que paso con una ley.</strong>
 			</p>
 		</div>
 
-		<!-- The core issue -->
-		<div class="card p-6 sm:p-8 mb-8">
-			<p class="text-sm font-mono text-gray-400 mb-4">// Un ejemplo real</p>
-			<div class="grid sm:grid-cols-2 gap-6">
-				<div>
-					<h3 class="font-bold text-gray-900 mb-3">Se presenta un proyecto de ley</h3>
-					<div class="space-y-3 text-sm text-gray-600 leading-relaxed">
-						<p>El articulo 22 del Codigo del Trabajo dice: <strong>"La jornada no excedera de 45 horas semanales"</strong>.</p>
-						<p>Un parlamentario presenta una indicacion para reducirla. La comision la discute, la vota, la aprueba.</p>
-						<p>El articulo ahora dice: <strong>"La jornada no excedera de 40 horas semanales"</strong>.</p>
-					</div>
-				</div>
-				<div>
-					<h3 class="font-bold text-gray-900 mb-3">¿Y el historial completo?</h3>
-					<div class="space-y-3 text-sm text-gray-600 leading-relaxed">
-						<p>
-							A veces se publica un comparado en PDF para una etapa puntual: <span class="bg-deletion-100 text-deletion-800 px-1 rounded-sm line-through">45 horas</span> vs <span class="bg-addition-100 text-addition-800 px-1 rounded-sm">40 horas</span>. Pero no existe un registro que acumule todos los cambios a lo largo del tramite.
-						</p>
-						<p>Si quieres saber como evoluciono el texto desde el proyecto original hasta la ley publicada, te toca ir compilando manualmente, indicacion por indicacion.</p>
-						<p class="font-medium text-gray-900">Y una ley puede tener cientos de articulos modificados en multiples etapas.</p>
-					</div>
-				</div>
+		<!-- Pain points as simple checklist -->
+		<div class="max-w-md mx-auto space-y-3">
+			<div class="flex items-start gap-3">
+				<span class="text-deletion-500 font-bold text-lg leading-none mt-0.5">✗</span>
+				<p class="text-sm text-gray-600"><strong class="text-gray-900">No puedes buscar por articulo.</strong> Hay que recorrer el PDF completo para encontrar que cambio.</p>
 			</div>
-		</div>
-
-		<!-- The gap -->
-		<div class="grid sm:grid-cols-3 gap-4">
-			<div class="card p-4 text-center">
-				<div class="text-2xl font-bold text-gray-900 mb-1">0</div>
-				<p class="text-xs text-gray-500">paises con comparados legislativos en formato abierto y legible por maquina</p>
+			<div class="flex items-start gap-3">
+				<span class="text-deletion-500 font-bold text-lg leading-none mt-0.5">✗</span>
+				<p class="text-sm text-gray-600"><strong class="text-gray-900">No puedes reconstruir el historial.</strong> Cada archivo es una isla; ningun sistema puede conectarlos.</p>
 			</div>
-			<div class="card p-4 text-center">
-				<div class="text-2xl font-bold text-gray-900 mb-1">PDF</div>
-				<p class="text-xs text-gray-500">formato mas comun para publicar cambios legislativos — opaco, no computable</p>
-			</div>
-			<div class="card p-4 text-center">
-				<div class="text-2xl font-bold text-deletion-500 mb-1">?</div>
-				<p class="text-xs text-gray-500">¿como saber que cambio si no puedes comparar version por version?</p>
+			<div class="flex items-start gap-3">
+				<span class="text-deletion-500 font-bold text-lg leading-none mt-0.5">✗</span>
+				<p class="text-sm text-gray-600"><strong class="text-gray-900">No sabes quien voto que.</strong> El PDF no registra votos, autores ni etapas.</p>
 			</div>
 		</div>
 	</section>
+
 
 	<!-- ═══ THE SOLUTION ═══ -->
 	<section class="max-w-4xl mx-auto px-4 py-12">

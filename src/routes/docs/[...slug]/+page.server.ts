@@ -47,9 +47,17 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	const entry = docs.find((d) => d.slug === slug);
 
+	const title = entry?.title ?? slug;
+
 	return {
 		html,
-		title: entry?.title ?? slug,
-		section: entry?.section ?? 'akn'
+		title,
+		section: entry?.section ?? 'akn',
+		pageMetaTags: Object.freeze({
+			title: `${title} — Diff Docs`,
+			openGraph: {
+				title: `${title} — Diff Docs`
+			}
+		})
 	};
 };

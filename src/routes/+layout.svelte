@@ -1,13 +1,52 @@
 <script lang="ts">
 	import './layout.css';
+	import { page } from '$app/stores';
+	import { MetaTags, deepMerge, type MetaTagsProps } from 'svelte-meta-tags';
 
 	let { children } = $props();
+
+	const SITE_URL = 'https://diff.parlamento.ai';
+
+	const baseMetaTags: MetaTagsProps = {
+		title: 'Diff — Comparado Legislativo',
+		titleTemplate: '%s | Diff by Parlamento.ai',
+		description:
+			'Proof-of-concept de comparados legislativos automaticos. Visualiza que lineas se agregan, retiran o modifican en cada etapa del proceso legislativo con AKN++.',
+		canonical: SITE_URL,
+		openGraph: {
+			type: 'website',
+			url: SITE_URL,
+			title: 'Diff — Comparado Legislativo Automatico',
+			description:
+				'Proof-of-concept de comparados legislativos automaticos. Visualiza que lineas se agregan, retiran o modifican en cada etapa del proceso legislativo con AKN++.',
+			siteName: 'Diff by Parlamento.ai',
+			locale: 'es_CL',
+			images: [
+				{
+					url: `${SITE_URL}/diff-thumbnail.jpg`,
+					alt: 'Diff — Comparado Legislativo Automatico',
+					width: 1200,
+					height: 630
+				}
+			]
+		},
+		twitter: {
+			cardType: 'summary_large_image',
+			title: 'Diff — Comparado Legislativo Automatico',
+			description:
+				'Proof-of-concept de comparados legislativos automaticos con AKN++, una extension de Akoma Ntoso.',
+			image: `${SITE_URL}/diff-thumbnail.jpg`,
+			imageAlt: 'Diff — Comparado Legislativo Automatico'
+		},
+		additionalLinkTags: [{ rel: 'icon', href: '/diff-favicon.png' }]
+	};
+
+	const metaTags = $derived(
+		deepMerge(baseMetaTags, $page.data.pageMetaTags ?? {}) as MetaTagsProps
+	);
 </script>
 
-<svelte:head>
-	<link rel="icon" href="/diff-favicon.png" />
-	<title>Diff — Comparado Legislativo</title>
-</svelte:head>
+<MetaTags {...metaTags} />
 
 <div class="min-h-screen bg-gray-50 page-bg">
 	<header class="bg-white border-b border-gray-200 sticky top-0 z-10">
