@@ -17,9 +17,9 @@
 	} = $props();
 </script>
 
-<section class="mb-6">
+<section class="mb-2">
 	<h3 class="text-base font-bold text-gray-900 mb-2 px-4">{heading}</h3>
-	<div class="divide-y divide-gray-100">
+	<div>
 		{#each articles as article (article.eId)}
 			<ArticleView
 				eId={article.eId}

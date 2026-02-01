@@ -15,7 +15,7 @@
 	} = $props();
 </script>
 
-<div class="prose prose-sm max-w-none">
+<div class="max-w-none">
 	{#if law.title}
 		<h2 class="text-lg font-bold text-gray-900 mb-1">{law.title}</h2>
 	{/if}

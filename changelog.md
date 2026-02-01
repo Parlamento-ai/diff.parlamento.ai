@@ -94,7 +94,11 @@ Para esos casos, se podría complejizar un poco más el formato, agregando cambi
   <articleChange new="art_23" type="insert"/>
 ```
 
-Valdría la pena hacer un Proof of concept, para ver los límites de esta implementación.
+Este formato en el Proof of Concept parece funcionar bastante bien. 
+
+![AKN++ Proof of Concept](research/2026-01-31/aknpp-v0.1.png)
+
+Realmente me permite hacer un seguimiento mucho más agradable y comprensible. Ahora el ejemplo es una simple receta, no una verdadera ley. Faltaría ver cómo funciona con más datos. 
 
 
 ---
