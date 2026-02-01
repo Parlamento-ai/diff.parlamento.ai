@@ -9,10 +9,7 @@
 	<title>Diff — Comparado Legislativo</title>
 </svelte:head>
 
-<div
-	class="min-h-screen bg-gray-50"
-	style="background-image: repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(185, 248, 207, 0.12) 39px, rgba(185, 248, 207, 0.12) 40px);"
->
+<div class="min-h-screen bg-gray-50 page-bg">
 	<header class="bg-white border-b border-gray-200 sticky top-0 z-10">
 		<div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
 			<a href="/" class="hover:opacity-80 transition-opacity">
@@ -55,7 +52,28 @@
 	</footer>
 </div>
 
+<!-- Noise texture filter (rendered once, invisible) -->
+<svg class="hidden">
+	<filter id="grain">
+		<feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+		<feColorMatrix type="saturate" values="0" />
+	</filter>
+</svg>
+
 <style>
+	.page-bg::before {
+		content: '';
+		position: fixed;
+		inset: 0;
+		z-index: 0;
+		pointer-events: none;
+		filter: url(#grain);
+		opacity: 0.035;
+	}
+	.page-bg > :global(*) {
+		position: relative;
+		z-index: 1;
+	}
 	.footer-link {
 		color: var(--color-brand-dark);
 		text-decoration: underline transparent;
