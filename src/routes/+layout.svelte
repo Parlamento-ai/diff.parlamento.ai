@@ -17,6 +17,9 @@
 				AKN++
 			</a>
 			<span class="text-xs text-gray-400 hidden sm:inline">Comparado Legislativo</span>
+			<a href="/boletines" class="ml-auto text-sm text-gray-500 hover:text-gray-900 transition-colors">
+				Boletines
+			</a>
 		</div>
 	</header>
 	{@render children()}
