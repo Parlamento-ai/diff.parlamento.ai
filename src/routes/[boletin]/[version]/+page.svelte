@@ -56,33 +56,34 @@
 				{/if}
 				{#if data.vote}
 					<span class="badge {data.vote.result === 'approved' ? 'bg-addition-100' : 'bg-deletion-100'} {voteResultColor[data.vote.result] || 'text-gray-500'}">
-						{data.vote.result === 'approved' ? '\u2713' : '\u2717'}
+						{data.vote.result === 'approved' ? '✓' : '✗'}
 						{voteResultLabel[data.vote.result] || data.vote.result}
 						{data.vote.for.length}-{data.vote.against.length}-{data.vote.abstain.length}
 					</span>
 				{/if}
 			</div>
-			{#if hasAccumulatedDiffs}
-				<div class="flex">
-					<div class="flex border border-gray-200 rounded-md overflow-hidden text-xs">
-						{#each [
-							{ mode: 'diff' as ViewMode, label: 'Cambios', activeClass: 'bg-amber-50 text-amber-700' },
-							{ mode: 'result' as ViewMode, label: 'Resultado', activeClass: 'bg-blue-50 text-blue-700' },
-							{ mode: 'plain' as ViewMode, label: 'Ley', activeClass: 'bg-gray-100 text-gray-700' }
-						] as { mode, label, activeClass }}
-							<button
-								onclick={() => viewMode = mode}
-								class="px-3 py-1.5 font-medium transition-colors
-									{viewMode === mode
+			<div class="flex">
+				<div class="flex border border-gray-200 rounded-md overflow-hidden text-xs">
+					{#each [
+						{ mode: 'diff' as ViewMode, label: 'Cambios', activeClass: 'bg-amber-50 text-amber-700' },
+						{ mode: 'result' as ViewMode, label: 'Resultado', activeClass: 'bg-blue-50 text-blue-700' },
+						{ mode: 'plain' as ViewMode, label: 'Ley', activeClass: 'bg-gray-100 text-gray-700' }
+					] as { mode, label, activeClass }}
+						<button
+							onclick={() => viewMode = mode}
+							disabled={!hasAccumulatedDiffs}
+							class="px-3 py-1.5 font-medium transition-colors
+								{!hasAccumulatedDiffs
+									? 'text-gray-300 cursor-not-allowed'
+									: viewMode === mode
 										? activeClass
 										: 'text-gray-400 hover:bg-gray-50'}"
-							>
-								{label}
-							</button>
-						{/each}
-					</div>
+						>
+							{label}
+						</button>
+					{/each}
 				</div>
-			{/if}
+			</div>
 		</div>
 
 		<LawView
@@ -95,13 +96,11 @@
 	</div>
 
 	<!-- Diff panel (desktop) -->
-	{#if hasDiffs}
-		<aside class="hidden lg:block w-[360px] shrink-0" transition:slide={{ axis: 'x', duration: dur(300) }}>
-			<div class="sticky top-20 card-layout max-h-[calc(100vh-6rem)] overflow-y-auto">
-				<DiffView diffs={data.diffs} vote={data.vote} />
-			</div>
-		</aside>
-	{/if}
+	<aside class="hidden lg:block w-[360px] shrink-0">
+		<div class="sticky top-20 card-layout max-h-[calc(100vh-6rem)] overflow-y-auto">
+			<DiffView diffs={data.diffs} vote={data.vote} />
+		</div>
+	</aside>
 </div>
 
 <!-- Diff panel (mobile) -->

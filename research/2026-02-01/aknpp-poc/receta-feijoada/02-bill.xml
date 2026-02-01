@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  Documento: bill (proyecto que reforma la receta)
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Senadora Paulista propone "simplificar" la feijoada para hacerla
+  más accesible a los hogares brasileños modernos.
+  Cambios propuestos:
+    - art_2: Permitir olla a presión como alternativa, reducir a 1 hora
+    - art_4: Reducir cortes obligatorios a costilla, linguiça y charque (eliminar oreja y rabo)
+    - art_6: Permitir embutidos industriales junto a los artesanales
+    - art_8: Permitir arroz precocido y arroz con condimentos
+    - art_9: Permitir farofa industrializada como alternativa
+
+  Votación: Aprobado 5-3.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <bill name="simplificacion-feijoada">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/bill/fei-2025-01"/>
+          <FRBRuri value="/poc/bill/fei-2025-01"/>
+          <FRBRdate date="2025-02-20" name="presentación"/>
+          <FRBRauthor href="/poc/persona/senadora-paulista"/>
+          <FRBRcountry value="br"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/bill/fei-2025-01/por@2025-02-20"/>
+          <FRBRuri value="/poc/bill/fei-2025-01/por@2025-02-20"/>
+          <FRBRdate date="2025-02-20" name="versión"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/bill/fei-2025-01/por@2025-02-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de ley que <docTitle>simplifica la receta de Feijoada Carioca</docTitle></p>
+      </longTitle>
+      <p>Proposición de ley de la <docProponent>Senadora Paulista</docProponent>.</p>
+      <p>Modifica la <ref href="/poc/receta/feijoada-carioca">Receta N° 5 sobre Feijoada Carioca</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que la cocción lenta de 3 horas en olla de barro es impracticable para la mayoría de los hogares brasileños con doble jornada laboral.</p>
+      <p>2. Que la oreja y el rabo de cerdo son cortes cada vez más difíciles de encontrar en supermercados urbanos.</p>
+      <p>3. Que la prohibición de embutidos industriales excluye productos de calidad aceptable ampliamente disponibles.</p>
+      <p>4. Que exigir arroz preparado desde cero y farofa artesanal añade complejidad innecesaria a un plato ya de por sí laborioso.</p>
+      <p>5. Que la feijoada es patrimonio de todo Brasil, no solo de Rio de Janeiro.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Artículo 1</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/feijoada-carioca#art_2">artículo 2</ref> de la
+          Receta N° 5, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 2. Cocción. Cocción lenta en olla de barro durante 3 horas a fuego bajo o, alternativamente, en olla a presión durante 1 hora. Se recomienda preferentemente la cocción lenta."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_2">
+        <heading>Artículo 2</heading>
+        <content>
+          <p>Sustitúyese el <ref href="/poc/receta/feijoada-carioca#art_4">artículo 4</ref> de la
+          Receta N° 5 por el siguiente:</p>
+          <p><mod>"Artículo 4. Cortes obligatorios. Costilla de cerdo ahumada, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_3">
+        <heading>Artículo 3</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/feijoada-carioca#art_6">artículo 6</ref> de la
+          Receta N° 5, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 6. Prohibiciones. Queda prohibido el uso de carnes frescas sin curar, carnes de ave o carnes enlatadas. Se permiten embutidos industriales de calidad certificada junto a los artesanales."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_4">
+        <heading>Artículo 4</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/feijoada-carioca#art_8">artículo 8</ref> de la
+          Receta N° 5, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 8. Arroz blanco. Arroz de grano largo cocido al vapor. Obligatorio. Se permite el uso de arroz precocido y arroz con condimentos como alternativa. Prohibido el arroz integral."</mod></p>
+        </content>
+      </article>
+
+      <article eId="art_5">
+        <heading>Artículo 5</heading>
+        <content>
+          <p>Modifícase el <ref href="/poc/receta/feijoada-carioca#art_9">artículo 9</ref> de la
+          Receta N° 5, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Artículo 9. Farofa. Harina de mandioca tostada en mantequilla con cebolla y huevo, o alternativamente, farofa industrializada de calidad. Obligatoria."</mod></p>
+        </content>
+      </article>
+    </body>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/feijoada-carioca/por@2021-09-07"
+      result="/poc/receta/feijoada-carioca/por@2025-02-20">
+
+      <aknpp:vote date="2025-02-20"
+                  result="approved"
+                  source="/poc/debate/fei-2025-01-pleno">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- art_2: cocción lenta obligatoria → permite olla a presión -->
+      <aknpp:articleChange article="art_2" type="substitute">
+        <aknpp:old>Cocción lenta en olla de barro durante 3 horas mínimo a fuego bajo. Prohibida la olla a presión.</aknpp:old>
+        <aknpp:new>Cocción lenta en olla de barro durante 3 horas a fuego bajo o, alternativamente, en olla a presión durante 1 hora. Se recomienda preferentemente la cocción lenta.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_4: 5 cortes obligatorios → solo 3 (elimina oreja y rabo) -->
+      <aknpp:articleChange article="art_4" type="substitute">
+        <aknpp:old>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça), carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:old>
+        <aknpp:new>Costilla de cerdo ahumada, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_6: prohibición total de industriales → permite industriales certificados -->
+      <aknpp:articleChange article="art_6" type="substitute">
+        <aknpp:old>Queda prohibido el uso de carnes frescas sin curar, carnes de ave, carnes enlatadas o embutidos industriales no artesanales.</aknpp:old>
+        <aknpp:new>Queda prohibido el uso de carnes frescas sin curar, carnes de ave o carnes enlatadas. Se permiten embutidos industriales de calidad certificada junto a los artesanales.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_8: arroz artesanal obligatorio → permite precocido y con condimentos -->
+      <aknpp:articleChange article="art_8" type="substitute">
+        <aknpp:old>Arroz de grano largo salteado en ajo y aceite, cocido al vapor. Obligatorio. Prohibido el arroz integral, el arroz con condimentos o el arroz precocido.</aknpp:old>
+        <aknpp:new>Arroz de grano largo cocido al vapor. Obligatorio. Se permite el uso de arroz precocido y arroz con condimentos como alternativa. Prohibido el arroz integral.</aknpp:new>
+      </aknpp:articleChange>
+
+      <!-- art_9: farofa artesanal obligatoria → permite industrializada -->
+      <aknpp:articleChange article="art_9" type="substitute">
+        <aknpp:old>Harina de mandioca tostada en mantequilla con cebolla y huevo. Obligatoria. Prohibida la farofa industrializada.</aknpp:old>
+        <aknpp:new>Harina de mandioca tostada en mantequilla con cebolla y huevo, o alternativamente, farofa industrializada de calidad. Obligatoria.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </bill>
+</akomaNtoso>

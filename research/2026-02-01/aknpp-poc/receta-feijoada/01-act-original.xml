@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  Documento: act (ley vigente / receta original)
+  Estado: Receta publicada en el Boletín Oficial de Gastronomía, 07/09/2021
+
+  La receta original es la ortodoxa carioca, estricta y sin concesiones.
+  12 artículos en 4 títulos: Frijoles, Carnes, Acompañamientos, Presentación y Servicio.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-feijoada-carioca">
+
+    <meta>
+      <identification source="#autor">
+        <FRBRWork>
+          <FRBRthis value="/poc/receta/feijoada-carioca"/>
+          <FRBRuri value="/poc/receta/feijoada-carioca"/>
+          <FRBRdate date="2021-09-07" name="publicación"/>
+          <FRBRauthor href="/poc/persona/senador-carioca"/>
+          <FRBRcountry value="br"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/receta/feijoada-carioca/por@2021-09-07"/>
+          <FRBRuri value="/poc/receta/feijoada-carioca/por@2021-09-07"/>
+          <FRBRdate date="2021-09-07" name="versión"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/receta/feijoada-carioca/por@2021-09-07/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#autor">
+        <TLCPerson eId="autor" href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Receta N° 5: <docTitle>Feijoada Carioca</docTitle></p>
+      </longTitle>
+      <p>Receta tradicional de feijoada carioca, publicada en el Boletín Oficial de Gastronomía.</p>
+    </preface>
+
+    <body>
+      <!-- TÍTULO I: Los Frijoles -->
+      <section eId="sec_frijoles">
+        <heading>Título I — Los Frijoles</heading>
+
+        <article eId="art_1">
+          <heading>Artículo 1. Frijoles negros</heading>
+          <content><p>Frijoles negros secos, remojados 12 horas mínimo. Prohibidos los frijoles en lata, congelados o precocidos.</p></content>
+        </article>
+
+        <article eId="art_2">
+          <heading>Artículo 2. Cocción</heading>
+          <content><p>Cocción lenta en olla de barro durante 3 horas mínimo a fuego bajo. Prohibida la olla a presión.</p></content>
+        </article>
+
+        <article eId="art_3">
+          <heading>Artículo 3. Consistencia</heading>
+          <content><p>El caldo debe ser espeso y cremoso, logrado únicamente por la cocción lenta. Prohibido el uso de espesantes.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO II: Las Carnes -->
+      <section eId="sec_carnes">
+        <heading>Título II — Las Carnes</heading>
+
+        <article eId="art_4">
+          <heading>Artículo 4. Cortes obligatorios</heading>
+          <content><p>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça), carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</p></content>
+        </article>
+
+        <article eId="art_5">
+          <heading>Artículo 5. Tocino</heading>
+          <content><p>Tocino ahumado (toucinho defumado), mínimo 200g, cortado en cubos gruesos.</p></content>
+        </article>
+
+        <article eId="art_6">
+          <heading>Artículo 6. Prohibiciones</heading>
+          <content><p>Queda prohibido el uso de carnes frescas sin curar, carnes de ave, carnes enlatadas o embutidos industriales no artesanales.</p></content>
+        </article>
+
+        <article eId="art_7">
+          <heading>Artículo 7. Cocción de las carnes</heading>
+          <content><p>Las carnes se incorporan escalonadamente según su dureza — primero las más duras (oreja, rabo), luego las intermedias (costilla, charque), finalmente las blandas (linguiça, tocino).</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO III: Los Acompañamientos -->
+      <section eId="sec_acompanamientos">
+        <heading>Título III — Los Acompañamientos</heading>
+
+        <article eId="art_8">
+          <heading>Artículo 8. Arroz blanco</heading>
+          <content><p>Arroz de grano largo salteado en ajo y aceite, cocido al vapor. Obligatorio. Prohibido el arroz integral, el arroz con condimentos o el arroz precocido.</p></content>
+        </article>
+
+        <article eId="art_9">
+          <heading>Artículo 9. Farofa</heading>
+          <content><p>Harina de mandioca tostada en mantequilla con cebolla y huevo. Obligatoria. Prohibida la farofa industrializada.</p></content>
+        </article>
+
+        <article eId="art_10">
+          <heading>Artículo 10. Col rizada</heading>
+          <content><p>Col rizada (couve) cortada en juliana fina, salteada en ajo y aceite de oliva. Obligatoria.</p></content>
+        </article>
+      </section>
+
+      <!-- TÍTULO IV: Presentación y Servicio -->
+      <section eId="sec_presentacion">
+        <heading>Título IV — Presentación y Servicio</heading>
+
+        <article eId="art_11">
+          <heading>Artículo 11. Guarniciones</heading>
+          <content><p>Naranjas cortadas en gajos (obligatorias), molho de pimenta casero (obligatorio). Prohibidas las salsas embotelladas.</p></content>
+        </article>
+
+        <article eId="art_12">
+          <heading>Artículo 12. Servicio</heading>
+          <content><p>Se sirve en fuente de barro, en el centro de la mesa, para servicio comunal. Cada comensal se sirve en plato individual. Prohibido el servicio en porciones individuales prearmadas.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

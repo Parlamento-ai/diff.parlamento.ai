@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  Documento: amendment 1 — "La enmienda del cerdo"
+  Versión: con sistema de votación AKN++
+
+  Contexto: El Senador Gaúcho, experto en carnes, argumenta que el proyecto fue
+  demasiado lejos al eliminar la oreja y el rabo de cerdo — son el alma de la feijoada.
+  Propone restaurar estos cortes como obligatorios en el artículo 4.
+
+  Votación: APROBADO 6-2. Solo la Senadora Paulista y la Senadora Amazónica votaron en contra.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-cerdo">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind1"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind1"/>
+          <FRBRdate date="2025-03-10" name="presentación"/>
+          <FRBRauthor href="/poc/persona/senador-gaucho"/>
+          <FRBRcountry value="br"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind1/por@2025-03-10"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind1/por@2025-03-10"/>
+          <FRBRdate date="2025-03-10" name="versión"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind1/por@2025-03-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda del <docProponent>Senador Gaúcho</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/fei-2025-01">que simplifica la receta de Feijoada Carioca</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modifícase el artículo 4 de la Receta N° 5, sustituyendo su texto por el siguiente:</p>
+        <p>"Artículo 4. Cortes obligatorios. Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas."</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>La oreja y el rabo de cerdo son el alma de la feijoada. Sin ellos, lo que se tiene es
+        un guiso de frijoles con chorizo, no una feijoada. El proyecto fue demasiado lejos al
+        eliminarlos. Estos cortes aportan la gelatina y la textura que hacen única a la feijoada
+        carioca. Como gaúcho y experto en carnes, puedo afirmar que eliminar estos cortes es
+        como hacer un churrasco sin picanha.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      APROBADO — restaura oreja y rabo como obligatorios
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/feijoada-carioca/por@2025-02-20"
+      result="/poc/receta/feijoada-carioca/por@2025-03-10">
+
+      <aknpp:vote date="2025-03-10"
+                  result="approved"
+                  source="/poc/debate/fei-2025-01-comision-1">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- art_4: restaurar oreja y rabo como obligatorios -->
+      <aknpp:articleChange article="art_4" type="substitute">
+        <aknpp:old>Costilla de cerdo ahumada, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:old>
+        <aknpp:new>Costilla de cerdo ahumada, oreja de cerdo, rabo de cerdo, chorizo brasileño (linguiça) y carne seca (charque). Todos deben ser previamente desalados durante 24 horas.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>

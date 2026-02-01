@@ -21,7 +21,7 @@
 		'ratatouille-nicoise': '🍆'
 	};
 
-	const order = ['ratatouille-nicoise', 'paella-valenciana', 'empanadas-de-pino', 'pan-de-campo'];
+	const order = ['paella-valenciana', 'ratatouille-nicoise', 'empanadas-de-pino', 'pan-de-campo'];
 	const sorted = $derived(
 		[...data.boletines].sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug))
 	);

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AKN++ Proof of Concept — Receta 5: Feijoada Carioca
+  Documento: amendment 2 — "La enmienda vegana"
+  Versión: con sistema de votación AKN++
+
+  Contexto: La Senadora Amazónica propone añadir un nuevo artículo 6 bis que permita
+  una "feijoada vegana" con tofu y hongos reemplazando todas las carnes.
+
+  Votación: RECHAZADO 1-7. Solo la proponente votó a favor.
+  Incluso los modernizadores consideran que esto cruza una línea fundamental.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:aknpp="http://parlamento.ai/ns/aknpp/1.0">
+  <amendment name="enmienda-vegana">
+
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind2"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind2"/>
+          <FRBRdate date="2025-03-20" name="presentación"/>
+          <FRBRauthor href="/poc/persona/senadora-amazonica"/>
+          <FRBRcountry value="br"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind2/por@2025-03-20"/>
+          <FRBRuri value="/poc/amendment/fei-2025-01-ind2/por@2025-03-20"/>
+          <FRBRdate date="2025-03-20" name="versión"/>
+          <FRBRlanguage language="por"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/poc/amendment/fei-2025-01-ind2/por@2025-03-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p>Enmienda de la <docProponent>Senadora Amazónica</docProponent> al proyecto
+      <affectedDocument href="/poc/bill/fei-2025-01">que simplifica la receta de Feijoada Carioca</affectedDocument>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <p>Intercálase en la Receta N° 5, a continuación del artículo 6, el siguiente artículo 6 bis:</p>
+        <p><ins>"Artículo 6 bis. Feijoada vegana. Se reconoce la variante vegana de la feijoada,
+        en la cual todas las carnes del Título II podrán ser sustituidas por tofu ahumado,
+        hongos shiitake deshidratados y proteína de soja texturizada. La denominación
+        'feijoada vegana' será de uso exclusivo para esta variante."</ins></p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>Brasil tiene una creciente comunidad vegana y vegetariana que merece poder disfrutar
+        de su plato nacional en una versión ética y sostenible. El tofu ahumado reproduce
+        la textura y el sabor ahumado de las carnes curadas, mientras que los hongos shiitake
+        aportan la profundidad umami necesaria. Negar la existencia de alternativas vegetales
+        es negar el futuro de la gastronomía brasileña.</p>
+      </amendmentJustification>
+    </amendmentBody>
+
+    <!--
+      ============================================================
+      EXTENSIÓN AKN++: changeSet con votación
+      RECHAZADO — base y result son iguales porque no produce cambio
+      ============================================================
+    -->
+    <aknpp:changeSet
+      base="/poc/receta/feijoada-carioca/por@2025-03-10"
+      result="/poc/receta/feijoada-carioca/por@2025-03-10">
+
+      <aknpp:vote date="2025-03-20"
+                  result="rejected"
+                  source="/poc/debate/fei-2025-01-comision-2">
+        <aknpp:for>
+          <aknpp:voter href="/poc/persona/senadora-amazonica" showAs="Sen. Amazónica"/>
+        </aknpp:for>
+        <aknpp:against>
+          <aknpp:voter href="/poc/persona/senador-carioca" showAs="Sen. Carioca"/>
+          <aknpp:voter href="/poc/persona/senadora-paulista" showAs="Sen. Paulista"/>
+          <aknpp:voter href="/poc/persona/senador-baiano" showAs="Sen. Baiano"/>
+          <aknpp:voter href="/poc/persona/senadora-mineira" showAs="Sen. Mineira"/>
+          <aknpp:voter href="/poc/persona/senador-gaucho" showAs="Sen. Gaúcho"/>
+          <aknpp:voter href="/poc/persona/senadora-nordestina" showAs="Sen. Nordestina"/>
+          <aknpp:voter href="/poc/persona/senador-goiano" showAs="Sen. Goiano"/>
+        </aknpp:against>
+        <aknpp:abstain/>
+      </aknpp:vote>
+
+      <!-- Propuesta rechazada: insertar artículo sobre feijoada vegana -->
+      <aknpp:articleChange article="art_6bis" type="insert" after="art_6">
+        <aknpp:new>Se reconoce la variante vegana de la feijoada, en la cual todas las carnes del Título II podrán ser sustituidas por tofu ahumado, hongos shiitake deshidratados y proteína de soja texturizada. La denominación 'feijoada vegana' será de uso exclusivo para esta variante.</aknpp:new>
+      </aknpp:articleChange>
+
+    </aknpp:changeSet>
+
+  </amendment>
+</akomaNtoso>
