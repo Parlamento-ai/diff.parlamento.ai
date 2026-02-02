@@ -237,7 +237,7 @@
 		</div>
 
 		<!-- Finder window with PDFs -->
-		<div class="mb-8">
+		<div>
 			<!-- Window chrome -->
 			<div class="flex items-center gap-2 px-3 py-1.5 bg-[#323232] rounded-t-lg">
 				<div class="flex gap-1.5">
@@ -276,80 +276,70 @@
 					</div>
 				{/each}
 			</div>
-			<!-- Caption -->
-			<div class="mt-4 text-center">
-				<p class="text-sm text-gray-500">6 archivos, 3 etapas, <strong class="text-gray-900">cero conexion entre ellos</strong>.</p>
-				<p class="text-xs text-gray-400 mt-1">¿Cual es la ultima version? ¿Que cambio entre la v1 y la v2? Solo hay una forma de saberlo: abrir cada uno y comparar a mano.</p>
+		</div>
+
+		<!-- Narrative continuation -->
+		<p class="text-gray-500 mt-8 text-center leading-relaxed max-w-2xl mx-auto">
+			Para saber en que esta la ley hoy, tienes que tomar el texto original y aplicar manualmente los cambios de cada PDF, uno por uno:
+		</p>
+
+		<!-- Manual reconstruction formula -->
+		<div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-2.5 justify-center mt-6">
+			<div class="flex items-center gap-2 px-3 py-2 bg-blue-50 border border-blue-200 rounded-lg">
+				<svg class="w-5 h-5 text-blue-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+					<path d="M6 2h12v20H6z" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M9 6h6M9 10h6M9 14h3" stroke-linecap="round"/>
+				</svg>
+				<span class="text-sm font-semibold text-blue-800">Ley original</span>
+			</div>
+			<span class="text-gray-300 text-xl font-light">+</span>
+			<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
+				<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none">
+					<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
+					<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
+				</svg>
+				<span class="text-xs font-mono text-gray-600">v1</span>
+			</div>
+			<span class="text-gray-300 text-xl font-light">+</span>
+			<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
+				<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none">
+					<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
+					<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
+				</svg>
+				<span class="text-xs font-mono text-gray-600">v2</span>
+			</div>
+			<span class="text-gray-300 text-xl font-light">+</span>
+			<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
+				<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none">
+					<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
+					<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
+				</svg>
+				<span class="text-xs font-mono text-gray-600">...</span>
+			</div>
+			<span class="text-gray-300 text-xl font-light">=</span>
+			<div class="flex items-center gap-2 px-3 py-2 bg-amber-50 border border-dashed border-amber-300 rounded-lg">
+				<span class="text-base">🤷</span>
+				<span class="text-sm font-semibold text-amber-800">¿Ley actual?</span>
 			</div>
 		</div>
 
-		<!-- Manual reconstruction -->
-		<div class="mb-8">
-			<p class="text-sm font-mono text-gray-400 mb-5 text-center">// Para saber en que esta la ley hoy, tienes que hacer esto:</p>
-			<div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-2 justify-center">
-				<!-- Step 1: the law -->
-				<div class="flex items-center gap-2 px-3 py-2 bg-blue-50 border border-blue-200 rounded-lg">
-					<svg class="w-5 h-5 text-blue-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-						<path d="M6 2h12v20H6z" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M9 6h6M9 10h6M9 14h3" stroke-linecap="round"/>
-					</svg>
-					<span class="text-xs font-semibold text-blue-800">Ley original</span>
-				</div>
-				<!-- Arrow -->
-				<span class="text-gray-300 text-lg hidden sm:block">+</span>
-				<span class="text-gray-300 text-lg sm:hidden">+</span>
-				<!-- Step 2: PDF 1 -->
-				<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
-					<svg class="w-4 h-4 text-deletion-400 shrink-0" viewBox="0 0 24 24" fill="none">
-						<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
-						<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
-					</svg>
-					<span class="text-[11px] font-mono text-gray-600">v1</span>
-				</div>
-				<span class="text-gray-300 text-lg">+</span>
-				<!-- Step 3: PDF 2 -->
-				<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
-					<svg class="w-4 h-4 text-deletion-400 shrink-0" viewBox="0 0 24 24" fill="none">
-						<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
-						<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
-					</svg>
-					<span class="text-[11px] font-mono text-gray-600">v2</span>
-				</div>
-				<span class="text-gray-300 text-lg">+</span>
-				<!-- Step 4: PDF 3 -->
-				<div class="flex items-center gap-1.5 px-3 py-2 bg-deletion-50 border border-deletion-200 rounded-lg">
-					<svg class="w-4 h-4 text-deletion-400 shrink-0" viewBox="0 0 24 24" fill="none">
-						<rect x="4" y="1" width="16" height="22" rx="2" fill="#e74c3c" opacity="0.85"/>
-						<text x="12" y="17" font-size="6" font-weight="700" fill="white" text-anchor="middle" font-family="sans-serif">PDF</text>
-					</svg>
-					<span class="text-[11px] font-mono text-gray-600">...</span>
-				</div>
-				<!-- Arrow to result -->
-				<span class="text-gray-300 text-lg">=</span>
-				<!-- Result: unknown -->
-				<div class="flex items-center gap-2 px-3 py-2 bg-amber-50 border border-amber-200 rounded-lg border-dashed">
-					<span class="text-lg">🤷</span>
-					<span class="text-xs font-semibold text-amber-800">¿Ley actual?</span>
-				</div>
-			</div>
-			<p class="text-xs text-gray-400 mt-5 text-center max-w-lg mx-auto leading-relaxed">
-				Tomas la ley original, abres cada PDF, aplicas los cambios mentalmente uno por uno, y rezas no haberte saltado ninguno. <strong class="text-gray-600">Eso es lo que hace hoy un abogado, un periodista o un ciudadano que quiere entender que paso con una ley.</strong>
-			</p>
-		</div>
+		<p class="text-gray-500 mt-6 text-center leading-relaxed max-w-xl mx-auto">
+			Eso es lo que hace hoy un abogado, un periodista o un ciudadano que quiere entender que paso con una ley. <strong class="text-gray-700">Y una ley puede tener cientos de articulos modificados en multiples etapas.</strong>
+		</p>
 
-		<!-- Pain points as simple checklist -->
-		<div class="max-w-md mx-auto space-y-3">
+		<!-- Pain points -->
+		<div class="max-w-lg mx-auto space-y-3 mt-8">
 			<div class="flex items-start gap-3">
 				<span class="text-deletion-500 font-bold text-lg leading-none mt-0.5">✗</span>
-				<p class="text-sm text-gray-600"><strong class="text-gray-900">No puedes buscar por articulo.</strong> Hay que recorrer el PDF completo para encontrar que cambio.</p>
+				<p class="text-gray-600"><strong class="text-gray-900">No puedes buscar por articulo.</strong> Hay que recorrer el PDF completo para encontrar que cambio.</p>
 			</div>
 			<div class="flex items-start gap-3">
 				<span class="text-deletion-500 font-bold text-lg leading-none mt-0.5">✗</span>
-				<p class="text-sm text-gray-600"><strong class="text-gray-900">No puedes reconstruir el historial.</strong> Cada archivo es una isla; ningun sistema puede conectarlos.</p>
+				<p class="text-gray-600"><strong class="text-gray-900">No puedes reconstruir el historial.</strong> Cada archivo es una isla; ningun sistema puede conectarlos.</p>
 			</div>
 			<div class="flex items-start gap-3">
 				<span class="text-deletion-500 font-bold text-lg leading-none mt-0.5">✗</span>
-				<p class="text-sm text-gray-600"><strong class="text-gray-900">No sabes quien voto que.</strong> El PDF no registra votos, autores ni etapas.</p>
+				<p class="text-gray-600"><strong class="text-gray-900">No sabes quien voto que.</strong> El PDF no registra votos, autores ni etapas.</p>
 			</div>
 		</div>
 	</section>
@@ -359,69 +349,68 @@
 	<section class="max-w-4xl mx-auto px-4 py-12">
 		<div class="text-center mb-10">
 			<h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
-				La propuesta: AKN++
+				La solucion
 			</h2>
 			<p class="text-gray-500 mt-3 max-w-2xl mx-auto leading-relaxed">
-				Una extension del estandar internacional <strong class="text-gray-700">Akoma Ntoso</strong> que agrega un <code class="badge bg-gray-100 text-xs">changeSet</code> computable, permitiendo reconstruir el comparado de cualquier modificacion de forma automatica.
+				¿Y si cada cambio a una ley viniera con instrucciones precisas que una maquina puede leer? No un PDF con una tabla, sino un formato donde cada modificacion dice exactamente <strong class="text-gray-700">que articulo cambio</strong>, <strong class="text-gray-700">que decia antes</strong>, <strong class="text-gray-700">que dice ahora</strong>, y <strong class="text-gray-700">quien lo voto</strong>.
 			</p>
 		</div>
 
-		<!-- Before / After -->
-		<div class="grid sm:grid-cols-2 gap-4 mb-10">
-			<!-- Before -->
+		<!-- The contrast: before → after -->
+		<div class="grid sm:grid-cols-2 gap-4 mb-8">
+			<!-- Before: natural language -->
 			<div class="card overflow-hidden border-l-4 border-l-deletion-500">
 				<div class="px-4 py-2.5 bg-deletion-50 border-b-2 border-gray-800">
-					<h3 class="text-sm font-bold text-deletion-800">Hoy: el Amendment</h3>
+					<h3 class="text-sm font-bold text-deletion-800">Hoy</h3>
 				</div>
-				<div class="p-4 text-sm text-gray-600 space-y-2 leading-relaxed">
-					<p class="font-mono text-xs text-gray-400">// Lenguaje natural, no computable</p>
-					<p class="italic">"Reemplazase en el articulo 22 la expresion <span class="bg-deletion-100 px-1 rounded-sm">'45 horas'</span> por <span class="bg-addition-100 px-1 rounded-sm">'40 horas'</span>"</p>
-					<p class="text-xs text-gray-400 mt-3">Un humano tiene que leer cada indicacion y reconstruir mentalmente el comparado.</p>
+				<div class="p-4 text-sm text-gray-600 space-y-3 leading-relaxed">
+					<p class="italic">"Reemplazase en el articulo 22 la expresion 'doce minutos' por 'ocho minutos'"</p>
+					<p class="text-gray-400">Un humano tiene que leer esto, buscar el articulo en la ley, y aplicar el cambio mentalmente.</p>
 				</div>
 			</div>
 
-			<!-- After -->
+			<!-- After: structured -->
 			<div class="card overflow-hidden border-l-4 border-l-addition-500">
 				<div class="px-4 py-2.5 bg-addition-50 border-b-2 border-gray-800">
-					<h3 class="text-sm font-bold text-addition-800">AKN++: el changeSet</h3>
+					<h3 class="text-sm font-bold text-addition-800">Con Diff</h3>
 				</div>
-				<div class="p-4 font-mono text-xs text-gray-600 space-y-1 leading-relaxed">
-					<p class="text-gray-400">// Computable, automatico</p>
-					<p>&lt;changeSet base=<span class="text-blue-600">"/ley/19799/v2"</span>&gt;</p>
-					<p class="ml-3">&lt;articleChange article=<span class="text-blue-600">"art_22"</span>&gt;</p>
-					<p class="ml-6 bg-deletion-100 text-deletion-800 rounded-sm px-1 inline-block">&lt;old&gt;45 horas&lt;/old&gt;</p>
-					<p class="ml-6 bg-addition-100 text-addition-800 rounded-sm px-1 inline-block">&lt;new&gt;40 horas&lt;/new&gt;</p>
-					<p class="ml-3">&lt;/articleChange&gt;</p>
-					<p>&lt;/changeSet&gt;</p>
+				<div class="p-4 text-sm text-gray-600 space-y-3 leading-relaxed">
+					<div class="flex items-start gap-2">
+						<span class="font-mono text-xs text-gray-400 shrink-0 mt-0.5">art_22</span>
+						<div>
+							<span class="bg-deletion-100 text-deletion-800 px-1 rounded-sm line-through">doce</span>
+							<span class="mx-1 text-gray-300">→</span>
+							<span class="bg-addition-100 text-addition-800 px-1 rounded-sm">ocho</span>
+							<span class="text-gray-600"> minutos</span>
+						</div>
+					</div>
+					<p class="text-gray-400">La maquina sabe que cambio, donde, y puede mostrartelo automaticamente.</p>
 				</div>
 			</div>
 		</div>
 
-		<!-- Features row -->
-		<div class="grid gap-4 sm:grid-cols-3">
-			<div class="card p-5 border-l-4 border-l-blue-500">
-				<h3 class="text-sm font-bold text-gray-900 mb-1">Formato estructurado</h3>
-				<p class="text-xs text-gray-500 leading-relaxed">
-					Basado en Akoma Ntoso, el estandar XML internacional para documentos legislativos. Extendido con campos computables.
-				</p>
+		<!-- What this enables -->
+		<p class="text-gray-500 text-center leading-relaxed max-w-2xl mx-auto mb-8">
+			Con esa estructura, el comparado se genera solo. Y se le pueden agregar capas de informacion que hoy no existen:
+		</p>
+
+		<!-- Benefits as checkmarks (mirroring the ✗ from above) -->
+		<div class="max-w-lg mx-auto space-y-3">
+			<div class="flex items-start gap-3">
+				<span class="text-addition-500 font-bold text-lg leading-none mt-0.5">✓</span>
+				<p class="text-gray-600"><strong class="text-gray-900">Ves exactamente que cambio.</strong> Articulo por articulo, palabra por palabra, sin tener que comparar a ojo.</p>
 			</div>
-			<div class="card p-5 border-l-4 border-l-amber-500">
-				<h3 class="text-sm font-bold text-gray-900 mb-1">Comparado automatico</h3>
-				<p class="text-xs text-gray-500 leading-relaxed">
-					Diferencias palabra por palabra entre versiones. Vista acumulada para entender la evolucion completa del texto.
-				</p>
+			<div class="flex items-start gap-3">
+				<span class="text-addition-500 font-bold text-lg leading-none mt-0.5">✓</span>
+				<p class="text-gray-600"><strong class="text-gray-900">El historial se arma solo.</strong> Cada cambio sabe de donde viene y a donde va. El sistema reconstruye la cadena completa.</p>
 			</div>
-			<div class="card p-5 border-l-4 border-l-addition-500">
-				<h3 class="text-sm font-bold text-gray-900 mb-1">Votaciones incluidas</h3>
-				<p class="text-xs text-gray-500 leading-relaxed">
-					Quien voto a favor, en contra o se abstuvo. El resultado real de cada cambio, no solo el texto final.
-				</p>
+			<div class="flex items-start gap-3">
+				<span class="text-addition-500 font-bold text-lg leading-none mt-0.5">✓</span>
+				<p class="text-gray-600"><strong class="text-gray-900">Sabes quien voto que.</strong> Cada modificacion incluye el resultado de la votacion: a favor, en contra, abstencion.</p>
 			</div>
 		</div>
 	</section>
 
-	<br>
-	<br>
 	<!-- ═══ WHY "DIFF" ═══ -->
 	<section class="max-w-4xl mx-auto px-4 py-12">
 		<div class="text-center mb-10">

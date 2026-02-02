@@ -98,6 +98,3 @@ AKN accommodates national variations through the `<proprietary>` element in `<me
 
 This is similar in spirit to how [AKN++](../aknpp/01-overview.md) extends AKN with the `aknpp` namespace — though AKN++ adds elements to the document body rather than just metadata.
 
----
-
-Previous: [Naming convention](09-naming-convention.md) | Back to [index](../README.md)

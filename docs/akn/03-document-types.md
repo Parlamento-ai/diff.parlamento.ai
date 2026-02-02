@@ -137,6 +137,3 @@ A `<documentCollection>` groups related documents, such as a bill package contai
 | `doc`, `statement`, `judgment` | `<mainBody>` |
 | `officialGazette`, `documentCollection` | `<collectionBody>` |
 
----
-
-Previous: [The FRBR model](02-frbr.md) | Next: [Common structure](04-structure.md)

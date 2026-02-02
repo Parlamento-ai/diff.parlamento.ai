@@ -121,6 +121,3 @@ For rejected, withdrawn, or inadmissible amendments, the `base` and `result` URI
 
 The `articleChange` elements still describe what *would have* changed, preserving the full legislative record. The `vote` element's `result` attribute clarifies why the change didn't happen.
 
----
-
-Previous: [Overview](01-overview.md) | Next: [The vote element](03-voting.md)

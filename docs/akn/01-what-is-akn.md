@@ -62,6 +62,3 @@ The OASIS Standard consists of:
 - Schema: http://docs.oasis-open.org/legaldocml/ns/akn/3.0
 - GitHub (examples): https://github.com/oasis-tcs/legaldocml-akomantoso
 
----
-
-Next: [The FRBR model](02-frbr.md)

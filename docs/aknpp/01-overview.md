@@ -55,6 +55,3 @@ AKN++ introduces two top-level elements:
 
 For a complete walkthrough using a real example, see the [Paella Valenciana lifecycle](04-examples.md).
 
----
-
-Next: [The changeSet element](02-changeset.md)

@@ -190,6 +190,3 @@ From `cl_Sesion56_2.xml` in the official examples:
 
 Note how voting data appears both in `<analysis><parliamentary>` (structured metadata) and in the `<debateBody>` (narrative transcript).
 
----
-
-Previous: [Inline elements](07-inline-elements.md) | Next: [Naming convention](09-naming-convention.md)

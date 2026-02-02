@@ -184,6 +184,3 @@ For tabular content within legislation:
 </table>
 ```
 
----
-
-Previous: [Metadata](05-metadata.md) | Next: [Inline elements](07-inline-elements.md)

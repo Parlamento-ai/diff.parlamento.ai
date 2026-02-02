@@ -198,6 +198,3 @@ A UK Public General Act (simplified from `uk_pga-2014-27-enacted-data.xml`):
 </akomaNtoso>
 ```
 
----
-
-Previous: [Document types](03-document-types.md) | Next: [Metadata](05-metadata.md)
