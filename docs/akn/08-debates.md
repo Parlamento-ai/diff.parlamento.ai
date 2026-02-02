@@ -142,7 +142,7 @@ Voting sections within debates use `<voting>`:
 </debateSection>
 ```
 
-For structured (computable) voting data, use the `<analysis><parliamentary><voting>` metadata — or the [AKN Diff vote extension](../akndiff/03-voting.md).
+For structured (computable) voting data, use the `<analysis><parliamentary><voting>` metadata — or the [AKN Diff vote extension](/docs/akndiff/voting).
 
 ## Real example: Chile Session 56
 

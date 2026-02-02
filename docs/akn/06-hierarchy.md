@@ -138,7 +138,7 @@ The `wId` is present **only** when it differs from `eId` — typically after ren
 
 When `wId` is absent, it is implicitly equal to `eId`.
 
-See [Naming convention](09-naming-convention.md) for complete rules.
+See [Naming convention](/docs/akn/naming-convention) for complete rules.
 
 ## Lists within hierarchy
 

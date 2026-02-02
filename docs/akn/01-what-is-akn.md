@@ -46,7 +46,7 @@ AKN is used by parliaments, courts, and official publishers worldwide:
 - **Chile** — National Library of Congress (Biblioteca del Congreso Nacional)
 - **South Africa, Kenya, Uruguay** — among the early implementors
 
-See [National profiles](10-national-profiles.md) for details.
+See [National profiles](/docs/akn/national-profiles) for details.
 
 ## The three-part specification
 

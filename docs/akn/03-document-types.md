@@ -80,7 +80,7 @@ These use `<debateBody>` and contain speeches, questions, and voting sections.
 | `<debate>` | A full parliamentary debate transcript | Plenary session records, committee hearings |
 | `<debateReport>` | A report/summary of a debate | Official reports, Hansard-style records |
 
-See [Debates](08-debates.md) for details.
+See [Debates](/docs/akn/debates) for details.
 
 ## Other structured documents
 

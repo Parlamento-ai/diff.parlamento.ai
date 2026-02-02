@@ -6,10 +6,10 @@ This documentation covers two topics: **AKN Diff**, our extension to Akoma Ntoso
 
 AKN Diff extends the Akoma Ntoso standard with `changeSet` and `vote` elements that make amendment tracking and voting records machine-readable.
 
-1. [Overview](akndiff/01-overview.md) — What AKN Diff adds and why
-2. [The changeSet element](akndiff/02-changeset.md) — `base`/`result`, `articleChange`, version chaining
-3. [The vote element](akndiff/03-voting.md) — `for`/`against`/`abstain`, voter records
-4. [Examples walkthrough](akndiff/04-examples.md) — The Paella Valenciana recipe lifecycle
+1. [Overview](/docs/akndiff/overview) — What AKN Diff adds and why
+2. [The changeSet element](/docs/akndiff/changeset) — `base`/`result`, `articleChange`, version chaining
+3. [The vote element](/docs/akndiff/voting) — `for`/`against`/`abstain`, voter records
+4. [Examples walkthrough](/docs/akndiff/examples) — The Paella Valenciana recipe lifecycle
 
 **Namespace:** `http://parlamento.ai/ns/akndiff/1.0`
 
@@ -17,16 +17,16 @@ AKN Diff extends the Akoma Ntoso standard with `changeSet` and `vote` elements t
 
 A friendly reference to the OASIS Standard for legal document markup.
 
-1. [What is Akoma Ntoso?](akn/01-what-is-akn.md) — Origin, purpose, who uses it
-2. [The FRBR model](akn/02-frbr.md) — Work, Expression, Manifestation, Item
-3. [Document types](akn/03-document-types.md) — The 13 document types (act, bill, amendment, debate, ...)
-4. [Common structure](akn/04-structure.md) — meta, preface, preamble, body, conclusions
-5. [Metadata](akn/05-metadata.md) — identification, lifecycle, references, classification, analysis
-6. [Legislative hierarchy](akn/06-hierarchy.md) — book, title, chapter, article, paragraph, ...
-7. [Inline elements](akn/07-inline-elements.md) — ref, mod, ins, del, date, person, def, term, ...
-8. [Debates](akn/08-debates.md) — Speech-based documents, voting sections
-9. [Naming convention](akn/09-naming-convention.md) — URI construction, eId, wId, GUID
-10. [National profiles](akn/10-national-profiles.md) — CLML (UK), USLM (US), LegalDocML.de, ...
+1. [What is Akoma Ntoso?](/docs/akn/what-is-akn) — Origin, purpose, who uses it
+2. [The FRBR model](/docs/akn/frbr) — Work, Expression, Manifestation, Item
+3. [Document types](/docs/akn/document-types) — The 13 document types (act, bill, amendment, debate, ...)
+4. [Common structure](/docs/akn/structure) — meta, preface, preamble, body, conclusions
+5. [Metadata](/docs/akn/metadata) — identification, lifecycle, references, classification, analysis
+6. [Legislative hierarchy](/docs/akn/hierarchy) — book, title, chapter, article, paragraph, ...
+7. [Inline elements](/docs/akn/inline-elements) — ref, mod, ins, del, date, person, def, term, ...
+8. [Debates](/docs/akn/debates) — Speech-based documents, voting sections
+9. [Naming convention](/docs/akn/naming-convention) — URI construction, eId, wId, GUID
+10. [National profiles](/docs/akn/national-profiles) — CLML (UK), USLM (US), LegalDocML.de, ...
 
 ## Official resources
 

@@ -46,7 +46,7 @@ The only required metadata element. Contains the FRBR triplet:
 </identification>
 ```
 
-See [The FRBR model](02-frbr.md) for details on each level.
+See [The FRBR model](/docs/akn/frbr) for details on each level.
 
 ## `<lifecycle>` — Event history
 

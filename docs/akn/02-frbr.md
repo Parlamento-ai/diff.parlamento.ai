@@ -100,7 +100,7 @@ Expression:     /akn/sl/act/2004-02-13/2/eng@2004-07-21
 Manifestation:  /akn/sl/act/2004-02-13/2/eng@2004-07-21/main.xml
 ```
 
-For full URI construction rules, see [Naming convention](09-naming-convention.md).
+For full URI construction rules, see [Naming convention](/docs/akn/naming-convention).
 
 ## Why this matters
 

@@ -55,7 +55,7 @@ The metadata block contains everything *about* the document:
 </meta>
 ```
 
-Only `<identification>` is required. See [Metadata](05-metadata.md) for details.
+Only `<identification>` is required. See [Metadata](/docs/akn/metadata) for details.
 
 ### `<coverPage>` — Cover page
 
@@ -114,8 +114,8 @@ For legislation, the preamble contains the "whereas" clauses, recitals, or consi
 
 The body contains the substantive content. Its internal structure depends on the document type:
 
-- For hierarchical documents (`act`, `bill`): sections, articles, paragraphs — see [Hierarchy](06-hierarchy.md)
-- For debates: speech sections — see [Debates](08-debates.md)
+- For hierarchical documents (`act`, `bill`): sections, articles, paragraphs — see [Hierarchy](/docs/akn/hierarchy)
+- For debates: speech sections — see [Debates](/docs/akn/debates)
 - For generic documents (`doc`): the body is `<mainBody>` with free-form content
 
 ### `<conclusions>` — Closing formulas

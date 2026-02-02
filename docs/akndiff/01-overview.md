@@ -1,6 +1,6 @@
 # AKN Diff Overview
 
-AKN Diff is a lightweight XML extension to the [Akoma Ntoso](../akn/01-what-is-akn.md) standard that adds **computable change tracking** and **voting records** to legislative documents.
+AKN Diff is a lightweight XML extension to the [Akoma Ntoso](/docs/akn/what-is-akn) standard that adds **computable change tracking** and **voting records** to legislative documents.
 
 ## The gap in Akoma Ntoso
 
@@ -50,8 +50,8 @@ In practice, documents declare both namespaces:
 
 AKN Diff introduces two top-level elements:
 
-- **[`changeSet`](02-changeset.md)** — Describes the computable changes between two document versions. Contains `articleChange` elements for each modified article and an optional `vote`.
-- **[`vote`](03-voting.md)** — Records the parliamentary vote on a `changeSet`, including individual voter records.
+- **[`changeSet`](/docs/akndiff/changeset)** — Describes the computable changes between two document versions. Contains `articleChange` elements for each modified article and an optional `vote`.
+- **[`vote`](/docs/akndiff/voting)** — Records the parliamentary vote on a `changeSet`, including individual voter records.
 
-For a complete walkthrough using a real example, see the [Paella Valenciana lifecycle](04-examples.md).
+For a complete walkthrough using a real example, see the [Paella Valenciana lifecycle](/docs/akndiff/examples).
 
