@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="receta-paella-post-reforma">
+    <meta>
+      <identification source="#parlamento">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/act/receta-paella-post-reforma"/>
+          <FRBRuri value="/akn/poc/act/receta-paella-post-reforma"/>
+          <FRBRdate date="2024-10-01" name="consolidacion"/>
+          <FRBRauthor href="/org/parlamento-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/act/receta-paella-post-reforma/esp@2024-10-01"/>
+          <FRBRuri value="/akn/poc/act/receta-paella-post-reforma/esp@2024-10-01"/>
+          <FRBRdate date="2024-10-01" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/act/receta-paella-post-reforma/esp@2024-10-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#parlamento">
+        <TLCOrganization eId="parlamento" href="/org/parlamento-gastronomia" showAs="Parlamento de Gastronomia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Ley N° 42/2023 (texto consolidado): <docTitle>Receta Oficial de Paella Valenciana</docTitle></p>
+      </longTitle>
+      <p>Texto consolidado tras la reforma operada por el <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley de Reforma de 2024</ref>. Publicado en el <ref href="/akn/poc/officialGazette/boletin-gastronomia-2024">Boletin Oficial de Gastronomia N° 2024-37</ref>.</p>
+    </preface>
+
+    <body>
+      <section eId="sec_arroz">
+        <heading>Titulo I — Arroz</heading>
+        <article eId="art_1">
+          <heading>Articulo 1. Tipo de arroz</heading>
+          <content><p>Se utilizaran 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando este disponible.</p></content>
+        </article>
+        <article eId="art_2">
+          <heading>Articulo 2. Caldo</heading>
+          <content><p>El arroz se cocinara en caldo de pollo y verduras preparado con los huesos y recortes de las proteinas del Titulo II. Queda prohibido el uso de caldo comercial o pastillas de caldo.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_proteinas">
+        <heading>Titulo II — Proteinas</heading>
+        <article eId="art_3">
+          <heading>Articulo 3. Pollo</heading>
+          <content><p>Se utilizaran 500 gramos de pollo de corral troceado en piezas irregulares con hueso. Queda prohibido el uso de pollo deshuesado o de produccion industrial.</p></content>
+        </article>
+        <article eId="art_4">
+          <heading>Articulo 4. Conejo</heading>
+          <content><p>Se utilizaran 300 gramos de conejo troceado con hueso. El conejo es ingrediente obligatorio e insustituible.</p></content>
+        </article>
+        <article eId="art_5">
+          <heading>Articulo 5. Otras proteinas</heading>
+          <content><p>Opcionalmente, se podran anadir mariscos frescos (gambas, mejillones, calamares) como complemento o alternativa a las proteinas del Titulo II.</p></content>
+        </article>
+        <article eId="art_5bis">
+          <heading>Articulo 5 bis. Paella mixta</heading>
+          <content><p>Cuando se utilicen mariscos segun el articulo 5, el plato debera denominarse 'paella mixta' y no 'paella valenciana'.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_sofrito">
+        <heading>Titulo III — Sofrito y Condimentos</heading>
+        <article eId="art_6">
+          <heading>Articulo 6. Verduras</heading>
+          <content><p>Se utilizaran 200 gramos de judia verde ancha (bajoqueta), 100 gramos de garrofon y 1 tomate maduro rallado. Queda prohibida la adicion de cebolla, pimiento, guisantes o cualquier otra verdura no listada.</p></content>
+        </article>
+        <article eId="art_7">
+          <heading>Articulo 7. Azafran y colorante</heading>
+          <content><p>Se utilizaran hebras de azafran real o, alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente el azafran real.</p></content>
+        </article>
+        <article eId="art_8">
+          <heading>Articulo 8. Aceite y otros condimentos</heading>
+          <content><p>Se utilizara aceite de oliva virgen extra para el sofrito. Se sazonara con sal y una ramita de romero fresco. Queda prohibido el uso de cualquier otro aceite o hierba aromatica.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_coccion">
+        <heading>Titulo IV — Coccion y Presentacion</heading>
+        <article eId="art_9">
+          <heading>Articulo 9. Recipiente</heading>
+          <content><p>La paella se cocinara exclusivamente en paellera de acero pulido de diametro apropiado al numero de comensales. Queda prohibido el uso de sartenes, cazuelas, ollas o paelleras antiadherentes.</p></content>
+        </article>
+        <article eId="art_10">
+          <heading>Articulo 10. Fuego</heading>
+          <content><p>La coccion se realizara sobre fuego de lena o, alternativamente, sobre cocina de gas a fuego vivo. Se recomienda preferentemente el fuego de lena. Queda prohibido el uso de cocinas electricas o de induccion.</p></content>
+        </article>
+        <article eId="art_11">
+          <heading>Articulo 11. Socarrat y presentacion</heading>
+          <content><p>En los ultimos 2 minutos se subira el fuego para formar el socarrat (capa crujiente de arroz en el fondo). La paella se servira directamente en la paellera, nunca emplatada individualmente. Se dejara reposar 5 minutos tapada con papel de periodico antes de servir.</p></content>
+        </article>
+        <article eId="art_12">
+          <heading>Articulo 12. Denominacion protegida</heading>
+          <content><p>Solo podra denominarse 'Paella Valenciana' aquella preparacion que cumpla integramente con esta ley. Cualquier variacion debera usar una denominacion distinta.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

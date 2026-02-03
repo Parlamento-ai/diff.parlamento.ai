@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <amendment name="enmienda-denominacion-origen">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/enmienda-denominacion-origen"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-denominacion-origen"/>
+          <FRBRdate date="2024-06-03" name="presentacion"/>
+          <FRBRauthor href="/persona/diputado-valenciano"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/enmienda-denominacion-origen/esp@2024-06-03"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-denominacion-origen/esp@2024-06-03"/>
+          <FRBRdate date="2024-06-03" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/enmienda-denominacion-origen/esp@2024-06-03/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Enmienda al <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Reforma de Paella</ref>: <docTitle>Proteccion de Denominacion de Origen</docTitle></p>
+      </longTitle>
+      <p>Presentada por el <docProponent>Diputado Valenciano</docProponent>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <block name="enmienda">
+          <p>Se propone agregar un nuevo <ref href="/akn/poc/act/receta-paella-valenciana#art_11">articulo 12</ref> sobre proteccion de denominacion:</p>
+          <p><ins>"Articulo 12. Denominacion protegida. Solo podra denominarse 'Paella Valenciana' aquella preparacion que cumpla integramente con esta ley. Cualquier variacion debera usar una denominacion distinta."</ins></p>
+        </block>
+        <block name="justificacion">
+          <p>Es fundamental proteger la denominacion 'Paella Valenciana' como patrimonio cultural inmaterial. Permitir variaciones sin cambio de nombre diluye la identidad gastronomica.</p>
+        </block>
+      </amendmentContent>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <bill name="reforma-paella-2024">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/bill/reforma-paella-2024"/>
+          <FRBRuri value="/akn/poc/bill/reforma-paella-2024"/>
+          <FRBRdate date="2024-05-10" name="presentacion"/>
+          <FRBRauthor href="/persona/diputada-madrilena"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/bill/reforma-paella-2024/esp@2024-05-10"/>
+          <FRBRuri value="/akn/poc/bill/reforma-paella-2024/esp@2024-05-10"/>
+          <FRBRdate date="2024-05-10" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/bill/reforma-paella-2024/esp@2024-05-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/diputada-madrilena" showAs="Dip. Madrilena"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de Ley que <docTitle>Reforma la Receta de Paella Valenciana</docTitle></p>
+      </longTitle>
+      <p>Proposicion de ley presentada por la <docProponent>Diputada Madrilena</docProponent>.</p>
+      <p>Modifica la <ref href="/akn/poc/act/receta-paella-valenciana">Ley N° 42/2023 sobre Paella Valenciana</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Considerando:</p>
+      <p>1. Que el arroz bomba es excesivamente caro y dificil de encontrar fuera de la Comunitat Valenciana.</p>
+      <p>2. Que la prohibicion absoluta de mariscos ignora la tradicion paellera de las costas catalanas, andaluzas y murcianas.</p>
+      <p>3. Que el azafran real de La Mancha tiene un coste prohibitivo para las familias de renta media.</p>
+      <p>4. Que exigir fuego de lena de naranjo excluye al 95% de los hogares que viven en pisos.</p>
+      <p>5. Que la paella es patrimonio de toda la nacion, no solo de Valencia.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Articulo 1</heading>
+        <content>
+          <p>Modificase el <ref href="/akn/poc/act/receta-paella-valenciana#art_1">articulo 1</ref> de la Ley N° 42/2023, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Articulo 1. Tipo de arroz. Se utilizaran 400 gramos de arroz bomba o, alternativamente, arroz redondo de grano medio. Se recomienda preferentemente el arroz bomba cuando este disponible."</mod></p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Articulo 2</heading>
+        <content>
+          <p>Sustituyese el <ref href="/akn/poc/act/receta-paella-valenciana#art_5">articulo 5</ref> de la Ley N° 42/2023 por el siguiente:</p>
+          <p><mod>"Articulo 5. Otras proteinas. Opcionalmente, se podran anadir mariscos frescos (gambas, mejillones, calamares) como complemento o alternativa a las proteinas del Titulo II."</mod></p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <heading>Articulo 3</heading>
+        <content>
+          <p>Modificase el <ref href="/akn/poc/act/receta-paella-valenciana#art_7">articulo 7</ref> de la Ley N° 42/2023, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Articulo 7. Azafran y colorante. Se utilizaran hebras de azafran real o, alternativamente, colorante alimentario apto para paella. Se recomienda preferentemente el azafran real."</mod></p>
+        </content>
+      </article>
+      <article eId="art_4">
+        <heading>Articulo 4</heading>
+        <content>
+          <p>Modificase el <ref href="/akn/poc/act/receta-paella-valenciana#art_10">articulo 10</ref> de la Ley N° 42/2023, sustituyendo su texto por el siguiente:</p>
+          <p><mod>"Articulo 10. Fuego. La coccion se realizara sobre fuego de lena o, alternativamente, sobre cocina de gas a fuego vivo. Se recomienda preferentemente el fuego de lena. Queda prohibido el uso de cocinas electricas o de induccion."</mod></p>
+        </content>
+      </article>
+      <article eId="art_5">
+        <heading>Articulo 5</heading>
+        <content>
+          <p>Intercalase en la Ley N° 42/2023, a continuacion del <ref href="/akn/poc/act/receta-paella-valenciana#art_5">articulo 5</ref>, el siguiente articulo 5 bis:</p>
+          <p><ins>"Articulo 5 bis. Paella mixta. Cuando se utilicen mariscos segun el articulo 5, el plato debera denominarse 'paella mixta' y no 'paella valenciana'."</ins></p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

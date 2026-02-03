@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <debate name="pleno-reforma-paella">
+    <meta>
+      <identification source="#secretario">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/debate/pleno-reforma-paella"/>
+          <FRBRuri value="/akn/poc/debate/pleno-reforma-paella"/>
+          <FRBRdate date="2024-06-15" name="sesion"/>
+          <FRBRauthor href="/org/parlamento-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/debate/pleno-reforma-paella/esp@2024-06-15"/>
+          <FRBRuri value="/akn/poc/debate/pleno-reforma-paella/esp@2024-06-15"/>
+          <FRBRdate date="2024-06-15" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/debate/pleno-reforma-paella/esp@2024-06-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretario">
+        <TLCOrganization eId="secretario" href="/org/parlamento-gastronomia" showAs="Parlamento de Gastronomia"/>
+        <TLCPerson eId="presidente" href="/persona/presidente-mesa" showAs="Presidente de la Mesa"/>
+        <TLCPerson eId="madrilena" href="/persona/diputada-madrilena" showAs="Dip. Madrilena"/>
+        <TLCPerson eId="valenciano" href="/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+        <TLCPerson eId="naturista" href="/persona/diputado-naturista" showAs="Dip. Naturista"/>
+        <TLCPerson eId="moderna" href="/persona/diputada-moderna" showAs="Dip. Moderna"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Sesion Plenaria: Debate sobre la Reforma de Paella Valenciana</docTitle></p>
+      </longTitle>
+      <p>Sesion del 15 de junio de 2024 del Parlamento de Gastronomia.</p>
+      <p>Orden del dia: Discusion del <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley de Reforma de Paella</ref> y sus enmiendas.</p>
+    </preface>
+
+    <debateBody>
+      <debateSection eId="dbsect_apertura" name="apertura">
+        <heading>Apertura de la sesion</heading>
+        <speech eId="speech_1" by="#presidente">
+          <from>Presidente de la Mesa</from>
+          <p>Se abre la sesion. El primer punto del orden del dia es la discusion del <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley que reforma la receta de Paella Valenciana</ref>. Tiene la palabra la autora del proyecto.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_presentacion" name="presentacion">
+        <heading>Presentacion del proyecto</heading>
+        <speech eId="speech_2" by="#madrilena">
+          <from>Dip. Madrilena</from>
+          <p>Senor Presidente, estimados colegas. Hoy presentamos un proyecto que busca democratizar la paella, ese plato que es patrimonio de todos, no solo de una region.</p>
+          <p>La ley vigente, la <ref href="/akn/poc/act/receta-paella-valenciana">Ley 42/2023</ref>, es excesivamente restrictiva. Exige arroz bomba, prohibe el marisco, obliga a usar azafran real y solo permite fuego de lena. Esto excluye al 95% de las familias.</p>
+          <p>Nuestro proyecto no elimina la tradicion: la mantiene como recomendacion, pero permite alternativas accesibles.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_debate" name="debate">
+        <heading>Debate general</heading>
+        <speech eId="speech_3" by="#valenciano">
+          <from>Dip. Valenciano</from>
+          <p>Senor Presidente, esto es un atentado contra nuestra cultura. La paella valenciana TIENE reglas. Si quieren hacer arroz con cosas, que lo llamen arroz con cosas. Pero la paella valenciana es sagrada.</p>
+          <p>Como dice el <ref href="/akn/poc/judgment/tribunal-paella-mixta">fallo del Tribunal Supremo Gastronomico</ref>, la denominacion 'paella valenciana' tiene proteccion juridica.</p>
+        </speech>
+
+        <speech eId="speech_4" by="#madrilena">
+          <from>Dip. Madrilena</from>
+          <p>Respeto su pasion, colega, pero la comida evoluciona. Nuestra propuesta crea la categoria de 'paella mixta' precisamente para proteger la denominacion.</p>
+        </speech>
+
+        <speech eId="speech_5" by="#naturista">
+          <from>Dip. Naturista</from>
+          <p>Aprovecho para defender mi <ref href="/akn/poc/amendment/enmienda-arroz-integral">enmienda sobre arroz integral</ref>. El arroz integral es mas nutritivo y su inclusion no altera el sabor fundamental del plato.</p>
+        </speech>
+
+        <speech eId="speech_6" by="#valenciano">
+          <from>Dip. Valenciano</from>
+          <p>Arroz integral en una paella? Eso es como poner ketchup en un sushi. Mi <ref href="/akn/poc/amendment/enmienda-denominacion-origen">enmienda de denominacion de origen</ref> busca proteger lo que queda de nuestra identidad gastronomica.</p>
+        </speech>
+
+        <speech eId="speech_7" by="#moderna">
+          <from>Dip. Moderna</from>
+          <p>Senor Presidente, apoyo la reforma y presento mi <ref href="/akn/poc/amendment/enmienda-socarrat-opcional">enmienda sobre el socarrat</ref>. El socarrat quemado no es para todos, y hacer la paella mas accesible requiere flexibilidad en la presentacion.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_votacion" name="votacion">
+        <heading>Votacion</heading>
+        <speech eId="speech_8" by="#presidente">
+          <from>Presidente de la Mesa</from>
+          <p>Se procede a la votacion. El resultado constara en el <ref href="/akn/poc/officialGazette/boletin-gastronomia-2024">Boletin Oficial</ref>. Se levanta la sesion.</p>
+        </speech>
+      </debateSection>
+    </debateBody>
+  </debate>
+</akomaNtoso>

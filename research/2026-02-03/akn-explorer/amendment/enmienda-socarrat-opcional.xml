@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <amendment name="enmienda-socarrat-opcional">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/enmienda-socarrat-opcional"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-socarrat-opcional"/>
+          <FRBRdate date="2024-06-02" name="presentacion"/>
+          <FRBRauthor href="/persona/diputada-moderna"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/enmienda-socarrat-opcional/esp@2024-06-02"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-socarrat-opcional/esp@2024-06-02"/>
+          <FRBRdate date="2024-06-02" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/enmienda-socarrat-opcional/esp@2024-06-02/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/diputada-moderna" showAs="Dip. Moderna"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Enmienda al <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Reforma de Paella</ref>: <docTitle>Socarrat Opcional</docTitle></p>
+      </longTitle>
+      <p>Presentada por la <docProponent>Diputada Moderna</docProponent>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <block name="enmienda">
+          <p>Se propone modificar el <ref href="/akn/poc/act/receta-paella-valenciana#art_11">articulo 11</ref> para hacer el socarrat opcional:</p>
+          <p><mod>"Articulo 11. Socarrat y presentacion. Opcionalmente, en los ultimos 2 minutos se podra subir el fuego para formar el socarrat. La paella se servira en la paellera o emplatada segun preferencia."</mod></p>
+        </block>
+        <block name="justificacion">
+          <p>El socarrat quemado es la primera causa de rechazo entre comensales no habituados. Hacerlo opcional aumenta la accesibilidad del plato.</p>
+        </block>
+      </amendmentContent>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

@@ -1,7 +1,7 @@
 export interface DocEntry {
 	slug: string;
 	title: string;
-	section: 'akndiff' | 'akn';
+	section: 'akndiff' | 'explorer' | 'akn';
 }
 
 export const docs: DocEntry[] = [
@@ -10,6 +10,16 @@ export const docs: DocEntry[] = [
 	{ slug: 'akndiff/changeset', title: 'The changeSet element', section: 'akndiff' },
 	{ slug: 'akndiff/voting', title: 'The vote element', section: 'akndiff' },
 	{ slug: 'akndiff/examples', title: 'Examples walkthrough', section: 'akndiff' },
+	// Explorer
+	{ slug: 'explorer/overview', title: 'Overview', section: 'explorer' },
+	{ slug: 'explorer/act', title: 'act', section: 'explorer' },
+	{ slug: 'explorer/bill', title: 'bill', section: 'explorer' },
+	{ slug: 'explorer/amendment', title: 'amendment', section: 'explorer' },
+	{ slug: 'explorer/debate', title: 'debate', section: 'explorer' },
+	{ slug: 'explorer/judgment', title: 'judgment', section: 'explorer' },
+	{ slug: 'explorer/officialGazette', title: 'officialGazette', section: 'explorer' },
+	{ slug: 'explorer/documentCollection', title: 'documentCollection', section: 'explorer' },
+	{ slug: 'explorer/doc', title: 'doc', section: 'explorer' },
 	// AKN
 	{ slug: 'akn/what-is-akn', title: 'What is Akoma Ntoso?', section: 'akn' },
 	{ slug: 'akn/frbr', title: 'The FRBR model', section: 'akn' },

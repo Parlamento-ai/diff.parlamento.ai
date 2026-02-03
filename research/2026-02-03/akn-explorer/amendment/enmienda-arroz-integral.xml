@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <amendment name="enmienda-arroz-integral">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/enmienda-arroz-integral"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-arroz-integral"/>
+          <FRBRdate date="2024-06-01" name="presentacion"/>
+          <FRBRauthor href="/persona/diputado-naturista"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/enmienda-arroz-integral/esp@2024-06-01"/>
+          <FRBRuri value="/akn/poc/amendment/enmienda-arroz-integral/esp@2024-06-01"/>
+          <FRBRdate date="2024-06-01" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/enmienda-arroz-integral/esp@2024-06-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/diputado-naturista" showAs="Dip. Naturista"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Enmienda al <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Reforma de Paella</ref>: <docTitle>Inclusion de Arroz Integral</docTitle></p>
+      </longTitle>
+      <p>Presentada por el <docProponent>Diputado Naturista</docProponent> al <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley de Reforma de Paella</ref>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <block name="enmienda">
+          <p>Se propone modificar el <ref href="/akn/poc/act/receta-paella-valenciana#art_1">articulo 1</ref> para incluir el arroz integral como alternativa saludable:</p>
+          <p><mod>"Articulo 1. Tipo de arroz. Se utilizaran 400 gramos de arroz bomba, arroz redondo de grano medio, o arroz integral. Se recomienda preferentemente el arroz bomba cuando este disponible."</mod></p>
+        </block>
+        <block name="justificacion">
+          <p>El arroz integral aporta mayor valor nutricional, fibra y minerales. Su inclusion fomenta habitos alimentarios mas saludables sin alterar el espiritu de la receta.</p>
+        </block>
+      </amendmentContent>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

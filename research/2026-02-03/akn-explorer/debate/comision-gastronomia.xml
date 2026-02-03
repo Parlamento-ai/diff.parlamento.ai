@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <debate name="comision-gastronomia">
+    <meta>
+      <identification source="#secretario">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/debate/comision-gastronomia"/>
+          <FRBRuri value="/akn/poc/debate/comision-gastronomia"/>
+          <FRBRdate date="2024-06-05" name="sesion"/>
+          <FRBRauthor href="/org/comision-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/debate/comision-gastronomia/esp@2024-06-05"/>
+          <FRBRuri value="/akn/poc/debate/comision-gastronomia/esp@2024-06-05"/>
+          <FRBRdate date="2024-06-05" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/debate/comision-gastronomia/esp@2024-06-05/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretario">
+        <TLCOrganization eId="secretario" href="/org/comision-gastronomia" showAs="Comision de Gastronomia"/>
+        <TLCPerson eId="presidenta" href="/persona/presidenta-comision" showAs="Presidenta de la Comision"/>
+        <TLCPerson eId="chef" href="/persona/chef-invitado" showAs="Chef Ramon Experto"/>
+        <TLCPerson eId="madrilena" href="/persona/diputada-madrilena" showAs="Dip. Madrilena"/>
+        <TLCPerson eId="valenciano" href="/persona/diputado-valenciano" showAs="Dip. Valenciano"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Sesion de Comision de Gastronomia: Audiencia sobre Reforma de Paella</docTitle></p>
+      </longTitle>
+      <p>Sesion del 5 de junio de 2024 de la Comision de Gastronomia del Parlamento.</p>
+      <p>Tema: Revision del <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley de Reforma de Paella</ref>. Comparecencia de experto invitado.</p>
+    </preface>
+
+    <debateBody>
+      <debateSection eId="dbsect_apertura" name="apertura">
+        <heading>Apertura</heading>
+        <speech eId="speech_1" by="#presidenta">
+          <from>Presidenta de la Comision</from>
+          <p>Se abre la sesion de la Comision de Gastronomia. Hoy recibimos al Chef Ramon Experto para discutir los aspectos tecnicos del <ref href="/akn/poc/bill/reforma-paella-2024">proyecto de reforma</ref>.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_audiencia" name="audiencia">
+        <heading>Comparecencia del experto</heading>
+        <speech eId="speech_2" by="#chef">
+          <from>Chef Ramon Experto</from>
+          <p>Gracias, senora Presidenta. Como chef con 30 anos de experiencia, puedo confirmar que el arroz bomba tiene propiedades unicas de absorcion. Sin embargo, un buen arroz redondo puede dar resultados aceptables.</p>
+          <p>Respecto al marisco, tecnicamente es incompatible con los tiempos de coccion del pollo y conejo. Mezclarlos compromete ambas texturas.</p>
+        </speech>
+        <speech eId="speech_3" by="#madrilena">
+          <from>Dip. Madrilena</from>
+          <p>Chef, pero no es cierto que millones de familias ya preparan paella con marisco?</p>
+        </speech>
+        <speech eId="speech_4" by="#chef">
+          <from>Chef Ramon Experto</from>
+          <p>Preparan arroz con marisco, que es excelente. Pero tecnicamente no es paella valenciana. El proyecto de la diputada al menos propone la denominacion 'paella mixta', lo cual me parece razonable.</p>
+        </speech>
+        <speech eId="speech_5" by="#valenciano">
+          <from>Dip. Valenciano</from>
+          <p>Exacto! El chef confirma nuestra posicion. El <ref href="/akn/poc/doc/informe-comision-gastronomia">informe de la comision</ref> debera reflejar esta distincion tecnica.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_cierre" name="cierre">
+        <heading>Cierre</heading>
+        <speech eId="speech_6" by="#presidenta">
+          <from>Presidenta de la Comision</from>
+          <p>Agradecemos al Chef su comparecencia. La comision emitira su <ref href="/akn/poc/doc/informe-comision-gastronomia">informe</ref> antes del <ref href="/akn/poc/debate/pleno-reforma-paella">debate plenario</ref>. Se levanta la sesion.</p>
+        </speech>
+      </debateSection>
+    </debateBody>
+  </debate>
+</akomaNtoso>

@@ -1,0 +1,88 @@
+{
+  "documents": [
+    {
+      "uri": "/akn/poc/act/receta-paella-valenciana",
+      "type": "act",
+      "title": "Ley N° 42/2023: Receta Oficial de Paella Valenciana",
+      "description": "Receta tradicional aprobada por el Parlamento de Gastronomia.",
+      "filePath": "act/receta-paella-valenciana.xml"
+    },
+    {
+      "uri": "/akn/poc/act/receta-paella-post-reforma",
+      "type": "act",
+      "title": "Ley N° 42/2023 (texto consolidado post-reforma)",
+      "description": "Texto consolidado tras la reforma de 2024.",
+      "filePath": "act/receta-paella-post-reforma.xml"
+    },
+    {
+      "uri": "/akn/poc/bill/reforma-paella-2024",
+      "type": "bill",
+      "title": "Proyecto de Ley: Reforma de Paella Valenciana",
+      "description": "Proposicion de la Dip. Madrilena para democratizar la receta.",
+      "filePath": "bill/reforma-paella-2024.xml"
+    },
+    {
+      "uri": "/akn/poc/amendment/enmienda-arroz-integral",
+      "type": "amendment",
+      "title": "Enmienda: Inclusion de Arroz Integral",
+      "description": "Propuesta del Dip. Naturista para permitir arroz integral.",
+      "filePath": "amendment/enmienda-arroz-integral.xml"
+    },
+    {
+      "uri": "/akn/poc/amendment/enmienda-socarrat-opcional",
+      "type": "amendment",
+      "title": "Enmienda: Socarrat Opcional",
+      "description": "Propuesta de la Dip. Moderna para hacer el socarrat opcional.",
+      "filePath": "amendment/enmienda-socarrat-opcional.xml"
+    },
+    {
+      "uri": "/akn/poc/amendment/enmienda-denominacion-origen",
+      "type": "amendment",
+      "title": "Enmienda: Proteccion de Denominacion de Origen",
+      "description": "Propuesta del Dip. Valenciano para proteger la denominacion.",
+      "filePath": "amendment/enmienda-denominacion-origen.xml"
+    },
+    {
+      "uri": "/akn/poc/debate/pleno-reforma-paella",
+      "type": "debate",
+      "title": "Sesion Plenaria: Debate sobre Reforma de Paella",
+      "description": "Debate plenario del 15 de junio de 2024.",
+      "filePath": "debate/pleno-reforma-paella.xml"
+    },
+    {
+      "uri": "/akn/poc/debate/comision-gastronomia",
+      "type": "debate",
+      "title": "Sesion de Comision: Audiencia sobre Reforma",
+      "description": "Audiencia en comision con experto invitado.",
+      "filePath": "debate/comision-gastronomia.xml"
+    },
+    {
+      "uri": "/akn/poc/judgment/tribunal-paella-mixta",
+      "type": "judgment",
+      "title": "Sentencia 127/2024: Recurso contra Reforma de Paella",
+      "description": "Fallo del Tribunal Supremo Gastronomico.",
+      "filePath": "judgment/tribunal-paella-mixta.xml"
+    },
+    {
+      "uri": "/akn/poc/officialGazette/boletin-gastronomia-2024",
+      "type": "officialGazette",
+      "title": "Boletin Oficial de Gastronomia N° 2024-37",
+      "description": "Publicacion oficial de la reforma y sentencia.",
+      "filePath": "officialGazette/boletin-gastronomia-2024.xml"
+    },
+    {
+      "uri": "/akn/poc/documentCollection/tramitacion-reforma-paella",
+      "type": "documentCollection",
+      "title": "Tramitacion Completa: Reforma de Paella",
+      "description": "Expediente completo de la tramitacion parlamentaria.",
+      "filePath": "documentCollection/tramitacion-reforma-paella.xml"
+    },
+    {
+      "uri": "/akn/poc/doc/informe-comision-gastronomia",
+      "type": "doc",
+      "title": "Informe de la Comision de Gastronomia",
+      "description": "Informe con conclusiones y recomendaciones sobre la reforma.",
+      "filePath": "doc/informe-comision-gastronomia.xml"
+    }
+  ]
+}

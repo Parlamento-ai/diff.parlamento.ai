@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="tribunal-paella-mixta">
+    <meta>
+      <identification source="#tribunal">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/judgment/tribunal-paella-mixta"/>
+          <FRBRuri value="/akn/poc/judgment/tribunal-paella-mixta"/>
+          <FRBRdate date="2024-09-20" name="sentencia"/>
+          <FRBRauthor href="/org/tribunal-supremo-gastronomico"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/judgment/tribunal-paella-mixta/esp@2024-09-20"/>
+          <FRBRuri value="/akn/poc/judgment/tribunal-paella-mixta/esp@2024-09-20"/>
+          <FRBRdate date="2024-09-20" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/judgment/tribunal-paella-mixta/esp@2024-09-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#tribunal">
+        <TLCOrganization eId="tribunal" href="/org/tribunal-supremo-gastronomico" showAs="Tribunal Supremo Gastronomico"/>
+        <TLCPerson eId="juez1" href="/persona/juez-ponente" showAs="Magistrado Ponente Garcia"/>
+        <TLCPerson eId="juez2" href="/persona/juez-voto-particular" showAs="Magistrada Lopez (voto particular)"/>
+      </references>
+    </meta>
+
+    <header>
+      <p>TRIBUNAL SUPREMO GASTRONOMICO</p>
+      <p>Sala Primera</p>
+      <p>Sentencia N° 127/2024</p>
+      <p>Recurso de inconstitucionalidad contra la <ref href="/akn/poc/act/receta-paella-post-reforma">Ley N° 42/2023 reformada</ref></p>
+    </header>
+
+    <judgmentBody>
+      <introduction eId="intro">
+        <p>En la ciudad de Gastronomia, a 20 de septiembre de 2024.</p>
+        <p>Vista la demanda interpuesta por la Asociacion de Defensores de la Paella Valenciana contra la reforma operada por el <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley de Reforma</ref>, debatido en <ref href="/akn/poc/debate/pleno-reforma-paella">sesion plenaria del 15 de junio de 2024</ref>.</p>
+      </introduction>
+
+      <background eId="antecedentes">
+        <heading>Antecedentes</heading>
+        <paragraph eId="para_1">
+          <num>1.</num>
+          <content><p>La <ref href="/akn/poc/act/receta-paella-valenciana">Ley N° 42/2023</ref> establecio la receta oficial de Paella Valenciana con requisitos estrictos sobre ingredientes y metodo de coccion.</p></content>
+        </paragraph>
+        <paragraph eId="para_2">
+          <num>2.</num>
+          <content><p>El <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley de Reforma</ref> flexibilizo dichos requisitos, permitiendo alternativas a varios ingredientes tradicionales.</p></content>
+        </paragraph>
+        <paragraph eId="para_3">
+          <num>3.</num>
+          <content><p>Los demandantes alegan que la reforma vulnera el derecho a la identidad cultural gastronomica reconocido en la Constitucion Gastronomica.</p></content>
+        </paragraph>
+      </background>
+
+      <arguments eId="fundamentos">
+        <heading>Fundamentos de Derecho</heading>
+        <paragraph eId="para_4">
+          <num>Primero.</num>
+          <content><p>El derecho a la identidad cultural gastronomica no es absoluto y debe ponderarse con el derecho a la alimentacion accesible.</p></content>
+        </paragraph>
+        <paragraph eId="para_5">
+          <num>Segundo.</num>
+          <content><p>La reforma no elimina la denominacion 'Paella Valenciana' sino que crea la categoria adicional de 'paella mixta', respetando la distincion tecnica avalada por la <ref href="/akn/poc/debate/comision-gastronomia">audiencia en comision</ref>.</p></content>
+        </paragraph>
+        <paragraph eId="para_6">
+          <num>Tercero.</num>
+          <content><p>Sin embargo, la flexibilizacion del tipo de arroz (permitir arroz redondo) SI afecta la esencia del plato segun el criterio tecnico pericial.</p></content>
+        </paragraph>
+      </arguments>
+
+      <decision eId="fallo">
+        <heading>Fallo</heading>
+        <paragraph eId="para_7">
+          <num>1.</num>
+          <content><p>Se DESESTIMA parcialmente el recurso. La creacion de la categoria 'paella mixta' es constitucional.</p></content>
+        </paragraph>
+        <paragraph eId="para_8">
+          <num>2.</num>
+          <content><p>Se ESTIMA parcialmente el recurso respecto al <ref href="/akn/poc/act/receta-paella-valenciana#art_1">articulo 1</ref>. La denominacion 'Paella Valenciana' exige arroz bomba como requisito esencial.</p></content>
+        </paragraph>
+        <paragraph eId="para_9">
+          <num>3.</num>
+          <content><p>Se ordena publicar este fallo en el <ref href="/akn/poc/officialGazette/boletin-gastronomia-2024">Boletin Oficial de Gastronomia</ref>.</p></content>
+        </paragraph>
+      </decision>
+    </judgmentBody>
+  </judgment>
+</akomaNtoso>

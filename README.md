@@ -10,6 +10,26 @@ Nuestra propuesta es `AKN Diff`, una extensión del estándar [Akoma Ntoso](http
 ## Changelog
 
 ---
+**03/02/2026**
+
+Viendo el buen resultado del proof of concept, rediseñamos toda la página y un estilo más accesible para invitar a la gente a verlo. Aún no lo publicamos abiertamente. 
+
+También cambiamos el nombre a la extensión, ya no es AKN++ pero AKN Diff, porque se concentra únicamente en los cambios del comparado, nada más que eso. Y llamamos a este proyecto de research Diff by Parlamento.ai, de esa manera, englobamos todo bajo el nombre de "Diff".
+
+Estamos agradablemente sorprendidos del formato Akoma Ntoso, se ve bastante completo y hecho con mucha dedicación para adaptarse a todos los tipos de parlamentos alrededor del mundo. 
+
+Le vemos harto potencial. Incluso si el mundo decidió ignorarlo.
+
+Se nos ocurrieron varias ideas que me gustaría explorar:
+1. Tal vez los parlamentos deberían tener como base de datos un equivalente a S3 en vez de una DB relacional SQL, y que en ella se navigue como en la web, basada en links. Todo podía ser representado con AKN. En vez de tener `raws` y `columns` tiene archivos linkeados. Esto sería libremente accesible en lectura por el público. 
+2. Podría usar el formato Git Para tener transparencia en las versiones y actualizaciones, en ese caso sería aún más simple que un S3 y sería una carpeta, con todo adentro. Se puede clonar por cualquiera. Serían básicamente archivos y carpetas, nada más.
+3. Me gustaría hacer un visualizador de AKN online, algo donde podamos cargar estos archivos y poder visualizarlos de forma más bonita. Algo que englobe la totalidad del formato para poder explorar los tipos.
+4. ¿Cómo podríamos convertir los datos actuales a este formato? Obviamente que con un trabajo manual monstruoso se podría hacer, pero eso no parece para nada viable. Habría que explorar workflows que combinen informática, inteligencia artificial y trabajo manual para reconstruir los datos.
+5. Ver qué tan viable es AKN para ser el formato que englobe todo. A primera vista se ve bastante completo, pero tal vez, en realidad, es súper terco y difícil de trabajar y no se adapta a la realidad de los parlamentos. Explicaría el por qué nunca fue adaptado correctamente.
+
+
+
+---
 **01/02/2026**
 
 Con lo satisfactorio que se veía en el Proof of Concept, nos preguntamos por qué no abarcar más con este nuevo formato: ¿Cómo podríamos agregar la votación de cada cambio en la interfaz? Esto agregaría una nueva capa de visibilidad y transparencia.
@@ -21,25 +41,25 @@ En el archivo `DEBATE.xml` solamente hacen el guión como en una pieza de teatro
 Agregamos estos campos a nuestro `AKN Diff` formato, dentro del `changeSet`:
 
 ```md
-  ┌───────────────┬───────────────────────────────────────────────────────────────┐
-  │   Elemento    │                           Propósito                           │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  ┌─────────────────┬───────────────────────────────────────────────────────────────┐
+  │    Elemento     │                           Propósito                           │
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
   │ akndiff:vote    │ Consolida el resultado de la votación                         │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ date          │ Cuándo se votó                                                │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ result        │ approved, rejected, withdrawn, inadmissible, pending          │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
-  │ source        │ Referencia al documento debate donde está el detalle completo │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
+  │ date            │ Cuándo se votó                                                │
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
+  │ result          │ approved, rejected, withdrawn, inadmissible, pending          │
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
+  │ source          │ Referencia al documento debate donde está el detalle completo │
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
   │ akndiff:for     │ Lista de votantes a favor                                     │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
   │ akndiff:against │ Lista de votantes en contra                                   │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
   │ akndiff:abstain │ Lista de abstenciones (vacío si no hay)                       │
-  ├───────────────┼───────────────────────────────────────────────────────────────┤
+  ├─────────────────┼───────────────────────────────────────────────────────────────┤
   │ akndiff:voter   │ Cada persona, con href (ID único) y showAs (nombre legible)   │
-  └───────────────┴───────────────────────────────────────────────────────────────┘
+  └─────────────────┴───────────────────────────────────────────────────────────────┘
 ```
 
 El resultado en la interfaz es bastante atractivo:

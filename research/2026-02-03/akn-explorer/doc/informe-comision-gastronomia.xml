@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="informe-comision-gastronomia">
+    <meta>
+      <identification source="#comision">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/doc/informe-comision-gastronomia"/>
+          <FRBRuri value="/akn/poc/doc/informe-comision-gastronomia"/>
+          <FRBRdate date="2024-06-10" name="aprobacion"/>
+          <FRBRauthor href="/org/comision-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/doc/informe-comision-gastronomia/esp@2024-06-10"/>
+          <FRBRuri value="/akn/poc/doc/informe-comision-gastronomia/esp@2024-06-10"/>
+          <FRBRdate date="2024-06-10" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/doc/informe-comision-gastronomia/esp@2024-06-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#comision">
+        <TLCOrganization eId="comision" href="/org/comision-gastronomia" showAs="Comision de Gastronomia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Informe de la Comision de Gastronomia sobre el Proyecto de Reforma de Paella</docTitle></p>
+      </longTitle>
+      <p>Informe aprobado el 10 de junio de 2024, previo al <ref href="/akn/poc/debate/pleno-reforma-paella">debate plenario</ref>.</p>
+    </preface>
+
+    <mainBody>
+      <section eId="sec_objeto">
+        <heading>I. Objeto del informe</heading>
+        <p>La Comision de Gastronomia ha examinado el <ref href="/akn/poc/bill/reforma-paella-2024">Proyecto de Ley que reforma la receta de Paella Valenciana</ref>, asi como las tres enmiendas presentadas, tras celebrar <ref href="/akn/poc/debate/comision-gastronomia">audiencia con expertos</ref>.</p>
+      </section>
+
+      <section eId="sec_conclusiones">
+        <heading>II. Conclusiones</heading>
+        <p>1. La flexibilizacion del tipo de arroz es razonable desde el punto de vista de accesibilidad, aunque el arroz bomba sigue siendo tecnicamente superior para este plato.</p>
+        <p>2. La creacion de la categoria 'paella mixta' es una solucion equilibrada que permite la innovacion sin diluir la denominacion tradicional.</p>
+        <p>3. La sustitucion del azafran por colorante es aceptable dado el coste prohibitivo del azafran real para uso domestico.</p>
+        <p>4. La flexibilizacion de la fuente de calor (permitir gas) es necesaria para la viabilidad de la receta en contextos urbanos.</p>
+      </section>
+
+      <section eId="sec_enmiendas">
+        <heading>III. Enmiendas</heading>
+        <p>Sobre la <ref href="/akn/poc/amendment/enmienda-arroz-integral">enmienda de arroz integral</ref>: se recomienda su RECHAZO. El arroz integral altera fundamentalmente la textura y tiempo de coccion del plato.</p>
+        <p>Sobre la <ref href="/akn/poc/amendment/enmienda-socarrat-opcional">enmienda de socarrat opcional</ref>: se recomienda su RECHAZO. El socarrat es un elemento identitario de la paella valenciana.</p>
+        <p>Sobre la <ref href="/akn/poc/amendment/enmienda-denominacion-origen">enmienda de denominacion de origen</ref>: se recomienda su APROBACION. Proteger la denominacion es compatible con la reforma y la refuerza.</p>
+      </section>
+
+      <section eId="sec_recomendacion">
+        <heading>IV. Recomendacion</heading>
+        <p>La Comision recomienda la aprobacion del <ref href="/akn/poc/bill/reforma-paella-2024">proyecto de ley</ref> con la incorporacion de la enmienda de denominacion de origen, y remite el expediente completo a la <ref href="/akn/poc/documentCollection/tramitacion-reforma-paella">tramitacion parlamentaria</ref>.</p>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>
