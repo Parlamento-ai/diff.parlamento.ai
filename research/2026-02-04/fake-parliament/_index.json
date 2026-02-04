@@ -1,0 +1,148 @@
+{
+  "documents": [
+    {
+      "uri": "/akn/poc/act/valencian-paella-recipe",
+      "type": "act",
+      "title": "Act No. 42/2023: Official Valencian Paella Recipe",
+      "description": "Traditional recipe approved by the Parliament of Gastronomia.",
+      "filePath": "act/valencian-paella-recipe.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/act/valencian-paella-recipe-amended",
+      "type": "act",
+      "title": "Act No. 42/2023 (consolidated text post-reform)",
+      "description": "Consolidated text following the 2024 reform.",
+      "filePath": "act/valencian-paella-recipe-amended.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/bill/paella-reform-2024",
+      "type": "bill",
+      "title": "Bill: Reform of the Valencian Paella Recipe",
+      "description": "Proposal by Rep. Madrid to democratize the recipe.",
+      "filePath": "bill/paella-reform-2024.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/bill/sushi-rice-regulation",
+      "type": "bill",
+      "title": "Bill: Sushi Rice Quality Standards",
+      "description": "Proposal by Sen. Tokio to regulate sushi rice quality.",
+      "filePath": "bill/sushi-rice-regulation.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/amendment/amendment-brown-rice",
+      "type": "amendment",
+      "title": "Amendment: Inclusion of Brown Rice",
+      "description": "Proposal by Rep. Naturist to allow brown rice.",
+      "filePath": "amendment/amendment-brown-rice.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/amendment/amendment-optional-socarrat",
+      "type": "amendment",
+      "title": "Amendment: Optional Socarrat",
+      "description": "Proposal by Rep. Modern to make the socarrat optional.",
+      "filePath": "amendment/amendment-optional-socarrat.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/citation/camara-plenary-2024-06-15",
+      "type": "citation",
+      "title": "Citation: Camara Plenary Session on Paella Reform",
+      "description": "Call to the plenary session of the Camara debating the paella reform.",
+      "filePath": "citation/camara-plenary-2024-06-15.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/citation/senado-plenary-2024-06-20",
+      "type": "citation",
+      "title": "Citation: Senado Plenary Session on Paella Reform",
+      "description": "Call to the Senado plenary session reviewing the paella reform.",
+      "filePath": "citation/senado-plenary-2024-06-20.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/citation/camara-plenary-upcoming",
+      "type": "citation",
+      "title": "Citation: Upcoming Camara Session on Sushi Standards",
+      "description": "Call to the upcoming plenary session on sushi rice regulation.",
+      "filePath": "citation/camara-plenary-upcoming.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/debate/camara-plenary-paella",
+      "type": "debate",
+      "title": "Camara Plenary: Debate on Paella Reform",
+      "description": "Plenary debate of June 15, 2024 in the Camara de Ingredientes.",
+      "filePath": "debate/camara-plenary-paella.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/debate/senado-plenary-paella",
+      "type": "debate",
+      "title": "Senado Plenary: Review of Paella Reform",
+      "description": "Senado review of the Paella Reform on June 20, 2024.",
+      "filePath": "debate/senado-plenary-paella.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/communication/committee-to-plenary",
+      "type": "communication",
+      "title": "Communication: Committee Report to Camara Plenary",
+      "description": "Transmission of the gastronomy committee report to the Camara plenary.",
+      "filePath": "communication/committee-to-plenary.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/communication/camara-to-senado",
+      "type": "communication",
+      "title": "Communication: Camara to Senado (Bill Transmission)",
+      "description": "Transmission of the approved bill from Camara to Senado.",
+      "filePath": "communication/camara-to-senado.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/communication/senado-to-promulgation",
+      "type": "communication",
+      "title": "Communication: Senado to Executive (Promulgation)",
+      "description": "Transmission of the approved bill for promulgation.",
+      "filePath": "communication/senado-to-promulgation.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/question/saffron-budget",
+      "type": "question",
+      "title": "Written Question: Saffron Budget Spending",
+      "description": "Question to the Ministry of Gastronomy about saffron procurement.",
+      "filePath": "question/saffron-budget.xml",
+      "chamber": "camara"
+    },
+    {
+      "uri": "/akn/poc/question/rice-imports-pending",
+      "type": "question",
+      "title": "Written Question: Rice Import Standards",
+      "description": "Question to the Ministry of Commerce about japonica rice imports.",
+      "filePath": "question/rice-imports-pending.xml",
+      "chamber": "senado"
+    },
+    {
+      "uri": "/akn/poc/judgment/mixed-paella-ruling",
+      "type": "judgment",
+      "title": "Judgment 127/2024: Challenge against Paella Reform",
+      "description": "Ruling of the Supreme Gastronomic Court.",
+      "filePath": "judgment/mixed-paella-ruling.xml",
+      "chamber": null
+    },
+    {
+      "uri": "/akn/poc/officialGazette/gazette-2024-37",
+      "type": "officialGazette",
+      "title": "Official Gazette of Gastronomia No. 2024-37",
+      "description": "Official publication of the reform and judgment.",
+      "filePath": "officialGazette/gazette-2024-37.xml",
+      "chamber": null
+    }
+  ]
+}

@@ -2,16 +2,17 @@
 	import type { ManifestEntry } from '$lib/types/explorer';
 	import type { Snippet } from 'svelte';
 
-	let { href, manifest = [], children }: {
+	let { href, manifest = [], linkBase = '/docs/explorer', children }: {
 		href: string;
 		manifest?: ManifestEntry[];
+		linkBase?: string;
 		children: Snippet;
 	} = $props();
 
 	const resolvedHref = $derived.by(() => {
 		const entry = manifest.find((d) => d.uri === href);
-		if (entry) return `/docs/explorer${href}`;
-		if (href.startsWith('/akn/')) return `/docs/explorer${href}`;
+		if (entry) return `${linkBase}${href}`;
+		if (href.startsWith('/akn/')) return `${linkBase}${href}`;
 		if (href.startsWith('#')) return href;
 		return href;
 	});

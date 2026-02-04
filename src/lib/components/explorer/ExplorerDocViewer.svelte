@@ -4,11 +4,12 @@
 	import AknMeta from './shared/AknMeta.svelte';
 	import type { ExplorerDocType, ManifestEntry, AknNode, FRBRMeta } from '$lib/types/explorer';
 
-	let { document, uri, title, manifest }: {
+	let { document, uri, title, manifest, linkBase = '/docs/explorer' }: {
 		document: { type: ExplorerDocType; name: string; frbr: FRBRMeta; root: AknNode; rawXml: string };
 		uri: string;
 		title: string;
 		manifest: ManifestEntry[];
+		linkBase?: string;
 	} = $props();
 
 	const TYPE_COLORS: Record<ExplorerDocType, string> = {
@@ -76,7 +77,7 @@
 	{#if viewMode === 'rendered'}
 		<div class="card-layout p-6">
 			<AknMeta frbr={document.frbr} type={document.type} />
-			<AknDocument {document} {manifest} />
+			<AknDocument {document} {manifest} {linkBase} />
 		</div>
 	{:else if viewMode === 'raw'}
 		<RawXmlView xml={document.rawXml} />
@@ -84,7 +85,7 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 			<div class="card-layout p-6 overflow-auto">
 				<AknMeta frbr={document.frbr} type={document.type} />
-				<AknDocument {document} {manifest} />
+				<AknDocument {document} {manifest} {linkBase} />
 			</div>
 			<div class="overflow-auto">
 				<RawXmlView xml={document.rawXml} />

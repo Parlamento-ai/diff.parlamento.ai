@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <communication name="camara-to-senado">
+    <meta>
+      <identification source="#camara-secretary">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/communication/camara-to-senado"/>
+          <FRBRuri value="/akn/poc/communication/camara-to-senado"/>
+          <FRBRdate date="2024-06-16" name="transmission"/>
+          <FRBRauthor href="/org/camara-ingredientes"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/communication/camara-to-senado/eng@2024-06-16"/>
+          <FRBRuri value="/akn/poc/communication/camara-to-senado/eng@2024-06-16"/>
+          <FRBRdate date="2024-06-16" name="transmission"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/communication/camara-to-senado/eng@2024-06-16/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#camara-secretary">
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+        <TLCPerson eId="speaker" href="/persona/speaker-morales" showAs="Speaker Morales"/>
+        <TLCPerson eId="camara-secretary" href="/persona/camara-secretary" showAs="Secretary of the Camara"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p class="title">Official Communication No. 45/2024</p>
+      <p class="subtitle">From the Camara de Ingredientes to the Senado de Gastronomia</p>
+    </preface>
+
+    <communicationBody>
+      <transmission
+        eId="trans_1"
+        from="#camara"
+        to="#senado"
+        type="bill-transmission"
+        date="2024-06-16"
+        refersTo="/akn/poc/bill/paella-reform-2024"
+        signedBy="#speaker"
+      />
+
+      <content eId="content_1">
+        <p>The Camara de Ingredientes hereby transmits the <ref href="/akn/poc/bill/paella-reform-2024">Bill to Reform the Valencian Paella Recipe</ref>, approved in plenary session on June 15, 2024.</p>
+        <p>The bill was approved with the following amendments incorporated: <ref href="/akn/poc/amendment/amendment-optional-socarrat">Optional Socarrat</ref>. The <ref href="/akn/poc/amendment/amendment-brown-rice">Brown Rice Amendment</ref> was rejected.</p>
+      </content>
+
+      <rationale eId="rat_1">
+        <heading>Rationale</heading>
+        <p>The bill was approved by a vote of 28 in favor, 12 against, and 5 abstentions. It is transmitted for Senado review per Article 72 of the Parliamentary Rules.</p>
+      </rationale>
+    </communicationBody>
+  </communication>
+</akomaNtoso>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <debate name="senado-plenary-paella">
+    <meta>
+      <identification source="#secretary">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/debate/senado-plenary-paella"/>
+          <FRBRuri value="/akn/poc/debate/senado-plenary-paella"/>
+          <FRBRdate date="2024-06-20" name="session"/>
+          <FRBRauthor href="/org/senado-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/debate/senado-plenary-paella/eng@2024-06-20"/>
+          <FRBRuri value="/akn/poc/debate/senado-plenary-paella/eng@2024-06-20"/>
+          <FRBRdate date="2024-06-20" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/debate/senado-plenary-paella/eng@2024-06-20/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretary">
+        <TLCOrganization eId="secretary" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+        <TLCPerson eId="presidente" href="/persona/president-fernandez" showAs="President Fernandez"/>
+        <TLCPerson eId="sen-tokio" href="/persona/sen-tokio" showAs="Sen. Tokio"/>
+        <TLCPerson eId="sen-tradition" href="/persona/sen-tradition" showAs="Sen. Tradition"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Senado Plenary Session: Review of the Valencian Paella Reform</docTitle></p>
+      </longTitle>
+      <p>Session of June 20, 2024 of the Senado de Gastronomia.</p>
+      <p>Agenda: Review of the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref> approved by the Camara de Ingredientes.</p>
+    </preface>
+
+    <debateBody>
+      <debateSection eId="dbsect_apertura" name="opening">
+        <heading>Opening of the session</heading>
+        <speech eId="speech_1" by="#presidente">
+          <from>President Fernandez</from>
+          <p>The Senado session is called to order. We have received the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref> from the Camara de Ingredientes via <ref href="/akn/poc/communication/camara-to-senado">official communication</ref>. The floor is open for deliberation.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_debate" name="debate">
+        <heading>Senate deliberation</heading>
+        <speech eId="speech_2" by="#sen-tokio">
+          <from>Sen. Tokio</from>
+          <p>Honorable President, while I support modernizing our food standards, I believe the rice flexibility goes too far. As someone working on <ref href="/akn/poc/bill/sushi-rice-regulation">sushi rice regulation</ref>, I understand that rice variety is fundamental to a dish's identity.</p>
+          <p>I propose we support the bill but urge the Supreme Court to review the rice provisions.</p>
+        </speech>
+
+        <speech eId="speech_3" by="#sen-tradition">
+          <from>Sen. Tradition</from>
+          <p>I echo the concerns of my colleague. The Senado has a duty to protect our gastronomic heritage while allowing for reasonable evolution. The 'mixed paella' distinction is wise, but bomba rice must remain sacred for the Valencian designation.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_votacion" name="voting">
+        <heading>Voting</heading>
+        <speech eId="speech_4" by="#presidente">
+          <from>President Fernandez</from>
+          <p>The Senado approves the bill with a recommendation to review rice provisions. The bill will proceed to promulgation. The session is adjourned.</p>
+        </speech>
+      </debateSection>
+    </debateBody>
+  </debate>
+</akomaNtoso>

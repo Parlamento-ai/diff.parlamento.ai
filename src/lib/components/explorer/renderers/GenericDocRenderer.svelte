@@ -3,7 +3,7 @@
 	import { findNode, extractTextFromNode } from '$lib/utils/akn-helpers';
 	import BlockContent from '../shared/BlockContent.svelte';
 
-	let { root, manifest = [] }: { root: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { root, manifest = [], linkBase = '/docs/explorer' }: { root: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 
 	const preface = $derived(findNode(root, 'preface'));
 	const mainBody = $derived(findNode(root, 'mainBody') || findNode(root, 'body'));
@@ -17,7 +17,7 @@
 					{extractTextFromNode(child)}
 				</h2>
 			{:else}
-				<BlockContent node={child} {manifest} />
+				<BlockContent node={child} {manifest} {linkBase} />
 			{/if}
 		{/each}
 	</div>
@@ -33,12 +33,12 @@
 							{extractTextFromNode(child)}
 						</h3>
 					{:else}
-						<BlockContent node={child} {manifest} />
+						<BlockContent node={child} {manifest} {linkBase} />
 					{/if}
 				{/each}
 			</div>
 		{:else}
-			<BlockContent node={section} {manifest} />
+			<BlockContent node={section} {manifest} {linkBase} />
 		{/if}
 	{/each}
 {/if}

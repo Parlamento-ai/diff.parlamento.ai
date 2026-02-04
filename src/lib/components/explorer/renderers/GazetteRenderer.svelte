@@ -4,7 +4,7 @@
 	import BlockContent from '../shared/BlockContent.svelte';
 	import AknRef from '../shared/AknRef.svelte';
 
-	let { root, manifest = [] }: { root: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { root, manifest = [], linkBase = '/docs/explorer' }: { root: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 
 	const preface = $derived(findNode(root, 'preface'));
 	const collectionBody = $derived(findNode(root, 'collectionBody'));
@@ -18,7 +18,7 @@
 					{extractTextFromNode(child)}
 				</h2>
 			{:else}
-				<BlockContent node={child} {manifest} />
+				<BlockContent node={child} {manifest} {linkBase} />
 			{/if}
 		{/each}
 	</div>
@@ -35,17 +35,17 @@
 						</h3>
 					{:else if child.name === 'componentRef'}
 						<div class="mb-2">
-							<AknRef href={child.attributes['src'] || ''} {manifest}>
+							<AknRef href={child.attributes['src'] || ''} {manifest} {linkBase}>
 								{child.attributes['showAs'] || child.attributes['src'] || ''}
 							</AknRef>
 						</div>
 					{:else}
-						<BlockContent node={child} {manifest} />
+						<BlockContent node={child} {manifest} {linkBase} />
 					{/if}
 				{/each}
 			</div>
 		{:else}
-			<BlockContent node={component} {manifest} />
+			<BlockContent node={component} {manifest} {linkBase} />
 		{/if}
 	{/each}
 {/if}

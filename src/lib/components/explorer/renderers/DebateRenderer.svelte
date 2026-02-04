@@ -4,7 +4,7 @@
 	import BlockContent from '../shared/BlockContent.svelte';
 	import SpeechBlock from '../shared/SpeechBlock.svelte';
 
-	let { root, manifest = [] }: { root: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { root, manifest = [], linkBase = '/docs/explorer' }: { root: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 
 	const preface = $derived(findNode(root, 'preface'));
 	const debateBody = $derived(findNode(root, 'debateBody'));
@@ -18,7 +18,7 @@
 					{extractTextFromNode(child)}
 				</h2>
 			{:else}
-				<BlockContent node={child} {manifest} />
+				<BlockContent node={child} {manifest} {linkBase} />
 			{/if}
 		{/each}
 	</div>
@@ -34,14 +34,14 @@
 							{extractTextFromNode(child)}
 						</h3>
 					{:else if child.name === 'speech'}
-						<SpeechBlock node={child} {manifest} />
+						<SpeechBlock node={child} {manifest} {linkBase} />
 					{:else}
-						<BlockContent node={child} {manifest} />
+						<BlockContent node={child} {manifest} {linkBase} />
 					{/if}
 				{/each}
 			</div>
 		{:else}
-			<BlockContent node={section} {manifest} />
+			<BlockContent node={section} {manifest} {linkBase} />
 		{/if}
 	{/each}
 {/if}

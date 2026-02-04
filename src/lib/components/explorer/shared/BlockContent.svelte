@@ -4,13 +4,13 @@
 	import { extractTextFromNode } from '$lib/utils/akn-helpers';
 	import BlockContent from './BlockContent.svelte';
 
-	let { node, manifest = [] }: { node: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { node, manifest = [], linkBase = '/docs/explorer' }: { node: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 </script>
 
 {#if node.name === 'p'}
 	<p class="text-gray-700 mb-2 leading-relaxed">
 		{#each node.children as child}
-			<InlineContent node={child} {manifest} />
+			<InlineContent node={child} {manifest} {linkBase} />
 		{/each}
 		{#if node.children.length === 0}
 			{extractTextFromNode(node)}
@@ -22,12 +22,12 @@
 	<span class="font-heading font-semibold text-gray-600 mr-2">{extractTextFromNode(node)}</span>
 {:else if node.name === 'content'}
 	{#each node.children as child}
-		<BlockContent node={child} {manifest} />
+		<BlockContent node={child} {manifest} {linkBase} />
 	{/each}
 {:else if node.name === '#text'}
 	{node.text}
 {:else}
 	{#each node.children as child}
-		<BlockContent node={child} {manifest} />
+		<BlockContent node={child} {manifest} {linkBase} />
 	{/each}
 {/if}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <communication name="senado-to-promulgation">
+    <meta>
+      <identification source="#senado-secretary">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/communication/senado-to-promulgation"/>
+          <FRBRuri value="/akn/poc/communication/senado-to-promulgation"/>
+          <FRBRdate date="2024-06-21" name="transmission"/>
+          <FRBRauthor href="/org/senado-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/communication/senado-to-promulgation/eng@2024-06-21"/>
+          <FRBRuri value="/akn/poc/communication/senado-to-promulgation/eng@2024-06-21"/>
+          <FRBRdate date="2024-06-21" name="transmission"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/communication/senado-to-promulgation/eng@2024-06-21/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#senado-secretary">
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+        <TLCOrganization eId="executive" href="/org/executive-gastronomia" showAs="Executive of Gastronomia"/>
+        <TLCPerson eId="president" href="/persona/president-fernandez" showAs="President Fernandez"/>
+        <TLCPerson eId="senado-secretary" href="/persona/senado-secretary" showAs="Secretary of the Senado"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p class="title">Official Communication No. 46/2024</p>
+      <p class="subtitle">From the Senado de Gastronomia to the Executive for Promulgation</p>
+    </preface>
+
+    <communicationBody>
+      <transmission
+        eId="trans_1"
+        from="#senado"
+        to="#executive"
+        type="promulgation-request"
+        date="2024-06-21"
+        refersTo="/akn/poc/bill/paella-reform-2024"
+        signedBy="#president"
+      />
+
+      <content eId="content_1">
+        <p>The Senado de Gastronomia hereby transmits the <ref href="/akn/poc/bill/paella-reform-2024">Bill to Reform the Valencian Paella Recipe</ref> for promulgation by the Executive.</p>
+        <p>The bill was approved by both chambers and is ready for promulgation and publication in the <ref href="/akn/poc/officialGazette/gazette-2024-37">Official Gazette</ref>.</p>
+      </content>
+
+      <rationale eId="rat_1">
+        <heading>Rationale</heading>
+        <p>The Senado approved the bill on June 20, 2024, with a recommendation to review rice provisions via the Supreme Gastronomic Court.</p>
+      </rationale>
+    </communicationBody>
+  </communication>
+</akomaNtoso>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <question name="rice-imports-pending">
+    <meta>
+      <identification source="#secretariat">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/question/rice-imports-pending"/>
+          <FRBRuri value="/akn/poc/question/rice-imports-pending"/>
+          <FRBRdate date="2024-11-10" name="tabling"/>
+          <FRBRauthor href="/persona/sen-tokio"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/question/rice-imports-pending/eng@2024-11-10"/>
+          <FRBRuri value="/akn/poc/question/rice-imports-pending/eng@2024-11-10"/>
+          <FRBRdate date="2024-11-10" name="tabling"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/question/rice-imports-pending/eng@2024-11-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretariat">
+        <TLCPerson eId="sen-tokio" href="/persona/sen-tokio" showAs="Sen. Tokio"/>
+        <TLCOrganization eId="min-commerce" href="/org/ministry-commerce" showAs="Ministry of Commerce"/>
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p class="title">Written Question No. 205/2024</p>
+      <p class="subtitle">From Sen. Tokio to the Ministry of Commerce</p>
+    </preface>
+
+    <questionBody>
+      <questionStatus
+        status="pending"
+        askedBy="#sen-tokio"
+        addressedTo="#min-commerce"
+        dateAsked="2024-11-10"
+        deadline="2024-12-10"
+      />
+
+      <questionContent>
+        <question eId="q_1">
+          <p>What is the current volume and origin of japonica rice imports into the Republic of Gastronomia?</p>
+        </question>
+        <question eId="q_2">
+          <p>Are there plans to establish quality certification standards for imported sushi-grade rice, in line with the proposed <ref href="/akn/poc/bill/sushi-rice-regulation">Sushi Rice Quality Standards Bill</ref>?</p>
+        </question>
+      </questionContent>
+    </questionBody>
+  </question>
+</akomaNtoso>

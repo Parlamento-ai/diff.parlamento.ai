@@ -4,7 +4,7 @@
 	import BlockContent from '../shared/BlockContent.svelte';
 	import AknRef from '../shared/AknRef.svelte';
 
-	let { root, manifest = [] }: { root: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { root, manifest = [], linkBase = '/docs/explorer' }: { root: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 
 	const preface = $derived(findNode(root, 'preface'));
 	const citationBody = $derived(findNode(root, 'citationBody'));
@@ -35,7 +35,7 @@
 					{extractTextFromNode(child)}
 				</h2>
 			{:else}
-				<BlockContent node={child} {manifest} />
+				<BlockContent node={child} {manifest} {linkBase} />
 			{/if}
 		{/each}
 	</div>
@@ -117,7 +117,7 @@
 							<div class="text-sm text-gray-600 mb-2">
 								{#each refs as ref}
 									<div class="mb-1">
-										<AknRef href={ref.attributes['href'] || ''} {manifest}>
+										<AknRef href={ref.attributes['href'] || ''} {manifest} {linkBase}>
 											{extractTextFromNode(ref)}
 										</AknRef>
 									</div>
@@ -126,11 +126,11 @@
 						{/if}
 
 						{#each getAgendaItemContent(child) as contentNode}
-							<BlockContent node={contentNode} {manifest} />
+							<BlockContent node={contentNode} {manifest} {linkBase} />
 						{/each}
 					</div>
 				{:else if child.name !== 'heading'}
-					<BlockContent node={child} {manifest} />
+					<BlockContent node={child} {manifest} {linkBase} />
 				{/if}
 			{/each}
 		</div>

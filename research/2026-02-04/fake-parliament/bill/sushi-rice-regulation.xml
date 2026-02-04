@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <bill name="sushi-rice-regulation">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/bill/sushi-rice-regulation"/>
+          <FRBRuri value="/akn/poc/bill/sushi-rice-regulation"/>
+          <FRBRdate date="2024-09-15" name="submission"/>
+          <FRBRauthor href="/persona/sen-tokio"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/bill/sushi-rice-regulation/eng@2024-09-15"/>
+          <FRBRuri value="/akn/poc/bill/sushi-rice-regulation/eng@2024-09-15"/>
+          <FRBRdate date="2024-09-15" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/bill/sushi-rice-regulation/eng@2024-09-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/sen-tokio" showAs="Sen. Tokio"/>
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Bill to <docTitle>Regulate Sushi Rice Quality Standards</docTitle></p>
+      </longTitle>
+      <p>Legislative proposal submitted by <docProponent>Senator Tokio</docProponent> to the Senado de Gastronomia.</p>
+    </preface>
+
+    <preamble>
+      <p>Whereas:</p>
+      <p>1. Sushi has become one of the most consumed dishes in the Republic of Gastronomia, yet quality standards for sushi rice remain unregulated.</p>
+      <p>2. Inferior rice varieties are being used by establishments marketing dishes as "authentic sushi", misleading consumers.</p>
+      <p>3. The traditional short-grain japonica rice (Oryza sativa var. japonica) is essential for proper sushi preparation.</p>
+      <p>4. Vinegar seasoning ratios directly affect the quality and safety of sushi rice.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Article 1. Rice variety</heading>
+        <content>
+          <p>Only short-grain japonica rice with a minimum amylopectin content of 80% shall be used for sushi preparation in licensed establishments.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Article 2. Washing and soaking</heading>
+        <content>
+          <p>Rice shall be washed a minimum of three times until the water runs clear, then soaked for 30 minutes before cooking. The use of pre-washed or instant rice is prohibited for sushi preparation.</p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <heading>Article 3. Vinegar seasoning</heading>
+        <content>
+          <p>The seasoning mixture shall contain rice vinegar, sugar, and salt in a ratio of 4:2:1 by weight. The use of synthetic vinegar or artificial sweeteners is prohibited.</p>
+        </content>
+      </article>
+      <article eId="art_4">
+        <heading>Article 4. Temperature requirements</heading>
+        <content>
+          <p>Seasoned sushi rice shall be served at body temperature (approximately 37 degrees Celsius). Refrigerated rice shall not be used for nigiri or maki preparation.</p>
+        </content>
+      </article>
+      <article eId="art_5">
+        <heading>Article 5. Labeling</heading>
+        <content>
+          <p>Establishments not complying with these standards may not use the term "sushi" in their menus or marketing materials. The term "rice roll" shall be used instead.</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

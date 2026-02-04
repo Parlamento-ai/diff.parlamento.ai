@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <debate name="camara-plenary-paella">
+    <meta>
+      <identification source="#secretary">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/debate/camara-plenary-paella"/>
+          <FRBRuri value="/akn/poc/debate/camara-plenary-paella"/>
+          <FRBRdate date="2024-06-15" name="session"/>
+          <FRBRauthor href="/org/camara-ingredientes"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/debate/camara-plenary-paella/eng@2024-06-15"/>
+          <FRBRuri value="/akn/poc/debate/camara-plenary-paella/eng@2024-06-15"/>
+          <FRBRdate date="2024-06-15" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/debate/camara-plenary-paella/eng@2024-06-15/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretary">
+        <TLCOrganization eId="secretary" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
+        <TLCPerson eId="presidente" href="/persona/speaker-morales" showAs="Speaker Morales"/>
+        <TLCPerson eId="madrilena" href="/persona/rep-madrid" showAs="Rep. Madrid"/>
+        <TLCPerson eId="valenciano" href="/persona/rep-valencia" showAs="Rep. Valencia"/>
+        <TLCPerson eId="naturista" href="/persona/rep-naturist" showAs="Rep. Naturist"/>
+        <TLCPerson eId="moderna" href="/persona/rep-modern" showAs="Rep. Modern"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Camara Plenary Session: Debate on the Valencian Paella Reform</docTitle></p>
+      </longTitle>
+      <p>Session of June 15, 2024 of the Camara de Ingredientes.</p>
+      <p>Agenda: Discussion of the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref> and its amendments.</p>
+    </preface>
+
+    <debateBody>
+      <debateSection eId="dbsect_apertura" name="opening">
+        <heading>Opening of the session</heading>
+        <speech eId="speech_1" by="#presidente">
+          <from>Speaker Morales</from>
+          <p>The session is called to order. The first item on the agenda is the discussion of the <ref href="/akn/poc/bill/paella-reform-2024">Bill to Reform the Valencian Paella Recipe</ref>. The floor is given to the author of the bill.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_presentacion" name="presentation">
+        <heading>Presentation of the bill</heading>
+        <speech eId="speech_2" by="#madrilena">
+          <from>Rep. Madrid</from>
+          <p>Mr. Speaker, esteemed colleagues. Today we present a bill that seeks to democratize paella, a dish that belongs to the heritage of all, not just one region.</p>
+          <p>The current law, <ref href="/akn/poc/act/valencian-paella-recipe">Act No. 42/2023</ref>, is excessively restrictive. It requires bomba rice, prohibits seafood, mandates real saffron, and only allows wood fire. This excludes 95% of families.</p>
+          <p>Our bill does not eliminate tradition: it preserves it as a recommendation while allowing accessible alternatives.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_debate" name="debate">
+        <heading>General debate</heading>
+        <speech eId="speech_3" by="#valenciano">
+          <from>Rep. Valencia</from>
+          <p>Mr. Speaker, this is an affront to our culture. Valencian paella HAS rules. If they want to make rice with stuff, they should call it rice with stuff. But Valencian paella is sacred.</p>
+          <p>As stated in the <ref href="/akn/poc/judgment/mixed-paella-ruling">ruling of the Supreme Gastronomic Court</ref>, the designation 'Valencian paella' has legal protection.</p>
+        </speech>
+
+        <speech eId="speech_4" by="#madrilena">
+          <from>Rep. Madrid</from>
+          <p>I respect your passion, colleague, but food evolves. Our proposal creates the 'mixed paella' category precisely to protect the designation.</p>
+        </speech>
+
+        <speech eId="speech_5" by="#naturista">
+          <from>Rep. Naturist</from>
+          <p>I take this opportunity to advocate for my <ref href="/akn/poc/amendment/amendment-brown-rice">amendment on brown rice</ref>. Brown rice is more nutritious and its inclusion does not alter the fundamental flavor of the dish.</p>
+        </speech>
+
+        <speech eId="speech_6" by="#valenciano">
+          <from>Rep. Valencia</from>
+          <p>Brown rice in a paella? That is like putting ketchup on sushi. My colleagues should respect our gastronomic identity.</p>
+        </speech>
+
+        <speech eId="speech_7" by="#moderna">
+          <from>Rep. Modern</from>
+          <p>Mr. Speaker, I support the reform and submit my <ref href="/akn/poc/amendment/amendment-optional-socarrat">amendment on the socarrat</ref>. Burnt socarrat is not for everyone, and making paella more accessible requires flexibility in presentation.</p>
+        </speech>
+      </debateSection>
+
+      <debateSection eId="dbsect_votacion" name="voting">
+        <heading>Voting</heading>
+        <speech eId="speech_8" by="#presidente">
+          <from>Speaker Morales</from>
+          <p>We shall now proceed to the vote. The bill is approved and will be transmitted to the Senado de Gastronomia for review. The session is adjourned.</p>
+        </speech>
+      </debateSection>
+    </debateBody>
+  </debate>
+</akomaNtoso>

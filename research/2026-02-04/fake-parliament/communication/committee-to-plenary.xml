@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <communication name="committee-to-plenary">
+    <meta>
+      <identification source="#committee-secretary">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/communication/committee-to-plenary"/>
+          <FRBRuri value="/akn/poc/communication/committee-to-plenary"/>
+          <FRBRdate date="2024-06-11" name="transmission"/>
+          <FRBRauthor href="/org/gastronomy-committee"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/communication/committee-to-plenary/eng@2024-06-11"/>
+          <FRBRuri value="/akn/poc/communication/committee-to-plenary/eng@2024-06-11"/>
+          <FRBRdate date="2024-06-11" name="transmission"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/communication/committee-to-plenary/eng@2024-06-11/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#committee-secretary">
+        <TLCOrganization eId="committee" href="/org/gastronomy-committee" showAs="Committee on Gastronomy"/>
+        <TLCOrganization eId="plenary" href="/org/camara-ingredientes/plenary" showAs="Plenary of the Camara"/>
+        <TLCPerson eId="committee-chair" href="/persona/committee-chair" showAs="Chair Delgado"/>
+        <TLCPerson eId="committee-secretary" href="/persona/committee-secretary" showAs="Committee Secretary"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p class="title">Official Communication No. 44/2024</p>
+      <p class="subtitle">From the Committee on Gastronomy to the Plenary of the Camara</p>
+    </preface>
+
+    <communicationBody>
+      <transmission
+        eId="trans_1"
+        from="#committee"
+        to="#plenary"
+        type="report-transmission"
+        date="2024-06-11"
+        refersTo="/akn/poc/bill/paella-reform-2024"
+        signedBy="#committee-chair"
+      />
+
+      <content eId="content_1">
+        <p>The Committee on Gastronomy hereby transmits its report on the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>.</p>
+        <p>The committee recommends proceeding to plenary debate and vote.</p>
+      </content>
+
+      <rationale eId="rat_1">
+        <heading>Rationale for the transmission</heading>
+        <p>The committee has concluded its review and recommends that the plenary proceed to debate and vote with the protected designation amendment incorporated.</p>
+      </rationale>
+    </communicationBody>
+  </communication>
+</akomaNtoso>

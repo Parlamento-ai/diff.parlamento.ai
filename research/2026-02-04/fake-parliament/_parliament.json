@@ -1,0 +1,25 @@
+{
+  "id": "parliament-gastronomy",
+  "name": "Parlamento de Gastronomia",
+  "nameEn": "Parliament of Gastronomy",
+  "country": "ga",
+  "chambers": [
+    {
+      "id": "camara",
+      "name": "Camara de Ingredientes",
+      "nameEn": "Chamber of Ingredients",
+      "type": "lower"
+    },
+    {
+      "id": "senado",
+      "name": "Senado de Gastronomia",
+      "nameEn": "Senate of Gastronomy",
+      "type": "upper"
+    }
+  ],
+  "legislativePeriod": {
+    "name": "XIV Legislature",
+    "startDate": "2023-01-15",
+    "endDate": "2027-01-14"
+  }
+}

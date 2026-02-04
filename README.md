@@ -10,6 +10,24 @@ Nuestra propuesta es `AKN Diff`, una extensión del estándar [Akoma Ntoso](http
 ## Changelog
 
 ---
+**04/02/2026**
+
+La preocupacion de abrir la caja de pandora nos siguio dando vueltas por la cabeza. Decidimos ver que tan real era.
+
+Despues de varias busquedas se llego a la conclucion que no seguia un effecto caja de pandora. Y que basicamente faltaban solo 2 tipos mas para englobar todo el rito parlamentario: `questions` y `comunications`.
+
+`questions` es para las preguntas parlamentarias. Y `comunitactions` para la comunicacion oficial entre los organos.
+
+Nos llevaria a un total de 3 nuevos tipos.
+
+No pasamos mucho tiempo diseñando cada tipo, priorisamos seguir avanzando en el experimento.
+
+La próxima pregunta fue: ¿cómo podríamos rediseñar una página de un parlamento 100 % basado en las primitivas de AKN? En este caso, no estaríamos buscando re-inventar cómo funcionarían los links y todo eso, sino reemplazar lo existente y que funcione bastante similar. La única diferencia es que, atrás, todo está representado en AKN. 
+
+![AKN Dashboard - Bills in Progress con links a documentos](research/2026-02-04/akn-full-dashboard-with-links.jpg)
+
+
+---
 **03/02/2026**
 
 Viendo el buen resultado del proof of concept, rediseñamos toda la página para hacerla más accesible. Aún no lo publicamos abiertamente. El objetivo es crear un debate alrededor de estos temas.
@@ -33,7 +51,7 @@ A raíz del punto 1 y 3 decidimos hacer un test de cómo podríamos hacer un vis
 
 Hicimos como si fuera un navegador web para ejemplificar aún más. En la imagen se puede ver la 'split view' en la que se ven el modo renderizado y el XML al mismo tiempo.
 
-Siguiendo la misma idea, nos preguntamos cómo sería crear un portal web 100 % basado en AKN. Ver si un portal de algún parlamento, con todas sus distintas páginas y complejidades, pudiera ser representado con este formato solamente. 
+Siguiendo la misma idea, nos preguntamos cómo sería crear un portal web 100 % basado en AKN. Ver si un portal de algún parlamento, con todas sus distintas páginas y complejidades, podría ser representado con este formato solamente. 
 
 Pienso esto para Parlamento.ai que necesita organización y queremos seguir varios parlamentos, pero también para crear un proyecto open source para cualquier parlamento que le gustaría tomar una interfaz ya trabajada y compatible con AKN.
 

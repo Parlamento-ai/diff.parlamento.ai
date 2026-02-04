@@ -12,32 +12,33 @@
 	import QuestionRenderer from './renderers/QuestionRenderer.svelte';
 	import CommunicationRenderer from './renderers/CommunicationRenderer.svelte';
 
-	let { document, manifest = [] }: {
+	let { document, manifest = [], linkBase = '/docs/explorer' }: {
 		document: { type: ExplorerDocType; root: AknNode };
 		manifest?: ManifestEntry[];
+		linkBase?: string;
 	} = $props();
 </script>
 
 {#if document.type === 'act'}
-	<ActRenderer root={document.root} {manifest} />
+	<ActRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'bill'}
-	<BillRenderer root={document.root} {manifest} />
+	<BillRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'amendment'}
-	<AmendmentRenderer root={document.root} {manifest} />
+	<AmendmentRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'debate'}
-	<DebateRenderer root={document.root} {manifest} />
+	<DebateRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'judgment'}
-	<JudgmentRenderer root={document.root} {manifest} />
+	<JudgmentRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'officialGazette'}
-	<GazetteRenderer root={document.root} {manifest} />
+	<GazetteRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'documentCollection'}
-	<CollectionRenderer root={document.root} {manifest} />
+	<CollectionRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'citation'}
-	<CitationRenderer root={document.root} {manifest} />
+	<CitationRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'question'}
-	<QuestionRenderer root={document.root} {manifest} />
+	<QuestionRenderer root={document.root} {manifest} {linkBase} />
 {:else if document.type === 'communication'}
-	<CommunicationRenderer root={document.root} {manifest} />
+	<CommunicationRenderer root={document.root} {manifest} {linkBase} />
 {:else}
-	<GenericDocRenderer root={document.root} {manifest} />
+	<GenericDocRenderer root={document.root} {manifest} {linkBase} />
 {/if}

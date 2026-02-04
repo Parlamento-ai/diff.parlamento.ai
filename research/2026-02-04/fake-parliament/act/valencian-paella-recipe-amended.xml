@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="valencian-paella-recipe-amended">
+    <meta>
+      <identification source="#parliament">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/act/valencian-paella-recipe-amended"/>
+          <FRBRuri value="/akn/poc/act/valencian-paella-recipe-amended"/>
+          <FRBRdate date="2024-10-01" name="consolidation"/>
+          <FRBRauthor href="/org/parliament-of-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/act/valencian-paella-recipe-amended/eng@2024-10-01"/>
+          <FRBRuri value="/akn/poc/act/valencian-paella-recipe-amended/eng@2024-10-01"/>
+          <FRBRdate date="2024-10-01" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/act/valencian-paella-recipe-amended/eng@2024-10-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#parliament">
+        <TLCOrganization eId="parliament" href="/org/parliament-of-gastronomia" showAs="Parliament of Gastronomia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Act No. 42/2023 (consolidated text): <docTitle>Official Valencian Paella Recipe</docTitle></p>
+      </longTitle>
+      <p>Consolidated text following the reform enacted by the <ref href="/akn/poc/bill/paella-reform-2024">2024 Reform Bill</ref>. Published in the <ref href="/akn/poc/officialGazette/gastronomy-gazette-2024">Official Gazette of Gastronomia No. 2024-37</ref>.</p>
+    </preface>
+
+    <body>
+      <section eId="sec_arroz">
+        <heading>Title I — Rice</heading>
+        <article eId="art_1">
+          <heading>Article 1. Type of rice</heading>
+          <content><p>400 grams of bomba rice or, alternatively, medium-grain round rice shall be used. Bomba rice is preferably recommended when available.</p></content>
+        </article>
+        <article eId="art_2">
+          <heading>Article 2. Broth</heading>
+          <content><p>The rice shall be cooked in chicken and vegetable broth prepared from the bones and trimmings of the proteins in Title II. The use of commercial broth or bouillon cubes is prohibited.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_proteinas">
+        <heading>Title II — Proteins</heading>
+        <article eId="art_3">
+          <heading>Article 3. Chicken</heading>
+          <content><p>500 grams of free-range chicken cut into irregular bone-in pieces shall be used. The use of boneless or industrially-produced chicken is prohibited.</p></content>
+        </article>
+        <article eId="art_4">
+          <heading>Article 4. Rabbit</heading>
+          <content><p>300 grams of bone-in chopped rabbit shall be used. Rabbit is a mandatory and irreplaceable ingredient.</p></content>
+        </article>
+        <article eId="art_5">
+          <heading>Article 5. Other proteins</heading>
+          <content><p>Optionally, fresh seafood (shrimp, mussels, squid) may be added as a complement or alternative to the proteins in Title II.</p></content>
+        </article>
+        <article eId="art_5bis">
+          <heading>Article 5 bis. Mixed paella</heading>
+          <content><p>When seafood is used per Article 5, the dish shall be called 'mixed paella' and not 'Valencian paella'.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_sofrito">
+        <heading>Title III — Sofrito and Seasonings</heading>
+        <article eId="art_6">
+          <heading>Article 6. Vegetables</heading>
+          <content><p>200 grams of broad green beans (bajoqueta), 100 grams of lima beans (garrofon), and 1 grated ripe tomato shall be used. The addition of onion, bell pepper, peas, or any other unlisted vegetable is prohibited.</p></content>
+        </article>
+        <article eId="art_7">
+          <heading>Article 7. Saffron and coloring</heading>
+          <content><p>Real saffron threads or, alternatively, food coloring suitable for paella shall be used. Real saffron is preferably recommended.</p></content>
+        </article>
+        <article eId="art_8">
+          <heading>Article 8. Oil and other seasonings</heading>
+          <content><p>Extra virgin olive oil shall be used for the sofrito. The dish shall be seasoned with salt and a sprig of fresh rosemary. The use of any other oil or aromatic herb is prohibited.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_coccion">
+        <heading>Title IV — Cooking and Presentation</heading>
+        <article eId="art_9">
+          <heading>Article 9. Cooking vessel</heading>
+          <content><p>The paella shall be cooked exclusively in a polished steel paella pan of appropriate diameter for the number of diners. The use of frying pans, casseroles, pots, or non-stick paella pans is prohibited.</p></content>
+        </article>
+        <article eId="art_10">
+          <heading>Article 10. Heat source</heading>
+          <content><p>Cooking shall be performed over a wood fire or, alternatively, on a gas stove at high heat. Wood fire is preferably recommended. The use of electric or induction stoves is prohibited.</p></content>
+        </article>
+        <article eId="art_11">
+          <heading>Article 11. Socarrat and presentation</heading>
+          <content><p>During the last 2 minutes, the heat shall be raised to form the socarrat (crispy rice layer at the bottom). The paella shall be served directly in the pan, never plated individually. It shall rest for 5 minutes covered with newspaper before serving.</p></content>
+        </article>
+        <article eId="art_12">
+          <heading>Article 12. Protected designation</heading>
+          <content><p>Only a preparation that fully complies with this Act may be called 'Valencian Paella'. Any variation must use a different name.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="valencian-paella-recipe">
+    <meta>
+      <identification source="#autor">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/act/valencian-paella-recipe"/>
+          <FRBRuri value="/akn/poc/act/valencian-paella-recipe"/>
+          <FRBRdate date="2023-03-18" name="publication"/>
+          <FRBRauthor href="/persona/grandpa-pepe"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/act/valencian-paella-recipe/eng@2023-03-18"/>
+          <FRBRuri value="/akn/poc/act/valencian-paella-recipe/eng@2023-03-18"/>
+          <FRBRdate date="2023-03-18" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/act/valencian-paella-recipe/eng@2023-03-18/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#autor">
+        <TLCPerson eId="autor" href="/persona/grandpa-pepe" showAs="Grandpa Pepe"/>
+        <TLCOrganization eId="parlamento" href="/org/parliament-of-gastronomia" showAs="Parliament of Gastronomia"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Act No. 42/2023: <docTitle>Official Valencian Paella Recipe</docTitle></p>
+      </longTitle>
+      <p>Traditional Valencian paella recipe, approved by the Parliament of Gastronomia and published in the <ref href="/akn/poc/officialGazette/gastronomy-gazette-2024">Official Gazette of Gastronomia</ref>.</p>
+    </preface>
+
+    <body>
+      <section eId="sec_arroz">
+        <heading>Title I — Rice</heading>
+        <article eId="art_1">
+          <heading>Article 1. Type of rice</heading>
+          <content><p>400 grams of bomba rice with Valencia designation of origin shall be used. The use of any other variety of rice is prohibited.</p></content>
+        </article>
+        <article eId="art_2">
+          <heading>Article 2. Broth</heading>
+          <content><p>The rice shall be cooked in chicken and vegetable broth prepared from the bones and trimmings of the proteins in Title II. The use of commercial broth or bouillon cubes is prohibited.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_proteinas">
+        <heading>Title II — Proteins</heading>
+        <article eId="art_3">
+          <heading>Article 3. Chicken</heading>
+          <content><p>500 grams of free-range chicken cut into irregular bone-in pieces shall be used. The use of boneless or industrially-produced chicken is prohibited.</p></content>
+        </article>
+        <article eId="art_4">
+          <heading>Article 4. Rabbit</heading>
+          <content><p>300 grams of bone-in chopped rabbit shall be used. Rabbit is a mandatory and irreplaceable ingredient.</p></content>
+        </article>
+        <article eId="art_5">
+          <heading>Article 5. Exclusion of seafood</heading>
+          <content><p>The addition of any type of seafood is expressly prohibited, including but not limited to: shrimp, mussels, squid, prawns, and clams. Valencian paella does not contain seafood.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_sofrito">
+        <heading>Title III — Sofrito and Seasonings</heading>
+        <article eId="art_6">
+          <heading>Article 6. Vegetables</heading>
+          <content><p>200 grams of broad green beans (bajoqueta), 100 grams of lima beans (garrofon), and 1 grated ripe tomato shall be used. The addition of onion, bell pepper, peas, or any other unlisted vegetable is prohibited.</p></content>
+        </article>
+        <article eId="art_7">
+          <heading>Article 7. Saffron</heading>
+          <content><p>Real La Mancha saffron threads shall be used for color and aroma. The use of food coloring, turmeric, or any saffron substitute is expressly prohibited.</p></content>
+        </article>
+        <article eId="art_8">
+          <heading>Article 8. Oil and other seasonings</heading>
+          <content><p>Extra virgin olive oil shall be used for the sofrito. The dish shall be seasoned with salt and a sprig of fresh rosemary. The use of any other oil or aromatic herb is prohibited.</p></content>
+        </article>
+      </section>
+
+      <section eId="sec_coccion">
+        <heading>Title IV — Cooking and Presentation</heading>
+        <article eId="art_9">
+          <heading>Article 9. Cooking vessel</heading>
+          <content><p>The paella shall be cooked exclusively in a polished steel paella pan of appropriate diameter for the number of diners. The use of frying pans, casseroles, pots, or non-stick paella pans is prohibited.</p></content>
+        </article>
+        <article eId="art_10">
+          <heading>Article 10. Heat source</heading>
+          <content><p>Cooking shall be performed exclusively over a wood fire, preferably orange wood. The use of gas, electric, induction, or any other artificial heat source is prohibited.</p></content>
+        </article>
+        <article eId="art_11">
+          <heading>Article 11. Socarrat and presentation</heading>
+          <content><p>During the last 2 minutes, the heat shall be raised to form the socarrat (crispy rice layer at the bottom). The paella shall be served directly in the pan, never plated individually. It shall rest for 5 minutes covered with newspaper before serving.</p></content>
+        </article>
+      </section>
+    </body>
+  </act>
+</akomaNtoso>

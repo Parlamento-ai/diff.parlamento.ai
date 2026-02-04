@@ -4,7 +4,7 @@
 	import BlockContent from '../shared/BlockContent.svelte';
 	import InlineContent from '../shared/InlineContent.svelte';
 
-	let { root, manifest = [] }: { root: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { root, manifest = [], linkBase = '/docs/explorer' }: { root: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 
 	const preface = $derived(findNode(root, 'preface'));
 	const body = $derived(findNode(root, 'body'));
@@ -19,7 +19,7 @@
 					{extractTextFromNode(child)}
 				</h2>
 			{:else}
-				<BlockContent node={child} {manifest} />
+				<BlockContent node={child} {manifest} {linkBase} />
 			{/if}
 		{/each}
 	</div>
@@ -41,12 +41,12 @@
 									{extractTextFromNode(artChild)}
 								</h4>
 							{:else}
-								<BlockContent node={artChild} {manifest} />
+								<BlockContent node={artChild} {manifest} {linkBase} />
 							{/if}
 						{/each}
 					</div>
 				{:else}
-					<BlockContent node={child} {manifest} />
+					<BlockContent node={child} {manifest} {linkBase} />
 				{/if}
 			{/each}
 		</div>
@@ -62,12 +62,12 @@
 							{extractTextFromNode(artChild)}
 						</h4>
 					{:else}
-						<BlockContent node={artChild} {manifest} />
+						<BlockContent node={artChild} {manifest} {linkBase} />
 					{/if}
 				{/each}
 			</div>
 		{:else}
-			<BlockContent node={child} {manifest} />
+			<BlockContent node={child} {manifest} {linkBase} />
 		{/if}
 	{/each}
 {/if}

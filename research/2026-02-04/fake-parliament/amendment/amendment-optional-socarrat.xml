@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <amendment name="amendment-optional-socarrat">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/amendment-optional-socarrat"/>
+          <FRBRuri value="/akn/poc/amendment/amendment-optional-socarrat"/>
+          <FRBRdate date="2024-06-02" name="submission"/>
+          <FRBRauthor href="/persona/rep-modern"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/amendment-optional-socarrat/eng@2024-06-02"/>
+          <FRBRuri value="/akn/poc/amendment/amendment-optional-socarrat/eng@2024-06-02"/>
+          <FRBRdate date="2024-06-02" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/amendment-optional-socarrat/eng@2024-06-02/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/rep-modern" showAs="Rep. Modern"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Amendment to the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>: <docTitle>Optional Socarrat</docTitle></p>
+      </longTitle>
+      <p>Submitted by <docProponent>Representative Modern</docProponent>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <block name="amendment">
+          <p>It is proposed to amend <ref href="/akn/poc/act/valencian-paella-recipe#art_11">Article 11</ref> to make the socarrat optional:</p>
+          <p><mod>"Article 11. Socarrat and presentation. Optionally, during the last 2 minutes the heat may be raised to form the socarrat. The paella may be served in the pan or plated according to preference."</mod></p>
+        </block>
+        <block name="justification">
+          <p>Burnt socarrat is the leading cause of rejection among diners unfamiliar with the dish. Making it optional increases the accessibility of the recipe.</p>
+        </block>
+      </amendmentContent>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

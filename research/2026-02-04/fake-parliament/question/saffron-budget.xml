@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <question name="saffron-budget">
+    <meta>
+      <identification source="#secretariat">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/question/saffron-budget"/>
+          <FRBRuri value="/akn/poc/question/saffron-budget"/>
+          <FRBRdate date="2024-06-01" name="tabling"/>
+          <FRBRauthor href="/persona/rep-luna"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/question/saffron-budget/eng@2024-06-01"/>
+          <FRBRuri value="/akn/poc/question/saffron-budget/eng@2024-06-01"/>
+          <FRBRdate date="2024-06-01" name="tabling"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/question/saffron-budget/eng@2024-06-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretariat">
+        <TLCPerson eId="rep-luna" href="/persona/rep-luna" showAs="Rep. Luna"/>
+        <TLCOrganization eId="min-gastronomy" href="/org/ministry-gastronomy" showAs="Ministry of Gastronomy"/>
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
+      </references>
+    </meta>
+
+    <preface>
+      <p class="title">Written Question No. 118/2024</p>
+      <p class="subtitle">From Rep. Luna to the Ministry of Gastronomy</p>
+    </preface>
+
+    <questionBody>
+      <questionStatus
+        status="answered"
+        askedBy="#rep-luna"
+        addressedTo="#min-gastronomy"
+        dateAsked="2024-06-01"
+        dateAnswered="2024-06-20"
+        deadline="2024-06-21"
+      />
+
+      <questionContent>
+        <question eId="q_1">
+          <p>What share of the 2024 culinary budget was allocated to saffron procurement for the preparation of official events?</p>
+        </question>
+        <question eId="q_2">
+          <p>Does the Ministry plan to update the saffron guidance in the <ref href="/akn/poc/act/valencian-paella-recipe">Official Valencian Paella Recipe Act</ref> to reflect the current market price?</p>
+        </question>
+      </questionContent>
+
+      <answerContent>
+        <p>The Ministry allocated 12% of the 2024 culinary budget to certified saffron purchases, prioritizing local suppliers.</p>
+        <p>No amendment to the act is planned for the current session, but a review will be considered after the 2024 harvest cycle.</p>
+      </answerContent>
+    </questionBody>
+  </question>
+</akomaNtoso>

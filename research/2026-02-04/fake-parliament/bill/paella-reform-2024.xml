@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <bill name="paella-reform-2024">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/bill/paella-reform-2024"/>
+          <FRBRuri value="/akn/poc/bill/paella-reform-2024"/>
+          <FRBRdate date="2024-05-10" name="submission"/>
+          <FRBRauthor href="/persona/rep-madrid"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/bill/paella-reform-2024/eng@2024-05-10"/>
+          <FRBRuri value="/akn/poc/bill/paella-reform-2024/eng@2024-05-10"/>
+          <FRBRdate date="2024-05-10" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/bill/paella-reform-2024/eng@2024-05-10/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/rep-madrid" showAs="Rep. Madrid"/>
+        <TLCOrganization eId="camara" href="/org/camara-ingredientes" showAs="Camara de Ingredientes"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Bill to <docTitle>Reform the Valencian Paella Recipe</docTitle></p>
+      </longTitle>
+      <p>Legislative proposal submitted by <docProponent>Representative Madrid</docProponent> to the Camara de Ingredientes.</p>
+      <p>Amends <ref href="/akn/poc/act/valencian-paella-recipe">Act No. 42/2023 on Valencian Paella</ref>.</p>
+    </preface>
+
+    <preamble>
+      <p>Whereas:</p>
+      <p>1. Bomba rice is excessively expensive and difficult to find outside the Valencia region.</p>
+      <p>2. The absolute prohibition on seafood ignores the paella traditions of Catalonia, Andalusia, and Murcia.</p>
+      <p>3. Real La Mancha saffron has a prohibitive cost for middle-income families.</p>
+      <p>4. Requiring orange wood fire excludes 95% of households living in apartments.</p>
+      <p>5. Paella is the heritage of the entire nation, not just Valencia.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1">
+        <heading>Article 1</heading>
+        <content>
+          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_1">Article 1</ref> of Act No. 42/2023 is amended, replacing its text with the following:</p>
+          <p><mod>"Article 1. Type of rice. 400 grams of bomba rice or, alternatively, medium-grain round rice shall be used. Bomba rice is preferably recommended when available."</mod></p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Article 2</heading>
+        <content>
+          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_5">Article 5</ref> of Act No. 42/2023 is replaced with the following:</p>
+          <p><mod>"Article 5. Other proteins. Optionally, fresh seafood (shrimp, mussels, squid) may be added as a complement or alternative to the proteins in Title II."</mod></p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <heading>Article 3</heading>
+        <content>
+          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_7">Article 7</ref> of Act No. 42/2023 is amended, replacing its text with the following:</p>
+          <p><mod>"Article 7. Saffron and coloring. Real saffron threads or, alternatively, food coloring suitable for paella shall be used. Real saffron is preferably recommended."</mod></p>
+        </content>
+      </article>
+      <article eId="art_4">
+        <heading>Article 4</heading>
+        <content>
+          <p><ref href="/akn/poc/act/valencian-paella-recipe#art_10">Article 10</ref> of Act No. 42/2023 is amended, replacing its text with the following:</p>
+          <p><mod>"Article 10. Heat source. Cooking shall be performed over a wood fire or, alternatively, on a gas stove at high heat. Wood fire is preferably recommended. The use of electric or induction stoves is prohibited."</mod></p>
+        </content>
+      </article>
+      <article eId="art_5">
+        <heading>Article 5</heading>
+        <content>
+          <p>The following Article 5 bis is inserted into Act No. 42/2023, after <ref href="/akn/poc/act/valencian-paella-recipe#art_5">Article 5</ref>:</p>
+          <p><ins>"Article 5 bis. Mixed paella. When seafood is used per Article 5, the dish shall be called 'mixed paella' and not 'Valencian paella'."</ins></p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

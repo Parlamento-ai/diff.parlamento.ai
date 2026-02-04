@@ -4,7 +4,7 @@
 	import BlockContent from '../shared/BlockContent.svelte';
 	import AknRef from '../shared/AknRef.svelte';
 
-	let { root, manifest = [] }: { root: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { root, manifest = [], linkBase = '/docs/explorer' }: { root: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 
 	const preface = $derived(findNode(root, 'preface'));
 	const communicationBody = $derived(findNode(root, 'communicationBody'));
@@ -40,7 +40,7 @@
 					{extractTextFromNode(child)}
 				</h2>
 			{:else}
-				<BlockContent node={child} {manifest} />
+				<BlockContent node={child} {manifest} {linkBase} />
 			{/if}
 		{/each}
 	</div>
@@ -72,7 +72,7 @@
 				<div>
 					<span class="text-xs text-violet-700 uppercase tracking-wide">Refers To</span>
 					<span class="ml-2">
-						<AknRef href={getTransmissionAttr('refersTo')} {manifest}>
+						<AknRef href={getTransmissionAttr('refersTo')} {manifest} {linkBase}>
 							{getTransmissionAttr('refersTo')}
 						</AknRef>
 					</span>
@@ -86,7 +86,7 @@
 	<div class="mb-6">
 		<h3 class="text-lg font-heading font-semibold text-violet-900 mb-3">Content</h3>
 		{#each content.children as child}
-			<BlockContent node={child} {manifest} />
+			<BlockContent node={child} {manifest} {linkBase} />
 		{/each}
 	</div>
 {/if}
@@ -102,7 +102,7 @@
 				{/if}
 				{#each rationale.children as child}
 					{#if child.name !== 'heading'}
-						<BlockContent node={child} {manifest} />
+						<BlockContent node={child} {manifest} {linkBase} />
 					{/if}
 				{/each}
 			</div>

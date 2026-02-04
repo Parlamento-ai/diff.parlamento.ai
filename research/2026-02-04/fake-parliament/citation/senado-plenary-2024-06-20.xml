@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <citation name="senado-plenary-2024-06-20">
+    <meta>
+      <identification source="#secretariat">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/citation/senado-plenary-2024-06-20"/>
+          <FRBRuri value="/akn/poc/citation/senado-plenary-2024-06-20"/>
+          <FRBRdate date="2024-06-20" name="session"/>
+          <FRBRauthor href="/org/senado-gastronomia"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/citation/senado-plenary-2024-06-20/eng@2024-06-17"/>
+          <FRBRuri value="/akn/poc/citation/senado-plenary-2024-06-20/eng@2024-06-17"/>
+          <FRBRdate date="2024-06-17" name="publication"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/citation/senado-plenary-2024-06-20/eng@2024-06-17/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#secretariat">
+        <TLCOrganization eId="senado" href="/org/senado-gastronomia" showAs="Senado de Gastronomia"/>
+        <TLCOrganization eId="plenary" href="/org/senado-gastronomia/plenary" showAs="Plenary of the Senado"/>
+        <TLCPerson eId="president" href="/persona/president-fernandez" showAs="President Fernandez"/>
+        <TLCPerson eId="secretariat" href="/persona/senado-secretariat" showAs="Secretariat of the Senado"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><docTitle>Plenary Session Citation: Senado Review of the Paella Reform</docTitle></p>
+      </longTitle>
+      <p>Issued by the Secretariat of the Senado de Gastronomia for the session of June 20, 2024.</p>
+    </preface>
+
+    <citationBody>
+      <session date="2024-06-20" time="11:00" place="Sala del Senado" chair="#president">
+        <body>Senado de Gastronomia</body>
+      </session>
+
+      <agenda>
+        <agendaSection eId="agenda_order">
+          <heading>Order of the Day</heading>
+          <agendaItem eId="item_review" status="scheduled">
+            <heading>Review of the Paella Reform Bill (from Camara)</heading>
+            <step type="first-reading" showAs="First reading in Senado"/>
+            <ref href="/akn/poc/bill/paella-reform-2024">Bill: Reform of the Valencian Paella Recipe</ref>
+            <ref href="/akn/poc/communication/camara-to-senado">Transmission from Camara de Ingredientes</ref>
+          </agendaItem>
+          <agendaItem eId="item_vote" status="scheduled">
+            <heading>Vote on the Paella Reform Bill</heading>
+            <step type="final-vote" showAs="Final vote"/>
+          </agendaItem>
+        </agendaSection>
+      </agenda>
+    </citationBody>
+  </citation>
+</akomaNtoso>

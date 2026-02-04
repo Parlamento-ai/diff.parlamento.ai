@@ -1,0 +1,28 @@
+<script lang="ts">
+	import type { PublishedAct } from '$lib/types/parliament';
+
+	let { acts, parliamentId }: {
+		acts: PublishedAct[];
+		parliamentId: string;
+	} = $props();
+</script>
+
+<section>
+	<h2 class="text-lg font-heading font-bold text-gray-900 mb-4">Published Laws & Gazette</h2>
+
+	{#if acts.length === 0}
+		<p class="text-sm text-gray-500">No published acts.</p>
+	{:else}
+		<div class="space-y-2">
+			{#each acts as act}
+				<a href="/fake/{parliamentId}/documento{act.uri}" class="flex items-center gap-3 bg-white rounded-lg border border-gray-200 p-3 hover:border-emerald-300 hover:shadow-sm transition-all">
+					<span class="text-emerald-700 bg-emerald-50 border border-emerald-200 text-[11px] uppercase tracking-wide px-2 py-0.5 rounded-full font-medium shrink-0">
+						{act.uri.includes('gazette') ? 'gazette' : 'act'}
+					</span>
+					<span class="font-heading font-medium text-sm text-gray-900 flex-1 truncate">{act.title}</span>
+					<span class="text-xs text-gray-400 shrink-0">{act.date}</span>
+				</a>
+			{/each}
+		</div>
+	{/if}
+</section>

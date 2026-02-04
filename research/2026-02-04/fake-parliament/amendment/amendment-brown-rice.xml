@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <amendment name="amendment-brown-rice">
+    <meta>
+      <identification source="#proponente">
+        <FRBRWork>
+          <FRBRthis value="/akn/poc/amendment/amendment-brown-rice"/>
+          <FRBRuri value="/akn/poc/amendment/amendment-brown-rice"/>
+          <FRBRdate date="2024-06-01" name="submission"/>
+          <FRBRauthor href="/persona/rep-naturist"/>
+          <FRBRcountry value="ga"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/poc/amendment/amendment-brown-rice/eng@2024-06-01"/>
+          <FRBRuri value="/akn/poc/amendment/amendment-brown-rice/eng@2024-06-01"/>
+          <FRBRdate date="2024-06-01" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/poc/amendment/amendment-brown-rice/eng@2024-06-01/main.xml"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#proponente">
+        <TLCPerson eId="proponente" href="/persona/rep-naturist" showAs="Rep. Naturist"/>
+      </references>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Amendment to the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>: <docTitle>Inclusion of Brown Rice</docTitle></p>
+      </longTitle>
+      <p>Submitted by <docProponent>Representative Naturist</docProponent> to the <ref href="/akn/poc/bill/paella-reform-2024">Paella Reform Bill</ref>.</p>
+    </preface>
+
+    <amendmentBody>
+      <amendmentContent>
+        <block name="amendment">
+          <p>It is proposed to amend <ref href="/akn/poc/act/valencian-paella-recipe#art_1">Article 1</ref> to include brown rice as a healthy alternative:</p>
+          <p><mod>"Article 1. Type of rice. 400 grams of bomba rice, medium-grain round rice, or brown rice shall be used. Bomba rice is preferably recommended when available."</mod></p>
+        </block>
+        <block name="justification">
+          <p>Brown rice provides greater nutritional value, fiber, and minerals. Its inclusion promotes healthier eating habits without altering the spirit of the recipe.</p>
+        </block>
+      </amendmentContent>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

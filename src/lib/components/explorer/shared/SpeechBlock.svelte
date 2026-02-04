@@ -3,7 +3,7 @@
 	import AknRef from './AknRef.svelte';
 	import { extractTextFromNode } from '$lib/utils/akn-helpers';
 
-	let { node, manifest = [] }: { node: AknNode; manifest?: ManifestEntry[] } = $props();
+	let { node, manifest = [], linkBase = '/docs/explorer' }: { node: AknNode; manifest?: ManifestEntry[]; linkBase?: string } = $props();
 
 	function getSpeaker(speech: AknNode): string {
 		const from = speech.children.find((c) => c.name === 'from');
@@ -23,7 +23,7 @@
 					{#if inline.name === '#text'}
 						{inline.text}
 					{:else if inline.name === 'ref'}
-						<AknRef href={inline.attributes['href'] || ''} {manifest}>{extractTextFromNode(inline)}</AknRef>
+						<AknRef href={inline.attributes['href'] || ''} {manifest} {linkBase}>{extractTextFromNode(inline)}</AknRef>
 					{:else}
 						{extractTextFromNode(inline)}
 					{/if}
