@@ -12,7 +12,7 @@ Nuestra propuesta es `AKN Diff`, una extensión del estándar [Akoma Ntoso](http
 ---
 **03/02/2026**
 
-Viendo el buen resultado del proof of concept, rediseñamos toda la página y un estilo más accesible para invitar a la gente a verlo. Aún no lo publicamos abiertamente. 
+Viendo el buen resultado del proof of concept, rediseñamos toda la página para hacerla más accesible. Aún no lo publicamos abiertamente. El objetivo es crear un debate alrededor de estos temas.
 
 También cambiamos el nombre a la extensión, ya no es AKN++ pero AKN Diff, porque se concentra únicamente en los cambios del comparado, nada más que eso. Y llamamos a este proyecto de research Diff by Parlamento.ai, de esa manera, englobamos todo bajo el nombre de "Diff".
 
@@ -27,7 +27,25 @@ Se nos ocurrieron varias ideas que me gustaría explorar:
 4. ¿Cómo podríamos convertir los datos actuales a este formato? Obviamente que con un trabajo manual monstruoso se podría hacer, pero eso no parece para nada viable. Habría que explorar workflows que combinen informática, inteligencia artificial y trabajo manual para reconstruir los datos.
 5. Ver qué tan viable es AKN para ser el formato que englobe todo. A primera vista se ve bastante completo, pero tal vez, en realidad, es súper terco y difícil de trabajar y no se adapta a la realidad de los parlamentos. Explicaría el por qué nunca fue adaptado correctamente.
 
+A raíz del punto 1 y 3 decidimos hacer un test de cómo podríamos hacer un visualizador en el cual puedo cliquear, como si fueran links, los distintos archivos AKN para poder navegar. El resultado es positivo: es agradable de navegar y el formato lo permite muy bien. Agregamos una nueva sección a la documentación para mostrar la versión renderizada y el XML bruto de cada uno de los tipos disponibles en AKN. 
 
+![AKN Split View - Renderizado y XML](research/2026-02-03/xml-render-split.jpg)
+
+Hicimos como si fuera un navegador web para ejemplificar aún más. En la imagen se puede ver la 'split view' en la que se ven el modo renderizado y el XML al mismo tiempo.
+
+Siguiendo en la misma idea, nos preguntamos cómo podríamos crear una interfaz para cualquier persona que trabaje o siga el reto parlamentario 100 % basada en los formatos AKN. Es como si creáramos una plantilla para cualquier parlamento, poder simplemente copiar, pegar y, basada en AKN, todo podría estar conectado. Pienso esto para, en primer lugar, Parlamento.ai que necesita organización y queremos seguir varios parlamentos, pero también para crear un proyecto open source para cualquier parlamento que le gustaría tomar una interfaz ya trabajada y compatible con AKN.
+
+Analizando cómo ver el problema, nos dimos cuenta de que no existía una forma ordenada de representar el orden del día. La solución que propone el formato es hacer un documento genérico, que podría ser un reporte, una conclusión o una citación, pero no tiene un formato específico para la citación.
+
+A base de eso decidimos crear un tipo de "orden del día" para agregarlo a AKN, incluso si eso rompería el formato. Pero nos parece tan importante que tomamos la decisión de seguir con esa idea.
+
+Investigamos un poco sobre por qué el formato no comprendía el concepto de "orden del día". La conclusión fue que AKN es un formato para archivar temas que son jurídicamente relevantes y que este concepto de citación vendría siendo algo de operación y no jurídico.
+
+Nos pareció curioso. La situación parece algo esencial al debate legislativo.
+
+Hicimos un primer test de cómo podría ser un tipo de citación creado desde cero. [En este documento está detallado todo con las motivaciones](/Users/lb/work/diff-law/research/2026-02-03/citation-type-proposal.md), se nos ocurrió hacer un formato que también intente ser mecánicamente compatible con CalDAV, tal vez es un poco 'gadget', pero muestra la motivación a una máxima estandarización y compatibilidad.  
+
+El formato aún merece revisión. 
 
 ---
 **01/02/2026**
