@@ -1,18 +1,37 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import type { ParliamentMeta } from '$lib/types/parliament';
 	import type { Snippet } from 'svelte';
+	import HomeIcon from '~icons/lucide/home';
+	import LayoutDashboardIcon from '~icons/lucide/layout-dashboard';
+	import FileTextIcon from '~icons/lucide/file-text';
+	import CalendarIcon from '~icons/lucide/calendar';
+	import MessageCircleQuestionIcon from '~icons/lucide/message-circle-question';
+	import ScaleIcon from '~icons/lucide/scale';
 
 	let {
 		meta,
-		selectedChamber = null,
-		onChamberChange,
 		children
 	}: {
 		meta: ParliamentMeta;
-		selectedChamber?: string | null;
-		onChamberChange?: (chamber: string | null) => void;
 		children: Snippet;
 	} = $props();
+
+	const basePath = $derived(`/fake/${meta.id}`);
+	const currentPath = $derived($page.url.pathname);
+
+	const navItems = $derived([
+		{ href: basePath, label: 'Inicio', icon: LayoutDashboardIcon, exact: true },
+		{ href: `${basePath}/boletines`, label: 'Boletines', icon: FileTextIcon },
+		{ href: `${basePath}/citaciones`, label: 'Citaciones', icon: CalendarIcon },
+		{ href: `${basePath}/preguntas`, label: 'Preguntas', icon: MessageCircleQuestionIcon },
+		{ href: `${basePath}/leyes`, label: 'Leyes Publicadas', icon: ScaleIcon }
+	]);
+
+	function isActive(href: string, exact: boolean = false): boolean {
+		if (exact) return currentPath === href;
+		return currentPath.startsWith(href);
+	}
 </script>
 
 <div class="min-h-screen bg-gray-50">
@@ -21,33 +40,31 @@
 		<div class="max-w-6xl mx-auto px-4 py-4">
 			<div class="flex items-center justify-between">
 				<div>
+					<a
+						href="/"
+						class="inline-flex items-center gap-1 text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 hover:text-gray-700 transition-colors mb-1"
+					>
+						<HomeIcon class="w-3 h-3" />
+						Volver a Diff
+					</a>
 					<h1 class="text-xl font-heading font-bold text-gray-900">{meta.name}</h1>
-					<p class="text-sm text-gray-500">{meta.legislativePeriod.name}</p>
-				</div>
-				<div class="text-right text-sm text-gray-500">
-					<div class="font-medium">{meta.country.toUpperCase()}</div>
 				</div>
 			</div>
 
-			<!-- Chamber tabs -->
-			{#if onChamberChange}
-				<div class="flex gap-1 mt-3">
-					<button
-						class="text-sm px-3 py-1.5 rounded-full font-medium transition-colors {selectedChamber === null ? 'bg-gray-900 text-white' : 'text-gray-600 hover:bg-gray-100'}"
-						onclick={() => onChamberChange(null)}
+			<!-- Section navigation -->
+			<nav class="flex gap-1 mt-4 -mb-4 overflow-x-auto">
+				{#each navItems as item}
+					<a
+						href={item.href}
+						class="flex items-center gap-1.5 text-sm px-3 py-2 font-medium transition-colors whitespace-nowrap border-b-2 {isActive(item.href, item.exact)
+							? 'border-gray-900 text-gray-900'
+							: 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'}"
 					>
-						All
-					</button>
-					{#each meta.chambers as chamber}
-						<button
-							class="text-sm px-3 py-1.5 rounded-full font-medium transition-colors {selectedChamber === chamber.id ? 'bg-gray-900 text-white' : 'text-gray-600 hover:bg-gray-100'}"
-							onclick={() => onChamberChange(chamber.id)}
-						>
-							{chamber.nameEn}
-						</button>
-					{/each}
-				</div>
-			{/if}
+						<item.icon class="w-4 h-4" />
+						{item.label}
+					</a>
+				{/each}
+			</nav>
 		</div>
 	</header>
 
@@ -59,8 +76,8 @@
 	<!-- Footer -->
 	<footer class="border-t border-gray-200 mt-16 py-8 px-4">
 		<div class="max-w-6xl mx-auto text-center text-sm text-gray-400">
-			<p>Portal Parlamentario Fake &mdash; basado en primitivas AKN (Akoma Ntoso)</p>
-			<p class="mt-1">Powered by <a href="/" class="text-gray-600 underline underline-offset-2 hover:text-gray-900 transition-colors">Diff by Parlamento.ai</a></p>
+			<p>Portal Parlamentario de Prueba &mdash; basado en primitivas AKN (Akoma Ntoso)</p>
+			<p class="mt-1">Desarrollado por <a href="/" class="text-gray-600 underline underline-offset-2 hover:text-gray-900 transition-colors">Diff by Parlamento.ai</a></p>
 		</div>
 	</footer>
 </div>

@@ -9,18 +9,16 @@
 
 	let { data }: { data: PageData } = $props();
 
-	let selectedChamber: string | null = $state(null);
-
 	const parliamentId = data.meta.id;
 </script>
 
-<ParliamentLayout meta={data.meta} {selectedChamber} onChamberChange={(c) => selectedChamber = c}>
+<ParliamentLayout meta={data.meta}>
 	<div class="space-y-10">
 		{#if data.upcomingSessions.length > 0}
-			<UpcomingSessions sessions={data.upcomingSessions} {selectedChamber} {parliamentId} />
+			<UpcomingSessions sessions={data.upcomingSessions} {parliamentId} />
 		{/if}
 
-		<BillsInProgress bills={data.billsInProgress} {selectedChamber} {parliamentId} />
+		<BillsInProgress bills={data.billsInProgress} {parliamentId} />
 
 		<RecentActivityFeed activities={data.recentActivity} {parliamentId} />
 

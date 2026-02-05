@@ -271,6 +271,55 @@ export function getQuestionsSummary(
 	return questions;
 }
 
+export function getAllSessions(
+	docs: Map<string, GenericAknDocument>,
+	manifest: ParliamentManifest
+): UpcomingSession[] {
+	const sessions: UpcomingSession[] = [];
+
+	for (const entry of manifest.documents) {
+		if (entry.type !== 'citation') continue;
+		const doc = docs.get(entry.uri);
+		if (!doc) continue;
+
+		const citationBody = findNode(doc.root, 'citationBody');
+		if (!citationBody) continue;
+
+		const session = findNode(citationBody, 'session');
+		if (!session) continue;
+
+		const dateStr = session.attributes['date'] || '';
+		if (!dateStr) continue;
+
+		const agenda = findNode(citationBody, 'agenda');
+		const agendaItems: { heading: string; status: string }[] = [];
+		if (agenda) {
+			for (const item of findAllNodes(agenda, 'agendaItem')) {
+				const heading = findNode(item, 'heading');
+				agendaItems.push({
+					heading: heading ? extractTextFromNode(heading) : '',
+					status: item.attributes['status'] || ''
+				});
+			}
+		}
+
+		const bodyNode = findNode(session, 'body');
+		sessions.push({
+			uri: entry.uri,
+			title: entry.title,
+			date: dateStr,
+			time: session.attributes['time'] || '',
+			place: session.attributes['place'] || '',
+			chamber: entry.chamber,
+			body: bodyNode ? extractTextFromNode(bodyNode) : '',
+			agendaItems
+		});
+	}
+
+	sessions.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+	return sessions;
+}
+
 export function getPublishedActs(
 	docs: Map<string, GenericAknDocument>,
 	manifest: ParliamentManifest

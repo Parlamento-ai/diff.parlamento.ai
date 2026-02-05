@@ -1,10 +1,19 @@
 <script lang="ts">
 	import '../layout.css';
-	import type { LayoutData } from './$types';
+	import { page } from '$app/stores';
+	import { MetaTags } from 'svelte-meta-tags';
 
-	let { data, children }: { data: LayoutData; children: any } = $props();
+	let { children }: { children: any } = $props();
 </script>
 
-<div class="min-h-screen bg-gray-50">
-	{@render children()}
-</div>
+<MetaTags title="Portal Parlamentario" titleTemplate="%s | Fake Parliament" />
+
+{@render children()}
+
+<!-- Noise texture filter (rendered once, invisible) -->
+<svg class="hidden">
+	<filter id="grain">
+		<feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+		<feColorMatrix type="saturate" values="0" />
+	</filter>
+</svg>

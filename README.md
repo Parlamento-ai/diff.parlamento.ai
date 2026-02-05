@@ -34,10 +34,9 @@ La proxima pregunta es: que tan viable y juridicamente correctos son estos links
 
 ![AKN Dashboard - Historial de documentos](research/2026-02-04/akn-dashboard-history.jpg)
 
-Por ejemplo en ese screenshot podemos ver el historial de un boletin, pero gracias a los links tambien marca las citaciones, mensages y debates.
+Por ejemplo en este screenshot podemos ver el historial de un boletin, pero gracias a los links tambien marca las citaciones, mensages y debates.
 
-Es el historial de un boletin algo juridico? o es a discrecion de cada comision que se puede o no declarar como parte del boletin.
-
+De lo que vimos, al parecer no. El historial de un boletín es a título informativo. Y podríamos agregarle elementos a este historial, como las citaciones, o eventualmente cuando un boletín es mencionado.
 
 
 ---

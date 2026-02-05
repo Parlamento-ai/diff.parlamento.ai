@@ -10,10 +10,10 @@
 </script>
 
 <section>
-	<h2 class="text-lg font-heading font-bold text-gray-900 mb-4">Recent Activity</h2>
+	<h2 class="text-lg font-heading font-bold text-gray-900 mb-4">Actividad Reciente</h2>
 
 	{#if activities.length === 0}
-		<p class="text-sm text-gray-500">No recent activity.</p>
+		<p class="text-sm text-gray-500">No hay actividad reciente.</p>
 	{:else}
 		<div class="space-y-2">
 			{#each activities as activity}

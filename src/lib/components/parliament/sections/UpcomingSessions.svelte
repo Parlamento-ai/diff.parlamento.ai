@@ -2,25 +2,20 @@
 	import type { UpcomingSession } from '$lib/types/parliament';
 	import ChamberBadge from '../shared/ChamberBadge.svelte';
 
-	let { sessions, selectedChamber = null, parliamentId }: {
+	let { sessions, parliamentId }: {
 		sessions: UpcomingSession[];
-		selectedChamber?: string | null;
 		parliamentId: string;
 	} = $props();
-
-	const filtered = $derived(
-		selectedChamber ? sessions.filter((s) => s.chamber === selectedChamber) : sessions
-	);
 </script>
 
 <section>
-	<h2 class="text-lg font-heading font-bold text-gray-900 mb-4">Upcoming Sessions</h2>
+	<h2 class="text-lg font-heading font-bold text-gray-900 mb-4">Proximas Sesiones</h2>
 
-	{#if filtered.length === 0}
-		<p class="text-sm text-gray-500">No upcoming sessions scheduled.</p>
+	{#if sessions.length === 0}
+		<p class="text-sm text-gray-500">No hay sesiones programadas.</p>
 	{:else}
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-			{#each filtered as session}
+			{#each sessions as session}
 				<a href="/fake/{parliamentId}/documento{session.uri}" class="block bg-white rounded-lg border border-gray-200 p-4 hover:border-teal-300 hover:shadow-sm transition-all">
 					<div class="flex items-center gap-2 mb-2">
 						<span class="text-teal-700 bg-teal-50 border border-teal-200 text-[11px] uppercase tracking-wide px-2 py-0.5 rounded-full font-medium">
