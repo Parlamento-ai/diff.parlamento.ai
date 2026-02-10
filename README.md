@@ -10,7 +10,7 @@ Partimos de un problema concreto: no existe una herramienta pública para ver qu
 ---
 **10/02/2026**
 
-Surgieron tres preguntas, qué quisimos responder:
+Surgieron dos preguntas, qué quisimos responder:
 1. ¿Cómo representar el hecho de que varios países nombran las cosas de forma distinta? ¿AKN tiene forma de representar eso?
 
 > No necesitas "escribir todo en inglés y traducir en la interfaz". La solución de AKN es más elegante:
@@ -28,7 +28,8 @@ Surgieron tres preguntas, qué quisimos responder:
 > 3. DMN = las reglas (por qué se toman las decisiones)
 > Cada país tendría su modelo BPMN del rito parlamentario, con sus tablas DMN de reglas. Los nodos del proceso BPMN referenciarían los tipos de documentos AKN que se producen en cada paso. 
 
-3. ¿Podríamos convertir los datos públicos de algún Parlamento a nuestro nuevo formato AKN? Habría que ver que Parlamento tiene bastantes datos bien ordenados públicamente y ver si, con una combinación de mecánica y humano, podríamos convertirlo en este formato. 
+Después de investigar, llegamos a la conclusión de [este reporte](research/2026-02-10/bpmn-dmn-para-rito-parlamentario.md). La idea de poder representar los flujos legalmente a través de diagramas es totalmente factible y podría ser super interesante. Nos desvía un poco de la idea principal, por ende lo dejaremos en pausa por ahora.
+
 
 
 ---
