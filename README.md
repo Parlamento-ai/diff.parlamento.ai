@@ -1,13 +1,20 @@
 # Diff by Parlamento.ai
 
-Herramienta para generar **comparados legislativos** de forma automática. 
+Proyecto de investigación que explora cómo representar el **rito parlamentario completo** usando [Akoma Ntoso](http://www.akomantoso.org/) como base.
 
-El problema: cuando se modifica una ley, no existe un formato estándar ni una herramienta pública que permita ver lado a lado qué cambió. Cada parlamento hace lo suyo, muchos solo publican PDFs, y el ciudadano queda a ciegas.
-
-Nuestra propuesta es `AKN Diff`, una extensión del estándar [Akoma Ntoso](http://www.akomantoso.org/) que agrega un `changeSet` computable a los documentos legislativos, permitiendo reconstruir el comparado de cualquier modificación de forma automática.
+Partimos de un problema concreto: no existe una herramienta pública para ver qué cambió cuando se modifica una ley. Para resolverlo, propusimos `AKN Diff`, una extensión que agrega un `changeSet` computable al estándar AKN. Pero la investigación nos llevó más lejos: a explorar si AKN puede ser la base de datos de un parlamento entero, a diseñar los tipos de documentos que le faltan al estándar, y a prototipar un portal legislativo 100 % basado en estas primitivas.
 
 
 ## Changelog
+
+---
+**10/02/2026**
+
+El proyecto va bien encaminado. Nos surgieron tres preguntas:
+1. ¿Cómo representar el hecho de que varios países nombran las cosas de forma distinta? ¿AKN tiene forma de representar eso?
+2. AKN solamente representa el dato como es. No comprende las reglas del rito parlamentario. ¿Habrá algún formato que nos permita transformar todo el proceso en algo fácil de leer por una máquina y un humano? Tal vez un formato para construir diagramas de decisiones o algo de ese estilo, que nos permita traducir las leyes legislativas de un país.
+3. ¿Podríamos convertir los datos públicos de algún Parlamento a nuestro nuevo formato AKN? Habría que ver que Parlamento tiene bastantes datos bien ordenados públicamente y ver si, con una combinación de mecánica y humano, podríamos convertirlo en este formato. 
+
 
 ---
 **04/02/2026**
