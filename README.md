@@ -23,13 +23,10 @@ Surgieron tres preguntas, qué quisimos responder:
 
 2. AKN solamente representa el dato como es. No comprende las reglas del rito parlamentario. ¿Habrá algún formato que nos permita transformar todo el proceso en algo fácil de leer por una máquina y un humano? Tal vez un formato para construir diagramas de decisiones o algo de ese estilo, que nos permita traducir las leyes legislativas de un país.
 
-Respuesta generada por AI:
-```md
-1. AKN = los documentos (qué se produjo)
-2. BPMN = el proceso (cómo se mueven los documentos)
-3. DMN = las reglas (por qué se toman las decisiones)
-Cada país tendría su modelo BPMN del rito parlamentario, con sus tablas DMN de reglas. Los nodos del proceso BPMN referenciarían los tipos de documentos AKN que se producen en cada paso. 
-```
+> 1. AKN = los documentos (qué se produjo)
+> 2. BPMN = el proceso (cómo se mueven los documentos)
+> 3. DMN = las reglas (por qué se toman las decisiones)
+> Cada país tendría su modelo BPMN del rito parlamentario, con sus tablas DMN de reglas. Los nodos del proceso BPMN referenciarían los tipos de documentos AKN que se producen en cada paso. 
 
 3. ¿Podríamos convertir los datos públicos de algún Parlamento a nuestro nuevo formato AKN? Habría que ver que Parlamento tiene bastantes datos bien ordenados públicamente y ver si, con una combinación de mecánica y humano, podríamos convertirlo en este formato. 
 
