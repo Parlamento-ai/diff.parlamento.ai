@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <act name="ley-21670">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/ley/21670"/>
+          <FRBRuri value="/cl/ley/21670"/>
+          <FRBRdate date="2024-06-13" name="publicación"/>
+          <FRBRauthor href="/cl/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/ley/21670/esp@2024-06-13"/>
+          <FRBRuri value="/cl/ley/21670/esp@2024-06-13"/>
+          <FRBRdate date="2024-06-13" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/ley/21670/esp@2024-06-13/akn"/>
+          <FRBRuri value="/cl/ley/21670/esp@2024-06-13/akn"/>
+          <FRBRdate date="2026-02-19" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Ley N° <docTitle>Ley 21.670 — Porte de Armas Aspirantes Policiales</docTitle></p>
+      </longTitle>
+      <p>Modifica la ley N°17.798, sobre Control de Armas, para autorizar el porte de armas por los aspirantes a oficiales de Carabineros y por los carabineros alumnos desde el año de formación que indica, mientras realizan sus respectivas prácticas profesionales. Publicada en el Diario Oficial el 13 de junio de 2024.</p>
+    </preface>
+    <body>
+      <article eId="art_6">
+        <heading>Artículo 6 (texto reformado)</heading>
+        <content>
+        <p>Inciso 1°: Las armas indicadas en el artículo anterior podrán ser poseídas o tenidas únicamente por las personas que cuenten con autorización de la Dirección General de Movilización Nacional y las hayan inscrito en el Registro Nacional de Armas.</p>
+        <p>Inciso 2°: El permiso de porte de armas tendrá una vigencia máxima de un año, contado desde la fecha de su otorgamiento, y sólo autoriza al beneficiario para portar un arma.</p>
+        <p>Inciso 3°: Asimismo, no requerirán este permiso los aspirantes a oficiales de la Policía de Investigaciones, que cursen tercer año en la Escuela de Investigaciones Policiales, durante la realización de las respectivas prácticas policiales.</p>
+        <p>Inciso 4°: Tampoco requerirán este permiso los aspirantes a oficiales de Carabineros que cursen tercer y cuarto año en la Escuela de Carabineros de Chile, ni los carabineros alumnos que cursen segundo año en la Escuela de Formación de Carabineros y sus grupos de formación a nivel nacional, mientras realicen los periodos de práctica que determinen las respectivas mallas curriculares. Para que dichos aspirantes a oficiales y carabineros alumnos se encuentren exentos del permiso de porte de armas a que se refiere este artículo deberán haber aprobado todos los cursos de tiro policial correspondientes a sus semestres anteriores. Estas prácticas profesionales tendrán únicamente la finalidad de contribuir a las labores de prevención y mantención del orden público.</p>
+        <p>Inciso 5°: Los aspirantes a oficiales de la Policía de Investigaciones a los que se refiere el inciso tercero y los aspirantes a oficiales de Carabineros y los carabineros alumnos a los que se refiere el inciso cuarto tendrán la calidad de funcionarios de la Policía de Investigaciones o de Carabineros de Chile, respectivamente, en cualquier actuación en la que participen durante los periodos de práctica que determinen las respectivas mallas curriculares.</p>
+        <p>Inciso 6°: Los permisos de porte serán otorgados por las Comandancias de Guarnición de las Fuerzas Armadas o por la autoridad de Carabineros de mayor jerarquía en la localidad, en caso de urgencia calificada por esas instituciones.</p>
+        </content>
+      </article>
+    </body>
+  </act>
+</akomaNtoso>

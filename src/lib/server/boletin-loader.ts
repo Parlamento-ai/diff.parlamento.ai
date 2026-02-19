@@ -6,6 +6,7 @@ import type { AknDocument, Boletin, TimelineEntry } from '$lib/types';
 const RECETAS_DIR = 'research/2026-02-01/akndiff-poc';
 const LEY_21735_DIR = 'research/2026-02-18/ley-21735/akn';
 const LEY_18045_DIR = 'research/2026-02-18/ley-18045/akn';
+const LEY_21670_DIR = 'research/2026-02-19/ley-21670/akn';
 
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
@@ -23,7 +24,9 @@ const BOLETIN_DIRS: Record<string, string> = {
 	'ley-21735-dfl-28': `${LEY_21735_DIR}/dfl-28`,
 	'ley-21735-ley-20880': `${LEY_21735_DIR}/ley-20880`,
 	// Ley 18.045 — Historia de versiones (1981-2025)
-	'ley-18045-historia': LEY_18045_DIR
+	'ley-18045-historia': LEY_18045_DIR,
+	// Ley 21.670 — Porte de armas aspirantes policiales (Boletín 15.995-02)
+	'ley-21670-boletin': LEY_21670_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -58,6 +61,17 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 			final: 'Ley Promulgada'
 		};
 		return boletinLabels[slug] || slug;
+	}
+	// Boletín 15.995-02 (Ley 21.670): complete legislative process
+	if (boletinSlug === 'ley-21670-boletin') {
+		const ley21670Labels: Record<string, string> = {
+			original: 'Ley 17.798 (pre-reforma)',
+			bill: 'Moción Original',
+			'amendment-1': '1er Trámite: C. Diputados',
+			'amendment-2': '2do Trámite: Senado',
+			final: 'Ley 21.670 Publicada'
+		};
+		return ley21670Labels[slug] || slug;
 	}
 	// Ley 21.735 per-norm timelines (original = pre-reform law)
 	if (boletinSlug?.startsWith('ley-21735-')) {

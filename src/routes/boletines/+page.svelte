@@ -22,7 +22,8 @@
 		'ley-21735-ley-18045': FlagCl,
 		'ley-21735-dfl-28': FlagCl,
 		'ley-21735-ley-20880': FlagCl,
-		'ley-18045-historia': FlagCl
+		'ley-18045-historia': FlagCl,
+		'ley-21670-boletin': FlagCl
 	};
 
 	const emojiMap: Record<string, string> = {
@@ -69,9 +70,11 @@
 
 	const ley18045 = $derived(data.boletines.find((b) => b.slug === 'ley-18045-historia'));
 
+	const ley21670 = $derived(data.boletines.find((b) => b.slug === 'ley-21670-boletin'));
+
 	const recetaBoletines = $derived(
 		data.boletines
-			.filter((b) => !b.slug.startsWith('ley-21735-') && b.slug !== 'ley-18045-historia')
+			.filter((b) => !b.slug.startsWith('ley-21735-') && b.slug !== 'ley-18045-historia' && b.slug !== 'ley-21670-boletin')
 			.sort((a, b) => recetaOrder.indexOf(a.slug) - recetaOrder.indexOf(b.slug))
 	);
 </script>
@@ -165,6 +168,32 @@
 					title={ley18045.title}
 					documentCount={ley18045.documentCount}
 					flag={flagMap[ley18045.slug]}
+				/>
+			</div>
+		</section>
+	{/if}
+
+	<!-- Ley 21.670 — Boletín completo -->
+	{#if ley21670}
+		<section class="mb-14">
+			<div class="mb-5 max-w-lg mx-auto">
+				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+					<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-violet-100 text-violet-700 text-xs font-bold">B</span>
+					Ley 21.670 — Porte de Armas Aspirantes Policiales
+				</h2>
+				<p class="text-xs text-gray-400 mt-1.5 leading-relaxed">
+					Boletín 15.995-02. Primer boletín real con tramitación legislativa completa:
+					moción, 1er trámite (Cámara), 2do trámite (Senado con modificaciones),
+					3er trámite y ley publicada. Votación nominal 31-0-2.
+				</p>
+			</div>
+
+			<div class="max-w-lg mx-auto">
+				<BoletinCard
+					slug={ley21670.slug}
+					title={ley21670.title}
+					documentCount={ley21670.documentCount}
+					flag={flagMap[ley21670.slug]}
 				/>
 			</div>
 		</section>

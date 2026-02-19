@@ -115,16 +115,28 @@ function parseArticle(art: Record<string, unknown>): Article {
 
 function parseSections(body: Record<string, unknown>): Section[] {
 	const sections = body.section as Record<string, unknown>[];
-	if (!sections) return [];
+	if (sections) {
+		return sections.map((sec) => {
+			const articles = (sec.article as Record<string, unknown>[]) || [];
+			return {
+				eId: sec['@_eId'] as string,
+				heading: extractText(sec.heading),
+				articles: articles.map(parseArticle)
+			};
+		});
+	}
 
-	return sections.map((sec) => {
-		const articles = (sec.article as Record<string, unknown>[]) || [];
-		return {
-			eId: sec['@_eId'] as string,
-			heading: extractText(sec.heading),
+	// Handle articles directly in body (no section wrapper)
+	const articles = body.article as Record<string, unknown>[];
+	if (articles && articles.length > 0) {
+		return [{
+			eId: '_default',
+			heading: '',
 			articles: articles.map(parseArticle)
-		};
-	});
+		}];
+	}
+
+	return [];
 }
 
 function parseLawBody(doc: Record<string, unknown>): LawState {

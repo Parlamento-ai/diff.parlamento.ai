@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <act name="ley-17798-art6-pre-reforma">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/ley/17798/art6"/>
+          <FRBRuri value="/cl/ley/17798"/>
+          <FRBRdate date="1972-10-21" name="publicación"/>
+          <FRBRauthor href="/cl/congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/ley/17798/art6/esp@2024-06-12"/>
+          <FRBRuri value="/cl/ley/17798/esp@2024-06-12"/>
+          <FRBRdate date="2024-06-12" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/ley/17798/art6/esp@2024-06-12/akn"/>
+          <FRBRuri value="/cl/ley/17798/esp@2024-06-12/akn"/>
+          <FRBRdate date="2026-02-19" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Ley N° <docTitle>Ley 17.798 — Control de Armas (Art. 6)</docTitle></p>
+      </longTitle>
+      <p>Texto del artículo 6 de la Ley 17.798 sobre Control de Armas, vigente antes de la reforma introducida por la Ley 21.670.</p>
+    </preface>
+    <body>
+      <article eId="art_6">
+        <heading>Artículo 6</heading>
+        <content>
+        <p>Inciso 1°: Las armas indicadas en el artículo anterior podrán ser poseídas o tenidas únicamente por las personas que cuenten con autorización de la Dirección General de Movilización Nacional y las hayan inscrito en el Registro Nacional de Armas.</p>
+        <p>Inciso 2°: El permiso de porte de armas tendrá una vigencia máxima de un año, contado desde la fecha de su otorgamiento, y sólo autoriza al beneficiario para portar un arma.</p>
+        <p>Inciso 3°: Asimismo, no requerirán este permiso, los aspirantes a oficiales de Carabineros ni los aspirantes a oficiales de la Policía de Investigaciones, que cursen tercer año en las Escuelas de Carabineros y de Investigaciones Policiales, durante la realización de las respectivas prácticas policiales.</p>
+        <p>Inciso 4°: Los permisos de porte serán otorgados por las Comandancias de Guarnición de las Fuerzas Armadas o por la autoridad de Carabineros de mayor jerarquía en la localidad, en caso de urgencia calificada por esas instituciones.</p>
+        </content>
+      </article>
+    </body>
+  </act>
+</akomaNtoso>

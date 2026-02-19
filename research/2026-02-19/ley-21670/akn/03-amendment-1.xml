@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="boletin-15995-02-1er-tramite">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/15995-02/1er-tramite"/>
+          <FRBRuri value="/cl/boletin/15995-02"/>
+          <FRBRdate date="2024-03-11" name="aprobación"/>
+          <FRBRauthor href="/cl/camara-diputados"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/15995-02/1er-tramite/esp@2024-03-11"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2024-03-11"/>
+          <FRBRdate date="2024-03-11" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/15995-02/1er-tramite/esp@2024-03-11/akn"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2024-03-11/akn"/>
+          <FRBRdate date="2026-02-19" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCOrganization eId="camara" href="/cl/camara-diputados" showAs="Cámara de Diputados"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>1er Trámite: Cámara de Diputados</docTitle></p>
+      </longTitle>
+      <p>Oficio N°19.265 — La Cámara aprueba en general y particular con indicaciones del Ejecutivo. Se reescribe completamente la modificación: se elimina a Carabineros del inciso 3° y se agregan nuevos incisos 4° y 5° con regulación diferenciada para aspirantes a oficiales y carabineros alumnos. Aprobado por 109 votos (quórum calificado).</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Artículo único.- Modifícase el artículo 6 de la ley N°17.798:</p>
+        <p>1. En el inciso tercero: a) Elimínase la expresión ", los aspirantes a oficiales de Carabineros ni". b) Sustitúyese "las Escuelas de Carabineros y" por "la Escuela".</p>
+        <p>2. Agréganse nuevos incisos cuarto y quinto.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/boletin/15995-02/esp@2023-06-05"
+      result="/cl/boletin/15995-02/esp@2024-03-11">
+      <akndiff:vote date="2024-03-11" result="approved" source="/cl/camara-diputados/sesion/1-372">
+        <akndiff:for>
+          <akndiff:voter href="/cl/camara-diputados" showAs="109 diputados a favor (quórum calificado)"/>
+        </akndiff:for>
+        <akndiff:against/>
+        <akndiff:abstain/>
+      </akndiff:vote>
+      <akndiff:articleChange article="art_6" type="substitute">
+        <akndiff:old>Asimismo, no requerirán este permiso, los aspirantes a oficiales de Carabineros ni los aspirantes a oficiales de la Policía de Investigaciones, que cursen tercer año en las Escuelas de Carabineros y de Investigaciones Policiales, durante la realización de las respectivas prácticas policiales.</akndiff:old>
+        <akndiff:new>Asimismo, no requerirán este permiso los aspirantes a oficiales de la Policía de Investigaciones, que cursen tercer año en la Escuela de Investigaciones Policiales, durante la realización de las respectivas prácticas policiales.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_6_inc4" type="insert" after="art_6">
+        <akndiff:new>Tampoco requerirán este permiso los aspirantes a oficiales de Carabineros que estén cursando tercer y cuarto año en la Escuela de Carabineros de Chile, ni los carabineros alumnos que estén cursando segundo año en la Escuela de Formación de Carabineros y sus grupos de formación a nivel nacional, durante la realización de los periodos de práctica que determinen las respectivas mallas curriculares. Sin perjuicio de lo anterior, para que dichos aspirantes a oficiales y carabineros alumnos se encuentren exentos del permiso de porte de armas a que se refiere este artículo, deberán haber aprobado todos los cursos de tiro policial correspondientes a los semestres anteriores al que se encontraren cursando. Estas prácticas profesionales tendrán únicamente la finalidad de contribuir a las labores de prevención y mantención del orden público.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_6_inc5" type="insert" after="art_6_inc4">
+        <akndiff:new>Los aspirantes a oficiales de la Policía de Investigaciones a los que se refiere el inciso tercero y los aspirantes a oficiales de Carabineros y los carabineros alumnos a los que se refiere el inciso cuarto tendrán la calidad de funcionarios de la Policía de Investigaciones o de Carabineros de Chile, respectivamente, en las actuaciones que realicen durante los periodos de práctica que determinen las respectivas mallas curriculares.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>
