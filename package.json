@@ -45,6 +45,7 @@
 		"word-extractor": "^1.0.4"
 	},
 	"dependencies": {
+		"@sveltejs/adapter-static": "^3.0.10",
 		"fast-xml-parser": "^5.3.4",
 		"highlight.js": "^11.11.1",
 		"marked": "^17.0.1",
