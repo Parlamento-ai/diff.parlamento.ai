@@ -1,9 +1,11 @@
-import { loadBoletin, getVersionIndex } from '$lib/server/boletin-loader';
+import { loadBoletin, getVersionIndex, loadRawXml, getSourceDocuments } from '$lib/server/boletin-loader';
 import { reconstructState } from '$lib/server/state-reconstructor';
 import { computeWordDiff } from '$lib/utils/word-diff';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
-import type { ArticleDiff, LawState, Section, Article } from '$lib/types';
+import type { ArticleDiff, LawState, SourceRef } from '$lib/types';
 
 function serializeLawState(law: LawState) {
 	return {
@@ -36,7 +38,9 @@ export const load: PageServerLoad = async ({ params }) => {
 		error(404, 'Versión no encontrada');
 	}
 
-	const original = boletin.documents.find((d) => d.type === 'act' && d.fileName.startsWith('01-'));
+	// Use the first document with a body as the base state
+	// (usually an act, but can be a bill for in-progress boletines)
+	const original = boletin.documents.find((d) => d.body && d.fileName.startsWith('01-'));
 	if (!original?.body) {
 		error(500, 'Documento original no encontrado');
 	}
@@ -51,8 +55,10 @@ export const load: PageServerLoad = async ({ params }) => {
 	);
 
 	// Build diffs for the current step
+	const HEAVY_THRESHOLD = 30;
 	const diffs: ArticleDiff[] = [];
 	if (currentChangeSet) {
+		const isHeavy = currentChangeSet.changes.length > HEAVY_THRESHOLD;
 		for (const change of currentChangeSet.changes) {
 			const diff: ArticleDiff = {
 				articleId: change.article,
@@ -62,7 +68,8 @@ export const load: PageServerLoad = async ({ params }) => {
 				newText: change.newText
 			};
 
-			if (change.type === 'substitute' && change.oldText && change.newText) {
+			// Skip word-diff computation for heavy changeSets — computed client-side on demand
+			if (!isHeavy && change.type === 'substitute' && change.oldText && change.newText) {
 				diff.wordDiff = computeWordDiff(change.oldText, change.newText);
 			}
 
@@ -71,6 +78,21 @@ export const load: PageServerLoad = async ({ params }) => {
 	}
 
 	const currentEntry = boletin.timeline[versionIndex];
+	const currentDoc = boletin.documents[versionIndex];
+	const rawXml = await loadRawXml(params.boletin, currentDoc.fileName);
+
+	// Load source documents (oficios, JSONs, votes) used to generate this AKN XML
+	const sourceRefs = getSourceDocuments(params.boletin, params.version);
+	const sources: { label: string; path: string; type: SourceRef['type']; content?: string }[] = [];
+	for (const ref of sourceRefs) {
+		let content: string | undefined;
+		if (ref.type === 'text' || ref.type === 'xml') {
+			try {
+				content = await readFile(join(process.cwd(), ref.path), 'utf-8');
+			} catch { /* file may not exist */ }
+		}
+		sources.push({ ...ref, content });
+	}
 
 	return {
 		law: serializeLawState(law),
@@ -82,6 +104,11 @@ export const load: PageServerLoad = async ({ params }) => {
 		versionType: currentEntry.type,
 		versionDate: currentEntry.date,
 		versionAuthor: currentEntry.author,
+		sourceUrl: currentEntry.sourceUrl ?? null,
+		sourceLabel: currentEntry.sourceLabel ?? null,
+		sourceFileName: currentDoc.fileName,
+		rawXml,
+		sources,
 		accumulatedDiffs
 	};
 };

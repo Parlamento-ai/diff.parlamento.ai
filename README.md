@@ -10,7 +10,13 @@ Partimos de un problema concreto: no existe una herramienta pública para ver qu
 ---
 **19/02/2026**
 
-Investigamos la **API JSON de LeyChile** (endpoint con versionamiento, catálogo de vigencias, anotaciones de modificación) y construimos el **primer boletín real con tramitación completa**: Ley 21.670 — Porte de Armas Aspirantes Policiales (Boletín 15.995-02), con moción, 1er trámite, 2do trámite con votación nominal del Senado (31-0-2) y ley publicada. Incluye comparativo de componentes AKN Diff presentes vs los ejemplos ficticios. ([paso a paso](research/2026-02-19/README.md))
+Investigamos la **API JSON de LeyChile** (endpoint con versionamiento, catálogo de vigencias, anotaciones de modificación) y construimos tres nuevos casos reales para documentar distintos escenarios legislativos:
+
+- **Ley 21.670 — Porte de Armas Aspirantes Policiales** (Boletín 15.995-02): primer boletín con tramitación completa — moción, 1er trámite (Cámara), 2do trámite con votación nominal del Senado (31-0-2) y ley publicada.
+- **Boletín 17.370-17 — Cumplimiento Alternativo de Penas**: primer caso con votación de rechazo — moción de 4 artículos, modificada por Comisión de DDHH, rechazada en Sala del Senado (21-24).
+- **Ley 21.120 — Identidad de Género** (Boletín 8924-07): primer caso con Comisión Mixta — la Cámara rechazó las modificaciones del Senado, activando la comisión bicameral. Incluye 6 votaciones de rechazo y la votación más estrecha del sistema (22-18).
+
+([paso a paso](research/2026-02-19/README.md))
 
 ---
 **18/02/2026**

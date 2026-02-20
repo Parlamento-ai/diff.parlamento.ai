@@ -1,12 +1,14 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseAknDocument } from './xml-parser';
-import type { AknDocument, Boletin, TimelineEntry } from '$lib/types';
+import type { AknDocument, Boletin, TimelineEntry, SourceRef } from '$lib/types';
 
 const RECETAS_DIR = 'research/2026-02-01/akndiff-poc';
 const LEY_21735_DIR = 'research/2026-02-18/ley-21735/akn';
 const LEY_18045_DIR = 'research/2026-02-18/ley-18045/akn';
 const LEY_21670_DIR = 'research/2026-02-19/ley-21670/akn';
+const LEY_17370_DIR = 'research/2026-02-19/ley-17370/akn';
+const LEY_21120_DIR = 'research/2026-02-19/ley-21120/akn';
 
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
@@ -26,7 +28,11 @@ const BOLETIN_DIRS: Record<string, string> = {
 	// Ley 18.045 — Historia de versiones (1981-2025)
 	'ley-18045-historia': LEY_18045_DIR,
 	// Ley 21.670 — Porte de armas aspirantes policiales (Boletín 15.995-02)
-	'ley-21670-boletin': LEY_21670_DIR
+	'ley-21670-boletin': LEY_21670_DIR,
+	// Boletín 17.370-17 — Cumplimiento alternativo de penas (RECHAZADO en Sala)
+	'ley-17370-boletin': LEY_17370_DIR,
+	// Ley 21.120 — Identidad de Género (Boletín 8924-07, con Comisión Mixta)
+	'ley-21120-boletin': LEY_21120_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -73,6 +79,25 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 		};
 		return ley21670Labels[slug] || slug;
 	}
+	// Ley 21.120 — Identidad de Género (Boletín 8924-07, con Comisión Mixta)
+	if (boletinSlug === 'ley-21120-boletin') {
+		const ley21120Labels: Record<string, string> = {
+			bill: 'Moción Original',
+			'amendment-1': '1er Trámite: Senado',
+			'amendment-2': '2do Trámite: Cámara (RECHAZADO)',
+			'amendment-3': 'Comisión Mixta',
+			final: 'Ley 21.120 Publicada'
+		};
+		return ley21120Labels[slug] || slug;
+	}
+	// Boletín 17.370-17: cumplimiento alternativo penas (rejected in Sala)
+	if (boletinSlug === 'ley-17370-boletin') {
+		const ley17370Labels: Record<string, string> = {
+			bill: 'Moción Original',
+			'amendment-1': 'Informe Comisión + Sala (RECHAZADO)'
+		};
+		return ley17370Labels[slug] || slug;
+	}
 	// Ley 21.735 per-norm timelines (original = pre-reform law)
 	if (boletinSlug?.startsWith('ley-21735-')) {
 		const leyLabels: Record<string, string> = {
@@ -99,25 +124,302 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 	return labels[slug] || slug;
 }
 
+const LEYCHILE_URL = 'https://www.bcn.cl/leychile/consulta/N';
+
+function leyChileSource(idNorma: number): { url: string; label: string } {
+	return { url: `${LEYCHILE_URL}?i=${idNorma}`, label: 'LeyChile' };
+}
+
+function slugToSource(slug: string, boletinSlug?: string): { url: string; label: string } | undefined {
+	// Ley 21.735 — Boletín 15.480-13
+	if (boletinSlug === 'ley-21735-boletin') {
+		const map: Record<string, { url: string; label: string }> = {
+			original: { url: senadoDocUrl(16006, 'mensaje_mocion'), label: 'Mensaje' },
+			bill: { url: senadoDocUrl(32980, 'ofic'), label: 'Oficio 1er Trámite' },
+			'amendment-1': { url: senadoDocUrl(34510, 'ofic'), label: 'Oficio 2do Trámite' },
+			'amendment-2': { url: senadoDocUrl(34530, 'ofic'), label: 'Oficio 3er Trámite' },
+			'amendment-3': { url: senadoDocUrl(34575, 'ofic'), label: 'Fallo TC' },
+			final: leyChileSource(1212060)
+		};
+		return map[slug];
+	}
+	// Ley 21.735 — normas modificadas
+	if (boletinSlug?.startsWith('ley-21735-')) {
+		const normIds: Record<string, number> = {
+			'ley-21735-dl-3500': 7147,
+			'ley-21735-dfl-5-2003': 221322,
+			'ley-21735-ley-18045': 29472,
+			'ley-21735-dfl-28': 4115,
+			'ley-21735-ley-20880': 1086062
+		};
+		if (slug === 'original' || slug === 'final') {
+			const id = normIds[boletinSlug];
+			if (id) return leyChileSource(id);
+		}
+		return { url: senadoDocUrl(16006, 'mensaje_mocion'), label: 'Senado' };
+	}
+	// Ley 18.045 — Historia de versiones (LeyChile)
+	if (boletinSlug === 'ley-18045-historia') {
+		return leyChileSource(29472);
+	}
+	// Ley 21.670 — Boletín 15.995-02
+	if (boletinSlug === 'ley-21670-boletin') {
+		const map: Record<string, { url: string; label: string }> = {
+			original: { url: leyChileUrl(29120, '2023-06-04'), label: 'LeyChile' },
+			bill: { url: senadoDocUrl(16536, 'mensaje_mocion'), label: 'Moción' },
+			'amendment-1': { url: senadoDocUrl(33029, 'ofic'), label: 'Oficio 1er Trámite' },
+			'amendment-2': { url: senadoDocUrl(33217, 'ofic'), label: 'Oficio 2do Trámite' },
+			final: { url: leyChileUrl(29120, '2024-06-13'), label: 'LeyChile' }
+		};
+		return map[slug];
+	}
+	// Boletín 17.370-17
+	if (boletinSlug === 'ley-17370-boletin') {
+		const map: Record<string, { url: string; label: string }> = {
+			bill: { url: senadoDocUrl(18004, 'mensaje_mocion'), label: 'Moción' },
+			'amendment-1': { url: senadoDocUrl(27646, 'info'), label: 'Informe Comisión' }
+		};
+		return map[slug];
+	}
+	// Ley 21.120 — Boletín 8924-07
+	if (boletinSlug === 'ley-21120-boletin') {
+		const map: Record<string, { url: string; label: string }> = {
+			bill: { url: senadoDocUrl(9331, 'mensaje_mocion'), label: 'Moción' },
+			'amendment-1': { url: senadoDocUrl(22438, 'ofic'), label: 'Oficio 1er Trámite' },
+			'amendment-2': { url: senadoDocUrl(23141, 'ofic'), label: 'Oficio 2do Trámite' },
+			'amendment-3': { url: senadoDocUrl(20587, 'info'), label: 'Informe C. Mixta' },
+			final: leyChileSource(1126480)
+		};
+		return map[slug];
+	}
+	return undefined;
+}
+
 function buildTimeline(documents: AknDocument[], boletinSlug?: string): TimelineEntry[] {
 	return documents.map((doc) => {
 		const slug = fileToSlug(doc.fileName);
 		const mappedLabel = slugToLabel(slug, boletinSlug);
 		// If slugToLabel returned the raw slug (no mapping), use docTitle from XML
 		const label = mappedLabel === slug ? (doc.prefaceTitle || slug) : mappedLabel;
+		const source = slugToSource(slug, boletinSlug);
 		const entry: TimelineEntry = {
 			slug,
 			label,
 			date: doc.frbr.date,
 			type: doc.type,
 			author: doc.frbr.authorLabel,
-			fileName: doc.fileName
+			fileName: doc.fileName,
+			sourceUrl: source?.url,
+			sourceLabel: source?.label
 		};
 		if (doc.changeSet?.vote) {
 			entry.voteResult = doc.changeSet.vote.result;
 		}
 		return entry;
 	});
+}
+
+export async function loadRawXml(boletinSlug: string, fileName: string): Promise<string> {
+	const dirName = BOLETIN_DIRS[boletinSlug];
+	if (!dirName) throw new Error(`Unknown boletin: ${boletinSlug}`);
+	return readFile(join(process.cwd(), dirName, fileName), 'utf-8');
+}
+
+const LEY_21735_BASE = 'research/2026-02-18/ley-21735';
+const LEY_21670_BASE = 'research/2026-02-19/ley-21670';
+const LEY_17370_BASE = 'research/2026-02-19/ley-17370';
+const LEY_21120_DOCS = 'research/2026-02-19/ley-21120-docs';
+const LEY_18045_BASE = 'research/2026-02-18/ley-18045';
+
+// Official source URL helpers — direct document downloads from Senate + LeyChile
+const SENADO_DOC = 'https://tramitacion.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto';
+const LEYCHILE_NAV = 'https://nuevo.leychile.cl/servicios/Navegar';
+
+/** Direct download URL for a Senate document by iddocto + tipodoc */
+function senadoDocUrl(iddocto: number, tipodoc: string): string {
+	return `${SENADO_DOC}&iddocto=${iddocto}&tipodoc=${tipodoc}`;
+}
+function leyChileUrl(idNorma: number, version?: string): string {
+	if (version) return `${LEYCHILE_NAV}/?idNorma=${idNorma}&idVersion=${version}`;
+	return `${LEYCHILE_NAV}/?idNorma=${idNorma}`;
+}
+
+function src(label: string, path: string, type: SourceRef['type'] = 'text', url?: string): SourceRef {
+	return { label, path, type, url };
+}
+
+// idNorma values for LeyChile
+const NORM_IDS: Record<string, number> = {
+	'dl-3500': 7147,
+	'dfl-5-2003': 221322,
+	'ley-18045': 29472,
+	'dfl-28': 4115,
+	'ley-20880': 1086062
+};
+
+/** Maps each boletín + version slug to the source documents used to generate the AKN XML. */
+export function getSourceDocuments(boletinSlug: string, versionSlug: string): SourceRef[] {
+	// ── Ley 21.735 — Boletín (bill-level timeline) ──
+	if (boletinSlug === 'ley-21735-boletin') {
+		const docs: Record<string, SourceRef[]> = {
+			original: [
+				src('Mensaje Presidencial', `${LEY_21735_BASE}/oficios/mensaje.txt`, 'text',
+					senadoDocUrl(16006, 'mensaje_mocion'))
+			],
+			bill: [
+				src('Oficio 1er Trámite', `${LEY_21735_BASE}/oficios/1er-tramite-oficio.txt`, 'text',
+					senadoDocUrl(32980, 'ofic')),
+				src('Certificado Comisión Trabajo', `${LEY_21735_BASE}/oficios/1er-tramite-oficio.txt`, 'text',
+					senadoDocUrl(26258, 'info'))
+			],
+			'amendment-1': [
+				src('Oficio 2do Trámite', `${LEY_21735_BASE}/oficios/2do-tramite-oficio.txt`, 'text',
+					senadoDocUrl(34510, 'ofic')),
+				src('Votación Senado', `${LEY_21735_BASE}/votes/senado-votes.xml`, 'xml',
+					senadoDocUrl(9872, 'votacion'))
+			],
+			'amendment-2': [
+				src('Oficio 3er Trámite (aprobación)', `${LEY_21735_BASE}/votes/camara-votes.xml`, 'xml',
+					senadoDocUrl(34530, 'ofic'))
+			],
+			final: [
+				src('Ley 21.735 — LeyChile', `${LEY_21735_BASE}/json/ley-21735-post.json`, 'json',
+					leyChileUrl(1212060))
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+
+	// ── Ley 21.735 — Normas modificadas (per-norm timelines) ──
+	if (boletinSlug.startsWith('ley-21735-')) {
+		const normSlug = boletinSlug.replace('ley-21735-', '');
+		const idNorma = NORM_IDS[normSlug];
+		const lcPre = idNorma ? leyChileUrl(idNorma, '2025-03-25') : undefined;
+		const lcPost = idNorma ? leyChileUrl(idNorma, '2025-03-26') : undefined;
+		const docs: Record<string, SourceRef[]> = {
+			original: [
+				src('LeyChile (pre-reforma)', `${LEY_21735_BASE}/json/${normSlug}-pre.json`, 'json', lcPre)
+			],
+			bill: [
+				src('Diff pre→post', `${LEY_21735_BASE}/diff/${normSlug}-changes.json`, 'json',
+					senadoDocUrl(16006, 'mensaje_mocion'))
+			],
+			'amendment-1': [
+				src('Certificado Comisión Trabajo', `${LEY_21735_BASE}/votes/camara-votes.xml`, 'xml',
+					senadoDocUrl(26258, 'info'))
+			],
+			'amendment-2': [
+				src('Votación Senado', `${LEY_21735_BASE}/votes/senado-votes.xml`, 'xml',
+					senadoDocUrl(9872, 'votacion'))
+			],
+			'amendment-3': [
+				src('Oficio 3er Trámite (aprobación)', `${LEY_21735_BASE}/votes/camara-votes.xml`, 'xml',
+					senadoDocUrl(34530, 'ofic'))
+			],
+			final: [
+				src('LeyChile (post-reforma)', `${LEY_21735_BASE}/json/${normSlug}-post.json`, 'json', lcPost)
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+
+	// ── Ley 18.045 — Historia de versiones (LeyChile) ──
+	if (boletinSlug === 'ley-18045-historia') {
+		const lc = leyChileUrl(29472);
+		if (versionSlug === 'original') {
+			return [src('LeyChile v1 (1981)', `${LEY_18045_BASE}/json/v01-1981-10-22.json`, 'json',
+				leyChileUrl(29472, '1981-10-22'))];
+		}
+		if (versionSlug === 'final') {
+			return [src('LeyChile v32 (2025)', `${LEY_18045_BASE}/json/v32-2025-03-26.json`, 'json',
+				leyChileUrl(29472, '2025-03-26'))];
+		}
+		const m = versionSlug.match(/^amendment-(\d+)$/);
+		if (m) {
+			const vNum = String(Number(m[1]) + 1).padStart(2, '0');
+			return [src(`LeyChile v${vNum}`, `${LEY_18045_BASE}/json/versions-index.json`, 'json', lc)];
+		}
+		return [];
+	}
+
+	// ── Ley 21.670 — Control de Armas (Boletín 15.995-02) ──
+	if (boletinSlug === 'ley-21670-boletin') {
+		const docs: Record<string, SourceRef[]> = {
+			original: [
+				src('Ley 17.798 — LeyChile', `${LEY_21670_BASE}/json/ley-17798-pre-reform.json`, 'json',
+					leyChileUrl(29120, '2023-06-04'))
+			],
+			bill: [
+				src('Moción Original', `${LEY_21670_BASE}/docs/01-mocion.txt`, 'text',
+					senadoDocUrl(16536, 'mensaje_mocion'))
+			],
+			'amendment-1': [
+				src('Informe Comisión Defensa', `${LEY_21670_BASE}/docs/03-informe-comision-camara.txt`, 'text',
+					senadoDocUrl(26310, 'info')),
+				src('Oficio 1er Trámite', `${LEY_21670_BASE}/docs/04-oficio-1er-tramite.txt`, 'text',
+					senadoDocUrl(33029, 'ofic'))
+			],
+			'amendment-2': [
+				src('Oficio Modificaciones Senado', `${LEY_21670_BASE}/docs/07-oficio-modificaciones-senado.txt`, 'text',
+					senadoDocUrl(33217, 'ofic')),
+				src('Votación Senado', `${LEY_21670_BASE}/docs/07-oficio-modificaciones-senado.txt`, 'text',
+					senadoDocUrl(9665, 'votacion'))
+			],
+			final: [
+				src('Ley 17.798 reformada — LeyChile', `${LEY_21670_BASE}/json/ley-17798-post-reform.json`, 'json',
+					leyChileUrl(29120, '2024-06-13'))
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+
+	// ── Boletín 17.370-17 — Cumplimiento alternativo penas (RECHAZADO) ──
+	if (boletinSlug === 'ley-17370-boletin') {
+		const docs: Record<string, SourceRef[]> = {
+			bill: [
+				src('Moción Original', `${LEY_17370_BASE}/docs/01-mocion.txt`, 'text',
+					senadoDocUrl(18004, 'mensaje_mocion'))
+			],
+			'amendment-1': [
+				src('Informe Comisión DDHH', `${LEY_17370_BASE}/docs/04-informe-comision-ddhh.txt`, 'text',
+					senadoDocUrl(27646, 'info')),
+				src('Votación Sala (Rechazado)', `${LEY_17370_BASE}/docs/04-informe-comision-ddhh.txt`, 'text',
+					senadoDocUrl(10101, 'votacion'))
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+
+	// ── Ley 21.120 — Identidad de Género (Boletín 8924-07) ──
+	if (boletinSlug === 'ley-21120-boletin') {
+		const docs: Record<string, SourceRef[]> = {
+			bill: [
+				src('Moción Original', `${LEY_21120_DOCS}/01-mocion.txt`, 'text',
+					senadoDocUrl(9331, 'mensaje_mocion'))
+			],
+			'amendment-1': [
+				src('Primer Informe DDHH Senado', `${LEY_21120_DOCS}/02-primer-informe-ddhh.txt`, 'text',
+					senadoDocUrl(16215, 'info')),
+				src('Oficio Ley a Cámara', `${LEY_21120_DOCS}/04-oficio-ley-camara.txt`, 'text',
+					senadoDocUrl(22438, 'ofic'))
+			],
+			'amendment-2': [
+				src('Informe DDHH Cámara (2do Trámite)', `${LEY_21120_DOCS}/05-informe-camara.txt`, 'text',
+					senadoDocUrl(20196, 'info'))
+			],
+			'amendment-3': [
+				src('Informe Comisión Mixta', `${LEY_21120_DOCS}/08-informe-comision-mixta.txt`, 'text',
+					senadoDocUrl(20587, 'info'))
+			],
+			final: [
+				src('Ley 21.120 — LeyChile', `${LEY_21120_DOCS}/leychile-21120.json`, 'json',
+					leyChileUrl(1126480))
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+
+	return [];
 }
 
 export async function loadBoletin(slug: string): Promise<Boletin> {
@@ -136,9 +438,9 @@ export async function loadBoletin(slug: string): Promise<Boletin> {
 		documents.push(parseAknDocument(xml, file));
 	}
 
-	// Get title from original act
+	// Get title from original act, or first document if no act
 	const original = documents.find((d) => d.type === 'act' && fileToSlug(d.fileName) === 'original');
-	const title = original?.prefaceTitle || slug;
+	const title = original?.prefaceTitle || documents[0]?.prefaceTitle || slug;
 
 	return {
 		slug,
@@ -148,10 +450,14 @@ export async function loadBoletin(slug: string): Promise<Boletin> {
 	};
 }
 
-export async function listBoletines(): Promise<{ slug: string; title: string; documentCount: number }[]> {
+export async function listBoletines(slugFilter?: string[]): Promise<{ slug: string; title: string; documentCount: number }[]> {
+	const entries = slugFilter
+		? Object.entries(BOLETIN_DIRS).filter(([slug]) => slugFilter.includes(slug))
+		: Object.entries(BOLETIN_DIRS);
+
 	const result: { slug: string; title: string; documentCount: number }[] = [];
 
-	for (const [slug, dirName] of Object.entries(BOLETIN_DIRS)) {
+	for (const [slug, dirName] of entries) {
 		const dirPath = join(process.cwd(), dirName);
 		const files = await readdir(dirPath);
 		const xmlFiles = files.filter((f) => f.endsWith('.xml'));

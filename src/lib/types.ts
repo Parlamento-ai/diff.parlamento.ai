@@ -78,6 +78,8 @@ export interface TimelineEntry {
 	author: string;
 	fileName: string;
 	voteResult?: Vote['result'];
+	sourceUrl?: string;
+	sourceLabel?: string;
 }
 
 export interface Boletin {
@@ -97,6 +99,13 @@ export interface ReconstructedState {
 export interface WordToken {
 	text: string;
 	type: 'unchanged' | 'added' | 'removed';
+}
+
+export interface SourceRef {
+	label: string;
+	path: string;
+	type: 'text' | 'json' | 'xml' | 'binary';
+	url?: string;
 }
 
 export interface ArticleDiff {

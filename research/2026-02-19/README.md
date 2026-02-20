@@ -1,6 +1,6 @@
-# 19/02/2026 — API LeyChile + Primer boletín real completo
+# 19/02/2026 — API LeyChile + Boletines reales completos
 
-Dos líneas de trabajo: investigación de la **API JSON de LeyChile** como fuente de datos automatizable, y construcción del **boletín real con tramitación legislativa completa** (Ley 21.670 — Porte de Armas Aspirantes Policiales).
+Cuatro líneas de trabajo: investigación de la **API JSON de LeyChile** como fuente de datos automatizable, construcción del **primer boletín real con tramitación completa** (Ley 21.670), construcción del **primer boletín con voto de rechazo** (Boletín 17.370-17), y construcción del **primer boletín con Comisión Mixta** (Ley 21.120).
 
 ---
 
@@ -158,34 +158,227 @@ Lo que queda por testear son los **edge cases** (rejected, withdrawn, repeal, li
 
 ---
 
+## Boletín 17.370-17 — Primer boletín con voto RECHAZADO
+
+Objetivo: testear el elemento `result="rejected"` en AKN Diff, que hasta ahora solo existía en los ejemplos ficticios (recetas), nunca con legislación real.
+
+### Por qué este boletín
+
+Se buscó un boletín real chileno que hubiera sido **rechazado en votación nominal** en el Senado. El Boletín 17.370-17 cumple porque:
+
+- **Voto nominal de rechazo**: 21 a favor / 24 en contra (45 senadores con nombre)
+- **Tiene texto legislativo real**: 4 artículos sobre cumplimiento alternativo de penas
+- **Tiene modificaciones de comisión**: la Comisión de DDHH reestructuró los artículos antes de la Sala
+- **Es compacto**: 4 artículos, ideal para verificar el formato sin sobrecarga
+
+### Contexto legislativo
+
+El proyecto regulaba la suspensión y cumplimiento alternativo de penas privativas de libertad para condenados ancianos, enfermos terminales o discapacitados graves. Fue presentado por senadores de Chile Vamos (Chahuán, Ebensperger, Cruz-Coke, Kusanovic, Kuschel) y generó fuerte debate por su aplicabilidad a condenados por causas de DDHH del período militar.
+
+La Comisión de DDHH aprobó el proyecto con modificaciones (eliminó la suspensión de pena, agregó definición de reclusión domiciliaria, incluyó protección a víctimas), pero la Sala del Senado lo rechazó en votación general el 21/01/2026.
+
+### Paso a paso
+
+**1. Descubrir documentos en el Senado**
+
+Usando Playwright para navegar la página de tramitación del Senado, se extrajeron los IDs de los 4 documentos del expediente.
+
+- URL: `tramitacion.senado.cl/appsenado/templates/tramitacion/index.php?boletin_ini=17370-17`
+- IDs descubiertos: 18004 (moción), 34548 (oficio CS consulta), 34824 (oficio CS respuesta), 27646 (informe comisión DDHH)
+
+**2. Descargar documentos**
+
+- Script: ([download-docs.mjs](../../scripts/ley-17370/download-docs.mjs))
+- Documentos descargados: ([ley-17370/docs/](ley-17370/docs/))
+
+| # | Documento | Formato | Archivo | Tamaño |
+|---|-----------|---------|---------|--------|
+| 1 | Moción (texto del proyecto) | PDF | [01-mocion.pdf](ley-17370/docs/01-mocion.pdf) | 21 págs |
+| 2 | Oficio consulta Corte Suprema | DOC | [02-oficio-consulta-cs.doc](ley-17370/docs/02-oficio-consulta-cs.doc) | 1.2K chars |
+| 3 | Oficio respuesta Corte Suprema | PDF | [03-oficio-respuesta-cs.pdf](ley-17370/docs/03-oficio-respuesta-cs.pdf) | Escaneado (sin texto) |
+| 4 | Informe Comisión DDHH | PDF | [04-informe-comision-ddhh.pdf](ley-17370/docs/04-informe-comision-ddhh.pdf) | 193 págs, 519K chars |
+
+**3. Extraer texto**
+
+- Script: ([extract-text.mjs](../../scripts/ley-17370/extract-text.mjs))
+- Usó `pdf-parse` v2 (API nueva: `PDFParse` class, `getText()` retorna `{ pages, text, total }`)
+- Usó `word-extractor` para archivos .doc
+- El oficio de la Corte Suprema (03) es un PDF escaneado sin texto extraíble
+
+**4. Analizar cambios entre etapas**
+
+Se compararon los textos del proyecto en la moción original y en el informe de la comisión:
+
+| Artículo | Moción original | Comisión DDHH | Tipo de cambio |
+|----------|-----------------|---------------|----------------|
+| Art. 1 (Principios) | 5 letras a)-e) minúscula | 5 letras A)-E) mayúscula | substitute (capitalización) |
+| Art. 2 | "Suspensión de la pena" (3 causales) | "Reclusión domiciliaria total" (definición + protección víctimas) | substitute (reescritura completa) |
+| Art. 3 | Sin nombre, cumplimiento alternativo | "Cumplimiento alternativo de la pena" (ajuste redacción) | substitute |
+| Art. 4 | Sin nombre, procedimiento | "Procedimiento" (elimina ref. a suspensión, ajusta refs internas) | substitute |
+
+**5. Obtener datos de votación**
+
+- API: `tramitacion.senado.cl/wspublico/votaciones.php?boletin=17370`
+- Fecha: 21/01/2026
+- Resultado: **RECHAZADO** (21-24-0)
+- 21 a favor (oposición): De Urresti, Insulza, Ordenes, Flores, Núñez A., Pascual, Saavedra, Walker, Araya, Quintana, Campillai, Vodanovic, Espinoza, Provoste, Lagos W., Rincón, Latorre, Castro J.L., Sepúlveda, Velásquez, De Rementería
+- 24 en contra (oficialismo + independientes): Moreira, Ossandón, Durana, Edwards, Gatica, Keitel, Kusanovic, Macaya, Coloma, García, Kuschel, Chahuán, Ebensperger, Prohens, Sandoval, Núñez P., Sanhueza, Cruz-Coke, Pugh, Castro J.E., Galilea, Aravena, Kast, Van Rysselberghe
+
+**6. Generar AKN Diff XMLs**
+
+- Script: ([generate-akn.mjs](../../scripts/ley-17370/generate-akn.mjs))
+- AKN generados: ([ley-17370/akn/](ley-17370/akn/))
+
+| # | Archivo | Tipo AKN | Etapa | ChangeSet | Voto |
+|---|---------|----------|-------|-----------|------|
+| 1 | [01-bill.xml](ley-17370/akn/01-bill.xml) | `bill` | Moción (2025-03-04) | — | — |
+| 2 | [02-amendment-1.xml](ley-17370/akn/02-amendment-1.xml) | `amendment` | Informe Comisión + Sala | 4 substitutes | **RECHAZADO 21-24** (45 senadores nominales) |
+
+### Novedades técnicas
+
+Este boletín introdujo varios **firsts** en el proyecto:
+
+1. **`result="rejected"`**: Primera votación de rechazo con datos reales (45 senadores nominales)
+2. **Boletín sin `act` original**: El primer documento es un `bill`, no un `act`. Requirió:
+   - Modificar `xml-parser.ts` para parsear el `<body>` de documentos `bill` (antes solo parseaba `act`)
+   - Modificar `[version]/+page.server.ts` para buscar el documento base por `body` en vez de `type === 'act'`
+   - Agregar prop `firstVersion` a `BoletinCard.svelte` para que el link apunte a `/bill` en vez de `/original`
+3. **pdf-parse v2**: Primera vez usando la nueva API (clase `PDFParse`, método `getText()` que retorna objeto)
+
+### Actualización del comparativo
+
+Con este boletín, el estado de cobertura de elementos AKN Diff queda:
+
+| Componente | Paella (ficción) | Ley 21.670 | Bol. 17.370-17 | Estado |
+|------------|-----------------|------------|----------------|--------|
+| `vote` result=approved | 3 | 2 | — | OK |
+| **`vote` result=rejected** | 2 | — | **1 (21-24)** | **OK** |
+| `vote` result=withdrawn | 1 | — | — | Solo ficción |
+| `articleChange` type=substitute | 8 | 4 | 4 | OK |
+| `articleChange` type=insert | 2 | 2 | — | OK |
+| `articleChange` type=repeal | — | — | — | No testeado |
+| Votantes nominales reales | — | 33 | **45** | OK |
+| Bill como primer documento | — | — | **Sí** | OK |
+
+---
+
+## Ley 21.120 — Primer boletín con Comisión Mixta
+
+Objetivo: testear el mecanismo de **Comisión Mixta** en AKN Diff — cuando la cámara revisora rechaza las modificaciones de la cámara de origen, se activa una comisión bicameral que produce un texto de consenso.
+
+### Por qué este boletín
+
+Se evaluaron ~8 boletines chilenos con tramitación compleja. El Boletín 8924-07 (Ley 21.120 — Identidad de Género) ganó porque:
+
+- **Tiene Comisión Mixta**: la Cámara rechazó las modificaciones del Senado en el 2do trámite, activando la comisión bicameral
+- **6 votaciones de rechazo**: múltiples momentos donde se rechazaron propuestas durante el proceso
+- **Votación más estrecha del sistema**: 22-18 en Comisión Mixta (el margen más ajustado entre todos los boletines)
+- **28 votaciones totales**: el proceso legislativo más largo y complejo implementado hasta ahora
+- **Escala manejable**: 29 artículos permanentes + 3 transitorios en la ley final
+
+### Contexto legislativo
+
+El proyecto reconoce y da protección al derecho a la identidad de género. Fue presentado como moción de 11 artículos en 2013 y tardó 5 años en convertirse en ley. El proceso incluyó:
+
+- **1er Trámite (Senado)**: aprobación en general (29-0-3) pero con controversia sobre los derechos de menores de edad
+- **2do Trámite (Cámara)**: la Cámara amplió significativamente el proyecto (de 13 a ~29 artículos), agregando disposiciones sobre menores y no discriminación
+- **Rechazo del Senado**: el Senado rechazó las modificaciones de la Cámara, lo que activó la Comisión Mixta
+- **Comisión Mixta**: produjo un texto de consenso con 32 artículos, aprobado con margen estrecho (22-18)
+- **Publicación**: Ley 21.120 promulgada el 10/12/2018
+
+### Paso a paso
+
+**1. Descargar metadata y documentos del Senado**
+
+- API votaciones: `tramitacion.senado.cl/wspublico/votaciones.php?boletin=8924` → 28 votaciones
+- API tramitación: `tramitacion.senado.cl/wspublico/tramitacion.php?boletin=8924` → 146 trámites
+- Script de descarga: ([download-docs.mjs](../../scripts/ley-21120/download-docs.mjs))
+- 11 documentos descargados del expediente (todos en formato .doc)
+- Documentos clave: moción, informe comisión DDHH, oficio ley Cámara, oficio modificaciones Senado, informe Comisión Mixta, comparado Sala
+
+**2. Extraer texto**
+
+- Script: ([extract-text.mjs](../../scripts/ley-21120/extract-text.mjs))
+- Usó `word-extractor` para los 11 archivos .doc
+- Textos clave extraídos:
+  - `01-mocion.txt` (13,254 chars): 11 artículos permanentes + 1 transitorio
+  - `04-oficio-ley-camara.txt` (20,635 chars): 13 artículos permanentes + 2 transitorios (texto post-Senado 1er trámite)
+  - `08-informe-comision-mixta.txt` (769,091 chars): informe completo de la Comisión Mixta
+
+**3. Obtener ley publicada de LeyChile**
+
+- idNorma: 1126480
+- JSON API: `nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=1126480`
+- Resultado: 29 artículos permanentes + 3 transitorios
+
+**4. Analizar cambios entre etapas**
+
+| Etapa | Artículos | Cambios respecto a anterior |
+|-------|-----------|----------------------------|
+| **Moción** (2013-05-07) | 12 (11 perm + 1 trans) | Estado base |
+| **1er Trámite: Senado** (2017-09-14) | 15 (13 perm + 2 trans) | 15 cambios (12 substitutes + 3 inserts) |
+| **2do Trámite: Cámara** (2018-06-12) | — | **RECHAZADO** por el Senado (6 cambios clave propuestos) |
+| **Comisión Mixta** (2018-08-28) | 32 (29 perm + 3 trans) | 32 cambios (15 substitutes + 17 inserts) |
+| **Ley publicada** (2018-12-10) | 32 (29 perm + 3 trans) | Sin cambios respecto a C. Mixta |
+
+**5. Generar AKN Diff XMLs**
+
+- Script: ([generate-akn.mjs](../../scripts/ley-21120/generate-akn.mjs))
+- AKN generados: ([ley-21120/akn/](ley-21120/akn/))
+
+| # | Archivo | Tipo AKN | Etapa | ChangeSet | Voto |
+|---|---------|----------|-------|-----------|------|
+| 1 | [01-bill.xml](ley-21120/akn/01-bill.xml) | `bill` | Moción (2013-05-07) | — | — |
+| 2 | [02-amendment-1.xml](ley-21120/akn/02-amendment-1.xml) | `amendment` | 1er Trámite Senado | 15 cambios | 29-0-3 |
+| 3 | [03-amendment-2.xml](ley-21120/akn/03-amendment-2.xml) | `amendment` | 2do Trámite Cámara | 6 cambios | **RECHAZADO** |
+| 4 | [04-amendment-3.xml](ley-21120/akn/04-amendment-3.xml) | `amendment` | Comisión Mixta | 32 cambios | **22-18** |
+| 5 | [05-act-final.xml](ley-21120/akn/05-act-final.xml) | `act` | Ley 21.120 publicada | — | — |
+
+### Novedades técnicas
+
+1. **Comisión Mixta como `amendment`**: La Comisión Mixta se representa como un `amendment` más en la cadena, con su propio `changeSet` que aplica cambios sobre el estado post-1er trámite (ya que el 2do trámite fue rechazado y no modifica el estado)
+2. **`result="rejected"` que NO aplica cambios**: El amendment del 2do trámite tiene `result="rejected"`, lo que significa que el `state-reconstructor` no aplica esos cambios al reconstruir el estado acumulado
+3. **Votación más estrecha**: 22-18 con 40 senadores nominales, el margen más ajustado del sistema
+
+### Actualización del comparativo
+
+Con este boletín, el estado de cobertura de elementos AKN Diff queda:
+
+| Componente | Paella (ficción) | Ley 21.670 | Bol. 17.370 | **Ley 21.120** | Estado |
+|------------|-----------------|------------|-------------|----------------|--------|
+| `vote` result=approved | 3 | 2 | — | **2 (29-0-3, 22-18)** | OK |
+| `vote` result=rejected | 2 | — | 1 (21-24) | **1 (Cámara)** | OK |
+| `vote` result=withdrawn | 1 | — | — | — | Solo ficción |
+| `articleChange` type=substitute | 8 | 4 | 4 | **27** | OK |
+| `articleChange` type=insert | 2 | 2 | — | **20** | OK |
+| `articleChange` type=repeal | — | — | — | — | No testeado |
+| Votantes nominales reales | — | 33 | 45 | **40** | OK |
+| Bill como primer documento | — | — | Sí | **Sí** | OK |
+| **Comisión Mixta** | — | — | — | **Sí** | **Nuevo** |
+| **Múltiples rejected** | — | — | — | **6 votaciones** | **Nuevo** |
+
+---
+
 ## Estructura de archivos
 
 ```
   research/2026-02-19/
-  └── ley-21670/
-      ├── docs/           ← 8 documentos legislativos (DOCX/PDF/DOC) + textos extraídos
-      │   ├── 01-mocion.docx / .txt
-      │   ├── 02-indicaciones-ejecutivo.pdf
-      │   ├── 03-informe-comision-camara.docx / .txt
-      │   ├── 04-oficio-1er-tramite.docx / .txt
-      │   ├── 05-informe-comision-senado.pdf
-      │   ├── 06-comparado-2do-tramite.pdf
-      │   ├── 07-oficio-modificaciones-senado.doc / .txt
-      │   └── 08-oficio-ley-ejecutivo.docx / .txt
-      ├── json/           ← Datos de LeyChile
-      │   ├── _idnorma-17798.txt
-      │   ├── ley-17798-current.json
-      │   ├── ley-17798-pre-reform.json
-      │   └── ley-17798-post-reform.json
-      └── akn/            ← XMLs AKN generados (5 archivos)
-          ├── 01-act-original.xml
-          ├── 02-bill.xml
-          ├── 03-amendment-1.xml
-          ├── 04-amendment-2.xml
-          └── 05-act-final.xml
+  ├── ley-21670/
+  │   ├── docs/           ← 8 documentos legislativos (DOCX/PDF/DOC) + textos extraídos
+  │   ├── json/           ← Datos de LeyChile (Ley 17.798)
+  │   └── akn/            ← XMLs AKN generados (5 archivos)
+  ├── ley-17370/
+  │   ├── docs/           ← 4 documentos legislativos (PDF/DOC) + textos extraídos
+  │   └── akn/            ← XMLs AKN generados (2 archivos: bill + amendment rechazado)
+  ├── ley-21120-docs/     ← 11 documentos legislativos (.doc) + textos extraídos
+  └── ley-21120/
+      ├── json/           ← Datos de LeyChile (Ley 21.120, idNorma 1126480)
+      └── akn/            ← XMLs AKN generados (5 archivos: bill + 3 amendments + act-final)
 ```
 
 ### Scripts
+
+**Ley 21.670**
 
 | Script | Función |
 |--------|---------|
@@ -193,3 +386,19 @@ Lo que queda por testear son los **edge cases** (rejected, withdrawn, repeal, li
 | [download-docs-v2.mjs](../../scripts/ley-21670/download-docs-v2.mjs) | Busca idNorma y descarga JSON de LeyChile |
 | [extract-text.mjs](../../scripts/ley-21670/extract-text.mjs) | Extrae texto de DOCX/PDF/DOC |
 | [generate-akn.mjs](../../scripts/ley-21670/generate-akn.mjs) | Genera los 5 XMLs AKN Diff |
+
+**Boletín 17.370-17**
+
+| Script | Función |
+|--------|---------|
+| [download-docs.mjs](../../scripts/ley-17370/download-docs.mjs) | Descarga 4 documentos del Senado con Playwright |
+| [extract-text.mjs](../../scripts/ley-17370/extract-text.mjs) | Extrae texto de PDF/DOC |
+| [generate-akn.mjs](../../scripts/ley-17370/generate-akn.mjs) | Genera los 2 XMLs AKN Diff (bill + amendment rechazado) |
+
+**Ley 21.120**
+
+| Script | Función |
+|--------|---------|
+| [download-docs.mjs](../../scripts/ley-21120/download-docs.mjs) | Descarga 11 documentos del Senado con Playwright |
+| [extract-text.mjs](../../scripts/ley-21120/extract-text.mjs) | Extrae texto de .doc |
+| [generate-akn.mjs](../../scripts/ley-21120/generate-akn.mjs) | Genera los 5 XMLs AKN Diff (bill + 3 amendments + act-final) |

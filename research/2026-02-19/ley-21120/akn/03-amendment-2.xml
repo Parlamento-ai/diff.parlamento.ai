@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="boletin-8924-07-2do-3er-tramite">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/bill/ley-21120/2do-tramite"/>
+          <FRBRuri value="/cl/bill/ley-21120"/>
+          <FRBRdate date="2018-01-23" name="aprobación cámara"/>
+          <FRBRauthor href="/cl/camara"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/bill/ley-21120/spa@2018-01-23"/>
+          <FRBRuri value="/cl/bill/ley-21120/spa@2018-01-23"/>
+          <FRBRdate date="2018-03-06" name="rechazado por Senado"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/bill/ley-21120/spa@2018-01-23/akn"/>
+          <FRBRuri value="/cl/bill/ley-21120/spa@2018-01-23/akn"/>
+          <FRBRdate date="2026-02-19" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#parlamento-ai">
+        <TLCOrganization eId="parlamento-ai" href="https://parlamento.ai" showAs="Parlamento.ai"/>
+        <TLCOrganization eId="camara" href="/cl/camara" showAs="Cámara de Diputados"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>2do Trámite (Cámara) — Rechazado por el Senado en 3er Trámite</docTitle></p>
+      </longTitle>
+      <p>La Cámara aprobó con modificaciones (23/01/2018): agregó artículos sobre menores de edad, principios y garantías. El Senado rechazó la totalidad de las enmiendas (06/03/2018), enviando el proyecto a Comisión Mixta.</p>
+    </preface>
+    <akndiff:changeSet base="/cl/bill/ley-21120/spa@2017-06-14" result="/cl/bill/ley-21120/spa@2018-01-23">
+        <akndiff:articleChange article="art_1" type="substitute">
+          <akndiff:old><p>ARTÍCULO 1°.- CONCEPTO DE IDENTIDAD DE GÉNERO Y DERECHOS QUE RECONOCE ESTA LEY. Se entenderá por identidad de género la convicción personal e interna del género, tal como la persona se percibe a sí misma, la cual puede corresponder o no con el sexo verificado en el acta de inscripción del nacimiento. Lo dispuesto en el inciso anterior podrá o no involucrar la modificación de la apariencia o de la función corporal a través de tratamientos médicos, quirúrgicos u otros análogos, siempre que sea libremente escogida. Asimismo, podrá o no corresponder a otras expresiones de género, tales como la vestimenta, el modo de hablar y los modales. Conforme a lo anterior, toda persona tiene derecho: a) Al reconocimiento y protección de lo que esta ley denomina identidad de género. b) Al libre desarrollo de su persona, conforme a su identidad de género, permitiendo su mayor realización espiritual y material posible. c) A ser tratada en conformidad con su identidad de género y, en particular, a ser reconocida e identificada de ese modo en los instrumentos públicos y privados que acrediten su identidad respecto del nombre y sexo. Asimismo, las imágenes, fotografías, soportes digitales, informáticos o cualquier otro instrumento con los que las personas figuren en los registros oficiales deberán ser coincidentes con dicha identidad. Toda norma o procedimiento de naturaleza administrativa pública o privada, o judicial deberá respetar el derecho a la identidad de género de las personas. Ninguna norma o procedimiento podrá limitar, restringir, excluir, suprimir o imponer requisitos no contemplados para el ejercicio de este derecho. Lo anterior es sin perjuicio del ejercicio legítimo de derechos fundamentales. No será condición necesaria para el ejercicio de los derechos que emanan del reconocimiento del derecho a la identidad de género haberse sometido a algún tipo de intervención o tratamiento modificatorio de la apariencia.</p></akndiff:old>
+          <akndiff:new><p>ARTÍCULO 1°.- DERECHO A LA IDENTIDAD DE GÉNERO Y LA RECTIFICACIÓN DE SEXO Y NOMBRE REGISTRAL. El derecho a la identidad de género consiste en la facultad de toda persona cuya identidad de género no coincida con su sexo y nombre registral, de solicitar la rectificación de éstos. Para efectos de esta ley, se entenderá por identidad de género la convicción personal e interna de ser hombre o mujer, tal como la persona se percibe a sí misma, la cual puede corresponder o no con el sexo y nombre verificados en el acta de inscripción del nacimiento. Lo dispuesto en los incisos anteriores podrá o no involucrar la modificación de la apariencia o de la función corporal a través de tratamientos médicos, quirúrgicos u otros análogos, siempre que sea libremente escogida.</p></akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_2_cam" type="insert" after="art_1">
+          <akndiff:new><p>ARTÍCULO 2°.- GARANTÍA DERIVADA DE LA IDENTIDAD DE GÉNERO. Toda persona tiene derecho a ser reconocida e identificada conforme a su identidad de género, una vez realizada la rectificación que regula esta ley, en los instrumentos públicos y privados que acrediten su identidad respecto del nombre y sexo.</p></akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_3_cam" type="insert" after="art_2_cam">
+          <akndiff:new><p>ARTÍCULO 3°.- GARANTÍAS DERIVADAS DEL DERECHO A LA IDENTIDAD DE GÉNERO. Toda persona tiene derecho: a) Al reconocimiento y protección de lo que esta ley denomina identidad y expresión de género. b) Al libre desarrollo de su persona, conforme a su identidad y expresión de género. c) A ser reconocida e identificada conforme a su identidad y expresión de género en los instrumentos públicos y privados.</p></akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_4_cam" type="insert" after="art_3_cam">
+          <akndiff:new><p>ARTÍCULO 4°.- PRINCIPIOS DEL DERECHO A LA IDENTIDAD DE GÉNERO. El derecho a la identidad de género reconoce, entre otros, los siguientes principios: a) No patologización b) No discriminación arbitraria c) Confidencialidad d) Dignidad en el trato e) Interés superior del niño f) Autonomía progresiva.</p></akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_2" type="substitute">
+          <akndiff:old><p>ARTÍCULO 2°.- DEL EJERCICIO DEL DERECHO DE LAS PERSONAS A SER IDENTIFICADAS CONFORME A SU IDENTIDAD DE GÉNERO. Toda persona mayor de edad podrá obtener la rectificación del sexo y nombre con que aparezca individualizada en su partida de nacimiento, en sus documentos de identificación y en cualquier otro instrumento público o privado, cuando éstos no coincidan con su identidad de género. En el caso de la solicitud presentada por persona con vínculo matrimonial no disuelto, se estará a lo dispuesto en el Título III de la presente ley. La copia de la resolución administrativa o de la sentencia judicial, según sea el caso, que conceda la rectificación será antecedente suficiente para que, en su solo mérito, cualquier entidad, pública o privada, rectifique los documentos a los que se refiere esta ley.</p></akndiff:old>
+          <akndiff:new><p>ARTÍCULO 5°.- Toda persona podrá, por una sola vez, a través de los procedimientos que regule esta ley, obtener la rectificación del sexo y nombre con que aparezca individualizada en su partida de nacimiento. Excepcionalmente, tratándose de niños, niñas, o adolescentes, se podrá obtener una vez más, desde que alcance la mayoría de edad.</p></akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_4" type="substitute">
+          <akndiff:old><p>ARTÍCULO 4°.- DEL ÓRGANO COMPETENTE PARA CONOCER DE LA SOLICITUD DE RECTIFICACIÓN DE SEXO Y NOMBRE. Será competente para conocer de la solicitud de rectificación de sexo y nombre el Servicio de Registro Civil e Identificación. La solicitud podrá ser presentada en cualquier oficina del Servicio sin importar cuál sea el domicilio del o de la requirente. En el caso de los solicitantes con vínculo matrimonial no disuelto, será competente el tribunal con competencia en materias de familia del domicilio de su cónyuge. Para fundar la solicitud, el o la solicitante deberá presentar una evaluación médica realizada por un experto calificado en la materia, con el objeto de determinar que el o la solicitante cuenta con las condiciones psicológicas y psiquiátricas necesarias para formular la solicitud a que se refiere la presente ley. En la solicitud deberá señalarse el sexo y el o los nombres de pila sustitutivos de la partida de nacimiento, así como la petición de rectificar las imágenes y documentos con que se hubiera identificado a la persona ante el Servicio de Registro Civil e Identificación, cualquiera sea el soporte en que éstos se conserven en dicho Servicio, cuando el sexo y nombre no coincidan con su identidad de género. Sin perjuicio de lo anterior, quienes manifiesten la voluntad de no modificar sus nombres de pila podrán mantenerlos, siempre que ellos no resulten equívocos respecto de su nuevo sexo registral. Las personas extranjeras con permanencia definitiva en Chile sólo podrán rectificar su sexo y nombre para efectos de la emisión de sus documentos chilenos. Para ello, previamente, deberán inscribir su nacimiento en la oficina de Santiago del Servicio de Registro Civil e Identificación. La comparecencia de los y las solicitantes ante los tribunales con competencia en materias de familia se regirá por lo dispuesto en el artículo 18 de la ley N° 19.968, que crea los Tribunales de Familia. Título II Del procedimiento general de rectificación</p></akndiff:old>
+          <akndiff:new><p>ARTÍCULO 7°.- Por regla general, será competente para conocer de la solicitud de rectificación de sexo y nombre el Servicio de Registro Civil e Identificación. En caso de que el solicitante mantenga un acuerdo de unión civil vigente, el Servicio deberá notificar al conviviente civil.</p></akndiff:new>
+        </akndiff:articleChange>
+      <akndiff:vote date="2018-03-06" result="rejected" source="https://tramitacion.senado.cl/wspublico/votaciones.php?boletin=8924">
+        <akndiff:for count="0"/>
+        <akndiff:against count="0"/>
+        <akndiff:abstain count="0"/>
+      </akndiff:vote>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

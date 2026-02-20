@@ -6,18 +6,20 @@
 		title,
 		documentCount,
 		flag,
-		emoji
+		emoji,
+		firstVersion = 'original'
 	}: {
 		slug: string;
 		title: string;
 		documentCount: number;
 		flag?: Component;
 		emoji?: string;
+		firstVersion?: string;
 	} = $props();
 </script>
 
 <a
-	href="/{slug}/original"
+	href="/{slug}/{firstVersion}"
 	class="block p-5 card-layout card-hover group"
 >
 	<h2 class="text-base font-semibold text-gray-900 group-hover:text-brand-dark transition-colors flex items-center gap-2">

@@ -5,6 +5,8 @@
 	import ArticleDiffCard from './ArticleDiffCard.svelte';
 	import { dur } from '$lib/utils/reduced-motion';
 
+	const HEAVY_THRESHOLD = 30;
+
 	let {
 		diffs,
 		vote = undefined,
@@ -14,6 +16,24 @@
 		vote?: Vote | null;
 		collapsed?: boolean;
 	} = $props();
+
+	const PAGE_SIZE = 50;
+	const isHeavy = $derived(diffs.length > HEAVY_THRESHOLD);
+	let allExpanded = $state(false);
+	let expandKey = $state(0);
+	let visibleCount = $state(PAGE_SIZE);
+
+	const visibleDiffs = $derived(isHeavy ? diffs.slice(0, visibleCount) : diffs);
+	const hasMore = $derived(isHeavy && visibleCount < diffs.length);
+
+	function toggleAll() {
+		allExpanded = !allExpanded;
+		expandKey++;
+	}
+
+	function showMore() {
+		visibleCount = Math.min(visibleCount + PAGE_SIZE, diffs.length);
+	}
 
 	const resultLabels: Record<string, string> = {
 		approved: 'Aprobado',
@@ -87,18 +107,43 @@
 	</button>
 
 	<!-- Desktop header -->
-	<div class="hidden lg:block px-4 py-2 border-b border-gray-200">
+	<div class="hidden lg:flex items-center justify-between px-4 py-2 border-b border-gray-200">
 		<h2 class="text-xs font-mono font-semibold uppercase tracking-wider text-gray-400">
 			Comparado ({diffs.length} {diffs.length === 1 ? 'cambio' : 'cambios'})
 		</h2>
+		{#if isHeavy}
+			<button
+				class="text-[10px] font-mono text-gray-400 hover:text-gray-600 transition-colors"
+				onclick={toggleAll}
+			>
+				{allExpanded ? 'Colapsar' : 'Expandir'} todo
+			</button>
+		{/if}
 	</div>
 
-	<div class="p-3 space-y-3 {isOpen ? '' : 'hidden lg:block'}">
-		{#each diffs as diff (diff.articleId)}
-			<div transition:fade={{ duration: dur(200) }} animate:flip={{ duration: dur(250) }}>
-				<ArticleDiffCard {diff} />
-			</div>
-		{/each}
+	<div class="p-3 space-y-1.5 {isOpen ? '' : 'hidden lg:block'}">
+		{#if isHeavy}
+			{#each visibleDiffs as diff (diff.articleId)}
+				{#key expandKey}
+					<ArticleDiffCard {diff} expanded={allExpanded} />
+				{/key}
+			{/each}
+
+			{#if hasMore}
+				<button
+					class="w-full py-2 text-xs font-mono text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded-lg transition-colors"
+					onclick={showMore}
+				>
+					Mostrar más ({diffs.length - visibleCount} restantes)
+				</button>
+			{/if}
+		{:else}
+			{#each diffs as diff (diff.articleId)}
+				<div transition:fade={{ duration: dur(200) }} animate:flip={{ duration: dur(250) }}>
+					<ArticleDiffCard {diff} />
+				</div>
+			{/each}
+		{/if}
 
 		{#if diffs.length === 0}
 			<p class="text-xs text-gray-300 italic text-center py-2">

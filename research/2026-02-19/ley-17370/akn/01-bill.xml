@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="boletin-17370-17-mocion">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/17370-17/mocion"/>
+          <FRBRuri value="/cl/boletin/17370-17"/>
+          <FRBRdate date="2025-03-04" name="presentación"/>
+          <FRBRauthor href="/cl/senador/chahuan-francisco"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/17370-17/mocion/esp@2025-03-04"/>
+          <FRBRuri value="/cl/boletin/17370-17/esp@2025-03-04"/>
+          <FRBRdate date="2025-03-04" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/17370-17/mocion/esp@2025-03-04/akn"/>
+          <FRBRuri value="/cl/boletin/17370-17/esp@2025-03-04/akn"/>
+          <FRBRdate date="2026-02-19" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCPerson eId="chahuan" href="/cl/senador/chahuan-francisco" showAs="Francisco Chahuán Chahuán"/>
+        <TLCPerson eId="ebensperger" href="/cl/senador/ebensperger-luz-eliana" showAs="Luz Eliana Ebensperger Orrego"/>
+        <TLCPerson eId="cruzcoke" href="/cl/senador/cruz-coke-luciano" showAs="Luciano Cruz-Coke Carvallo"/>
+        <TLCPerson eId="kusanovic" href="/cl/senador/kusanovic-alejandro" showAs="Alejandro Kusanovic Glusevic"/>
+        <TLCPerson eId="kuschel" href="/cl/senador/kuschel-carlos" showAs="Carlos Kuschel Silva"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Proyecto de Ley: <docTitle>Moción — Boletín 17.370-17</docTitle></p>
+      </longTitle>
+      <p>Regula la suspensión y el cumplimiento alternativo de penas privativas de libertad, para condenados que indica. Moción de los senadores Chahuán, Ebensperger, Cruz-Coke, Kusanovic y Kuschel.</p>
+    </preface>
+    <body>
+      <article eId="art_1">
+        <heading>Artículo primero</heading>
+        <content>
+          <p>Principios. Los siguientes cinco principios deberán seguirse en el cumplimiento de la pena penal:
+a) la pena penal ofrece la respuesta para los responsables de hechos ilícitos culpables y tiene una función eminentemente preventiva;
+b) la prevención general o la retribución no deben tomarse en cuenta en la fase de ejecución de la pena;
+c) la vida en prisión debe ser lo más parecida posible a las condiciones generales de vida existentes en el medio libre;
+d) Los efectos dañinos del encarcelamiento deben ser contrarrestados por la autoridad penitenciaria;
+e) La ejecución de la pena deberá orientarse hacia una eventual reintegración del prisionero en la sociedad libre, incluyéndose en esta, la posibilidad de tratar adecuadamente, en tiempo y forma, su enfermedad, ya sea por el sistema público o privado, y el derecho inalienable a recuperar la salud, y si ello no fuese posible, a morir afuera de la cárcel.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Artículo segundo</heading>
+        <content>
+          <p>Suspensión de la pena. El Tribunal, deberá a petición de parte o de oficio disponer la suspensión de la ejecución de una pena privativa de libertad, y mientras dure el impedimento:
+a) Al condenado que presente una enfermedad mental;
+b) Al condenado que padezca otras enfermedades, cuando fuese de temer un peligro próximo por la ejecución en la cárcel para la vida del condenado;
+c) Al condenado que se encuentre en un estado físico incompatible con la ejecución en la cárcel o con la organización o infraestructura del establecimiento penitenciario.</p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <heading>Artículo tercero</heading>
+        <content>
+          <p>El Tribunal, deberá a petición de parte o de oficio disponer el cumplimiento de la pena penal impuesta en una modalidad de reclusión domiciliaria total, por el tiempo que reste de condena:
+a) Al interno enfermo cuando la privación de la libertad en el establecimiento carcelario, por cualquier motivo, le impida recuperarse o tratar adecuadamente su enfermedad crónica;
+b) Al interno que padezca una enfermedad incurable en período terminal;
+c) Al interno discapacitado cuando la privación de la libertad en el establecimiento carcelario es inadecuada por su condición implicándole un trato indigno, inhumano o cruel;
+d) Al interno mayor, cumplido 80 (ochenta) años o más, como resultado de la suma de su edad real, más los años que efectivamente ha estado privado de libertad en un recinto penal, teniendo una edad mínima de 70 (setenta) años.</p>
+        </content>
+      </article>
+      <article eId="art_4">
+        <heading>Artículo cuarto</heading>
+        <content>
+          <p>Para el objeto de cumplir con lo dispuesto en los artículos anteriores, el Tribunal deberá a petición de parte o de oficio acompañar al proceso los antecedentes médicos que certifiquen la enfermedad, discapacidad o deterioro físico y mental que justifiquen la suspensión de la pena o la sustitución de la misma por la pena de reclusión domiciliaria total, los que deberán comprender aquellos emitidos por el Ministerio de Salud; así como los antecedentes que acrediten el aplazamiento transitorio de la pena o la sustitución de la misma, en el caso de la letra d) del artículo cuarto.
+La reclusión domiciliaria total importa la privación total de libertad en el domicilio del interno, y con las condiciones que establezca el Tribunal, y bajo el monitoreo constante de la autoridad penitenciaria, sin perjuicio de las autorizaciones que a petición de parte o de oficio, se otorguen para que el interno acuda a sus controles médicos, y dejando siempre a salvo los casos de urgencia médica vital, las que deberán ser informadas al tribunal al día siguiente hábil de ocurrido el infortunio.
+Mientras dure la reclusión domiciliaria total, será también competente para conocer en los términos de los artículos 10, 95 y 466 del Código Procesal Penal, el Juzgado de Garantía correspondiente al domicilio del interno.
+La resolución acerca de la concesión, denegación o revocación de cualquiera de las medidas contempladas en los artículos segundo y tercero de esta ley, será apelable en ambos efectos, dentro del plazo de cinco días. El recurso gozará de preferencia para su vista y fallo.</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

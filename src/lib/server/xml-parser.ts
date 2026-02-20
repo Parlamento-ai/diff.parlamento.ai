@@ -304,8 +304,8 @@ export function parseAknDocument(xml: string, fileName: string): AknDocument {
 		fileName
 	};
 
-	// Parse body for acts
-	if (type === 'act' && doc.body) {
+	// Parse body for acts and bills (both contain article content)
+	if ((type === 'act' || type === 'bill') && doc.body) {
 		result.body = parseLawBody(doc);
 	}
 
