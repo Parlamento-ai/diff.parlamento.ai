@@ -1,6 +1,6 @@
-# 19/02/2026 — API LeyChile + Boletines reales completos
+# 19/02/2026 — Legislación real: Chile + UE
 
-Cuatro líneas de trabajo: investigación de la **API JSON de LeyChile** como fuente de datos automatizable, construcción del **primer boletín real con tramitación completa** (Ley 21.670), construcción del **primer boletín con voto de rechazo** (Boletín 17.370-17), y construcción del **primer boletín con Comisión Mixta** (Ley 21.120).
+Cinco líneas de trabajo: investigación de la **API JSON de LeyChile** como fuente de datos automatizable, construcción del **primer boletín real con tramitación completa** (Ley 21.670), construcción del **primer boletín con voto de rechazo** (Boletín 17.370-17), construcción del **primer boletín con Comisión Mixta** (Ley 21.120), y primer **pipeline automatizado para regulaciones de la UE** (Digital Services Act + AI Act).
 
 ---
 
@@ -158,6 +158,7 @@ Lo que queda por testear son los **edge cases** (rejected, withdrawn, repeal, li
 
 ---
 
+<<<<<<< HEAD
 ## Boletín 17.370-17 — Primer boletín con voto RECHAZADO
 
 Objetivo: testear el elemento `result="rejected"` en AKN Diff, que hasta ahora solo existía en los ejemplos ficticios (recetas), nunca con legislación real.
@@ -359,24 +360,110 @@ Con este boletín, el estado de cobertura de elementos AKN Diff queda:
 
 ---
 
+## Regulaciones de la UE — Pipeline automatizado
+
+Pipeline genérico para convertir cualquier regulación de la UE a formato AKN Diff. Documentación completa en [akn-eu/docs/pipeline.md](akn-eu/docs/pipeline.md).
+
+### Pipeline
+
+```
+CELLAR API (Formex)  ──→  poc-formex-to-akn.ts      ──→  AKN 3.0 (act)
+CELLAR API (XHTML)   ──→  poc-cellar-to-bill.ts     ──→  AKN 3.0 (bill)
+AKN act + bill       ──→  poc-akn-diff.ts            ──→  changeset XML
+EUR-Lex HTML (TA-9)  ──→  poc-eurlex-ep-amendments   ──→  EP amendment XML
+                          generate-viewer-xmls.ts     ──→  4 viewer XMLs
+```
+
+### Regulation (EU) 2022/2065 — Digital Services Act
+
+| Dato | Valor | Fuente |
+|------|-------|--------|
+| Propuesta | COM(2020) 825, 15/12/2020 | CELLAR |
+| EP 1ra lectura | 530-78-80, 20/01/2022 | EUR-Lex TA-9-2022-0014 |
+| Adopción final EP | 539-54-30, 05/07/2022 | EP Open Data |
+| Regulación | (EU) 2022/2065, OJ L 277, 27/10/2022 | CELLAR |
+| Artículos | 74 (propuesta) → 93 (final) | Verificado |
+
+| # | Archivo | Tipo | Etapa | Cambios | Voto |
+|---|---------|------|-------|---------|------|
+| 1 | 01-act-original.xml | `act` | COM(2020) 825 Proposal | — | — |
+| 2 | 02-amendment-1.xml | `amendment` | EP Amendments (ene 2022) | 60 substitute + 16 insert | 530-78-80 |
+| 3 | 03-amendment-2.xml | `amendment` | Ordinary Legislative Procedure | 74 substitute + 19 insert | 539-54-30 |
+| 4 | 04-act-final.xml | `act` | Regulation (EU) 2022/2065 | — | — |
+
+### Regulation (EU) 2024/1689 — AI Act
+
+| Dato | Valor | Fuente |
+|------|-------|--------|
+| Propuesta | COM(2021) 206, 21/04/2021 | CELLAR |
+| EP 1ra lectura | 523-46-49, 13/03/2024 | EUR-Lex TA-9-2024-0138 |
+| Regulación | (EU) 2024/1689, OJ L, 12/07/2024 | CELLAR |
+| Artículos | 85 (propuesta) → 113 (final) | Verificado |
+
+| # | Archivo | Tipo | Etapa | Cambios | Voto |
+|---|---------|------|-------|---------|------|
+| 1 | 01-act-original.xml | `act` | COM(2021) 206 Proposal | — | — |
+| 2 | 02-amendment-1.xml | `amendment` | EP Amendments (mar 2024) | 70 substitute + 23 insert | 523-46-49 |
+| 3 | 03-amendment-2.xml | `amendment` | Ordinary Legislative Procedure | 85 substitute + 28 insert | 523-46-49 |
+| 4 | 04-act-final.xml | `act` | Regulation (EU) 2024/1689 | — | — |
+
+### Herramientas genéricas
+
+10 PoCs reutilizables + 1 orquestador genérico en `akn-eu/tools/`. Para agregar una nueva regulación solo se necesita un `viewer-config.json` y un `ep-amendments-metadata.json`. Documentación: [akn-eu/docs/pipeline.md](akn-eu/docs/pipeline.md).
+
+Análisis previos en `akn-eu/docs/`:
+- `01-formex-estructura.md` — Estructura del formato Formex XML
+- `02-akn4eu-estructura.md` — Estándar AKN4EU
+- `03-viabilidad-akn-diff-eu.md` — Estudio de viabilidad AKN Diff para la UE
+- `resultados-poc-eu.html` — Reporte HTML con resultados de los 10 PoCs
+
+---
+
 ## Estructura de archivos
 
 ```
-  research/2026-02-19/
-  ├── ley-21670/
-  │   ├── docs/           ← 8 documentos legislativos (DOCX/PDF/DOC) + textos extraídos
-  │   ├── json/           ← Datos de LeyChile (Ley 17.798)
-  │   └── akn/            ← XMLs AKN generados (5 archivos)
-  ├── ley-17370/
-  │   ├── docs/           ← 4 documentos legislativos (PDF/DOC) + textos extraídos
-  │   └── akn/            ← XMLs AKN generados (2 archivos: bill + amendment rechazado)
-  ├── ley-21120-docs/     ← 11 documentos legislativos (.doc) + textos extraídos
-  └── ley-21120/
-      ├── json/           ← Datos de LeyChile (Ley 21.120, idNorma 1126480)
-      └── akn/            ← XMLs AKN generados (5 archivos: bill + 3 amendments + act-final)
+research/2026-02-19/
+├── README.md                          ← Este archivo
+├── akn-eu/                            ← Regulaciones de la UE
+│   ├── docs/                          ← Documentación y análisis
+│   │   ├── pipeline.md                ← Cómo agregar nuevas regulaciones
+│   │   ├── 01-formex-estructura.md
+│   │   ├── 02-akn4eu-estructura.md
+│   │   └── 03-viabilidad-akn-diff-eu.md
+│   ├── tools/                         ← 10 PoCs + orquestador genérico
+│   │   ├── generate-viewer-xmls.ts    ← Orquestador genérico (config.json → 4 XMLs)
+│   │   ├── poc-eurlex-ep-amendments.ts ← Genérico (CLI args)
+│   │   ├── poc-cellar-to-bill.ts
+│   │   ├── poc-cellar-download-formex.ts
+│   │   ├── poc-formex-to-akn.ts
+│   │   ├── poc-akn-diff.ts
+│   │   ├── poc-epdata-to-vote.ts      ← Con resolución de nombres MEP
+│   │   ├── poc-epdata-to-*.ts         ← 4 scripts más de enrichment
+│   │   └── resultados-poc-eu.html
+│   ├── digital-services-act/          ← DSA (Reg. 2022/2065)
+│   │   ├── akn/                       ← 4 viewer XMLs ★ ACTIVO
+│   │   ├── sources/                   ← Datos fuente de APIs
+│   │   ├── viewer-config.json
+│   │   └── ep-amendments-metadata.json
+│   └── ai-act/                        ← AI Act (Reg. 2024/1689)
+│       ├── akn/                       ← 4 viewer XMLs ★ ACTIVO
+│       ├── sources/                   ← Datos fuente de APIs
+│       ├── viewer-config.json
+│       └── ep-amendments-metadata.json
+├── ley-21670/                         ← Ley 21.670 Chile
+│   ├── akn/                           ← 5 viewer XMLs ★ ACTIVO
+│   ├── docs/                          ← 8 docs legislativos (DOCX/PDF)
+│   └── json/                          ← Datos API LeyChile
+├── ley-17370/
+│   ├── docs/           ← 4 documentos legislativos (PDF/DOC) + textos extraídos
+│   └── akn/            ← XMLs AKN generados (2 archivos: bill + amendment rechazado)
+├── ley-21120-docs/     ← 11 documentos legislativos (.doc) + textos extraídos
+└── ley-21120/
+    ├── json/           ← Datos de LeyChile (Ley 21.120, idNorma 1126480)
+    └── akn/            ← XMLs AKN generados (5 archivos: bill + 3 amendments + act-final)
 ```
 
-### Scripts
+### Scripts Ley 21.670
 
 **Ley 21.670**
 
@@ -402,3 +489,11 @@ Con este boletín, el estado de cobertura de elementos AKN Diff queda:
 | [download-docs.mjs](../../scripts/ley-21120/download-docs.mjs) | Descarga 11 documentos del Senado con Playwright |
 | [extract-text.mjs](../../scripts/ley-21120/extract-text.mjs) | Extrae texto de .doc |
 | [generate-akn.mjs](../../scripts/ley-21120/generate-akn.mjs) | Genera los 5 XMLs AKN Diff (bill + 3 amendments + act-final) |
+
+### Scripts EU (genéricos)
+
+| Script | Función |
+|--------|---------|
+| [generate-viewer-xmls.ts](akn-eu/tools/generate-viewer-xmls.ts) | Config JSON → 4 viewer XMLs (auto-detecta estructura) |
+| [poc-eurlex-ep-amendments.ts](akn-eu/tools/poc-eurlex-ep-amendments.ts) | HTML EUR-Lex → AKN amendment (CLI args genéricos) |
+| [pipeline.md](akn-eu/docs/pipeline.md) | Documentación completa del pipeline |

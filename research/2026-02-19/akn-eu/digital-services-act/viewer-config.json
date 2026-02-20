@@ -1,0 +1,31 @@
+{
+  "slug": "dsa-regulation",
+  "sourcesDir": "sources",
+  "outputDir": "akn",
+  "billFile": "52020PC0825-bill-akn.xml",
+  "finalFile": "32022R2065-akn.xml",
+  "changesetFile": "changeset-dsa-proposal-to-final.xml",
+  "epAmendmentsFile": null,
+  "proposal": {
+    "celex": "52020PC0825",
+    "comYear": 2020,
+    "comNum": 825,
+    "date": "2020-12-15",
+    "title": "Digital Services Act — COM(2020) 825 Proposal"
+  },
+  "final": {
+    "celex": "32022R2065",
+    "regYear": 2022,
+    "regNum": 2065,
+    "date": "2022-10-19",
+    "pubDate": "2022-10-19",
+    "title": "Regulation (EU) 2022/2065 — Digital Services Act"
+  },
+  "legislativeProcedure": {
+    "procedure": "2020/0361(COD)",
+    "voteDate": "2022-07-05",
+    "voteFor": 539,
+    "voteAgainst": 54,
+    "voteAbstain": 30
+  }
+}

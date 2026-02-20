@@ -9,6 +9,8 @@ const LEY_18045_DIR = 'research/2026-02-18/ley-18045/akn';
 const LEY_21670_DIR = 'research/2026-02-19/ley-21670/akn';
 const LEY_17370_DIR = 'research/2026-02-19/ley-17370/akn';
 const LEY_21120_DIR = 'research/2026-02-19/ley-21120/akn';
+const DSA_DIR = 'research/2026-02-19/akn-eu/digital-services-act/akn';
+const AI_ACT_DIR = 'research/2026-02-19/akn-eu/ai-act/akn';
 
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
@@ -32,7 +34,11 @@ const BOLETIN_DIRS: Record<string, string> = {
 	// Boletín 17.370-17 — Cumplimiento alternativo de penas (RECHAZADO en Sala)
 	'ley-17370-boletin': LEY_17370_DIR,
 	// Ley 21.120 — Identidad de Género (Boletín 8924-07, con Comisión Mixta)
-	'ley-21120-boletin': LEY_21120_DIR
+	'ley-21120-boletin': LEY_21120_DIR,
+	// EU — Digital Services Act (Reg. 2022/2065)
+	'eu-dsa': DSA_DIR,
+	// EU — AI Act (Reg. 2024/1689)
+	'eu-ai-act': AI_ACT_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -97,6 +103,26 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 			'amendment-1': 'Informe Comisión + Sala (RECHAZADO)'
 		};
 		return ley17370Labels[slug] || slug;
+	}
+	// EU — Digital Services Act
+	if (boletinSlug === 'eu-dsa') {
+		const dsaLabels: Record<string, string> = {
+			original: 'COM(2020) 825 Proposal',
+			'amendment-1': 'EP Amendments (1ra lectura)',
+			'amendment-2': 'Ordinary Legislative Procedure',
+			final: 'Regulation (EU) 2022/2065'
+		};
+		return dsaLabels[slug] || slug;
+	}
+	// EU — AI Act
+	if (boletinSlug === 'eu-ai-act') {
+		const aiActLabels: Record<string, string> = {
+			original: 'COM(2021) 206 Proposal',
+			'amendment-1': 'EP Amendments (1ra lectura)',
+			'amendment-2': 'Ordinary Legislative Procedure',
+			final: 'Regulation (EU) 2024/1689'
+		};
+		return aiActLabels[slug] || slug;
 	}
 	// Ley 21.735 per-norm timelines (original = pre-reform law)
 	if (boletinSlug?.startsWith('ley-21735-')) {
@@ -189,6 +215,26 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 			'amendment-2': { url: senadoDocUrl(23141, 'ofic'), label: 'Oficio 2do Trámite' },
 			'amendment-3': { url: senadoDocUrl(20587, 'info'), label: 'Informe C. Mixta' },
 			final: leyChileSource(1126480)
+		};
+		return map[slug];
+	}
+	// EU — Digital Services Act
+	if (boletinSlug === 'eu-dsa') {
+		const map: Record<string, { url: string; label: string }> = {
+			original: { url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52020PC0825', label: 'EUR-Lex' },
+			'amendment-1': { url: 'https://www.europarl.europa.eu/doceo/document/TA-9-2022-0014_EN.html', label: 'EP' },
+			'amendment-2': { url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32022R2065', label: 'EUR-Lex' },
+			final: { url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32022R2065', label: 'EUR-Lex' }
+		};
+		return map[slug];
+	}
+	// EU — AI Act
+	if (boletinSlug === 'eu-ai-act') {
+		const map: Record<string, { url: string; label: string }> = {
+			original: { url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52021PC0206', label: 'EUR-Lex' },
+			'amendment-1': { url: 'https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html', label: 'EP' },
+			'amendment-2': { url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32024R1689', label: 'EUR-Lex' },
+			final: { url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32024R1689', label: 'EUR-Lex' }
 		};
 		return map[slug];
 	}
@@ -415,6 +461,38 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 				src('Ley 21.120 — LeyChile', `${LEY_21120_DOCS}/leychile-21120.json`, 'json',
 					leyChileUrl(1126480))
 			]
+		};
+		return docs[versionSlug] || [];
+	}
+
+	// ── EU — Digital Services Act (Reg. 2022/2065) ──
+	if (boletinSlug === 'eu-dsa') {
+		const base = 'research/2026-02-19/akn-eu/digital-services-act';
+		const docs: Record<string, SourceRef[]> = {
+			original: [src('COM(2020) 825 Proposal', `${base}/sources/52020PC0825-bill-akn.xml`, 'xml',
+				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52020PC0825')],
+			'amendment-1': [src('EP 1ra lectura (TA-9-2022-0014)', `${base}/sources/ta-9-2022-0014.html`, 'text',
+				'https://www.europarl.europa.eu/doceo/document/TA-9-2022-0014_EN.html')],
+			'amendment-2': [src('Formex Final', `${base}/sources/32022R2065-formex.xml`, 'xml',
+				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32022R2065')],
+			final: [src('Regulation (EU) 2022/2065', `${base}/sources/32022R2065-akn.xml`, 'xml',
+				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32022R2065')]
+		};
+		return docs[versionSlug] || [];
+	}
+
+	// ── EU — AI Act (Reg. 2024/1689) ──
+	if (boletinSlug === 'eu-ai-act') {
+		const base = 'research/2026-02-19/akn-eu/ai-act';
+		const docs: Record<string, SourceRef[]> = {
+			original: [src('COM(2021) 206 Proposal', `${base}/sources/52021PC0206-bill-akn.xml`, 'xml',
+				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52021PC0206')],
+			'amendment-1': [src('EP 1ra lectura (TA-9-2024-0138)', `${base}/sources/ta-9-2023-0236.html`, 'text',
+				'https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html')],
+			'amendment-2': [src('Formex Final', `${base}/sources/32024R1689-formex.xml`, 'xml',
+				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32024R1689')],
+			final: [src('Regulation (EU) 2024/1689', `${base}/sources/32024R1689-akn.xml`, 'xml',
+				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32024R1689')]
 		};
 		return docs[versionSlug] || [];
 	}

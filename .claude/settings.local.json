@@ -10,7 +10,22 @@
       "Bash(node scripts/ley-21735/extract-versions.mjs:*)",
       "Bash(node scripts/ley-21735/discover-ajax.mjs:*)",
       "Bash(node scripts/ley-21735/extract-json-api.mjs:*)",
-      "Bash(node scripts/ley-21735/compare-versions.mjs:*)"
+      "Bash(node scripts/ley-21735/compare-versions.mjs:*)",
+      "WebSearch",
+      "WebFetch(domain:op.europa.eu)",
+      "WebFetch(domain:ec.europa.eu)",
+      "WebFetch(domain:unsceb-hlcm.github.io)",
+      "WebFetch(domain:interoperable-europe.ec.europa.eu)",
+      "WebFetch(domain:joinup.ec.europa.eu)",
+      "WebFetch(domain:eur-lex.europa.eu)",
+      "WebFetch(domain:2023.eswc-conferences.org)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(npx svelte-kit sync:*)",
+      "Bash(npx vite build)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "svelte"
+  ]
 }

@@ -44,13 +44,19 @@ Brazil's **LexML** is a Portuguese-language derivative of AKN:
 
 ## AKN4EU — European Union
 
-The EU is developing its own AKN profile:
+**AKN4EU** is the EU's official AKN profile, developed by the Interinstitutional Metadata and Formats Committee (IMFC). Current version: **4.2** (published October 2024).
 
-- Used for EUR-Lex, the official EU legal database
-- Covers: Regulations, Directives, Decisions, Treaties
+- **Namespace:** `xmlns:akn4eu="http://imfc.europa.eu/akn4eu"`
+- **Scope:** Ordinary Legislative Procedure acts, Council acts, legislative proposals
+- **Document types covered:** `<act name="REG|DIR|DEC|DEC_IMPL">` for adopted legislation, `<bill>` for proposals
+- **Not covered:** debates, votes, agendas, questions, amendments as standalone documents, changeSets
 - Supports multilingual legislation (all 24 official EU languages)
-- Notable challenge: EU legislation uses a unique hierarchy (`Title → Chapter → Section → Article → Paragraph → Subparagraph → Point → Indent`)
-- Published as part of the [EU Publications Office](https://op.europa.eu/) standardization effort
+- Uses **ELI** (European Legislation Identifier) URIs and **EU Authority Lists** for organizations, roles, and places
+- **LEOS** (Legislation Editing Open Software) produces AKN natively — available under EUPL 1.2 at [code.europa.eu/leos](https://code.europa.eu/leos/core)
+
+**Key distinction from other profiles:** AKN4EU covers the *products* of the legislative process (final acts and proposals) but not the *process* itself (who voted, what was debated, which amendments were tabled). EUR-Lex publishes documents in **Formex 4** (a proprietary XML format), not AKN. The conversion FMX2AK exists internally but is not public. `application/akn+xml` returns HTTP 400 from CELLAR.
+
+**Verified in PoCs (Feb 2026):** We built 10 converters that transform EU data to AKN 3.0 from two real APIs — CELLAR (Formex XML, no auth) and EP Open Data v2 (JSON-LD, no auth). Formex→AKN mapping is ~1:1 for structural elements. Bills (COM proposals) don't have Formex but have XHTML parseable via CSS classes. EU is the easiest jurisdiction for AKN conversion because it already publishes structured XML. See [research/2026-02-19/akn-eu/](../../research/2026-02-19/akn-eu/) for full results.
 
 ## Monalisa — France (Senate)
 

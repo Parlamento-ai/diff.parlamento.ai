@@ -1,0 +1,31 @@
+{
+  "slug": "ai-act-regulation",
+  "sourcesDir": "sources",
+  "outputDir": "akn",
+  "billFile": "52021PC0206-bill-akn.xml",
+  "finalFile": "32024R1689-akn.xml",
+  "changesetFile": "changeset-ai-act.xml",
+  "epAmendmentsFile": "ep-amendments-ai-act.xml",
+  "proposal": {
+    "celex": "52021PC0206",
+    "comYear": 2021,
+    "comNum": 206,
+    "date": "2021-04-21",
+    "title": "Artificial Intelligence Act — COM(2021) 206 Proposal"
+  },
+  "final": {
+    "celex": "32024R1689",
+    "regYear": 2024,
+    "regNum": 1689,
+    "date": "2024-07-12",
+    "pubDate": "2024-07-12",
+    "title": "Regulation (EU) 2024/1689 — Artificial Intelligence Act"
+  },
+  "legislativeProcedure": {
+    "procedure": "2021/0106(COD)",
+    "voteDate": "2024-03-13",
+    "voteFor": 523,
+    "voteAgainst": 46,
+    "voteAbstain": 49
+  }
+}

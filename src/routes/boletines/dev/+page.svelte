@@ -1,6 +1,7 @@
 <script lang="ts">
 	import BoletinCard from '$lib/components/boletin/BoletinCard.svelte';
 	import FlagCl from '~icons/circle-flags/cl';
+	import FlagEu from '~icons/circle-flags/eu';
 	import type { Component } from 'svelte';
 
 	let { data } = $props();
@@ -15,7 +16,9 @@
 		'ley-18045-historia': FlagCl,
 		'ley-21670-boletin': FlagCl,
 		'ley-17370-boletin': FlagCl,
-		'ley-21120-boletin': FlagCl
+		'ley-21120-boletin': FlagCl,
+		'eu-dsa': FlagEu,
+		'eu-ai-act': FlagEu
 	};
 
 	const normOrder = [
@@ -49,6 +52,10 @@
 	const ley17370 = $derived(data.boletines.find((b) => b.slug === 'ley-17370-boletin'));
 
 	const ley21120 = $derived(data.boletines.find((b) => b.slug === 'ley-21120-boletin'));
+
+	const euDsa = $derived(data.boletines.find((b) => b.slug === 'eu-dsa'));
+
+	const euAiAct = $derived(data.boletines.find((b) => b.slug === 'eu-ai-act'));
 </script>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -68,8 +75,8 @@
 	<div class="text-center mb-12">
 		<h1 class="text-3xl font-bold text-gray-900">En desarrollo</h1>
 		<p class="text-gray-500 mt-3 text-sm max-w-lg mx-auto leading-relaxed">
-			Legislación real chilena representada en AKN Diff.
-			Estos boletines documentan distintos escenarios del proceso legislativo.
+			Legislación real representada en AKN Diff.
+			Boletines chilenos y regulaciones europeas que documentan distintos escenarios del proceso legislativo.
 		</p>
 	</div>
 
@@ -225,6 +232,41 @@
 					flag={flagMap[ley21120.slug]}
 					firstVersion="bill"
 				/>
+			</div>
+		</section>
+	{/if}
+
+	<!-- EU — Regulaciones europeas -->
+	{#if euDsa || euAiAct}
+		<section class="mb-14">
+			<div class="mb-5 max-w-lg mx-auto">
+				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+					<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs font-bold">EU</span>
+					Regulaciones de la UE
+				</h2>
+				<p class="text-xs text-gray-400 mt-1.5 leading-relaxed">
+					Pipeline automatizado: CELLAR + EP Open Data + EUR-Lex a AKN 3.0.
+					Cada regulación muestra propuesta, enmiendas del Parlamento Europeo y texto final.
+				</p>
+			</div>
+
+			<div class="max-w-lg mx-auto flex flex-col gap-2">
+				{#if euDsa}
+					<BoletinCard
+						slug={euDsa.slug}
+						title={euDsa.title}
+						documentCount={euDsa.documentCount}
+						flag={flagMap[euDsa.slug]}
+					/>
+				{/if}
+				{#if euAiAct}
+					<BoletinCard
+						slug={euAiAct.slug}
+						title={euAiAct.title}
+						documentCount={euAiAct.documentCount}
+						flag={flagMap[euAiAct.slug]}
+					/>
+				{/if}
 			</div>
 		</section>
 	{/if}

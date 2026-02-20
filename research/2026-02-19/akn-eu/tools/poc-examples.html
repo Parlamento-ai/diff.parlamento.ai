@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultados PoC — AKN EU para Parlamento.ai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ─── Design Tokens (from diff.parlamento.ai layout.css) ─── */
+:root {
+  --color-brand: #B9F8CF;
+  --color-brand-dark: #0E542C;
+  --color-addition-50: #ECFDF5;
+  --color-addition-100: #D1FAE5;
+  --color-addition-200: #A7F3D0;
+  --color-addition-500: #10B981;
+  --color-addition-800: #065F46;
+  --color-deletion-50: #FEF2F2;
+  --color-deletion-100: #FEE2E2;
+  --color-deletion-200: #FECACA;
+  --color-deletion-500: #EF4444;
+  --color-deletion-800: #991B1B;
+  --color-shadow: #111827;
+  --font-heading: 'Instrument Sans', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --shadow-sm: 2px 2px 0 var(--color-shadow);
+  --shadow-md: 3px 3px 0 var(--color-shadow);
+}
+
+/* ─── Reset & Base ─── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font-body);
+  background: #F9FAFB;
+  color: var(--color-shadow);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+code, pre { font-family: var(--font-mono); }
+
+/* ─── Noise texture (from diff repo layout) ─── */
+.page-bg::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  filter: url(#grain);
+  opacity: 0.035;
+}
+.page-bg > * { position: relative; z-index: 1; }
+
+/* ─── Layout ─── */
+.container { max-width: 960px; margin: 0 auto; padding: 48px 16px 64px; }
+
+/* ─── Page Header ─── */
+.page-header { margin-bottom: 40px; }
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.page-header .sub {
+  color: #6B7280;
+  font-size: 0.875rem;
+  margin-top: 6px;
+}
+
+/* ─── Summary Row ─── */
+.summary-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+.summary-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: white;
+  border: 2px solid var(--color-shadow);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.summary-chip .n {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.summary-chip.success .n { color: var(--color-addition-500); }
+
+/* ─── Card (matches diff repo .card exactly) ─── */
+.card {
+  background-color: white;
+  border: 2px solid var(--color-shadow);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #E5E7EB;
+}
+.card-top h2 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.card-body { padding: 20px; }
+
+/* ─── Badge (matches diff repo .badge exactly) ─── */
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-radius: 4px;
+  display: inline-block;
+}
+.badge-brand { background: var(--color-brand); color: var(--color-brand-dark); }
+.badge-add { background: var(--color-addition-50); color: var(--color-addition-800); }
+
+/* ─── Meta row ─── */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 0.8125rem;
+  color: #6B7280;
+  margin-bottom: 16px;
+}
+.meta strong { color: var(--color-shadow); }
+
+/* ─── Links (diff repo style) ─── */
+a {
+  color: var(--color-brand-dark);
+  text-decoration: underline transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+}
+a:hover { text-decoration-color: var(--color-brand); }
+
+/* ─── Content panels (card-layout style from repo) ─── */
+.panel {
+  background: white;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  margin-top: 12px;
+  font-size: 0.8125rem;
+}
+.panel h4 {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+.panel p { margin-bottom: 4px; }
+.panel .art-label { font-weight: 700; color: var(--color-shadow); }
+
+/* ─── Diff view (matches DiffView.svelte patterns) ─── */
+.diff-block {
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.diff-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: #F9FAFB;
+  border-bottom: 1px solid #E5E7EB;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #374151;
+}
+.diff-heading .badge { margin-left: auto; }
+.diff-line {
+  padding: 2px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.7;
+}
+.diff-del {
+  background: var(--color-deletion-50);
+  border-left: 3px solid var(--color-deletion-500);
+  color: var(--color-deletion-800);
+}
+.diff-add {
+  background: var(--color-addition-50);
+  border-left: 3px solid var(--color-addition-500);
+  color: var(--color-addition-800);
+}
+.diff-del::before { content: "\2212  "; font-weight: 600; opacity: 0.5; }
+.diff-add::before { content: "+  "; font-weight: 600; opacity: 0.5; }
+
+/* ─── Vote bars ─── */
+.vote-bar {
+  display: flex;
+  height: 22px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 4px 0 2px;
+  border: 1px solid #E5E7EB;
+}
+.vote-for { background: var(--color-addition-500); }
+.vote-against { background: var(--color-deletion-500); }
+.vote-abstain { background: #D1D5DB; }
+.vote-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  min-width: 28px;
+}
+.status-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+}
+.status-rejected { background: var(--color-deletion-50); color: var(--color-deletion-800); border: 1px solid var(--color-deletion-200); }
+
+/* ─── Timeline ─── */
+.timeline { border-left: 2px solid #E5E7EB; margin: 8px 0 0 12px; padding-left: 16px; }
+.tl-item { position: relative; margin-bottom: 6px; font-size: 0.8125rem; }
+.tl-item::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-addition-500);
+  border: 2px solid white;
+}
+
+/* ─── Agenda ─── */
+.agenda-item {
+  display: flex;
+  gap: 8px;
+  padding: 5px 0;
+  font-size: 0.8125rem;
+  border-bottom: 1px solid #F3F4F6;
+}
+.agenda-num {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  min-width: 20px;
+  color: #9CA3AF;
+}
+
+/* ─── File tree ─── */
+.file-tree {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: #374151;
+}
+.file-tree .dir { color: #6B7280; font-weight: 600; }
+.file-tree .size { color: #9CA3AF; }
+.file-tree .note { color: var(--color-addition-800); font-style: italic; }
+
+/* ─── Divider (from diff repo) ─── */
+.divider-diff {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 32px 0;
+}
+.divider-diff::before,
+.divider-diff::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-addition-200), var(--color-deletion-200));
+}
+.divider-diff::before { background: linear-gradient(90deg, transparent, var(--color-addition-200)); }
+.divider-diff::after { background: linear-gradient(90deg, var(--color-deletion-200), transparent); }
+
+/* ─── AKN/XML Preview toggle ─── */
+details.xml-preview { margin-top: 16px; }
+details.xml-preview summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-shadow);
+  background-color: white;
+  color: var(--color-shadow);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+details.xml-preview summary::-webkit-details-marker { display: none; }
+details.xml-preview summary::before {
+  content: "‹/›";
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-addition-500);
+}
+details.xml-preview[open] summary {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}
+details.xml-preview pre {
+  margin-top: 12px;
+  padding: 16px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.65;
+  color: #374151;
+  overflow-x: auto;
+  white-space: pre;
+  tab-size: 2;
+}
+</style>
+</head>
+<body class="page-bg">
+<!-- Noise texture filter (same as diff repo) -->
+<svg style="position:absolute;width:0;height:0">
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+    <feColorMatrix type="saturate" values="0" />
+  </filter>
+</svg>
+
+<div class="container">
+
+<!-- ═══ HEADER ═══ -->
+<div class="page-header">
+  <div class="badge badge-brand" style="margin-bottom:12px">Research</div>
+  <h1>Resultados PoC: AKN para EU</h1>
+  <p class="sub">19 feb 2026 — 10 PoCs + pipeline genérico. 2 regulaciones procesadas: DSA + AI Act</p>
+</div>
+
+<!-- ═══ SUMMARY ═══ -->
+<div class="summary-row">
+  <div class="summary-chip success"><span class="n">10</span> PoCs exitosos</div>
+  <div class="summary-chip"><span class="n">2</span> Regulaciones</div>
+  <div class="summary-chip"><span class="n">8</span> Tipos AKN</div>
+  <div class="summary-chip"><span class="n">3</span> APIs EU</div>
+  <div class="summary-chip"><span class="n">0</span> Deps npm</div>
+</div>
+
+<!-- ═══ 1. CELLAR FORMEX DOWNLOADER ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>1. Formex Downloader — CELLAR API</h2>
+    <span class="badge badge-add">nuevo</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Descarga el XML nativo (Formex 4) de cualquier acto legislativo EU desde CELLAR, dado su numero CELEX. Maneja tanto XML directo (docs pre-2020) como ZIP comprimido (docs post-2020).</p>
+    <div class="meta">
+      <span>Script: <strong>poc-cellar-download-formex.ts</strong></span>
+      <span>Input: <strong>CELEX number</strong></span>
+      <span>Output: <strong>Formex XML body</strong></span>
+    </div>
+    <div class="panel">
+      <h4>3 tests reales</h4>
+      <p><strong>32018R1645</strong> (Reg delegada benchmarks) → XML directo DOC_2 → <strong>&lt;ACT&gt; 4 articles, 12 KB</strong></p>
+      <p><strong>32024R2847</strong> (Cyber Resilience Act) → ZIP con 11 archivos → extrajo L_202402847EN.000101.fmx.xml → <strong>&lt;ACT&gt; 71 articles, 371 KB</strong></p>
+      <p><strong>32016R0679</strong> (GDPR) → XML directo DOC_2 → <strong>&lt;ACT&gt; 99 articles, 428 KB</strong></p>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver Formex XML</summary>
+<pre>&lt;ACT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;BIB.INSTANCE&gt;
+    &lt;DOCUMENT.REF FILE="L_2018274EN.01003601.doc.xml"&gt;
+      &lt;COLL&gt;L&lt;/COLL&gt;
+      &lt;NO.OJ&gt;274&lt;/NO.OJ&gt;
+      &lt;YEAR&gt;2018&lt;/YEAR&gt;
+    &lt;/DOCUMENT.REF&gt;
+    &lt;NO.DOC TYPE="OJ"&gt;
+      &lt;NO.CURRENT&gt;1645&lt;/NO.CURRENT&gt;
+      &lt;YEAR&gt;2018&lt;/YEAR&gt;
+    &lt;/NO.DOC&gt;
+  &lt;/BIB.INSTANCE&gt;
+  &lt;TITLE&gt;
+    &lt;TI&gt;&lt;P&gt;Commission Delegated Regulation (EU) 2018/1645&lt;/P&gt;&lt;/TI&gt;
+  &lt;/TITLE&gt;
+  &lt;PREAMBLE&gt;
+    &lt;GR.VISA&gt;...&lt;/GR.VISA&gt;
+    &lt;GR.CONSID&gt;...13 recitals...&lt;/GR.CONSID&gt;
+  &lt;/PREAMBLE&gt;
+  &lt;ENACTING.TERMS&gt;
+    &lt;ARTICLE IDENTIFIER="001"&gt;...&lt;/ARTICLE&gt;
+    &lt;ARTICLE IDENTIFIER="002"&gt;...&lt;/ARTICLE&gt;
+    &lt;ARTICLE IDENTIFIER="003"&gt;...&lt;/ARTICLE&gt;
+    &lt;ARTICLE IDENTIFIER="004"&gt;...&lt;/ARTICLE&gt;
+  &lt;/ENACTING.TERMS&gt;
+  &lt;FINAL&gt;&lt;SIGNATURE&gt;...Juncker...&lt;/SIGNATURE&gt;&lt;/FINAL&gt;
+&lt;/ACT&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ 2. ACT ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>2. act — Formex a AKN (Reg 2018/1645)</h2>
+    <span class="badge badge-brand">Formex → AKN</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Convierte un acto legislativo EU de Formex 4 (formato nativo del Diario Oficial) a AKN 3.0 &lt;act&gt;. Extrae preambulo, citaciones, recitales, articulado y firma preservando la estructura semantica.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-formex-to-akn.ts</strong></span>
+      <span>CELEX: <strong>32018R1645</strong></span>
+      <span>AKN: <strong>&lt;act name="reg"&gt;</strong></span>
+      <span>Archivo: <strong>32018R1645-akn.xml (14.6 KB)</strong></span>
+      <span><a href="http://data.europa.eu/eli/reg/2018/1645/oj" target="_blank">Verificar ELI ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Contenido parseado del AKN generado</h4>
+      <p><strong>Preface:</strong> COMMISSION DELEGATED REGULATION (EU) 2018/1645 of 13 July 2018 supplementing Regulation (EU) 2016/1011 of the European Parliament and of the Council with regard to regulatory technical standards for the form and content of the application for recognition...</p>
+      <p><strong>Citations (2):</strong> Having regard to the Treaty on the Functioning of the European Union; Having regard to Regulation (EU) 2016/1011... and in particular Article 32(9) thereof</p>
+      <p><strong>Recitals (13):</strong> (1) A benchmark administrator located in a third country can apply for recognition in the Union... (2) The application for recognition should include information related to the choice of Member State of reference...</p>
+    </div>
+    <div class="panel">
+      <h4>Articulado completo (4 articles)</h4>
+      <p><span class="art-label">Article 1 — General requirements</span></p>
+      <p>1. An administrator located in a third country shall when applying for recognition pursuant to Article 32 of Regulation (EU) 2016/1011 provide the information listed in the Annex.</p>
+      <p>2. Where the applicant has left out any of the required information, the application shall include an explanation as to why that information has not been provided.</p>
+      <p><span class="art-label">Article 2 — Format of the application</span></p>
+      <p>1. The application for recognition shall be submitted in the official language or one of the official languages of the Member State of reference, unless otherwise indicated in the Annex.</p>
+      <p>2. The application for recognition shall be submitted by electronic means or, if accepted by the relevant competent authority, in paper form.</p>
+      <p><span class="art-label">Article 3 — Specific information concerning policies and procedures</span></p>
+      <p>1. Any policies and procedures established to comply with requirements of Regulation (EU) 2016/1011 and described in an application shall contain or be accompanied by: (a) an indication of the identity of the person or persons responsible... (b) a description of how compliance is monitored... (c) a description of the measures to be taken in the event of a breach.</p>
+      <p>2. Where an applicant is a company within a group, it may comply by submitting the policies of its group.</p>
+      <p><span class="art-label">Article 4 — Entry into force</span></p>
+      <p>This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union. It shall apply from 25 January 2019.</p>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;act name="reg"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#source"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value="http://data.europa.eu/eli/reg/2018/1645/oj"/&gt;
+          &lt;FRBRdate date="2018-07-13" name="publication"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+          &lt;FRBRnumber value="1645"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+    &lt;/meta&gt;
+    &lt;preface&gt;
+      &lt;longTitle eId="longTitle"&gt;
+        &lt;p&gt;Commission Delegated Regulation (EU) 2018/1645&lt;/p&gt;
+        &lt;p&gt;of &lt;date date="20180713"&gt;13 July 2018&lt;/date&gt;&lt;/p&gt;
+      &lt;/longTitle&gt;
+    &lt;/preface&gt;
+    &lt;preamble eId="preamble"&gt;
+      &lt;citations eId="cits"&gt;
+        &lt;citation eId="cit_1"&gt;...&lt;/citation&gt;
+        &lt;citation eId="cit_2"&gt;...&lt;/citation&gt;
+      &lt;/citations&gt;
+      &lt;recitals eId="recs"&gt;
+        &lt;recital eId="rec_1"&gt;...&lt;/recital&gt;
+        &lt;!-- ...13 recitals... --&gt;
+      &lt;/recitals&gt;
+    &lt;/preamble&gt;
+    &lt;body&gt;
+      &lt;article eId="art_1"&gt;
+        &lt;num&gt;Article 1&lt;/num&gt;
+        &lt;heading&gt;General requirements&lt;/heading&gt;
+        &lt;paragraph eId="art_1__para_1"&gt;...&lt;/paragraph&gt;
+      &lt;/article&gt;
+      &lt;article eId="art_2"&gt;...&lt;/article&gt;
+      &lt;article eId="art_3"&gt;...&lt;/article&gt;
+      &lt;article eId="art_4"&gt;...&lt;/article&gt;
+    &lt;/body&gt;
+  &lt;/act&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ 3. BILL ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>3. bill — XHTML a AKN (COM 2024/150 EDIP)</h2>
+    <span class="badge badge-brand">CELLAR XHTML → AKN</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Descarga el XHTML de una propuesta legislativa COM desde CELLAR y lo convierte a AKN 3.0 &lt;bill&gt;. Parsea exposicion de motivos, citaciones, recitales y articulado completo desde HTML semantico.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-cellar-to-bill.ts</strong></span>
+      <span>CELEX: <strong>52024PC0150</strong></span>
+      <span>AKN: <strong>&lt;bill name="reg"&gt;</strong></span>
+      <span>Archivo: <strong>52024PC0150-bill-akn.xml (236 KB)</strong></span>
+      <span><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52024PC0150" target="_blank">Verificar EUR-Lex ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Contenido parseado del bill</h4>
+      <p><strong>Preface:</strong> Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products ('EDIP')</p>
+      <p><strong>Reference:</strong> COM(2024) 150 final — 2024/0061(COD) — Brussels, 5.3.2024</p>
+      <p><strong>Acting entity:</strong> THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION,</p>
+      <p><strong>Citations (6):</strong> Having regard to the TFEU, Article 114(1), 173(3), 212(2) and 322(1); Having regard to the proposal from the European Commission; After transmission to national parliaments; Opinion of EESC; Opinion of Court of Auditors; Acting in accordance with ordinary legislative procedure</p>
+    </div>
+    <div class="panel">
+      <h4>Articulado (67 articles, muestra primeros 5)</h4>
+      <p><span class="art-label">Article 1 — Subject Matter</span></p>
+      <p>This Regulation establishes a budget and lays down a set of measures aimed at supporting defence industry readiness of the Union... (1) the establishment of the European Defence Industrial Programme; (2) a cooperation programme with Ukraine; (3) SEAP framework; (4) security of supply; (5) Defence Industrial Readiness Board.</p>
+      <p><span class="art-label">Article 2 — Definitions</span></p>
+      <p>(1) 'advance purchasing agreement' (2) 'bottleneck' (3) 'blending operation' (4) 'common procurement' (5) 'control' (6) 'classified information' (7) 'defence products' ... 23 definitions total</p>
+      <p><span class="art-label">Article 3 — Grants</span></p>
+      <p>1. Grants may take the form of financing not linked to costs, pursuant to Article 180(3) of Regulation (EU, Euratom) 2018/1046.</p>
+      <p><span class="art-label">Article 4 — Programme and Ukraine Support Instrument objectives</span></p>
+      <p>1. The Programme and the Ukraine Support Instrument aim at increasing the defence industrial readiness of the EDTIB and of the Ukrainian DTIB...</p>
+      <p><span class="art-label">Article 67 — Entry into force</span></p>
+      <p>This Regulation shall enter into force on the day following that of its publication in the Official Journal of the European Union.</p>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;bill name="reg"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#source"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value="http://data.europa.eu/eli/comProposal/2024/150"/&gt;
+          &lt;FRBRdate date="2024-03-05" name="generation"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+          &lt;FRBRnumber value="150"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+    &lt;/meta&gt;
+    &lt;preface eId="preface"&gt;
+      &lt;longTitle eId="longTitle"&gt;
+        &lt;p&gt;&lt;docStage&gt;Proposal for a&lt;/docStage&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;docType&gt;REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL&lt;/docType&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;docTitle&gt;establishing the European Defence Industry Programme...&lt;/docTitle&gt;&lt;/p&gt;
+      &lt;/longTitle&gt;
+      &lt;container eId="preface__cover" name="coverPage"&gt;
+        &lt;p class="docReference"&gt;COM(2024) 150 final&lt;/p&gt;
+        &lt;p class="docReference"&gt;2024/0061(COD)&lt;/p&gt;
+      &lt;/container&gt;
+    &lt;/preface&gt;
+    &lt;preamble&gt;
+      &lt;citations&gt;...6 citations...&lt;/citations&gt;
+      &lt;recitals&gt;...multiple recitals...&lt;/recitals&gt;
+    &lt;/preamble&gt;
+    &lt;body&gt;
+      &lt;article eId="art_1"&gt;...&lt;/article&gt;
+      &lt;!-- ...67 articles... --&gt;
+      &lt;article eId="art_67"&gt;...&lt;/article&gt;
+    &lt;/body&gt;
+  &lt;/bill&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ DIVIDER ═══ -->
+<div class="divider-diff"><span style="font-family:var(--font-mono);font-size:0.75rem;color:#9CA3AF">diff</span></div>
+
+<!-- ═══ 4. DIFF ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>4. diff — Reg 2019/2088 (2020 vs 2024)</h2>
+    <span class="badge badge-brand">AKN Diff</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Compara dos versiones consolidadas del mismo reglamento EU en AKN y genera un changeSet AKN 3.0. Detecta articulos insertados, eliminados y modificados usando diff linea a linea con LCS.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-akn-diff.ts</strong></span>
+      <span>Reglamento: <strong>Reg (EU) 2019/2088 — Sustainable Finance Disclosure (SFDR)</strong></span>
+      <span>V1: <strong>02019R2088-20200712 (21 articles)</strong></span>
+      <span>V2: <strong>02019R2088-20240109 (22 articles)</strong></span>
+      <span>Cambios: <strong>1 insercion</strong></span>
+      <span>Archivo: <strong>changeset-2019-2088.xml (5.5 KB)</strong></span>
+      <span><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02019R2088-20240109" target="_blank">Verificar EUR-Lex ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Caso de uso real</h4>
+      <p>Se descargaron dos versiones consolidadas del <strong>mismo reglamento</strong> (SFDR) desde CELLAR: la version vigente al 12 julio 2020 y la version vigente al 9 enero 2024. El diff detecta automaticamente que cambio entre ambas.</p>
+      <p>La version 2024 incorpora las modificaciones del <strong>Reg (EU) 2023/2859</strong> (European Single Access Point — ESAP).</p>
+    </div>
+    <div class="diff-block">
+      <div class="diff-heading">Article 18a — Accessibility of information on the European single access point <span class="badge badge-add">insertion</span></div>
+      <div class="diff-line diff-add">1. From 10 January 2028, when making public any information referred to in Article 3(1) and (2), Article 4(1), (3), (4) and (5), Articles 5(1) and 10(1) of this Regulation, financial market participants and financial advisers shall submit that information at the same time to the relevant collection body referred to in paragraph 3 of this Article for the purpose of making it accessible on the European single access point (ESAP) established under Regulation (EU) 2023/2859.</div>
+      <div class="diff-line diff-add">That information shall comply with the following requirements: (a) be submitted in a data extractable format as defined in Article 2, point (3), of Regulation (EU) 2023/2859 or, where required by Union law, in a machine-readable format; (b) be accompanied by metadata: (i) names of the financial market participant or financial adviser; (ii) legal entity identifier; (iii) size by category; (iv) type of information; (v) indication of personal data.</div>
+      <div class="diff-line diff-add">2. For the purposes of paragraph 1, point (b)(ii), financial market participants and financial advisers that are legal persons shall obtain a legal entity identifier.</div>
+      <div class="diff-line diff-add">3. By 9 January 2028, Member States shall designate at least one collection body as defined in Article 2, point (2), of Regulation (EU) 2023/2859 and notify ESMA thereof.</div>
+      <div class="diff-line diff-add">4. The ESAs, through the Joint Committee, shall develop draft implementing technical standards to specify: (a) any other metadata; (b) the structuring of data; (c) for which information a machine-readable format is required.</div>
+      <div class="diff-line diff-add">5. Where necessary, the ESAs shall adopt guidelines to ensure that the metadata submitted in accordance with paragraph 4 are correct.</div>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN changeSet</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;doc name="changeSet"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#akn-diff-poc"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value="http://data.europa.eu/eli/reg/2019/2088/oj/changeset/2026"/&gt;
+          &lt;FRBRdate date="2026-02-19" name="generation"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+      &lt;references source="#akn-diff-poc"&gt;
+        &lt;TLCReference eId="base" href="...2019/2088..." showAs="Original version"/&gt;
+        &lt;TLCReference eId="result" href="...2019/2088..." showAs="Consolidated version"/&gt;
+      &lt;/references&gt;
+    &lt;/meta&gt;
+    &lt;mainBody&gt;
+      &lt;section eId="summary"&gt;
+        &lt;heading&gt;Change Summary&lt;/heading&gt;
+        &lt;content&gt;&lt;p&gt;Articles modified: 0 | Added: 1 | Removed: 0&lt;/p&gt;&lt;/content&gt;
+      &lt;/section&gt;
+      &lt;section eId="change_art_18a"&gt;
+        &lt;heading&gt;Article 18a &amp;mdash; insertion&lt;/heading&gt;
+        &lt;content&gt;
+          &lt;block name="new"&gt;
+            &lt;p&gt;1. From 10 January 2028, when making public...&lt;/p&gt;
+          &lt;/block&gt;
+        &lt;/content&gt;
+      &lt;/section&gt;
+    &lt;/mainBody&gt;
+  &lt;/doc&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<div class="divider-diff"><span style="font-family:var(--font-mono);font-size:0.75rem;color:#9CA3AF">EP Open Data API</span></div>
+
+<!-- ═══ 5. VOTES ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>5. votes — Plenary 20 enero 2025</h2>
+    <span class="badge badge-brand">EP Open Data</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Consulta la EP Open Data API v2 para obtener votaciones plenarias y las convierte a AKN 3.0 &lt;doc name="votes"&gt;. Incluye resultado, tipo de voto, votos por MEP ID y desglose favor/contra/abstencion.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-epdata-to-vote.ts</strong></span>
+      <span>Meeting: <strong>MTG-PL-2025-01-20</strong></span>
+      <span>AKN: <strong>&lt;doc name="votes"&gt;</strong></span>
+      <span>Archivo: <strong>eu-votes-plenary-2025.xml (13 KB)</strong></span>
+      <span><a href="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2025-01-20" target="_blank">Verificar EP Data ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>3 votaciones, 438 votantes unicos</h4>
+
+      <p><span class="art-label">Vote 1: Wednesday's agenda — Request by the PfE Group</span></p>
+      <p><span class="status-badge status-rejected">REJECTED</span> — 17:14:56 — VOTE_ELECTRONIC_ROLLCALL — Voting ID: 171426</p>
+      <div class="vote-bar">
+        <div class="vote-for vote-label" style="width:25.3%">108</div>
+        <div class="vote-against vote-label" style="width:73.3%">313</div>
+        <div class="vote-abstain vote-label" style="width:1.4%">6</div>
+      </div>
+      <p style="font-size:0.6875rem;color:#9CA3AF;margin-top:2px">Favor: 108 MEP IDs (192254, 197628, 257118, 256859, 185771...) | Contra: 313 | Abst: 6</p>
+
+      <p style="margin-top:14px"><span class="art-label">Vote 2: Wednesday's agenda — Request by The Left Group</span></p>
+      <p><span class="status-badge status-rejected">REJECTED</span> — 17:17:17 — VOTE_ELECTRONIC_ROLLCALL — Voting ID: 171427</p>
+      <div class="vote-bar">
+        <div class="vote-for vote-label" style="width:45.9%">196</div>
+        <div class="vote-against vote-label" style="width:51.8%">221</div>
+        <div class="vote-abstain vote-label" style="width:2.3%">10</div>
+      </div>
+      <p style="font-size:0.6875rem;color:#9CA3AF;margin-top:2px">Favor: 196 MEPs (257092, 124834, 256882...) | Contra: 221 | Abst: 10 (257120, 256962, 197433...)</p>
+
+      <p style="margin-top:14px"><span class="art-label">Vote 3: Wednesday's agenda — Request by Verts/ALE Group</span></p>
+      <p><span class="status-badge status-rejected">REJECTED</span> — VOTE_HAND — Voting ID: 171428</p>
+      <div class="vote-bar">
+        <div class="vote-abstain vote-label" style="width:100%;color:#6B7280">Hand vote — no tally</div>
+      </div>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;doc name="votes"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#ep-opendata"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value=".../MTG-PL-2025-01-20/votes"/&gt;
+          &lt;FRBRdate date="2025-01-20" name="meeting"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+      &lt;references source="#ep-opendata"&gt;
+        &lt;TLCOrganization eId="ep" href="..." showAs="European Parliament"/&gt;
+        &lt;TLCPerson eId="mep-192254" href=".../person/192254" showAs="MEP 192254"/&gt;
+        &lt;!-- ...438 MEP references... --&gt;
+      &lt;/references&gt;
+    &lt;/meta&gt;
+    &lt;mainBody&gt;
+      &lt;section eId="vote_171426"&gt;
+        &lt;heading&gt;Wednesday's agenda — Request by the PfE Group&lt;/heading&gt;
+        &lt;content&gt;
+          &lt;block name="result"&gt;REJECTED&lt;/block&gt;
+          &lt;block name="for"&gt;108 (mep-192254, mep-197628, ...)&lt;/block&gt;
+          &lt;block name="against"&gt;313&lt;/block&gt;
+          &lt;block name="abstention"&gt;6&lt;/block&gt;
+        &lt;/content&gt;
+      &lt;/section&gt;
+      &lt;!-- ...3 votes total... --&gt;
+    &lt;/mainBody&gt;
+  &lt;/doc&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ 6. CITATION ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>6. citation — Plenary Agenda 19 enero 2026</h2>
+    <span class="badge badge-brand">EP Open Data</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Obtiene la agenda de una sesion plenaria del EP desde Open Data API y la convierte a AKN 3.0 &lt;doc name="citation"&gt;. Captura puntos del orden del dia, horarios, salas y numero de asistentes.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-epdata-to-citation.ts</strong></span>
+      <span>Meeting: <strong>MTG-PL-2026-01-19</strong></span>
+      <span>AKN: <strong>&lt;doc name="citation"&gt;</strong></span>
+      <span>Asistentes: <strong>620</strong></span>
+      <span>Archivo: <strong>eu-citation-plenary-2026.xml (6 KB)</strong></span>
+      <span><a href="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2026-01-19" target="_blank">Verificar EP Data ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Agenda parseada (9 items)</h4>
+      <div class="agenda-item"><span class="agenda-num">1</span><span><strong>Debates</strong> — 17:00–22:00, Room LOWHEM, 8 sub-items</span></div>
+      <div class="agenda-item"><span class="agenda-num">2</span><span>Resumption of session and order of business — PLENARY_DEBATE</span></div>
+      <div class="agenda-item"><span class="agenda-num">3</span><span>Just transition directive in the world of work — PLENARY_DEBATE</span></div>
+      <div class="agenda-item"><span class="agenda-num">4</span><span>One-minute speeches (Rule 179) — PLENARY_DEBATE</span></div>
+      <div class="agenda-item"><span class="agenda-num">5</span><span>The 28th Regime: a new legal framework for innovative companies — PLENARY_DEBATE</span></div>
+      <div class="agenda-item"><span class="agenda-num">6</span><span>Humanitarian aid in a time of polycrisis — PLENARY_DEBATE</span></div>
+      <div class="agenda-item"><span class="agenda-num">7</span><span>Framework for strengthening the availability and security of supply of critical medicinal products — PLENARY_DEBATE</span></div>
+      <div class="agenda-item"><span class="agenda-num">8</span><span>Safeguarding and promoting financial stability amid economic uncertainties — PLENARY_DEBATE</span></div>
+      <div class="agenda-item"><span class="agenda-num">9</span><span>Motion of censure on the Commission — PLENARY_DEBATE</span></div>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;doc name="citation"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#ep-opendata"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value=".../MTG-PL-2026-01-19"/&gt;
+          &lt;FRBRdate date="2026-01-19" name="meeting"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+    &lt;/meta&gt;
+    &lt;preface eId="preface"&gt;
+      &lt;longTitle eId="longTitle"&gt;
+        &lt;p&gt;&lt;docType&gt;Plenary Session Agenda&lt;/docType&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;docTitle&gt;Monday, 19 January 2026&lt;/docTitle&gt;&lt;/p&gt;
+      &lt;/longTitle&gt;
+    &lt;/preface&gt;
+    &lt;mainBody&gt;
+      &lt;section eId="item_1"&gt;
+        &lt;heading&gt;Debates&lt;/heading&gt;
+        &lt;content&gt;
+          &lt;block name="time"&gt;17:00–22:00&lt;/block&gt;
+          &lt;block name="room"&gt;LOWHEM&lt;/block&gt;
+          &lt;block name="subItems"&gt;8&lt;/block&gt;
+        &lt;/content&gt;
+      &lt;/section&gt;
+      &lt;!-- ...9 agenda items... --&gt;
+    &lt;/mainBody&gt;
+  &lt;/doc&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ 7. COMMUNICATION ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>7. communication — 2025/0012(COD) US Tariffs</h2>
+    <span class="badge badge-brand">EP Open Data</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Reconstruye el timeline legislativo completo de un procedimiento EU desde EP Open Data API y lo estructura en AKN 3.0. Captura proponente, comite, tipo de procedimiento y cada evento con fechas y documentos asociados.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-epdata-to-communication.ts</strong></span>
+      <span>Procedimiento: <strong>2025/0012(COD)</strong></span>
+      <span>AKN: <strong>&lt;doc name="communication"&gt;</strong></span>
+      <span>Archivo: <strong>eu-communication-2025-0012-COD.xml (10 KB)</strong></span>
+      <span><a href="https://data.europarl.europa.eu/eli/dl/proc/2025-0012" target="_blank">Verificar EP Data ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Datos del procedimiento</h4>
+      <p><strong>Title:</strong> Additional customs duties on imports of certain products originating in the United States of America</p>
+      <p><strong>Proponent:</strong> European Commission | <strong>Type:</strong> Ordinary Legislative Procedure (COD) | <strong>Stage:</strong> First Reading</p>
+      <p><strong>Committee:</strong> INTA (International Trade)</p>
+    </div>
+    <div class="panel">
+      <h4>Timeline legislativo (9 events)</h4>
+      <div class="timeline">
+        <div class="tl-item"><strong>10 mar 2025</strong> — Referral to Committee (EP, First Reading)</div>
+        <div class="tl-item"><strong>19 mar 2025</strong> — Committee Report Adopted (EP Committee, Decision)</div>
+        <div class="tl-item"><strong>21 mar 2025</strong> — Tabled for Plenary (EP) — doc: <a href="https://data.europarl.europa.eu/eli/dl/doc/A-10-2025-0034" target="_blank">A-10-2025-0034</a></div>
+        <div class="tl-item"><strong>27 mar 2025</strong> — Tabled for Plenary (EP) — amendment: A-10-2025-0034-AM-001-001</div>
+        <div class="tl-item"><strong>1 abr 2025</strong> — EP Position Adopted (First Reading) — doc: <a href="https://data.europarl.europa.eu/eli/dl/doc/TA-10-2025-0050" target="_blank">TA-10-2025-0050</a></div>
+        <div class="tl-item"><strong>1 abr 2025</strong> — Plenary Vote — recorded in CRE and PV minutes</div>
+        <div class="tl-item"><strong>1 abr 2025</strong> — Plenary Vote Results — recorded in PV-10-2025-04-01-VOT-ITM-012</div>
+        <div class="tl-item"><strong>14 abr 2025</strong> — Act Signed</div>
+        <div class="tl-item"><strong>22 abr 2025</strong> — Publication in OJ (Publications Office)</div>
+      </div>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;doc name="communication"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#ep-opendata"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value=".../proc/2025-0012"/&gt;
+          &lt;FRBRdate date="2025-03-10" name="procedure-start"/&gt;
+          &lt;FRBRauthor href="#com" as="#author"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+      &lt;references source="#ep-opendata"&gt;
+        &lt;TLCOrganization eId="com" href="..." showAs="European Commission"/&gt;
+        &lt;TLCOrganization eId="consil" href="..." showAs="Council of the EU"/&gt;
+        &lt;TLCOrganization eId="inta" href="..." showAs="Committee INTA"/&gt;
+        &lt;TLCProcess eId="cod" href="..." showAs="Ordinary Legislative Procedure (COD)"/&gt;
+      &lt;/references&gt;
+    &lt;/meta&gt;
+    &lt;mainBody&gt;
+      &lt;section eId="procedure_info"&gt;
+        &lt;heading&gt;Additional customs duties on imports...&lt;/heading&gt;
+      &lt;/section&gt;
+      &lt;section eId="timeline"&gt;
+        &lt;content&gt;
+          &lt;eventRef date="2025-03-10" type="referral"/&gt;
+          &lt;eventRef date="2025-03-19" type="committee-report"/&gt;
+          &lt;!-- ...9 events... --&gt;
+          &lt;eventRef date="2025-04-22" type="publication"/&gt;
+        &lt;/content&gt;
+      &lt;/section&gt;
+    &lt;/mainBody&gt;
+  &lt;/doc&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ 8. QUESTION ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>8. question — E-10-2026-000002</h2>
+    <span class="badge badge-brand">EP Open Data</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Obtiene preguntas parlamentarias escritas desde EP Open Data API y las convierte a AKN 3.0 &lt;doc name="question"&gt;. Incluye autor, grupo politico, destinatario, regla aplicable y links a PDF/DOCX.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-epdata-to-question.ts</strong></span>
+      <span>ID: <strong>E-10-2026-000002</strong></span>
+      <span>Fecha: <strong>2 enero 2026</strong></span>
+      <span>AKN: <strong>&lt;doc name="question"&gt;</strong></span>
+      <span>Archivo: <strong>eu-question-E-10-2026-000002.xml (3.5 KB)</strong></span>
+      <span><a href="https://data.europarl.europa.eu/eli/dl/doc/E-10-2026-000002" target="_blank">Verificar EP Data ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Pregunta parseada</h4>
+      <p><strong>Type:</strong> Question for written answer E-10-2026-000002</p>
+      <p><strong>Addressee:</strong> European Commission</p>
+      <p><strong>Title:</strong> Enquiries regarding EU funding for the Digital Freedom Fund and grants to the Gesellschaft fur Freiheitsrechte</p>
+      <p><strong>Author:</strong> Alexander JUNGBLUTH (ESN) — Rule 144 — EP Number: PE782.726</p>
+      <p><strong>Reference:</strong> Question for written answer E-000002/2026 - to the Commission</p>
+      <p><strong>Available docs:</strong> <a href="https://data.europarl.europa.eu/distribution/reds_iMaQp/E-10-2026-000002/E-10-2026-000002_en.pdf" target="_blank">PDF (11914 bytes)</a> | <a href="https://data.europarl.europa.eu/distribution/reds_iMaQp/E-10-2026-000002/E-10-2026-000002_en.docx" target="_blank">DOCX (11914 bytes)</a></p>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;doc name="question"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#ep-opendata"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value=".../doc/E-10-2026-000002"/&gt;
+          &lt;FRBRdate date="2026-01-02" name="tabling"/&gt;
+          &lt;FRBRauthor href="#mep-256941"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+          &lt;FRBRnumber value="E-10-2026-000002"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+      &lt;references source="#ep-opendata"&gt;
+        &lt;TLCPerson eId="mep-256941" href=".../person/256941"
+          showAs="Alexander JUNGBLUTH"/&gt;
+        &lt;TLCOrganization eId="addressee" href=".../org/COM"
+          showAs="European Commission"/&gt;
+      &lt;/references&gt;
+    &lt;/meta&gt;
+    &lt;preface eId="preface"&gt;
+      &lt;longTitle&gt;
+        &lt;p&gt;&lt;docType&gt;Question for written answer&lt;/docType&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;docTitle&gt;Enquiries regarding EU funding...&lt;/docTitle&gt;&lt;/p&gt;
+      &lt;/longTitle&gt;
+    &lt;/preface&gt;
+    &lt;mainBody&gt;
+      &lt;section eId="details"&gt;
+        &lt;content&gt;
+          &lt;block name="rule"&gt;Rule 144&lt;/block&gt;
+          &lt;block name="pe_number"&gt;PE782.726&lt;/block&gt;
+        &lt;/content&gt;
+      &lt;/section&gt;
+    &lt;/mainBody&gt;
+  &lt;/doc&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ 9. AMENDMENT ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>9. amendment — A-10-2025-0003 (5 enmiendas)</h2>
+    <span class="badge badge-brand">EP Open Data</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Descarga enmiendas parlamentarias de EP Open Data API y genera un AKN 3.0 &lt;amendment&gt; por cada una. Captura autor, grupo politico, documento objetivo, procedimiento y fecha de presentacion.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-epdata-to-amendment.ts</strong></span>
+      <span>Target: <strong>A-10-2025-0003</strong> (ECB Annual Report)</span>
+      <span>Procedure: <strong>2024/2054(INI)</strong></span>
+      <span>AKN: <strong>&lt;amendment&gt;</strong></span>
+      <span>Archivos: <strong>5 XMLs (20 KB)</strong></span>
+      <span><a href="https://data.europarl.europa.eu/eli/dl/doc/A-10-2025-0003" target="_blank">Verificar EP Data ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Enmiendas parseadas</h4>
+      <p><span class="art-label">AM 001-003</span> — Author: <strong>Jussi Saramo</strong> (on behalf of The Left Group) — Tabled: 4 feb 2025 — AKN: &lt;amendment contains="originalVersion"&gt;</p>
+      <p><span class="art-label">AM 004-006</span> — Author: <strong>France Jamet</strong> (on behalf of PfE Group) — Tabled: 4 feb 2025</p>
+      <p><span class="art-label">AM 007-013</span> — Author: <strong>Markus Ferber</strong> (on behalf of EPP Group) — Tabled: 4 feb 2025</p>
+      <p><span class="art-label">AM 014-023</span> — Author: <strong>S&amp;D Group</strong> — Tabled: 4 feb 2025</p>
+      <p><span class="art-label">AM 024-025</span> — Author: <strong>Verts/ALE Group</strong> — Tabled: 4 feb 2025</p>
+      <p style="font-size:0.75rem;color:#9CA3AF;margin-top:8px">Nota: El texto completo de las enmiendas solo esta en PDF/DOCX desde EP Data. Los AKN capturan metadata + author + procedure + target document ref.</p>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;amendment contains="originalVersion"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#ep-opendata"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value=".../doc/A-10-2025-0003-AM-001-003"/&gt;
+          &lt;FRBRdate date="2025-02-04" name="tabling"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+      &lt;references source="#ep-opendata"&gt;
+        &lt;TLCPerson eId="author" href="..."
+          showAs="Jussi Saramo"/&gt;
+        &lt;TLCReference eId="targetDocument"
+          href=".../doc/A-10-2025-0003"
+          showAs="A-10-2025-0003"/&gt;
+      &lt;/references&gt;
+      &lt;lifecycle source="#ep-opendata"&gt;
+        &lt;eventRef eId="evt_tabling" date="2025-02-04"
+          type="generation" source="#ep"/&gt;
+      &lt;/lifecycle&gt;
+    &lt;/meta&gt;
+    &lt;amendmentBody&gt;
+      &lt;amendmentHeading&gt;
+        &lt;block name="group"&gt;The Left Group&lt;/block&gt;
+      &lt;/amendmentHeading&gt;
+      &lt;amendmentContent&gt;
+        &lt;block name="amendments"&gt;AM 001-003&lt;/block&gt;
+      &lt;/amendmentContent&gt;
+    &lt;/amendmentBody&gt;
+  &lt;/amendment&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<!-- ═══ 10. OFFICIAL GAZETTE ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>10. officialGazette — OJ L 274, 5 nov 2018</h2>
+    <span class="badge badge-brand">Formex TOC → AKN</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Descarga la tabla de contenidos Formex de un numero del Diario Oficial EU desde CELLAR y la convierte a AKN 3.0 &lt;officialGazette&gt;. Lista todos los documentos publicados con sus referencias CELEX.</p>
+    <div class="meta">
+      <span>Script: <strong>poc-formex-toc-to-gazette.ts</strong></span>
+      <span>OJ: <strong>L 274, Volume 61</strong></span>
+      <span>Fecha: <strong>5 noviembre 2018</strong></span>
+      <span>AKN: <strong>&lt;officialGazette&gt;</strong></span>
+      <span>Archivo: <strong>eu-oj-L274-2018-akn.xml (4.3 KB)</strong></span>
+      <span><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2018:274:TOC" target="_blank">Verificar EUR-Lex ↗</a></span>
+    </div>
+    <div class="panel">
+      <h4>Contenido del OJ parseado</h4>
+      <p><strong>Official Journal of the European Union — L series, No 274, Volume 61</strong></p>
+      <p><strong>Section II — Non-legislative acts</strong></p>
+      <p style="font-weight:600;margin-top:6px">REGULATIONS (11 documents):</p>
+      <p>1. L_2018274EN.01000101.doc.xml</p>
+      <p>2. L_2018274EN.01000601.doc.xml</p>
+      <p>3. L_2018274EN.01001101.doc.xml</p>
+      <p>4. L_2018274EN.01001601.doc.xml</p>
+      <p>5. L_2018274EN.01002101.doc.xml</p>
+      <p>6. L_2018274EN.01002501.doc.xml</p>
+      <p>7. L_2018274EN.01002901.doc.xml</p>
+      <p>8. L_2018274EN.01003301.doc.xml</p>
+      <p>9. L_2018274EN.01003601.doc.xml <span style="color:#9CA3AF;font-style:italic">← Reg 2018/1645 (PoC #2)</span></p>
+      <p>10. L_2018274EN.01004301.doc.xml</p>
+      <p>11. L_2018274EN.01005101.doc.xml</p>
+    </div>
+    <details class="xml-preview">
+      <summary>Ver AKN XML</summary>
+<pre>&lt;akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"&gt;
+  &lt;officialGazette name="oj-l--"&gt;
+    &lt;meta&gt;
+      &lt;identification source="#source"&gt;
+        &lt;FRBRWork&gt;
+          &lt;FRBRthis value="http://data.europa.eu/eli/oj/l//"/&gt;
+          &lt;FRBRdate date="2018-11-05" name="publication"/&gt;
+          &lt;FRBRcountry value="eu"/&gt;
+        &lt;/FRBRWork&gt;
+      &lt;/identification&gt;
+      &lt;publication date="2018-11-05"
+        name="Official Journal of the European Union"
+        showAs="OJ L /" number="L "/&gt;
+    &lt;/meta&gt;
+    &lt;coverPage eId="coverPage"&gt;
+      &lt;longTitle eId="longTitle"&gt;
+        &lt;p&gt;Official Journal of the European Union&lt;/p&gt;
+        &lt;p&gt;L series, No 274, Volume 61&lt;/p&gt;
+      &lt;/longTitle&gt;
+    &lt;/coverPage&gt;
+    &lt;mainBody&gt;
+      &lt;section eId="sec_II"&gt;
+        &lt;heading&gt;Non-legislative acts&lt;/heading&gt;
+        &lt;section eId="sec_II__regs"&gt;
+          &lt;heading&gt;REGULATIONS&lt;/heading&gt;
+          &lt;article eId="doc_1"&gt;
+            &lt;content&gt;&lt;p&gt;L_2018274EN.01000101.doc.xml&lt;/p&gt;&lt;/content&gt;
+          &lt;/article&gt;
+          &lt;!-- ...11 documents... --&gt;
+        &lt;/section&gt;
+      &lt;/section&gt;
+    &lt;/mainBody&gt;
+  &lt;/officialGazette&gt;
+&lt;/akomaNtoso&gt;</pre>
+    </details>
+  </div>
+</div>
+
+<div class="divider-diff"><span style="font-family:var(--font-mono);font-size:0.75rem;color:#9CA3AF">pipeline &amp; resultados</span></div>
+
+<!-- ═══ PIPELINE RESULTS ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>Pipeline genérico — 2 regulaciones procesadas</h2>
+    <span class="badge badge-add">nuevo</span>
+  </div>
+  <div class="card-body">
+    <p style="color:#6B7280;font-size:0.8125rem;margin-bottom:12px">Los 10 PoCs se integraron en un pipeline genérico. Agregar una nueva regulación es crear un <code>viewer-config.json</code> y correr <code>generate-viewer-xmls.ts</code>. Auto-detecta estructura de capítulos/secciones del AKN.</p>
+
+    <div class="panel">
+      <h4>Digital Services Act (Reg. 2022/2065)</h4>
+      <table style="width:100%;font-size:0.8125rem;margin:8px 0">
+        <tr><td style="padding:2px 8px;color:#6B7280">Propuesta</td><td style="padding:2px 8px"><strong>COM(2020) 825</strong> — 74 artículos</td></tr>
+        <tr><td style="padding:2px 8px;color:#6B7280">EP Amendments</td><td style="padding:2px 8px">456 enmiendas → 60 sustituciones + 16 inserciones</td></tr>
+        <tr><td style="padding:2px 8px;color:#6B7280">Legislative Procedure</td><td style="padding:2px 8px">74 sustituciones + 19 inserciones</td></tr>
+        <tr><td style="padding:2px 8px;color:#6B7280">Regulación final</td><td style="padding:2px 8px"><strong>Reg. 2022/2065</strong> — 93 artículos, 5 capítulos</td></tr>
+      </table>
+      <div class="vote-bar" style="max-width:300px">
+        <div class="vote-for vote-label" style="flex:539">539</div>
+        <div class="vote-against vote-label" style="flex:54">54</div>
+        <div class="vote-abstain vote-label" style="flex:30">30</div>
+      </div>
+      <span style="font-size:0.6875rem;color:#9CA3AF">Adopción EP — 05/07/2022</span>
+    </div>
+
+    <div class="panel" style="margin-top:12px">
+      <h4>AI Act (Reg. 2024/1689)</h4>
+      <table style="width:100%;font-size:0.8125rem;margin:8px 0">
+        <tr><td style="padding:2px 8px;color:#6B7280">Propuesta</td><td style="padding:2px 8px"><strong>COM(2021) 206</strong> — 85 artículos, 12 títulos</td></tr>
+        <tr><td style="padding:2px 8px;color:#6B7280">EP Amendments</td><td style="padding:2px 8px">770 enmiendas → 70 sustituciones + 23 inserciones</td></tr>
+        <tr><td style="padding:2px 8px;color:#6B7280">Legislative Procedure</td><td style="padding:2px 8px">85 sustituciones + 28 inserciones</td></tr>
+        <tr><td style="padding:2px 8px;color:#6B7280">Regulación final</td><td style="padding:2px 8px"><strong>Reg. 2024/1689</strong> — 113 artículos, 13 capítulos</td></tr>
+      </table>
+      <div class="vote-bar" style="max-width:300px">
+        <div class="vote-for vote-label" style="flex:523">523</div>
+        <div class="vote-against vote-label" style="flex:46">46</div>
+        <div class="vote-abstain vote-label" style="flex:49">49</div>
+      </div>
+      <span style="font-size:0.6875rem;color:#9CA3AF">EP First Reading — 13/03/2024</span>
+    </div>
+
+    <div class="panel" style="margin-top:12px">
+      <h4>Quality check: 0 errores</h4>
+      <ul style="font-size:0.8125rem;margin:4px 0 0 16px;color:#6B7280">
+        <li>0 artículos vacíos en ambas regulaciones</li>
+        <li>0 headings faltantes</li>
+        <li>Namespace <code>akndiff</code> consistente: <code>http://parlamento.ai/ns/akndiff/1.0</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ IMPROVEMENTS ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>Mejoras y bugs arreglados</h2>
+    <span class="badge badge-add">fix</span>
+  </div>
+  <div class="card-body">
+    <div class="panel">
+      <h4>Bugs corregidos</h4>
+      <ul style="font-size:0.8125rem;margin:4px 0 0 16px;color:#6B7280">
+        <li><strong>Article 2 (Definitions) vacío</strong> — <code>extractArticle()</code> no leía estructuras <code>&lt;intro&gt;</code> + <code>&lt;point&gt;</code></li>
+        <li><strong>Headings truncados en act final</strong> — usaba <code>if num... else if heading</code> en vez de leer ambos</li>
+        <li><strong>Namespace inconsistente</strong> — <code>example.org/akndiff</code> → <code>parlamento.ai/ns/akndiff/1.0</code></li>
+        <li><strong>AI Act body vacío</strong> — el converter solo reconocía <code>Chapter</code> pero el AI Act usa <code>TITLE</code></li>
+      </ul>
+    </div>
+    <div class="panel" style="margin-top:12px">
+      <h4>PoC #5 mejorado — Nombres de MEPs</h4>
+      <p style="font-size:0.8125rem;color:#6B7280;margin:4px 0">Los votos ahora resuelven MEP IDs a nombres completos via EP Open Data API (bulk endpoint). Formato "APELLIDO, Nombre" como Chile. 854/854 nombres resueltos para el DSA.</p>
+    </div>
+    <div class="panel" style="margin-top:12px">
+      <h4>Herramientas genéricas</h4>
+      <ul style="font-size:0.8125rem;margin:4px 0 0 16px;color:#6B7280">
+        <li><code>generate-viewer-xmls.ts</code> — orquestador genérico con auto-detección de capítulos</li>
+        <li><code>poc-eurlex-ep-amendments.ts</code> — acepta CLI args en vez de config hardcodeada</li>
+        <li><code>poc-akn-diff.ts</code> — nombre de output configurable</li>
+        <li><code>poc-cellar-to-bill.ts</code> — soporte para TITLE + Chapter</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="divider-diff"><span style="font-family:var(--font-mono);font-size:0.75rem;color:#9CA3AF">archivos</span></div>
+
+<!-- ═══ FILE STRUCTURE ═══ -->
+<div class="card">
+  <div class="card-top">
+    <h2>Estructura de archivos generados</h2>
+    <span class="badge badge-brand">10 PoCs, 17+ XMLs</span>
+  </div>
+  <div class="card-body">
+    <div class="file-tree">
+<pre>samples/
+  <span class="dir">act/</span>
+    32018R1645-formex.xml       <span class="size">12 KB</span>   <span class="note">Formex (PoC #1)</span>
+    32018R1645-akn.xml          <span class="size">15 KB</span>   <span class="note">AKN &lt;act&gt; (PoC #2)</span>
+  <span class="dir">bill/</span>
+    52024PC0150-raw.xhtml      <span class="size">508 KB</span>   XHTML source (CELLAR)
+    52024PC0150-bill-akn.xml   <span class="size">236 KB</span>   <span class="note">AKN &lt;bill&gt; 67 articles (PoC #3)</span>
+  <span class="dir">consolidated/</span>
+    02019R2088-20200712-formex.xml  <span class="size">65 KB</span>   Formex v1 (2020) — SFDR
+    02019R2088-20200712-akn.xml    <span class="size">59 KB</span>   <span class="note">AKN v1 (21 articles)</span>
+    02019R2088-20240109-formex.xml  <span class="size">71 KB</span>   Formex v2 (2024) — SFDR
+    02019R2088-20240109-akn.xml    <span class="size">64 KB</span>   <span class="note">AKN v2 (22 articles)</span>
+    changeset-2019-2088.xml        <span class="size">6 KB</span>   <span class="note">AKN changeSet — 1 insertion (PoC #4)</span>
+  <span class="dir">votes/</span>
+    eu-votes-plenary-2025.xml   <span class="size">13 KB</span>   <span class="note">AKN votes, 3 votes (PoC #5)</span>
+  <span class="dir">citation/</span>
+    eu-citation-plenary-2026.xml <span class="size">6 KB</span>   <span class="note">AKN citation, 9 items (PoC #6)</span>
+  <span class="dir">communication/</span>
+    eu-communication-*.xml      <span class="size">10 KB</span>   <span class="note">AKN communication, 9 events (PoC #7)</span>
+  <span class="dir">question/</span>
+    eu-question-E-10-*.xml       <span class="size">4 KB</span>   <span class="note">AKN question (PoC #8)</span>
+  <span class="dir">amendment/</span>
+    eu-amendment-*-AM-*.xml   <span class="size">5 files</span>   <span class="note">AKN amendment (PoC #9)</span>
+  <span class="dir">officialGazette/</span>
+    L_2018274EN.toc.xml          <span class="size">2 KB</span>   Formex TOC source
+    eu-oj-L274-2018-akn.xml      <span class="size">4 KB</span>   <span class="note">AKN officialGazette, 11 docs (PoC #10)</span></pre>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -16,7 +16,9 @@ Investigamos la **API JSON de LeyChile** (endpoint con versionamiento, catálogo
 - **Boletín 17.370-17 — Cumplimiento Alternativo de Penas**: primer caso con votación de rechazo — moción de 4 artículos, modificada por Comisión de DDHH, rechazada en Sala del Senado (21-24).
 - **Ley 21.120 — Identidad de Género** (Boletín 8924-07): primer caso con Comisión Mixta — la Cámara rechazó las modificaciones del Senado, activando la comisión bicameral. Incluye 6 votaciones de rechazo y la votación más estrecha del sistema (22-18).
 
-([paso a paso](research/2026-02-19/README.md))
+Construimos un **pipeline automatizado para regulaciones de la UE**, con 10 PoCs reutilizables que descargan desde CELLAR, EP Open Data y EUR-Lex, convierten a AKN 3.0, y generan viewer XMLs. Procesamos **dos regulaciones**: Digital Services Act (74 → 93 artículos, 456 enmiendas EP) y AI Act (85 → 113 artículos, 770 enmiendas EP). Agregar una nueva regulación es crear un `viewer-config.json` y correr el pipeline.
+
+([paso a paso](research/2026-02-19/README.md), [documentación pipeline](research/2026-02-19/akn-eu/docs/pipeline.md))
 
 ---
 **18/02/2026**

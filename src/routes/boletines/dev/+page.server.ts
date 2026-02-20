@@ -11,7 +11,9 @@ const DEV_SLUGS = [
 	'ley-18045-historia',
 	'ley-21670-boletin',
 	'ley-17370-boletin',
-	'ley-21120-boletin'
+	'ley-21120-boletin',
+	'eu-dsa',
+	'eu-ai-act'
 ];
 
 export const load: PageServerLoad = async () => {
