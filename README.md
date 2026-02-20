@@ -37,6 +37,8 @@ Cada reporte produce **dos métricas**:
 
 Con esto respondemos dos preguntas: ¿AKN logra representar la información pública sin dejar la mitad atrás? Y ¿es viable hacer la conversión?
 
+([template del reporte](research/2026-02-20/template-reporte-factibilidad.md))
+
 
 ---
 **10/02/2026**
