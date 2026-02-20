@@ -9,8 +9,8 @@ const LEY_18045_DIR = 'research/2026-02-18/ley-18045/akn';
 const LEY_21670_DIR = 'research/2026-02-19/ley-21670/akn';
 const LEY_17370_DIR = 'research/2026-02-19/ley-17370/akn';
 const LEY_21120_DIR = 'research/2026-02-19/ley-21120/akn';
-const DSA_DIR = 'research/2026-02-19/akn-eu/digital-services-act/akn';
-const AI_ACT_DIR = 'research/2026-02-19/akn-eu/ai-act/akn';
+const DSA_DIR = 'research/2026-02-20/akn-eu/digital-services-act/akn';
+const AI_ACT_DIR = 'research/2026-02-20/akn-eu/artificial-intelligence-act/akn';
 
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
@@ -467,7 +467,7 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 
 	// ── EU — Digital Services Act (Reg. 2022/2065) ──
 	if (boletinSlug === 'eu-dsa') {
-		const base = 'research/2026-02-19/akn-eu/digital-services-act';
+		const base = 'research/2026-02-20/akn-eu/digital-services-act';
 		const docs: Record<string, SourceRef[]> = {
 			original: [src('COM(2020) 825 Proposal', `${base}/sources/52020PC0825-bill-akn.xml`, 'xml',
 				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52020PC0825')],
@@ -483,7 +483,7 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 
 	// ── EU — AI Act (Reg. 2024/1689) ──
 	if (boletinSlug === 'eu-ai-act') {
-		const base = 'research/2026-02-19/akn-eu/ai-act';
+		const base = 'research/2026-02-20/akn-eu/artificial-intelligence-act';
 		const docs: Record<string, SourceRef[]> = {
 			original: [src('COM(2021) 206 Proposal', `${base}/sources/52021PC0206-bill-akn.xml`, 'xml',
 				'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52021PC0206')],

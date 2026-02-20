@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="citation">
+    <meta>
+      <identification source="#ep-opendata">
+        <FRBRWork>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2022-07-05"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2022-07-05"/>
+          <FRBRdate date="2022-07-05" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRcountry value="eu"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2022-07-05/mul"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2022-07-05/mul"/>
+          <FRBRdate date="2022-07-05" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRlanguage language="mul"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2022-07-05/mul/xml"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2022-07-05/mul/xml"/>
+          <FRBRdate date="2026-02-20" name="transformation"/>
+          <FRBRauthor href="#poc-epdata-to-citation"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#ep-opendata">
+        <TLCOrganization eId="ep-opendata" href="https://data.europarl.europa.eu" showAs="European Parliament Open Data Portal"/>
+        <TLCOrganization eId="ep" href="https://data.europarl.europa.eu/org/EU_PARLIAMENT" showAs="European Parliament"/>
+      </references>
+    </meta>
+    <preface eId="preface">
+      <longTitle eId="longTitle">
+        <p><docType>Plenary Session Agenda</docType></p>
+        <p><docTitle>Plenary Session 2022-07-05</docTitle></p>
+        <p><date date="2022-07-05">2022-07-05</date></p>
+      </longTitle>
+    </preface>
+    <mainBody>
+      <section eId="sec_1">
+        <num>1</num>
+        <heading>Digital Markets Act - A9-0332/2021 - Andreas Schwab - Provisional agreement - Am 256</heading>
+        <content eId="sec_1__content">
+          <p class="time"><time datetime="2022-07-05T13:18:51+02:00">13:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_2">
+        <num>2</num>
+        <heading>Indo-Pacific strategy in the area of trade and investment- A9-0170/2022 - Jan Zahradil - Motion for a resolution</heading>
+        <content eId="sec_2__content">
+          <p class="time"><time datetime="2022-07-05T13:27:16+02:00">13:27</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_3">
+        <num>3</num>
+        <heading>A9-0189/2022 - Milan Brglez, Sirpa Pietikäinen - Motion for a resolution (as a whole) (EMPL, FEMM Committees)</heading>
+        <content eId="sec_3__content">
+          <p class="time"><time datetime="2022-07-05T13:34:03+02:00">13:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_4">
+        <num>4</num>
+        <heading>Negotiations for a cooperation agreement between the EU and Interpol - A9-0200/2022 - Jadwiga Wiśniewska - Proposal for a recommendation</heading>
+        <content eId="sec_4__content">
+          <p class="time"><time datetime="2022-07-05T13:26:49+02:00">13:26</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_5">
+        <num>5</num>
+        <heading>EU-India future trade and investment cooperation - A9-0193/2022 - Geert Bourgeois - Motion for a resolution</heading>
+        <content eId="sec_5__content">
+          <p class="time"><time datetime="2022-07-05T13:27:41+02:00">13:27</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_6">
+        <num>6</num>
+        <heading>A9-0184/2022 - Maria Walsh - Motion for a resolution (as a whole)</heading>
+        <content eId="sec_6__content">
+          <p class="time"><time datetime="2022-07-05T13:37:10+02:00">13:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_7">
+        <num>7</num>
+        <heading>Adoption by Croatia of the euro on 1 January 2023 - A9-0187/2022 - Siegfried Mureşan - Commission proposal</heading>
+        <content eId="sec_7__content">
+          <p class="time"><time datetime="2022-07-05T13:19:23+02:00">13:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_8">
+        <num>8</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - Motion for a resolution (as a whole)</heading>
+        <content eId="sec_8__content">
+          <p class="time"><time datetime="2022-07-05T13:26:16+02:00">13:26</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_9">
+        <num>9</num>
+        <heading>Digital Services Act - A9-0356/2021 - Christel Schaldemose - Provisional agreement - Am 564</heading>
+        <content eId="sec_9__content">
+          <p class="time"><time datetime="2022-07-05T13:17:55+02:00">13:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_10">
+        <num>10</num>
+        <heading>Banking Union – annual report 2021 - A9-0186/2022 - Bogdan Rzońca - Motion for a resolution</heading>
+        <content eId="sec_10__content">
+          <p class="time"><time datetime="2022-07-05T13:38:10+02:00">13:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_11">
+        <num>11</num>
+        <heading>Temporary trade liberalisation measures for Moldova - A9-0201/2022 - Markéta Gregorová - Commission proposal</heading>
+        <content eId="sec_11__content">
+          <p class="time"><time datetime="2022-07-05T13:20:17+02:00">13:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_12">
+        <num>12</num>
+        <heading>Women’s poverty in Europe - A9-0194/2022 - Lina Gálvez Muñoz - § 3 - Am 3</heading>
+        <content eId="sec_12__content">
+          <p class="time"><time datetime="2022-07-05T13:20:42+02:00">13:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_13">
+        <num>13</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - § 16/1</heading>
+        <content eId="sec_13__content">
+          <p class="time"><time datetime="2022-07-05T13:21:34+02:00">13:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_14">
+        <num>14</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - § 16/2</heading>
+        <content eId="sec_14__content">
+          <p class="time"><time datetime="2022-07-05T13:21:47+02:00">13:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_15">
+        <num>15</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - § 16/3</heading>
+        <content eId="sec_15__content">
+          <p class="time"><time datetime="2022-07-05T13:22:00+02:00">13:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_16">
+        <num>16</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - § 26/1</heading>
+        <content eId="sec_16__content">
+          <p class="time"><time datetime="2022-07-05T13:22:16+02:00">13:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_17">
+        <num>17</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - § 26/2</heading>
+        <content eId="sec_17__content">
+          <p class="time"><time datetime="2022-07-05T13:22:29+02:00">13:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_18">
+        <num>18</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - § 29</heading>
+        <content eId="sec_18__content">
+          <p class="time"><time datetime="2022-07-05T13:23:03+02:00">13:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_19">
+        <num>19</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - Recital E/1</heading>
+        <content eId="sec_19__content">
+          <p class="time"><time datetime="2022-07-05T13:24:21+02:00">13:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_20">
+        <num>20</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - Recital E/2</heading>
+        <content eId="sec_20__content">
+          <p class="time"><time datetime="2022-07-05T13:24:33+02:00">13:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_21">
+        <num>21</num>
+        <heading>A9-0194/2022 - Lina Gálvez Muñoz - Recital AJ</heading>
+        <content eId="sec_21__content">
+          <p class="time"><time datetime="2022-07-05T13:25:47+02:00">13:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_22">
+        <num>22</num>
+        <heading>EU/Cook Islands Sustainable Fisheries Partnership Agreement: implementation protocol - A9-0197/2022 - Cláudia Monteiro de Aguiar - Draft Council decision</heading>
+        <content eId="sec_22__content">
+          <p class="time"><time datetime="2022-07-05T13:19:57+02:00">13:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_23">
+        <num>23</num>
+        <heading>Common European action on care - A9-0189/2022 - Milan Brglez, Sirpa Pietikäinen - Alternative motion for a resolution - Am 1</heading>
+        <content eId="sec_23__content">
+          <p class="time"><time datetime="2022-07-05T13:28:09+02:00">13:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_24">
+        <num>24</num>
+        <heading>Mental health in the digital world of work - A9-0184/2022 - Maria Walsh - § 19/1</heading>
+        <content eId="sec_24__content">
+          <p class="time"><time datetime="2022-07-05T13:34:36+02:00">13:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_25">
+        <num>25</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 19/2</heading>
+        <content eId="sec_25__content">
+          <p class="time"><time datetime="2022-07-05T13:34:51+02:00">13:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_26">
+        <num>26</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 21/1</heading>
+        <content eId="sec_26__content">
+          <p class="time"><time datetime="2022-07-05T13:35:08+02:00">13:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_27">
+        <num>27</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 21/2</heading>
+        <content eId="sec_27__content">
+          <p class="time"><time datetime="2022-07-05T13:35:22+02:00">13:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_28">
+        <num>28</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 22/1</heading>
+        <content eId="sec_28__content">
+          <p class="time"><time datetime="2022-07-05T13:35:38+02:00">13:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_29">
+        <num>29</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 22/2</heading>
+        <content eId="sec_29__content">
+          <p class="time"><time datetime="2022-07-05T13:35:53+02:00">13:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_30">
+        <num>30</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 28/1</heading>
+        <content eId="sec_30__content">
+          <p class="time"><time datetime="2022-07-05T13:36:08+02:00">13:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_31">
+        <num>31</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 28/2</heading>
+        <content eId="sec_31__content">
+          <p class="time"><time datetime="2022-07-05T13:36:22+02:00">13:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_32">
+        <num>32</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 41/1</heading>
+        <content eId="sec_32__content">
+          <p class="time"><time datetime="2022-07-05T13:36:39+02:00">13:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_33">
+        <num>33</num>
+        <heading>A9-0184/2022 - Maria Walsh - § 41/2</heading>
+        <content eId="sec_33__content">
+          <p class="time"><time datetime="2022-07-05T13:36:52+02:00">13:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>
