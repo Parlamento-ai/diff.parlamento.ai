@@ -89,14 +89,14 @@
 	<!-- Link a en desarrollo -->
 	<div class="max-w-lg mx-auto">
 		<a
-			href="/boletines/dev"
+			href="/pro"
 			class="flex items-center gap-2 text-sm text-gray-400 hover:text-gray-600 transition-colors"
 		>
 			<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 			</svg>
-			En desarrollo
-			<span class="text-xs text-gray-300">— legislación real chilena</span>
+			Área profesional
+			<span class="text-xs text-gray-300">— legislación real</span>
 		</a>
 	</div>
 </main>
