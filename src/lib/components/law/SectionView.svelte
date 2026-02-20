@@ -11,8 +11,7 @@
 		changedArticleIds = new Set(),
 		accumulatedDiffs = {},
 		cleanView = false,
-		highlightColor = 'amber',
-		heavyMode = false
+		highlightColor = 'amber'
 	}: {
 		heading: string;
 		articles: Article[];
@@ -20,15 +19,14 @@
 		accumulatedDiffs?: Record<string, WordToken[]>;
 		cleanView?: boolean;
 		highlightColor?: 'amber' | 'green' | 'red';
-		heavyMode?: boolean;
 	} = $props();
 </script>
 
 <section class="mb-2">
 	<h3 class="text-base font-bold text-gray-900 mb-2 px-4">{heading}</h3>
 	<div>
-		{#if heavyMode}
-			{#each articles as article (article.eId)}
+		{#each articles as article (article.eId)}
+			<div transition:slide={{ duration: dur(250) }} animate:flip={{ duration: dur(250) }}>
 				<ArticleView
 					eId={article.eId}
 					heading={article.heading}
@@ -37,23 +35,8 @@
 					{highlightColor}
 					wordDiff={accumulatedDiffs[article.eId]}
 					{cleanView}
-					{heavyMode}
 				/>
-			{/each}
-		{:else}
-			{#each articles as article (article.eId)}
-				<div transition:slide={{ duration: dur(250) }} animate:flip={{ duration: dur(250) }}>
-					<ArticleView
-						eId={article.eId}
-						heading={article.heading}
-						content={article.content}
-						highlighted={changedArticleIds.has(article.eId)}
-						{highlightColor}
-						wordDiff={accumulatedDiffs[article.eId]}
-						{cleanView}
-					/>
-				</div>
-			{/each}
-		{/if}
+			</div>
+		{/each}
 	</div>
 </section>

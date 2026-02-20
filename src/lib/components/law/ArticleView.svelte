@@ -9,8 +9,7 @@
 		highlighted = false,
 		highlightColor = 'amber',
 		wordDiff,
-		cleanView = false,
-		heavyMode = false
+		cleanView = false
 	}: {
 		eId: string;
 		heading: string;
@@ -19,7 +18,6 @@
 		highlightColor?: 'amber' | 'green' | 'red';
 		wordDiff?: WordToken[];
 		cleanView?: boolean;
-		heavyMode?: boolean;
 	} = $props();
 
 	const colorMap: Record<string, string> = {
@@ -37,7 +35,7 @@
 	<h4 class="text-sm font-semibold text-gray-800">{heading}</h4>
 	{#if wordDiff}
 		<p class="text-sm text-gray-700 mt-1 leading-relaxed">
-			<WordDiffRenderer tokens={wordDiff} {cleanView} noAnimate={heavyMode} />
+			<WordDiffRenderer tokens={wordDiff} {cleanView} />
 		</p>
 	{:else}
 		<p class="text-sm text-gray-700 mt-1 leading-relaxed">{content}</p>
