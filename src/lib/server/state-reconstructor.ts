@@ -8,6 +8,7 @@ function cloneLawState(state: LawState): LawState {
 		sections: state.sections.map((sec) => ({
 			eId: sec.eId,
 			heading: sec.heading,
+			num: sec.num,
 			articles: sec.articles.map((art) => ({ ...art }))
 		}))
 	};

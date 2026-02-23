@@ -39,6 +39,11 @@
 			dot: 'bg-white border-amber-500',
 			activeDot: 'bg-amber-100 border-amber-800',
 			badge: 'bg-amber-50 text-amber-800'
+		},
+		doc: {
+			dot: 'bg-white border-gray-500',
+			activeDot: 'bg-gray-100 border-gray-800',
+			badge: 'bg-gray-50 text-gray-800'
 		}
 	};
 

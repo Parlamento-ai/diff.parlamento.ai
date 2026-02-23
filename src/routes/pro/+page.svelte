@@ -17,6 +17,7 @@
 		'ley-21670-boletin': FlagCl,
 		'ley-17370-boletin': FlagCl,
 		'ley-21120-boletin': FlagCl,
+		'eu-dma': FlagEu,
 		'eu-dsa': FlagEu,
 		'eu-ai-act': FlagEu
 	};
@@ -53,8 +54,8 @@
 
 	const ley21120 = $derived(data.boletines.find((b) => b.slug === 'ley-21120-boletin'));
 
+	const euDma = $derived(data.boletines.find((b) => b.slug === 'eu-dma'));
 	const euDsa = $derived(data.boletines.find((b) => b.slug === 'eu-dsa'));
-
 	const euAiAct = $derived(data.boletines.find((b) => b.slug === 'eu-ai-act'));
 </script>
 
@@ -233,7 +234,7 @@
 	{/if}
 
 	<!-- EU — Regulaciones europeas -->
-	{#if euDsa || euAiAct}
+	{#if euDma || euDsa || euAiAct}
 		<section class="mb-14">
 			<div class="mb-5 max-w-lg mx-auto">
 				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
@@ -247,6 +248,14 @@
 			</div>
 
 			<div class="max-w-lg mx-auto flex flex-col gap-2">
+				{#if euDma}
+					<BoletinCard
+						slug={euDma.slug}
+						title={euDma.title}
+						documentCount={euDma.documentCount}
+						flag={flagMap[euDma.slug]}
+					/>
+				{/if}
 				{#if euDsa}
 					<BoletinCard
 						slug={euDsa.slug}

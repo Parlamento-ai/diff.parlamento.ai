@@ -81,7 +81,7 @@ function parseFRBR(identification: Record<string, unknown>, references?: Record<
 	let authorLabel = '';
 	if (references) {
 		// Look through TLCPerson and TLCOrganization
-		for (const key of ['TLCPerson', 'TLCOrganization']) {
+		for (const key of ['TLCPerson', 'TLCOrganization', 'TLCReference']) {
 			const ref = references[key];
 			if (ref) {
 				const refs = Array.isArray(ref) ? ref : [ref];
@@ -118,11 +118,14 @@ function parseSections(body: Record<string, unknown>): Section[] {
 	if (sections) {
 		return sections.map((sec) => {
 			const articles = (sec.article as Record<string, unknown>[]) || [];
-			return {
+			const result: Section = {
 				eId: sec['@_eId'] as string,
 				heading: extractText(sec.heading),
 				articles: articles.map(parseArticle)
 			};
+			const num = sec.num != null ? extractText(sec.num) : undefined;
+			if (num) result.num = num;
+			return result;
 		});
 	}
 
@@ -284,6 +287,9 @@ export function parseAknDocument(xml: string, fileName: string): AknDocument {
 	} else if (root.amendment) {
 		type = 'amendment';
 		doc = root.amendment as Record<string, unknown>;
+	} else if (root.doc) {
+		type = 'doc';
+		doc = root.doc as Record<string, unknown>;
 	} else {
 		throw new Error(`Unknown document type in ${fileName}`);
 	}
@@ -304,9 +310,19 @@ export function parseAknDocument(xml: string, fileName: string): AknDocument {
 		fileName
 	};
 
+	// Set docSubType for <doc> elements (e.g., "communication", "votes", "changeSet")
+	if (type === 'doc') {
+		result.docSubType = doc['@_name'] as string || undefined;
+	}
+
 	// Parse body for acts and bills (both contain article content)
 	if ((type === 'act' || type === 'bill') && doc.body) {
 		result.body = parseLawBody(doc);
+	}
+
+	// Parse mainBody for doc elements (uses mainBody instead of body)
+	if (type === 'doc' && doc.mainBody) {
+		result.body = parseLawBody({ ...doc, body: doc.mainBody });
 	}
 
 	// Parse changeSet if present

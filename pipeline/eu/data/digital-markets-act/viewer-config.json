@@ -1,0 +1,30 @@
+{
+  "slug": "digital-markets-act-regulation",
+  "sourcesDir": "sources",
+  "outputDir": "akn",
+  "billFile": "52020PC0842-bill-akn.xml",
+  "finalFile": "32022R1925-akn.xml",
+  "epAmendmentsFile": "ep-amendments-digital-markets-act.xml",
+  "proposal": {
+    "celex": "52020PC0842",
+    "comYear": 2020,
+    "comNum": 842,
+    "date": "2020-12-15",
+    "title": "Contestable and fair markets in the digital sector (Digital Markets Act) — COM(2020) 842 Proposal"
+  },
+  "final": {
+    "celex": "32022R1925",
+    "regYear": 2022,
+    "regNum": 1925,
+    "date": "2022-10-12",
+    "pubDate": "2022-10-12",
+    "title": "Regulation (EU) 2022/1925 — Contestable and fair markets in the digital sector (Digital Markets Act)"
+  },
+  "legislativeProcedure": {
+    "procedure": "2020/0374(COD)",
+    "voteDate": "2022-07-05",
+    "voteFor": 588,
+    "voteAgainst": 11,
+    "voteAbstain": 31
+  }
+}
