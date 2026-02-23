@@ -14,7 +14,9 @@ const DEV_SLUGS = [
 	'ley-21120-boletin',
 	'eu-dma',
 	'eu-dsa',
-	'eu-ai-act'
+	'eu-ai-act',
+	'eu-cra',
+	'eu-data-act'
 ];
 
 export const load: PageServerLoad = async () => {

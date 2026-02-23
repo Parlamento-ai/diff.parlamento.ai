@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <officialGazette name="oj-l-2024-2847">
+    <meta>
+      <identification source="#source">
+        <FRBRWork>
+          <FRBRthis value="http://data.europa.eu/eli/oj/l/2024/2847"/>
+          <FRBRuri value="http://data.europa.eu/eli/oj/l/2024/2847"/>
+          <FRBRdate date="2024-11-20" name="publication"/>
+          <FRBRauthor href="http://publications.europa.eu/resource/authority/corporate-body/EUOJ"/>
+          <FRBRcountry value="eu"/>
+          <FRBRnumber value="2847"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="http://data.europa.eu/eli/oj/l/2024/2847/en"/>
+          <FRBRuri value="http://data.europa.eu/eli/oj/l/2024/2847/en"/>
+          <FRBRdate date="2024-11-20" name="publication"/>
+          <FRBRauthor href="http://publications.europa.eu/resource/authority/corporate-body/EUOJ"/>
+          <FRBRlanguage language="en"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="http://data.europa.eu/eli/oj/l/2024/2847/en/xml"/>
+          <FRBRuri value="http://data.europa.eu/eli/oj/l/2024/2847/en/xml"/>
+          <FRBRdate date="2024-11-20" name="transformation"/>
+          <FRBRauthor href="#formex-toc-to-gazette-poc"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2024-11-20" name="Official Journal of the European Union" showAs="OJ L 2024/2847" number="L 2847">
+      </publication>
+      <references source="#source">
+        <TLCOrganization eId="source" href="http://publications.europa.eu/resource/authority/corporate-body/EUOJ" showAs="Publications Office of the European Union"/>
+      </references>
+    </meta>
+    <coverPage eId="coverPage">
+      <longTitle eId="longTitle">
+        <p>Official Journal of the European Union</p>
+        <p>L series, No 2847, Volume 67</p>
+        <p>20 November 2024</p>
+      </longTitle>
+    </coverPage>
+    <collectionBody>
+      <container eId="sec_i">
+        <heading>I Legislative acts</heading>
+        <container eId="sec_i__subsec_regulations">
+          <heading>REGULATIONS</heading>
+          <component eId="comp_1">
+            <componentRef src="http://data.europa.eu/eli/oj/l/2024/2847" alt="L_202402847EN.doc.fmx.xml" showAs="OJ L 2024/2847"/>
+          </component>
+        </container>
+      </container>
+    </collectionBody>
+  </officialGazette>
+</akomaNtoso>

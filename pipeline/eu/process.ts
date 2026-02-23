@@ -16,6 +16,7 @@ import { download } from './phases/3-download.js';
 import { convert } from './phases/4-convert.js';
 import { generate } from './phases/5-generate.js';
 import { enrich } from './phases/6-enrich.js';
+import { generateViewerXmls } from './lib/viewer-generator.js';
 
 const BASE_DIR = resolve(import.meta.dirname || '.', '..', 'data', 'eu');
 
@@ -158,6 +159,15 @@ async function main() {
 		console.log('=== Phase 6: ENRICH ===\n');
 		const results = await enrich(config!, outDir);
 		allResults.push(...results);
+	}
+
+	// --- Regenerate metadata (needs communication + citation from phase 6) ---
+	if (startPhase <= 6) {
+		const viewerConfigPath = join(resolve(outDir, config!.slug), 'viewer-config.json');
+		if (existsSync(viewerConfigPath)) {
+			console.log('=== Regenerating metadata ===\n');
+			generateViewerXmls(viewerConfigPath);
+		}
 	}
 
 	// --- Cross-checks ---

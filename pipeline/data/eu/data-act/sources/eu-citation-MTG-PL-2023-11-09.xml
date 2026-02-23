@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="citation">
+    <meta>
+      <identification source="#ep-opendata">
+        <FRBRWork>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2023-11-09"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2023-11-09"/>
+          <FRBRdate date="2023-11-09" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRcountry value="eu"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2023-11-09/mul"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2023-11-09/mul"/>
+          <FRBRdate date="2023-11-09" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRlanguage language="mul"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2023-11-09/mul/xml"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2023-11-09/mul/xml"/>
+          <FRBRdate date="2026-02-23" name="transformation"/>
+          <FRBRauthor href="#poc-epdata-to-citation"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#ep-opendata">
+        <TLCOrganization eId="ep-opendata" href="https://data.europarl.europa.eu" showAs="European Parliament Open Data Portal"/>
+        <TLCOrganization eId="ep" href="https://data.europarl.europa.eu/org/EU_PARLIAMENT" showAs="European Parliament"/>
+      </references>
+    </meta>
+    <preface eId="preface">
+      <longTitle eId="longTitle">
+        <p><docType>Plenary Session Agenda</docType></p>
+        <p><docTitle>Plenary Session 2023-11-09</docTitle></p>
+        <p><date date="2023-11-09">2023-11-09</date></p>
+      </longTitle>
+    </preface>
+    <mainBody>
+      <section eId="sec_1">
+        <num>1</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, after paragraph 4 – Am 196</heading>
+        <content eId="sec_1__content">
+          <p class="time"><time datetime="2023-11-09T11:22:37+01:00">11:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_2">
+        <num>2</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 1 – Am 159/2</heading>
+        <content eId="sec_2__content">
+          <p class="time"><time datetime="2023-11-09T11:31:57+01:00">11:31</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_3">
+        <num>3</num>
+        <heading>Type-approval of motor vehicles and engines with respect to their emissions and battery durability (Euro 7) – A9-0298/2023 – Alexandr Vondra – Rejection – Am 220</heading>
+        <content eId="sec_3__content">
+          <p class="time"><time datetime="2023-11-09T11:14:24+01:00">11:14</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_4">
+        <num>4</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 4, paragraph 2 – Am 240</heading>
+        <content eId="sec_4__content">
+          <p class="time"><time datetime="2023-11-09T11:19:43+01:00">11:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_5">
+        <num>5</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 11 – Am 105</heading>
+        <content eId="sec_5__content">
+          <p class="time"><time datetime="2023-11-09T11:24:08+01:00">11:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_6">
+        <num>6</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 19, paragraph 2 – Am 147</heading>
+        <content eId="sec_6__content">
+          <p class="time"><time datetime="2023-11-09T11:29:14+01:00">11:29</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_7">
+        <num>7</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After Article 7 – Am 91/2</heading>
+        <content eId="sec_7__content">
+          <p class="time"><time datetime="2023-11-09T11:21:05+01:00">11:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_8">
+        <num>8</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 14, paragraph 4, subpara 1, point n – Am 246D</heading>
+        <content eId="sec_8__content">
+          <p class="time"><time datetime="2023-11-09T11:25:21+01:00">11:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_9">
+        <num>9</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex I, after table 4 – Am 237</heading>
+        <content eId="sec_9__content">
+          <p class="time"><time datetime="2023-11-09T11:31:06+01:00">11:31</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_10">
+        <num>10</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 11, paragraph 2 – Am 106</heading>
+        <content eId="sec_10__content">
+          <p class="time"><time datetime="2023-11-09T11:24:29+01:00">11:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_11">
+        <num>11</num>
+        <heading>A9-0295/2023 – José Manuel Fernandes, Valérie Hayer – Recital 9 – Am 8</heading>
+        <content eId="sec_11__content">
+          <p class="time"><time datetime="2023-11-09T11:38:13+01:00">11:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_12">
+        <num>12</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 111</heading>
+        <content eId="sec_12__content">
+          <p class="time"><time datetime="2023-11-09T11:16:32+01:00">11:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_13">
+        <num>13</num>
+        <heading>European single access point: access to information in relation to financial services, capital markets and sustainability – A9-0026/2023 – Pedro Silva Pereira – Provisional agreement – Am 2</heading>
+        <content eId="sec_13__content">
+          <p class="time"><time datetime="2023-11-09T11:07:02+01:00">11:07</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_14">
+        <num>14</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After Article 7 – Am 91/4</heading>
+        <content eId="sec_14__content">
+          <p class="time"><time datetime="2023-11-09T11:21:25+01:00">11:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_15">
+        <num>15</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex I, table 2 – Am 151</heading>
+        <content eId="sec_15__content">
+          <p class="time"><time datetime="2023-11-09T11:30:56+01:00">11:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_16">
+        <num>16</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 1 – Am 159/5</heading>
+        <content eId="sec_16__content">
+          <p class="time"><time datetime="2023-11-09T11:32:25+01:00">11:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_17">
+        <num>17</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After recital 18 – Am 186=208=</heading>
+        <content eId="sec_17__content">
+          <p class="time"><time datetime="2023-11-09T11:34:32+01:00">11:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_18">
+        <num>18</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 6 – Am 245D</heading>
+        <content eId="sec_18__content">
+          <p class="time"><time datetime="2023-11-09T11:23:18+01:00">11:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_19">
+        <num>19</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 2 – Am 160</heading>
+        <content eId="sec_19__content">
+          <p class="time"><time datetime="2023-11-09T11:33:17+01:00">11:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_20">
+        <num>20</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 2 – Am 206</heading>
+        <content eId="sec_20__content">
+          <p class="time"><time datetime="2023-11-09T11:33:05+01:00">11:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_21">
+        <num>21</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After Article 5 – Am 176 =190=212=</heading>
+        <content eId="sec_21__content">
+          <p class="time"><time datetime="2023-11-09T11:20:14+01:00">11:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_22">
+        <num>22</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After recital 7 – Am 166</heading>
+        <content eId="sec_22__content">
+          <p class="time"><time datetime="2023-11-09T11:33:49+01:00">11:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_23">
+        <num>23</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 7 – Am 179=215=230=</heading>
+        <content eId="sec_23__content">
+          <p class="time"><time datetime="2023-11-09T11:23:45+01:00">11:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_24">
+        <num>24</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Title – Am 238</heading>
+        <content eId="sec_24__content">
+          <p class="time"><time datetime="2023-11-09T11:17:31+01:00">11:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_25">
+        <num>25</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 93</heading>
+        <content eId="sec_25__content">
+          <p class="time"><time datetime="2023-11-09T11:16:03+01:00">11:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_26">
+        <num>26</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 10/2</heading>
+        <content eId="sec_26__content">
+          <p class="time"><time datetime="2023-11-09T11:15:03+01:00">11:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_27">
+        <num>27</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 18/1</heading>
+        <content eId="sec_27__content">
+          <p class="time"><time datetime="2023-11-09T11:09:09+01:00">11:09</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_28">
+        <num>28</num>
+        <heading>Effectiveness of the EU sanctions on Russia – RC-B9-0453/2023 – After § 8 – Am 2</heading>
+        <content eId="sec_28__content">
+          <p class="time"><time datetime="2023-11-09T11:39:28+01:00">11:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_29">
+        <num>29</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Commission proposal</heading>
+        <content eId="sec_29__content">
+          <p class="time"><time datetime="2023-11-09T11:36:02+01:00">11:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_30">
+        <num>30</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 19, paragraph 1 – Am 146</heading>
+        <content eId="sec_30__content">
+          <p class="time"><time datetime="2023-11-09T11:28:40+01:00">11:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_31">
+        <num>31</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 4 – Am 101</heading>
+        <content eId="sec_31__content">
+          <p class="time"><time datetime="2023-11-09T11:22:27+01:00">11:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_32">
+        <num>32</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 3, paragraph 2, after point 57 – Am 173=188=210=</heading>
+        <content eId="sec_32__content">
+          <p class="time"><time datetime="2023-11-09T11:18:52+01:00">11:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_33">
+        <num>33</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 5 – Am 197</heading>
+        <content eId="sec_33__content">
+          <p class="time"><time datetime="2023-11-09T11:22:57+01:00">11:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_34">
+        <num>34</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 15, paragraph 2, after subpara 1 – Am 140/1</heading>
+        <content eId="sec_34__content">
+          <p class="time"><time datetime="2023-11-09T11:26:30+01:00">11:26</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_35">
+        <num>35</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 120/1</heading>
+        <content eId="sec_35__content">
+          <p class="time"><time datetime="2023-11-09T11:17:00+01:00">11:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_36">
+        <num>36</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, after paragraph 4 – Am 102</heading>
+        <content eId="sec_36__content">
+          <p class="time"><time datetime="2023-11-09T11:22:47+01:00">11:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_37">
+        <num>37</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After recital 18 – Am 168</heading>
+        <content eId="sec_37__content">
+          <p class="time"><time datetime="2023-11-09T11:34:18+01:00">11:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_38">
+        <num>38</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 20, paragraph 2 – Am 204</heading>
+        <content eId="sec_38__content">
+          <p class="time"><time datetime="2023-11-09T11:29:26+01:00">11:29</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_39">
+        <num>39</num>
+        <heading>RC-B9-0453/2023 – After § 8 – Am 3</heading>
+        <content eId="sec_39__content">
+          <p class="time"><time datetime="2023-11-09T11:39:39+01:00">11:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_40">
+        <num>40</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 12/2</heading>
+        <content eId="sec_40__content">
+          <p class="time"><time datetime="2023-11-09T11:08:47+01:00">11:08</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_41">
+        <num>41</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 15, paragraph 2, after subpara 1 – Am 140/3</heading>
+        <content eId="sec_41__content">
+          <p class="time"><time datetime="2023-11-09T11:26:49+01:00">11:26</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_42">
+        <num>42</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex I, after table 4 – Am 153</heading>
+        <content eId="sec_42__content">
+          <p class="time"><time datetime="2023-11-09T11:31:17+01:00">11:31</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_43">
+        <num>43</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Article 1, § 1, point 2, after sub-point a; Regulation (EU) No 691/2011; Article 3, after § 1 – Am 40</heading>
+        <content eId="sec_43__content">
+          <p class="time"><time datetime="2023-11-09T11:10:03+01:00">11:10</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_44">
+        <num>44</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 3, paragraph 2, after point 57 – Am 172=187=209=</heading>
+        <content eId="sec_44__content">
+          <p class="time"><time datetime="2023-11-09T11:18:40+01:00">11:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_45">
+        <num>45</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 19, paragraph 2 – Am 203</heading>
+        <content eId="sec_45__content">
+          <p class="time"><time datetime="2023-11-09T11:28:49+01:00">11:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_46">
+        <num>46</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 119/2</heading>
+        <content eId="sec_46__content">
+          <p class="time"><time datetime="2023-11-09T11:16:51+01:00">11:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_47">
+        <num>47</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Recital 19 – Am 23</heading>
+        <content eId="sec_47__content">
+          <p class="time"><time datetime="2023-11-09T11:34:44+01:00">11:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_48">
+        <num>48</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 99</heading>
+        <content eId="sec_48__content">
+          <p class="time"><time datetime="2023-11-09T11:16:22+01:00">11:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_49">
+        <num>49</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex I, table 1, row 3 – Am 150</heading>
+        <content eId="sec_49__content">
+          <p class="time"><time datetime="2023-11-09T11:30:21+01:00">11:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_50">
+        <num>50</num>
+        <heading>Waste electrical and electronic equipment (WEEE) – A9-0311/2023 – Anna Zalewska – Commission proposal and amendments</heading>
+        <content eId="sec_50__content">
+          <p class="time"><time datetime="2023-11-09T11:12:51+01:00">11:12</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_51">
+        <num>51</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, after paragraph 3 – Am 194</heading>
+        <content eId="sec_51__content">
+          <p class="time"><time datetime="2023-11-09T11:21:53+01:00">11:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_52">
+        <num>52</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 4 – Am 195</heading>
+        <content eId="sec_52__content">
+          <p class="time"><time datetime="2023-11-09T11:22:15+01:00">11:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_53">
+        <num>53</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 3, paragraph 2, point 38 – Am 45</heading>
+        <content eId="sec_53__content">
+          <p class="time"><time datetime="2023-11-09T11:18:05+01:00">11:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_54">
+        <num>54</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 12/1</heading>
+        <content eId="sec_54__content">
+          <p class="time"><time datetime="2023-11-09T11:08:38+01:00">11:08</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_55">
+        <num>55</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 82</heading>
+        <content eId="sec_55__content">
+          <p class="time"><time datetime="2023-11-09T11:15:53+01:00">11:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_56">
+        <num>56</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 3, paragraph 2, point 42 – Am 225</heading>
+        <content eId="sec_56__content">
+          <p class="time"><time datetime="2023-11-09T11:18:18+01:00">11:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_57">
+        <num>57</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Commission proposal</heading>
+        <content eId="sec_57__content">
+          <p class="time"><time datetime="2023-11-09T11:11:35+01:00">11:11</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_58">
+        <num>58</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 120/2</heading>
+        <content eId="sec_58__content">
+          <p class="time"><time datetime="2023-11-09T11:17:09+01:00">11:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_59">
+        <num>59</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex I, table 2 – Am 205</heading>
+        <content eId="sec_59__content">
+          <p class="time"><time datetime="2023-11-09T11:30:44+01:00">11:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_60">
+        <num>60</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, after paragraph 3 – Am 100</heading>
+        <content eId="sec_60__content">
+          <p class="time"><time datetime="2023-11-09T11:22:04+01:00">11:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_61">
+        <num>61</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 119/1</heading>
+        <content eId="sec_61__content">
+          <p class="time"><time datetime="2023-11-09T11:16:42+01:00">11:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_62">
+        <num>62</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 10/1</heading>
+        <content eId="sec_62__content">
+          <p class="time"><time datetime="2023-11-09T11:14:53+01:00">11:14</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_63">
+        <num>63</num>
+        <heading>RC-B9-0453/2023 – After recital L – Am 1</heading>
+        <content eId="sec_63__content">
+          <p class="time"><time datetime="2023-11-09T11:40:38+01:00">11:40</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_64">
+        <num>64</num>
+        <heading>Data Act – A9-0031/2023 – Pilar del Castillo Vera – Provisional agreement – Am 27</heading>
+        <content eId="sec_64__content">
+          <p class="time"><time datetime="2023-11-09T11:06:16+01:00">11:06</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_65">
+        <num>65</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 10/2</heading>
+        <content eId="sec_65__content">
+          <p class="time"><time datetime="2023-11-09T11:08:23+01:00">11:08</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_66">
+        <num>66</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 15, paragraph 2, after point c – Am 231</heading>
+        <content eId="sec_66__content">
+          <p class="time"><time datetime="2023-11-09T11:25:31+01:00">11:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_67">
+        <num>67</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Recital 18 – Am 22S</heading>
+        <content eId="sec_67__content">
+          <p class="time"><time datetime="2023-11-09T11:34:02+01:00">11:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_68">
+        <num>68</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After Article 7 – Am 91/3</heading>
+        <content eId="sec_68__content">
+          <p class="time"><time datetime="2023-11-09T11:21:15+01:00">11:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_69">
+        <num>69</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex I, after table 4 – Am 154</heading>
+        <content eId="sec_69__content">
+          <p class="time"><time datetime="2023-11-09T11:31:33+01:00">11:31</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_70">
+        <num>70</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 1 – Am 159/3</heading>
+        <content eId="sec_70__content">
+          <p class="time"><time datetime="2023-11-09T11:32:07+01:00">11:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_71">
+        <num>71</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, after paragraph 3 – Am 107</heading>
+        <content eId="sec_71__content">
+          <p class="time"><time datetime="2023-11-09T11:25:06+01:00">11:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_72">
+        <num>72</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 11 – Am 198</heading>
+        <content eId="sec_72__content">
+          <p class="time"><time datetime="2023-11-09T11:23:55+01:00">11:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_73">
+        <num>73</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 20, paragraph 3 – Am 184=219=234CP2=</heading>
+        <content eId="sec_73__content">
+          <p class="time"><time datetime="2023-11-09T11:29:57+01:00">11:29</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_74">
+        <num>74</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 4, paragraph 6, point g – Am 66</heading>
+        <content eId="sec_74__content">
+          <p class="time"><time datetime="2023-11-09T11:20:01+01:00">11:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_75">
+        <num>75</num>
+        <heading>EU/Madagascar Sustainable Fisheries Partnership Agreement and Implementing Protocol (2023-2027) – A9-0299/2023 – Clara Aguilera – Draft Council decision</heading>
+        <content eId="sec_75__content">
+          <p class="time"><time datetime="2023-11-09T11:13:53+01:00">11:13</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_76">
+        <num>76</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 6 – Am 178=214=229=</heading>
+        <content eId="sec_76__content">
+          <p class="time"><time datetime="2023-11-09T11:23:32+01:00">11:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_77">
+        <num>77</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 3, paragraph 2, point 67 – Am 174=189=211=</heading>
+        <content eId="sec_77__content">
+          <p class="time"><time datetime="2023-11-09T11:19:08+01:00">11:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_78">
+        <num>78</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 10, paragraph 5 – Am 103</heading>
+        <content eId="sec_78__content">
+          <p class="time"><time datetime="2023-11-09T11:23:06+01:00">11:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_79">
+        <num>79</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 18/2</heading>
+        <content eId="sec_79__content">
+          <p class="time"><time datetime="2023-11-09T11:09:17+01:00">11:09</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_80">
+        <num>80</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 1-9, 11, 13-21, 24-44, 46-47, 49-58, 60-65, 67-69, 71-81, 84-90, 92, 95, 97-98, 104, 108-110, 112-118, 121-136, 138, 141-144, 152, 155-158, 161-165</heading>
+        <content eId="sec_80__content">
+          <p class="time"><time datetime="2023-11-09T11:14:41+01:00">11:14</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_81">
+        <num>81</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 19, paragraph 1 – Am 202</heading>
+        <content eId="sec_81__content">
+          <p class="time"><time datetime="2023-11-09T11:28:13+01:00">11:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_82">
+        <num>82</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 1 – Am 159/1</heading>
+        <content eId="sec_82__content">
+          <p class="time"><time datetime="2023-11-09T11:31:47+01:00">11:31</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_83">
+        <num>83</num>
+        <heading>Conservation and enforcement measures applicable in the Regulatory Area of the Northwest Atlantic Fisheries Organisation (NAFO) – A9-0279/2023 – Grace O'Sullivan – Commission proposal and amendments</heading>
+        <content eId="sec_83__content">
+          <p class="time"><time datetime="2023-11-09T11:12:31+01:00">11:12</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_84">
+        <num>84</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 8, paragraph 2 – Am 94</heading>
+        <content eId="sec_84__content">
+          <p class="time"><time datetime="2023-11-09T11:21:40+01:00">11:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_85">
+        <num>85</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 1 – Am 159/7</heading>
+        <content eId="sec_85__content">
+          <p class="time"><time datetime="2023-11-09T11:32:43+01:00">11:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_86">
+        <num>86</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 3, paragraph 2, point 48 – Am 244D</heading>
+        <content eId="sec_86__content">
+          <p class="time"><time datetime="2023-11-09T11:18:28+01:00">11:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_87">
+        <num>87</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Recital 1 – Am 221</heading>
+        <content eId="sec_87__content">
+          <p class="time"><time datetime="2023-11-09T11:33:30+01:00">11:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_88">
+        <num>88</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 1 – Am 159/4</heading>
+        <content eId="sec_88__content">
+          <p class="time"><time datetime="2023-11-09T11:32:16+01:00">11:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_89">
+        <num>89</num>
+        <heading>Strengthening the right to participate: legitimacy and resilience of electoral processes in illiberal political systems and authoritarian regimes – A9-0323/2023 – Nacho Sánchez Amor – Motion for a resolution</heading>
+        <content eId="sec_89__content">
+          <p class="time"><time datetime="2023-11-09T11:38:53+01:00">11:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_90">
+        <num>90</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 6, paragraph 6, point b – Am 83</heading>
+        <content eId="sec_90__content">
+          <p class="time"><time datetime="2023-11-09T11:20:31+01:00">11:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_91">
+        <num>91</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 12/3</heading>
+        <content eId="sec_91__content">
+          <p class="time"><time datetime="2023-11-09T11:08:57+01:00">11:08</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_92">
+        <num>92</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 70</heading>
+        <content eId="sec_92__content">
+          <p class="time"><time datetime="2023-11-09T11:15:43+01:00">11:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_93">
+        <num>93</num>
+        <heading>RC-B9-0453/2023 – After § 18 – Am 4</heading>
+        <content eId="sec_93__content">
+          <p class="time"><time datetime="2023-11-09T11:40:26+01:00">11:40</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_94">
+        <num>94</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex I, table 2 – Am 236</heading>
+        <content eId="sec_94__content">
+          <p class="time"><time datetime="2023-11-09T11:30:33+01:00">11:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_95">
+        <num>95</num>
+        <heading>A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 20</heading>
+        <content eId="sec_95__content">
+          <p class="time"><time datetime="2023-11-09T11:09:30+01:00">11:09</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_96">
+        <num>96</num>
+        <heading>A9-0295/2023 – José Manuel Fernandes, Valérie Hayer – Recital 6 – Am 7</heading>
+        <content eId="sec_96__content">
+          <p class="time"><time datetime="2023-11-09T11:38:01+01:00">11:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_97">
+        <num>97</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 59</heading>
+        <content eId="sec_97__content">
+          <p class="time"><time datetime="2023-11-09T11:15:33+01:00">11:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_98">
+        <num>98</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 15, paragraph 2, after point c – Am 137</heading>
+        <content eId="sec_98__content">
+          <p class="time"><time datetime="2023-11-09T11:25:42+01:00">11:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_99">
+        <num>99</num>
+        <heading>European environmental economic accounts: new modules – A9-0296/2023 – Pascal Canfin – Amendments by the committee responsible – separate votes – Am 10/1</heading>
+        <content eId="sec_99__content">
+          <p class="time"><time datetime="2023-11-09T11:08:14+01:00">11:08</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_100">
+        <num>100</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 15, paragraph 2, after subpara 1 – Am 140/2</heading>
+        <content eId="sec_100__content">
+          <p class="time"><time datetime="2023-11-09T11:26:40+01:00">11:26</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_101">
+        <num>101</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 19, paragraph 2 – Am 183=217=233=</heading>
+        <content eId="sec_101__content">
+          <p class="time"><time datetime="2023-11-09T11:29:03+01:00">11:29</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_102">
+        <num>102</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 20, paragraph 2 – Am 148</heading>
+        <content eId="sec_102__content">
+          <p class="time"><time datetime="2023-11-09T11:29:38+01:00">11:29</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_103">
+        <num>103</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 48</heading>
+        <content eId="sec_103__content">
+          <p class="time"><time datetime="2023-11-09T11:15:25+01:00">11:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_104">
+        <num>104</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 19, paragraph 1 – Am 182=216=232=</heading>
+        <content eId="sec_104__content">
+          <p class="time"><time datetime="2023-11-09T11:28:28+01:00">11:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_105">
+        <num>105</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 11, paragraph 2 – Am 199</heading>
+        <content eId="sec_105__content">
+          <p class="time"><time datetime="2023-11-09T11:24:19+01:00">11:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_106">
+        <num>106</num>
+        <heading>System of own resources of the European Union – A9-0295/2023 – José Manuel Fernandes, Valérie Hayer – Article 1, subpara 1, point 1, sub-point b; Decision (EU, Euratom) 2020/2053; Article 2, § 1, after point f – Am 9</heading>
+        <content eId="sec_106__content">
+          <p class="time"><time datetime="2023-11-09T11:37:44+01:00">11:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_107">
+        <num>107</num>
+        <heading>Amending certain regulations as regards the establishment and functioning of the European single access point – A9-0024/2023 – Pedro Silva Pereira – Provisional agreement – Am 2</heading>
+        <content eId="sec_107__content">
+          <p class="time"><time datetime="2023-11-09T11:06:43+01:00">11:06</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_108">
+        <num>108</num>
+        <heading>A9-0295/2023 – José Manuel Fernandes, Valérie Hayer – Commission proposal</heading>
+        <content eId="sec_108__content">
+          <p class="time"><time datetime="2023-11-09T11:38:26+01:00">11:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_109">
+        <num>109</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 12</heading>
+        <content eId="sec_109__content">
+          <p class="time"><time datetime="2023-11-09T11:15:15+01:00">11:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_110">
+        <num>110</num>
+        <heading>Settlement discipline, cross-border provision of services, supervisory cooperation, provision of banking-type ancillary services and requirements for third-country central securities depositories – A9-0047/2023 – Johan Van Overtveldt – Provisional agreement – Am 2</heading>
+        <content eId="sec_110__content">
+          <p class="time"><time datetime="2023-11-09T11:07:44+01:00">11:07</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_111">
+        <num>111</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Annex III, table 1 – Am 159/6</heading>
+        <content eId="sec_111__content">
+          <p class="time"><time datetime="2023-11-09T11:32:34+01:00">11:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_112">
+        <num>112</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 20, paragraph 3 – Am 149</heading>
+        <content eId="sec_112__content">
+          <p class="time"><time datetime="2023-11-09T11:30:09+01:00">11:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_113">
+        <num>113</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 15, paragraph 2, after point e – Am 180=191=213=</heading>
+        <content eId="sec_113__content">
+          <p class="time"><time datetime="2023-11-09T11:25:58+01:00">11:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_114">
+        <num>114</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 139</heading>
+        <content eId="sec_114__content">
+          <p class="time"><time datetime="2023-11-09T11:17:19+01:00">11:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_115">
+        <num>115</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – After Article 7 – Am 91/1</heading>
+        <content eId="sec_115__content">
+          <p class="time"><time datetime="2023-11-09T11:20:57+01:00">11:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_116">
+        <num>116</num>
+        <heading>Amending certain directives as regards the establishment and functioning of the European single access point – A9-0023/2023 – Pedro Silva Pereira – Provisional agreement – Am 2</heading>
+        <content eId="sec_116__content">
+          <p class="time"><time datetime="2023-11-09T11:07:23+01:00">11:07</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_117">
+        <num>117</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Amendments by the committee responsible – separate votes – Am 96</heading>
+        <content eId="sec_117__content">
+          <p class="time"><time datetime="2023-11-09T11:16:12+01:00">11:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_118">
+        <num>118</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Article 7, paragraph 4 – Am 228</heading>
+        <content eId="sec_118__content">
+          <p class="time"><time datetime="2023-11-09T11:20:48+01:00">11:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>

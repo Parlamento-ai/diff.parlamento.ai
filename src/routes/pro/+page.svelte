@@ -19,7 +19,9 @@
 		'ley-21120-boletin': FlagCl,
 		'eu-dma': FlagEu,
 		'eu-dsa': FlagEu,
-		'eu-ai-act': FlagEu
+		'eu-ai-act': FlagEu,
+		'eu-cra': FlagEu,
+		'eu-data-act': FlagEu
 	};
 
 	const normOrder = [
@@ -57,6 +59,8 @@
 	const euDma = $derived(data.boletines.find((b) => b.slug === 'eu-dma'));
 	const euDsa = $derived(data.boletines.find((b) => b.slug === 'eu-dsa'));
 	const euAiAct = $derived(data.boletines.find((b) => b.slug === 'eu-ai-act'));
+	const euCra = $derived(data.boletines.find((b) => b.slug === 'eu-cra'));
+	const euDataAct = $derived(data.boletines.find((b) => b.slug === 'eu-data-act'));
 </script>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -234,7 +238,7 @@
 	{/if}
 
 	<!-- EU — Regulaciones europeas -->
-	{#if euDma || euDsa || euAiAct}
+	{#if euDma || euDsa || euAiAct || euCra || euDataAct}
 		<section class="mb-14">
 			<div class="mb-5 max-w-lg mx-auto">
 				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
@@ -270,6 +274,22 @@
 						title={euAiAct.title}
 						documentCount={euAiAct.documentCount}
 						flag={flagMap[euAiAct.slug]}
+					/>
+				{/if}
+				{#if euCra}
+					<BoletinCard
+						slug={euCra.slug}
+						title={euCra.title}
+						documentCount={euCra.documentCount}
+						flag={flagMap[euCra.slug]}
+					/>
+				{/if}
+				{#if euDataAct}
+					<BoletinCard
+						slug={euDataAct.slug}
+						title={euDataAct.title}
+						documentCount={euDataAct.documentCount}
+						flag={flagMap[euDataAct.slug]}
 					/>
 				{/if}
 			</div>

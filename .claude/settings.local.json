@@ -33,7 +33,12 @@
       "Bash(npx tsc:*)",
       "Bash(xargs:*)",
       "Bash(npx tsx:*)",
-      "Bash(git status:*)"
+      "Bash(git status:*)",
+      "WebFetch(domain:www.europarl.europa.eu)",
+      "Bash(python3:*)",
+      "WebFetch(domain:www.eu-data-act.com)",
+      "WebFetch(domain:www.boe.es)",
+      "WebFetch(domain:www.european-cyber-resilience-act.com)"
     ]
   },
   "enableAllProjectMcpServers": true,

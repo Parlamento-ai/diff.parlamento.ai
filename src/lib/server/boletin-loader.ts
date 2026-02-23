@@ -12,6 +12,8 @@ const LEY_21120_DIR = 'research/2026-02-19/ley-21120/akn';
 const EU_DMA_DIR = 'pipeline/data/eu/digital-markets-act/akn';
 const EU_DSA_DIR = 'pipeline/data/eu/digital-services-act/akn';
 const EU_AI_ACT_DIR = 'pipeline/data/eu/artificial-intelligence-act/akn';
+const EU_CRA_DIR = 'pipeline/data/eu/horizontal-cybersecurity-requirements-for-products-with-digi/akn';
+const EU_DATA_ACT_DIR = 'pipeline/data/eu/data-act/akn';
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
 	'empanadas-de-pino': `${RECETAS_DIR}/receta-empanadas`,
@@ -45,7 +47,11 @@ const BOLETIN_DIRS: Record<string, string> = {
 	// EU — Digital Services Act (Regulation 2022/2065, procedure 2020/0361(COD))
 	'eu-dsa': EU_DSA_DIR,
 	// EU — AI Act (Regulation 2024/1689, procedure 2021/0106(COD))
-	'eu-ai-act': EU_AI_ACT_DIR
+	'eu-ai-act': EU_AI_ACT_DIR,
+	// EU — Cyber Resilience Act (Regulation 2024/2847, procedure 2022/0272(COD))
+	'eu-cra': EU_CRA_DIR,
+	// EU — Data Act (Regulation 2023/2854, procedure 2022/0047(COD))
+	'eu-data-act': EU_DATA_ACT_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -209,7 +215,9 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 		const euCelex: Record<string, Record<string, string>> = {
 			'eu-dma': { original: '52020PC0842', 'amendment-1': '52021AP0499', final: '32022R1925' },
 			'eu-dsa': { original: '52020PC0825', 'amendment-1': '52022AP0014', final: '32022R2065' },
-			'eu-ai-act': { original: '52021PC0206', 'amendment-1': '52023AP0236', final: '32024R1689' }
+			'eu-ai-act': { original: '52021PC0206', 'amendment-1': '52023AP0236', final: '32024R1689' },
+			'eu-cra': { original: '52022PC0454', final: '32024R2847' },
+			'eu-data-act': { original: '52022PC0068', final: '32023R2854' }
 		};
 		const celex = euCelex[boletinSlug]?.[slug];
 		if (celex) return { url: `${eurlex}${celex}`, label: 'EUR-Lex' };
@@ -430,7 +438,9 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 		const euConfigs: Record<string, { slug: string; bill: string; ep: string; final: string; comLabel: string; regLabel: string }> = {
 			'eu-dma': { slug: 'digital-markets-act', bill: '52020PC0842', ep: '52021AP0499', final: '32022R1925', comLabel: 'COM(2020) 842', regLabel: 'Regulation (EU) 2022/1925' },
 			'eu-dsa': { slug: 'digital-services-act', bill: '52020PC0825', ep: '52022AP0014', final: '32022R2065', comLabel: 'COM(2020) 825', regLabel: 'Regulation (EU) 2022/2065' },
-			'eu-ai-act': { slug: 'artificial-intelligence-act', bill: '52021PC0206', ep: '52023AP0236', final: '32024R1689', comLabel: 'COM(2021) 206', regLabel: 'Regulation (EU) 2024/1689' }
+			'eu-ai-act': { slug: 'artificial-intelligence-act', bill: '52021PC0206', ep: '52023AP0236', final: '32024R1689', comLabel: 'COM(2021) 206', regLabel: 'Regulation (EU) 2024/1689' },
+			'eu-cra': { slug: 'horizontal-cybersecurity-requirements-for-products-with-digi', bill: '52022PC0454', ep: '52024AP0130', final: '32024R2847', comLabel: 'COM(2022) 454', regLabel: 'Regulation (EU) 2024/2847' },
+			'eu-data-act': { slug: 'data-act', bill: '52022PC0068', ep: '52023AP0069', final: '32023R2854', comLabel: 'COM(2022) 68', regLabel: 'Regulation (EU) 2023/2854' }
 		};
 		const cfg = euConfigs[boletinSlug];
 		if (cfg) {

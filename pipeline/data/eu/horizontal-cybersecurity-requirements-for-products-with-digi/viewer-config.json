@@ -1,0 +1,30 @@
+{
+  "slug": "horizontal-cybersecurity-requirements-for-products-with-digi-regulation",
+  "sourcesDir": "sources",
+  "outputDir": "akn",
+  "billFile": "52022PC0454-bill-akn.xml",
+  "finalFile": "32024R2847-akn.xml",
+  "epAmendmentsFile": null,
+  "proposal": {
+    "celex": "52022PC0454",
+    "comYear": 2022,
+    "comNum": 454,
+    "date": "2022-09-15",
+    "title": "Horizontal cybersecurity requirements for products with digital elements and amending Regulation (EU) 2019/1020 — COM(2022) 454 Proposal"
+  },
+  "final": {
+    "celex": "32024R2847",
+    "regYear": 2024,
+    "regNum": 2847,
+    "date": "2024-11-20",
+    "pubDate": "2024-11-20",
+    "title": "Regulation (EU) 2024/2847 — Horizontal cybersecurity requirements for products with digital elements and amending Regulation (EU) 2019/1020"
+  },
+  "legislativeProcedure": {
+    "procedure": "2022/0272(COD)",
+    "voteDate": "2024-03-12",
+    "voteFor": 517,
+    "voteAgainst": 12,
+    "voteAbstain": 78
+  }
+}
