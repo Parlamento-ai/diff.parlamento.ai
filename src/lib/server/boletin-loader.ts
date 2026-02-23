@@ -14,6 +14,8 @@ const EU_DSA_DIR = 'pipeline/data/eu/digital-services-act/akn';
 const EU_AI_ACT_DIR = 'pipeline/data/eu/artificial-intelligence-act/akn';
 const EU_CRA_DIR = 'pipeline/data/eu/horizontal-cybersecurity-requirements-for-products-with-digi/akn';
 const EU_DATA_ACT_DIR = 'pipeline/data/eu/data-act/akn';
+const US_S5_DIR = 'research/2026-02-23/us/s5-laken-riley/akn';
+const US_S269_DIR = 'research/2026-02-23/us/s269-poc/akn';
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
 	'empanadas-de-pino': `${RECETAS_DIR}/receta-empanadas`,
@@ -51,7 +53,11 @@ const BOLETIN_DIRS: Record<string, string> = {
 	// EU — Cyber Resilience Act (Regulation 2024/2847, procedure 2022/0272(COD))
 	'eu-cra': EU_CRA_DIR,
 	// EU — Data Act (Regulation 2023/2854, procedure 2022/0047(COD))
-	'eu-data-act': EU_DATA_ACT_DIR
+	'eu-data-act': EU_DATA_ACT_DIR,
+	// US — S.5 Laken Riley Act (Public Law 119-1, 119th Congress)
+	'us-s5-laken-riley': US_S5_DIR,
+	// US — S.269 Ending Improper Payments (Public Law 119-77, 119th Congress)
+	'us-s269-improper-payments': US_S269_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -125,6 +131,24 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 			'amendment-1': 'Informe Comisión + Sala (RECHAZADO)'
 		};
 		return ley17370Labels[slug] || slug;
+	}
+	// US bills
+	if (boletinSlug === 'us-s5-laken-riley') {
+		const usLabels: Record<string, string> = {
+			bill: 'Placed on Calendar (PCS)',
+			'amendment-1': 'Senate Passage (64-35)',
+			'amendment-2': 'House Passage (263-156)',
+			final: 'Public Law 119-1'
+		};
+		return usLabels[slug] || slug;
+	}
+	if (boletinSlug === 'us-s269-improper-payments') {
+		const usLabels: Record<string, string> = {
+			bill: 'Introduced (IS)',
+			'amendment-1': 'Senate & House Passage (Voice Vote)',
+			final: 'Public Law 119-77'
+		};
+		return usLabels[slug] || slug;
 	}
 	// Ley 21.735 per-norm timelines (original = pre-reform law)
 	if (boletinSlug?.startsWith('ley-21735-')) {
@@ -222,6 +246,26 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 		const celex = euCelex[boletinSlug]?.[slug];
 		if (celex) return { url: `${eurlex}${celex}`, label: 'EUR-Lex' };
 		return undefined;
+	}
+	// US bills
+	if (boletinSlug === 'us-s5-laken-riley') {
+		const congressGov = 'https://www.congress.gov';
+		const map: Record<string, { url: string; label: string }> = {
+			bill: { url: `${congressGov}/bill/119th-congress/senate-bill/5/text/pcs`, label: 'Congress.gov' },
+			'amendment-1': { url: `${congressGov}/bill/119th-congress/senate-bill/5/text/es`, label: 'Congress.gov' },
+			'amendment-2': { url: `${congressGov}/bill/119th-congress/senate-bill/5/text/enr`, label: 'Congress.gov' },
+			final: { url: `${congressGov}/bill/119th-congress/senate-bill/5/text/pl`, label: 'Congress.gov' }
+		};
+		return map[slug];
+	}
+	if (boletinSlug === 'us-s269-improper-payments') {
+		const congressGov = 'https://www.congress.gov';
+		const map: Record<string, { url: string; label: string }> = {
+			bill: { url: `${congressGov}/bill/119th-congress/senate-bill/269/text/is`, label: 'Congress.gov' },
+			'amendment-1': { url: `${congressGov}/bill/119th-congress/senate-bill/269/text/es`, label: 'Congress.gov' },
+			final: { url: `${congressGov}/bill/119th-congress/senate-bill/269/text/pl`, label: 'Congress.gov' }
+		};
+		return map[slug];
 	}
 	// Ley 21.120 — Boletín 8924-07
 	if (boletinSlug === 'ley-21120-boletin') {
@@ -452,6 +496,52 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 			};
 			return docs[versionSlug] || [];
 		}
+	}
+
+	// ── US bills ──
+	if (boletinSlug === 'us-s5-laken-riley') {
+		const usBase = 'research/2026-02-23/us/s5-laken-riley';
+		const congressGov = 'https://www.congress.gov';
+		const docs: Record<string, SourceRef[]> = {
+			bill: [
+				src('S.5 — Placed on Calendar', `${usBase}/01-pcs-placed-calendar.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/5/text/pcs`)
+			],
+			'amendment-1': [
+				src('S.5 — Engrossed in Senate', `${usBase}/02-es-engrossed.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/5/text/es`),
+				src('Senate Roll Call Vote #7', `${usBase}/vote-senate-007.xml`, 'xml',
+					'https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.htm')
+			],
+			'amendment-2': [
+				src('House Roll Call Vote #23', `${usBase}/vote-house-023.xml`, 'xml',
+					'https://clerk.house.gov/Votes/202523')
+			],
+			final: [
+				src('Public Law 119-1 (USLM)', `${usBase}/04-plaw-uslm.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/5/text/pl`)
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+	if (boletinSlug === 'us-s269-improper-payments') {
+		const usBase = 'research/2026-02-23/us/s269-poc';
+		const congressGov = 'https://www.congress.gov';
+		const docs: Record<string, SourceRef[]> = {
+			bill: [
+				src('S.269 — Introduced in Senate', `${usBase}/01-is-introduced.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/269/text/is`)
+			],
+			'amendment-1': [
+				src('S.269 — Engrossed in Senate', `${usBase}/02-es-engrossed.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/269/text/es`)
+			],
+			final: [
+				src('Public Law 119-77 (USLM)', `${usBase}/04-plaw-uslm.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/269/text/pl`)
+			]
+		};
+		return docs[versionSlug] || [];
 	}
 
 	// ── Ley 21.120 — Identidad de Género (Boletín 8924-07) ──

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+	<amendment name="s5-119-senate-passage">
+		<meta>
+		<identification source="#parlamento-ai">
+			<FRBRWork>
+				<FRBRthis value="/us/bill/119/s/5/es"/>
+				<FRBRuri value="/us/bill/119/s/5"/>
+				<FRBRdate date="2025-01-20" name="passage"/>
+				<FRBRauthor href="/us/senate"/>
+				<FRBRcountry value="us"/>
+			</FRBRWork>
+			<FRBRExpression>
+				<FRBRthis value="/us/bill/119/s/5/es/eng@2025-01-20"/>
+				<FRBRuri value="/us/bill/119/s/5/eng@2025-01-20"/>
+				<FRBRdate date="2025-01-20" name="version"/>
+				<FRBRlanguage language="eng"/>
+			</FRBRExpression>
+			<FRBRManifestation>
+				<FRBRthis value="/us/bill/119/s/5/es/eng@2025-01-20/akn"/>
+				<FRBRuri value="/us/bill/119/s/5/eng@2025-01-20/akn"/>
+				<FRBRdate date="2026-02-23" name="generation"/>
+			</FRBRManifestation>
+		</identification>
+			<references>
+				<TLCOrganization eId="senate" href="/us/senate" showAs="United States Senate"/>
+			</references>
+		</meta>
+
+		<preface>
+			<longTitle><p><docTitle>Senate Passage — S. 5 Laken Riley Act</docTitle></p></longTitle>
+			<p>Passed Senate with amendments by roll call vote 64-35 on January 20, 2025.</p>
+		</preface>
+
+		<amendmentBody>
+			<amendmentContent>
+				<p>The Senate passed S. 5 with an amendment in the nature of a substitute, adding "assault of a law enforcement officer" to the list of offenses requiring mandatory detention.</p>
+			</amendmentContent>
+		</amendmentBody>
+
+		<akndiff:changeSet
+			base="/us/bill/119/s/5/eng@2025-01-07"
+			result="/us/bill/119/s/5/eng@2025-01-20">
+
+			<akndiff:vote date="2025-01-20" result="approved" source="/us/senate/119/1/vote/7">
+				<akndiff:for count="64">
+					<akndiff:voter href="/us/senator/banks" showAs="Jim Banks (R-IN)"/>
+					<akndiff:voter href="/us/senator/barrasso" showAs="John Barrasso (R-WY)"/>
+					<akndiff:voter href="/us/senator/blackburn" showAs="Marsha Blackburn (R-TN)"/>
+					<akndiff:voter href="/us/senator/boozman" showAs="John Boozman (R-AR)"/>
+					<akndiff:voter href="/us/senator/britt" showAs="Katie Britt (R-AL)"/>
+					<akndiff:voter href="/us/senator/budd" showAs="Ted Budd (R-NC)"/>
+					<akndiff:voter href="/us/senator/capito" showAs="Shelley Capito (R-WV)"/>
+					<akndiff:voter href="/us/senator/cassidy" showAs="Bill Cassidy (R-LA)"/>
+					<akndiff:voter href="/us/senator/collins" showAs="Susan Collins (R-ME)"/>
+					<akndiff:voter href="/us/senator/cornyn" showAs="John Cornyn (R-TX)"/>
+					<akndiff:voter href="/us/senator/cortez-masto" showAs="Catherine Cortez Masto (D-NV)"/>
+					<akndiff:voter href="/us/senator/cotton" showAs="Tom Cotton (R-AR)"/>
+					<akndiff:voter href="/us/senator/cramer" showAs="Kevin Cramer (R-ND)"/>
+					<akndiff:voter href="/us/senator/crapo" showAs="Mike Crapo (R-ID)"/>
+					<akndiff:voter href="/us/senator/cruz" showAs="Ted Cruz (R-TX)"/>
+					<akndiff:voter href="/us/senator/curtis" showAs="John Curtis (R-UT)"/>
+					<akndiff:voter href="/us/senator/daines" showAs="Steve Daines (R-MT)"/>
+					<akndiff:voter href="/us/senator/ernst" showAs="Joni Ernst (R-IA)"/>
+					<akndiff:voter href="/us/senator/fetterman" showAs="John Fetterman (D-PA)"/>
+					<akndiff:voter href="/us/senator/fischer" showAs="Deb Fischer (R-NE)"/>
+					<akndiff:voter href="/us/senator/gallego" showAs="Ruben Gallego (D-AZ)"/>
+					<akndiff:voter href="/us/senator/graham" showAs="Lindsey Graham (R-SC)"/>
+					<akndiff:voter href="/us/senator/grassley" showAs="Chuck Grassley (R-IA)"/>
+					<akndiff:voter href="/us/senator/hagerty" showAs="Bill Hagerty (R-TN)"/>
+					<akndiff:voter href="/us/senator/hassan" showAs="Maggie Hassan (D-NH)"/>
+					<akndiff:voter href="/us/senator/hawley" showAs="Josh Hawley (R-MO)"/>
+					<akndiff:voter href="/us/senator/hoeven" showAs="John Hoeven (R-ND)"/>
+					<akndiff:voter href="/us/senator/hyde-smith" showAs="Cindy Hyde-Smith (R-MS)"/>
+					<akndiff:voter href="/us/senator/johnson" showAs="Ron Johnson (R-WI)"/>
+					<akndiff:voter href="/us/senator/justice" showAs="James Justice (R-WV)"/>
+					<akndiff:voter href="/us/senator/kelly" showAs="Mark Kelly (D-AZ)"/>
+					<akndiff:voter href="/us/senator/kennedy" showAs="John Kennedy (R-LA)"/>
+					<akndiff:voter href="/us/senator/lankford" showAs="James Lankford (R-OK)"/>
+					<akndiff:voter href="/us/senator/lee" showAs="Mike Lee (R-UT)"/>
+					<akndiff:voter href="/us/senator/lummis" showAs="Cynthia Lummis (R-WY)"/>
+					<akndiff:voter href="/us/senator/marshall" showAs="Roger Marshall (R-KS)"/>
+					<akndiff:voter href="/us/senator/mcconnell" showAs="Mitch McConnell (R-KY)"/>
+					<akndiff:voter href="/us/senator/mccormick" showAs="David McCormick (R-PA)"/>
+					<akndiff:voter href="/us/senator/moran" showAs="Jerry Moran (R-KS)"/>
+					<akndiff:voter href="/us/senator/moreno" showAs="Bernie Moreno (R-OH)"/>
+					<akndiff:voter href="/us/senator/mullin" showAs="Markwayne Mullin (R-OK)"/>
+					<akndiff:voter href="/us/senator/murkowski" showAs="Lisa Murkowski (R-AK)"/>
+					<akndiff:voter href="/us/senator/ossoff" showAs="Jon Ossoff (D-GA)"/>
+					<akndiff:voter href="/us/senator/paul" showAs="Rand Paul (R-KY)"/>
+					<akndiff:voter href="/us/senator/peters" showAs="Gary Peters (D-MI)"/>
+					<akndiff:voter href="/us/senator/ricketts" showAs="Pete Ricketts (R-NE)"/>
+					<akndiff:voter href="/us/senator/risch" showAs="James Risch (R-ID)"/>
+					<akndiff:voter href="/us/senator/rosen" showAs="Jacky Rosen (D-NV)"/>
+					<akndiff:voter href="/us/senator/rounds" showAs="Mike Rounds (R-SD)"/>
+					<akndiff:voter href="/us/senator/rubio" showAs="Marco Rubio (R-FL)"/>
+					<akndiff:voter href="/us/senator/schmitt" showAs="Eric Schmitt (R-MO)"/>
+					<akndiff:voter href="/us/senator/scott" showAs="Rick Scott (R-FL)"/>
+					<akndiff:voter href="/us/senator/scott" showAs="Tim Scott (R-SC)"/>
+					<akndiff:voter href="/us/senator/shaheen" showAs="Jeanne Shaheen (D-NH)"/>
+					<akndiff:voter href="/us/senator/sheehy" showAs="Tim Sheehy (R-MT)"/>
+					<akndiff:voter href="/us/senator/slotkin" showAs="Elissa Slotkin (D-MI)"/>
+					<akndiff:voter href="/us/senator/sullivan" showAs="Dan Sullivan (R-AK)"/>
+					<akndiff:voter href="/us/senator/thune" showAs="John Thune (R-SD)"/>
+					<akndiff:voter href="/us/senator/tillis" showAs="Thomas Tillis (R-NC)"/>
+					<akndiff:voter href="/us/senator/tuberville" showAs="Tommy Tuberville (R-AL)"/>
+					<akndiff:voter href="/us/senator/warner" showAs="Mark Warner (D-VA)"/>
+					<akndiff:voter href="/us/senator/warnock" showAs="Raphael Warnock (D-GA)"/>
+					<akndiff:voter href="/us/senator/wicker" showAs="Roger Wicker (R-MS)"/>
+					<akndiff:voter href="/us/senator/young" showAs="Todd Young (R-IN)"/>
+				</akndiff:for>
+				<akndiff:against count="35">
+					<akndiff:voter href="/us/senator/alsobrooks" showAs="Angela Alsobrooks (D-MD)"/>
+					<akndiff:voter href="/us/senator/baldwin" showAs="Tammy Baldwin (D-WI)"/>
+					<akndiff:voter href="/us/senator/bennet" showAs="Michael Bennet (D-CO)"/>
+					<akndiff:voter href="/us/senator/blumenthal" showAs="Richard Blumenthal (D-CT)"/>
+					<akndiff:voter href="/us/senator/blunt-rochester" showAs="Lisa Blunt Rochester (D-DE)"/>
+					<akndiff:voter href="/us/senator/booker" showAs="Cory Booker (D-NJ)"/>
+					<akndiff:voter href="/us/senator/cantwell" showAs="Maria Cantwell (D-WA)"/>
+					<akndiff:voter href="/us/senator/coons" showAs="Christopher Coons (D-DE)"/>
+					<akndiff:voter href="/us/senator/duckworth" showAs="Tammy Duckworth (D-IL)"/>
+					<akndiff:voter href="/us/senator/durbin" showAs="Richard Durbin (D-IL)"/>
+					<akndiff:voter href="/us/senator/gillibrand" showAs="Kirsten Gillibrand (D-NY)"/>
+					<akndiff:voter href="/us/senator/heinrich" showAs="Martin Heinrich (D-NM)"/>
+					<akndiff:voter href="/us/senator/hickenlooper" showAs="John Hickenlooper (D-CO)"/>
+					<akndiff:voter href="/us/senator/hirono" showAs="Mazie Hirono (D-HI)"/>
+					<akndiff:voter href="/us/senator/kaine" showAs="Timothy Kaine (D-VA)"/>
+					<akndiff:voter href="/us/senator/kim" showAs="Andy Kim (D-NJ)"/>
+					<akndiff:voter href="/us/senator/king" showAs="Angus King (I-ME)"/>
+					<akndiff:voter href="/us/senator/klobuchar" showAs="Amy Klobuchar (D-MN)"/>
+					<akndiff:voter href="/us/senator/lujan" showAs="Ben Lujan (D-NM)"/>
+					<akndiff:voter href="/us/senator/markey" showAs="Edward Markey (D-MA)"/>
+					<akndiff:voter href="/us/senator/merkley" showAs="Jeff Merkley (D-OR)"/>
+					<akndiff:voter href="/us/senator/murphy" showAs="Christopher Murphy (D-CT)"/>
+					<akndiff:voter href="/us/senator/murray" showAs="Patty Murray (D-WA)"/>
+					<akndiff:voter href="/us/senator/padilla" showAs="Alex Padilla (D-CA)"/>
+					<akndiff:voter href="/us/senator/reed" showAs="John Reed (D-RI)"/>
+					<akndiff:voter href="/us/senator/sanders" showAs="Bernie Sanders (I-VT)"/>
+					<akndiff:voter href="/us/senator/schatz" showAs="Brian Schatz (D-HI)"/>
+					<akndiff:voter href="/us/senator/schiff" showAs="Adam Schiff (D-CA)"/>
+					<akndiff:voter href="/us/senator/schumer" showAs="Charles Schumer (D-NY)"/>
+					<akndiff:voter href="/us/senator/smith" showAs="Tina Smith (D-MN)"/>
+					<akndiff:voter href="/us/senator/van-hollen" showAs="Chris Van Hollen (D-MD)"/>
+					<akndiff:voter href="/us/senator/warren" showAs="Elizabeth Warren (D-MA)"/>
+					<akndiff:voter href="/us/senator/welch" showAs="Peter Welch (D-VT)"/>
+					<akndiff:voter href="/us/senator/whitehouse" showAs="Sheldon Whitehouse (D-RI)"/>
+					<akndiff:voter href="/us/senator/wyden" showAs="Ron Wyden (D-OR)"/>
+				</akndiff:against>
+				<akndiff:abstain/>
+			</akndiff:vote>
+
+			<akndiff:articleChange article="art_2" type="substitute">
+				<akndiff:old>8 U.S.C. 1226(c) Section 236(c) of the Immigration and Nationality Act () is amended— (1) in paragraph (1)— (A) or in subparagraph (C), by striking; (B) , or in subparagraph (D), by striking the comma at the end and inserting; and (C) by inserting after subparagraph (D) the following: (E) (i) is inadmissible under paragraph (6)(A), (6)(C), or (7) of section 212(a); and (ii) is charged with, is arrested for, is convicted of, admits having committed, or admits committing acts which constitute the essential elements of any burglary, theft, larceny, or shoplifting offense, ; (2) by redesignating paragraph (2) as paragraph (4); and (3) by inserting after paragraph (1) the following: (2) Definition burglary theft larceny shoplifting For purposes of paragraph (1)(E), the terms,,, andhave the meaning given such terms in the jurisdiction in which the acts occurred. (3) Detainer The Secretary of Homeland Security shall issue a detainer for an alien described in paragraph (1)(E) and, if the alien is not otherwise detained by Federal, State, or local officials, shall effectively and expeditiously take custody of the alien. .</akndiff:old>
+				<akndiff:new>8 U.S.C. 1226(c) Section 236(c) of the Immigration and Nationality Act () is amended— (1) in paragraph (1)— (A) or in subparagraph (C), by striking; (B) , or in subparagraph (D), by striking the comma at the end and inserting; and (C) by inserting after subparagraph (D) the following: (E) (i) is inadmissible under paragraph (6)(A), (6)(C), or (7) of section 212(a); and (ii) is charged with, is arrested for, is convicted of, admits having committed, or admits committing acts which constitute the essential elements of any burglary, theft, larceny, shoplifting, or assault of a law enforcement officer offense, or any crime that results in death or serious bodily injury to another person, ; (2) by redesignating paragraph (2) as paragraph (4); and (3) by inserting after paragraph (1) the following: (2) Definition burglary theft larceny shoplifting assault of a law enforcement officer serious bodily injury For purposes of paragraph (1)(E), the terms,,,,, andhave the meanings given such terms in the jurisdiction in which the acts occurred. (3) Detainer The Secretary of Homeland Security shall issue a detainer for an alien described in paragraph (1)(E) and, if the alien is not otherwise detained by Federal, State, or local officials, shall effectively and expeditiously take custody of the alien. .</akndiff:new>
+			</akndiff:articleChange>
+		</akndiff:changeSet>
+	</amendment>
+</akomaNtoso>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+	<amendment name="s269-119-senate-passage">
+		<meta>
+		<identification source="#parlamento-ai">
+			<FRBRWork>
+				<FRBRthis value="/us/bill/119/s/269/es"/>
+				<FRBRuri value="/us/bill/119/s/269"/>
+				<FRBRdate date="2025-09-19" name="passage"/>
+				<FRBRauthor href="/us/senate"/>
+				<FRBRcountry value="us"/>
+			</FRBRWork>
+			<FRBRExpression>
+				<FRBRthis value="/us/bill/119/s/269/es/eng@2025-09-19"/>
+				<FRBRuri value="/us/bill/119/s/269/eng@2025-09-19"/>
+				<FRBRdate date="2025-09-19" name="version"/>
+				<FRBRlanguage language="eng"/>
+			</FRBRExpression>
+			<FRBRManifestation>
+				<FRBRthis value="/us/bill/119/s/269/es/eng@2025-09-19/akn"/>
+				<FRBRuri value="/us/bill/119/s/269/eng@2025-09-19/akn"/>
+				<FRBRdate date="2026-02-23" name="generation"/>
+			</FRBRManifestation>
+		</identification>
+			<references>
+				<TLCOrganization eId="senate" href="/us/senate" showAs="United States Senate"/>
+			</references>
+		</meta>
+
+		<preface>
+			<longTitle><p><docTitle>Senate Passage — S. 269 Ending Improper Payments to Deceased People Act</docTitle></p></longTitle>
+			<p>Passed Senate by voice vote on September 19, 2025. Passed House by voice vote on January 12, 2026.</p>
+		</preface>
+
+		<amendmentBody>
+			<amendmentContent>
+				<p>S. 269 was amended to directly modify Section 205(r) of the Social Security Act instead of amending the Consolidated Appropriations Act. Added paragraph (12) requiring clear and convincing evidence before recording a death, and added subparagraph (C) for error notification.</p>
+			</amendmentContent>
+		</amendmentBody>
+
+		<akndiff:changeSet
+			base="/us/bill/119/s/269/eng@2025-01-28"
+			result="/us/bill/119/s/269/eng@2025-09-19">
+			<akndiff:articleChange article="art_2" type="substitute">
+				<akndiff:old>(a) In general Public Law 116–260 Section 801(a) of title VIII of division FF of the Consolidated Appropriations Act, 2021 () is amended by striking paragraph (7) and inserting the following: (7) by adding at the end the following paragraph: (11) The Commissioner of Social Security shall, to the extent feasible, provide information furnished to the Commissioner under paragraph (1) to the agency operating the Do Not Pay working system described in section 3354(c) of title 31, United States Code, for the authorized uses of the Do Not Pay working system through a cooperative arrangement with such agency, provided that the requirements of subparagraphs (A) and (B) of paragraph (3) are met with respect to such arrangement with such agency. . . (b) Conforming amendment Public Law 116–260 on the date that is 3 years after the date of enactment of this Act on December 28, 2026 Section 801(b)(2) of title VIII of division FF of the Consolidated Appropriations Act, 2021 () is amended by strikingand inserting. (c) Effective date The amendments made by this section shall take effect on December 28, 2026.</akndiff:old>
+				<akndiff:new>(a) In general 42 U.S.C. 405(r) Public Law 116–260 Section 205(r) of the Social Security Act (), as amended by section 801(a)(7) of title VIII of division FF of the Consolidated Appropriations Act, 2021 (), is amended by striking paragraph (11) and inserting the following: (11) The Commissioner of Social Security shall, to the extent feasible, provide information furnished to the Commissioner under paragraph (1) to the agency operating the Do Not Pay working system described in section 3354(c) of title 31, United States Code, for the authorized uses of the Do Not Pay working system to help prevent improper payments of, and support the recovery of improperly paid, benefits or other payments through a cooperative arrangement with such agency, provided that the requirements of subparagraphs (A) and (B) of paragraph (3) are met with respect to such arrangement with such agency. The Commissioner of Social Security and the agency operating the Do Not Pay working system shall, while the data described in the preceding sentence is being provided to the agency operating the Do Not Pay working system, enter into an agreement based upon an agreed upon methodology, which covers the proportional share of State death data costs, which the Commissioner of Social Security and the agency operating the Do Not Pay working system may periodically review. (12) The Commissioner of Social Security may not record a death to a record that may be provided under this section for any individual unless the Commissioner of Social Security has found it has clear and convincing evidence to support that the individual should be presumed to be deceased. . (b) Improving coordination regarding individuals incorrectly identified as deceased 42 U.S.C. 405(r)(7) Public Law 116–260 and ; and Section 205(r)(7) of the Social Security Act (), as added by section 801(a)(4) of title VIII of division FF of the Consolidated Appropriations Act, 2021 (), is amended by strikingat the end of subparagraph (A), by striking the period at the end of subparagraph (B) and inserting, and by adding at the end the following new subparagraph: (C) notify any agency that has a cooperative arrangement with the Commissioner of Social Security under paragraph (3) or (11) of the error. . (c) Effective date The amendments made by this section shall take effect on December 27, 2026.</akndiff:new>
+			</akndiff:articleChange>
+		</akndiff:changeSet>
+	</amendment>
+</akomaNtoso>

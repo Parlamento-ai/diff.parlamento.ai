@@ -1,0 +1,452 @@
+{
+    "actions": [
+        {
+            "actionCode": "E40000",
+            "actionDate": "2025-01-29",
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Became Public Law No: 119-1.",
+            "type": "President"
+        },
+        {
+            "actionCode": "36000",
+            "actionDate": "2025-01-29",
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Became Public Law No: 119-1.",
+            "type": "BecameLaw"
+        },
+        {
+            "actionCode": "E30000",
+            "actionDate": "2025-01-29",
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Signed by President.",
+            "type": "President"
+        },
+        {
+            "actionCode": "36000",
+            "actionDate": "2025-01-29",
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Signed by President.",
+            "type": "BecameLaw"
+        },
+        {
+            "actionCode": "E20000",
+            "actionDate": "2025-01-23",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Presented to President.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "28000",
+            "actionDate": "2025-01-23",
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Presented to President.",
+            "type": "President"
+        },
+        {
+            "actionCode": "H38310",
+            "actionDate": "2025-01-22",
+            "actionTime": "17:04:57",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Motion to reconsider laid on the table Agreed to without objection.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H37100",
+            "actionDate": "2025-01-22",
+            "actionTime": "17:04:55",
+            "recordedVotes": [
+                {
+                    "chamber": "House",
+                    "congress": 119,
+                    "date": "2025-01-22T22:04:55Z",
+                    "rollNumber": 23,
+                    "sessionNumber": 1,
+                    "url": "https://clerk.house.gov/evs/2025/roll023.xml"
+                }
+            ],
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "On passage Passed by the Yeas and Nays: 263 - 156 (Roll no. 23). (text: CR H277-278)",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "8000",
+            "actionDate": "2025-01-22",
+            "actionTime": "17:04:55",
+            "recordedVotes": [
+                {
+                    "chamber": "House",
+                    "congress": 119,
+                    "date": "2025-01-22T22:04:55Z",
+                    "rollNumber": 23,
+                    "sessionNumber": 1,
+                    "url": "https://clerk.house.gov/evs/2025/roll023.xml"
+                }
+            ],
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Passed/agreed to in House: On passage Passed by the Yeas and Nays: 263 - 156 (Roll no. 23). (text: CR H277-278)",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H30000",
+            "actionDate": "2025-01-22",
+            "actionTime": "16:58:40",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Considered as unfinished business. (consideration: CR H285-286)",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H8D000",
+            "actionDate": "2025-01-22",
+            "actionTime": "15:14:40",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "POSTPONED PROCEEDINGS - At the conclusion of the debate on S. 5, the Chair put the question on passage of the bill and by voice vote announced that the ayes had prevailed. Mr. Raskin demanded the yeas and nays and the Chair postponed further proceedings until a time to be announced.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H35000",
+            "actionDate": "2025-01-22",
+            "actionTime": "15:14:13",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "The previous question was ordered pursuant to the rule.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H8D000",
+            "actionDate": "2025-01-22",
+            "actionTime": "14:11:59",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "DEBATE - The House proceeded with one hour of debate on S. 5.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H8D000",
+            "actionDate": "2025-01-22",
+            "actionTime": "14:11:35",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Rule provides for consideration of H.R. 471 and S. 5. The resolution provides for consideration of H.R. 471 under a structured rule with one hour of general debate and one motion to recommit. Also, the resolution provides for consideration of S. 5 under a closed rule with one hour of general debate and one motion to commit.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H30000",
+            "actionDate": "2025-01-22",
+            "actionTime": "14:11:30",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Considered under the provisions of rule H. Res. 53. (consideration: CR H277-284)",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H1L220",
+            "actionDate": "2025-01-22",
+            "actionTime": "14:07:22",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Rule H. Res. 53 passed House.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H1L210",
+            "actionDate": "2025-01-21",
+            "actionTime": "19:28:38",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Rules Committee Resolution H. Res. 53 Reported to House. Rule provides for consideration of H.R. 471 and S. 5. The resolution provides for consideration of H.R. 471 under a structured rule with one hour of general debate and one motion to recommit. Also, the resolution provides for consideration of S. 5 under a closed rule with one hour of general debate and one motion to commit.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H15000",
+            "actionDate": "2025-01-21",
+            "actionTime": "14:54:53",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Held at the desk.",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "H14000",
+            "actionDate": "2025-01-21",
+            "actionTime": "14:03:37",
+            "sourceSystem": {
+                "code": 2,
+                "name": "House floor actions"
+            },
+            "text": "Received in the House.",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-21",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Message on Senate action sent to the House.",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-20",
+            "recordedVotes": [
+                {
+                    "chamber": "Senate",
+                    "congress": 119,
+                    "date": "2025-01-20T23:30:58Z",
+                    "rollNumber": 7,
+                    "sessionNumber": 1,
+                    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml"
+                }
+            ],
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Passed Senate with an amendment by Yea-Nay Vote. 64 - 35. Record Vote Number: 7. (text: CR S250-251)",
+            "type": "Floor"
+        },
+        {
+            "actionCode": "17000",
+            "actionDate": "2025-01-20",
+            "recordedVotes": [
+                {
+                    "chamber": "Senate",
+                    "congress": 119,
+                    "date": "2025-01-20T23:30:58Z",
+                    "rollNumber": 7,
+                    "sessionNumber": 1,
+                    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml"
+                }
+            ],
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Passed/agreed to in Senate: Passed Senate with an amendment by Yea-Nay Vote. 64 - 35. Record Vote Number: 7.",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-20",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Considered by Senate. (consideration: CR S246-251)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-17",
+            "recordedVotes": [
+                {
+                    "chamber": "Senate",
+                    "congress": 119,
+                    "date": "2025-01-17T15:47:29Z",
+                    "rollNumber": 5,
+                    "sessionNumber": 1,
+                    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00005.xml"
+                }
+            ],
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Cloture on the measure invoked in Senate by Yea-Nay Vote. 61 - 35. Record Vote Number: 5. (CR S240)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-17",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Considered by Senate. (consideration: CR S237-241)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-16",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Considered by Senate. (consideration: CR S198-218)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-15",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Cloture motion on the measure presented in Senate. (CR S182)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-15",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Considered by Senate. (consideration: CR S161-182)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-14",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Considered by Senate. (consideration: CR S130)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-13",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Measure laid before Senate by motion.",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-13",
+            "recordedVotes": [
+                {
+                    "chamber": "Senate",
+                    "congress": 119,
+                    "date": "2025-01-13T23:33:38Z",
+                    "rollNumber": 2,
+                    "sessionNumber": 1,
+                    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00002.xml"
+                }
+            ],
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Motion to proceed to consideration of measure agreed to in Senate by Yea-Nay Vote. 82 - 10. Record Vote Number: 2. (CR S87)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-13",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Motion to proceed to measure considered in Senate. (CR S83)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-09",
+            "recordedVotes": [
+                {
+                    "chamber": "Senate",
+                    "congress": 119,
+                    "date": "2025-01-09T20:32:41Z",
+                    "rollNumber": 1,
+                    "sessionNumber": 1,
+                    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00001.xml"
+                }
+            ],
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Cloture on the motion to proceed to the measure invoked in Senate by Yea-Nay Vote. 84 - 9. Record Vote Number: 1. (CR S73)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-09",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Motion to proceed to measure considered in Senate. (CR S70)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-08",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Cloture motion on the motion to proceed to the measure presented in Senate. (CR S46)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-08",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Motion to proceed to consideration of measure made in Senate. (CR S46)",
+            "type": "Floor"
+        },
+        {
+            "actionDate": "2025-01-07",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Read the second time. Placed on Senate Legislative Calendar under General Orders. Calendar No. 1.",
+            "type": "Calendars"
+        },
+        {
+            "actionDate": "2025-01-06",
+            "sourceSystem": {
+                "name": "Senate"
+            },
+            "text": "Introduced in the Senate. Read the first time. Placed on Senate Legislative Calendar under Read the First Time.",
+            "type": "Calendars"
+        },
+        {
+            "actionCode": "10000",
+            "actionDate": "2025-01-06",
+            "sourceSystem": {
+                "code": 9,
+                "name": "Library of Congress"
+            },
+            "text": "Introduced in Senate",
+            "type": "IntroReferral"
+        }
+    ],
+    "pagination": {
+        "count": 39
+    },
+    "request": {
+        "billNumber": "5",
+        "billType": "s",
+        "billUrl": "https://api.congress.gov/v3/bill/119/s/5?format=json",
+        "congress": "119",
+        "contentType": "application/json",
+        "format": "json"
+    }
+}

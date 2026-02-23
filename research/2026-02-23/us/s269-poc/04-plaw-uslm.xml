@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-stylesheet type="text/css" href="uslm.css"?><pLaw xmlns="http://schemas.gpo.gov/xml/uslm" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:lang="en" xsi:schemaLocation="http://schemas.gpo.gov/xml/uslm https://www.govinfo.gov/schemas/xml/uslm/uslm-2.0.17.xsd">
+
+<?I97 140 STAT. ?>
+<?I98 140 STAT. ?>
+<?I99 140 STAT. ?>
+<?I50 PUBLIC LAW 119–77—FEB. 10, 2026?>
+<?I51 PUBLIC LAW 119–77—FEB. 10, 2026?>
+<?I52 PUBLIC LAW 119–77—FEB. 10, 2026?>
+
+
+<!--Disclaimer: Legislative measures that include compacts or other non-standard data structures will require additional modeling and may contain inconsistencies in the converted USLM XML.-->
+<meta><dc:title>Public Law 119–77: To improve coordination between Federal and State agencies and the Do Not Pay working system.</dc:title>
+<dc:type>Public Law</dc:type><docNumber>77</docNumber>
+<citableAs>Public Law 119–77</citableAs><citableAs>140 Stat. 745</citableAs>
+<approvedDate>2026-02-10</approvedDate>
+<dc:date>2026-02-10</dc:date>
+<dc:publisher>United States Government Publishing Office</dc:publisher><dc:creator>National Archives and Records Administration</dc:creator><dc:creator>Office of the Federal Register</dc:creator><dc:format>text/xml</dc:format><dc:language>EN</dc:language><dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+<processedBy>GPO Locator to USLM Converter 4.15.31;Stage2.20250702</processedBy><processedDate>2026-02-19</processedDate>
+<congress>119</congress><publicPrivate>public</publicPrivate>
+</meta>
+<preface><centerRunningHead>PUBLIC LAW 119–77—FEB. 10, 2026</centerRunningHead>
+<page identifier="/us/stat/140/745">140 STAT. 745</page>
+<dc:type>Public Law</dc:type><docNumber>119–77</docNumber>
+<congress value="119">119th Congress</congress>
+</preface>
+<main>
+<longTitle>
+<docTitle class="centered fontsize12" style="-uslm-lc:I658005">An Act</docTitle>
+<officialTitle class="indentUp0 firstIndent1 fontsize8" style="-uslm-lc:I658011">To improve coordination between Federal and State agencies and the Do Not Pay working system.<sidenote><p class="centered fontsize8" id="x5a90a4be-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658076"><approvedDate date="2026-02-10">Feb. 10, 2026</approvedDate></p><p class="centered fontsize8" id="x5a90cbcf-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658076">[<ref href="/us/bill/119/s/269">S. 269</ref>]<?GPOvSpace 08?></p></sidenote></officialTitle>
+</longTitle>
+<enactingFormula style="-uslm-lc:I658120"><i>  Be it enacted by the Senate and House of Representa­tives of the United States of America in Congress assembled,</i></enactingFormula><sidenote><p class="leftAlign firstIndent0 fontsize8" id="x5a9119f0-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658180">Ending Improper Payments to Deceased People Act.</p></sidenote>
+<section id="d181e88" identifier="/us/pl/119/77/s1" style="-uslm-lc:I658146"><num class="bold" value="1">SECTION 1. </num><sidenote><p class="leftAlign firstIndent0 fontsize8" id="x5a920451-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658180"><ref href="/us/usc/t42/s1305">42 USC 1305 note</ref>.</p></sidenote><heading>SHORT TITLE.</heading><content style="-uslm-lc:I658120">  This Act may be cited as the “<shortTitle role="act">Ending Improper Payments to Deceased People Act</shortTitle>”.</content></section>
+<section id="d181e103" identifier="/us/pl/119/77/s2" style="-uslm-lc:I658141"><num class="fontsize12" value="2">SEC. 2. </num><heading>IMPROVING COORDINATION BETWEEN FEDERAL AND STATE AGENCIES AND THE DO NOT PAY WORKING SYSTEM.</heading><subsection class="firstIndent0 fontsize10" id="y5a951192-0db0-11f1-87b6-250b1bd21ae8" identifier="/us/pl/119/77/s2/a" role="instruction" style="-uslm-lc:I658120"><num class="fontsize10" style="-uslm-lc:emspace2" value="a">(a) </num><heading class="fontsize10"><inline class="smallCaps">In General</inline>.—</heading><content>Section 205(r) of the Social Security Act (<ref href="/us/usc/t42/s405/r">42 U.S.C. 405(r)</ref>), as amended by section 801(a)(7) of title VIII of division FF of the Consolidated Appropriations Act, 2021 (<ref href="/us/pl/116/260">Public Law 116–260</ref>), <amendingAction type="amend">is amended</amendingAction> by <amendingAction type="delete">striking</amendingAction> paragraph (11) and <amendingAction type="insert">inserting</amendingAction> the following:<quotedContent><paragraph class="indentUp0 firstIndent0 fontsize10" id="y5a95add3-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658120"><num class="fontsize10" style="-uslm-lc:emspace2" value="11">“(11) </num><content>The Commissioner of Social Security shall, to the extent feasible, provide information furnished to the Commissioner under paragraph (1) to the agency operating the Do Not Pay working system described in <ref href="/us/usc/t31/s3354/c">section 3354(c) of title 31, United States Code</ref>, for the authorized uses of the Do Not Pay working system to help prevent improper payments of, and support the recovery of improperly paid, benefits or other payments through a cooperative arrangement with such agency, provided that the requirements of subparagraphs (A) and (B) of paragraph (3) are met with respect to such arrangement with such agency. <sidenote><p class="leftAlign firstIndent0 fontsize8" id="x5a95add4-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658180">Contracts.</p></sidenote>The Commissioner of Social Security and the agency operating the Do Not Pay working system shall, while the data described in the preceding sentence is being provided to the agency operating the Do Not Pay working system, enter into an agreement based upon an agreed upon methodology, which covers the proportional share of State death data costs, which the Commissioner of Social Security and the agency operating the Do Not Pay working system may periodically review.</content></paragraph>
+<paragraph class="indentUp0 firstIndent0 fontsize10" id="y5a95d4e5-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658120"><num class="fontsize10" style="-uslm-lc:emspace2" value="12">“(12) </num><content>The Commissioner of Social Security may not record a death to a record that may be provided under this section for any individual unless the Commissioner of Social Security has found it has clear and convincing evidence to support that the individual should be presumed to be deceased.”</content></paragraph>
+</quotedContent>.</content></subsection>
+<subsection class="firstIndent0 fontsize10" id="y5a95d4e6-0db0-11f1-87b6-250b1bd21ae8" identifier="/us/pl/119/77/s2/b" role="instruction" style="-uslm-lc:I658120"><num class="fontsize10" style="-uslm-lc:emspace2" value="b">(b) </num><heading class="fontsize10"><inline class="smallCaps">Improving Coordination Regarding Individuals Incorrectly Identified as Deceased</inline>.—</heading><content>Section 205(r)(7) of the Social Security Act (<ref href="/us/usc/t42/s405/r/7">42 U.S.C. 405(r)(7)</ref>), as added by section 801(a)(4) of title VIII of division FF of the Consolidated Appropriations Act, 2021 (<ref href="/us/pl/116/260">Public Law 116–260</ref>), <amendingAction type="amend">is amended</amendingAction> by <amendingAction type="delete">striking</amendingAction> “<quotedText>and</quotedText>” at the end of subparagraph (A), by <amendingAction type="delete">striking</amendingAction> the period at the end of <page identifier="/us/stat/140/746">140 STAT. 746</page>
+subparagraph (B) and <amendingAction type="insert">inserting</amendingAction> “<quotedText>; and</quotedText>”, and by <amendingAction type="add">adding</amendingAction> at the end the following new subparagraph:<quotedContent><subparagraph class="fontsize10" id="y5a95fbf7-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658122"><num class="fontsize10" style="-uslm-lc:emspace2" value="C">“(C) </num><sidenote><p class="leftAlign firstIndent0 fontsize8" id="x5a962308-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658180">Notification.</p></sidenote><content>notify any agency that has a cooperative arrangement with the Commissioner of Social Security under paragraph (3) or (11) of the error.”</content></subparagraph>
+</quotedContent>.</content></subsection>
+<subsection class="firstIndent0 fontsize10" id="y5a962309-0db0-11f1-87b6-250b1bd21ae8" identifier="/us/pl/119/77/s2/c" style="-uslm-lc:I658120"><num class="fontsize10" style="-uslm-lc:emspace2" value="c">(c) </num><sidenote><p class="leftAlign firstIndent0 fontsize8" id="x5a96230a-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658180"><ref href="/us/usc/t42/s405">42 USC 405 note</ref>.</p></sidenote><heading class="fontsize10"><inline class="smallCaps">Effective Date</inline>.—</heading><content>The amendments made by this section shall take effect on December 27, 2026.</content></subsection>
+</section>
+<action>
+<actionDescription style="-uslm-lc:I658030">Approved</actionDescription> <date date="2026-02-10">February 10, 2026</date>.</action>
+</main>
+<legislativeHistory>
+<heading style="-uslm-lc:I658031"><inline class="underline">LEGISLATIVE HISTORY</inline>—<ref href="/us/bill/119/s/269">S. 269</ref> (<ref href="/us/bill/119/hr/2716">H.R. 2716</ref>):</heading>
+<note>
+<headingText style="-uslm-lc:I658032">HOUSE REPORTS:</headingText> ┐No. <ref href="/us/hrpt/119/426">119–426</ref> (<committee>Comm. on Ways and Means</committee>) accompanying <ref href="/us/bill/119/hr/2716">H.R. 2716</ref>.
+</note>
+<note>
+<heading style="-uslm-lc:I658032">CONGRESSIONAL RECORD:</heading>
+<subheading style="-uslm-lc:I658033">Vol. 171 (2025):</subheading>
+<p class="indentUp2 firstIndent-1" id="x5a964a1b-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658034">Sept. 19, considered and passed Senate.</p><subheading style="-uslm-lc:I658033">Vol. 172 (2026):</subheading>
+<p class="indentUp2 firstIndent-1" id="x5a964a1c-0db0-11f1-87b6-250b1bd21ae8" style="-uslm-lc:I658034">Jan. 12, considered and passed House.</p></note>
+</legislativeHistory>
+<endMarker>○</endMarker>
+</pLaw>
