@@ -109,9 +109,7 @@ export async function enrich(
 			});
 		} else {
 			try {
-				const voteYear = parseInt(config.voteDate.split('-')[0]);
-				const term = voteYear >= 2024 ? 10 : 9;
-				await buildVotes(meetingId, term, votesPath);
+				await buildVotes(meetingId, 0, votesPath);
 				if (existsSync(votesPath)) {
 					const xml = readFileSync(votesPath, 'utf-8');
 					const decisions = countTag(xml, 'section');
