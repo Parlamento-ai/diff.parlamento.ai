@@ -1,7 +1,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseAknDocument } from './xml-parser';
-import type { AknDocument, Boletin, TimelineEntry, SourceRef } from '$lib/types';
+import type { AknDocument, Boletin, ProcedureEvent, TimelineEntry, SourceRef } from '$lib/types';
 
 const RECETAS_DIR = 'research/2026-02-01/akndiff-poc';
 const LEY_21735_DIR = 'research/2026-02-18/ley-21735/akn';
@@ -9,9 +9,9 @@ const LEY_18045_DIR = 'research/2026-02-18/ley-18045/akn';
 const LEY_21670_DIR = 'research/2026-02-19/ley-21670/akn';
 const LEY_17370_DIR = 'research/2026-02-19/ley-17370/akn';
 const LEY_21120_DIR = 'research/2026-02-19/ley-21120/akn';
-const EU_DMA_DIR = 'pipeline/eu/data/digital-markets-act/akn';
-const EU_DSA_DIR = 'pipeline/eu/data/digital-services-act/akn';
-const EU_AI_ACT_DIR = 'pipeline/eu/data/artificial-intelligence-act/akn';
+const EU_DMA_DIR = 'pipeline/data/eu/digital-markets-act/akn';
+const EU_DSA_DIR = 'pipeline/data/eu/digital-services-act/akn';
+const EU_AI_ACT_DIR = 'pipeline/data/eu/artificial-intelligence-act/akn';
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
 	'empanadas-de-pino': `${RECETAS_DIR}/receta-empanadas`,
@@ -434,7 +434,7 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 		};
 		const cfg = euConfigs[boletinSlug];
 		if (cfg) {
-			const srcDir = `pipeline/eu/data/${cfg.slug}/sources`;
+			const srcDir = `pipeline/data/eu/${cfg.slug}/sources`;
 			const docs: Record<string, SourceRef[]> = {
 				original: [src(`${cfg.comLabel} Proposal`, `${srcDir}/${cfg.bill}-raw.xhtml`, 'text', `${eurlex}${cfg.bill}`)],
 				'amendment-1': [src('EP Legislative Resolution', `${srcDir}/${cfg.ep}-ep-amendments.html`, 'text', `${eurlex}${cfg.ep}`)],
@@ -496,12 +496,37 @@ export async function loadBoletin(slug: string): Promise<Boletin> {
 	const original = documents.find((d) => d.type === 'act' && fileToSlug(d.fileName) === 'original');
 	const title = original?.prefaceTitle || documents[0]?.prefaceTitle || slug;
 
-	return {
+	const boletin: Boletin = {
 		slug,
 		title,
 		documents,
 		timeline: buildTimeline(documents, slug)
 	};
+
+	// Load supplementary metadata if available (EU regulations)
+	const metadataPath = join(dirPath, '00-metadata.json');
+	try {
+		const metadataRaw = await readFile(metadataPath, 'utf-8');
+		const metadata = JSON.parse(metadataRaw);
+
+		if (metadata.procedureEvents) {
+			boletin.procedureEvents = (metadata.procedureEvents as ProcedureEvent[])
+				.sort((a, b) => a.date.localeCompare(b.date));
+		}
+
+		if (metadata.rapporteur) {
+			// Set rapporteur on any document that has a vote
+			for (const doc of boletin.documents) {
+				if (doc.changeSet?.vote) {
+					doc.changeSet.vote.rapporteur = metadata.rapporteur;
+				}
+			}
+		}
+	} catch {
+		// No metadata file — that's fine (Chile boletins, etc.)
+	}
+
+	return boletin;
 }
 
 export async function listBoletines(slugFilter?: string[]): Promise<{ slug: string; title: string; documentCount: number }[]> {

@@ -67,24 +67,33 @@
 				<span>{resultLabels[vote.result] || vote.result}</span>
 				<span class="font-mono font-normal opacity-75">{vote.forCount ?? vote.for.length}-{vote.againstCount ?? vote.against.length}-{vote.abstainCount ?? vote.abstain.length}</span>
 			</div>
-			{#if vote.for.length > 0}
-				<p class="text-xs mt-1 opacity-75">
-					<span class="font-medium">A favor:</span>
-					{vote.for.map(v => v.showAs).join(', ')}
-				</p>
+			{#if vote.rapporteur}
+				<p class="text-xs mt-1 opacity-75">Rapporteur: {vote.rapporteur}</p>
 			{/if}
-			{#if vote.against.length > 0}
-				<p class="text-xs mt-1 opacity-75">
-					<span class="font-medium">En contra:</span>
-					{vote.against.map(v => v.showAs).join(', ')}
-				</p>
-			{/if}
-			{#if vote.abstain.length > 0}
-				<p class="text-xs mt-1 opacity-75">
-					<span class="font-medium">Abstenciones:</span>
-					{vote.abstain.map(v => v.showAs).join(', ')}
-				</p>
-			{/if}
+			{#each [
+				{ label: 'A favor', voters: vote.for, count: vote.forCount },
+				{ label: 'En contra', voters: vote.against, count: vote.againstCount },
+				{ label: 'Abstenciones', voters: vote.abstain, count: vote.abstainCount }
+			] as group (group.label)}
+				{#if group.voters.length > 0}
+					{@const preview = group.voters.slice(0, 5).map(v => v.showAs).join(', ')}
+					{@const rest = group.voters.length - 5}
+					<p class="text-xs mt-1 opacity-75">
+						<span class="font-medium">{group.label} ({group.count ?? group.voters.length}):</span>
+						{preview}{#if rest > 0}<span class="text-[11px]">...</span>{/if}
+					</p>
+					{#if rest > 0}
+						<details class="text-xs opacity-75 ml-2">
+							<summary class="cursor-pointer text-[11px] text-gray-400 hover:text-gray-600">
+								ver {rest} más
+							</summary>
+							<p class="mt-1 max-h-40 overflow-y-auto text-[11px] leading-relaxed">
+								{group.voters.slice(5).map(v => v.showAs).join(', ')}
+							</p>
+						</details>
+					{/if}
+				{/if}
+			{/each}
 		</div>
 	{/if}
 

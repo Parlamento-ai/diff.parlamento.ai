@@ -40,6 +40,7 @@ export interface Vote {
 	forCount?: number;
 	againstCount?: number;
 	abstainCount?: number;
+	rapporteur?: string;
 }
 
 export interface ChangeSet {
@@ -84,11 +85,19 @@ export interface TimelineEntry {
 	sourceLabel?: string;
 }
 
+export interface ProcedureEvent {
+	date: string;
+	title: string;
+	institution: string;
+	type?: string;
+}
+
 export interface Boletin {
 	slug: string;
 	title: string;
 	documents: AknDocument[];
 	timeline: TimelineEntry[];
+	procedureEvents?: ProcedureEvent[];
 }
 
 export interface ReconstructedState {
