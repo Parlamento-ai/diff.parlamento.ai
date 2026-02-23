@@ -9,7 +9,8 @@ export const load: LayoutServerLoad = async ({ params }) => {
 			boletin: {
 				slug: boletin.slug,
 				title: boletin.title,
-				timeline: boletin.timeline
+				timeline: boletin.timeline,
+				procedureEvents: boletin.procedureEvents
 			}
 		};
 	} catch {

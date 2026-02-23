@@ -37,6 +37,13 @@ function applyChangeSet(law: LawState, changeSet: ChangeSet): Set<string> {
 			}
 			case 'insert': {
 				if (!change.newText) break;
+				// If an article with this eId already exists, treat as substitute
+				const existing = findArticle(law.sections, change.article);
+				if (existing) {
+					existing.content = change.newText;
+					changed.add(change.article);
+					break;
+				}
 				const newArticle: Article = {
 					eId: change.article,
 					heading: formatInsertedHeading(change.article),

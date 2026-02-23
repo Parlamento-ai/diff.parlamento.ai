@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Timeline from '$lib/components/timeline/Timeline.svelte';
+	import ProcedureTimeline from '$lib/components/timeline/ProcedureTimeline.svelte';
 	import { page } from '$app/state';
 
 	let { data, children } = $props();
@@ -31,6 +32,9 @@
 					{activeSlug}
 					boletinSlug={`pro/${data.boletin.slug}`}
 				/>
+				{#if data.boletin.procedureEvents?.length}
+					<ProcedureTimeline events={data.boletin.procedureEvents} />
+				{/if}
 			</div>
 		</aside>
 
@@ -38,7 +42,7 @@
 		<div class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-[0_-2px_8px_rgba(0,0,0,0.06)] p-2 z-10 overflow-x-auto">
 			<div class="flex gap-2 px-2">
 				{#each data.boletin.timeline as entry (entry.slug)}
-					{@const colors = { act: 'bg-addition-500', bill: 'bg-blue-500', amendment: 'bg-amber-500' }}
+					{@const colors = { act: 'bg-addition-500', bill: 'bg-blue-500', amendment: 'bg-amber-500', doc: 'bg-gray-500' }}
 					<a
 						href="/pro/{data.boletin.slug}/{entry.slug}"
 						data-sveltekit-noscroll

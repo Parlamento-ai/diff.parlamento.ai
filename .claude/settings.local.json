@@ -21,7 +21,19 @@
       "WebFetch(domain:2023.eswc-conferences.org)",
       "WebFetch(domain:en.wikipedia.org)",
       "Bash(npx svelte-kit sync:*)",
-      "Bash(npx vite build)"
+      "Bash(npx vite build)",
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "mcp__svelte__svelte-autofixer",
+      "Bash(npm run check:*)",
+      "Bash(npx svelte-check:*)",
+      "Bash(git diff:*)",
+      "Bash(npx tsc:*)",
+      "Bash(xargs:*)",
+      "Bash(npx tsx:*)",
+      "Bash(git status:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
