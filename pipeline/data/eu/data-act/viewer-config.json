@@ -1,0 +1,30 @@
+{
+  "slug": "data-act-regulation",
+  "sourcesDir": "sources",
+  "outputDir": "akn",
+  "billFile": "52022PC0068-bill-akn.xml",
+  "finalFile": "32023R2854-akn.xml",
+  "epAmendmentsFile": null,
+  "proposal": {
+    "celex": "52022PC0068",
+    "comYear": 2022,
+    "comNum": 68,
+    "date": "2022-02-23",
+    "title": "Harmonised rules on fair access to and use of data (Data Act) — COM(2022) 68 Proposal"
+  },
+  "final": {
+    "celex": "32023R2854",
+    "regYear": 2023,
+    "regNum": 2854,
+    "date": "2024-01-03",
+    "pubDate": "2024-01-03",
+    "title": "Regulation (EU) 2023/2854 — Harmonised rules on fair access to and use of data (Data Act)"
+  },
+  "legislativeProcedure": {
+    "procedure": "2022/0047(COD)",
+    "voteDate": "2023-11-09",
+    "voteFor": 481,
+    "voteAgainst": 31,
+    "voteAbstain": 71
+  }
+}

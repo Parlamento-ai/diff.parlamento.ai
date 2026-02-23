@@ -1,7 +1,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseAknDocument } from './xml-parser';
-import type { AknDocument, Boletin, TimelineEntry, SourceRef } from '$lib/types';
+import type { AknDocument, Boletin, ProcedureEvent, TimelineEntry, SourceRef } from '$lib/types';
 
 const RECETAS_DIR = 'research/2026-02-01/akndiff-poc';
 const LEY_21735_DIR = 'research/2026-02-18/ley-21735/akn';
@@ -9,9 +9,11 @@ const LEY_18045_DIR = 'research/2026-02-18/ley-18045/akn';
 const LEY_21670_DIR = 'research/2026-02-19/ley-21670/akn';
 const LEY_17370_DIR = 'research/2026-02-19/ley-17370/akn';
 const LEY_21120_DIR = 'research/2026-02-19/ley-21120/akn';
-const EU_DMA_DIR = 'pipeline/eu/data/digital-markets-act/akn';
-const EU_DSA_DIR = 'pipeline/eu/data/digital-services-act/akn';
-const EU_AI_ACT_DIR = 'pipeline/eu/data/artificial-intelligence-act/akn';
+const EU_DMA_DIR = 'pipeline/data/eu/digital-markets-act/akn';
+const EU_DSA_DIR = 'pipeline/data/eu/digital-services-act/akn';
+const EU_AI_ACT_DIR = 'pipeline/data/eu/artificial-intelligence-act/akn';
+const EU_CRA_DIR = 'pipeline/data/eu/horizontal-cybersecurity-requirements-for-products-with-digi/akn';
+const EU_DATA_ACT_DIR = 'pipeline/data/eu/data-act/akn';
 const US_S5_DIR = 'research/2026-02-23/us/s5-laken-riley/akn';
 const US_S269_DIR = 'research/2026-02-23/us/s269-poc/akn';
 const BOLETIN_DIRS: Record<string, string> = {
@@ -48,6 +50,10 @@ const BOLETIN_DIRS: Record<string, string> = {
 	'eu-dsa': EU_DSA_DIR,
 	// EU — AI Act (Regulation 2024/1689, procedure 2021/0106(COD))
 	'eu-ai-act': EU_AI_ACT_DIR,
+	// EU — Cyber Resilience Act (Regulation 2024/2847, procedure 2022/0272(COD))
+	'eu-cra': EU_CRA_DIR,
+	// EU — Data Act (Regulation 2023/2854, procedure 2022/0047(COD))
+	'eu-data-act': EU_DATA_ACT_DIR,
 	// US — S.5 Laken Riley Act (Public Law 119-1, 119th Congress)
 	'us-s5-laken-riley': US_S5_DIR,
 	// US — S.269 Ending Improper Payments (Public Law 119-77, 119th Congress)
@@ -233,7 +239,9 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 		const euCelex: Record<string, Record<string, string>> = {
 			'eu-dma': { original: '52020PC0842', 'amendment-1': '52021AP0499', final: '32022R1925' },
 			'eu-dsa': { original: '52020PC0825', 'amendment-1': '52022AP0014', final: '32022R2065' },
-			'eu-ai-act': { original: '52021PC0206', 'amendment-1': '52023AP0236', final: '32024R1689' }
+			'eu-ai-act': { original: '52021PC0206', 'amendment-1': '52023AP0236', final: '32024R1689' },
+			'eu-cra': { original: '52022PC0454', final: '32024R2847' },
+			'eu-data-act': { original: '52022PC0068', final: '32023R2854' }
 		};
 		const celex = euCelex[boletinSlug]?.[slug];
 		if (celex) return { url: `${eurlex}${celex}`, label: 'EUR-Lex' };
@@ -474,11 +482,13 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 		const euConfigs: Record<string, { slug: string; bill: string; ep: string; final: string; comLabel: string; regLabel: string }> = {
 			'eu-dma': { slug: 'digital-markets-act', bill: '52020PC0842', ep: '52021AP0499', final: '32022R1925', comLabel: 'COM(2020) 842', regLabel: 'Regulation (EU) 2022/1925' },
 			'eu-dsa': { slug: 'digital-services-act', bill: '52020PC0825', ep: '52022AP0014', final: '32022R2065', comLabel: 'COM(2020) 825', regLabel: 'Regulation (EU) 2022/2065' },
-			'eu-ai-act': { slug: 'artificial-intelligence-act', bill: '52021PC0206', ep: '52023AP0236', final: '32024R1689', comLabel: 'COM(2021) 206', regLabel: 'Regulation (EU) 2024/1689' }
+			'eu-ai-act': { slug: 'artificial-intelligence-act', bill: '52021PC0206', ep: '52023AP0236', final: '32024R1689', comLabel: 'COM(2021) 206', regLabel: 'Regulation (EU) 2024/1689' },
+			'eu-cra': { slug: 'horizontal-cybersecurity-requirements-for-products-with-digi', bill: '52022PC0454', ep: '52024AP0130', final: '32024R2847', comLabel: 'COM(2022) 454', regLabel: 'Regulation (EU) 2024/2847' },
+			'eu-data-act': { slug: 'data-act', bill: '52022PC0068', ep: '52023AP0069', final: '32023R2854', comLabel: 'COM(2022) 68', regLabel: 'Regulation (EU) 2023/2854' }
 		};
 		const cfg = euConfigs[boletinSlug];
 		if (cfg) {
-			const srcDir = `pipeline/eu/data/${cfg.slug}/sources`;
+			const srcDir = `pipeline/data/eu/${cfg.slug}/sources`;
 			const docs: Record<string, SourceRef[]> = {
 				original: [src(`${cfg.comLabel} Proposal`, `${srcDir}/${cfg.bill}-raw.xhtml`, 'text', `${eurlex}${cfg.bill}`)],
 				'amendment-1': [src('EP Legislative Resolution', `${srcDir}/${cfg.ep}-ep-amendments.html`, 'text', `${eurlex}${cfg.ep}`)],
@@ -586,12 +596,37 @@ export async function loadBoletin(slug: string): Promise<Boletin> {
 	const original = documents.find((d) => d.type === 'act' && fileToSlug(d.fileName) === 'original');
 	const title = original?.prefaceTitle || documents[0]?.prefaceTitle || slug;
 
-	return {
+	const boletin: Boletin = {
 		slug,
 		title,
 		documents,
 		timeline: buildTimeline(documents, slug)
 	};
+
+	// Load supplementary metadata if available (EU regulations)
+	const metadataPath = join(dirPath, '00-metadata.json');
+	try {
+		const metadataRaw = await readFile(metadataPath, 'utf-8');
+		const metadata = JSON.parse(metadataRaw);
+
+		if (metadata.procedureEvents) {
+			boletin.procedureEvents = (metadata.procedureEvents as ProcedureEvent[])
+				.sort((a, b) => a.date.localeCompare(b.date));
+		}
+
+		if (metadata.rapporteur) {
+			// Set rapporteur on any document that has a vote
+			for (const doc of boletin.documents) {
+				if (doc.changeSet?.vote) {
+					doc.changeSet.vote.rapporteur = metadata.rapporteur;
+				}
+			}
+		}
+	} catch {
+		// No metadata file — that's fine (Chile boletins, etc.)
+	}
+
+	return boletin;
 }
 
 export async function listBoletines(slugFilter?: string[]): Promise<{ slug: string; title: string; documentCount: number }[]> {

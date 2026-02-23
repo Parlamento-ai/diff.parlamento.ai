@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="communication">
+    <meta>
+      <identification source="#ep-opendata">
+        <FRBRWork>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/proc/2022-0272"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/proc/2022-0272"/>
+          <FRBRdate date="2022-11-09" name="procedure-start"/>
+          <FRBRauthor href="#com" as="#author"/>
+          <FRBRcountry value="eu"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/proc/2022-0272/en"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/proc/2022-0272/en"/>
+          <FRBRdate date="2026-02-23" name="snapshot"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/proc/2022-0272/en/xml"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/proc/2022-0272/en/xml"/>
+          <FRBRdate date="2026-02-23" name="transformation"/>
+          <FRBRauthor href="#poc-epdata-to-communication"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#ep-opendata">
+        <TLCOrganization eId="ep-opendata" href="https://data.europarl.europa.eu" showAs="European Parliament Open Data Portal"/>
+        <TLCOrganization eId="ep" href="https://data.europarl.europa.eu/org/EU_PARLIAMENT" showAs="European Parliament"/>
+        <TLCOrganization eId="com" href="http://publications.europa.eu/resource/authority/corporate-body/COM" showAs="European Commission"/>
+        <TLCOrganization eId="consil" href="http://publications.europa.eu/resource/authority/corporate-body/CONSIL" showAs="Council of the European Union"/>
+        <TLCOrganization eId="opoce" href="http://publications.europa.eu/resource/authority/corporate-body/OPOCE" showAs="Publications Office of the EU"/>
+        <TLCOrganization eId="itre" href="https://data.europarl.europa.eu/org/ITRE" showAs="Committee ITRE"/>
+        <TLCProcess eId="cod" href="https://data.europarl.europa.eu/def/ep-procedure-types/COD" showAs="Ordinary Legislative Procedure (COD)"/>
+      </references>
+      <lifecycle source="#ep-opendata">
+        <eventRef eId="evt_1" date="2022-11-09" source="#ep" type="amendment"/>
+        <eventRef eId="evt_2" date="2023-03-31" source="#ep" type="amendment"/>
+        <eventRef eId="evt_3" date="2023-03-31" source="#ep" type="amendment"/>
+        <eventRef eId="evt_4" date="2023-06-29" source="#ep" type="generation"/>
+        <eventRef eId="evt_5" date="2023-07-19" source="#ep" type="generation"/>
+        <eventRef eId="evt_6" date="2023-07-27" source="#ep" type="amendment"/>
+        <eventRef eId="evt_7" date="2023-09-11" source="#ep" type="amendment"/>
+        <eventRef eId="evt_8" date="2023-09-13" source="#ep" type="generation"/>
+        <eventRef eId="evt_9" date="2024-01-23" source="#ep" type="generation"/>
+        <eventRef eId="evt_10" date="2024-03-11" source="#ep" type="amendment"/>
+        <eventRef eId="evt_11" date="2024-03-12" source="#ep" type="generation"/>
+        <eventRef eId="evt_12" date="2024-03-12" source="#ep" type="amendment"/>
+        <eventRef eId="evt_13" date="2024-03-12" source="#ep" type="amendment"/>
+        <eventRef eId="evt_14" date="2024-10-23" source="#ep" type="amendment"/>
+        <eventRef eId="evt_15" date="2024-11-20" source="#opoce" type="amendment"/>
+      </lifecycle>
+    </meta>
+    <preface eId="preface">
+      <longTitle eId="longTitle">
+        <p><docType>Legislative Procedure Communication</docType></p>
+        <p><docProponent refersTo="#com">European Commission</docProponent></p>
+        <p>Procedure <docNumber>2022-0272(COD)</docNumber></p>
+        <p><docTitle>Horizontal cybersecurity requirements for products with digital elements and amending Regulation (EU) 2019/1020</docTitle></p>
+        <p>Type: <session refersTo="#cod">Ordinary Legislative Procedure (COD)</session></p>
+        <p>Current stage: First Reading</p>
+      </longTitle>
+    </preface>
+    <mainBody>
+      <section eId="sec_evt1">
+        <num>1</num>
+        <heading>Referral to Committee</heading>
+        <content eId="sec_evt1__content">
+          <p class="date"><date date="2022-11-09">9 November 2022</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="stage">First Reading</p>
+        </content>
+      </section>
+      <section eId="sec_evt2">
+        <num>2</num>
+        <heading>Committee tabling opinion</heading>
+        <content eId="sec_evt2__content">
+          <p class="date"><date date="2023-03-31">31 March 2023</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="stage">First Reading</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/IMCO-PA-742490">IMCO-PA-742490</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt3">
+        <num>3</num>
+        <heading>Committee Draft Report Tabled</heading>
+        <content eId="sec_evt3__content">
+          <p class="date"><date date="2023-03-31">31 March 2023</date></p>
+          <p class="institution"><organization refersTo="#ep">EP Committee</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="stage">First Reading</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/ITRE-PR-745538">ITRE-PR-745538</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt4">
+        <num>4</num>
+        <heading>Committee adopting opinion</heading>
+        <content eId="sec_evt4__content">
+          <p class="date"><date date="2023-06-29">29 June 2023</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Decision</p>
+          <p class="stage">First Reading</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/IMCO-AD-742490">IMCO-AD-742490</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt5">
+        <num>5</num>
+        <heading>Committee Report Adopted</heading>
+        <content eId="sec_evt5__content">
+          <p class="date"><date date="2023-07-19">19 July 2023</date></p>
+          <p class="institution"><organization refersTo="#ep">EP Committee</organization></p>
+          <p class="eventType">Decision</p>
+          <p class="stage">First Reading</p>
+        </content>
+      </section>
+      <section eId="sec_evt6">
+        <num>6</num>
+        <heading>Tabled for Plenary</heading>
+        <content eId="sec_evt6__content">
+          <p class="date"><date date="2023-07-27">27 July 2023</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="stage">First Reading</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0253">A-9-2023-0253</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt7">
+        <num>7</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt7__content">
+          <p class="date"><date date="2023-09-11">11 September 2023</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0308">C-9-2022-0308</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2023-0022">C-9-2023-0022</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0245">A-9-2023-0245</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0254">A-9-2023-0254</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2023-0050">C-9-2023-0050</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0365">C-9-2021-0365</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0261">A-9-2023-0261</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0251">A-9-2023-0251</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0256">A-9-2023-0256</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0367">C-9-2021-0367</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0314">C-9-2022-0314</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0263">A-9-2023-0263</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0244">A-9-2023-0244</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2023-0049">C-9-2023-0049</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0387">C-9-2022-0387</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0253">A-9-2023-0253</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0313">C-9-2022-0313</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0255">A-9-2023-0255</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2023-09-11-ITM-011">CRE-9-2023-09-11-ITM-011</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2023-09-11-ITM-011">PV-9-2023-09-11-ITM-011</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt8">
+        <num>8</num>
+        <heading>Plenary Endorses Interinstitutional Negotiations</heading>
+        <content eId="sec_evt8__content">
+          <p class="date"><date date="2023-09-13">13 September 2023</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Decision</p>
+        </content>
+      </section>
+      <section eId="sec_evt9">
+        <num>9</num>
+        <heading>Committee Approves Provisional Agreement</heading>
+        <content eId="sec_evt9__content">
+          <p class="date"><date date="2024-01-23">23 January 2024</date></p>
+          <p class="institution"><organization refersTo="#ep">EP Committee</organization></p>
+          <p class="eventType">Decision</p>
+          <p class="stage">First Reading</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/ITRE-AG-758004">ITRE-AG-758004</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt10">
+        <num>10</num>
+        <heading>Plenary Debate</heading>
+        <content eId="sec_evt10__content">
+          <p class="date"><date date="2024-03-11">11 March 2024</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="stage">First Reading</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0308">C-9-2022-0308</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0253">A-9-2023-0253</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2024-03-11-ITM-013">CRE-9-2024-03-11-ITM-013</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2024-03-11-ITM-013">PV-9-2024-03-11-ITM-013</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt11">
+        <num>11</num>
+        <heading>Plenary amend proposal</heading>
+        <content eId="sec_evt11__content">
+          <p class="date"><date date="2024-03-12">12 March 2024</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Decision</p>
+          <p class="stage">First Reading</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/TA-9-2024-0130">TA-9-2024-0130</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt12">
+        <num>12</num>
+        <heading>Plenary Vote</heading>
+        <content eId="sec_evt12__content">
+          <p class="date"><date date="2024-03-12">12 March 2024</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="stage">First Reading</p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2024-03-12-ITM-008-11">CRE-9-2024-03-12-ITM-008-11</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2024-03-12-ITM-008-11">PV-9-2024-03-12-ITM-008-11</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt13">
+        <num>13</num>
+        <heading>Plenary Vote Results</heading>
+        <content eId="sec_evt13__content">
+          <p class="date"><date date="2024-03-12">12 March 2024</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0253">A-9-2023-0253</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2024-03-12-VOT-ITM-011">PV-9-2024-03-12-VOT-ITM-011</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt14">
+        <num>14</num>
+        <heading>Act Signed</heading>
+        <content eId="sec_evt14__content">
+          <p class="date"><date date="2024-10-23">23 October 2024</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament / Council</organization></p>
+          <p class="eventType">Activity</p>
+        </content>
+      </section>
+      <section eId="sec_evt15">
+        <num>15</num>
+        <heading>Published in Official Journal</heading>
+        <content eId="sec_evt15__content">
+          <p class="date"><date date="2024-11-20">20 November 2024</date></p>
+          <p class="institution"><organization refersTo="#opoce">Publications Office</organization></p>
+          <p class="eventType">Activity</p>
+        </content>
+      </section>
+      <section eId="sec_evt16">
+        <num>16</num>
+        <heading>Participants</heading>
+        <content eId="sec_evt16__content">
+          <p class="participant"><role refersTo="#rapporteur_shadow">Rapporteur shadow</role>: <person refersTo="https://data.europarl.europa.eu/person/187917">187917</person> (THE-LEFT) — <date date="2022-10-11">11 October 2022</date></p>
+          <p class="participant"><role refersTo="#committee_opinion_associated">Committee opinion associated</role>: <organization refersTo="https://data.europarl.europa.eu/org/LIBE">LIBE</organization></p>
+          <p class="participant"><role refersTo="#rapporteur_shadow">Rapporteur shadow</role>: <person refersTo="https://data.europarl.europa.eu/person/239255">239255</person> — <date date="2022-10-11">11 October 2022</date></p>
+          <p class="participant"><role refersTo="#rapporteur_shadow">Rapporteur shadow</role>: <person refersTo="https://data.europarl.europa.eu/person/240478">240478</person> — <date date="2022-10-11">11 October 2022</date></p>
+          <p class="participant"><role refersTo="#rapporteur_opinion">Rapporteur opinion</role>: <person refersTo="https://data.europarl.europa.eu/person/96709">96709</person> (RENEW) for IMCO — <date date="2022-12-16">16 December 2022</date></p>
+          <p class="participant"><role refersTo="#rapporteur_shadow">Rapporteur shadow</role>: <person refersTo="https://data.europarl.europa.eu/person/96713">96713</person> (ECR) — <date date="2022-10-11">11 October 2022</date></p>
+          <p class="participant"><role refersTo="#committee_opinion_associated">Committee opinion associated</role>: <organization refersTo="https://data.europarl.europa.eu/org/IMCO">IMCO</organization></p>
+          <p class="participant"><role refersTo="#rapporteur">Rapporteur</role>: <person refersTo="https://data.europarl.europa.eu/person/124821">124821</person> (RENEW) for ITRE — <date date="2022-10-26">26 October 2022</date></p>
+          <p class="participant"><role refersTo="#committee_lead">Committee lead</role>: <organization refersTo="https://data.europarl.europa.eu/org/ITRE">ITRE</organization></p>
+          <p class="participant"><role refersTo="#rapporteur_shadow">Rapporteur shadow</role>: <person refersTo="https://data.europarl.europa.eu/person/124726">124726</person> (PPE) — <date date="2022-10-11">11 October 2022</date></p>
+          <p class="participant"><role refersTo="#rapporteur_shadow">Rapporteur shadow</role>: <person refersTo="https://data.europarl.europa.eu/person/124856">124856</person> (VERTS-ALE) — <date date="2022-10-11">11 October 2022</date></p>
+        </content>
+      </section>
+      <section eId="sec_evt17">
+        <num>17</num>
+        <heading>Documents Produced</heading>
+        <content eId="sec_evt17__content">
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/ITRE-PR-745538">ITRE-PR-745538</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/IMCO-AD-742490">IMCO-AD-742490</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/IMCO-PA-742490">IMCO-PA-742490</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/TA-9-2024-0130">TA-9-2024-0130</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/SP-2024-350-TA-9-2024-0130">SP-2024-350-TA-9-2024-0130</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/ITRE-AG-758004">ITRE-AG-758004</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2023-0253">A-9-2023-0253</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-10-2024-0143">C-10-2024-0143</ref></p>
+        </content>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>

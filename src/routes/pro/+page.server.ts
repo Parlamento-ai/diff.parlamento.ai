@@ -15,6 +15,8 @@ const DEV_SLUGS = [
 	'eu-dma',
 	'eu-dsa',
 	'eu-ai-act',
+	'eu-cra',
+	'eu-data-act',
 	'us-s5-laken-riley',
 	'us-s269-improper-payments'
 ];

@@ -21,6 +21,8 @@
 		'eu-dma': FlagEu,
 		'eu-dsa': FlagEu,
 		'eu-ai-act': FlagEu,
+		'eu-cra': FlagEu,
+		'eu-data-act': FlagEu,
 		'us-s5-laken-riley': FlagUs,
 		'us-s269-improper-payments': FlagUs
 	};
@@ -60,6 +62,8 @@
 	const euDma = $derived(data.boletines.find((b) => b.slug === 'eu-dma'));
 	const euDsa = $derived(data.boletines.find((b) => b.slug === 'eu-dsa'));
 	const euAiAct = $derived(data.boletines.find((b) => b.slug === 'eu-ai-act'));
+	const euCra = $derived(data.boletines.find((b) => b.slug === 'eu-cra'));
+	const euDataAct = $derived(data.boletines.find((b) => b.slug === 'eu-data-act'));
 
 	const usS5 = $derived(data.boletines.find((b) => b.slug === 'us-s5-laken-riley'));
 	const usS269 = $derived(data.boletines.find((b) => b.slug === 'us-s269-improper-payments'));
@@ -240,7 +244,7 @@
 	{/if}
 
 	<!-- EU — Regulaciones europeas -->
-	{#if euDma || euDsa || euAiAct}
+	{#if euDma || euDsa || euAiAct || euCra || euDataAct}
 		<section class="mb-14">
 			<div class="mb-5 max-w-lg mx-auto">
 				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
@@ -276,6 +280,22 @@
 						title={euAiAct.title}
 						documentCount={euAiAct.documentCount}
 						flag={flagMap[euAiAct.slug]}
+					/>
+				{/if}
+				{#if euCra}
+					<BoletinCard
+						slug={euCra.slug}
+						title={euCra.title}
+						documentCount={euCra.documentCount}
+						flag={flagMap[euCra.slug]}
+					/>
+				{/if}
+				{#if euDataAct}
+					<BoletinCard
+						slug={euDataAct.slug}
+						title={euDataAct.title}
+						documentCount={euDataAct.documentCount}
+						flag={flagMap[euDataAct.slug]}
 					/>
 				{/if}
 			</div>

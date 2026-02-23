@@ -1,0 +1,91 @@
+{
+  "procedure": "2022/0272(COD)",
+  "procedureType": "COD",
+  "procedureEvents": [
+    {
+      "date": "2022-09-15",
+      "title": "Commission Proposal",
+      "institution": "COM"
+    },
+    {
+      "date": "2022-10-11",
+      "title": "Participants",
+      "institution": ""
+    },
+    {
+      "date": "2022-11-09",
+      "title": "Referral to Committee",
+      "institution": "EP"
+    },
+    {
+      "date": "2023-03-31",
+      "title": "Committee tabling opinion",
+      "institution": "EP"
+    },
+    {
+      "date": "2023-03-31",
+      "title": "Committee Draft Report Tabled",
+      "institution": "EP"
+    },
+    {
+      "date": "2023-06-29",
+      "title": "Committee adopting opinion",
+      "institution": "EP"
+    },
+    {
+      "date": "2023-07-19",
+      "title": "Committee Report Adopted",
+      "institution": "EP"
+    },
+    {
+      "date": "2023-07-27",
+      "title": "Tabled for Plenary",
+      "institution": "EP"
+    },
+    {
+      "date": "2023-09-11",
+      "title": "Plenary activity",
+      "institution": "EP"
+    },
+    {
+      "date": "2023-09-13",
+      "title": "Plenary Endorses Interinstitutional Negotiations",
+      "institution": "EP"
+    },
+    {
+      "date": "2024-01-23",
+      "title": "Committee Approves Provisional Agreement",
+      "institution": "EP"
+    },
+    {
+      "date": "2024-03-11",
+      "title": "Plenary Debate",
+      "institution": "EP"
+    },
+    {
+      "date": "2024-03-12",
+      "title": "Plenary amend proposal",
+      "institution": "EP"
+    },
+    {
+      "date": "2024-03-12",
+      "title": "Plenary Vote",
+      "institution": "EP"
+    },
+    {
+      "date": "2024-03-12",
+      "title": "Plenary Vote Results",
+      "institution": "EP"
+    },
+    {
+      "date": "2024-10-23",
+      "title": "Act Signed",
+      "institution": "EP"
+    },
+    {
+      "date": "2024-11-20",
+      "title": "Published in Official Journal",
+      "institution": "OPOCE"
+    }
+  ]
+}

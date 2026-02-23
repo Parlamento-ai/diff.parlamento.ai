@@ -1,0 +1,18 @@
+═══════════════════════════════════════════════════════
+  EU AKN Pipeline: data-act
+  Procedure: 2022/0047(COD)
+  Title: Harmonised rules on fair access to and use of data (Data Act)
+═══════════════════════════════════════════════════════
+  [PASS]  1. Communication       25 events (cached)                  0.0s
+  [PASS]  2. Votes               472 decisions                       83.4s
+  [PASS]  3. Citation            118 agenda items (cached)           0.0s
+  [PASS]  4. Gazette             1 OJ entries (cached)               0.0s
+
+  Cross-checks:
+  [PASS]  Bill CELEX match
+  [PASS]  Final CELEX match
+  [PASS]  Articles 42→50 (growth OK)
+  [PASS]  Vote date MTG-PL-2023-11-09 (auto-discovered)
+
+  RESULT: 4 pass, 0 fail, 0 warn (83.6s)
+═══════════════════════════════════════════════════════

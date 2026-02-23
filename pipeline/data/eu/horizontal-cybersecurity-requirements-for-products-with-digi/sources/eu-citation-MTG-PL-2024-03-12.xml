@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="citation">
+    <meta>
+      <identification source="#ep-opendata">
+        <FRBRWork>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-12"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-12"/>
+          <FRBRdate date="2024-03-12" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRcountry value="eu"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-12/mul"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-12/mul"/>
+          <FRBRdate date="2024-03-12" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRlanguage language="mul"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-12/mul/xml"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-12/mul/xml"/>
+          <FRBRdate date="2026-02-23" name="transformation"/>
+          <FRBRauthor href="#poc-epdata-to-citation"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#ep-opendata">
+        <TLCOrganization eId="ep-opendata" href="https://data.europarl.europa.eu" showAs="European Parliament Open Data Portal"/>
+        <TLCOrganization eId="ep" href="https://data.europarl.europa.eu/org/EU_PARLIAMENT" showAs="European Parliament"/>
+      </references>
+    </meta>
+    <preface eId="preface">
+      <longTitle eId="longTitle">
+        <p><docType>Plenary Session Agenda</docType></p>
+        <p><docTitle>Plenary Session 2024-03-12</docTitle></p>
+        <p><date date="2024-03-12">2024-03-12</date></p>
+      </longTitle>
+    </preface>
+    <mainBody>
+      <section eId="sec_1">
+        <num>1</num>
+        <heading>A9-0033/2023 – Ciarán Cuffe – Provisional agreement – Am 68</heading>
+        <content eId="sec_1__content">
+          <p class="time"><time datetime="2024-03-12T13:30:58+01:00">13:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_2">
+        <num>2</num>
+        <heading>A9-0330/2023 – Maria Grapini – Provisional agreement – Am 36</heading>
+        <content eId="sec_2__content">
+          <p class="time"><time datetime="2024-03-12T13:41:38+01:00">13:41</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_3">
+        <num>3</num>
+        <heading>A9-0291/2023 – Vlad-Marius Botoş, Pascal Arimont – Provisional agreement – Am 118</heading>
+        <content eId="sec_3__content">
+          <p class="time"><time datetime="2024-03-12T13:41:14+01:00">13:41</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_4">
+        <num>4</num>
+        <heading>Article 1, § 1, point 3, point c Directive 96/53/EC; Article 4, paragraph 4 a, sub§ 1, point c</heading>
+        <content eId="sec_4__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_5">
+        <num>5</num>
+        <heading>Article 1, § 1, point 3, point c Directive 96/53/EC; Article 4, paragraph 4 a, sub§ 1, after point d</heading>
+        <content eId="sec_5__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_6">
+        <num>6</num>
+        <heading>Article 1, § 1, point 3, point c Directive 96/53/EC; Article 4, paragraph 4 a, sub§ 3</heading>
+        <content eId="sec_6__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_7">
+        <num>7</num>
+        <heading>Article 1, § 1, point 3, point d Directive 96/53/EC; Article 4, § 5, sub§ 1</heading>
+        <content eId="sec_7__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_8">
+        <num>8</num>
+        <heading>Article 1, § 1, point 3, point d Directive 96/53/EC; Article 4, § 5, sub§ 1</heading>
+        <content eId="sec_8__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_9">
+        <num>9</num>
+        <heading>Annex</heading>
+        <content eId="sec_9__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_10">
+        <num>10</num>
+        <heading>Recital 9</heading>
+        <content eId="sec_10__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_11">
+        <num>11</num>
+        <heading>After recital 19</heading>
+        <content eId="sec_11__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_12">
+        <num>12</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Commission proposal</heading>
+        <content eId="sec_12__content">
+          <p class="time"><time datetime="2024-03-12T13:24:43+01:00">13:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_13">
+        <num>13</num>
+        <heading>MTG-PL-2024-03-12-DEC-166075</heading>
+        <content eId="sec_13__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_14">
+        <num>14</num>
+        <heading>A9-0235/2023 – Sophia in 't Veld – Provisional agreement – Am 92</heading>
+        <content eId="sec_14__content">
+          <p class="time"><time datetime="2024-03-12T13:15:38+01:00">13:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_15">
+        <num>15</num>
+        <heading>A9-0026/2024 – Othmar Karas – Commission proposal and amendment</heading>
+        <content eId="sec_15__content">
+          <p class="time"><time datetime="2024-03-12T13:30:08+01:00">13:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_16">
+        <num>16</num>
+        <heading>A9-0211/2023 – Radan Kanev – Provisional agreement – Am 60</heading>
+        <content eId="sec_16__content">
+          <p class="time"><time datetime="2024-03-12T13:15:01+01:00">13:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_17">
+        <num>17</num>
+        <heading>A9-0423/2023 – Cláudia Monteiro de Aguiar – Commission proposal and amendments</heading>
+        <content eId="sec_17__content">
+          <p class="time"><time datetime="2024-03-12T13:41:59+01:00">13:41</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_18">
+        <num>18</num>
+        <heading>MTG-PL-2024-03-12-DEC-166173</heading>
+        <content eId="sec_18__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_19">
+        <num>19</num>
+        <heading>A9-0253/2023 – Nicola Danti – Provisional agreement – Am 2</heading>
+        <content eId="sec_19__content">
+          <p class="time"><time datetime="2024-03-12T13:33:13+01:00">13:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_20">
+        <num>20</num>
+        <heading>Joint statement</heading>
+        <content eId="sec_20__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_21">
+        <num>21</num>
+        <heading>Article 1, § 2, point k</heading>
+        <content eId="sec_21__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_22">
+        <num>22</num>
+        <heading>Article 1, § 2, point k</heading>
+        <content eId="sec_22__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_23">
+        <num>23</num>
+        <heading>Article 3, § 1, point h</heading>
+        <content eId="sec_23__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_24">
+        <num>24</num>
+        <heading>Article 3, § 1, point h</heading>
+        <content eId="sec_24__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_25">
+        <num>25</num>
+        <heading>Article 3, § 1, after point h</heading>
+        <content eId="sec_25__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_26">
+        <num>26</num>
+        <heading>Article 3, § 1, after point h</heading>
+        <content eId="sec_26__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_27">
+        <num>27</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_27__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_28">
+        <num>28</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_28__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_29">
+        <num>29</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_29__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_30">
+        <num>30</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_30__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_31">
+        <num>31</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_31__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_32">
+        <num>32</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_32__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_33">
+        <num>33</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_33__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_34">
+        <num>34</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_34__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_35">
+        <num>35</num>
+        <heading>Article 3, after § 3</heading>
+        <content eId="sec_35__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_36">
+        <num>36</num>
+        <heading>Article 3, after § 4</heading>
+        <content eId="sec_36__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_37">
+        <num>37</num>
+        <heading>Article 17, § 2</heading>
+        <content eId="sec_37__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_38">
+        <num>38</num>
+        <heading>Article 17, § 3, sub§ 1</heading>
+        <content eId="sec_38__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_39">
+        <num>39</num>
+        <heading>Article 17, § 3, sub§ 2</heading>
+        <content eId="sec_39__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_40">
+        <num>40</num>
+        <heading>Recital 32</heading>
+        <content eId="sec_40__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_41">
+        <num>41</num>
+        <heading>After recital 68</heading>
+        <content eId="sec_41__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_42">
+        <num>42</num>
+        <heading>A9-0056/2024 – Cyrus Engerer, Andrus Ansip – Commission proposal</heading>
+        <content eId="sec_42__content">
+          <p class="time"><time datetime="2024-03-12T13:40:42+01:00">13:40</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_43">
+        <num>43</num>
+        <heading>A9-0069/2024 – Tilly Metz – Commission proposal and amendments</heading>
+        <content eId="sec_43__content">
+          <p class="time"><time datetime="2024-03-12T13:27:29+01:00">13:27</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_44">
+        <num>44</num>
+        <heading>A9-0040/2024 – Cindy Franssen, Kira Marie Peter-Hansen – Draft Council decision</heading>
+        <content eId="sec_44__content">
+          <p class="time"><time datetime="2024-03-12T13:42:26+01:00">13:42</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_45">
+        <num>45</num>
+        <heading>A9-0216/2023 – Radan Kanev – Provisional agreement – Am 313</heading>
+        <content eId="sec_45__content">
+          <p class="time"><time datetime="2024-03-12T13:14:11+01:00">13:14</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_46">
+        <num>46</num>
+        <heading>Text as a whole</heading>
+        <content eId="sec_46__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_47">
+        <num>47</num>
+        <heading>MTG-PL-2024-03-12-DEC-166257</heading>
+        <content eId="sec_47__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_48">
+        <num>48</num>
+        <heading>A9-0033/2023 – Ciarán Cuffe – Rejection – Am 69</heading>
+        <content eId="sec_48__content">
+          <p class="time"><time datetime="2024-03-12T13:30:40+01:00">13:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_49">
+        <num>49</num>
+        <heading>Amendments by the committee responsible – put to the vote collectively</heading>
+        <content eId="sec_49__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_50">
+        <num>50</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Article 1, § 1, point 3, point b; Directive 96/53/EC; Article 4, paragraph 4, sub§ 2, point b – Am 62</heading>
+        <content eId="sec_50__content">
+          <p class="time"><time datetime="2024-03-12T13:20:32+01:00">13:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_51">
+        <num>51</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Article 1, § 1, point 3, point c; Directive 96/53/EC; Article 4, paragraph 4a, sub§ 1 – Am 63D</heading>
+        <content eId="sec_51__content">
+          <p class="time"><time datetime="2024-03-12T13:20:48+01:00">13:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_52">
+        <num>52</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Article 1, § 1, point 3, point c; Directive 96/53/EC; Article 4, paragraph 4a, sub§ 1, introductory part – Am 52</heading>
+        <content eId="sec_52__content">
+          <p class="time"><time datetime="2024-03-12T13:21:06+01:00">13:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_53">
+        <num>53</num>
+        <heading>Article 1, § 1, point 3, point c Directive 96/53/EC; Article 4, paragraph 4 a, sub§ 1, remainder</heading>
+        <content eId="sec_53__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_54">
+        <num>54</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Article 1, § 1, point 3, point c; Directive 96/53/EC; Article 4, paragraph 4a, § 1, after point d – Am 54</heading>
+        <content eId="sec_54__content">
+          <p class="time"><time datetime="2024-03-12T13:21:41+01:00">13:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_55">
+        <num>55</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Article 1, § 1, point 3, point c; Directive 96/53/EC; Article 4, paragraph 4a, sub§ 2 – Am 56D</heading>
+        <content eId="sec_55__content">
+          <p class="time"><time datetime="2024-03-12T13:22:04+01:00">13:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_56">
+        <num>56</num>
+        <heading>Article 1, § 1, point 3, point d Directive 96/53/EC; Article 4, § 5, sub§ 1</heading>
+        <content eId="sec_56__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_57">
+        <num>57</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Article 1, § 1, point 4; Directive 96/53/EC; Article 4 b – Am 58D= 65D=</heading>
+        <content eId="sec_57__content">
+          <p class="time"><time datetime="2024-03-12T13:23:29+01:00">13:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_58">
+        <num>58</num>
+        <heading>Annex</heading>
+        <content eId="sec_58__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_59">
+        <num>59</num>
+        <heading>Annex</heading>
+        <content eId="sec_59__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_60">
+        <num>60</num>
+        <heading>A9-0047/2024 – Isabel García Muñoz – Recital 9 – Am 61D</heading>
+        <content eId="sec_60__content">
+          <p class="time"><time datetime="2024-03-12T13:24:06+01:00">13:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_61">
+        <num>61</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_61__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_62">
+        <num>62</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_62__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_63">
+        <num>63</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_63__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_64">
+        <num>64</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_64__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_65">
+        <num>65</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_65__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_66">
+        <num>66</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_66__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_67">
+        <num>67</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_67__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_68">
+        <num>68</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_68__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_69">
+        <num>69</num>
+        <heading>Amendments by the committee responsible – put to the vote collectively</heading>
+        <content eId="sec_69__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_70">
+        <num>70</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_70__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_71">
+        <num>71</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_71__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_72">
+        <num>72</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_72__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_73">
+        <num>73</num>
+        <heading>A9-0056/2024 – Cyrus Engerer, Andrus Ansip – Amendments by the committee responsible – separate vote – Am 48</heading>
+        <content eId="sec_73__content">
+          <p class="time"><time datetime="2024-03-12T13:37:05+01:00">13:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_74">
+        <num>74</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_74__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_75">
+        <num>75</num>
+        <heading>A9-0056/2024 – Cyrus Engerer, Andrus Ansip – Amendments by the committee responsible – separate vote – Am 145</heading>
+        <content eId="sec_75__content">
+          <p class="time"><time datetime="2024-03-12T13:37:29+01:00">13:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_76">
+        <num>76</num>
+        <heading>Recital 32</heading>
+        <content eId="sec_76__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_77">
+        <num>77</num>
+        <heading>A9-0216/2023 – Radan Kanev – Rejection – Am 314</heading>
+        <content eId="sec_77__content">
+          <p class="time"><time datetime="2024-03-12T13:13:15+01:00">13:13</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_78">
+        <num>78</num>
+        <heading>A9-0216/2023 – Radan Kanev – Request to vote on the amendments to the draft legislative act</heading>
+        <content eId="sec_78__content">
+          <p class="time"><time datetime="2024-03-12T13:13:43+01:00">13:13</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_79">
+        <num>79</num>
+        <heading>Article 1, § 1, point 25; Directive 2010/75/EU; Article 70c, § 1, sub§1</heading>
+        <content eId="sec_79__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_80">
+        <num>80</num>
+        <heading>Article 1, § 1, point 25; Directive 2010/75/EU; Article 70c, § 1, sub§1</heading>
+        <content eId="sec_80__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_81">
+        <num>81</num>
+        <heading>Article 1, § 1, after point 25 Directive 2010/75/EU; Article 73, § 3</heading>
+        <content eId="sec_81__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_82">
+        <num>82</num>
+        <heading>Annex II; Directive 2010/75/EU; Annex 1a</heading>
+        <content eId="sec_82__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_83">
+        <num>83</num>
+        <heading>Annex II; Directive 2010/75/EU; Annex 1a</heading>
+        <content eId="sec_83__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_84">
+        <num>84</num>
+        <heading>Annex II; Directive 2010/75/EU; Annex 1a</heading>
+        <content eId="sec_84__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_85">
+        <num>85</num>
+        <heading>B9-0161/2024 – Motion for a resolution</heading>
+        <content eId="sec_85__content">
+          <p class="time"><time datetime="2024-03-12T13:07:48+01:00">13:07</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_86">
+        <num>86</num>
+        <heading>MTG-PL-2024-03-12-DEC-166503</heading>
+        <content eId="sec_86__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>

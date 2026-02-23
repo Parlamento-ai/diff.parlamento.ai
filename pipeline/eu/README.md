@@ -17,34 +17,76 @@ Given a EU procedure code (e.g. `2020/0374(COD)`), the pipeline:
 
 ```bash
 cd pipeline/eu
-node --experimental-strip-types run-pipeline.ts "YYYY/NNNN(COD)"
+node --experimental-strip-types process.ts "YYYY/NNNN(COD)"
 ```
 
 Examples:
 ```bash
 # Digital Markets Act
-node --experimental-strip-types run-pipeline.ts "2020/0374(COD)"
+node --experimental-strip-types process.ts "2020/0374(COD)"
 
 # Digital Services Act
-node --experimental-strip-types run-pipeline.ts "2020/0361(COD)"
+node --experimental-strip-types process.ts "2020/0361(COD)"
 
 # AI Act
-node --experimental-strip-types run-pipeline.ts "2021/0106(COD)"
+node --experimental-strip-types process.ts "2021/0106(COD)"
 ```
 
-## Pipeline steps (9)
+### Restart from a specific phase
 
-| # | Step | Script | Output |
-|---|------|--------|--------|
-| 1 | Download bill | `poc-cellar-to-bill.ts` | COM proposal XHTML → AKN `<bill>` |
-| 2 | Download formex | `poc-cellar-download-formex.ts` | Final regulation Formex XML |
-| 3 | Formex → AKN | `poc-formex-to-akn.ts` | Formex → AKN `<act>` |
-| 4 | EP amendments | `poc-eurlex-ep-amendments.ts` | EP position HTML → AKN `<amendment>` with changeSet |
-| 5 | Viewer XMLs | `generate-viewer-xmls.ts` | 3 viewer-ready files in `akn/` |
-| 6 | Communication | `poc-epdata-to-communication.ts` | Legislative events timeline (`<doc>`) |
-| 7 | Votes | `poc-epdata-to-vote.ts` | Roll-call votes with MEP names (`<doc>`) |
-| 8 | Citation | `poc-epdata-to-citation.ts` | Plenary agenda items (`<doc>`) |
-| 9 | Gazette | `poc-formex-toc-to-gazette.ts` | Official Journal TOC (often unavailable) |
+```bash
+# Re-run from phase 3 (download) using cached discovery
+node --experimental-strip-types process.ts "2020/0374(COD)" --phase=3
+
+# Only regenerate viewer XMLs (phase 5+)
+node --experimental-strip-types process.ts "2020/0374(COD)" --phase=5
+```
+
+### Standalone viewer XML generation
+
+```bash
+node --experimental-strip-types generate-viewer-xmls.ts <viewer-config.json>
+```
+
+## Architecture
+
+```
+pipeline/eu/
+├── process.ts              # Entry point with --phase=N restart
+├── types.ts                # Shared types (DiscoveredConfig, StepResult, etc.)
+├── generate-viewer-xmls.ts # CLI wrapper for standalone viewer generation
+├── lib/                    # Reusable modules (no CLI, exported functions)
+│   ├── http.ts             # fetchJson, sparqlQuery, downloadFile, TLS fix
+│   ├── helpers.ts          # Parsers, XML counters, formatters
+│   ├── xml-builder.ts      # XmlBuilder class + esc() (shared by EP modules)
+│   ├── cellar-bill.ts      # downloadBill(celex, outputPath)
+│   ├── cellar-formex.ts    # downloadFormex() + downloadFormexToc()
+│   ├── formex-to-akn.ts    # convertFormexToAkn(inputPath, outputPath)
+│   ├── ep-amendments.ts    # convertEpAmendments(htmlPath, outputPath, metadata)
+│   ├── ep-communication.ts # buildCommunication(procYear, procApiId, procType, outputPath)
+│   ├── ep-votes.ts         # buildVotes(meetingId, term, outputPath)
+│   ├── ep-citation.ts      # buildCitation(meetingId, outputPath)
+│   ├── formex-gazette.ts   # convertFormexTocToGazette(inputPath, outputPath)
+│   └── viewer-generator.ts # generateViewerXmls(configPath)
+└── phases/                 # Sequential pipeline phases
+    ├── 1-discover.ts       # EP API + CELLAR SPARQL → discovered-config.json
+    ├── 2-configure.ts      # Generate viewer-config.json + directories
+    ├── 3-download.ts       # Download bill, formex, EP HTML
+    ├── 4-convert.ts        # Formex → AKN, EP amendments HTML → AKN
+    ├── 5-generate.ts       # Viewer XMLs from sources
+    └── 6-enrich.ts         # Communication, votes, citation, gazette
+```
+
+## Pipeline phases (6)
+
+| Phase | Name | What it does | Cached artifact |
+|-------|------|-------------|-----------------|
+| 1 | Discover | EP Open Data + CELLAR SPARQL → metadata | `discovered-config.json` |
+| 2 | Configure | Generate viewer-config.json + create dirs | `viewer-config.json` |
+| 3 | Download | Download bill (AKN), formex (XML), EP HTML | `sources/*.xml`, `sources/*.html` |
+| 4 | Convert | Formex → AKN, EP amendments HTML → AKN | `sources/*-akn.xml`, `sources/ep-amendments-*.xml` |
+| 5 | Generate | Produce viewer-ready XMLs | `akn/01-*.xml`, `akn/02-*.xml`, `akn/03-*.xml` |
+| 6 | Enrich | Communication, votes, citation, gazette | `sources/eu-*.xml` |
 
 ## AKN types generated
 
@@ -158,8 +200,8 @@ Votes are matched from EP Open Data using 3 strategies:
 
 ## TLS note
 
-The EP Open Data API (`data.europarl.europa.eu`) has a TLS certificate that doesn't cover the bare domain. The pipeline includes a custom `checkServerIdentity` override for this host only.
+The EP Open Data API (`data.europarl.europa.eu`) has a TLS certificate that doesn't cover the bare domain. The pipeline includes a custom `checkServerIdentity` override in `lib/http.ts` for this host only.
 
 ## Caching
 
-All downloaded files are cached in `sources/`. Re-running skips existing files. Delete a file to force re-download.
+All downloaded files are cached in `sources/`. Re-running skips existing files. Delete a file to force re-download. Use `--phase=N` to restart from a specific phase without re-running earlier steps.

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <officialGazette name="oj-l-2023-2854">
+    <meta>
+      <identification source="#source">
+        <FRBRWork>
+          <FRBRthis value="http://data.europa.eu/eli/oj/l/2023/2854"/>
+          <FRBRuri value="http://data.europa.eu/eli/oj/l/2023/2854"/>
+          <FRBRdate date="2023-12-22" name="publication"/>
+          <FRBRauthor href="http://publications.europa.eu/resource/authority/corporate-body/EUOJ"/>
+          <FRBRcountry value="eu"/>
+          <FRBRnumber value="2854"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="http://data.europa.eu/eli/oj/l/2023/2854/en"/>
+          <FRBRuri value="http://data.europa.eu/eli/oj/l/2023/2854/en"/>
+          <FRBRdate date="2023-12-22" name="publication"/>
+          <FRBRauthor href="http://publications.europa.eu/resource/authority/corporate-body/EUOJ"/>
+          <FRBRlanguage language="en"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="http://data.europa.eu/eli/oj/l/2023/2854/en/xml"/>
+          <FRBRuri value="http://data.europa.eu/eli/oj/l/2023/2854/en/xml"/>
+          <FRBRdate date="2023-12-22" name="transformation"/>
+          <FRBRauthor href="#formex-toc-to-gazette-poc"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2023-12-22" name="Official Journal of the European Union" showAs="OJ L 2023/2854" number="L 2854">
+      </publication>
+      <references source="#source">
+        <TLCOrganization eId="source" href="http://publications.europa.eu/resource/authority/corporate-body/EUOJ" showAs="Publications Office of the European Union"/>
+      </references>
+    </meta>
+    <coverPage eId="coverPage">
+      <longTitle eId="longTitle">
+        <p>Official Journal of the European Union</p>
+        <p>L series, No 2854, Volume 66</p>
+        <p>20231222</p>
+      </longTitle>
+    </coverPage>
+    <collectionBody>
+      <container eId="sec_i">
+        <heading>I Legislative acts</heading>
+        <container eId="sec_i__subsec_regulations">
+          <heading>REGULATIONS</heading>
+          <component eId="comp_1">
+            <componentRef src="http://data.europa.eu/eli/oj/l/2023/2854" alt="L_202302854EN.doc.fmx.xml" showAs="OJ L 2023/2854"/>
+          </component>
+        </container>
+      </container>
+    </collectionBody>
+  </officialGazette>
+</akomaNtoso>
