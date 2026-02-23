@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="boletin-17370-17-amendment-1">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/17370-17/boletin-17370-17-amendment-1"/>
+          <FRBRuri value="/cl/boletin/17370-17"/>
+          <FRBRdate date="2026-01-21" name="trámite"/>
+          <FRBRauthor href="/cl/senado/sesion/2026-01-21"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/17370-17/boletin-17370-17-amendment-1/esp@2026-01-21"/>
+          <FRBRuri value="/cl/boletin/17370-17/esp@2026-01-21"/>
+          <FRBRdate date="2026-01-21" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/17370-17/boletin-17370-17-amendment-1/esp@2026-01-21/akn"/>
+          <FRBRuri value="/cl/boletin/17370-17/esp@2026-01-21/akn"/>
+          <FRBRdate date="2026-02-23" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>boletin-17370-17-amendment-1</docTitle></p>
+      </longTitle>
+      <p>1er Trámite: Senado</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Cambios al articulado.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/boletin/17370-17/esp@2025-01-30"
+      result="/cl/boletin/17370-17/esp@2026-01-21">
+      <akndiff:vote date="2026-01-21" result="rejected" source="/cl/senado/sesion/2026-01-21">
+        <akndiff:for>
+          <akndiff:voter href="/cl/senador/de-urresti-l." showAs="De Urresti L., Alfonso"/>
+          <akndiff:voter href="/cl/senador/insulza-s." showAs="Insulza S., José Miguel"/>
+          <akndiff:voter href="/cl/senador/ordenes-n." showAs="Ordenes N., Ximena"/>
+          <akndiff:voter href="/cl/senador/flores-g." showAs="Flores G., Iván"/>
+          <akndiff:voter href="/cl/senador/nunez-a." showAs="Núñez A., Daniel"/>
+          <akndiff:voter href="/cl/senador/pascual-g." showAs="Pascual G., Claudia"/>
+          <akndiff:voter href="/cl/senador/saavedra-c." showAs="Saavedra C., Gastón"/>
+          <akndiff:voter href="/cl/senador/walker-p." showAs="Walker P., Matías"/>
+          <akndiff:voter href="/cl/senador/araya-g." showAs="Araya G., Pedro"/>
+          <akndiff:voter href="/cl/senador/quintana-l." showAs="Quintana L., Jaime"/>
+          <akndiff:voter href="/cl/senador/campillai-r." showAs="Campillai R., Fabiola"/>
+          <akndiff:voter href="/cl/senador/vodanovic-r." showAs="Vodanovic R., Paulina"/>
+          <akndiff:voter href="/cl/senador/espinoza-s." showAs="Espinoza S., Fidel"/>
+          <akndiff:voter href="/cl/senador/provoste-c." showAs="Provoste C., Yasna"/>
+          <akndiff:voter href="/cl/senador/lagos-w." showAs="Lagos W., Ricardo"/>
+          <akndiff:voter href="/cl/senador/rincon-g." showAs="Rincón G., Ximena"/>
+          <akndiff:voter href="/cl/senador/latorre-r." showAs="Latorre R., Juan Ignacio"/>
+          <akndiff:voter href="/cl/senador/castro-g." showAs="Castro G., Juan Luis"/>
+          <akndiff:voter href="/cl/senador/sepulveda-o." showAs="Sepúlveda O., Alejandra"/>
+          <akndiff:voter href="/cl/senador/velasquez-n." showAs="Velásquez N., Esteban"/>
+          <akndiff:voter href="/cl/senador/de-rementeria-v." showAs="De Rementería V., Tomás"/>
+        </akndiff:for>
+        <akndiff:against>
+          <akndiff:voter href="/cl/senador/moreira-b." showAs="Moreira B., Iván"/>
+          <akndiff:voter href="/cl/senador/ossandon-i." showAs="Ossandón I., Manuel José"/>
+          <akndiff:voter href="/cl/senador/durana-s." showAs="Durana S., José Miguel"/>
+          <akndiff:voter href="/cl/senador/edwards-s." showAs="Edwards S., Rojo"/>
+          <akndiff:voter href="/cl/senador/gatica-b." showAs="Gatica B., María José"/>
+          <akndiff:voter href="/cl/senador/keitel-b." showAs="Keitel B., Sebastián"/>
+          <akndiff:voter href="/cl/senador/kusanovic-g." showAs="Kusanovic G., Alejandro"/>
+          <akndiff:voter href="/cl/senador/macaya-d." showAs="Macaya D., Javier"/>
+          <akndiff:voter href="/cl/senador/coloma-c." showAs="Coloma C., Juan Antonio"/>
+          <akndiff:voter href="/cl/senador/garcia-r." showAs="García R., José"/>
+          <akndiff:voter href="/cl/senador/kuschel-s." showAs="Kuschel S., Carlos Ignacio"/>
+          <akndiff:voter href="/cl/senador/chahuan-c." showAs="Chahuán C., Francisco"/>
+          <akndiff:voter href="/cl/senador/ebensperger-o." showAs="Ebensperger O., Luz Eliana"/>
+          <akndiff:voter href="/cl/senador/prohens-e." showAs="Prohens E., Rafael"/>
+          <akndiff:voter href="/cl/senador/sandoval-p." showAs="Sandoval P., David"/>
+          <akndiff:voter href="/cl/senador/nunez-u." showAs="Núñez U., Paulina"/>
+          <akndiff:voter href="/cl/senador/sanhueza-d." showAs="Sanhueza D., Gustavo"/>
+          <akndiff:voter href="/cl/senador/cruz-coke-c." showAs="Cruz-Coke C., Luciano"/>
+          <akndiff:voter href="/cl/senador/pugh-o." showAs="Pugh O., Kenneth"/>
+          <akndiff:voter href="/cl/senador/castro-p." showAs="Castro P., Juan"/>
+          <akndiff:voter href="/cl/senador/galilea-v." showAs="Galilea V., Rodrigo"/>
+          <akndiff:voter href="/cl/senador/aravena-a." showAs="Aravena A., Carmen Gloria"/>
+          <akndiff:voter href="/cl/senador/kast-s." showAs="Kast S., Felipe"/>
+          <akndiff:voter href="/cl/senador/van-rysselberghe-h." showAs="Van Rysselberghe H., Enrique"/>
+        </akndiff:against>
+        <akndiff:abstain/>
+      </akndiff:vote>
+      <akndiff:articleChange article="art_2" type="substitute">
+        <akndiff:old>Suspensión de la pena. El Tribunal, deberá a petición de parte o de
+oficio disponer la suspensión de la ejecución de una pena privativa de libertad, y mientras
+dure el impedimento:
+a) Al condenado que presente una enfermedad mental;
+b) Al condenado que padezca otras enfermedades, cuando fuese de temer un peligro
+próximo por la ejecución en la cárcel para la vida del condenado;
+c) Al condenado que se encuentre en un estado físico incompatible con la ejecución en la
+cárcel o con la organización o infraestructura del establecimiento penitenciario.</akndiff:old>
+        <akndiff:new>- Reclusión domiciliaria total. La reclusión
+domiciliaria total consiste en la sustitución del cumplimiento de la pena privativa
+de libertad por el encierro en el domicilio del condenado, durante las
+veinticuatro horas del día.
+En ningún caso podrá fijarse como domicilio aquel en el que
+actualmente residiere la víctima del delito por el cual la persona hubiere sido
+condenada.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_3" type="substitute">
+        <akndiff:old>El Tribunal, deberá a petición de parte o de oficio disponer el
+cumplimiento de la pena penal impuesta en una modalidad de reclusión domiciliaria
+total, por el tiempo que reste de condena:
+a) Al interno enfermo cuando la privación de la libertad en el establecimiento carcelario,
+por cualquier motivo, le impida recuperarse o tratar adecuadamente su enfermedad
+crónica;
+b) Al interno que padezca una enfermedad incurable en período terminal;
+
+
+c) Al interno discapacitado cuando la privación de la libertad en el establecimiento
+carcelario es inadecuada por su condición implicándole un trato indigno, inhumano o
+cruel;
+d) Al interno mayor, cumplido 80 (ochenta) años o más, como resultado de la suma de su
+edad real, más los años que efectivamente ha estado privado de libertad en un recinto
+penal, teniendo una edad mínima de 70 (setenta) años.</akndiff:old>
+        <akndiff:new>- Cumplimiento alternativo de la pena. El Tribunal
+deberá, a petición de parte o de oficio, disponer el cumplimiento de la pena
+penal impuesta en una modalidad de reclusión domiciliaria total, por el tiempo
+que reste de condena:
+a) Al interno enfermo cuando la privación de la libertad en el
+establecimiento carcelario, por cualquier motivo, le impida recuperarse o tratar
+adecuadamente su enfermedad crónica;
+b) Al interno que padezca una enfermedad incurable en período
+terminal;
+c) Al interno discapacitado cuando la privación de la libertad en el
+establecimiento carcelario es inadecuada por su condición implicándole un trato
+indigno, inhumano o cruel;
+d) Al interno mayor, cumplido 80 (ochenta) años o más, como
+resultado de la suma de su edad real, más los años que efectivamente ha
+estado privado de libertad en un recinto penal, teniendo una edad mínima de
+70 (setenta) años.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_4" type="substitute">
+        <akndiff:old>Para el objeto de cumplir con lo dispuesto en los artículos anteriores,
+el Tribunal deberá a petición de parte o de oficio acompañar al proceso los antecedentes
+médicos que certifiquen la enfermedad, discapacidad o deterioro físico y mental que
+justifiquen la suspensión de la pena o la sustitución de la misma por la pena de reclusión
+domiciliaria total, los que deberán comprender aquellos emitidos por el Ministerio de
+Salud; así como los antecedentes que acrediten el aplazamiento transitorio de la pena o
+la sustitución de la misma, en el caso de la letra d) del artículo cuarto.
+La reclusión domiciliaria total importa la privación total de libertad en el domicilio del
+interno, y con las condiciones que establezca el Tribunal, y bajo el monitoreo constante
+de la autoridad penitenciaria, sin perjuicio de las autorizaciones que a petición de parte
+o de oficio, se otorguen para que el interno acuda a sus controles médicos, y dejando
+siempre a salvo los casos de urgencia médica vital, las que deberán ser informadas al
+tribunal al día siguiente hábil de ocurrido el infortunio.
+Mientras dure la reclusión domiciliaria total, será también competente para conocer en
+los términos de los artículos 10, 95 y 466 del Código Procesal Penal, el Juzgado de
+Garantía correspondiente al domicilio del interno.
+La resolución acerca de la concesión, denegación o revocación de cualquiera de las
+medidas contempladas en los artículos segundo y tercero de esta ley, será apelable en
+ambos efectos, dentro del plazo de cinco días. El recurso gozará de preferencia para su
+vista y fallo”.</akndiff:old>
+        <akndiff:new>- Procedimiento. Para el objeto de cumplir con lo
+dispuesto en los artículos anteriores, el Tribunal deberá, a petición de parte o
+de oficio, acompañar al proceso los antecedentes médicos que certifiquen la
+enfermedad, discapacidad o deterioro físico y mental que justifiquen la
+sustitución de la pena por la de reclusión domiciliaria total, los que deberán
+
+
+
+comprender aquellos emitidos por el Ministerio de Salud; así como los
+antecedentes que acrediten el aplazamiento transitorio de la pena o la
+sustitución de la misma, en el caso de la letra d) del artículo tercero.
+La reclusión domiciliaria total importa la privación total de libertad en
+el domicilio del interno, con las condiciones que establezca el Tribunal, y bajo el
+monitoreo constante de la autoridad penitenciaria, sin perjuicio de las
+autorizaciones que a petición de parte o de oficio, se otorguen para que el
+interno acuda a sus controles médicos, y dejando siempre a salvo los casos de
+urgencia médica vital, las que deberán ser informadas al tribunal al día
+siguiente hábil de ocurrido el infortunio.
+Mientras dure la reclusión domiciliaria total, será también
+competente para conocer en los términos de los artículos 10, 95 y 466 del
+Código Procesal Penal, el Juzgado de Garantía correspondiente al domicilio del
+interno.
+La resolución acerca de la concesión, denegación o revocación de
+cualquiera de las medidas contempladas en el artículo tercero de esta ley, será
+apelable en ambos efectos, dentro del plazo de cinco días. El recurso gozará
+de preferencia para su vista y fallo.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_1" type="insert">
+        <akndiff:new>- Principios. Los siguientes cinco principios deberán
+seguirse en el cumplimiento de la pena penal:
+a) La pena penal ofrece la respuesta para los responsables de
+hechos ilícitos culpables y tiene una función eminentemente preventiva;
+b) La prevención general o la retribución no deben tomarse en
+cuenta en la fase de ejecución de la pena;
+
+
+
+c) La vida en prisión debe ser lo más parecida posible a las
+condiciones generales de vida existentes en el medio libre;
+d) Los efectos dañinos del encarcelamiento deben ser
+contrarrestados por la autoridad penitenciaria;
+e) La ejecución de la pena deberá orientarse hacia una eventual
+reintegración del prisionero en la sociedad libre, incluyéndose en esta, la
+posibilidad de tratar adecuadamente, en tiempo y forma, su enfermedad, ya
+sea por el sistema público o privado, y el derecho inalienable a recuperar la
+salud, y si ello no fuese posible, a morir afuera de la cárcel.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

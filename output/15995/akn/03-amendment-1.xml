@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="boletin-15995-02-amendment-1">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-amendment-1"/>
+          <FRBRuri value="/cl/boletin/15995-02"/>
+          <FRBRdate date="2024-03-11" name="trámite"/>
+          <FRBRauthor href="/cl/camara/sesion/2024-03-11"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-amendment-1/esp@2024-03-11"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2024-03-11"/>
+          <FRBRdate date="2024-03-11" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-amendment-1/esp@2024-03-11/akn"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2024-03-11/akn"/>
+          <FRBRdate date="2026-02-23" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>boletin-15995-02-amendment-1</docTitle></p>
+      </longTitle>
+      <p>1er Trámite: C. Diputados</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Cambios al articulado.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/boletin/15995-02/esp@2023-06-05"
+      result="/cl/boletin/15995-02/esp@2024-03-11">
+
+      <akndiff:articleChange article="art_1" type="substitute">
+        <akndiff:old>Sustitúyase en el inciso tercero del artículo 6 de la Ley N°17.798, sobre Control de Armas, cuyo texto refundido, coordinado y sistematizado ha sido fijado por el Decreto N°400 de 13 de abril de 1978 del Ministerio de Defensa Nacional, la palabra “tercer” por la palabra “primer”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+José Miguel Castro Bascuñán
+
+Diputado</akndiff:old>
+        <akndiff:new>- Modifícase el artículo 6 de la ley N°17.798, sobre Control de Armas, cuyo texto refundido, coordinado y sistematizado ha sido fijado por el decreto N°400, de 1977, del Ministerio de Defensa Nacional, en el siguiente sentido:
+
+
+
+1. En el inciso tercero:
+
+a) Elimínase la expresión “, los aspirantes a oficiales de Carabineros ni”.
+
+b) Sustitúyese la expresión “las Escuelas de Carabineros y” por las palabras “la Escuela”.
+
+
+
+2. Agréganse los siguientes incisos cuarto y quinto, nuevos, pasando el actual inciso cuarto a ser inciso sexto:
+
+“Tampoco requerirán este permiso los aspirantes a oficiales de Carabineros que estén cursando tercer y cuarto año en la Escuela de Carabineros de Chile, ni los carabineros alumnos que estén cursando segundo año en la Escuela de Formación de Carabineros y sus grupos de formación a nivel nacional, durante la realización de los periodos de práctica que determinen las respectivas mallas curriculares. Sin perjuicio de lo anterior, para que dichos aspirantes a oficiales y carabineros alumnos se encuentren exentos del permiso de porte de armas a que se refiere este artículo, deberán haber aprobado todos los cursos de tiro policial correspondientes a los semestres anteriores al que se encontraren cursando. Estas prácticas profesionales tendrán únicamente la finalidad de contribuir a las labores de prevención y mantención del orden público.
+
+Los aspirantes a oficiales de la Policía de Investigaciones a los que se refiere el inciso tercero y los aspirantes a oficiales de Carabineros y los carabineros alumnos a los que se refiere el inciso cuarto tendrán la calidad de funcionarios de la Policía de Investigaciones o de Carabineros de Chile, respectivamente, en las actuaciones que realicen durante la realización de los periodos de práctica que determinen las respectivas mallas curriculares.”.</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

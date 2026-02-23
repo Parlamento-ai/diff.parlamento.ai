@@ -1,0 +1,150 @@
+{
+  "boletin": "17370-17",
+  "titulo": "Que regula la suspensión y el cumplimiento alternativo de penas privativas de libertad, para condenados que indica",
+  "estado": "En tramitación",
+  "iniciativa": "Moción",
+  "camaraOrigen": "Senado",
+  "mocion": {
+    "iddocto": "18004",
+    "tipodoc": "mensaje_mocion"
+  },
+  "tramites": [
+    {
+      "fecha": "2025-01-30",
+      "descripcion": "Ingreso de proyecto .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2025-03-04",
+      "descripcion": "Cuenta de proyecto . Pasa a Comisión de Derechos Humanos, Nacionalidad y Ciudadanía. Se remite el proyecto a la Corte Suprema.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "34548",
+          "tipodoc": "ofic",
+          "descripcion": "Consulta a la Corte Suprema N° 44-25"
+        }
+      ]
+    },
+    {
+      "fecha": "2025-03-04",
+      "descripcion": "Oficio N° a la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2025-03-04",
+      "descripcion": "Oficio N° 44-25 a la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2025-05-28",
+      "descripcion": "Cuenta oficio N° 153-2025 de la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "34824",
+          "tipodoc": "ofic",
+          "descripcion": "Respuesta de la Corte Suprema N° 153-2025"
+        }
+      ]
+    },
+    {
+      "fecha": "2025-09-02",
+      "descripcion": "La Sala acuerda autorizar a la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía para discutir en general y en particular este proyecto de ley, con ocasión del trámite reglamentario de primer informe.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "27646",
+          "tipodoc": "info",
+          "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía"
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-05",
+      "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2025-11-05",
+      "descripcion": "Cuenta de primer informe de comisión .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2026-01-21",
+      "descripcion": "Discusión general . Queda pendiente Solicitud de segunda discusión. Se da por terminada la primera.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    }
+  ],
+  "votaciones": [
+    {
+      "fecha": "2026-01-21",
+      "sesion": "92/373",
+      "si": 21,
+      "no": 24,
+      "abstencion": 0,
+      "resultado": "rejected",
+      "votantes": {
+        "for": [
+          "De Urresti L., Alfonso",
+          "Insulza S., José Miguel",
+          "Ordenes N., Ximena",
+          "Flores G., Iván",
+          "Núñez A., Daniel",
+          "Pascual G., Claudia",
+          "Saavedra C., Gastón",
+          "Walker P., Matías",
+          "Araya G., Pedro",
+          "Quintana L., Jaime",
+          "Campillai R., Fabiola",
+          "Vodanovic R., Paulina",
+          "Espinoza S., Fidel",
+          "Provoste C., Yasna",
+          "Lagos W., Ricardo",
+          "Rincón G., Ximena",
+          "Latorre R., Juan Ignacio",
+          "Castro G., Juan Luis",
+          "Sepúlveda O., Alejandra",
+          "Velásquez N., Esteban",
+          "De Rementería V., Tomás"
+        ],
+        "against": [
+          "Moreira B., Iván",
+          "Ossandón I., Manuel José",
+          "Durana S., José Miguel",
+          "Edwards S., Rojo",
+          "Gatica B., María José",
+          "Keitel B., Sebastián",
+          "Kusanovic G., Alejandro",
+          "Macaya D., Javier",
+          "Coloma C., Juan Antonio",
+          "García R., José",
+          "Kuschel S., Carlos Ignacio",
+          "Chahuán C., Francisco",
+          "Ebensperger O., Luz Eliana",
+          "Prohens E., Rafael",
+          "Sandoval P., David",
+          "Núñez U., Paulina",
+          "Sanhueza D., Gustavo",
+          "Cruz-Coke C., Luciano",
+          "Pugh O., Kenneth",
+          "Castro P., Juan",
+          "Galilea V., Rodrigo",
+          "Aravena A., Carmen Gloria",
+          "Kast S., Felipe",
+          "Van Rysselberghe H., Enrique"
+        ],
+        "abstain": []
+      }
+    }
+  ]
+}

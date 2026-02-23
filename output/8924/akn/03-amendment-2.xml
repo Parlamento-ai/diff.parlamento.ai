@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="boletin-8924-07-amendment-2">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/8924-07/boletin-8924-07-amendment-2"/>
+          <FRBRuri value="/cl/boletin/8924-07"/>
+          <FRBRdate date="2018-01-23" name="trámite"/>
+          <FRBRauthor href="/cl/camara/sesion/2018-01-23"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/8924-07/boletin-8924-07-amendment-2/esp@2018-01-23"/>
+          <FRBRuri value="/cl/boletin/8924-07/esp@2018-01-23"/>
+          <FRBRdate date="2018-01-23" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/8924-07/boletin-8924-07-amendment-2/esp@2018-01-23/akn"/>
+          <FRBRuri value="/cl/boletin/8924-07/esp@2018-01-23/akn"/>
+          <FRBRdate date="2026-02-23" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>boletin-8924-07-amendment-2</docTitle></p>
+      </longTitle>
+      <p>2do Trámite: C. Diputados</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Cambios al articulado.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/boletin/8924-07/esp@2017-06-14"
+      result="/cl/boletin/8924-07/esp@2018-01-23">
+
+      <akndiff:articleChange article="art_7" type="repeal">
+        <akndiff:old>DE LA ORDEN DEL TRIBUNAL PARA EFECTUAR LA RECTIFICACIÓN DE LA PARTIDA DE NACIMIENTO Y LOS DOCUMENTOS DE IDENTIFICACIÓN. Finalizado el procedimiento seguido ante el juez con competencia en materias de familia en el caso de la solicitud  efectuada por una persona sujeta a vínculo matrimonial no disuelto o sin tal vínculo, pero cuya solicitud haya sido objeto de oposición de conformidad a lo establecido en el inciso quinto del artículo 4°de esta ley, el tribunal ordenará en la misma sentencia al Servicio de Registro Civil e Identificación la rectificación de la partida de nacimiento y las subinscripciones al margen. Una vez practicadas éstas, se emitirán los nuevos documentos de identidad para el o la solicitante, de conformidad a lo establecido en el Título IV de esta ley.
+
+
+Título IV
+
+De la rectificación de la partida de nacimiento y documentos de identificación en razón de la identidad de género y sus efectos</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="trans_1" type="repeal">
+        <akndiff:old>Por el sólo ministerio de esta ley, todas las personas que a la entrada de su vigencia hayan obtenido su cambio de nombre por razón de identidad de género, en conformidad a las disposiciones de las leyes N°s 17.344 y 4.808, sin haber obtenido la rectificación de su sexo, podrán recurrir al órgano competente para obtener la rectificación de su sexo. 
+
+Se seguirá en este caso lo dispuesto en los artículos 4° y siguientes de esta ley para efectos de la tramitación y dictación de la resolución, ya sea judicial o administrativa.
+
+	ARTÍCULO SEGUNDO. La presente ley comenzará a regir un año después de su publicación en el Diario Oficial.&quot;.
+
+
+- - -
+
+
+
+
+Acordado en sesiones celebradas el 21 de diciembre, el 18 de enero y 22 de marzo de 2017, con la asistencia de los Honorables Senadores señor Alejandro Navarro Brain (Presidente), señora Jacqueline Van Rysselberghe Herrera y señores Juan Pablo Letelier Morel, Manuel Antonio Matta Aragay (Pedro Araya Guerrero), y Manuel José Ossandón Irarrázabal.
+
+En sesiones 5 y 12 de abril, 3 y 10 de mayo de 2017, con la asistencia de los Honorables Senadores señora Jacqueline Van Rysselberghe Herrera (Presidenta) y señores Pedro Araya Guerrero, Juan Pablo Letelier Morel (Alfonso De Urresti Longton), Alejandro Navarro Brain, Manuel José Ossandón Irarrázabal. 
+
+
+
+Sala de la Comisión, a 26 de mayo de 2017.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+XIMENA BELMAR STEGMANN
+	                  Secretario
+
+
+
+RESUMEN EJECUTIVO
+
+NUEVO SEGUNDO INFORME COMPLEMENTARIO DE LA COMISIÓN DE DERECHOS HUMANOS, NACIONALIDAD Y CIUDADANÍA, RECAÍDO EN EL PROYECTO DE LEY, EN PRIMER TRÁMITE CONSTITUCIONAL, QUE RECONOCE Y DA PROTECCIÓN AL DERECHO A LA IDENTIDAD DE GÉNERO
+(BOLETÍN N°8.924-07)</akndiff:old>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_1" type="substitute">
+        <akndiff:old>CONCEPTO DE IDENTIDAD DE GÉNERO Y DERECHOS QUE RECONOCE ESTA LEY. Se entenderá por identidad de género la convicción personal e interna del género, tal como la persona se percibe a sí misma, la cual puede corresponder o no con el sexo verificado en el acta de inscripción del nacimiento.
+
+Lo dispuesto en el inciso anterior podrá o no involucrar la modificación de la apariencia o de la función corporal a través de tratamientos médicos, quirúrgicos u otros análogos, siempre que sea libremente escogida. Asimismo, podrá o no corresponder a otras expresiones de género, tales como la vestimenta, el modo de hablar y los modales.
+
+Conforme a lo anterior, toda persona tiene derecho:
+
+a) Al reconocimiento y protección de lo que esta ley denomina identidad de género. 
+
+b) Al libre desarrollo de su persona, conforme a su identidad de género, permitiendo su mayor realización espiritual y material posible.
+
+c) A ser tratada en conformidad con su identidad de género y, en particular, a ser reconocida e identificada de ese modo en los instrumentos públicos y privados que acreditan su identidad respecto del nombre y sexo. Asimismo, las imágenes, fotografías, soportes digitales, informáticos o cualquier otro instrumento con los que las personas figuran en los registros oficiales deben ser coincidentes con dicha identidad.
+
+Toda norma o procedimiento de naturaleza administrativa público y/o privada, o judicial deberá respetar el derecho a la identidad de género de las personas. Ninguna norma o procedimiento podrá limitar, restringir, excluir, suprimir o imponer requisitos no contemplados para el ejercicio de este derecho.
+
+No será condición necesaria para el ejercicio de los derechos que emanan del reconocimiento del derecho a la identidad de género haberse sometido a algún tipo de intervención y/o tratamiento modificatorio de la apariencia.</akndiff:old>
+        <akndiff:new>Lo ha reemplazado por el siguiente:
+
+&quot;ARTÍCULO 1°.- DERECHO A LA IDENTIDAD DE GÉNERO Y LA RECTIFICACIÓN DE SEXO Y NOMBRE REGISTRAL. El derecho a la identidad de género consiste en la facultad de toda persona cuya identidad de género no coincida con su sexo y nombre registral, de solicitar la rectificación de éstos.
+
+Para efectos de esta ley, se entenderá por identidad de género la convicción personal e interna de ser hombre o mujer, tal como la persona se percibe a sí misma, la cual puede corresponder o no con el sexo y nombre verificados en el acta de inscripción del nacimiento.
+
+Lo dispuesto en los incisos anteriores podrá o no involucrar la modificación de la apariencia o de la función corporal a través de tratamientos médicos, quirúrgicos u otros análogos, siempre que sea libremente escogida.&quot;.
+
+
+****
+
+- Ha intercalado como artículo 2, nuevo, el siguiente: 
+
+&quot;ARTÍCULO 2°.- GARANTÍA DERIVADA DE LA IDENTIDAD DE GÉNERO. Toda persona tiene derecho a ser reconocida e identificada conforme a su identidad de género, una vez realizada la rectificación que regula esta ley, en los instrumentos públicos y privados que acrediten su identidad respecto del nombre y sexo, en conformidad con lo dispuesto en esta ley. Asimismo, las imágenes, fotografías, soportes digitales, datos informáticos o cualquier otro instrumento con los que las personas figuren en los registros oficiales deberán ser coincidentes con dicha identidad. 
+
+Ninguna norma o procedimiento podrá limitar, restringir, excluir, suprimir o imponer otros requisitos que los contemplados por esta ley para el ejercicio de este derecho. No será condición para ejercer el derecho a la rectificación del nombre y sexo haberse sometido a algún tipo de intervención o tratamiento modificatorio de la apariencia. Lo anterior es sin perjuicio del ejercicio legítimo de derechos fundamentales.&quot;.   
+
+****
+- Ha consultado como artículo 3, nuevo, el siguiente: 
+
+&quot;ARTÍCULO 3°.- GARANTÍAS DERIVADAS DEL DERECHO A LA IDENTIDAD DE GÉNERO. Toda persona tiene derecho:
+a) Al reconocimiento y protección de lo que esta ley denomina identidad y expresión de género. Se entenderá por expresión de género la manifestación externa de los rasgos culturales que permiten identificar a una persona como masculina o femenina conforme a los patrones considerados propios de cada género por una determinada sociedad en un momento histórico determinado.
+b) Al libre desarrollo de su persona, conforme a su identidad y expresión de género, permitiendo su mayor realización espiritual y material posible. 
+c) A ser reconocida e identificada conforme a su identidad y expresión de género en los instrumentos públicos y privados que acrediten su identidad respecto del nombre y sexo, en conformidad con lo dispuesto en esta ley. Asimismo, las imágenes, fotografías, soportes digitales, datos informáticos o cualquier otro instrumento con los que las personas figuren en los registros oficiales deberán ser coincidentes con dicha identidad. 
+
+Ninguna norma o procedimiento podrá limitar, restringir, excluir, suprimir o imponer otros requisitos que los contemplados por esta ley para el ejercicio de este derecho. No será condición para el reconocimiento del derecho a la identidad de género haberse sometido a algún tipo de intervención o tratamiento modificatorio de la apariencia.
+
+Lo anterior es sin perjuicio del ejercicio legítimo de los derechos fundamentales reconocidos en la Constitución Política de la República y los tratados internacionales de derechos humanos ratificados por Chile.&quot;.
+
+****
+
+- Ha consultado como artículo 4, nuevo, el siguiente: 
+
+&quot;ARTÍCULO 4°.- PRINCIPIOS DEL DERECHO A LA IDENTIDAD DE GÉNERO. El derecho a la identidad de género reconoce, entre otros, los siguientes principios:
+a) Principio de la no patologización: El reconocimiento y la protección de la identidad de género considera como un aspecto primordial, el derecho de toda persona a no ser tratada como enferma, ni se considere la diferencia entre el sexo biológico y la identidad de género como una patología. 
+b) Principio de la no discriminación arbitraria: Los órganos del Estado garantizarán que en el ejercicio del derecho a la identidad de género, ninguna persona sea afectada por distinciones, exclusiones o restricciones que carezcan de justificación razonable, en los términos del artículo 2 de la ley N° 20.609, que establece medidas contra la discriminación.
+c) Principio de la confidencialidad: Toda persona tiene derecho a que en los procedimientos seguidos ante autoridad administrativa o jurisdiccional, se le resguarde el carácter reservado de los antecedentes considerados como datos sensibles, en los términos señalados por la letra g) del artículo 2 de la ley N° 19.628, sobre Protección de la Vida Privada.
+d) Principio de la dignidad en el trato: Los órganos del Estado deben respetar la dignidad intrínseca de las personas, emanadas de la naturaleza humana, como un eje esencial de los derechos fundamentales reconocidos por la Constitución Política de la República y por los tratados internacionales sobre derechos humanos ratificados por Chile y que se encuentren vigentes.
+Toda persona tiene derecho a recibir por parte de los órganos del Estado un trato amable y respetuoso en todo momento y circunstancia.
+e) Principio del interés superior del niño: Los órganos del Estado garantizan a todos los niños, niñas y adolescentes la máxima satisfacción en el ejercicio y goce pleno y efectivo de sus derechos y garantías, en los términos del artículo 3 de la Convención sobre los Derechos del Niño.
+f) Principio de la autonomía progresiva: Todo niño, niña o adolescente podrá ejercer sus derechos por sí mismo, en consonancia con la evolución de sus facultades, su edad y madurez.
+
+El padre, madre, representante legal o quien tenga legalmente el cuidado personal del niño, niña o adolescente, deberá prestarle orientación y dirección en el ejercicio de los derechos que contempla esta ley.&quot;.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_2" type="substitute">
+        <akndiff:old>DEL EJERCICIO DEL DERECHO DE LAS PERSONAS A SER IDENTIFICADAS CONFORME A SU IDENTIDAD DE GÉNERO.  Toda persona mayor de edad podrá obtener la rectificación del sexo y nombre con que aparezca individualizada en su partida de nacimiento, en sus documentos de identificación y en cualquier otro instrumento público o privado, cuando éstos no coincidan con su identidad de género.
+
+En el caso de la solicitud presentada por persona con vínculo matrimonial no disuelto, se estará a lo dispuesto en el Título III de la presente ley.  
+
+
+La copia de la resolución administrativa o de la sentencia judicial, según sea el caso, que concede la rectificación, será antecedente suficiente para que en su solo mérito cualquier entidad, pública o privada, rectifique los documentos a los que se refiere esta ley.</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 5, modificado como sigue:
+Inciso primero 
+- Ha suprimido la frase &quot;mayor de edad&quot;.
+- Ha intercalado entre las palabras &quot;podrá&quot; y &quot;obtener&quot; la expresión &quot;, por una sola vez,&quot;.
+- Ha agregado entre las palabras &quot;rectificación&quot; y &quot;del&quot; la frase &quot;, a través de los procedimientos que regule esta ley,&quot;.
+- Ha agregado a continuación de la palabra &quot;nacimiento&quot;, pasando la coma a ser punto y seguido, la siguiente oración: &quot;Luego de que se haya llevado a cabo la rectificación, sus documentos de identificación y cualquier instrumento público o privado deberán respetar el nuevo nombre y sexo coincidente con la identidad de género.&quot;.  
+- Ha suprimido la frase &quot;, en sus documentos de identificación y en cualquier otro instrumento público o privado, cuando éstos no coincidan con su identidad de género.&quot;.  
+- Ha agregado la siguiente oración final: &quot;Excepcionalmente, tratándose de niños, niñas, o adolescentes, se podrá obtener una vez más, desde que éste o ésta alcance la mayoría de edad.&quot;.
+
+Inciso segundo
+- Ha sustituido la frase &quot;la solicitud presentada por persona&quot; por &quot;solicitudes presentadas por personas&quot;.
+- Ha intercalado a continuación de la expresión &quot;disuelto,&quot; la frase &quot;así como por niños, niñas o adolescentes,&quot;.
+- Ha sustituido la expresión &quot;Título III&quot; por &quot;artículo 10&quot;.
+
+Inciso tercero
+- Ha sustituido la palabra &quot;rectifique&quot; por los vocablos &quot;deba rectificar&quot;.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_3" type="substitute">
+        <akndiff:old>DERECHO A INTERVENCIONES QUIRÚRGICAS Y TRATAMIENTOS. Todas las personas mayores de edad podrán, sin necesidad de requerir autorización judicial o administrativa y sin perjuicio de lo que establece esta ley sobre el derecho a solicitar la rectificación que trata, acceder a intervenciones quirúrgicas o a los tratamientos integrales hormonales  para adecuar su cuerpo a su identidad de género, bastando para ello que la persona preste su consentimiento informado, de conformidad a lo establecido en la ley N° 20.584. El ejercicio de este derecho deberá sujetarse a la cobertura del respectivo sistema de previsión de salud, conforme a lo establecido por el decreto con fuerza de ley N° 1, de 2005, del Ministerio de Salud, que fija el texto refundido, coordinado y sistematizado del decreto ley N° 2.763, de 1979 y de las leyes N° 18.933 y N° 18.469, y a las garantías de salud consagradas en la ley N° 19.966.
+
+Las atenciones de salud a las que se refiere el inciso anterior se ejecutarán de conformidad a los protocolos y a las orientaciones técnicas de salud dictadas por el Ministerio de Salud, velando por el respeto de los derechos establecidos en la ley N° 20.584.</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 6 y ha eliminado en su inciso primero la oración final.  
+
+****
+
+- Ha incorporado el siguiente título II, nuevo, antes del artículo 4: 
+
+&quot;Título II
+
+Del procedimiento de rectificación de sexo y nombre registral&quot;.
+
+****</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_4" type="substitute">
+        <akndiff:old>DEL ÓRGANO COMPETENTE PARA CONOCER DE LA SOLICITUD DE RECTIFICACIÓN DE SEXO Y NOMBRE.  Será competente para conocer de la solicitud de rectificación de sexo y nombre el Servicio de Registro Civil e Identificación. La solicitud podrá ser presentada ante cualquier oficina del Servicio sin importar cuál sea el domicilio del o la requirente.
+
+En el caso de los solicitantes con vínculo matrimonial no disuelto, será competente el tribunal con competencia en materias de familia del domicilio de su cónyuge. 
+
+En la solicitud deberá señalarse el sexo y el o los nombres de pila sustitutivos de la partida de nacimiento, así como la petición de rectificar las imágenes y documentos con que se hubiera identificado a la persona ante el Servicio de Registro Civil e Identificación, cualquiera sea el soporte en que éstos se conserven en dicho Servicio, cuando el sexo y nombre no coincidan con su identidad de género. 
+
+Sin perjuicio de lo anterior, quienes manifiesten la voluntad de no modificar sus nombres de pila podrán mantenerlos, siempre que ellos no resulten equívocos  respecto de su nuevo sexo registral. 
+
+
+
+Recibida la solicitud, deberá notificarse de ella, mediante carta certificada, a los ascendientes y descendientes de primer grado por consanguinidad, y al cónyuge, si lo hubiere. Dentro del plazo de 15 días corridos, contado desde la notificación, los interesados podrán oponerse a la solicitud. En el evento de que exista oposición, el asunto devendrá en contencioso, y será remitido mediante oficio al tribunal que tenga competencia en materia de familia del domicilio del peticionario.
+
+
+Las personas extranjeras con permanencia definitiva en Chile sólo podrán rectificar su sexo y nombre para efectos de la emisión de sus documentos chilenos. Para ello, previamente deberán inscribir su nacimiento en la oficina de Santiago del Servicio de Registro Civil e Identificación.
+
+La comparecencia de los y las solicitantes ante los tribunales con competencia en materias de familia se regirá por lo dispuesto en el artículo 18 de la ley N° 19.968, que crea los Tribunales de Familia.
+
+
+Título II
+Del procedimiento general de rectificación</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 7, con las siguientes enmiendas: 
+
+Inciso primero 
+- Ha reemplazado la locución &quot;Será competente&quot; por la frase &quot;Por regla general, será competente&quot;.
+- Ha sustituido el término &quot;requirente&quot; por el vocablo &quot;solicitante&quot;.
+Incisos segundo  
+- Lo ha rechazado.  
+
+Inciso tercero 
+- Lo ha eliminado. 
+
+****
+
+Ha intercalado el siguiente inciso segundo, nuevo:   
+
+&quot;En caso de que el solicitante mantenga un acuerdo de unión civil vigente, el Servicio de Registro Civil e Identificación deberá notificar al conviviente civil, en los términos dispuestos en los artículos 45 y siguientes de la ley Nº 19.880, que establece Bases de los Procedimientos Administrativos que rigen los Actos de los Órganos de la Administración del Estado.&quot;.
+
+****
+
+Incisos cuarto, quinto, sexto y séptimo 
+- Los ha suprimido. 
+
+****
+
+
+- Ha consultado como artículo 8, nuevo, el que sigue:
+
+&quot;ARTÍCULO 8°.- DE LA SOLICITUD DE RECTIFICACIÓN DE SEXO Y NOMBRE REGISTRAL, EN GENERAL. La solicitud de rectificación de sexo y nombre registral deberá contener el sexo y el o los nombres de pila con los que se quiera sustituir aquellos que figuran en la partida de nacimiento, así como la petición de rectificar las imágenes y documentos con que se hubiera identificado a la persona ante el Servicio de Registro Civil e Identificación, cualquiera sea el soporte en que éstos se conserven en dicho Servicio, cuando el sexo y nombre no coincidan con su identidad de género.
+
+Sin perjuicio de lo anterior, quienes manifiesten la voluntad de no modificar sus nombres de pila podrán mantenerlos, siempre que ellos no resulten equívocos respecto de su nuevo sexo registral.
+
+Las personas extranjeras con permanencia definitiva en Chile sólo podrán rectificar su sexo y nombre para efectos de la emisión de sus documentos chilenos. Para ello, previamente, deberán inscribir su nacimiento en la oficina de Santiago del Servicio de Registro Civil e Identificación.&quot;.
+
+****
+
+
+Epígrafe del título II. 
+- Lo ha suprimido</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_5" type="substitute">
+        <akndiff:old>DE LA RECTIFICACIÓN DEL SEXO Y NOMBRE SOLICITADA POR PERSONA MAYOR DE EDAD SIN VÍNCULO MATRIMONIAL. Toda persona mayor de edad, que no tenga vínculo matrimonial vigente, podrá solicitar ante cualquier oficina del Servicio de Registro Civil e Identificación la rectificación de su partida de nacimiento por motivo de su identidad de género, en el sentido de rectificar el sexo y nombre y también las imágenes con que estuviere identificada en los documentos en poder de dicho Servicio, cualquiera sea el soporte en que éstos se conserven.
+
+
+Para ello, el Servicio de Registro Civil e Identificación contará con un formulario especialmente diseñado para tal efecto, que tendrá información relevante relativa a esta ley y señalará los efectos jurídicos de la aceptación de la solicitud. En dicho formulario, el o la solicitante deberá declarar que conoce y asume voluntariamente las consecuencias jurídicas de modificar su sexo y nombre registrales.
+
+
+El Servicio de Registro Civil e Identificación deberá verificar la identidad del o la solicitante a través de la cédula de identidad vigente o, en caso que fuere necesario, la huella dactilar o lo previsto en el artículo 92 del decreto con fuerza de ley N° 2128, de 1930. No podrá requerir antecedentes adicionales para acoger la solicitud a tramitación. Asimismo, verificará que no exista vínculo matrimonial vigente. 
+
+
+Sin perjuicio de lo señalado en el artículo anterior, en un plazo máximo de cuarenta y cinco días desde que se presenta la solicitud, el Director Nacional del Servicio de Registro Civil e Identificación deberá dictar la correspondiente orden de servicio en caso de acoger la solicitud, o la respectiva resolución fundada que la declara inadmisible o la rechaza. 
+
+El o la oficial del Servicio de Registro Civil e Identificación declarará inadmisible la solicitud cuando quien la formulare fuere menor de edad o  exista un vínculo matrimonial no disuelto.
+
+Con todo, en caso de inadmisibilidad de la solicitud por existencia de vínculo matrimonial no disuelto, el Servicio de Registro Civil e Identificación deberá informar al o la solicitante del procedimiento especial de terminación del matrimonio, que se establece en el artículo 6° de la presente ley.
+
+Sólo procede el rechazo por no haber acreditado el o la solicitante su identidad. 
+
+En lo no contemplado en esta ley, la tramitación de la solicitud de rectificación de sexo y nombre, se regirá supletoriamente por la ley N° 19.880.
+
+
+Título III
+Del procedimiento excepcional
+
+
+ARTÍCULO 6° DE LA SOLICITUD EFECTUADA POR PERSONA MAYOR DE EDAD CON VÍNCULO MATRIMONIAL NO DISUELTO. En caso de existir vínculo matrimonial no disuelto, la solicitud de rectificación de sexo y nombre y de las imágenes, fotografías, soportes digitales, informáticos o de cualquier otro instrumento público o privado con los que esté registrada la persona, se deberá efectuar ante el juez con competencia en materias de familia del domicilio del o la cónyuge del solicitante. Para ello, el o la solicitante deberá cumplir con lo dispuesto por el artículo 4° de esta ley. 
+
+No obstante lo señalado en el inciso quinto del artículo 4° de la presente ley, una vez presentada la solicitud, el juez ordenará notificar al o la cónyuge, dándole a conocer su existencia y citando a éste o ésta a una audiencia especial de terminación de matrimonio, que se deberá efectuar en un plazo máximo de 30 días contado desde la notificación.
+
+Dentro del término antes señalado, o incluso en la misma audiencia, ambos cónyuges podrán demandar compensación económica en los términos previstos en el párrafo 1°, del Capítulo VII, de la ley N° 19.947, que Establece Nueva Ley de Matrimonio Civil, en caso que así procediere, debiendo el juez pronunciarse sobre esta materia en la sentencia definitiva.
+
+Con la comparecencia a la audiencia del o la cónyuge, el juez escuchará a las partes y propondrá las bases de un acuerdo completo y suficiente que contemple las materias establecidas en el artículo 21 de la ley N° 19.947 que así procedieren. Luego de ello, suspenderá la audiencia por el plazo de 15 días, para efectos de que las partes puedan acordar los términos definitivos de éste. 
+
+Al reanudarse la audiencia, en caso de existir acuerdo entre las partes, éste será sometido a la aprobación del juez, quien, si así lo estima, lo sancionará favorablemente, declarando la terminación del matrimonio en virtud de la causal del numeral 5° del artículo 42 de la ley N° 19.947. De no existir acuerdo entre las partes, el juez resolverá dichas materias. 
+
+Si no compareciere el o la cónyuge, se suspenderá la audiencia por el mismo plazo señalado en el inciso segundo, y se ordenará practicar nueva citación bajo el apercibimiento de continuar con el procedimiento sin su intervención y de perder su derecho a demandar compensación económica. En este caso, el juez resolverá las materias relativas a la terminación del matrimonio como si no existiera acuerdo completo y suficiente. Verificado el cumplimiento de los requisitos establecidos por esta ley para la solicitud de rectificación de sexo y nombre de la persona adulta con vínculo matrimonial no disuelto, el juez resolverá la cuestión principal en su sentencia definitiva, respecto de la cual no procederá recurso alguno. En la misma sentencia el juez resolverá las materias accesorias que se hubieren ventilado en el procedimiento, respecto de las cuales procederá el régimen general de recursos en materias de familia.
+
+El procedimiento descrito en este artículo podrá ser acumulado con otro procedimiento en curso entre las mismas partes y relativo al término del vínculo matrimonial.</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 9, con las siguientes enmiendas: 
+
+Inciso primero
+- Ha reemplazado su denominación por: 
+
+&quot;ARTÍCULO 7°.- DE LA SOLICITUD DE RECTIFICACIÓN DE SEXO Y NOMBRE REGISTRAL EFECTUADA POR PERSONA MAYOR DE EDAD SIN VÍNCULO MATRIMONIAL.&quot;.
+- Ha sustituido la palabra &quot;solicitar&quot; por &quot;obtener&quot;.
+- Ha sustituido la frase &quot;sexo y nombre y también las imágenes&quot; por la expresión &quot;sexo, nombre y las imágenes&quot;.
+
+Inciso segundo
+- Ha agregado la siguiente oración final: &quot;Dicho formulario deberá contener la información necesaria para que el o la solicitante esté en conocimiento de las consecuencias jurídicas de modificar su sexo y nombre registrales.&quot;.
+
+Inciso tercero
+- Ha intercalado antes del punto y aparte la frase &quot;y que sea mayor de edad&quot;.
+
+Inciso cuarto
+- Lo ha sustituido por el siguiente: 
+
+&quot;En un plazo máximo de cuarenta y cinco días desde que se presente la solicitud, el Director Nacional del Servicio de Registro Civil e Identificación deberá dictar la correspondiente orden de servicio, la que podrá acoger, declarar inadmisible o rechazar fundadamente la solicitud.&quot;.
+
+
+Inciso quinto
+- Lo ha sustituido por el siguiente: 
+
+&quot;El Director Nacional del Servicio de Registro Civil e Identificación declarará inadmisible la solicitud sólo cuando concurra una de las siguientes causales: 
+a) La formulare un menor de edad. 
+b) La formulare una persona mayor de edad con vínculo matrimonial no disuelto.&quot;.
+
+Inciso sexto
+- Lo ha sustituido por el siguiente: 
+
+&quot;Con todo, en caso de inadmisibilidad de la solicitud por existencia de vínculo matrimonial no disuelto o por tratarse de una persona que no cumpla con la mayoría de edad, el Servicio de Registro Civil e Identificación deberá informar al o a la solicitante de los procedimientos especiales que se establecen en la presente ley.&quot;.
+
+
+Epígrafe del título III. 
+- Lo ha suprimido.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_8" type="substitute">
+        <akndiff:old>DE LA EMISIÓN DE NUEVOS DOCUMENTOS Y DE SU INFORMACIÓN.  Acogida la solicitud de rectificación o recibida la orden del juez con competencia en materias de familia, el Servicio de Registro Civil e Identificación procederá a practicar las modificaciones y subinscripciones pertinentes, tras lo cual se emitirán los nuevos documentos. 
+
+Para ello, citará al solicitante para que concurra de manera personal a la oficina que le corresponda según su domicilio o ante aquella en la que haya presentado su requerimiento de rectificación de sexo y nombre, para emitir los nuevos documentos de identidad, con una nueva fotografía y/o firma, los que reemplazarán para todos los efectos legales a los documentos de identidad anteriores. 
+
+
+
+
+
+
+Los documentos de identidad anteriores no podrán ser usados, solicitados o exhibidos bajo ninguna circunstancia y en ninguna entidad pública o privada, sin perjuicio de lo dispuesto en el artículo 11.
+
+La rectificación de la partida de nacimiento y de los documentos de identificación de que trata esta ley no afectará el número del rol único nacional del o la solicitante.
+
+Asimismo, el Servicio informará de la rectificación de la partida y la emisión de nuevos documentos a las siguientes instituciones:
+
+a) Servicio Electoral para la corrección del padrón electoral, si correspondiere;
+
+b) Servicio de Impuestos Internos;
+
+c) Tesorería General de la República;
+
+d) Policía de Investigaciones de Chile;
+
+e) Carabineros de Chile;
+
+f) Gendarmería de Chile;
+
+g) Superintendencia de Salud, a fin de que ésta informe a la Institución de Salud Previsional en la cual cotice el o la solicitante del cambio de sexo y nombre registral, el que deberá ser registrado por dicha institución;
+
+h) Superintendencia de Pensiones, a fin de que ésta informe a la respectiva Administradora de Fondos de Pensiones o al Instituto de Previsión Social, según donde cotice el o la solicitante, del cambio de sexo y nombre registral, el que deberá ser registrado por dicha institución;
+
+i) Fondo Nacional de Salud, a fin de que éste registre el cambio de sexo y nombre registral de la persona solicitante;
+
+j) Ministerio de Educación; 
+
+k) Consejo de Rectores de las Universidades Chilenas; 
+
+
+
+l) Corporación de Universidades Privadas (CUP);
+
+m) Consejo de Instituciones Privadas de Formación Superior (Conifos), y
+
+n) A toda otra institución pública o privada que estime pertinente o sea requerida por el o la solicitante.
+
+Toda información o comunicación entre instituciones, ya sean públicas o privadas, deberá ser tratada conforme a la ley N° 19.628, sobre Protección de la Vida Privada.
+
+Un reglamento emitido por el Ministerio de Justicia y Derechos Humanos establecerá las demás reglas de tramitación ante el Servicio de Registro Civil e Identificación para el adecuado resguardo de la privacidad del mismo, y la forma en que se emitirán los certificados de terceros vinculados con la persona que ha modificado su sexo y nombre, como sus hijos e hijas,  o el o la  ex cónyuge, cuando no se haya solicitado rectificar las partidas vinculadas a dichos terceros.</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 11, enmendado como sigue: 
+
+Inciso primero 
+- Ha intercalado entre la expresión &quot;en materia de familia&quot; y la frase &quot;, el Servicio de Registro Civil e Identificación&quot; la expresión &quot;, según corresponda&quot;.
+- Ha intercalado entre la expresión &quot;nuevos documentos&quot; y el punto y aparte que le sigue la palabra &quot;identificatorios&quot;.
+Inciso segundo 
+- Ha reemplazado la palabra &quot;requerimiento&quot; por &quot;solicitud&quot;.
+- Ha sustituido la expresión &quot;fotografía o firma,&quot; por la expresión &quot;fotografía, firma, o ambos,&quot;.
+
+Inciso tercero 
+- Ha sustituido la palabra &quot;anteriores&quot; por &quot;originales&quot;.
+- Ha sustituido el guarismo &quot;11&quot; por &quot;14&quot;.
+Inciso quinto
+- Ha intercalado entre la frase &quot;el Servicio&quot; y el verbo &quot;informará&quot; la expresión &quot;de Registro Civil e Identificación&quot;.
+- Ha intercalado la siguiente letra n, pasando la actual n a ser letra o: 
+&quot;n) A la Dirección General de Movilización Nacional, y&quot;. 
+
+Inciso final 
+- Lo ha suprimido.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_9" type="substitute">
+        <akndiff:old>DE LOS EFECTOS DE LA RECTIFICACIÓN PREVISTA EN ESTA LEY. Los efectos jurídicos de la rectificación del sexo y nombre, realizados en virtud de la presente ley, serán oponibles a terceros desde el momento en que se extienda la inscripción rectificada en conformidad al artículo 104 del decreto con fuerza de ley N° 2.128, de 10 de agosto de 1930. 
+
+La rectificación en la partida de nacimiento no alterará la titularidad de los derechos y obligaciones patrimoniales que pudieran corresponder a la persona con anterioridad a la inscripción del cambio.
+
+Tampoco afectará las provenientes de las relaciones propias del derecho de familia en todos sus órdenes y grados, las que se mantendrán inmodificables.
+
+La utilización fraudulenta de los primitivos o de los nuevos nombres será sancionada con la pena de presidio menor en su grado medio a máximo.</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 12, con las siguientes enmiendas: 
+
+Inciso primero 
+- Ha intercalado entre el guarismo &quot;1930&quot; y el punto y aparte que le sigue la expresión &quot;, que aprueba el Reglamento Orgánico del Servicio de Registro Civil&quot;.
+****
+
+- Ha incorporado el siguiente inciso final: 
+&quot;En caso de haberse decretado la terminación del matrimonio para personas con vínculo matrimonial no disuelto, los efectos para los contrayentes serán los dispuestos en la ley de Matrimonio Civil.&quot;.
+
+****</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_10" type="substitute">
+        <akndiff:old>OBLIGACIÓN DE TRATO DIGNO. Ninguna persona o institución pública o privada podrá dar un trato irrespetuoso, contrario a la dignidad humana o que implique una discriminación arbitraria a otra persona en razón de su identidad de género.
+
+La infracción a lo señalado precedentemente será sancionada de acuerdo a lo previsto en la ley N° 20.609.</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 13, sustituido por el siguiente: 
+
+&quot;ARTÍCULO 13. PROHIBICIÓN DE DISCRIMINACIÓN ARBITRARIA. Ninguna persona, institución pública o privada podrá realizar un acto u omisión que importe discriminación arbitraria y que cause privación, perturbación o amenaza a las personas en razón de su identidad y expresión de género. En ningún caso podrá alegarse como justificación el ejercicio legítimo de un derecho fundamental. 
+
+Los directamente afectados por una acción u omisión que importe discriminación arbitraria podrán interponer la acción de no discriminación arbitraria establecida en la ley Nº 20.609, sin perjuicio de la responsabilidad civil, penal o administrativa que pudiera emanar de esta contravención.
+
+En ningún caso las personas podrán ser negadas en el acceso a las prestaciones de salud en razón de su identidad y expresión de género. La contravención de lo señalado anteriormente será denunciada ante la Superintendencia de Salud, sin perjuicio de las responsabilidades administrativas que pudieran determinarse.&quot;.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_11" type="substitute">
+        <akndiff:old>LA RESERVA DEL PROCEDIMIENTO Y DE LA CONFIDENCIALIDAD DE LOS DOCUMENTOS RECTIFICADOS. Tanto el procedimiento seguido ante la autoridad administrativa como ante el Tribunal con competencia en materias de familia tendrán el carácter de reservados y toda la información vinculada a ellos será considerada como dato sensible, sin perjuicio de los deberes de notificación señalados en el artículo 8° de esta ley.
+
+Por otra parte, sólo tendrán acceso al acta de nacimiento y a las imágenes, fotografías, soportes digitales, informáticos o cualquier otro instrumento con los que las personas figuraran originalmente en los registros oficiales, quienes cuenten con autorización expresa del o la titular, o con orden judicial fundada, sin perjuicio de lo establecido en la ley N° 19.628, sobre protección de la vida privada, en los casos en que sea aplicable.
+
+	En todo caso, la persona que haya rectificado su sexo y nombre, así como quienes gocen de su autorización expresa o de orden judicial emitida al efecto, podrán solicitar al Servicio de Registro Civil e Identificación que se emitan certificados de nacimiento de sus hijos y/o de matrimonio de su ex cónyuge, en que conste la subinscripción relativa a su rectificación de sexo y nombre por motivo de identidad de género. Dichos certificados se consideran datos sensibles.
+
+Título V
+Adecuación de otros cuerpos legales</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 14, con las siguientes enmiendas: 
+
+Inciso primero 
+- Ha sustituido la expresión &quot;el tribunal&quot; por &quot;los tribunales&quot;.
+- Ha intercalado entre las palabras &quot;reservados&quot; y la expresión &quot;y toda&quot; la expresión &quot;respecto de terceros,&quot;.
+- Ha sustituido el guarismo &quot;8&quot; por &quot;11&quot;.
+
+Inciso segundo 
+- Ha sustituido la frase &quot;Por otra parte, solo tendrán acceso&quot; por la expresión &quot;Asimismo, para acceder&quot;.
+- Ha sustituido la expresión &quot;, quienes cuenten&quot; por la frase &quot;por parte de terceros, se deberá contar&quot;.
+
+
+Epígrafe del título V 
+- Ha sustituido la expresión &quot;V&quot; por &quot;IV&quot;.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_12" type="substitute">
+        <akndiff:old>MODIFÍCASE EL ARTÍCULO 42 DE LA LEY N° 19.947, DE MATRIMONIO CIVIL, EN LOS SIGUIENTES TÉRMINOS:
+
+a) Reemplázase en el N° 3°, la expresión &quot;, y&quot; por punto y coma. 
+
+b) Reemplázase en el N° 4°, el punto por la expresión &quot;, y&quot;. 
+
+c) Agrégase el siguiente N° 5°, nuevo:
+
+&quot;5° Por sentencia firme que acoge la solicitud de rectificación de sexo y nombre, de la partida de nacimiento y documentos de identificación, por razón de identidad de género. A partir de ella, los ex cónyuges recuperan el estado civil que poseían antes de contraer el matrimonio que termina por esta causal.
+
+	
+	ARTÍCULO 13.- MODIFÍCASE El ARTÍCULO 1792-27 DEL CÓDIGO CIVIL, EN EL SIGUIENTE SENTIDO:
+
+Agréguese el siguiente número 7), nuevo:
+
+&quot;7) Por disolución del matrimonio en el caso previsto por el numeral 5° del artículo 42 de la Ley de Matrimonio Civil.&quot;.
+
+
+
+
+DISPOSICIONES TRANSITORIAS</akndiff:old>
+        <akndiff:new>Ha pasado a ser artículo 15, con las siguientes modificaciones: 
+
+Letra c)
+- Ha intercalado entre la frase &quot;por razón de identidad de género&quot; y el punto y seguido la expresión &quot;, en caso que así lo requiera expresamente el o la cónyuge del solicitante&quot;.
+- Ha eliminado su oración final.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_6" type="insert" after="art_5">
+        <akndiff:new>Lo ha rechazado.  
+
+
+Al artículo 7 
+- Ha pasado a ser artículo 10, con las siguientes enmiendas: 
+- Ha sustituido la frase &quot;seguido ante el juez con competencia en materia de familia en el caso de la solicitud efectuada&quot; por la palabra &quot;iniciado&quot;.
+- Ha intercalado entre la expresión &quot;vínculo matrimonial no disuelto&quot; y la coma que le sigue la frase &quot;o por un niño, niña o adolescente&quot;.
+- Ha intercalado entre la expresión &quot;partida de nacimiento&quot; y la frase &quot;y las subinscripciones al margen&quot; la locución &quot;, procediendo el cambio de su sexo y de su nombre, o solo del sexo, de conformidad a lo dispuesto en el artículo primero transitorio&quot;.
+- Ha sustituido la referencia al &quot;Título IV&quot; por otra al &quot;Título III&quot;.
+
+
+Epígrafe del título IV 
+- Ha sustituido la expresión &quot;IV&quot; por &quot;III&quot;.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_13" type="insert" after="art_12">
+        <akndiff:new>Ha pasado a ser artículo 16, sin modificaciones. 
+
+*****
+
+- Ha incorporado los siguientes artículos 17 y 18:  
+
+
+&quot;ARTÍCULO 17.- Sustitúyese, en el inciso primero del artículo 2 de la ley N° 20.609, que establece medidas contra la discriminación, la frase &quot;la identidad de género&quot; por &quot;la identidad y expresión de género&quot;.</akndiff:new>
+      </akndiff:articleChange>
+      <akndiff:articleChange article="art_18" type="insert" after="art_13">
+        <akndiff:new>- Un reglamento emitido por el Ministerio de Justicia y Derechos Humanos establecerá:
+a) Lo referido a los procedimientos seguidos ante el Servicio de Registro Civil e Identificación en cuanto al resguardo de la privacidad. 
+b) Reglas cuyo fin sea la adecuada observancia de los principios contenidos en la ley Nº 19.968, en especial en lo relativo al Interés Superior del Niño y a su Autonomía Progresiva.
+
+El reglamento a que se refiere este artículo deberá ser dictado en el plazo de un año contado desde la publicación de la presente ley.&quot;.
+
+
+*****
+
+
+- Ha intercalado el siguiente artículo segundo transitorio, nuevo, pasando el actual segundo a ser tercero:
+
+&quot;Artículo segundo.- Mientras no se encuentren en vigencia las normas que regulan en igualdad de condiciones el matrimonio entre parejas del mismo sexo, la sentencia firme que acoge la solicitud de rectificación de sexo y nombre en la partida de nacimiento y documentos de identificación, por razón de identidad de género, siempre pondrá término al matrimonio.&quot;.
+
+
+
+
+
+
+
+****
+
+Hago presente a V.E. que los incisos tercero y sexto del artículo 8, que ha pasado a ser artículo 11, y el artículo 11, que ha pasado a ser artículo 14, fueron aprobados tanto en general como en particular por 62 votos a favor, de un total de 118 diputados en ejercicio.
+
+De esta manera se dio cumplimiento a lo dispuesto en el artículo 66, inciso tercero, de la Constitución Política de la República.
+
+****
+
+
+Lo que tengo a honra poner en conocimiento de V.E, en respuesta a vuestro oficio Nº 118/SEC/17, de 14 de junio de 2017.
+
+
+Acompaño la totalidad de los antecedentes.
+
+
+
+
+
+
+Dios guarde a V.E.
+
+
+
+
+
+
+
+
+FIDEL ESPINOZA SANDOVAL
+Presidente de la Cámara de Diputados
+
+
+
+
+
+
+
+
+MIGUEL LANDEROS PERKIĆ
+Secretario General de la Cámara de Diputados</akndiff:new>
+      </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

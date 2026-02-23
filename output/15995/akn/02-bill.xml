@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="boletin-15995-02-bill">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-bill"/>
+          <FRBRuri value="/cl/boletin/15995-02"/>
+          <FRBRdate date="2023-06-05" name="presentación"/>
+          <FRBRauthor href="/cl/diputado/autor"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-bill/esp@2023-06-05"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2023-06-05"/>
+          <FRBRdate date="2023-06-05" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-bill/esp@2023-06-05/akn"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2023-06-05/akn"/>
+          <FRBRdate date="2026-02-23" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Proyecto de Ley: <docTitle>boletin-15995-02-bill</docTitle></p>
+      </longTitle>
+      <p>Modifica la ley N°17.798, sobre control de armas, para autorizar el porte de armas por los aspirantes a oficiales de las policías, desde el primer año de formación y durante la realización de la práctica policial</p>
+    </preface>
+    <body>
+      <article eId="art_1">
+        <heading>Artículo Único</heading>
+        <content>
+          <p>Sustitúyase en el inciso tercero del artículo 6 de la Ley N°17.798, sobre Control de Armas, cuyo texto refundido, coordinado y sistematizado ha sido fijado por el Decreto N°400 de 13 de abril de 1978 del Ministerio de Defensa Nacional, la palabra “tercer” por la palabra “primer”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+José Miguel Castro Bascuñán
+
+Diputado</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

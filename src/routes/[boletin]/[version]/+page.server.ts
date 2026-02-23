@@ -36,7 +36,8 @@ export const load: PageServerLoad = async ({ params }) => {
 		error(404, 'Versión no encontrada');
 	}
 
-	const original = boletin.documents.find((d) => d.type === 'act' && d.fileName.startsWith('01-'));
+	const original = boletin.documents.find((d) => d.type === 'act' && d.fileName.startsWith('01-'))
+		|| boletin.documents[0];
 	if (!original?.body) {
 		error(500, 'Documento original no encontrado');
 	}

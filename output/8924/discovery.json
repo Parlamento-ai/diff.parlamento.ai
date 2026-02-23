@@ -1,0 +1,2160 @@
+{
+  "boletin": "8924-07",
+  "titulo": "Reconoce y da protección al derecho a la identidad de género.",
+  "estado": "Publicado",
+  "iniciativa": "Moción",
+  "camaraOrigen": "Senado",
+  "mocion": {
+    "iddocto": "9331",
+    "tipodoc": "mensaje_mocion"
+  },
+  "tramites": [
+    {
+      "fecha": "2013-05-07",
+      "descripcion": "Ingreso de proyecto .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "18086",
+          "tipodoc": "ofic",
+          "descripcion": "Consulta a la Corte Suprema N° 321/SEC/13"
+        },
+        {
+          "iddocto": "18205",
+          "tipodoc": "ofic",
+          "descripcion": "Respuesta de la Corte Suprema N° 79-2013"
+        },
+        {
+          "iddocto": "22963",
+          "tipodoc": "ofic",
+          "descripcion": "Otros oficios N° 323-365"
+        }
+      ]
+    },
+    {
+      "fecha": "2013-05-07",
+      "descripcion": "Cuenta de proyecto . Pasa a Comisión de Derechos Humanos, Nacionalidad y Ciudadanía. Se remite el proyecto a la Corte Suprema.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2013-05-07",
+      "descripcion": "Oficio N° 321/SEC/13 a la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2013-07-02",
+      "descripcion": "Cuenta oficio Nº 79-2013 de la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2013-08-27",
+      "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "16215",
+          "tipodoc": "info",
+          "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía"
+        },
+        {
+          "iddocto": "18299",
+          "tipodoc": "info",
+          "descripcion": "Segundo informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía"
+        },
+        {
+          "iddocto": "18991",
+          "tipodoc": "info",
+          "descripcion": "Segundo informe complementario de Derechos Humanos, Nacionalidad y Ciudadanía"
+        },
+        {
+          "iddocto": "19660",
+          "tipodoc": "info",
+          "descripcion": "Nuevo segundo informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía"
+        },
+        {
+          "iddocto": "20196",
+          "tipodoc": "info",
+          "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía"
+        },
+        {
+          "iddocto": "20587",
+          "tipodoc": "info",
+          "descripcion": "Informe de comisión Comisión Mixta para Boletín Nº 8924-07. Identidad de género."
+        }
+      ]
+    },
+    {
+      "fecha": "2013-08-27",
+      "descripcion": "Cuenta de primer informe de comisión .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-01-21",
+      "descripcion": "Discusión general . Aprobado en general . Se fija como plazo para presentar indicaciones el 10/03/2014",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-03-10",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-04-01",
+      "descripcion": "Cuenta del Mensaje 18-362 que hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-04-08",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 14/04/2014 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-04-14",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-04-15",
+      "descripcion": "Cuenta del Mensaje 48-362 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-07-01",
+      "descripcion": "Cuenta del Mensaje 231-362 que retira y hace presente la urgencia Simple",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-07-23",
+      "descripcion": "Cuenta del Mensaje 313-362 que retira y hace presente la urgencia Simple",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-10-15",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 03/11/2014 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-11-03",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-11-04",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 17/11/2014 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2014-11-17",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-04-21",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 30/04/2015 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-04-30",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-05-05",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 01/06/2015 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-06-01",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-06-02",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 24/06/2015 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-06-30",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 13/07/2015 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-07-13",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-07-21",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 24/07/2015 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-09-15",
+      "descripcion": "Cuenta del Mensaje 947-363 que hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-09-16",
+      "descripcion": "Cuenta del Mensaje 976-363 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-09-30",
+      "descripcion": "Cuenta del Mensaje 1033-363 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-10-14",
+      "descripcion": "Cuenta del Mensaje 1100-363 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-11-03",
+      "descripcion": "Cuenta del Mensaje 1150-363 que hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-11-17",
+      "descripcion": "Oficio N°DH/74/2015 a la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "20606",
+          "tipodoc": "ofic",
+          "descripcion": "Consulta a la Corte Suprema N° DH/74/2015"
+        }
+      ]
+    },
+    {
+      "fecha": "2015-11-18",
+      "descripcion": "Cuenta del Mensaje 1322-363 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-11-25",
+      "descripcion": "Cuenta del Mensaje 1370-363 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "20628",
+          "tipodoc": "ofic",
+          "descripcion": "Respuesta de la Corte Suprema N° 129-2015"
+        }
+      ]
+    },
+    {
+      "fecha": "2015-11-25",
+      "descripcion": "Respuesta de la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-12-09",
+      "descripcion": "Cuenta del Mensaje 1421-363 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-12-17",
+      "descripcion": "Segundo informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía. Pasa a Comisión de Constitución, Legislación, Justicia y Reglamento",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2015-12-23",
+      "descripcion": "Cuenta del Mensaje 1514-363 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-01-06",
+      "descripcion": "Cuenta del Mensaje 1566-363 que retira y hace presente la urgencia Simple",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-03-08",
+      "descripcion": "Cuenta del Mensaje 1702-363 que hace presente la urgencia Simple",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-03-15",
+      "descripcion": "Cuenta del Mensaje 41-364 que hace presente la urgencia Simple",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-04-13",
+      "descripcion": "Cuenta del Mensaje 124-364 que retira y hace presente la urgencia Simple",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-05-10",
+      "descripcion": "Cuenta del Mensaje 187-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-05-18",
+      "descripcion": "Cuenta del Mensaje 243-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-05-31",
+      "descripcion": "La Sala acuerda que el proyecto vuelva a la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía para que esta Comisión se pronuncie sobre nuevas indicaciones.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-05-31",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 13/06/2016 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-06-01",
+      "descripcion": "Cuenta del Mensaje 281-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-06-13",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-06-15",
+      "descripcion": "Cuenta del Mensaje 337-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-06-22",
+      "descripcion": "Cuenta del Mensaje 369-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-07-06",
+      "descripcion": "Cuenta del Mensaje 426-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-07-20",
+      "descripcion": "Cuenta del Mensaje 476-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-08-03",
+      "descripcion": "Cuenta del Mensaje 519-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-08-17",
+      "descripcion": "Cuenta del Mensaje 572-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-08-30",
+      "descripcion": "Cuenta del Mensaje 603-364 que retira y hace presente la urgencia Discusión inmediata",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-06",
+      "descripcion": "Cuenta del Mensaje 644-364 que retira y hace presente la urgencia Discusión inmediata",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-06",
+      "descripcion": "Cuenta del Mensaje 644-364 que retira y hace presente la urgencia Discusión inmediata",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-06",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 06/09/2016 a las 18:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-06",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-13",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 23/09/2016 a las 12:00  en la Secretaría de la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-14",
+      "descripcion": "Cuenta del Mensaje  692-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-23",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-09-28",
+      "descripcion": "Cuenta del Mensaje 724-364 que retira y hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-10-12",
+      "descripcion": "Cuenta del Mensaje 784-364 que retira y hace presente la urgencia Simple",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-10-20",
+      "descripcion": "Oficio N°DH/131/16 a la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "21691",
+          "tipodoc": "ofic",
+          "descripcion": "Consulta a la Corte Suprema N° DH/131/16"
+        }
+      ]
+    },
+    {
+      "fecha": "2016-10-25",
+      "descripcion": "Segundo informe complementario de Derechos Humanos, Nacionalidad y Ciudadanía.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-10-26",
+      "descripcion": "Cuenta segundo informe complementario .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-11-02",
+      "descripcion": "Los Comités acuerdan que el proyecto sea enviado a un nuevo informe complementario del segundo informe a la Comisión de Derechos Humanos, Nacionalidad y Ciudadanía, fijándose plazo para presentar indicaciones, en la Secretaría de dicha Comisión, hasta las 12 horas del lunes 21 de noviembre de 2016. El proyecto será puesto en Tabla en el Senado el día martes 13 de diciembre de 2016.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-11-02",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 21/11/2016 a las 12:00  en la Secretaría de la Comisión",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-11-11",
+      "descripcion": "Cuenta oficio N° 158-2016 de la Corte Suprema",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "21770",
+          "tipodoc": "ofic",
+          "descripcion": "Respuesta de la Corte Suprema N° 158-2016"
+        }
+      ]
+    },
+    {
+      "fecha": "2016-11-21",
+      "descripcion": "Nuevo segundo informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.  COMPARADO de estudio",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-11-21",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2016-12-21",
+      "descripcion": "Nuevo plazo para indicaciones Se amplía plazo para presentar indicaciones hasta el 16/01/2017 a las 12:00  en la Secretaría de la Comisión",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-01-16",
+      "descripcion": "Boletín de indicaciones .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-01-17",
+      "descripcion": "Segundo informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.  COMPARADO DE ESTUDIO",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-05-26",
+      "descripcion": "Nuevo segundo informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-05-30",
+      "descripcion": "Cuenta nuevo segundo informe .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-05-31",
+      "descripcion": "Discusión particular . Queda pendiente",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-06-06",
+      "descripcion": "Discusión particular . Queda pendiente",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-06-07",
+      "descripcion": "Discusión particular . Queda pendiente",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-06-13",
+      "descripcion": "Discusión particular . Queda pendiente",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-06-14",
+      "descripcion": "Discusión particular . Aprobado",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "22438",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 118/SEC/17"
+        }
+      ]
+    },
+    {
+      "fecha": "2017-06-14",
+      "descripcion": "Oficio de ley a Cámara Revisora .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2017-06-20",
+      "descripcion": "Cuenta de proyecto . Pasa a Comisión de Derechos Humanos y Pueblos Originarios",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2017-12-05",
+      "descripcion": "Cuenta del Mensaje 924-365 que hace presente la urgencia Simple",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2017-12-07",
+      "descripcion": "Oficio de S. E. la Presidenta de la República, por el cual formula indicaciones al proyecto (323-365). Se envía a la Comisión de Derechos Humanos y Pueblos Originarios",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2017-12-14",
+      "descripcion": "Cuenta del Mensaje 971-365 que retira y hace presente la urgencia Suma",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2017-12-22",
+      "descripcion": "Oficio N° 633-2017. Solicita el proyecto, a fin de emitir un pronunciamiento sobre los aspectos constitucionales del mismo.",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "23010",
+          "tipodoc": "ofic",
+          "descripcion": "Otros oficios N° 633-2017"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-01-02",
+      "descripcion": "Cuenta del Mensaje 1009-365 que retira y hace presente la urgencia Discusión inmediata",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-02",
+      "descripcion": "Cuenta de oficio de la Comisión de Constitución, Legislación, Justicia y Reglamento por el cual solicita el acuerdo de la Sala para que le sea remitido el proyecto, una vez despachado por la Comisión de Derechos Humanos y Pueblos Originarios, a fin de emitir un pronunciamiento sobre los aspectos constitucionales del mismo. RECHAZADO. (Oficio 13.679 del 2.1.18)",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-04",
+      "descripcion": "Cuenta del Mensaje 1061-365 que retira y hace presente la urgencia Suma",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-15",
+      "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-15",
+      "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-15",
+      "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía.",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-17",
+      "descripcion": "Cuenta de primer informe de comisión .",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-18",
+      "descripcion": "Cuenta del Mensaje 1107-365 que retira y hace presente la urgencia Suma",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-18",
+      "descripcion": "Discusión general . Queda pendiente",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-23",
+      "descripcion": "Discusión general . Aprobado en general y particular con modificaciones",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "23139",
+          "tipodoc": "ofic",
+          "descripcion": "Respuesta de la Corte Suprema N° 13-2018"
+        },
+        {
+          "iddocto": "23141",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 13738"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-01-23",
+      "descripcion": "Cuenta oficio N°13-2018 de la Corte Suprema",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-23",
+      "descripcion": "Oficio modificaciones a Cámara de Origen .",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-01-24",
+      "descripcion": "Cuenta oficio con modificaciones de Cámara Revisora . Pasa a Comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-03-06",
+      "descripcion": "Cuenta del Mensaje 1123-365 que hace presente la urgencia Suma",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "23215",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 65/SEC/18"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-03-06",
+      "descripcion": "La Sala acuerda eximir el proyecto del trámite de Comisión en el tercer trámite y que la Sala se pronuncie directamente sobre las enmiendas introducidas por la Cámara de Diputados.",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-03-06",
+      "descripcion": "Cuenta del Mensaje 1125-365 que retira y hace presente la urgencia Discusión inmediata",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-03-06",
+      "descripcion": "Discusión única . Rechazadas las modificaciones",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-03-06",
+      "descripcion": "Oficio rechazo modificaciones a Cámara Revisora .",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-03-07",
+      "descripcion": "Cuenta oficio rechazo a modificaciones .",
+      "etapa": "Comisión Mixta por rechazo de modificaciones",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-03-13",
+      "descripcion": "Cuenta del Mensaje 003-366 que hace presente la urgencia Simple",
+      "etapa": "Comisión Mixta por rechazo de modificaciones",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-03-14",
+      "descripcion": "Oficio integrantes de Comisión Mixta .",
+      "etapa": "Comisión Mixta por rechazo de modificaciones",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "23232",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 13.79"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-03-20",
+      "descripcion": "Cuenta oficio integrantes de Comisión Mixta .",
+      "etapa": "Comisión Mixta por rechazo de modificaciones",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-03-26",
+      "descripcion": "Informe de Comisión Mixta Comisión Mixta para Boletín Nº 8924-07. Identidad de género..  COMPARADO DE ESTUDIO",
+      "etapa": "Comisión Mixta por rechazo de modificaciones",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-04-03",
+      "descripcion": "Cuenta del Mensaje 014-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-04-17",
+      "descripcion": "Cuenta del Mensaje 032-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-05-02",
+      "descripcion": "Cuenta del Mensaje 046-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-05-14",
+      "descripcion": "Informe de comisión Comisión Mixta para Boletín Nº 8924-07. Identidad de género..  BOLETÍN DE PROPUESTAS",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-05-15",
+      "descripcion": "Cuenta del Mensaje 088-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-05-29",
+      "descripcion": "Cuenta del Mensaje 112-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-06-04",
+      "descripcion": "Informe de comisión Comisión Mixta para Boletín Nº 8924-07. Identidad de género..  NUEVO COMPARADO DE ESTUDIO",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-06-05",
+      "descripcion": "Cuenta del Mensaje 148-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-06-12",
+      "descripcion": "Cuenta del Mensaje 178-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-07-03",
+      "descripcion": "Cuenta del Mensaje 198-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-07-10",
+      "descripcion": "Cuenta del Mensaje 244-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-07-17",
+      "descripcion": "Cuenta del Mensaje 254-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-07-31",
+      "descripcion": "Cuenta del Mensaje 294-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-08-07",
+      "descripcion": "Cuenta del Mensaje 328-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-08-14",
+      "descripcion": "Cuenta del Mensaje 354-366 que retira y hace presente la urgencia Simple",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-08-21",
+      "descripcion": "Oficio N° 82 a la Corte Suprema",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "23760",
+          "tipodoc": "ofic",
+          "descripcion": "Consulta a la Corte Suprema N° 82"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-08-21",
+      "descripcion": "Informe de comisión Comisión Mixta para Boletín Nº 8924-07. Identidad de género..",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-08-21",
+      "descripcion": "Cuenta informe Comisión Mixta .",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-08-22",
+      "descripcion": "Discusión informe de Comisión Mixta . Queda pendiente",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-09-04",
+      "descripcion": "Cuenta del Mensaje 390-366 que retira y hace presente la urgencia Suma",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "23798",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 254/SEC/18"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-09-04",
+      "descripcion": "Discusión informe de Comisión Mixta . Aprobado",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-09-04",
+      "descripcion": "Oficio aprobación de informe de Comisión Mixta a C. Revisora .",
+      "etapa": "Disc. informe C.Mixta por rechazo de modific. en C. Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-09-05",
+      "descripcion": "Cuenta oficio aprobación de informe de Comisión Mixta .",
+      "etapa": "Disc. informe C.Mixta por rechazo de modif. C. Revisora",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-09-10",
+      "descripcion": "Respuesta de la Corte Suprema",
+      "etapa": "Disc. informe C.Mixta por rechazo de modif. C. Revisora",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "23811",
+          "tipodoc": "ofic",
+          "descripcion": "Respuesta de la Corte Suprema N° 115-2018"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-09-11",
+      "descripcion": "Cuenta del Mensaje 407-366 que hace presente la urgencia Suma",
+      "etapa": "Disc. informe C.Mixta por rechazo de modif. C. Revisora",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "23821",
+          "tipodoc": "ofic",
+          "descripcion": "Respuesta de la Corte Suprema N° 115-2018"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-09-11",
+      "descripcion": "Cuenta oficio N° 115-2018 de la Corte Suprema",
+      "etapa": "Disc. informe C.Mixta por rechazo de modif. C. Revisora",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-09-12",
+      "descripcion": "Discusión informe de Comisión Mixta . Aprobado .",
+      "etapa": "Disc. informe C.Mixta por rechazo de modif. C. Revisora",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "23826",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 14.212"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-09-12",
+      "descripcion": "Oficio aprobación de informe de Comisión Mixta a C.de Origen .",
+      "etapa": "Disc. informe C.Mixta por rechazo de modif. C. Revisora",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2018-09-25",
+      "descripcion": "Cuenta oficio aprobación de informe de Comisión Mixta .",
+      "etapa": "Trámite finalización en Cámara de Origen",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "23843",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 264/SEC/18"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-09-25",
+      "descripcion": "Oficio de ley al Ejecutivo .",
+      "etapa": "Trámite finalización en Cámara de Origen",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-10-02",
+      "descripcion": "Oficio al Tribunal Constitucional .",
+      "etapa": "Trámite en Tribunal Constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "23993",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 284/SEC/18"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-11-15",
+      "descripcion": "Ingreso fallo del Tribunal Constitucional .",
+      "etapa": "Trámite en Tribunal Constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "24081",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 3253-2018"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-11-20",
+      "descripcion": "Cuenta fallo del Tribunal Constitucional .",
+      "etapa": "Trámite en Tribunal Constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "24084",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 322/SEC/18"
+        }
+      ]
+    },
+    {
+      "fecha": "2018-11-20",
+      "descripcion": "Oficio de ley al Ejecutivo .",
+      "etapa": "Trámite en Tribunal Constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2018-11-22",
+      "descripcion": "Cuenta oficio N° 5385-18-CP del Tribunal Constitucional",
+      "etapa": "Tramitación terminada",
+      "camara": "",
+      "documentos": [
+        {
+          "iddocto": "24089",
+          "tipodoc": "ofic",
+          "descripcion": "Oficio del Tribunal Constitucional N° 5385-18-CP"
+        },
+        {
+          "iddocto": "1896",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        },
+        {
+          "iddocto": "1901",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        },
+        {
+          "iddocto": "2195",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        },
+        {
+          "iddocto": "2528",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        },
+        {
+          "iddocto": "2552",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        },
+        {
+          "iddocto": "2573",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        },
+        {
+          "iddocto": "2600",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        },
+        {
+          "iddocto": "2645",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        }
+      ]
+    }
+  ],
+  "votaciones": [
+    {
+      "fecha": "2013-10-29",
+      "sesion": "65/361",
+      "si": 17,
+      "no": 4,
+      "abstencion": 1,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "García R., José",
+          "Allende B., Isabel",
+          "Quintana L., Jaime",
+          "Walker P., Ignacio",
+          "Walker P., Patricio",
+          "Zaldívar L., Andrés",
+          "Von Baer J., Ena",
+          "Kuschel S., Carlos Ignacio",
+          "Tuma Z., Eugenio",
+          "Sabag C., Hosaín",
+          "Espina O., Alberto",
+          "Orpis B., Jaime",
+          "Coloma C., Juan Antonio",
+          "Pérez V., Víctor",
+          "Prokurica P., Baldo",
+          "Escalona M., Camilo",
+          "Larrain P., Carlos"
+        ],
+        "against": [
+          "Horvath K., Antonio",
+          "Gómez U., José Antonio",
+          "Pérez S., Lily",
+          "Rincón G., Ximena"
+        ],
+        "abstain": [
+          "Chahuán C., Francisco"
+        ]
+      }
+    },
+    {
+      "fecha": "2014-01-21",
+      "sesion": "87/361",
+      "si": 29,
+      "no": 0,
+      "abstencion": 3,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Rossi C., Fulvio",
+          "Espina O., Alberto",
+          "Rincón G., Ximena",
+          "Zaldívar L., Andrés",
+          "Escalona M., Camilo",
+          "Gómez U., José Antonio",
+          "Alvear V., Soledad",
+          "Walker P., Ignacio",
+          "Pérez V., Víctor",
+          "Ruiz-Esquide J., Mariano",
+          "García Huidobro S., Alejandro",
+          "Bianchi C., Carlos",
+          "Chahuán C., Francisco",
+          "Lagos W., Ricardo",
+          "Prokurica P., Baldo",
+          "Pizarro S., Jorge",
+          "Uriarte H., Gonzalo",
+          "Sabag C., Hosaín",
+          "Horvath K., Antonio",
+          "Walker P., Patricio",
+          "Navarro B., Alejandro",
+          "Cantero O., Carlos",
+          "Letelier M., Juan Pablo",
+          "Pérez S., Lily",
+          "Girardi L., Guido",
+          "Tuma Z., Eugenio",
+          "Allende B., Isabel",
+          "Quintana L., Jaime",
+          "Orpis B., Jaime"
+        ],
+        "against": [],
+        "abstain": [
+          "Larrain P., Carlos",
+          "García R., José",
+          "Coloma C., Juan Antonio"
+        ]
+      }
+    },
+    {
+      "fecha": "2016-05-31",
+      "sesion": "19/364",
+      "si": 16,
+      "no": 9,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Quinteros L., Rabindranath",
+          "Pizarro S., Jorge",
+          "Guillier Á., Alejandro",
+          "Navarro B., Alejandro",
+          "Matta A., Manuel Antonio",
+          "Pérez S., Lily",
+          "Araya G., Pedro",
+          "Allende B., Isabel",
+          "Lagos W., Ricardo",
+          "Harboe B., Felipe",
+          "Letelier M., Juan Pablo",
+          "Tuma Z., Eugenio",
+          "Rossi C., Fulvio",
+          "Girardi L., Guido",
+          "Horvath K., Antonio",
+          "Montes C., Carlos"
+        ],
+        "against": [
+          "Larraín F., Hernán",
+          "Van Rysselberghe H., Jacqueline",
+          "García Huidobro S., Alejandro",
+          "Pérez V., Víctor",
+          "Prokurica P., Baldo",
+          "Coloma C., Juan Antonio",
+          "Allamand Z., Andrés",
+          "Moreira B., Iván",
+          "Von Baer J., Ena"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-06",
+      "sesion": "20/365",
+      "si": 12,
+      "no": 15,
+      "abstencion": 0,
+      "resultado": "rejected",
+      "votantes": {
+        "for": [
+          "Von Baer J., Ena",
+          "Coloma C., Juan Antonio",
+          "Chahuán C., Francisco",
+          "Horvath K., Antonio",
+          "Espina O., Alberto",
+          "Van Rysselberghe H., Jacqueline",
+          "Pérez V., Víctor",
+          "Larraín F., Hernán",
+          "Prokurica P., Baldo",
+          "Bianchi C., Carlos",
+          "Allamand Z., Andrés",
+          "Ossandón I., Manuel José"
+        ],
+        "against": [
+          "Zaldívar L., Andrés",
+          "Pérez S., Lily",
+          "Letelier M., Juan Pablo",
+          "Tuma Z., Eugenio",
+          "Harboe B., Felipe",
+          "Montes C., Carlos",
+          "Navarro B., Alejandro",
+          "Guillier Á., Alejandro",
+          "Muñoz D., Adriana",
+          "Walker P., Ignacio",
+          "Quintana L., Jaime",
+          "Allende B., Isabel",
+          "De Urresti L., Alfonso",
+          "Girardi L., Guido",
+          "Pizarro S., Jorge"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-06",
+      "sesion": "20/365",
+      "si": 16,
+      "no": 10,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Harboe B., Felipe",
+          "Zaldívar L., Andrés",
+          "Quintana L., Jaime",
+          "Walker P., Ignacio",
+          "Pérez S., Lily",
+          "Montes C., Carlos",
+          "De Urresti L., Alfonso",
+          "Allende B., Isabel",
+          "Muñoz D., Adriana",
+          "Tuma Z., Eugenio",
+          "Pizarro S., Jorge",
+          "Letelier M., Juan Pablo",
+          "Guillier Á., Alejandro",
+          "Girardi L., Guido",
+          "Navarro B., Alejandro",
+          "Horvath K., Antonio"
+        ],
+        "against": [
+          "Pérez V., Víctor",
+          "Chahuán C., Francisco",
+          "Von Baer J., Ena",
+          "Prokurica P., Baldo",
+          "Espina O., Alberto",
+          "Larraín F., Hernán",
+          "Allamand Z., Andrés",
+          "Van Rysselberghe H., Jacqueline",
+          "Ossandón I., Manuel José",
+          "Coloma C., Juan Antonio"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-06",
+      "sesion": "20/365",
+      "si": 11,
+      "no": 15,
+      "abstencion": 0,
+      "resultado": "rejected",
+      "votantes": {
+        "for": [
+          "Van Rysselberghe H., Jacqueline",
+          "Ossandón I., Manuel José",
+          "Chahuán C., Francisco",
+          "Larraín F., Hernán",
+          "Prokurica P., Baldo",
+          "Bianchi C., Carlos",
+          "Espina O., Alberto",
+          "Pérez V., Víctor",
+          "Von Baer J., Ena",
+          "Allamand Z., Andrés",
+          "Coloma C., Juan Antonio"
+        ],
+        "against": [
+          "Pizarro S., Jorge",
+          "Letelier M., Juan Pablo",
+          "Montes C., Carlos",
+          "Horvath K., Antonio",
+          "Girardi L., Guido",
+          "Navarro B., Alejandro",
+          "Walker P., Ignacio",
+          "Quintana L., Jaime",
+          "Guillier Á., Alejandro",
+          "Harboe B., Felipe",
+          "Zaldívar L., Andrés",
+          "Pérez S., Lily",
+          "Allende B., Isabel",
+          "De Urresti L., Alfonso",
+          "Tuma Z., Eugenio"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-07",
+      "sesion": "21/365",
+      "si": 17,
+      "no": 3,
+      "abstencion": 4,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Bianchi C., Carlos",
+          "Allende B., Isabel",
+          "Navarro B., Alejandro",
+          "Montes C., Carlos",
+          "Matta A., Manuel Antonio",
+          "Goic B., Carolina",
+          "Muñoz D., Adriana",
+          "Zaldívar L., Andrés",
+          "Girardi L., Guido",
+          "Horvath K., Antonio",
+          "Walker P., Patricio",
+          "Quintana L., Jaime",
+          "Walker P., Ignacio",
+          "Pizarro S., Jorge",
+          "Araya G., Pedro",
+          "Guillier Á., Alejandro",
+          "Pérez S., Lily"
+        ],
+        "against": [
+          "Von Baer J., Ena",
+          "Larraín F., Hernán",
+          "Coloma C., Juan Antonio"
+        ],
+        "abstain": [
+          "Prokurica P., Baldo",
+          "Allamand Z., Andrés",
+          "Espina O., Alberto",
+          "Chahuán C., Francisco"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-07",
+      "sesion": "21/365",
+      "si": 23,
+      "no": 0,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Larraín F., Hernán",
+          "Navarro B., Alejandro",
+          "Zaldívar L., Andrés",
+          "Matta A., Manuel Antonio",
+          "Chahuán C., Francisco",
+          "Walker P., Ignacio",
+          "Pizarro S., Jorge",
+          "Pérez S., Lily",
+          "Walker P., Patricio",
+          "Girardi L., Guido",
+          "Allamand Z., Andrés",
+          "Goic B., Carolina",
+          "Prokurica P., Baldo",
+          "Guillier Á., Alejandro",
+          "Von Baer J., Ena",
+          "Araya G., Pedro",
+          "Bianchi C., Carlos",
+          "Muñoz D., Adriana",
+          "Quintana L., Jaime",
+          "Espina O., Alberto",
+          "Allende B., Isabel",
+          "Montes C., Carlos",
+          "Horvath K., Antonio"
+        ],
+        "against": [],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-07",
+      "sesion": "21/365",
+      "si": 12,
+      "no": 7,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Horvath K., Antonio",
+          "Larraín F., Hernán",
+          "Goic B., Carolina",
+          "Matta A., Manuel Antonio",
+          "Chahuán C., Francisco",
+          "Walker P., Ignacio",
+          "Von Baer J., Ena",
+          "Coloma C., Juan Antonio",
+          "Walker P., Patricio",
+          "Allamand Z., Andrés",
+          "Prokurica P., Baldo",
+          "Espina O., Alberto"
+        ],
+        "against": [
+          "Araya G., Pedro",
+          "Allende B., Isabel",
+          "Girardi L., Guido",
+          "Montes C., Carlos",
+          "Guillier Á., Alejandro",
+          "Muñoz D., Adriana",
+          "Quintana L., Jaime"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-07",
+      "sesion": "21/365",
+      "si": 15,
+      "no": 0,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Allende B., Isabel",
+          "Walker P., Patricio",
+          "Chahuán C., Francisco",
+          "Zaldívar L., Andrés",
+          "Montes C., Carlos",
+          "Walker P., Ignacio",
+          "Larraín F., Hernán",
+          "Horvath K., Antonio",
+          "Prokurica P., Baldo",
+          "Muñoz D., Adriana",
+          "Allamand Z., Andrés",
+          "Bianchi C., Carlos",
+          "Goic B., Carolina",
+          "Girardi L., Guido",
+          "Guillier Á., Alejandro"
+        ],
+        "against": [],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-07",
+      "sesion": "21/365",
+      "si": 13,
+      "no": 0,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Chahuán C., Francisco",
+          "Girardi L., Guido",
+          "Prokurica P., Baldo",
+          "Guillier Á., Alejandro",
+          "Bianchi C., Carlos",
+          "Walker P., Ignacio",
+          "Zaldívar L., Andrés",
+          "Allende B., Isabel",
+          "Montes C., Carlos",
+          "Allamand Z., Andrés",
+          "Goic B., Carolina",
+          "Muñoz D., Adriana",
+          "Larraín F., Hernán"
+        ],
+        "against": [],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-07",
+      "sesion": "21/365",
+      "si": 6,
+      "no": 12,
+      "abstencion": 0,
+      "resultado": "rejected",
+      "votantes": {
+        "for": [
+          "Prokurica P., Baldo",
+          "Allamand Z., Andrés",
+          "Coloma C., Juan Antonio",
+          "Von Baer J., Ena",
+          "Chahuán C., Francisco",
+          "Larraín F., Hernán"
+        ],
+        "against": [
+          "Goic B., Carolina",
+          "Montes C., Carlos",
+          "Bianchi C., Carlos",
+          "Guillier Á., Alejandro",
+          "Girardi L., Guido",
+          "Araya G., Pedro",
+          "Muñoz D., Adriana",
+          "Walker P., Ignacio",
+          "Pérez S., Lily",
+          "Quintana L., Jaime",
+          "Allende B., Isabel",
+          "Zaldívar L., Andrés"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-07",
+      "sesion": "21/365",
+      "si": 11,
+      "no": 0,
+      "abstencion": 1,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Araya G., Pedro",
+          "Zaldívar L., Andrés",
+          "Von Baer J., Ena",
+          "Girardi L., Guido",
+          "Walker P., Ignacio",
+          "Allende B., Isabel",
+          "Prokurica P., Baldo",
+          "Muñoz D., Adriana",
+          "Larraín F., Hernán",
+          "Pérez S., Lily",
+          "Quintana L., Jaime"
+        ],
+        "against": [],
+        "abstain": [
+          "Guillier Á., Alejandro"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-13",
+      "sesion": "22/365",
+      "si": 17,
+      "no": 12,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Coloma C., Juan Antonio",
+          "Zaldívar L., Andrés",
+          "Walker P., Patricio",
+          "Matta A., Manuel Antonio",
+          "Horvath K., Antonio",
+          "García R., José",
+          "Allamand Z., Andrés",
+          "Espina O., Alberto",
+          "Pérez V., Víctor",
+          "Van Rysselberghe H., Jacqueline",
+          "García Huidobro S., Alejandro",
+          "Chahuán C., Francisco",
+          "Walker P., Ignacio",
+          "Goic B., Carolina",
+          "Pizarro S., Jorge",
+          "Von Baer J., Ena",
+          "Larraín F., Hernán"
+        ],
+        "against": [
+          "Guillier Á., Alejandro",
+          "Navarro B., Alejandro",
+          "Lagos W., Ricardo",
+          "Quintana L., Jaime",
+          "De Urresti L., Alfonso",
+          "Rossi C., Fulvio",
+          "Allende B., Isabel",
+          "Pérez S., Lily",
+          "Montes C., Carlos",
+          "Girardi L., Guido",
+          "Letelier M., Juan Pablo",
+          "Muñoz D., Adriana"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-13",
+      "sesion": "22/365",
+      "si": 7,
+      "no": 13,
+      "abstencion": 2,
+      "resultado": "rejected",
+      "votantes": {
+        "for": [
+          "Espina O., Alberto",
+          "Pérez S., Lily",
+          "Walker P., Patricio",
+          "Allamand Z., Andrés",
+          "Goic B., Carolina",
+          "Larraín F., Hernán",
+          "Zaldívar L., Andrés"
+        ],
+        "against": [
+          "Van Rysselberghe H., Jacqueline",
+          "Guillier Á., Alejandro",
+          "Chahuán C., Francisco",
+          "Von Baer J., Ena",
+          "De Urresti L., Alfonso",
+          "Girardi L., Guido",
+          "Montes C., Carlos",
+          "Muñoz D., Adriana",
+          "Lagos W., Ricardo",
+          "Allende B., Isabel",
+          "Coloma C., Juan Antonio",
+          "Quintana L., Jaime",
+          "Pizarro S., Jorge"
+        ],
+        "abstain": [
+          "García R., José",
+          "Navarro B., Alejandro"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-13",
+      "sesion": "22/365",
+      "si": 15,
+      "no": 0,
+      "abstencion": 3,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Montes C., Carlos",
+          "Allende B., Isabel",
+          "Goic B., Carolina",
+          "De Urresti L., Alfonso",
+          "Pizarro S., Jorge",
+          "Coloma C., Juan Antonio",
+          "Quintana L., Jaime",
+          "Von Baer J., Ena",
+          "García R., José",
+          "Walker P., Patricio",
+          "Guillier Á., Alejandro",
+          "Girardi L., Guido",
+          "Muñoz D., Adriana",
+          "Navarro B., Alejandro",
+          "Van Rysselberghe H., Jacqueline"
+        ],
+        "against": [],
+        "abstain": [
+          "Allamand Z., Andrés",
+          "Larraín F., Hernán",
+          "Espina O., Alberto"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-13",
+      "sesion": "22/365",
+      "si": 13,
+      "no": 1,
+      "abstencion": 2,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Allende B., Isabel",
+          "Goic B., Carolina",
+          "Walker P., Patricio",
+          "Muñoz D., Adriana",
+          "Allamand Z., Andrés",
+          "Pérez S., Lily",
+          "Montes C., Carlos",
+          "Quintana L., Jaime",
+          "Girardi L., Guido",
+          "Guillier Á., Alejandro",
+          "Pizarro S., Jorge",
+          "Espina O., Alberto",
+          "De Urresti L., Alfonso"
+        ],
+        "against": [
+          "Navarro B., Alejandro"
+        ],
+        "abstain": [
+          "Larraín F., Hernán",
+          "Chahuán C., Francisco"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 14,
+      "no": 0,
+      "abstencion": 5,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Girardi L., Guido",
+          "Harboe B., Felipe",
+          "Montes C., Carlos",
+          "Araya G., Pedro",
+          "Walker P., Ignacio",
+          "Lagos W., Ricardo",
+          "Guillier Á., Alejandro",
+          "Pizarro S., Jorge",
+          "Quinteros L., Rabindranath",
+          "Letelier M., Juan Pablo",
+          "Walker P., Patricio",
+          "Larraín F., Hernán",
+          "Zaldívar L., Andrés",
+          "Horvath K., Antonio"
+        ],
+        "against": [],
+        "abstain": [
+          "Coloma C., Juan Antonio",
+          "Allamand Z., Andrés",
+          "García R., José",
+          "Chahuán C., Francisco",
+          "Espina O., Alberto"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 20,
+      "no": 0,
+      "abstencion": 1,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Pizarro S., Jorge",
+          "Araya G., Pedro",
+          "Pérez V., Víctor",
+          "Pérez S., Lily",
+          "Horvath K., Antonio",
+          "García Huidobro S., Alejandro",
+          "Larraín F., Hernán",
+          "Lagos W., Ricardo",
+          "Walker P., Patricio",
+          "Montes C., Carlos",
+          "Zaldívar L., Andrés",
+          "Guillier Á., Alejandro",
+          "Quinteros L., Rabindranath",
+          "Letelier M., Juan Pablo",
+          "Girardi L., Guido",
+          "Von Baer J., Ena",
+          "Moreira B., Iván",
+          "Bianchi C., Carlos",
+          "Allamand Z., Andrés",
+          "Harboe B., Felipe"
+        ],
+        "against": [],
+        "abstain": [
+          "Coloma C., Juan Antonio"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 14,
+      "no": 0,
+      "abstencion": 1,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Zaldívar L., Andrés",
+          "Allamand Z., Andrés",
+          "Letelier M., Juan Pablo",
+          "Guillier Á., Alejandro",
+          "Lagos W., Ricardo",
+          "Montes C., Carlos",
+          "Girardi L., Guido",
+          "Harboe B., Felipe",
+          "Walker P., Patricio",
+          "Pérez S., Lily",
+          "Pizarro S., Jorge",
+          "Quinteros L., Rabindranath",
+          "Muñoz D., Adriana",
+          "Bianchi C., Carlos"
+        ],
+        "against": [],
+        "abstain": [
+          "Coloma C., Juan Antonio"
+        ]
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 17,
+      "no": 0,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Pérez S., Lily",
+          "Araya G., Pedro",
+          "Girardi L., Guido",
+          "Allamand Z., Andrés",
+          "Matta A., Manuel Antonio",
+          "Pizarro S., Jorge",
+          "Zaldívar L., Andrés",
+          "Espina O., Alberto",
+          "Horvath K., Antonio",
+          "Walker P., Patricio",
+          "Bianchi C., Carlos",
+          "Guillier Á., Alejandro",
+          "Lagos W., Ricardo",
+          "Montes C., Carlos",
+          "Harboe B., Felipe",
+          "Von Baer J., Ena",
+          "Muñoz D., Adriana"
+        ],
+        "against": [],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 23,
+      "no": 2,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Pérez S., Lily",
+          "Zaldívar L., Andrés",
+          "Horvath K., Antonio",
+          "Guillier Á., Alejandro",
+          "Lagos W., Ricardo",
+          "Quinteros L., Rabindranath",
+          "Muñoz D., Adriana",
+          "Espina O., Alberto",
+          "Harboe B., Felipe",
+          "Araya G., Pedro",
+          "Walker P., Patricio",
+          "Goic B., Carolina",
+          "Girardi L., Guido",
+          "Montes C., Carlos",
+          "Larraín F., Hernán",
+          "Matta A., Manuel Antonio",
+          "Walker P., Ignacio",
+          "Letelier M., Juan Pablo",
+          "Allamand Z., Andrés",
+          "Pizarro S., Jorge",
+          "Bianchi C., Carlos",
+          "García Huidobro S., Alejandro",
+          "Quintana L., Jaime"
+        ],
+        "against": [
+          "Von Baer J., Ena",
+          "Coloma C., Juan Antonio"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 2,
+      "no": 15,
+      "abstencion": 0,
+      "resultado": "rejected",
+      "votantes": {
+        "for": [
+          "Coloma C., Juan Antonio",
+          "Von Baer J., Ena"
+        ],
+        "against": [
+          "Lagos W., Ricardo",
+          "Pérez S., Lily",
+          "Quinteros L., Rabindranath",
+          "Quintana L., Jaime",
+          "Girardi L., Guido",
+          "Guillier Á., Alejandro",
+          "Espina O., Alberto",
+          "Pizarro S., Jorge",
+          "Muñoz D., Adriana",
+          "Montes C., Carlos",
+          "Allamand Z., Andrés",
+          "Letelier M., Juan Pablo",
+          "Zaldívar L., Andrés",
+          "Goic B., Carolina",
+          "Navarro B., Alejandro"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 18,
+      "no": 0,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Letelier M., Juan Pablo",
+          "Pizarro S., Jorge",
+          "Montes C., Carlos",
+          "Muñoz D., Adriana",
+          "Espina O., Alberto",
+          "Quinteros L., Rabindranath",
+          "Guillier Á., Alejandro",
+          "Matta A., Manuel Antonio",
+          "Zaldívar L., Andrés",
+          "Girardi L., Guido",
+          "Horvath K., Antonio",
+          "Walker P., Patricio",
+          "Navarro B., Alejandro",
+          "Pérez S., Lily",
+          "Allamand Z., Andrés",
+          "Quintana L., Jaime",
+          "Walker P., Ignacio",
+          "Goic B., Carolina"
+        ],
+        "against": [],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 7,
+      "no": 15,
+      "abstencion": 0,
+      "resultado": "rejected",
+      "votantes": {
+        "for": [
+          "Allamand Z., Andrés",
+          "Von Baer J., Ena",
+          "Espina O., Alberto",
+          "Coloma C., Juan Antonio",
+          "Larraín F., Hernán",
+          "Zaldívar L., Andrés",
+          "Chahuán C., Francisco"
+        ],
+        "against": [
+          "Montes C., Carlos",
+          "Letelier M., Juan Pablo",
+          "Lagos W., Ricardo",
+          "Pizarro S., Jorge",
+          "Girardi L., Guido",
+          "Muñoz D., Adriana",
+          "Navarro B., Alejandro",
+          "Goic B., Carolina",
+          "Quinteros L., Rabindranath",
+          "Matta A., Manuel Antonio",
+          "Walker P., Patricio",
+          "Walker P., Ignacio",
+          "Quintana L., Jaime",
+          "Pérez S., Lily",
+          "Harboe B., Felipe"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2017-06-14",
+      "sesion": "23/365",
+      "si": 12,
+      "no": 7,
+      "abstencion": 2,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Harboe B., Felipe",
+          "Montes C., Carlos",
+          "Guillier Á., Alejandro",
+          "Lagos W., Ricardo",
+          "Letelier M., Juan Pablo",
+          "Girardi L., Guido",
+          "Muñoz D., Adriana",
+          "Pérez S., Lily",
+          "Navarro B., Alejandro",
+          "Goic B., Carolina",
+          "Quinteros L., Rabindranath",
+          "Pizarro S., Jorge"
+        ],
+        "against": [
+          "Chahuán C., Francisco",
+          "Espina O., Alberto",
+          "García R., José",
+          "Allamand Z., Andrés",
+          "Larraín F., Hernán",
+          "Von Baer J., Ena",
+          "Coloma C., Juan Antonio"
+        ],
+        "abstain": [
+          "Matta A., Manuel Antonio",
+          "Zaldívar L., Andrés"
+        ]
+      }
+    },
+    {
+      "fecha": "2018-09-04",
+      "sesion": "47/366",
+      "si": 26,
+      "no": 14,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Allamand Z., Andrés",
+          "Bianchi C., Carlos",
+          "Letelier M., Juan Pablo",
+          "Quinteros L., Rabindranath",
+          "Pizarro S., Jorge",
+          "Girardi L., Guido",
+          "Navarro B., Alejandro",
+          "Lagos W., Ricardo",
+          "Quintana L., Jaime",
+          "Rincón G., Ximena",
+          "Araya G., Pedro",
+          "Guillier Á., Alejandro",
+          "Goic B., Carolina",
+          "Harboe B., Felipe",
+          "De Urresti L., Alfonso",
+          "Muñoz D., Adriana",
+          "Montes C., Carlos",
+          "Insulza S., José Miguel",
+          "Soria Q., Jorge",
+          "Prohens E., Rafael",
+          "Provoste C., Yasna",
+          "Latorre R., Juan Ignacio",
+          "Elizalde S., Alvaro",
+          "Aravena A., Carmen Gloria",
+          "Kast S., Felipe",
+          "Ordenes N., Ximena"
+        ],
+        "against": [
+          "Coloma C., Juan Antonio",
+          "García R., José",
+          "Pérez V., Víctor",
+          "Chahuán C., Francisco",
+          "García Huidobro S., Alejandro",
+          "Von Baer J., Ena",
+          "Moreira B., Iván",
+          "Ossandón I., Manuel José",
+          "Durana S., José Miguel",
+          "Ebensperger O., Luz Eliana",
+          "Pugh O., Kenneth",
+          "Castro P., Juan",
+          "Galilea V., Rodrigo",
+          "Sandoval P., David"
+        ],
+        "abstain": []
+      }
+    },
+    {
+      "fecha": "2018-09-04",
+      "sesion": "47/366",
+      "si": 22,
+      "no": 18,
+      "abstencion": 0,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Muñoz D., Adriana",
+          "Elizalde S., Alvaro",
+          "Kast S., Felipe",
+          "Pizarro S., Jorge",
+          "Girardi L., Guido",
+          "Letelier M., Juan Pablo",
+          "Navarro B., Alejandro",
+          "Lagos W., Ricardo",
+          "Quintana L., Jaime",
+          "Rincón G., Ximena",
+          "Araya G., Pedro",
+          "Guillier Á., Alejandro",
+          "Harboe B., Felipe",
+          "De Urresti L., Alfonso",
+          "Quinteros L., Rabindranath",
+          "Goic B., Carolina",
+          "Montes C., Carlos",
+          "Insulza S., José Miguel",
+          "Soria Q., Jorge",
+          "Provoste C., Yasna",
+          "Latorre R., Juan Ignacio",
+          "Ordenes N., Ximena"
+        ],
+        "against": [
+          "Moreira B., Iván",
+          "Pugh O., Kenneth",
+          "Castro P., Juan",
+          "Galilea V., Rodrigo",
+          "Aravena A., Carmen Gloria",
+          "Coloma C., Juan Antonio",
+          "García R., José",
+          "Allamand Z., Andrés",
+          "Bianchi C., Carlos",
+          "Pérez V., Víctor",
+          "Chahuán C., Francisco",
+          "García Huidobro S., Alejandro",
+          "Von Baer J., Ena",
+          "Ossandón I., Manuel José",
+          "Durana S., José Miguel",
+          "Ebensperger O., Luz Eliana",
+          "Prohens E., Rafael",
+          "Sandoval P., David"
+        ],
+        "abstain": []
+      }
+    }
+  ]
+}

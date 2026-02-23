@@ -1,0 +1,99 @@
+{
+  "boletin": "8924-07",
+  "tipo": "mocion",
+  "titulo": "Reconoce y da protección al derecho a la identidad de género.",
+  "slug": "boletin-8924-07",
+  "documentos": [
+    {
+      "iddocto": "9331",
+      "tipodoc": "mensaje_mocion",
+      "rol": "mocion",
+      "descripcion": "Moción original",
+      "auto": true
+    },
+    {
+      "iddocto": "19660",
+      "tipodoc": "info",
+      "rol": "informe-comision",
+      "descripcion": "Nuevo segundo informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía"
+    },
+    {
+      "iddocto": "23141",
+      "tipodoc": "ofic",
+      "rol": "oficio-2do-tramite",
+      "descripcion": "Ley N° 13738 (oficio modificaciones Cámara de Diputados)"
+    },
+    {
+      "iddocto": "23215",
+      "tipodoc": "ofic",
+      "rol": "oficio-3er-tramite",
+      "descripcion": "Ley N° 65/SEC/18 (oficio rechazo 3er trámite)"
+    },
+    {
+      "iddocto": "20587",
+      "tipodoc": "info",
+      "rol": "comision-mixta",
+      "descripcion": "Informe de comisión Comisión Mixta para Boletín Nº 8924-07"
+    },
+    {
+      "iddocto": "1896",
+      "tipodoc": "compa",
+      "rol": "comparado",
+      "descripcion": "Texto comparado"
+    }
+  ],
+  "reforma": null,
+  "leychileFinal": {
+    "idNorma": 1126480
+  },
+  "timeline": [
+    {
+      "slug": "bill",
+      "label": "Moción",
+      "date": "2013-05-07",
+      "type": "bill",
+      "source": "mocion"
+    },
+    {
+      "slug": "amendment-1",
+      "label": "1er Trámite: Senado",
+      "date": "2017-06-14",
+      "type": "amendment",
+      "source": "informe-comision",
+      "voteIndex": 25,
+      "chamber": "senado"
+    },
+    {
+      "slug": "amendment-2",
+      "label": "2do Trámite: C. Diputados",
+      "date": "2018-01-23",
+      "type": "amendment",
+      "source": "oficio-2do-tramite",
+      "chamber": "camara"
+    },
+    {
+      "slug": "amendment-3",
+      "label": "3er Trámite: Senado (Rechazado)",
+      "date": "2018-03-06",
+      "type": "amendment",
+      "source": "oficio-3er-tramite",
+      "chamber": "senado"
+    },
+    {
+      "slug": "amendment-4",
+      "label": "Comisión Mixta",
+      "date": "2018-09-04",
+      "type": "amendment",
+      "source": "comision-mixta",
+      "voteIndex": 27,
+      "chamber": "senado"
+    },
+    {
+      "slug": "act-final",
+      "label": "Ley 21.120 Promulgada",
+      "date": "2018-12-10",
+      "type": "act-final",
+      "source": "leychile-final"
+    }
+  ]
+}

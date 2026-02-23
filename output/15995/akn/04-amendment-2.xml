@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="boletin-15995-02-amendment-2">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-amendment-2"/>
+          <FRBRuri value="/cl/boletin/15995-02"/>
+          <FRBRdate date="2024-04-23" name="trámite"/>
+          <FRBRauthor href="/cl/senado/sesion/2024-04-23"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-amendment-2/esp@2024-04-23"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2024-04-23"/>
+          <FRBRdate date="2024-04-23" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/15995-02/boletin-15995-02-amendment-2/esp@2024-04-23/akn"/>
+          <FRBRuri value="/cl/boletin/15995-02/esp@2024-04-23/akn"/>
+          <FRBRdate date="2026-02-23" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle>
+        <p><docTitle>boletin-15995-02-amendment-2</docTitle></p>
+      </longTitle>
+      <p>2do Trámite: Senado</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Cambios al articulado.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/cl/boletin/15995-02/esp@2024-03-11"
+      result="/cl/boletin/15995-02/esp@2024-04-23">
+      <akndiff:vote date="2024-04-23" result="approved" source="/cl/senado/sesion/2024-04-23">
+        <akndiff:for>
+          <akndiff:voter href="/cl/senador/coloma-c." showAs="Coloma C., Juan Antonio"/>
+          <akndiff:voter href="/cl/senador/garcia-r." showAs="García R., José"/>
+          <akndiff:voter href="/cl/senador/kuschel-s." showAs="Kuschel S., Carlos Ignacio"/>
+          <akndiff:voter href="/cl/senador/chahuan-c." showAs="Chahuán C., Francisco"/>
+          <akndiff:voter href="/cl/senador/lagos-w." showAs="Lagos W., Ricardo"/>
+          <akndiff:voter href="/cl/senador/quintana-l." showAs="Quintana L., Jaime"/>
+          <akndiff:voter href="/cl/senador/rincon-g." showAs="Rincón G., Ximena"/>
+          <akndiff:voter href="/cl/senador/araya-g." showAs="Araya G., Pedro"/>
+          <akndiff:voter href="/cl/senador/moreira-b." showAs="Moreira B., Iván"/>
+          <akndiff:voter href="/cl/senador/ossandon-i." showAs="Ossandón I., Manuel José"/>
+          <akndiff:voter href="/cl/senador/insulza-s." showAs="Insulza S., José Miguel"/>
+          <akndiff:voter href="/cl/senador/ebensperger-o." showAs="Ebensperger O., Luz Eliana"/>
+          <akndiff:voter href="/cl/senador/provoste-c." showAs="Provoste C., Yasna"/>
+          <akndiff:voter href="/cl/senador/pugh-o." showAs="Pugh O., Kenneth"/>
+          <akndiff:voter href="/cl/senador/huenchumilla-j." showAs="Huenchumilla J., Francisco"/>
+          <akndiff:voter href="/cl/senador/ordenes-n." showAs="Ordenes N., Ximena"/>
+          <akndiff:voter href="/cl/senador/sandoval-p." showAs="Sandoval P., David"/>
+          <akndiff:voter href="/cl/senador/castro-g." showAs="Castro G., Juan Luis"/>
+          <akndiff:voter href="/cl/senador/cruz-coke-c." showAs="Cruz-Coke C., Luciano"/>
+          <akndiff:voter href="/cl/senador/edwards-s." showAs="Edwards S., Rojo"/>
+          <akndiff:voter href="/cl/senador/espinoza-s." showAs="Espinoza S., Fidel"/>
+          <akndiff:voter href="/cl/senador/gahona-s." showAs="Gahona S., Sergio"/>
+          <akndiff:voter href="/cl/senador/gatica-b." showAs="Gatica B., María José"/>
+          <akndiff:voter href="/cl/senador/keitel-b." showAs="Keitel B., Sebastián"/>
+          <akndiff:voter href="/cl/senador/kusanovic-g." showAs="Kusanovic G., Alejandro"/>
+          <akndiff:voter href="/cl/senador/nunez-a." showAs="Núñez A., Daniel"/>
+          <akndiff:voter href="/cl/senador/saavedra-c." showAs="Saavedra C., Gastón"/>
+          <akndiff:voter href="/cl/senador/sanhueza-d." showAs="Sanhueza D., Gustavo"/>
+          <akndiff:voter href="/cl/senador/van-rysselberghe-h." showAs="Van Rysselberghe H., Enrique"/>
+          <akndiff:voter href="/cl/senador/walker-p." showAs="Walker P., Matías"/>
+          <akndiff:voter href="/cl/senador/vodanovic-r." showAs="Vodanovic R., Paulina"/>
+        </akndiff:for>
+        <akndiff:against/>
+        <akndiff:abstain>
+          <akndiff:voter href="/cl/senador/durana-s." showAs="Durana S., José Miguel"/>
+          <akndiff:voter href="/cl/senador/campillai-r." showAs="Campillai R., Fabiola"/>
+        </akndiff:abstain>
+      </akndiff:vote>
+
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

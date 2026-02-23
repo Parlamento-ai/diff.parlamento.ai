@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="boletin-8924-07-bill">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/cl/boletin/8924-07/boletin-8924-07-bill"/>
+          <FRBRuri value="/cl/boletin/8924-07"/>
+          <FRBRdate date="2013-05-07" name="presentación"/>
+          <FRBRauthor href="/cl/senador/autor"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/cl/boletin/8924-07/boletin-8924-07-bill/esp@2013-05-07"/>
+          <FRBRuri value="/cl/boletin/8924-07/esp@2013-05-07"/>
+          <FRBRdate date="2013-05-07" name="versión"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/cl/boletin/8924-07/boletin-8924-07-bill/esp@2013-05-07/akn"/>
+          <FRBRuri value="/cl/boletin/8924-07/esp@2013-05-07/akn"/>
+          <FRBRdate date="2026-02-23" name="generación"/>
+        </FRBRManifestation>
+      </identification>
+
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Proyecto de Ley: <docTitle>boletin-8924-07-bill</docTitle></p>
+      </longTitle>
+      <p>Reconoce y da protección al derecho a la identidad de género.</p>
+    </preface>
+    <body>
+      <article eId="art_1">
+        <heading>Artículo 1°</heading>
+        <content>
+          <p>DEL DERECHO A LA IDENTIDAD DE GÉNERO.
+
+INCISO PRIMERO. Toda persona tiene derecho: 
+
+a) Al reconocimiento y protección de su Identidad de Género.
+
+b) Al libre desarrollo de su persona, conforme a su Identidad de Género, permitiendo su mayor realización espiritual y material posible.
+
+c) A ser tratada en conformidad con su Identidad de Género y, en particular, a ser reconocida e identificada de ese modo en los instrumentos públicos que acreditan su identidad respecto del nombre y sexo. Asimismo, las imágenes, fotografías, soportes digitales, informáticos o cualquier otro instrumento con los que las personas figuran en los registros oficiales deben ser coincidentes con dicha identidad.
+
+INCISO SEGUNDO. Toda norma o procedimiento de naturaleza administrativa o judicial deberá respetar el derecho a la identidad de género de las personas. Ninguna norma o procedimiento podrá limitar, restringir, excluir, suprimir o imponer requisitos no contemplados para el ejercicio de este derecho, debiendo interpretarse y aplicarse las normas siempre a favor del acceso del mismo.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Artículo 2°</heading>
+        <content>
+          <p>DE LA DEFINICIÓN DE IDENTIDAD DE GÉNERO.
+
+Para los efectos de esta ley se entenderá por identidad de género la vivencia interna e individual del género tal como cada persona la siente profundamente, la cual podría corresponder o no con el sexo asignado al momento del nacimiento, incluyendo la vivencia personal del cuerpo (que podría involucrar la modificación de la apariencia o la función corporal a través de medios médicos,  quirúrgicos o de otra índole, siempre que la misma sea libremente escogida) y otras expresiones de género, incluyendo la vestimenta, el modo de hablar y los modales.</p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <heading>Artículo 3°</heading>
+        <content>
+          <p>DEL EJERCICIO DEL DERECHO.  
+
+Toda persona podrá obtener, por una sola vez, la rectificación de su partida de nacimiento y el cambio de sexo y nombre, cuando no coincidan con su Identidad de Género.</p>
+        </content>
+      </article>
+      <article eId="art_4">
+        <heading>Artículo 4°</heading>
+        <content>
+          <p>DE LOS REQUISITOS PARA EL EJERCICIO DEL DERECHO.
+
+INCISO PRIMERO. Toda persona podrá solicitar por escrito la rectificación de su partida de nacimiento, el cambio de sexo, nombre y de las imágenes, fotografías, soportes digitales, informáticos o de cualquier otro instrumento con los que esté registrada, en virtud de la presente ley, cuando el sexo y nombre registrado no coincidan con su identidad de género.
+
+INCISO SEGUNDO. Será suficiente para fundar la solicitud con el ofrecimiento de información sumaria, en conformidad con lo dispuesto en el inciso 4° del artículo 6° de la presente ley, sin perjuicio de todo antecedente documental que se quiera acompañar por el o la solicitante.
+
+INCISO TERCERO. Se deja especialmente establecido que para acreditar la identidad de género y solicitar el cambio de nombre y sexo no será exigible por el Tribunal el uso de medios farmacológicos, psicológicos, psiquiátricos o de tratamientos quirúrgicos.</p>
+        </content>
+      </article>
+      <article eId="art_5">
+        <heading>Artículo 5°</heading>
+        <content>
+          <p>TRIBUNAL COMPETENTE.
+
+Será competente para conocer de la gestión a que se refiere la presente ley el Juez de Familia del domicilio del peticionario, y el procedimiento se sujetará a lo que dispone la presente ley.</p>
+        </content>
+      </article>
+      <article eId="art_6">
+        <heading>Artículo 6°</heading>
+        <content>
+          <p>DE LA TRAMITACIÓN.
+
+INCISO PRIMERO. Recibida la solicitud, el Juez ordenará que se publique, por una sola vez, un extracto en el Diario Oficial de los días 1° o 15, o al día hábil siguiente si este no se publicara en las citadas fechas. Dicho extracto será redactado por el Tribunal y deberá contener la individualización del o la solicitante, la indicación de que se solicita la rectificación de la partida de nacimiento en cuanto a cambiar de sexo y nombre, la fecha en que dicha solicitud se ha efectuado, y la indicación expresa de que dicha diligencia se realiza de conformidad con las disposiciones de la presente ley. 
+
+INCISO SEGUNDO. Dentro del plazo de quince días corridos contados desde la publicación del aviso, cualquiera podrá oponerse a la solicitud. 
+
+INCISO TERCERO. La oposición deberá formularse por escrito ante el mismo Tribunal y fundarse en una de las dos causales siguientes.
+
+Existencia de un perjuicio directo o indirecto de carácter moral o patrimonial que afecte al opositor a consecuencia del cambio de sexo y género del o la solicitante.
+
+Existencia de una causa criminal pendiente entre el opositor y el o la solicitante.
+
+INCISO CUARTO. Si no hubiere oposición, el juez procederá con conocimiento de causa, previa información sumaria, que acredite que él o la solicitante es conocido en sus relaciones sociales con una identidad de género que no coincide con su sexo registral. 
+
+INCISO QUINTO. Si hubiere oposición, ella se tramitará en forma incidental y en cuaderno separado.
+
+INCISO SEXTO. Resuelta la oposición o sin ella, si el Tribunal estima insuficiente la prueba rendida por el peticionario, lo que deberá señalar por resolución fundada, podrá decretar que se oficie a la Dirección Nacional del Servicio de Registro Civil e Identificación a fin de que este informe si la persona solicitante tiene órdenes de detención pendientes, u otros antecedentes penales, o para que entregue información relevante a juicio del Tribunal para la resolución de la solicitud y que esté en el marco de sus competencias. En mérito de este oficio, dicho Servicio deberá pronunciarse exclusivamente sobre las materias que le sean requeridas por el Tribunal y no deberá emitir opinión sobre los fundamentos de la solicitud ni sugerir la resolución al Tribunal. 
+
+INCISO SÉPTIMO. En ningún caso podrá el Tribunal decretar de oficio que se realicen exámenes médicos ante el Servicio Médico Legal u otra repartición para formar su convencimiento sobre la solicitud.</p>
+        </content>
+      </article>
+      <article eId="art_7">
+        <heading>Artículo 7°</heading>
+        <content>
+          <p>DE LA SENTENCIA.
+
+INCISO PRIMERO. Recibida la prueba ofrecida y cumplidas que sean las diligencias de oficio decretadas por el Tribunal, el juez decretará, mediante resolución fundada, si acoge o no la solicitud, en el plazo de sesenta días.
+
+INCISO SEGUNDO. Si el Tribunal acoge la solicitud, ordenará que se rectifique la partida de nacimiento del peticionario, procediendo al cambio su sexo y su nombre, oficiando al Director del Registro Civil e Identificación a fin de que realice las rectificaciones; que proceda a emitir un nuevo registro de identidad para el peticionario y que informe en el plazo de veinte días hábiles desde la rectificación en la partida de nacimiento, del cambio de sexo y nombre al Servicio Electoral para la corrección del padrón electoral; al Servicio de Impuestos Internos; a Tesorería General de la República; a Policía de Investigaciones y a Carabineros de Chile.
+
+INCISO TERCERO. Rectificada la partida de nacimiento y el sexo y nombre, el peticionario deberá concurrir en forma personal a las oficinas del Servicio de Registro Civil e Identificación, con copia autorizada de la sentencia, para que este Servicio emita nuevos documentos de identidad, con una nueva fotografía, los que reemplazarán para todos los efectos legales a los documentos de identidad anteriores, que no podrán ser usados o exhibidos bajo ninguna circunstancia y en ninguna repartición pública o privada, sin perjuicio de lo dispuesto en el artículo 11. 
+INCISO CUARTO. La rectificación de la partida de nacimiento de que trata esta ley, no afectará el número de rol único nacional del peticionario.</p>
+        </content>
+      </article>
+      <article eId="art_8">
+        <heading>Artículo 8°</heading>
+        <content>
+          <p>DE LOS EFECTOS DE LA RECTIFICACIÓN PREVISTA EN ESTA LEY.
+
+INCISO PRIMERO. Los efectos jurídicos de la rectificación del nombre y sexo, realizados en virtud de la presente Ley, serán oponibles a terceros desde el momento en que extienda la nueva inscripción en conformidad al artículo 104° del D.F.L. N° 2.128, de 10 de agosto de 1930. 
+
+INCISO SEGUNDO. La nueva inscripción en la partida de nacimiento no alterará la titularidad de los derechos y obligaciones jurídicas que pudieran corresponder a la persona con anterioridad a la inscripción del cambio en las partidas de nacimiento.
+
+INCISO TERCERO. Tampoco afectará las provenientes de las relaciones propias del derecho de familia en todos sus órdenes y grados, las que se mantendrán inmodificables.  
+
+INCISO CUARTO. El uso malicioso de los primitivos nombres y la utilización fraudulenta del nuevo nombre para eximirse del cumplimiento de obligaciones contraídas con anterioridad al cambio de ellos, serán sancionados con la pena de presidio menor en su grado mínimo.</p>
+        </content>
+      </article>
+      <article eId="art_9">
+        <heading>Artículo 9°</heading>
+        <content>
+          <p>OBLIGACIÓN DE ATENCIÓN.
+
+Ninguna persona o institución pública o privada podrá negarse a atender, o dar un trato  irrespetuoso o contrario a la dignidad humana a personas en razón de su identidad de género, ni obstaculizar o impedir el ejercicio de los derechos establecidos en esta ley.</p>
+        </content>
+      </article>
+      <article eId="art_10">
+        <heading>Artículo 10°</heading>
+        <content>
+          <p>CONFIDENCIALIDAD. 
+
+Sólo tendrán acceso al acta de nacimiento y a las imágenes, fotografías, soportes digitales, informáticos o cualquier otro instrumento con los que las personas figuraran originalmente en los registros oficiales, quienes cuenten con autorización expresa del o la titular, o con orden judicial fundada, sin perjuicio de lo establecido en la Ley N° 19.628, sobre protección de la vida privada, en los casos en que esta sea aplicable.</p>
+        </content>
+      </article>
+      <article eId="art_11">
+        <heading>Artículo 11°</heading>
+        <content>
+          <p>DERECHO AL LIBRE DESARROLLO PERSONAL. 
+
+INCISO PRIMERO. Todas las personas, sin necesidad de requerir autorización judicial o administrativa y sin perjuicio de lo que establece esta ley sobre el derecho a solicitar la rectificación de su partida de nacimiento y el cambio de sexo y nombre cuando no coincidan con su Identidad de Género, podrán, si lo estiman necesario, acceder a intervenciones quirúrgicas o a los tratamientos integrales hormonales que deseen para adecuar su cuerpo a su Identidad de Género, bastando para ello que la persona preste su consentimiento informado, de conformidad a lo establecido en la Ley N° 20.584. 
+
+INCISO SEGUNDO. En todo caso, deberá velarse por el respeto de los derechos establecidos en la Ley N° 20.584, sobre derechos y deberes de los pacientes.
+
+DISPOSICIONES TRANSITORIAS.</p>
+        </content>
+      </article>
+      <article eId="trans_1">
+        <heading>Artículo ÚNICO TRANSITORIO transitorio</heading>
+        <content>
+          <p>INCISO PRIMERO. Por el sólo ministerio de esta ley, todas las personas que hayan obtenido su cambio de nombre por razón de identidad de género, en conformidad a las disposiciones de las leyes 17.344 y 4.808, sin haber obtenido la rectificación de su sexo, podrán recurrir por una sola vez al tribunal competente para obtener la rectificación de su sexo. 
+
+INCISO SEGUNDO. Se seguirá en este caso lo dispuesto en los artículos 5° y siguientes de esta ley para la determinación del tribunal competente, la tramitación y la dictación de la sentencia.</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

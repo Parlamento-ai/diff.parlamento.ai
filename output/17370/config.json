@@ -1,0 +1,41 @@
+{
+  "boletin": "17370-17",
+  "tipo": "mocion",
+  "titulo": "Que regula la suspensión y el cumplimiento alternativo de penas privativas de libertad, para condenados que indica",
+  "slug": "boletin-17370-17",
+  "documentos": [
+    {
+      "iddocto": "18004",
+      "tipodoc": "mensaje_mocion",
+      "rol": "mocion",
+      "descripcion": "Moción original",
+      "auto": true
+    },
+    {
+      "iddocto": "27646",
+      "tipodoc": "info",
+      "rol": "informe-comision",
+      "descripcion": "Primer informe de comisión de Derechos Humanos, Nacionalidad y Ciudadanía",
+      "auto": true
+    }
+  ],
+  "reforma": null,
+  "timeline": [
+    {
+      "slug": "bill",
+      "label": "Moción",
+      "date": "2025-01-30",
+      "type": "bill",
+      "source": "mocion"
+    },
+    {
+      "slug": "amendment-1",
+      "label": "1er Trámite: Senado",
+      "date": "2026-01-21",
+      "type": "amendment",
+      "source": "informe-comision",
+      "voteIndex": 0,
+      "chamber": "senado"
+    }
+  ]
+}

@@ -2,6 +2,11 @@ node_modules
 
 # Output
 .output
+
+# Pipeline intermediate artifacts (heavy, regenerable)
+output/*/docs/
+output/*/texts/
+output/*/json/
 .vercel
 .netlify
 .wrangler

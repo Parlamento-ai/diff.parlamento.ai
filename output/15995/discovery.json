@@ -1,0 +1,257 @@
+{
+  "boletin": "15995-02",
+  "titulo": "Modifica la ley N°17.798, sobre control de armas, para autorizar el porte de armas por los aspirantes a oficiales de las policías, desde el primer año de formación y durante la realización de la práctica policial",
+  "estado": "Publicado",
+  "iniciativa": "Moción",
+  "camaraOrigen": "C.Diputados",
+  "mocion": {
+    "iddocto": "16536",
+    "tipodoc": "mensaje_mocion"
+  },
+  "tramites": [
+    {
+      "fecha": "2023-06-05",
+      "descripcion": "Ingreso de proyecto .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2023-06-06",
+      "descripcion": "Cuenta de proyecto . Pasa a Comisión de Defensa Nacional",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-01-22",
+      "descripcion": "Oficio del Presidente de la República (311-371), por el cual formula indicaciones al proyecto. Se adjunta informe financiero N°32/22.01.2024.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "26310",
+          "tipodoc": "info",
+          "descripcion": "Primer informe de comisión de Defensa Nacional"
+        },
+        {
+          "iddocto": "26401",
+          "tipodoc": "info",
+          "descripcion": "Primer informe de comisión de Defensa Nacional"
+        },
+        {
+          "iddocto": "32945",
+          "tipodoc": "ofic",
+          "descripcion": "Otros oficios N° 311-371"
+        }
+      ]
+    },
+    {
+      "fecha": "2024-01-23",
+      "descripcion": "Cuenta del Mensaje 1945-371 que hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-01-26",
+      "descripcion": "Primer informe de comisión de Defensa Nacional.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-01-29",
+      "descripcion": "Cuenta de primer informe de comisión .  Queda para tabla.",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-03-04",
+      "descripcion": "Cuenta del Mensaje 1986-371 que hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-03-05",
+      "descripcion": "Cuenta del Mensaje 1989-371 que hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-03-11",
+      "descripcion": "Discusión general . Aprobado en general y particular a la vez .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "33029",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 19265"
+        }
+      ]
+    },
+    {
+      "fecha": "2024-03-11",
+      "descripcion": "Cuenta del Mensaje 30-372 que hace presente la urgencia Suma",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-03-11",
+      "descripcion": "Oficio de ley a Cámara Revisora .",
+      "etapa": "Primer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-03-12",
+      "descripcion": "Cuenta de proyecto . Pasa a Comisión de Defensa Nacional",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2024-03-19",
+      "descripcion": "Cuenta del Mensaje 122-372 que retira y hace presente la urgencia Suma",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2024-04-03",
+      "descripcion": "Cuenta del Mensaje 220-372 que retira y hace presente la urgencia Suma",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2024-04-16",
+      "descripcion": "Primer informe de comisión de Defensa Nacional.",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2024-04-16",
+      "descripcion": "Cuenta de primer informe de comisión .",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2024-04-17",
+      "descripcion": "Cuenta del Mensaje 338-372 que retira y hace presente la urgencia Suma",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2024-04-23",
+      "descripcion": "Discusión general . Aprobado en general y particular con modificaciones",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "33217",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 178"
+        }
+      ]
+    },
+    {
+      "fecha": "2024-04-23",
+      "descripcion": "Oficio modificaciones a Cámara de Origen .",
+      "etapa": "Segundo trámite constitucional",
+      "camara": "Senado"
+    },
+    {
+      "fecha": "2024-04-24",
+      "descripcion": "Cuenta oficio con modificaciones de Cámara Revisora . Queda para tabla .",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-05-08",
+      "descripcion": "Discusión única . Aprobadas las modificaciones .",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "C.Diputados",
+      "documentos": [
+        {
+          "iddocto": "33293",
+          "tipodoc": "ofic",
+          "descripcion": "Aprobación de modificaciones N° 19464"
+        },
+        {
+          "iddocto": "33294",
+          "tipodoc": "ofic",
+          "descripcion": "Ley N° 19465"
+        }
+      ]
+    },
+    {
+      "fecha": "2024-05-08",
+      "descripcion": "Oficio N° 19464, que comunica aprobacion de modificaciones",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-05-08",
+      "descripcion": "Oficio de ley al Ejecutivo .",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "C.Diputados"
+    },
+    {
+      "fecha": "2024-05-08",
+      "descripcion": "Cuenta oficio N? 19464, que comunica aprobacion de modificaciones",
+      "etapa": "Tercer trámite constitucional",
+      "camara": "Senado",
+      "documentos": [
+        {
+          "iddocto": "4970",
+          "tipodoc": "compa",
+          "descripcion": "Texto comparado"
+        }
+      ]
+    }
+  ],
+  "votaciones": [
+    {
+      "fecha": "2024-04-23",
+      "sesion": "13/372",
+      "si": 31,
+      "no": 0,
+      "abstencion": 2,
+      "resultado": "approved",
+      "votantes": {
+        "for": [
+          "Coloma C., Juan Antonio",
+          "García R., José",
+          "Kuschel S., Carlos Ignacio",
+          "Chahuán C., Francisco",
+          "Lagos W., Ricardo",
+          "Quintana L., Jaime",
+          "Rincón G., Ximena",
+          "Araya G., Pedro",
+          "Moreira B., Iván",
+          "Ossandón I., Manuel José",
+          "Insulza S., José Miguel",
+          "Ebensperger O., Luz Eliana",
+          "Provoste C., Yasna",
+          "Pugh O., Kenneth",
+          "Huenchumilla J., Francisco",
+          "Ordenes N., Ximena",
+          "Sandoval P., David",
+          "Castro G., Juan Luis",
+          "Cruz-Coke C., Luciano",
+          "Edwards S., Rojo",
+          "Espinoza S., Fidel",
+          "Gahona S., Sergio",
+          "Gatica B., María José",
+          "Keitel B., Sebastián",
+          "Kusanovic G., Alejandro",
+          "Núñez A., Daniel",
+          "Saavedra C., Gastón",
+          "Sanhueza D., Gustavo",
+          "Van Rysselberghe H., Enrique",
+          "Walker P., Matías",
+          "Vodanovic R., Paulina"
+        ],
+        "against": [],
+        "abstain": [
+          "Durana S., José Miguel",
+          "Campillai R., Fabiola"
+        ]
+      }
+    }
+  ]
+}

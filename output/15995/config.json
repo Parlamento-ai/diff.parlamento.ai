@@ -1,0 +1,94 @@
+{
+  "boletin": "15995-02",
+  "tipo": "reforma",
+  "titulo": "Modifica la ley N°17.798, sobre control de armas, para autorizar el porte de armas por los aspirantes a oficiales de las policías, desde el primer año de formación y durante la realización de la práctica policial",
+  "slug": "boletin-15995-02",
+  "documentos": [
+    {
+      "iddocto": "16536",
+      "tipodoc": "mensaje_mocion",
+      "rol": "mocion",
+      "descripcion": "Moción original",
+      "auto": true
+    },
+    {
+      "iddocto": "26310",
+      "tipodoc": "info",
+      "rol": "informe-comision",
+      "descripcion": "Primer informe de comisión de Defensa Nacional",
+      "auto": true
+    },
+    {
+      "iddocto": "26401",
+      "tipodoc": "info",
+      "rol": "informe-comision",
+      "descripcion": "Primer informe de comisión de Defensa Nacional",
+      "auto": true
+    },
+    {
+      "iddocto": "4970",
+      "tipodoc": "compa",
+      "rol": "comparado",
+      "descripcion": "Texto comparado",
+      "auto": true
+    }
+  ],
+  "reforma": {
+    "normasModificadas": [
+      {
+        "idNorma": 29291,
+        "nombre": "Ley 17.798",
+        "fechaPre": "2024-06-12",
+        "fechaPost": "2024-06-13"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "slug": "act-original",
+      "label": "Ley 17.798 (pre-reforma)",
+      "date": "2024-06-12",
+      "type": "act-original",
+      "source": "leychile-Ley-17.798-pre"
+    },
+    {
+      "slug": "bill",
+      "label": "Moción",
+      "date": "2023-06-05",
+      "type": "bill",
+      "source": "mocion"
+    },
+    {
+      "slug": "amendment-1",
+      "label": "1er Trámite: C. Diputados",
+      "date": "2024-03-11",
+      "type": "amendment",
+      "source": "informe-comision",
+      "chamber": "camara"
+    },
+    {
+      "slug": "amendment-2",
+      "label": "2do Trámite: Senado",
+      "date": "2024-04-23",
+      "type": "amendment",
+      "source": "informe-comision",
+      "voteIndex": 0,
+      "chamber": "senado"
+    },
+    {
+      "slug": "amendment-3",
+      "label": "3er Trámite: C. Diputados",
+      "date": "2024-05-08",
+      "type": "amendment",
+      "source": "comparado",
+      "chamber": "camara"
+    },
+    {
+      "slug": "act-final",
+      "label": "Ley Promulgada",
+      "date": "2024-06-13",
+      "type": "act-final",
+      "source": "leychile-Ley-17.798-post"
+    }
+  ]
+}
