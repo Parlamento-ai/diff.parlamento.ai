@@ -1,0 +1,1939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="citation">
+    <meta>
+      <identification source="#ep-opendata">
+        <FRBRWork>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-13"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-13"/>
+          <FRBRdate date="2024-03-13" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRcountry value="eu"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-13/mul"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-13/mul"/>
+          <FRBRdate date="2024-03-13" name="meeting"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRlanguage language="mul"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-13/mul/xml"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/event/MTG-PL-2024-03-13/mul/xml"/>
+          <FRBRdate date="2026-02-23" name="transformation"/>
+          <FRBRauthor href="#poc-epdata-to-citation"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#ep-opendata">
+        <TLCOrganization eId="ep-opendata" href="https://data.europarl.europa.eu" showAs="European Parliament Open Data Portal"/>
+        <TLCOrganization eId="ep" href="https://data.europarl.europa.eu/org/EU_PARLIAMENT" showAs="European Parliament"/>
+      </references>
+    </meta>
+    <preface eId="preface">
+      <longTitle eId="longTitle">
+        <p><docType>Plenary Session Agenda</docType></p>
+        <p><docTitle>Plenary Session 2024-03-13</docTitle></p>
+        <p><date date="2024-03-13">2024-03-13</date></p>
+      </longTitle>
+    </preface>
+    <mainBody>
+      <section eId="sec_1">
+        <num>1</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Recital 29 – Am 102</heading>
+        <content eId="sec_1__content">
+          <p class="time"><time datetime="2024-03-13T12:21:26+01:00">12:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_2">
+        <num>2</num>
+        <heading>Article 5, § 1, after point 15</heading>
+        <content eId="sec_2__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_3">
+        <num>3</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_3__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_4">
+        <num>4</num>
+        <heading>Amendments by the committee responsible – split votes</heading>
+        <content eId="sec_4__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_5">
+        <num>5</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 33 – Am 32</heading>
+        <content eId="sec_5__content">
+          <p class="time"><time datetime="2024-03-13T17:38:05+01:00">17:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_6">
+        <num>6</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – Recital R – Am 1</heading>
+        <content eId="sec_6__content">
+          <p class="time"><time datetime="2024-03-13T17:30:30+01:00">17:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_7">
+        <num>7</num>
+        <heading>A9-0063/2024 – René Repasi – After § 17 – Am 8</heading>
+        <content eId="sec_7__content">
+          <p class="time"><time datetime="2024-03-13T17:19:30+01:00">17:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_8">
+        <num>8</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 1 – Am 21</heading>
+        <content eId="sec_8__content">
+          <p class="time"><time datetime="2024-03-13T17:32:20+01:00">17:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_9">
+        <num>9</num>
+        <heading>Article 56, § 2</heading>
+        <content eId="sec_9__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_10">
+        <num>10</num>
+        <heading>A9-0068/2024 – Victor Negrescu – Before § 27 – Am 10</heading>
+        <content eId="sec_10__content">
+          <p class="time"><time datetime="2024-03-13T17:36:35+01:00">17:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_11">
+        <num>11</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 46/2</heading>
+        <content eId="sec_11__content">
+          <p class="time"><time datetime="2024-03-13T17:41:30+01:00">17:41</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_12">
+        <num>12</num>
+        <heading>Article 54, § 2</heading>
+        <content eId="sec_12__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_13">
+        <num>13</num>
+        <heading>RC-B9-0163/2024 – § 18</heading>
+        <content eId="sec_13__content">
+          <p class="time"><time datetime="2024-03-13T17:46:30+01:00">17:46</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_14">
+        <num>14</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_14__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_15">
+        <num>15</num>
+        <heading>Article 27, § 1, sub§ 3</heading>
+        <content eId="sec_15__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_16">
+        <num>16</num>
+        <heading>Annex II, Part II, point (2) (a) (6)</heading>
+        <content eId="sec_16__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_17">
+        <num>17</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 4 – Am 2</heading>
+        <content eId="sec_17__content">
+          <p class="time"><time datetime="2024-03-13T17:23:17+01:00">17:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_18">
+        <num>18</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_18__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_19">
+        <num>19</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 42 – Am 40</heading>
+        <content eId="sec_19__content">
+          <p class="time"><time datetime="2024-03-13T17:39:58+01:00">17:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_20">
+        <num>20</num>
+        <heading>Article 21, § 1</heading>
+        <content eId="sec_20__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_21">
+        <num>21</num>
+        <heading>Article 1, § 1, point 4; Directive 2008/98/EC; Article 9a, § 4, point a</heading>
+        <content eId="sec_21__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_22">
+        <num>22</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 47 – Am 18</heading>
+        <content eId="sec_22__content">
+          <p class="time"><time datetime="2024-03-13T17:42:21+01:00">17:42</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_23">
+        <num>23</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 9/2</heading>
+        <content eId="sec_23__content">
+          <p class="time"><time datetime="2024-03-13T17:25:58+01:00">17:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_24">
+        <num>24</num>
+        <heading>After recital 8</heading>
+        <content eId="sec_24__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_25">
+        <num>25</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Article 12, § 3 – Am 105</heading>
+        <content eId="sec_25__content">
+          <p class="time"><time datetime="2024-03-13T12:20:20+01:00">12:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_26">
+        <num>26</num>
+        <heading>Recital 17</heading>
+        <content eId="sec_26__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_27">
+        <num>27</num>
+        <heading>A9-0063/2024 – René Repasi – § 15 – Am 18</heading>
+        <content eId="sec_27__content">
+          <p class="time"><time datetime="2024-03-13T17:18:22+01:00">17:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_28">
+        <num>28</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 1 – Am 8/2</heading>
+        <content eId="sec_28__content">
+          <p class="time"><time datetime="2024-03-13T17:22:07+01:00">17:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_29">
+        <num>29</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 12 – Am 23</heading>
+        <content eId="sec_29__content">
+          <p class="time"><time datetime="2024-03-13T17:33:47+01:00">17:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_30">
+        <num>30</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Article 4, § 7, sub§ 1, point a – Am 5</heading>
+        <content eId="sec_30__content">
+          <p class="time"><time datetime="2024-03-13T17:10:58+01:00">17:10</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_31">
+        <num>31</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 46 – Am 41</heading>
+        <content eId="sec_31__content">
+          <p class="time"><time datetime="2024-03-13T17:40:51+01:00">17:40</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_32">
+        <num>32</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Article 4, after § 8 – Am 9</heading>
+        <content eId="sec_32__content">
+          <p class="time"><time datetime="2024-03-13T17:11:28+01:00">17:11</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_33">
+        <num>33</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 15/2</heading>
+        <content eId="sec_33__content">
+          <p class="time"><time datetime="2024-03-13T17:28:52+01:00">17:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_34">
+        <num>34</num>
+        <heading>A9-0063/2024 – René Repasi – Before § 1 – Am 13</heading>
+        <content eId="sec_34__content">
+          <p class="time"><time datetime="2024-03-13T17:16:34+01:00">17:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_35">
+        <num>35</num>
+        <heading>§ 53</heading>
+        <content eId="sec_35__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_36">
+        <num>36</num>
+        <heading>A9-0062/2024 – Sergey Lagodinsky – Commission proposal</heading>
+        <content eId="sec_36__content">
+          <p class="time"><time datetime="2024-03-13T12:34:35+01:00">12:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_37">
+        <num>37</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_37__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_38">
+        <num>38</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 18 – Am 25</heading>
+        <content eId="sec_38__content">
+          <p class="time"><time datetime="2024-03-13T17:34:50+01:00">17:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_39">
+        <num>39</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_39__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_40">
+        <num>40</num>
+        <heading>Subheading 1</heading>
+        <content eId="sec_40__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_41">
+        <num>41</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Article 11 – Am 104</heading>
+        <content eId="sec_41__content">
+          <p class="time"><time datetime="2024-03-13T12:20:00+01:00">12:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_42">
+        <num>42</num>
+        <heading>RC-B9-0163/2024 – § 10/3</heading>
+        <content eId="sec_42__content">
+          <p class="time"><time datetime="2024-03-13T17:45:19+01:00">17:45</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_43">
+        <num>43</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_43__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_44">
+        <num>44</num>
+        <heading>After § 26</heading>
+        <content eId="sec_44__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_45">
+        <num>45</num>
+        <heading>A9-0079/2024 – Markéta Gregorová – Commission proposal</heading>
+        <content eId="sec_45__content">
+          <p class="time"><time datetime="2024-03-13T17:15:44+01:00">17:15</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_46">
+        <num>46</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 14/2</heading>
+        <content eId="sec_46__content">
+          <p class="time"><time datetime="2024-03-13T17:28:28+01:00">17:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_47">
+        <num>47</num>
+        <heading>Amendments by the committee responsible – split votes</heading>
+        <content eId="sec_47__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_48">
+        <num>48</num>
+        <heading>RC-B9-0163/2024 – § 10/1</heading>
+        <content eId="sec_48__content">
+          <p class="time"><time datetime="2024-03-13T17:44:49+01:00">17:44</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_49">
+        <num>49</num>
+        <heading>Article 54, § 3</heading>
+        <content eId="sec_49__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_50">
+        <num>50</num>
+        <heading>A9-0063/2024 – René Repasi – After recital A – Am 1</heading>
+        <content eId="sec_50__content">
+          <p class="time"><time datetime="2024-03-13T17:20:27+01:00">17:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_51">
+        <num>51</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_51__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_52">
+        <num>52</num>
+        <heading>A9-0063/2024 – René Repasi – After § 17 – Am 11</heading>
+        <content eId="sec_52__content">
+          <p class="time"><time datetime="2024-03-13T17:20:15+01:00">17:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_53">
+        <num>53</num>
+        <heading>RC-B9-0163/2024 – § 18 – Am 3/2</heading>
+        <content eId="sec_53__content">
+          <p class="time"><time datetime="2024-03-13T17:46:09+01:00">17:46</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_54">
+        <num>54</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Article 4, § 1, sub§ 1 – Am 3</heading>
+        <content eId="sec_54__content">
+          <p class="time"><time datetime="2024-03-13T17:09:44+01:00">17:09</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_55">
+        <num>55</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Commission proposal</heading>
+        <content eId="sec_55__content">
+          <p class="time"><time datetime="2024-03-13T17:12:52+01:00">17:12</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_56">
+        <num>56</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_56__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_57">
+        <num>57</num>
+        <heading>§ 3</heading>
+        <content eId="sec_57__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_58">
+        <num>58</num>
+        <heading>§ 8</heading>
+        <content eId="sec_58__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_59">
+        <num>59</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – Motion for a resolution (text as a whole)</heading>
+        <content eId="sec_59__content">
+          <p class="time"><time datetime="2024-03-13T17:30:50+01:00">17:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_60">
+        <num>60</num>
+        <heading>A9-0140/2023 – Javier Moreno Sánchez – Provisional agreement – Am 117</heading>
+        <content eId="sec_60__content">
+          <p class="time"><time datetime="2024-03-13T12:34:04+01:00">12:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_61">
+        <num>61</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 24 – Am 7</heading>
+        <content eId="sec_61__content">
+          <p class="time"><time datetime="2024-03-13T17:35:40+01:00">17:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_62">
+        <num>62</num>
+        <heading>Article 4, § 7, sub§ 1, point b</heading>
+        <content eId="sec_62__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_63">
+        <num>63</num>
+        <heading>A9-0063/2024 – René Repasi – § 3 – Am 16</heading>
+        <content eId="sec_63__content">
+          <p class="time"><time datetime="2024-03-13T17:17:04+01:00">17:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_64">
+        <num>64</num>
+        <heading>A9-0063/2024 – René Repasi – After § 17 – Am 10</heading>
+        <content eId="sec_64__content">
+          <p class="time"><time datetime="2024-03-13T17:20:00+01:00">17:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_65">
+        <num>65</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Article 1, after § 2 – Am 19</heading>
+        <content eId="sec_65__content">
+          <p class="time"><time datetime="2024-03-13T17:09:07+01:00">17:09</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_66">
+        <num>66</num>
+        <heading>B9-0163/2024</heading>
+        <content eId="sec_66__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_67">
+        <num>67</num>
+        <heading>Article 54, § 3</heading>
+        <content eId="sec_67__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_68">
+        <num>68</num>
+        <heading>A9-0055/2024 – Anna Zalewska – Article 1, § 1, point 4; Directive 2008/98/EC; Article 9a, § 4, point b – Am 118</heading>
+        <content eId="sec_68__content">
+          <p class="time"><time datetime="2024-03-13T12:32:48+01:00">12:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_69">
+        <num>69</num>
+        <heading>A9-0063/2024 – René Repasi – Before § 1 – Am 12</heading>
+        <content eId="sec_69__content">
+          <p class="time"><time datetime="2024-03-13T17:16:19+01:00">17:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_70">
+        <num>70</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 31 – Am 13</heading>
+        <content eId="sec_70__content">
+          <p class="time"><time datetime="2024-03-13T17:37:21+01:00">17:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_71">
+        <num>71</num>
+        <heading>A9-0058/2024 – Laura Ballarín Cereza – Commission proposal</heading>
+        <content eId="sec_71__content">
+          <p class="time"><time datetime="2024-03-13T12:16:34+01:00">12:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_72">
+        <num>72</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 1 – Am 8/3</heading>
+        <content eId="sec_72__content">
+          <p class="time"><time datetime="2024-03-13T17:22:23+01:00">17:22</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_73">
+        <num>73</num>
+        <heading>Amendments by the committee responsible – separate vote</heading>
+        <content eId="sec_73__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_74">
+        <num>74</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 46 – Am 36</heading>
+        <content eId="sec_74__content">
+          <p class="time"><time datetime="2024-03-13T17:41:47+01:00">17:41</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_75">
+        <num>75</num>
+        <heading>A9-0063/2024 – René Repasi – After § 12 – Am 15</heading>
+        <content eId="sec_75__content">
+          <p class="time"><time datetime="2024-03-13T17:18:06+01:00">17:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_76">
+        <num>76</num>
+        <heading>A9-0068/2024 – Victor Negrescu – Before § 1 – Am 4</heading>
+        <content eId="sec_76__content">
+          <p class="time"><time datetime="2024-03-13T17:32:03+01:00">17:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_77">
+        <num>77</num>
+        <heading>Annex II, Appendix, Part A, point 2</heading>
+        <content eId="sec_77__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_78">
+        <num>78</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 12 – Am 5</heading>
+        <content eId="sec_78__content">
+          <p class="time"><time datetime="2024-03-13T17:34:01+01:00">17:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_79">
+        <num>79</num>
+        <heading>Recital 54</heading>
+        <content eId="sec_79__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_80">
+        <num>80</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_80__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_81">
+        <num>81</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_81__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_82">
+        <num>82</num>
+        <heading>RC-B9-0163/2024 – § 17 – Am 2</heading>
+        <content eId="sec_82__content">
+          <p class="time"><time datetime="2024-03-13T17:45:35+01:00">17:45</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_83">
+        <num>83</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 12 – Am 3</heading>
+        <content eId="sec_83__content">
+          <p class="time"><time datetime="2024-03-13T17:28:03+01:00">17:28</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_84">
+        <num>84</num>
+        <heading>A9-0063/2024 – René Repasi – After § 9 – Am 3</heading>
+        <content eId="sec_84__content">
+          <p class="time"><time datetime="2024-03-13T17:17:20+01:00">17:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_85">
+        <num>85</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 7 – Am 9/2</heading>
+        <content eId="sec_85__content">
+          <p class="time"><time datetime="2024-03-13T17:24:38+01:00">17:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_86">
+        <num>86</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Safeguard Measures – Am 12, 14, 15</heading>
+        <content eId="sec_86__content">
+          <p class="time"><time datetime="2024-03-13T17:10:04+01:00">17:10</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_87">
+        <num>87</num>
+        <heading>Article 5, § 1, point 12</heading>
+        <content eId="sec_87__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_88">
+        <num>88</num>
+        <heading>After recital 21</heading>
+        <content eId="sec_88__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_89">
+        <num>89</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 40</heading>
+        <content eId="sec_89__content">
+          <p class="time"><time datetime="2024-03-13T17:39:11+01:00">17:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_90">
+        <num>90</num>
+        <heading>Article 46, § 6</heading>
+        <content eId="sec_90__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_91">
+        <num>91</num>
+        <heading>RC-B9-0163/2024 – § 10/2</heading>
+        <content eId="sec_91__content">
+          <p class="time"><time datetime="2024-03-13T17:45:03+01:00">17:45</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_92">
+        <num>92</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 35 – Am 33</heading>
+        <content eId="sec_92__content">
+          <p class="time"><time datetime="2024-03-13T17:38:26+01:00">17:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_93">
+        <num>93</num>
+        <heading>Article 27, § 3</heading>
+        <content eId="sec_93__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_94">
+        <num>94</num>
+        <heading>MTG-PL-2024-03-13-DEC-166656</heading>
+        <content eId="sec_94__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_95">
+        <num>95</num>
+        <heading>§ 11</heading>
+        <content eId="sec_95__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_96">
+        <num>96</num>
+        <heading>Annex II, Appendix, Part A, point 2</heading>
+        <content eId="sec_96__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_97">
+        <num>97</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 42 – Am 35</heading>
+        <content eId="sec_97__content">
+          <p class="time"><time datetime="2024-03-13T17:39:43+01:00">17:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_98">
+        <num>98</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 45 – Am 16</heading>
+        <content eId="sec_98__content">
+          <p class="time"><time datetime="2024-03-13T17:40:33+01:00">17:40</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_99">
+        <num>99</num>
+        <heading>A9-0264/2023 – Sabine Verheyen – Provisional agreement – Am 332</heading>
+        <content eId="sec_99__content">
+          <p class="time"><time datetime="2024-03-13T12:13:46+01:00">12:13</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_100">
+        <num>100</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Article 12, § 6, point a – Am 108</heading>
+        <content eId="sec_100__content">
+          <p class="time"><time datetime="2024-03-13T12:20:51+01:00">12:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_101">
+        <num>101</num>
+        <heading>Annex II, Appendix, Part A, after point 1</heading>
+        <content eId="sec_101__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_102">
+        <num>102</num>
+        <heading>After Article 4</heading>
+        <content eId="sec_102__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_103">
+        <num>103</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_103__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_104">
+        <num>104</num>
+        <heading>Safeguard Measures</heading>
+        <content eId="sec_104__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_105">
+        <num>105</num>
+        <heading>§ 9</heading>
+        <content eId="sec_105__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_106">
+        <num>106</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 1 – Am 8/1</heading>
+        <content eId="sec_106__content">
+          <p class="time"><time datetime="2024-03-13T17:21:51+01:00">17:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_107">
+        <num>107</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Recital 28 – Am 101</heading>
+        <content eId="sec_107__content">
+          <p class="time"><time datetime="2024-03-13T12:21:16+01:00">12:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_108">
+        <num>108</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 9/2</heading>
+        <content eId="sec_108__content">
+          <p class="time"><time datetime="2024-03-13T17:33:12+01:00">17:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_109">
+        <num>109</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Safeguard Measures – Am 23,24= 26,28=</heading>
+        <content eId="sec_109__content">
+          <p class="time"><time datetime="2024-03-13T17:10:28+01:00">17:10</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_110">
+        <num>110</num>
+        <heading>Article 11</heading>
+        <content eId="sec_110__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_111">
+        <num>111</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 36 – Am 27</heading>
+        <content eId="sec_111__content">
+          <p class="time"><time datetime="2024-03-13T17:38:49+01:00">17:38</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_112">
+        <num>112</num>
+        <heading>Article 1, § 1, point 4; Directive 2008/98/EC; Article 9a, § 4, point b</heading>
+        <content eId="sec_112__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_113">
+        <num>113</num>
+        <heading>Article 22, § 3, after point d</heading>
+        <content eId="sec_113__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_114">
+        <num>114</num>
+        <heading>After recital 39</heading>
+        <content eId="sec_114__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_115">
+        <num>115</num>
+        <heading>Article 27, § 1, sub§ 1 and 2</heading>
+        <content eId="sec_115__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_116">
+        <num>116</num>
+        <heading>Recital K</heading>
+        <content eId="sec_116__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_117">
+        <num>117</num>
+        <heading>Safeguard Measures</heading>
+        <content eId="sec_117__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_118">
+        <num>118</num>
+        <heading>Article 4, § 2, point c</heading>
+        <content eId="sec_118__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_119">
+        <num>119</num>
+        <heading>Recital 23</heading>
+        <content eId="sec_119__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_120">
+        <num>120</num>
+        <heading>A9-0063/2024 – René Repasi – Before § 1 – Am 14</heading>
+        <content eId="sec_120__content">
+          <p class="time"><time datetime="2024-03-13T17:16:49+01:00">17:16</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_121">
+        <num>121</num>
+        <heading>Article 1, § 1, point 7; Directive 2008/98/EC; Article 22 a, after § 1</heading>
+        <content eId="sec_121__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_122">
+        <num>122</num>
+        <heading>After recital J</heading>
+        <content eId="sec_122__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_123">
+        <num>123</num>
+        <heading>B9-0165/2024</heading>
+        <content eId="sec_123__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_124">
+        <num>124</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 7 – Am 9/3</heading>
+        <content eId="sec_124__content">
+          <p class="time"><time datetime="2024-03-13T17:24:52+01:00">17:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_125">
+        <num>125</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 26 – Am 8</heading>
+        <content eId="sec_125__content">
+          <p class="time"><time datetime="2024-03-13T17:36:13+01:00">17:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_126">
+        <num>126</num>
+        <heading>Article 1, § 1, point 4; Directive 2008/98/EC; Article 9a, § 4, point a</heading>
+        <content eId="sec_126__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_127">
+        <num>127</num>
+        <heading>Amendments by the committee responsible – put to the vote collectively</heading>
+        <content eId="sec_127__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_128">
+        <num>128</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 5/2</heading>
+        <content eId="sec_128__content">
+          <p class="time"><time datetime="2024-03-13T17:23:47+01:00">17:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_129">
+        <num>129</num>
+        <heading>§ 10</heading>
+        <content eId="sec_129__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_130">
+        <num>130</num>
+        <heading>Article 27, § 1, sub§ 3</heading>
+        <content eId="sec_130__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_131">
+        <num>131</num>
+        <heading>A9-0298/2023 – Alexandr Vondra – Provisional agreement – Am 247</heading>
+        <content eId="sec_131__content">
+          <p class="time"><time datetime="2024-03-13T17:04:16+01:00">17:04</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_132">
+        <num>132</num>
+        <heading>After § 1</heading>
+        <content eId="sec_132__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_133">
+        <num>133</num>
+        <heading>Article 31, § 3,after sub§ 1</heading>
+        <content eId="sec_133__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_134">
+        <num>134</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 46/1</heading>
+        <content eId="sec_134__content">
+          <p class="time"><time datetime="2024-03-13T17:41:14+01:00">17:41</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_135">
+        <num>135</num>
+        <heading>A9-0264/2023 – Sabine Verheyen – Request to vote on the amendments to the draft legislative act</heading>
+        <content eId="sec_135__content">
+          <p class="time"><time datetime="2024-03-13T12:13:30+01:00">12:13</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_136">
+        <num>136</num>
+        <heading>A9-0063/2024 – René Repasi – Motion for a resolution (text as a whole)</heading>
+        <content eId="sec_136__content">
+          <p class="time"><time datetime="2024-03-13T17:21:02+01:00">17:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_137">
+        <num>137</num>
+        <heading>Amendments by the committee responsible – put to the vote collectively</heading>
+        <content eId="sec_137__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_138">
+        <num>138</num>
+        <heading>B9-0166/2024</heading>
+        <content eId="sec_138__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_139">
+        <num>139</num>
+        <heading>B9-0167/2024</heading>
+        <content eId="sec_139__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_140">
+        <num>140</num>
+        <heading>§ 6</heading>
+        <content eId="sec_140__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_141">
+        <num>141</num>
+        <heading>After recital C</heading>
+        <content eId="sec_141__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_142">
+        <num>142</num>
+        <heading>A9-0068/2024 – Victor Negrescu – Motion for a resolution (text as a whole)</heading>
+        <content eId="sec_142__content">
+          <p class="time"><time datetime="2024-03-13T17:43:14+01:00">17:43</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_143">
+        <num>143</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_143__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_144">
+        <num>144</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_144__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_145">
+        <num>145</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – Recital M</heading>
+        <content eId="sec_145__content">
+          <p class="time"><time datetime="2024-03-13T17:30:12+01:00">17:30</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_146">
+        <num>146</num>
+        <heading>A9-0063/2024 – René Repasi – § 12 – Am 17</heading>
+        <content eId="sec_146__content">
+          <p class="time"><time datetime="2024-03-13T17:17:51+01:00">17:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_147">
+        <num>147</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 9 – Am 11/2</heading>
+        <content eId="sec_147__content">
+          <p class="time"><time datetime="2024-03-13T17:26:32+01:00">17:26</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_148">
+        <num>148</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_148__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_149">
+        <num>149</num>
+        <heading>A9-0063/2024 – René Repasi – After § 11 – Am 4</heading>
+        <content eId="sec_149__content">
+          <p class="time"><time datetime="2024-03-13T17:17:34+01:00">17:17</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_150">
+        <num>150</num>
+        <heading>After § 11</heading>
+        <content eId="sec_150__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_151">
+        <num>151</num>
+        <heading>A9-0033/2024 – Jan-Christoph Oetjen – Commission proposal and amendments</heading>
+        <content eId="sec_151__content">
+          <p class="time"><time datetime="2024-03-13T12:34:57+01:00">12:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_152">
+        <num>152</num>
+        <heading>A9-0055/2024 – Anna Zalewska – Article 1, § 1, point 4; Directive 2008/98/EC; Article 9a, § 4 – Am 117</heading>
+        <content eId="sec_152__content">
+          <p class="time"><time datetime="2024-03-13T12:32:31+01:00">12:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_153">
+        <num>153</num>
+        <heading>§ 29</heading>
+        <content eId="sec_153__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_154">
+        <num>154</num>
+        <heading>A9-0055/2024 – Anna Zalewska – Article 1, § 1, point 7; Directive 2008/98/EC; Article 22d, after § 1 and after article 22d – Am 119</heading>
+        <content eId="sec_154__content">
+          <p class="time"><time datetime="2024-03-13T12:33:13+01:00">12:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_155">
+        <num>155</num>
+        <heading>Safeguard Measures</heading>
+        <content eId="sec_155__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_156">
+        <num>156</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 33 – Am 15</heading>
+        <content eId="sec_156__content">
+          <p class="time"><time datetime="2024-03-13T17:37:50+01:00">17:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_157">
+        <num>157</num>
+        <heading>Article 54, § 1</heading>
+        <content eId="sec_157__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_158">
+        <num>158</num>
+        <heading>B9-0164/2024</heading>
+        <content eId="sec_158__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_159">
+        <num>159</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Article 12, § 6, introductory part – Am 107</heading>
+        <content eId="sec_159__content">
+          <p class="time"><time datetime="2024-03-13T12:20:41+01:00">12:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_160">
+        <num>160</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_160__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_161">
+        <num>161</num>
+        <heading>After § 29</heading>
+        <content eId="sec_161__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_162">
+        <num>162</num>
+        <heading>A9-0370/2023 – Henna Virkkunen – Provisional agreement – Am 30</heading>
+        <content eId="sec_162__content">
+          <p class="time"><time datetime="2024-03-13T12:36:33+01:00">12:36</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_163">
+        <num>163</num>
+        <heading>Before § 1</heading>
+        <content eId="sec_163__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_164">
+        <num>164</num>
+        <heading>Article 1, § 1, point 7; Directive 2008/98/EC; Article 22d, after § 1 and after article 22d</heading>
+        <content eId="sec_164__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_165">
+        <num>165</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 8 – Am 10</heading>
+        <content eId="sec_165__content">
+          <p class="time"><time datetime="2024-03-13T17:25:26+01:00">17:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_166">
+        <num>166</num>
+        <heading>§ 10</heading>
+        <content eId="sec_166__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_167">
+        <num>167</num>
+        <heading>A9-0386/2023 – Johan Van Overtveldt – Provisional agreement – Am 2</heading>
+        <content eId="sec_167__content">
+          <p class="time"><time datetime="2024-03-13T12:40:11+01:00">12:40</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_168">
+        <num>168</num>
+        <heading>Article 54, § 1</heading>
+        <content eId="sec_168__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_169">
+        <num>169</num>
+        <heading>Annex II, Part II, point (2) (a) (5)</heading>
+        <content eId="sec_169__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_170">
+        <num>170</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 44 – Am 39</heading>
+        <content eId="sec_170__content">
+          <p class="time"><time datetime="2024-03-13T17:40:17+01:00">17:40</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_171">
+        <num>171</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 12 – Am 6</heading>
+        <content eId="sec_171__content">
+          <p class="time"><time datetime="2024-03-13T17:34:16+01:00">17:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_172">
+        <num>172</num>
+        <heading>Before § 1</heading>
+        <content eId="sec_172__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_173">
+        <num>173</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 29 – Am 12</heading>
+        <content eId="sec_173__content">
+          <p class="time"><time datetime="2024-03-13T17:37:06+01:00">17:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_174">
+        <num>174</num>
+        <heading>A9-0063/2024 – René Repasi – After § 17 – Am 7</heading>
+        <content eId="sec_174__content">
+          <p class="time"><time datetime="2024-03-13T17:19:14+01:00">17:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_175">
+        <num>175</num>
+        <heading>§ 6</heading>
+        <content eId="sec_175__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_176">
+        <num>176</num>
+        <heading>RC-B9-0163/2024 – § 4/1</heading>
+        <content eId="sec_176__content">
+          <p class="time"><time datetime="2024-03-13T17:44:11+01:00">17:44</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_177">
+        <num>177</num>
+        <heading>After recital 39</heading>
+        <content eId="sec_177__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_178">
+        <num>178</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_178__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_179">
+        <num>179</num>
+        <heading>Amendments by the committee responsible – put to the vote collectively</heading>
+        <content eId="sec_179__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_180">
+        <num>180</num>
+        <heading>A9-0044/2024 – Marion Walsmann – Commission proposal</heading>
+        <content eId="sec_180__content">
+          <p class="time"><time datetime="2024-03-13T12:31:37+01:00">12:31</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_181">
+        <num>181</num>
+        <heading>Article 46, after § 7</heading>
+        <content eId="sec_181__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_182">
+        <num>182</num>
+        <heading>Text as a whole</heading>
+        <content eId="sec_182__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_183">
+        <num>183</num>
+        <heading>A9-0055/2024 – Anna Zalewska – Commission proposal</heading>
+        <content eId="sec_183__content">
+          <p class="time"><time datetime="2024-03-13T12:33:41+01:00">12:33</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_184">
+        <num>184</num>
+        <heading>Annex II, Appendix, Part C, Table</heading>
+        <content eId="sec_184__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_185">
+        <num>185</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_185__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_186">
+        <num>186</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 33 – Am 14</heading>
+        <content eId="sec_186__content">
+          <p class="time"><time datetime="2024-03-13T17:37:35+01:00">17:37</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_187">
+        <num>187</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Article 12, § 5 – Am 106</heading>
+        <content eId="sec_187__content">
+          <p class="time"><time datetime="2024-03-13T12:20:32+01:00">12:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_188">
+        <num>188</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Recital 3 – Am 100</heading>
+        <content eId="sec_188__content">
+          <p class="time"><time datetime="2024-03-13T12:21:01+01:00">12:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_189">
+        <num>189</num>
+        <heading>RC-B9-0163/2024 – § 18 – Am 3/1</heading>
+        <content eId="sec_189__content">
+          <p class="time"><time datetime="2024-03-13T17:45:53+01:00">17:45</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_190">
+        <num>190</num>
+        <heading>§ 15</heading>
+        <content eId="sec_190__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_191">
+        <num>191</num>
+        <heading>A9-0060/2024 – Laura Ballarín Cereza – Commission proposal and amendments</heading>
+        <content eId="sec_191__content">
+          <p class="time"><time datetime="2024-03-13T12:14:52+01:00">12:14</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_192">
+        <num>192</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Article 4, § 1, sub§ 1 – Am 27</heading>
+        <content eId="sec_192__content">
+          <p class="time"><time datetime="2024-03-13T17:09:25+01:00">17:09</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_193">
+        <num>193</num>
+        <heading>§ 16</heading>
+        <content eId="sec_193__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_194">
+        <num>194</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 10/3</heading>
+        <content eId="sec_194__content">
+          <p class="time"><time datetime="2024-03-13T17:27:06+01:00">17:27</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_195">
+        <num>195</num>
+        <heading>A9-0063/2024 – René Repasi – After recital H – Am 2</heading>
+        <content eId="sec_195__content">
+          <p class="time"><time datetime="2024-03-13T17:20:42+01:00">17:20</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_196">
+        <num>196</num>
+        <heading>B9-0168/2024</heading>
+        <content eId="sec_196__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_197">
+        <num>197</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 16/2</heading>
+        <content eId="sec_197__content">
+          <p class="time"><time datetime="2024-03-13T17:29:16+01:00">17:29</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_198">
+        <num>198</num>
+        <heading>MTG-PL-2024-03-13-DEC-166190</heading>
+        <content eId="sec_198__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_199">
+        <num>199</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – Recital K/1</heading>
+        <content eId="sec_199__content">
+          <p class="time"><time datetime="2024-03-13T17:29:50+01:00">17:29</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_200">
+        <num>200</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 7 – Am 9/4</heading>
+        <content eId="sec_200__content">
+          <p class="time"><time datetime="2024-03-13T17:25:08+01:00">17:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_201">
+        <num>201</num>
+        <heading>§ 10</heading>
+        <content eId="sec_201__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_202">
+        <num>202</num>
+        <heading>A9-0065/2024 – Deirdre Clune – Before Article 147 – Am 299</heading>
+        <content eId="sec_202__content">
+          <p class="time"><time datetime="2024-03-13T12:39:30+01:00">12:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_203">
+        <num>203</num>
+        <heading>A9-0065/2024 – Deirdre Clune – Commission proposal</heading>
+        <content eId="sec_203__content">
+          <p class="time"><time datetime="2024-03-13T12:39:44+01:00">12:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_204">
+        <num>204</num>
+        <heading>Article 54, § 2</heading>
+        <content eId="sec_204__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_205">
+        <num>205</num>
+        <heading>RC-B9-0163/2024 – § 4/2</heading>
+        <content eId="sec_205__content">
+          <p class="time"><time datetime="2024-03-13T17:44:25+01:00">17:44</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_206">
+        <num>206</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 40 – Am 34</heading>
+        <content eId="sec_206__content">
+          <p class="time"><time datetime="2024-03-13T17:39:28+01:00">17:39</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_207">
+        <num>207</num>
+        <heading>Annex II, Appendix, Part A, Table</heading>
+        <content eId="sec_207__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_208">
+        <num>208</num>
+        <heading>A9-0188/2023 – Brando Benifei, Dragoş Tudorache – Provisional agreement – Am 808</heading>
+        <content eId="sec_208__content">
+          <p class="time"><time datetime="2024-03-13T12:14:17+01:00">12:14</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_209">
+        <num>209</num>
+        <heading>§ 3</heading>
+        <content eId="sec_209__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_210">
+        <num>210</num>
+        <heading>A9-0006/2024 – Anne-Sophie Pelletier – Commission proposal and amendments</heading>
+        <content eId="sec_210__content">
+          <p class="time"><time datetime="2024-03-13T12:19:21+01:00">12:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_211">
+        <num>211</num>
+        <heading>Article 1, § 1, point 7; Directive 2008/98/EC; Article 22 a, after § 1</heading>
+        <content eId="sec_211__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_212">
+        <num>212</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 46 – Am 17</heading>
+        <content eId="sec_212__content">
+          <p class="time"><time datetime="2024-03-13T17:42:04+01:00">17:42</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_213">
+        <num>213</num>
+        <heading>Amendments by the committee responsible – put to the vote collectively</heading>
+        <content eId="sec_213__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_214">
+        <num>214</num>
+        <heading>Article 4, § 2, point c</heading>
+        <content eId="sec_214__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_215">
+        <num>215</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 9 – Am 11/1</heading>
+        <content eId="sec_215__content">
+          <p class="time"><time datetime="2024-03-13T17:26:15+01:00">17:26</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_216">
+        <num>216</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 3 – Am 6</heading>
+        <content eId="sec_216__content">
+          <p class="time"><time datetime="2024-03-13T17:23:01+01:00">17:23</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_217">
+        <num>217</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 4 – Am 22</heading>
+        <content eId="sec_217__content">
+          <p class="time"><time datetime="2024-03-13T17:32:44+01:00">17:32</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_218">
+        <num>218</num>
+        <heading>A9-0063/2024 – René Repasi – After § 17 – Am 5</heading>
+        <content eId="sec_218__content">
+          <p class="time"><time datetime="2024-03-13T17:18:38+01:00">17:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_219">
+        <num>219</num>
+        <heading>§ 14</heading>
+        <content eId="sec_219__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_220">
+        <num>220</num>
+        <heading>After recital 16</heading>
+        <content eId="sec_220__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_221">
+        <num>221</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 9/1</heading>
+        <content eId="sec_221__content">
+          <p class="time"><time datetime="2024-03-13T17:25:44+01:00">17:25</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_222">
+        <num>222</num>
+        <heading>§ 10</heading>
+        <content eId="sec_222__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_223">
+        <num>223</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 11/2</heading>
+        <content eId="sec_223__content">
+          <p class="time"><time datetime="2024-03-13T17:27:40+01:00">17:27</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_224">
+        <num>224</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Recital 30 – Am 103</heading>
+        <content eId="sec_224__content">
+          <p class="time"><time datetime="2024-03-13T12:21:35+01:00">12:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_225">
+        <num>225</num>
+        <heading>A9-0063/2024 – René Repasi – After § 17 – Am 6</heading>
+        <content eId="sec_225__content">
+          <p class="time"><time datetime="2024-03-13T17:18:55+01:00">17:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_226">
+        <num>226</num>
+        <heading>Article 1, § 1, after point 9; Directive 2008/98/EC; Article 35, § 1, after sub§ 1</heading>
+        <content eId="sec_226__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_227">
+        <num>227</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_227__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_228">
+        <num>228</num>
+        <heading>Amendments by the committee responsible – put to the vote collectively</heading>
+        <content eId="sec_228__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_229">
+        <num>229</num>
+        <heading>A9-0199/2023 – Loránt Vincze – Provisional agreement – Am 152</heading>
+        <content eId="sec_229__content">
+          <p class="time"><time datetime="2024-03-13T12:18:56+01:00">12:18</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_230">
+        <num>230</num>
+        <heading>Article 46, § 6</heading>
+        <content eId="sec_230__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_231">
+        <num>231</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 7 – Am 9/1</heading>
+        <content eId="sec_231__content">
+          <p class="time"><time datetime="2024-03-13T17:24:22+01:00">17:24</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_232">
+        <num>232</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 12 – Am 24</heading>
+        <content eId="sec_232__content">
+          <p class="time"><time datetime="2024-03-13T17:34:30+01:00">17:34</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_233">
+        <num>233</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 24 – Am 31</heading>
+        <content eId="sec_233__content">
+          <p class="time"><time datetime="2024-03-13T17:35:56+01:00">17:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_234">
+        <num>234</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 50 – Am 38</heading>
+        <content eId="sec_234__content">
+          <p class="time"><time datetime="2024-03-13T17:42:49+01:00">17:42</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_235">
+        <num>235</num>
+        <heading>A9-0034/2024 – Jan-Christoph Oetjen – Commission proposal and amendments</heading>
+        <content eId="sec_235__content">
+          <p class="time"><time datetime="2024-03-13T12:35:20+01:00">12:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_236">
+        <num>236</num>
+        <heading>A9-0068/2024 – Victor Negrescu – § 24 – Am 26</heading>
+        <content eId="sec_236__content">
+          <p class="time"><time datetime="2024-03-13T17:35:04+01:00">17:35</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_237">
+        <num>237</num>
+        <heading>RC-B9-0163/2024 – Motion for a resolution (text as a whole)</heading>
+        <content eId="sec_237__content">
+          <p class="time"><time datetime="2024-03-13T17:46:51+01:00">17:46</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_238">
+        <num>238</num>
+        <heading>Article 1, § 1, point 4; Directive 2008/98/EC; Article 9a, § 4, point b</heading>
+        <content eId="sec_238__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_239">
+        <num>239</num>
+        <heading>A9-0063/2024 – René Repasi – After § 17 – Am 9</heading>
+        <content eId="sec_239__content">
+          <p class="time"><time datetime="2024-03-13T17:19:45+01:00">17:19</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_240">
+        <num>240</num>
+        <heading>Article 5, § 1, point 13</heading>
+        <content eId="sec_240__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_241">
+        <num>241</num>
+        <heading>Article 53, § 1</heading>
+        <content eId="sec_241__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_242">
+        <num>242</num>
+        <heading>A9-0068/2024 – Victor Negrescu – After § 47 – Am 19</heading>
+        <content eId="sec_242__content">
+          <p class="time"><time datetime="2024-03-13T17:42:35+01:00">17:42</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_243">
+        <num>243</num>
+        <heading>A9-0077/2024 – Sandra Kalniete – Rejection – Am 25</heading>
+        <content eId="sec_243__content">
+          <p class="time"><time datetime="2024-03-13T17:08:45+01:00">17:08</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_244">
+        <num>244</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – After § 1 – Am 7</heading>
+        <content eId="sec_244__content">
+          <p class="time"><time datetime="2024-03-13T17:21:31+01:00">17:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_245">
+        <num>245</num>
+        <heading>Before § 1</heading>
+        <content eId="sec_245__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_246">
+        <num>246</num>
+        <heading>Recital 21</heading>
+        <content eId="sec_246__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_247">
+        <num>247</num>
+        <heading>A9-0050/2024 – Dragoş Pîslaru – § 11/1</heading>
+        <content eId="sec_247__content">
+          <p class="time"><time datetime="2024-03-13T17:27:24+01:00">17:27</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_248">
+        <num>248</num>
+        <heading>A9-0042/2024 – Adrián Vázquez Lázara – Commission proposal</heading>
+        <content eId="sec_248__content">
+          <p class="time"><time datetime="2024-03-13T12:21:46+01:00">12:21</time></p>
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_249">
+        <num>249</num>
+        <heading>§ 5</heading>
+        <content eId="sec_249__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_250">
+        <num>250</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_250__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_251">
+        <num>251</num>
+        <heading>Amendments by the committee responsible – separate votes</heading>
+        <content eId="sec_251__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+      <section eId="sec_252">
+        <num>252</num>
+        <heading>After § 14</heading>
+        <content eId="sec_252__content">
+          <p class="activityType">PLENARY_OUTCOME</p>
+        </content>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>

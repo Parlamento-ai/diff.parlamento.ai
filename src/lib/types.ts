@@ -6,6 +6,7 @@ export interface Article {
 
 export interface Section {
 	eId: string;
+	num?: string;
 	heading: string;
 	articles: Article[];
 }
@@ -48,7 +49,7 @@ export interface ChangeSet {
 	vote?: Vote;
 }
 
-export type DocumentType = 'act' | 'bill' | 'amendment';
+export type DocumentType = 'act' | 'bill' | 'amendment' | 'doc';
 
 export interface FRBRInfo {
 	workUri: string;
@@ -62,6 +63,7 @@ export interface FRBRInfo {
 export interface AknDocument {
 	type: DocumentType;
 	name: string;
+	docSubType?: string;
 	frbr: FRBRInfo;
 	preface: string;
 	prefaceTitle: string;

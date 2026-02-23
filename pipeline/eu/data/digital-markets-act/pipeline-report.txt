@@ -1,0 +1,23 @@
+═══════════════════════════════════════════════════════
+  EU AKN Pipeline: digital-markets-act
+  Procedure: 2020/0374(COD)
+  Title: Contestable and fair markets in the digital sector (Digital Markets Act)
+═══════════════════════════════════════════════════════
+  [PASS]  1. Download bill       39 articles (cached)                0.0s
+  [PASS]  2. Download formex     54 ARTICLE (cached)                 0.0s
+  [PASS]  3. Formex → AKN        54 articles (cached)                0.0s
+  [PASS]  4. EP amendments       44 article changes (cached)         0.0s
+  [PASS]  5. Viewer XMLs         3 files                             0.2s
+  [PASS]  6. Communication       20 events (cached)                  0.0s
+  [PASS]  7. Votes               132 decisions (cached)              0.0s
+  [PASS]  8. Citation            33 agenda items (cached)            0.0s
+  [WARN]  9. Gazette             TOC formex not available from CELLAR 3.4s
+
+  Cross-checks:
+  [PASS]  Bill CELEX match
+  [PASS]  Final CELEX match
+  [PASS]  Articles 39→54 (growth OK)
+  [PASS]  Vote date MTG-PL-2022-07-05 (auto-discovered)
+
+  RESULT: 8 pass, 0 fail, 1 warn (3.6s)
+═══════════════════════════════════════════════════════

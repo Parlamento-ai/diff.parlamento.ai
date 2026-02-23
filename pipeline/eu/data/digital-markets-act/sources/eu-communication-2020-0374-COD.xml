@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <doc name="communication">
+    <meta>
+      <identification source="#ep-opendata">
+        <FRBRWork>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/proc/2020-0374"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/proc/2020-0374"/>
+          <FRBRdate date="2021-02-08" name="procedure-start"/>
+          <FRBRauthor href="#com" as="#author"/>
+          <FRBRcountry value="eu"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/proc/2020-0374/en"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/proc/2020-0374/en"/>
+          <FRBRdate date="2026-02-23" name="snapshot"/>
+          <FRBRauthor href="#ep"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="https://data.europarl.europa.eu/eli/dl/proc/2020-0374/en/xml"/>
+          <FRBRuri value="https://data.europarl.europa.eu/eli/dl/proc/2020-0374/en/xml"/>
+          <FRBRdate date="2026-02-23" name="transformation"/>
+          <FRBRauthor href="#poc-epdata-to-communication"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#ep-opendata">
+        <TLCOrganization eId="ep-opendata" href="https://data.europarl.europa.eu" showAs="European Parliament Open Data Portal"/>
+        <TLCOrganization eId="ep" href="https://data.europarl.europa.eu/org/EU_PARLIAMENT" showAs="European Parliament"/>
+        <TLCOrganization eId="com" href="http://publications.europa.eu/resource/authority/corporate-body/COM" showAs="European Commission"/>
+        <TLCOrganization eId="consil" href="http://publications.europa.eu/resource/authority/corporate-body/CONSIL" showAs="Council of the European Union"/>
+        <TLCOrganization eId="opoce" href="http://publications.europa.eu/resource/authority/corporate-body/OPOCE" showAs="Publications Office of the EU"/>
+        <TLCProcess eId="cod" href="https://data.europarl.europa.eu/def/ep-procedure-types/COD" showAs="Ordinary Legislative Procedure (COD)"/>
+      </references>
+      <lifecycle source="#ep-opendata">
+        <eventRef eId="evt_1" date="2021-02-08" source="#ep" type="amendment"/>
+        <eventRef eId="evt_2" date="2021-02-08" source="#ep" type="amendment"/>
+        <eventRef eId="evt_3" date="2021-03-11" source="#ep" type="amendment"/>
+        <eventRef eId="evt_4" date="2021-05-20" source="#ep" type="amendment"/>
+        <eventRef eId="evt_5" date="2021-05-20" source="#ep" type="amendment"/>
+        <eventRef eId="evt_6" date="2021-12-14" source="#ep" type="amendment"/>
+        <eventRef eId="evt_7" date="2021-12-14" source="#ep" type="amendment"/>
+        <eventRef eId="evt_8" date="2021-12-14" source="#ep" type="amendment"/>
+        <eventRef eId="evt_9" date="2021-12-15" source="#ep" type="amendment"/>
+        <eventRef eId="evt_10" date="2021-12-15" source="#ep" type="generation"/>
+        <eventRef eId="evt_11" date="2021-12-15" source="#ep" type="generation"/>
+        <eventRef eId="evt_12" date="2021-12-15" source="#ep" type="amendment"/>
+        <eventRef eId="evt_13" date="2022-07-04" source="#ep" type="amendment"/>
+        <eventRef eId="evt_14" date="2022-07-05" source="#ep" type="generation"/>
+        <eventRef eId="evt_15" date="2022-07-05" source="#ep" type="amendment"/>
+        <eventRef eId="evt_16" date="2022-07-05" source="#ep" type="amendment"/>
+        <eventRef eId="evt_17" date="2022-09-12" source="#ep" type="amendment"/>
+        <eventRef eId="evt_18" date="2022-09-14" source="#ep" type="amendment"/>
+        <eventRef eId="evt_19" date="2022-10-12" source="#opoce" type="amendment"/>
+      </lifecycle>
+    </meta>
+    <preface eId="preface">
+      <longTitle eId="longTitle">
+        <p><docType>Legislative Procedure Communication</docType></p>
+        <p><docProponent refersTo="#com">European Commission</docProponent></p>
+        <p>Procedure <docNumber>2020-0374(COD)</docNumber></p>
+        <p><docTitle>Contestable and fair markets in the digital sector (Digital Markets Act)</docTitle></p>
+        <p>Type: <session refersTo="#cod">Ordinary Legislative Procedure (COD)</session></p>
+        <p>Current stage: First Reading</p>
+      </longTitle>
+    </preface>
+    <mainBody>
+      <section eId="sec_evt1">
+        <num>1</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt1__content">
+          <p class="date"><date date="2021-02-08">8 February 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0005">A-9-2021-0005</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0017">C-9-2020-0017</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0005">C-9-2021-0005</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-8-2018-0115">C-8-2018-0115</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0008">C-9-2021-0008</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0006">C-9-2021-0006</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0016">C-9-2021-0016</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0009">C-9-2021-0009</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0006">A-9-2021-0006</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0425">C-9-2020-0425</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0418">C-9-2020-0418</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0401">C-9-2020-0401</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0004">C-9-2021-0004</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0011">A-9-2021-0011</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0007">A-9-2021-0007</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0008">A-9-2021-0008</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0010">A-9-2021-0010</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0009">A-9-2021-0009</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0002">A-9-2021-0002</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0003">A-9-2021-0003</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0004">A-9-2021-0004</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-02-08-ITM-011">PV-9-2021-02-08-ITM-011</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt2">
+        <num>2</num>
+        <heading>Referral to Committee</heading>
+        <content eId="sec_evt2__content">
+          <p class="date"><date date="2021-02-08">8 February 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="stage">First Reading</p>
+        </content>
+      </section>
+      <section eId="sec_evt3">
+        <num>3</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt3__content">
+          <p class="date"><date date="2021-03-11">11 March 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0418">C-9-2020-0418</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0421">C-9-2020-0421</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-03-11-ITM-025">PV-9-2021-03-11-ITM-025</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt4">
+        <num>4</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt4__content">
+          <p class="date"><date date="2021-05-20">20 May 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0418">C-9-2020-0418</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0422">C-9-2020-0422</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0400">C-9-2020-0400</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-05-20-ITM-027">PV-9-2021-05-20-ITM-027</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt5">
+        <num>5</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt5__content">
+          <p class="date"><date date="2021-05-20">20 May 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0400">C-9-2020-0400</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-05-20-ITM-026">PV-9-2021-05-20-ITM-026</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt6">
+        <num>6</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt6__content">
+          <p class="date"><date date="2021-12-14">14 December 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0399">C-9-2021-0399</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0344">A-9-2021-0344</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0379">C-9-2021-0379</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0321">A-9-2021-0321</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0236">A-9-2021-0236</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0253">C-9-2021-0253</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0368">C-9-2021-0368</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0347">A-9-2021-0347</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0006">C-9-2021-0006</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0324">A-9-2021-0324</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0316">A-9-2021-0316</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0404">C-9-2021-0404</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-8-2016-0018">C-8-2016-0018</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0337">A-9-2021-0337</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0345">A-9-2021-0345</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0322">A-9-2021-0322</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0335">A-9-2021-0335</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0237">A-9-2021-0237</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0343">A-9-2021-0343</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0400">C-9-2021-0400</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0346">A-9-2021-0346</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0338">A-9-2021-0338</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0005">C-9-2021-0005</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0257">C-9-2021-0257</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0315">A-9-2021-0315</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0403">C-9-2021-0403</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-12-14-ITM-007">PV-9-2021-12-14-ITM-007</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2021-12-14-ITM-007">CRE-9-2021-12-14-ITM-007</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt7">
+        <num>7</num>
+        <heading>Plenary Vote</heading>
+        <content eId="sec_evt7__content">
+          <p class="date"><date date="2021-12-14">14 December 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0237">A-9-2021-0237</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0006">C-9-2021-0006</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0321">A-9-2021-0321</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0257">C-9-2021-0257</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0343">A-9-2021-0343</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0379">C-9-2021-0379</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0403">C-9-2021-0403</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0335">A-9-2021-0335</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0368">C-9-2021-0368</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0316">A-9-2021-0316</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0236">A-9-2021-0236</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0338">A-9-2021-0338</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0399">C-9-2021-0399</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-8-2016-0018">C-8-2016-0018</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0324">A-9-2021-0324</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0347">A-9-2021-0347</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0400">C-9-2021-0400</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0346">A-9-2021-0346</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0344">A-9-2021-0344</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0404">C-9-2021-0404</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0315">A-9-2021-0315</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0337">A-9-2021-0337</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0253">C-9-2021-0253</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0005">C-9-2021-0005</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0322">A-9-2021-0322</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0345">A-9-2021-0345</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-12-14-ITM-015">PV-9-2021-12-14-ITM-015</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2021-12-14-ITM-015">CRE-9-2021-12-14-ITM-015</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt8">
+        <num>8</num>
+        <heading>Plenary Debate</heading>
+        <content eId="sec_evt8__content">
+          <p class="date"><date date="2021-12-14">14 December 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2021-12-14-ITM-003">CRE-9-2021-12-14-ITM-003</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-12-14-ITM-003">PV-9-2021-12-14-ITM-003</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt9">
+        <num>9</num>
+        <heading>Plenary Vote</heading>
+        <content eId="sec_evt9__content">
+          <p class="date"><date date="2021-12-15">15 December 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0324">A-9-2021-0324</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0331">A-9-2021-0331</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0320">A-9-2021-0320</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0328">A-9-2021-0328</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0315">A-9-2021-0315</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0381">C-9-2021-0381</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0298">A-9-2021-0298</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0330">A-9-2021-0330</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0321">A-9-2021-0321</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2021-12-15-ITM-017">CRE-9-2021-12-15-ITM-017</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-12-15-ITM-017">PV-9-2021-12-15-ITM-017</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt10">
+        <num>10</num>
+        <heading>Plenary refer committee interinstitutional negotiations</heading>
+        <content eId="sec_evt10__content">
+          <p class="date"><date date="2021-12-15">15 December 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Decision</p>
+        </content>
+      </section>
+      <section eId="sec_evt11">
+        <num>11</num>
+        <heading>Plenary amend</heading>
+        <content eId="sec_evt11__content">
+          <p class="date"><date date="2021-12-15">15 December 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Decision</p>
+          <p class="stage">First Reading</p>
+        </content>
+      </section>
+      <section eId="sec_evt12">
+        <num>12</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt12__content">
+          <p class="date"><date date="2021-12-15">15 December 2021</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0298">A-9-2021-0298</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0328">A-9-2021-0328</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0321">A-9-2021-0321</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0320">A-9-2021-0320</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0324">A-9-2021-0324</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0330">A-9-2021-0330</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0331">A-9-2021-0331</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0315">A-9-2021-0315</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2021-0381">C-9-2021-0381</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2021-12-15-ITM-010">CRE-9-2021-12-15-ITM-010</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-12-15-ITM-010">PV-9-2021-12-15-ITM-010</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt13">
+        <num>13</num>
+        <heading>Plenary Debate</heading>
+        <content eId="sec_evt13__content">
+          <p class="date"><date date="2022-07-04">4 July 2022</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0356">A-9-2021-0356</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0418">C-9-2020-0418</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2022-07-04-ITM-015">CRE-9-2022-07-04-ITM-015</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2022-07-04-ITM-015">PV-9-2022-07-04-ITM-015</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt14">
+        <num>14</num>
+        <heading>Plenary amend proposal</heading>
+        <content eId="sec_evt14__content">
+          <p class="date"><date date="2022-07-05">5 July 2022</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Decision</p>
+          <p class="stage">First Reading</p>
+        </content>
+      </section>
+      <section eId="sec_evt15">
+        <num>15</num>
+        <heading>Plenary Vote</heading>
+        <content eId="sec_evt15__content">
+          <p class="date"><date date="2022-07-05">5 July 2022</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2020-0419">C-9-2020-0419</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2022-07-05-ITM-006-05">CRE-9-2022-07-05-ITM-006-05</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2022-07-05-ITM-006-05">PV-9-2022-07-05-ITM-006-05</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt16">
+        <num>16</num>
+        <heading>Plenary Vote Results</heading>
+        <content eId="sec_evt16__content">
+          <p class="date"><date date="2022-07-05">5 July 2022</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2022-07-05-VOT-ITM-002">PV-9-2022-07-05-VOT-ITM-002</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt17">
+        <num>17</num>
+        <heading>Plenary activity</heading>
+        <content eId="sec_evt17__content">
+          <p class="date"><date date="2022-09-12">12 September 2022</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament</organization></p>
+          <p class="eventType">Activity</p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0305">C-9-2022-0305</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0286">C-9-2022-0286</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0284">C-9-2022-0284</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0285">C-9-2022-0285</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0283">C-9-2022-0283</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/CRE-9-2022-09-12-ITM-011">CRE-9-2022-09-12-ITM-011</ref></p>
+          <p class="record">Recorded in: <ref href="https://data.europarl.europa.eu/eli/dl/doc/PV-9-2022-09-12-ITM-011">PV-9-2022-09-12-ITM-011</ref></p>
+        </content>
+      </section>
+      <section eId="sec_evt18">
+        <num>18</num>
+        <heading>Act Signed</heading>
+        <content eId="sec_evt18__content">
+          <p class="date"><date date="2022-09-14">14 September 2022</date></p>
+          <p class="institution"><organization refersTo="#ep">European Parliament / Council</organization></p>
+          <p class="eventType">Activity</p>
+        </content>
+      </section>
+      <section eId="sec_evt19">
+        <num>19</num>
+        <heading>Published in Official Journal</heading>
+        <content eId="sec_evt19__content">
+          <p class="date"><date date="2022-10-12">12 October 2022</date></p>
+          <p class="institution"><organization refersTo="#opoce">Publications Office</organization></p>
+          <p class="eventType">Activity</p>
+        </content>
+      </section>
+      <section eId="sec_evt20">
+        <num>20</num>
+        <heading>Documents Produced</heading>
+        <content eId="sec_evt20__content">
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/TA-9-2021-0499">TA-9-2021-0499</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/A-9-2021-0332">A-9-2021-0332</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/SP-2022-483-TA-9-2021-0499">SP-2022-483-TA-9-2021-0499</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/C-9-2022-0305">C-9-2022-0305</ref></p>
+          <p class="document"><ref href="https://data.europarl.europa.eu/eli/dl/doc/TA-9-2022-0270">TA-9-2022-0270</ref></p>
+        </content>
+      </section>
+    </mainBody>
+  </doc>
+</akomaNtoso>

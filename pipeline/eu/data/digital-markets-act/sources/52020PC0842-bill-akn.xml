@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <bill name="reg">
+    <meta>
+      <identification source="#source">
+        <FRBRWork>
+          <FRBRthis value="http://data.europa.eu/eli/comProposal/2020/842"/>
+          <FRBRuri value="http://data.europa.eu/eli/comProposal/2020/842"/>
+          <FRBRdate date="2020-12-15" name="generation"/>
+          <FRBRauthor href="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+          <FRBRcountry value="eu"/>
+          <FRBRnumber value="842"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="http://data.europa.eu/eli/comProposal/2020/842/en"/>
+          <FRBRuri value="http://data.europa.eu/eli/comProposal/2020/842/en"/>
+          <FRBRdate date="2020-12-15" name="generation"/>
+          <FRBRauthor href="http://publications.europa.eu/resource/authority/corporate-body/COM"/>
+          <FRBRlanguage language="en"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="http://data.europa.eu/eli/comProposal/2020/842/en/xml"/>
+          <FRBRuri value="http://data.europa.eu/eli/comProposal/2020/842/en/xml"/>
+          <FRBRdate date="2026-02-23" name="transformation"/>
+          <FRBRauthor href="#poc-cellar-to-bill"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#source">
+        <TLCOrganization eId="source" href="http://publications.europa.eu/resource/authority/corporate-body/COM" showAs="European Commission"/>
+      </references>
+    </meta>
+    <preface eId="preface">
+      <longTitle eId="longTitle">
+        <p><docStage>Proposal for a</docStage></p>
+        <p><docType>REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL</docType></p>
+        <p><docTitle>on contestable and fair markets in the digital sector (Digital Markets Act)</docTitle></p>
+        <p>(Text with EEA relevance)</p>
+      </longTitle>
+      <container eId="preface__cover" name="coverPage">
+        <p class="docReference">COM(2020) 842 final</p>
+        <p class="interInstitutionalReference">2020/0374(COD)</p>
+        <p class="emission">Brussels, 15.12.2020</p>
+      </container>
+    </preface>
+    <preamble eId="preamble">
+      <formula name="actingEntity" eId="formula_1">
+        <p>THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION,</p>
+      </formula>
+      <citations eId="cits">
+        <citation eId="cit_1"><p>Having regard to the Treaty on the Functioning of the European Union, and in particular Article 114 thereof,</p></citation>
+        <citation eId="cit_2"><p>Having regard to the proposal from the European Commission,</p></citation>
+        <citation eId="cit_3"><p>After transmission of the draft legislative act to the national parliaments,</p></citation>
+        <citation eId="cit_4"><p>Having regard to the opinion of the European Economic and Social Committee
+                  
+               ,</p></citation>
+        <citation eId="cit_5"><p>Having regard to the opinion of the Committee of the Regions
+                  
+               ,</p></citation>
+        <citation eId="cit_6"><p>Having regard to the opinion of the European Data Protection Supervisor
+                  
+               ,</p></citation>
+        <citation eId="cit_7"><p>Acting in accordance with the ordinary legislative procedure,</p></citation>
+      </citations>
+      <recitals eId="recs">
+        <intro eId="recs_intro"><p>Whereas:</p></intro>
+        <recital eId="rec_1">
+          <num>(1)</num>
+          <p>Digital services in general and online platforms in particular play an increasingly important role in the economy, in particular in the internal market, by providing new business opportunities in the Union and facilitating cross-border trading.</p>
+        </recital>
+        <recital eId="rec_2">
+          <num>(2)</num>
+          <p>Core platform services, at the same time, feature a number of characteristics that can be exploited by their providers. These characteristics of core platform services include among others extreme scale economies, which often result from nearly zero marginal costs to add business users or end users. Other characteristics of core platform services are very strong network effects, an ability to connect many business users with many end users through the multi-sidedness of these services, a significant degree of dependence of both business users and end users, lock-in effects, a lack of multi-homing for the same purpose by end users, vertical integration, and data driven-advantages. All these characteristics combined with unfair conduct by providers of these services can have the effect of substantially undermining the contestability of the core platform services, as well as impacting the fairness of the commercial relationship between providers of such services and their business users and end users, leading to rapid and potentially far-reaching decreases in business users’ and end users’ choice in practice, and therefore can confer to the provider of those services the position of a so-called gatekeeper.</p>
+        </recital>
+        <recital eId="rec_3">
+          <num>(3)</num>
+          <p>A small number of large providers of core platform services have emerged with considerable economic power. Typically, they feature an ability to connect many business users with many end users through their services which, in turn, allows them to leverage their advantages, such as their access to large amounts of data, from one area of their activity to new ones. Some of these providers exercise control over whole platform ecosystems in the digital economy and are structurally extremely difficult to challenge or contest by existing or new market operators, irrespective of how innovative and efficient these may be. Contestability is particularly reduced due to the existence of very high barriers to entry or exit, including high investment costs, which cannot, or not easily, be recuperated in case of exit, and absence of (or reduced access to) some key inputs in the digital economy, such as data. As a result, the likelihood increases that the underlying markets do not function well – or will soon fail to function well.</p>
+        </recital>
+        <recital eId="rec_4">
+          <num>(4)</num>
+          <p>The combination of those features of gatekeepers is likely to lead in many cases to serious imbalances in bargaining power and, consequently, to unfair practices and conditions for business users as well as end users of core platform services provided by gatekeepers, to the detriment of prices, quality, choice and innovation therein.</p>
+        </recital>
+        <recital eId="rec_5">
+          <num>(5)</num>
+          <p>It follows that the market processes are often incapable of ensuring fair economic outcomes with regard to core platform services. Whereas Articles 101 and 102 TFEU remain applicable to the conduct of gatekeepers, their scope is limited to certain instances of market power (e.g. dominance on specific markets) and of anti-competitive behaviour, while enforcement occurs ex post and requires an extensive investigation of often very complex facts on a case by case basis. Moreover, existing Union law does not address, or does not address effectively, the identified challenges to the well-functioning of the internal market posed by the conduct of gatekeepers, which are not necessarily dominant in competition-law terms.</p>
+        </recital>
+        <recital eId="rec_6">
+          <num>(6)</num>
+          <p>Gatekeepers have a significant impact on the internal market, providing gateways for a large number of business users, to reach end users, everywhere in the Union and on different markets. The adverse impact of unfair practices on the internal market and particularly weak contestability of core platform services, including their negative societal and economic implications, have led national legislators and sectoral regulators to act. A number of national regulatory solutions have already been adopted or proposed to address unfair practices and the contestability of digital services or at least with regard to some of them. This has created a risk of divergent regulatory solutions and thereby fragmentation of the internal market, thus raising the risk of increased compliance costs due to different sets of national regulatory requirements.</p>
+        </recital>
+        <recital eId="rec_7">
+          <num>(7)</num>
+          <p>Therefore, business users and end-users of core platform services provided by gatekeepers should be afforded appropriate regulatory safeguards throughout the Union against the unfair behaviour of gatekeepers in order to facilitate cross-border business within the Union and thereby improve the proper functioning of the internal market and to address existing or likely emerging fragmentation in the specific areas covered by this Regulation. Moreover, while gatekeepers tend to adopt global or at least pan-European business models and algorithmic structures, they can adopt, and in some cases have adopted, different business conditions and practices in different Member States, which is liable to create disparities between the competitive conditions for the users of core platform services provided by gatekeepers, to the detriment of integration within the internal market.</p>
+        </recital>
+        <recital eId="rec_8">
+          <num>(8)</num>
+          <p>By approximating diverging national laws, obstacles to the freedom to provide and receive services, including retail services, within the internal market should be eliminated. A targeted set of harmonised mandatory rules should therefore be established at Union level to ensure contestable and fair digital markets featuring the presence of gatekeepers within the internal market.</p>
+        </recital>
+        <recital eId="rec_9">
+          <num>(9)</num>
+          <p>A fragmentation of the internal market can only be effectively averted if Member States are prevented from applying national rules which are specific to the types of undertakings and services covered by this Regulation. At the same time, since this Regulation aims at complementing the enforcement of competition law, it should be specified that this Regulation is without prejudice to Articles 101 and 102 TFEU, to the corresponding national competition rules and to other national competition rules regarding unilateral behaviour that are based on an individualised assessment of market positions and behaviour, including its likely effects and the precise scope of the prohibited behaviour, and which provide for the possibility of undertakings to make efficiency and objective justification arguments for the behaviour in question. However, the application of the latter rules should not affect the obligations imposed on gatekeepers under this Regulation and their uniform and effective application in the internal market.</p>
+        </recital>
+        <recital eId="rec_10">
+          <num>(10)</num>
+          <p>Articles 101 and 102 TFEU and the corresponding national competition rules concerning anticompetitive multilateral and unilateral conduct as well as merger control have as their objective the protection of undistorted competition on the market. This Regulation pursues an objective that is complementary to, but different from that of protecting undistorted competition on any given market, as defined in competition-law terms, which is to ensure that markets where gatekeepers are present are and remain contestable and fair, independently from the actual, likely or presumed effects of the conduct of a given gatekeeper covered by this Regulation on competition on a given market. This Regulation therefore aims at protecting a different legal interest from those rules and should be without prejudice to their application.</p>
+        </recital>
+        <recital eId="rec_11">
+          <num>(11)</num>
+          <p>This Regulation should also complement, without prejudice to their application, the rules resulting from other acts of Union law regulating certain aspects of the provision of services covered by this Regulation, in particular Regulation (EU) 2019/1150 of the European Parliament and of the Council
+                  
+               , Regulation (EU) xx/xx/EU [DSA] of the European Parliament and of the Council
+                  
+               , Regulation (EU) 2016/679 of the European Parliament and of the Council
+                  
+               , Directive (EU) 2019/790 of the European Parliament and of the Council
+                  
+               , Directive (EU) 2015/2366 of the European Parliament and of the Council
+                  
+               , and Directive (EU) 2010/13 of the European Parliament and of the Council
+                  
+               , as well as national rules aimed at enforcing or, as the case may be, implementing that Union legislation.</p>
+        </recital>
+        <recital eId="rec_12">
+          <num>(12)</num>
+          <p>Weak contestability and unfair practices in the digital sector are more frequent and pronounced for certain digital services than for others. This is the case in particular for widespread and commonly used digital services that mostly directly intermediate between business users and end users and where features such as extreme scale economies, very strong network effects, an ability to connect many business users with many end users through the multi-sidedness of these services, lock-in effects, a lack of multi-homing or vertical integration are the most prevalent. Often, there is only one or very few large providers of those digital services. These providers of core platform services have emerged most frequently as gatekeepers for business users and end users with far-reaching impacts, gaining the ability to easily set commercial conditions and terms in a unilateral and detrimental manner for their business users and end users. Accordingly, it is necessary to focus only on those digital services that are most broadly used by business users and end users and where, based on current market conditions, concerns about weak contestability and unfair practices by gatekeepers are more apparent and pressing from an internal market perspective.</p>
+        </recital>
+        <recital eId="rec_13">
+          <num>(13)</num>
+          <p>In particular, online intermediation services, online search engines, operating systems, online social networking, video sharing platform services, number-independent interpersonal communication services, cloud computing services and online advertising services all have the capacity to affect a large number of end users and businesses alike, which entails a risk of unfair business practices. They therefore should be included in the definition of core platform services and fall into the scope of this Regulation. Online intermediation services may also be active in the field of financial services, and they may intermediate or be used to provide such services as listed non-exhaustively in Annex II to Directive (EU) 2015/1535 of the European Parliament and of the Council
+                  
+               . In certain circumstances, the notion of end users should encompass users that are traditionally considered business users, but in a given situation do not use the core platform services to provide goods or services to other end users, such as for example businesses relying on cloud computing services for their own purposes.</p>
+        </recital>
+        <recital eId="rec_14">
+          <num>(14)</num>
+          <p>A number of other ancillary services, such as identification or payment services and technical services which support the provision of payment services, may be provided by gatekeepers together with their core platform services. As gatekeepers frequently provide the portfolio of their services as part of an integrated ecosystem to which third-party providers of such ancillary services do not have access, at least not subject to equal conditions, and can link the access to the core platform service to take-up of one or more ancillary services, the gatekeepers are likely to have an increased ability and incentive to leverage their gatekeeper power from their core platform services to these ancillary services, to the detriment of choice and contestability of these services.</p>
+        </recital>
+        <recital eId="rec_15">
+          <num>(15)</num>
+          <p>The fact that a digital service qualifies as a core platform service in light of its widespread and common use and its importance for connecting business users and end users does not as such give rise to sufficiently serious concerns of contestability and unfair practices. It is only when a core platform service constitutes an important gateway and is operated by a provider with a significant impact in the internal market and an entrenched and durable position, or by a provider that will foreseeably have such a position in the near future, that such concerns arise. Accordingly, the targeted set of harmonised rules laid down in this Regulation should apply only to undertakings designated on the basis of these three objective criteria, and they should only apply to those of their core platform services that individually constitute an important gateway for business users to reach end users.</p>
+        </recital>
+        <recital eId="rec_16">
+          <num>(16)</num>
+          <p>In order to ensure the effective application of this Regulation to providers of core platform services which are most likely to satisfy these objective requirements, and where unfair conduct weakening contestability is most prevalent and impactful, the Commission should be able to directly designate as gatekeepers those providers of core platform services which meet certain quantitative thresholds. Such undertakings should in any event be subject to a fast designation process which should start upon the entry into force of this Regulation.</p>
+        </recital>
+        <recital eId="rec_17">
+          <num>(17)</num>
+          <p>A very significant turnover in the Union and the provision of a core platform service in at least three Member States constitute compelling indications that the provider of a core platform service has a significant impact on the internal market. This is equally true where a provider of a core platform service in at least three Member States has a very significant market capitalisation or equivalent fair market value. Therefore, a provider of a core platform service should be presumed to have a significant impact on the internal market where it provides a core platform service in at least three Member States and where either its group turnover realised in the EEA is equal to or exceeds a specific, high threshold or the market capitalisation of the group is equal to or exceeds a certain high absolute value. For providers of core platform services that belong to undertakings that are not publicly listed, the equivalent fair market value above a certain high absolute value should be referred to. The Commission should use its power to adopt delegated acts to develop an objective methodology to calculate that value. A high EEA group turnover in conjunction with the threshold of users in the Union of core platform services reflects a relatively strong ability to monetise these users. A high market capitalisation relative to the same threshold number of users in the Union reflects a relatively significant potential to monetise these users in the near future. This monetisation potential in turn reflects in principle the gateway position of the undertakings concerned. Both indicators are in addition reflective of their financial capacity, including their ability to leverage their access to financial markets to reinforce their position. This may for example happen where this superior access is used to acquire other undertakings, which ability has in turn been shown to have potential negative effects on innovation. Market capitalisation can also be reflective of the expected future position and effect on the internal market of the providers concerned, notwithstanding a potentially relatively low current turnover. The market capitalisation value can be based on a level that reflects the average market capitalisation of the largest publicly listed undertakings in the Union over an appropriate period.</p>
+        </recital>
+        <recital eId="rec_18">
+          <num>(18)</num>
+          <p>A sustained market capitalisation of the provider of core platform services at or above the threshold level over three or more years should be considered as strengthening the presumption that the provider of core platform services has a significant impact on the internal market.</p>
+        </recital>
+        <recital eId="rec_19">
+          <num>(19)</num>
+          <p>There may be a number of factors concerning market capitalisation that would require an in-depth assessment in determining whether a provider of core platform services should be deemed to have a significant impact on the internal market. This may be the case where the market capitalisation of the provider of core platform services in preceding financial years was significantly lower than the average of the equity market, the volatility of its market capitalisation over the observed period was disproportionate to overall equity market volatility or its market capitalisation trajectory relative to market trends was inconsistent with a rapid and unidirectional growth.</p>
+        </recital>
+        <recital eId="rec_20">
+          <num>(20)</num>
+          <p>A very high number of business users that depend on a core platform service to reach a very high number of monthly active end users allow the provider of that service to influence the operations of a substantial part of business users to its advantage and indicate in principle that the provider serves as an important gateway. The respective relevant levels for those numbers should be set representing a substantive percentage of the entire population of the Union when it comes to end users and of the entire population of businesses using platforms to determine the threshold for business users.</p>
+        </recital>
+        <recital eId="rec_21">
+          <num>(21)</num>
+          <p>An entrenched and durable position in its operations or the foreseeability of achieving such a position future occurs notably where the contestability of the position of the provider of the core platform service is limited. This is likely to be the case where that provider has provided a core platform service in at least three Member States to a very high number of business users and end users during at least three years.</p>
+        </recital>
+        <recital eId="rec_22">
+          <num>(22)</num>
+          <p>Such thresholds can be impacted by market and technical developments. The Commission should therefore be empowered to adopt delegated acts to specify the methodology for determining whether the quantitative thresholds are met, and to regularly adjust it to market and technological developments where necessary. This is particularly relevant in relation to the threshold referring to market capitalisation, which should be indexed in appropriate intervals.</p>
+        </recital>
+        <recital eId="rec_23">
+          <num>(23)</num>
+          <p>Providers of core platform services which meet the quantitative thresholds but are able to present sufficiently substantiated arguments to demonstrate that, in the circumstances in which the relevant core platform service operates, they do not fulfil the objective requirements for a gatekeeper, should not be designated directly, but only subject to a further investigation. The burden of adducing evidence that the presumption deriving from the fulfilment of quantitative thresholds should not apply to a specific provider should be borne by that provider In its assessment, the Commission should take into account only the elements which directly relate to the requirements for constituting a gatekeeper, namely whether it is an important gateway which is operated by a provider with a significant impact in the internal market with an entrenched and durable position, either actual or foreseeable. Any justification on economic grounds seeking to demonstrate efficiencies deriving from a specific type of behaviour by the provider of core platform services should be discarded, as it is not relevant to the designation as a gatekeeper. The Commission should be able to take a decision by relying on the quantitative thresholds where the provider significantly obstructs the investigation by failing to comply with the investigative measures taken by the Commission.</p>
+        </recital>
+        <recital eId="rec_24">
+          <num>(24)</num>
+          <p>Provision should also be made for the assessment of the gatekeeper role of providers of core platform services which do not satisfy all of the quantitative thresholds, in light of the overall objective requirements that they have a significant impact on the internal market, act as an important gateway for business users to reach end users and benefit from a durable and entrenched position in their operations or it is foreseeable that it will do so in the near future.</p>
+        </recital>
+        <recital eId="rec_25">
+          <num>(25)</num>
+          <p>Such an assessment can only be done in light of a market investigation, while taking into account the quantitative thresholds. In its assessment the Commission should pursue the objectives of preserving and fostering the level of innovation, the quality of digital products and services, the degree to which prices are fair and competitive, and the degree to which quality or choice for business users and for end users is or remains high. Elements that are specific to the providers of core platform services concerned, such as extreme scale economies, very strong network effects, an ability to connect many business users with many end users through the multi-sidedness of these services, lock-in effects, a lack of multi-homing or vertical integration, can be taken into account. In addition, a very high market capitalisation, a very high ratio of equity value over profit or a very high turnover derived from end users of a single core platform service can point to the tipping of the market or leveraging potential of such providers. Together with market capitalisation, high growth rates, or decelerating growth rates read together with profitability growth, are examples of dynamic parameters that are particularly relevant to identifying such providers of core platform services that are foreseen to become entrenched. The Commission should be able to take a decision by drawing adverse inferences from facts available where the provider significantly obstructs the investigation by failing to comply with the investigative measures taken by the Commission.</p>
+        </recital>
+        <recital eId="rec_26">
+          <num>(26)</num>
+          <p>A particular subset of rules should apply to those providers of core platform services that are foreseen to enjoy an entrenched and durable position in the near future. The same specific features of core platform services make them prone to tipping: once a service provider has obtained a certain advantage over rivals or potential challengers in terms of scale or intermediation power, its position may become unassailable and the situation may evolve to the point that it is likely to become durable and entrenched in the near future. Undertakings can try to induce this tipping and emerge as gatekeeper by using some of the unfair conditions and practices regulated in this Regulation. In such a situation, it appears appropriate to intervene before the market tips irreversibly.</p>
+        </recital>
+        <recital eId="rec_27">
+          <num>(27)</num>
+          <p>However, such an early intervention should be limited to imposing only those obligations that are necessary and appropriate to ensure that the services in question remain contestable and allow to avoid the qualified risk of unfair conditions and practices. Obligations that prevent the provider of core platform services concerned from achieving an entrenched and durable position in its operations, such as those preventing unfair leveraging, and those that facilitate switching and multi-homing are more directly geared towards this purpose. To ensure proportionality, the Commission should moreover apply from that subset of obligations only those that are necessary and proportionate to achieve the objectives of this Regulation and should regularly review whether such obligations should be maintained, suppressed or adapted.</p>
+        </recital>
+        <recital eId="rec_28">
+          <num>(28)</num>
+          <p>This should allow the Commission to intervene in time and effectively, while fully respecting the proportionality of the considered measures. It should also reassure actual or potential market participants about the fairness and contestability of the services concerned.</p>
+        </recital>
+        <recital eId="rec_29">
+          <num>(29)</num>
+          <p>Designated gatekeepers should comply with the obligations laid down in this Regulation in respect of each of the core platform services listed in the relevant designation decision. The mandatory rules should apply taking into account the conglomerate position of gatekeepers, where applicable. Furthermore, implementing measures that the Commission may by decision impose on the gatekeeper following a regulatory dialogue should be designed in an effective manner, having regard to the features of core platform services as well as possible circumvention risks and in compliance with the principle of proportionality and the fundamental rights of the undertakings concerned as well as those of third parties.</p>
+        </recital>
+        <recital eId="rec_30">
+          <num>(30)</num>
+          <p>The very rapidly changing and complex technological nature of core platform services requires a regular review of the status of gatekeepers, including those that are foreseen to enjoy a durable and entrenched position in their operations in the near future. To provide all of the market participants, including the gatekeepers, with the required certainty as to the applicable legal obligations, a time limit for such regular reviews is necessary. It is also important to conduct such reviews on a regular basis and at least every two years.</p>
+        </recital>
+        <recital eId="rec_31">
+          <num>(31)</num>
+          <p>To ensure the effectiveness of the review of gatekeeper status as well as the possibility to adjust the list of core platform services provided by a gatekeeper, the gatekeepers should inform the Commission of all of their intended and concluded acquisitions of other providers of core platform services or any other services provided within the digital sector. Such information should not only serve the review process mentioned above, regarding the status of individual gatekeepers, but will also provide information that is crucial to monitoring broader contestability trends in the digital sector and can therefore be a useful factor for consideration in the context of the market investigations foreseen by this Regulation.</p>
+        </recital>
+        <recital eId="rec_32">
+          <num>(32)</num>
+          <p>To safeguard the fairness and contestability of core platform services provided by gatekeepers, it is necessary to provide in a clear and unambiguous manner for a set of harmonised obligations with regard to those services. Such rules are needed to address the risk of harmful effects of unfair practices imposed by gatekeepers, to the benefit of the business environment in the services concerned, to the benefit of users and ultimately to the benefit of society as a whole. Given the fast-moving and dynamic nature of digital markets, and the substantial economic power of gatekeepers, it is important that these obligations are effectively applied without being circumvented. To that end, the obligations in question should apply to any practices by a gatekeeper, irrespective of its form and irrespective of whether it is of a contractual, commercial, technical or any other nature, insofar as a practice corresponds to the type of practice that is the subject of one of the obligations of this Regulation.</p>
+        </recital>
+        <recital eId="rec_33">
+          <num>(33)</num>
+          <p>The obligations laid down in this Regulation are limited to what is necessary and justified to address the unfairness of the identified practices by gatekeepers and to ensure contestability in relation to core platform services provided by gatekeepers. Therefore, the obligations should correspond to those practices that are considered unfair by taking into account the features of the digital sector and where experience gained, for example in the enforcement of the EU competition rules, shows that they have a particularly negative direct impact on the business users and end users. In addition, it is necessary to provide for the possibility of a regulatory dialogue with gatekeepers to tailor those obligations that are likely to require specific implementing measures in order to ensure their effectiveness and proportionality. The obligations should only be updated after a thorough investigation on the nature and impact of specific practices that may be newly identified, following an in-depth investigation, as unfair or limiting contestability in the same manner as the unfair practices laid down in this Regulation while potentially escaping the scope of the current set of obligations.</p>
+        </recital>
+        <recital eId="rec_34">
+          <num>(34)</num>
+          <p>The combination of these different mechanisms for imposing and adapting obligations should ensure that the obligations do not extend beyond observed unfair practices, while at the same time ensuring that new or evolving practices can be the subject of intervention where necessary and justified.</p>
+        </recital>
+        <recital eId="rec_35">
+          <num>(35)</num>
+          <p>The obligations laid down in this Regulation are necessary to address identified public policy concerns, there being no alternative and less restrictive measures that would effectively achieve the same result, having regard to need to safeguard public order, protect privacy and fight fraudulent and deceptive commercial practices.</p>
+        </recital>
+        <recital eId="rec_36">
+          <num>(36)</num>
+          <p>The conduct of combining end user data from different sources or signing in users to different services of gatekeepers gives them potential advantages in terms of accumulation of data, thereby raising barriers to entry. To ensure that gatekeepers do not unfairly undermine the contestability of core platform services, they should enable their end users to freely choose to opt-in to such business practices by offering a less personalised alternative. The possibility should cover all possible sources of personal data, including own services of the gatekeeper as well as third party websites, and should be proactively presented to the end user in an explicit, clear and straightforward manner.</p>
+        </recital>
+        <recital eId="rec_37">
+          <num>(37)</num>
+          <p>Because of their position, gatekeepers might in certain cases restrict the ability of business users of their online intermediation services to offer their goods or services to end users under more favourable conditions, including price, through other online intermediation services. Such restrictions have a significant deterrent effect on the business users of gatekeepers in terms of their use of alternative online intermediation services, limiting inter-platform contestability, which in turn limits choice of alternative online intermediation channels for end users. To ensure that business users of online intermediation services of gatekeepers can freely choose alternative online intermediation services and differentiate the conditions under which they offer their products or services to their end users, it should not be accepted that gatekeepers limit business users from choosing to differentiate commercial conditions, including price. Such a restriction should apply to any measure with equivalent effect, such as for example increased commission rates or de-listing of the offers of business users.</p>
+        </recital>
+        <recital eId="rec_38">
+          <num>(38)</num>
+          <p>To prevent further reinforcing their dependence on the core platform services of gatekeepers, the business users of these gatekeepers should be free in promoting and choosing the distribution channel they consider most appropriate to interact with any end users that these business users have already acquired through core platform services provided by the gatekeeper. Conversely, end users should also be free to choose offers of such business users and to enter into contracts with them either through core platform services of the gatekeeper, if applicable, or from a direct distribution channel of the business user or another indirect distribution channel such business user may use. This should apply to the promotion of offers and conclusion of contracts between business users and end users. Moreover, the ability of end users to freely acquire content, subscriptions, features or other items outside the core platform services of the gatekeeper should not be undermined or restricted. In particular, it should be avoided that gatekeepers restrict end users from access to and use of such services via a software application running on their core platform service. For example, subscribers to online content purchased outside a software application download or purchased from a software application store should not be prevented from accessing such online content on a software application on the gatekeeper’s core platform service simply because it was purchased outside such software application or software application store.</p>
+        </recital>
+        <recital eId="rec_39">
+          <num>(39)</num>
+          <p>To safeguard a fair commercial environment and protect the contestability of the digital sector it is important to safeguard the right of business users to raise concerns about unfair behaviour by gatekeepers with any relevant administrative or other public authorities. For example, business users may want to complain about different types of unfair practices, such as discriminatory access conditions, unjustified closing of business user accounts or unclear grounds for product de-listings. Any practice that would in any way inhibit such a possibility of raising concerns or seeking available redress, for instance by means of confidentiality clauses in agreements or other written terms, should therefore be prohibited. This should be without prejudice to the right of business users and gatekeepers to lay down in their agreements the terms of use including the use of lawful complaints-handling mechanisms, including any use of alternative dispute resolution mechanisms or of the jurisdiction of specific courts in compliance with respective Union and national law This should therefore also be without prejudice to the role gatekeepers play in the fight against illegal content online.</p>
+        </recital>
+        <recital eId="rec_40">
+          <num>(40)</num>
+          <p>Identification services are crucial for business users to conduct their business, as these can allow them not only to optimise services, to the extent allowed under Regulation (EU) 2016/679 and Directive 2002/58/EC of the European Parliament and of the Council
+                  
+               , but also to inject trust in online transactions, in compliance with Union or national law. Gatekeepers should therefore not use their position as provider of core platform services to require their dependent business users to include any identification services provided by the gatekeeper itself as part of the provision of services or products by these business users to their end users, where other identification services are available to such business users.</p>
+        </recital>
+        <recital eId="rec_41">
+          <num>(41)</num>
+          <p>Gatekeepers should not restrict the free choice of end users by technically preventing switching between or subscription to different software applications and services. Gatekeepers should therefore ensure a free choice irrespective of whether they are the manufacturer of any hardware by means of which such software applications or services are accessed and should not raise artificial technical barriers so as to make switching impossible or ineffective. The mere offering of a given product or service to end users, including by means of pre-installation, as well the improvement of end user offering, such as better prices or increased quality, would not in itself constitute a barrier to switching.</p>
+        </recital>
+        <recital eId="rec_42">
+          <num>(42)</num>
+          <p>The conditions under which gatekeepers provide online advertising services to business users including both advertisers and publishers are often non-transparent and opaque. This opacity is partly linked to the practices of a few platforms, but is also due to the sheer complexity of modern day programmatic advertising. The sector is considered to have become more non-transparent after the introduction of new privacy legislation, and is expected to become even more opaque with the announced removal of third-party cookies. This often leads to a lack of information and knowledge for advertisers and publishers about the conditions of the advertising services they purchased and undermines their ability to switch to alternative providers of online advertising services. Furthermore, the costs of online advertising are likely to be higher than they would be in a fairer, more transparent and contestable platform environment. These higher costs are likely to be reflected in the prices that end users pay for many daily products and services relying on the use of online advertising. Transparency obligations should therefore require gatekeepers to provide advertisers and publishers to whom they supply online advertising services, when requested and to the extent possible, with information that allows both sides to understand the price paid for each of the different advertising services provided as part of the relevant advertising value chain.</p>
+        </recital>
+        <recital eId="rec_43">
+          <num>(43)</num>
+          <p>A gatekeeper may in certain circumstances have a dual role as a provider of core platform services whereby it provides a core platform service to its business users, while also competing with those same business users in the provision of the same or similar services or products to the same end users. In these circumstances, a gatekeeper may take advantage of its dual role to use data, generated from transactions by its business users on the core platform, for the purpose of its own services that offer similar services to that of its business users. This may be the case, for instance, where a gatekeeper provides an online marketplace or app store to business users, and at the same time offer services as an online retailer or provider of application software against those business users. To prevent gatekeepers from unfairly benefitting from their dual role, it should be ensured that they refrain from using any aggregated or non-aggregated data, which may include anonymised and personal data that is not publicly available to offer similar services to those of their business users. This obligation should apply to the gatekeeper as a whole, including but not limited to its business unit that competes with the business users of a core platform service.</p>
+        </recital>
+        <recital eId="rec_44">
+          <num>(44)</num>
+          <p>Business users may also purchase advertising services from a provider of core platform services for the purpose of providing goods and services to end users. In this case, it may occur that the data are not generated on the core platform service, but are provided to the core platform service by the business user or are generated based on its operations through the core platform service concerned. In certain instances, that core platform service providing advertising may have a dual role, as intermediary and as provider of advertising services. Accordingly, the obligation prohibiting a dual role gatekeeper from using data of business users should apply also with respect to the data that a core platform service has received from businesses for the purpose of providing advertising services related to that core platform service.</p>
+        </recital>
+        <recital eId="rec_45">
+          <num>(45)</num>
+          <p>In relation to cloud computing services, this obligation should extend to data provided or generated by business users of the gatekeeper in the context of their use of the cloud computing service of the gatekeeper, or through its software application store that allows end users of cloud computing services access to software applications. This obligation should not affect the right of gatekeepers to use aggregated data for providing ancillary data analytics services, subject to compliance with  Regulation 2016/679 and  Directive 2002/58/EC as well as with the relevant obligations in this Regulation concerning ancillary services.</p>
+        </recital>
+        <recital eId="rec_46">
+          <num>(46)</num>
+          <p>A gatekeeper may use different means to favour its own services or products on its core platform service, to the detriment of the same or similar services that end users could obtain through third parties. This may for instance be the case where certain software applications or services are pre-installed by a gatekeeper. To enable end user choice, gatekeepers should not prevent end users from un-installing any pre-installed software applications on its core platform service and thereby favour their own software applications.</p>
+        </recital>
+        <recital eId="rec_47">
+          <num>(47)</num>
+          <p>The rules that the gatekeepers set for the distribution of software applications may in certain circumstances restrict the ability of end users to install and effectively use third party software applications or software application stores on operating systems or hardware of the relevant gatekeeper and restrict the ability of end users to access these software applications or software application stores outside the core platform services of that gatekeeper. Such restrictions may limit the ability of developers of software applications to use alternative distribution channels and the ability of end users to choose between different software applications from different distribution channels and should be prohibited as unfair and liable to weaken the contestability of core platform services. In order to ensure that third party software applications or software application stores do not endanger the integrity of the hardware or operating system provided by the gatekeeper the gatekeeper concerned may implement proportionate technical or contractual measures to achieve that goal if the gatekeeper demonstrates that such measures are necessary and justified and that there are no less restrictive means to safeguard the integrity of the hardware or operating system.</p>
+        </recital>
+        <recital eId="rec_48">
+          <num>(48)</num>
+          <p>Gatekeepers are often vertically integrated and offer certain products or services to end users through their own core platform services, or through a business user over which they exercise control which frequently leads to conflicts of interest. This can include the situation whereby a gatekeeper offers its own online intermediation services through an online search engine. When offering those products or services on the core platform service, gatekeepers can reserve a better position to their own offering, in terms of ranking, as opposed to the products of third parties also operating on that core platform service. This can occur for instance with products or services, including other core platform services, which are ranked in the results communicated by online search engines, or which are partly or entirely embedded in online search engines results, groups of results specialised in a certain topic, displayed along with the results of an online search engine, which are considered or used by certain end users as a service distinct or additional to the online search engine. Other instances are those of software applications which are distributed through software application stores, or products or services that are given prominence and display in the newsfeed of a social network, or products or services ranked in search results or displayed on an online marketplace. In those circumstances, the gatekeeper is in a dual-role position as intermediary for third party providers and as direct provider of products or services of the gatekeeper. Consequently, these gatekeepers have the ability to undermine directly the contestability for those products or services on these core platform services, to the detriment of business users which are not controlled by the gatekeeper.</p>
+        </recital>
+        <recital eId="rec_49">
+          <num>(49)</num>
+          <p>In such situations, the gatekeeper should not engage in any form of differentiated or preferential treatment in ranking on the core platform service, whether through legal, commercial or technical means, in favour of products or services it offers itself or through a business user which it controls. To ensure that this obligation is effective, it should also be ensured that the conditions that apply to such ranking are also generally fair. Ranking should in this context cover all forms of relative prominence, including display, rating, linking or voice results. To ensure that this obligation is effective and cannot be circumvented it should also apply to any measure that may have an equivalent effect to the differentiated or preferential treatment in ranking. The guidelines adopted pursuant to Article 5 of Regulation (EU) 2019/1150 should also facilitate the implementation and enforcement of this obligation.</p>
+        </recital>
+        <recital eId="rec_50">
+          <num>(50)</num>
+          <p>Gatekeepers should not restrict or prevent the free choice of end users by technically preventing switching between or subscription to different software applications and services. This would allow more providers to offer their services, thereby ultimately providing greater choice to the end user. Gatekeepers should ensure a free choice irrespective of whether they are the manufacturer of any hardware by means of which such software applications or services are accessed and shall not raise artificial technical barriers so as to make switching impossible or ineffective. The mere offering of a given product or service to consumers, including by means of pre-installation, as well as the improvement of the offering to end users, such as price reductions or increased quality, should not be construed as constituting a prohibited barrier to switching.</p>
+        </recital>
+        <recital eId="rec_51">
+          <num>(51)</num>
+          <p>Gatekeepers can hamper the ability of end users to access online content and services including software applications. Therefore, rules should be established to ensure that the rights of end users to access an open internet are not compromised by the conduct of gatekeepers. Gatekeepers can also technically limit the ability of end users to effectively switch between different Internet access service providers, in particular through their control over operating systems or hardware. This distorts the level playing field for Internet access services and ultimately harms end users. It should therefore be ensured that gatekeepers do not unduly restrict end users in choosing their Internet access service provider.</p>
+        </recital>
+        <recital eId="rec_52">
+          <num>(52)</num>
+          <p>Gatekeepers may also have a dual role as developers of operating systems and device manufacturers, including any technical functionality that such a device may have. For example, a gatekeeper that is a manufacturer of a device may restrict access to some of the functionalities in this device, such as near-field-communication technology and the software used to operate that technology, which may be required for the effective provision of an ancillary service by the gatekeeper as well as by any potential third party provider of such an ancillary service. Such access may equally be required by software applications related to the relevant ancillary services in order to effectively provide similar functionalities as those offered by gatekeepers. If such a dual role is used in a manner that prevents alternative providers of ancillary services or of software applications to have access under equal conditions to the same operating system, hardware or software features that are available or used in the provision by the gatekeeper of any ancillary services, this could significantly undermine innovation by providers of such ancillary services as well as choice for end users of such ancillary services. The gatekeepers should therefore be obliged to ensure access under equal conditions to, and interoperability with, the same operating system, hardware or software features that are available or used in the provision of any ancillary services by the gatekeeper.</p>
+        </recital>
+        <recital eId="rec_53">
+          <num>(53)</num>
+          <p>The conditions under which gatekeepers provide online advertising services to business users including both advertisers and publishers are often non-transparent and opaque. This often leads to a lack of information for advertisers and publishers about the effect of a given ad. To further enhance fairness, transparency and contestability of online advertising services designated under this Regulation as well as those that are fully integrated with other core platform services of the same provider, the designated gatekeepers should therefore provide advertisers and publishers, when requested, with free of charge access to the performance measuring tools of the gatekeeper and the information necessary for advertisers, advertising agencies acting on behalf of a company placing advertising, as well as for publishers to carry out their own independent verification of the provision of the relevant online advertising services.</p>
+        </recital>
+        <recital eId="rec_54">
+          <num>(54)</num>
+          <p>Gatekeepers benefit from access to vast amounts of data that they collect while providing the core platform services as well as other digital services. To ensure that gatekeepers do not undermine the contestability of core platform services as well as the innovation potential of the dynamic digital sector by restricting the ability of business users to effectively port their data, business users and end users should be granted effective and immediate access to the data they provided or generated in the context of their use of the relevant core platform services of the gatekeeper, in a structured, commonly used and machine-readable format. This should apply also to any other data at different levels of aggregation that may be necessary to effectively enable such portability. It should also be ensured that business users and end users can port that data in real time effectively, such as for example through high quality application programming interfaces. Facilitating switching or multi-homing should lead, in turn, to an increased choice for business users and end users and an incentive for gatekeepers and business users to innovate.</p>
+        </recital>
+        <recital eId="rec_55">
+          <num>(55)</num>
+          <p>Business users that use large core platform services provided by gatekeepers and end users of such business users provide and generate a vast amount of data, including data inferred from such use. In order to ensure that business users have access to the relevant data thus generated, the gatekeeper should, upon their request, allow unhindered access, free of charge, to such data. Such access should also be given to third parties contracted by the business user, who are acting as processors of this data for the business user. Data provided or generated by the same business users and the same end users of these business users in the context of other services provided by the same gatekeeper may be concerned where this is inextricably linked to the relevant request. To this end, a gatekeeper should not use any contractual or other restrictions to prevent business users from accessing relevant data and should enable business users to obtain consent of their end users for such data access and retrieval, where such consent is required under Regulation (EU) 2016/679 and Directive 2002/58/EC. Gatekeepers should also facilitate access to these data in real time by means of appropriate technical measures, such as for example putting in place high quality application programming interfaces.</p>
+        </recital>
+        <recital eId="rec_56">
+          <num>(56)</num>
+          <p>The value of online search engines to their respective business users and end users increases as the total number of such users increases. Providers of online search engines collect and store aggregated datasets containing information about what users searched for, and how they interacted with, the results that they were served. Providers of online search engine services collect these data from searches undertaken on their own online search engine service and, where applicable, searches undertaken on the platforms of their downstream commercial partners. Access by gatekeepers to such ranking, query, click and view data constitutes an important barrier to entry and expansion, which undermines the contestability of online search engine services. Gatekeepers should therefore be obliged to provide access, on fair, reasonable and non-discriminatory terms, to these ranking, query, click and view data in relation to free and paid search generated by consumers on online search engine services to other providers of such services, so that these third-party providers can optimise their services and contest the relevant core platform services. Such access should also be given to third parties contracted by a search engine provider, who are acting as processors of this data for that search engine. When providing access to its search data, a gatekeeper should ensure the protection of the personal data of end users by appropriate means, without substantially degrading the quality or usefulness of the data.</p>
+        </recital>
+        <recital eId="rec_57">
+          <num>(57)</num>
+          <p>In particular gatekeepers which provide access to software application stores serve as an important gateway for business users that seek to reach end users. In view of the imbalance in bargaining power between those gatekeepers and business users of their software application stores, those gatekeepers should not be allowed to impose general conditions, including pricing conditions, that would be unfair or lead to unjustified differentiation. Pricing or other general access conditions should be considered unfair if they lead to an imbalance of rights and obligations imposed on business users or confer an advantage on the gatekeeper which is disproportionate to the service provided by the gatekeeper to business users or lead to a disadvantage for business users in providing the same or similar services as the gatekeeper. The following benchmarks can serve as a yardstick to determine the fairness of general access conditions: prices charged or conditions imposed for the same or similar services by other providers of software application stores; prices charged or conditions imposed by the provider of the software application store for different related or similar services or to different types of end users; prices charged or conditions imposed by the provider of the software application store for the same service in different geographic regions; prices charged or conditions imposed by the provider of the software application store for the same service the gatekeeper offers to itself. This obligation should not establish an access right and it should be without prejudice to the ability of providers of software application stores to take the required responsibility in the fight against illegal and unwanted content as set out in Regulation [Digital Services Act].</p>
+        </recital>
+        <recital eId="rec_58">
+          <num>(58)</num>
+          <p>To ensure the effectiveness of the obligations laid down by this Regulation, while also making certain that these obligations are limited to what is necessary to ensure contestability and tackling the harmful effects of the unfair behaviour by gatekeepers, it is important to clearly define and circumscribe them so as to allow the gatekeeper to immediately comply with them, in full respect of Regulation (EU) 2016/679 and Directive 2002/58/EC, consumer protection, cyber security and product safety. The gatekeepers should ensure the compliance with this Regulation by design. The necessary measures should therefore be as much as possible and where relevant integrated into the technological design used by the gatekeepers. However, it may in certain cases be appropriate for the Commission, following a dialogue with the gatekeeper concerned, to further specify some of the measures that the gatekeeper concerned should adopt in order to effectively comply with those obligations that are susceptible of being further specified. This possibility of a regulatory dialogue should facilitate compliance by gatekeepers and expedite the correct implementation of the Regulation.</p>
+        </recital>
+        <recital eId="rec_59">
+          <num>(59)</num>
+          <p>As an additional element to ensure proportionality, gatekeepers should be given an opportunity to request the suspension, to the extent necessary, of a specific obligation in exceptional circumstances that lie beyond the control of the gatekeeper, such as for example an unforeseen external shock that has temporarily eliminated a significant part of end user demand for the relevant core platform service, where compliance with a specific obligation is shown by the gatekeeper to endanger the economic viability of the Union operations of the gatekeeper concerned.</p>
+        </recital>
+        <recital eId="rec_60">
+          <num>(60)</num>
+          <p>In exceptional circumstances justified on the limited grounds of public morality, public health or public security, the Commission should be able to decide that the obligation concerned does not apply to a specific core platform service. Affecting these public interests can indicate that the cost to society as a whole of enforcing a certain obligation would in a certain exceptional case be too high and thus disproportionate. The regulatory dialogue to facilitate compliance with limited suspension and exemption possibilities should ensure the proportionality of the obligations in this Regulation without undermining the intended ex ante effects on fairness and contestability.</p>
+        </recital>
+        <recital eId="rec_61">
+          <num>(61)</num>
+          <p>The data protection and privacy interests of end users are relevant to any assessment of potential negative effects of the observed practice of gatekeepers to collect and accumulate large amounts of data from end users. Ensuring an adequate level of transparency of profiling practices employed by gatekeepers facilitates contestability of core platform services, by putting external pressure on gatekeepers to prevent making deep consumer profiling the industry standard, given that potential entrants or start-up providers cannot access data to the same extent and depth, and at a similar scale. Enhanced transparency should allow other providers of core platform services to differentiate themselves better through the use of superior privacy guaranteeing facilities. To ensure a minimum level of effectiveness of this transparency obligation, gatekeepers should at least provide a description of the basis upon which profiling is performed, including whether personal data and data derived from user activity is relied on, the processing applied, the purpose for which the profile is prepared and eventually used, the impact of such profiling on the gatekeeper’s services, and the steps taken to enable end users to be aware of the relevant use of such profiling, as well as to seek their consent.</p>
+        </recital>
+        <recital eId="rec_62">
+          <num>(62)</num>
+          <p>In order to ensure the full and lasting achievement of the objectives of this Regulation, the Commission should be able to assess whether a provider of core platform services should be designated as a gatekeeper without meeting the quantitative thresholds laid down in this Regulation; whether systematic non-compliance by a gatekeeper warrants imposing additional remedies; and whether the list of obligations addressing unfair practices by gatekeepers should be reviewed and additional practices that are similarly unfair and limiting the contestability of digital markets should be identified. Such assessment should be based on market investigations to be run in an appropriate timeframe, by using clear procedures and deadlines, in order to support the ex ante effect of this Regulation on contestability and fairness in the digital sector, and to provide the requisite degree of legal certainty.</p>
+        </recital>
+        <recital eId="rec_63">
+          <num>(63)</num>
+          <p>Following a market investigation, an undertaking providing a core platform service could be found to fulfil all of the overarching qualitative criteria for being identified as a gatekeeper. It should then, in principle, comply with all of the relevant obligations laid down by this Regulation. However, for gatekeepers that have been designated by the Commission as likely to enjoy an entrenched and durable position in the near future, the Commission should only impose those obligations that are necessary and appropriate to prevent that the gatekeeper concerned achieves an entrenched and durable position in its operations. With respect to such emerging gatekeepers, the Commission should take into account that this status is in principle of a temporary nature, and it should therefore be decided at a given moment whether such a provider of core platform services should be subjected to the full set of gatekeeper obligations because it has acquired an entrenched and durable position, or conditions for designation are ultimately not met and therefore all previously imposed obligations should be waived.</p>
+        </recital>
+        <recital eId="rec_64">
+          <num>(64)</num>
+          <p>The Commission should investigate and assess whether additional behavioural, or, where appropriate, structural remedies are justified, in order to ensure that the gatekeeper cannot frustrate the objectives of this Regulation by systematic non-compliance with one or several of the obligations laid down in this Regulation, which has further strengthened its gatekeeper position. This would be the case if the gatekeeper’s size in the internal market has further increased, economic dependency of business users and end users on the gatekeeper’s core platform services has further strengthened as their number has further increased and the gatekeeper benefits from increased entrenchment of its position. The Commission should therefore in such cases have the power to impose any remedy, whether behavioural or structural, having due regard to the principle of proportionality. Structural remedies, such as legal, functional or structural separation, including the divestiture of a business, or parts of it, should only be imposed either where there is no equally effective behavioural remedy or where any equally effective behavioural remedy would be more burdensome for the undertaking concerned than the structural remedy. Changes to the structure of an undertaking as it existed before the systematic non-compliance was established would only be proportionate where there is a substantial risk that this systematic non-compliance results from the very structure of the undertaking concerned.</p>
+        </recital>
+        <recital eId="rec_65">
+          <num>(65)</num>
+          <p>The services and practices in core platform services and markets in which these intervene can change quickly and to a significant extent. To ensure that this Regulation remains up to date and constitutes an effective and holistic regulatory response to the problems posed by gatekeepers, it is important to provide for a regular review of the lists of core platform services as well as of the obligations provided for in this Regulation. This is particularly important to ensure that behaviour that may limit the contestability of core platform services or is unfair is identified. While it is important to conduct a review on a regular basis, given the dynamically changing nature of the digital sector, in order to ensure legal certainty as to the regulatory conditions, any reviews should be conducted within a reasonable and appropriate time-frame. Market investigations should also ensure that the Commission has a solid evidentiary basis on which it can assess whether it should propose to amend this Regulation in order to expand, or further detail, the lists of core platform services. They should equally ensure that the Commission has a solid evidentiary basis on which it can assess whether it should propose to amend the obligations laid down in this Regulation or whether it should adopt a delegated act updating such obligations.</p>
+        </recital>
+        <recital eId="rec_66">
+          <num>(66)</num>
+          <p>In the event that gatekeepers engage in behaviour that is unfair or that limits the contestability of the core platform services that are already designated under this Regulation but without these behaviours being explicitly covered by the obligations, the Commission should be able to update this Regulation through delegated acts. Such updates by way of delegated act should be subject to the same investigatory standard and therefore following a market investigation. The Commission should also apply a predefined standard in identifying such behaviours. This legal standard should ensure that the type of obligations that gatekeepers may at any time face under this Regulation are sufficiently predictable.</p>
+        </recital>
+        <recital eId="rec_67">
+          <num>(67)</num>
+          <p>Where, in the course of a proceeding into non-compliance or an investigation into systemic non-compliance, a gatekeeper offers commitments to the Commission, the latter should be able to adopt a decision making these commitments binding on the gatekeeper concerned, where it finds that the commitments ensure effective compliance with the obligations of this Regulation. This decision should also find that there are no longer grounds for action by the Commission.</p>
+        </recital>
+        <recital eId="rec_68">
+          <num>(68)</num>
+          <p>In order to ensure effective implementation and compliance with this Regulation, the Commission should have strong investigative and enforcement powers, to allow it to investigate, enforce and monitor the rules laid down in this Regulation, while at the same time ensuring the respect for the fundamental right to be heard and to have access to the file in the context of the enforcement proceedings. The Commission should dispose of these investigative powers also for the purpose of carrying out market investigations for the purpose of updating and reviewing this Regulation.</p>
+        </recital>
+        <recital eId="rec_69">
+          <num>(69)</num>
+          <p>The Commission should be empowered to request information necessary for the purpose of this Regulation, throughout the Union. In particular, the Commission should have access to any relevant documents, data, database, algorithm and information necessary to open and conduct investigations and to monitor the compliance with the obligations laid down in this Regulation, irrespective of who possesses the documents, data or information in question, and regardless of their form or format, their storage medium, or the place where they are stored.</p>
+        </recital>
+        <recital eId="rec_70">
+          <num>(70)</num>
+          <p>The Commission should be able to directly request that undertakings or association of undertakings provide any relevant evidence, data and information. In addition, the Commission should be able to request any relevant information from any public authority, body or agency within the Member State, or from any natural person or legal person for the purpose of this Regulation. When complying with a decision of the Commission, undertakings are obliged to answer factual questions and to provide documents.</p>
+        </recital>
+        <recital eId="rec_71">
+          <num>(71)</num>
+          <p>The Commission should also be empowered to undertake onsite inspections and to interview any persons who may be in possession of useful information and to record the statements made.</p>
+        </recital>
+        <recital eId="rec_72">
+          <num>(72)</num>
+          <p>The Commission should be able to take the necessary actions to monitor the effective implementation and compliance with the obligations laid down in this Regulation. Such actions should include the ability of the Commission to appoint independent external experts, such as and auditors to assist the Commission in this process, including where applicable from competent independent authorities, such as data or consumer protection authorities.</p>
+        </recital>
+        <recital eId="rec_73">
+          <num>(73)</num>
+          <p>Compliance with the obligations imposed under this Regulation should be enforceable by means of fines and periodic penalty payments. To that end, appropriate levels of fines and periodic penalty payments should also be laid down for non-compliance with the obligations and breach of the procedural rules subject to appropriate limitation periods. The Court of Justice should have unlimited jurisdiction in respect of fines and penalty payments.</p>
+        </recital>
+        <recital eId="rec_74">
+          <num>(74)</num>
+          <p>In order to ensure effective recovery of fines imposed on associations of undertakings for infringements that they have committed, it is necessary to lay down the conditions on which the Commission may require payment of the fine from the members of the association where the association is not solvent.</p>
+        </recital>
+        <recital eId="rec_75">
+          <num>(75)</num>
+          <p>In the context of proceedings carried out under this Regulation, the undertakings concerned should be accorded the right to be heard by the Commission and the decisions taken should be widely publicised. While ensuring the rights to good administration and the rights of defence of the undertakings concerned, in particular, the right of access to the file and the right to be heard, it is essential that confidential information be protected. Furthermore, while respecting the confidentiality of the information, the Commission should ensure that any information relied on for the purpose of the decision is disclosed to an extent that allows the addressee of the decision to understand the facts and considerations that led up to the decision. Finally, under certain conditions certain business records, such as communication between lawyers and their clients, may be considered confidential if the relevant conditions are met.</p>
+        </recital>
+        <recital eId="rec_76">
+          <num>(76)</num>
+          <p>In order to ensure uniform conditions for the implementation of Articles 3, 6, 12, 13, 15, 16, 17, 20, 22, 23, 25 and 30, implementing powers should be conferred on the Commission. Those powers should be exercised in accordance with Regulation (EU) No 182//2011 of the European Parliament and of the Council
+                  
+               .</p>
+        </recital>
+        <recital eId="rec_77">
+          <num>(77)</num>
+          <p>The advisory committee established in accordance with Regulation (EU) No 182//2011 should also deliver opinions on certain individual decisions of the Commission issued under this Regulation. In order to ensure contestable and fair markets in the digital sector across the Union where gatekeepers are present, the power to adopt acts in accordance with Article 290 of the Treaty should be delegated to the Commission to supplement this Regulation. In particular, delegated acts should be adopted in respect of the methodology for determining the quantitative thresholds for designation of gatekeepers under this Regulation and in respect of the update of the obligations laid down in this Regulation where, based on a market investigation the Commission has identified the need for updating the obligations addressing practices that limit the contestability of core platform services or are unfair. It is of particular importance that the Commission carries out appropriate consultations and that those consultations be conducted in accordance with the principles laid down in the Interinstitutional Agreement on Better Law-Making of 13 April 2016
+                  
+               . In particular, to ensure equal participation in the preparation of delegated acts, the European Parliament and the Council receive all documents at the same time as Member States' experts, and their experts systematically have access to meetings of Commission expert groups dealing with the preparation of delegated acts.</p>
+        </recital>
+        <recital eId="rec_78">
+          <num>(78)</num>
+          <p>The Commission should periodically evaluate this Regulation and closely monitor its effects on the contestability and fairness of commercial relationships in the online platform economy, in particular with a view to determining the need for amendments in light of relevant technological or commercial developments. This evaluation should include the regular review of the list of core platform services and the obligations addressed to gatekeepers as well as enforcement of these, in view of ensuring that digital markets across the Union are contestable and fair. In order to obtain a broad view of developments in the sector, the evaluation should take into account the experiences of Member States and relevant stakeholders. The Commission may in this regard also consider the opinions and reports presented to it by the Observatory on the Online Platform Economy that was first established by Commission Decision C(2018)2393 of 26 April 2018. Following the evaluation, the Commission should take appropriate measures. The Commission should to maintain a high level of protection and respect for the common EU rights and values, particularly equality and non-discrimination, as an objective when conducting the assessments and reviews of the practices and obligations provided in this Regulation.</p>
+        </recital>
+        <recital eId="rec_79">
+          <num>(79)</num>
+          <p>The objective of this Regulation is to ensure a contestable and fair digital sector in general and core platform services in particular, with a view to promoting innovation, high quality of digital products and services, fair and competitive prices, as well as a high quality and choice for end users in the digital sector. This cannot be sufficiently achieved by the Member States, but can only, by reason of the business model and operations of the gatekeepers and the scale and effects of their operations, be fully achieved at Union level. The Union may adopt measures, in accordance with the principle of subsidiarity as set out in Article 5 of the Treaty on European Union. In accordance with the principle of proportionality, as set out in that Article, this Regulation does not go beyond what is necessary in order to achieve that objective.</p>
+        </recital>
+      </recitals>
+    </preamble>
+    <body eId="body">
+      <chapter eId="chap_ci">
+        <num>Chapter I</num>
+        <heading>Subject matter, scope and definitions</heading>
+        <article eId="art_1">
+          <num>Article 1</num>
+          <heading>Subject-matter and scope</heading>
+          <paragraph eId="art_1__para_1">
+            <num>1.</num>
+            <content eId="art_1__para_1__content">
+              <p>This Regulation lays down harmonised rules ensuring contestable and fair markets in the digital sector across the Union where gatekeepers are present.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_1__para_2">
+            <num>2.</num>
+            <content eId="art_1__para_2__content">
+              <p>This Regulation shall apply to core platform services provided or offered by gatekeepers to business users established in the Union or end users established or located in the Union, irrespective of the place of establishment or residence of the gatekeepers and irrespective of the law otherwise applicable to the provision of service.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_1__para_3">
+            <num>3.</num>
+            <intro eId="art_1__para_3__intro">
+              <p>This Regulation shall not apply to markets:</p>
+            </intro>
+            <point eId="art_1__para_3__point_a">
+              <num>(a)</num>
+              <content>
+                <p>related to electronic communications networks as defined in point (1) of Article 2 of Directive (EU) 2018/1972 of the European Parliament and of the Council
+                  
+               ;</p>
+              </content>
+            </point>
+            <point eId="art_1__para_3__point_b">
+              <num>(b)</num>
+              <content>
+                <p>related to electronic communications services as defined in point (4) of Article 2 of Directive (EU) 2018/1972 other than those related to interpersonal communication services as defined in point (4)(b) of Article 2 of that Directive.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_1__para_4">
+            <num>4.</num>
+            <content eId="art_1__para_4__content">
+              <p>With regard to interpersonal communication services this Regulation is without prejudice to the powers and tasks granted to the national regulatory and other competent authorities by virtue of Article 61 of Directive (EU) 2018/1972.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_1__para_5">
+            <num>5.</num>
+            <content eId="art_1__para_5__content">
+              <p>Member States shall not impose on gatekeepers further obligations by way of laws, regulations or administrative action for the purpose of ensuring contestable and fair markets. This is without prejudice to rules pursuing other legitimate public interests, in compliance with Union law. In particular, nothing in this Regulation precludes Member States from imposing obligations, which are compatible with Union law, on undertakings, including providers of core platform services where these obligations are unrelated to the relevant undertakings having a status of gatekeeper within the meaning of this Regulation in order to protect consumers or to fight against acts of unfair competition.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_1__para_6">
+            <num>6.</num>
+            <content eId="art_1__para_6__content">
+              <p>This Regulation is without prejudice to the application of Articles 101 and 102 TFEU. It is also without prejudice to the application of: national rules prohibiting anticompetitive agreements, decisions by associations of undertakings, concerted practices and abuses of dominant positions; national competition rules prohibiting other forms of unilateral conduct insofar as they are applied to undertakings other than gatekeepers or amount to imposing additional obligations on gatekeepers; Council Regulation (EC) No 139/2004
+                  
+                and national rules concerning merger control; Regulation (EU) 2019/1150 and Regulation (EU) …./.. of the European Parliament and of the Council
+                  
+               .</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_1__para_7">
+            <num>7.</num>
+            <content eId="art_1__para_7__content">
+              <p>National authorities shall not take decisions which would run counter to a decision adopted by the Commission under this Regulation. The Commission and Member States shall work in close cooperation and coordination in their enforcement actions.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_2">
+          <num>Article 2</num>
+          <heading>Definitions</heading>
+          <intro eId="art_2__intro">
+            <p>For the purposes of this Regulation, the following definitions apply:</p>
+          </intro>
+          <point eId="art_2__point_1">
+            <num>(1)</num>
+            <content>
+              <p>‘Gatekeeper’ means a provider of core platform services designated pursuant to Article 3;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_2">
+            <num>(2)</num>
+            <intro>
+              <p>‘Core platform service’ means any of the following:</p>
+            </intro>
+            <point eId="art_2__point_2__point_a">
+              <num>(a)</num>
+              <content>
+                <p>online intermediation services;</p>
+              </content>
+            </point>
+            <point eId="art_2__point_2__point_b">
+              <num>(b)</num>
+              <content>
+                <p>online search engines;</p>
+              </content>
+            </point>
+            <point eId="art_2__point_2__point_c">
+              <num>(c)</num>
+              <content>
+                <p>online social networking services;</p>
+              </content>
+            </point>
+            <point eId="art_2__point_2__point_d">
+              <num>(d)</num>
+              <content>
+                <p>video-sharing platform services;</p>
+              </content>
+            </point>
+            <point eId="art_2__point_2__point_e">
+              <num>(e)</num>
+              <content>
+                <p>number-independent interpersonal communication services;</p>
+              </content>
+            </point>
+            <point eId="art_2__point_2__point_f">
+              <num>(f)</num>
+              <content>
+                <p>operating systems;</p>
+              </content>
+            </point>
+            <point eId="art_2__point_2__point_g">
+              <num>(g)</num>
+              <content>
+                <p>cloud computing services;</p>
+              </content>
+            </point>
+            <point eId="art_2__point_2__point_h">
+              <num>(h)</num>
+              <content>
+                <p>advertising services, including any advertising networks, advertising exchanges and any other advertising intermediation services, provided by a provider of any of the core platform services listed in points (a) to (g);</p>
+              </content>
+            </point>
+          </point>
+          <point eId="art_2__point_3">
+            <num>(3)</num>
+            <content>
+              <p>‘Information society service’ means any service within the meaning of point (b) of Article 1(1) of Directive (EU) 2015/1535;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_4">
+            <num>(4)</num>
+            <content>
+              <p>‘Digital sector’ means the sector of products and services provided by means of or through information society services;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_5">
+            <num>(5)</num>
+            <content>
+              <p>‘Online intermediation services’ means services as defined in point 2 of Article 2 of Regulation (EU) 2019/1150;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_6">
+            <num>(6)</num>
+            <content>
+              <p>‘Online search engine’ means a digital service as defined in point 5 of Article 2 of Regulation (EU) 2019/1150;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_7">
+            <num>(7)</num>
+            <content>
+              <p>‘Online social networking service’ means a platform that enables end users to connect, share, discover and communicate with each other across multiple devices and, in particular, via chats, posts, videos and recommendations;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_8">
+            <num>(8)</num>
+            <content>
+              <p>‘Video-sharing platform service’ means a service as defined in point (aa) of Article 1(1) of Directive (EU) 2010/13
+                  
+               ;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_9">
+            <num>(9)</num>
+            <content>
+              <p>‘Number-independent interpersonal communications service’ means a service as defined in point 7 of Article 2 of Directive (EU) 2018/1972;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_10">
+            <num>(10)</num>
+            <content>
+              <p>‘Operating system’ means a system software which controls the basic functions of the hardware or software and enables software applications to run on it;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_11">
+            <num>(11)</num>
+            <content>
+              <p>‘Cloud computing services’ means a digital service as defined in point 19 of Article 4 of Directive (EU) 2016/1148 of the European Parliament and of the Council
+                  
+               ;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_12">
+            <num>(12)</num>
+            <content>
+              <p>‘Software application stores’ means a type of online intermediation services, which is focused on software applications as the intermediated product or service;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_13">
+            <num>(13)</num>
+            <content>
+              <p>‘Software application’ means any digital product or service that runs on an operating system;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_14">
+            <num>(14)</num>
+            <content>
+              <p>‘Ancillary service’ means services provided in the context of or together with core platform services, including payment services as defined in point 3 of Article 4 and technical services which support the provision of payment services as defined in Article 3(j) of Directive (EU) 2015/2366, fulfilment, identification or advertising services;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_15">
+            <num>(15)</num>
+            <content>
+              <p>‘Identification service’ means a type of ancillary services that enables any type of verification of the identity of end users or business users, regardless of the technology used;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_16">
+            <num>(16)</num>
+            <content>
+              <p>‘End user’ means any natural or legal person using core platform services other than as a business user;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_17">
+            <num>(17)</num>
+            <content>
+              <p>‘Business user’ means any natural or legal person acting in a commercial or professional capacity using core platform services for the purpose of or in the course of providing goods or services to end users;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_18">
+            <num>(18)</num>
+            <content>
+              <p>‘Ranking’ means the relative prominence given to goods or services offered through online intermediation services or online social networking services, or the relevance given to search results by online search engines, as presented, organised or communicated by the providers of online intermediation services or of online social networking services or by providers of online search engines, respectively, whatever the technological means used for such presentation, organisation or communication;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_19">
+            <num>(19)</num>
+            <content>
+              <p>‘Data’ means any digital representation of acts, facts or information and any compilation of such acts, facts or information, including in the form of sound, visual or audiovisual recording;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_20">
+            <num>(20)</num>
+            <content>
+              <p>‘Personal data’ means any information as defined in point 1 of Article 4 of Regulation (EU) 2016/679;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_21">
+            <num>(21)</num>
+            <content>
+              <p>‘Non-personal data’ means data other than personal data as defined in point 1 of Article 4 of Regulation (EU) 2016/679;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_22">
+            <num>(22)</num>
+            <content>
+              <p>‘Undertaking’ means all linked enterprises or connected undertakings that form a group through the direct or indirect control of an enterprise or undertaking by another and that are engaged in an economic activity, regardless of their legal status and the way in which they are financed;</p>
+            </content>
+          </point>
+          <point eId="art_2__point_23">
+            <num>(23)</num>
+            <content>
+              <p>‘Control’ means the possibility of exercising decisive influence on an undertaking, as understood in Regulation (EU) No 139/2004.</p>
+            </content>
+          </point>
+        </article>
+      </chapter>
+      <chapter eId="chap_cii">
+        <num>Chapter II</num>
+        <heading>Gatekeepers</heading>
+        <article eId="art_3">
+          <num>Article 3</num>
+          <heading>Designation of gatekeepers</heading>
+          <paragraph eId="art_3__para_1">
+            <num>1.</num>
+            <intro eId="art_3__para_1__intro">
+              <p>A provider of core platform services shall be designated as gatekeeper if:</p>
+            </intro>
+            <point eId="art_3__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>it has a significant impact on the internal market;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>it operates a core platform service which serves as an important gateway for business users to reach end users; and</p>
+              </content>
+            </point>
+            <point eId="art_3__para_1__point_c">
+              <num>(c)</num>
+              <content>
+                <p>it enjoys an entrenched and durable position in its operations or it is foreseeable that it will enjoy such a position in the near future.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_3__para_2">
+            <num>2.</num>
+            <intro eId="art_3__para_2__intro">
+              <p>A provider of core platform services shall be presumed to satisfy:</p>
+            </intro>
+            <point eId="art_3__para_2__point_a">
+              <num>(a)</num>
+              <content>
+                <p>the requirement in paragraph 1 point (a) where the undertaking to which it belongs achieves an annual EEA turnover equal to or above EUR 6.5 billion in the last three financial years, or where the average market capitalisation or the equivalent fair market value of the undertaking to which it belongs amounted to at least EUR 65 billion in the last financial year, and it provides a core platform service in at least three Member States;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_2__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the requirement in paragraph 1 point (b) where it provides a core platform service that has more than 45 million monthly active end users established or located in the Union and more than 10 000 yearly active business users established in the Union in the last financial year;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_2__point_c">
+              <num>(c)</num>
+              <content>
+                <p>the requirement in paragraph 1 point (c) where the thresholds in point (b) were met in each of the last three financial years.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_3__para_3">
+            <num>3.</num>
+            <content eId="art_3__para_3__content">
+              <p>Where a provider of core platform services meets all the thresholds in paragraph 2, it shall notify the Commission thereof within three months after those thresholds are satisfied and provide it with the relevant information identified in paragraph 2.. That notification shall include the relevant information identified in paragraph 2 for each of the core platform services of the provider that meets the thresholds in paragraph 2 point (b). The notification shall be updated whenever other core platform services individually meet the thresholds in paragraph 2 point (b).</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_4">
+            <content eId="art_3__para_4__content">
+              <p>A failure by a relevant provider of core platform services to notify the required information pursuant to this paragraph shall not prevent the Commission from designating these providers as gatekeepers pursuant to paragraph 4 at any time.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_4">
+            <num>4.</num>
+            <content eId="art_3__para_4__content">
+              <p>The Commission shall, without undue delay and at the latest 60 days after receiving the complete information referred to in paragraph 3, designate the provider of core platform services that meets all the thresholds of paragraph 2 as a gatekeeper, unless that provider, with its notification, presents sufficiently substantiated arguments to demonstrate that, in the circumstances in which the relevant core platform service operates, and taking into account the elements listed in paragraph 6, the provider does not satisfy the requirements of paragraph 1.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_6">
+            <content eId="art_3__para_6__content">
+              <p>Where the gatekeeper presents such sufficiently substantiated arguments to demonstrate that it does not satisfy the requirements of paragraph 1, the Commission shall apply paragraph 6 to assess whether the criteria in paragraph 1 are met.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_5">
+            <num>5.</num>
+            <content eId="art_3__para_5__content">
+              <p>The Commission is empowered to adopt delegated acts in accordance with Article 37 to specify the methodology for determining whether the quantitative thresholds laid down in paragraph 2 are met, and to regularly adjust it to market and technological developments where necessary, in particular as regards the threshold in paragraph 2, point (a).</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_6">
+            <num>6.</num>
+            <content eId="art_3__para_6__content">
+              <p>The Commission may identify as a gatekeeper, in accordance with the procedure laid down in Article 15, any provider of core platform services that meets each of the requirements of paragraph 1, but does not satisfy each of the thresholds of paragraph 2, or has presented sufficiently substantiated arguments in accordance with paragraph 4.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_9">
+            <intro eId="art_3__para_9__intro">
+              <p>For that purpose, the Commission shall take into account the following elements:</p>
+            </intro>
+            <point eId="art_3__para_9__point_a">
+              <num>(a)</num>
+              <content>
+                <p>the size, including turnover and market capitalisation, operations and position of the provider of core platform services;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_9__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the number of business users depending on the core platform service to reach end users and the number of end users;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_9__point_c">
+              <num>(c)</num>
+              <content>
+                <p>entry barriers derived from network effects and data driven advantages, in particular in relation to the provider’s access to and collection of personal and non-personal data or analytics capabilities;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_9__point_d">
+              <num>(d)</num>
+              <content>
+                <p>scale and scope effects the provider benefits from, including with regard to data;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_9__point_e">
+              <num>(e)</num>
+              <content>
+                <p>business user or end user lock-in;</p>
+              </content>
+            </point>
+            <point eId="art_3__para_9__point_f">
+              <num>(f)</num>
+              <content>
+                <p>other structural market characteristics.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_3__para_10">
+            <content eId="art_3__para_10__content">
+              <p>In conducting its assessment, the Commission shall take into account foreseeable developments of these elements.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_11">
+            <content eId="art_3__para_11__content">
+              <p>Where the provider of a core platform service that satisfies the quantitative thresholds of paragraph 2 fails to comply with the investigative measures ordered by the Commission in a significant manner and the failure persists after the provider has been invited to comply within a reasonable time-limit and to submit observations, the Commission shall be entitled to designate that provider as a gatekeeper.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_12">
+            <content eId="art_3__para_12__content">
+              <p>Where the provider of a core platform service that does not satisfy the quantitative thresholds of paragraph 2 fails to comply with the investigative measures ordered by the Commission in a significant manner and the failure persists after the provider has been invited to comply within a reasonable time-limit and to submit observations, the Commission shall be entitled to designate that provider as a gatekeeper based on facts available.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_7">
+            <num>7.</num>
+            <content eId="art_3__para_7__content">
+              <p>For each gatekeeper identified pursuant to paragraph 4 or paragraph 6, the Commission shall identify the relevant undertaking to which it belongs and list the relevant core platform services that are provided within that same undertaking and which individually serve as an important gateway for business users to reach end users as referred to in paragraph 1(b).</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_3__para_8">
+            <num>8.</num>
+            <content eId="art_3__para_8__content">
+              <p>The gatekeeper shall comply with the obligations laid down in Articles 5 and 6 within six months after a core platform service has been included in the list pursuant to paragraph 7 of this Article.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_4">
+          <num>Article 4</num>
+          <heading>Review of the status of gatekeepers</heading>
+          <paragraph eId="art_4__para_1">
+            <num>1.</num>
+            <intro eId="art_4__para_1__intro">
+              <p>The Commission may upon request or its own initiative reconsider, amend or repeal at any moment a decision adopted pursuant to Article 3 for one of the following reasons:</p>
+            </intro>
+            <point eId="art_4__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>there has been a substantial change in any of the facts on which the decision was based;</p>
+              </content>
+            </point>
+            <point eId="art_4__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the decision was based on incomplete, incorrect or misleading information provided by the undertakings.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_4__para_2">
+            <num>2.</num>
+            <content eId="art_4__para_2__content">
+              <p>The Commission shall regularly, and at least every 2 years, review whether the designated gatekeepers continue to satisfy the requirements laid down in Article 3(1), or whether new providers of core platform services satisfy those requirements. The regular review shall also examine whether the list of affected core platform services of the gatekeeper needs to be adjusted.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_4__para_3">
+            <content eId="art_4__para_3__content">
+              <p>Where the Commission, on the basis of that review pursuant to the first subparagraph, finds that the facts on which the designation of the providers of core platform services as gatekeepers was based, have changed, it shall adopt a corresponding decision.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_4__para_3">
+            <num>3.</num>
+            <content eId="art_4__para_3__content">
+              <p>The Commission shall publish and update the list of gatekeepers and the list of the core platform services for which they need to comply with the obligations laid down in Articles 5 and 6 on an on-going basis.</p>
+            </content>
+          </paragraph>
+        </article>
+      </chapter>
+      <chapter eId="chap_ciii">
+        <num>Chapter III</num>
+        <heading>Practices of gatekeepers that limit contestability or are unfair</heading>
+        <article eId="art_5">
+          <num>Article 5</num>
+          <heading>Obligations for gatekeepers</heading>
+          <intro eId="art_5__intro">
+            <p>In respect of each of its core platform services identified pursuant to Article 3(7), a gatekeeper shall:</p>
+          </intro>
+          <point eId="art_5__point_a">
+            <num>(a)</num>
+            <content>
+              <p>refrain from combining personal data sourced from these core platform services with personal data from any other services offered by the gatekeeper or with personal data from third-party services, and from signing in end users to other services of the gatekeeper in order to combine personal data, unless the end user has been presented with the specific choice and provided consent in the sense of Regulation (EU) 2016/679. ;</p>
+            </content>
+          </point>
+          <point eId="art_5__point_b">
+            <num>(b)</num>
+            <content>
+              <p>allow business users to offer the same products or services to end users through third party online intermediation services at prices or conditions that are different from those offered through the online intermediation services of the gatekeeper;</p>
+            </content>
+          </point>
+          <point eId="art_5__point_c">
+            <num>(c)</num>
+            <content>
+              <p>allow business users to promote offers to end users acquired via the core platform service, and to conclude contracts with these end users regardless of whether for that purpose they use the core platform services of the gatekeeper or not, and allow end users to access and use, through the core platform services of the gatekeeper, content, subscriptions, features or other items by using the software application of a business user, where these items have been acquired by the end users from the relevant business user without using the core platform services of the gatekeeper;</p>
+            </content>
+          </point>
+          <point eId="art_5__point_d">
+            <num>(d)</num>
+            <content>
+              <p>refrain from preventing or restricting business users from raising issues with any relevant public authority relating to any practice of gatekeepers;</p>
+            </content>
+          </point>
+          <point eId="art_5__point_e">
+            <num>(e)</num>
+            <content>
+              <p>refrain from requiring business users to use, offer or interoperate with an identification service of the gatekeeper in the context of services offered by the business users using the core platform services of that gatekeeper;</p>
+            </content>
+          </point>
+          <point eId="art_5__point_f">
+            <num>(f)</num>
+            <content>
+              <p>refrain from requiring business users or end users to subscribe to or register with any other core platform services identified pursuant to Article 3 or which meets the thresholds in Article 3(2)(b) as a condition to access, sign up or register to any of their core platform services identified pursuant to that Article;</p>
+            </content>
+          </point>
+          <point eId="art_5__point_g">
+            <num>(g)</num>
+            <content>
+              <p>provide advertisers and publishers to which it supplies advertising services, upon their request, with information concerning the price paid by the advertiser and publisher, as well as the amount or remuneration paid to the publisher, for the publishing of a given ad and for each of the relevant advertising services provided by the gatekeeper.</p>
+            </content>
+          </point>
+        </article>
+        <article eId="art_6">
+          <num>Article 6</num>
+          <heading>Obligations for gatekeepers susceptible of being further specified</heading>
+          <paragraph eId="art_6__para_1">
+            <num>1.</num>
+            <intro eId="art_6__para_1__intro">
+              <p>In respect of each of its core platform services identified pursuant to Article 3(7), a gatekeeper shall:</p>
+            </intro>
+            <point eId="art_6__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>refrain from using, in competition with business users, any data not publicly available, which is generated through activities by those business users, including by the end users of these business users, of its core platform services or provided by those business users of its core platform services or by the end users of these business users;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>allow end users to un-install any pre-installed software applications on its core platform service without prejudice to the possibility for a gatekeeper to restrict such un-installation in relation to software applications that are essential for the functioning of the operating system or of the device and which cannot technically be offered on a standalone basis by third-parties;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_c">
+              <num>(c)</num>
+              <content>
+                <p>allow the installation and effective use of third party software applications or software application stores using, or interoperating with, operating systems of that gatekeeper and allow these software applications or software application stores to be accessed by means other than the core platform services of that gatekeeper. The gatekeeper shall not be prevented from taking proportionate measures to ensure that third party software applications or software application stores do not endanger the integrity of the hardware or operating system provided by the gatekeeper;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_d">
+              <num>(d)</num>
+              <content>
+                <p>refrain from treating more favourably in ranking services and products offered by the gatekeeper itself or by any third party belonging to the same undertaking compared to similar services or products of third party and apply fair and non-discriminatory conditions to such ranking;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_e">
+              <num>(e)</num>
+              <content>
+                <p>refrain from technically restricting the ability of end users to switch between and subscribe to different software applications and services to be accessed using the operating system of the gatekeeper, including as regards the choice of Internet access provider for end users;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_f">
+              <num>(f)</num>
+              <content>
+                <p>allow business users and providers of ancillary services access to and interoperability with the same operating system, hardware or software features that are available or used in the provision by the gatekeeper of any ancillary services;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_g">
+              <num>(g)</num>
+              <content>
+                <p>provide advertisers and publishers, upon their request and free of charge, with access to the performance measuring tools of the gatekeeper and the information necessary for advertisers and publishers to carry out their own independent verification of the ad inventory;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_h">
+              <num>(h)</num>
+              <content>
+                <p>provide effective portability of data generated through the activity of a business user or end user and shall, in particular, provide tools for end users to facilitate the exercise of data portability, in line with Regulation EU 2016/679, including by the provision of continuous and real-time access ;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_i">
+              <num>(i)</num>
+              <content>
+                <p>provide business users, or third parties authorised by a business user, free of charge, with effective, high-quality, continuous and real-time access and use of aggregated or non-aggregated data, that is provided for or generated in the context of the use of the relevant core platform services by those business users and the end users engaging with the products or services provided by those business users; for  personal data, provide access and use only where directly connected with the use effectuated by the end user in respect of the products or services offered by the relevant business user through the relevant core platform service, and when the end user opts in to such sharing with a consent in the sense of the Regulation (EU) 2016/679; ;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_j">
+              <num>(j)</num>
+              <content>
+                <p>provide to any third party providers of online search engines, upon their request, with access on fair, reasonable and non-discriminatory terms to ranking, query, click and view data in relation to free and paid search generated by end users on online search engines of the gatekeeper, subject to anonymisation for the query, click and view data that constitutes personal data;</p>
+              </content>
+            </point>
+            <point eId="art_6__para_1__point_k">
+              <num>(k)</num>
+              <content>
+                <p>apply fair and non-discriminatory general conditions of access for business users to its software application store designated pursuant to Article 3 of this Regulation.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_6__para_2">
+            <num>2.</num>
+            <content eId="art_6__para_2__content">
+              <p>For the purposes of point (a) of paragraph 1 data that is not publicly available shall include any aggregated and non-aggregated data generated by business users that can be inferred from, or collected through, the commercial activities of business users or their customers on the core platform service of the gatekeeper.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_7">
+          <num>Article 7</num>
+          <heading>Compliance with obligations for gatekeepers</heading>
+          <paragraph eId="art_7__para_1">
+            <num>1.</num>
+            <content eId="art_7__para_1__content">
+              <p>The measures implemented by the gatekeeper to ensure compliance with the obligations laid down in Articles 5 and 6 shall be effective in achieving the objective of the relevant obligation. The gatekeeper shall ensure that these measures are implemented in compliance with Regulation (EU) 2016/679 and  Directive 2002/58/EC, and with legislation on cyber security, consumer protection and product safety.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_7__para_2">
+            <num>2.</num>
+            <content eId="art_7__para_2__content">
+              <p>Where the Commission finds that the measures that the gatekeeper intends to implement pursuant to paragraph 1, or has implemented, do not ensure effective compliance with the relevant obligations laid down in Article 6, it may by decision specify the measures that the gatekeeper concerned shall implement. The Commission shall adopt such a decision within six months from the opening of proceedings pursuant to Article 18.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_7__para_3">
+            <num>3.</num>
+            <content eId="art_7__para_3__content">
+              <p>Paragraph 2 of this Article is without prejudice to the powers of the Commission under Articles 25, 26 and 27.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_7__para_4">
+            <num>4.</num>
+            <content eId="art_7__para_4__content">
+              <p>In view of adopting the decision under paragraph 2, the Commission shall communicate its preliminary findings within three months from the opening of the proceedings. In the preliminary findings, the Commission shall explain the measures it considers to take or it considers that the provider of core platform services concerned should take in order to effectively address the preliminary findings.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_7__para_5">
+            <num>5.</num>
+            <content eId="art_7__para_5__content">
+              <p>In specifying the measures under paragraph 2, the Commission shall ensure that the measures are effective in achieving the objectives of the relevant obligation and proportionate in the specific circumstances of the gatekeeper and the relevant service.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_7__para_6">
+            <num>6.</num>
+            <content eId="art_7__para_6__content">
+              <p>For the purposes of specifying the obligations under Article 6(1) points (j) and (k), the Commission shall also assess whether the intended or implemented measures ensure that there is no remaining imbalance of rights and obligations on business users and that the measures do not themselves confer an advantage on the gatekeeper which is disproportionate to the service provided by the gatekeeper to business users.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_7__para_7">
+            <num>7.</num>
+            <content eId="art_7__para_7__content">
+              <p>A gatekeeper may request the opening of proceedings pursuant to Article 18 for the Commission to determine whether the measures that the gatekeeper intends to implement or has implemented under Article 6 are effective in achieving the objective of the relevant obligation in the specific circumstances. A gatekeeper may, with its request, provide a reasoned submission to explain in particular why the measures that it intends to implement or has implemented are effective in achieving the objective of the relevant obligation in the specific circumstances.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_8">
+          <num>Article 8</num>
+          <heading>Suspension</heading>
+          <paragraph eId="art_8__para_1">
+            <num>1.</num>
+            <content eId="art_8__para_1__content">
+              <p>The Commission may, on a reasoned request by the gatekeeper, exceptionally suspend, in whole or in part, a specific obligation laid down in Articles 5 and 6 for a core platform service by decision adopted in accordance with the advisory procedure referred to in Article 32(4), where the gatekeeper demonstrates that compliance with that specific obligation would endanger, due to exceptional circumstances beyond the control of the gatekeeper, the economic viability of the operation of the gatekeeper in the Union, and only to the extent necessary to address such threat to its viability. The Commission shall aim to adopt the suspension decision without delay and at the latest 3 months following receipt of a complete reasoned request.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_8__para_2">
+            <num>2.</num>
+            <content eId="art_8__para_2__content">
+              <p>Where the suspension is granted pursuant to paragraph 1, the Commission shall review its suspension decision every year. Following such a review the Commission shall either lift the suspension or decide that the conditions of paragraph 1 continue to be met.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_8__para_3">
+            <num>3.</num>
+            <content eId="art_8__para_3__content">
+              <p>The Commission may, acting on a reasoned request by a gatekeeper, provisionally suspend the application of the relevant obligation to one or more individual core platform services already prior to the decision pursuant to paragraph 1.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_8__para_4">
+            <content eId="art_8__para_4__content">
+              <p>In assessing the request, the Commission shall take into account, in particular, the impact of the compliance with the specific obligation on the economic viability of the operation of the gatekeeper in the Union as well as on third parties. The suspension may be made subject to conditions and obligations to be defined by the Commission in order to ensure a fair balance between these interests and the objectives of this Regulation. Such a request may be made and granted at any time pending the assessment of the Commission pursuant to paragraph 1.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_9">
+          <num>Article 9</num>
+          <heading>Exemption for overriding reasons of public interest</heading>
+          <paragraph eId="art_9__para_1">
+            <num>1.</num>
+            <content eId="art_9__para_1__content">
+              <p>The Commission may, acting on a reasoned request by a gatekeeper or on its own initiative, by decision adopted in accordance with the advisory procedure referred to in Article 32(4), exempt it, in whole or in part, from a specific obligation laid down in Articles 5 and 6 in relation to an individual core platform service identified pursuant to Article 3(7), where such exemption is justified on the grounds set out in paragraph 2 of this Article. The Commission shall adopt the exemption decision at the latest 3 months after receiving a complete reasoned request.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_9__para_2">
+            <num>2.</num>
+            <intro eId="art_9__para_2__intro">
+              <p>An exemption pursuant to paragraph 1 may  only be granted on grounds of:</p>
+            </intro>
+            <point eId="art_9__para_2__point_a">
+              <num>(a)</num>
+              <content>
+                <p>public morality;</p>
+              </content>
+            </point>
+            <point eId="art_9__para_2__point_b">
+              <num>(b)</num>
+              <content>
+                <p>public health;</p>
+              </content>
+            </point>
+            <point eId="art_9__para_2__point_c">
+              <num>(c)</num>
+              <content>
+                <p>public security.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_9__para_3">
+            <num>3.</num>
+            <content eId="art_9__para_3__content">
+              <p>The Commission may, acting on a reasoned request by a gatekeeper or on its own initiative, provisionally suspend the application of the relevant obligation to one or more individual core platform services already prior to the decision pursuant to paragraph 1.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_9__para_4">
+            <content eId="art_9__para_4__content">
+              <p>In assessing the request, the Commission shall take into account, in particular, the impact of the compliance with the specific obligation on the grounds in paragraph 2 as well as the effects on the gatekeeper concerned and on third parties. The suspension may be made subject to conditions and obligations to be defined by the Commission in order to ensure a fair balance between the goals pursued by the grounds in paragraph 2 and the objectives of this Regulation. Such a request may be made and granted at any time pending the assessment of the Commission pursuant to paragraph 1.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_10">
+          <num>Article 10</num>
+          <heading>Updating obligations for gatekeepers</heading>
+          <paragraph eId="art_10__para_1">
+            <num>1.</num>
+            <content eId="art_10__para_1__content">
+              <p>The Commission is empowered to adopt delegated acts in accordance with Article 34 to update the obligations laid down in Articles 5 and 6 where, based on a market investigation pursuant to Article 17, it has identified the need for new obligations addressing practices that limit the contestability of core platform services or are unfair in the same way as the practices addressed by the obligations laid down in Articles 5 and 6.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_10__para_1">
+            <num>1.</num>
+            <intro eId="art_10__para_1__intro">
+              <p>A practice within the meaning of paragraph 1 shall be considered to be unfair or limit the contestability of core platform services where:</p>
+            </intro>
+            <point eId="art_10__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>there is an imbalance of rights and obligations on business users and the gatekeeper is obtaining an advantage from business users that is disproportionate to the service provided by the gatekeeper to business users; or</p>
+              </content>
+            </point>
+            <point eId="art_10__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the contestability of markets is weakened as a consequence of such a practice engaged in by gatekeepers.</p>
+              </content>
+            </point>
+          </paragraph>
+        </article>
+        <article eId="art_11">
+          <num>Article 11</num>
+          <heading>Anti-circumvention</heading>
+          <paragraph eId="art_11__para_1">
+            <num>1.</num>
+            <content eId="art_11__para_1__content">
+              <p>A gatekeeper shall ensure that the obligations of Articles 5 and 6 are fully and effectively complied with. While the obligations of Articles 5 and 6 apply in respect of core platform services designated pursuant to Article 3, their implementation shall not be undermined by any behaviour of the undertaking to which the gatekeeper belongs, regardless of whether this behaviour is of a contractual, commercial, technical or any other nature.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_11__para_2">
+            <num>2.</num>
+            <content eId="art_11__para_2__content">
+              <p>Where consent for collecting and processing of personal data is required to ensure compliance with this Regulation, a gatekeeper shall take the necessary steps to either enable business users to directly obtain the required consent to their processing, where required under Regulation (EU) 2016/679 and Directive 2002/58/EC, or to comply with Union data protection and privacy rules and principles in other ways including by providing business users with duly anonymised data where appropriate. The gatekeeper shall not make the obtaining of this consent by the business user more burdensome than for its own services.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_11__para_3">
+            <num>3.</num>
+            <content eId="art_11__para_3__content">
+              <p>A gatekeeper shall not degrade the conditions or quality of any of the core platform services provided to business users or end users who avail themselves of the rights or choices laid down in Articles 5 and 6, or make the exercise of those rights or choices unduly difficult.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_12">
+          <num>Article 12</num>
+          <heading>Obligation to inform about concentrations</heading>
+          <paragraph eId="art_12__para_1">
+            <num>1.</num>
+            <content eId="art_12__para_1__content">
+              <p>A gatekeeper shall inform the Commission of any intended concentration within the meaning of Article 3 of Regulation (EC) No 139/2004 involving another provider of core platform services or of any other services provided in the digital sector irrespective of whether it is notifiable to a Union competition authority under Regulation (EC) No 139/2004 or to a competent national competition authority under national merger rules.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_12__para_2">
+            <content eId="art_12__para_2__content">
+              <p>A gatekeeper shall inform the Commission of such a concentration prior to its implementation and following the conclusion of the agreement, the announcement of the public bid, or the acquisition of a controlling interest.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_12__para_2">
+            <num>2.</num>
+            <content eId="art_12__para_2__content">
+              <p>The notification pursuant to paragraph 1 shall at least describe for the acquisition targets their EEA and worldwide annual turnover, for any relevant core platform services their respective EEA annual turnover, their number of yearly active business users and the number of monthly active end users, as well as the rationale of the intended concentration.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_12__para_3">
+            <num>3.</num>
+            <content eId="art_12__para_3__content">
+              <p>If, following any concentration as provided in paragraph 1, additional core platform services individually satisfy the thresholds in point (b) of Article 3(2), the gatekeeper concerned shall inform the Commission thereof within three months from the implementation of the concentration and provide the Commission with the information referred to in Article 3(2).</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_13">
+          <num>Article 13</num>
+          <heading>Obligation of an audit</heading>
+          <content eId="art_13__content">
+            <p>Within six months after its designation pursuant to Article 3, a  gatekeeper shall submit  to the Commission an independently audited description of any techniques for profiling of consumers that the gatekeeper applies to or across its core platform services identified pursuant to Article 3. This description shall be updated at least annually.</p>
+          </content>
+        </article>
+      </chapter>
+      <chapter eId="chap_civ">
+        <num>Chapter IV</num>
+        <heading>Market investigation</heading>
+        <article eId="art_14">
+          <num>Article 14</num>
+          <heading>Opening of a market investigation</heading>
+          <paragraph eId="art_14__para_1">
+            <num>1.</num>
+            <content eId="art_14__para_1__content">
+              <p>When the Commission intends to carry out a market investigation in view of the possible adoption of decisions pursuant to Articles 15, 16 and 17, it shall adopt a decision opening a market investigation.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_14__para_2">
+            <num>2.</num>
+            <intro eId="art_14__para_2__intro">
+              <p>The opening decision shall specify:</p>
+            </intro>
+            <point eId="art_14__para_2__point_a">
+              <num>(a)</num>
+              <content>
+                <p>the date of opening of the investigation;</p>
+              </content>
+            </point>
+            <point eId="art_14__para_2__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the description of the issue to which the investigation relates to;</p>
+              </content>
+            </point>
+            <point eId="art_14__para_2__point_c">
+              <num>(c)</num>
+              <content>
+                <p>the purpose of the investigation.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_14__para_3">
+            <num>3.</num>
+            <intro eId="art_14__para_3__intro">
+              <p>The Commission may reopen a market investigation that it has closed where:</p>
+            </intro>
+            <point eId="art_14__para_3__point_a">
+              <num>(a)</num>
+              <content>
+                <p>there has been a material change in any of the facts on which the decision was based;</p>
+              </content>
+            </point>
+            <point eId="art_14__para_3__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the decision was based on incomplete, incorrect or misleading information provided by the undertakings concerned.</p>
+              </content>
+            </point>
+          </paragraph>
+        </article>
+        <article eId="art_15">
+          <num>Article 15</num>
+          <heading>Market investigation for designating gatekeepers</heading>
+          <paragraph eId="art_15__para_1">
+            <num>1.</num>
+            <content eId="art_15__para_1__content">
+              <p>The Commission may conduct a market investigation for the purpose of examining whether a provider of core platform services should be designated as a gatekeeper pursuant to Article 3(6), or in order to identify core platform services for a gatekeeper pursuant to Article 3(7). It shall endeavour to conclude its investigation by adopting a decision in accordance with the advisory procedure referred to in Article 32(4) within twelve months from the opening of the market investigation.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_15__para_2">
+            <num>2.</num>
+            <content eId="art_15__para_2__content">
+              <p>In the course of a market investigation pursuant to paragraph 1, the Commission shall endeavour to communicate its preliminary findings to the provider of core platform services concerned within six months from the opening of the investigation. In the preliminary findings, the Commission shall explain whether it considers, on a provisional basis, that the provider of core platform services should be designated as a gatekeeper pursuant to Article 3(6).</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_15__para_3">
+            <num>3.</num>
+            <content eId="art_15__para_3__content">
+              <p>Where the provider of core platform services satisfies the thresholds set out in Article 3(2), but has presented significantly substantiated arguments in accordance with Article 3(4), the Commission shall endeavour to conclude the market investigation within five months from the opening of the market investigation by a decision pursuant to paragraph 1. In that case the Commission shall endeavour to communicate its preliminary findings pursuant to paragraph 2 to the provider of core platform services within three months from the opening of the investigation.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_15__para_4">
+            <num>4.</num>
+            <content eId="art_15__para_4__content">
+              <p>When the Commission pursuant to Article 3(6) designates as a gatekeeper a provider of core platform services that does not yet enjoy an entrenched and durable position in its operations, but it is foreseeable that it will enjoy such a position in the near future, it shall declare applicable to that gatekeeper only obligations laid down in Article 5(b) and Article 6(1) points (e), (f), (h) and (i) as specified in the designation decision. The Commission shall only declare applicable those obligations that are appropriate and necessary to prevent that the gatekeeper concerned achieves by unfair means an entrenched and durable position in its operations. The Commission shall review such a designation in accordance with the procedure laid down in Article 4.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_16">
+          <num>Article 16</num>
+          <heading>Market investigation into systematic non-compliance</heading>
+          <paragraph eId="art_16__para_1">
+            <num>1.</num>
+            <content eId="art_16__para_1__content">
+              <p>Where the market investigation shows that a gatekeeper has systematically infringed the obligations laid down in Articles 5 and 6 and has further strengthened or extended its gatekeeper position in relation to the characteristics under Article 3(1), the Commission may by decision adopted in accordance with the advisory procedure referred to in Article 32(4) impose on such gatekeeper any behavioural or structural remedies which are proportionate to the infringement committed and necessary to ensure compliance with this Regulation. The Commission shall conclude its investigation by adopting a decision within twelve months from the opening of the market investigation.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_16__para_2">
+            <num>2.</num>
+            <content eId="art_16__para_2__content">
+              <p>The Commission may only impose structural remedies pursuant to paragraph 1 either where there is no equally effective behavioural remedy or where any equally effective behavioural remedy would be more burdensome for the gatekeeper concerned than the structural remedy.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_16__para_3">
+            <num>3.</num>
+            <content eId="art_16__para_3__content">
+              <p>A gatekeeper shall be deemed to have engaged in a systematic non-compliance with the obligations laid down in Articles 5 and 6, where the Commission has issued at least three non-compliance or fining decisions pursuant to Articles 25 and 26 respectively against a gatekeeper in relation to any of its core platform services within a period of five years prior to the adoption of the decision opening a market investigation in view of the possible adoption of a decision pursuant to this Article.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_16__para_4">
+            <num>4.</num>
+            <content eId="art_16__para_4__content">
+              <p>A gatekeeper shall be deemed to have further strengthened or extended its gatekeeper position in relation to the characteristics under Article 3(1), where its impact on the internal market has further increased, its importance as a gateway for business users to reach end users has further increased or the gatekeeper enjoys a further entrenched and durable position in its operations.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_16__para_5">
+            <num>5.</num>
+            <content eId="art_16__para_5__content">
+              <p>The Commission shall communicate its objections to the gatekeeper concerned within six months from the opening of the investigation. In its objections, the Commission shall explain whether it preliminarily considers that the conditions of paragraph 1 are met and which remedy or remedies it preliminarily considers necessary and proportionate.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_16__para_6">
+            <num>6.</num>
+            <content eId="art_16__para_6__content">
+              <p>The Commission may at any time during the market investigation extend its duration where the extension is justified on objective grounds and proportionate. The extension may apply to the deadline by which the Commission has to issue its objections, or to the deadline for adoption of the final decision. The total duration of any extension or extensions pursuant to this paragraph shall not exceed six months.The Commission may consider commitments pursuant to Article 23 and make them binding in its decision.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_17">
+          <num>Article 17</num>
+          <heading>Market investigation into new services and new practices</heading>
+          <paragraph eId="art_17__para_1">
+            <content eId="art_17__para_1__content">
+              <p>The Commission may conduct a market investigation with the purpose of examining whether one or more services within the digital sector should be added to the list of core platform services or to detect types of practices that may limit the contestability of core platform services or may be unfair and which are not effectively addressed by this Regulation. It shall issue a public report at the latest within 24 months from the opening of the market investigation.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_17__para_2">
+            <intro eId="art_17__para_2__intro">
+              <p>Where appropriate, that report shall:</p>
+            </intro>
+            <point eId="art_17__para_2__point_a">
+              <num>(a)</num>
+              <content>
+                <p>be accompanied by a proposal to amend this Regulation in order to include additional services within the digital sector in the list of core platform services laid down in point 2 of Article 2;</p>
+              </content>
+            </point>
+            <point eId="art_17__para_2__point_b">
+              <num>(b)</num>
+              <content>
+                <p>be accompanied by a delegated act amending Articles 5 or 6 as provided for in Article 10.</p>
+              </content>
+            </point>
+          </paragraph>
+        </article>
+      </chapter>
+      <chapter eId="chap_cv">
+        <num>Chapter V</num>
+        <heading>Investigative, enforcement and monitoring powers</heading>
+        <article eId="art_18">
+          <num>Article 18</num>
+          <heading>Opening of proceedings</heading>
+          <content eId="art_18__content">
+            <p>Where the Commission intends to carry out proceedings in view of the possible adoption of decisions pursuant to Article 7, 25 and 26, it shall adopt a decision opening a proceeding.</p>
+          </content>
+        </article>
+        <article eId="art_19">
+          <num>Article 19</num>
+          <heading>Requests for information</heading>
+          <paragraph eId="art_19__para_1">
+            <num>1.</num>
+            <content eId="art_19__para_1__content">
+              <p>The Commission may by simple request or by decision require information from undertakings and associations of undertakings to provide all necessary information, including for the purpose of monitoring, implementing and enforcing the rules laid down in this Regulation. The Commission may also request access to data bases and algorithms of undertakings and request explanations on those by a simple request or by a decision.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_19__para_2">
+            <num>2.</num>
+            <content eId="art_19__para_2__content">
+              <p>The Commission may request information from undertakings and associations of undertakings pursuant to paragraph 1 also prior to opening a market investigation pursuant to Article 14 or proceedings pursuant to Article 18.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_19__para_3">
+            <num>3.</num>
+            <content eId="art_19__para_3__content">
+              <p>When sending a simple request for information to an undertaking or association of undertakings, the Commission shall state the purpose of the request, specify what information is required and fix the time-limit within which the information is to be provided, and the penalties provided for in Article 26 for supplying incomplete, incorrect or misleading information or explanations.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_19__para_4">
+            <num>4.</num>
+            <content eId="art_19__para_4__content">
+              <p>Where the Commission requires undertakings and associations of undertakings to supply information by decision, it shall state the purpose of the request, specify what information is required and fix the time-limit within which it is to be provided. Where the Commission requires undertakings to provide access to its data-bases and algorithms, it shall state the legal basis and the purpose of the request, and fix the time-limit within which it is to be provided. It shall also indicate the penalties provided for in Article 26 and indicate or impose the periodic penalty payments provided for in Article 27. It shall further indicate the right to have the decision reviewed by the Court of Justice.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_19__para_5">
+            <num>5.</num>
+            <content eId="art_19__para_5__content">
+              <p>The undertakings or associations of undertakings or their representatives shall supply the information requested on behalf of the undertaking or the association of undertakings concerned. Lawyers duly authorised to act may supply the information on behalf of their clients. The latter shall remain fully responsible if the information supplied is incomplete, incorrect or misleading.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_19__para_6">
+            <num>6.</num>
+            <content eId="art_19__para_6__content">
+              <p>At the request of the Commission, the governments and authorities of the Member States shall provide the Commission with all necessary information to carry out the duties assigned to it by this Regulation.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_20">
+          <num>Article 20</num>
+          <heading>Power to carry out interviews and take statements</heading>
+          <content eId="art_20__content">
+            <p>The Commission may interview any natural or legal person which consents to being interviewed for the purpose of collecting information, relating to the subject-matter of an investigation, including in relation to the monitoring, implementing and enforcing of the rules laid down in this Regulation.</p>
+          </content>
+        </article>
+        <article eId="art_21">
+          <num>Article 21</num>
+          <heading>Powers to conduct on-site inspections</heading>
+          <paragraph eId="art_21__para_1">
+            <num>1.</num>
+            <content eId="art_21__para_1__content">
+              <p>The Commission may conduct on-site inspections at the premises of an undertaking or association of undertakings.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_21__para_2">
+            <num>2.</num>
+            <content eId="art_21__para_2__content">
+              <p>On-site inspections may also be carried out with the assistance of auditors or experts appointed by the Commission pursuant to Article 24(2).</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_21__para_3">
+            <num>3.</num>
+            <content eId="art_21__para_3__content">
+              <p>During on-site inspections the Commission and auditors or experts appointed by it may require the undertaking or association of undertakings to provide access to and explanations on its organisation, functioning, IT system, algorithms, data-handling and business conducts. The Commission and auditors or experts appointed by it may address questions to key personnel.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_21__para_4">
+            <num>4.</num>
+            <content eId="art_21__para_4__content">
+              <p>Undertakings or associations of undertakings are required to submit to an on-site inspection ordered by decision of the Commission. The decision shall specify the subject matter and purpose of the visit, set the date on which it is to begin and indicate the penalties provided for in Articles 26 and 27 and the right to have the decision reviewed by the Court of Justice.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_22">
+          <num>Article 22</num>
+          <heading>Interim measures</heading>
+          <paragraph eId="art_22__para_1">
+            <num>1.</num>
+            <content eId="art_22__para_1__content">
+              <p>In case of urgency due to the risk of serious and irreparable damage for business users or end users of gatekeepers, the Commission may, by decision adopt in accordance with the advisory procedure referred to in Article 32(4), order interim measures against a gatekeeper on the basis of a prima facie finding of an infringement of Articles 5 or 6.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_22__para_2">
+            <num>2.</num>
+            <content eId="art_22__para_2__content">
+              <p>A decision pursuant to paragraph 1 may only be adopted in the context of proceedings opened in view of the possible adoption of a decision of non-compliance pursuant to Article 25(1). This decision shall apply for a specified period of time and may be renewed in so far this is necessary and appropriate.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_23">
+          <num>Article 23</num>
+          <heading>Commitments</heading>
+          <paragraph eId="art_23__para_1">
+            <num>1.</num>
+            <content eId="art_23__para_1__content">
+              <p>If during proceedings under Articles 16 or 25 the gatekeeper concerned offers commitments for the relevant core platform services to ensure compliance with the obligations laid down in Articles 5 and 6, the Commission may by decision adopted in accordance with the advisory procedure referred to in Article 32(4) make those commitments binding on that gatekeeper and declare that there are no further grounds for action.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_23__para_2">
+            <num>2.</num>
+            <intro eId="art_23__para_2__intro">
+              <p>The Commission may, upon request or on its own initiative, reopen by decision the relevant proceedings, where:</p>
+            </intro>
+            <point eId="art_23__para_2__point_a">
+              <num>(a)</num>
+              <content>
+                <p>there has been a material change in any of the facts on which the decision was based;</p>
+              </content>
+            </point>
+            <point eId="art_23__para_2__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the gatekeeper concerned acts contrary to its commitments;</p>
+              </content>
+            </point>
+            <point eId="art_23__para_2__point_c">
+              <num>(c)</num>
+              <content>
+                <p>the decision was based on incomplete, incorrect or misleading information provided by the parties.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_23__para_3">
+            <num>3.</num>
+            <content eId="art_23__para_3__content">
+              <p>Should the Commission consider that the commitments submitted by the gatekeeper concerned cannot ensure effective compliance with the obligations laid down in Articles 5 and 6, it shall explain the reasons for not making those commitments binding in the decision concluding the relevant proceedings.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_24">
+          <num>Article 24</num>
+          <heading>Monitoring of obligations and measures</heading>
+          <paragraph eId="art_24__para_1">
+            <num>1.</num>
+            <content eId="art_24__para_1__content">
+              <p>The Commission may take the necessary actions to monitor the effective implementation and compliance with the obligations laid down in Articles 5 and 6 and the decisions taken pursuant to Articles 7, 16, 22 and 23.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_24__para_2">
+            <num>2.</num>
+            <content eId="art_24__para_2__content">
+              <p>The actions pursuant to paragraph 1 may include the appointment of independent external experts and auditors to assist the Commission to monitor the obligations and measures and to provide specific expertise or knowledge to the Commission.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_25">
+          <num>Article 25</num>
+          <heading>Non-compliance</heading>
+          <paragraph eId="art_25__para_1">
+            <num>1.</num>
+            <intro eId="art_25__para_1__intro">
+              <p>The Commission shall adopt a non-compliance decision in accordance with the advisory procedure referred to in Article 32(4) where it finds that a gatekeeper does not comply with one or more of the following:</p>
+            </intro>
+            <point eId="art_25__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>any of the obligations laid down in Articles 5 or 6;</p>
+              </content>
+            </point>
+            <point eId="art_25__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>measures specified in a decision adopted pursuant to Article 7(2);</p>
+              </content>
+            </point>
+            <point eId="art_25__para_1__point_c">
+              <num>(c)</num>
+              <content>
+                <p>measures ordered pursuant to Article 16(1);</p>
+              </content>
+            </point>
+            <point eId="art_25__para_1__point_d">
+              <num>(d)</num>
+              <content>
+                <p>interim measures ordered pursuant to Article 22; or</p>
+              </content>
+            </point>
+            <point eId="art_25__para_1__point_e">
+              <num>(e)</num>
+              <content>
+                <p>commitments made legally binding pursuant to Article 23.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_25__para_2">
+            <num>2.</num>
+            <content eId="art_25__para_2__content">
+              <p>Before adopting the decision pursuant to paragraph 1, the Commission shall communicate its preliminary findings to the gatekeeper concerned. In the preliminary findings, the Commission shall explain the measures it considers to take or it considers that the gatekeeper should take in order to effectively address the preliminary findings.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_25__para_3">
+            <num>3.</num>
+            <content eId="art_25__para_3__content">
+              <p>In the non-compliance decision adopted pursuant to paragraph 1, the Commission shall order the gatekeeper to cease and desist with the non-compliance within an appropriate deadline and to provide explanations on how it plans to comply with the decision.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_25__para_4">
+            <num>4.</num>
+            <content eId="art_25__para_4__content">
+              <p>The gatekeeper shall provide the Commission with the description of the measures it took to ensure compliance with the decision adopted pursuant to paragraph 1.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_25__para_5">
+            <num>5.</num>
+            <content eId="art_25__para_5__content">
+              <p>Where the Commission finds that the conditions of paragraph 1 are not met, it shall close the investigation by a decision.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_26">
+          <num>Article 26</num>
+          <heading>Fines</heading>
+          <paragraph eId="art_26__para_1">
+            <num>1.</num>
+            <intro eId="art_26__para_1__intro">
+              <p>In the decision pursuant to Article 25, the Commission may impose on a gatekeeper fines not exceeding 10% of its total turnover in the preceding financial year where it finds that the gatekeeper, intentionally or negligently, fails to comply with:</p>
+            </intro>
+            <point eId="art_26__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>any of the obligations pursuant to Articles 5 and 6;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the measures specified by the Commission pursuant to a decision under Article 7(2);</p>
+              </content>
+            </point>
+            <point eId="art_26__para_1__point_c">
+              <num>(c)</num>
+              <content>
+                <p>measures ordered pursuant to Article 16(1);</p>
+              </content>
+            </point>
+            <point eId="art_26__para_1__point_d">
+              <num>(d)</num>
+              <content>
+                <p>a decision ordering interim measures pursuant to Article 22;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_1__point_e">
+              <num>(e)</num>
+              <content>
+                <p>a commitment made binding by a decision pursuant to Article 23.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_26__para_2">
+            <num>2.</num>
+            <intro eId="art_26__para_2__intro">
+              <p>The Commission may by decision impose on undertakings and associations of undertakings fines not exceeding 1% of the total turnover in the preceding financial year where they intentionally or negligently:</p>
+            </intro>
+            <point eId="art_26__para_2__point_a">
+              <num>(a)</num>
+              <content>
+                <p>fail to provide within the time-limit information that is required for assessing their designation as gatekeepers pursuant to Article 3(2) or supply incorrect, incomplete or misleading information;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_2__point_b">
+              <num>(b)</num>
+              <content>
+                <p>fail to notify information that is required pursuant to Article 12 or supply incorrect, incomplete or misleading information;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_2__point_c">
+              <num>(c)</num>
+              <content>
+                <p>fail to submit the description that is required pursuant to Article 13;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_2__point_d">
+              <num>(d)</num>
+              <content>
+                <p>supply incorrect, incomplete or misleading information or explanations that are requested pursuant to Articles 19 or Article 20;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_2__point_e">
+              <num>(e)</num>
+              <content>
+                <p>fail to provide access to data-bases and algorithms pursuant to Article 19;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_2__point_f">
+              <num>(f)</num>
+              <content>
+                <p>fail to rectify within a time-limit set by the Commission, incorrect, incomplete or misleading information given by a member of staff, or fail or refuse to provide complete information on facts relating to the subject-matter and purpose of an inspection pursuant to Article 21;</p>
+              </content>
+            </point>
+            <point eId="art_26__para_2__point_g">
+              <num>(g)</num>
+              <content>
+                <p>refuse to submit to an on-site inspection pursuant to Article 21.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_26__para_3">
+            <num>3.</num>
+            <content eId="art_26__para_3__content">
+              <p>In fixing the amount of the fine, regard shall be had to the gravity, duration, recurrence, and, for fines imposed pursuant to paragraph 2, delay caused to the proceedings.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_26__para_4">
+            <num>4.</num>
+            <content eId="art_26__para_4__content">
+              <p>When a fine is imposed on an association of undertakings taking account of the turnover of its members and the association is not solvent, the association shall be obliged to call for contributions from its members to cover the amount of the fine.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_26__para_5">
+            <content eId="art_26__para_5__content">
+              <p>Where such contributions have not been made to the association within a time-limit set by the Commission, the Commission may require payment of the fine directly by any of the undertakings whose representatives were members of the decision-making bodies concerned of the association.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_26__para_6">
+            <content eId="art_26__para_6__content">
+              <p>After having required payment in accordance with the second subparagraph, the Commission may require payment of the balance by any of the members of the association which were active on the market on which the infringement occurred, where necessary to ensure full payment of the fine.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_26__para_7">
+            <content eId="art_26__para_7__content">
+              <p>However, the Commission shall not require payment pursuant to the second or the third subparagraph from undertakings which show that they have not implemented the infringing decision of the association and either were not aware of its existence or have actively distanced themselves from it before the Commission started investigating the case.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_26__para_8">
+            <content eId="art_26__para_8__content">
+              <p>The financial liability of each undertaking in respect of the payment of the fine shall not exceed 10 % of its total turnover in the preceding financial year.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_27">
+          <num>Article 27</num>
+          <heading>Periodic penalty payments</heading>
+          <paragraph eId="art_27__para_1">
+            <num>1.</num>
+            <intro eId="art_27__para_1__intro">
+              <p>The Commission may by decision impose on undertakings, including gatekeepers where applicable, periodic penalty payments not exceeding 5 % of the average daily turnover in the preceding financial year per day, calculated from the date set by that decision, in order to compel them:</p>
+            </intro>
+            <point eId="art_27__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>to comply with the decision pursuant to Article 16(1);</p>
+              </content>
+            </point>
+            <point eId="art_27__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>to supply correct and complete information within the time limit required by a request for information made by decision pursuant to Article 19;</p>
+              </content>
+            </point>
+            <point eId="art_27__para_1__point_c">
+              <num>(c)</num>
+              <content>
+                <p>to ensure access to data-bases and algorithms of undertakings and to supply explanations on those as required by a decision pursuant to Article 19;</p>
+              </content>
+            </point>
+            <point eId="art_27__para_1__point_d">
+              <num>(d)</num>
+              <content>
+                <p>to submit to an on-site inspection which was ordered by a decision taken pursuant to Article 21;</p>
+              </content>
+            </point>
+            <point eId="art_27__para_1__point_e">
+              <num>(e)</num>
+              <content>
+                <p>to comply with a decision ordering interim measures taken pursuant to Article 22(1);</p>
+              </content>
+            </point>
+            <point eId="art_27__para_1__point_f">
+              <num>(f)</num>
+              <content>
+                <p>to comply with commitments made legally binding by a decision pursuant to Article 23(1);</p>
+              </content>
+            </point>
+            <point eId="art_27__para_1__point_g">
+              <num>(g)</num>
+              <content>
+                <p>to comply with a decision pursuant to Article 25(1).</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_27__para_2">
+            <num>2.</num>
+            <content eId="art_27__para_2__content">
+              <p>Where the undertakings have satisfied the obligation which the periodic penalty payment was intended to enforce, the Commission may by decision adopted in accordance with the advisory procedure referred to in Article 32(4) set the definitive amount of the periodic penalty payment at a figure lower than that which would arise under the original decision.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_28">
+          <num>Article 28</num>
+          <heading>Limitation periods for the imposition of penalties</heading>
+          <paragraph eId="art_28__para_1">
+            <num>1.</num>
+            <content eId="art_28__para_1__content">
+              <p>The powers conferred on the Commission by Articles 26 and 27 shall be subject to a three year limitation period.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_28__para_2">
+            <num>2.</num>
+            <content eId="art_28__para_2__content">
+              <p>Time shall begin to run on the day on which the infringement is committed. However, in the case of continuing or repeated infringements, time shall begin to run on the day on which the infringement ceases.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_28__para_3">
+            <num>3.</num>
+            <intro eId="art_28__para_3__intro">
+              <p>Any action taken by the Commission for the purpose of an investigation or proceedings in respect of an infringement shall interrupt the limitation period for the imposition of fines or periodic penalty payments. The limitation period shall be interrupted with effect from the date on which the action is notified to at least one undertaking or association of undertakings which has participated in the infringement. Actions which interrupt the running of the period shall include in particular the following:</p>
+            </intro>
+            <point eId="art_28__para_3__point_a">
+              <num>(a)</num>
+              <content>
+                <p>requests for information by the Commission;</p>
+              </content>
+            </point>
+            <point eId="art_28__para_3__point_b">
+              <num>(b)</num>
+              <content>
+                <p>on-site inspection;</p>
+              </content>
+            </point>
+            <point eId="art_28__para_3__point_c">
+              <num>(c)</num>
+              <content>
+                <p>the opening of a proceeding by the Commission pursuant to Article 18.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_28__para_4">
+            <num>4.</num>
+            <content eId="art_28__para_4__content">
+              <p>Each interruption shall start time running afresh. However, the limitation period shall expire at the latest on the day on which a period equal to twice the limitation period has elapsed without the Commission having imposed a fine or a periodic penalty payment. That period shall be extended by the time during which limitation is suspended pursuant to paragraph 5.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_28__para_5">
+            <num>5.</num>
+            <content eId="art_28__para_5__content">
+              <p>The limitation period for the imposition of fines or periodic penalty payments shall be suspended for as long as the decision of the Commission is the subject of proceedings pending before the Court of Justice of the European Union.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_29">
+          <num>Article 29</num>
+          <heading>Limitation periods for the enforcement of penalties</heading>
+          <paragraph eId="art_29__para_1">
+            <num>1.</num>
+            <content eId="art_29__para_1__content">
+              <p>The power of the Commission to enforce decisions taken pursuant to Articles 26 and 27 shall be subject to a limitation period of five years.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_29__para_2">
+            <num>2.</num>
+            <content eId="art_29__para_2__content">
+              <p>Time shall begin to run on the day on which the decision becomes final.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_29__para_3">
+            <num>3.</num>
+            <intro eId="art_29__para_3__intro">
+              <p>The limitation period for the enforcement of penalties shall be interrupted:</p>
+            </intro>
+            <point eId="art_29__para_3__point_a">
+              <num>(a)</num>
+              <content>
+                <p>by notification of a decision varying the original amount of the fine or periodic penalty payment or refusing an application for variation;</p>
+              </content>
+            </point>
+            <point eId="art_29__para_3__point_b">
+              <num>(b)</num>
+              <content>
+                <p>by any action of the Commission or of a Member State, acting at the request of the Commission, designed to enforce payment of the fine or periodic penalty payment.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_29__para_4">
+            <num>4.</num>
+            <content eId="art_29__para_4__content">
+              <p>Each interruption shall start time running afresh.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_29__para_5">
+            <num>5.</num>
+            <intro eId="art_29__para_5__intro">
+              <p>The limitation period for the enforcement of penalties shall be suspended for so long as:</p>
+            </intro>
+            <point eId="art_29__para_5__point_a">
+              <num>(a)</num>
+              <content>
+                <p>time to pay is allowed;</p>
+              </content>
+            </point>
+            <point eId="art_29__para_5__point_b">
+              <num>(b)</num>
+              <content>
+                <p>enforcement of payment is suspended pursuant to a decision of the Court of Justice.</p>
+              </content>
+            </point>
+          </paragraph>
+        </article>
+        <article eId="art_30">
+          <num>Article 30</num>
+          <heading>Right to be heard and access to the file</heading>
+          <paragraph eId="art_30__para_1">
+            <num>1.</num>
+            <intro eId="art_30__para_1__intro">
+              <p>Before adopting a decision pursuant to Article 7, Article 8(1), Article 9(1), Articles 15, 16, 22, 23, 25 and 26 and Article 27(2), the Commission shall give the gatekeeper or undertaking or association of undertakings concerned the opportunity of being heard on:</p>
+            </intro>
+            <point eId="art_30__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>preliminary findings of the Commission, including any matter to which the Commission has taken objections;</p>
+              </content>
+            </point>
+            <point eId="art_30__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>measures that the Commission may intend to take in view of the preliminary findings pursuant to point (a) of this paragraph.</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_30__para_2">
+            <num>2.</num>
+            <content eId="art_30__para_2__content">
+              <p>Gatekeepers, undertakings and associations of undertakings concerned may submit their observations to the Commission’s preliminary findings within a time limit which shall be fixed by the Commission in its preliminary findings and which may not be less than 14 days.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_30__para_3">
+            <num>3.</num>
+            <content eId="art_30__para_3__content">
+              <p>The Commission shall base its decisions only on objections on which gatekeepers, undertakings and associations of undertakings concerned have been able to comment.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_30__para_4">
+            <num>4.</num>
+            <content eId="art_30__para_4__content">
+              <p>The rights of defence of the gatekeeper or undertaking or association of undertakings concerned shall be fully respected in any proceedings. The gatekeeper or undertaking or association of undertakings concerned shall be entitled to have access to the Commission's file under the terms of a negotiated disclosure, subject to the legitimate interest of undertakings in the protection of their business secrets. The right of access to the file shall not extend to confidential information and internal documents of the Commission or the authorities of the Member States. In particular, the right of access shall not extend to correspondence between the Commission and the authorities of the Member States. Nothing in this paragraph shall prevent the Commission from disclosing and using information necessary to prove an infringement.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_31">
+          <num>Article 31</num>
+          <heading>Professional secrecy</heading>
+          <paragraph eId="art_31__para_1">
+            <num>1.</num>
+            <content eId="art_31__para_1__content">
+              <p>The information collected pursuant to Articles 3, 12, 13, 19, 20 and 21 shall be used only for the purposes of this Regulation.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_31__para_2">
+            <num>2.</num>
+            <content eId="art_31__para_2__content">
+              <p>Without prejudice to the exchange and to the use of information provided for the purpose of use pursuant to Articles 32 and 33, the Commission, the authorities of the Member States, their officials, servants and other persons working under the supervision of these authorities and any natural or legal person, including auditors and experts appointed pursuant to Article 24(2), shall not disclose information acquired or exchanged by them pursuant to this Regulation and of the kind covered by the obligation of professional secrecy. This obligation shall also apply to all representatives and experts of Member States participating in any of the activities of the Digital Markets Advisory Committee pursuant to Article 32.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_32">
+          <num>Article 32</num>
+          <heading>Digital Markets Advisory Committee</heading>
+          <paragraph eId="art_32__para_1">
+            <num>1.</num>
+            <content eId="art_32__para_1__content">
+              <p>The Commission shall be assisted by the Digital Markets Advisory Committee. That Committee shall be a Committee within the meaning of Regulation (EU) No 182/2011.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_32__para_2">
+            <num>2.</num>
+            <content eId="art_32__para_2__content">
+              <p>Where the opinion of the committee is to be obtained by written procedure, that procedure shall be terminated without result when, within the time-limit for delivery of the opinion, the chair of the committee so decides or a simple majority of committee members so request.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_32__para_3">
+            <num>3.</num>
+            <content eId="art_32__para_3__content">
+              <p>The Commission shall communicate the opinion of the Digital Markets Advisory Committee to the addressee of an individual decision, together with that decision. It shall make the opinion public together with the individual decision, having regard to the legitimate interest in the protection of professional secrecy.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_32__para_4">
+            <num>4.</num>
+            <content eId="art_32__para_4__content">
+              <p>Where reference is made to this paragraph, Article 4 of Regulation (EU) No 182/2011 shall apply.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_33">
+          <num>Article 33</num>
+          <heading>Request for a market investigation</heading>
+          <paragraph eId="art_33__para_1">
+            <num>1.</num>
+            <content eId="art_33__para_1__content">
+              <p>When three or more Member States request the Commission to open an investigation pursuant to Article 15 because they consider that there are reasonable grounds to suspect that a provider of core platform services should be designated as a gatekeeper, the Commission shall within four months examine whether there are reasonable grounds to open such an investigation.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_33__para_2">
+            <num>2.</num>
+            <content eId="art_33__para_2__content">
+              <p>Member States shall submit evidence in support of their request.</p>
+            </content>
+          </paragraph>
+        </article>
+      </chapter>
+      <chapter eId="chap_cvi">
+        <num>Chapter VI</num>
+        <heading>General provisions</heading>
+        <article eId="art_34">
+          <num>Article 34</num>
+          <heading>Publication of decisions</heading>
+          <paragraph eId="art_34__para_1">
+            <num>1.</num>
+            <content eId="art_34__para_1__content">
+              <p>The Commission shall publish the decisions which it takes pursuant to Articles 3, 7, 8, 9, 15, 16, 17, 22, 23(1), 25, 26 and 27. Such publication shall state the names of the parties and the main content of the decision, including any penalties imposed.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_34__para_2">
+            <num>2.</num>
+            <content eId="art_34__para_2__content">
+              <p>The publication shall have regard to the legitimate interest of gatekeepers or third parties in the protection of their confidential information.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_35">
+          <num>Article 35</num>
+          <heading>Review by the Court of Justice of the European Union</heading>
+          <content eId="art_35__content">
+            <p>In accordance with Article 261 of the Treaty on the Functioning of the European Union, the Court of Justice of the European Union has unlimited jurisdiction to review decisions by which the Commission has imposed fines or periodic penalty payments. It may cancel, reduce or increase the fine or periodic penalty payment imposed.</p>
+          </content>
+        </article>
+        <article eId="art_36">
+          <num>Article 36</num>
+          <heading>Implementing provisions</heading>
+          <paragraph eId="art_36__para_1">
+            <num>1.</num>
+            <intro eId="art_36__para_1__intro">
+              <p>The Commission may adopt implementing acts concerning: 3, 6, 12, 13, 15, 16, 17, 20, 22, 23, 25 and 30</p>
+            </intro>
+            <point eId="art_36__para_1__point_a">
+              <num>(a)</num>
+              <content>
+                <p>the form, content and other details of notifications and submissions pursuant to Article 3;</p>
+              </content>
+            </point>
+            <point eId="art_36__para_1__point_b">
+              <num>(b)</num>
+              <content>
+                <p>the form, content and other details of the technical measures that gatekeepers shall implement in order to ensure compliance with points (h), (i) and (j) of Article 6(1).</p>
+              </content>
+            </point>
+            <point eId="art_36__para_1__point_c">
+              <num>(c)</num>
+              <content>
+                <p>the form, content and other details of notifications and submissions made pursuant to Articles 12 and 13;</p>
+              </content>
+            </point>
+            <point eId="art_36__para_1__point_d">
+              <num>(d)</num>
+              <content>
+                <p>the practical arrangements of extension of deadlines as provided in Article 16;</p>
+              </content>
+            </point>
+            <point eId="art_36__para_1__point_e">
+              <num>(e)</num>
+              <content>
+                <p>the practical arrangements of the proceedings concerning investigations pursuant to Articles 15, 16, 17, and proceedings pursuant to Articles 22, 23 and 25;</p>
+              </content>
+            </point>
+            <point eId="art_36__para_1__point_f">
+              <num>(f)</num>
+              <content>
+                <p>the practical arrangements for exercising rights to be heard provided for in Article 30;</p>
+              </content>
+            </point>
+            <point eId="art_36__para_1__point_g">
+              <num>(g)</num>
+              <content>
+                <p>the practical arrangements for the negotiated disclosure of information provided for in Article 30;</p>
+              </content>
+            </point>
+          </paragraph>
+          <paragraph eId="art_36__para_2">
+            <num>2.</num>
+            <content eId="art_36__para_2__content">
+              <p>the practical arrangements for the cooperation and coordination between the Commission and Member States provided for in Article 1(7).Those implementing acts shall be adopted in accordance with the advisory procedure referred to in Article 32(4). Before the adoption of any measures pursuant to paragraph 1, the Commission shall publish a draft thereof and invite all interested parties to submit their comments within the time limit it lays down, which may not be less than one month.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_37">
+          <num>Article 37</num>
+          <heading>Exercise of the delegation</heading>
+          <paragraph eId="art_37__para_1">
+            <num>1.</num>
+            <content eId="art_37__para_1__content">
+              <p>The power to adopt delegated acts is conferred on the Commission subject to the conditions laid down in this Article.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_37__para_2">
+            <num>2.</num>
+            <content eId="art_37__para_2__content">
+              <p>The power to adopt delegated acts referred to in Articles 3(6) and 9(1) shall be conferred on the Commission for a period of five years from DD/MM/YYYY. The Commission shall draw up a report in respect of the delegation of power not later than nine months before the end of the five-year period. The delegation of power shall be tacitly extended for periods of an identical duration, unless the European Parliament or the Council opposes such extension not later than three months before the end of each period.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_37__para_3">
+            <num>3.</num>
+            <content eId="art_37__para_3__content">
+              <p>The delegation of power referred to in Articles 3(6) and 9(1) may be revoked at any time by the European Parliament or by the Council. A decision to revoke shall put an end to the delegation of the power specified in that decision. It shall take effect the day following the publication of the decision in the Official Journal of the European Union or at a later date specified therein. It shall not affect the validity of any delegated acts already in force.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_37__para_4">
+            <num>4.</num>
+            <content eId="art_37__para_4__content">
+              <p>Before adopting a delegated act, the Commission shall consult experts designated by each Member State in accordance with the principles laid down in the Inter-institutional Agreement of 13 April 2016 on Better Law-Making.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_37__para_5">
+            <num>5.</num>
+            <content eId="art_37__para_5__content">
+              <p>As soon as it adopts a delegated act, the Commission shall notify it simultaneously to the European Parliament and to the Council.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_37__para_6">
+            <num>6.</num>
+            <content eId="art_37__para_6__content">
+              <p>A delegated act adopted pursuant to Articles 3(6) and 9(1) shall enter into force only if no objection has been expressed either by the European Parliament or by the Council within a period of two months of notification of that act to the European Parliament and to the Council or if, before the expiry of that period, the European Parliament and the Council have both informed the Commission that they will not object. That period shall be extended by two months at the initiative of the European Parliament or of the Council.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_38">
+          <num>Article 38</num>
+          <heading>Review</heading>
+          <paragraph eId="art_38__para_1">
+            <num>1.</num>
+            <content eId="art_38__para_1__content">
+              <p>By DD/MM/YYYY, and subsequently every three years, the Commission shall evaluate this Regulation and report to the European Parliament, the Council and the European Economic and Social Committee.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_38__para_2">
+            <num>2.</num>
+            <content eId="art_38__para_2__content">
+              <p>The evaluations shall establish whether additional rules, including regarding the list of core platform services laid down in point 2 of Article 2, the obligations laid down in Articles 5 and 6 and their enforcement, may be required to ensure that digital markets across the Union are contestable and fair. Following the evaluations, the Commission shall take appropriate measures, which may include legislative proposals.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_38__para_3">
+            <num>3.</num>
+            <content eId="art_38__para_3__content">
+              <p>Member States shall provide any relevant information they have that the Commission may require for the purposes of drawing up the report referred to in paragraph 1.</p>
+            </content>
+          </paragraph>
+        </article>
+        <article eId="art_39">
+          <num>Article 39</num>
+          <heading>Entry into force and application</heading>
+          <paragraph eId="art_39__para_1">
+            <num>1.</num>
+            <content eId="art_39__para_1__content">
+              <p>This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_39__para_2">
+            <num>2.</num>
+            <content eId="art_39__para_2__content">
+              <p>This Regulation shall apply from six months after its entry into force.</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_39__para_3">
+            <content eId="art_39__para_3__content">
+              <p>However Articles 3, 15, 18, 19, 20, 21, 26, 27, 30, 31 and 34 shall apply from [date of entry into force of this Regulation].</p>
+            </content>
+          </paragraph>
+          <paragraph eId="art_39__para_3">
+            <num>3.</num>
+            <content eId="art_39__para_3__content">
+              <p>This Regulation shall be binding in its entirety and directly applicable in all Member States.</p>
+            </content>
+          </paragraph>
+        </article>
+      </chapter>
+    </body>
+    <conclusions eId="conclusions">
+      <blockContainer eId="signature">
+        <p class="signatureDate">Done at Brussels,</p>
+        <signature eId="signature_1">
+          <p>For the European Parliament
+                        For the Council</p>
+          <p>The President
+                        The President</p>
+        </signature>
+      </blockContainer>
+    </conclusions>
+  </bill>
+</akomaNtoso>

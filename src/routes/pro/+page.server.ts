@@ -12,6 +12,7 @@ const DEV_SLUGS = [
 	'ley-21670-boletin',
 	'ley-17370-boletin',
 	'ley-21120-boletin',
+	'eu-dma',
 	'eu-dsa',
 	'eu-ai-act'
 ];

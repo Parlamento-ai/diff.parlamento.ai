@@ -1,0 +1,24 @@
+═══════════════════════════════════════════════════════
+  EU AKN Pipeline: artificial-intelligence-act
+  Procedure: 2021/0106(COD)
+  Title: Harmonised rules on Artificial Intelligence (Artificial Intelligence Act) and amending certain Union Legislative Acts
+
+═══════════════════════════════════════════════════════
+  [PASS]  1. Download bill       85 articles                         2.3s
+  [PASS]  2. Download formex     113 ARTICLE                         3.2s
+  [PASS]  3. Formex → AKN        113 articles                        0.2s
+  [PASS]  4. EP amendments       92 article changes                  2.0s
+  [PASS]  5. Viewer XMLs         3 files                             0.3s
+  [PASS]  6. Communication       32 events                           9.7s
+  [PASS]  7. Votes               651 decisions                       16.0s
+  [PASS]  8. Citation            252 agenda items                    3.4s
+  [PASS]  9. Gazette             1 OJ entries                        3.1s
+
+  Cross-checks:
+  [PASS]  Bill CELEX match
+  [PASS]  Final CELEX match
+  [PASS]  Articles 85→113 (growth OK)
+  [PASS]  Vote date MTG-PL-2024-03-13 (auto-discovered)
+
+  RESULT: 9 pass, 0 fail, 0 warn (40.3s)
+═══════════════════════════════════════════════════════

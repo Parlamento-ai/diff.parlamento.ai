@@ -1,0 +1,23 @@
+═══════════════════════════════════════════════════════
+  EU AKN Pipeline: digital-services-act
+  Procedure: 2020/0361(COD)
+  Title: Single Market For Digital Services (Digital Services Act) and amending Directive 2000/31/EC
+═══════════════════════════════════════════════════════
+  [PASS]  1. Download bill       74 articles                         2.3s
+  [PASS]  2. Download formex     93 ARTICLE                          3.4s
+  [PASS]  3. Formex → AKN        93 articles                         0.2s
+  [PASS]  4. EP amendments       76 article changes                  1.8s
+  [PASS]  5. Viewer XMLs         3 files                             0.2s
+  [PASS]  6. Communication       25 events                           10.2s
+  [PASS]  7. Votes               132 decisions                       28.8s
+  [PASS]  8. Citation            33 agenda items                     4.0s
+  [WARN]  9. Gazette             TOC formex not available from CELLAR 3.6s
+
+  Cross-checks:
+  [PASS]  Bill CELEX match
+  [PASS]  Final CELEX match
+  [PASS]  Articles 74→93 (growth OK)
+  [PASS]  Vote date MTG-PL-2022-07-05 (auto-discovered)
+
+  RESULT: 8 pass, 0 fail, 1 warn (54.5s)
+═══════════════════════════════════════════════════════
