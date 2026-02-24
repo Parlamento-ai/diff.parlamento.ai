@@ -29,16 +29,17 @@
     </meta>
     <preface>
       <longTitle><p><docTitle>House Passage — S.269</docTitle></p></longTitle>
-      <p>Passed House by voice vote voice vote on 2026-01-12.</p>
+      <p>Passed House by voice vote on 2026-01-12.</p>
     </preface>
     <amendmentBody>
       <amendmentContent>
-        <p>Passed House by voice vote voice vote on 2026-01-12.</p>
+        <p>Passed House by voice vote on 2026-01-12.</p>
       </amendmentContent>
     </amendmentBody>
     <akndiff:changeSet
       base="/us/bill/119/s/269/eng@2025-09-19"
       result="/us/bill/119/s/269/eng@2026-01-12">
+        <akndiff:vote date="2026-01-12" result="voice-vote"/>
 
     </akndiff:changeSet>
   </amendment>

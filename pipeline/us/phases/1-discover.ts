@@ -13,12 +13,18 @@ import {
 	extractTextVersionInfo
 } from '../lib/congress-api.js';
 
+const VALID_BILL_TYPES = ['s', 'hr', 'hjres', 'sjres', 'hconres', 'sconres', 'hres', 'sres'];
+
 /** Parse a bill ID string like "s5-119" into components */
 export function parseBillId(input: string): BillId {
 	const match = input.match(/^([a-z]+)(\d+)-(\d+)$/i);
 	if (!match) throw new Error(`Invalid bill ID format: "${input}". Expected: s5-119, hr1-119, etc.`);
+	const type = match[1].toLowerCase();
+	if (!VALID_BILL_TYPES.includes(type)) {
+		throw new Error(`Invalid bill type: "${type}". Valid: ${VALID_BILL_TYPES.join(', ')}`);
+	}
 	return {
-		type: match[1].toLowerCase(),
+		type,
 		number: parseInt(match[2]),
 		congress: parseInt(match[3])
 	};
@@ -45,7 +51,7 @@ export async function discover(billId: string, outDir: string): Promise<Discover
 
 	// Extract structured data
 	const textVersions = extractTextVersionInfo(rawVersions);
-	const recordedVotes = extractVoteRefs(actions);
+	const recordedVotes = extractVoteRefs(actions, id.congress);
 	const passageActions = extractPassageActions(actions, recordedVotes);
 
 	// Determine status

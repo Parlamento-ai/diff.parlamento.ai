@@ -32,7 +32,7 @@ export interface Voter {
 
 export interface Vote {
 	date: string;
-	result: 'approved' | 'rejected' | 'withdrawn' | 'inadmissible' | 'pending';
+	result: 'approved' | 'rejected' | 'withdrawn' | 'inadmissible' | 'pending' | 'voice-vote';
 	source: string;
 	for: Voter[];
 	against: Voter[];

@@ -6,8 +6,14 @@ import type { BillId, BillTextVersion, RecordedVoteRef, PassageAction } from '..
 
 const BASE = 'https://api.congress.gov/v3';
 
+let demoKeyWarned = false;
 function apiKey(): string {
-	return process.env.CONGRESS_API_KEY || 'DEMO_KEY';
+	const key = process.env.CONGRESS_API_KEY || 'DEMO_KEY';
+	if (key === 'DEMO_KEY' && !demoKeyWarned) {
+		console.warn('  WARNING: Using DEMO_KEY (30 req/hr). Set CONGRESS_API_KEY or use --api-key=');
+		demoKeyWarned = true;
+	}
+	return key;
 }
 
 async function fetchJson(url: string, retries = 3): Promise<any> {
@@ -59,7 +65,7 @@ export async function fetchTextVersions(id: BillId): Promise<any[]> {
 }
 
 /** Extract recorded vote references from actions (deduplicated by URL) */
-export function extractVoteRefs(actions: any[]): RecordedVoteRef[] {
+export function extractVoteRefs(actions: any[], congress: number): RecordedVoteRef[] {
 	const refs: RecordedVoteRef[] = [];
 	const seen = new Set<string>();
 	for (const action of actions) {
@@ -68,7 +74,7 @@ export function extractVoteRefs(actions: any[]): RecordedVoteRef[] {
 			const url: string = rv.url || '';
 			if (seen.has(url)) continue;
 			seen.add(url);
-			const ref = parseVoteUrl(url, action.actionDate);
+			const ref = parseVoteUrl(url, action.actionDate, congress);
 			if (ref) refs.push(ref);
 		}
 	}
@@ -76,7 +82,7 @@ export function extractVoteRefs(actions: any[]): RecordedVoteRef[] {
 }
 
 /** Parse a Senate or House vote URL into a RecordedVoteRef */
-function parseVoteUrl(url: string, fallbackDate: string): RecordedVoteRef | null {
+function parseVoteUrl(url: string, fallbackDate: string, congress: number): RecordedVoteRef | null {
 	// Senate: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml
 	const senateMatch = url.match(/vote(\d{3})(\d)\/vote_\d+_\d+_(\d+)\.xml/);
 	if (senateMatch) {
@@ -92,10 +98,13 @@ function parseVoteUrl(url: string, fallbackDate: string): RecordedVoteRef | null
 	// House: https://clerk.house.gov/evs/2025/roll023.xml
 	const houseMatch = url.match(/evs\/(\d{4})\/roll(\d+)\.xml/);
 	if (houseMatch) {
+		const year = parseInt(houseMatch[1]);
+		// Congress sessions: odd years = session 1, even years = session 2
+		const session = year % 2 === 1 ? 1 : 2;
 		return {
 			chamber: 'House',
-			congress: 0, // will be filled from context
-			session: 0,
+			congress,
+			session,
 			rollNumber: parseInt(houseMatch[2]),
 			date: fallbackDate,
 			url

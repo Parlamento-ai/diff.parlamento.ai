@@ -3,11 +3,11 @@
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { Config, ParsedData, ParsedSection, ParsedVote } from '../types.js';
+import type { Config, Discovery, ParsedData, ParsedSection, ParsedVote } from '../types.js';
 import { parseBillXml, extractSections } from '../lib/bill-dtd-parser.js';
 import { parseSenateVote, parseHouseVote } from '../lib/vote-parser.js';
 
-export async function parse(config: Config, outDir: string): Promise<ParsedData> {
+export async function parse(config: Config, outDir: string, discovery?: Discovery): Promise<ParsedData> {
 	console.log('\n=== Phase 4: PARSE ===\n');
 
 	const srcDir = join(outDir, 'sources');
@@ -52,19 +52,26 @@ export async function parse(config: Config, outDir: string): Promise<ParsedData>
 			const rollMatch = item.filename.match(/(\d+)\.xml$/);
 			const rollNumber = rollMatch ? parseInt(rollMatch[1]) : 0;
 
+			// Look up session from discovery recordedVotes
+			const chamber = isSenate ? 'Senate' : 'House';
+			const voteRef = discovery?.recordedVotes?.find(
+				(v) => v.chamber === chamber && v.rollNumber === rollNumber
+			);
+			const session = voteRef?.session || 1;
+
 			let vote: ParsedVote;
 			if (isSenate) {
 				vote = parseSenateVote(
 					xmlContent,
 					config.billId.congress,
-					1, // session — TODO: extract from discovery
+					session,
 					rollNumber
 				);
 			} else {
 				vote = parseHouseVote(
 					xmlContent,
 					config.billId.congress,
-					1,
+					session,
 					rollNumber
 				);
 			}

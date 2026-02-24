@@ -1,0 +1,91 @@
+{
+  "billId": {
+    "type": "s",
+    "number": 331,
+    "congress": 119
+  },
+  "title": "HALT Fentanyl Act",
+  "shortTitle": "Halt All Lethal Trafficking of Fentanyl Act",
+  "sponsor": {
+    "name": "Sen. Cassidy, Bill [R-LA]",
+    "party": "R",
+    "state": "LA"
+  },
+  "status": "enacted",
+  "publicLaw": {
+    "congress": 119,
+    "number": 26
+  },
+  "textVersions": [
+    {
+      "code": "IS",
+      "date": "2025-01-30",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s331/BILLS-119s331is.xml"
+    },
+    {
+      "code": "RS",
+      "date": "2025-03-03",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s331/BILLS-119s331rs.xml"
+    },
+    {
+      "code": "ES",
+      "date": "2025-03-14",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s331/BILLS-119s331es.xml"
+    },
+    {
+      "code": "ENR",
+      "date": "",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s331/BILLS-119s331enr.xml"
+    },
+    {
+      "code": "PLAW",
+      "date": "2025-07-16"
+    }
+  ],
+  "recordedVotes": [
+    {
+      "chamber": "Senate",
+      "congress": 119,
+      "session": 1,
+      "rollNumber": 127,
+      "date": "2025-03-14",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00127.xml"
+    },
+    {
+      "chamber": "House",
+      "congress": 0,
+      "session": 0,
+      "rollNumber": 166,
+      "date": "2025-06-12",
+      "url": "https://clerk.house.gov/evs/2025/roll166.xml"
+    }
+  ],
+  "passageActions": [
+    {
+      "date": "2025-03-14",
+      "chamber": "Senate",
+      "description": "Passed Senate by Yea-Nay Vote. 84 - 16. Record Vote Number: 127.",
+      "voteRef": {
+        "chamber": "Senate",
+        "congress": 119,
+        "session": 1,
+        "rollNumber": 127,
+        "date": "2025-03-14",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00127.xml"
+      }
+    },
+    {
+      "date": "2025-06-12",
+      "chamber": "House",
+      "description": "Passed House by Yeas and Nays: 321 - 104. Roll no. 166.",
+      "voteRef": {
+        "chamber": "House",
+        "congress": 0,
+        "session": 0,
+        "rollNumber": 166,
+        "date": "2025-06-12",
+        "url": "https://clerk.house.gov/evs/2025/roll166.xml"
+      }
+    }
+  ]
+}

@@ -96,8 +96,10 @@ export interface ParsedVote {
 	source: string; // FRBR-style URI
 	forVoters: ParsedVoter[];
 	againstVoters: ParsedVoter[];
+	abstainVoters: ParsedVoter[];
 	forCount: number;
 	againstCount: number;
+	abstainCount: number;
 }
 
 /** Individual voter record */

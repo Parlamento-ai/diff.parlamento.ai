@@ -26,6 +26,8 @@
 		'eu-data-act': FlagEu,
 		'us-s5-laken-riley': FlagUs,
 		'us-s269-improper-payments': FlagUs,
+		'us-s331-halt-fentanyl': FlagUs,
+		'us-s1582-genius-act': FlagUs,
 		'es-lo3-2018-proteccion-datos': FlagEs,
 		'es-ley39-2015-procedimiento-administrativo': FlagEs
 	};
@@ -70,6 +72,8 @@
 
 	const usS5 = $derived(data.boletines.find((b) => b.slug === 'us-s5-laken-riley'));
 	const usS269 = $derived(data.boletines.find((b) => b.slug === 'us-s269-improper-payments'));
+	const usS331 = $derived(data.boletines.find((b) => b.slug === 'us-s331-halt-fentanyl'));
+	const usS1582 = $derived(data.boletines.find((b) => b.slug === 'us-s1582-genius-act'));
 
 	const esLo3 = $derived(data.boletines.find((b) => b.slug === 'es-lo3-2018-proteccion-datos'));
 	const esLey39 = $derived(data.boletines.find((b) => b.slug === 'es-ley39-2015-procedimiento-administrativo'));
@@ -309,7 +313,7 @@
 	{/if}
 
 	<!-- US — United States Congress -->
-	{#if usS5 || usS269}
+	{#if usS5 || usS269 || usS331 || usS1582}
 		<section class="mb-14">
 			<div class="mb-5 max-w-lg mx-auto">
 				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
@@ -318,7 +322,7 @@
 				</h2>
 				<p class="text-xs text-gray-400 mt-1.5 leading-relaxed">
 					Pipeline from Congress.gov Bill DTD XML + Senate/House roll call votes to AKN 3.0.
-					S.5 with roll call votes in both chambers; S.269 with voice votes and significant text amendments.
+					S.5 with roll call votes in both chambers; S.269 with voice votes; S.331 with 4 section changes; S.1582 with 16 section-level changes.
 				</p>
 			</div>
 
@@ -338,6 +342,24 @@
 						title={usS269.title}
 						documentCount={usS269.documentCount}
 						flag={flagMap[usS269.slug]}
+						firstVersion="bill"
+					/>
+				{/if}
+				{#if usS331}
+					<BoletinCard
+						slug={usS331.slug}
+						title={usS331.title}
+						documentCount={usS331.documentCount}
+						flag={flagMap[usS331.slug]}
+						firstVersion="bill"
+					/>
+				{/if}
+				{#if usS1582}
+					<BoletinCard
+						slug={usS1582.slug}
+						title={usS1582.title}
+						documentCount={usS1582.documentCount}
+						flag={flagMap[usS1582.slug]}
 						firstVersion="bill"
 					/>
 				{/if}

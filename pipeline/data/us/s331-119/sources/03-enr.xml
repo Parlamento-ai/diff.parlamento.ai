@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="billres.xsl"?>
+<!DOCTYPE bill PUBLIC "-//US Congress//DTDs/bill.dtd//EN" "bill.dtd">
+<bill bill-type="olc" bill-stage="Enrolled-Bill" dms-id="A1" public-private="public" slc-id="S1-OLL25325-DFW-LN-0F1" star-print="no-star-print" stage-count="1" public-print="no">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dublinCore>
+<dc:title> S331 ENR: Halt All Lethal Trafficking of Fentanyl Act</dc:title>
+<dc:publisher>U.S. Senate</dc:publisher>
+<dc:date></dc:date>
+<dc:format>text/xml</dc:format>
+<dc:language>EN</dc:language>
+<dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+</dublinCore>
+</metadata>
+<form display="yes">
+    <congress>One Hundred Nineteenth Congress of the United States of America</congress>
+    <session display="yes">1st Session</session>
+    <enrolled-dateline display="yes">Begun and held at the City of Washington on Friday, the third day of January, two thousand and twenty five</enrolled-dateline>
+    <legis-num display="yes">S. 331</legis-num>
+    <current-chamber display="no">IN THE SENATE OF THE UNITED STATES</current-chamber>
+    <legis-type display="yes">AN ACT</legis-type>
+    <official-title display="yes">To amend the Controlled Substances Act with respect to the scheduling of fentanyl-related substances, and for other purposes.</official-title>
+  </form>
+  <legis-body display-enacting-clause="yes-display-enacting-clause" style="OLC">
+    <section section-type="section-one" id="id90580fdc-c40a-4500-a3fc-f0550d46a88f" changed="not-changed" commented="no" display-inline="no-display-inline">
+      <enum>1.</enum>
+      <header display-inline="yes-display-inline">Short title</header>
+ <text display-inline="no-display-inline">This Act may be cited as the <quote><short-title>Halt All Lethal Trafficking of Fentanyl Act</short-title></quote> or the <quote><short-title>HALT Fentanyl Act</short-title></quote>.</text> </section> <section id="id6920efc5-0285-47a4-a396-ea73c98c2d9b" changed="not-changed" commented="no" display-inline="no-display-inline" section-type="subsequent-section"> <enum>2.</enum> <header display-inline="yes-display-inline">Class scheduling of fentanyl-related substances</header> <text display-inline="no-display-inline">Section 202(c) of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/812">21 U.S.C. 812(c)</external-xref>) is amended by adding at the end of schedule I the following:</text>
+      <quoted-block style="OLC" id="ida98dc81d-44df-4c42-9e08-708f136bebc9" changed="not-changed" display-inline="no-display-inline">
+        <subsection id="id177357c4-0484-48cf-ac1c-04d7bf0cfd1f" changed="not-changed" commented="no" display-inline="no-display-inline">
+          <enum>(e)</enum>
+          <paragraph commented="no" display-inline="yes-display-inline" id="id93b25e04-00c5-4e31-ae13-c417adbdd685" changed="not-changed">
+            <enum>(1)</enum>
+ <text display-inline="yes-display-inline">Unless specifically exempted or unless listed in another schedule, any material, compound, mixture, or preparation which contains any quantity of a fentanyl-related substance, or which contains the salts, isomers, and salts of isomers of a fentanyl-related substance whenever the existence of such salts, isomers, and salts of isomers is possible within the specific chemical designation.</text> </paragraph> <paragraph id="id42de5d66-36a7-4ffc-a903-4f95228ca24e" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(2)</enum> <text display-inline="yes-display-inline">For purposes of paragraph (1), except as provided in paragraph (3), the term <term>fentanyl-related substance</term> means any substance that is structurally related to fentanyl by 1 or more of the following modifications:</text>
+            <subparagraph id="ide8870d3c-bb4d-4f35-8c7c-f94ae4b6224f" changed="not-changed" commented="no" display-inline="no-display-inline">
+              <enum>(A)</enum>
+ <text display-inline="yes-display-inline">By replacement of the phenyl portion of the phenethyl group by any monocycle, whether or not further substituted in or on the monocycle.</text> </subparagraph> <subparagraph id="id9229717c-5545-46a2-912c-03e9e2bbd35c" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(B)</enum> <text display-inline="yes-display-inline">By substitution in or on the phenethyl group with alkyl, alkenyl, alkoxyl, hydroxyl, halo, haloalkyl, amino, or nitro groups.</text>
+            </subparagraph>
+            <subparagraph id="id55b741ae-21ed-436a-b5c8-ffc48e62923a" changed="not-changed" commented="no" display-inline="no-display-inline">
+              <enum>(C)</enum>
+ <text display-inline="yes-display-inline">By substitution in or on the piperidine ring with alkyl, alkenyl, alkoxyl, ester, ether, hydroxyl, halo, haloalkyl, amino, or nitro groups.</text> </subparagraph> <subparagraph id="idc887924d-03f8-4cf5-bfc9-9a1c917cdabf" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(D)</enum> <text display-inline="yes-display-inline">By replacement of the aniline ring with any aromatic monocycle whether or not further substituted in or on the aromatic monocycle.</text>
+            </subparagraph>
+            <subparagraph id="ide061a646-0531-420d-9c79-b14983c62e5c" changed="not-changed" commented="no" display-inline="no-display-inline">
+              <enum>(E)</enum>
+ <text display-inline="yes-display-inline">By replacement of the N-propionyl group with another acyl group.</text> </subparagraph> </paragraph> <paragraph commented="no" id="idd1151654-300d-41ab-861f-33380e4233aa" indent="up1" changed="not-changed" display-inline="no-display-inline"> <enum>(3)</enum> <text display-inline="yes-display-inline">A substance that satisfies the definition of the term <term>fentanyl-related substance</term> in paragraph (2) shall nonetheless not be treated as a fentanyl-related substance subject to this schedule if the substance—</text>
+            <subparagraph commented="no" id="id0f777774-983d-49af-98b3-c41fe4d215aa" changed="not-changed" display-inline="no-display-inline">
+              <enum>(A)</enum>
+ <text display-inline="yes-display-inline">is controlled by action of the Attorney General under section 201; or</text> </subparagraph> <subparagraph commented="no" id="ide5e0031c-2f26-41df-913c-c9869cdcd97a" changed="not-changed" display-inline="no-display-inline"> <enum>(B)</enum> <text display-inline="yes-display-inline">is otherwise expressly listed in a schedule other than this schedule.</text>
+            </subparagraph>
+          </paragraph>
+          <paragraph id="idb991e28b-b7f4-465d-8406-3cb7c531b9fb" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(4)</enum>
+            <subparagraph commented="no" display-inline="yes-display-inline" id="id44293550-5490-49bc-9300-5e301247dc1d" changed="not-changed">
+              <enum>(A)</enum>
+ <text display-inline="yes-display-inline">The Attorney General may by order publish in the Federal Register a list of substances that satisfy the definition of the term <term>fentanyl-related substance</term> in paragraph (2).</text> </subparagraph> <subparagraph indent="up1" id="idcca88bed-dc20-4d3e-af6f-2a8abd9868f9" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(B)</enum> <text display-inline="yes-display-inline">The absence of a substance from a list published under subparagraph (A) does not negate the control status of the substance under this schedule if the substance satisfies the definition of the term <term>fentanyl-related substance</term> in paragraph (2).</text>
+            </subparagraph>
+          </paragraph>
+        </subsection>
+        <after-quoted-block display="yes">.</after-quoted-block>
+      </quoted-block>
+    </section>
+    <section id="idb49105ce-4a08-41ab-9e8b-f338cf30c3d8" changed="not-changed" commented="no" display-inline="no-display-inline" section-type="subsequent-section">
+      <enum>3.</enum>
+      <header display-inline="yes-display-inline">Registration requirements related to research</header>
+      <subsection id="idc3643aa5-e1c5-4672-affc-6fe5217c5a67" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(a)</enum>
+        <header display-inline="yes-display-inline">Alternative registration process for schedule I research</header>
+ <text display-inline="yes-display-inline">Section 303 of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/823">21 U.S.C. 823</external-xref>) is amended—</text> <paragraph id="idef010f37-ae61-44bb-a360-e29c3210e2d6" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(1)</enum> <text display-inline="yes-display-inline">by redesignating the second subsection (l) (relating to required training for prescribers) as subsection (m); and</text>
+        </paragraph>
+        <paragraph id="id63136582-4d61-4185-95ab-517130986d91" changed="not-changed" commented="no" display-inline="no-display-inline">
+          <enum>(2)</enum>
+ <text display-inline="yes-display-inline">by adding at the end the following:</text> <quoted-block style="OLC" id="id64382dd7-9032-4e08-bd27-d51c1cce995a" changed="not-changed" display-inline="no-display-inline"> <subsection id="idc9a44507-c8b3-4088-972a-3acfbd3274b5" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(n)</enum> <header display-inline="yes-display-inline">Special provisions for practitioners conducting certain research with schedule I controlled substances</header> <paragraph commented="no" id="idc3e69ab7-1adb-4759-bb19-50ebe58c8999" changed="not-changed" display-inline="no-display-inline"> <enum>(1)</enum> <header display-inline="yes-display-inline">In general</header> <text display-inline="yes-display-inline">Notwithstanding subsection (g), a practitioner may conduct research described in paragraph (2) of this subsection with 1 or more schedule I substances in accordance with subparagraph (A) or (B) of paragraph (3) of this subsection.</text>
+              </paragraph>
+              <paragraph id="id7e7173a7-5d11-46f9-a272-de6432ee39ba" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(2)</enum>
+                <header display-inline="yes-display-inline">Research subject to expedited procedures</header>
+ <text display-inline="yes-display-inline">Research described in this paragraph is research that—</text> <subparagraph id="idc16878cd-3849-4d97-995b-d868e2f6d8b3" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <text display-inline="yes-display-inline">is with respect to a drug that is the subject of an investigational use exemption under section 505(i) of the Federal Food, Drug, and Cosmetic Act (<external-xref legal-doc="usc" parsable-cite="usc/21/355">21 U.S.C. 355(i)</external-xref>); or</text>
+                </subparagraph>
+                <subparagraph id="id5ce6a60f-6600-46fa-b5f1-6ed27601085b" changed="not-changed" commented="no" display-inline="no-display-inline">
+                  <enum>(B)</enum>
+ <text display-inline="yes-display-inline">is—</text> <clause id="idfe2554f7-885a-4df0-86c0-32bd8295eb53" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(i)</enum> <text display-inline="yes-display-inline">conducted by the Department of Health and Human Services, the Department of Defense, or the Department of Veterans Affairs; or</text>
+                  </clause>
+                  <clause id="id94ebd2e3-d3ec-4fcf-b552-f2c4a42ce66b" changed="not-changed" commented="no" display-inline="no-display-inline">
+                    <enum>(ii)</enum>
+ <text display-inline="yes-display-inline">funded partly or entirely by a grant, contract, cooperative agreement, or other transaction from the Department of Health and Human Services, the Department of Defense, or the Department of Veterans Affairs. </text> </clause> </subparagraph> </paragraph> <paragraph commented="no" id="ide149f053-de74-4a02-82ce-1b99a47f7cf6" changed="not-changed" display-inline="no-display-inline"> <enum>(3)</enum> <header display-inline="yes-display-inline">Expedited procedures</header> <subparagraph id="id5e55d8e3-4828-45cc-b4c6-dd22c2cb18c0" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <header display-inline="yes-display-inline">Researcher with a current schedule I or II research registration</header> <clause id="ida38267e6-04db-4bec-bfc8-ba3f8fc57616" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(i)</enum> <header display-inline="yes-display-inline">In general</header> <text display-inline="yes-display-inline">If a practitioner is registered to conduct research with a controlled substance in schedule I or II, the practitioner may conduct research under this subsection on and after the date that is 30 days after the date on which the practitioner sends a notice to the Attorney General containing the following information, with respect to each substance with which the practitioner will conduct the research:</text>
+                    <subclause id="id77f98275-688d-405e-b37b-61dd899122ad" changed="not-changed" commented="no" display-inline="no-display-inline">
+                      <enum>(I)</enum>
+ <text display-inline="yes-display-inline">The chemical name of the substance.</text> </subclause> <subclause id="id3c010c55-4104-4e86-b339-7e2ac0a3fb64" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(II)</enum> <text display-inline="yes-display-inline">The quantity of the substance to be used in the research.</text>
+                    </subclause>
+                    <subclause id="idc88cc7fd-d68f-4e7c-a665-0aa6334db227" changed="not-changed" commented="no" display-inline="no-display-inline">
+                      <enum>(III)</enum>
+ <text display-inline="yes-display-inline">Demonstration that the research is in the category described in paragraph (2), which demonstration may be satisfied—</text> <item id="id74e944ac-0ead-45d7-b115-e894c96a1d1f" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(aa)</enum> <text display-inline="yes-display-inline">in the case of a grant, contract, cooperative agreement, or other transaction, or intramural research project, by identifying the sponsoring agency and supplying the number of the grant, contract, cooperative agreement, other transaction, or project; or</text>
+                      </item>
+                      <item id="ide07a8b65-b9ea-4adb-9046-e977bbb0f310" changed="not-changed" commented="no" display-inline="no-display-inline">
+                        <enum>(bb)</enum>
+ <text display-inline="yes-display-inline">in the case of an application under section 505(i) of the Federal Food, Drug, and Cosmetic Act (<external-xref legal-doc="usc" parsable-cite="usc/21/355">21 U.S.C. 355(i)</external-xref>), by supplying the application number and the sponsor of record on the application.</text> </item> </subclause> <subclause id="id3a8cd52c-e9f6-49c8-832b-e207bd161a7d" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(IV)</enum> <text display-inline="yes-display-inline">Demonstration that the researcher is authorized to conduct research with respect to the substance under the laws of the State in which the research will take place.</text>
+                    </subclause>
+                  </clause>
+                  <clause id="id1bf12999-d509-464a-b0d3-afddcb6945a7" changed="not-changed" commented="no" display-inline="no-display-inline">
+                    <enum>(ii)</enum>
+                    <header display-inline="yes-display-inline">Verification of information by HHS or VA</header>
+ <text display-inline="yes-display-inline">Upon request from the Attorney General, the Secretary of Health and Human Services, the Department of Defense, or the Secretary of Veterans Affairs, as appropriate, shall verify information submitted by an applicant under clause (i)(III).</text> </clause> </subparagraph> <subparagraph commented="no" id="id287fc45d-3691-4f5f-b8dd-e23fa980c0bb" changed="not-changed" display-inline="no-display-inline"> <enum>(B)</enum> <header display-inline="yes-display-inline">Researcher without a current schedule I or II research registration</header> <clause commented="no" id="id7d804d30-2595-4611-a559-704b2963910e" changed="not-changed" display-inline="no-display-inline"> <enum>(i)</enum> <header display-inline="yes-display-inline">In general</header> <text display-inline="yes-display-inline">If a practitioner is not registered to conduct research with a controlled substance in schedule I or II, the practitioner may send a notice to the Attorney General containing the information listed in subparagraph (A)(i), with respect to each substance with which the practitioner will conduct the research.</text>
+                  </clause>
+                  <clause commented="no" id="id25700931-de53-4762-81a7-c8c30cb6e80d" changed="not-changed" display-inline="no-display-inline">
+                    <enum>(ii)</enum>
+                    <header display-inline="yes-display-inline">Attorney General action</header>
+ <text display-inline="yes-display-inline">The Attorney General shall—</text> <subclause commented="no" id="idf601b92c-77fc-4a62-9cfa-c01c181f949f" changed="not-changed" display-inline="no-display-inline"> <enum>(I)</enum> <text display-inline="yes-display-inline">treat notice received under clause (i) as a sufficient application for a research registration; and</text>
+                    </subclause>
+                    <subclause commented="no" id="iddc30ed96-6242-403c-a1e3-d7eaf3169620" changed="not-changed" display-inline="no-display-inline">
+                      <enum>(II)</enum>
+ <text display-inline="yes-display-inline">not later than 45 days of receiving such a notice that contains all information required under subparagraph (A)(i)—</text> <item commented="no" id="id1c4bcfbc-fec4-44aa-add4-f914413dca64" changed="not-changed" display-inline="no-display-inline"> <enum>(aa)</enum> <text display-inline="yes-display-inline">register the applicant; or</text>
+                      </item>
+                      <item commented="no" id="id36e42d62-8f28-4a8b-96be-8fc5a2b03626" changed="not-changed" display-inline="no-display-inline">
+                        <enum>(bb)</enum>
+ <text display-inline="yes-display-inline">serve an order to show cause upon the applicant in accordance with section 304(c).</text> </item> </subclause> </clause> </subparagraph> </paragraph> <paragraph id="idd4e0056e-fa58-4c35-b93e-9f280ff90f52" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(4)</enum> <header display-inline="yes-display-inline">Electronic submissions</header> <text display-inline="yes-display-inline">The Attorney General shall provide a means to permit a practitioner to submit a notification under paragraph (3) electronically.</text>
+              </paragraph>
+              <paragraph id="ida84b006f-fce6-4e78-b9e5-a5194890f803" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(5)</enum>
+                <header display-inline="yes-display-inline">Limitation on amounts</header>
+ <text display-inline="yes-display-inline">A practitioner conducting research with a schedule I substance under this subsection may only possess the amounts of schedule I substance identified in—</text> <subparagraph id="id62b2b8d3-9c79-47db-b040-aac171f68696" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <text display-inline="yes-display-inline">the notification to the Attorney General under paragraph (3); or</text>
+                </subparagraph>
+                <subparagraph id="id9c1e05b0-89b8-499f-b422-2de12392c766" changed="not-changed" commented="no" display-inline="no-display-inline">
+                  <enum>(B)</enum>
+ <text display-inline="yes-display-inline">a supplemental notification that the practitioner may send if the practitioner needs additional amounts for the research, which supplemental notification shall include—</text> <clause id="id3a16a50e-2394-4662-bb42-8722c47878e7" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(i)</enum> <text display-inline="yes-display-inline">the name of the practitioner;</text>
+                  </clause>
+                  <clause id="id8142dc51-7974-4970-9b93-ae76d43421f9" changed="not-changed" commented="no" display-inline="no-display-inline">
+                    <enum>(ii)</enum>
+ <text display-inline="yes-display-inline">the additional quantity needed of the substance; and</text> </clause> <clause id="id7c6c20c0-b2d9-4574-a7b3-6d5345e0af65" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(iii)</enum> <text display-inline="yes-display-inline">an attestation that the research to be conducted with the substance is consistent with the scope of the research that was the subject of the notification under paragraph (3).</text>
+                  </clause>
+                </subparagraph>
+              </paragraph>
+              <paragraph id="idb880c7cd-d9d8-40c6-954e-8623657255e9" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(6)</enum>
+                <header display-inline="yes-display-inline">Importation and exportation requirements not affected</header>
+ <text display-inline="yes-display-inline">Nothing in this subsection alters the requirements of part A of title III, regarding the importation and exportation of controlled substances.</text> </paragraph> <paragraph id="idd2076ce2-2f22-49ad-9c83-c061815ff1ff" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(7)</enum> <header display-inline="yes-display-inline">Inspector General report</header> <text display-inline="yes-display-inline">Not later than 1 year after the date of enactment of the <short-title>Halt All Lethal Trafficking of Fentanyl Act</short-title>, the Inspector General of the Department of Justice shall complete a study, and submit to Congress a report thereon, about research described in paragraph (2) of this subsection with fentanyl.</text>
+              </paragraph>
+            </subsection>
+            <after-quoted-block display="yes">.</after-quoted-block>
+          </quoted-block>
+        </paragraph>
+      </subsection>
+      <subsection id="id9d685587-8a06-44d7-a7b2-28c706cdbe66" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(b)</enum>
+        <header display-inline="yes-display-inline">Separate registrations not required for additional researcher in same institution</header>
+        <paragraph commented="no" display-inline="no-display-inline" id="idfc56e0a7-76bf-4aba-9015-3f137561a2f2" changed="not-changed">
+          <enum>(1)</enum>
+          <header display-inline="yes-display-inline">In general</header>
+ <text display-inline="yes-display-inline">Section 302(c) of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/822">21 U.S.C. 822(c)</external-xref>) is amended by adding at the end the following:</text> <quoted-block style="OLC" id="id68b354c8-cc6c-4f38-a277-7e6c76b2f2ab" changed="not-changed" display-inline="no-display-inline"> <paragraph id="id12f8e25b-1bbb-4b9a-9501-c45f04d6fc2b" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(4)</enum> <text display-inline="yes-display-inline">An agent or employee of a research institution that is conducting research with a controlled substance if—</text>
+              <subparagraph id="iddc6c80c3-3acc-4736-96e6-5f9dbacb834e" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(A)</enum>
+ <text display-inline="yes-display-inline">the agent or employee is acting within the scope of the professional practice of the agent or employee;</text> </subparagraph> <subparagraph id="id3e1f5400-6591-4391-b52e-589b11ad3db0" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(B)</enum> <text display-inline="yes-display-inline">another agent or employee of the institution is registered to conduct research with a controlled substance in the same schedule;</text>
+              </subparagraph>
+              <subparagraph id="ide9066776-1e55-4f6d-a16e-243d5a975a10" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(C)</enum>
+ <text display-inline="yes-display-inline">the researcher who is so registered—</text> <clause id="idf2670d4a-d61f-49d6-aaea-52d54e8025c8" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(i)</enum> <text display-inline="yes-display-inline">informs the Attorney General of the name, position title, and employing institution of the agent or employee who is not separately registered;</text>
+                </clause>
+                <clause id="id2f2a3d4c-e5bc-4dcf-a34f-2882fa667dd9" changed="not-changed" commented="no" display-inline="no-display-inline">
+                  <enum>(ii)</enum>
+ <text display-inline="yes-display-inline">authorizes that agent or employee to perform research under the registration of the registered researcher; and</text> </clause> <clause id="idcadb82fb-53f2-4f44-9b11-00ae001cf685" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(iii)</enum> <text display-inline="yes-display-inline">affirms that any act taken by that agent or employee involving a controlled substance shall be attributable to the registered researcher, as if the researcher had directly committed the act, for purposes of any proceeding under section 304(a) to suspend or revoke the registration of the registered researcher; and</text>
+                </clause>
+              </subparagraph>
+              <subparagraph id="id6f8f5fc0-6c4d-49d0-a7d8-5e14bae29ad4" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(D)</enum>
+ <text display-inline="yes-display-inline">the Attorney General does not, within 30 days of receiving the information, authorization, and affirmation described in subparagraph (C), refuse, for a reason listed in section 304(a), to allow the agent or employee to possess the substance without a separate registration.</text> </subparagraph> </paragraph> <after-quoted-block display="yes">.</after-quoted-block> </quoted-block> </paragraph> <paragraph id="id35ecce91-ab53-44bb-9ad3-f375022a327c" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(2)</enum> <header display-inline="yes-display-inline">Technical correction</header> <text display-inline="yes-display-inline">Section 302(c)(3) of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/822">21 U.S.C. 822(c)(3)</external-xref>) is amended by striking <quote>(25)</quote> and inserting <quote>(27)</quote>.</text>
+        </paragraph>
+      </subsection>
+      <subsection id="id35045354-8104-4b56-bb28-b3239a8d170a" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(c)</enum>
+        <header display-inline="yes-display-inline">Single registration for related research sites</header>
+ <text display-inline="yes-display-inline">Section 302(e) of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/822">21 U.S.C. 822(e)</external-xref>) is amended by adding at the end the following:</text> <quoted-block style="OLC" id="id575e4cc8-9f9d-4469-869e-12173bbdc7ad" changed="not-changed" display-inline="no-display-inline"> <paragraph id="id8edc50f2-9f74-449a-8e11-c70972055431" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(4)</enum> <subparagraph commented="no" display-inline="yes-display-inline" id="id4b4ee876-e14a-4164-998d-2628a8f0f9ff" changed="not-changed"> <enum>(A)</enum> <text display-inline="yes-display-inline">Notwithstanding paragraph (1), a person registered to conduct research with a controlled substance under section 303(g) may conduct the research under a single registration if—</text>
+              <clause id="ide922be7b-f64c-4964-a6bd-f8aa1c84319c" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(i)</enum>
+ <text display-inline="yes-display-inline">the research occurs exclusively on sites all of which are—</text> <subclause id="id5385040b-d954-49c4-9eda-02a45eaae376" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(I)</enum> <text display-inline="yes-display-inline">within the same city or county; and</text>
+                </subclause>
+                <subclause id="idd3643cb1-e3b8-4574-b768-d7af75d82dbc" changed="not-changed" commented="no" display-inline="no-display-inline">
+                  <enum>(II)</enum>
+ <text display-inline="yes-display-inline">under the control of the same institution, organization, or agency; and</text> </subclause> </clause> <clause id="id9577fb20-94a4-4625-830f-afd24d0f2864" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(ii)</enum> <text display-inline="yes-display-inline">before commencing the research, the researcher notifies the Attorney General of each site where—</text>
+                <subclause id="idcb1cb6c4-cfe1-4897-9840-357a572a2752" changed="not-changed" commented="no" display-inline="no-display-inline">
+                  <enum>(I)</enum>
+ <text display-inline="yes-display-inline">the research will be conducted; or</text> </subclause> <subclause id="id6da4012a-97e1-46a1-bd42-1b04e46901d4" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(II)</enum> <text display-inline="yes-display-inline">the controlled substance will be stored or administered.</text>
+                </subclause>
+              </clause>
+            </subparagraph>
+            <subparagraph id="id615acbaf-ed64-4fe9-9a74-752871bc3855" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline">
+              <enum>(B)</enum>
+ <text display-inline="yes-display-inline">A site described in subparagraph (A) shall be included in a registration described in that subparagraph only if the researcher has notified the Attorney General of the site—</text> <clause id="id921db05d-e572-49fa-9d3e-a69e591b17b6" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(i)</enum> <text display-inline="yes-display-inline">in the application for the registration; or</text>
+              </clause>
+              <clause id="id4b0200ed-b35a-422f-b4f4-7f762c3928cb" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(ii)</enum>
+ <text display-inline="yes-display-inline">before the research is conducted, or before the controlled substance is stored or administered, at the site.</text> </clause> </subparagraph> <subparagraph id="id50128356-1416-41de-97d1-cc09ba599dad" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(C)</enum> <text display-inline="yes-display-inline">The Attorney General may, in consultation with the Secretary, issue regulations addressing, with respect to research sites described in subparagraph (A)—</text>
+              <clause id="ide18667c4-8e3a-496a-bd5e-2dad3192e04c" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(i)</enum>
+ <text display-inline="yes-display-inline">the manner in which controlled substances may be delivered to the research sites;</text> </clause> <clause id="id710f6d56-bcee-4e6c-89e8-fe7188455b02" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(ii)</enum> <text display-inline="yes-display-inline">the storage and security of controlled substances at the research sites;</text>
+              </clause>
+              <clause id="idab509042-2cda-407c-a090-39fed94de047" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(iii)</enum>
+ <text display-inline="yes-display-inline">the maintenance of records for the research sites; and</text> </clause> <clause id="id0857b780-2ff4-4e87-835b-139aec123233" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(iv)</enum> <text display-inline="yes-display-inline">any other matters necessary to ensure effective controls against diversion at the research sites.</text>
+              </clause>
+            </subparagraph>
+          </paragraph>
+          <after-quoted-block display="yes">.</after-quoted-block>
+        </quoted-block>
+      </subsection>
+      <subsection id="idd7093ebb-dead-4054-be4f-aadbc261dc99" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(d)</enum>
+        <header display-inline="yes-display-inline">New inspection not required in certain situations</header>
+ <text display-inline="yes-display-inline">Section 302(f) of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/822">21 U.S.C. 822(f)</external-xref>) is amended—</text> <paragraph id="idb5c35b78-d7f6-4e15-852f-3950bec19b90" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(1)</enum> <text display-inline="yes-display-inline">by striking <quote>(f) The</quote> and inserting <quote>(f)(1) The</quote>; and</text>
+        </paragraph>
+        <paragraph id="id009ea7f3-9b1e-4722-9a01-8640fa21bd18" changed="not-changed" commented="no" display-inline="no-display-inline">
+          <enum>(2)</enum>
+ <text display-inline="yes-display-inline">by adding at the end the following:</text> <quoted-block style="OLC" id="id862b42c7-7595-436c-bdc7-10bdb6cdce0b" changed="not-changed" display-inline="no-display-inline"> <paragraph id="id93826a9e-5188-453f-b993-2cc783ba6cb6" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(2)</enum> <subparagraph commented="no" display-inline="yes-display-inline" id="id8a41c76c-761d-470c-8cfe-d79e341141c1" changed="not-changed"> <enum>(A)</enum> <text display-inline="yes-display-inline">If a person is registered to conduct research with a controlled substance and applies for a registration, or for a modification of a registration, to conduct research with a second controlled substance that is in the same schedule as the first controlled substance, or is in a schedule with a higher numerical designation than the schedule of the first controlled substance, a new inspection by the Attorney General of the registered location is not required.</text>
+              </subparagraph>
+              <subparagraph id="id5566589c-9e11-42ca-a3ea-d34df0131561" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(B)</enum>
+ <text display-inline="yes-display-inline">Nothing in subparagraph (A) shall prohibit the Attorney General from conducting an inspection that the Attorney General determines necessary to ensure that a registrant maintains effective controls against diversion.</text> </subparagraph> </paragraph> <after-quoted-block display="yes">.</after-quoted-block> </quoted-block> </paragraph> </subsection> <subsection id="ide57636c5-1c8f-4909-9d3d-3efb93ab8536" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(e)</enum> <header display-inline="yes-display-inline">Continuation of research on substances newly added to schedule I</header> <text display-inline="yes-display-inline">Section 302 of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/822">21 U.S.C. 822</external-xref>) is amended by adding at the end the following:</text>
+        <quoted-block style="OLC" id="ide191b65d-1dfc-467a-adf4-a049d6deddd8" changed="not-changed" display-inline="no-display-inline">
+          <subsection id="id20395a7c-fea9-4d4a-875f-724e68de480c" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(h)</enum>
+            <header display-inline="yes-display-inline">Continuation of research on substances newly added to schedule I</header>
+ <text display-inline="yes-display-inline">If a person is conducting research on a substance when the substance is added to schedule I, and the person is already registered to conduct research with a controlled substance in schedule I—</text> <paragraph id="id974d1ba5-04f7-44a1-9f52-a9bca3e5a63b" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(1)</enum> <text display-inline="yes-display-inline">not later than 90 days after the scheduling of the newly scheduled substance, the person shall submit a completed application for registration or modification of existing registration, to conduct research on the substance, in accordance with regulations issued by the Attorney General for purposes of this paragraph;</text>
+            </paragraph>
+            <paragraph id="idf0868adc-5e1d-4041-9cec-69845a6484a1" changed="not-changed" commented="no" display-inline="no-display-inline">
+              <enum>(2)</enum>
+ <text display-inline="yes-display-inline">the person may, notwithstanding subsections (a) and (b), continue to conduct the research on the substance until—</text> <subparagraph id="idd1decfdd-5776-43ef-907a-ae412a62e37a" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <text display-inline="yes-display-inline">the person withdraws the application described in paragraph (1) of this subsection; or</text>
+              </subparagraph>
+              <subparagraph id="idcbe7c1ca-a79f-4e99-9246-173d8d839ee8" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(B)</enum>
+ <text display-inline="yes-display-inline">the Attorney General serves on the person an order to show cause proposing the denial of the application under section 304(c);</text> </subparagraph> </paragraph> <paragraph id="id74f53f99-187c-4b8c-a80d-0bfc0c07144c" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(3)</enum> <text display-inline="yes-display-inline">if the Attorney General serves an order to show cause as described in paragraph (2)(B) and the person requests a hearing, the hearing shall be held on an expedited basis and not later than 45 days after the request is made, except that the hearing may be held at a later time if so requested by the person; and</text>
+            </paragraph>
+            <paragraph commented="no" id="id8c54c9ad-d8c8-48dc-8c68-6d4be488a057" changed="not-changed" display-inline="no-display-inline">
+              <enum>(4)</enum>
+ <text display-inline="yes-display-inline">if the person sends a copy of the application described in paragraph (1) to a manufacturer or distributor of the substance, receipt of the copy by the manufacturer or distributor shall constitute sufficient evidence that the person is authorized to receive the substance.</text> </paragraph> </subsection> <after-quoted-block display="yes">.</after-quoted-block> </quoted-block> </subsection> <subsection id="id919e402c-cb0d-4396-bf50-51a4cedc89f9" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(f)</enum> <header display-inline="yes-display-inline">Treatment of certain manufacturing activities as coincident to research</header> <text display-inline="yes-display-inline">Section 302 of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/822">21 U.S.C. 822</external-xref>), as amended by subsection (e), is amended by adding at the end the following:</text>
+        <quoted-block style="OLC" id="idf1cd1218-0d10-4471-bfee-0555b01ac2d6" changed="not-changed" display-inline="no-display-inline">
+          <subsection id="id8de43060-117d-4cbb-b9f8-b2483118a6b1" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(i)</enum>
+            <header display-inline="yes-display-inline">Treatment of certain manufacturing activities as coincident to research</header>
+            <paragraph id="id122f2f97-cf87-47e2-8ef6-d5eed7f9b82a" changed="not-changed" commented="no" display-inline="no-display-inline">
+              <enum>(1)</enum>
+              <header display-inline="yes-display-inline">In general</header>
+ <text display-inline="yes-display-inline">Except as provided in paragraph (3), a person who is registered to perform research on a controlled substance may perform manufacturing activities with small quantities of that substance, including activities described in paragraph (2), without being required to obtain a manufacturing registration, if—</text> <subparagraph id="idc5a9bf90-40d2-4c69-9ad7-8783bf4d3bd9" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <text display-inline="yes-display-inline">the activities are performed for the purpose of the research; and</text>
+              </subparagraph>
+              <subparagraph id="id32e6d0a0-e929-416f-84cc-da85db00da19" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(B)</enum>
+ <text display-inline="yes-display-inline">the activities and the quantities of the substance involved in the activities are stated in—</text> <clause id="idfc612837-c580-4fc1-a96a-c06ea186e978" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(i)</enum> <text display-inline="yes-display-inline">a notification submitted to the Attorney General under section 303(n);</text>
+                </clause>
+                <clause id="id43804686-482f-4e85-b86b-fb713daeaeda" changed="not-changed" commented="no" display-inline="no-display-inline">
+                  <enum>(ii)</enum>
+ <text display-inline="yes-display-inline">a research protocol filed with an application for registration approval under section 303(g); or</text> </clause> <clause id="ide8559536-1cd4-498a-bd24-c397045b494a" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(iii)</enum> <text display-inline="yes-display-inline">a notification to the Attorney General that includes—</text>
+                  <subclause id="id4c38bb86-31ff-4e19-8827-f3ca00ef906a" changed="not-changed" commented="no" display-inline="no-display-inline">
+                    <enum>(I)</enum>
+ <text display-inline="yes-display-inline">the name of the registrant; and</text> </subclause> <subclause id="idd2742f44-8964-4396-b0be-474c25da7236" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(II)</enum> <text display-inline="yes-display-inline">an attestation that the research to be conducted with the small quantities of manufactured substance is consistent with the scope of the research that is the basis for the registration.</text>
+                  </subclause>
+                </clause>
+              </subparagraph>
+            </paragraph>
+            <paragraph id="id95ed35f8-72fc-4b35-8bf1-a26f9c6d77bd" changed="not-changed" commented="no" display-inline="no-display-inline">
+              <enum>(2)</enum>
+              <header display-inline="yes-display-inline">Activities included</header>
+ <text display-inline="yes-display-inline">Activities permitted under paragraph (1) include—</text> <subparagraph id="idb2af3f26-9fe9-46c0-9af1-54edf8f83b22" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <text display-inline="yes-display-inline">processing the substance to create extracts, tinctures, oils, solutions, derivatives, or other forms of the substance consistent with—</text>
+                <clause id="idb78565c9-6306-4cc3-a1c0-dee5ace62574" changed="not-changed" commented="no" display-inline="no-display-inline">
+                  <enum>(i)</enum>
+ <text display-inline="yes-display-inline">the information provided as part of a notification submitted to the Attorney General under section 303(n); or</text> </clause> <clause id="id2b1e5637-75d9-4320-bd4b-92069715d5c0" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(ii)</enum> <text display-inline="yes-display-inline">a research protocol filed with an application for registration approval under section 303(g); and</text>
+                </clause>
+              </subparagraph>
+              <subparagraph id="idc9ef64ea-3dcc-4cd3-b6cb-9c6efd104e04" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(B)</enum>
+ <text display-inline="yes-display-inline">dosage form development studies performed for the purpose of requesting an investigational new drug exemption under section 505(i) of the Federal Food, Drug, and Cosmetic Act (<external-xref legal-doc="usc" parsable-cite="usc/21/355">21 U.S.C. 355(i)</external-xref>).</text> </subparagraph> </paragraph> <paragraph id="ide450c1c7-87e8-4dd5-9c27-8cd9abc1641d" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(3)</enum> <header display-inline="yes-display-inline">Exception regarding marihuana</header> <text display-inline="yes-display-inline">The authority under paragraph (1) to manufacture substances does not include the authority to grow marihuana.</text>
+            </paragraph>
+          </subsection>
+          <after-quoted-block display="yes">.</after-quoted-block>
+        </quoted-block>
+      </subsection>
+      <subsection id="id2b89d142-81ff-44fd-8202-f2ffbe3dc1b7" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(g)</enum>
+        <header display-inline="yes-display-inline">Transparency regarding special procedures</header>
+ <text display-inline="yes-display-inline">Section 303 of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/823">21 U.S.C. 823</external-xref>), as amended by subsection (a), is amended by adding at the end the following:</text> <quoted-block style="OLC" id="id31449945-584f-4948-9245-9fb26a3b8c24" changed="not-changed" display-inline="no-display-inline"> <subsection id="id825be6f4-a8cb-4472-994a-968a8163bde2" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(o)</enum> <header display-inline="yes-display-inline">Transparency regarding special procedures</header> <paragraph id="id70120906-5835-4a51-bdde-aac343e7a30a" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(1)</enum> <header display-inline="yes-display-inline">In general</header> <text display-inline="yes-display-inline">If the Attorney General determines, with respect to a controlled substance, that an application by a practitioner to conduct research with the substance should be considered under a process, or subject to criteria, different from the process or criteria applicable to applications to conduct research with other controlled substances in the same schedule, the Attorney General shall make public, including by posting on the website of the Drug Enforcement Administration—</text>
+              <subparagraph id="idc7a1788f-d9ee-4414-a9f4-9383f4922d39" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(A)</enum>
+ <text display-inline="yes-display-inline">the identities of all substances for which such determinations have been made;</text> </subparagraph> <subparagraph id="ide792686e-e311-46f0-a332-939153830f93" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(B)</enum> <text display-inline="yes-display-inline">the process and criteria that shall be applied to applications to conduct research with those substances; and</text>
+              </subparagraph>
+              <subparagraph id="id2f8b8514-e369-4276-bb26-ea393f4727a9" changed="not-changed" commented="no" display-inline="no-display-inline">
+                <enum>(C)</enum>
+ <text display-inline="yes-display-inline">how the process and criteria described in subparagraph (B) differ from the process and criteria applicable to applications to conduct research with other controlled substances in the same schedule.</text> </subparagraph> </paragraph> <paragraph id="id12a29844-4649-47d4-be6e-de08265d5cee" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(2)</enum> <header display-inline="yes-display-inline">Timing of posting</header> <text display-inline="yes-display-inline">The Attorney General shall make information described in paragraph (1) public upon making a determination described in that paragraph, regardless of whether a practitioner has submitted such an application at that time.</text>
+            </paragraph>
+          </subsection>
+          <after-quoted-block display="yes">.</after-quoted-block>
+        </quoted-block>
+      </subsection>
+    </section>
+    <section id="ide763d59c-b6be-4b37-8876-bca8c0ef11d5" display-inline="no-display-inline" changed="not-changed" commented="no" section-type="subsequent-section">
+      <enum>4.</enum>
+      <header display-inline="yes-display-inline">Technical correction on controlled substances dispensing</header>
+ <text display-inline="no-display-inline">Effective as if included in the enactment of <external-xref legal-doc="public-law" parsable-cite="pl/117/328">Public Law 117–328</external-xref>—</text> <paragraph id="id43db15bb-1bf5-4ab3-a9ee-85d6e2227a52" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(1)</enum> <text display-inline="yes-display-inline">section 1252(a) of division FF of <external-xref legal-doc="public-law" parsable-cite="pl/117/328">Public Law 117–328</external-xref> (136 Stat. 5681) is amended, in the matter being inserted into section 302(e) of the Controlled Substances Act, by striking <quote>303(g)</quote> and inserting <quote>303(h)</quote>;</text>
+      </paragraph>
+      <paragraph id="id106c3b55-efef-457c-ac4b-db35bf257275" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(2)</enum>
+ <text display-inline="yes-display-inline">section 1262 of division FF of <external-xref legal-doc="public-law" parsable-cite="pl/117/328">Public Law 117–328</external-xref> (136 Stat. 5681) is amended—</text> <subparagraph id="id4e9c1b5a-973a-4e35-856d-aad41634ff56" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <text display-inline="yes-display-inline">in subsection (a)—</text>
+          <clause id="ide024dc11-e4cd-47ea-b75f-a9b5196ad71c" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(i)</enum>
+ <text display-inline="yes-display-inline">in the matter preceding paragraph (1), by striking <quote>303(g)</quote> and inserting <quote>303(h)</quote>;</text> </clause> <clause id="id8d557609-1673-47d8-80bb-1bf04f97730a" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(ii)</enum> <text display-inline="yes-display-inline">in the matter being stricken by subsection (a)(2), by striking <quote>(g)(1)</quote> and inserting <quote>(h)(1)</quote>; and</text>
+          </clause>
+          <clause id="idca047a7e-48c2-4a96-bbfc-17936993d54e" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(iii)</enum>
+ <text display-inline="yes-display-inline">in the matter being inserted by subsection (a)(2), by striking <quote>(g) Practitioners</quote> and inserting <quote>(h) Practitioners</quote>; and</text> </clause> </subparagraph> <subparagraph id="id8f811afd-9a09-41c8-afa3-9c605c5dfa52" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(B)</enum> <text display-inline="yes-display-inline">in subsection (b)—</text>
+          <clause id="ide8f240c9-233a-400c-bff5-4cc3d9e6cfa9" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(i)</enum>
+ <text display-inline="yes-display-inline">in the matter being stricken by paragraph (1), by striking <quote>303(g)(1)</quote> and inserting <quote>303(h)(1)</quote>;</text> </clause> <clause id="idb5f63946-ee74-487c-ae75-26def32a2ba7" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(ii)</enum> <text display-inline="yes-display-inline">in the matter being inserted by paragraph (1), by striking <quote>303(g)</quote> and inserting <quote>303(h)</quote>;</text>
+          </clause>
+          <clause id="id2d058c09-411f-4154-ad90-90b630afc570" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(iii)</enum>
+ <text display-inline="yes-display-inline">in the matter being stricken by paragraph (2)(A), by striking <quote>303(g)(2)</quote> and inserting <quote>303(h)(2)</quote>;</text> </clause> <clause id="id8766055f-ac67-4eee-9250-76109d3f612a" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(iv)</enum> <text display-inline="yes-display-inline">in the matter being stricken by paragraph (3), by striking <quote>303(g)(2)(B)</quote> and inserting <quote>303(h)(2)(B)</quote>;</text>
+          </clause>
+          <clause id="idaf62fb8c-f9c0-45c1-b9c2-b9dd7d36924a" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(v)</enum>
+ <text display-inline="yes-display-inline">in the matter being stricken by paragraph (5), by striking <quote>303(g)</quote> and inserting <quote>303(h)</quote>; and</text> </clause> <clause id="idf6676488-f2cc-4fe9-95c2-c873a8052bfe" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(vi)</enum> <text display-inline="yes-display-inline">in the matter being stricken by paragraph (6), by striking <quote>303(g)</quote> and inserting <quote>303(h)</quote>; and</text>
+          </clause>
+        </subparagraph>
+      </paragraph>
+      <paragraph id="ide6dfae6b-058d-48ba-a1b5-8abe98e5464a" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(3)</enum>
+ <text display-inline="yes-display-inline">section 1263(b) of division FF of <external-xref legal-doc="public-law" parsable-cite="pl/117/328">Public Law 117–328</external-xref> (136 Stat. 5685) is amended—</text> <subparagraph id="id9b455373-0868-41d2-894e-8a6b7e637bcd" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(A)</enum> <text display-inline="yes-display-inline">by striking <quote>303(g)(2)</quote> and inserting <quote>303(h)(2)</quote>; and</text>
+        </subparagraph>
+        <subparagraph id="id8d1f09a7-aed6-4fce-90e0-9c431100e3fe" commented="no" display-inline="no-display-inline" changed="not-changed">
+          <enum>(B)</enum>
+ <text display-inline="yes-display-inline">by striking <quote>(<external-xref legal-doc="usc" parsable-cite="usc/21/823">21 U.S.C. 823(g)(2)</external-xref>)</quote> and inserting <quote>(<external-xref legal-doc="usc" parsable-cite="usc/21/823">21 U.S.C. 823(h)(2)</external-xref>)</quote>.</text> </subparagraph> </paragraph> </section> <section id="id17d2afe8-a37b-4e1d-9bc9-589b516d7ec7" changed="not-changed" commented="no" display-inline="no-display-inline" section-type="subsequent-section"> <enum>5.</enum> <header display-inline="yes-display-inline">Rulemaking</header> <subsection id="id59ebeced-0f40-4aaa-a9a5-f1b95612d634" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(a)</enum> <header display-inline="yes-display-inline">Interim final rules</header> <text display-inline="yes-display-inline">The Attorney General—</text>
+        <paragraph id="id5fb04830-e1c7-4f73-9534-c2cc38fb2213" changed="not-changed" commented="no" display-inline="no-display-inline">
+          <enum>(1)</enum>
+ <text display-inline="yes-display-inline">shall, not later than 6 months after the date of enactment of this Act, issue rules to implement this Act and the amendments made by this Act; and</text> </paragraph> <paragraph id="id14b85a64-d681-44a1-965a-f350e4d9e3cd" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(2)</enum> <text display-inline="yes-display-inline">may issue the rules under paragraph (1) as interim final rules.</text>
+        </paragraph>
+      </subsection>
+      <subsection id="id7f44764a-4e68-4b4e-81ce-e0fff4ea41bf" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(b)</enum>
+        <header display-inline="yes-display-inline">Procedure for final rule</header>
+        <paragraph id="id3528ba61-8184-40d1-b5dc-f37f0e51b7fb" changed="not-changed" commented="no" display-inline="no-display-inline">
+          <enum>(1)</enum>
+          <header display-inline="yes-display-inline">Effectiveness of interim final rules</header>
+ <text display-inline="yes-display-inline">A rule issued by the Attorney General as an interim final rule under subsection (a) shall become immediately effective as an interim final rule without requiring the Attorney General to demonstrate good cause therefor, notwithstanding subparagraph (B) of the undesignated matter following paragraph (4) of section 553(b) of title 5, United States Code.</text> </paragraph> <paragraph id="ida3893aea-5529-45e5-9f8a-7b720f4b1b72" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(2)</enum> <header display-inline="yes-display-inline">Opportunity for comment and hearing</header> <text display-inline="yes-display-inline">An interim final rule issued under subsection (a) shall give interested persons the opportunity to comment and to request a hearing.</text>
+        </paragraph>
+        <paragraph id="id96cad807-a5cd-4a21-bd88-7fea1b000444" changed="not-changed" commented="no" display-inline="no-display-inline">
+          <enum>(3)</enum>
+          <header display-inline="yes-display-inline">Final rule</header>
+ <text display-inline="yes-display-inline">After the conclusion of such proceedings, the Attorney General shall issue a final rule to implement this Act and the amendments made by this Act in accordance with section 553 of title 5, United States Code.</text> </paragraph> </subsection> </section> <section id="idde6137cd-1d97-4466-aa33-1978b7124653" changed="not-changed" commented="no" display-inline="no-display-inline" section-type="subsequent-section"> <enum>6.</enum> <header display-inline="yes-display-inline">Penalties</header> <subsection id="id7fc30f3f-1f19-41c4-b21c-371a7e54c6f6" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(a)</enum> <header display-inline="yes-display-inline">In general</header> <text display-inline="yes-display-inline">Section 401(b)(1) of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/841">21 U.S.C. 841(b)(1)</external-xref>) is amended—</text>
+        <paragraph id="id469358c2-d122-4e5d-943d-e6f82eae3a29" changed="not-changed" commented="no" display-inline="no-display-inline">
+          <enum>(1)</enum>
+ <text display-inline="yes-display-inline">in subparagraph (A)(vi), by inserting <quote>or a fentanyl-related substance</quote> after <quote>any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide</quote>; and</text> </paragraph> <paragraph id="id2b458754-63d9-4e4d-a710-e70cd9361590" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(2)</enum> <text display-inline="yes-display-inline">in subparagraph (B)(vi), by inserting <quote>or a fentanyl-related substance</quote> after <quote>any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide</quote>.</text>
+        </paragraph>
+      </subsection>
+      <subsection id="idaab386cc-96ac-4564-bd2d-d495d8f4166b" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(b)</enum>
+        <header display-inline="yes-display-inline">Importation and exportation</header>
+ <text display-inline="yes-display-inline">Section 1010(b) of the Controlled Substances Import and Export Act (<external-xref legal-doc="usc" parsable-cite="usc/21/960">21 U.S.C. 960(b)</external-xref>) is amended—</text> <paragraph id="id8d6370cf-16a9-48c7-967c-c9933a2e56b9" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(1)</enum> <text display-inline="yes-display-inline">in paragraph (1)(F), by inserting <quote>or a fentanyl-related substance</quote> after <quote>any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide</quote>; and</text>
+        </paragraph>
+        <paragraph id="id392350fe-a76c-4834-b14a-a3adc391a7f9" commented="no" display-inline="no-display-inline" changed="not-changed">
+          <enum>(2)</enum>
+ <text display-inline="yes-display-inline">in paragraph (2)(F), by inserting <quote>or a fentanyl-related substance</quote> after <quote>any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide</quote>.</text> </paragraph> </subsection> <subsection commented="no" display-inline="no-display-inline" id="id3056a868-005e-4d4f-8ac0-7c53186921d4" changed="not-changed"> <enum>(c)</enum> <header display-inline="yes-display-inline">Definition of fentanyl-related substance</header> <text display-inline="yes-display-inline">Section 102 of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/802">21 U.S.C. 802</external-xref>) is amended by adding at the end the following:</text>
+        <quoted-block style="OLC" display-inline="no-display-inline" id="id6b0b605e-6f75-4763-bb61-235fae268021" changed="not-changed">
+          <paragraph id="id36f2ec30-a3c3-416f-914f-30225c0721b5" indent="up1" changed="not-changed" commented="no" display-inline="no-display-inline">
+            <enum>(60)</enum>
+ <text display-inline="yes-display-inline">The term <term>fentanyl-related substance</term> has the meaning given the term in subsection (e)(2) of schedule I of section 202(c).</text> </paragraph> <after-quoted-block display="yes">.</after-quoted-block> </quoted-block> </subsection> </section> <section id="idae3f984d-2a83-4da7-ae47-f4a756be15fe" changed="not-changed" commented="no" display-inline="no-display-inline" section-type="subsequent-section"> <enum>7.</enum> <header display-inline="yes-display-inline">Applicability; other matters</header> <subsection id="idc1e497ea-0064-4d0f-b2fb-66b4d3cefc4c" changed="not-changed" commented="no" display-inline="no-display-inline"> <enum>(a)</enum> <header display-inline="yes-display-inline">In general</header> <text display-inline="yes-display-inline">Irrespective of the date on which the rules required by section 5 are finalized, the amendments made by this Act apply beginning as of the date of enactment of this Act.</text>
+      </subsection>
+      <subsection id="id71ce7d9f-ea3f-4aec-bbfb-6587eb6e33be" changed="not-changed" commented="no" display-inline="no-display-inline">
+        <enum>(b)</enum>
+        <header display-inline="yes-display-inline">Rule of construction</header>
+ <text display-inline="yes-display-inline">Nothing in the amendments made by this Act may be construed as evidence that, in applying sections 401(b)(1) of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/841">21 U.S.C. 841(b)(1)</external-xref>) and 1010(b) of the Controlled Substances Import and Export Act (<external-xref legal-doc="usc" parsable-cite="usc/21/960">21 U.S.C. 960(b)</external-xref>) with respect to conduct occurring before the date of the enactment of this Act, a fentanyl-related substance (as defined by such amendments) is not an analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide.</text> </subsection> <subsection id="id78e2ff63-d933-4c77-b4a3-1a96783826a3" commented="no" display-inline="no-display-inline" changed="not-changed"> <enum>(c)</enum> <header display-inline="yes-display-inline">Sense of Congress</header> <text display-inline="yes-display-inline">Congress agrees with the interpretation of the Controlled Substances Act (<external-xref legal-doc="usc" parsable-cite="usc/21/801">21 U.S.C. 801 et seq.</external-xref>) in United States v. McCray, 346 F. Supp. 3d 363 (W.D.N.Y. 2018).</text>
+      </subsection>
+    </section>
+  </legis-body>
+  <attestation>
+    <attestation-group>
+      <attestor display="no" />
+      <role>Speaker of the House of Representatives</role>
+    </attestation-group>
+    <attestation-group>
+      <attestor display="no" />
+      <role>Vice President of the United States and President of the Senate</role>
+    </attestation-group>
+  </attestation>
+</bill>
+

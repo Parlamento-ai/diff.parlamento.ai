@@ -154,23 +154,48 @@ function extractSectionParagraphs(section: any, rawXml: string): string[] {
 	return [];
 }
 
+/**
+ * Recursively collect <section> elements from a legis-body,
+ * walking into <title>, <division>, <subtitle>, and <part> containers.
+ */
+function collectSections(node: any): any[] {
+	const sections: any[] = [];
+	if (node.section) {
+		const secs = Array.isArray(node.section) ? node.section : [node.section];
+		sections.push(...secs);
+	}
+	for (const container of ['title', 'division', 'subtitle', 'part']) {
+		if (node[container]) {
+			const items = Array.isArray(node[container]) ? node[container] : [node[container]];
+			for (const item of items) {
+				sections.push(...collectSections(item));
+			}
+		}
+	}
+	return sections;
+}
+
 /** Extract all sections from a parsed bill XML */
 export function extractSections(billXml: any, rawXml: string): ParsedSection[] {
 	const bill = billXml.bill;
 	if (!bill) return [];
 	const body = bill['legis-body'];
 	if (!body) return [];
-	let sections = body.section;
-	if (!sections) return [];
-	if (!Array.isArray(sections)) sections = [sections];
+	const sections = collectSections(body);
+	if (sections.length === 0) return [];
 
 	return sections.map((sec: any, i: number) => {
 		const header = typeof sec.header === 'object' ? sec.header['#text'] : sec.header;
+		const enumVal = typeof sec.enum === 'object' ? sec.enum['#text'] : sec.enum;
 		const paragraphs = extractSectionParagraphs(sec, rawXml);
 		const content = paragraphs.join(' ');
+		// Use section enum for stable eId across versions (UUIDs differ per version XML)
+		const normalizedEnum = enumVal
+			? String(enumVal).replace(/\.$/, '').trim()
+			: String(i + 1);
 		return {
-			eId: `art_${i + 1}`,
-			heading: `Section ${i + 1}. ${header || ''}`.trim(),
+			eId: `sec_${normalizedEnum}`,
+			heading: `Section ${enumVal || `${i + 1}.`} ${header || ''}`.trim(),
 			paragraphs,
 			content
 		};

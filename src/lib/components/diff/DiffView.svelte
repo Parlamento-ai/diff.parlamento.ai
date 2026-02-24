@@ -20,14 +20,16 @@
 		rejected: 'Rechazado',
 		withdrawn: 'Retirado',
 		inadmissible: 'Inadmisible',
-		pending: 'Pendiente'
+		pending: 'Pendiente',
+		'voice-vote': 'Voice Vote'
 	};
 	const resultColors: Record<string, string> = {
 		approved: 'bg-addition-100 text-addition-800',
 		rejected: 'bg-deletion-100 text-deletion-800',
 		withdrawn: 'bg-gray-100 text-gray-600',
 		inadmissible: 'bg-gray-100 text-gray-600',
-		pending: 'bg-amber-100 text-amber-800'
+		pending: 'bg-amber-100 text-amber-800',
+		'voice-vote': 'bg-blue-100 text-blue-800'
 	};
 
 	let isOpen = $state(true);
@@ -41,11 +43,17 @@
 	{#if vote}
 		<div class="px-4 py-3 border-b border-gray-200 {resultColors[vote.result] || 'bg-gray-100 text-gray-600'}">
 			<div class="flex items-center gap-2 text-sm font-semibold">
-				<span class="badge {vote.result === 'approved' ? 'bg-addition-200' : 'bg-deletion-200'}">
-					{vote.result === 'approved' ? '\u2713' : '\u2717'}
-				</span>
+				{#if vote.result === 'voice-vote'}
+					<span class="badge bg-blue-200">{'\u2713'}</span>
+				{:else}
+					<span class="badge {vote.result === 'approved' ? 'bg-addition-200' : 'bg-deletion-200'}">
+						{vote.result === 'approved' ? '\u2713' : '\u2717'}
+					</span>
+				{/if}
 				<span>{resultLabels[vote.result] || vote.result}</span>
-				<span class="font-mono font-normal opacity-75">{vote.for.length}-{vote.against.length}-{vote.abstain.length}</span>
+				{#if vote.result !== 'voice-vote'}
+					<span class="font-mono font-normal opacity-75">{vote.for.length}-{vote.against.length}-{vote.abstain.length}</span>
+				{/if}
 			</div>
 			{#if vote.for.length > 0}
 				<p class="text-xs mt-1 opacity-75">

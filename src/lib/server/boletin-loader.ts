@@ -16,6 +16,8 @@ const EU_CRA_DIR = 'pipeline/data/eu/horizontal-cybersecurity-requirements-for-p
 const EU_DATA_ACT_DIR = 'pipeline/data/eu/data-act/akn';
 const US_S5_DIR = 'pipeline/data/us/s5-119/akn';
 const US_S269_DIR = 'pipeline/data/us/s269-119/akn';
+const US_S331_DIR = 'pipeline/data/us/s331-119/akn';
+const US_S1582_DIR = 'pipeline/data/us/s1582-119/akn';
 const ES_LO3_2018_DIR = 'pipeline/data/es/BOE-A-2018-16673/akn';
 const ES_LEY39_2015_DIR = 'pipeline/data/es/BOE-A-2015-10565/akn';
 const BOLETIN_DIRS: Record<string, string> = {
@@ -60,6 +62,10 @@ const BOLETIN_DIRS: Record<string, string> = {
 	'us-s5-laken-riley': US_S5_DIR,
 	// US — S.269 Ending Improper Payments (Public Law 119-77, 119th Congress)
 	'us-s269-improper-payments': US_S269_DIR,
+	// US — S.331 HALT Fentanyl Act (Public Law 119-26, 119th Congress)
+	'us-s331-halt-fentanyl': US_S331_DIR,
+	// US — S.1582 GENIUS Act (Public Law 119-27, 119th Congress) — Stablecoin regulation
+	'us-s1582-genius-act': US_S1582_DIR,
 	// ES — LO 3/2018 Protección de Datos Personales (BOE-A-2018-16673)
 	'es-lo3-2018-proteccion-datos': ES_LO3_2018_DIR,
 	// ES — Ley 39/2015 Procedimiento Administrativo Común (BOE-A-2015-10565)
@@ -154,6 +160,24 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 			'amendment-1': 'Senate Passage (Voice Vote)',
 			'amendment-2': 'House Passage (Voice Vote)',
 			final: 'Public Law 119-77'
+		};
+		return usLabels[slug] || slug;
+	}
+	if (boletinSlug === 'us-s331-halt-fentanyl') {
+		const usLabels: Record<string, string> = {
+			bill: 'Introduced (IS)',
+			'amendment-1': 'Senate Passage (84-16)',
+			'amendment-2': 'House Passage (321-104)',
+			final: 'Public Law 119-26'
+		};
+		return usLabels[slug] || slug;
+	}
+	if (boletinSlug === 'us-s1582-genius-act') {
+		const usLabels: Record<string, string> = {
+			bill: 'Placed on Calendar (PCS)',
+			'amendment-1': 'Senate Passage (68-30)',
+			'amendment-2': 'House Passage (308-122)',
+			final: 'Public Law 119-27'
 		};
 		return usLabels[slug] || slug;
 	}
@@ -293,6 +317,26 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 			'amendment-1': { url: `${congressGov}/bill/119th-congress/senate-bill/269/text/es`, label: 'Congress.gov' },
 			'amendment-2': { url: `${congressGov}/bill/119th-congress/senate-bill/269/text/enr`, label: 'Congress.gov' },
 			final: { url: `${congressGov}/bill/119th-congress/senate-bill/269/text/pl`, label: 'Congress.gov' }
+		};
+		return map[slug];
+	}
+	if (boletinSlug === 'us-s331-halt-fentanyl') {
+		const congressGov = 'https://www.congress.gov';
+		const map: Record<string, { url: string; label: string }> = {
+			bill: { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/is`, label: 'Congress.gov' },
+			'amendment-1': { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/es`, label: 'Congress.gov' },
+			'amendment-2': { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/enr`, label: 'Congress.gov' },
+			final: { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/pl`, label: 'Congress.gov' }
+		};
+		return map[slug];
+	}
+	if (boletinSlug === 'us-s1582-genius-act') {
+		const congressGov = 'https://www.congress.gov';
+		const map: Record<string, { url: string; label: string }> = {
+			bill: { url: `${congressGov}/bill/119th-congress/senate-bill/1582/text/pcs`, label: 'Congress.gov' },
+			'amendment-1': { url: `${congressGov}/bill/119th-congress/senate-bill/1582/text/es`, label: 'Congress.gov' },
+			'amendment-2': { url: `${congressGov}/bill/119th-congress/senate-bill/1582/text/enr`, label: 'Congress.gov' },
+			final: { url: `${congressGov}/bill/119th-congress/senate-bill/1582/text/pl`, label: 'Congress.gov' }
 		};
 		return map[slug];
 	}
@@ -586,6 +630,56 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 			final: [
 				src('S.269 — Enrolled Bill', `${usBase}/03-enr.xml`, 'xml',
 					`${congressGov}/bill/119th-congress/senate-bill/269/text/pl`)
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+	if (boletinSlug === 'us-s331-halt-fentanyl') {
+		const usBase = 'pipeline/data/us/s331-119/sources';
+		const congressGov = 'https://www.congress.gov';
+		const docs: Record<string, SourceRef[]> = {
+			bill: [
+				src('S.331 — Introduced in Senate', `${usBase}/01-is.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/331/text/is`)
+			],
+			'amendment-1': [
+				src('S.331 — Engrossed in Senate', `${usBase}/02-es.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/331/text/es`),
+				src('Senate Roll Call Vote #127', `${usBase}/vote-senate-127.xml`, 'xml',
+					'https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00127.htm')
+			],
+			'amendment-2': [
+				src('House Roll Call Vote #166', `${usBase}/vote-house-166.xml`, 'xml',
+					'https://clerk.house.gov/Votes/2025166')
+			],
+			final: [
+				src('S.331 — Enrolled Bill', `${usBase}/03-enr.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/331/text/enr`)
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+	if (boletinSlug === 'us-s1582-genius-act') {
+		const usBase = 'pipeline/data/us/s1582-119/sources';
+		const congressGov = 'https://www.congress.gov';
+		const docs: Record<string, SourceRef[]> = {
+			bill: [
+				src('S.1582 — Placed on Calendar', `${usBase}/01-pcs.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/1582/text/pcs`)
+			],
+			'amendment-1': [
+				src('S.1582 — Engrossed in Senate', `${usBase}/02-es.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/1582/text/es`),
+				src('Senate Roll Call Vote #318', `${usBase}/vote-senate-318.xml`, 'xml',
+					'https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00318.htm')
+			],
+			'amendment-2': [
+				src('House Roll Call Vote #200', `${usBase}/vote-house-200.xml`, 'xml',
+					'https://clerk.house.gov/Votes/2025200')
+			],
+			final: [
+				src('S.1582 — Enrolled Bill', `${usBase}/03-enr.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/1582/text/enr`)
 			]
 		};
 		return docs[versionSlug] || [];
