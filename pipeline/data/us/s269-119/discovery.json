@@ -1,0 +1,53 @@
+{
+  "billId": {
+    "type": "s",
+    "number": 269,
+    "congress": 119
+  },
+  "title": "Ending Improper Payments to Deceased People Act",
+  "shortTitle": "Ending Improper Payments to Deceased People Act",
+  "sponsor": {
+    "name": "Sen. Kennedy, John [R-LA]",
+    "party": "R",
+    "state": "LA"
+  },
+  "status": "enacted",
+  "publicLaw": {
+    "congress": 119,
+    "number": 77
+  },
+  "textVersions": [
+    {
+      "code": "IS",
+      "date": "2025-01-28",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s269/BILLS-119s269is.xml"
+    },
+    {
+      "code": "ES",
+      "date": "2025-09-19",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s269/BILLS-119s269es.xml"
+    },
+    {
+      "code": "ENR",
+      "date": "",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s269/BILLS-119s269enr.xml"
+    },
+    {
+      "code": "PLAW",
+      "date": "2026-02-10"
+    }
+  ],
+  "recordedVotes": [],
+  "passageActions": [
+    {
+      "date": "2025-09-19",
+      "chamber": "Senate",
+      "description": "Passed Senate with an amendment by Voice Vote."
+    },
+    {
+      "date": "2026-01-12",
+      "chamber": "House",
+      "description": "Passed House by Voice Vote."
+    }
+  ]
+}

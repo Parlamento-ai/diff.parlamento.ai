@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="s5-119-house-passage">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/us/bill/119/s/5/enr"/>
+          <FRBRuri value="/us/bill/119/s/5"/>
+          <FRBRdate date="2025-01-22" name="passage"/>
+          <FRBRauthor href="/us/house"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/us/bill/119/s/5/enr/eng@2025-01-22"/>
+          <FRBRuri value="/us/bill/119/s/5/eng@2025-01-22"/>
+          <FRBRdate date="2025-01-22" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/us/bill/119/s/5/enr/eng@2025-01-22/akn"/>
+          <FRBRuri value="/us/bill/119/s/5/eng@2025-01-22/akn"/>
+          <FRBRdate date="2026-02-24" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCOrganization eId="house" href="/us/house" showAs="United States House of Representatives"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>House Passage — S.5</docTitle></p></longTitle>
+      <p>Passed House by roll call vote 263-156 on 2025-01-22.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Passed House by roll call vote 263-156 on 2025-01-22.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/us/bill/119/s/5/eng@2025-01-20"
+      result="/us/bill/119/s/5/eng@2025-01-22">
+        <akndiff:vote date="2025-01-22" result="approved" source="/us/house/119/1/roll/23">
+          <akndiff:for count="263">
+            <akndiff:voter href="/us/representative/aderholt" showAs="Aderholt (R-AL)"/>
+            <akndiff:voter href="/us/representative/alford" showAs="Alford (R-MO)"/>
+            <akndiff:voter href="/us/representative/allen" showAs="Allen (R-GA)"/>
+            <akndiff:voter href="/us/representative/amodei-nv" showAs="Amodei (NV) (R-NV)"/>
+            <akndiff:voter href="/us/representative/arrington" showAs="Arrington (R-TX)"/>
+            <akndiff:voter href="/us/representative/babin" showAs="Babin (R-TX)"/>
+            <akndiff:voter href="/us/representative/bacon" showAs="Bacon (R-NE)"/>
+            <akndiff:voter href="/us/representative/baird" showAs="Baird (R-IN)"/>
+            <akndiff:voter href="/us/representative/balderson" showAs="Balderson (R-OH)"/>
+            <akndiff:voter href="/us/representative/barr" showAs="Barr (R-KY)"/>
+            <akndiff:voter href="/us/representative/barrett" showAs="Barrett (R-MI)"/>
+            <akndiff:voter href="/us/representative/baumgartner" showAs="Baumgartner (R-WA)"/>
+            <akndiff:voter href="/us/representative/bean-fl" showAs="Bean (FL) (R-FL)"/>
+            <akndiff:voter href="/us/representative/begich" showAs="Begich (R-AK)"/>
+            <akndiff:voter href="/us/representative/bentz" showAs="Bentz (R-OR)"/>
+            <akndiff:voter href="/us/representative/bergman" showAs="Bergman (R-MI)"/>
+            <akndiff:voter href="/us/representative/bice" showAs="Bice (R-OK)"/>
+            <akndiff:voter href="/us/representative/biggs-az" showAs="Biggs (AZ) (R-AZ)"/>
+            <akndiff:voter href="/us/representative/biggs-sc" showAs="Biggs (SC) (R-SC)"/>
+            <akndiff:voter href="/us/representative/bilirakis" showAs="Bilirakis (R-FL)"/>
+            <akndiff:voter href="/us/representative/bishop" showAs="Bishop (D-GA)"/>
+            <akndiff:voter href="/us/representative/boebert" showAs="Boebert (R-CO)"/>
+            <akndiff:voter href="/us/representative/bost" showAs="Bost (R-IL)"/>
+            <akndiff:voter href="/us/representative/boyle-pa" showAs="Boyle (PA) (D-PA)"/>
+            <akndiff:voter href="/us/representative/brecheen" showAs="Brecheen (R-OK)"/>
+            <akndiff:voter href="/us/representative/bresnahan" showAs="Bresnahan (R-PA)"/>
+            <akndiff:voter href="/us/representative/buchanan" showAs="Buchanan (R-FL)"/>
+            <akndiff:voter href="/us/representative/budzinski" showAs="Budzinski (D-IL)"/>
+            <akndiff:voter href="/us/representative/burchett" showAs="Burchett (R-TN)"/>
+            <akndiff:voter href="/us/representative/burlison" showAs="Burlison (R-MO)"/>
+            <akndiff:voter href="/us/representative/bynum" showAs="Bynum (D-OR)"/>
+            <akndiff:voter href="/us/representative/calvert" showAs="Calvert (R-CA)"/>
+            <akndiff:voter href="/us/representative/cammack" showAs="Cammack (R-FL)"/>
+            <akndiff:voter href="/us/representative/carey" showAs="Carey (R-OH)"/>
+            <akndiff:voter href="/us/representative/carter-ga" showAs="Carter (GA) (R-GA)"/>
+            <akndiff:voter href="/us/representative/carter-tx" showAs="Carter (TX) (R-TX)"/>
+            <akndiff:voter href="/us/representative/ciscomani" showAs="Ciscomani (R-AZ)"/>
+            <akndiff:voter href="/us/representative/cline" showAs="Cline (R-VA)"/>
+            <akndiff:voter href="/us/representative/cloud" showAs="Cloud (R-TX)"/>
+            <akndiff:voter href="/us/representative/clyde" showAs="Clyde (R-GA)"/>
+            <akndiff:voter href="/us/representative/cole" showAs="Cole (R-OK)"/>
+            <akndiff:voter href="/us/representative/collins" showAs="Collins (R-GA)"/>
+            <akndiff:voter href="/us/representative/comer" showAs="Comer (R-KY)"/>
+            <akndiff:voter href="/us/representative/costa" showAs="Costa (D-CA)"/>
+            <akndiff:voter href="/us/representative/courtney" showAs="Courtney (D-CT)"/>
+            <akndiff:voter href="/us/representative/craig" showAs="Craig (D-MN)"/>
+            <akndiff:voter href="/us/representative/crane" showAs="Crane (R-AZ)"/>
+            <akndiff:voter href="/us/representative/crank" showAs="Crank (R-CO)"/>
+            <akndiff:voter href="/us/representative/crawford" showAs="Crawford (R-AR)"/>
+            <akndiff:voter href="/us/representative/crenshaw" showAs="Crenshaw (R-TX)"/>
+            <akndiff:voter href="/us/representative/cuellar" showAs="Cuellar (D-TX)"/>
+            <akndiff:voter href="/us/representative/davids-ks" showAs="Davids (KS) (D-KS)"/>
+            <akndiff:voter href="/us/representative/davidson" showAs="Davidson (R-OH)"/>
+            <akndiff:voter href="/us/representative/davis-nc" showAs="Davis (NC) (D-NC)"/>
+            <akndiff:voter href="/us/representative/de-la-cruz" showAs="De La Cruz (R-TX)"/>
+            <akndiff:voter href="/us/representative/desjarlais" showAs="DesJarlais (R-TN)"/>
+            <akndiff:voter href="/us/representative/diaz-balart" showAs="Diaz-Balart (R-FL)"/>
+            <akndiff:voter href="/us/representative/donalds" showAs="Donalds (R-FL)"/>
+            <akndiff:voter href="/us/representative/downing" showAs="Downing (R-MT)"/>
+            <akndiff:voter href="/us/representative/dunn-fl" showAs="Dunn (FL) (R-FL)"/>
+            <akndiff:voter href="/us/representative/edwards" showAs="Edwards (R-NC)"/>
+            <akndiff:voter href="/us/representative/ellzey" showAs="Ellzey (R-TX)"/>
+            <akndiff:voter href="/us/representative/emmer" showAs="Emmer (R-MN)"/>
+            <akndiff:voter href="/us/representative/estes" showAs="Estes (R-KS)"/>
+            <akndiff:voter href="/us/representative/evans-co" showAs="Evans (CO) (R-CO)"/>
+            <akndiff:voter href="/us/representative/ezell" showAs="Ezell (R-MS)"/>
+            <akndiff:voter href="/us/representative/fallon" showAs="Fallon (R-TX)"/>
+            <akndiff:voter href="/us/representative/fedorchak" showAs="Fedorchak (R-ND)"/>
+            <akndiff:voter href="/us/representative/feenstra" showAs="Feenstra (R-IA)"/>
+            <akndiff:voter href="/us/representative/figures" showAs="Figures (D-AL)"/>
+            <akndiff:voter href="/us/representative/finstad" showAs="Finstad (R-MN)"/>
+            <akndiff:voter href="/us/representative/fischbach" showAs="Fischbach (R-MN)"/>
+            <akndiff:voter href="/us/representative/fitzgerald" showAs="Fitzgerald (R-WI)"/>
+            <akndiff:voter href="/us/representative/fitzpatrick" showAs="Fitzpatrick (R-PA)"/>
+            <akndiff:voter href="/us/representative/fleischmann" showAs="Fleischmann (R-TN)"/>
+            <akndiff:voter href="/us/representative/flood" showAs="Flood (R-NE)"/>
+            <akndiff:voter href="/us/representative/fong" showAs="Fong (R-CA)"/>
+            <akndiff:voter href="/us/representative/foxx" showAs="Foxx (R-NC)"/>
+            <akndiff:voter href="/us/representative/franklin-scott" showAs="Franklin, Scott (R-FL)"/>
+            <akndiff:voter href="/us/representative/fry" showAs="Fry (R-SC)"/>
+            <akndiff:voter href="/us/representative/fulcher" showAs="Fulcher (R-ID)"/>
+            <akndiff:voter href="/us/representative/garbarino" showAs="Garbarino (R-NY)"/>
+            <akndiff:voter href="/us/representative/gill-tx" showAs="Gill (TX) (R-TX)"/>
+            <akndiff:voter href="/us/representative/gillen" showAs="Gillen (D-NY)"/>
+            <akndiff:voter href="/us/representative/gimenez" showAs="Gimenez (R-FL)"/>
+            <akndiff:voter href="/us/representative/golden-me" showAs="Golden (ME) (D-ME)"/>
+            <akndiff:voter href="/us/representative/goldman-tx" showAs="Goldman (TX) (R-TX)"/>
+            <akndiff:voter href="/us/representative/gonzales-tony" showAs="Gonzales, Tony (R-TX)"/>
+            <akndiff:voter href="/us/representative/gonzalez-v" showAs="Gonzalez, V. (D-TX)"/>
+            <akndiff:voter href="/us/representative/gooden" showAs="Gooden (R-TX)"/>
+            <akndiff:voter href="/us/representative/goodlander" showAs="Goodlander (D-NH)"/>
+            <akndiff:voter href="/us/representative/gosar" showAs="Gosar (R-AZ)"/>
+            <akndiff:voter href="/us/representative/gottheimer" showAs="Gottheimer (D-NJ)"/>
+            <akndiff:voter href="/us/representative/graves" showAs="Graves (R-MO)"/>
+            <akndiff:voter href="/us/representative/gray" showAs="Gray (D-CA)"/>
+            <akndiff:voter href="/us/representative/green-tn" showAs="Green (TN) (R-TN)"/>
+            <akndiff:voter href="/us/representative/greene-ga" showAs="Greene (GA) (R-GA)"/>
+            <akndiff:voter href="/us/representative/griffith" showAs="Griffith (R-VA)"/>
+            <akndiff:voter href="/us/representative/grothman" showAs="Grothman (R-WI)"/>
+            <akndiff:voter href="/us/representative/guest" showAs="Guest (R-MS)"/>
+            <akndiff:voter href="/us/representative/guthrie" showAs="Guthrie (R-KY)"/>
+            <akndiff:voter href="/us/representative/hageman" showAs="Hageman (R-WY)"/>
+            <akndiff:voter href="/us/representative/hamadeh-az" showAs="Hamadeh (AZ) (R-AZ)"/>
+            <akndiff:voter href="/us/representative/harder-ca" showAs="Harder (CA) (D-CA)"/>
+            <akndiff:voter href="/us/representative/haridopolos" showAs="Haridopolos (R-FL)"/>
+            <akndiff:voter href="/us/representative/harrigan" showAs="Harrigan (R-NC)"/>
+            <akndiff:voter href="/us/representative/harris-md" showAs="Harris (MD) (R-MD)"/>
+            <akndiff:voter href="/us/representative/harris-nc" showAs="Harris (NC) (R-NC)"/>
+            <akndiff:voter href="/us/representative/harshbarger" showAs="Harshbarger (R-TN)"/>
+            <akndiff:voter href="/us/representative/hayes" showAs="Hayes (D-CT)"/>
+            <akndiff:voter href="/us/representative/hern-ok" showAs="Hern (OK) (R-OK)"/>
+            <akndiff:voter href="/us/representative/higgins-la" showAs="Higgins (LA) (R-LA)"/>
+            <akndiff:voter href="/us/representative/hill-ar" showAs="Hill (AR) (R-AR)"/>
+            <akndiff:voter href="/us/representative/hinson" showAs="Hinson (R-IA)"/>
+            <akndiff:voter href="/us/representative/horsford" showAs="Horsford (D-NV)"/>
+            <akndiff:voter href="/us/representative/houchin" showAs="Houchin (R-IN)"/>
+            <akndiff:voter href="/us/representative/hudson" showAs="Hudson (R-NC)"/>
+            <akndiff:voter href="/us/representative/huizenga" showAs="Huizenga (R-MI)"/>
+            <akndiff:voter href="/us/representative/hunt" showAs="Hunt (R-TX)"/>
+            <akndiff:voter href="/us/representative/hurd-co" showAs="Hurd (CO) (R-CO)"/>
+            <akndiff:voter href="/us/representative/issa" showAs="Issa (R-CA)"/>
+            <akndiff:voter href="/us/representative/jack" showAs="Jack (R-GA)"/>
+            <akndiff:voter href="/us/representative/jackson-tx" showAs="Jackson (TX) (R-TX)"/>
+            <akndiff:voter href="/us/representative/james" showAs="James (R-MI)"/>
+            <akndiff:voter href="/us/representative/johnson-la" showAs="Johnson (LA) (R-LA)"/>
+            <akndiff:voter href="/us/representative/johnson-sd" showAs="Johnson (SD) (R-SD)"/>
+            <akndiff:voter href="/us/representative/jordan" showAs="Jordan (R-OH)"/>
+            <akndiff:voter href="/us/representative/joyce-oh" showAs="Joyce (OH) (R-OH)"/>
+            <akndiff:voter href="/us/representative/joyce-pa" showAs="Joyce (PA) (R-PA)"/>
+            <akndiff:voter href="/us/representative/kaptur" showAs="Kaptur (D-OH)"/>
+            <akndiff:voter href="/us/representative/kean" showAs="Kean (R-NJ)"/>
+            <akndiff:voter href="/us/representative/kelly-ms" showAs="Kelly (MS) (R-MS)"/>
+            <akndiff:voter href="/us/representative/kelly-pa" showAs="Kelly (PA) (R-PA)"/>
+            <akndiff:voter href="/us/representative/kennedy-ut" showAs="Kennedy (UT) (R-UT)"/>
+            <akndiff:voter href="/us/representative/kiggans-va" showAs="Kiggans (VA) (R-VA)"/>
+            <akndiff:voter href="/us/representative/kiley-ca" showAs="Kiley (CA) (R-CA)"/>
+            <akndiff:voter href="/us/representative/kim" showAs="Kim (R-CA)"/>
+            <akndiff:voter href="/us/representative/knott" showAs="Knott (R-NC)"/>
+            <akndiff:voter href="/us/representative/kustoff" showAs="Kustoff (R-TN)"/>
+            <akndiff:voter href="/us/representative/lahood" showAs="LaHood (R-IL)"/>
+            <akndiff:voter href="/us/representative/lalota" showAs="LaLota (R-NY)"/>
+            <akndiff:voter href="/us/representative/lamalfa" showAs="LaMalfa (R-CA)"/>
+            <akndiff:voter href="/us/representative/landsman" showAs="Landsman (D-OH)"/>
+            <akndiff:voter href="/us/representative/langworthy" showAs="Langworthy (R-NY)"/>
+            <akndiff:voter href="/us/representative/latta" showAs="Latta (R-OH)"/>
+            <akndiff:voter href="/us/representative/lawler" showAs="Lawler (R-NY)"/>
+            <akndiff:voter href="/us/representative/lee-fl" showAs="Lee (FL) (R-FL)"/>
+            <akndiff:voter href="/us/representative/lee-nv" showAs="Lee (NV) (D-NV)"/>
+            <akndiff:voter href="/us/representative/letlow" showAs="Letlow (R-LA)"/>
+            <akndiff:voter href="/us/representative/levin" showAs="Levin (D-CA)"/>
+            <akndiff:voter href="/us/representative/loudermilk" showAs="Loudermilk (R-GA)"/>
+            <akndiff:voter href="/us/representative/lucas" showAs="Lucas (R-OK)"/>
+            <akndiff:voter href="/us/representative/luna" showAs="Luna (R-FL)"/>
+            <akndiff:voter href="/us/representative/luttrell" showAs="Luttrell (R-TX)"/>
+            <akndiff:voter href="/us/representative/lynch" showAs="Lynch (D-MA)"/>
+            <akndiff:voter href="/us/representative/mace" showAs="Mace (R-SC)"/>
+            <akndiff:voter href="/us/representative/mackenzie" showAs="Mackenzie (R-PA)"/>
+            <akndiff:voter href="/us/representative/malliotakis" showAs="Malliotakis (R-NY)"/>
+            <akndiff:voter href="/us/representative/maloy" showAs="Maloy (R-UT)"/>
+            <akndiff:voter href="/us/representative/mann" showAs="Mann (R-KS)"/>
+            <akndiff:voter href="/us/representative/mannion" showAs="Mannion (D-NY)"/>
+            <akndiff:voter href="/us/representative/massie" showAs="Massie (R-KY)"/>
+            <akndiff:voter href="/us/representative/mast" showAs="Mast (R-FL)"/>
+            <akndiff:voter href="/us/representative/mcbath" showAs="McBath (D-GA)"/>
+            <akndiff:voter href="/us/representative/mccaul" showAs="McCaul (R-TX)"/>
+            <akndiff:voter href="/us/representative/mcclain" showAs="McClain (R-MI)"/>
+            <akndiff:voter href="/us/representative/mcclain-delaney" showAs="McClain Delaney (D-MD)"/>
+            <akndiff:voter href="/us/representative/mcclintock" showAs="McClintock (R-CA)"/>
+            <akndiff:voter href="/us/representative/mccormick" showAs="McCormick (R-GA)"/>
+            <akndiff:voter href="/us/representative/mcdonald-rivet" showAs="McDonald Rivet (D-MI)"/>
+            <akndiff:voter href="/us/representative/mcdowell" showAs="McDowell (R-NC)"/>
+            <akndiff:voter href="/us/representative/mcguire" showAs="McGuire (R-VA)"/>
+            <akndiff:voter href="/us/representative/messmer" showAs="Messmer (R-IN)"/>
+            <akndiff:voter href="/us/representative/meuser" showAs="Meuser (R-PA)"/>
+            <akndiff:voter href="/us/representative/miller-il" showAs="Miller (IL) (R-IL)"/>
+            <akndiff:voter href="/us/representative/miller-oh" showAs="Miller (OH) (R-OH)"/>
+            <akndiff:voter href="/us/representative/miller-wv" showAs="Miller (WV) (R-WV)"/>
+            <akndiff:voter href="/us/representative/miller-meeks" showAs="Miller-Meeks (R-IA)"/>
+            <akndiff:voter href="/us/representative/mills" showAs="Mills (R-FL)"/>
+            <akndiff:voter href="/us/representative/min" showAs="Min (D-CA)"/>
+            <akndiff:voter href="/us/representative/moolenaar" showAs="Moolenaar (R-MI)"/>
+            <akndiff:voter href="/us/representative/moore-al" showAs="Moore (AL) (R-AL)"/>
+            <akndiff:voter href="/us/representative/moore-nc" showAs="Moore (NC) (R-NC)"/>
+            <akndiff:voter href="/us/representative/moore-ut" showAs="Moore (UT) (R-UT)"/>
+            <akndiff:voter href="/us/representative/moore-wv" showAs="Moore (WV) (R-WV)"/>
+            <akndiff:voter href="/us/representative/moran" showAs="Moran (R-TX)"/>
+            <akndiff:voter href="/us/representative/morelle" showAs="Morelle (D-NY)"/>
+            <akndiff:voter href="/us/representative/moskowitz" showAs="Moskowitz (D-FL)"/>
+            <akndiff:voter href="/us/representative/murphy" showAs="Murphy (R-NC)"/>
+            <akndiff:voter href="/us/representative/nehls" showAs="Nehls (R-TX)"/>
+            <akndiff:voter href="/us/representative/newhouse" showAs="Newhouse (R-WA)"/>
+            <akndiff:voter href="/us/representative/norman" showAs="Norman (R-SC)"/>
+            <akndiff:voter href="/us/representative/nunn-ia" showAs="Nunn (IA) (R-IA)"/>
+            <akndiff:voter href="/us/representative/obernolte" showAs="Obernolte (R-CA)"/>
+            <akndiff:voter href="/us/representative/ogles" showAs="Ogles (R-TN)"/>
+            <akndiff:voter href="/us/representative/onder" showAs="Onder (R-MO)"/>
+            <akndiff:voter href="/us/representative/owens" showAs="Owens (R-UT)"/>
+            <akndiff:voter href="/us/representative/palmer" showAs="Palmer (R-AL)"/>
+            <akndiff:voter href="/us/representative/pappas" showAs="Pappas (D-NH)"/>
+            <akndiff:voter href="/us/representative/perez" showAs="Perez (D-WA)"/>
+            <akndiff:voter href="/us/representative/perry" showAs="Perry (R-PA)"/>
+            <akndiff:voter href="/us/representative/pfluger" showAs="Pfluger (R-TX)"/>
+            <akndiff:voter href="/us/representative/reschenthaler" showAs="Reschenthaler (R-PA)"/>
+            <akndiff:voter href="/us/representative/rogers-al" showAs="Rogers (AL) (R-AL)"/>
+            <akndiff:voter href="/us/representative/rogers-ky" showAs="Rogers (KY) (R-KY)"/>
+            <akndiff:voter href="/us/representative/rose" showAs="Rose (R-TN)"/>
+            <akndiff:voter href="/us/representative/rouzer" showAs="Rouzer (R-NC)"/>
+            <akndiff:voter href="/us/representative/roy" showAs="Roy (R-TX)"/>
+            <akndiff:voter href="/us/representative/rulli" showAs="Rulli (R-OH)"/>
+            <akndiff:voter href="/us/representative/rutherford" showAs="Rutherford (R-FL)"/>
+            <akndiff:voter href="/us/representative/salazar" showAs="Salazar (R-FL)"/>
+            <akndiff:voter href="/us/representative/scalise" showAs="Scalise (R-LA)"/>
+            <akndiff:voter href="/us/representative/schmidt" showAs="Schmidt (R-KS)"/>
+            <akndiff:voter href="/us/representative/scholten" showAs="Scholten (D-MI)"/>
+            <akndiff:voter href="/us/representative/schrier" showAs="Schrier (D-WA)"/>
+            <akndiff:voter href="/us/representative/schweikert" showAs="Schweikert (R-AZ)"/>
+            <akndiff:voter href="/us/representative/scott-austin" showAs="Scott, Austin (R-GA)"/>
+            <akndiff:voter href="/us/representative/self" showAs="Self (R-TX)"/>
+            <akndiff:voter href="/us/representative/sessions" showAs="Sessions (R-TX)"/>
+            <akndiff:voter href="/us/representative/sewell" showAs="Sewell (D-AL)"/>
+            <akndiff:voter href="/us/representative/shreve" showAs="Shreve (R-IN)"/>
+            <akndiff:voter href="/us/representative/simpson" showAs="Simpson (R-ID)"/>
+            <akndiff:voter href="/us/representative/smith-mo" showAs="Smith (MO) (R-MO)"/>
+            <akndiff:voter href="/us/representative/smith-ne" showAs="Smith (NE) (R-NE)"/>
+            <akndiff:voter href="/us/representative/smith-nj" showAs="Smith (NJ) (R-NJ)"/>
+            <akndiff:voter href="/us/representative/smucker" showAs="Smucker (R-PA)"/>
+            <akndiff:voter href="/us/representative/sorensen" showAs="Sorensen (D-IL)"/>
+            <akndiff:voter href="/us/representative/spartz" showAs="Spartz (R-IN)"/>
+            <akndiff:voter href="/us/representative/stanton" showAs="Stanton (D-AZ)"/>
+            <akndiff:voter href="/us/representative/stauber" showAs="Stauber (R-MN)"/>
+            <akndiff:voter href="/us/representative/stefanik" showAs="Stefanik (R-NY)"/>
+            <akndiff:voter href="/us/representative/steil" showAs="Steil (R-WI)"/>
+            <akndiff:voter href="/us/representative/steube" showAs="Steube (R-FL)"/>
+            <akndiff:voter href="/us/representative/strong" showAs="Strong (R-AL)"/>
+            <akndiff:voter href="/us/representative/stutzman" showAs="Stutzman (R-IN)"/>
+            <akndiff:voter href="/us/representative/subramanyam" showAs="Subramanyam (D-VA)"/>
+            <akndiff:voter href="/us/representative/suozzi" showAs="Suozzi (D-NY)"/>
+            <akndiff:voter href="/us/representative/sykes" showAs="Sykes (D-OH)"/>
+            <akndiff:voter href="/us/representative/taylor" showAs="Taylor (R-OH)"/>
+            <akndiff:voter href="/us/representative/tenney" showAs="Tenney (R-NY)"/>
+            <akndiff:voter href="/us/representative/thompson-pa" showAs="Thompson (PA) (R-PA)"/>
+            <akndiff:voter href="/us/representative/tiffany" showAs="Tiffany (R-WI)"/>
+            <akndiff:voter href="/us/representative/timmons" showAs="Timmons (R-SC)"/>
+            <akndiff:voter href="/us/representative/titus" showAs="Titus (D-NV)"/>
+            <akndiff:voter href="/us/representative/torres-ny" showAs="Torres (NY) (D-NY)"/>
+            <akndiff:voter href="/us/representative/tran" showAs="Tran (D-CA)"/>
+            <akndiff:voter href="/us/representative/turner-oh" showAs="Turner (OH) (R-OH)"/>
+            <akndiff:voter href="/us/representative/valadao" showAs="Valadao (R-CA)"/>
+            <akndiff:voter href="/us/representative/van-drew" showAs="Van Drew (R-NJ)"/>
+            <akndiff:voter href="/us/representative/van-duyne" showAs="Van Duyne (R-TX)"/>
+            <akndiff:voter href="/us/representative/van-orden" showAs="Van Orden (R-WI)"/>
+            <akndiff:voter href="/us/representative/vindman" showAs="Vindman (D-VA)"/>
+            <akndiff:voter href="/us/representative/wagner" showAs="Wagner (R-MO)"/>
+            <akndiff:voter href="/us/representative/walberg" showAs="Walberg (R-MI)"/>
+            <akndiff:voter href="/us/representative/weber-tx" showAs="Weber (TX) (R-TX)"/>
+            <akndiff:voter href="/us/representative/webster-fl" showAs="Webster (FL) (R-FL)"/>
+            <akndiff:voter href="/us/representative/westerman" showAs="Westerman (R-AR)"/>
+            <akndiff:voter href="/us/representative/wied" showAs="Wied (R-WI)"/>
+            <akndiff:voter href="/us/representative/wilson-sc" showAs="Wilson (SC) (R-SC)"/>
+            <akndiff:voter href="/us/representative/wittman" showAs="Wittman (R-VA)"/>
+            <akndiff:voter href="/us/representative/womack" showAs="Womack (R-AR)"/>
+            <akndiff:voter href="/us/representative/yakym" showAs="Yakym (R-IN)"/>
+            <akndiff:voter href="/us/representative/zinke" showAs="Zinke (R-MT)"/>
+          </akndiff:for>
+          <akndiff:against count="156">
+            <akndiff:voter href="/us/representative/adams" showAs="Adams (D-NC)"/>
+            <akndiff:voter href="/us/representative/aguilar" showAs="Aguilar (D-CA)"/>
+            <akndiff:voter href="/us/representative/amo" showAs="Amo (D-RI)"/>
+            <akndiff:voter href="/us/representative/ansari" showAs="Ansari (D-AZ)"/>
+            <akndiff:voter href="/us/representative/auchincloss" showAs="Auchincloss (D-MA)"/>
+            <akndiff:voter href="/us/representative/balint" showAs="Balint (D-VT)"/>
+            <akndiff:voter href="/us/representative/barragn" showAs="Barragán (D-CA)"/>
+            <akndiff:voter href="/us/representative/beatty" showAs="Beatty (D-OH)"/>
+            <akndiff:voter href="/us/representative/bell" showAs="Bell (D-MO)"/>
+            <akndiff:voter href="/us/representative/bera" showAs="Bera (D-CA)"/>
+            <akndiff:voter href="/us/representative/beyer" showAs="Beyer (D-VA)"/>
+            <akndiff:voter href="/us/representative/bonamici" showAs="Bonamici (D-OR)"/>
+            <akndiff:voter href="/us/representative/brown" showAs="Brown (D-OH)"/>
+            <akndiff:voter href="/us/representative/brownley" showAs="Brownley (D-CA)"/>
+            <akndiff:voter href="/us/representative/carbajal" showAs="Carbajal (D-CA)"/>
+            <akndiff:voter href="/us/representative/carson" showAs="Carson (D-IN)"/>
+            <akndiff:voter href="/us/representative/carter-la" showAs="Carter (LA) (D-LA)"/>
+            <akndiff:voter href="/us/representative/casar" showAs="Casar (D-TX)"/>
+            <akndiff:voter href="/us/representative/case" showAs="Case (D-HI)"/>
+            <akndiff:voter href="/us/representative/casten" showAs="Casten (D-IL)"/>
+            <akndiff:voter href="/us/representative/castor-fl" showAs="Castor (FL) (D-FL)"/>
+            <akndiff:voter href="/us/representative/castro-tx" showAs="Castro (TX) (D-TX)"/>
+            <akndiff:voter href="/us/representative/cherfilus-mccormick" showAs="Cherfilus-McCormick (D-FL)"/>
+            <akndiff:voter href="/us/representative/chu" showAs="Chu (D-CA)"/>
+            <akndiff:voter href="/us/representative/cisneros" showAs="Cisneros (D-CA)"/>
+            <akndiff:voter href="/us/representative/clark-ma" showAs="Clark (MA) (D-MA)"/>
+            <akndiff:voter href="/us/representative/clarke-ny" showAs="Clarke (NY) (D-NY)"/>
+            <akndiff:voter href="/us/representative/cleaver" showAs="Cleaver (D-MO)"/>
+            <akndiff:voter href="/us/representative/clyburn" showAs="Clyburn (D-SC)"/>
+            <akndiff:voter href="/us/representative/cohen" showAs="Cohen (D-TN)"/>
+            <akndiff:voter href="/us/representative/conaway" showAs="Conaway (D-NJ)"/>
+            <akndiff:voter href="/us/representative/connolly" showAs="Connolly (D-VA)"/>
+            <akndiff:voter href="/us/representative/crockett" showAs="Crockett (D-TX)"/>
+            <akndiff:voter href="/us/representative/crow" showAs="Crow (D-CO)"/>
+            <akndiff:voter href="/us/representative/davis-il" showAs="Davis (IL) (D-IL)"/>
+            <akndiff:voter href="/us/representative/dean-pa" showAs="Dean (PA) (D-PA)"/>
+            <akndiff:voter href="/us/representative/degette" showAs="DeGette (D-CO)"/>
+            <akndiff:voter href="/us/representative/delauro" showAs="DeLauro (D-CT)"/>
+            <akndiff:voter href="/us/representative/delbene" showAs="DelBene (D-WA)"/>
+            <akndiff:voter href="/us/representative/deluzio" showAs="Deluzio (D-PA)"/>
+            <akndiff:voter href="/us/representative/desaulnier" showAs="DeSaulnier (D-CA)"/>
+            <akndiff:voter href="/us/representative/dexter" showAs="Dexter (D-OR)"/>
+            <akndiff:voter href="/us/representative/doggett" showAs="Doggett (D-TX)"/>
+            <akndiff:voter href="/us/representative/elfreth" showAs="Elfreth (D-MD)"/>
+            <akndiff:voter href="/us/representative/escobar" showAs="Escobar (D-TX)"/>
+            <akndiff:voter href="/us/representative/espaillat" showAs="Espaillat (D-NY)"/>
+            <akndiff:voter href="/us/representative/evans-pa" showAs="Evans (PA) (D-PA)"/>
+            <akndiff:voter href="/us/representative/fields" showAs="Fields (D-LA)"/>
+            <akndiff:voter href="/us/representative/fletcher" showAs="Fletcher (D-TX)"/>
+            <akndiff:voter href="/us/representative/foster" showAs="Foster (D-IL)"/>
+            <akndiff:voter href="/us/representative/foushee" showAs="Foushee (D-NC)"/>
+            <akndiff:voter href="/us/representative/frankel-lois" showAs="Frankel, Lois (D-FL)"/>
+            <akndiff:voter href="/us/representative/friedman" showAs="Friedman (D-CA)"/>
+            <akndiff:voter href="/us/representative/frost" showAs="Frost (D-FL)"/>
+            <akndiff:voter href="/us/representative/garcia-ca" showAs="Garcia (CA) (D-CA)"/>
+            <akndiff:voter href="/us/representative/garca-il" showAs="García (IL) (D-IL)"/>
+            <akndiff:voter href="/us/representative/garcia-tx" showAs="Garcia (TX) (D-TX)"/>
+            <akndiff:voter href="/us/representative/goldman-ny" showAs="Goldman (NY) (D-NY)"/>
+            <akndiff:voter href="/us/representative/gomez" showAs="Gomez (D-CA)"/>
+            <akndiff:voter href="/us/representative/green-al-tx" showAs="Green, Al (TX) (D-TX)"/>
+            <akndiff:voter href="/us/representative/himes" showAs="Himes (D-CT)"/>
+            <akndiff:voter href="/us/representative/houlahan" showAs="Houlahan (D-PA)"/>
+            <akndiff:voter href="/us/representative/hoyer" showAs="Hoyer (D-MD)"/>
+            <akndiff:voter href="/us/representative/hoyle-or" showAs="Hoyle (OR) (D-OR)"/>
+            <akndiff:voter href="/us/representative/huffman" showAs="Huffman (D-CA)"/>
+            <akndiff:voter href="/us/representative/ivey" showAs="Ivey (D-MD)"/>
+            <akndiff:voter href="/us/representative/jackson-il" showAs="Jackson (IL) (D-IL)"/>
+            <akndiff:voter href="/us/representative/jacobs" showAs="Jacobs (D-CA)"/>
+            <akndiff:voter href="/us/representative/jeffries" showAs="Jeffries (D-NY)"/>
+            <akndiff:voter href="/us/representative/johnson-ga" showAs="Johnson (GA) (D-GA)"/>
+            <akndiff:voter href="/us/representative/johnson-tx" showAs="Johnson (TX) (D-TX)"/>
+            <akndiff:voter href="/us/representative/kamlager-dove" showAs="Kamlager-Dove (D-CA)"/>
+            <akndiff:voter href="/us/representative/keating" showAs="Keating (D-MA)"/>
+            <akndiff:voter href="/us/representative/kelly-il" showAs="Kelly (IL) (D-IL)"/>
+            <akndiff:voter href="/us/representative/kennedy-ny" showAs="Kennedy (NY) (D-NY)"/>
+            <akndiff:voter href="/us/representative/khanna" showAs="Khanna (D-CA)"/>
+            <akndiff:voter href="/us/representative/krishnamoorthi" showAs="Krishnamoorthi (D-IL)"/>
+            <akndiff:voter href="/us/representative/larsen-wa" showAs="Larsen (WA) (D-WA)"/>
+            <akndiff:voter href="/us/representative/larson-ct" showAs="Larson (CT) (D-CT)"/>
+            <akndiff:voter href="/us/representative/latimer" showAs="Latimer (D-NY)"/>
+            <akndiff:voter href="/us/representative/lee-pa" showAs="Lee (PA) (D-PA)"/>
+            <akndiff:voter href="/us/representative/leger-fernandez" showAs="Leger Fernandez (D-NM)"/>
+            <akndiff:voter href="/us/representative/liccardo" showAs="Liccardo (D-CA)"/>
+            <akndiff:voter href="/us/representative/lieu" showAs="Lieu (D-CA)"/>
+            <akndiff:voter href="/us/representative/lofgren" showAs="Lofgren (D-CA)"/>
+            <akndiff:voter href="/us/representative/magaziner" showAs="Magaziner (D-RI)"/>
+            <akndiff:voter href="/us/representative/matsui" showAs="Matsui (D-CA)"/>
+            <akndiff:voter href="/us/representative/mcbride" showAs="McBride (D-DE)"/>
+            <akndiff:voter href="/us/representative/mcclellan" showAs="McClellan (D-VA)"/>
+            <akndiff:voter href="/us/representative/mccollum" showAs="McCollum (D-MN)"/>
+            <akndiff:voter href="/us/representative/mcgarvey" showAs="McGarvey (D-KY)"/>
+            <akndiff:voter href="/us/representative/mcgovern" showAs="McGovern (D-MA)"/>
+            <akndiff:voter href="/us/representative/mciver" showAs="McIver (D-NJ)"/>
+            <akndiff:voter href="/us/representative/meeks" showAs="Meeks (D-NY)"/>
+            <akndiff:voter href="/us/representative/menendez" showAs="Menendez (D-NJ)"/>
+            <akndiff:voter href="/us/representative/meng" showAs="Meng (D-NY)"/>
+            <akndiff:voter href="/us/representative/mfume" showAs="Mfume (D-MD)"/>
+            <akndiff:voter href="/us/representative/moore-wi" showAs="Moore (WI) (D-WI)"/>
+            <akndiff:voter href="/us/representative/morrison" showAs="Morrison (D-MN)"/>
+            <akndiff:voter href="/us/representative/moulton" showAs="Moulton (D-MA)"/>
+            <akndiff:voter href="/us/representative/mullin" showAs="Mullin (D-CA)"/>
+            <akndiff:voter href="/us/representative/nadler" showAs="Nadler (D-NY)"/>
+            <akndiff:voter href="/us/representative/neal" showAs="Neal (D-MA)"/>
+            <akndiff:voter href="/us/representative/neguse" showAs="Neguse (D-CO)"/>
+            <akndiff:voter href="/us/representative/norcross" showAs="Norcross (D-NJ)"/>
+            <akndiff:voter href="/us/representative/ocasio-cortez" showAs="Ocasio-Cortez (D-NY)"/>
+            <akndiff:voter href="/us/representative/olszewski" showAs="Olszewski (D-MD)"/>
+            <akndiff:voter href="/us/representative/omar" showAs="Omar (D-MN)"/>
+            <akndiff:voter href="/us/representative/pallone" showAs="Pallone (D-NJ)"/>
+            <akndiff:voter href="/us/representative/panetta" showAs="Panetta (D-CA)"/>
+            <akndiff:voter href="/us/representative/peters" showAs="Peters (D-CA)"/>
+            <akndiff:voter href="/us/representative/pingree" showAs="Pingree (D-ME)"/>
+            <akndiff:voter href="/us/representative/pocan" showAs="Pocan (D-WI)"/>
+            <akndiff:voter href="/us/representative/pou" showAs="Pou (D-NJ)"/>
+            <akndiff:voter href="/us/representative/pressley" showAs="Pressley (D-MA)"/>
+            <akndiff:voter href="/us/representative/quigley" showAs="Quigley (D-IL)"/>
+            <akndiff:voter href="/us/representative/ramirez" showAs="Ramirez (D-IL)"/>
+            <akndiff:voter href="/us/representative/randall" showAs="Randall (D-WA)"/>
+            <akndiff:voter href="/us/representative/raskin" showAs="Raskin (D-MD)"/>
+            <akndiff:voter href="/us/representative/rivas" showAs="Rivas (D-CA)"/>
+            <akndiff:voter href="/us/representative/ross" showAs="Ross (D-NC)"/>
+            <akndiff:voter href="/us/representative/ruiz" showAs="Ruiz (D-CA)"/>
+            <akndiff:voter href="/us/representative/ryan" showAs="Ryan (D-NY)"/>
+            <akndiff:voter href="/us/representative/salinas" showAs="Salinas (D-OR)"/>
+            <akndiff:voter href="/us/representative/snchez" showAs="Sánchez (D-CA)"/>
+            <akndiff:voter href="/us/representative/scanlon" showAs="Scanlon (D-PA)"/>
+            <akndiff:voter href="/us/representative/schakowsky" showAs="Schakowsky (D-IL)"/>
+            <akndiff:voter href="/us/representative/scott-va" showAs="Scott (VA) (D-VA)"/>
+            <akndiff:voter href="/us/representative/scott-david" showAs="Scott, David (D-GA)"/>
+            <akndiff:voter href="/us/representative/sherman" showAs="Sherman (D-CA)"/>
+            <akndiff:voter href="/us/representative/sherrill" showAs="Sherrill (D-NJ)"/>
+            <akndiff:voter href="/us/representative/simon" showAs="Simon (D-CA)"/>
+            <akndiff:voter href="/us/representative/smith-wa" showAs="Smith (WA) (D-WA)"/>
+            <akndiff:voter href="/us/representative/soto" showAs="Soto (D-FL)"/>
+            <akndiff:voter href="/us/representative/stansbury" showAs="Stansbury (D-NM)"/>
+            <akndiff:voter href="/us/representative/stevens" showAs="Stevens (D-MI)"/>
+            <akndiff:voter href="/us/representative/strickland" showAs="Strickland (D-WA)"/>
+            <akndiff:voter href="/us/representative/swalwell" showAs="Swalwell (D-CA)"/>
+            <akndiff:voter href="/us/representative/takano" showAs="Takano (D-CA)"/>
+            <akndiff:voter href="/us/representative/thompson-ca" showAs="Thompson (CA) (D-CA)"/>
+            <akndiff:voter href="/us/representative/thompson-ms" showAs="Thompson (MS) (D-MS)"/>
+            <akndiff:voter href="/us/representative/tlaib" showAs="Tlaib (D-MI)"/>
+            <akndiff:voter href="/us/representative/tokuda" showAs="Tokuda (D-HI)"/>
+            <akndiff:voter href="/us/representative/tonko" showAs="Tonko (D-NY)"/>
+            <akndiff:voter href="/us/representative/torres-ca" showAs="Torres (CA) (D-CA)"/>
+            <akndiff:voter href="/us/representative/trahan" showAs="Trahan (D-MA)"/>
+            <akndiff:voter href="/us/representative/turner-tx" showAs="Turner (TX) (D-TX)"/>
+            <akndiff:voter href="/us/representative/underwood" showAs="Underwood (D-IL)"/>
+            <akndiff:voter href="/us/representative/vargas" showAs="Vargas (D-CA)"/>
+            <akndiff:voter href="/us/representative/vasquez" showAs="Vasquez (D-NM)"/>
+            <akndiff:voter href="/us/representative/veasey" showAs="Veasey (D-TX)"/>
+            <akndiff:voter href="/us/representative/velzquez" showAs="Velázquez (D-NY)"/>
+            <akndiff:voter href="/us/representative/wasserman-schultz" showAs="Wasserman Schultz (D-FL)"/>
+            <akndiff:voter href="/us/representative/watson-coleman" showAs="Watson Coleman (D-NJ)"/>
+            <akndiff:voter href="/us/representative/williams-ga" showAs="Williams (GA) (D-GA)"/>
+            <akndiff:voter href="/us/representative/wilson-fl" showAs="Wilson (FL) (D-FL)"/>
+          </akndiff:against>
+          <akndiff:abstain/>
+        </akndiff:vote>
+
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

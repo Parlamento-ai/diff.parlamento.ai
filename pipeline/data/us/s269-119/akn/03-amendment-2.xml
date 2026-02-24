@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="s269-119-house-passage">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/us/bill/119/s/269/enr"/>
+          <FRBRuri value="/us/bill/119/s/269"/>
+          <FRBRdate date="2026-01-12" name="passage"/>
+          <FRBRauthor href="/us/house"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/us/bill/119/s/269/enr/eng@2026-01-12"/>
+          <FRBRuri value="/us/bill/119/s/269/eng@2026-01-12"/>
+          <FRBRdate date="2026-01-12" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/us/bill/119/s/269/enr/eng@2026-01-12/akn"/>
+          <FRBRuri value="/us/bill/119/s/269/eng@2026-01-12/akn"/>
+          <FRBRdate date="2026-02-24" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCOrganization eId="house" href="/us/house" showAs="United States House of Representatives"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>House Passage — S.269</docTitle></p></longTitle>
+      <p>Passed House by voice vote voice vote on 2026-01-12.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Passed House by voice vote voice vote on 2026-01-12.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/us/bill/119/s/269/eng@2025-09-19"
+      result="/us/bill/119/s/269/eng@2026-01-12">
+
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="s269-119-is">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/us/bill/119/s/269/is"/>
+          <FRBRuri value="/us/bill/119/s/269"/>
+          <FRBRdate date="2025-01-28" name="introduced"/>
+          <FRBRauthor href="/us/senator/john-kennedy"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/us/bill/119/s/269/is/eng@2025-01-28"/>
+          <FRBRuri value="/us/bill/119/s/269/eng@2025-01-28"/>
+          <FRBRdate date="2025-01-28" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/us/bill/119/s/269/is/eng@2025-01-28/akn"/>
+          <FRBRuri value="/us/bill/119/s/269/eng@2025-01-28/akn"/>
+          <FRBRdate date="2026-02-24" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCPerson eId="kennedy" href="/us/senator/john-kennedy" showAs="Sen. John Kennedy (R-LA)"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle><p>S.269 — Ending Improper Payments to Deceased People Act</p></longTitle>
+      <p>Ending Improper Payments to Deceased People Act</p>
+    </preface>
+    <body>
+      <article eId="art_1">
+        <heading>Section 1. Short title</heading>
+        <content>
+          <p>This Act may be cited as the Ending Improper Payments to Deceased People Act.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Section 2. Improving coordination between Federal and State agencies and the Do Not Pay working system</heading>
+        <content>
+          <p>(a) In general Public Law 116–260 Section 801(a) of title VIII of division FF of the Consolidated Appropriations Act, 2021 () is amended by striking paragraph (7) and inserting the following: (7) by adding at the end the following paragraph: (11) The Commissioner of Social Security shall, to the extent feasible, provide information furnished to the Commissioner under paragraph (1) to the agency operating the Do Not Pay working system described in section 3354(c) of title 31, United States Code, for the authorized uses of the Do Not Pay working system through a cooperative arrangement with such agency, provided that the requirements of subparagraphs (A) and (B) of paragraph (3) are met with respect to such arrangement with such agency. . . (b) Conforming amendment Public Law 116–260 on the date that is 3 years after the date of enactment of this Act on December 28, 2026 Section 801(b)(2) of title VIII of division FF of the Consolidated Appropriations Act, 2021 () is amended by strikingand inserting. (c) Effective date The amendments made by this section shall take effect on December 28, 2026.</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

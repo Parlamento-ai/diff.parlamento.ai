@@ -1,0 +1,88 @@
+{
+  "billId": {
+    "type": "s",
+    "number": 5,
+    "congress": 119
+  },
+  "title": "Laken Riley Act",
+  "slug": "s5-119-laken-riley-act",
+  "publicLaw": {
+    "congress": 119,
+    "number": 1
+  },
+  "timeline": [
+    {
+      "index": 0,
+      "type": "bill",
+      "label": "Placed on Calendar Senate",
+      "date": "2025-01-07",
+      "versionCode": "PCS"
+    },
+    {
+      "index": 1,
+      "type": "amendment",
+      "label": "Senate Passage",
+      "date": "2025-01-20",
+      "versionCode": "ES",
+      "voteRef": {
+        "chamber": "Senate",
+        "congress": 119,
+        "session": 1,
+        "rollNumber": 7,
+        "date": "2025-01-20",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml"
+      },
+      "chamber": "Senate"
+    },
+    {
+      "index": 2,
+      "type": "amendment",
+      "label": "House Passage",
+      "date": "2025-01-22",
+      "versionCode": "ENR",
+      "voteRef": {
+        "chamber": "House",
+        "congress": 0,
+        "session": 0,
+        "rollNumber": 23,
+        "date": "2025-01-22",
+        "url": "https://clerk.house.gov/evs/2025/roll023.xml"
+      },
+      "chamber": "House"
+    },
+    {
+      "index": 3,
+      "type": "act",
+      "label": "Public Law 119-1",
+      "date": "2025-01-22",
+      "versionCode": "ENR"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://www.congress.gov/119/bills/s5/BILLS-119s5pcs.xml",
+      "filename": "01-pcs.xml",
+      "type": "bill-xml"
+    },
+    {
+      "url": "https://www.congress.gov/119/bills/s5/BILLS-119s5es.xml",
+      "filename": "02-es.xml",
+      "type": "bill-xml"
+    },
+    {
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml",
+      "filename": "vote-senate-007.xml",
+      "type": "vote-xml"
+    },
+    {
+      "url": "https://www.congress.gov/119/bills/s5/BILLS-119s5enr.xml",
+      "filename": "03-enr.xml",
+      "type": "bill-xml"
+    },
+    {
+      "url": "https://clerk.house.gov/evs/2025/roll023.xml",
+      "filename": "vote-house-023.xml",
+      "type": "vote-xml"
+    }
+  ]
+}

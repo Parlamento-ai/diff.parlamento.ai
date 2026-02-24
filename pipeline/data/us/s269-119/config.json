@@ -1,0 +1,62 @@
+{
+  "billId": {
+    "type": "s",
+    "number": 269,
+    "congress": 119
+  },
+  "title": "Ending Improper Payments to Deceased People Act",
+  "slug": "s269-119-ending-improper-payments-to-deceased-people-act",
+  "publicLaw": {
+    "congress": 119,
+    "number": 77
+  },
+  "timeline": [
+    {
+      "index": 0,
+      "type": "bill",
+      "label": "Introduced in Senate",
+      "date": "2025-01-28",
+      "versionCode": "IS"
+    },
+    {
+      "index": 1,
+      "type": "amendment",
+      "label": "Senate Passage",
+      "date": "2025-09-19",
+      "versionCode": "ES",
+      "chamber": "Senate"
+    },
+    {
+      "index": 2,
+      "type": "amendment",
+      "label": "House Passage",
+      "date": "2026-01-12",
+      "versionCode": "ENR",
+      "chamber": "House"
+    },
+    {
+      "index": 3,
+      "type": "act",
+      "label": "Public Law 119-77",
+      "date": "2026-01-12",
+      "versionCode": "ENR"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://www.congress.gov/119/bills/s269/BILLS-119s269is.xml",
+      "filename": "01-is.xml",
+      "type": "bill-xml"
+    },
+    {
+      "url": "https://www.congress.gov/119/bills/s269/BILLS-119s269es.xml",
+      "filename": "02-es.xml",
+      "type": "bill-xml"
+    },
+    {
+      "url": "https://www.congress.gov/119/bills/s269/BILLS-119s269enr.xml",
+      "filename": "03-enr.xml",
+      "type": "bill-xml"
+    }
+  ]
+}

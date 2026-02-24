@@ -1,76 +1,64 @@
 #!/usr/bin/env tsx
 /**
- * Pipeline CLI — Generate AKN Diff XMLs from a Chilean boletín number
+ * Pipeline US — Generate AKN Diff XMLs from a US Congress bill
  *
  * Usage:
- *   npx tsx pipeline/cl/process.ts <número-boletín> [--phase=N] [--out=DIR]
+ *   npx tsx pipeline/us/process.ts <bill-id> [--phase=N] [--api-key=KEY]
  *
  * Examples:
- *   npx tsx pipeline/cl/process.ts 17370
- *   npx tsx pipeline/cl/process.ts 15480 --phase=6
- *   npx tsx pipeline/cl/process.ts 17370 --out=pipeline/data/cl/ley-17370
+ *   npx tsx pipeline/us/process.ts s5-119
+ *   npx tsx pipeline/us/process.ts s269-119 --phase=5
+ *   npx tsx pipeline/us/process.ts hr1-119 --api-key=abc123
  */
-import { existsSync, mkdirSync, readFileSync } from 'fs';
-import { join, resolve, relative } from 'path';
+import { existsSync, mkdirSync, readFileSync } from 'node:fs';
+import { join, resolve, relative } from 'node:path';
 import { discover } from './phases/1-discover.js';
 import { configure } from './phases/2-configure.js';
 import { download } from './phases/3-download.js';
-import { extract } from './phases/4-extract.js';
-import { parse } from './phases/5-parse.js';
-import { generate } from './phases/6-generate.js';
-import type { Discovery, PipelineConfig } from './types.js';
-import type { ParsedDocuments } from './phases/5-parse.js';
+import { parse } from './phases/4-parse.js';
+import { generate } from './phases/5-generate.js';
+import type { Discovery, Config, ParsedData } from './types.js';
 
-// --- CLI argument parsing ---
-
-function parseArgs(): { boletin: string; startPhase: number; outDir: string } {
+function parseArgs(): { billId: string; startPhase: number; apiKey?: string } {
 	const args = process.argv.slice(2);
 
 	if (args.length === 0 || args[0] === '--help' || args[0] === '-h') {
 		console.log(`
-Pipeline Chile — AKN Diff Generator
+Pipeline US — AKN Diff Generator
 
 Usage:
-  npx tsx pipeline/cl/process.ts <número-boletín> [options]
+  npx tsx pipeline/us/process.ts <bill-id> [options]
+
+Bill ID format: <type><number>-<congress>
+  s5-119        Senate Bill 5, 119th Congress
+  hr1-119       House Resolution 1, 119th Congress
+  s269-119      Senate Bill 269, 119th Congress
 
 Options:
-  --phase=N    Start from phase N (1-6, default: 1)
-  --out=DIR    Output directory (default: pipeline/data/cl/<boletín>)
-  -h, --help   Show this help
-
-Examples:
-  npx tsx pipeline/cl/process.ts 17370
-  npx tsx pipeline/cl/process.ts 15480 --phase=6
+  --phase=N      Start from phase N (1-5, default: 1)
+  --api-key=KEY  Congress.gov API key (default: DEMO_KEY)
+  -h, --help     Show this help
 `);
 		process.exit(0);
 	}
 
-	const boletin = args[0].replace(/[^\d]/g, ''); // strip non-digits
-	if (!boletin) {
-		console.error('Error: provide a boletín number (e.g., 17370)');
-		process.exit(1);
-	}
-
+	const billId = args[0];
 	let startPhase = 1;
-	let outDir = '';
+	let apiKey: string | undefined;
 
 	for (const arg of args.slice(1)) {
 		if (arg.startsWith('--phase=')) {
 			startPhase = parseInt(arg.split('=')[1], 10);
-			if (isNaN(startPhase) || startPhase < 1 || startPhase > 6) {
-				console.error('Error: --phase must be 1-6');
+			if (isNaN(startPhase) || startPhase < 1 || startPhase > 5) {
+				console.error('Error: --phase must be 1-5');
 				process.exit(1);
 			}
-		} else if (arg.startsWith('--out=')) {
-			outDir = arg.split('=')[1];
+		} else if (arg.startsWith('--api-key=')) {
+			apiKey = arg.split('=')[1];
 		}
 	}
 
-	if (!outDir) {
-		outDir = join('pipeline', 'data', 'cl', boletin);
-	}
-
-	return { boletin, startPhase, outDir: resolve(outDir) };
+	return { billId, startPhase, apiKey };
 }
 
 function loadJson<T>(path: string, label: string): T {
@@ -80,13 +68,18 @@ function loadJson<T>(path: string, label: string): T {
 	return JSON.parse(readFileSync(path, 'utf-8'));
 }
 
-// --- Main ---
-
 async function main(): Promise<void> {
-	const { boletin, startPhase, outDir } = parseArgs();
+	const { billId, startPhase, apiKey } = parseArgs();
+
+	if (apiKey) {
+		process.env.CONGRESS_API_KEY = apiKey;
+	}
+
+	// Output directory: pipeline/data/us/<bill-id>/
+	const outDir = resolve('pipeline', 'data', 'us', billId);
 
 	console.log(`\n╔══════════════════════════════════════╗`);
-	console.log(`║  Pipeline Chile — Boletín ${boletin.padEnd(10)}║`);
+	console.log(`║  Pipeline US — ${billId.toUpperCase().padEnd(20)}║`);
 	console.log(`╚══════════════════════════════════════╝`);
 	console.log(`  Output: ${outDir}`);
 	console.log(`  Starting from phase: ${startPhase}`);
@@ -98,14 +91,14 @@ async function main(): Promise<void> {
 	// Phase 1: DISCOVER
 	let discovery: Discovery;
 	if (startPhase <= 1) {
-		discovery = await discover(boletin, outDir);
+		discovery = await discover(billId, outDir);
 	} else {
 		console.log('\n=== Phase 1: DISCOVER (loading cached) ===');
 		discovery = loadJson(join(outDir, 'discovery.json'), 'discovery.json');
 	}
 
 	// Phase 2: CONFIGURE
-	let config: PipelineConfig;
+	let config: Config;
 	if (startPhase <= 2) {
 		config = await configure(discovery, outDir);
 	} else {
@@ -120,23 +113,16 @@ async function main(): Promise<void> {
 		console.log('\n=== Phase 3: DOWNLOAD (skipped) ===');
 	}
 
-	// Phase 4: EXTRACT
+	// Phase 4: PARSE
+	let parsed: ParsedData;
 	if (startPhase <= 4) {
-		await extract(outDir);
-	} else {
-		console.log('\n=== Phase 4: EXTRACT (skipped) ===');
-	}
-
-	// Phase 5: PARSE
-	let parsed: ParsedDocuments;
-	if (startPhase <= 5) {
 		parsed = await parse(config, outDir);
 	} else {
-		console.log('\n=== Phase 5: PARSE (loading cached) ===');
-		parsed = loadJson(join(outDir, 'articles.json'), 'articles.json');
+		console.log('\n=== Phase 4: PARSE (loading cached) ===');
+		parsed = loadJson(join(outDir, 'parsed.json'), 'parsed.json');
 	}
 
-	// Phase 6: GENERATE
+	// Phase 5: GENERATE
 	const generated = await generate(config, discovery, parsed, outDir);
 
 	const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
@@ -148,7 +134,7 @@ async function main(): Promise<void> {
 	console.log(`╚══════════════════════════════════════╝`);
 	console.log(`\n  Generated ${generated.length} AKN files in ${relAknDir}/`);
 	console.log(`\n  To register in the viewer, add to src/lib/server/boletin-loader.ts:`);
-	console.log(`    '${config.slug}': '${relAknDir}'`);
+	console.log(`    BOLETIN_DIRS['us-${config.slug}'] = '${relAknDir}'`);
 }
 
 main().catch((err) => {

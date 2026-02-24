@@ -1,0 +1,110 @@
+{
+  "billId": {
+    "type": "s",
+    "number": 5,
+    "congress": 119
+  },
+  "title": "Laken Riley Act",
+  "sponsor": {
+    "name": "Sen. Britt, Katie Boyd [R-AL]",
+    "party": "R",
+    "state": "AL"
+  },
+  "status": "enacted",
+  "publicLaw": {
+    "congress": 119,
+    "number": 1
+  },
+  "textVersions": [
+    {
+      "code": "ENR",
+      "date": "",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s5/BILLS-119s5enr.xml"
+    },
+    {
+      "code": "ES",
+      "date": "2025-01-20",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s5/BILLS-119s5es.xml"
+    },
+    {
+      "code": "PCS",
+      "date": "2025-01-07",
+      "govInfoUrl": "https://www.congress.gov/119/bills/s5/BILLS-119s5pcs.xml"
+    },
+    {
+      "code": "PLAW",
+      "date": "2025-01-30",
+      "govInfoUrl": "https://www.congress.gov/119/plaws/publ1/PLAW-119publ1_uslm.xml"
+    }
+  ],
+  "recordedVotes": [
+    {
+      "chamber": "House",
+      "congress": 0,
+      "session": 0,
+      "rollNumber": 23,
+      "date": "2025-01-22",
+      "url": "https://clerk.house.gov/evs/2025/roll023.xml"
+    },
+    {
+      "chamber": "Senate",
+      "congress": 119,
+      "session": 1,
+      "rollNumber": 7,
+      "date": "2025-01-20",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml"
+    },
+    {
+      "chamber": "Senate",
+      "congress": 119,
+      "session": 1,
+      "rollNumber": 5,
+      "date": "2025-01-17",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00005.xml"
+    },
+    {
+      "chamber": "Senate",
+      "congress": 119,
+      "session": 1,
+      "rollNumber": 2,
+      "date": "2025-01-13",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00002.xml"
+    },
+    {
+      "chamber": "Senate",
+      "congress": 119,
+      "session": 1,
+      "rollNumber": 1,
+      "date": "2025-01-09",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00001.xml"
+    }
+  ],
+  "passageActions": [
+    {
+      "date": "2025-01-20",
+      "chamber": "Senate",
+      "description": "Passed Senate with an amendment by Yea-Nay Vote. 64 - 35. Record Vote Number: 7. (text: CR S250-251)",
+      "voteRef": {
+        "chamber": "Senate",
+        "congress": 119,
+        "session": 1,
+        "rollNumber": 7,
+        "date": "2025-01-20",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml"
+      }
+    },
+    {
+      "date": "2025-01-22",
+      "chamber": "House",
+      "description": "On passage Passed by the Yeas and Nays: 263 - 156 (Roll no. 23). (text: CR H277-278)",
+      "voteRef": {
+        "chamber": "House",
+        "congress": 0,
+        "session": 0,
+        "rollNumber": 23,
+        "date": "2025-01-22",
+        "url": "https://clerk.house.gov/evs/2025/roll023.xml"
+      }
+    }
+  ]
+}

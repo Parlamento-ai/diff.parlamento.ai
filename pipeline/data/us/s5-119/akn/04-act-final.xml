@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <act name="public-law-119-1">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/us/pl/119/1"/>
+          <FRBRuri value="/us/pl/119/1"/>
+          <FRBRdate date="2025-01-22" name="enacted"/>
+          <FRBRauthor href="/us/congress"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/us/pl/119/1/eng@2025-01-22"/>
+          <FRBRuri value="/us/pl/119/1/eng@2025-01-22"/>
+          <FRBRdate date="2025-01-22" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/us/pl/119/1/eng@2025-01-22/akn"/>
+          <FRBRuri value="/us/pl/119/1/eng@2025-01-22/akn"/>
+          <FRBRdate date="2026-02-24" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p>Public Law 119-1 — Laken Riley Act</p></longTitle>
+      <p>Laken Riley Act</p>
+    </preface>
+    <body>
+      <article eId="art_1">
+        <heading>Section 1. Short title</heading>
+        <content>
+          <p>This Act may be cited as the Laken Riley Act.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <heading>Section 2. Detention of certain aliens who commit theft</heading>
+        <content>
+          <p>8 U.S.C. 1226(c) Section 236(c) of the Immigration and Nationality Act () is amended— (1) in paragraph (1)— (A) or in subparagraph (C), by striking; (B) , or in subparagraph (D), by striking the comma at the end and inserting; and (C) by inserting after subparagraph (D) the following: (E) (i) is inadmissible under paragraph (6)(A), (6)(C), or (7) of section 212(a); and (ii) is charged with, is arrested for, is convicted of, admits having committed, or admits committing acts which constitute the essential elements of any burglary, theft, larceny, shoplifting, or assault of a law enforcement officer offense, or any crime that results in death or serious bodily injury to another person, ; (2) by redesignating paragraph (2) as paragraph (4); and (3) by inserting after paragraph (1) the following: (2) Definition burglary theft larceny shoplifting assault of a law enforcement officer serious bodily injury For purposes of paragraph (1)(E), the terms,,,,, andhave the meanings given such terms in the jurisdiction in which the acts occurred. (3) Detainer The Secretary of Homeland Security shall issue a detainer for an alien described in paragraph (1)(E) and, if the alien is not otherwise detained by Federal, State, or local officials, shall effectively and expeditiously take custody of the alien. .</p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <heading>Section 3. Enforcement by attorney general of a State</heading>
+        <content>
+          <p>(a) Inspection of applicants for admission 8 U.S.C. 1225(b) Section 235(b) of the Immigration and Nationality Act () is amended— (1) by redesignating paragraph (3) as paragraph (4); and (2) by inserting after paragraph (2) the following: (3) Enforcement by attorney general of a State The attorney general of a State, or other authorized State officer, alleging a violation of the detention and removal requirements under paragraph (1) or (2) that harms such State or its residents shall have standing to bring an action against the Secretary of Homeland Security on behalf of such State or the residents of such State in an appropriate district court of the United States to obtain appropriate injunctive relief. The court shall advance on the docket and expedite the disposition of a civil action filed under this paragraph to the greatest extent practicable. For purposes of this paragraph, a State or its residents shall be considered to have been harmed if the State or its residents experience harm, including financial harm in excess of $100. . (b) Apprehension and detention of aliens 8 U.S.C. 1226 Section 236 of the Immigration and Nationality Act (), as amended by this Act, is further amended— (1) in subsection (e)— (A) or release by striking; and (B) grant, revocation, or denial revocation or denial by strikingand insert; and (2) by adding at the end the following: (f) Enforcement by attorney general of a State The attorney general of a State, or other authorized State officer, alleging an action or decision by the Attorney General or Secretary of Homeland Security under this section to release any alien or grant bond or parole to any alien that harms such State or its residents shall have standing to bring an action against the Attorney General or Secretary of Homeland Security on behalf of such State or the residents of such State in an appropriate district court of the United States to obtain appropriate injunctive relief. The court shall advance on the docket and expedite the disposition of a civil action filed under this subsection to the greatest extent practicable. For purposes of this subsection, a State or its residents shall be considered to have been harmed if the State or its residents experience harm, including financial harm in excess of $100. . (c) Penalties 8 U.S.C. 1253 Section 243 of the Immigration and Nationality Act () is amended by adding at the end the following: (e) Enforcement by attorney general of a State The attorney general of a State, or other authorized State officer, alleging a violation of the requirement to discontinue granting visas to citizens, subjects, nationals, and residents as described in subsection (d) that harms such State or its residents shall have standing to bring an action against the Secretary of State on behalf of such State or the residents of such State in an appropriate district court of the United States to obtain appropriate injunctive relief. The court shall advance on the docket and expedite the disposition of a civil action filed under this subsection to the greatest extent practicable. For purposes of this subsection, a State or its residents shall be considered to have been harmed if the State or its residents experience harm, including financial harm in excess of $100. . (d) Certain classes of aliens 8 U.S.C. 1182(d)(5) Section 212(d)(5) of the Immigration and Nationality Act () is amended— (1) Attorney General Secretary of Homeland Security by strikingeach place such term appears and inserting; and (2) by adding at the end the following: (C) The attorney general of a State, or other authorized State officer, alleging a violation of the limitation under subparagraph (A) that parole solely be granted on a case-by-case basis and solely for urgent humanitarian reasons or a significant public benefit, that harms such State or its residents shall have standing to bring an action against the Secretary of Homeland Security on behalf of such State or the residents of such State in an appropriate district court of the United States to obtain appropriate injunctive relief. The court shall advance on the docket and expedite the disposition of a civil action filed under this subparagraph to the greatest extent practicable. For purposes of this subparagraph, a State or its residents shall be considered to have been harmed if the State or its residents experience harm, including financial harm in excess of $100. . (e) Detention 8 U.S.C. 1231(a)(2) Section 241(a)(2) of the Immigration and Nationality Act () is amended— (1) During the removal period, by strikingand inserting the following: (A) In general During the removal period, ; and (2) by adding at the end the following: (B) Enforcement by attorney general of a State The attorney general of a State, or other authorized State officer, alleging a violation of the detention requirement under subparagraph (A) that harms such State or its residents shall have standing to bring an action against the Secretary of Homeland Security on behalf of such State or the residents of such State in an appropriate district court of the United States to obtain appropriate injunctive relief. The court shall advance on the docket and expedite the disposition of a civil action filed under this subparagraph to the greatest extent practicable. For purposes of this subparagraph, a State or its residents shall be considered to have been harmed if the State or its residents experience harm, including financial harm in excess of $100. . (f) Limit on injunctive relief 8 U.S.C. 1252(f) Section 242(f) of the Immigration and Nationality Act () is amended by adding at the end following: (3) Certain actions Paragraph (1) shall not apply to an action brought pursuant to section 235(b)(3), subsections (e) or (f) of section 236, or section 241(a)(2)(B). .</p>
+        </content>
+      </article>
+    </body>
+  </act>
+</akomaNtoso>

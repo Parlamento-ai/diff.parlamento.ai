@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="billres.xsl"?>
+<!DOCTYPE bill PUBLIC "-//US Congress//DTDs/bill.dtd//EN" "bill.dtd">
+<bill bill-stage="Enrolled-Bill" dms-id="A1" public-private="public" slc-id="S1-LYN25040-HG3-JY-KM3" star-print="no-star-print" bill-type="olc" stage-count="1" public-print="no">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dublinCore>
+<dc:title> S269 ENR: Ending Improper Payments to Deceased People Act</dc:title>
+<dc:publisher>U.S. Senate</dc:publisher>
+<dc:date></dc:date>
+<dc:format>text/xml</dc:format>
+<dc:language>EN</dc:language>
+<dc:rights>Pursuant to Title 17 Section 105 of the United States Code, this file is not subject to copyright protection and is in the public domain.</dc:rights>
+</dublinCore>
+</metadata>
+<form display="yes">
+    <congress>One Hundred Nineteenth Congress of the United States of America</congress>
+    <session display="yes">2d Session</session>
+    <enrolled-dateline display="yes">Begun and held at the City of Washington on Saturday, the third day of January, two thousand and twenty six</enrolled-dateline>
+    <legis-num display="yes">S. 269</legis-num>
+    <current-chamber display="no">IN THE SENATE OF THE UNITED STATES</current-chamber>
+    <legis-type display="yes">AN ACT</legis-type>
+    <official-title display="yes">To improve coordination between Federal and State agencies and the Do Not Pay working system.</official-title>
+  </form>
+  <legis-body style="OLC" display-enacting-clause="yes-display-enacting-clause">
+    <section section-type="section-one" id="S1" commented="no" display-inline="no-display-inline">
+      <enum>1.</enum>
+      <header display-inline="yes-display-inline">Short title</header>
+ <text display-inline="no-display-inline">This Act may be cited as the <quote><short-title>Ending Improper Payments to Deceased People Act</short-title></quote>.</text> </section> <section commented="no" display-inline="no-display-inline" id="id4fcc1da719284a738eac21f98c998a17" section-type="subsequent-section"> <enum>2.</enum> <header display-inline="yes-display-inline">Improving coordination between Federal and State agencies and the Do Not Pay working system</header> <subsection commented="no" display-inline="no-display-inline" id="id311d586dc5ea4c16b14b4f098217ad3b"> <enum>(a)</enum> <header display-inline="yes-display-inline">In general</header> <text display-inline="yes-display-inline">Section 205(r) of the Social Security Act (<external-xref legal-doc="usc" parsable-cite="usc/42/405">42 U.S.C. 405(r)</external-xref>), as amended by section 801(a)(7) of title VIII of division FF of the Consolidated Appropriations Act, 2021 (<external-xref legal-doc="public-law" parsable-cite="pl/116/260">Public Law 116–260</external-xref>), is amended by striking paragraph (11) and inserting the following: </text>
+        <quoted-block style="OLC" display-inline="no-display-inline" id="idf7238cd97b434a06a53ef79fba42401e">
+          <paragraph commented="no" display-inline="no-display-inline" id="id13c6063829e64a09846f72c6552e7170" indent="up1">
+            <enum>(11)</enum>
+ <text display-inline="yes-display-inline">The Commissioner of Social Security shall, to the extent feasible, provide information furnished to the Commissioner under paragraph (1) to the agency operating the Do Not Pay working system described in section 3354(c) of title 31, United States Code, for the authorized uses of the Do Not Pay working system to help prevent improper payments of, and support the recovery of improperly paid, benefits or other payments through a cooperative arrangement with such agency, provided that the requirements of subparagraphs (A) and (B) of paragraph (3) are met with respect to such arrangement with such agency. The Commissioner of Social Security and the agency operating the Do Not Pay working system shall, while the data described in the preceding sentence is being provided to the agency operating the Do Not Pay working system, enter into an agreement based upon an agreed upon methodology, which covers the proportional share of State death data costs, which the Commissioner of Social Security and the agency operating the Do Not Pay working system may periodically review.</text> </paragraph> <paragraph id="id31ab82cd151a43c291ea712775fd6f03" indent="up1" commented="no" display-inline="no-display-inline"> <enum>(12)</enum> <text display-inline="yes-display-inline">The Commissioner of Social Security may not record a death to a record that may be provided under this section for any individual unless the Commissioner of Social Security has found it has clear and convincing evidence to support that the individual should be presumed to be deceased.</text>
+          </paragraph>
+          <after-quoted-block display="yes">.</after-quoted-block>
+        </quoted-block>
+      </subsection>
+      <subsection id="idfb240e1bbcaf4cd5a665abf7c2906261" commented="no" display-inline="no-display-inline">
+        <enum>(b)</enum>
+        <header display-inline="yes-display-inline">Improving coordination regarding individuals incorrectly identified as deceased</header>
+ <text display-inline="yes-display-inline">Section 205(r)(7) of the Social Security Act (<external-xref legal-doc="usc" parsable-cite="usc/42/405">42 U.S.C. 405(r)(7)</external-xref>), as added by section 801(a)(4) of title VIII of division FF of the Consolidated Appropriations Act, 2021 (<external-xref legal-doc="public-law" parsable-cite="pl/116/260">Public Law 116–260</external-xref>), is amended by striking <quote>and</quote> at the end of subparagraph (A), by striking the period at the end of subparagraph (B) and inserting <quote>; and</quote>, and by adding at the end the following new subparagraph:</text> <quoted-block style="OLC" display-inline="no-display-inline" id="id34860e1ce8a6480891ee9ffe5d2089ef"> <subparagraph id="id93dccf2a46054366914cfa7ab02fe29a" indent="up1" commented="no" display-inline="no-display-inline"> <enum>(C)</enum> <text display-inline="yes-display-inline">notify any agency that has a cooperative arrangement with the Commissioner of Social Security under paragraph (3) or (11) of the error.</text>
+          </subparagraph>
+          <after-quoted-block display="yes">.</after-quoted-block>
+        </quoted-block>
+      </subsection>
+      <subsection commented="no" display-inline="no-display-inline" id="id771b79fcbbf6494992b0313216d4084c">
+        <enum>(c)</enum>
+        <header display-inline="yes-display-inline">Effective date</header>
+ <text display-inline="yes-display-inline">The amendments made by this section shall take effect on December 27, 2026.</text> </subsection> </section> </legis-body> <attestation> <attestation-group> <attestor display="no" /> <role>Speaker of the House of Representatives</role> </attestation-group> <attestation-group> <attestor display="no" /> <role>Vice President of the United States and President of the Senate</role> </attestation-group> </attestation> </bill>
+
