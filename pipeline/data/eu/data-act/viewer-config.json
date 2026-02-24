@@ -5,6 +5,24 @@
   "billFile": "52022PC0068-bill-akn.xml",
   "finalFile": "32023R2854-akn.xml",
   "epAmendmentsFile": null,
+  "timeline": [
+    {
+      "slug": "act-original",
+      "type": "act",
+      "label": "COM Proposal"
+    },
+    {
+      "slug": "amendment-1",
+      "type": "amendment",
+      "label": "EP First Reading",
+      "sourceType": "ep-position-html"
+    },
+    {
+      "slug": "act-final",
+      "type": "act",
+      "label": "Regulation Published"
+    }
+  ],
   "proposal": {
     "celex": "52022PC0068",
     "comYear": 2022,

@@ -5,6 +5,24 @@
   "billFile": "52020PC0825-bill-akn.xml",
   "finalFile": "32022R2065-akn.xml",
   "epAmendmentsFile": "ep-amendments-digital-services-act.xml",
+  "timeline": [
+    {
+      "slug": "act-original",
+      "type": "act",
+      "label": "COM Proposal"
+    },
+    {
+      "slug": "amendment-1",
+      "type": "amendment",
+      "label": "EP First Reading",
+      "sourceType": "ep-amendments-xml"
+    },
+    {
+      "slug": "act-final",
+      "type": "act",
+      "label": "Regulation Published"
+    }
+  ],
   "proposal": {
     "celex": "52020PC0825",
     "comYear": 2020,
@@ -25,7 +43,6 @@
     "voteDate": "2022-07-05",
     "voteFor": 539,
     "voteAgainst": 54,
-    "voteAbstain": 30,
-    "rapporteur": "Christel Schaldemose"
+    "voteAbstain": 30
   }
 }

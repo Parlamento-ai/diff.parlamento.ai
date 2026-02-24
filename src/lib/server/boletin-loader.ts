@@ -74,6 +74,7 @@ const BOLETIN_DIRS: Record<string, string> = {
 
 const SLUG_MAP: Record<string, string> = {
 	'01-act-original.xml': 'original',
+	'02-act-final.xml': 'final',
 	'02-bill.xml': 'bill',
 	'03-amendment-1.xml': 'amendment-1',
 	'04-amendment-2.xml': 'amendment-2',
@@ -293,7 +294,7 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 			'eu-dsa': { original: '52020PC0825', 'amendment-1': '52022AP0014', final: '32022R2065' },
 			'eu-ai-act': { original: '52021PC0206', 'amendment-1': '52023AP0236', final: '32024R1689' },
 			'eu-cra': { original: '52022PC0454', final: '32024R2847' },
-			'eu-data-act': { original: '52022PC0068', final: '32023R2854' }
+			'eu-data-act': { original: '52022PC0068', 'amendment-1': '52023AP0069', final: '32023R2854' }
 		};
 		const celex = euCelex[boletinSlug]?.[slug];
 		if (celex) return { url: `${eurlex}${celex}`, label: 'EUR-Lex' };
@@ -566,21 +567,29 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 	// ── EU regulations ──
 	if (boletinSlug?.startsWith('eu-')) {
 		const eurlex = 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:';
-		const euConfigs: Record<string, { slug: string; bill: string; ep: string; final: string; comLabel: string; regLabel: string }> = {
-			'eu-dma': { slug: 'digital-markets-act', bill: '52020PC0842', ep: '52021AP0499', final: '32022R1925', comLabel: 'COM(2020) 842', regLabel: 'Regulation (EU) 2022/1925' },
-			'eu-dsa': { slug: 'digital-services-act', bill: '52020PC0825', ep: '52022AP0014', final: '32022R2065', comLabel: 'COM(2020) 825', regLabel: 'Regulation (EU) 2022/2065' },
-			'eu-ai-act': { slug: 'artificial-intelligence-act', bill: '52021PC0206', ep: '52023AP0236', final: '32024R1689', comLabel: 'COM(2021) 206', regLabel: 'Regulation (EU) 2024/1689' },
-			'eu-cra': { slug: 'horizontal-cybersecurity-requirements-for-products-with-digi', bill: '52022PC0454', ep: '52024AP0130', final: '32024R2847', comLabel: 'COM(2022) 454', regLabel: 'Regulation (EU) 2024/2847' },
-			'eu-data-act': { slug: 'data-act', bill: '52022PC0068', ep: '52023AP0069', final: '32023R2854', comLabel: 'COM(2022) 68', regLabel: 'Regulation (EU) 2023/2854' }
+		const euConfigs: Record<string, { slug: string; bill: string; ep: string | null; taRef: string | null; final: string; comLabel: string; regLabel: string }> = {
+			'eu-dma': { slug: 'digital-markets-act', bill: '52020PC0842', ep: '52021AP0499', taRef: null, final: '32022R1925', comLabel: 'COM(2020) 842', regLabel: 'Regulation (EU) 2022/1925' },
+			'eu-dsa': { slug: 'digital-services-act', bill: '52020PC0825', ep: '52022AP0014', taRef: null, final: '32022R2065', comLabel: 'COM(2020) 825', regLabel: 'Regulation (EU) 2022/2065' },
+			'eu-ai-act': { slug: 'artificial-intelligence-act', bill: '52021PC0206', ep: '52023AP0236', taRef: null, final: '32024R1689', comLabel: 'COM(2021) 206', regLabel: 'Regulation (EU) 2024/1689' },
+			'eu-cra': { slug: 'horizontal-cybersecurity-requirements-for-products-with-digi', bill: '52022PC0454', ep: null, taRef: null, final: '32024R2847', comLabel: 'COM(2022) 454', regLabel: 'Regulation (EU) 2024/2847' },
+			'eu-data-act': { slug: 'data-act', bill: '52022PC0068', ep: '52023AP0069', taRef: 'TA-9-2023-0385', final: '32023R2854', comLabel: 'COM(2022) 68', regLabel: 'Regulation (EU) 2023/2854' }
 		};
 		const cfg = euConfigs[boletinSlug];
 		if (cfg) {
 			const srcDir = `pipeline/data/eu/${cfg.slug}/sources`;
 			const docs: Record<string, SourceRef[]> = {
 				original: [src(`${cfg.comLabel} Proposal`, `${srcDir}/${cfg.bill}-raw.xhtml`, 'text', `${eurlex}${cfg.bill}`)],
-				'amendment-1': [src('EP Legislative Resolution', `${srcDir}/${cfg.ep}-ep-amendments.html`, 'text', `${eurlex}${cfg.ep}`)],
 				final: [src(`${cfg.regLabel} Formex`, `${srcDir}/${cfg.final}-formex.xml`, 'xml', `${eurlex}${cfg.final}`)]
 			};
+			if (cfg.ep) {
+				if (cfg.taRef) {
+					// EP Position (full text, e.g. Data Act)
+					docs['amendment-1'] = [src('EP Position (adopted text)', `${srcDir}/${cfg.taRef}_EN.html`, 'text', `${eurlex}${cfg.ep}`)];
+				} else {
+					// EP Amendments (OJ table format)
+					docs['amendment-1'] = [src('EP Legislative Resolution', `${srcDir}/${cfg.ep}-ep-amendments.html`, 'text', `${eurlex}${cfg.ep}`)];
+				}
+			}
 			return docs[versionSlug] || [];
 		}
 	}

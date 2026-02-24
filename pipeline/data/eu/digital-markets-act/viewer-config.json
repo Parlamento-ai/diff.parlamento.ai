@@ -5,6 +5,24 @@
   "billFile": "52020PC0842-bill-akn.xml",
   "finalFile": "32022R1925-akn.xml",
   "epAmendmentsFile": "ep-amendments-digital-markets-act.xml",
+  "timeline": [
+    {
+      "slug": "act-original",
+      "type": "act",
+      "label": "COM Proposal"
+    },
+    {
+      "slug": "amendment-1",
+      "type": "amendment",
+      "label": "EP First Reading",
+      "sourceType": "ep-amendments-xml"
+    },
+    {
+      "slug": "act-final",
+      "type": "act",
+      "label": "Regulation Published"
+    }
+  ],
   "proposal": {
     "celex": "52020PC0842",
     "comYear": 2020,
@@ -25,7 +43,6 @@
     "voteDate": "2022-07-05",
     "voteFor": 588,
     "voteAgainst": 11,
-    "voteAbstain": 31,
-    "rapporteur": "Andreas Schwab"
+    "voteAbstain": 31
   }
 }

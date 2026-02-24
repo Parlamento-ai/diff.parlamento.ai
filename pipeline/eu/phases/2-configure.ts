@@ -1,10 +1,11 @@
 /**
  * Phase 2: Generate viewer-config.json + create directories
  */
-import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import type { DiscoveredConfig } from '../types.js';
 import { parseBillCelex, parseFinalCelex } from '../lib/helpers.js';
+import { isEpPositionHtml } from '../lib/ep-position-parser.js';
 
 export function configure(config: DiscoveredConfig, outDir: string): void {
 	const { slug, billCelex, finalCelex } = config;
@@ -20,6 +21,28 @@ export function configure(config: DiscoveredConfig, outDir: string): void {
 	const final = parseFinalCelex(finalCelex);
 	const typePrefix = final?.type === 'L' ? 'dir' : final?.type === 'D' ? 'dec' : 'reg';
 
+	// Detect intermediate document type
+	let intermediateType: 'ep-amendments' | 'ep-position' | 'none' = 'none';
+	if (hasEpAmendments) {
+		intermediateType = 'ep-amendments';
+	} else if (config.taReference) {
+		const taHtmlPath = join(srcDir, `${config.taReference}_EN.html`);
+		if (existsSync(taHtmlPath)) {
+			const html = readFileSync(taHtmlPath, 'utf-8');
+			if (isEpPositionHtml(html)) intermediateType = 'ep-position';
+		}
+	}
+
+	// Build timeline with real legislative steps
+	const timeline: { slug: string; type: string; label: string; sourceType?: string }[] = [];
+	timeline.push({ slug: 'act-original', type: 'act', label: 'COM Proposal' });
+	if (intermediateType === 'ep-amendments') {
+		timeline.push({ slug: 'amendment-1', type: 'amendment', label: 'EP First Reading', sourceType: 'ep-amendments-xml' });
+	} else if (intermediateType === 'ep-position') {
+		timeline.push({ slug: 'amendment-1', type: 'amendment', label: 'EP First Reading', sourceType: 'ep-position-html' });
+	}
+	timeline.push({ slug: 'act-final', type: 'act', label: 'Regulation Published' });
+
 	const viewerConfig = {
 		slug: `${slug}-regulation`,
 		sourcesDir: 'sources',
@@ -27,6 +50,7 @@ export function configure(config: DiscoveredConfig, outDir: string): void {
 		billFile: `${billCelex}-bill-akn.xml`,
 		finalFile: `${finalCelex}-akn.xml`,
 		epAmendmentsFile: hasEpAmendments ? `ep-amendments-${slug}.xml` : null,
+		timeline,
 		proposal: {
 			celex: billCelex,
 			comYear: bill?.comYear ?? 0,

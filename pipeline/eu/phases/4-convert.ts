@@ -6,6 +6,7 @@ import { resolve, join } from 'node:path';
 import type { DiscoveredConfig, StepResult } from '../types.js';
 import { convertFormexToAkn } from '../lib/formex-to-akn.js';
 import { convertEpAmendments } from '../lib/ep-amendments.js';
+import { isEpPositionHtml, parseEpPosition } from '../lib/ep-position-parser.js';
 import {
 	countTag,
 	extractFRBRuri,
@@ -172,6 +173,57 @@ export async function convert(
 							record(num, id, name, 'FAIL', e.message || 'conversion error', t0);
 						}
 					}
+				}
+			}
+		}
+	}
+
+	// --- Step 3: EP Position (full text) ---
+	{
+		const id = 'ep-position',
+			num = 3,
+			name = 'EP Position';
+		const t0 = Date.now();
+
+		// Read viewer-config to check if this regulation uses ep-position-html
+		const configPath = join(regDir, 'viewer-config.json');
+		let hasEpPosition = false;
+		if (existsSync(configPath)) {
+			const viewerConfig = JSON.parse(readFileSync(configPath, 'utf-8'));
+			hasEpPosition = viewerConfig.timeline?.some(
+				(e: { sourceType?: string }) => e.sourceType === 'ep-position-html'
+			);
+		}
+
+		if (!hasEpPosition) {
+			// Not applicable — skip silently
+		} else {
+			const epHtmlName = taReference
+				? `${taReference}_EN.html`
+				: `${epPositionCelex}-ep-amendments.html`;
+			const epHtmlPath = join(srcDir, epHtmlName);
+			const epPositionJsonPath = join(srcDir, `ep-position-${slug}.json`);
+
+			if (existsSync(epPositionJsonPath)) {
+				const cached = JSON.parse(readFileSync(epPositionJsonPath, 'utf-8'));
+				record(num, id, name, 'PASS', `${cached.articles?.length ?? 0} articles (cached)`, t0);
+			} else if (!existsSync(epHtmlPath)) {
+				record(num, id, name, 'FAIL', 'EP Position HTML not found', t0);
+			} else {
+				const html = readFileSync(epHtmlPath, 'utf-8');
+				if (!isEpPositionHtml(html)) {
+					record(num, id, name, 'WARN', 'HTML is not EP Position format', t0);
+				} else {
+					const result = parseEpPosition(html);
+					writeFileSync(epPositionJsonPath, JSON.stringify(result, null, 2), 'utf-8');
+					record(
+						num,
+						id,
+						name,
+						result.articles.length > 0 ? 'PASS' : 'WARN',
+						`${result.articles.length} articles parsed from EP Position`,
+						t0
+					);
 				}
 			}
 		}

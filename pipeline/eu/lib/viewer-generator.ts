@@ -19,7 +19,7 @@
  *   }
  */
 
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { createRequire } from 'node:module';
 
@@ -242,8 +242,8 @@ ${arts}
 
 	// --- Generate 01-act-original.xml ---
 
-	function generateActOriginal() {
-		console.log('Generating 01-act-original.xml (COM proposal)...');
+	function generateActOriginal(fileName = '01-act-original.xml') {
+		console.log(`Generating ${fileName} (COM proposal)...`);
 
 		const parsed = parseFile(config.billFile);
 		const root = parsed.akomaNtoso as Record<string, unknown>;
@@ -295,15 +295,15 @@ ${serializeSections(sections)}
   </act>
 </akomaNtoso>`;
 
-		const outPath = join(OUTPUT_DIR, '01-act-original.xml');
+		const outPath = join(OUTPUT_DIR, fileName);
 		writeFileSync(outPath, xml, 'utf-8');
 		console.log(`  Written: ${outPath} (${(xml.length / 1024).toFixed(0)} KB)`);
 	}
 
 	// --- Generate 03-act-final.xml ---
 
-	function generateActFinal() {
-		console.log('Generating 03-act-final.xml (Final Regulation)...');
+	function generateActFinal(fileName = '03-act-final.xml') {
+		console.log(`Generating ${fileName} (Final Regulation)...`);
 
 		const parsed = parseFile(config.finalFile);
 		const root = parsed.akomaNtoso as Record<string, unknown>;
@@ -355,7 +355,7 @@ ${serializeSections(sections)}
   </act>
 </akomaNtoso>`;
 
-		const outPath = join(OUTPUT_DIR, '03-act-final.xml');
+		const outPath = join(OUTPUT_DIR, fileName);
 		writeFileSync(outPath, xml, 'utf-8');
 		console.log(`  Written: ${outPath} (${(xml.length / 1024).toFixed(0)} KB)`);
 	}
@@ -412,17 +412,17 @@ ${serializeSections(sections)}
 		}).join('\n');
 	}
 
-	function enrichEpAmendments() {
+	function enrichEpAmendments(fileName = '02-amendment-1.xml') {
 		const lp = config.legislativeProcedure;
 
 		if (!config.epAmendmentsFile) {
 			// No EP amendments file (trilogue) — generate amendment by diffing bill vs final
 			if (!lp?.voteDate || !lp?.voteFor) {
-				console.log('Skipping 02-amendment-1.xml (no epAmendmentsFile and no vote data)');
+				console.log(`Skipping ${fileName} (no epAmendmentsFile and no vote data)`);
 				return;
 			}
 
-			console.log('Generating 02-amendment-1.xml (trilogue — diffing bill vs final)...');
+			console.log(`Generating ${fileName} (trilogue — diffing bill vs final)...`);
 
 			// Parse bill and final to extract articles for comparison
 			const billPath = join(SOURCES_DIR, config.billFile);
@@ -565,7 +565,7 @@ ${serializeSections(sections)}
   </amendment>
 </akomaNtoso>`;
 
-			const outPath = join(OUTPUT_DIR, '02-amendment-1.xml');
+			const outPath = join(OUTPUT_DIR, fileName);
 			writeFileSync(outPath, xml, 'utf-8');
 			console.log(`  Written: ${outPath} (${(xml.length / 1024).toFixed(0)} KB)`);
 			return;
@@ -579,7 +579,7 @@ ${serializeSections(sections)}
 
 		if (!lp?.voteDate) {
 			console.log('No legislativeProcedure.voteDate in config, copying file as-is');
-			copyFileSync(srcPath, join(OUTPUT_DIR, '02-amendment-1.xml'));
+			copyFileSync(srcPath, join(OUTPUT_DIR, fileName));
 			return;
 		}
 
@@ -587,7 +587,7 @@ ${serializeSections(sections)}
 
 		if (!voteData) {
 			console.log(`Vote index not found, copying amendment file as-is`);
-			copyFileSync(srcPath, join(OUTPUT_DIR, '02-amendment-1.xml'));
+			copyFileSync(srcPath, join(OUTPUT_DIR, fileName));
 			return;
 		}
 
@@ -595,11 +595,11 @@ ${serializeSections(sections)}
 
 		if (!match) {
 			console.log(`No matching decision found for ${lp.voteFor}-${lp.voteAgainst}-${lp.voteAbstain}, copying as-is`);
-			copyFileSync(srcPath, join(OUTPUT_DIR, '02-amendment-1.xml'));
+			copyFileSync(srcPath, join(OUTPUT_DIR, fileName));
 			return;
 		}
 
-		console.log(`Enriching 02-amendment-1.xml with ${match.voters.for.length + match.voters.against.length + match.voters.abstain.length} voter names from decision #${match.index}`);
+		console.log(`Enriching ${fileName} with ${match.voters.for.length + match.voters.against.length + match.voters.abstain.length} voter names from decision #${match.index}`);
 
 		let xml = readFileSync(srcPath, 'utf-8');
 
@@ -627,9 +627,203 @@ ${serializeSections(sections)}
 			`${tlcPersons}\n      </references>`
 		);
 
-		const outPath = join(OUTPUT_DIR, '02-amendment-1.xml');
+		const outPath = join(OUTPUT_DIR, fileName);
 		writeFileSync(outPath, xml, 'utf-8');
 		console.log(`  Written enriched: ${outPath} (${(xml.length / 1024).toFixed(0)} KB, ${allVoters.length} voters)`);
+	}
+
+	// --- Generate EP Position diff (COM proposal vs EP Position full text) ---
+
+	function generateEpPositionDiff(fileName: string) {
+		const lp = config.legislativeProcedure;
+		if (!lp?.voteDate || !lp?.voteFor) {
+			console.log(`Skipping ${fileName} (no vote data for EP Position diff)`);
+			return;
+		}
+
+		// Extract slug from config.slug (e.g. "data-act-regulation" → look for ep-position-data-act.json)
+		const regSlug = config.slug.replace(/-regulation$/, '');
+		const epPositionPath = join(SOURCES_DIR, `ep-position-${regSlug}.json`);
+
+		if (!existsSync(epPositionPath)) {
+			console.log(`  Warning: EP Position JSON not found at ${epPositionPath}, falling back to trilogue diff`);
+			enrichEpAmendments(fileName);
+			return;
+		}
+
+		console.log(`Generating ${fileName} (EP Position diff — COM proposal vs EP Position)...`);
+
+		const epPositionData = JSON.parse(readFileSync(epPositionPath, 'utf-8'));
+		const epArticles: { eId: string; num: number; heading: string; content: string }[] = epPositionData.articles;
+
+		// Parse bill to extract COM proposal articles
+		const billPath = join(SOURCES_DIR, config.billFile);
+		if (!existsSync(billPath)) {
+			console.log('  Warning: bill file missing, cannot generate EP Position diff');
+			return;
+		}
+
+		const billParsed = parser.parse(readFileSync(billPath, 'utf-8'));
+		const billBody = billParsed?.akomaNtoso?.act?.body || billParsed?.akomaNtoso?.bill?.body;
+		const billSections = billBody ? autoDetectSections(billBody) : [];
+		const billArticles: ArticleData[] = billSections.flatMap(s => s.articles);
+
+		// Build maps by article number
+		const billByNum = new Map<number, ArticleData>();
+		for (const art of billArticles) billByNum.set(artNum(art.eId), art);
+		const epByNum = new Map<number, typeof epArticles[0]>();
+		for (const art of epArticles) epByNum.set(art.num, art);
+
+		// Compare articles
+		const allNums = new Set([...billByNum.keys(), ...epByNum.keys()]);
+		const sortedNums = [...allNums].sort((a, b) => a - b);
+
+		const articleChanges: string[] = [];
+		let substitutes = 0, inserts = 0, repeals = 0;
+
+		for (const num of sortedNums) {
+			const bill = billByNum.get(num);
+			const ep = epByNum.get(num);
+
+			if (bill && ep) {
+				if (bill.content !== ep.content || bill.heading !== ep.heading) {
+					const oldText = bill.heading ? `${bill.heading} ${bill.content}` : bill.content;
+					const newText = ep.heading ? `${ep.heading} ${ep.content}` : ep.content;
+					articleChanges.push(`      <akndiff:articleChange article="art_${num}" type="substitute">
+        <akndiff:old>${escapeXml(oldText)}</akndiff:old>
+        <akndiff:new>${escapeXml(newText)}</akndiff:new>
+      </akndiff:articleChange>`);
+					substitutes++;
+				}
+			} else if (ep && !bill) {
+				const newText = ep.heading ? `${ep.heading} ${ep.content}` : ep.content;
+				const afterNum = num > 1 ? num - 1 : 0;
+				articleChanges.push(`      <akndiff:articleChange article="art_${num}" type="insert"${afterNum > 0 ? ` after="art_${afterNum}"` : ''}>
+        <akndiff:new>${escapeXml(newText)}</akndiff:new>
+      </akndiff:articleChange>`);
+				inserts++;
+			} else if (bill && !ep) {
+				articleChanges.push(`      <akndiff:articleChange article="art_${num}" type="repeal">
+        <akndiff:old>${escapeXml(bill.heading ? `${bill.heading} ${bill.content}` : bill.content)}</akndiff:old>
+      </akndiff:articleChange>`);
+				repeals++;
+			}
+		}
+
+		console.log(`  Diff: ${substitutes} substituted, ${inserts} inserted, ${repeals} repealed (of ${sortedNums.length} total articles)`);
+
+		// Build vote XML
+		const voteData = loadVoteIndex();
+		const match = voteData?.match;
+
+		let forXml = `<akndiff:for count="${lp.voteFor}"/>`;
+		let againstXml = `<akndiff:against count="${lp.voteAgainst}"/>`;
+		let abstainXml = `<akndiff:abstain count="${lp.voteAbstain}"/>`;
+		let tlcPersons = '';
+
+		if (match) {
+			forXml = `<akndiff:for count="${match.forCount}">\n${voterElements(match.voters.for)}\n      </akndiff:for>`;
+			againstXml = `<akndiff:against count="${match.againstCount}">\n${voterElements(match.voters.against)}\n      </akndiff:against>`;
+			abstainXml = `<akndiff:abstain count="${match.abstainCount}">\n${voterElements(match.voters.abstain)}\n      </akndiff:abstain>`;
+			const allVoters = [...match.voters.for, ...match.voters.against, ...match.voters.abstain];
+			tlcPersons = allVoters.length > 0 ? '\n' + buildTlcPersonElements(allVoters) : '';
+			console.log(`  Enriched with ${allVoters.length} voter names from decision #${match.index}`);
+		}
+
+		const taRef = config.proposal?.celex ? `ta-${lp.voteDate.replace(/-/g, '')}-${config.proposal.celex}` : `ta-${lp.voteDate.replace(/-/g, '')}`;
+		const title = config.proposal?.title || config.final?.title || '';
+		const baseUri = config.proposal?.celex ? `http://data.europa.eu/eli/comProposal/${config.proposal.comYear}/${config.proposal.comNum}/en` : '';
+		const today = new Date().toISOString().slice(0, 10);
+
+		const articleChangesXml = articleChanges.length > 0 ? '\n' + articleChanges.join('\n') : '';
+
+		const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="EP legislative resolution - ${escapeXml(title)}">
+    <meta>
+      <identification source="#ep">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/amendment/ep/${lp.voteDate}/${taRef}/main"/>
+          <FRBRuri value="/akn/eu/amendment/ep/${lp.voteDate}/${taRef}/main"/>
+          <FRBRdate date="${lp.voteDate}" name="EP First Reading"/>
+          <FRBRauthor href="https://www.europarl.europa.eu"/>
+          <FRBRcountry value="eu"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/amendment/ep/${lp.voteDate}/${taRef}/eng@${lp.voteDate}"/>
+          <FRBRuri value="/akn/eu/amendment/ep/${lp.voteDate}/${taRef}/eng@${lp.voteDate}"/>
+          <FRBRdate date="${lp.voteDate}" name="EP First Reading"/>
+          <FRBRlanguage language="en"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/amendment/ep/${lp.voteDate}/${taRef}/eng@${lp.voteDate}/akn"/>
+          <FRBRuri value="/akn/eu/amendment/ep/${lp.voteDate}/${taRef}/eng@${lp.voteDate}/akn"/>
+          <FRBRdate date="${today}" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCOrganization eId="ep" href="https://www.europarl.europa.eu" showAs="European Parliament"/>${tlcPersons}
+      </references>
+    </meta>
+    <preface>
+      <p class="title"><docTitle>${escapeXml(title)}</docTitle></p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <block name="epfirstreading"><p>EP First Reading — changes derived by comparing COM proposal with EP adopted text.</p></block>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet base="${escapeXml(baseUri)}" result="/akn/eu/amendment/ep/${lp.voteDate}/${taRef}/eng@${lp.voteDate}">
+      <akndiff:vote date="${lp.voteDate}" result="approved" source="https://www.europarl.europa.eu">
+        ${forXml}
+        ${againstXml}
+        ${abstainXml}
+      </akndiff:vote>${articleChangesXml}
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>`;
+
+		const outPath = join(OUTPUT_DIR, fileName);
+		writeFileSync(outPath, xml, 'utf-8');
+		console.log(`  Written: ${outPath} (${(xml.length / 1024).toFixed(0)} KB)`);
+	}
+
+	// --- Generate from timeline (dynamic file generation) ---
+
+	function generateFromTimeline(timeline: { slug: string; type: string; label: string; sourceType?: string }[]) {
+		// Clean up stale XML files (not metadata JSON)
+		const expectedFiles = new Set(
+			timeline.map((entry, i) => {
+				const num = String(i + 1).padStart(2, '0');
+				return `${num}-${entry.slug}.xml`;
+			})
+		);
+		if (existsSync(OUTPUT_DIR)) {
+			for (const file of readdirSync(OUTPUT_DIR)) {
+				if (file.endsWith('.xml') && !expectedFiles.has(file)) {
+					const stalePath = join(OUTPUT_DIR, file);
+					unlinkSync(stalePath);
+					console.log(`  Removed stale file: ${file}`);
+				}
+			}
+		}
+
+		for (let i = 0; i < timeline.length; i++) {
+			const entry = timeline[i];
+			const num = String(i + 1).padStart(2, '0');
+			const fileName = `${num}-${entry.slug}.xml`;
+
+			if (entry.type === 'act' && entry.slug === 'act-original') {
+				generateActOriginal(fileName);
+			} else if (entry.type === 'act' && entry.slug === 'act-final') {
+				generateActFinal(fileName);
+			} else if (entry.type === 'amendment' && entry.sourceType === 'ep-amendments-xml') {
+				enrichEpAmendments(fileName);
+			} else if (entry.type === 'amendment' && entry.sourceType === 'ep-position-html') {
+				generateEpPositionDiff(fileName);
+			}
+		}
 	}
 
 	// --- Generate 00-metadata.json (supplementary data for viewer) ---
@@ -797,9 +991,13 @@ ${serializeSections(sections)}
 
 	console.log(`=== Viewer XML Generator (${config.slug}) ===\n`);
 
-	generateActOriginal();
-	enrichEpAmendments();
-	generateActFinal();
+	if (config.timeline) {
+		generateFromTimeline(config.timeline);
+	} else {
+		generateActOriginal();
+		enrichEpAmendments();
+		generateActFinal();
+	}
 	generateMetadata();
 	qualityCheck();
 

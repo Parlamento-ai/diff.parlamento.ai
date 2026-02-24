@@ -5,6 +5,24 @@
   "billFile": "52021PC0206-bill-akn.xml",
   "finalFile": "32024R1689-akn.xml",
   "epAmendmentsFile": "ep-amendments-artificial-intelligence-act.xml",
+  "timeline": [
+    {
+      "slug": "act-original",
+      "type": "act",
+      "label": "COM Proposal"
+    },
+    {
+      "slug": "amendment-1",
+      "type": "amendment",
+      "label": "EP First Reading",
+      "sourceType": "ep-amendments-xml"
+    },
+    {
+      "slug": "act-final",
+      "type": "act",
+      "label": "Regulation Published"
+    }
+  ],
   "proposal": {
     "celex": "52021PC0206",
     "comYear": 2021,
@@ -25,7 +43,6 @@
     "voteDate": "2024-03-13",
     "voteFor": 523,
     "voteAgainst": 46,
-    "voteAbstain": 49,
-    "rapporteur": "Brando Benifei, Dragoş Tudorache"
+    "voteAbstain": 49
   }
 }

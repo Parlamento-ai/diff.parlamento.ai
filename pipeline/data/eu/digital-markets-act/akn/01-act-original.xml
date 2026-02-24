@@ -20,7 +20,7 @@
         <FRBRManifestation>
           <FRBRthis value="http://data.europa.eu/eli/comProposal/2020/842/en/akn"/>
           <FRBRuri value="http://data.europa.eu/eli/comProposal/2020/842/en/akn"/>
-          <FRBRdate date="2026-02-23" name="generation"/>
+          <FRBRdate date="2026-02-24" name="generation"/>
         </FRBRManifestation>
       </identification>
       <references>

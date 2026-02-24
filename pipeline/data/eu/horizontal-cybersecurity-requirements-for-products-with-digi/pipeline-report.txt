@@ -1,10 +1,15 @@
 ═══════════════════════════════════════════════════════
   EU AKN Pipeline: horizontal-cybersecurity-requirements-for-products-with-digi
-  Procedure: 2022/0272(COD)
   Title: Horizontal cybersecurity requirements for products with digital elements and amending Regulation (EU) 2019/1020
 ═══════════════════════════════════════════════════════
+  [PASS]  1. Download bill       57 articles (cached)                0.0s
+  [PASS]  2. Download formex     71 ARTICLE (cached)                 0.0s
+  [PASS]  3. Download EP HTML    cached: TA-9-2024-0130_EN.html      0.0s
+  [PASS]  1. Formex → AKN        71 articles (cached)                0.0s
+  [WARN]  2. EP amendments       No amendment tables in OJ HTML (trilogue text) 0.0s
+  [PASS]  1. Viewer XMLs         2 files                             0.1s
   [PASS]  1. Communication       17 events (cached)                  0.0s
-  [PASS]  2. Votes               164 decisions                       131.6s
+  [PASS]  2. Votes               164 decisions (cached)              0.0s
   [PASS]  3. Citation            86 agenda items (cached)            0.0s
   [PASS]  4. Gazette             1 OJ entries (cached)               0.0s
 
@@ -14,5 +19,5 @@
   [PASS]  Articles 57→71 (growth OK)
   [PASS]  Vote date MTG-PL-2024-03-12 (auto-discovered)
 
-  RESULT: 4 pass, 0 fail, 0 warn (131.8s)
+  RESULT: 9 pass, 0 fail, 1 warn (0.2s)
 ═══════════════════════════════════════════════════════

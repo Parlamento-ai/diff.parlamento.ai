@@ -1,7 +1,7 @@
 /**
  * Phase 5: Generate viewer XMLs
  */
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import type { DiscoveredConfig, StepResult } from '../types.js';
 import { generateViewerXmls } from '../lib/viewer-generator.js';
@@ -34,10 +34,22 @@ export function generate(config: DiscoveredConfig, outDir: string): StepResult[]
 	try {
 		generateViewerXmls(configPath);
 
-		const expectedFiles = ['01-act-original.xml', '03-act-final.xml'];
-		const epAmendmentsPath = join(regDir, 'sources', `ep-amendments-${slug}.xml`);
-		if (existsSync(epAmendmentsPath)) {
-			expectedFiles.splice(1, 0, '02-amendment-1.xml');
+		// Determine expected files from timeline or legacy detection
+		let expectedFiles: string[];
+		const viewerConfig = JSON.parse(readFileSync(configPath, 'utf-8'));
+		if (viewerConfig.timeline) {
+			expectedFiles = viewerConfig.timeline.map(
+				(entry: { slug: string }, i: number) => {
+					const num = String(i + 1).padStart(2, '0');
+					return `${num}-${entry.slug}.xml`;
+				}
+			);
+		} else {
+			expectedFiles = ['01-act-original.xml', '03-act-final.xml'];
+			const epAmendmentsPath = join(regDir, 'sources', `ep-amendments-${slug}.xml`);
+			if (existsSync(epAmendmentsPath)) {
+				expectedFiles.splice(1, 0, '02-amendment-1.xml');
+			}
 		}
 
 		const existing = expectedFiles.filter((f) => existsSync(join(aknDir, f)));

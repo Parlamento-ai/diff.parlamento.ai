@@ -1,10 +1,16 @@
 ═══════════════════════════════════════════════════════
   EU AKN Pipeline: data-act
-  Procedure: 2022/0047(COD)
   Title: Harmonised rules on fair access to and use of data (Data Act)
 ═══════════════════════════════════════════════════════
+  [PASS]  1. Download bill       42 articles (cached)                0.0s
+  [PASS]  2. Download formex     50 ARTICLE (cached)                 0.0s
+  [PASS]  3. Download EP HTML    cached: TA-9-2023-0385_EN.html      0.0s
+  [PASS]  1. Formex → AKN        50 articles (cached)                0.0s
+  [WARN]  2. EP amendments       No amendment tables in OJ HTML (trilogue text) 0.0s
+  [PASS]  3. EP Position         42 articles (cached)                0.0s
+  [PASS]  1. Viewer XMLs         3 files                             0.2s
   [PASS]  1. Communication       25 events (cached)                  0.0s
-  [PASS]  2. Votes               472 decisions                       83.4s
+  [PASS]  2. Votes               472 decisions (cached)              0.0s
   [PASS]  3. Citation            118 agenda items (cached)           0.0s
   [PASS]  4. Gazette             1 OJ entries (cached)               0.0s
 
@@ -14,5 +20,5 @@
   [PASS]  Articles 42→50 (growth OK)
   [PASS]  Vote date MTG-PL-2023-11-09 (auto-discovered)
 
-  RESULT: 4 pass, 0 fail, 0 warn (83.6s)
+  RESULT: 10 pass, 0 fail, 1 warn (0.4s)
 ═══════════════════════════════════════════════════════

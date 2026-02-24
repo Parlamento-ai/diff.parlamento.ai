@@ -5,6 +5,18 @@
   "billFile": "52022PC0454-bill-akn.xml",
   "finalFile": "32024R2847-akn.xml",
   "epAmendmentsFile": null,
+  "timeline": [
+    {
+      "slug": "act-original",
+      "type": "act",
+      "label": "COM Proposal"
+    },
+    {
+      "slug": "act-final",
+      "type": "act",
+      "label": "Regulation Published"
+    }
+  ],
   "proposal": {
     "celex": "52022PC0454",
     "comYear": 2022,
