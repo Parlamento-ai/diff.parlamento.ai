@@ -1,0 +1,112 @@
+{
+  "boeId": "BOE-A-2015-10565",
+  "slug": "ley-39-2015-procedimiento-administrativo-comun",
+  "titulo": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.",
+  "rango": "Ley",
+  "eli": "/es/l/2015/10/01/39",
+  "timeline": [
+    {
+      "slug": "act-original",
+      "label": "Ley 39/2015 (original)",
+      "date": "2016-10-02",
+      "type": "act-original"
+    },
+    {
+      "slug": "amendment-1",
+      "label": "Modificada por , en el Recurso 3628/2016, la inconstitucionalidad y nulidad de lo indicado de l",
+      "date": "2018-06-22",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2018-8574"
+    },
+    {
+      "slug": "amendment-2",
+      "label": "Modificada por la disposición final 7, por Real Decreto-ley 11/2018, de 31 de agosto",
+      "date": "2018-09-04",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2018-12131"
+    },
+    {
+      "slug": "amendment-3",
+      "label": "Modificada por el art. 28.2 y 3, por Ley Orgánica 3/2018, de 5 de diciembre",
+      "date": "2018-12-07",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2018-16673"
+    },
+    {
+      "slug": "amendment-4",
+      "label": "Modificada por los arts. 9, 10 y SE AÑADE la disposición adicional 6, por Real Decreto-ley 14/2",
+      "date": "2019-11-06",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2019-15790"
+    },
+    {
+      "slug": "amendment-5",
+      "label": "Modificada por la disposición final 7, por Real Decreto-ley 27/2020, de 4 de agosto",
+      "date": "2020-08-05",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2020-9131"
+    },
+    {
+      "slug": "amendment-6",
+      "label": "Modificada por la modificación de la disposición final 7, en la redacción dada por el Real Decr",
+      "date": "2020-09-11",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2020-10491"
+    },
+    {
+      "slug": "amendment-7",
+      "label": "Modificada por , con efectos desde el 23 de septiembre de 2020, la disposición final 7, por Rea",
+      "date": "2020-09-23",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2020-11043"
+    },
+    {
+      "slug": "amendment-8",
+      "label": "Modificada por la disposición final 7, con variación de efectos en su entrada en vigor, por Ley",
+      "date": "2021-07-11",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2021-11472"
+    },
+    {
+      "slug": "amendment-9",
+      "label": "Modificada por el art. 32, por Real Decreto-ley 6/2022, de 29 de marzo",
+      "date": "2022-03-31",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2022-4972"
+    },
+    {
+      "slug": "amendment-10",
+      "label": "Modificada por los arts. 9.2.c), 10.2.c) y SE AÑADE la disposición adicional 7, por Ley 11/2022",
+      "date": "2022-06-30",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2022-10757"
+    },
+    {
+      "slug": "amendment-11",
+      "label": "Modificada por art. 77, por Ley 15/2022, de 12 de julio",
+      "date": "2022-07-14",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2022-11589"
+    },
+    {
+      "slug": "amendment-12",
+      "label": "Modificada por la disposición adicional 8, por Real Decreto-ley 18/2022, de 18 de octubre",
+      "date": "2022-10-20",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2022-17040"
+    },
+    {
+      "slug": "amendment-13",
+      "label": "Modificada por la disposición adicional 9, por Real Decreto-ley 6/2024, de 5 de noviembre",
+      "date": "2024-11-07",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2024-22928"
+    },
+    {
+      "slug": "act-final",
+      "label": "Ley 39/2015 (vigente)",
+      "date": "2024-11-07",
+      "type": "act-final"
+    }
+  ]
+}

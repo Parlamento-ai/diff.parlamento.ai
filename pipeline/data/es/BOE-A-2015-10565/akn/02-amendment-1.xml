@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-39-2015-procedimiento-administrativo-comun-amendment-1">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2015/10/01/39"/>
+          <FRBRuri value="/es/l/2015/10/01/39"/>
+          <FRBRdate date="2018-06-22" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2018-06-22"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2018-06-22"/>
+          <FRBRdate date="2018-06-22" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2018-06-22/akn"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2018-06-22/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por , en el Recurso 3628/2016, la inconstitucionalidad y nulidad de lo indicado de l</docTitle></p></longTitle>
+      <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2015/10/01/39/spa@2016-10-02"
+      result="/es/l/2015/10/01/39/spa@2018-06-22">
+        <akndiff:articleChange article="art_6" type="substitute">
+          <akndiff:old>1. La Administración General del Estado, las Comunidades Autónomas y las Entidades Locales dispondrán de un registro electrónico general de apoderamientos, en el que deberán inscribirse, al menos, los de carácter general otorgados apud acta, presencial o electrónicamente, por quien ostente la condición de interesado en un procedimiento administrativo a favor de representante, para actuar en su nombre ante las Administraciones Públicas. También deberá constar el bastanteo realizado del poder.
+En el ámbito estatal, este registro será el Registro Electrónico de Apoderamientos de la Administración General del Estado.
+Los registros generales de apoderamientos no impedirán la existencia de registros particulares en cada Organismo donde se inscriban los poderes otorgados para la realización de trámites específicos en el mismo. Cada Organismo podrá disponer de su propio registro electrónico de apoderamientos.
+2. Los registros electrónicos generales y particulares de apoderamientos pertenecientes a todas y cada una de las Administraciones, deberán ser plenamente interoperables entre sí, de modo que se garantice su interconexión, compatibilidad informática, así como la transmisión telemática de las solicitudes, escritos y comunicaciones que se incorporen a los mismos.
+Los registros electrónicos generales y particulares de apoderamientos permitirán comprobar válidamente la representación de quienes actúen ante las Administraciones Públicas en nombre de un tercero, mediante la consulta a otros registros administrativos similares, al registro mercantil, de la propiedad, y a los protocolos notariales.
+Los registros mercantiles, de la propiedad, y de los protocolos notariales serán interoperables con los registros electrónicos generales y particulares de apoderamientos.
+3. Los asientos que se realicen en los registros electrónicos generales y particulares de apoderamientos deberán contener, al menos, la siguiente información:
+a) Nombre y apellidos o la denominación o razón social, documento nacional de identidad, número de identificación fiscal o documento equivalente del poderdante.
+b) Nombre y apellidos o la denominación o razón social, documento nacional de identidad, número de identificación fiscal o documento equivalente del apoderado.
+c) Fecha de inscripción.
+d) Período de tiempo por el cual se otorga el poder.
+e) Tipo de poder según las facultades que otorgue.
+4. Los poderes que se inscriban en los registros electrónicos generales y particulares de apoderamientos deberán corresponder a alguna de las siguientes tipologías:
+a) Un poder general para que el apoderado pueda actuar en nombre del poderdante en cualquier actuación administrativa y ante cualquier Administración.
+b) Un poder para que el apoderado pueda actuar en nombre del poderdante en cualquier actuación administrativa ante una Administración u Organismo concreto.
+c) Un poder para que el apoderado pueda actuar en nombre del poderdante únicamente para la realización de determinados trámites especificados en el poder.
+A tales efectos, por Orden del Ministro de Hacienda y Administraciones Públicas se aprobarán, con carácter básico, los modelos de poderes inscribibles en el registro distinguiendo si permiten la actuación ante todas las Administraciones de acuerdo con lo previsto en la letra a) anterior, ante la Administración General del Estado o ante las Entidades Locales.
+Cada Comunidad Autónoma aprobará los modelos de poderes inscribibles en el registro cuando se circunscriba a actuaciones ante su respectiva Administración.
+5. El apoderamiento «apud acta» se otorgará mediante comparecencia electrónica en la correspondiente sede electrónica haciendo uso de los sistemas de firma electrónica previstos en esta Ley, o bien mediante comparecencia personal en las oficinas de asistencia en materia de registros.
+6. Los poderes inscritos en el registro tendrán una validez determinada máxima de cinco años a contar desde la fecha de inscripción. En todo caso, en cualquier momento antes de la finalización de dicho plazo el poderdante podrá revocar o prorrogar el poder. Las prórrogas otorgadas por el poderdante al registro tendrán una validez determinada máxima de cinco años a contar desde la fecha de inscripción.
+7. Las solicitudes de inscripción del poder, de revocación, de prórroga o de denuncia del mismo podrán dirigirse a cualquier registro, debiendo quedar inscrita esta circunstancia en el registro de la Administración u Organismo ante la que tenga efectos el poder y surtiendo efectos desde la fecha en la que se produzca dicha inscripción.</akndiff:old>
+          <akndiff:new>1. La Administración General del Estado, las Comunidades Autónomas y las Entidades Locales dispondrán de un registro electrónico general de apoderamientos, en el que deberán inscribirse, al menos, los de carácter general otorgados apud acta, presencial o electrónicamente, por quien ostente la condición de interesado en un procedimiento administrativo a favor de representante, para actuar en su nombre ante las Administraciones Públicas. También deberá constar el bastanteo realizado del poder.
+En el ámbito estatal, este registro será el Registro Electrónico de Apoderamientos de la Administración General del Estado.
+Los registros generales de apoderamientos no impedirán la existencia de registros particulares en cada Organismo donde se inscriban los poderes otorgados para la realización de trámites específicos en el mismo. Cada Organismo podrá disponer de su propio registro electrónico de apoderamientos.
+2. Los registros electrónicos generales y particulares de apoderamientos pertenecientes a todas y cada una de las Administraciones, deberán ser plenamente interoperables entre sí, de modo que se garantice su interconexión, compatibilidad informática, así como la transmisión telemática de las solicitudes, escritos y comunicaciones que se incorporen a los mismos.
+Los registros electrónicos generales y particulares de apoderamientos permitirán comprobar válidamente la representación de quienes actúen ante las Administraciones Públicas en nombre de un tercero, mediante la consulta a otros registros administrativos similares, al registro mercantil, de la propiedad, y a los protocolos notariales.
+Los registros mercantiles, de la propiedad, y de los protocolos notariales serán interoperables con los registros electrónicos generales y particulares de apoderamientos.
+3. Los asientos que se realicen en los registros electrónicos generales y particulares de apoderamientos deberán contener, al menos, la siguiente información:
+a) Nombre y apellidos o la denominación o razón social, documento nacional de identidad, número de identificación fiscal o documento equivalente del poderdante.
+b) Nombre y apellidos o la denominación o razón social, documento nacional de identidad, número de identificación fiscal o documento equivalente del apoderado.
+c) Fecha de inscripción.
+d) Período de tiempo por el cual se otorga el poder.
+e) Tipo de poder según las facultades que otorgue.
+4. Los poderes que se inscriban en los registros electrónicos generales y particulares de apoderamientos deberán corresponder a alguna de las siguientes tipologías:
+a) Un poder general para que el apoderado pueda actuar en nombre del poderdante en cualquier actuación administrativa y ante cualquier Administración.
+b) Un poder para que el apoderado pueda actuar en nombre del poderdante en cualquier actuación administrativa ante una Administración u Organismo concreto.
+c) Un poder para que el apoderado pueda actuar en nombre del poderdante únicamente para la realización de determinados trámites especificados en el poder.
+(Párrafo anulado)
+Cada Comunidad Autónoma aprobará los modelos de poderes inscribibles en el registro cuando se circunscriba a actuaciones ante su respectiva Administración.
+5. El apoderamiento «apud acta» se otorgará mediante comparecencia electrónica en la correspondiente sede electrónica haciendo uso de los sistemas de firma electrónica previstos en esta Ley, o bien mediante comparecencia personal en las oficinas de asistencia en materia de registros.
+6. Los poderes inscritos en el registro tendrán una validez determinada máxima de cinco años a contar desde la fecha de inscripción. En todo caso, en cualquier momento antes de la finalización de dicho plazo el poderdante podrá revocar o prorrogar el poder. Las prórrogas otorgadas por el poderdante al registro tendrán una validez determinada máxima de cinco años a contar desde la fecha de inscripción.
+7. Las solicitudes de inscripción del poder, de revocación, de prórroga o de denuncia del mismo podrán dirigirse a cualquier registro, debiendo quedar inscrita esta circunstancia en el registro de la Administración u Organismo ante la que tenga efectos el poder y surtiendo efectos desde la fecha en la que se produzca dicha inscripción.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="df_1" type="substitute">
+          <akndiff:old>1. Esta Ley se aprueba al amparo de lo dispuesto en el artículo 149.1.18.ª de la Constitución Española, que atribuye al Estado la competencia para dictar las bases del régimen jurídico de las Administraciones Públicas y competencia en materia de procedimiento administrativo común y sistema de responsabilidad de todas las Administraciones Públicas.
+2. El título VI de iniciativa legislativa y de la potestad para dictar reglamentos y otras disposiciones y la disposición adicional segunda de adhesión de las Comunidades Autónomas y Entidades Locales a las plataformas y registros de la Administración General del Estado, se aprueban también al amparo de lo dispuesto en el artículo 149.1.14.ª, relativo a la Hacienda general, así como el artículo 149.1.13.ª que atribuye al Estado la competencia en materia de bases y coordinación de la planificación general de la actividad económica.
+3. Lo previsto en los artículos 92 primer párrafo, 111, 114.2 y disposición transitoria segunda, serán de aplicación únicamente a la Administración General del Estado, así como el resto de apartados de los distintos preceptos que prevén su aplicación exclusiva en el ámbito de la Administración General del Estado.</akndiff:old>
+          <akndiff:new>1. Esta Ley se aprueba al amparo de lo dispuesto en el artículo 149.1.18.ª de la Constitución Española, que atribuye al Estado la competencia para dictar las bases del régimen jurídico de las Administraciones Públicas y competencia en materia de procedimiento administrativo común y sistema de responsabilidad de todas las Administraciones Públicas.
+2. (Anulado)
+3. Lo previsto en los artículos 92 primer párrafo, 111, 114.2 y disposición transitoria segunda, serán de aplicación únicamente a la Administración General del Estado, así como el resto de apartados de los distintos preceptos que prevén su aplicación exclusiva en el ámbito de la Administración General del Estado.</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

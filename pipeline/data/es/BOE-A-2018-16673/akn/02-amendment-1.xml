@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="lo-3-2018-proteccion-datos-personales-amendment-1">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/lo/2018/12/05/3"/>
+          <FRBRuri value="/es/lo/2018/12/05/3"/>
+          <FRBRdate date="2019-06-25" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/lo/2018/12/05/3/spa@2019-06-25"/>
+          <FRBRuri value="/es/lo/2018/12/05/3/spa@2019-06-25"/>
+          <FRBRdate date="2019-06-25" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/lo/2018/12/05/3/spa@2019-06-25/akn"/>
+          <FRBRuri value="/es/lo/2018/12/05/3/spa@2019-06-25/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por en el Recurso 1405/2019, la inconstitucionalidad y nulidad de lo indicado de la </docTitle></p></longTitle>
+      <p>Modificacion de Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/lo/2018/12/05/3/spa@2018-12-07"
+      result="/es/lo/2018/12/05/3/spa@2019-06-25">
+        <akndiff:articleChange article="df_3" type="substitute">
+          <akndiff:old>Se modifica la Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral General que queda redactada como sigue:
+Uno. El apartado 3 del artículo treinta y nueve queda redactado como sigue:
+«3. Dentro del plazo anterior, cualquier persona podrá formular reclamación dirigida a la Delegación Provincial de la Oficina del Censo Electoral sobre sus datos censales, si bien solo podrán ser tenidas en cuenta las que se refieran a la rectificación de errores en los datos personales, a los cambios de domicilio dentro de una misma circunscripción o a la no inclusión del reclamante en ninguna Sección del Censo de la circunscripción pese a tener derecho a ello. También serán atendidas las solicitudes de los electores que se opongan a su inclusión en las copias del censo electoral que se faciliten a los representantes de las candidaturas para realizar envíos postales de propaganda electoral. No serán tenidas en cuenta para la elección convocada las que reflejen un cambio de residencia de una circunscripción a otra, realizado con posterioridad a la fecha de cierre del censo para cada elección, debiendo ejercer su derecho en la sección correspondiente a su domicilio anterior.»
+Dos. Se añade un nuevo artículo cincuenta y ocho bis, con el contenido siguiente:
+«Artículo cincuenta y ocho bis. Utilización de medios tecnológicos y datos personales en las actividades electorales.
+1. La recopilación de datos personales relativos a las opiniones políticas de las personas que lleven a cabo los partidos políticos en el marco de sus actividades electorales se encontrará amparada en el interés público únicamente cuando se ofrezcan garantías adecuadas.
+2. Los partidos políticos, coaliciones y agrupaciones electorales podrán utilizar datos personales obtenidos en páginas web y otras fuentes de acceso público para la realización de actividades políticas durante el periodo electoral.
+3. El envío de propaganda electoral por medios electrónicos o sistemas de mensajería y la contratación de propaganda electoral en redes sociales o medios equivalentes no tendrán la consideración de actividad o comunicación comercial.
+4. Las actividades divulgativas anteriormente referidas identificarán de modo destacado su naturaleza electoral.
+5. Se facilitará al destinatario un modo sencillo y gratuito de ejercicio del derecho de oposición.»</akndiff:old>
+          <akndiff:new>Se modifica la Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral General que queda redactada como sigue:
+Uno. El apartado 3 del artículo treinta y nueve queda redactado como sigue:
+«3. Dentro del plazo anterior, cualquier persona podrá formular reclamación dirigida a la Delegación Provincial de la Oficina del Censo Electoral sobre sus datos censales, si bien solo podrán ser tenidas en cuenta las que se refieran a la rectificación de errores en los datos personales, a los cambios de domicilio dentro de una misma circunscripción o a la no inclusión del reclamante en ninguna Sección del Censo de la circunscripción pese a tener derecho a ello. También serán atendidas las solicitudes de los electores que se opongan a su inclusión en las copias del censo electoral que se faciliten a los representantes de las candidaturas para realizar envíos postales de propaganda electoral. No serán tenidas en cuenta para la elección convocada las que reflejen un cambio de residencia de una circunscripción a otra, realizado con posterioridad a la fecha de cierre del censo para cada elección, debiendo ejercer su derecho en la sección correspondiente a su domicilio anterior.»
+Dos. Se añade un nuevo artículo cincuenta y ocho bis, con el contenido siguiente:
+«Artículo cincuenta y ocho bis. Utilización de medios tecnológicos y datos personales en las actividades electorales.
+1. (Anulado)
+2. Los partidos políticos, coaliciones y agrupaciones electorales podrán utilizar datos personales obtenidos en páginas web y otras fuentes de acceso público para la realización de actividades políticas durante el periodo electoral.
+3. El envío de propaganda electoral por medios electrónicos o sistemas de mensajería y la contratación de propaganda electoral en redes sociales o medios equivalentes no tendrán la consideración de actividad o comunicación comercial.
+4. Las actividades divulgativas anteriormente referidas identificarán de modo destacado su naturaleza electoral.
+5. Se facilitará al destinatario un modo sencillo y gratuito de ejercicio del derecho de oposición.»</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-39-2015-procedimiento-administrativo-comun-amendment-13">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2015/10/01/39"/>
+          <FRBRuri value="/es/l/2015/10/01/39"/>
+          <FRBRdate date="2024-11-07" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2024-11-07"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2024-11-07"/>
+          <FRBRdate date="2024-11-07" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2024-11-07/akn"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2024-11-07/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por la disposición adicional 9, por Real Decreto-ley 6/2024, de 5 de noviembre</docTitle></p></longTitle>
+      <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2015/10/01/39/spa@2022-10-20"
+      result="/es/l/2015/10/01/39/spa@2024-11-07">
+        <akndiff:articleChange article="da_9" type="insert" after="da_8">
+          <akndiff:new>El acuerdo de Consejo de Ministros por el que se declare una zona afectada gravemente por una emergencia de protección civil, previsto en el artículo 23 de la Ley 17/2015, de 9 de julio, del Sistema Nacional de Protección Civil, podrá establecer la suspensión de los plazos para el cumplimiento de los trámites de los procedimientos administrativos del sector público que correspondan a los interesados residentes en los términos municipales incluidos en el ámbito de aplicación del acuerdo y, en su caso, a aquellos otros interesados que acrediten el carácter imposible o gravoso de su cumplimiento en atención a los efectos de la emergencia. La suspensión se mantendrá hasta el momento en que se dicte un nuevo acuerdo de Consejo de Ministros decretando la finalización de esta medida, tras lo cual se reanudarán los plazos suspendidos.</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

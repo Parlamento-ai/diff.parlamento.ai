@@ -3,6 +3,7 @@
 	import FlagCl from '~icons/circle-flags/cl';
 	import FlagEu from '~icons/circle-flags/eu';
 	import FlagUs from '~icons/circle-flags/us';
+	import FlagEs from '~icons/circle-flags/es';
 	import type { Component } from 'svelte';
 
 	let { data } = $props();
@@ -24,7 +25,9 @@
 		'eu-cra': FlagEu,
 		'eu-data-act': FlagEu,
 		'us-s5-laken-riley': FlagUs,
-		'us-s269-improper-payments': FlagUs
+		'us-s269-improper-payments': FlagUs,
+		'es-lo3-2018-proteccion-datos': FlagEs,
+		'es-ley39-2015-procedimiento-administrativo': FlagEs
 	};
 
 	const normOrder = [
@@ -67,6 +70,9 @@
 
 	const usS5 = $derived(data.boletines.find((b) => b.slug === 'us-s5-laken-riley'));
 	const usS269 = $derived(data.boletines.find((b) => b.slug === 'us-s269-improper-payments'));
+
+	const esLo3 = $derived(data.boletines.find((b) => b.slug === 'es-lo3-2018-proteccion-datos'));
+	const esLey39 = $derived(data.boletines.find((b) => b.slug === 'es-ley39-2015-procedimiento-administrativo'));
 </script>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -83,7 +89,7 @@
 		<h1 class="text-3xl font-bold text-gray-900">Área profesional</h1>
 		<p class="text-gray-500 mt-3 text-sm max-w-lg mx-auto leading-relaxed">
 			Legislación real representada en AKN Diff.
-			Boletines chilenos, regulaciones europeas y bills del Congreso de EE.UU. que documentan distintos escenarios del proceso legislativo.
+			Legislacion real de Chile, UE, EE.UU. y España representada en AKN Diff, documentando distintos escenarios del proceso legislativo.
 		</p>
 	</div>
 
@@ -333,6 +339,41 @@
 						documentCount={usS269.documentCount}
 						flag={flagMap[usS269.slug]}
 						firstVersion="bill"
+					/>
+				{/if}
+			</div>
+		</section>
+	{/if}
+
+	<!-- ES — España (BOE) -->
+	{#if esLo3 || esLey39}
+		<section class="mb-14">
+			<div class="mb-5 max-w-lg mx-auto">
+				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+					<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-yellow-100 text-yellow-700 text-xs font-bold">ES</span>
+					Legislacion consolidada — España (BOE)
+				</h2>
+				<p class="text-xs text-gray-400 mt-1.5 leading-relaxed">
+					Pipeline desde la API de datos abiertos del BOE. Cada ley muestra su version original,
+					todas las reformas por leyes posteriores (con changeSet) y el texto vigente actual.
+				</p>
+			</div>
+
+			<div class="max-w-lg mx-auto flex flex-col gap-2">
+				{#if esLo3}
+					<BoletinCard
+						slug={esLo3.slug}
+						title={esLo3.title}
+						documentCount={esLo3.documentCount}
+						flag={flagMap[esLo3.slug]}
+					/>
+				{/if}
+				{#if esLey39}
+					<BoletinCard
+						slug={esLey39.slug}
+						title={esLey39.title}
+						documentCount={esLey39.documentCount}
+						flag={flagMap[esLey39.slug]}
 					/>
 				{/if}
 			</div>

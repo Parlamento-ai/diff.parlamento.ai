@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response>
+  <status>
+    <code>200</code>
+    <text>ok</text>
+  </status>
+  <data>
+    <analisis>
+      <materias>
+        <materia codigo="35">Acceso a la información</materia>
+        <materia codigo="62">Actos procesales</materia>
+        <materia codigo="1508">Administración electrónica</materia>
+        <materia codigo="82">Administración General del Estado</materia>
+        <materia codigo="85">Administración Local</materia>
+        <materia codigo="93">Administraciones Públicas</materia>
+        <materia codigo="261">Apremios</materia>
+        <materia codigo="281">Archivos</materia>
+        <materia codigo="517">Boletín Oficial del Estado</materia>
+        <materia codigo="822">Certificados</materia>
+        <materia codigo="1320">Comunidades Autónomas</materia>
+        <materia codigo="1332">Conciliación</materia>
+        <materia codigo="2463">Derechos de los ciudadanos</materia>
+        <materia codigo="2490">Despidos</materia>
+        <materia codigo="3086">Documentos públicos</materia>
+        <materia codigo="3198">Enjuiciamiento Civil</materia>
+        <materia codigo="3716">Firma electrónica</materia>
+        <materia codigo="4270">Iniciativa legislativa</materia>
+        <materia codigo="4718">Juzgados de lo Social</materia>
+        <materia codigo="5165">Normas jurídicas</materia>
+        <materia codigo="5170">Notificaciones citaciones y emplazamientos</materia>
+        <materia codigo="7911">Patrimonio de las Administraciones Públicas</materia>
+        <materia codigo="5703">Procedimiento administrativo</materia>
+        <materia codigo="5709">Procedimiento sancionador</materia>
+        <materia codigo="5796">Publicidad institucional</materia>
+        <materia codigo="5886">Recurso Contencioso Administrativo</materia>
+        <materia codigo="6015">Registros administrativos</materia>
+        <materia codigo="7869">Registros telemáticos</materia>
+        <materia codigo="6218">Responsabilidad Civil</materia>
+        <materia codigo="6219">Responsabilidad Civil de la Administración</materia>
+        <materia codigo="6499">Seguridad Social</materia>
+      </materias>
+      <notas>
+        <nota>Entrada en vigor, con la salvedad indicada, el 2 de octubre de 2016.</nota>
+        <nota>Efectos  para las previsiones indicadas en la disposición final 7: 2 de abril de 2021.</nota>
+      </notas>
+      <referencias>
+        <anteriores>
+          <anterior>
+            <id_norma>BOE-A-2011-4117</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>los arts. 4 a 7 de la Ley 2/2011, de 4 de marzo</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2009-18358</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>, en la forma indicada, determinados preceptos del Real Decreto 1671/2009, de 6 de noviembre</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2007-12352</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>, en la forma indicada, la Ley 11/2007, de 22 de junio</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-1999-11499</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>el Real Decreto 772/1999, de 7 de mayo</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-1993-20748</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>el Real Decreto 1398/1993, de 4 de agosto</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-1993-11253</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>el Real Decreto 429/1993, de 26 de marzo</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-1992-26318</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>, en la forma indicada, la  Ley 30/1992, de 26 de noviembre</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2011-15936</id_norma>
+            <relacion codigo="270">MODIFICA</relacion>
+            <texto>los arts. 64, 69, 70, 72, 73, 85, 103 y 117 de  la Ley 36/2011, de 10 de octubre</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2003-23399</id_norma>
+            <relacion codigo="270">MODIFICA</relacion>
+            <texto>el art. 3 de la Ley 59/2003, de 19 de diciembre</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2012-5730</id_norma>
+            <relacion codigo="330">CITA</relacion>
+            <texto>Ley Orgánica 2/2012, de 27 de abril</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2003-21614</id_norma>
+            <relacion codigo="330">CITA</relacion>
+            <texto>Ley 47/2003, de 26 de noviembre</texto>
+          </anterior>
+        </anteriores>
+        <posteriores>
+          <posterior>
+            <id_norma>BOE-A-2020-10491</id_norma>
+            <relacion codigo="230">SE DEJA SIN EFECTO</relacion>
+            <texto>la modificación de la disposición final 7, en la redacción dada por el Real Decreto-ley 27/2020, de 4 de agosto, por Resolución de 10 de septiembre de 2020</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2022-11589</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>art. 77, por Ley 15/2022, de 12 de julio</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2022-10757</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>los arts. 9.2.c), 10.2.c) y SE AÑADE la disposición adicional 7, por Ley 11/2022, de 28 de junio</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2022-4972</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>el art. 32, por Real Decreto-ley 6/2022, de 29 de marzo</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2021-11472</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>la disposición final 7, con variación de efectos en su entrada en vigor, por Ley 10/2021, de 9 de julio</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2020-11043</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>, con efectos desde el 23 de septiembre de 2020, la disposición final 7, por Real Decreto-ley 28/2020, de 22 de septiembre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2020-9131</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>la disposición final 7, por Real Decreto-ley 27/2020, de 4 de agosto</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2019-15790</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>los arts. 9, 10 y SE AÑADE la disposición adicional 6, por Real Decreto-ley 14/2019, de 31 de octubre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2018-16673</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>el art. 28.2 y 3, por Ley Orgánica 3/2018, de 5 de diciembre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2018-12131</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>la disposición final 7, por Real Decreto-ley 11/2018, de 31 de agosto</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2024-22928</id_norma>
+            <relacion codigo="407">SE AÑADE</relacion>
+            <texto>la disposición adicional 9, por Real Decreto-ley 6/2024, de 5 de noviembre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2022-17040</id_norma>
+            <relacion codigo="407">SE AÑADE</relacion>
+            <texto>la disposición adicional 8, por Real Decreto-ley 18/2022, de 18 de octubre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2021-5032</id_norma>
+            <relacion codigo="490">SE DESARROLLA</relacion>
+            <texto>, y se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos: Real Decreto 203/2021, de 30 de marzo</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2021-20477</id_norma>
+            <relacion codigo="440">SE DICTA DE CONFORMIDAD</relacion>
+            <texto>con el art. 16, y regula el Registro Electrónico General para la Administración General del Estado: Orden PCM/1382/2021, de 9 de diciembre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2021-4570</id_norma>
+            <relacion codigo="331">SE DICTA EN RELACIÓN</relacion>
+            <texto>y se establecen disposiciónes específicas para procedimientos sancionadores en comercio y sanidad exterior, por Real Decreto 137/2021, de 2 de marzo</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2018-15846</id_norma>
+            <relacion codigo="470">SE DECLARA</relacion>
+            <texto>, en el Recurso 3865/2016, la desestimación en relación con los arts. 1 y 127 a 133, por Sentencia 110/2018, de 17 de octubre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2018-8574</id_norma>
+            <relacion codigo="470">SE DECLARA</relacion>
+            <texto>, en el Recurso 3628/2016, la inconstitucionalidad y nulidad de lo indicado de los arts. 6.4 y 129.4, y de la disposición final 1.2; contrarios al orden constitucional de competencias, los arts. 130, 132 y lo indicado del 129 y 133, según el fj.7.b) o c); y la constitucionalidad, en los términos del fj 11.f) de la disposición adicional 2.párrafo 2, por Sentencia 55/2018, de 24 de mayo</texto>
+          </posterior>
+        </posteriores>
+      </referencias>
+    </analisis>
+  </data>
+</response>

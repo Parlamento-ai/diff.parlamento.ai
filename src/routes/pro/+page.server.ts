@@ -18,7 +18,9 @@ const DEV_SLUGS = [
 	'eu-cra',
 	'eu-data-act',
 	'us-s5-laken-riley',
-	'us-s269-improper-payments'
+	'us-s269-improper-payments',
+	'es-lo3-2018-proteccion-datos',
+	'es-ley39-2015-procedimiento-administrativo'
 ];
 
 export const load: PageServerLoad = async () => {

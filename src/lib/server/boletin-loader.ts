@@ -16,6 +16,8 @@ const EU_CRA_DIR = 'pipeline/data/eu/horizontal-cybersecurity-requirements-for-p
 const EU_DATA_ACT_DIR = 'pipeline/data/eu/data-act/akn';
 const US_S5_DIR = 'pipeline/data/us/s5-119/akn';
 const US_S269_DIR = 'pipeline/data/us/s269-119/akn';
+const ES_LO3_2018_DIR = 'pipeline/data/es/BOE-A-2018-16673/akn';
+const ES_LEY39_2015_DIR = 'pipeline/data/es/BOE-A-2015-10565/akn';
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
 	'empanadas-de-pino': `${RECETAS_DIR}/receta-empanadas`,
@@ -57,7 +59,11 @@ const BOLETIN_DIRS: Record<string, string> = {
 	// US — S.5 Laken Riley Act (Public Law 119-1, 119th Congress)
 	'us-s5-laken-riley': US_S5_DIR,
 	// US — S.269 Ending Improper Payments (Public Law 119-77, 119th Congress)
-	'us-s269-improper-payments': US_S269_DIR
+	'us-s269-improper-payments': US_S269_DIR,
+	// ES — LO 3/2018 Protección de Datos Personales (BOE-A-2018-16673)
+	'es-lo3-2018-proteccion-datos': ES_LO3_2018_DIR,
+	// ES — Ley 39/2015 Procedimiento Administrativo Común (BOE-A-2015-10565)
+	'es-ley39-2015-procedimiento-administrativo': ES_LEY39_2015_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -163,6 +169,27 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 			final: 'Ley Promulgada'
 		};
 		return leyLabels[slug] || slug;
+	}
+	// ES — Leyes consolidadas del BOE
+	if (boletinSlug === 'es-ley39-2015-procedimiento-administrativo') {
+		const esLabels: Record<string, string> = {
+			original: 'Ley 39/2015 (publicacion original)',
+			final: 'Texto Vigente'
+		};
+		return esLabels[slug] || slug;
+	}
+	if (boletinSlug === 'es-lo3-2018-proteccion-datos') {
+		const esLabels: Record<string, string> = {
+			original: 'LO 3/2018 (publicacion original)',
+			'amendment-1': 'Sentencia TC 76/2019',
+			'amendment-2': 'Mod. LO 3/2020 (art. 83)',
+			'amendment-3': 'Mod. LO 7/2021 (arts. 2, 44, DA 15)',
+			'amendment-4': 'Mod. Ley 2/2023 (art. 24)',
+			'amendment-5': 'Mod. Ley 11/2023 (arts. 48-67, DA 23)',
+			'amendment-6': 'Mod. Ley 10/2025 (art. 23)',
+			final: 'Texto Vigente'
+		};
+		return esLabels[slug] || slug;
 	}
 	const labels: Record<string, string> = {
 		original: 'Ley Original',
@@ -279,6 +306,20 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 			final: leyChileSource(1126480)
 		};
 		return map[slug];
+	}
+	// ES — BOE consolidated laws
+	if (boletinSlug?.startsWith('es-')) {
+		const boe = 'https://www.boe.es/buscar/act.php?id=';
+		// Extract BOE ID from slug: es-lo3-2018-proteccion-datos → BOE-A-2018-16673
+		// We hardcode known ones; for dynamic lookup we'd need the config
+		const boeIds: Record<string, string> = {
+			'es-lo3-2018-proteccion-datos': 'BOE-A-2018-16673',
+			'es-ley39-2015-procedimiento-administrativo': 'BOE-A-2015-10565'
+		};
+		const boeId = boeIds[boletinSlug];
+		if (boeId) {
+			return { url: `${boe}${boeId}`, label: 'BOE' };
+		}
 	}
 	return undefined;
 }
@@ -579,6 +620,24 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 		return docs[versionSlug] || [];
 	}
 
+	// ── ES — BOE consolidated laws ──
+	if (boletinSlug?.startsWith('es-')) {
+		const boeIds: Record<string, string> = {
+			'es-lo3-2018-proteccion-datos': 'BOE-A-2018-16673',
+			'es-ley39-2015-procedimiento-administrativo': 'BOE-A-2015-10565'
+		};
+		const boeId = boeIds[boletinSlug];
+		if (boeId) {
+			const esBase = `pipeline/data/es/${boeId}/sources`;
+			const boeUrl = `https://www.boe.es/buscar/act.php?id=${boeId}`;
+			// All versions link to the BOE consolidated text + XML sources
+			return [
+				src(`BOE Texto Consolidado`, `${esBase}/boe-${boeId}-texto.xml`, 'xml', boeUrl),
+				src(`BOE Metadatos`, `${esBase}/boe-${boeId}-metadata.xml`, 'xml', boeUrl)
+			];
+		}
+	}
+
 	return [];
 }
 
@@ -608,6 +667,35 @@ export async function loadBoletin(slug: string): Promise<Boletin> {
 		documents,
 		timeline: buildTimeline(documents, slug)
 	};
+
+	// ES — enrich timeline with per-amendment source links from config.json
+	if (slug.startsWith('es-')) {
+		const configPath = join(dirPath, '..', 'config.json');
+		try {
+			const configRaw = await readFile(configPath, 'utf-8');
+			const esConfig = JSON.parse(configRaw);
+			if (esConfig.timeline) {
+				const boe = 'https://www.boe.es/buscar';
+				for (const entry of boletin.timeline) {
+					const configEntry = esConfig.timeline.find(
+						(t: { slug: string }) => t.slug === entry.slug
+					);
+					if (!configEntry) continue;
+					if (entry.type === 'amendment' && configEntry.modifyingLaw) {
+						entry.sourceUrl = `${boe}/doc.php?id=${configEntry.modifyingLaw}`;
+						entry.sourceLabel = 'BOE (ley modificadora)';
+					} else if (entry.type === 'act') {
+						const boeId = esConfig.boeId;
+						const dateParam = entry.date.replace(/-/g, '');
+						entry.sourceUrl = `${boe}/act.php?id=${boeId}&p=${dateParam}`;
+						entry.sourceLabel = 'BOE (texto consolidado)';
+					}
+				}
+			}
+		} catch {
+			// No config.json — use default links
+		}
+	}
 
 	// Load supplementary metadata if available (EU regulations)
 	const metadataPath = join(dirPath, '00-metadata.json');
