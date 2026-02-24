@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-39-2015-procedimiento-administrativo-comun-amendment-9">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2015/10/01/39"/>
+          <FRBRuri value="/es/l/2015/10/01/39"/>
+          <FRBRdate date="2022-03-31" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2022-03-31"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2022-03-31"/>
+          <FRBRdate date="2022-03-31" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2022-03-31/akn"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2022-03-31/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por el art. 32, por Real Decreto-ley 6/2022, de 29 de marzo</docTitle></p></longTitle>
+      <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2015/10/01/39/spa@2021-07-11"
+      result="/es/l/2015/10/01/39/spa@2022-03-31">
+        <akndiff:articleChange article="art_32" type="substitute">
+          <akndiff:old>1. La Administración, salvo precepto en contrario, podrá conceder de oficio o a petición de los interesados, una ampliación de los plazos establecidos, que no exceda de la mitad de los mismos, si las circunstancias lo aconsejan y con ello no se perjudican derechos de tercero. El acuerdo de ampliación deberá ser notificado a los interesados.
+2. La ampliación de los plazos por el tiempo máximo permitido se aplicará en todo caso a los procedimientos tramitados por las misiones diplomáticas y oficinas consulares, así como a aquellos que, sustanciándose en el interior, exijan cumplimentar algún trámite en el extranjero o en los que intervengan interesados residentes fuera de España.
+3. Tanto la petición de los interesados como la decisión sobre la ampliación deberán producirse, en todo caso, antes del vencimiento del plazo de que se trate. En ningún caso podrá ser objeto de ampliación un plazo ya vencido. Los acuerdos sobre ampliación de plazos o sobre su denegación no serán susceptibles de recurso, sin perjuicio del procedente contra la resolución que ponga fin al procedimiento.
+4. Cuando una incidencia técnica haya imposibilitado el funcionamiento ordinario del sistema o aplicación que corresponda, y hasta que se solucione el problema, la Administración podrá determinar una ampliación de los plazos no vencidos, debiendo publicar en la sede electrónica tanto la incidencia técnica acontecida como la ampliación concreta del plazo no vencido.</akndiff:old>
+          <akndiff:new>1. La Administración, salvo precepto en contrario, podrá conceder de oficio o a petición de los interesados, una ampliación de los plazos establecidos, que no exceda de la mitad de los mismos, si las circunstancias lo aconsejan y con ello no se perjudican derechos de tercero. El acuerdo de ampliación deberá ser notificado a los interesados.
+2. La ampliación de los plazos por el tiempo máximo permitido se aplicará en todo caso a los procedimientos tramitados por las misiones diplomáticas y oficinas consulares, así como a aquellos que, sustanciándose en el interior, exijan cumplimentar algún trámite en el extranjero o en los que intervengan interesados residentes fuera de España.
+3. Tanto la petición de los interesados como la decisión sobre la ampliación deberán producirse, en todo caso, antes del vencimiento del plazo de que se trate. En ningún caso podrá ser objeto de ampliación un plazo ya vencido. Los acuerdos sobre ampliación de plazos o sobre su denegación no serán susceptibles de recurso, sin perjuicio del procedente contra la resolución que ponga fin al procedimiento.
+4. Cuando una incidencia técnica haya imposibilitado el funcionamiento ordinario del sistema o aplicación que corresponda, y hasta que se solucione el problema, la Administración podrá determinar una ampliación de los plazos no vencidos, debiendo publicar en la sede electrónica tanto la incidencia técnica acontecida como la ampliación concreta del plazo no vencido.
+5. Cuando como consecuencia de un ciberincidente se hayan visto gravemente afectados los servicios y sistemas utilizados para la tramitación de los procedimientos y el ejercicio de los derechos de los interesados que prevé la normativa vigente, la Administración podrá acordar la ampliación general de plazos de los procedimientos administrativos.</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

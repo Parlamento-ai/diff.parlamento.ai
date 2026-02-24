@@ -20,7 +20,9 @@ const DEV_SLUGS = [
 	'us-s5-laken-riley',
 	'us-s269-improper-payments',
 	'us-s331-halt-fentanyl',
-	'us-s1582-genius-act'
+	'us-s1582-genius-act',
+	'es-lo3-2018-proteccion-datos',
+	'es-ley39-2015-procedimiento-administrativo'
 ];
 
 export const load: PageServerLoad = async () => {

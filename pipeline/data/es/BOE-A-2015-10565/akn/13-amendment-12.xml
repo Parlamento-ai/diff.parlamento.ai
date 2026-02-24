@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-39-2015-procedimiento-administrativo-comun-amendment-12">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2015/10/01/39"/>
+          <FRBRuri value="/es/l/2015/10/01/39"/>
+          <FRBRdate date="2022-10-20" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2022-10-20"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2022-10-20"/>
+          <FRBRdate date="2022-10-20" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2022-10-20/akn"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2022-10-20/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por la disposición adicional 8, por Real Decreto-ley 18/2022, de 18 de octubre</docTitle></p></longTitle>
+      <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2015/10/01/39/spa@2022-07-14"
+      result="/es/l/2015/10/01/39/spa@2022-10-20">
+        <akndiff:articleChange article="da_8" type="insert" after="da_7">
+          <akndiff:new>Cuando se trate de sistemas establecidos por medio de Resolución de la Secretaría General de Administración Digital del Ministerio de Asuntos Económicos y Transformación Digital para su ámbito competencial con objeto de determinar las circunstancias en las que un sistema de firma electrónica no basado en certificados electrónicos será considerado como válido en las relaciones de los interesados con los órganos administrativos de la Administración General del Estado, sus organismos públicos y entidades de Derecho Público vinculados o dependientes, no será preciso el transcurso del plazo de dos meses para la eficacia jurídica del sistema a que se refiere el artículo 10.2.c) de la presente ley, adquiriendo eficacia jurídica al día siguiente de la publicación de la Resolución, salvo que esta disponga otra cosa.</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

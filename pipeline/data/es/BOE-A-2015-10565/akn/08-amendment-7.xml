@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-39-2015-procedimiento-administrativo-comun-amendment-7">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2015/10/01/39"/>
+          <FRBRuri value="/es/l/2015/10/01/39"/>
+          <FRBRdate date="2020-09-23" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2020-09-23"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2020-09-23"/>
+          <FRBRdate date="2020-09-23" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2020-09-23/akn"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2020-09-23/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por , con efectos desde el 23 de septiembre de 2020, la disposición final 7, por Rea</docTitle></p></longTitle>
+      <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2015/10/01/39/spa@2020-09-11"
+      result="/es/l/2015/10/01/39/spa@2020-09-23">
+        <akndiff:articleChange article="df_7" type="substitute">
+          <akndiff:old>La presente Ley entrará en vigor al año de su publicación en el “Boletín Oficial del Estado”.
+No obstante, las previsiones relativas al registro electrónico de apoderamientos, registro electrónico, registro de empleados públicos habilitados, punto de acceso general electrónico de la Administración y archivo único electrónico producirán efectos a partir del día 2 de octubre de 2020.</akndiff:old>
+          <akndiff:new>La presente Ley entrará en vigor al año de su publicación en el “Boletín Oficial del Estado”.
+No obstante, las previsiones relativas al registro electrónico de apoderamientos, registro electrónico, registro de empleados públicos habilitados, punto de acceso general electrónico de la Administración y archivo único electrónico producirán efectos a partir del día 2 de abril de 2021.</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-39-2015-procedimiento-administrativo-comun-amendment-8">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2015/10/01/39"/>
+          <FRBRuri value="/es/l/2015/10/01/39"/>
+          <FRBRdate date="2021-07-11" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2021-07-11"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2021-07-11"/>
+          <FRBRdate date="2021-07-11" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2015/10/01/39/spa@2021-07-11/akn"/>
+          <FRBRuri value="/es/l/2015/10/01/39/spa@2021-07-11/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por la disposición final 7, con variación de efectos en su entrada en vigor, por Ley</docTitle></p></longTitle>
+      <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2015/10/01/39/spa@2020-09-23"
+      result="/es/l/2015/10/01/39/spa@2021-07-11">
+
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>
