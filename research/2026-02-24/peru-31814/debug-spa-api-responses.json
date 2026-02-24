@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://wb2server.congreso.gob.pe/spley-portal/",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "bodyLength": 1536,
+    "body": "<!DOCTYPE html>\r\n<html translate=\"no\" lang=\"es\">\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\"/>\r\n\t\t<title>Proyectos de Ley</title>\r\n\t\t<base href=\"/spley-portal/\"/>\r\n\t\t<!-- Meta tags para evitar caché -->\r\n\t\t<meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\">\r\n\t\t<meta http-equiv=\"Pragma\" content=\"no-cache\">\r\n\t\t<meta http-equiv=\"Expires\" content=\"0\">\r\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\r\n\t\t<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"assets/favicon.ico\"/>\r\n\t\t<!-- Google tag (gtag.js) -->\r\n\t\t<script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-74S6D3XXVJ\"></script>\r\n\t\t<script>\r\n\t\t\twindow.dataLayer = window.dataLayer || [];\r\n\t\t\tfunction gtag() {\r\n\t\t\t\tdataLayer.push(arguments);\r\n\t\t\t}\r\n\t\t\tgtag(\"js\", new Date());\r\n\r\n\t\t\tgtag(\"config\", \"G-74S6D3XXVJ\", { send_page_view: false});\r\n\t\t</script>\r\n\t<link rel=\"stylesheet\" href=\"styles.3b49de10da1cd552bb41.css\"></head>\r\n\t<body class=\"main-body light-theme app sidebar-mini active is-expanded body-default leftmenu-light\">\r\n\t\t<app-root></app-root>\r\n\t<script src=\"runtime-es2015.f5c8b7992eb9447553d1.js\" type=\"module\"></script><script src=\"runtime-es5.f5c8b7992eb9447553d1.js\" nomodule defer></script><script src=\"polyfills-es5.d8c834adac55bb2ae3a4.js\" nomodule defer></script><script src=\"polyfills-es2015.4efa094b73f0ddd047b4.js\" type=\"module\"></script><script src=\"main-es2015.236bff602fd1122173ac.js\" type=\"module\"></script><script src=\"main-es5.236bff602fd1122173ac.js\" nomodule defer></script></body>\r\n</html>\r\n"
+  },
+  {
+    "url": "https://wb2server.congreso.gob.pe/participacion-ciudadana-portal-service/opinion-ciudadana/estado-para-opinar",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8",
+    "bodyLength": 672,
+    "body": "{\"code\":200,\"status\":\"success\",\"data\":[{\"activo\":true,\"createdAt\":1627275600000,\"createdBy\":\"SYSTEM\",\"updatedAt\":null,\"updatedBy\":null,\"deletedAt\":null,\"deletedBy\":null,\"id\":1,\"estadoId\":1},{\"activo\":true,\"createdAt\":1627275600000,\"createdBy\":\"SYSTEM\",\"updatedAt\":null,\"updatedBy\":null,\"deletedAt\":null,\"deletedBy\":null,\"id\":2,\"estadoId\":3},{\"activo\":true,\"createdAt\":1627275600000,\"createdBy\":\"SYSTEM\",\"updatedAt\":null,\"updatedBy\":null,\"deletedAt\":null,\"deletedBy\":null,\"id\":3,\"estadoId\":14},{\"activo\":true,\"createdAt\":1627275600000,\"createdBy\":\"SYSTEM\",\"updatedAt\":null,\"updatedBy\":null,\"deletedAt\":null,\"deletedBy\":null,\"id\":4,\"estadoId\":31}],\"timestamp\":1771965410348}"
+  }
+]
