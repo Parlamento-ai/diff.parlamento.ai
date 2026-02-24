@@ -23,6 +23,7 @@ export function parseSenateVote(xmlContent: string, congress: number, session: n
 
 	const forVoters: ParsedVoter[] = [];
 	const againstVoters: ParsedVoter[] = [];
+	const abstainVoters: ParsedVoter[] = [];
 
 	for (const m of membersList) {
 		const lastName = m.last_name || '';
@@ -30,11 +31,12 @@ export function parseSenateVote(xmlContent: string, congress: number, session: n
 		const party = m.party || '';
 		const state = m.state || '';
 		const voter: ParsedVoter = {
-			href: `/us/senator/${lastName.toLowerCase().replace(/\s+/g, '-')}`,
+			href: `/us/senator/${firstName.toLowerCase()}-${lastName.toLowerCase()}`.replace(/\s+/g, '-'),
 			showAs: `${firstName} ${lastName} (${party}-${state})`
 		};
 		if (m.vote_cast === 'Yea') forVoters.push(voter);
 		else if (m.vote_cast === 'Nay') againstVoters.push(voter);
+		else if (m.vote_cast === 'Not Voting') abstainVoters.push(voter);
 	}
 
 	// Extract date from XML
@@ -50,17 +52,22 @@ export function parseSenateVote(xmlContent: string, congress: number, session: n
 		date = `${dateMatch[3]}-${months[dateMatch[1]] || '01'}-${dateMatch[2].padStart(2, '0')}`;
 	}
 
-	const pad = String(rollNumber).padStart(5, '0');
+	// Extract actual result from XML
+	const voteResultText = (vote.vote_result || '').toLowerCase();
+	const result: 'approved' | 'rejected' =
+		voteResultText.includes('passed') || voteResultText.includes('agreed') ? 'approved' : 'rejected';
 
 	return {
 		chamber: 'Senate',
 		date,
-		result: 'approved',
+		result,
 		source: `/us/senate/${congress}/${session}/vote/${rollNumber}`,
 		forVoters,
 		againstVoters,
+		abstainVoters,
 		forCount: Number(vote.count?.yeas || forVoters.length),
-		againstCount: Number(vote.count?.nays || againstVoters.length)
+		againstCount: Number(vote.count?.nays || againstVoters.length),
+		abstainCount: abstainVoters.length
 	};
 }
 
@@ -75,6 +82,7 @@ export function parseHouseVote(xmlContent: string, congress: number, session: nu
 
 	const forVoters: ParsedVoter[] = [];
 	const againstVoters: ParsedVoter[] = [];
+	const abstainVoters: ParsedVoter[] = [];
 
 	for (const r of recordsList) {
 		const leg = r.legislator;
@@ -94,6 +102,7 @@ export function parseHouseVote(xmlContent: string, congress: number, session: nu
 
 		if (voteVal === 'Yea') forVoters.push(voter);
 		else if (voteVal === 'Nay') againstVoters.push(voter);
+		else if (voteVal === 'Not Voting' || voteVal === 'Present') abstainVoters.push(voter);
 	}
 
 	// Extract date from XML metadata
@@ -111,14 +120,21 @@ export function parseHouseVote(xmlContent: string, congress: number, session: nu
 
 	const totals = meta['vote-totals']?.['totals-by-vote'];
 
+	// Extract actual result from XML
+	const voteResultText = (meta['vote-result'] || '').toLowerCase();
+	const result: 'approved' | 'rejected' =
+		voteResultText.includes('passed') || voteResultText.includes('agreed') ? 'approved' : 'rejected';
+
 	return {
 		chamber: 'House',
 		date,
-		result: 'approved',
+		result,
 		source: `/us/house/${congress}/${session}/roll/${rollNumber}`,
 		forVoters,
 		againstVoters,
+		abstainVoters,
 		forCount: totals ? Number(totals['yea-total']) : forVoters.length,
-		againstCount: totals ? Number(totals['nay-total']) : againstVoters.length
+		againstCount: totals ? Number(totals['nay-total']) : againstVoters.length,
+		abstainCount: abstainVoters.length
 	};
 }

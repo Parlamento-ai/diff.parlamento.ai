@@ -119,7 +119,7 @@ async function main(): Promise<void> {
 	let parsed: ParsedData;
 	if (startPhase <= 4) {
 		const t0 = Date.now();
-		parsed = await parse(config, outDir);
+		parsed = await parse(config, outDir, discovery);
 		allResults.push({ step: 4, id: 'parse', name: 'Parse', status: 'PASS', detail: '', elapsed: Date.now() - t0 });
 	} else {
 		console.log('\n=== Phase 4: PARSE (loading cached) ===');

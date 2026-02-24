@@ -1,0 +1,82 @@
+{
+  "billId": {
+    "type": "s",
+    "number": 1582,
+    "congress": 119
+  },
+  "title": "GENIUS Act of 2025",
+  "shortTitle": "Guiding and Establishing National Innovation for U.S. Stablecoins Act",
+  "sponsor": {
+    "name": "Sen. Hagerty, Bill [R-TN]",
+    "party": "R",
+    "state": "TN"
+  },
+  "status": "enacted",
+  "publicLaw": {
+    "congress": 119,
+    "number": 27
+  },
+  "textVersions": [
+    {
+      "code": "PCS",
+      "date": "2025-05-05",
+      "govInfoUrl": "https://www.govinfo.gov/content/pkg/BILLS-119s1582pcs/xml/BILLS-119s1582pcs.xml"
+    },
+    {
+      "code": "ES",
+      "date": "2025-06-17",
+      "govInfoUrl": "https://www.govinfo.gov/content/pkg/BILLS-119s1582es/xml/BILLS-119s1582es.xml"
+    },
+    {
+      "code": "ENR",
+      "date": "2025-07-18",
+      "govInfoUrl": "https://www.govinfo.gov/content/pkg/BILLS-119s1582enr/xml/BILLS-119s1582enr.xml"
+    }
+  ],
+  "recordedVotes": [
+    {
+      "chamber": "Senate",
+      "congress": 119,
+      "session": 1,
+      "rollNumber": 318,
+      "date": "2025-06-17",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00318.xml"
+    },
+    {
+      "chamber": "House",
+      "congress": 119,
+      "session": 1,
+      "rollNumber": 200,
+      "date": "2025-07-17",
+      "url": "https://clerk.house.gov/evs/2025/roll200.xml"
+    }
+  ],
+  "passageActions": [
+    {
+      "date": "2025-06-17",
+      "chamber": "Senate",
+      "description": "Passed Senate by Yea-Nay Vote. 68 - 30. Record Vote Number: 318.",
+      "voteRef": {
+        "chamber": "Senate",
+        "congress": 119,
+        "session": 1,
+        "rollNumber": 318,
+        "date": "2025-06-17",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00318.xml"
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "chamber": "House",
+      "description": "On passage Passed by the Yeas and Nays: 308 - 122. Roll no. 200.",
+      "voteRef": {
+        "chamber": "House",
+        "congress": 119,
+        "session": 1,
+        "rollNumber": 200,
+        "date": "2025-07-17",
+        "url": "https://clerk.house.gov/evs/2025/roll200.xml"
+      }
+    }
+  ]
+}

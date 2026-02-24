@@ -93,14 +93,19 @@ export function buildAmendmentXml(
 		: '';
 
 	let voteXml = '';
-	if (vote) {
+	if (!vote) {
+		voteXml = `\n        <akndiff:vote date="${meta.date}" result="voice-vote"/>`;
+	} else if (vote) {
 		const forXml = vote.forVoters.length
 			? `          <akndiff:for count="${vote.forCount}">\n${voterXml(vote.forVoters, '            ')}\n          </akndiff:for>`
 			: `          <akndiff:for/>`;
 		const againstXml = vote.againstVoters.length
 			? `          <akndiff:against count="${vote.againstCount}">\n${voterXml(vote.againstVoters, '            ')}\n          </akndiff:against>`
 			: `          <akndiff:against/>`;
-		voteXml = `\n        <akndiff:vote date="${vote.date}" result="${vote.result}" source="${vote.source}">\n${forXml}\n${againstXml}\n          <akndiff:abstain/>\n        </akndiff:vote>`;
+		const abstainXml = vote.abstainVoters.length
+			? `          <akndiff:abstain count="${vote.abstainCount}">\n${voterXml(vote.abstainVoters, '            ')}\n          </akndiff:abstain>`
+			: `          <akndiff:abstain/>`;
+		voteXml = `\n        <akndiff:vote date="${vote.date}" result="${vote.result}" source="${vote.source}">\n${forXml}\n${againstXml}\n${abstainXml}\n        </akndiff:vote>`;
 	}
 
 	const changesXml = changes

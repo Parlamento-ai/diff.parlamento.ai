@@ -24,6 +24,7 @@ export async function generate(
 
 	let previousSections: ParsedSection[] | undefined;
 	let previousDate: string | undefined;
+	let previousCode: string | undefined;
 
 	for (const entry of config.timeline) {
 		const num = String(entry.index + 1).padStart(2, '0');
@@ -78,6 +79,7 @@ export async function generate(
 
 			previousSections = sections;
 			previousDate = entry.date;
+			previousCode = code;
 		} else if (entry.type === 'amendment') {
 			const filename = `${num}-amendment-${entry.index}.xml`;
 
@@ -99,7 +101,7 @@ export async function generate(
 				changesXml = computeChangeSet(oldArticles, newArticles);
 				if (changesXml.changes.length > 0) {
 					console.log(
-						`  Changes: ${changesXml.stats.substituted} sub, ${changesXml.stats.inserted} ins, ${changesXml.stats.repealed} rep`
+						`  Changes (${previousCode} \u2192 ${code}): ${changesXml.stats.substituted} sub, ${changesXml.stats.inserted} ins, ${changesXml.stats.repealed} rep`
 					);
 				}
 			}
@@ -135,7 +137,9 @@ export async function generate(
 				},
 				`${billId.type}${billId.number}-${billId.congress}-${entry.chamber?.toLowerCase()}-passage`,
 				label,
-				`Passed ${entry.chamber} by ${vote ? 'roll call vote' : 'voice vote'} ${voteInfo} on ${entry.date}.`,
+				vote
+				? `Passed ${entry.chamber} by roll call vote ${vote.forCount}-${vote.againstCount} on ${entry.date}.`
+				: `Passed ${entry.chamber} by voice vote on ${entry.date}.`,
 				baseUri,
 				resultUri,
 				vote,
@@ -152,14 +156,18 @@ export async function generate(
 			if (sections) {
 				previousSections = sections;
 				previousDate = entry.date;
+				previousCode = code;
 			}
 		} else if (entry.type === 'act') {
-			// For act, use ENR sections or fall back to last known sections
-			const actSections = sections || previousSections;
-			if (!actSections || actSections.length === 0) {
-				console.warn(`  WARNING: No sections for act, skipping`);
-				continue;
+			if (!sections || sections.length === 0) {
+				if (previousSections) {
+					console.warn(`  WARNING: No sections for ${code} — using fallback from previous version (${previousCode})`);
+				} else {
+					console.warn(`  WARNING: No sections for act, skipping`);
+					continue;
+				}
 			}
+			const actSections = sections || previousSections!;
 
 			const filename = `${num}-act-final.xml`;
 			const plName = publicLaw

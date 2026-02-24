@@ -149,23 +149,76 @@ Codified in US Code (USCODE)
 
 ## Estrategia recomendada
 
-### Fase 1: Proof of Concept (1 bill completo)
-1. Elegir un bill reciente con pocas versiones (ej: una resolución simple)
-2. Descargar todas las versiones via GovInfo API
-3. Parsear Bill DTD + USLM → normalizar a estructura AKN Diff
-4. Descargar roll call votes de Senate.gov + House Clerk
-5. Generar XMLs AKN Diff con changeSets y votes
+### Fase 1: Proof of Concept ✅
 
-### Fase 2: Pipeline automatizado
-1. Integrar unitedstates/congress como data source
-2. Automatizar el diff entre versiones de bills
-3. Mapear enmiendas a changeSets
-4. Escalar a múltiples bills del Congress actual (119th)
+- [x] S.5 (Laken Riley Act) y S.269 (Improper Payments) como bills de prueba
+- [x] Descarga de versiones desde congress.gov (Bill DTD XML)
+- [x] Parseo de Bill DTD → `bill-dtd-parser.ts`
+- [x] Roll call votes de Senate.gov + House Clerk → `vote-parser.ts`
+- [x] Generación de AKN Diff XMLs con changeSets y votes (4 XMLs por bill)
 
-### Fase 3: Histórico
+### Fase 2: Pipeline automatizado ✅
+
+- [x] Congress.gov API v3 como fuente de metadata
+- [x] Diff automático entre versiones con `computeChangeSet()` (reutilizado de CL)
+- [x] Passage actions → amendments con votos nominales
+- [x] Probado con S.5, S.269, S.331 del 119th Congress
+
+```bash
+npx tsx pipeline/us/process.ts s331-119
+# Output: pipeline/data/us/s331-119/akn/ (4 XMLs)
+```
+
+### Fase 3: Histórico (pendiente)
 1. Procesar bills emblemáticos (ACA, Tax Cuts and Jobs Act, Infrastructure Investment)
 2. Construir historial de leyes modificadas (equivalente a Ley 18.045 con 32 versiones)
 3. Integrar Congressional Record para contexto de debate
+4. Soportar bills con `<title>` / `<division>` (ej: NDAA, reconciliación)
+
+## Pipeline US — Capacidades y limitaciones
+
+> Pipeline implementado en `pipeline/us/`. Uso: `npx tsx pipeline/us/process.ts <bill-id> [--phase=N] [--api-key=KEY]`
+
+### Lo que SÍ puede hacer
+
+| Capacidad | Detalle |
+|-----------|---------|
+| **Descubrir metadata** | Consulta automática a Congress.gov API v3: título, sponsor, status, public law, versiones de texto, acciones, votos |
+| **Descargar fuentes** | Bill DTD XMLs desde congress.gov + vote XMLs desde Senate.gov y House Clerk, con cache local |
+| **Parsear Bill DTD XML** | Extrae secciones (`<section>`) con heading, subsections, paragraphs, quoted-blocks y after-quoted-block |
+| **Parsear votos nominales** | Senate XML (100 senadores) y House XML (435+ representantes) con nombre, partido, estado y voto |
+| **Detectar cambios entre versiones** | Diff sección-a-sección usando LCS (substitute, insert, repeal) entre cualquier par de versiones |
+| **Generar AKN Diff completo** | `<bill>`, `<amendment>` con `<akndiff:changeSet>` + `<akndiff:vote>`, y `<act>` final |
+| **Bills del Senado** | Probado con S.5, S.269, S.331 — con y sin roll call votes |
+| **Voice votes** | Genera amendments sin `<akndiff:vote>` cuando no hay roll call (ej: S.269) |
+| **Bills enacted** | Timeline completa: Introduced → Senate Passage → House Passage → Public Law |
+| **Ejecución parcial** | `--phase=N` permite reiniciar desde cualquier fase (útil si se agota el rate limit de la API) |
+| **FRBR URIs correctas** | `/us/bill/{congress}/{type}/{number}/{code}` y `/us/pl/{congress}/{law}` |
+
+### Lo que NO puede hacer (aún)
+
+| Limitación | Por qué | Workaround |
+|------------|---------|------------|
+| **House bills (HR)** | No probado aún, pero la lógica soporta `hr` en teoría | Crear discovery.json manual y correr desde `--phase=2` |
+| **Bills no-enacted** | Solo genera `act` final si `status === 'enacted'` | Funciona parcial: genera bill + amendments, sin act final |
+| **Conference committees** | No modela el trámite de comisión de conferencia (cuando ambas cámaras aprueban versiones distintas) | — |
+| **Enmiendas de piso individuales** | Solo compara versiones completas (IS→ES→ENR), no parsea enmiendas individuales | El diff detecta cambios pero los atribuye a la passage action, no a cada enmienda |
+| **Parsear USLM XML** | Solo parsea Bill DTD (`<legis-body>`, `<section>`), no USLM (`<main>`, `<level>`) | Las versiones ENR/PLAW están disponibles también en Bill DTD |
+| **Committee reports (CRPT)** | No descarga ni parsea informes de comisión | Se podría agregar como fase futura |
+| **Congressional Record (debates)** | No integra transcripciones de debate | Fuera de scope actual |
+| **Bills con títulos/divisiones** | Solo extrae `<section>` directas bajo `<legis-body>`, no secciones dentro de `<title>` o `<division>` | Bills grandes (ej: NDAA, reconciliación) necesitarían parseo recursivo |
+| **Múltiples `legis-body`** | Algunos bills tienen múltiples bodies (ej: enmiendas complejas) | Solo parsea el primero |
+| **DEMO_KEY rate limit** | 30 req/hora con DEMO_KEY — insuficiente para fase 1 (3 calls) si ya se consumieron | Obtener API key gratuita en [api.data.gov/signup](https://api.data.gov/signup/) o crear discovery.json manual |
+| **Registro automático en viewer** | Después de generar, hay que agregar manualmente la entrada en `boletin-loader.ts` | El pipeline imprime la instrucción exacta al final |
+
+### Bills probados
+
+| Bill | Título | PL | Secciones | Changes | Votos |
+|------|--------|----|-----------|---------|-------|
+| S.5-119 | Laken Riley Act | 119-1 | 3 | 1 (IS→ES) | Senate 64-35 + House 263-156 |
+| S.269-119 | Ending Improper Payments to Deceased People Act | 119-77 | 2 | 1 (IS→ES) | Voice votes (ambas cámaras) |
+| S.331-119 | HALT Fentanyl Act | 119-26 | 7 | 4 (IS→ES) | Senate 84-16 + House 321-104 |
+| S.1582-119 | GENIUS Act (Stablecoins) | 119-27 | 19→20 | 16 (PCS→ES) | Senate 68-30 + House 308-122 |
 
 ## Observaciones finales
 

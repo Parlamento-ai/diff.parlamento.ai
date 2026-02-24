@@ -18,7 +18,9 @@ const DEV_SLUGS = [
 	'eu-cra',
 	'eu-data-act',
 	'us-s5-laken-riley',
-	'us-s269-improper-payments'
+	'us-s269-improper-payments',
+	'us-s331-halt-fentanyl',
+	'us-s1582-genius-act'
 ];
 
 export const load: PageServerLoad = async () => {

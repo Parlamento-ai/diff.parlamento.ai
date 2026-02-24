@@ -1,7 +1,7 @@
 /**
  * Phase 3: DOWNLOAD — Fetch bill XMLs and vote XMLs
  */
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Config } from '../types.js';
 
@@ -19,7 +19,6 @@ export async function download(config: Config, outDir: string): Promise<void> {
 
 		// Skip if already downloaded and non-empty
 		if (existsSync(dest)) {
-			const { statSync } = await import('node:fs');
 			const stat = statSync(dest);
 			if (stat.size > 100) {
 				console.log(`  [CACHED] ${item.filename}`);
