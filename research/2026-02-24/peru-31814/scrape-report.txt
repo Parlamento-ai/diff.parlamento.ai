@@ -1,0 +1,56 @@
+╔════════════════════════════════════════════════╗
+║  Peru Scraper — Ley 31814 (PL 2775/2022-CR)   ║
+╚════════════════════════════════════════════════╝
+  Output: C:\Users\matia\Desktop\diff.parlamento.ai\research\2026-02-24\peru-31814
+  Date: 2026-02-24T19:59:40.122Z
+
+
+=== Part 1: spley-portal SPA ===
+
+  Loading spley-portal with expediente route...
+  ERROR: page.goto: Timeout 30000ms exceeded.
+  Total XHR captured: 0
+
+=== Part 2: Download bill PDF ===
+
+  Method 1: Direct navigation with download event...
+  Method 1: FAILED — page.waitForEvent: Timeout 20000ms exceeded while waiting for event "download"
+  Method 2: Establish session in SPA, then fetch PDF...
+  Method 2: ERROR — page.goto: Timeout 30000ms exceeded.
+  Method 3: Playwright context.request.get...
+  Method 3: HTTP 403
+  Method 4: Trying alternate PDF URLs...
+    https://api.congreso.gob.pe/spley-portal-service/archivo/ODQ1OTA=/pdf: HTTP 403, 334 bytes
+    https://wb2server.congreso.gob.pe/service-alfresco/alfresko/detalle/preview/file: HTTP 401, 79 bytes
+  ALL METHODS FAILED for bill PDF
+
+=== Part 3: Votaciones del Pleno ===
+
+  Loading votaciones page...
+    XHR: 200 https://www.congreso.gob.pe/AsistenciasVotacionesPleno/asistencia-votacion-pleno
+  ERROR: page.goto: Timeout 30000ms exceeded.
+
+  Trying Lotus Notes voting pages...
+    XHR: 200 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/Expvirt_2021.nsf/RepExpVirt?OpenForm&Db=202102775&Vi
+    XHR: 200 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/Expvirt_2021.nsf/googleanality?OpenJavascriptLibrary
+    XHR: 200 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/Expvirt_2021.nsf/estilo3.css?OpenCssResource
+    XHR: 200 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/Expvirt_2021.nsf/logo.jpg
+    XHR: 404 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/Expvirt_2021.nsf/css/estilo3.css
+    XHR: 200 https://ssl.google-analytics.com/__utm.gif?utmwv=5.7.2&utms=2&utmn=2089723289&utmhn=www2.congreso.go
+    XHR: 200 https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1954122048&t=pageview&_s=1&dl=https%3A%2F%2
+    XHR: 200 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/Expvirt_2011.nsf/background-new.jpg
+    XHR: 200 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/Expvirt_2011.nsf/fondo.jpg
+    RepExpVirt?OpenForm&Db=202102775&View=: 200
+    Saved expediente-lotus.html (10159 chars)
+    votacionplenary2021?OpenView&Start=1&Count=50&RestrictToCate: 404
+  Total XHR: 13
+    XHR: 404 https://www2.congreso.gob.pe/Sicr/TraDocEstProc/CLVotaci.nsf/votacionplenary2021?OpenView&Start=1&Co
+
+
+========== SCRAPE SUMMARY ==========
+  spley-portal text: 80 chars
+  spley-portal XHR:  SAVED
+  Bill PDF:          NOT DOWNLOADED
+  Votaciones page:   FAILED
+  Votaciones XHR:    SAVED
+====================================

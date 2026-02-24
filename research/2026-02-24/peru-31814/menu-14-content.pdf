@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Opiniones Ciudadanas</title>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+function mapCat(a){path=location.href.toLowerCase();nsfPos=path.indexOf('.nsf');db=path.substring(0,nsfPos+5);filename1 = db +a window.open(filename1,'cuarto_window','top=30,left=160, toolbar=no,location=no,scrollbars=yes,resizable=yes,directories=no,height=620,width=680')}function mapCat2(a){path=location.href.toLowerCase();nsfPos=path.indexOf('.nsf');db=path.substring(0,nsfPos+5);filename1 = a window.open(filename1,'cuarto_window','top=30,left=160, toolbar=no,location=no,scrollbars=yes,resizable=yes,directories=no,height=620,width=680')}
+// -->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!-- 
+document._domino_target = "_self";
+function _doClick(v, o, t, h) {
+  var form = document._RepOpiweb04;
+  if (form.onsubmit) {
+     var retVal = form.onsubmit();
+     if (typeof retVal == "boolean" && retVal == false)
+       return false;
+  }
+  var target = document._domino_target;
+  if (o.href != null) {
+    if (o.target != null)
+       target = o.target;
+  } else {
+    if (t != null)
+      target = t;
+  }
+  form.target = target;
+  form.__Click.value = v;
+  if (h != null)
+    form.action += h;
+  form.submit();
+  return false;
+}
+// -->
+</script>
+</head>
+<body text="#000000" bgcolor="#FFFFFF">
+
+<form method="post" action="/Sicr/ParCiudadana/Foro_pvp.nsf/RepOpiweb04?OpenForm&amp;Seq=1&amp;Db=202102775&amp;View=yyyy&amp;Col=zzzzz" name="_RepOpiweb04">
+<input type="hidden" name="__Click" value="0" /><body topmargin="0" leftmargin="0" marginheight="5" marginwidth="5"><style type="text/css">
+@import url(/Sicr/ParCiudadana/Foro_pvp.nsf/estilolotus.css?OpenCssResource);
+</style>
+
+
+<script language="JavaScript" type="text/javascript" src="/Sicr/ParCiudadana/Foro_pvp.nsf/googleanality?OpenJavascriptLibrary">
+</script>
+
+
+<table align=center width=750  border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="783"><div align="center"><i><u><font size="5" face="Georgia">Reporte de Opiniones Recibidas</font></u></i><br />
+</div><br />
+<b><font size="2" face="Verdana">Proyecto de Ley.: </font></b><font size="2" face="Verdana">1</font><br />
+<b><font size="2" face="Verdana">Número: </font></b><font size="2" face="Verdana">1</font><br />
+<font size="2" color="#FFFFFF" face="Calibri">.</font>
+<table align=center width=750 height="2" cellspacing="1" border="1" bordercolor="#00000" border="1">
+<tr valign="top"><td width="771" bgcolor="#FFFFFF"><div align="center"><font size="4" face="Verdana">No se encontraron opiniones registradas</font></div><h2>No documents found</h2></td></tr>
+</table>
+</td></tr>
+</table>
+</form>
+</body>
+</html>
