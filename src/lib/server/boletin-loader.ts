@@ -22,6 +22,11 @@ const ES_LO3_2018_DIR = 'pipeline/data/es/BOE-A-2018-16673/akn';
 const ES_LEY39_2015_DIR = 'pipeline/data/es/BOE-A-2015-10565/akn';
 const ES_LSSI_DIR = 'pipeline/data/es/BOE-A-2002-13758/akn';
 const ES_TELECOM_DIR = 'pipeline/data/es/BOE-A-2022-10757/akn';
+// ES Tramitación — Proyectos de Ley en tramitación parlamentaria
+const ES_TRAM_ECONOMIA_SOCIAL_DIR = 'pipeline/data/es/121-000036/akn';
+const ES_TRAM_DESPERDICIO_DIR = 'pipeline/data/es/121-000004/akn';
+const ES_TRAM_MENORES_DIR = 'pipeline/data/es/121-000052/akn';
+const ES_TRAM_JORNADA_DIR = 'pipeline/data/es/121-000058/akn';
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
 	'empanadas-de-pino': `${RECETAS_DIR}/receta-empanadas`,
@@ -75,7 +80,12 @@ const BOLETIN_DIRS: Record<string, string> = {
 	// ES — Ley 34/2002 LSSI — Servicios de la Sociedad de la Información (BOE-A-2002-13758)
 	'es-lssi-2002': ES_LSSI_DIR,
 	// ES — Ley 11/2022 General de Telecomunicaciones (BOE-A-2022-10757)
-	'es-telecom-2022': ES_TELECOM_DIR
+	'es-telecom-2022': ES_TELECOM_DIR,
+	// ES Tramitación — Proyectos de Ley en tramitación parlamentaria
+	'es-tram-economia-social': ES_TRAM_ECONOMIA_SOCIAL_DIR,
+	'es-tram-desperdicio-alimentario': ES_TRAM_DESPERDICIO_DIR,
+	'es-tram-menores-digitales': ES_TRAM_MENORES_DIR,
+	'es-tram-jornada-laboral': ES_TRAM_JORNADA_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -237,6 +247,12 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 		};
 		return esLabels[slug] || slug;
 	}
+	// ES Tramitación — bills in parliamentary process (use docTitle from XML as label)
+	if (boletinSlug?.startsWith('es-tram-')) {
+		// For tramitación, we prefer the label from the AKN XML (set via docTitle)
+		// Return slug as-is so buildTimeline() falls through to docTitle
+		return slug;
+	}
 	const labels: Record<string, string> = {
 		original: 'Ley Original',
 		bill: 'Proyecto de Ley',
@@ -372,6 +388,11 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 			final: leyChileSource(1126480)
 		};
 		return map[slug];
+	}
+	// ES Tramitación — bills in parliamentary process (source URLs from config.json)
+	if (boletinSlug?.startsWith('es-tram-')) {
+		// Source URLs are dynamically set from config.json in loadBoletin()
+		return undefined;
 	}
 	// ES — BOE consolidated laws
 	if (boletinSlug?.startsWith('es-')) {
@@ -746,6 +767,25 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 		return docs[versionSlug] || [];
 	}
 
+	// ── ES Tramitación — bills in parliamentary process ──
+	if (boletinSlug?.startsWith('es-tram-')) {
+		// Source documents are the BOCG text files + Congreso JSON
+		// Map boletin slug to data dir: es-tram-economia-social → 121-000036
+		const tramDirs: Record<string, string> = {
+			'es-tram-economia-social': '121-000036',
+			'es-tram-desperdicio-alimentario': '121-000004',
+			'es-tram-menores-digitales': '121-000052',
+			'es-tram-jornada-laboral': '121-000058'
+		};
+		const dataDir = tramDirs[boletinSlug] || boletinSlug.replace('es-tram-', '');
+		const esBase = `pipeline/data/es/${dataDir}/sources`;
+		return [
+			src('Congreso Open Data', `${esBase}/congreso-proyectos.json`, 'json',
+				'https://www.congreso.es/es/opendata/iniciativas'),
+			src('Discovery Metadata', `${esBase}/../discovery.json`, 'json')
+		];
+	}
+
 	// ── ES — BOE consolidated laws ──
 	if (boletinSlug?.startsWith('es-')) {
 		const boeIds: Record<string, string> = {
@@ -803,13 +843,18 @@ export async function loadBoletin(slug: string): Promise<Boletin> {
 			const configRaw = await readFile(configPath, 'utf-8');
 			const esConfig = JSON.parse(configRaw);
 			if (esConfig.timeline) {
+				const isTramitacion = slug.startsWith('es-tram-');
 				const boe = 'https://www.boe.es/buscar';
 				for (const entry of boletin.timeline) {
 					const configEntry = esConfig.timeline.find(
 						(t: { slug: string }) => t.slug === entry.slug
 					);
 					if (!configEntry) continue;
-					if (entry.type === 'amendment' && configEntry.modifyingLaw) {
+					if (isTramitacion && configEntry.sourceUrl) {
+						// Tramitación: source URLs point to BOCG PDFs
+						entry.sourceUrl = configEntry.sourceUrl;
+						entry.sourceLabel = 'BOCG (Congreso)';
+					} else if (entry.type === 'amendment' && configEntry.modifyingLaw) {
 						entry.sourceUrl = `${boe}/doc.php?id=${configEntry.modifyingLaw}`;
 						entry.sourceLabel = 'BOE (ley modificadora)';
 					} else if (entry.type === 'act') {

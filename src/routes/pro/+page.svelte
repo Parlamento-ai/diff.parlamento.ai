@@ -31,7 +31,11 @@
 		'es-lo3-2018-proteccion-datos': FlagEs,
 		'es-ley39-2015-procedimiento-administrativo': FlagEs,
 		'es-lssi-2002': FlagEs,
-		'es-telecom-2022': FlagEs
+		'es-telecom-2022': FlagEs,
+		'es-tram-economia-social': FlagEs,
+		'es-tram-desperdicio-alimentario': FlagEs,
+		'es-tram-menores-digitales': FlagEs,
+		'es-tram-jornada-laboral': FlagEs
 	};
 
 	const normOrder = [
@@ -81,6 +85,11 @@
 	const esLey39 = $derived(data.boletines.find((b) => b.slug === 'es-ley39-2015-procedimiento-administrativo'));
 	const esLssi = $derived(data.boletines.find((b) => b.slug === 'es-lssi-2002'));
 	const esTelecom = $derived(data.boletines.find((b) => b.slug === 'es-telecom-2022'));
+
+	const esTramEconomiaSocial = $derived(data.boletines.find((b) => b.slug === 'es-tram-economia-social'));
+	const esTramDesperdicio = $derived(data.boletines.find((b) => b.slug === 'es-tram-desperdicio-alimentario'));
+	const esTramMenores = $derived(data.boletines.find((b) => b.slug === 'es-tram-menores-digitales'));
+	const esTramJornada = $derived(data.boletines.find((b) => b.slug === 'es-tram-jornada-laboral'));
 </script>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -416,6 +425,62 @@
 						title={esTelecom.title}
 						documentCount={esTelecom.documentCount}
 						flag={flagMap[esTelecom.slug]}
+					/>
+				{/if}
+			</div>
+		</section>
+	{/if}
+
+	<!-- ES — Tramitación parlamentaria (Congreso) -->
+	{#if esTramEconomiaSocial || esTramDesperdicio || esTramMenores || esTramJornada}
+		<section class="mb-14">
+			<div class="mb-5 max-w-lg mx-auto">
+				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
+					<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 text-orange-700 text-xs font-bold">ES</span>
+					Tramitacion parlamentaria — España (Congreso)
+				</h2>
+				<p class="text-xs text-gray-400 mt-1.5 leading-relaxed">
+					Pipeline desde datos abiertos del Congreso + PDFs del BOCG. Evolución completa de proyectos de ley
+					durante su tramitación parlamentaria: texto original, ponencia, dictamen, pleno y aprobación definitiva,
+					con diff artículo por artículo entre cada fase legislativa.
+				</p>
+			</div>
+
+			<div class="max-w-lg mx-auto flex flex-col gap-2">
+				{#if esTramDesperdicio}
+					<BoletinCard
+						slug={esTramDesperdicio.slug}
+						title={esTramDesperdicio.title}
+						documentCount={esTramDesperdicio.documentCount}
+						flag={flagMap[esTramDesperdicio.slug]}
+						firstVersion="bill-original"
+					/>
+				{/if}
+				{#if esTramMenores}
+					<BoletinCard
+						slug={esTramMenores.slug}
+						title={esTramMenores.title}
+						documentCount={esTramMenores.documentCount}
+						flag={flagMap[esTramMenores.slug]}
+						firstVersion="bill-original"
+					/>
+				{/if}
+				{#if esTramEconomiaSocial}
+					<BoletinCard
+						slug={esTramEconomiaSocial.slug}
+						title={esTramEconomiaSocial.title}
+						documentCount={esTramEconomiaSocial.documentCount}
+						flag={flagMap[esTramEconomiaSocial.slug]}
+						firstVersion="bill-original"
+					/>
+				{/if}
+				{#if esTramJornada}
+					<BoletinCard
+						slug={esTramJornada.slug}
+						title={esTramJornada.title}
+						documentCount={esTramJornada.documentCount}
+						flag={flagMap[esTramJornada.slug]}
+						firstVersion="bill-original"
 					/>
 				{/if}
 			</div>

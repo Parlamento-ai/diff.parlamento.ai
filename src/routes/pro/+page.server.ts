@@ -24,7 +24,11 @@ const DEV_SLUGS = [
 	'es-lo3-2018-proteccion-datos',
 	'es-ley39-2015-procedimiento-administrativo',
 	'es-lssi-2002',
-	'es-telecom-2022'
+	'es-telecom-2022',
+	'es-tram-economia-social',
+	'es-tram-desperdicio-alimentario',
+	'es-tram-menores-digitales',
+	'es-tram-jornada-laboral'
 ];
 
 export const load: PageServerLoad = async () => {

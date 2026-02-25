@@ -1,0 +1,1507 @@
+                           BOLETÍN OFICIAL
+                  DE LAS CORTES GENERALES
+
+CONGRESO DE LOS DIPUTADOS
+
+                  XV LEGISLATURA
+
+Serie A:          19 de enero de 2024       Núm. 4-1                                       Pág. 1
+PROYECTOS DE LEY
+
+                         PROYECTO DE LEY
+
+121/000004 Proyecto de Ley de prevención de las pérdidas y el
+                  desperdicio alimentario.
+
+     La Mesa de la Cámara, en su reunión del día de hoy, ha adoptado el acuerdo que se
+indica respecto del asunto de referencia.
+
+(121) Proyecto de ley.
+
+Autor: Gobierno
+
+Proyecto de Ley de prevención de las pérdidas y el desperdicio alimentario.
+
+Acuerdo:
+
+     Encomendar su aprobación con competencia legislativa plena, conforme al artículo 148
+del Reglamento, a la Comisión de Agricultura, Pesca y Alimentación. Asimismo, publicar en
+el Boletín Oficial de las Cortes Generales, estableciendo plazo de enmiendas, por un
+período de quince días hábiles, que finaliza el día 17 de febrero de 2024.
+
+     En ejecución de dicho acuerdo se ordena la publicación de conformidad con el
+artículo 97 del Reglamento de la Cámara.
+
+     Palacio del Congreso de los Diputados, 16 de enero de 2024.—P.D. El Secretario
+General del Congreso de los Diputados, Fernando Galindo Elola-Olaso.
+
+                                                                                           cve: BOCG-15-A-4-1
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                       Pág. 2
+
+    PROYECTO DE LEY DE PREVENCIÓN DE LAS PÉRDIDAS Y EL DESPERDICIO                           cve: BOCG-15-A-4-1
+                                                 ALIMENTARIO
+
+Exposición de motivos
+
+                                                           I
+
+     Una de las primeras manifestaciones externas del desarrollo socioeconómico de las
+naciones es la abundancia de alimentos. Durante siglos la inestabilidad de las cosechas y
+los problemas de sanidad animal y vegetal, el atraso en los medios de producción, la
+imposibilidad de desligarse de los factores climáticos, geográficos y naturales, las
+carencias en estructuras productivas y de transporte, almacenamiento y comercialización
+y las ineficiencias del mercado produjeron frecuentes mortandades y ruinas económicas,
+forzaron emigraciones y redujeron la capacidad para desarrollarse de muchas sociedades.
+El mundo desarrollado produce hoy alimentos en cantidad y calidad suficiente para la
+mayoría de su población, permitiendo un reparto adecuado y a un precio razonable. Y a
+pesar de estos avances, aún hoy para millones de personas en todo el mundo el hambre
+es una amenaza real y una desdicha cotidiana.
+
+     Las pérdidas y el desperdicio de alimentos son señal de un funcionamiento ineficiente
+de los sistemas alimentarios y de una falta de concienciación social. Sin perjuicio de la
+seguridad alimentaria, a lo largo de toda la cadena alimentaria se producen niveles
+significativos de pérdidas y desperdicio alimentario, desde la producción hasta el consumo.
+Solamente entre las fases de la postcosecha y la venta minorista se pierde hasta el 14 %
+de la cantidad de alimentos que se producen en todo el mundo según ha indicado la
+Organización de las Naciones Unidas para la Agricultura y la Alimentación (FAO) en 2019.
+Las pérdidas y el desperdicio alimentario pueden tener su origen en una gama muy variada
+de antecedentes, ya sea por la utilización de insumos inadecuados en las actividades de
+producción; errores en la planificación y calendario establecidos para las tareas de
+cosecha; el empleo de prácticas de producción, recolección y manipulación inapropiadas;
+deficiencias en las condiciones de almacenamiento y control de la temperatura para la
+conservación de productos perecederos; inadecuadas condiciones y técnicas de
+comercialización en la etapa de venta minorista; malas prácticas de los proveedores de
+servicios alimentarios; comportamiento inapropiado de las personas consumidoras durante
+la compra, preparación y consumo de los alimentos; falta o insuficiencia de equipos;
+transporte y capacidad de almacenamiento; una inadecuada organización, la coordinación
+o la falta de comunicación entre los agentes de la cadena alimentaria y la infraestructura
+insuficiente.
+
+     Por lo tanto, reducir drásticamente ese volumen de pérdidas y desperdicio alimentario
+es un imperativo moral de los Poderes públicos y de los operadores de la cadena de
+suministro.
+
+     Pero no solo se desperdician esos alimentos tan necesarios en sí, sino también los
+significativos recursos empleados para producirlos, los ingentes esfuerzos humanos,
+técnicos y económicos invertidos y el valor agregado logrado con tanto trabajo y
+dedicación. El desperdicio supone una ruptura de las cadenas de valor del sector primario,
+un freno para el desarrollo económico de muchas regiones y operadores, en especial de
+las zonas rurales, y una inversión baldía que no se podrá dedicar a otros fines, hasta el
+punto de que se ha calculado que este desperdicio de recursos supone una disminución
+en términos económicos equivalente a 936 miles de millones dólares al año (más de 728
+miles de millones de euros al año), según detallan los estudios de la FAO «Mitigation of
+food wastage. Societal cots and benefits». 2014 y «Food wastage footprint. Full-cost
+accounting. Final report. 2014».
+
+     Además, suponen un lastre muchas veces inadvertido para la política ambiental, ya que
+los alimentos desperdiciados generan una elevada huella hídrica y carbónica. Según el
+informe «Emisiones de gases de efecto invernadero en el sistema agroalimentario y huella
+de carbono de la alimentación en España» (Aguilera, E., Piñero, P., Infante Amate, J.,
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                          Pág. 3
+
+González de Molina, M., Lassaletta, L., Sanz Cobeña, A., 2020) en conjunto, el desperdicio      cve: BOCG-15-A-4-1
+de alimento es responsable de la cuarta parte de las emisiones totales del sistema
+agroalimentario, lo que en términos absolutos representa en torno a una tonelada de CO2e
+per cápita al año. Los alimentos desperdiciados añaden un inasumible coste de oportunidad
+en recursos empleados, ya que absorben una ingente cantidad de insumos que no
+fructificarán e impiden el uso del suelo para otros fines (dos millones de hectáreas se han
+deforestado para producir alimentos que no se han consumido). Casi un 30 % de la
+superficie agrícola del mundo se usa anualmente para producir alimentos que se pierden o
+desperdician. Según el Informe especial del Grupo Intergubernamental de Expertos sobre
+el Cambio Climático (IPCC) sobre «Climate Change and Land» publicado en agosto
+de 2019 «Reduction of food loss and waste could lower GHG emissions and improve food
+security. Combined food loss and waste amount to a third of global food production.
+During 2010-2016, global food loss and waste equalled 8–10 % of total GHG emissions from
+food systems; and cost about USD 1 trillion per year (2012 prices)».
+
+     Por lo tanto, la pérdida y el desperdicio alimentario suponen un irreparable quebranto
+en términos de justicia social, de protección ambiental y de crecimiento económico, y todo
+ello en vano.
+
+     En este sentido, España es un claro ejemplo del paso de una sociedad eminentemente
+agraria a otra urbanizada y del sector terciario. El rechazo al desperdicio alimentario es una
+preocupación tradicional muy ligada a las sociedades agrarias y entre nosotros ya la
+Pragmática de 15 de mayo de 1584 (recogida como Ley I, Título XX; Libro VII de la Novísima
+Recopilación) mandaba que «quando hubiere mucho pan en el pósito, y fuere menester
+renovarlo por la abundancia, porque no se pierda, que los Ayuntamientos lo manden prestar
+á personas abonadas, con fianzas que cambien lo sean, de que lo volverán al pósito á la
+cosecha siguiente». La mejora de las capacidades productivas y logísticas, los intensos
+cambios sociales y de consumo, la urbanización y las nuevas formas de vida y la menor
+dependencia de los aspectos naturales han modificado la realidad productiva y trasladado
+una parte importante del problema de la pérdida y desperdicio hacia eslabones posteriores
+de la cadena de suministro. Así, aun existiendo todavía bolsas de pobreza en todas las
+sociedades desarrolladas, el acceso de la inmensa mayoría de su ciudadanía a comida
+suficiente y de calidad está asegurado, por lo que tanto la percepción del riesgo de perder
+esa situación de privilegio como los nuevos patrones de consumo han llevado a olvidar la
+fragilidad de la abundancia y a descartar cantidades ingentes de comida. Esta realidad
+debilita la economía nacional, aumenta los costes de oportunidad tanto de profesionales
+como de las personas consumidoras, incorpora mayores cargas para su correcto
+tratamiento y genera importantes externalidades negativas, mientras los más vulnerables
+de las sociedades desarrolladas tienen problemas efectivos de acceso a una alimentación
+variada y suficiente y los países más pobres padecen los problemas sociales y sanitarios
+derivados del hambre o la subalimentación, especialmente gravosos entre los niños. Pero
+la pujanza de nuestro sector agroalimentario ha demostrado siempre sobrada capacidad de
+adaptación y modernización y ha asegurado, incluso en los tiempos más difíciles, el
+suministro puntual de alimentos de gran calidad, la fijación de población en las zonas
+rurales, la contribución a la preservación ambiental y paisajística y la protección de rasgos
+culturales definitorios como la gastronomía. El compromiso, pues, de nuestro país con la
+lucha contra las pérdidas y el desperdicio alimentario se antoja imprescindible, como
+corolario lógico de esos valores y de la responsabilidad tanto de los diferentes eslabones
+de la cadena como de las entidades del tercer sector, y refleja, al propio tiempo, nuestra
+evolución socioeconómica. Es imperativo, pues, que las naciones más desarrolladas no
+olviden ni su pasado ni sus obligaciones para con quienes más necesitan de una apuesta
+decidida por un mundo mejor.
+
+                                                           II
+
+     La sociedad española y europea, así como las instituciones nacionales y comunitarias,
+no han permanecido ajenas a la situación que afecta las pérdidas y el desperdicio
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                          Pág. 4
+
+alimentario a todos los eslabones de la cadena alimentaria, reclamando medidas para la          cve: BOCG-15-A-4-1
+prevención y la reducción de las pérdidas y desperdicio alimentario, las cuales brindarán
+una gran oportunidad para asegurar el abastecimiento alimentario, reducir los riesgos
+medioambientales, conservar recursos no renovables para otros usos y evitar pérdidas
+económicas. En consecuencia, los Poderes públicos han empezado a tomar conciencia
+del problema y a actuar paulatinamente para poner fin en la medida de lo posible a esta
+situación insostenible.
+
+     En el plano internacional, en el Foro de Alto Nivel de la Organización de las Naciones
+Unidas para la Agricultura y la Alimentación celebrado en Roma en 2009 se aprobó el
+documento «Cómo alimentar al mundo en 2050», en el que se ponía de manifiesto la
+necesidad de incrementar la producción de alimentos para hacer frente a la demanda
+creciente de una población en aumento y de la imperiosa necesidad de abordar las
+pérdidas y el desperdicio de alimentos, una oportunidad desaprovechada de alimentar al
+mundo, especialmente mejorando el nivel de nutrición de las poblaciones más pobres, al
+tiempo que se contenía el empleo de recursos naturales finitos y de gestión de residuos
+biodegradables.
+
+     Para fomentar la concienciación frente a este problema, se declaró el 29 de septiembre
+como el Día internacional contra el desperdicio de alimentos.
+
+     En ese marco, el Objetivo de Desarrollo Sostenible (ODS) 12 de la Agenda 2030
+dispone en su meta 3 que para 2030 hay que «reducir a la mitad el desperdicio de
+alimentos por habitante correspondiente a los niveles de la venta al por menor y el
+consumidor y reducir la pérdida de alimentos a lo largo de las cadenas de producción y
+suministro». Este objetivo aparece muy vinculado a otros como el ODS 2 «Hambre cero»,
+el ODS 11 «Ciudades y comunidades sostenibles» o el ODS 13 «Acciones para el clima»,
+así como los 14 y 15 (relativos a la vida submarina y de los ecosistemas) y conforma un
+elemento transversal a la actuación internacional en la materia.
+
+     Asimismo, los Ministros de Agricultura del G20 se reunieron en Estambul en 2015 para
+abordar los crecientes desafíos para asegurar el abastecimiento alimentario, expresando
+«gran preocupación por el notable alcance de la pérdida y el desperdicio de alimentos en
+todas las cadenas de valor alimentarias», y su importancia económica, ambiental y social,
+de modo que se conjuraron para establecer sistemas alimentarios sostenibles reduciendo
+las pérdidas y el desperdicio de alimentos. Posteriormente se presentaría en su marco un
+«Plan de Acción del G-20 sobre Seguridad Alimentaria / Sistemas Alimentarios Sostenibles»
+como guía de actuación para sus miembros.
+
+     La lucha contra el desperdicio de alimentos es, pues, crucial en el marco del enfoque
+multilateral para asegurar el abastecimiento alimentario, que la FAO define como la
+situación que se da cuando todas las personas tienen acceso físico, social y económico
+permanente a alimentos seguros, nutritivos y en cantidad suficiente para satisfacer sus
+necesidades nutricionales y preferencias alimentarias, y así poder llevar una vida activa
+y saludable. Para lograrlo, ha propuesto entre otras medidas la constitución de una
+plataforma para reducir las pérdidas y el desperdicio mediante un conjunto de
+recomendaciones coherentes en toda la cadena de suministro, que pasan por evitar las
+pérdidas en la producción y la cosecha mediante prácticas sostenibles tanto técnica como
+socioeconómica y ambientalmente; asegurar instalaciones y medios de almacenamiento
+y procesado adecuadas, desarrollando capacidades y asegurando la disponibilidad de
+materias primas y tecnologías eficientes; mejorar las técnicas de etiquetado y
+mercadotecnia, generando alimentos seguros y nutritivos que no se desperdicien o
+descarten; mejorar el comportamiento informado y el consumo sostenible; y reducir el
+desperdicio a lo largo de toda la cadena alimentaria, incluyendo el canal HORECA y los
+hogares.
+
+     El estudio de la FAO sobre Pérdidas y desperdicio de alimentos en el mundo – Alcance,
+causas y prevención, de 2011, fue un verdadero punto de inflexión en la toma de conciencia
+mundial sobre esta materia. Los resultados del estudio sugieren que un tercio de la producción
+de alimentos se pierde o desperdicia, lo que equivale a 1.300 millones de toneladas al año:
+«cantidades enormes de los recursos destinados a la producción de alimentos se utilizan en
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                           Pág. 5
+
+vano, y las emisiones de gases de efecto invernadero causadas por la producción de               cve: BOCG-15-A-4-1
+alimentos que se pierden o desperdician también son emisiones en vano».
+
+     El estudio apreció una diferencia significativa entre los patrones de comportamiento en
+los países ricos, donde la mayoría se concentra en la etapa de consumo, incluso aun siendo
+alimentos aptos, consecuencia del comportamiento del consumidor y de la falta de
+coordinación entre los diferentes actores de la cadena de suministro, y en los países pobres,
+donde los alimentos se pierden principalmente durante las etapas iniciales e intermedias de
+la cadena de suministro debido a limitaciones económicas, técnicas y de gestión del
+aprovechamiento, las instalaciones de almacenamiento y la refrigeración en condiciones
+climáticas difíciles, la infraestructura, el envasado y los sistemas de comercialización.
+
+     Prueba de ello es que en la Unión Europea se calcula que un 40 % del desperdicio se
+concentra en el consumidor y otro tanto en la transformación y fabricación, siendo del 15 %
+en la restauración y del 5 % en la distribución.
+
+     Precisamente la Unión ha ido aprobando una serie de iniciativas para luchar contra
+estas prácticas. Así, en 2010 la Comisión elaboró el pionero «Estudio preparatorio de los
+residuos alimentarios en la UE-27» como una primera aproximación a la situación.
+
+     La Resolución del Parlamento Europeo, de 19 de enero de 2012, sobre cómo evitar el
+desperdicio de alimentos: estrategias para mejorar la eficiencia de la cadena alimentaria en
+la UE, supuso el primer hito en este camino. El Parlamento recordaba que en ese momento
+había en la propia Unión 79 millones de personas por debajo del umbral de pobreza, de los
+cuales 16 millones recibían ayuda alimentaria de organismos de beneficencia.
+
+     Se instaba a las instituciones, Estados y operadores de la cadena de suministro a
+abordar el problema del desperdicio, al plantear cuestiones éticas, económicas, sociales
+nutricionales, consecuencias sanitarias y ambientales, (la prevención en la generación de
+residuos alimentarios y su depósito en vertederos, contribuyen significativamente al
+calentamiento climático por el gas metano que generan, cuyo efecto invernadero es 25
+veces superior al del dióxido de carbono), de modo que se mejorara la eficiencia y se
+incorporase a las políticas públicas europeas, tomándose medidas para reducir a la mitad
+el desperdicio de alimentos para 2025 y, al mismo tiempo, prevenir la generación de
+biorresiduos.
+
+     La resolución «considera imperativo reducir el desperdicio de alimentos a lo largo de
+toda la cadena alimentaria, desde el campo hasta la mesa del consumidor … adoptando
+una estrategia coordinada, seguida de acciones concretas a escala europea, incluido el
+intercambio de mejores prácticas, … fomentando las relaciones directas entre productores
+y las personas consumidoras y acortando las cadenas de suministro de alimentos, pidiendo
+a todas las partes interesadas que asuman más responsabilidades compartidas y
+alentándolas a intensificar la coordinación con el fin de continuar mejorando la logística, el
+transporte, la gestión de existencias y el envasado» dado que las causas del desperdicio
+son diversas: «exceso de producción, mal acondicionamiento del producto (tamaño o
+forma mal concebidos), deterioro del producto o del envase, normas de comercialización
+(problemas de aspecto o envase defectuoso), y mala gestión de existencias o estrategias
+comerciales inadecuadas».
+
+     La resolución «hace hincapié en que la agricultura, por su propia naturaleza, es
+eficiente en el uso de recursos y puede desempeñar un papel fundamental y de avanzadilla
+en la lucha contra el desperdicio de alimentos», de modo que insta a tenerlo en cuenta en
+sus propuestas normativas, a fijar una definición armonizada de desperdicio, invertir en
+investigación, fomentar la educación y revisar los requisitos de calidad aplicables al
+aspecto exterior, tanto los impuestos por la legislación europea o nacional como por
+normas internas de las empresas, recordando que el Estudio de la Comisión sobre el
+empoderamiento de los consumidores en la Unión Europea (SEC(2011)0469) concluyó
+que el 18 % de los ciudadanos europeos no comprenden la frase «Consúmase
+preferentemente antes del...».
+
+     Años después, el Parlamento Europeo aprobaría por unanimidad una Resolución
+sobre la «Iniciativa sobre el uso eficiente de los recursos: reducir el desperdicio alimentario
+y garantizar la seguridad alimentaria» (2017), que insiste tanto en el problema como en las
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                        Pág. 6
+
+soluciones, recordando la necesidad de tomar medidas urgentes, efectivas y coordinadas        cve: BOCG-15-A-4-1
+para reducirlo y fijar objetivos concretos.
+
+     Entre las medidas recogidas en dicho documento cabe destacar la necesidad de
+realizar actividades de sensibilización y campañas de comunicación; fija un objetivo de
+reducción del desperdicio de alimentos en la Unión del 30 % para 2025 y del 50 %
+hasta 2030; insiste en el potencial de optimización de la utilización de alimentos perdidos
+o descartados y de subproductos en la producción de piensos, el reciclado de nutrientes y
+la producción de enmiendas de suelo; propone replantear los indicadores «fecha de
+caducidad» y «consumir preferentemente antes de» e identificar modelos logístico-
+organizativos que permitan recuperar, con plena seguridad, los productos que no se han
+vendido en esa fecha; incita a los hogares mediante la promoción de un día semanal
+dedicado a aprovechar las sobras y la creación de mercados para dar salida a los
+productos que normalmente quedan excluidos; destaca el potencial de los proyectos de
+innovación social, como la recogida y donación de alimentos excedentarios a las
+asociaciones de ayuda alimentaria y el fomento de las cadenas cortas de comercialización;
+sugiere aprobar «legislación del buen samaritano» pero teniendo en cuenta que las
+donaciones de alimentos no resuelven los principales problemas de la pobreza y que han
+de sujetarse a controles para que no se desvíen a la creación de un mercado alternativo;
+y recomienda incluir en las licitaciones de restauración la obligación de contar con planes
+de reducción y gestión de los desperdicios alimentarios y que los operadores asuman su
+parte de responsabilidad y apliquen la declaración conjunta sobre el desperdicio de
+alimentos Every Crumb Counts («cada migaja cuenta») y el acuerdo del sector minorista
+sobre el desperdicio.
+
+     En 2016 se adoptaron varias iniciativas en este mismo sentido, desde diferentes
+enfoques e instituciones, pero confluyendo en un objetivo compartido. Por un lado, se puso
+en marcha la Plataforma UE para las pérdidas y el desperdicio de alimentos, que permite
+un eficaz intercambio de experiencias y mejores prácticas entre Estados y agentes. Por
+otro lado, se aprobó el Plan de Acción para la Economía Circular y el Dictamen del Comité
+Económico y Social sobre «Sistemas alimentarios más sostenibles» instaba a la Comisión
+Europea y los Estados Miembros a lograr un sistema alimentario sostenible, justo y
+respetuoso con el clima, reduciendo el desperdicio. Además, el Informe Especial n.º 34/2016
+del Tribunal de Cuentas Europeo, «La lucha contra el desperdicio de alimentos: una
+oportunidad para la UE de hacer más eficiente el empleo de recursos en la cadena de
+suministro alimentario» exigió a la UE ser más eficiente en la lucha contra el desperdicio
+alimentario, considerando imprescindible fijar una definición para lograr los objetivos. Por
+último, se aprobaron las Conclusiones del Consejo sobre «Cerrar el círculo: un plan de
+acción de la UE para la economía circular» y las Conclusiones del Consejo sobre las
+pérdidas y desperdicio alimentario han insistido en estos objetivos, fomentando la
+sostenibilidad, la reducción de los residuos y el desperdicio alimentario, en la que se
+incluía, entre otros aspectos, la petición a los Estados miembros y a la Comisión para la
+recopilación de datos con el fin de comprender mejor el problema; hacer hincapié en la
+prevención de las pérdidas y el desperdicio alimentario y facilitar la donación a
+organizaciones solidarias, de carácter social o de fines humanitarios de productos
+alimentarios no vendidos. En 2018 se hizo una primera evaluación del progreso en la
+implantación de dichas conclusiones, y más tarde, en 2020, se hizo una segunda
+evaluación, en la que la presidencia alemana presentó un cuestionario a los Estados
+miembros y a la Comisión, concluyendo que todos los Estados han adoptado medidas
+nacionales para reducir las pérdidas y desperdicio alimentario, y que con frecuencia las
+han integrado en sus estrategias o legislación nacional, destacando en particular el
+tratamiento fiscal favorable de tales iniciativas.
+
+     Asimismo, la Comisión progresó en el desarrollo de una metodología de la UE para la
+medición del desperdicio de alimentos, y elaboró unas directrices de la UE para facilitar la
+donación de alimentos y la utilización de antiguos alimentos como pienso.
+
+     A su vez, en aplicación de la revisión de 2018 de la Directiva Marco de Residuos
+(DMR), se establece la obligación a los Estados miembros de adoptar medidas para
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                           Pág. 7
+
+prevenir la generación de residuos, y en concreto, reducir los residuos alimentarios (a los      cve: BOCG-15-A-4-1
+que el desperdicio de alimentos contribuye en gran medida), para lo que deberán
+establecer sistemas de medición para conocer los residuos alimentarios generados y su
+evolución, basados en una metodología común aprobada por Decisión Delegada
+(UE) 2019/1597 de la Comisión, de 3 de mayo de 2019, por la que se complementa la
+Directiva 2008/98/CE del Parlamento Europeo y del Consejo en lo que concierne a una
+metodología común y a los requisitos mínimos de calidad para la medición uniforme de los
+residuos alimentarios.
+
+     En la Directiva se establece la obligación de comunicar la cantidad total de residuos
+alimentarios generados en cada uno de los eslabones de la cadena de suministro, con base
+en las mediciones que pueden realizarse cada cuatro años para cada uno de estos
+eslabones de conformidad con la Decisión, de modo que la Comisión valorará en 2023 la
+viabilidad de establecer objetivos de reducción a escala europea. Las medidas para prevenir
+la generación de residuos que impone la directiva a los Estados miembros deberán, como
+mínimo, reducir la generación de residuos alimentarios en la producción primaria, en la
+transformación y la fabricación, la venta minorista y otros tipos de distribución de alimentos,
+en restaurantes y servicios alimentarios, así como en los hogares, como contribución a los
+objetivos de desarrollo sostenible de las Naciones Unidas para reducir en un 50 % los
+residuos alimentarios per cápita a escala mundial en la venta minorista y de las personas
+consumidoras, y reducir las pérdidas de alimentos a lo largo de las cadenas de producción
+y suministro para 2030 y fomentarán la donación de alimentos y otros medios de
+redistribución para el consumo humano, dando prioridad al consumo humano frente a la
+alimentación animal y la transformación en productos no alimenticios.
+
+     Cabe significar que la reciente Ley 7/2022, de 8 de abril, de residuos y suelos
+contaminados para una economía circular, prevé medidas para prevenir la generación de
+residuos, como la obligación de que las autoridades competentes adopten medidas cuyos
+fines serán, al menos, reducir la generación de residuos alimentarios en la producción
+primaria, en la transformación y la fabricación, en la venta minorista y otros tipos de
+distribución de alimentos, en restaurantes y servicios de comidas, así como en los hogares
+de forma que se logre una reducción del 50 % de los residuos alimentarios per cápita en el
+plano de la venta minorista y de las personas consumidoras, y una reducción del 20 % de
+las pérdidas de alimentos a lo largo de las cadenas de producción y suministro para 2030,
+respecto a 2020, y fomentar la donación de alimentos y otros tipos de redistribución para
+consumo humano, priorizándolo frente a la alimentación animal y a la transformación en
+productos no alimenticios. Además, establece una medida por la que todos los municipios
+con más de 5.000 habitantes están obligados a separar los biorresiduos (fracción
+orgánica), e incluye un artículo específico sobre residuos alimentarios.
+
+     En relación con las definiciones de residuos alimentarios y desperdicio alimentario,
+cabe señalar que el residuo alimentario es un concepto definido en la Ley 7/2022, de 8 de
+abril, procedente de la Directiva Marco de Residuos, y es todo alimento, tal como se define
+en el artículo 2 del Reglamento (CE) 178/2002 del Parlamento Europeo y del Consejo,
+de 28 de enero de 2002, es todo alimento, que se ha convertido en residuo, siendo
+«residuo» cualquier sustancia u objeto del cual su poseedor se desprenda o tenga la
+intención o la obligación de desprenderse.
+
+     La definición de «alimento» establecida en el Reglamento (CE) 178/2002 abarca los
+alimentos en su conjunto, a lo largo de toda la cadena alimentaria, desde la producción
+hasta el consumo. Así mismo, los alimentos incluyen también partes no comestibles, si
+éstas no se separan de las partes comestibles cuando se producen los alimentos, tales
+como los huesos de la carne destinada al consumo humano. Por consiguiente, los residuos
+alimentarios pueden comprender elementos con partes de alimentos destinadas a ser
+ingeridas y partes de alimentos no destinadas a ser ingeridas. Por tanto, el concepto de
+desperdicio alimentario sería un subconjunto del concepto residuo alimentario, dado que
+éste último sí incluye «partes de alimentos no destinadas a ser ingeridas», que no entran
+dentro del concepto de desperdicio.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                         Pág. 8
+
+     En todo caso, las actuaciones ligadas a la lucha contra el desperdicio y la pérdida de    cve: BOCG-15-A-4-1
+alimentos aparecen en otras actuaciones europeas, como el Pacto Verde Europeo y
+especialmente de la Estrategia de la Granja a la Mesa, que han incorporado estas acciones
+como elemento transversal en el resto de políticas comunitarias, o el programa de consumo
+de fruta y leche en las escuelas para fomentar buenos hábitos alimentarios entre los niños
+y jóvenes, que puede ir acompañado de medidas educativas que fomenten la prevención
+de las pérdidas y el desperdicio. Todas ellas han llegado, en último término, a conformar
+un núcleo esencial de la nueva Política Agrícola Común (PAC) para 2023 en adelante.
+
+     Por otro lado, la Estrategia Española de Economía Circular - España 2030 incluye un
+objetivo de EEC que incluye como objetivo reducir la generación de residuos de alimentos
+en toda cadena alimentaria: 50 % de reducción per cápita a nivel de hogar y consumo
+minorista y un 20 % en las cadenas de producción y suministro a partir del año 2020,
+contribuyendo así a los Objetivos de Desarrollo Sostenible (ODS). Asimismo, el I Plan de
+Acción de Economía Circular que incluye un apartado 2.2 sobre residuos alimentario con
+dos medidas, instrumentos con los que esta ley es coherente.
+
+     Precisamente, este reflejo en la Política Agrícola Común (PAC) venidera tiene también
+traslación en sede nacional, de modo que en el Plan Estratégico de la nueva PAC se
+recoge un Objetivo Específico 9 para mejorar la respuesta de la agricultura a las exigencias
+sociales en materia de alimentación, salud y sostenibilidad, en cuya definición se ha
+identificado como una necesidad la de reducir el desperdicio alimentario desde la
+producción hasta las personas consumidoras. ​
+
+     Pero el Reino de España puso en marcha ya muchas otras iniciativas para detener el
+desperdicio, de entre las que cabe destacar la pionera Estrategia «Más alimento, menos
+desperdicio» del Ministerio de Agricultura, Pesca y Alimentación, de 2013, destinada a
+fomentar la transparencia, el diálogo y la coordinación entre los agentes de la cadena
+alimentaria y las Administraciones Públicas, y a desarrollar de forma coordinada
+actuaciones que han contribuido a impulsar un cambio de actitudes, sistemas de trabajo y
+de gestión que han permitido limitar el desperdicio y reducir las presiones ambientales.
+
+     Sus principales líneas de actuación han sido la colaboración entre los diferentes
+actores interesados, el aumento de la concienciación social, el impulso de buenas prácticas
+de prevención y reducción y la optimización del excedente y se ha ejecutado con un
+enfoque multidisciplinar y multisectorial, en la que todos los agentes implicados en la
+cadena de suministro de alimentos contribuyeron de forma directa o indirecta a la
+prevención y reducción. De entre estas líneas pueden destacarse el esfuerzo por lograr
+informar y concienciar (para lograr compromisos firmes contra el desperdicio de alimentos
+en todos los eslabones) o ciertas modificaciones normativas, como la desaparición de la
+indicación de la fecha límite de venta del yogur. Asimismo, el Código de Buenas Prácticas
+Mercantiles en la Contratación Alimentaria ha incorporado el compromiso de prestar
+especial atención a reducir el volumen de desperdicios alimentarios en las distintas fases
+de la cadena.
+
+     Otro de los elementos claves ha residido en el apoyo a las nuevas tecnologías y la
+innovación, como aquéllas que permiten aumentar la vida útil de los alimentos, sobre todo
+en cuanto a su envasado, por lo que se trabajó fomentando el emprendimiento y la
+innovación de proyectos empresariales dirigidos a la reducción del desperdicio alimentario,
+o la identificación de las cuatro Rs del desperdicio alimentario: reducir mediante la compra
+responsable, redistribuir donando alimentos para salvarlos, reutilizar para aprovechar las
+sobras con creatividad y reciclar, atreviéndose a compostar. La Estrategia contemplaba
+diversas iniciativas en el ámbito de la evaluación, la divulgación y promoción; los estudios,
+la innovación y la cooperación y gran parte de los esfuerzos se centraron en producir
+cambios en el consumidor como destinatario final de la cadena agroalimentaria, puesto
+que éste tiene una posición de fuerza al realizar sus decisiones de compra, orientando al
+mercado. En este sentido, se trabajó con actuaciones en las escuelas, con las «Semanas
+contra el desperdicio» y con campañas de información y sensibilización.
+
+     Desde el principio se consideró que esta Estrategia debía instrumentarse mediante
+recomendaciones, acuerdos voluntarios y autorregulación, pues se entendía que debían
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                        Pág. 9
+
+ser los propios agentes de la cadena alimentaria los que mostrasen su compromiso y se         cve: BOCG-15-A-4-1
+adhiriesen a la Estrategia convencidos por sí mismos de la necesidad de actuar para
+reducir este problema.
+
+     Sin embargo, como en otros documentos se ha constatado, el primer gran reto ha sido
+saber exactamente en qué consiste y cuál es la magnitud del problema, por lo que se ha
+venido trabajando con los agentes de la cadena alimentaria para la realización de estudios
+que han permitido conocer en qué etapas se producen las pérdidas y el desperdicio
+alimentario, su cuantificación e impacto económico y social. El primero de ellos fue el
+Estudio monográfico sobre el desperdicio alimentario del Barómetro del clima de confianza
+del sector agroalimentario de 2013, en el que se concluyó que la inmensa mayoría de los
+distribuidores retiraban de media un 5,6 % de sus productos por sobrepasar las fechas de
+consumo preferente y caducidad y que la mayoría de las personas consumidoras decían
+conocer la diferencia entre fecha de caducidad y fecha de consumo preferente, aunque
+existía margen de mejora. Tras su repetición en 2015 la cantidad de retiradas había bajado
+levemente pero su destino era el mismo que entonces: la basura. Mientras, el 95 % de las
+personas cree que los supermercados deberían donar a bancos de alimentos los productos
+a punto de caducar y que saben que no venderán.
+
+     En 2014 se puso en funcionamiento el Panel de cuantificación del desperdicio
+alimentario en los hogares españoles y más tarde, el Panel de cuantificación del
+desperdicio alimentario fuera de los hogares, que al ser sistemas de medición estable,
+evolutiva y con visión a largo plazo proporcionan información detallada tanto de los
+alimentos que se tiran tal cual se compraron, como de los restos de recetas preparadas en
+el hogar que acaban en la basura y de los alimentos y bebidas fuera de los hogares.
+
+     Según datos del Panel de cuantificación del desperdicio alimentario en los hogares
+españoles, la evolución del desperdicio desde el inicio de las mediciones ha sido desigual,
+si bien se ha podido observar que estaciones especialmente cálidas (el verano de 2015,
+así como el verano y el otoño de 2018) han coincidido con mayores niveles de desperdicio.
+Tras varios períodos en los que la tendencia general era decreciente, en el otoño-invierno
+de 2018-19 se alcanzó el valor más alto de la serie (712,2 millones de kg de desperdicio).
+En total, el año 2019 se desperdiciaron 1.352,5 millones de kg, un incremento del 1 %
+respecto a 2018, aunque desde entonces el desperdicio ha ido descendiendo
+progresivamente.
+
+     Según los datos de primavera-verano de 2020, durante la pandemia el número de
+hogares que desperdicia ha descendido ligeramente al 74,4 % (siendo en 2019 el 79 %), a
+pesar de aumentar notablemente el consumo en el hogar. También desciende un 2,6 % el
+volumen de desperdicio respecto a primavera-verano de 2019.
+
+     En 2020 el desperdicio total se ha situado en 25 millones de kg a la semana
+aproximadamente, que corresponden a casi 1,4 kg por hogar. Más del 80 % del desperdicio
+corresponde a productos sin utilizar, que se desechan por deterioro. El mayor volumen de
+desperdicio corresponde a frutas, hortalizas y lácteos, que suman más del 50 % del total
+de productos sin utilizar. Mientras que las recetas más desperdiciadas son las de
+legumbres, cocidos y sopas o purés.
+
+     Por otra parte, según los datos del Panel de cuantificación del desperdicio alimentario
+fuera de los hogares, el desperdicio total generado por parte de las personas consumidoras
+en su consumo extradoméstico, en un período de 12 meses (otoño-invierno + primavera
+verano 2020), fue de 30,5 millones de kg, lo que supone alrededor de 0,9 kg per cápita.
+Los alimentos más desperdiciados en este período fueron las hortalizas y verduras, la
+carne y el pan, sumando entre las tres categorías más del 50 %. Entre las bebidas destacan
+las bebidas frías, en especial las bebidas refrescantes, agua y cerveza, sumando alrededor
+del 75 %.
+
+     La segunda etapa de la Estrategia vino a profundizar en los objetivos originales, por
+medio de ocho ejes: generación de conocimiento, formación y sensibilización, fomento de
+buenas prácticas, colaboración con otros agentes, acuerdos sectoriales, aspectos
+normativos, investigación e innovación y desperdicio, medio ambiente y cambio climático.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                        Pág. 10
+
+     Es esta nueva etapa, el Ministerio cuantificó el desperdicio que se generaba en la       cve: BOCG-15-A-4-1
+industria y la distribución en España donde se pudo observar que la sensibilidad sobre la
+importancia de prevenir y reducir el desperdicio crece progresivamente, así como la visión
+de que sólo desde la colaboración se puede reducir y atajar este problema.
+
+     También se pudo comprobar que, el nivel de concienciación de las empresas sobre la
+importancia de combatir el desperdicio alimentario, es cada vez mayor, el 71 % de las
+empresas dispone de un plan para combatir el desperdicio de alimentos. Un 61,1 %
+promueve prácticas internas y un 51,39 % realiza acciones con los eslabones inmediatamente
+anteriores o posteriores destinados a reducir el desperdicio de alimentos.
+
+     Se deduce que hay una búsqueda de producción más eficiente. De la producción, por
+cada kg de producto acabado en la industria alimentaria, se genera un 0,0022 Kg de
+subproductos que se aprovecha y un 0,004 Kg de residuo, lo que implica que las empresas
+trabajan para poder aprovechar la mayor cantidad de alimentos.
+
+     Las prácticas que mayormente emplean en la lucha contra el desperdicio son la
+formación y concienciación de los propios empleados y proveedores mediante cursos,
+charlas, visitas… Y los controles exhaustivos de los procesos y maquinaria para la
+eliminación de ineficiencias durante el proceso. Además, este estudio también se centró
+en el impacto que ha tenido el COVID-19 en el desperdicio de alimentos, destacando que
+más del 20 % de empresas ha aumentado la donación de los alimentos. Y que hay una
+mayor solidaridad, ya que 9 de cada 10 empresas donan a ONGs.
+
+     El balance de estos años de Estrategia ha supuesto un avance en el desarrollo de
+actuaciones que han contribuido al impulso de cambio de actitudes, sistemas de trabajo y
+de gestión, buscando limitar el desperdicio de alimentos y reducir las presiones
+ambientales. Concluida la vigencia de la estrategia en 2020, la presente ley supone el
+siguiente paso en el proceso para afrontar el serio problema del desperdicio alimentario,
+con el objeto de incorporar al Ordenamiento una serie de principios y normas que permitan
+atajarlo y sentar las bases para su erradicación.
+
+                                                          III
+
+     No obstante, los esfuerzos realizados en la lucha contra el desperdicio alimentario
+parecen haber sido insuficientes. Por ese motivo, y debido a que el problema de las
+pérdidas y el desperdicio alimentario afecta a todos los eslabones de la cadena de
+suministro y que numerosos factores influyen en él, parece evidente la necesidad de
+contar con una norma que fomente la prevención y reducción de las pérdidas y el
+desperdicio alimentario, cuyo reto sea lograr evitar y frenar la generación de las pérdidas
+y el desperdicio alimentario, impactos adversos de su generación y de sus
+aprovechamientos y valorización a lo largo de la cadena alimentaria. Para lograr que todos
+los eslabones de la cadena de suministro sean eficientes en la consecución de este
+objetivo es necesaria la participación de todos los sectores de la sociedad, involucrando
+en su elaboración y en su puesta en práctica a Administraciones públicas, empresas y
+operadores relacionados con la cadena alimentaria, asociaciones, y la sociedad en su
+conjunto. Sólo así es posible reducir las pérdidas y el desperdicio alimentario en todos los
+ámbitos de la cadena de suministro.
+
+     La lucha contra las pérdidas y el desperdicio alimentario es clave para lograr la
+sostenibilidad. La prevención y reducción de las pérdidas y el desperdicio de alimentos
+ofrece beneficios para todos los eslabones de la cadena alimentaria, y la recuperación y
+distribución de los excedentes de alimentos tiene un importante peso sobre la dimensión
+social. En el marco expuesto, la presente ley sobre la prevención y la reducción de la
+generación de pérdidas y desperdicio alimentario, impactos adversos de su generación y
+de sus aprovechamientos y valorización a lo largo de la cadena alimentaria, tiene como
+finalidad promover la bioeconomía circular; disminuir el desperdicio de alimentos mediante
+una gestión más eficiente de los recursos destinados a la producción agraria y una mejor
+gestión de los recursos hídricos, evitando excedentes agrícolas que puedan perderse o
+desperdiciarse y que pueden proporcionar claros beneficios para la alimentación;
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                                Pág. 11
+
+sensibilizar e informar a los agentes de la producción, transformación, distribución,                 cve: BOCG-15-A-4-1
+hostelería, restauración, personas consumidoras y ciudadanía en generar; fomentar la
+donación de alimentos garantizando la seguridad alimentaria, la trazabilidad; promover la
+recuperación y distribución de excedentes de alimentos con fines de solidaridad social,
+asignándolos como prioridad para uso humano y favorecer la investigación e innovación y
+actividades de concienciación en el ámbito de la reducción del desperdicio alimentario.
+
+     La prevención del desperdicio alimentario contribuye a mejorar la eficiencia del sistema
+alimentario, favorece la bioeconomía circular y el aprovechamiento integral de los recursos
+y subproductos.
+
+     Entre los fines de la ley cabe destacar el de dar respuesta al objetivo sobre producción y
+consumo responsables de la Agenda 2030 para el Desarrollo Sostenible. Para ello, además
+de otras medidas, se reducirá la generación de residuos alimentarios en la producción
+primaria, en la transformación y la fabricación, en la venta minorista y otros tipos de distribución
+de alimentos, en restaurantes y servicios de comidas, así como en los hogares de forma que
+se logre una reducción del 50 % de los residuos alimentarios per cápita en el plano de la venta
+minorista y del consumo, y una reducción del 20 % de las pérdidas de alimentos a lo largo de
+las cadenas de producción y suministro para 2030, respecto a 2020. Se trata, por tanto, de
+una iniciativa de máxima importancia y actualidad por su contribución neta al logro de unos
+sistemas alimentarios más sostenibles, avanzando en el logro de los ODS, especialmente el
+ODS 2: Hambre Cero, el ODS 11: Ciudades y comunidades sostenibles, el ODS 12:
+Garantizar modalidades de consumo y producción sostenibles y el ODS 13: Acción por el
+clima. Consecuentemente, esta ley se encuentra en consonancia con la Estrategia de la
+Granja a la Mesa, que establece entre sus metas que para 2022 se habrá revisado la
+legislación referente a las fechas de duración mínima, caducidad y consumo, en colaboración
+con las instituciones europeas, contribuyendo a la reducción del desperdicio alimentario de
+modo que esta norma coadyuvará al cumplimiento de esa medida en sede comunitaria.
+
+     Asimismo, cabe destacar que tanto el «Plan Nacional Integrado de Energía y Clima»
+como «La Estrategia de Descarbonización a Largo Plazo (2050)» o el «Plan Nacional de
+Adaptación al Cambio Climático (2021-2030)», recogen medidas y líneas de acción para la
+reducción del desperdicio alimentario, que esta futura ley permitiría activar y acelerar,
+contribuyendo así a los objetivos climáticos de España recogidos en la Ley 7/2021, de 20
+de mayo, de cambio climático y transición energética. Todo ello en consonancia con la
+Estrategia Española de Economía Circular, España Circular 2030 y su I Plan de Acción de
+Economía Circular 2021-2023 en el marco del Plan de acción para la economía circular por
+una Europa más limpia y más competitiva de la UE del año 2020, que incluye un
+apartado 2.2 sobre residuos alimentario con tres medidas y se menciona como una de las
+cadenas de valor clave en este contexto la de «Alimentos, agua y nutrientes». En concreto,
+esas tres medidas son: los desarrollos normativos para la reducción del desperdicio
+alimentario, como es el caso de esta ley; la generación de conocimiento sobre desperdicio
+alimentario, como por ejemplo el Panel de cuantificación del desperdicio en hogares; y la
+reducción del desperdicio alimentario en distribución, restauración y hostelería mediante la
+adopción de acuerdos y planes voluntarios que concretarán medidas, buenas prácticas y
+objetivos para la reducción del desperdicio.
+
+     La norma parte de la asunción de que no es suficiente con medidas de concienciación,
+es preciso acompañarlas de importantes reformas estructurales en la cadena de
+elaboración, transformación y suministro de productos alimentarios, que se tienen que
+apoyar financieramente, y de un decidido impulso de los Poderes públicos para que pueda
+acometerse la decisiva transformación que la realidad actual exige.
+
+                                                          IV
+
+     En este marco, se aprueba la presente ley, que consta de 19 artículos, estructurados
+en seis capítulos.
+
+     El capítulo I, «Disposiciones generales», incorpora el objeto de la ley que, en esencia, es
+la prevención y reducción de las pérdidas y desperdicio de alimentos por parte de todos los
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                          Pág. 12
+
+agentes de la cadena alimentaria, y su ámbito de aplicación, que prefigura el propio            cve: BOCG-15-A-4-1
+contenido de la norma: las actividades que realizan los agentes ya sean de la producción,
+transformación, distribución de alimentos, así como, hostelería, restauración, otras entidades
+y asociaciones de distribución para la donación de alimentos y de la Administración pública.
+
+     Además de fijar las definiciones de los conceptos aplicables a la norma, se regulan los
+principios rectores, tales como la eficiencia en el uso de los recursos o el fomento a la
+donación de alimentos, haciendo especial hincapié en la colaboración entre
+Administraciones públicas.
+
+     Quedan excluidos del ámbito de aplicación de esta ley las actividades de retirada de
+productos por las medidas de gestión de crisis en los Programas Operativos de Frutas y
+Hortalizas, las retiradas del plátano en el marco del Programa Comunitario de Apoyo a las
+Producciones Agrarias de Canarias (POSEI), u otras medidas al amparo de algún
+mecanismo de prevención y gestión de crisis o de regulación del mercado previsto en la
+legislación comunitaria, puesto que las organizaciones de productores, tienen entre las
+medidas de gestión de crisis unos mecanismos de retirada del producto del mercado
+prácticamente coincidentes con los objetivos que marca esta ley.
+
+     Por otra parte, el principal destino al que van dirigidas estas retiradas es a la
+distribución gratuita para las personas necesitadas, con más del 44 % de las retiradas en
+volumen en el último año, mientras que a alimentación animal se destina más del 36 % y
+algo menos del 19 % va a biodegradación y compostaje. Además, incluir las medidas de
+gestión de crisis del sector de frutas y hortalizas podría provocar que este equilibrio, que
+consideramos que es deseable, se alterara.
+
+     Uno de los aspectos esenciales es la propia jerarquía de prioridades que los agentes
+han de aplicar en esta materia, de modo que se asegure un aprovechamiento óptimo,
+conforme a la normativa de residuos, primando siempre la prevención y el empleo en la
+alimentación humana y fijando la sucesión de prioridades a tener en cuenta en caso de que
+no sea posible lo anterior, tales como la valorización o el empleo como subproductos.
+
+     El capítulo II regula las obligaciones de los agentes de la cadena alimentaria,
+estableciendo un listado de cuestiones que todos los agentes deberán tener presente, de
+modo que opere a modo de sustrato común de sus actividades. Este listado se completa
+en aspectos concretos con obligaciones destinadas a actividades concretas con el fin de
+perfeccionar la trabazón del sistema ratione materiae.
+
+     Así, por ejemplo, se puede destacar como obligación horizontal para todos los agentes
+la de aplicar a las pérdidas y al desperdicio alimentario la jerarquía de prioridades de esta
+ley en cualquiera de los eslabones de la cadena alimentaria en la que se generen bajo su
+control y adoptar medidas adecuadas para su aplicación en su marco regulatorio
+específico, disponer de instalaciones adecuadas de manipulación o formar y sensibilizar a
+trabajadores y voluntarios. Junto con este haz de disposiciones, la norma recoge mandatos
+específicos para las Administraciones públicas como garantes del interés general, tales
+como llevar a cabo campañas divulgativas y de promoción para fomentar el consumo
+responsable de alimentos y promover la prevención y reducción de las pérdidas.
+
+     En todo caso, debe tenerse en cuenta que esta norma no pretende ser la única forma
+en que deben cubrirse las necesidades básicas de la ciudadanía más vulnerable, puesto
+que la entrega de alimentos para evitar su desperdicio es un recurso extraordinario y
+excepcional que atiende a diversas finalidades de interés general, pero la cobertura de
+necesidades básicas siempre debe estar garantizada a través de fórmulas normalizadas
+que respeten la dignidad de las personas y les permitan tomar decisiones sobre cómo
+alimentarse.
+
+     El capítulo III regula las recomendaciones de las administraciones públicas junto con
+las empresas que venden a consumidor final y las empresas de la hostelería, estableciendo
+un listado de cuestiones que todos los agentes deberán tener presente, de modo que
+opere a modo de sustrato común de sus actividades. Así por ejemplo se pueden destacar
+como medidas fomentar la donación con fines sociales y formar y sensibilizar sobre el
+desperdicio alimentario a las personas consumidoras.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                          Pág. 13
+
+     El capítulo IV se centra en la racionalización de las fechas de consumo preferente para    cve: BOCG-15-A-4-1
+contribuir a la prevención y reducción de las pérdidas y el desperdicio alimentario. Así, se
+contiene un mandato para fomentar la adecuación de las fechas de consumo preferente a
+la prevención y reducción de las pérdidas y el desperdicio alimentario, en el marco de la
+normativa europea.
+
+     El capítulo V dispone los instrumentos para el fomento y control de la reducción y
+prevención de las pérdidas y el desperdicio alimentario, entre los que se recogen medidas
+de fomento de la autorregulación y se disciplina el sistema para la aplicación y control de
+esta política pública, incluyendo un Plan Estratégico de prevención y reducción de las
+pérdidas y el desperdicio alimentario, que contendrá la estrategia general de la política de
+desperdicio alimentario, las orientaciones y la estructura a la que deberán ajustarse los
+programas autonómicos, así como los objetivos mínimos a cumplir de prevención y
+eliminación, el Plan Nacional de control de las pérdidas y el desperdicio alimentario, que
+se revisará al menos cada cuatro años, que contendrá los objetivos generales y prioridades
+de las tareas de control a realizar por las Administraciones competentes en esta materia,
+y el informe anual en el que recogerá el resultado de la ejecución del Plan Nacional de
+control de las pérdidas y el desperdicio alimentario.
+
+     En este sentido es esencial asegurar una labor coordinada entre todos los niveles
+administrativos que permita un efectivo control, un apoyo real y compartido y un
+conocimiento exhaustivo y diseño de una gobernanza multinivel apropiada para un ámbito
+en que existe un intenso entrecruzamiento de competencias, que ha de converger en una
+aplicación de la política de desperdicio alimentario basada en el liderazgo compartido y los
+esfuerzos cooperativos. De este modo, en el marco del Plan Estratégico se aprobarán los
+programas autonómicos y, en su caso, locales y las tareas ejecutivas en materia de control,
+que habrán de llevarse a cabo de modo sistemático y suficientemente frecuente, se
+enmarcarán en el Plan Nacional de control de las pérdidas y el desperdicio alimentario. Por
+último, y sobre la base de la información autonómica, con periodicidad anual, el Ministerio
+de Agricultura, Pesca y Alimentación realizará un informe en el que recogerá el resultado
+de la ejecución del Plan Nacional de control de las pérdidas y el desperdicio alimentario,
+desarrollado por las Administraciones públicas competentes. Esta coordinación se
+materializa mediante la integración de políticas y medidas para el logro de una meta tan
+transversal a todas ellas, como la disminución del desperdicio alimentario, en respuesta a
+la consideración de la Resolución del Parlamento Europeo, de 19 de enero de 2012 que
+pedía el diseño de una gobernanza multinivel apropiada para un ámbito en que existe un
+intenso entrecruzamiento de competencias, que ha de converger en una aplicación de la
+política de desperdicio alimentario basada en liderazgo compartido y los esfuerzos
+cooperativos.
+
+     El capítulo VI, por último, recoge el régimen sancionador, tipificando las infracciones y
+recogiendo las sanciones básicas en la materia, de modo que se asegure un margen
+amplio para que las normas autonómicas decidan cuál haya de ser su sistema de
+infracciones y sanciones, dentro de un marco básico que asegure un mínimo común
+normativo razonable.
+
+     Por último, la ley se completa con una parte final compuesta por una disposición
+adicional y tres finales en que se prevén las correspondientes previsiones sobre el
+título competencial, las habilitaciones normativas, y la entrada en vigor, así como sobre
+la metodología coordinada de cuantificación de desperdicio, pérdida y residuo
+alimentario.
+
+                                                           V
+
+     En su tramitación, el proyecto se ha sometido a audiencia e información y participación
+públicas y se ha consultado a las comunidades autónomas afectadas y las entidades
+representativas de los intereses de los sectores afectados.
+
+     El texto de esta norma se ha sometido al procedimiento de comunicación de la
+Comisión Europea de acuerdo con la Directiva (UE) 2015/1535 del Parlamento Europeo y
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                          Pág. 14
+
+del Consejo, de 9 de septiembre de 2015, por la que se establece un procedimiento de            cve: BOCG-15-A-4-1
+información en materia de reglamentaciones técnicas y de reglas relativas a los servicios
+de la sociedad de la información y el Real Decreto 1337/1999, de 31 de julio, por el cual se
+regula la remisión de información en materia de normas y reglamentaciones técnicas y
+reglamentos relativos a los servicios de la sociedad de la información.
+
+     Esta norma se dicta al amparo de lo dispuesto en la regla 13.ª del artículo 149.1 de la
+Constitución Española, que atribuye al Estado competencia sobre bases y coordinación de
+la planificación general de la actividad económica, así como lo dispuesto en el
+artículo 149.1.23.ª, que atribuye al Estado competencia sobre Legislación básica sobre
+protección del medio ambiente.
+
+     La regulación que se contiene en esta norma se ajusta a los principios contemplados en
+el artículo 129 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común
+de las Administraciones Públicas. Así, de acuerdo con los principios de necesidad y eficacia,
+se justifica el proyecto en la necesidad de una aplicación coherente de la normativa de la
+Unión Europea y las iniciativas internacionales en España, siendo el instrumento más
+adecuado para garantizar su consecución, al ser necesario que la regulación se contemple
+en una norma básica y cumplir la finalidad de adoptar diversas medidas dirigidas a la
+prevención y reducción de las pérdidas y el desperdicio de alimentos por parte de todos los
+agentes de la cadena alimentaria dados sus efectos negativos. Se cumple el principio de
+proporcionalidad y la regulación se limita al mínimo imprescindible para cumplir con dicha
+normativa de modo que la propuesta contiene la regulación imprescindible para atender la
+necesidad a cubrir con la norma, tras constatar que no existen otras medidas menos
+restrictivas de derechos, o que impongan menos obligaciones a los destinatarios, para
+lograr el fin. El principio de seguridad jurídica se cumple al establecerse en una disposición
+general las nuevas previsiones, siendo además coherente con el resto del ordenamiento
+jurídico nacional y europeo. Se cumple el principio de transparencia, al haber sido
+consultadas en la elaboración de la norma las comunidades autónomas y ciudades de
+Ceuta y Melilla, y las entidades representativas de los sectores afectados, y mediante la
+audiencia pública del proyecto, posibilitado además el acceso sencillo, universal y
+actualizado a la normativa en vigor y a los documentos propios de su proceso de
+elaboración, habiéndose definido claramente los objetivos de la iniciativa normativa y su
+justificación en la exposición de motivos, y posibilitado que los potenciales destinatarios
+tengan una participación activa en la elaboración. Finalmente, respecto del principio de
+eficiencia, no se imponen nuevas cargas administrativas y se limita la intervención pública
+a los aspectos imprescindibles y optando por la solución más ponderada.
+
+                                                   CAPÍTULO I
+
+                                           Disposiciones generales
+
+Artículo 1.  Objeto y fines de la ley.
+
+     1.  La presente ley tiene por objeto la prevención y reducción de las pérdidas y
+desperdicio de alimentos por parte de todos los agentes de la cadena alimentaria;
+establecer una jerarquía de prioridades; facilitar la donación de alimentos y contribuir a
+satisfacer las necesidades alimentarias de la población más vulnerable; con la finalidad
+general de lograr una producción y consumo más sostenible; y de sensibilizar, formar y
+movilizar a todos los agentes de la cadena en una gestión adecuada de los alimentos, sin
+perjuicio de las necesarias garantías de inocuidad de los alimentos.
+
+     2.  Son fines específicos de esta ley:
+
+     a) Disminuir las pérdidas y el desperdicio de alimentos mediante una gestión más
+eficiente de los recursos, promoviendo así la bioeconomía circular.
+
+     b) Sensibilizar e informar a los agentes de la producción, transformación, distribución,
+hostelería, restauración, personas consumidoras y ciudadanía en general y favorecer
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                           Pág. 15
+
+actividades de concienciación en el ámbito de la prevención y reducción de las pérdidas y        cve: BOCG-15-A-4-1
+el desperdicio alimentario.
+
+     c) Fomentar la donación de alimentos garantizando la seguridad alimentaria y la
+trazabilidad.
+
+     d) Promover la recuperación y distribución de excedentes de alimentos con fines de
+solidaridad social, asignándolos como prioridad para uso humano.
+
+     e) Favorecer la investigación e innovación en el ámbito de la prevención y reducción
+de las pérdidas y el desperdicio alimentario.
+
+     f) Dar respuesta al objetivo sobre producción y consumo responsables de la
+Agenda 2030.
+
+     g) Reducir las emisiones de gases de efecto invernadero y de otros contaminantes.
+
+Artículo 2.  Ámbito de aplicación.
+
+     Esta ley es de aplicación a las actividades que realizan en territorio español los agentes
+de la cadena alimentaria ya sean de la producción, transformación, distribución de
+alimentos, así como hostelería, restauración, otras entidades y asociaciones de distribución
+de alimentos donados y de la Administración pública, sin perjuicio de las disposiciones de
+la Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía
+circular, y otra normativa de residuos o sanitaria que le sea de aplicación.
+
+     Quedan excluidos del ámbito de aplicación de esta ley las actividades de retirada de
+productos por las medidas de gestión de crisis en los Programas Operativos de Frutas y
+Hortalizas, las retiradas del plátano en el marco del Programa Comunitario de Apoyo a las
+Producciones Agrarias de Canarias (POSEI), u otras medidas al amparo de algún
+mecanismo de prevención y gestión de crisis o de regulación del mercado previsto en la
+legislación comunitaria.
+
+Artículo 3.  Definiciones.
+
+     Además de las definiciones incluidas en la Ley 7/2022 de 8 de abril, a los efectos de
+esta ley se entiende por:
+
+     a) Agentes de la cadena alimentaria: operadores de empresas alimentarias en cada
+etapa de la cadena de suministro alimentario, incluidos los operadores pertenecientes a la
+producción primaria (incluyendo cooperativas y demás asociaciones y entidades
+asociativas), organismos, entidades o empresas de elaboración, fabricación o distribución
+de alimentos, comercios al por menor, empresas del sector de la hostelería o la
+restauración y otros proveedores de servicios alimentarios, entidades de iniciativa social y
+otras organizaciones sin ánimo de lucro que prestan servicios de distribución de alimentos
+donados, así como las Administraciones públicas en los términos previstos en esta ley.
+
+     b) Alimento o producto alimenticio: se aplicará la definición prevista en el artículo 2
+del Reglamento (CE) n.º 178/2002 del Parlamento Europeo y del Consejo, de 28 de enero
+de 2002, por el que se establecen los principios y los requisitos generales de la legislación
+alimentaria, se crea la Autoridad Europea de Seguridad Alimentaria y se fijan
+procedimientos relativos a la seguridad alimentaria.
+
+     c) Desperdicio alimentario: la parte de los alimentos destinada a ser ingerida por el
+ser humano y que termina desechada como residuo.
+
+     d) Pérdidas de alimentos: productos agrarios y alimentarios que por cualquier
+circunstancia quedan en la propia explotación, ya sea reincorporados al suelo o utilizados
+para realizar compost in situ y cuyo destino final hubiera sido la alimentación humana.
+
+     e) Otros proveedores de servicios alimentarios: centros sanitarios, centros
+educativos, centros penitenciarios, centros de internamiento de extranjeros, residencias de
+servicios sociales, y en general todos los establecimientos permanentes que ofrezcan
+catering o servicio de comedor.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                          Pág. 16
+
+Artículo 4.  Principios rectores.                                                               cve: BOCG-15-A-4-1
+
+     Las actividades destinadas a prevenir y reducir las pérdidas y el desperdicio alimentario
+para todos los agentes de la cadena alimentaria se regirán por los siguientes principios:
+
+     a) Eficiencia en el uso de los recursos de la cadena alimentaria.
+     b) Prevención, de modo que se fomente la adopción de medidas orientadas a evitar
+que un alimento se desperdicie, a reducir la cantidad de pérdidas y desperdicio alimentario
+mediante su reutilización, y a reducir el impacto de las emisiones y la generación de
+residuos sobre el medio ambiente y la salud humana.
+     c) Jerarquía de prioridades conforme a lo señalado en esta ley y en la normativa
+reguladora de residuos, dentro de sus respectivos marcos reguladores.
+     d) Fomentar la donación de alimentos para consumo humano, priorizándolo frente a
+otros usos como la alimentación animal y la transformación en productos no alimenticios.
+     e) Fomentar la educación y concienciación respecto a la prevención de las pérdidas
+y el desperdicio alimentario de la ciudadanía en general.
+
+Artículo 5.  Jerarquía de prioridades de los agentes de la cadena alimentaria.
+
+     1.  Los agentes de la cadena alimentaria, para la prevención de las pérdidas y del
+desperdicio alimentario, deben adaptar sus actuaciones a la siguiente jerarquía de
+prioridades:
+
+     a) la donación de alimentos y otros tipos de redistribución para consumo humano,
+     b) la transformación de los productos que no se han vendido, pero que siguen siendo
+aptos para el consumo humano, en otros productos alternativos.
+     c) la alimentación animal y la fabricación de piensos dentro del correspondiente
+marco regulatorio y en particular la Orden APM/189/2018, de 20 de febrero, por la que se
+determina cuando los residuos de producción procedentes de la industria agroalimentaria
+destinados a alimentación animal, son subproductos con arreglo a la Ley 22/2011, de 28
+de julio, de residuos y suelos contaminados.
+     d) su uso como subproductos en otra industria;
+     e) y en última instancia, ya como residuos, al reciclado y, en particular, a la obtención
+de compost y digerido de máxima calidad para su uso en los suelos con el objetivo de
+producir un beneficio a los mismos, y, cuando no sea posible lo anterior, para la valorización
+energética mediante la obtención de biogás o de combustibles. En este caso, será de
+aplicación lo dispuesto en el artículo 8.1 de la Ley 7/2022, de 8 de abril.
+
+     2.  Siempre se aplicará la jerarquía de prioridades contemplada en el apartado 1; no
+obstante, puede existir la posibilidad de adaptar las actuaciones conforme a las
+características del sector, en cuyo caso se deberán justificar los motivos, ya sea por razones
+de factibilidad técnica, viabilidad económica o protección del medio ambiente, entre otros.
+
+                                                   CAPÍTULO II
+
+                        Obligaciones de los agentes de la cadena alimentaria
+
+Artículo 6.  Obligaciones generales para todos los agentes de la cadena alimentaria.
+
+     1.  Todos los agentes de la cadena alimentaria tienen la obligación de aplicar a las
+pérdidas y el desperdicio alimentario la jerarquía de prioridades, que dicta esta ley
+conforme al artículo 5, en cualquiera de los eslabones de la cadena alimentaria en la que
+se generen bajo su control y adoptar medidas adecuadas para su aplicación, sin perjuicio
+de las disposiciones de la Ley 7/2022 de 8 de abril, y otra normativa de residuos que les
+sean de aplicación.
+
+     2.  Todos los agentes de la cadena alimentaria tienen la obligación de aplicar las
+medidas previstas en el artículo 19 de la Ley 7/2022, de 8 de abril, para la reducción de los
+residuos alimentarios, en especial las disposiciones relativas a la donación de alimentos.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                          Pág. 17
+
+     3.  Todos los agentes de la cadena alimentaria tienen la obligación de colaborar con       cve: BOCG-15-A-4-1
+las Administraciones para la cuantificación de los residuos alimentarios de cara al
+cumplimiento de la obligación prevista en el artículo 65.5.b) de la Ley 7/2022, de 8 de abril,
+derivada del artículo 9.5 de la Directiva 2008/98/CE del Parlamento Europeo y del Consejo,
+de 19 de noviembre de 2008, sobre los residuos y por la que se derogan determinadas
+Directivas, conforme a lo previsto en la disposición adicional única.
+
+     4.  Ninguna estipulación contractual podrá impedir expresamente la donación de
+alimentos, siendo nula de pleno derecho.
+
+     5.  Además, todos los agentes de la cadena alimentaria tienen las siguientes
+obligaciones:
+
+     a) Disponer de un plan de aplicación para la prevención de las pérdidas y desperdicio
+alimentario que contemple la forma en que aplicará la jerarquía de prioridades establecida
+en el artículo 5.
+
+     b) Llegar a acuerdos o convenios para donar sus excedentes de alimentos a
+empresas, entidades de iniciativa social y otras organizaciones sin ánimo de lucro o
+bancos de alimentos, excepto en los casos en los que resulte inviable y quede debidamente
+justificado conforme al artículo 5.2 y en las actividades de distribución alimentaria
+desarrolladas en establecimientos con una superficie útil de exposición y venta al público
+inferior o igual a 1.300 m2.
+
+Artículo 7.  Contenido mínimo de los contratos o acuerdos de donación.
+
+     El acuerdo o convenio previsto en el artículo 6.5 b) deberá contemplar al menos el
+siguiente contenido:
+
+     1.º  Las condiciones de la recogida, transporte y almacenamiento de los productos.
+     2.º  Los compromisos de los agentes de la cadena.
+     3.º  La selección de los alimentos a donar la hará el agente donante.
+     4.º  La posibilidad de que la organización receptora rechace la donación, debiendo
+quedar debidamente justificado. El agente donante deberá aplicar la jerarquía de
+prioridades contemplada en el apartado 1 del artículo 5 para la gestión de la donación
+rechazada.
+
+Artículo 8.  Obligaciones específicas para las empresas de hostelería y restauración.
+
+     Los agentes de la cadena alimentaria que sean empresas de la hostelería y la
+restauración tendrán la obligación de facilitar al consumidor que pueda llevarse, sin
+coste adicional alguno distinto, en su caso, del mencionado en el párrafo siguiente, los
+alimentos que no haya consumido, salvo en los formatos de servicio de bufé libre o
+similares, donde la disponibilidad de comida no está limitada, así como informar de esta
+posibilidad de forma clara y visible en el propio establecimiento, preferentemente en la
+carta o el menú.
+
+     Para ello se emplearán envases aptos para el uso alimentario, reutilizables, o
+fácilmente reciclables. Para los envases o recipientes alimentarios de plástico de un solo
+uso deberá tenerse en cuenta las disposiciones previstas en el título V de la Ley 7/2022,
+de 8 de abril, en especial las relativas a la necesidad de reducir su consumo de cara a
+cumplir los objetivos del artículo 55.1 de dicha ley y a la obligación de su cobro.
+
+Artículo 9.  Obligaciones específicas para las empresas y las entidades de iniciativa social
+     y otras organizaciones sin ánimo de lucro que se dedican a la distribución de alimentos
+     para la donación de alimentos aptos para el consumo humano.
+
+     Los agentes de la cadena alimentaria que sean empresas y las entidades de iniciativa
+social y otras organizaciones sin ánimo de lucro que se dedican a la distribución de
+alimentos para la donación de alimentos aptos para el consumo humano, además de
+cumplir con lo previsto en el capítulo V bis del anexo II del Reglamento (CE) n.º 852/2004
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                        Pág. 18
+
+del Parlamento Europeo y del Consejo de 29 de abril de 2004 relativo a la higiene de los      cve: BOCG-15-A-4-1
+productos alimenticios, tienen las siguientes obligaciones:
+
+     a) Garantizar la trazabilidad de los productos donados mediante un sistema de
+registro de entradas y salidas de los alimentos recibidos y entregados. Quedan excluidos
+de las obligaciones relativas a la trazabilidad los particulares que provean alimentos sobre
+una base ad hoc en eventos comunitarios u otros actos benéficos, así como las
+organizaciones solidarias, de carácter social o de fines humanitarios que ocasionalmente
+reciban alimentos procedentes de donantes privados.
+
+     b) Mantener unas correctas prácticas de higiene en la conservación y la manipulación
+de los alimentos bajo su control.
+
+     c) Realizar la donación y distribución de alimentos sin discriminación por razón de
+discapacidad, edad, sexo, salud, orientación sexual, identidad de género, expresión de
+género, características sexuales, nacionalidad, situación administrativa del extranjero,
+origen racial o étnico, religión o creencias, territorio o cualquier otra condición o
+circunstancia personal o social, así como velar por el respeto a los derechos humanos.
+
+     d) Destinar a donación los productos recibidos a las personas desfavorecidas,
+quedando expresamente prohibida la comercialización de los mismos.
+
+     e) Facilitar información alimentaria al beneficiario final de conformidad con las
+normas nacionales y europeas relacionadas con el suministro de información alimentaria
+a los consumidores y, en particular, con el Reglamento (UE) n.º 1169/2011 del Parlamento
+Europeo y del Consejo de 25 de octubre de 2011.
+
+Artículo 10.  Obligaciones específicas para las Administraciones públicas.
+
+     1.  Las Administraciones públicas tienen las siguientes obligaciones:
+
+     a) Colaborar con las restantes Administraciones y agentes de la cadena alimentaria
+en la lucha contra las pérdidas y el desperdicio alimentario.
+
+     b) Llevar a cabo campañas divulgativas y de promoción para fomentar el consumo
+responsable de alimentos y promover la prevención y reducción de las pérdidas y el
+desperdicio alimentario.
+
+     c) Elaborar guías de buenas prácticas encaminadas a mejorar la gestión alimentaria
+y con ello disminuir las pérdidas y el desperdicio alimentario.
+
+     d) Ofrecer información sobre programas de prevención de las pérdidas y el
+desperdicio alimentario.
+
+     e) Poner a disposición de los agentes de la cadena alimentaria, modelos de planes
+de prevención y reducción de las pérdidas y el desperdicio alimentario.
+
+     f) Formar y sensibilizar sobre el desperdicio alimentario a las personas consumidoras
+en una mejor planificación de los menús y de sus compras, en una compra sostenible
+(tales como alimentos frescos, de temporada, de proximidad o locales), en la cocina de
+reaprovechamiento, las buenas prácticas de almacenamiento, la correcta interpretación de
+las fechas de caducidad y de consumo preferentemente, y el reciclaje y materiales de
+envasado.
+
+     g) Promover la prevención del desperdicio e informar al consumidor sobre los hábitos
+de consumo más responsables.
+
+     h) Asesorar e informar a las empresas y entidades de iniciativa social y otras
+organizaciones sin ánimo de lucro que se dedican a la distribución de alimentos para la
+donación y redistribución de alimentos aptos para el consumo humano.
+
+     2.  El Ministerio de Agricultura, Pesca y Alimentación:
+
+     a) Analizará cuantitativamente el desperdicio alimentario en los hogares y el
+desperdicio del consumidor fuera de los hogares.
+
+     b) Publicará periódicamente sus datos de medición del desperdicio alimentario.
+     c) Publicará toda la información de que disponga en relación con el desperdicio
+alimentario en cada uno de los eslabones de la cadena.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                       Pág. 19
+
+     3.  En el marco del Plan Estratégico previsto en el artículo 15, las comunidades        cve: BOCG-15-A-4-1
+autónomas elaborarán instrumentos de programación de medidas básicas y
+complementarias para la consecución de los objetivos previstos en esta ley.
+
+                                                  CAPÍTULO III
+
+             Medidas de buenas prácticas de los agentes de la cadena alimentaria
+
+Artículo 11.  Medidas de buenas prácticas a desempeñar por las empresas que venden
+     alimentos al consumidor final.
+
+     Las Administraciones públicas junto con las empresas que venden alimentos al
+consumidor final podrán aplicar las siguientes medidas:
+
+     a) Disponer de infraestructuras adecuadas para que los procesos de manipulación,
+almacenamiento y transporte se lleven a cabo en las condiciones óptimas, que minimicen
+las pérdidas y el desperdicio alimentario.
+
+     b) Trabajar en el desarrollo de protocolos específicos para reducir a mínimos las
+pérdidas y el desperdicio alimentario a lo largo de la cadena de transporte y
+almacenamiento.
+
+     c) Incentivar la venta de productos con la fecha de consumo preferente o de
+caducidad próxima, de acuerdo con la jerarquía de prioridades.
+
+     d) En el caso de los establecimientos de comercio al por menor, disponer de líneas
+de venta con productos «feos», «imperfectos» o «poco estéticos», promover el consumo
+de los productos de temporada, los de proximidad, los ecológicos y los ambientalmente
+sostenibles e incorporar y mejorar la información sobre el aprovechamiento de los
+alimentos.
+
+     e) Formar y sensibilizar a las personas, ya sean sujetas a una relación laboral o de
+voluntariado, para que actúen de forma activa en la prevención y reducción de las pérdidas
+y el desperdicio alimentario e implicarles en esta acción.
+
+     f) Exponer en lugar visible para las personas consumidoras propuestas de
+divulgación de las Administraciones competentes relativas a una mejor planificación de
+los menús, de sus compras, compra sostenible (tales como alimentos frescos, de
+temporada, locales o ecológicos), cocina de reaprovechamiento, buenas prácticas de
+almacenamiento, correcta interpretación de las fechas de caducidad y de consumo
+preferentemente, y reciclaje y materiales de envasado para sensibilizar al consumidor
+sobre estas cuestiones.
+
+Artículo 12.  Medidas de buenas prácticas para el sector de la hostelería y otros
+     proveedores de servicios alimentarios.
+
+     Las Administraciones públicas junto con el sector de la hostelería y otros proveedores
+de servicios alimentarios podrán aplicar las siguientes medidas:
+
+     a) Fomentar la incorporación de criterios de compra sostenible (tales como alimentos
+frescos, de temporada, locales o ecológicos) para reducir la huella ambiental y promocionar
+la economía de proximidad, sin perjuicio del régimen especial de aquellas empresas del
+sector de la restauración y la hostelería y otros proveedores de servicios alimentarios que
+por sus especiales características o su temática deban adquirir productos que no sean los
+de proximidad para garantizar que se ajustan a los servicios ofrecidos a y la expectativa
+del consumidor al estar vinculados con la imagen de los mismos.
+
+     b) Promover la flexibilización de los menús, para que el consumidor pueda elegir la
+guarnición o raciones de distinto tamaño.
+
+     c) Fomentar la donación de alimentos con fines sociales.
+     d) Fomentar la entrega a instalaciones de compostaje de los restos alimentarios
+conforme a la normativa de residuos.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                           Pág. 20
+
+                                                  CAPÍTULO IV                                    cve: BOCG-15-A-4-1
+
+                        Racionalización de las fechas de consumo preferente
+
+Artículo 13.  Racionalización de las fechas de consumo preferente.
+
+     1.  El Gobierno adoptará políticas públicas y medidas para fomentar la adecuación de
+las fechas de consumo preferente a la prevención y reducción de las pérdidas y el
+desperdicio alimentario. Para ello se tendrán en cuenta los criterios establecidos por la
+Unión Europea en las disposiciones legislativas y no legislativas en la materia,
+especialmente el Reglamento (UE) n.º 1169/2011 del Parlamento Europeo y del Consejo
+de 25 de octubre de 2011; el anexo II del Reglamento (CE) n.º 852/2004, el anexo III del
+Reglamento (CE) n.º 853/2004 del Parlamento Europeo y del Consejo, de 29 de abril
+de 2004, el Reglamento (CE) n.º 853/2004 del Parlamento Europeo y del Consejo, de 29
+de abril de 2004, por el que se establecen normas específicas de higiene de los alimentos
+de origen animal, y la Comunicación de la Comisión con directrices sobre los sistemas de
+gestión de la seguridad alimentaria para las actividades de los minoristas del sector de la
+alimentación, incluida la donación de alimentos (2020/C199/01).
+
+     2.  Todas las Administraciones:
+
+     a) Llevarán a cabo acciones formativas y divulgativas sobre la correcta interpretación
+de las fechas de caducidad y de consumo preferentemente a las personas consumidoras,
+así como a agentes distribuidores y productores.
+
+     b) Incentivarán que los agentes de la cadena alimentaria ajusten las fechas de consumo
+preferente de sus productos, hasta el máximo que garantice la adecuada calidad del producto.
+
+     c) Promoverán la investigación y la innovación sobre la viabilidad de los alimentos
+para alargar la vida útil.
+
+     d) Llevarán a cabo estudios e investigaciones industriales orientadas a la mejora del
+marcado de fechas de consumo preferente en relación con la calidad de los alimentos, así
+como a la optimización del volumen de producción y la mejora de los procesos de
+transformación, almacenamiento y logística que permitan evitar en lo posible el desperdicio
+alimentario.
+
+                                                   CAPÍTULO V
+
+   Instrumentos para el fomento y control de la reducción y prevención de las pérdidas
+                                         y el desperdicio alimentario
+
+Artículo 14.  Fomento de la autorregulación.
+
+     Las Administraciones públicas fomentarán los sistemas de regulación voluntaria de los
+agentes de la cadena, entre otros, otorgando ayudas a su constitución y ejecución.
+
+Artículo 15.  Planificación de la política de prevención y reducción de las pérdidas y el
+     desperdicio alimentario.
+
+     1.  El Gobierno, conforme a las directrices que se establezcan desde las Instituciones
+Europeas y a propuesta de los Ministerios de Agricultura, Pesca y Alimentación; de Industria
+y Turismo; para la Transición Ecológica y Reto Demográfico; de Economía, Comercio y
+Empresa; de Derechos Sociales, Consumo y Agenda 2030; y de Inclusión, Seguridad Social
+y Migraciones, previa consulta a las comunidades autónomas y a las entidades locales,
+elaborará un Plan Estratégico de prevención y reducción de las pérdidas y el desperdicio
+alimentario, que contendrá la estrategia general de la política de desperdicio alimentario, las
+orientaciones y la estructura a la que deberán ajustarse los programas autonómicos, así
+como los objetivos mínimos a cumplir de prevención y reducción de las pérdidas y el
+desperdicio alimentario, y será coherente con la planificación estratégica en materia de
+residuos alimentarios, de la que tomará cuantos datos sean procedentes.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                           Pág. 21
+
+     A tal efecto, las medidas de este Plan Estratégico formarán parte del apartado              cve: BOCG-15-A-4-1
+específico para la reducción de los residuos alimentarios del Programa estatal de
+prevención de residuos elaborado conforme al artículo 19 de la Ley 7/2022, de 8 de abril.
+
+     2.  Los instrumentos de programación autonómicos se elaborarán previa consultas
+pertinentes y contendrán un análisis actualizado de la situación de las pérdidas y
+desperdicio alimentario en su ámbito territorial, los objetivos a alcanzar que serán
+coherentes con los del plan estratégico, así como una exposición de las medidas para
+facilitar la consecución de dichos objetivos a alcanzar.
+
+     Esos programas reflejarán los objetivos no conseguidos en la anterior programación
+con sus posibles medidas correctoras y determinarán los puntos de referencia cualitativos
+o cuantitativos específicos adecuados para evaluar los progresos realizados en la
+prevención y reducción de las pérdidas y desperdicio alimentario.
+
+     3.  Las entidades locales, en el marco de sus competencias, podrán elaborar,
+individualmente o agrupadas, programas de gestión del desperdicio alimentario de
+conformidad y en coordinación con el Plan Estratégico de prevención y reducción de las
+pérdidas y el desperdicio alimentario y con los programas autonómicos.
+
+     4.  En la elaboración de estos planes y programas se tendrá especial consideración a las
+medidas que reduzcan de forma significativa la pobreza y garanticen la seguridad alimentaria.
+
+     5.  Los planes y programas se evaluarán y revisarán, al menos, cada cuatro años.
+
+Artículo 16.  Plan Nacional de control de las pérdidas y el desperdicio alimentario.
+
+     1.  El Ministerio de Agricultura, Pesca y Alimentación, previo informe de los Ministerios
+de Industria y Turismo; para la Transición Ecológica y Reto Demográfico; de Economía,
+Comercio y Empresa; de Derechos Sociales, Consumo y Agenda 2030; y de Inclusión,
+Seguridad Social y Migraciones, y previa consulta a las comunidades autónomas, aprobará
+un Plan Nacional de control de las pérdidas y el desperdicio alimentario, que se revisará al
+menos cada cuatro años, que contendrá los objetivos generales y prioridades de las tareas
+de control a realizar por las Administraciones competentes en esta materia.
+
+     Este plan podrá integrarse en el Plan Estratégico de prevención y reducción de las
+pérdidas y el desperdicio alimentario.
+
+     2.  Los controles que a tal efecto se establezcan por las autoridades competentes serán
+sistemáticos, suficientemente frecuentes, en los lugares en los que se produzcan, transformen,
+almacenen, distribuyan o comercialicen los productos agrarios o alimentarios y, ocasionalmente,
+en cualquier momento y lugar donde circulen o se encuentren dichos productos.
+
+     3.  El Ministerio de Agricultura, Pesca y Alimentación establecerá los cauces de
+coordinación y cooperación necesarios con el fin de garantizar que los criterios de control
+administrativo sean integrales, coordinados, equivalentes y proporcionados en todo el
+territorio nacional.
+
+Artículo 17.  Informe anual.
+
+     1.  Con periodicidad anual, el Ministerio de Agricultura, Pesca y Alimentación realizará
+un informe en el que recogerá el resultado de la ejecución del Plan Nacional de control de
+las pérdidas y el desperdicio alimentario, desarrollado por las Administraciones públicas
+competentes. Dicho informe, previa consulta a las comunidades autónomas, será remitido
+a las Cortes Generales, a los efectos de información y control y se pondrá a disposición de
+las Administraciones públicas competentes, de la Secretaría de Estado de Medio Ambiente
+y del público.
+
+     2.  A tal efecto, las autoridades competentes proporcionarán al Ministerio de
+Agricultura, Pesca y Alimentación la información necesaria, para lo que se establecerá el
+plazo y modo en el que habrán de suministrar esta información.
+
+     3.  La Administración General del Estado facilitará a las autoridades que realicen
+controles toda la información que pueda tener alguna incidencia en el control.
+
+     4.  Este informe tendrá en cuenta la información de la que se disponga en aplicación
+del artículo 65.5.b) de la Ley 7/2022, de 8 de abril.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                   CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1  19 de enero de 2024                                                               Pág. 22
+
+                                                  CAPÍTULO VI                                        cve: BOCG-15-A-4-1
+
+                                             Régimen sancionador
+
+Artículo 18.  Infracciones.
+
+     1.  Las infracciones en materia de pérdidas y desperdicio alimentario se clasificarán
+en muy graves, graves y leves.
+
+     Dichas infracciones serán compatibles con cuantas responsabilidades civiles, penales o
+de otro orden concurran y en particular con la aplicación de los regímenes sancionadores en
+materia de residuos y suelos contaminados, calidad alimentaria, consumo, comercio, higiene,
+salud pública y seguridad alimentaria, cuando su fundamento punitivo sea diferente.
+
+     2.  Las comunidades autónomas tipificarán en sus respectivas normas con rango de
+ley las infracciones aplicables en su territorio, que al menos serán las siguientes:
+
+     a) Infracciones leves:
+
+     1.º No aplicar a las pérdidas y el desperdicio alimentario la jerarquía de prioridades o
+no justificar debidamente porque no se aplica.
+
+     2.º En el caso de las industrias alimentarias, las empresas de distribución de alimentos
+al por menor y las de hostelería y restauración, no llevar a cabo la donación de los
+alimentos no vendidos y que siguen siendo aptos para el consumo humano mediante
+acuerdo o convenio, siempre y cuando dispusieran de medios suficientes para ello y no
+hubiera mediado justificación sobre su imposibilidad física o material.
+
+     3.º Impedir expresamente mediante estipulación contractual la donación de alimentos.
+     4.º En el caso de las empresas y entidades de iniciativa social y otras organizaciones
+sin ánimo de lucro que se dedican a la distribución de alimentos para la donación, no
+entregar los excedentes alimentarios a las personas desfavorecidas.
+     5.º No colaborar con las Administraciones públicas para la cuantificación de los
+residuos alimentarios.
+
+     b) Infracciones graves:
+
+     1.º No contar con un plan de prevención de las pérdidas y el desperdicio alimentario
+en caso de estar obligado a ello.
+
+     2.º Discriminar en el acceso al reparto de los alimentos por motivos de discapacidad,
+edad, sexo, salud, orientación sexual, identidad de género, expresión de género, características
+sexuales, nacionalidad, situación administrativa del extranjero, origen racial o étnico, religión o
+creencias, territorio o cualquier otra condición o circunstancia personal o social.
+
+     3.º La segunda o ulterior infracción leve que suponga reiteración con cualquier otra
+infracción leve cometida en el plazo de dos años, contados desde la sanción por resolución
+firme en vía administrativa de la primera de ellas.
+
+     c) Se considera infracción muy grave la segunda o ulterior infracción grave que
+suponga reiteración con cualquier otra infracción grave cometida en el plazo de dos años,
+contados desde la sanción por resolución firme en vía administrativa de la primera de ellas,
+salvo la prevista en el apartado b) 3.º.
+
+Artículo 19.  Sanciones.
+
+     Las sanciones a imponer por la autoridad competente en su ámbito correspondiente serán:
+
+     a) Las infracciones leves serán sancionadas con apercibimiento o multa de
+hasta 2.000 euros.
+
+     b) Las infracciones graves serán sancionadas con multa entre 2.001 y 60.000 euros.
+     c) Las infracciones muy graves serán sancionadas con multa entre 60.001 y 500.000
+de euros.
+                   BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                          CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 4-1         19 de enero de 2024                                                    Pág. 23
+
+     No obstante, las comunidades autónomas podrán incrementar dichos umbrales y
+consignar otras sanciones adicionales o accesorias en sus respectivas normas con rango
+de ley.
+
+Disposición adicional única.  Cuantificación de los residuos alimentarios.
+
+     Desde las Administraciones Públicas se promoverán los medios necesarios para la
+medición de los residuos alimentarios, según la Decisión Delegada (UE) 2019/1597 de la
+Comisión de 3 de mayo de 2019 por la que se complementa la Directiva 2008/98/CE del
+Parlamento Europeo y del Consejo en lo que concierne a metodología común y a los
+requisitos mínimos de calidad para la medición uniforme de los residuos alimentarios.
+
+     A estos efectos, para facilitar a los agentes de la cadena el cumplimiento de la
+obligación prevista en el artículo 6.3, se acordará mediante convenio entre el Ministerio de
+Agricultura, Pesca y Alimentación, el Instituto Nacional de Estadística y el Ministerio para
+la Transición Ecológica y el Reto Demográfico los mecanismos de colaboración para el
+intercambio de información a los efectos de cumplir con las obligaciones de cuantificación
+de los residuos alimentarios, todo ello de acuerdo con la metodología establecida en la
+Decisión Delegada (UE) 2019/1597 de la Comisión de 3 de mayo de 2019.
+
+     Asimismo, podrán desarrollarse reglamentariamente los procedimientos de obtención
+de esta información en los términos establecidos en el artículo 18.6 de la Ley 7/2022, de 8
+de abril.
+
+Disposición final primera.  Título competencial.
+
+     La presente ley se dicta al amparo de lo dispuesto en el artículo 149.1.13.ª de la
+Constitución Española, que atribuye al Estado competencia sobre bases y coordinación de
+la planificación general de la actividad económica, así como lo dispuesto en el
+artículo 149.1.23.ª, que atribuye al Estado competencia sobre legislación básica sobre
+protección del medio ambiente sin perjuicio de las facultades de las Comunidades
+Autónomas de establecer normas adicionales de protección.
+
+Disposición final segunda.  Habilitación para el desarrollo reglamentario.
+
+     Se faculta al Gobierno de la Nación para dictar, en el ámbito de sus competencias, las
+disposiciones reglamentarias necesarias para el desarrollo y aplicación de esta ley.
+
+Disposición final tercera.  Entrada en vigor.
+
+     La presente ley entrará en vigor el 2 de enero de 2025.
+
+                                                                                                                                                  cve: BOCG-15-A-4-1
+
+http://www.congreso.es		  CONGRESO DE LOS DIPUTADOS                                              Calle Floridablanca, s/n. 28071 Madrid
+D. L.: M-12.580/1961                                                                                                        Teléf.: 91 390 60 00
+
+Edición electrónica preparada por la Agencia Estatal Boletín Oficial del Estado – http://boe.es
+

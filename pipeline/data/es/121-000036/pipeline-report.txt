@@ -1,0 +1,11 @@
+═══════════════════════════════════════════════════════
+  ES-TRAMITACION AKN Pipeline: 121-000036-integral-impulso-economia
+  Title: Proyecto de Ley integral de impulso de la economía social.
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            9 BOCGs                             3.1s
+  [PASS]  2. Download            3 PDFs                              0.0s
+  [PASS]  3. Convert             3 snapshots                         0.0s
+  [PASS]  4. Generate            3 AKN files                         0.0s
+
+  RESULT: 4 pass, 0 fail, 0 warn (3.2s)
+═══════════════════════════════════════════════════════

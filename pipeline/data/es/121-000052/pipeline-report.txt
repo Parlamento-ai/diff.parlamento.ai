@@ -1,0 +1,12 @@
+═══════════════════════════════════════════════════════
+  ES-TRAMITACION AKN Pipeline: 121-000052-proteccion-personas-menores
+  Title: Proyecto de Ley Orgánica para la protección de las personas menores 
+de edad en los entornos digitales.
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            4 BOCGs                             1.4s
+  [PASS]  2. Download            2 PDFs                              8.0s
+  [PASS]  3. Convert             2 snapshots                         0.0s
+  [PASS]  4. Generate            2 AKN files                         0.0s
+
+  RESULT: 4 pass, 0 fail, 0 warn (9.5s)
+═══════════════════════════════════════════════════════

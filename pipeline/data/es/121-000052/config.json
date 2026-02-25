@@ -1,0 +1,23 @@
+{
+  "expediente": "121/000052/0000",
+  "slug": "121-000052-proteccion-personas-menores",
+  "titulo": "Proyecto de Ley Orgánica para la protección de las personas menores \nde edad en los entornos digitales.",
+  "timeline": [
+    {
+      "slug": "bill-original",
+      "label": "Texto Original",
+      "date": "2025-04-11",
+      "type": "bill",
+      "bocgPhase": 1,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF"
+    },
+    {
+      "slug": "amendment-informe-de-ponencia",
+      "label": "Informe de Ponencia",
+      "date": "2025-12-12",
+      "type": "amendment",
+      "bocgPhase": 4,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-4.PDF"
+    }
+  ]
+}

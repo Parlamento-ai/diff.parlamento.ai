@@ -1,0 +1,30 @@
+{
+  "expediente": "121/000052/0000",
+  "titulo": "Proyecto de Ley Orgánica para la protección de las personas menores \nde edad en los entornos digitales.",
+  "situacion": "Comisión de Justicia  — Informe",
+  "comision": "Comisión de Justicia",
+  "fechaPresentacion": "2025-03-27",
+  "bocgUrls": [
+    {
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-1.PDF",
+      "phase": 1,
+      "label": "Texto Original"
+    },
+    {
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-2.PDF",
+      "phase": 2,
+      "label": "Enmiendas"
+    },
+    {
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-3.PDF",
+      "phase": 3,
+      "label": "Índice de Enmiendas"
+    },
+    {
+      "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-52-4.PDF",
+      "phase": 4,
+      "label": "Informe de Ponencia"
+    }
+  ],
+  "tramitacion": "Comisión de Justicia \nPublicación \ndesde 08/04/2025 hasta 11/04/2025 \nComisión de Justicia \nEnmiendas \ndesde 11/04/2025 hasta 27/11/2025 \nComisión de Justicia \nMesa - Calificación \ndesde 19/06/2025 hasta 19/06/2025 \nComisión de Justicia \nDebate de totalidad \ndesde 19/06/2025 hasta 11/09/2025 \nComisión de Justicia \nInforme \ndesde 27/11/2025"
+}

@@ -1,0 +1,15 @@
+{
+  "expediente": "121/000058/0000",
+  "slug": "121-000058-reduccion-duracion-maxima",
+  "titulo": "Proyecto de Ley para la reducción de la duración máxima de la jornada \nordinaria de trabajo y la garantía del registro de jornada y el derecho a \nla desconexión.",
+  "timeline": [
+    {
+      "slug": "bill-original",
+      "label": "Texto Original",
+      "date": "2025-05-16",
+      "type": "bill",
+      "bocgPhase": 1,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-58-1.PDF"
+    }
+  ]
+}

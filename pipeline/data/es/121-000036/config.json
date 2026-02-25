@@ -1,0 +1,31 @@
+{
+  "expediente": "121/000036/0000",
+  "slug": "121-000036-integral-impulso-economia",
+  "titulo": "Proyecto de Ley integral de impulso de la economía social.",
+  "timeline": [
+    {
+      "slug": "bill-original",
+      "label": "Texto Original",
+      "date": "2024-10-18",
+      "type": "bill",
+      "bocgPhase": 1,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-36-1.PDF"
+    },
+    {
+      "slug": "amendment-informe-de-ponencia",
+      "label": "Informe de Ponencia",
+      "date": "2025-12-15",
+      "type": "amendment",
+      "bocgPhase": 4,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-36-4.PDF"
+    },
+    {
+      "slug": "amendment-dictamen-de-comision",
+      "label": "Dictamen de Comisión",
+      "date": "2025-12-22",
+      "type": "amendment",
+      "bocgPhase": 5,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-36-5.PDF"
+    }
+  ]
+}

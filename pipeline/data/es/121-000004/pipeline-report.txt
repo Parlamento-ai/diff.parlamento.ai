@@ -1,0 +1,12 @@
+═══════════════════════════════════════════════════════
+  ES-TRAMITACION AKN Pipeline: 121-000004-prevencion-perdidas-desperdicio
+  Title: Proyecto de Ley de prevención de las pérdidas y el desperdicio 
+alimentario.
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            21 BOCGs                            3.2s
+  [PASS]  2. Download            5 PDFs                              0.0s
+  [PASS]  3. Convert             5 snapshots                         0.0s
+  [PASS]  4. Generate            5 AKN files                         0.0s
+
+  RESULT: 4 pass, 0 fail, 0 warn (3.2s)
+═══════════════════════════════════════════════════════

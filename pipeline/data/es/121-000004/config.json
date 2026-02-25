@@ -1,0 +1,47 @@
+{
+  "expediente": "121/000004/0000",
+  "slug": "121-000004-prevencion-perdidas-desperdicio",
+  "titulo": "Proyecto de Ley de prevención de las pérdidas y el desperdicio \nalimentario.",
+  "timeline": [
+    {
+      "slug": "bill-original",
+      "label": "Texto Original",
+      "date": "2024-01-19",
+      "type": "bill",
+      "bocgPhase": 1,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-4-1.PDF"
+    },
+    {
+      "slug": "amendment-informe-de-ponencia",
+      "label": "Informe de Ponencia",
+      "date": "2024-12-16",
+      "type": "amendment",
+      "bocgPhase": 4,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-4-4.PDF"
+    },
+    {
+      "slug": "amendment-dictamen-de-comision",
+      "label": "Dictamen de Comisión",
+      "date": "2024-12-23",
+      "type": "amendment",
+      "bocgPhase": 5,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-4-5.PDF"
+    },
+    {
+      "slug": "amendment-aprobacion-por-el-pleno",
+      "label": "Aprobación por el Pleno",
+      "date": "2025-01-13",
+      "type": "amendment",
+      "bocgPhase": 6,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-4-6.PDF"
+    },
+    {
+      "slug": "amendment-aprobacion-definitiva",
+      "label": "Aprobación Definitiva",
+      "date": "2025-03-28",
+      "type": "amendment",
+      "bocgPhase": 9,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-4-9.PDF"
+    }
+  ]
+}

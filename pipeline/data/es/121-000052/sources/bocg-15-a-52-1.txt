@@ -1,0 +1,2456 @@
+                           BOLETÍN OFICIAL
+                  DE LAS CORTES GENERALES
+
+CONGRESO DE LOS DIPUTADOS
+
+                  XV LEGISLATURA
+
+Serie A:          11 de abril de 2025       Núm. 52-1                                       Pág. 1
+PROYECTOS DE LEY
+
+                         PROYECTO DE LEY
+
+121/000052 Proyecto de Ley Orgánica para la protección de las
+                  personas menores de edad en los entornos digitales.
+
+     La Mesa de la Cámara, en su reunión del día de hoy, ha adoptado el acuerdo que se
+indica respecto del asunto de referencia.
+
+(121) Proyecto de ley.
+
+Autor: Gobierno
+
+Proyecto de Ley Orgánica para la protección de las personas menores de edad en los
+entornos digitales.
+
+Acuerdo:
+
+Encomendar Dictamen, conforme al artículo 109 del Reglamento, a la Comisión de
+Justicia. Asimismo, publicar en el Boletín Oficial de las Cortes Generales, estableciendo
+plazo de enmiendas, por un período de quince días hábiles, que finaliza el día 5 de mayo
+de 2025.
+
+     En ejecución de dicho acuerdo se ordena la publicación de conformidad con el
+artículo 97 del Reglamento de la Cámara.
+
+     Palacio del Congreso de los Diputados, 8 de abril de 2025.—P.D. El Secretario General
+del Congreso de los Diputados, Fernando Galindo Elola-Olaso.
+
+                                                                                            cve: BOCG-15-A-52-1
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                       Pág. 2
+
+     PROYECTO DE LEY ORGÁNICA PARA LA PROTECCIÓN DE LAS PERSONAS                              cve: BOCG-15-A-52-1
+                      MENORES DE EDAD EN LOS ENTORNOS DIGITALES
+
+Exposición de motivos
+
+                                                           I
+
+     El desarrollo de la tecnología es una constante en nuestra sociedad que genera
+importantes transformaciones con consecuencias en diversos ámbitos de nuestra vida.
+Especialmente relevante es el efecto de la digitalización en el desarrollo personal y social
+de las personas menores de edad, razón por la que deviene crucial contar con herramientas
+y mecanismos de protección y garantía de sus derechos en los entornos digitales.
+
+     A efectos de la presente ley se tiene en cuenta la noción de entorno digital que recoge
+el apartado I.2 de la Observación General n.º 25 (2021) relativa a los derechos de los niños
+en relación con el entorno digital, del Comité de los Derechos del Niño de Naciones
+Unidas, que expresa que «El entorno digital está en constante evolución y expansión, y
+abarca las tecnologías de la información y las comunicaciones, incluidas las redes, los
+contenidos, los servicios y las aplicaciones digitales, los dispositivos y entornos
+conectados, la realidad virtual y aumentada, la inteligencia artificial, la robótica, los
+sistemas automatizados, los algoritmos y el análisis de datos, la biometría y la tecnología
+de implantes.»
+
+     La accesibilidad y la globalización de los entornos digitales permiten que las personas
+menores de edad utilicen estos medios para el ejercicio de derechos fundamentales, como
+son el derecho de información y la libertad de expresión, y para su participación política,
+social y cultural en los ámbitos local, nacional e incluso internacional.
+
+     Junto con los beneficios de los procesos de digitalización y de universalización del
+acceso a los entornos digitales conviene señalar los riesgos y perjuicios que se pueden
+derivar de un uso inadecuado de los mismos. El entorno digital puede incluir mensajes y
+contenidos de estereotipos de género, discriminatorios o violentos, así como información
+no veraz o sobre hábitos de conducta o consumo poco saludables, ilegales o dañinos.
+Esta información está al alcance de niñas, niños y adolescentes a través de múltiples
+fuentes.
+
+     Entre los riesgos y perjuicios asociados con un uso inadecuado de medios y
+dispositivos digitales cabe destacar la aparición de problemas de salud, tanto físicos,
+psicológicos como emocionales, dificultades de interacción social o problemas en el
+desarrollo cognitivo. No obstante, además de estos riesgos sobre la salud, existen otros
+relacionados con el uso de datos y la privacidad de las personas menores de edad, la
+progresiva insensibilización ante actos de violencia, el ciberacoso y el aumento de casos
+de explotación y abusos de menores.
+
+     El acceso a contenido inapropiado puede producir múltiples consecuencias en la
+infancia y adolescencia, tantas como variedades de contenido inapropiado se puedan
+considerar. En concreto tal y como se desprende de la iniciativa Internet Segura para
+Niños (is4k.es) del Instituto Nacional de Ciberseguridad (INCIBE) entre los daños
+potenciales para las personas menores destacan los siguientes:
+
+     —  Daños psicológicos y emocionales. El menor posee una madurez y una autoestima
+en desarrollo, por lo que es más vulnerable a nivel emocional si tropieza con información
+que no es capaz de asumir o frente a la que no sabe cómo reaccionar, como por ejemplo
+contenido pornográfico o violento. Estos les pueden resultar demasiado complejos e
+incluso perturbadores.
+
+     —  Desinformación, manipulación y construcción de falsas creencias. Los contenidos
+falsos y sin rigor pueden confundir a las personas menores de edad y son especialmente
+peligrosos cuando tratan temáticas relacionadas con la salud y la seguridad.
+
+     —  Establecimiento de conductas peligrosas, delictivas, discriminatorias o socialmente
+inapropiadas. Las personas menores de edad pueden asumir determinados contenidos
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                       Pág. 3
+
+como ciertos y positivos, y adoptarlos en forma de conductas o valores dañinos: sexismo,      cve: BOCG-15-A-52-1
+machismo, homofobia, racismo, etc.
+
+     —  Daños para la salud física. Algunos contenidos tienen como objetivo la promoción
+de desórdenes alimenticios (anorexia y bulimia), conductas de autolesión o consumo de
+drogas. Otros pueden animar a los menores a realizar actividades potencialmente
+peligrosas para su salud, como algunos vídeos o cadenas virales.
+
+     —  Inclusión en grupos y colectivos dañinos. Acceder a determinados contenidos
+puede acercar al menor a colectivos extremistas, violentos o racistas, así como a sectas
+de carácter ideológico o religioso, grupos políticos radicales, etc. El factor emocional es
+importante a la hora de hacer frente a esta información que puede ser perjudicial o
+malintencionada, dado que una baja autoestima, o aquella que esté aún en desarrollo,
+aumenta la vulnerabilidad del menor.
+
+     — Adicciones. El acceso a contenidos inapropiados sobre alcohol, tabaco y otras
+drogas, sexo y juegos de azar puede favorecer trastornos de adicción, dado que las
+personas menores de edad pueden no tener suficiente capacidad crítica para gestionar los
+riesgos asociados a este tipo de actividades.
+
+     —  Gastos económicos. Los fraudes o intentos de engaño destinados a estafar a los
+usuarios para hacerse con su dinero o sus datos pueden acarrear pérdidas económicas
+directas, como ocurre por ejemplo con las suscripciones de SMS Premium. Además, las
+personas menores de edad son más vulnerables a la hora de interpretar y gestionar la
+publicidad excesiva a la que están expuestos en Internet ya que puede generar en ellos la
+necesidad de consumir impulsivamente, como sucede con las compras en juegos y
+aplicaciones. Asimismo, no siempre el contenido de los anuncios es, en sí mismo,
+adecuado para ellos.
+
+     En esta línea, la preservación del interés superior del menor, que es hoy un principio
+de orden público, hace necesario avanzar en la protección de la infancia, la adolescencia
+y la juventud para generar un entorno digital cada vez más seguro, dirigido a garantizar su
+desarrollo integral, evitando los riesgos y peligros que vienen señalándose tanto desde
+ámbitos científicos y educativos como desde las propias entidades y asociaciones de
+protección a la infancia y la juventud. Igualmente, es preciso fomentar la formación digital
+al fin de enseñar a niños, niñas y adolescentes a ser usuarios conscientes y seguros de la
+tecnología, así como, de los aspectos psicológicos teniendo en cuenta el impacto
+emocional y cognitivo de las experiencias en línea. Asimismo merece especial atención la
+protección de las personas menores de edad con discapacidad, que pueden ser más
+vulnerables ante acciones de discriminación o abuso y tener mayor dificultad para la
+identificación de contenidos perjudiciales para ellos.
+
+     España tiene un compromiso con los derechos de la infancia y la adolescencia, como
+así lo atestigua la ratificación de diferentes acuerdos internacionales de Derechos
+Humanos, entre los que destaca la Convención de las Naciones Unidas sobre los Derechos
+del Niño de 20 de noviembre de 1989, así como las políticas de promoción de estos
+derechos y lucha contra las violencias contra la infancia. Teniendo en cuenta que los
+entornos digitales son hoy uno más entre los diferentes ámbitos en los que se desarrolla
+la vida en sociedad, resulta necesaria esta norma que viene a regular y garantizar el
+disfrute de derechos de la infancia en estos entornos. Esta norma emana por tanto del
+artículo 20.4 de la Constitución Española que reconoce una especial protección al ámbito
+de la juventud y de la infancia, así como del artículo 39 que recoge el derecho a la
+protección integral de la infancia. También suponen antecedentes de la norma los
+artículos 33, 45 y 46 de la Ley Orgánica 8/2021, de 4 de junio, de protección integral a la
+infancia y la adolescencia frente a la violencia, entre otros. Ante la realidad de las
+oportunidades y riesgos que suponen los entornos digitales, corresponde al Estado poner
+en marcha medidas que aseguren el disfrute y promoción de los derechos de la infancia y
+la adolescencia en este ámbito.
+
+     Desde el ámbito europeo también se han impulsado medidas y propuestas para la
+regulación de los entornos digitales en lo que respecta a las personas menores de edad.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                       Pág. 4
+
+La Estrategia para los Derechos de la Infancia 2021-2024 llamó la atención sobre esta         cve: BOCG-15-A-52-1
+cuestión, siendo la sociedad digital y de la información una de las seis áreas temáticas que
+la conforman. En ella, además de señalar su enorme potencial en el ámbito educativo o
+para la reducción de determinadas brechas sociales, se apunta a la necesidad de adoptar
+medidas ante los riesgos que puede acarrear el mundo digital en áreas como el ciberacoso
+o la incitación al odio, además de la necesidad de introducir regulación para evitar los
+problemas de salud que pueden derivar de una exposición excesiva a las pantallas. La
+Estrategia europea en favor de una Internet más adecuada para los niños apuntaba en la
+misma dirección sobre la que ya han regulado o se encuentran en procesos regulatorios
+diferentes países de nuestro entorno.
+
+     Esta norma responde también a los diferentes indicadores tanto de las instituciones
+supranacionales como de diferentes actores relevantes de la sociedad civil que sitúan
+algunas de las problemáticas derivadas de la exposición de la infancia y la adolescencia a
+los entornos digitales, de forma desregulada, como un problema de salud pública. Esta
+regulación por tanto garantiza el derecho de la infancia a crecer sin que su desarrollo se
+vea condicionado por la exposición a las pantallas, así como a poder hacer uso de los
+entornos digitales de una forma positiva, ya sea en el ámbito de la educación o como
+espacio de interacción social o acceso a la cultura y el ocio.
+
+     Junto a ello, y ante la necesidad de avanzar en la protección de la infancia y la
+adolescencia en los ámbitos digitales, el Gobierno constituyó mediante Acuerdo del
+Consejo de Ministros de 30 de enero de 2024 un Comité de personas expertas para el
+desarrollo de un entorno digital seguro para la juventud y la infancia. Este Comité,
+formado por representantes de la sociedad civil, representantes de diferentes
+instituciones, personas académicas especializadas en diferentes elementos ligados a
+esta problemática, y representantes de los propios organismos de participación infantil y
+de la adolescencia, así como entidades responsables de la promoción de sus derechos,
+ha venido trabajando sobre los entornos digitales con una mirada multidisciplinar e
+interseccional con el fin de realizar un informe que analice buenas prácticas y elabore
+recomendaciones, medidas y actuaciones para una hoja de ruta con el objetivo de
+generar un entorno digital seguro, que contribuya a la mejor protección del desarrollo
+integral de la infancia y la adolescencia.
+
+     La norma se inspira, además, en los trabajos que se han venido realizando en
+diferentes espacios para abordar los elementos que encuentran su reflejo en la norma que,
+dada la complejidad de la problemática, los integra desde diferentes perspectivas. Así, se
+aúnan propuestas que atañen al sector digital, a los proveedores de servicios en este
+ámbito, y también al desarrollo de políticas en los ámbitos de la educación, la sanidad, o
+las políticas de protección de las personas consumidoras.
+
+     En ese sentido, la generación de espacios seguros en el ámbito digital para la infancia
+y adolescencia no puede hacerse de espaldas a esa parte de la población. Así, la norma
+dota de un papel activo a la infancia y adolescencia, reconocidas como sujetos de
+derechos que, a través de herramientas que se generan como la Estrategia Nacional sobre
+la protección de la infancia y la adolescencia en el entorno digital podrán participar en el
+propio diseño, monitoreo y evaluación de las políticas públicas derivadas de la
+implementación de esta ley que les atañen de forma directa. En definitiva, lo que viene a
+delimitarse a través de la ley es el derecho a la protección ante los contenidos digitales
+que puedan resultar dañinos para su desarrollo y su derecho a poder tomar decisiones al
+respecto de los mismos, recibiendo información de forma adecuada para su edad. Estos
+derechos de la infancia y la adolescencia se desarrollan mediante las medidas y políticas
+descritas en el articulado de la ley, así como de las diferentes obligaciones que derivan de
+ellos para la administración y el sector privado, que desempeña un papel fundamental en
+este ámbito. La regulación genera así el marco necesario para el desarrollo de los
+compromisos adquiridos por España en materia de derechos de las personas menores de
+edad ante el papel creciente que juegan los entornos digitales como un plano más en el
+que se desarrolla la sociedad.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                           Pág. 5
+
+                                                           II                                     cve: BOCG-15-A-52-1
+
+     El título preliminar, «Disposiciones generales», constituye el marco básico de referencia
+para garantizar el respeto y disfrute en igualdad de todas las niñas, niños y adolescentes
+en los entornos digitales, fomentando la participación activa de este colectivo y superando
+las barreras de la discriminación.
+
+     El principal objetivo de la ley es ofrecer entornos digitales seguros para la infancia y la
+adolescencia, con plena protección de sus derechos y libertades, a la vez que se fomenta
+un uso adecuado y respetuoso de las nuevas tecnologías.
+
+     De acuerdo con lo anterior, el artículo 2 reconoce los derechos de las personas
+menores de edad en este tipo de entornos, entre ellos los derechos a ser protegidas
+eficazmente ante contenidos digitales que puedan perjudicar su desarrollo, a recibir
+información suficiente y necesaria en una forma y lenguaje apropiado según la edad y el
+grado de madurez sobre el uso de las tecnologías y de los riesgos asociados al mismo, así
+como al acceso equitativo y efectivo a dispositivos, conexión y formación para el uso de
+herramientas digitales.
+
+     Con ello se completa el marco previamente definido por la Ley Orgánica 1/1996,
+de 15 de enero, de Protección Jurídica del Menor, de modificación parcial del Código
+Civil y de la Ley de Enjuiciamiento Civil; la Ley Orgánica 8/2021, de 4 de junio, de
+protección integral a la infancia y la adolescencia frente a la violencia, cuyo título III,
+capítulo VIII, se dedica a las nuevas tecnologías, fomentando la colaboración público-
+privada en aras de garantizar el uso seguro y responsable de internet y las tecnologías
+de la información y la comunicación entre las personas menores de edad; y la Ley
+Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de
+los derechos digitales, que contempla la necesidad de otorgar una protección real a las
+personas menores de edad en internet, a cuyo fin obliga a los padres, madres, tutores,
+curadores o representantes legales a procurar que los menores de edad hagan un uso
+equilibrado y responsable de los dispositivos digitales y de los servicios de la sociedad
+de la información al objeto de garantizar el adecuado desarrollo de su personalidad y
+preservar su dignidad y sus derechos fundamentales (artículo 84); obliga a los centros
+educativos y a cualesquiera personas físicas o jurídicas que desarrollen actividades en
+las que participen menores de edad a garantizar la protección del interés superior del
+menor y sus derechos fundamentales, y especialmente el derecho a la protección de sus
+datos personales en internet (artículo 92); y prevé la aprobación de un Plan de Actuación
+dirigido a promover las acciones de formación, difusión y concienciación necesarias para
+lograr que los menores de edad hagan un uso equilibrado y responsable de los
+dispositivos digitales y de las redes sociales y de los servicios de la sociedad de la
+información equivalentes de Internet con la finalidad de garantizar su adecuado
+desarrollo de la personalidad y de preservar su dignidad y derechos fundamentales
+(artículo 97.2).
+
+     En esta misma línea, el artículo 3 recoge los fines que pretende lograr la norma de
+garantizar el respeto y cumplimiento de los derechos de las niñas, niños y adolescentes en
+el entorno digital, especialmente los derechos a la intimidad, al honor y a la propia imagen,
+así como el interés superior del menor en el desarrollo de los productos y servicios
+digitales, y fomentar un uso equilibrado y responsable de los entornos digitales, apoyar el
+desarrollo de las competencias digitales de la infancia en el entorno digital para hacer de
+éste un lugar seguro, entre otros.
+
+     Las medidas que se recogen en la ley se despliegan desde una perspectiva amplia y
+multidisciplinar, alcanzando una protección integral de las personas menores de edad en
+el uso de dispositivos y medios digitales con una perspectiva preventiva, de atención e
+inclusión, con el fin de ofrecer a través de los canales adecuados herramientas accesibles
+que permitan anticiparse al desarrollo de problemas más graves, y fomentar entornos sin
+discriminación.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 6
+
+                                                          III                                   cve: BOCG-15-A-52-1
+
+     El entorno digital pone a disposición de la sociedad, en su conjunto, numerosas
+ventajas y beneficios, pero su uso ha de ser especialmente adecuado cuando los
+principales destinatarios de las nuevas tecnologías digitales son las personas menores de
+edad, que cada vez se enfrentan a mayores riesgos derivados de un consumo perjudicial.
+
+     Es por ello que la presente ley contempla varias medidas en materia de protección de
+las personas menores de edad como consumidores y usuarios, que se recogen en el título
+I y también en la disposición final cuarta, que modifica de manera expresa el texto
+refundido de la Ley General para la Defensa de los Consumidores y Usuarios y otras leyes
+complementarias, aprobado por el Real Decreto Legislativo 1/2007, de 16 de noviembre.
+
+     Respecto de las medidas recogidas en el título I, el artículo 4 establece dos nuevas
+obligaciones dirigidas a los fabricantes de los equipos terminales digitales con conexión a
+internet a través de los cuales las personas menores de edad puedan acceder a contenidos
+perjudiciales para su desarrollo, que se encuentran en línea con lo previsto en el
+artículo 46, apartados 3 y 4, de la Ley Orgánica 8/2021, de 4 de junio: una obligación de
+información en sus productos de los posibles riesgos derivados de un uso inadecuado,
+entre otros aspectos, y la obligación de que los equipos terminales digitales que fabriquen
+incluyan en su sistema operativo una funcionalidad de control parental que permita a sus
+usuarios restringir o controlar el acceso de dichas personas a servicios, aplicaciones y
+contenidos perjudiciales para menores, cuya activación debe producirse por defecto en el
+momento de la configuración inicial del equipo terminal.
+
+     Como situación más específica, entre los consumos con un potencial perjudicial cabe
+mencionar los mecanismos aleatorios de recompensa (cajas botín o «lootboxes»), que
+forman parte de algunos videojuegos y que, sin el debido control de acceso en su
+activación, pueden suponer un riesgo para las personas vulnerables, en especial las más
+jóvenes a quienes van dirigidas y son los principales consumidores de este tipo de
+productos y servicios, tal y como pone en evidencia el estudio «Loot boxes in online games
+and their effect on consumers, in particular young consumers», encargado por la Comisión
+de Mercado Interior y Protección del Consumidor del Parlamento Europeo, en el que se
+llama la atención sobre los diferentes riesgos asociados a los mecanismos utilizados en
+las cajas botín en función de la fase de desarrollo de los niños y adolescentes.
+
+     Los mecanismos aleatorios de recompensa son objetos o procesos virtuales de
+cualquier tipo cuya activación ofrece la oportunidad al jugador de obtener, con carácter
+aleatorio, recompensas o premios virtuales que pueden utilizarse en esos entornos
+digitales.
+
+     Como ha puesto de manifiesto la literatura científica, la evidente identidad funcional de
+algunas de las modalidades bajo las que se presentan estos mecanismos aleatorios de
+recompensa con los juegos de azar tradicionales trae consigo, también, las consecuencias
+negativas asociadas con estos últimos, como pueden ser el surgimiento de conductas de
+consumo irreflexivas, compulsivas y, en última instancia, patológicas. Todo ello con base en
+la mecánica de activación psicológica susceptible de desencadenarse al participar en esta
+actividad, lo que es causa de graves repercusiones económicas, patrimoniales y afectivas,
+tanto en las personas que las padecen como en su entorno personal, social y familiar.
+
+     En el caso de las personas menores de edad, es probable que el contacto con estos
+mecanismos aleatorios de recompensa constituya su primer encuentro con un producto o
+funcionalidad en cuya mecánica de funcionamiento el azar tenga un papel preponderante
+y que guarda la citada similitud, tanto desde el punto de vista estructural como de las
+técnicas de marketing utilizadas para su comercialización, con ciertas modalidades propias
+del juego regulado.
+
+     Por lo expuesto, el artículo 5 dispone una prohibición general de acceso a los
+mecanismos aleatorios de recompensa o su activación por personas que sean menores de
+edad, si bien reglamentariamente se podrán establecer supuestos en los que se
+determinen excepciones en las que se flexibilice la prohibición, siempre que se garantice
+la protección a la infancia.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 7
+
+     Se aclara que la prohibición señalada no opera de manera general, sino que resulta de       cve: BOCG-15-A-52-1
+aplicación solo a los mecanismos aleatorios de recompensa que presentan un conjunto de
+caracteres que los hacen asimilables en mayor grado a ciertos productos de juegos de
+azar. En consecuencia, no todos los procesos, funcionalidades o productos asociados a
+los productos de software interactivo de ocio que integren como elemento esencial de su
+configuración estructural el azar son objeto de la presente regulación. Además del pago de
+un precio por la activación y de la presencia del elemento del azar, la ley incluye bajo su
+ámbito de aplicación únicamente aquellos mecanismos aleatorios que otorguen
+recompensas que consistan en un objeto virtual que pueda ser canjeado por dinero o por
+otros objetos virtuales.
+
+     En coherencia con las medidas contempladas en el título I, la disposición final quinta
+modifica el texto refundido de la Ley General para la Defensa de los Consumidores y
+Usuarios y otras leyes complementarias, aprobado por el Real Decreto Legislativo 1/2007,
+de 16 de noviembre, con el fin de incorporar la protección de las personas menores de
+edad, como personas consumidoras vulnerables, en relación con los bienes o servicios
+digitales. Además, se incide en la obligación por la parte empresarial de asegurarse de la
+mayoría de edad del consumidor y usuario con carácter previo a la contratación de bienes
+o servicios propios o ajenos o, internos o externos, destinados a personas mayores de
+edad, ya sea por su contenido sexual, violento o por suponer un riesgo para la salud física
+o el desarrollo de la personalidad; y se tipifica el incumplimiento por parte del empresario
+de dicha obligación de verificación y comprobación de edad como infracción leve en
+materia de defensa de los consumidores y usuarios.
+
+                                                          IV
+
+     El título II, compuesto por los artículos 6 y 7, incorpora las medidas dirigidas al ámbito
+educativo.
+
+     La vigente legislación educativa promueve el uso de las nuevas tecnologías en la
+enseñanza, contribuye a la mejora de las capacidades digitales del alumnado y asume la
+necesidad de que la digitalización del ámbito educativo venga acompañada por la
+inclusividad económica, social y de género en el acceso a las tecnologías, y de un uso de
+los medios digitales seguro y respetuoso con los valores y derechos constitucionales.
+
+     La creciente preocupación por evitar los riesgos de una utilización inadecuada de las
+tecnologías de la información y de la comunicación y el debate social surgido en torno a
+estas situaciones ha contado con la atención de las Administraciones educativas. Así,
+en 2024, el Ministerio de Educación, Formación Profesional y Deportes y las Comunidades
+Autónomas compartieron puntos de vista sobre las formas de abordar estas cuestiones y
+el Consejo Escolar del Estado aprobó una propuesta para regular el uso del móvil en los
+centros educativos durante el horario lectivo. Se trata de una serie de recomendaciones y
+conclusiones como el uso cero de los móviles tanto en educación infantil como en
+educación primaria, y que estos dispositivos permanezcan apagados durante todo el
+horario escolar en educación secundaria, pudiendo utilizarse en el caso de que el docente
+lo considere necesario para una actividad educativa concreta. En todo caso, se contemplan
+excepciones por motivos de salud, seguridad o necesidades especiales.
+
+     En su tratamiento de los problemas detectados, el artículo 6 de la presente ley
+responde a la necesidad de mejorar la formación en esta materia tanto de los alumnos
+como del personal docente.
+
+     Por una parte, se dispone el fomento de actuaciones de mejora de las competencias
+digitales del alumnado, con el fin de garantizar su plena inserción en la sociedad digital y
+el aprendizaje de un uso seguro, sostenible, crítico y responsable de las tecnologías
+digitales para el aprendizaje, el trabajo y la participación en la sociedad, así como la
+interacción con estas. Estas previsiones están en línea con los principios pedagógicos que
+desarrolla la Ley Orgánica 2/2006, de 3 de mayo, de Educación, uno de los cuales es
+precisamente el desarrollo transversal de la competencia digital, y se vinculan también con
+el artículo 5 de la Ley Orgánica 1/1996, de 15 de enero, en relación con el derecho a la
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 8
+
+información, y el artículo 33 de la Ley Orgánica 8/2021, de 4 de junio, sobre formación en      cve: BOCG-15-A-52-1
+materia de derechos, seguridad y responsabilidad digital.
+
+     Por otra parte, se reconoce el papel fundamental del profesorado en el proceso de
+adquisición de las competencias digitales por parte del alumnado y en la detección de
+riesgos, y por ello se dispone que la planificación de la formación continua del profesorado
+no universitario incorpore actividades formativas que faciliten a los centros educativos el
+desarrollo de estrategias para el tratamiento, entre otros aspectos, de la seguridad y de los
+elementos relacionados con la ciudadanía digital, la privacidad y la propiedad intelectual,
+tomando para ello como referencia las áreas y competencias establecidas en el Marco de
+Referencia de la Competencia Digital Docente y la regulación existente en materia de
+protección integral a la infancia y la adolescencia frente a la violencia, protección de datos
+personales y garantía de los derechos digitales.
+
+     Finalmente, de manera más específica a propósito del problema antes apuntado, el
+artículo 7 establece que los centros educativos, de acuerdo con las disposiciones que al
+efecto hayan aprobado las administraciones educativas, regulen como parte de sus
+normas de funcionamiento y convivencia el uso de dispositivos móviles y digitales en las
+aulas, en las actividades extraescolares y en lugares y tiempos de descanso que tengan
+lugar bajo su supervisión.
+
+                                                           V
+
+     El título III contempla medidas en el ámbito de protección de las víctimas de violencia
+de género y violencias sexuales.
+
+     Así, el artículo 8 establece que las víctimas de violencia de género o violencias
+sexuales facilitadas por entornos digitales tendrán la condición de víctimas a los efectos de
+la Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la
+Violencia de Género y de la Ley Orgánica 10/2022, de 6 de septiembre, de garantía
+integral de la libertad sexual, respectivamente.
+
+     Estas equivalencias resultan conformes al artículo 14 del Convenio del Consejo de
+Europa para la protección de los niños contra la explotación y el abuso sexual, hecho en
+Lanzarote el 25 de octubre de 2007 y el artículo 26 del Convenio del Consejo de Europa
+sobre prevención y lucha contra la violencia contra la mujer y la violencia doméstica, hecho
+en Estambul el 11 de mayo de 2011.
+
+     Por su parte, el artículo 9 garantiza que las personas menores de edad tendrán
+derecho a acceder a los servicios de información y orientación y, dado el caso, de atención
+psicosocial inmediata y asesoramiento jurídico, por vía telefónica y en línea, las 24 horas,
+todos los días del año.
+
+     De igual forma, se reconoce el derecho a acceder a los servicios de acogida y
+asistencia psicológica y social destinados a las víctimas de violencia de género y de
+violencias sexuales y a los centros de crisis 24 horas.
+
+     Además, se considera imprescindible considerar estos servicios como esenciales, ya
+que de ellos dependen la seguridad, la salud y el bienestar de la población afectada que
+es especialmente vulnerable.
+
+                                                          VI
+
+     El título IV aborda las medidas de carácter sanitario a adoptar por las Administraciones
+públicas.
+
+     El impacto en la salud de los niños, niñas y adolescentes por el uso inadecuado de las
+tecnologías y entornos digitales constituye un motivo creciente de preocupación para las
+familias, educadores y profesionales de la salud. Aunque existen numerosos estudios, sus
+resultados son a veces contradictorios o poco concluyentes. No obstante, existen
+evidencias de que pasar un tiempo excesivo frente a las pantallas y la exposición a
+contenidos inapropiados pueden afectar la salud mental y aumentar el riesgo de ansiedad,
+depresión, adicción, problemas de autoestima, trastornos del sueño, problemas en el
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                        Pág. 9
+
+desarrollo del lenguaje y habilidades sociales, así como en la capacidad de concentración      cve: BOCG-15-A-52-1
+y resolución de problemas.
+
+     También se ha encontrado evidencia de que las personas adolescentes con alta
+exposición a medios y entornos digitales podrían tener más probabilidad de desarrollar
+síntomas de trastorno por déficit de atención e hiperactividad. Además, los niños y niñas
+pueden exponerse a discursos de odio, violencia y contenidos que incitan a la autolesión
+o al suicidio, o que tienen un impacto negativo en su bienestar emocional y psicológico.
+
+     Por otra parte, el tiempo excesivo frente a las pantallas contribuye a un estilo de vida
+sedentario y por tanto a sufrir trastornos musculoesqueléticos, obesidad infantil y a los
+problemas derivados de la misma, como las enfermedades cardiovasculares y endocrinas.
+Además, la exposición a pantallas puede afectar a la calidad y hábitos del sueño así como
+a la salud visual y originar problemas de visión borrosa, ojos secos y dolores de cabeza,
+así como trastornos del sueño.
+
+     Se hace necesario, por tanto, establecer medidas sanitarias para la prevención de los
+problemas de salud derivados del uso inadecuado de las tecnologías y entornos digitales
+y promocionar hábitos de uso saludables.
+
+     Para ello, el artículo 10 promueve que, con base en el principio de salud en todas las
+políticas, se incorpore la dimensión sanitaria en los estudios que se promuevan por las
+Administraciones públicas sobre el uso de estas tecnologías y entornos digitales por las
+personas menores, con el objetivo de aumentar el conocimiento sobre los efectos en la
+salud y generar evidencia científica. Además, incorpora actuaciones individuales y
+comunitarias en los programas de prevención y promoción de la salud infantil y adolescente
+que se desarrollan desde la atención primaria, para la detección precoz de los problemas
+específicos relacionados con las tecnologías y entornos digitales, así como el
+establecimiento de programas coordinados con otras administraciones públicas, para el
+abordaje integral, tratamiento y rehabilitación, con una perspectiva biopsicosocial.
+
+     Por otra parte, el artículo 11, promueve la atención sanitaria especializada para
+personas menores con conductas adictivas sin sustancia.
+
+                                                          VII
+
+     Las medidas en el sector público, reguladas en el título V, se fundamentan en la
+obligación de los poderes públicos de promover las condiciones de libertad e igualdad de
+las personas, tanto individualmente como en los grupos en los que se integran, para que
+sean reales y efectivas, suprimiendo los obstáculos que dificulten su plenitud y facilitando
+la participación ciudadana en la esfera social, política, cultural y económica, tal y como
+recoge el artículo 9.2 de la Constitución Española. Asimismo, en virtud del artículo 11 de la
+Ley Orgánica 1/1996, de 15 de enero, las Administraciones Públicas deberán tener en
+cuenta las necesidades de los menores al ejercer sus competencias especialmente, entre
+otros, en relación con las nuevas tecnologías.
+
+     A través de las medidas de participación, información y sensibilización previstas en el
+artículo 12, en línea con lo previsto en la Ley Orgánica 8/2021, de 4 de junio, se incide en
+la necesidad de incorporar acciones proactivas y eficaces en relación con la información y
+formación sobre entornos digitales seguros, dirigidas a personas menores de edad y a sus
+familias, garantizando el ejercicio efectivo del derecho de participación en los planes,
+programas y políticas que afecten a la infancia y la juventud.
+
+     El artículo 13 dispone el fomento de la colaboración público-privada y la corregulación,
+de forma que los proveedores del servicio de acceso a internet desde una ubicación fija
+aprueben un código de conducta que establezca los mecanismos y parámetros de
+configuración segura que se comprometen a aplicar en la prestación de sus servicios en
+lugares de acceso público en los que se presten servicios públicos, para evitar el acceso
+a contenidos inadecuados por parte de las personas menores de edad.
+
+     El artículo 14 garantiza la especialización profesional en todos los niveles de la
+Administración de todo el personal que trabaje en contacto directo con personas menores
+de edad.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                           Pág. 10
+
+     A tal efecto, el precepto impone al Gobierno la elaboración, en colaboración con las         cve: BOCG-15-A-52-1
+comunidades autónomas, de un programa marco de formación y reciclaje de estos
+sectores profesionales que abarque, además de los aspectos específicos relacionados con
+cada sector, los estereotipos de género, el trauma y sus efectos y la responsabilidad en la
+reducción de la victimización secundaria.
+
+     El artículo 15 recoge la obligación del Gobierno, en colaboración con las comunidades
+autónomas, las ciudades de Ceuta y Melilla y las entidades locales, de elaborar una
+Estrategia Nacional sobre la protección de la infancia y la adolescencia en el entorno
+digital, en la que participarán el Observatorio de la Infancia, las entidades del tercer sector,
+la sociedad civil, y, de forma muy especial, con las niñas, niños y adolescentes. Esta
+Estrategia, que deberá definirse en consonancia con la Estrategia Estatal de los Derechos
+de la Infancia y de la Adolescencia, perseguirá la alfabetización digital y mediática, la
+difusión de información a las familias, y personas que habitualmente estén en contacto con
+menores, el uso seguro de dispositivos, la investigación y la creación de espacios de
+interacción y colaboración sobre cultura digital.
+
+                                                         VIII
+
+     La protección de las personas menores de edad en los entornos digitales puede
+requerir como último recurso la interrupción de un servicio de la sociedad de la información
+que ofrezca acceso sin límites a contenido que perjudica gravemente al desarrollo físico,
+mental y moral de los menores. De modo general, el artículo 8.1 de la Ley 34/2002, de 11
+de julio, de servicios de la sociedad de la información y de comercio electrónico, permite
+que los órganos competentes para su protección puedan adoptar las medidas necesarias
+para interrumpir la prestación de un servicio de la sociedad de la información o retirar los
+datos que este ofrezca.
+
+     Dado que estas medidas restrictivas pueden llegar a afectar a derechos fundamentales
+como la libertad de expresión o el derecho de información, que gozan de protección
+constitucional, una orden para la interrupción de un servicio o la retirada de contenido debe
+contar con la correspondiente autorización judicial.
+
+     La Sentencia del Tribunal Supremo 1231/2022, de 3 de octubre, ha advertido sin
+embargo al legislador sobre la existencia de una laguna a este respecto en nuestra
+legislación procesal, donde solo se prevé un procedimiento para solicitar la autorización
+judicial de la medida cuando se trate de la salvaguarda de los derechos de propiedad
+intelectual y así lo solicite la Sección Segunda de la Comisión de Propiedad Intelectual,
+con omisión del resto de supuestos previstos el artículo 8.1 de la Ley 34/2002, de 11 de
+julio, incluida la protección de la juventud y de la infancia, que habilitan a las autoridades
+competentes por razón de la materia para adoptar, con autorización judicial, este tipo de
+medidas. Esta misma laguna se observa respecto de los actos adoptados para la limitación
+del acceso a un servicio intermediario previstos en el artículo 51.3.b) del Reglamento
+(UE) 2022/2065 del Parlamento Europeo y del Consejo, de 19 de octubre de 2022, relativo
+a un mercado único de servicios digitales y por el que se modifica la Directiva 2000/31/CE
+(Reglamento de Servicios Digitales).
+
+     A fin de colmar esta laguna legal, las disposiciones finales segunda y cuarta de esta
+ley modifican respectivamente la Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial y
+la Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa.
+
+     Concretamente, se modifican el artículo 95.e) de la Ley Orgánica 6/1985, de 1 de julio,
+y el artículo 9.2 de la Ley 29/1998, de 13 de julio, a fin de atribuir a la Sección de lo
+Contencioso-Administrativo del Tribunal Central de Instancia (referencia que, en tanto esta
+no se constituya, deberá entenderse hecha a los Juzgados Centrales de lo Contencioso-
+Administrativo) la competencia para autorizar la ejecución de los actos adoptados por los
+órganos administrativos competentes en la materia para que se interrumpa la prestación
+de servicios de la sociedad de la información o para que se retiren contenidos que vulneren
+cualquiera de los bienes jurídicos enumerados en el artículo 8 de la Ley 34/2002, de 11 de
+julio, no solo la propiedad intelectual, así como para la ejecución de los adoptados para la
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                        Pág. 11
+
+interrupción del acceso a un intermediario por el coordinador de servicios digitales con       cve: BOCG-15-A-52-1
+base en el artículo 51.3.b) del Reglamento de Servicios Digitales.
+
+     Asimismo, se modifica el artículo 122 bis de la Ley 29/1998, de 13 de julio, con objeto
+de que el procedimiento de autorización judicial para la ejecución de estas medidas se
+generalice para todos los bienes jurídicos protegidos, no solo para salvaguardar la
+propiedad intelectual.
+
+     En lo relativo a la protección de las personas menores de edad en entornos digitales,
+la habilitación a los Juzgados Centrales de lo Contencioso-Administrativo para autorizar
+estas medidas permitirá que todas las autoridades competentes en la materia puedan
+solicitar la autorización judicial para la interrupción de servicios o retirada de contenidos
+que atenten contra la protección de la juventud y la infancia. Entre otros supuestos, esto
+permitiría a la Comisión Nacional de los Mercados y la Competencia solicitar la autorización
+de una orden de cese de actividad a una plataforma de intercambio de vídeos o a un
+servicio de comunicación audiovisual a petición con contenido para adultos que no incluya
+sistemas de verificación de edad que limiten su acceso a menores.
+
+                                                          IX
+
+     La disminución del riesgo asociado al uso de las tecnologías digitales por las personas
+menores de edad hace necesaria también la reforma del Código Penal, que se lleva a
+cabo en la disposición final segunda.
+
+     Algunos delitos tecnológicos dirigidos a la protección de las personas menores de
+edad han sido recogidos por las últimas reformas del Código Penal, fundamentalmente la
+producida por la disposición final sexta de la Ley Orgánica 8/2021, de 4 de junio, de
+protección integral a la infancia y la adolescencia frente a la violencia, donde por primera
+vez se habla de violencia digital. Con esta reforma se han castigado conductas de
+distribución o difusión pública a través de Internet, del teléfono o de cualquier otra
+tecnología de la información o de la comunicación de contenidos específicamente
+destinados a promover, fomentar o incitar al suicidio, las autolesiones o conductas
+relacionadas con trastornos de la conducta alimentaria o a las agresiones sexuales a
+menores. También en diferentes preceptos del Código Penal se recoge expresamente el
+bloqueo o la retirada de las páginas web, portales o aplicaciones de internet que contengan
+o difundan pornografía infantil, que fomenten el odio a colectivos o que enaltezcan o que
+justifiquen el terrorismo (artículos 189.8, 510.6 y 578.4 del Código Penal); y, del mismo
+modo la Ley Orgánica 13/2015, de 5 de octubre, de modificación de la Ley de
+Enjuiciamiento Criminal para el fortalecimiento de las garantías procesales y la regulación
+de las medidas de investigación tecnológica, incorporó a este texto legal los artículos 588
+bis a y siguientes relativos a la investigación de los delitos cometidos a través de
+instrumentos informáticos o de cualquier otra tecnología de la información o la
+comunicación o servicios de comunicación.
+
+     Sin embargo, existen otras situaciones directamente relacionadas con el acceso
+seguro de las personas menores de edad a internet, que tienen que ver no solo con la
+modificación o creación de figuras específicamente destinadas a la tutela de las personas
+menores, sino también con los problemas que se derivan de una falta de adaptación de la
+norma vigente a los nuevos avances tecnológicos.
+
+     Es por ello necesario introducir algunos cambios en el Código Penal que avancen en
+su adaptación a las nuevas formas de criminalidad y que, sin olvidar los principios
+limitadores del ius puniendi del Estado, permitan ejercer una protección eficaz frente a los
+nuevos delitos tecnológicos.
+
+     En línea con este objetivo, se ha estimado conveniente la incorporación de cuatro tipos
+de modificaciones, que se articulan en la disposición final tercera.
+
+     En primer lugar, se incorpora la pena de alejamiento de los entornos virtuales, para un
+mejor cumplimiento de la prevención general y especial en el ámbito de los delitos
+tecnológicos. En concreto, se modifican los artículos 33, 39, 40, 45, 48, 56, 70 y 83 del
+Código Penal para incorporar la pena de prohibición de acceso o de comunicación a través
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 12
+
+de redes sociales, foros, plataformas de comunicación o cualquier otro lugar en el espacio      cve: BOCG-15-A-52-1
+virtual, cuando el delito se comete en su seno.
+
+     De este modo, se vincula el contenido de la pena a la naturaleza del delito, y se
+establece una mayor protección de las víctimas, evitando la reiteración de conductas
+punibles.
+
+     La necesidad se constata además si se atiende a la Sentencia del Tribunal
+Supremo 547/2022, de 2 junio, que acoge como posible la imposición de la pena de
+prohibición al acusado de acudir al lugar del delito, siendo este un sitio virtual. El alto
+tribunal confirma en esta resolución lo que ya se anunciaba doctrinalmente: en los delitos
+tecnológicos hay que diferenciar el medio comisivo y el lugar de comisión. En este sentido
+afirma que «(L)a experiencia más reciente enseña que las redes sociales no son sólo el
+instrumento para la comisión de algunos delitos de muy distinta naturaleza. Pueden ser
+también el escenario en el que el delito se comete, ya sea durante todo su desarrollo, ya
+en la ejecución de sólo algunos de los elementos del tipo».
+
+     Ante el gran incremento de la delincuencia virtual, las redes sociales son un lugar
+donde frecuentemente se cometen delitos o donde se prolonga la ejecución de hechos
+iniciados o ejecutados parcialmente y la introducción de la pena de prohibición de acceso
+o de comunicación a través de redes sociales, foros, plataformas de comunicación o
+cualquier otro lugar en el espacio virtual da una respuesta eficaz a la creciente criminalidad
+informática, al evitar la reiteración de la conducta punible en los espacios virtuales y
+mejorar la protección de las víctimas impidiendo su victimización secundaria. Su
+incorporación expresa al Código Penal hace que su aplicación se acomode mejor a los
+principios de legalidad y tipicidad penal, y su previsión se hace también en términos
+adecuados al principio de proporcionalidad, pues su extensión debe ser concretada caso
+a caso mediante resolución judicial debidamente motivada que debe permitir al penado el
+acceso a otras redes o espacios virtuales no directamente relacionados con el delito
+cometido.
+
+     De manera complementaria, se modifica el artículo 96.3 para que esta misma
+prohibición se pueda imponer como medida de seguridad; y la disposición final primera
+reforma el artículo 544 bis de la Ley de Enjuiciamiento Criminal a fin de que el juez de
+instrucción pueda adoptarla como medida cautelar.
+
+     En segundo lugar, se aborda específicamente el tratamiento penal de las denominadas
+ultrafalsificaciones, esto es imágenes o voces manipuladas tecnológicamente y
+extremadamente realistas. A tal fin se incorpora un nuevo artículo 173 bis que sanciona a
+quienes, sin autorización de la persona afectada y con ánimo de menoscabar su integridad
+moral, difundan, exhiban o cedan su imagen corporal o audio de voz generada, modificada
+o recreada mediante sistemas automatizados, software, algoritmos, inteligencia artificial o
+cualquier otra tecnología, de modo que parezca real, simulando situaciones de contenido
+sexual o gravemente vejatorias.
+
+     Además de que las ultrafalsificaciones generalmente se difunden en el ciberespacio,
+con la potencialidad de permanencia que ello implica, como se ha advertido respecto de
+los delitos tecnológicos de contenido, se produce un aumento de la lesividad en relación
+con otras modalidades de ataque por la enorme dificultad de distinguir entre el contenido
+falso y el real debido a la precisión de las nuevas tecnologías y por el mayor grado de
+veracidad que mantenemos respecto de materiales audiovisuales sobre materiales
+escritos.
+
+     Técnicamente, se opta por la sanción de la difusión de las ultrafalsificaciones de
+contenido sexual (las llamadas deepfakes pornográficas) o especialmente vejatorio en
+sede de delitos contra la integridad moral porque, en virtud del principio de consunción, se
+abarcarían los supuestos de lesión de la integridad moral y también los ataques contra el
+honor, pues ha de tomarse en cuenta no solo la afectación a la autoestima y la
+heteroestima, sino también la cosificación e instrumentalización que se produce sobre el
+sujeto pasivo, generalmente mujeres y niñas, niños y adolescentes que son tratados como
+objetos de consumo. También hay que recordar que la motivación para llevar a cabo estas
+acciones no siempre se identifica con el animus iniuriandi, pues el hecho puede deberse a
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 13
+
+otras razones como el ánimo de lucro, si dichas imágenes se utilizan en páginas o               cve: BOCG-15-A-52-1
+aplicaciones de contenido pornográfico.
+
+     En tercer lugar, dado que la ley tiene como objetivo específico tutelar los intereses de
+los niños, niñas y adolescentes, y existe una gran preocupación en relación con el acceso
+de los menores a contenidos pornográficos que pueden afectar a su desarrollo en la esfera
+afectivo sexual, se prevé la modificación del artículo 186 del Código Penal, con la finalidad
+de mejorar la protección del bien jurídico libertad sexual de los menores.
+
+     En su actual redacción, el artículo 186 del Código Penal castiga a quienes «por medios
+directos», vendan, exhiban o difundan material pornográfico entre menores y personas con
+discapacidad necesitadas de especial protección. Tal redacción no protege suficientemente
+el bien jurídico de intangibilidad sexual de estos colectivos frente a la puesta a disposición
+indiscriminada de este tipo de material en medios en los que, conocidamente, va a ser
+accesible a los mismos. En consecuencia, se aborda la reforma de este precepto que tiene
+una especial repercusión en el ámbito de las personas de menor edad. Con la nueva
+redacción que se incorpora, se hace posible la punición de supuestos en los que el material
+pornográfico se pone a disposición de una colectividad indiscriminada de usuarios, de
+entre los que se tiene la clara representación de que va a haber menores de edad. Para
+ello, se contempla además un dolo específico reforzado. No basta, para la punición de la
+conducta, que sea cometida de forma deliberada en cuanto al dato objetivo de la
+transmisión o difusión del material, sino que tiene que existir la clara conciencia de que
+entre el público receptor hay menores de edad o personas necesitadas de especial
+protección, y de que el consumo por parte de estos sujetos de esta clase de material
+supone una afectación a su proceso de maduración sexual.
+
+     En cuarto lugar, en línea con el objetivo indicado, y tomando en consideración la
+incidencia de los supuestos de enmascaramiento de la propia identidad en este ámbito,
+también se introducen diferentes tipos agravados en los artículos 181, 182, 183, 185, 186, 188
+y 189 que tienen que ver con el uso de identidades falsas a través de la tecnología, que
+facilitan la comisión de delitos contra las personas menores de edad.
+
+                                                           X
+
+     Por otro lado, se modifica también la Ley Orgánica 3/2018, de 5 de diciembre, de
+Protección de Datos Personales y garantía de los derechos digitales a través de la
+disposición final sexta para elevar a los 16 años la edad a partir de la cual las personas
+menores de edad pueden prestar consentimiento para el tratamiento de sus datos
+personales.
+
+     El Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril
+de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento
+de datos personales y a la libre circulación de estos datos y por el que se deroga la
+Directiva 95/46/CE (Reglamento general de protección de datos) prevé que cuando el
+consentimiento sea la base legal para el tratamiento de datos en servicios de la sociedad
+de la información, dicho consentimiento podrá ser otorgado por un menor si éste cuenta
+como mínimo con 16 años de edad; siendo necesario el consentimiento del titular de la
+patria potestad o tutela sobre el menor para las edades inferiores. Asimismo, permite que
+los países puedan reducir el límite anterior desde los 16 años hasta un mínimo de 13 años.
+
+     Haciendo uso de esta habilitación, la Ley Orgánica 3/2018, de 5 de diciembre,
+establecía el umbral de los 14 años para el consentimiento de las personas menores de
+edad. Sin embargo, la evolución, no sólo de la tecnología digital, sino también de su uso
+por los menores de edad, ha sido tan exponencial que puede resultar inapropiada su
+utilización precoz, dada la madurez que requiere el uso de determinados servicios,
+plataformas, sistemas y contenidos digitales.
+
+     Por ello, se considera necesario elevar la edad del consentimiento del menor en
+materia de protección de datos, armonizando el umbral con el establecido por la mayoría
+de los países de la Unión Europea, así como con el exigido en el ordenamiento jurídico
+nacional para los menores de edad en otras actividades o conductas.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 14
+
+                                                          XI                                    cve: BOCG-15-A-52-1
+
+     Finalmente, la presente ley orgánica, a través de su disposición final séptima, incorpora
+nueve modificaciones de la Ley 13/2022, de 7 de julio.
+
+     En primer lugar, se modifica el artículo 3, relativo al ámbito de aplicación, para, por
+un lado, obligar a cumplir con lo establecido en los artículos 95 y 98.1, en los
+apartados 1, 2, 3 y 4 del artículo 99 y la sección 1.ª del capítulo IV del título VI de la
+Ley 13/2022, de 7 de julio, al prestador del servicio de comunicación audiovisual que,
+estando establecido en un país que no sea miembro de la Unión Europea o del Espacio
+Económico Europeo, dirija sus servicios específicamente al mercado español. Por otro
+lado, se obliga a cumplir con lo establecido en los artículos 88, 89, 90 y 91 de la
+Ley 13/2022, de 7 de julio, al prestador del servicio de intercambio de vídeos a través de
+plataforma que, estando establecido en un país que no sea miembro de la Unión Europea
+o del Espacio Económico Europeo, dirija sus servicios específicamente al mercado
+español, siempre que ello no contravenga lo establecido en tratados o convenios
+internacionales que sean aplicables.
+
+     En segundo lugar, con el fin de mejorar la efectividad de los canales de denuncia
+establecidos por la autoridad audiovisual de supervisión, se modifica el artículo 42.b) a fin
+de que los prestadores del servicio de comunicación audiovisual y los prestadores del
+servicio de intercambio de vídeos a través de plataforma incluyan en sus sitios web
+corporativos un enlace fácilmente reconocible y accesible al sitio web de dicha autoridad.
+Asimismo, se extiende de forma análoga esta obligación a los usuarios de especial
+relevancia que empleen servicios de intercambio de videos a través de plataforma, que
+deberán publicar dicho enlace en sus respectivos servicios.
+
+     En tercer lugar, se modifica el artículo 89.1, relativo a las medidas para la protección
+de los usuarios y de los menores frente a determinados contenidos audiovisuales, con el
+fin de reforzar las medidas actualmente establecidas para evitar la exposición de las
+personas menores de edad a contenidos inapropiados a su edad. Concretamente, en el
+párrafo e) del citado precepto se dispone que los sistemas de verificación de la edad
+deberán garantizar la seguridad, la privacidad y la protección de datos, en particular, en
+cuanto a minimización de datos y limitación de la finalidad.
+
+     Asimismo, en virtud de la modificación del artículo 89.1.f) se impone al prestador el
+establecimiento de sistemas de control parental controlados por el usuario final con
+respecto a los contenidos que puedan perjudicar el desarrollo físico, mental o moral de las
+personas menores de edad.
+
+     Se modifica también el artículo 93.4 que prevé que el incumplimiento de las
+obligaciones previstas en el artículo 89.1.e) será constitutivo de la infracción tipificada en
+el artículo 157.8, sin perjuicio de la responsabilidad penal que pueda derivarse de dicha
+acción. A este respecto, se incluye una previsión para disponer expresamente que la
+Comisión Nacional de los Mercados y la Competencia (CNMC) podrá adoptar las medidas
+previstas en los artículos 8 y 11 de la Ley 34/2002, de 11 de julio, de conformidad con lo
+dispuesto en dichos artículos, cuando dicho incumplimiento atente o pueda atentar contra
+el principio de protección de la juventud y de la infancia. La CNMC deberá valorar la
+procedencia de la adopción de tales medidas atendiendo al daño potencial en el desarrollo
+físico, mental o moral de los menores; al nivel de audiencia del servicio en España; o a la
+reincidencia en la conducta infractora.
+
+     Por otra parte, se modifica el apartado 1 del artículo 94, relativo a las obligaciones de
+los usuarios de especial relevancia que empleen servicios de intercambio de vídeos a
+través de plataforma. Estos servicios que, en muchos ámbitos, son agrupados bajo el
+concepto de «videobloggers», «influencers» o «prescriptores de opinión», gozan de
+relevancia en el mercado audiovisual desde el punto de vista de la inversión publicitaria y
+del consumo, especialmente, entre el público más joven.
+
+     Actualmente el artículo 94 impone una serie de obligaciones a los usuarios de especial
+relevancia que se orientan a reducir la exposición de los usuarios de los servicios de
+intercambio de videos a través de plataforma frente a contenidos dañinos o perjudiciales,
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 15
+
+y en particular con respecto a las obligaciones de protección de los menores, se les             cve: BOCG-15-A-52-1
+asimilaba a los servicios de comunicación audiovisual a petición.
+
+     Desde la aprobación de la Ley 13/2022, de 7 de julio, han aparecido nuevos servicios
+de intercambio de videos a través de plataforma que ya no pueden ser considerados
+asimilables a los servicios a petición, ya que los usuarios de especial relevancia ofrecen
+contenidos audiovisuales en directo, mucho más parecidos a los servicios de
+comunicación audiovisual lineales. Por ello, a fin de garantizar una protección adecuada
+de los menores frente a su exposición a contenidos dañinos o perjudiciales se considera
+oportuno modificar el régimen establecido en el artículo 94.1 y extender a los usuarios
+de especial relevancia el cumplimiento de las obligaciones para la protección de los
+menores del contenido perjudicial previstas en los apartados 2 y 3 del artículo 99 en
+función de que el tipo de servicio que ofrezcan pueda considerarse lineal en abierto o de
+acceso condicional.
+
+     Por otro lado, en la medida en que cada vez existe un mayor número de usuarios de
+especial relevancia que ofrecen a través de sus servicios contenidos audiovisuales de
+carácter informativo, se considera procedente que deban cumplir con el principio de
+veracidad de la información previsto en el artículo 9 de la Ley 13/2022, de 7 de julio.
+
+     Asimismo, se establece que los usuarios de especial relevancia deberán emplear los
+sistemas de verificación de edad y de control parental previstos en las letras e) y f) del
+artículo 89.1, de acuerdo con la modificación expuesta anteriormente.
+
+     En sexto lugar, se modifican los apartados 3 y 4 del artículo 99 obligando a los servicios
+de comunicación audiovisual televisivo lineal de acceso condicional y a los servicios de
+comunicación audiovisual televisivo a petición al establecimiento de sistemas de
+verificación de edad con respecto a los contenidos más nocivos, como la violencia gratuita
+y la pornografía, que puedan perjudicar el desarrollo físico, mental o moral de las personas
+menores de edad.
+
+     Además, se modifica el artículo 155 con el fin de que la CNMC supervise y controle el
+cumplimiento de lo previsto en la Ley 13/2022, de 7 de julio, salvo lo relativo a títulos
+habilitantes, y ejerza la potestad sancionadora, de conformidad con lo previsto en la
+Ley 3/2013, de 4 de junio, respecto de los prestadores del servicio de comunicación
+audiovisual televisivo y prestadores del servicio de intercambio de vídeos a través de
+plataforma establecidos en un país que no sea miembro de la Unión Europea o del Espacio
+Económico Europeo que dirigen sus servicios específicamente al mercado español.
+
+     En octavo lugar, se modifica el artículo 160.1.c) con el fin de reforzar las competencias
+sancionadoras de la CNMC, permitiendo que este organismo pueda imponer como
+sanciones accesorias, por una parte, el cese de la prestación del servicio y la pérdida de
+la condición de prestador del servicio de comunicación audiovisual televisivo adquirida a
+través de la comunicación previa, durante un periodo máximo de un año, cuando se
+hayan cometido las infracciones muy graves tipificadas en los apartados 13 y 14 del
+artículo 157, relativas a la obligación de establecer y operar sistemas de verificación de
+edad. Y por otra, el cese de la prestación del servicio por parte del prestador del servicio
+de intercambio de videos a través de plataforma, durante un periodo máximo de un año,
+cuando este haya cometido la infracción muy grave tipificada en el artículo 157.8,
+consistente en el incumplimiento de su obligación de establecer y operar sistemas de
+verificación de edad para los usuarios con respecto a los contenidos que puedan
+perjudicar el desarrollo físico, mental o moral de los menores que, en todo caso, impidan
+el acceso de estos a los contenidos audiovisuales más nocivos, como la violencia gratuita
+o la pornografía.
+
+     Finalmente, se modifica el apartado 1 del artículo 164, para que, una vez iniciado el
+procedimiento sancionador por alguna de las infracciones muy graves tipificadas en los
+apartados 8 y 14 del artículo 157, se puedan adoptar como medidas provisionales las
+previstas en los artículos 8 y 11 de la Ley 34/2002, de 11 de julio, de conformidad con lo
+previsto en dichos artículos, que incluyen la interrupción del servicio infractor y la retirada
+de datos.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 16
+
+                                                          XII                                    cve: BOCG-15-A-52-1
+
+     En la elaboración de esta ley orgánica se han observado los principios de buena
+regulación a que hace referencia el artículo 129 de la Ley 39/2015, de 1 de octubre, del
+Procedimiento Administrativo Común de las Administraciones Públicas, esto es, los
+principios de necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y
+eficiencia.
+
+     Por relación a los principios de necesidad y eficacia, de lo expuesto en los apartados
+precedentes se deduce la necesidad de cada una de las medidas que se adoptan, que se
+estima que contribuirán eficazmente a mejorar la protección de las personas menores de
+edad en el entorno digital.
+
+     Aunque las medidas de protección de las personas menores de edad que establece la
+norma tienen en su mayor parte un contenido positivo, de refuerzo de sus derechos en el
+ámbito digital, también supone la imposición de algunas obligaciones nuevas,
+particularmente, para las empresas proveedoras de dispositivos, servicios y contenidos
+digitales. En virtud del principio de proporcionalidad, se ha procurado que el alcance y
+contenido de estas obligaciones sea el imprescindible para asegurar la protección de los
+menores. Este mismo principio de proporcionalidad inspira la configuración de las reformas
+del Código Penal, según se ha explicado previamente.
+
+     La ley atiende asimismo a las exigencias propias de la seguridad jurídica pues, por una
+parte, procura definir de modo claro las medidas que incorpora, y por otra, algunas de ellas
+se orientan específicamente a mejorar la precisión, claridad y compleción de nuestra actual
+legislación.
+
+     En virtud del principio de transparencia, en el procedimiento de elaboración de la
+norma se ha posibilitado la participación de sus potenciales destinatarios. Asimismo, la
+norma define los objetivos de las medidas que incorpora y tanto su parte expositiva como
+la memoria del análisis de impacto normativo contienen una explicación de las razones
+que las justifican. Desde esta misma perspectiva es finalmente reseñable que algunas de
+las medidas que contiene se orientan específicamente a reforzar la transparencia en este
+ámbito, y por ello se impone a las Administraciones públicas el deber de promover la
+consulta y participación de los menores en la adopción de medidas que puedan garantizar
+sus derechos en el ámbito digital, así como el uso de un lenguaje claro, de forma que las
+Administraciones públicas y entidades del sector privado empleen un lenguaje accesible
+para las personas menores de edad en las comunicaciones que se les dirijan y en aquella
+información a la que tengan acceso.
+
+     En aplicación del principio de eficiencia, la ley solo crea una nueva carga administrativa
+—l‌a obligación de información que se impone a los fabricantes de equipos terminales
+digitales con conexión a internet— que se ha considerado necesaria para la consecución
+de sus objetivos y procura la racionalización del gasto público en la medida en que su
+cumplimiento se afrontará con los recursos que sean indispensables y se promueve la
+coordinación y colaboración entre las Administraciones públicas en la adopción y ejecución
+de las medidas que implican a varias de ellas, lo que se entiende que redundará en una
+aplicación más eficaz y eficiente de los recursos públicos.
+
+     En la tramitación de esta ley orgánica se ha observado el procedimiento de información
+de normas reglamentarias técnicas y de reglamentos relativos a los servicios de la
+sociedad de la información, previsto en la Directiva (UE) 2015/1535 del Parlamento
+Europeo y del Consejo, de 9 de septiembre de 2015, por la que se establece un
+procedimiento de información en materia de reglamentaciones técnicas y de reglas
+relativas a los servicios de la sociedad de la información, así como el Real
+Decreto 1337/1999, de 31 de julio, por el que se regula la remisión de información en
+materia de normas y reglamentaciones técnicas y reglamentos relativos a los servicios de
+la sociedad de la información.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                        Pág. 17
+
+                                             TÍTULO PRELIMINAR                                 cve: BOCG-15-A-52-1
+
+                                           Disposiciones generales
+
+Artículo 1.  Objeto.
+
+     La presente ley orgánica tiene por objeto establecer medidas con la finalidad de
+garantizar la protección de las personas menores de edad en los entornos digitales.
+
+Artículo 2.  Derechos de las personas menores de edad.
+
+     1.  Las personas menores de edad tienen derecho a ser protegidas eficazmente ante
+contenidos digitales que puedan perjudicar a su desarrollo, así como a su salud física y
+mental.
+
+     2.  Las personas menores de edad tienen derecho a recibir información suficiente y
+necesaria en una forma y lenguaje apropiados según su edad y grado de madurez sobre
+el uso de las tecnologías, así como de sus derechos y de los riesgos asociados al entorno
+digital.
+
+     3.  Las personas menores de edad tienen derecho al acceso a la información veraz,
+a la libertad de expresión, y a ser escuchadas.
+
+     4.  Las personas menores de edad tienen derecho al acceso equitativo y efectivo a
+dispositivos, conexión y formación para el uso de herramientas digitales.
+
+     5.  Las personas menores de edad tienen derecho a que su seguridad y privacidad,
+así como su honor, intimidad e imagen se vean salvaguardados en el espacio digital y a un
+uso crítico, seguro y responsable de las tecnologías.
+
+     6.  Las personas menores de edad gozarán de estos derechos sin discriminación
+alguna por razón de nacimiento, nacionalidad, origen racial o étnico, sexo, orientación e
+identidad sexual, expresión de género, discapacidad, enfermedad, religión, lengua, cultura,
+opinión o cualquier otra circunstancia personal, familiar, social o administrativa.
+
+Artículo 3.  Fines.
+
+     Las disposiciones de esta ley orgánica persiguen los siguientes fines:
+
+     a)  Garantizar el respeto y cumplimiento de los derechos de las niñas, niños y
+adolescentes en el entorno digital, especialmente los derechos a la intimidad, al honor y a
+la propia imagen, al secreto de las comunicaciones y a la protección de los datos
+personales y el acceso a contenidos adecuados a su edad sin discriminación en razón de
+sus características personales.
+
+     b)  Fomentar un uso equilibrado y responsable de los entornos digitales a fin de
+garantizar el adecuado desarrollo de la personalidad de las personas menores de edad y
+de preservar su dignidad y sus derechos fundamentales.
+
+     c)  Garantizar que los productos y servicios digitales tengan en cuenta, desde su
+diseño y por defecto, el interés superior del menor e integren la perspectiva de género e
+interseccional.
+
+     d)  Apoyar el desarrollo de las competencias digitales de la infancia en el entorno
+digital y la capacidad de evaluar los contenidos en línea y detectar la desinformación y el
+material abusivo.
+
+     e)  Promover un entorno digital más seguro y estimular la investigación en este
+ámbito, teniendo en cuenta la necesidad de disponer de datos desagregados por sexo.
+
+     f)  Prevenir las violencias sexuales en el ámbito digital, que comprenden la difusión de
+actos de violencia sexual a través de medios tecnológicos, la pornografía no consentida y
+la extorsión sexual, incluyendo la apología de estas conductas.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                        Pág. 18
+
+                                                     TÍTULO I                                  cve: BOCG-15-A-52-1
+
+               Medidas en el ámbito de la protección de consumidores y usuarios
+
+Artículo 4.  Obligaciones de los fabricantes de equipos terminales digitales con conexión
+     a internet.
+
+     1.  Este artículo es aplicable a los equipos terminales digitales que dispongan de
+sistema operativo y que tengan la capacidad de conectarse a internet y a través de dicha
+conexión pueda accederse a contenidos perjudiciales para las personas menores de edad,
+como es el caso de teléfonos móviles, tabletas electrónicas, televisores inteligentes,
+ordenadores de uso personal, consolas de videojuegos o gafas de realidad virtual o
+aumentada.
+
+     2.  Los fabricantes de equipos terminales digitales referidos en el apartado anterior
+proporcionarán información en sus productos, al menos en el embalaje y en el libro de
+instrucciones, manual de usuario o guía de uso del equipo, en la que se advierta, en un
+lenguaje accesible, inclusivo y apropiado para todas las edades, de los riesgos derivados
+del acceso a contenidos perjudiciales para la salud y el desarrollo físico, mental y moral de
+las personas menores de edad.
+
+     La obligación de información comprenderá, como mínimo, el siguiente contenido:
+
+     a)  Las medidas de protección de datos y los riesgos relacionados con la privacidad y
+la seguridad;
+
+     b)  el tiempo recomendado de uso de los productos y servicios, adecuado a la edad
+de la persona usuaria;
+
+     c)  los sistemas de control parental;
+     d)  los riesgos sobre el desarrollo cognitivo y emocional y la afección a la calidad del
+sueño de un uso prolongado de tales servicios.
+
+     En todo caso se tendrá en cuenta la adaptación del lenguaje y elementos visuales y
+audiovisuales a las necesidades de las personas con discapacidad.
+
+     3.  Los fabricantes estarán obligados a garantizar que los equipos terminales a los
+que se refiere este artículo incluyan en su sistema operativo una funcionalidad de control
+parental que permita a sus usuarios restringir o controlar el acceso de las personas
+menores de edad a servicios, aplicaciones y contenidos perjudiciales para ellas, cuya
+activación debe producirse por defecto en el momento de la configuración inicial del equipo
+terminal. La inclusión de la funcionalidad, su activación, configuración y actualización
+serán gratuitas para la persona usuaria.
+
+     Los fabricantes velarán por que los sistemas operativos instalados en sus equipos
+terminales incorporen la funcionalidad de control parental. El proveedor del sistema
+operativo, a petición del fabricante, garantizará y certificará al fabricante que el sistema
+operativo destinado a instalarse en el equipo terminal incorpora la funcionalidad de control
+parental.
+
+     Los datos personales de personas menores de edad recopilados o generados durante
+la activación de esta funcionalidad no podrán ser utilizados en ningún caso, incluso cuando
+la persona usuaria adquiera la mayoría de edad, con fines comerciales, como marketing
+directo, elaboración de perfiles y publicidad basada en el comportamiento.
+
+     4.  Los fabricantes deberán acreditar ante los importadores, distribuidores y
+comercializadores que los dispositivos suministrados cumplen los requisitos y condiciones
+establecidos en los apartados anteriores. Los importadores, distribuidores y
+comercializadores deberán desarrollar actuaciones de verificación del cumplimiento de
+estos requisitos y condiciones.
+
+     5.  La Secretaría de Estado de Telecomunicaciones e Infraestructuras Digitales
+ejercerá las funciones de vigilancia, supervisión y control de los requisitos y condiciones
+establecidos en los apartados anteriores para lo cual ejercerá las potestades de vigilancia
+de mercado y de inspección establecidas en los artículos 83 y 103, respectivamente, de la
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 19
+
+Ley 11/2022, de 28 de junio, General de Telecomunicaciones y su normativa de desarrollo,        cve: BOCG-15-A-52-1
+en particular, el Real Decreto 186/2016, de 6 de mayo, por el que se regula la compatibilidad
+electromagnética de los equipos eléctricos y electrónicos y el Real Decreto 188/2016, de 6
+de mayo, por el que se aprueba el Reglamento por el que se establecen los requisitos para
+la comercialización, puesta en servicio y uso de equipos radioeléctricos, y se regula el
+procedimiento para la evaluación de la conformidad, la vigilancia del mercado y el régimen
+sancionador de los equipos de telecomunicación.
+
+     6.  Se tipifican como infracciones graves:
+
+     a)  La falta de información en sus productos a que se refiere el apartado 2 de este
+artículo por los fabricantes de equipos terminales digitales.
+
+     b)  La ausencia de la funcionalidad de control parental en los equipos terminales a
+que se refiere el apartado 3 de este artículo por los fabricantes de equipos terminales
+digitales.
+
+     c)  El diseño o fabricación errónea del equipo terminal o del sistema operativo que
+haga imposible activar la funcionalidad de control parental.
+
+     d)  La activación, configuración y actualización de la funcionalidad de control parental
+no gratuita para el usuario.
+
+     e)  La falta de certificación por el proveedor del sistema operativo al fabricante de que
+el sistema operativo destinado a instalarse en el equipo terminal incorpora la funcionalidad
+de control parental en los equipos terminales digitales.
+
+     f)  La falta de acreditación por los fabricantes ante los importadores, distribuidores y
+comercializadores que los equipos y dispositivos suministrados cumplen los requisitos y
+condiciones establecidos en este artículo.
+
+     g)  La ausencia de desarrollo por los importadores, distribuidores y comercializadores
+de actuaciones de verificación del cumplimiento de los requisitos y condiciones
+establecidos en este artículo.
+
+     Las sanciones impuestas por cualquiera de las infracciones mencionadas podrán
+llevar aparejada la retirada o recuperación del mercado de los equipos o la prohibición o
+restricción de su comercialización, hasta que se produzca el cumplimiento de los requisitos
+establecidos en este artículo.
+
+     Por la comisión de las infracciones tipificadas en los párrafos anteriores se impondrá
+al infractor multa por importe de hasta dos millones de euros.
+
+     La cuantía de la sanción que se imponga, dentro de los límites indicados, se graduará
+teniendo en cuenta, además de lo previsto en el artículo 29 de la Ley 40/2015, de 1 de
+octubre, de Régimen Jurídico del Sector Público, lo siguiente:
+
+     a)  la gravedad de las infracciones cometidas anteriormente por el sujeto al que se
+sanciona;
+
+     b)  el daño causado;
+     c)  el cumplimiento voluntario de las medidas cautelares que, en su caso, se impongan
+en el procedimiento sancionador;
+     d)  la negativa u obstrucción a facilitar la información o documentación requerida;
+     e)  el cese de la actividad infractora, previamente o durante la tramitación del
+expediente sancionador;
+     f)  la colaboración activa y efectiva con la autoridad competente en la detección o
+prueba de la actividad infractora.
+
+     El ejercicio de la potestad sancionadora corresponde a la persona titular de la
+Secretaría de Estado de Telecomunicaciones e Infraestructuras Digitales. La instrucción de
+los expedientes sancionadores corresponde a la Secretaría General de Telecomunicaciones
+y Ordenación de los Servicios de Comunicación Audiovisual.
+
+     Una vez incoado el procedimiento sancionador, las infracciones a las que se refiere
+este artículo, de conformidad con el artículo 56 de la Ley 39/2015, de 1 de octubre, del
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 20
+
+Procedimiento Administrativo Común de las Administraciones Públicas, podrán dar lugar a         cve: BOCG-15-A-52-1
+la adopción de las siguientes medidas cautelares:
+
+     a)  ordenar el cese inmediato de cualquier otra actividad presuntamente infractora;
+     b)  ordenar la retirada o su recuperación del mercado de los equipos de telecomunicación
+que presuntamente no cumplan los requisitos establecidos en este artículo.
+
+     Las infracciones prescribirán a los dos años.
+     Las sanciones prescribirán a los dos años.
+     En el ejercicio de la potestad sancionadora será de aplicación el procedimiento
+administrativo común establecido en la Ley 39/2015, de 1 de octubre, si bien el plazo de
+resolución del mismo será de un año y el plazo de alegaciones será como mínimo de
+quince días hábiles.
+     7.  La ausencia de requisitos y condiciones previstas en los apartados 2 y 3 de este
+artículo tendrá la consideración de falta objetiva de conformidad de los productos, a los
+efectos del artículo 115 ter del texto refundido de la Ley General para la Defensa de los
+Consumidores y Usuarios y otras leyes complementarias, aprobado por el Real Decreto
+Legislativo 1/2007, de 16 de noviembre, a los exclusivos efectos de conferir a los
+consumidores y usuarios los derechos previstos en dicha norma.
+
+Artículo 5.  Regulación del acceso y activación de los mecanismos aleatorios de
+     recompensa.
+
+     Queda prohibido el acceso a los mecanismos aleatorios de recompensa o su activación
+por personas que sean menores de edad. A los efectos de lo previsto en este artículo, se
+entenderá por mecanismo aleatorio de recompensa aquella funcionalidad virtual presente
+en videojuegos y otros juegos electrónicos cuya activación se realiza con dinero de curso
+legal o a través de un objeto virtual, como un código, clave, in-game currency, criptomoneda
+u otro elemento, adquirido con dinero directa o indirectamente; en la que el resultado de
+dicha activación sea aleatorio y consista en la obtención de un objeto virtual que pueda ser
+canjeado por dinero o por otros objetos virtuales. En su caso, reglamentariamente podrán
+determinarse los supuestos excepcionales en los que podrá flexibilizarse dicha prohibición,
+siempre garantizando el principio de protección a la infancia que inspira esta ley orgánica.
+
+                                                     TÍTULO II
+
+                                      Medidas en el ámbito educativo
+
+Artículo 6.  Actividades de formación en los centros que impartan enseñanzas de
+     educación infantil, educación básica y educación secundaria postobligatoria.
+
+     1.  Las Administraciones educativas fomentarán en los centros que impartan
+enseñanzas de educación infantil, educación básica y educación secundaria
+postobligatoria, independientemente de su titularidad, el desarrollo de actividades
+encaminadas a la mejora de la competencia digital con el fin de garantizar la plena
+inclusión del alumnado en la sociedad digital y el aprendizaje de un uso seguro, saludable,
+sostenible, crítico y responsable de las tecnologías digitales para el aprendizaje, el trabajo
+y la participación en la sociedad, así como la interacción con estas y la prevención de las
+violencias sexuales.
+
+     Se garantizará que estas actividades orientadas a la mejora de las competencias
+digitales sean universalmente accesibles y garanticen los derechos del alumnado con
+discapacidad, así como la aplicación de la perspectiva de género.
+
+     2.  Las Administraciones educativas incluirán, en su planificación de la formación
+continua del profesorado no universitario, de los coordinadores o coordinadoras de
+bienestar y protección, así como del personal de administración y servicios, actividades
+formativas que faciliten a los centros educativos el desarrollo de estrategias para incidir,
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                       Pág. 21
+
+entre otros aspectos, en la seguridad (incluido el bienestar digital y las competencias       cve: BOCG-15-A-52-1
+relacionadas con la ciberseguridad) y en asuntos relacionados con la ciudadanía digital, la
+privacidad y la propiedad intelectual.
+
+     En la formación permanente del profesorado universitario y del personal de
+administración y servicios se incorporarán contenidos dirigidos a la capacitación para la
+prevención, sensibilización y detección en materia de violencias sexuales digitales.
+
+Artículo 7.  Regulación del uso de dispositivos en los centros que impartan enseñanzas
+     de educación infantil, educación básica y educación secundaria postobligatoria.
+
+     Los centros que impartan enseñanzas de educación infantil, educación básica y
+educación secundaria postobligatoria, independientemente de su titularidad, regularán, de
+acuerdo con las disposiciones que al efecto hayan aprobado las administraciones
+educativas y en el marco de lo previsto en el artículo 124 de la Ley Orgánica 2/2006, de 3
+de mayo, de Educación, el uso de dispositivos móviles y digitales en las aulas, en las
+actividades extraescolares y en lugares y tiempos de descanso que tengan lugar bajo su
+supervisión.
+
+                                                     TÍTULO III
+
+          Medidas en el ámbito de protección de las víctimas de violencia de género
+                                             y violencias sexuales
+
+Artículo 8.  Víctimas de violencia de género o violencias sexuales.
+
+     Las víctimas de violencia de género o violencias sexuales facilitadas por entornos
+digitales tienen la condición de víctimas a los efectos de la Ley Orgánica 1/2004, de 28 de
+diciembre, de Medidas de Protección Integral contra la Violencia de Género y de la Ley
+Orgánica 10/2022, de 6 de septiembre, de garantía integral de la libertad sexual,
+respectivamente.
+
+Artículo 9.  Servicios de asistencia social integral.
+
+     Las víctimas de violencia de género y de violencia sexual menores de edad tendrán
+derecho a acceder a los servicios de información y orientación y, dado el caso, de atención
+psicosocial inmediata y asesoramiento jurídico, por vía telefónica y en línea, las 24 horas,
+todos los días del año, así como, en su caso, a acceder a los servicios de acogida y
+asistencia psicológica y social destinados a las víctimas de violencia de género y de
+violencias sexuales y a los centros de crisis 24 horas. Todos estos servicios tendrán el
+carácter de servicios esenciales.
+
+                                                    TÍTULO IV
+
+                                       Medidas en el ámbito sanitario
+
+Artículo 10.  Promoción de la salud y prevención.
+
+     1.  Las administraciones públicas que promuevan estudios sobre el uso de las
+tecnologías de información y comunicación por las personas menores de edad tendrán en
+cuenta el principio de «salud en todas las políticas», proporcionando la información
+desagregada por edad, sexo y otros determinantes de la salud. En la medida de lo posible,
+se incluirá también el tipo de discapacidad. El diseño de estos estudios debe permitir la
+adquisición de conocimiento que contribuya a la evaluación de los efectos sobre la salud,
+la discapacidad y el desarrollo. Así mismo, las administraciones sanitarias elaborarán
+guías para la prevención y la promoción de la salud en el uso de las tecnologías de
+información y comunicación por las personas menores de edad.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 22
+
+     2.  Los programas de prevención y de promoción de la salud infantil y juvenil de las        cve: BOCG-15-A-52-1
+administraciones sanitarias incorporarán actuaciones para la identificación de usos
+problemáticos de dichas tecnologías y la detección precoz de cambios de conductas o
+problemas de salud física, psíquica y emocional, derivados de un uso inadecuado. Las
+actuaciones individuales y comunitarias incluidas en estos programas incorporarán la
+perspectiva biopsicosocial y el desarrollo integral de la salud de las personas menores de
+edad. En la detección precoz de situaciones de riesgo, se pondrá especial atención en
+identificar aquellas en las que niñas, niños y adolescentes recurran de forma prioritaria al
+entorno digital para entablar relaciones de pares, o posibles situaciones de violencia a
+través del entorno digital.
+
+     3.  Las administraciones sanitarias competentes revisarán las actuaciones de
+prevención de trastornos adictivos para la inclusión de las adicciones sin sustancia
+relacionadas con el uso de medios digitales.
+
+     4.  Se promoverá la coordinación de todas las administraciones públicas y agentes
+implicados, especialmente de los servicios de atención primaria, atención especializada a
+la salud mental y a las conductas adictivas, servicios sociales y educativos. En particular,
+las administraciones sanitarias impulsarán la elaboración conjunta con otras
+administraciones públicas de programas y circuitos de derivación para el abordaje integral
+de los problemas de salud detectados, incluidos los posibles casos de violencia a través
+del entorno digital, así como mapas de recursos comunitarios y de activos en salud que
+contribuyan a un desarrollo saludable de las personas menores de edad.
+
+     5.  Se facilitará la formación y la sensibilización de los y las profesionales de la salud
+que atienden a esta población en la detección, prevención de la conducta, abordaje
+terapéutico y consecuencias en la salud del uso excesivo de las tecnologías de la
+información y comunicación.
+
+Artículo 11.  Atención especializada.
+
+     Las administraciones sanitarias promoverán el establecimiento de procedimientos de
+atención sanitaria específicos para personas menores de edad con conductas adictivas sin
+sustancia, en la red especializada de atención a la salud mental, tanto en las Unidades de
+Atención a la Conducta Adictiva, como en los centros de salud mental infantojuveniles.
+También se establecerán procedimientos de atención sanitaria específicos para la atención
+integral de personas menores de edad víctimas de violencia a través del entorno digital.
+
+                                                     TÍTULO V
+
+                                        Medidas en el sector público
+
+Artículo 12.  Participación, información y sensibilización.
+
+     1.  Las Administraciones públicas promoverán la garantía de los derechos de las
+personas menores de edad en el ámbito digital desde una perspectiva preventiva, feminista
+e integral, así como de consulta y participación de la infancia y juventud. Se prestará
+especial atención a la consulta y participación de la infancia y juventud con discapacidad.
+
+     Para ello velarán por crear contenidos digitales de calidad y accesibles destinados a la
+promoción de hábitos saludables, la educación emocional, el buen trato, la igualdad de
+género, la participación democrática y el acceso a distintos formatos de cultura. Asimismo,
+difundirán información sobre los derechos de la infancia en el entorno digital.
+
+     2.  Las Administraciones públicas promoverán espacios de interlocución accesibles e
+inclusivos con niñas, niños y adolescentes para conocer su experiencia con las tecnologías
+de la información y comunicación, así como para diseñar de forma participativa iniciativas
+relativas a la promoción cultural en el entorno digital y a la lucha contra la violencia de
+género y las violencias sexuales, en línea con lo dispuesto en la Ley Orgánica 1/2004,
+de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género y en
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                             Pág. 23
+
+la Ley Orgánica 10/2022, de 6 de septiembre, de garantía integral de la libertad sexual. La         cve: BOCG-15-A-52-1
+interlocución deberá realizarse desde la perspectiva de la diversidad.
+
+     3.  Las Administraciones públicas, en el ámbito de sus competencias, desarrollarán
+campañas y actividades de sensibilización, concienciación, prevención e información
+sobre los riesgos asociados al uso inadecuado de los entornos y dispositivos digitales,
+prestando especial atención al consumo de material pornográfico o de cualquier otro que
+pueda afectar a la integridad física o mental de las personas menores de edad o a su
+autoestima, y a la prevención, sensibilización y detección en materia de violencias
+sexuales. Dichas actividades prestarán especial atención a las situaciones de
+interseccionalidad.
+
+     4.  Las Administraciones públicas, en el ámbito de sus competencias, promoverán la
+realización de estudios e investigaciones, con perspectiva de género, sobre la prevalencia
+del acoso y la violencia en sus diferentes ámbitos en los entornos digitales. Dichos estudios
+e investigaciones se realizarán teniendo en cuenta las situaciones de interseccionalidad
+que puedan generar mayor vulnerabilidad en los niños, niñas y jóvenes.
+
+     5.  La Administración General del Estado y las Administraciones autonómicas y
+locales impulsarán la puesta a disposición de la infancia y adolescencia de espacios de
+encuentro en los que puedan desarrollar actividades de ocio saludable alternativas al uso
+de tecnologías de la información y comunicación.
+
+     6.  Las Administraciones públicas y entidades del sector privado utilizarán un lenguaje
+accesible, inclusivo, no sexista, y adaptado en las comunicaciones dirigidas a personas
+menores de edad y en la información dirigida o a la que tengan acceso personas menores
+de edad. Se evitará el uso de un lenguaje complejo o confuso, promoviendo una
+comunicación transparente, comprensible y accesible. En todo caso se tendrá en cuenta
+la adaptación del lenguaje y elementos visuales y audiovisuales a las necesidades de
+apoyo sensorial o cognitivo de las personas con discapacidad.
+
+Artículo 13.  Fomento de la colaboración público-privada, la corregulación y la
+     estandarización.
+
+     El Ministerio para la Transformación Digital y de la Función Pública, en colaboración con
+los Departamentos competentes, impulsará que los proveedores del servicio de acceso a
+internet desde una ubicación fija aprueben un código de conducta que establezca los
+mecanismos y parámetros de configuración segura que se comprometen a aplicar en la
+prestación de sus servicios en lugares de acceso público en los que se presten servicios
+públicos y en los que se haga uso de sus servicios de acceso a internet, como escuelas,
+institutos, bibliotecas, centros cívicos, oficinas públicas, centros sanitarios, entre otros, para
+evitar el acceso a contenidos inadecuados por parte de las personas menores de edad.
+
+Artículo 14.  Garantía de especialización profesional a través de la formación.
+
+     1.  La especialización profesional se garantizará, en todos los niveles de la
+Administración, a través de la formación inicial obligatoria y la formación continua que
+deberán recibir todos los sectores profesionales que intervienen directa o indirectamente
+en la prevención, detección, reparación y respuesta de adicciones sin sustancia, violencia
+de género o violencias sexuales, así como en la atención a las víctimas menores de edad,
+y a los que tengan relación con los agresores.
+
+     La formación anterior se realizará sin perjuicio de la dispuesta en el artículo 5 de la Ley
+Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente
+a la violencia.
+
+     2.  En aplicación de esta ley orgánica, el Gobierno, en colaboración con las
+comunidades autónomas, elaborará un programa marco de formación y reciclaje de estos
+sectores profesionales que abarque, además de los aspectos específicos relacionados con
+cada sector, los estereotipos de género, el trauma y sus efectos y la responsabilidad en la
+reducción de la victimización secundaria. Se prestará particular atención a la situación y
+necesidades de las víctimas de discriminación interseccional.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                            Pág. 24
+
+     3.  Las administraciones públicas fomentarán y promoverán la formación especializada          cve: BOCG-15-A-52-1
+de estos sectores, con especial incidencia en aquellas personas profesionales que tengan
+un contacto directo y habitual con menores de edad.
+
+Artículo 15.  Estrategia Nacional sobre la protección de la infancia y la adolescencia en el
+     entorno digital.
+
+     1.  El Gobierno en colaboración con las comunidades autónomas, las ciudades de
+Ceuta y Melilla, y las entidades locales elaborará una Estrategia Nacional sobre la
+protección de la infancia y la adolescencia en el entorno digital, con carácter trianual, con
+el objetivo de proteger los derechos de la infancia y la adolescencia en el entorno digital.
+Esta Estrategia se aprobará por el Gobierno.
+
+     2.  La Estrategia se elaborará en consonancia con la Estrategia Estatal de los
+Derechos de la Infancia y de la Adolescencia y la Estrategia Estatal para combatir las
+violencias machistas, y contará con la participación del Observatorio de la Infancia, el
+Observatorio Estatal de Violencia sobre la Mujer, las entidades del tercer sector, la
+sociedad civil, las organizaciones de consumidores y usuarios y, de forma muy especial,
+con las niñas, niños y adolescentes y con sus familias.
+
+     3.  Su impulso y coordinación corresponderá al departamento ministerial que tenga
+atribuidas las competencias en políticas de infancia.
+
+     4.  En la elaboración de la Estrategia se contará con la participación de niñas, niños y
+adolescentes a través del Consejo Estatal de Participación de la Infancia y de la
+Adolescencia.
+
+     5.  La Estrategia Nacional sobre la protección de la infancia y la adolescencia en el
+entorno digital se elaborará de acuerdo a los principios de igualdad, accesibilidad,
+interseccionalidad, respeto, protección y garantía de los derechos de la infancia y de la
+adolescencia y fomentará:
+
+     a)  El desarrollo de actividades encaminadas a la educación en ciudadanía digital y
+alfabetización mediática con el fin de garantizar la plena inserción de la infancia y juventud
+en la sociedad digital y fomentar el uso responsable de los medios digitales que favorezca
+el ejercicio efectivo de sus derechos en un entorno digital seguro y respetuoso.
+
+     La formación en ciudadanía digital y alfabetización mediática se abordará desde una
+perspectiva formativa, preventiva y social, bajo los principios de igualdad, accesibilidad,
+interseccionalidad, respeto, protección y garantía de los derechos de la infancia y de la
+adolescencia.
+
+     b)  La difusión de información a las madres, padres o tutores legales, equipo docente
+y sanitario sobre la utilización adecuada de los dispositivos digitales y su incidencia en el
+desarrollo de los niños y niñas, prestando especial atención a la sensibilización sobre el
+ciberacoso y ciberagresiones, así como a las medidas de control parental y de prevención.
+
+     c)  La utilización de dispositivos digitales seguros y medidas de prevención adecuadas
+en espacios educativos y de formación, especialmente cuando se dirijan a la infancia y
+juventud.
+
+     d)  La investigación neurobiológica, especialmente en relación con la infancia y
+adolescencia y los efectos de la tecnología en el desarrollo cognitivo, así como la incidencia
+de la inteligencia artificial en la infancia; la investigación sobre el consumo de la pornografía
+y contenido perjudicial y su impacto en la infancia y adolescencia; y la investigación sobre
+las necesidades de la infancia y adolescencia en entornos digitales, atendiendo a las
+diferencias por razón de sexo.
+
+     e)  La creación de sistemas de aprendizaje cooperativo y de laboratorios públicos de
+cultura digital.
+
+     f)  La educación afectivo sexual de calidad y basada en la evidencia científica.
+     g)  La obtención y análisis de datos, desagregados por sexo, sobre las repercusiones
+del entorno digital en la infancia.
+     h)  El estudio de mecanismos de evaluación del impacto del entorno digital en los
+derechos de las personas menores de edad.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 25
+
+     6.  Bienalmente, el órgano al que corresponda el impulso de la Estrategia elaborará         cve: BOCG-15-A-52-1
+un informe de evaluación acerca de su grado de cumplimiento y eficacia. Dicho informe,
+que deberá ser elevado al Consejo de Ministros, se realizará en colaboración con los
+Ministerios competentes en la materia.
+
+     7.  La estrategia se revisará cada tres años teniendo en cuenta la rápida evolución del
+entorno digital y los avances de la investigación. Para ello, se creará una Comisión de
+seguimiento en la que participarán los Ministerios de la Presidencia, Justicia y Relaciones
+con las Cortes; Juventud e Infancia; Sanidad; Educación, Formación Profesional y
+Deportes; para la Transformación Digital y de la Función Pública; del Interior; Derechos
+Sociales, Consumo y Agenda 2030; Ciencia, Innovación y Universidades; e Igualdad, con
+la finalidad de impulsar y hacer un seguimiento de la estrategia.
+
+Disposición transitoria única.  Tratamientos de datos autorizados por menores de dieciséis
+     años.
+
+     El consentimiento que haya sido válidamente prestado por personas menores de
+dieciséis años para el tratamiento de datos al amparo del artículo 7 de la Ley
+Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los
+derechos digitales, en su redacción previa a la entrada en vigor de la presente ley orgánica,
+mantendrá su validez y eficacia en tanto no sea revocado.
+
+Disposición derogatoria única.  Derogación de normas.
+
+     Se deroga el artículo 13.1 del Reglamento de desarrollo de la Ley Orgánica 15/1999,
+de 13 de diciembre, de protección de datos de carácter personal, aprobado por el Real
+Decreto 1720/2007, de 21 de diciembre.
+
+     Asimismo quedan derogadas cuantas normas de igual o inferior rango se opongan a
+lo establecido en la presente ley orgánica.
+
+Disposición final primera.  Modificación de la Ley de Enjuiciamiento Criminal.
+
+     Se modifica el artículo 544 bis de la Ley de Enjuiciamiento Criminal, que queda
+redactado como sigue:
+
+        «Artículo 544 bis.
+
+             En los casos en los que se investigue un delito de los mencionados en el
+        artículo 57 del Código Penal, el Juez o Tribunal podrá, de forma motivada y cuando
+        resulte estrictamente necesario al fin de protección de la víctima, imponer
+        cautelarmente al inculpado la prohibición de residir en un determinado lugar, barrio,
+        municipio, provincia u otra entidad local, o Comunidad Autónoma.
+
+             En las mismas condiciones podrá imponerle cautelarmente la prohibición de
+        acudir a determinados lugares, tanto físicos como virtuales, barrios, municipios,
+        provincias u otras entidades locales, o Comunidades Autónomas, o de aproximarse
+        o comunicarse con determinadas personas, con la graduación que sea precisa y a
+        través de cualquier medio incluidas las redes sociales, foros, plataformas de
+        comunicación o cualquier otro lugar en el espacio virtual.
+
+             Para la adopción de estas medidas se tendrá en cuenta la situación económica
+        del inculpado y los requerimientos de su salud, situación familiar y actividad laboral.
+        Se atenderá especialmente a la posibilidad de continuidad de esta última, tanto
+        durante la vigencia de la medida como tras su finalización.
+
+             En caso de incumplimiento por parte del inculpado de la medida acordada por el
+        juez o tribunal, éste convocará la comparecencia regulada en el artículo 505 para la
+        adopción de la prisión provisional en los términos del artículo 503, de la orden de
+        protección prevista en el artículo 544 ter o de otra medida cautelar que implique una
+        mayor limitación de su libertad personal, para lo cual se tendrán en cuenta la
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                        Pág. 26
+
+        incidencia del incumplimiento, sus motivos, gravedad y circunstancias, sin perjuicio   cve: BOCG-15-A-52-1
+        de las responsabilidades que del incumplimiento pudieran resultar.
+
+             En el caso de que se investigue alguno de los delitos mencionados en el
+        artículo 3 de la Ley Orgánica de Garantía Integral de la Libertad Sexual, de
+        acordarse alguna de las medidas de protección de la víctima previstas en este
+        precepto, podrá acordarse mediante resolución motivada la utilización de
+        dispositivos telemáticos para el control de su cumplimiento.»
+
+Disposición final segunda.  Modificación de la Ley Orgánica 6/1985, de 1 de julio, del
+     Poder Judicial.
+
+     Se modifica el párrafo e) del artículo 95 de la Ley Orgánica 6/1985, de 1 de julio, del
+Poder Judicial, que queda redactado en los siguientes términos:
+
+             «e)  Sección de lo Contencioso-Administrativo, que conocerá, en primera o
+        única instancia, de los recursos contencioso-administrativos contra disposiciones y
+        actos emanados de autoridades, organismos, órganos y entidades públicas con
+        competencia en todo el territorio nacional, en los términos que la ley establezca.
+
+             Corresponde también a la Sección de lo Contencioso-Administrativo autorizar,
+        mediante auto, la cesión de los datos que permitan la identificación a que se refiere
+        el artículo 8.2 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la
+        información y de comercio electrónico, la ejecución material de las resoluciones
+        adoptadas por el órgano competente para que se interrumpa la prestación de
+        servicios de la sociedad de la información o para que se retiren contenidos, en
+        aplicación de la citada Ley 34/2002, de 11 de julio, así como la limitación al acceso
+        de los destinatarios al servicio intermediario prevista en el artículo 51.3.b) del
+        Reglamento (UE) 2022/2065 del Parlamento Europeo y del Consejo de 19 de
+        octubre de 2022, relativo a un mercado único de servicios digitales y por el que se
+        modifica la Directiva 2000/31/CE. Igualmente conocerá la Sección de lo Contencioso-
+        Administrativo del procedimiento previsto en el artículo 12 bis de la Ley
+        Orgánica 6/2002, de 27 de junio, de Partidos Políticos.
+
+             Corresponde a la Sección de lo Contencioso-Administrativo autorizar, mediante
+        auto, el requerimiento de información por parte de la Agencia Española de
+        Protección de Datos y otras autoridades administrativas independientes de ámbito
+        estatal a los operadores que presten servicios de comunicaciones electrónicas
+        disponibles al público y de los prestadores de servicios de la sociedad de la
+        información, cuando ello sea necesario de acuerdo con la legislación específica.»
+
+Disposición final tercera.  Modificación de la Ley Orgánica 10/1995, de 23 de noviembre,
+     del Código Penal.
+
+     Se modifica la Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal, en los
+siguientes términos:
+
+     Uno.  Se añade un nuevo párrafo l) al artículo 33.2, con el siguiente contenido:
+
+             «l)  La prohibición de acceso o de comunicación a través de redes sociales,
+        foros, plataformas de comunicación o cualquier otro lugar en el espacio virtual, por
+        tiempo superior a cinco años.»
+
+     Dos.  Se añade un nuevo párrafo m) al artículo 33.3, con el siguiente contenido:
+
+             «m)  La prohibición de acceso o de comunicación a través de redes sociales,
+        foros, plataformas de comunicación o cualquier otro lugar en el espacio virtual, por
+        tiempo de seis meses a cinco años.»
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 27
+
+     Tres.  Se añade un nuevo párrafo j) al artículo 33.4, con el siguiente contenido:           cve: BOCG-15-A-52-1
+
+             «j)  La prohibición de acceso o de comunicación a través de redes sociales,
+        foros, plataformas de comunicación o cualquier otro lugar en el espacio virtual, por
+        tiempo de un mes a menos de seis meses.»
+
+     Cuatro.  Se modifica el párrafo b) y se añade un nuevo párrafo k) al artículo 39, con
+el siguiente contenido:
+
+             «b)  Las de inhabilitación especial para empleo o cargo público; profesión,
+        oficio, industria o comercio, u otras actividades, incluidas las que se desarrollen o
+        exploten en espacios virtuales, sean o no retribuidas; o de los derechos de patria
+        potestad, tutela, guarda o curatela, tenencia de animales, derecho de sufragio
+        pasivo o de cualquier otro derecho.»
+
+             «k)  La prohibición de acceso o de comunicación a través de redes sociales,
+        foros, plataformas de comunicación o cualquier otro lugar en el espacio virtual.»
+
+     Cinco.  Se modifica el apartado 3 del artículo 40, que queda redactado como sigue:
+
+             «3.  La pena de privación del derecho a residir en determinados lugares o
+        acudir a ellos tendrá una duración de hasta diez años. La prohibición de aproximarse
+        a la víctima o a aquellos de sus familiares u otras personas, o de comunicarse con
+        ellas, tendrá una duración de un mes a diez años. La prohibición de acceso o de
+        comunicación a través de redes sociales, foros, plataformas de comunicación o
+        cualquier otro lugar en el espacio virtual tendrá una duración de un mes a diez
+        años.»
+
+     Seis.  Se modifica el artículo 45, que queda redactado como sigue:
+
+        «Artículo 45.
+
+             La inhabilitación especial para profesión, oficio, industria o comercio u otras
+        actividades, incluidas las que se desarrollen o exploten en espacios virtuales, sean
+        o no retribuidas, o cualquier otro derecho, que ha de concretarse expresa y
+        motivadamente en la sentencia, priva a la persona penada de la facultad de
+        ejercerlos durante el tiempo de la condena. La autoridad judicial podrá restringir la
+        inhabilitación a determinadas actividades o funciones de la profesión u oficio,
+        retribuido o no, permitiendo, si ello fuera posible, el ejercicio de aquellas funciones
+        no directamente relacionadas con el delito cometido.»
+
+     Siete.  Se modifican los apartados 2 y 4 y se añade un nuevo apartado 5 al artículo 48,
+con la siguiente redacción:
+
+             «2.  La prohibición de aproximarse a la víctima, o a aquellos de sus familiares
+        u otras personas que determine el juez o tribunal, impide al penado acercarse a
+        ellos, en cualquier lugar donde se encuentren, así como acercarse a su domicilio y
+        a sus lugares de trabajo y a cualquier otro que sea frecuentado por ellos, aun
+        cuando no se hallaren en ellos, quedando en suspenso, respecto de los hijos, el
+        régimen de visitas, comunicación y estancia que, en su caso, se hubiere reconocido
+        en sentencia civil hasta el total cumplimiento de esta pena.»
+
+             «4.  La prohibición de acceso o de comunicación a través de redes sociales,
+        foros, plataformas de comunicación o cualquier otro lugar en el espacio virtual, priva
+        a la persona penada de la facultad del acceso o de comunicación a través de
+        internet, del teléfono o de cualquier otra tecnología de la información o de la
+        comunicación durante el tiempo de la condena a los espacios virtuales que tengan
+        relación directa con el delito cometido.
+
+             En la resolución judicial deberá concretarse y motivarse expresamente el
+        contenido o alcance de la prohibición.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 28
+
+             5.  El juez o tribunal podrá acordar que el control de las medidas previstas en     cve: BOCG-15-A-52-1
+        los apartados anteriores se realice a través de aquellos medios electrónicos que lo
+        permitan.»
+
+     Ocho.  Se modifica el párrafo 3.º y se añade un nuevo párrafo 4.º al artículo 56.1, con
+el siguiente contenido:
+
+             «3.º  Inhabilitación especial para empleo o cargo público; profesión, oficio,
+        industria, comercio, incluidos los que se desarrollen o exploten en espacios virtuales,
+        sean o no retribuidos; ejercicio de la patria potestad, tutela, curatela, guarda o
+        acogimiento o cualquier otro derecho, la privación de la patria potestad, si estos
+        derechos hubieran tenido relación directa con el delito cometido, debiendo
+        determinarse expresamente en la sentencia esta vinculación, sin perjuicio de la
+        aplicación de lo previsto en el artículo 579 de este Código.
+
+             4.º  Prohibición de acceso o de comunicación a través de redes sociales, foros,
+        plataformas de comunicación o cualquier otro lugar en el espacio virtual, cuando
+        tengan relación directa con el delito cometido.»
+
+     Nueve.  Se modifica el primer párrafo del artículo 57.1, que queda redactado así:
+
+             «1.  Las autoridades judiciales, en los delitos de homicidio, aborto, lesiones,
+        contra la libertad, de torturas y contra la integridad moral, trata de seres humanos,
+        contra la libertad e indemnidad sexuales, la intimidad, el derecho a la propia imagen
+        y la inviolabilidad del domicilio, el honor, el patrimonio, el orden socioeconómico y
+        las relaciones familiares y los delitos cometidos con ocasión del ejercicio de los
+        derechos fundamentales y libertades públicas; atendiendo a la gravedad de los
+        hechos o al peligro que el delincuente represente, podrán acordar en sus sentencias
+        la imposición de una o varias de las prohibiciones contempladas en el artículo 48,
+        por un tiempo que no excederá de diez años si el delito fuera grave, o de cinco si
+        fuera menos grave.»
+
+     Diez.  Se modifica el párrafo 6.º del artículo 70.3, que queda redactado como sigue:
+
+             «6.º  Tratándose de privación del derecho a residir en determinados lugares o
+        acudir a ellos, o de la prohibición de acceso o de comunicación a través de redes
+        sociales, foros, plataformas de comunicación o cualquier otro lugar en el espacio
+        virtual, la misma pena, con la cláusula de que su duración máxima será de veinte
+        años.»
+
+     Once.  Se añade un nuevo párrafo numerado como 8.ª bis al artículo 83.1, con el
+siguiente contenido:
+
+             «8.ª bis.  Prohibición de acceso o de comunicación a través de redes sociales,
+        foros o plataformas virtuales cuando tengan relación directa con el delito cometido.»
+
+     Doce.  Se añade un nuevo párrafo numerado como 7.ª al artículo 96.3, con el
+siguiente contenido:
+
+             «7.ª  La prohibición de acceso o de comunicación a través de redes sociales,
+        foros o plataformas virtuales cuando tengan relación directa con el delito cometido.»
+
+     Trece.  Se añade un nuevo artículo 173 bis, con el siguiente contenido:
+
+        «Artículo 173 bis.
+
+             Se impondrá la pena de prisión de uno a dos años a quienes, sin autorización
+        de la persona afectada y con ánimo de menoscabar su integridad moral, difundan,
+        exhiban o cedan su imagen corporal o audio de voz generada, modificada o
+        recreada mediante sistemas automatizados, software, algoritmos, inteligencia
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                      Pág. 29
+
+   artificial o cualquier otra tecnología, de modo que parezca real, simulando               cve: BOCG-15-A-52-1
+   situaciones de contenido sexual o gravemente vejatorias. La pena será de un año y
+   seis meses a dos años, si la víctima es menor de edad o persona con discapacidad
+   necesitada de especial protección.
+
+        Se aplicará la pena en su mitad superior si dicho material ultrafalsificado se
+   difunde a través de un medio de comunicación social, por medio de internet o
+   mediante el uso de tecnologías, de modo que aquel se hiciera accesible a un
+   elevado número de personas en el espacio virtual.
+
+        Las autoridades judiciales ordenarán la adopción de las medidas necesarias
+   para la retirada de los contenidos a los que se refieren los párrafos anteriores, para
+   la interrupción de los servicios que ofrezcan predominantemente dichos contenidos
+   o para el bloqueo de unos y otros cuando radiquen en el extranjero.»
+
+Catorce.  Se añade un nuevo párrafo i) al artículo 181.5, con el siguiente contenido:
+
+        «i)  Cuando para facilitar la ejecución del delito, la persona responsable haya
+   utilizado una identidad falsa, ficticia o imaginaria, o se haya atribuido una edad, sexo
+   u otras condiciones personales diferentes de las propias.»
+
+Quince.  Se añade un nuevo apartado 3 al artículo 182, con el siguiente contenido:
+
+        «3.  Si para facilitar la ejecución de las conductas definidas en los apartados
+   anteriores la persona responsable hubiera utilizado una identidad falsa, ficticia o
+   imaginaria, o se hubiera atribuido una edad, sexo u otras condiciones personales
+   diferentes de las propias, la pena se impondrá en su mitad superior.»
+
+Dieciséis.  Se modifica el artículo 183, que queda redactado como sigue:
+
+   «Artículo 183.
+
+        1.  El que a través de internet, del teléfono o de cualquier otra tecnología de la
+   información y la comunicación contacte con un menor de dieciséis años y proponga
+   concertar un encuentro con el mismo a fin de cometer cualquiera de los delitos
+   descritos en los artículos 181 y 189, siempre que tal propuesta se acompañe de
+   actos materiales encaminados al acercamiento, será castigado con la pena de uno
+   a tres años de prisión o multa de doce a veinticuatro meses, sin perjuicio de las
+   penas correspondientes a los delitos en su caso cometidos. Las penas se impondrán
+   en su mitad superior cuando el acercamiento se obtenga mediante coacción,
+   intimidación, engaño o empleando una identidad falsa, ficticia o imaginaria, o
+   atribuyéndose el agresor una edad, sexo u otras condiciones personales diferentes
+   a las propias.
+
+        2.  El que, a través de internet, del teléfono o de cualquier otra tecnología de la
+   información y la comunicación contacte con un menor de dieciséis años y realice
+   actos dirigidos a embaucarle para que le facilite material pornográfico o le muestre
+   imágenes pornográficas en las que se represente o aparezca un menor, será
+   castigado con una pena de prisión de seis meses a dos años.
+
+        Cuando el embaucamiento se lleve a efecto utilizando el agresor una identidad
+   falsa, ficticia o imaginaria, o atribuyéndose edad, sexo u otras condiciones
+   personales diferentes a las propias, la pena se impondrá en su mitad superior.»
+
+Diecisiete.  Se modifica el artículo 185, que queda redactado como sigue:
+
+   «Artículo 185.
+
+        El que ejecutare o hiciere ejecutar a otra persona actos de exhibición obscena
+   ante menores de edad o personas con discapacidad necesitadas de especial
+   protección, será castigado con la pena de prisión de seis meses a un año o multa de
+   doce a veinticuatro meses.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 30
+
+             Cuando para facilitar la ejecución de la conducta la persona responsable hubiera   cve: BOCG-15-A-52-1
+        utilizado una identidad falsa, ficticia o imaginaria, o se hubiera atribuido una edad,
+        sexo u otras condiciones personales diferentes de las propias, la pena se impondrá
+        en su mitad superior.»
+
+     Dieciocho.  Se modifica el artículo 186, que queda redactado como sigue:
+
+        «Artículo 186.
+
+             El que, a sabiendas, y por cualquier medio, vendiere, difundiere, exhibiere o
+        pusiere a disposición, entre menores de edad o personas con discapacidad
+        necesitadas de especial protección, material pornográfico, será castigado con la
+        pena de prisión de seis meses a un año o multa de doce a veinticuatro meses.
+
+             Cuando para facilitar la ejecución de la conducta la persona responsable hubiera
+        utilizado una identidad falsa, ficticia o imaginaria, o se hubiera atribuido una edad,
+        sexo u otras condiciones personales diferentes de las propias, la pena se impondrá
+        en su mitad superior.»
+
+     Diecinueve.  Se modifica el apartado 1 del artículo 188, que queda redactado como
+sigue:
+
+             «1.  El que induzca, promueva, favorezca o facilite la prostitución de un menor
+        de edad o una persona con discapacidad necesitada de especial protección, o se
+        lucre con ello, o explote de algún otro modo a un menor o a una persona con
+        discapacidad para estos fines, será castigado con las penas de prisión de dos a
+        cinco años y multa de doce a veinticuatro meses.
+
+             Si la víctima fuera menor de dieciséis años, se impondrá la pena de prisión de
+        cuatro a ocho años y multa de doce a veinticuatro meses.
+
+             Cuando para facilitar la ejecución de la conducta la persona responsable hubiera
+        utilizado una identidad falsa, ficticia o imaginaria, o se hubiera atribuido una edad,
+        sexo u otras condiciones personales diferentes de las propias, la pena se impondrá
+        en su mitad superior.»
+
+     Veinte.  Se modifica el apartado 4 del artículo 188, que queda redactado como sigue:
+
+             «4.  El que solicite, acepte u obtenga, a cambio de una remuneración o
+        promesa, una relación sexual con una persona menor de edad o una persona con
+        discapacidad necesitada de especial protección, será castigado con una pena de
+        uno a cuatro años de prisión. Si el menor no hubiera cumplido dieciséis años de
+        edad, se impondrá una pena de dos a seis años de prisión.
+
+             Cuando para facilitar la ejecución de la conducta la persona responsable hubiera
+        utilizado una identidad falsa, ficticia o imaginaria, o se hubiera atribuido una edad,
+        sexo u otras condiciones personales diferentes de las propias, la pena se impondrá
+        en su mitad superior.»
+
+     Veintiuno.  Se modifica el apartado 3 del artículo 189, que queda redactado como
+sigue:
+
+             «3.  Las penas correspondientes a los hechos a que se refiere la letra a) del
+        párrafo primero del apartado 1 del presente artículo se incrementaran si concurre
+        alguna de las circunstancias siguientes:
+
+             a)  Si en la comisión de los hechos se hubiera empleado violencia o
+        intimidación, se impondrá la pena superior en grado a las previstas en los apartados
+        anteriores.
+
+             b)  Si para facilitar la ejecución de los hechos el responsable hubiera utilizado
+        una identidad falsa, ficticia o imaginaria, o se hubiera atribuido una edad, sexo o
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                          Pág. 31
+
+        género u otras condiciones personales diferentes de las propias, se impondrá la          cve: BOCG-15-A-52-1
+        pena prevista en los apartados anteriores en su mitad superior.»
+
+Disposición final cuarta.  Modificación de la Ley 29/1998, de 13 de julio, reguladora de la
+     Jurisdicción Contencioso-administrativa.
+
+     Se modifica la Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-
+administrativa, en los siguientes términos:
+
+     Uno.  Se modifica el apartado 2 del artículo 9, que queda redactado como sigue:
+
+             «2.  Corresponderá a los Juzgados Centrales de lo Contencioso-Administrativo
+        autorizar, mediante auto, las cesiones de datos que permitan la identificación a que
+        se refiere el artículo 8.2 de la Ley 34/2002, de 11 de julio, de Servicios de la
+        Sociedad de la información y de Comercio Electrónico, la ejecución material de las
+        resoluciones adoptadas por el órgano competente para que se interrumpa la
+        prestación de servicios de la sociedad de la información o para que se retiren
+        contenidos en aplicación de la Ley 34/2002, de 11 de julio, así como la limitación al
+        acceso de los destinatarios al servicio intermediario prevista en el artículo 51.3 b)
+        del Reglamento (UE) 2022/2065 del Parlamento Europeo y del Consejo de 19 de
+        octubre de 2022, relativo a un mercado único de servicios digitales y por el que se
+        modifica la Directiva 2000/31/CE.»
+
+     Dos.  Se modifica el apartado 2 del artículo 122 bis, con la siguiente redacción:
+
+             «2.  La ejecución de las medidas para que se interrumpa la prestación de
+        servicios de la sociedad de la información o para que se retiren contenidos en
+        aplicación de la Ley 34/2002, de 11 de julio, así como para la limitación al acceso de
+        los destinatarios al servicio intermediario prevista en el artículo 51.3 b) del
+        Reglamento (UE) 2022/2065 del Parlamento Europeo y del Consejo de 19 de
+        octubre de 2022, requerirá de autorización judicial previa en todos los casos en que
+        la Constitución, las normas reguladoras de los respectivos derechos y libertades o
+        las que resulten aplicables a las diferentes materias atribuyan competencia a los
+        órganos jurisdiccionales de forma excluyente para intervenir en el ejercicio de
+        actividades o derechos, de conformidad con lo establecido en los párrafos
+        siguientes.
+
+             Acordada la medida por el órgano correspondiente, solicitará del Juzgado
+        competente la autorización para su ejecución, referida a la posible afectación a los
+        derechos y libertades garantizados en la Constitución. La solicitud habrá de ir
+        acompañada del expediente administrativo.
+
+             En el plazo improrrogable de dos días siguientes a la recepción de la notificación
+        de la resolución administrativa y poniendo de manifiesto el expediente, el Juzgado
+        dará traslado de la resolución al representante legal de la Administración, al del
+        Ministerio Fiscal y a los titulares de los derechos y libertades afectados o a la
+        persona que éstos designen como representante para que puedan efectuar
+        alegaciones escritas por plazo común de cinco días.
+
+             Si de las alegaciones escritas efectuadas resultaran nuevos hechos de
+        trascendencia para la resolución, el Juez, atendida la índole del asunto, podrá
+        acordar la celebración de vista oral o, en caso contrario, si de las alegaciones
+        escritas efectuadas no resultaran nuevos hechos de trascendencia para la
+        resolución, el Juez resolverá en el plazo improrrogable de dos días mediante auto.
+        La decisión que se adopte únicamente podrá autorizar o denegar la ejecución de la
+        medida.»
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                                  Pág. 32
+
+Disposición final quinta.  Modificación del texto refundido de la Ley General para la                    cve: BOCG-15-A-52-1
+     Defensa de los Consumidores y Usuarios y otras leyes complementarias, aprobado
+     por el Real Decreto Legislativo 1/2007, de 16 de noviembre.
+
+     El texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios
+y otras leyes complementarias, aprobado por el Real Decreto Legislativo 1/2007, de 16 de
+noviembre, queda modificado como sigue:
+
+     Uno.  Se añade un nuevo párrafo g) al artículo 8.1, con el siguiente contenido:
+
+             «g)  La protección de las personas menores de edad, como personas
+        consumidoras vulnerables, en relación con los bienes o servicios digitales.»
+
+     Dos.  Se añade un nuevo párrafo t bis) al artículo 47.1, con el siguiente contenido:
+
+             «t bis)  El incumplimiento por parte del empresario de las obligaciones de
+        verificación y comprobación de edad en la contratación de bienes o servicios
+        destinados a personas mayores de edad.»
+
+     Tres.  Se modifica el párrafo a) del artículo 48.2, que queda redactado como sigue:
+
+             «a)  Las infracciones de los apartados f), g), i), k), l), m), n), ñ), p), q), t) y t bis)
+        del artículo 47 se calificarán como leves, salvo que tengan la consideración de
+        graves de acuerdo con el apartado tercero de este artículo.»
+
+     Cuatro.  Se modifica el apartado 1 del artículo 62, que queda redactado como sigue:
+
+             «1.  En la contratación con consumidores y usuarios debe constar de forma
+        inequívoca su voluntad de contratar o, en su caso, de poner fin al contrato.
+
+             Los empresarios que ofrezcan bienes o servicios destinados a personas
+        mayores de edad, ya sea por su contenido sexual, violento o por suponer un riesgo
+        para la salud física o el desarrollo de la personalidad, deberán exigir, con carácter
+        previo a la contratación, la presentación o exhibición de un documento oficial
+        acreditativo de la edad o bien recurrir a cualquier método de comprobación de la
+        edad, efectivo y acorde con el medio a través del cual se vaya a llevar a cabo la
+        contratación.»
+
+     Cinco.  Se modifica el apartado 2 del artículo 98, que queda redactado como sigue:
+
+             «2.  Si un contrato a distancia que ha de ser celebrado por medios electrónicos
+        implica obligaciones de pago para el consumidor y usuario, el empresario pondrá en
+        conocimiento de éste de una manera clara y destacada, y justo antes de que efectúe
+        el pedido, la información establecida en el artículo 97.1.a), e), p) y q).
+
+             El empresario deberá velar por que el consumidor y usuario, al efectuar el
+        pedido, confirme expresamente que es consciente de que éste implica una
+        obligación de pago. Si la realización de un pedido se hace activando un botón o una
+        función similar, el botón o la función similar deberán etiquetarse, de manera que sea
+        fácilmente legible, únicamente con la expresión «pedido con obligación de pago» o
+        una formulación análoga no ambigua que indique que la realización del pedido
+        implica la obligación de pagar al empresario. En caso contrario, el consumidor y
+        usuario no quedará obligado por el contrato o pedido.
+
+             En caso de que el objeto del contrato celebrado a distancia sean bienes o servicios
+        propios o ajenos, internos o externos, destinados a personas mayores de edad, ya
+        sea por su contenido sexual, violento o por suponer un riesgo para la salud física o el
+        desarrollo de la personalidad, el empresario deberá exigir, con carácter previo a la
+        contratación, la presentación o exhibición de un documento oficial acreditativo de la
+        edad o bien recurrir a cualquier método de comprobación de la edad, efectivo y acorde
+        con el medio a través del cual se vaya a llevar a cabo la contratación.»
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                            Pág. 33
+
+Disposición final sexta.  Modificación de la Ley Orgánica 3/2018, de 5 de diciembre, de            cve: BOCG-15-A-52-1
+     protección de datos personales y garantía de los derechos digitales.
+
+     La Ley Orgánica 3/2018, de 5 de diciembre, de protección de datos personales y
+garantía de los derechos digitales, queda modificada en los siguientes términos:
+
+     Uno.  Se modifica el artículo 7, que queda redactado como sigue:
+
+             «1.  El tratamiento de los datos personales de un menor de edad únicamente
+        podrá fundarse en su consentimiento cuando sea mayor de dieciséis años.
+
+             Se exceptúan los supuestos en que la ley exija la asistencia de los titulares de
+        la patria potestad o tutela para la celebración del acto o negocio jurídico en cuyo
+        contexto se recaba el consentimiento para el tratamiento.
+
+             2.  El tratamiento de los datos de los menores de dieciséis años, fundado en el
+        consentimiento, solo será lícito si consta el del titular de la patria potestad o tutela,
+        con el alcance que determinen los titulares de la patria potestad o tutela.»
+
+     Dos.  Se modifica el artículo 12.6, que queda redactado como sigue:
+
+             «6.  En cualquier caso, los titulares de la patria potestad podrán ejercitar en
+        nombre y representación de los menores de dieciséis años los derechos de acceso,
+        rectificación, cancelación, oposición o cualesquiera otros que pudieran
+        corresponderles en el contexto de la presente ley orgánica.»
+
+Disposición final séptima.  Modificación de la Ley 13/2022, de 7 de julio, General de
+     Comunicación Audiovisual
+
+     La Ley 13/2022, de 7 de julio, General de Comunicación Audiovisual, queda modificada
+como sigue:
+
+     Uno.  Se añaden dos nuevos apartados 8 y 9 en el artículo 3, pasando el actual
+apartado 8 a ser el apartado 10:
+
+             «8.  El prestador del servicio de comunicación audiovisual que, estando
+        establecido en un país que no sea miembro de la Unión Europea o del Espacio
+        Económico Europeo, dirija sus servicios específicamente al mercado español estará
+        obligado a cumplir con lo establecido en los artículos 95 y 98.1, en los
+        apartados 1, 2, 3 y 4 del artículo 99 y en la sección 1.ª del capítulo IV del título VI.
+
+             9.  El prestador del servicio de intercambio de vídeos a través de plataforma
+        que, estando establecido en un país que no sea miembro de la Unión Europea o del
+        Espacio Económico Europeo, dirija sus servicios específicamente al mercado
+        español, siempre que ello no contravenga lo establecido en tratados o convenios
+        internacionales que sean aplicables, estará obligado a cumplir con lo establecido en
+        los artículos 88, 89, 90 y 91.»
+
+     Dos.  Se modifica el artículo 42, que queda redactado así:
+
+        «Artículo 42.  Publicidad del régimen de propiedad de los prestadores del servicio
+             de comunicación audiovisual y de los prestadores del servicio de intercambio de
+             vídeos a través de plataforma.
+
+             1.  Los prestadores del servicio de comunicación audiovisual y los prestadores
+        del servicio de intercambio de vídeos a través de plataforma deberán hacer accesibles
+        en los respectivos sitios web corporativos, de una forma fácilmente comprensible y en
+        formato electrónico y reutilizable, en la lengua oficial del Estado y en las lenguas
+        oficiales de las Comunidades Autónomas, la siguiente información, sin perjuicio de las
+        obligaciones que les puedan corresponder en virtud de la Ley 34/2002, de 11 de julio,
+        la Ley 19/2013, de 9 de diciembre, y de la normativa en materia de información no
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                            Pág. 34
+
+        financiera y diversidad contenida en el Código de Comercio; en el Real Decreto             cve: BOCG-15-A-52-1
+        Legislativo 1/2010, de 2 de julio, por el que se aprueba el texto refundido de la Ley de
+        Sociedades de Capital, y en la Ley 22/2015 de 20 de julio, de Auditoría de Cuentas:
+
+             a)  Denominación y domicilio social, datos de contacto, incluido correo
+        electrónico, así como si tiene ánimo de lucro o no o si está participada por un Estado.
+
+             b)  Establecimiento en España y autoridad audiovisual de supervisión
+        competente, incluyendo un enlace fácilmente reconocible y accesible al sitio web de
+        dicha autoridad con el fin de que los usuarios puedan notificar posibles infracciones
+        de la normativa audiovisual.
+
+             c)  Personas físicas o jurídicas titulares en última instancia de la responsabilidad
+        editorial o autores del contenido editorial.
+
+             d)  Personas físicas o jurídicas propietarias o titulares de participaciones
+        significativas en los términos del artículo 38.
+
+             2.  Los usuarios de especial relevancia que empleen servicios de intercambio
+        de videos a través de plataforma deberán publicar en sus servicios de una forma
+        fácilmente reconocible y accesible un enlace al sitio web de la autoridad audiovisual
+        de supervisión con el fin de que los usuarios puedan notificar posibles infracciones
+        de la normativa audiovisual.»
+
+     Tres.  Se modifican los párrafos e) y f) del artículo 89.1, que quedan redactados como
+sigue:
+
+             «e)  Establecer y operar sistemas de verificación de edad para los usuarios con
+        respecto a los contenidos que puedan perjudicar el desarrollo físico, mental o moral
+        de los menores que, en todo caso, impidan el acceso de estos a los contenidos
+        audiovisuales más nocivos, como la violencia gratuita o la pornografía.
+
+             Dichos sistemas deberán garantizar la seguridad, la privacidad y la protección
+        de datos, en particular, en cuanto a minimización de datos y limitación de la finalidad.
+
+             f)  Establecer sistemas de control parental controlados por el usuario final con
+        respecto a los contenidos que puedan perjudicar el desarrollo físico, mental o moral
+        de los menores.»
+
+     Cuatro.  Se modifica el apartado 4 del artículo 93, que queda redactado como sigue:
+
+             «4.  El incumplimiento de las obligaciones previstas en el artículo 89.1.e) será
+        constitutivo de la infracción tipificada en el artículo 157.8, sin perjuicio de la
+        responsabilidad penal que pueda derivarse de dicha acción. Asimismo, la Comisión
+        Nacional de los Mercados y la Competencia podrá adoptar las medidas previstas en
+        los artículos 8 y 11 de la Ley 34/2002, de 11 de julio, de conformidad con lo dispuesto
+        en dichos artículos, cuando el incumplimiento de las obligaciones referidas atente o
+        pueda atentar contra el principio de protección de la juventud y la infancia. A efectos
+        de valorar la procedencia de estas medidas, se atenderá al daño potencial en el
+        desarrollo físico, mental o moral de los menores; al nivel de audiencia del servicio
+        en España; o a la reincidencia en la conducta infractora.
+
+             La ejecución de las medidas recogidas en el párrafo anterior, incluidas aquellas
+        que exigen la colaboración de los prestadores de servicios intermediarios, requerirá
+        la previa autorización judicial de acuerdo con el procedimiento regulado en el
+        apartado 2 del artículo 122 bis de la Ley 29/1998, de 13 de julio, reguladora de la
+        Jurisdicción Contencioso-administrativa.»
+
+     Cinco.  Se modifica el apartado 1 del artículo 94, que queda redactado como sigue:
+
+             «1.  Los usuarios de especial relevancia que empleen servicios de intercambio
+        de vídeos a través de plataforma se considerarán prestadores del servicio de
+        comunicación audiovisual a los efectos del cumplimiento de los principios
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                         Pág. 35
+
+        establecidos en los artículos 4, 6, 7.1, 9, 10, 12, 14, 15; de la obligación del        cve: BOCG-15-A-52-1
+        artículo 42.2 y de las obligaciones para la protección de los menores conforme a lo
+        establecido en los apartados 1, 2, 3 y 4 del artículo 99. Asimismo, tales usuarios
+        deberán respetar lo dispuesto en las secciones 1.ª y 2.ª del capítulo IV del título VI
+        cuando comercialicen, vendan u organicen las comunicaciones comerciales que
+        acompañen o inserten en sus contenidos audiovisuales.
+
+             Los usuarios de especial relevancia tomarán aquellas medidas adecuadas para
+        el cumplimiento de estas obligaciones y utilizarán los mecanismos que el prestador
+        del servicio de intercambio de vídeos a través de plataforma pone a su disposición,
+        en particular los establecidos en los párrafos d), e) y f) del artículo 89.1 y en el
+        artículo 91.2.b).»
+
+     Seis.  Se modifican los apartados 3 y 4 del artículo 99, que quedan redactados como
+sigue:
+
+             «3.  El servicio de comunicación audiovisual televisivo lineal de acceso
+        condicional tiene las siguientes obligaciones para la protección de los menores del
+        contenido perjudicial:
+
+             a)  Formar parte del código de corregulación previsto en el artículo 98.2.
+             b)  Proporcionar mecanismos de control parental.
+             c)  Establecer y operar sistemas de verificación de edad para los usuarios con
+        respecto a los contenidos más nocivos, como la violencia gratuita y la pornografía,
+        que puedan perjudicar el desarrollo físico, mental o moral de los menores. Dichos
+        sistemas deberán garantizar la seguridad, la privacidad y la protección de datos, en
+        particular, en cuanto a minimización de datos y limitación de la finalidad.
+
+             4.  El servicio de comunicación audiovisual televisivo a petición tiene las
+        siguientes obligaciones para la protección de los menores del contenido perjudicial:
+
+             a)  Incluir programas y contenidos audiovisuales que puedan incluir escenas de
+        pornografía o violencia gratuita en catálogos separados.
+
+             b)  Formar parte del código de corregulación previsto en el artículo 98.2.
+             c)  Proporcionar mecanismos de control parental.
+             d)  Establecer y operar sistemas de verificación de edad para los usuarios con
+        respecto a los contenidos más nocivos, como la violencia gratuita y la pornografía,
+        que puedan perjudicar el desarrollo físico, mental o moral de los menores. Dichos
+        sistemas deberán garantizar la seguridad, la privacidad y la protección de datos, en
+        particular, en cuanto a minimización de datos y limitación de la finalidad.»
+
+     Siete.  Se añade un nuevo párrafo b bis) en el apartado 2 del artículo 155, con la
+siguiente redacción:
+
+             «b bis)  Prestadores del servicio de comunicación audiovisual televisivo y
+        prestadores del servicio de intercambio de vídeos a través de plataforma
+        establecidos en un país que no sea miembro de la Unión Europea o del Espacio
+        Económico Europeo que dirigen sus servicios específicamente al mercado español
+        de conformidad con lo previsto en los artículos 3.8 y 3.9.»
+
+     Ocho.  Se modifica la letra c) del artículo 160.1, que queda redactada como sigue:
+
+             «c)  Las sanciones previstas en las letras a) y b) de este apartado podrán,
+        además, llevar aparejada alguna de las siguientes sanciones accesorias:
+
+             1.º  La revocación de la licencia para prestar el servicio de comunicación
+        audiovisual y el consiguiente cese de la prestación del servicio cuando el prestador
+        haya cometido la infracción muy grave prevista en los apartados 6 y 7 del
+        artículo 157.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                    CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1  11 de abril de 2025                                                            Pág. 36
+
+             2.º  El cese de las emisiones y el precintado provisional de los equipos e            cve: BOCG-15-A-52-1
+        instalaciones utilizados para realizar la emisión cuando se haya cometido la
+        infracción muy grave prevista en los apartados 4 y 5 del artículo 157.
+
+             3.º  El cese de la prestación del servicio y la pérdida de la condición de
+        prestador del servicio de comunicación audiovisual televisivo adquirida a través de
+        la comunicación previa, durante un periodo máximo de un año, cuando se hayan
+        cometido las infracciones muy graves tipificadas en los apartados 13 y 14 del
+        artículo 157, relativas a establecer y operar sistemas de verificación de edad.
+
+             4.º  El cese de la prestación del servicio por parte del prestador del servicio de
+        intercambio de videos a través de plataforma, durante un periodo máximo de un
+        año, cuando se haya cometido la infracción muy grave tipificada en el apartado 8 del
+        artículo 157.»
+
+     Nueve.  Se modifica el apartado 1 del artículo 164, que queda redactado como sigue:
+
+             «1.  Una vez iniciado el procedimiento sancionador por alguna de las
+        infracciones tipificadas en los artículos 157, 158 y 159, se podrán adoptar medidas
+        provisionales que, de conformidad con el artículo 56 de la Ley 39/2015, de 1 de
+        octubre, podrán consistir en las siguientes:
+
+             a)  Ordenar el cese inmediato de cualquier actividad presuntamente infractora.
+             b)  Confirmar o modificar las medidas provisionales previas adoptadas
+        conforme a lo dispuesto en el artículo anterior. Estas medidas provisionales serán
+        válidas durante tres meses como máximo, prorrogables por otro período de hasta
+        tres meses.
+             c)  La suspensión de la eficacia del título habilitante y la clausura provisional de
+        las instalaciones, en el caso de infracciones muy graves tipificadas en los
+        apartados 5 y 6 del artículo 157.
+             d)  En el caso de infracciones muy graves tipificadas en los apartados 8 y 14
+        del artículo 157, se podrán adoptar las medidas previstas en los artículos 8 y 11 de
+        la Ley 34/2002, de 11 de julio, de conformidad con lo previsto en dichos artículos,
+        incluyendo la interrupción del servicio infractor y la retirada de datos. La ejecución
+        de las medidas, incluidas aquellas que exigen la colaboración de los prestadores de
+        servicios intermediarios, requerirá la previa autorización judicial de acuerdo con el
+        procedimiento regulado en el apartado 2 del artículo 122 bis de la Ley 29/1998,
+        de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa.»
+
+Disposición final octava.  Títulos competenciales.
+
+     Esta ley orgánica se dicta al amparo de lo previsto en el artículo 149.1. 1.ª, y 13.ª de la
+Constitución Española, que atribuye al Estado la competencia exclusiva en materia de
+regulación de las condiciones básicas que garanticen la igualdad de todos los españoles
+en el ejercicio de los derechos y en el cumplimiento de los deberes constitucionales; y de
+bases y coordinación de la planificación general de la actividad económica.
+
+     Adicionalmente, son de aplicación los siguientes títulos competenciales:
+
+     El título I se dicta con fundamento en el artículo 149.1.21.ª de la Constitución Española,
+que atribuye al Estado la competencia exclusiva sobre telecomunicaciones.
+
+     Los contenidos del título II constituyen normas básicas para el desarrollo del artículo 27
+de la Constitución, en virtud de lo previsto en el artículo 149.1.30.ª de la Constitución
+Española.
+
+     El título IV se dispone en virtud de la competencia del Estado en materia de bases y
+coordinación general de la sanidad, dispuesta en el artículo 149.1.16.ª de la Constitución
+Española.
+
+     El título V se fundamenta en la competencia del Estado en lo concerniente a las bases
+del régimen jurídico de las Administraciones públicas, de conformidad con el
+artículo 149.1.18.ª de la Constitución Española.
+                    BOLETÍN OFICIAL DE LAS CORTES GENERALES
+
+                          CONGRESO DE LOS DIPUTADOS
+
+Serie A  Núm. 52-1        11 de abril de 2025                                                    Pág. 37
+
+     Las disposiciones finales primera, segunda, tercera y cuarta se dictan al amparo de las                                                      cve: BOCG-15-A-52-1
+competencias en materia de legislación penal y procesal, que el artículo 149.1.6.ª de la
+Constitución Española atribuye al Estado.
+
+     Las disposiciones finales quinta, sexta y séptima, que modifican, respectivamente, el
+texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios y otras
+leyes complementarias, aprobado por el Real Decreto Legislativo 1/2007, de 16 de
+noviembre; la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales
+y garantía de los derechos digitales; y la Ley 13/2022, de 7 de julio, General de
+Comunicación Audiovisual, se amparan en los títulos competenciales expresados en las
+citadas normas.
+
+Disposición final novena.  Naturaleza de ley orgánica.
+
+     Tienen carácter de ley orgánica las disposiciones finales primera, segunda, tercera y
+sexta. El resto de preceptos tienen naturaleza de ley ordinaria.
+
+Disposición final décima.  Desarrollo reglamentario.
+
+     1.  Se habilita al Gobierno para dictar las disposiciones necesarias para el desarrollo
+de lo establecido en esta ley orgánica.
+
+     2.  En el plazo de seis meses desde la publicación de la presente ley orgánica, el
+Gobierno, mediante real decreto, determinará la información que deben proporcionar los
+fabricantes de equipos terminales digitales en virtud del artículo 4.2, el formato en que
+debe proporcionarse y una concreción de los riesgos sobre los que se debe informar.
+
+Disposición final undécima.  Desarrollo reglamentario de la prohibición de acceso a los
+     mecanismos aleatorios de recompensa.
+
+     Con la finalidad de garantizar la efectividad de la prohibición de acceso o activación por
+personas menores de edad de mecanismos aleatorios de recompensa, el Gobierno,
+reglamentariamente, a propuesta del departamento que ostente las competencias en
+materia de protección a las personas consumidoras y juego y del ministerio competente en
+materia de transformación digital, podrá adoptar las disposiciones técnicas pertinentes que
+permitan una verificación de la edad de las personas usuarias de este tipo de
+funcionalidades. En cualquier caso, la adopción de estas medidas deberá respetar la
+normativa comunitaria y, singularmente, aquella mediante la que se aborden las técnicas y
+prácticas comerciales poco éticas en relación con los «patrones oscuros», el marketing de
+«influencers», el diseño adictivo de productos digitales y el perfilado online, especialmente
+cuando explotan vulnerabilidades de los consumidores con fines comerciales.
+
+Disposición final duodécima.  Entrada en vigor y aplicación.
+
+     1.  Con las salvedades previstas en el apartado 2, la presente ley orgánica entrará en
+vigor a los veinte días de su publicación en el «Boletín Oficial del Estado».
+
+     2.  El artículo 4, la disposición final quinta y el apartado seis de la disposición final
+séptima entrarán en vigor al año de la publicación de esta ley orgánica en el «Boletín
+Oficial del Estado».
+
+     Por excepción, el artículo 4.2 entrará en vigor a los seis meses de la publicación en el
+«Boletín Oficial del Estado» del real decreto que determine la información que deben
+proporcionar los fabricantes de equipos terminales digitales. Las disposiciones contenidas
+en los demás apartados del artículo 4, en lo que se refieran a la obligación de información
+contenida en el artículo 4.2, solo serán de aplicación desde el momento en que este último
+entre en vigor.
+
+http://www.congreso.es		  CONGRESO DE LOS DIPUTADOS                                              Calle Floridablanca, s/n. 28071 Madrid
+D. L.: M-12.580/1961                                                                                                        Teléf.: 91 390 60 00
+
+Edición electrónica preparada por la Agencia Estatal Boletín Oficial del Estado – http://boe.es
+
