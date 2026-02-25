@@ -1,11 +1,11 @@
 ═══════════════════════════════════════════════════════
-  US AKN Pipeline: s5-119-laken-riley-act
-  Title: Laken Riley Act
+  US AKN Pipeline: hr2196-119-national-emergency-medical-services-memorial-exten
+  Title: To provide for an extension of the legislative authority of the National Emergency Medical Services Memorial Foundation to establish a commemorative work in the District of Columbia and its environs.
 ═══════════════════════════════════════════════════════
-  [PASS]  2. Configure           s5-119-laken-riley-act              0.0s
+  [PASS]  2. Configure           hr2196-119-national-emergency-medical-services-memorial-exten 0.0s
   [PASS]  3. Download                                                0.0s
   [PASS]  4. Parse                                                   0.0s
-  [PASS]  5. Generate            4 AKN files                         0.0s
+  [PASS]  5. Generate            2 AKN files                         0.0s
 
   RESULT: 4 pass, 0 fail, 0 warn (0.0s)
 ═══════════════════════════════════════════════════════

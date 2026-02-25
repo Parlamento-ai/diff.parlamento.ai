@@ -24,6 +24,7 @@
       "label": "Senate Passage",
       "date": "2025-06-17",
       "versionCode": "ES",
+      "chamber": "Senate",
       "voteRef": {
         "chamber": "Senate",
         "congress": 119,
@@ -31,8 +32,7 @@
         "rollNumber": 318,
         "date": "2025-06-17",
         "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00318.xml"
-      },
-      "chamber": "Senate"
+      }
     },
     {
       "index": 2,
@@ -40,6 +40,7 @@
       "label": "House Passage",
       "date": "2025-07-17",
       "versionCode": "ENR",
+      "chamber": "House",
       "voteRef": {
         "chamber": "House",
         "congress": 119,
@@ -47,14 +48,13 @@
         "rollNumber": 200,
         "date": "2025-07-17",
         "url": "https://clerk.house.gov/evs/2025/roll200.xml"
-      },
-      "chamber": "House"
+      }
     },
     {
       "index": 3,
       "type": "act",
       "label": "Public Law 119-27",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
       "versionCode": "ENR"
     }
   ],

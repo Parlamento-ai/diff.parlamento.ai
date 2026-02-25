@@ -2,8 +2,10 @@
   US AKN Pipeline: s331-119-halt-all-lethal-trafficking-of-fentanyl-act
   Title: HALT Fentanyl Act
 ═══════════════════════════════════════════════════════
+  [PASS]  2. Configure           s331-119-halt-all-lethal-trafficking-of-fentanyl-act 0.0s
+  [PASS]  3. Download                                                1.6s
   [PASS]  4. Parse                                                   0.0s
-  [PASS]  5. Generate            4 AKN files                         0.0s
+  [PASS]  5. Generate            5 AKN files                         0.0s
 
-  RESULT: 2 pass, 0 fail, 0 warn (0.0s)
+  RESULT: 4 pass, 0 fail, 0 warn (1.6s)
 ═══════════════════════════════════════════════════════

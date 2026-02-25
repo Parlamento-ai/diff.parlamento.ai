@@ -2,7 +2,10 @@
   US AKN Pipeline: s1582-119-guiding-and-establishing-national-innovation-for-u
   Title: GENIUS Act of 2025
 ═══════════════════════════════════════════════════════
+  [PASS]  2. Configure           s1582-119-guiding-and-establishing-national-innovation-for-u 0.0s
+  [PASS]  3. Download                                                0.0s
+  [PASS]  4. Parse                                                   0.1s
   [PASS]  5. Generate            4 AKN files                         0.0s
 
-  RESULT: 1 pass, 0 fail, 0 warn (0.0s)
+  RESULT: 4 pass, 0 fail, 0 warn (0.1s)
 ═══════════════════════════════════════════════════════

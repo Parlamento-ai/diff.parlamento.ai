@@ -3,7 +3,7 @@
  */
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { Discovery, Config, TimelineConfig, DownloadItem } from '../types.js';
+import type { Discovery, Config, TimelineConfig, DownloadItem, PassageAction } from '../types.js';
 import { billXmlUrl } from '../lib/govinfo.js';
 
 /** Version codes ordered by legislative progression */
@@ -37,6 +37,40 @@ function slugify(text: string): string {
 		.slice(0, 50);
 }
 
+/** Infer chamber from version code */
+function inferChamber(code: string): 'Senate' | 'House' | undefined {
+	const lower = code.toLowerCase();
+	if (['is', 'pcs', 'rfs', 'rds', 'rs', 'es', 'eas'].includes(lower)) return 'Senate';
+	if (['ih', 'rh', 'rcs', 'eh', 'eah'].includes(lower)) return 'House';
+	return undefined;
+}
+
+/** Map passage actions to the version codes they produce */
+function buildPassageMap(
+	passageActions: PassageAction[],
+	sortedVersions: { code: string }[]
+): Map<string, PassageAction> {
+	const map = new Map<string, PassageAction>();
+	const versionSet = new Set(sortedVersions.map((v) => v.code.toUpperCase()));
+
+	for (const passage of passageActions) {
+		let targetCode: string | undefined;
+		if (passage.chamber === 'Senate') {
+			if (versionSet.has('ES')) targetCode = 'ES';
+			else if (versionSet.has('EAS')) targetCode = 'EAS';
+		} else if (passage.chamber === 'House') {
+			if (versionSet.has('EH')) targetCode = 'EH';
+			else if (versionSet.has('EAH')) targetCode = 'EAH';
+			else if (versionSet.has('ENR')) targetCode = 'ENR';
+		}
+		if (targetCode) {
+			map.set(targetCode, passage);
+		}
+	}
+
+	return map;
+}
+
 export async function configure(discovery: Discovery, outDir: string): Promise<Config> {
 	console.log('\n=== Phase 2: CONFIGURE ===\n');
 
@@ -52,7 +86,10 @@ export async function configure(discovery: Discovery, outDir: string): Promise<C
 		return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
 	});
 
-	// Build timeline
+	// Map passage actions to their resulting version codes
+	const passageMap = buildPassageMap(passageActions, sortedVersions);
+
+	// Build timeline and downloads by iterating ALL versions
 	const timeline: TimelineConfig[] = [];
 	const downloads: DownloadItem[] = [];
 	const downloadedCodes = new Set<string>();
@@ -64,55 +101,66 @@ export async function configure(discovery: Discovery, outDir: string): Promise<C
 		return version?.govInfoUrl || billXmlUrl(billId, code);
 	};
 
-	// First version → bill
-	const firstVersion = sortedVersions[0];
-	if (firstVersion) {
-		timeline.push({
-			index,
-			type: 'bill',
-			label: versionCodeToLabel(firstVersion.code),
-			date: firstVersion.date,
-			versionCode: firstVersion.code
-		});
-		const code = firstVersion.code.toLowerCase();
-		downloads.push({
-			url: getUrl(firstVersion.code),
-			filename: `${String(index + 1).padStart(2, '0')}-${code}.xml`,
-			type: 'bill-xml'
-		});
-		downloadedCodes.add(code);
-		index++;
-	}
+	for (let i = 0; i < sortedVersions.length; i++) {
+		const version = sortedVersions[i];
+		const code = version.code.toUpperCase();
+		const codeLower = version.code.toLowerCase();
+		const passage = passageMap.get(code);
 
-	// Each passage action → amendment
-	for (const passage of passageActions) {
-		const resultCode = findResultingVersion(passage, sortedVersions);
-		if (!resultCode) continue;
+		// Determine entry type
+		let type: 'bill' | 'amendment' | 'act';
+		if (i === 0) {
+			type = 'bill';
+		} else if (code === 'ENR' && discovery.status === 'enacted' && !passage) {
+			// ENR without a passage action → just the act snapshot
+			type = 'act';
+		} else {
+			type = 'amendment';
+		}
 
-		const code = resultCode.toLowerCase();
+		// Use passage date when available (textVersion date may be empty for ENR)
+		const date = passage?.date || version.date;
+
+		// Build label
+		let label: string;
+		if (type === 'act') {
+			label = publicLaw ? `Public Law ${publicLaw.congress}-${publicLaw.number}` : 'Enacted';
+		} else if (passage) {
+			label = `${passage.chamber} Passage`;
+		} else {
+			label = versionCodeToLabel(version.code);
+		}
+
+		// Build timeline entry
 		const entry: TimelineConfig = {
 			index,
-			type: 'amendment',
-			label: `${passage.chamber} Passage`,
-			date: passage.date,
-			versionCode: resultCode,
-			voteRef: passage.voteRef,
-			chamber: passage.chamber
+			type,
+			label,
+			date,
+			versionCode: version.code
 		};
+		if (passage) {
+			entry.chamber = passage.chamber;
+			if (passage.voteRef) entry.voteRef = passage.voteRef;
+		} else if (type === 'amendment') {
+			const chamber = inferChamber(version.code);
+			if (chamber) entry.chamber = chamber;
+		}
+
 		timeline.push(entry);
 
-		// Download the resulting bill version (if not already queued)
-		if (!downloadedCodes.has(code)) {
+		// Queue download
+		if (!downloadedCodes.has(codeLower)) {
 			downloads.push({
-				url: getUrl(resultCode),
-				filename: `${String(index + 1).padStart(2, '0')}-${code}.xml`,
+				url: getUrl(version.code),
+				filename: `${String(index + 1).padStart(2, '0')}-${codeLower}.xml`,
 				type: 'bill-xml'
 			});
-			downloadedCodes.add(code);
+			downloadedCodes.add(codeLower);
 		}
 
 		// Download vote XML if roll call
-		if (passage.voteRef) {
+		if (passage?.voteRef) {
 			const voteFilename =
 				passage.voteRef.chamber === 'Senate'
 					? `vote-senate-${String(passage.voteRef.rollNumber).padStart(3, '0')}.xml`
@@ -125,33 +173,18 @@ export async function configure(discovery: Discovery, outDir: string): Promise<C
 		}
 
 		index++;
-	}
 
-	// If enacted → act (download ENR if not already)
-	if (discovery.status === 'enacted') {
-		const enrVersion = sortedVersions.find((v) => v.code.toLowerCase() === 'enr');
-		if (enrVersion && !downloadedCodes.has('enr')) {
-			downloads.push({
-				url: getUrl('ENR'),
-				filename: `${String(index + 1).padStart(2, '0')}-enr.xml`,
-				type: 'bill-xml'
+		// Special case: ENR with passage AND enacted → also emit act entry
+		if (code === 'ENR' && passage && discovery.status === 'enacted') {
+			timeline.push({
+				index,
+				type: 'act',
+				label: publicLaw ? `Public Law ${publicLaw.congress}-${publicLaw.number}` : 'Enacted',
+				date: date || '',
+				versionCode: 'ENR'
 			});
-			downloadedCodes.add('enr');
+			index++;
 		}
-
-		// Use the latest passage date as ENR date if ENR has no date
-		const enrDate =
-			enrVersion?.date ||
-			passageActions[passageActions.length - 1]?.date ||
-			'';
-
-		timeline.push({
-			index,
-			type: 'act',
-			label: publicLaw ? `Public Law ${publicLaw.congress}-${publicLaw.number}` : 'Enacted',
-			date: enrDate,
-			versionCode: 'ENR'
-		});
 	}
 
 	// Generate slug
@@ -172,7 +205,7 @@ export async function configure(discovery: Discovery, outDir: string): Promise<C
 	for (const t of timeline) {
 		const voteInfo = t.voteRef
 			? ` (roll call ${t.voteRef.chamber} #${t.voteRef.rollNumber})`
-			: t.type === 'amendment'
+			: t.type === 'amendment' && t.label.toLowerCase().includes('passage')
 				? ' (voice vote)'
 				: '';
 		console.log(`    ${t.index + 1}. [${t.type}] ${t.label} (${t.date})${voteInfo}`);
@@ -184,28 +217,4 @@ export async function configure(discovery: Discovery, outDir: string): Promise<C
 	console.log(`  Saved: config.json`);
 
 	return config;
-}
-
-/** Find the version code that results from a passage action */
-function findResultingVersion(
-	passage: { chamber: string; date: string },
-	versions: { code: string; date: string }[]
-): string | undefined {
-	if (passage.chamber === 'Senate') {
-		const es = versions.find((v) => v.code.toUpperCase() === 'ES');
-		if (es) return es.code;
-		const eas = versions.find((v) => v.code.toUpperCase() === 'EAS');
-		if (eas) return eas.code;
-	}
-	if (passage.chamber === 'House') {
-		const eh = versions.find((v) => v.code.toUpperCase() === 'EH');
-		if (eh) return eh.code;
-		const eah = versions.find((v) => v.code.toUpperCase() === 'EAH');
-		if (eah) return eah.code;
-		// If House is the last chamber and bill originated in Senate,
-		// House passage may go directly to ENR
-		const enr = versions.find((v) => v.code.toUpperCase() === 'ENR');
-		if (enr) return enr.code;
-	}
-	return undefined;
 }

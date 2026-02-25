@@ -1,0 +1,33 @@
+{
+  "versions": {
+    "IH": [
+      {
+        "eId": "sec_1",
+        "heading": "Section 1 Extension of legislative authority for memorial establishment",
+        "paragraphs": [
+          "Section 1(b) of Public Law 115–275 is amended by striking the period at the end and inserting , except that any reference in section 8903(e) of that chapter to the expiration at the end of or extension beyond a seven-year period shall be considered to be a reference to an expiration on or extension beyond November 3, 2032.."
+        ],
+        "content": "Section 1(b) of Public Law 115–275 is amended by striking the period at the end and inserting , except that any reference in section 8903(e) of that chapter to the expiration at the end of or extension beyond a seven-year period shall be considered to be a reference to an expiration on or extension beyond November 3, 2032.."
+      }
+    ],
+    "RH": [
+      {
+        "eId": "sec_1",
+        "heading": "Section 1 Short title",
+        "paragraphs": [
+          "This Act may be cited as the National Emergency Medical Services Memorial Extension Act."
+        ],
+        "content": "This Act may be cited as the National Emergency Medical Services Memorial Extension Act."
+      },
+      {
+        "eId": "sec_2",
+        "heading": "Section 2 Extension of legislative authority for memorial establishment",
+        "paragraphs": [
+          "Section 1(b) of Public Law 115–275 is amended by striking the period at the end and inserting , except that any reference in section 8903(e) of that chapter to the expiration at the end of or extension beyond a seven-year period shall be considered to be a reference to an expiration on or extension beyond the date that is 7 years after the date of enactment of the National Emergency Medical Services Memorial Extension Act.."
+        ],
+        "content": "Section 1(b) of Public Law 115–275 is amended by striking the period at the end and inserting , except that any reference in section 8903(e) of that chapter to the expiration at the end of or extension beyond a seven-year period shall be considered to be a reference to an expiration on or extension beyond the date that is 7 years after the date of enactment of the National Emergency Medical Services Memorial Extension Act.."
+      }
+    ]
+  },
+  "votes": {}
+}

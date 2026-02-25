@@ -18,6 +18,7 @@ const US_S5_DIR = 'pipeline/data/us/s5-119/akn';
 const US_S269_DIR = 'pipeline/data/us/s269-119/akn';
 const US_S331_DIR = 'pipeline/data/us/s331-119/akn';
 const US_S1582_DIR = 'pipeline/data/us/s1582-119/akn';
+const US_HR2196_DIR = 'pipeline/data/us/hr2196-119/akn';
 const ES_LO3_2018_DIR = 'pipeline/data/es/BOE-A-2018-16673/akn';
 const ES_LEY39_2015_DIR = 'pipeline/data/es/BOE-A-2015-10565/akn';
 const ES_LSSI_DIR = 'pipeline/data/es/BOE-A-2002-13758/akn';
@@ -73,6 +74,8 @@ const BOLETIN_DIRS: Record<string, string> = {
 	'us-s331-halt-fentanyl': US_S331_DIR,
 	// US — S.1582 GENIUS Act (Public Law 119-27, 119th Congress) — Stablecoin regulation
 	'us-s1582-genius-act': US_S1582_DIR,
+	// US — HR.2196 National EMS Memorial Extension Act (119th Congress) — ACTIVE (in committee)
+	'us-hr2196-ems-memorial': US_HR2196_DIR,
 	// ES — LO 3/2018 Protección de Datos Personales (BOE-A-2018-16673)
 	'es-lo3-2018-proteccion-datos': ES_LO3_2018_DIR,
 	// ES — Ley 39/2015 Procedimiento Administrativo Común (BOE-A-2015-10565)
@@ -184,8 +187,9 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 	if (boletinSlug === 'us-s331-halt-fentanyl') {
 		const usLabels: Record<string, string> = {
 			bill: 'Introduced (IS)',
-			'amendment-1': 'Senate Passage (84-16)',
-			'amendment-2': 'House Passage (321-104)',
+			'amendment-1': 'Reported in Senate (RS)',
+			'amendment-2': 'Senate Passage (84-16)',
+			'amendment-3': 'House Passage (321-104)',
 			final: 'Public Law 119-26'
 		};
 		return usLabels[slug] || slug;
@@ -196,6 +200,13 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 			'amendment-1': 'Senate Passage (68-30)',
 			'amendment-2': 'House Passage (308-122)',
 			final: 'Public Law 119-27'
+		};
+		return usLabels[slug] || slug;
+	}
+	if (boletinSlug === 'us-hr2196-ems-memorial') {
+		const usLabels: Record<string, string> = {
+			bill: 'Introduced in House (IH)',
+			'amendment-1': 'Reported by Committee (RH)'
 		};
 		return usLabels[slug] || slug;
 	}
@@ -362,8 +373,9 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 		const congressGov = 'https://www.congress.gov';
 		const map: Record<string, { url: string; label: string }> = {
 			bill: { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/is`, label: 'Congress.gov' },
-			'amendment-1': { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/es`, label: 'Congress.gov' },
-			'amendment-2': { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/enr`, label: 'Congress.gov' },
+			'amendment-1': { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/rs`, label: 'Congress.gov' },
+			'amendment-2': { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/es`, label: 'Congress.gov' },
+			'amendment-3': { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/enr`, label: 'Congress.gov' },
 			final: { url: `${congressGov}/bill/119th-congress/senate-bill/331/text/pl`, label: 'Congress.gov' }
 		};
 		return map[slug];
@@ -696,17 +708,21 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 					`${congressGov}/bill/119th-congress/senate-bill/331/text/is`)
 			],
 			'amendment-1': [
-				src('S.331 — Engrossed in Senate', `${usBase}/02-es.xml`, 'xml',
+				src('S.331 — Reported in Senate', `${usBase}/02-rs.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/senate-bill/331/text/rs`)
+			],
+			'amendment-2': [
+				src('S.331 — Engrossed in Senate', `${usBase}/03-es.xml`, 'xml',
 					`${congressGov}/bill/119th-congress/senate-bill/331/text/es`),
 				src('Senate Roll Call Vote #127', `${usBase}/vote-senate-127.xml`, 'xml',
 					'https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00127.htm')
 			],
-			'amendment-2': [
+			'amendment-3': [
 				src('House Roll Call Vote #166', `${usBase}/vote-house-166.xml`, 'xml',
 					'https://clerk.house.gov/Votes/2025166')
 			],
 			final: [
-				src('S.331 — Enrolled Bill', `${usBase}/03-enr.xml`, 'xml',
+				src('S.331 — Enrolled Bill', `${usBase}/04-enr.xml`, 'xml',
 					`${congressGov}/bill/119th-congress/senate-bill/331/text/enr`)
 			]
 		};
@@ -733,6 +749,21 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 			final: [
 				src('S.1582 — Enrolled Bill', `${usBase}/03-enr.xml`, 'xml',
 					`${congressGov}/bill/119th-congress/senate-bill/1582/text/enr`)
+			]
+		};
+		return docs[versionSlug] || [];
+	}
+	if (boletinSlug === 'us-hr2196-ems-memorial') {
+		const usBase = 'pipeline/data/us/hr2196-119/sources';
+		const congressGov = 'https://www.congress.gov';
+		const docs: Record<string, SourceRef[]> = {
+			bill: [
+				src('HR.2196 — Introduced in House', `${usBase}/01-ih.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/house-bill/2196/text/ih`)
+			],
+			'amendment-1': [
+				src('HR.2196 — Reported in House', `${usBase}/02-rh.xml`, 'xml',
+					`${congressGov}/bill/119th-congress/house-bill/2196/text/rh`)
 			]
 		};
 		return docs[versionSlug] || [];

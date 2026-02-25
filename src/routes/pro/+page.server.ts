@@ -21,6 +21,7 @@ const DEV_SLUGS = [
 	'us-s269-improper-payments',
 	'us-s331-halt-fentanyl',
 	'us-s1582-genius-act',
+	'us-hr2196-ems-memorial',
 	'es-lo3-2018-proteccion-datos',
 	'es-ley39-2015-procedimiento-administrativo',
 	'es-lssi-2002',

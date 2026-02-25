@@ -2,8 +2,10 @@
   US AKN Pipeline: s269-119-ending-improper-payments-to-deceased-people-act
   Title: Ending Improper Payments to Deceased People Act
 ═══════════════════════════════════════════════════════
+  [PASS]  2. Configure           s269-119-ending-improper-payments-to-deceased-people-act 0.0s
+  [PASS]  3. Download                                                0.0s
   [PASS]  4. Parse                                                   0.0s
   [PASS]  5. Generate            4 AKN files                         0.0s
 
-  RESULT: 2 pass, 0 fail, 0 warn (0.0s)
+  RESULT: 4 pass, 0 fail, 0 warn (0.0s)
 ═══════════════════════════════════════════════════════

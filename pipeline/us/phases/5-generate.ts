@@ -43,7 +43,7 @@ export async function generate(
 			const sponsor = discovery.sponsor;
 			let sponsorRef: { eId: string; href: string; showAs: string } | undefined;
 			if (sponsor) {
-				// Parse "Sen. Britt, Katie Boyd [R-AL]" → lastName="Britt", firstName="Katie Boyd"
+				// Parse "Sen. Britt, Katie Boyd [R-AL]" \u2192 lastName="Britt", firstName="Katie Boyd"
 				const cleanName = sponsor.name.replace(/^(Sen\.|Rep\.)\s*/, '').replace(/\s*\[.*?\]/, '').trim();
 				const [lastName, firstName] = cleanName.includes(',')
 					? cleanName.split(',').map((s) => s.trim())
@@ -119,12 +119,33 @@ export async function generate(
 			const baseUri = `${billUri}/eng@${previousDate || entry.date}`;
 			const resultUri = `${billUri}/eng@${entry.date}`;
 
+			const isPassage = entry.label.toLowerCase().includes('passage');
+
 			const chamberRef = entry.chamber === 'Senate'
 				? { eId: 'senate', href: '/us/senate', showAs: 'United States Senate' }
-				: { eId: 'house', href: '/us/house', showAs: 'United States House of Representatives' };
+				: entry.chamber === 'House'
+					? { eId: 'house', href: '/us/house', showAs: 'United States House of Representatives' }
+					: { eId: 'congress', href: '/us/congress', showAs: 'United States Congress' };
 
-			const voteInfo = vote ? `${vote.forCount}-${vote.againstCount}` : 'voice vote';
-			const label = `${entry.chamber} Passage \u2014 ${billId.type.toUpperCase()}.${billId.number}`;
+			const authorHref = entry.chamber
+				? `/${entry.chamber === 'Senate' ? 'us/senate' : 'us/house'}`
+				: '/us/congress';
+
+			const voteInfo = vote ? `${vote.forCount}-${vote.againstCount}` : isPassage ? 'voice vote' : 'no vote';
+			const label = `${entry.label} \u2014 ${billId.type.toUpperCase()}.${billId.number}`;
+
+			let description: string;
+			if (isPassage) {
+				description = vote
+					? `Passed ${entry.chamber} by roll call vote ${vote.forCount}-${vote.againstCount} on ${entry.date}.`
+					: `Passed ${entry.chamber} by voice vote on ${entry.date}.`;
+			} else {
+				description = `${entry.label} on ${entry.date}.`;
+			}
+
+			const name = isPassage
+				? `${billId.type}${billId.number}-${billId.congress}-${entry.chamber?.toLowerCase()}-passage`
+				: `${billId.type}${billId.number}-${billId.congress}-${entry.versionCode.toLowerCase()}`;
 
 			const xml = buildAmendmentXml(
 				changesXml?.changes || [],
@@ -132,14 +153,12 @@ export async function generate(
 					thisValue: `${billUri}/${entry.versionCode.toLowerCase()}`,
 					uri: billUri,
 					date: entry.date,
-					dateName: 'passage',
-					authorHref: `/${entry.chamber === 'Senate' ? 'us/senate' : 'us/house'}`
+					dateName: isPassage ? 'passage' : 'version',
+					authorHref
 				},
-				`${billId.type}${billId.number}-${billId.congress}-${entry.chamber?.toLowerCase()}-passage`,
+				name,
 				label,
-				vote
-				? `Passed ${entry.chamber} by roll call vote ${vote.forCount}-${vote.againstCount} on ${entry.date}.`
-				: `Passed ${entry.chamber} by voice vote on ${entry.date}.`,
+				description,
 				baseUri,
 				resultUri,
 				vote,
@@ -150,7 +169,7 @@ export async function generate(
 			generated.push(filename);
 			const changeCount = changesXml?.changes.length || 0;
 			console.log(
-				`  ${filename} (${entry.chamber}, ${voteInfo}, ${changeCount} changes)`
+				`  ${filename} (${entry.chamber || 'Congress'}, ${voteInfo}, ${changeCount} changes)`
 			);
 
 			if (sections) {
@@ -161,7 +180,7 @@ export async function generate(
 		} else if (entry.type === 'act') {
 			if (!sections || sections.length === 0) {
 				if (previousSections) {
-					console.warn(`  WARNING: No sections for ${code} — using fallback from previous version (${previousCode})`);
+					console.warn(`  WARNING: No sections for ${code} \u2014 using fallback from previous version (${previousCode})`);
 				} else {
 					console.warn(`  WARNING: No sections for act, skipping`);
 					continue;
@@ -203,4 +222,3 @@ export async function generate(
 	console.log(`\n  Generated ${generated.length} AKN files in akn/`);
 	return generated;
 }
-

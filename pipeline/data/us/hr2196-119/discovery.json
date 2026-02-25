@@ -1,0 +1,34 @@
+{
+  "billId": {
+    "type": "hr",
+    "number": 2196,
+    "congress": 119
+  },
+  "title": "To provide for an extension of the legislative authority of the National Emergency Medical Services Memorial Foundation to establish a commemorative work in the District of Columbia and its environs.",
+  "shortTitle": "National Emergency Medical Services Memorial Extension Act",
+  "sponsor": {
+    "name": "Rep. Hudson, Richard [R-NC-9]",
+    "party": "R",
+    "state": "NC"
+  },
+  "status": "passed-one",
+  "textVersions": [
+    {
+      "code": "IH",
+      "date": "2025-03-18"
+    },
+    {
+      "code": "RH",
+      "date": "2026-02-24"
+    }
+  ],
+  "recordedVotes": [],
+  "passageActions": [
+    {
+      "date": "2026-02-24",
+      "chamber": "House",
+      "description": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-518.",
+      "resultingVersionCode": "RH"
+    }
+  ]
+}

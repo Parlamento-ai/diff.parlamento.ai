@@ -24,6 +24,7 @@
       "label": "Senate Passage",
       "date": "2025-01-20",
       "versionCode": "ES",
+      "chamber": "Senate",
       "voteRef": {
         "chamber": "Senate",
         "congress": 119,
@@ -31,8 +32,7 @@
         "rollNumber": 7,
         "date": "2025-01-20",
         "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00007.xml"
-      },
-      "chamber": "Senate"
+      }
     },
     {
       "index": 2,
@@ -40,6 +40,7 @@
       "label": "House Passage",
       "date": "2025-01-22",
       "versionCode": "ENR",
+      "chamber": "House",
       "voteRef": {
         "chamber": "House",
         "congress": 0,
@@ -47,8 +48,7 @@
         "rollNumber": 23,
         "date": "2025-01-22",
         "url": "https://clerk.house.gov/evs/2025/roll023.xml"
-      },
-      "chamber": "House"
+      }
     },
     {
       "index": 3,

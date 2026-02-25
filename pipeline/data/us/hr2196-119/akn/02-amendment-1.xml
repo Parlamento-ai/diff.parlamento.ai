@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="hr2196-119-rh">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/us/bill/119/hr/2196/rh"/>
+          <FRBRuri value="/us/bill/119/hr/2196"/>
+          <FRBRdate date="2026-02-24" name="version"/>
+          <FRBRauthor href="/us/house"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/us/bill/119/hr/2196/rh/eng@2026-02-24"/>
+          <FRBRuri value="/us/bill/119/hr/2196/eng@2026-02-24"/>
+          <FRBRdate date="2026-02-24" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/us/bill/119/hr/2196/rh/eng@2026-02-24/akn"/>
+          <FRBRuri value="/us/bill/119/hr/2196/eng@2026-02-24/akn"/>
+          <FRBRdate date="2026-02-25" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCOrganization eId="house" href="/us/house" showAs="United States House of Representatives"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Reported in House — HR.2196</docTitle></p></longTitle>
+      <p>Reported in House on 2026-02-24.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Reported in House on 2026-02-24.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/us/bill/119/hr/2196/eng@2025-03-18"
+      result="/us/bill/119/hr/2196/eng@2026-02-24">
+        <akndiff:vote date="2026-02-24" result="voice-vote"/>
+        <akndiff:articleChange article="sec_1" type="substitute">
+          <akndiff:old>Section 1(b) of Public Law 115–275 is amended by striking the period at the end and inserting , except that any reference in section 8903(e) of that chapter to the expiration at the end of or extension beyond a seven-year period shall be considered to be a reference to an expiration on or extension beyond November 3, 2032..</akndiff:old>
+          <akndiff:new>This Act may be cited as the National Emergency Medical Services Memorial Extension Act.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="sec_2" type="insert" after="sec_1">
+          <akndiff:new>Section 1(b) of Public Law 115–275 is amended by striking the period at the end and inserting , except that any reference in section 8903(e) of that chapter to the expiration at the end of or extension beyond a seven-year period shall be considered to be a reference to an expiration on or extension beyond the date that is 7 years after the date of enactment of the National Emergency Medical Services Memorial Extension Act..</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

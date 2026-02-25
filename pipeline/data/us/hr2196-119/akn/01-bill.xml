@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <bill name="hr2196-119-ih">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/us/bill/119/hr/2196/ih"/>
+          <FRBRuri value="/us/bill/119/hr/2196"/>
+          <FRBRdate date="2025-03-18" name="introduced"/>
+          <FRBRauthor href="/us/representative/richard-hudson"/>
+          <FRBRcountry value="us"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/us/bill/119/hr/2196/ih/eng@2025-03-18"/>
+          <FRBRuri value="/us/bill/119/hr/2196/eng@2025-03-18"/>
+          <FRBRdate date="2025-03-18" name="version"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/us/bill/119/hr/2196/ih/eng@2025-03-18/akn"/>
+          <FRBRuri value="/us/bill/119/hr/2196/eng@2025-03-18/akn"/>
+          <FRBRdate date="2026-02-25" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <references>
+        <TLCPerson eId="hudson" href="/us/representative/richard-hudson" showAs="Rep. Richard Hudson (R-NC)"/>
+      </references>
+    </meta>
+    <preface>
+      <longTitle><p>HR.2196 — To provide for an extension of the legislative authority of the National Emergency Medical Services Memorial Foundation to establish a commemorative work in the District of Columbia and its environs.</p></longTitle>
+      <p>To provide for an extension of the legislative authority of the National Emergency Medical Services Memorial Foundation to establish a commemorative work in the District of Columbia and its environs.</p>
+    </preface>
+    <body>
+      <article eId="sec_1">
+        <heading>Section 1 Extension of legislative authority for memorial establishment</heading>
+        <content>
+          <p>Section 1(b) of Public Law 115–275 is amended by striking the period at the end and inserting , except that any reference in section 8903(e) of that chapter to the expiration at the end of or extension beyond a seven-year period shall be considered to be a reference to an expiration on or extension beyond November 3, 2032..</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

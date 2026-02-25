@@ -21,9 +21,18 @@
     {
       "index": 1,
       "type": "amendment",
+      "label": "Reported in Senate",
+      "date": "2025-03-03",
+      "versionCode": "RS",
+      "chamber": "Senate"
+    },
+    {
+      "index": 2,
+      "type": "amendment",
       "label": "Senate Passage",
       "date": "2025-03-14",
       "versionCode": "ES",
+      "chamber": "Senate",
       "voteRef": {
         "chamber": "Senate",
         "congress": 119,
@@ -31,15 +40,15 @@
         "rollNumber": 127,
         "date": "2025-03-14",
         "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00127.xml"
-      },
-      "chamber": "Senate"
+      }
     },
     {
-      "index": 2,
+      "index": 3,
       "type": "amendment",
       "label": "House Passage",
       "date": "2025-06-12",
       "versionCode": "ENR",
+      "chamber": "House",
       "voteRef": {
         "chamber": "House",
         "congress": 0,
@@ -47,11 +56,10 @@
         "rollNumber": 166,
         "date": "2025-06-12",
         "url": "https://clerk.house.gov/evs/2025/roll166.xml"
-      },
-      "chamber": "House"
+      }
     },
     {
-      "index": 3,
+      "index": 4,
       "type": "act",
       "label": "Public Law 119-26",
       "date": "2025-06-12",
@@ -65,8 +73,13 @@
       "type": "bill-xml"
     },
     {
+      "url": "https://www.congress.gov/119/bills/s331/BILLS-119s331rs.xml",
+      "filename": "02-rs.xml",
+      "type": "bill-xml"
+    },
+    {
       "url": "https://www.congress.gov/119/bills/s331/BILLS-119s331es.xml",
-      "filename": "02-es.xml",
+      "filename": "03-es.xml",
       "type": "bill-xml"
     },
     {
@@ -76,7 +89,7 @@
     },
     {
       "url": "https://www.congress.gov/119/bills/s331/BILLS-119s331enr.xml",
-      "filename": "03-enr.xml",
+      "filename": "04-enr.xml",
       "type": "bill-xml"
     },
     {

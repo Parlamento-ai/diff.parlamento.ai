@@ -7,20 +7,20 @@
         <FRBRWork>
           <FRBRthis value="/us/pl/119/27"/>
           <FRBRuri value="/us/pl/119/27"/>
-          <FRBRdate date="2025-07-18" name="enacted"/>
+          <FRBRdate date="2025-07-17" name="enacted"/>
           <FRBRauthor href="/us/congress"/>
           <FRBRcountry value="us"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/us/pl/119/27/eng@2025-07-18"/>
-          <FRBRuri value="/us/pl/119/27/eng@2025-07-18"/>
-          <FRBRdate date="2025-07-18" name="version"/>
+          <FRBRthis value="/us/pl/119/27/eng@2025-07-17"/>
+          <FRBRuri value="/us/pl/119/27/eng@2025-07-17"/>
+          <FRBRdate date="2025-07-17" name="version"/>
           <FRBRlanguage language="eng"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/us/pl/119/27/eng@2025-07-18/akn"/>
-          <FRBRuri value="/us/pl/119/27/eng@2025-07-18/akn"/>
-          <FRBRdate date="2026-02-24" name="generation"/>
+          <FRBRthis value="/us/pl/119/27/eng@2025-07-17/akn"/>
+          <FRBRuri value="/us/pl/119/27/eng@2025-07-17/akn"/>
+          <FRBRdate date="2026-02-25" name="generation"/>
         </FRBRManifestation>
       </identification>
     </meta>

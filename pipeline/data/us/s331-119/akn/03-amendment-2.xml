@@ -1,485 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
             xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
-  <amendment name="s331-119-house-passage">
+  <amendment name="s331-119-senate-passage">
     <meta>
       <identification source="#parlamento-ai">
         <FRBRWork>
-          <FRBRthis value="/us/bill/119/s/331/enr"/>
+          <FRBRthis value="/us/bill/119/s/331/es"/>
           <FRBRuri value="/us/bill/119/s/331"/>
-          <FRBRdate date="2025-06-12" name="passage"/>
-          <FRBRauthor href="/us/house"/>
+          <FRBRdate date="2025-03-14" name="passage"/>
+          <FRBRauthor href="/us/senate"/>
           <FRBRcountry value="us"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/us/bill/119/s/331/enr/eng@2025-06-12"/>
-          <FRBRuri value="/us/bill/119/s/331/eng@2025-06-12"/>
-          <FRBRdate date="2025-06-12" name="version"/>
+          <FRBRthis value="/us/bill/119/s/331/es/eng@2025-03-14"/>
+          <FRBRuri value="/us/bill/119/s/331/eng@2025-03-14"/>
+          <FRBRdate date="2025-03-14" name="version"/>
           <FRBRlanguage language="eng"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/us/bill/119/s/331/enr/eng@2025-06-12/akn"/>
-          <FRBRuri value="/us/bill/119/s/331/eng@2025-06-12/akn"/>
-          <FRBRdate date="2026-02-24" name="generation"/>
+          <FRBRthis value="/us/bill/119/s/331/es/eng@2025-03-14/akn"/>
+          <FRBRuri value="/us/bill/119/s/331/eng@2025-03-14/akn"/>
+          <FRBRdate date="2026-02-25" name="generation"/>
         </FRBRManifestation>
       </identification>
       <references>
-        <TLCOrganization eId="house" href="/us/house" showAs="United States House of Representatives"/>
+        <TLCOrganization eId="senate" href="/us/senate" showAs="United States Senate"/>
       </references>
     </meta>
     <preface>
-      <longTitle><p><docTitle>House Passage — S.331</docTitle></p></longTitle>
-      <p>Passed House by roll call vote 321-104 on 2025-06-12.</p>
+      <longTitle><p><docTitle>Senate Passage — S.331</docTitle></p></longTitle>
+      <p>Passed Senate by roll call vote 84-16 on 2025-03-14.</p>
     </preface>
     <amendmentBody>
       <amendmentContent>
-        <p>Passed House by roll call vote 321-104 on 2025-06-12.</p>
+        <p>Passed Senate by roll call vote 84-16 on 2025-03-14.</p>
       </amendmentContent>
     </amendmentBody>
     <akndiff:changeSet
-      base="/us/bill/119/s/331/eng@2025-03-14"
-      result="/us/bill/119/s/331/eng@2025-06-12">
-        <akndiff:vote date="2025-06-12" result="approved" source="/us/house/119/1/roll/166">
-          <akndiff:for count="321">
-            <akndiff:voter href="/us/representative/adams" showAs="Adams (D-NC)"/>
-            <akndiff:voter href="/us/representative/aderholt" showAs="Aderholt (R-AL)"/>
-            <akndiff:voter href="/us/representative/alford" showAs="Alford (R-MO)"/>
-            <akndiff:voter href="/us/representative/allen" showAs="Allen (R-GA)"/>
-            <akndiff:voter href="/us/representative/amo" showAs="Amo (D-RI)"/>
-            <akndiff:voter href="/us/representative/amodei-nv" showAs="Amodei (NV) (R-NV)"/>
-            <akndiff:voter href="/us/representative/arrington" showAs="Arrington (R-TX)"/>
-            <akndiff:voter href="/us/representative/auchincloss" showAs="Auchincloss (D-MA)"/>
-            <akndiff:voter href="/us/representative/babin" showAs="Babin (R-TX)"/>
-            <akndiff:voter href="/us/representative/bacon" showAs="Bacon (R-NE)"/>
-            <akndiff:voter href="/us/representative/baird" showAs="Baird (R-IN)"/>
-            <akndiff:voter href="/us/representative/balderson" showAs="Balderson (R-OH)"/>
-            <akndiff:voter href="/us/representative/barr" showAs="Barr (R-KY)"/>
-            <akndiff:voter href="/us/representative/barrett" showAs="Barrett (R-MI)"/>
-            <akndiff:voter href="/us/representative/baumgartner" showAs="Baumgartner (R-WA)"/>
-            <akndiff:voter href="/us/representative/bean-fl" showAs="Bean (FL) (R-FL)"/>
-            <akndiff:voter href="/us/representative/begich" showAs="Begich (R-AK)"/>
-            <akndiff:voter href="/us/representative/bentz" showAs="Bentz (R-OR)"/>
-            <akndiff:voter href="/us/representative/bergman" showAs="Bergman (R-MI)"/>
-            <akndiff:voter href="/us/representative/bice" showAs="Bice (R-OK)"/>
-            <akndiff:voter href="/us/representative/biggs-az" showAs="Biggs (AZ) (R-AZ)"/>
-            <akndiff:voter href="/us/representative/biggs-sc" showAs="Biggs (SC) (R-SC)"/>
-            <akndiff:voter href="/us/representative/bilirakis" showAs="Bilirakis (R-FL)"/>
-            <akndiff:voter href="/us/representative/bishop" showAs="Bishop (D-GA)"/>
-            <akndiff:voter href="/us/representative/boebert" showAs="Boebert (R-CO)"/>
-            <akndiff:voter href="/us/representative/bost" showAs="Bost (R-IL)"/>
-            <akndiff:voter href="/us/representative/boyle-pa" showAs="Boyle (PA) (D-PA)"/>
-            <akndiff:voter href="/us/representative/brecheen" showAs="Brecheen (R-OK)"/>
-            <akndiff:voter href="/us/representative/bresnahan" showAs="Bresnahan (R-PA)"/>
-            <akndiff:voter href="/us/representative/buchanan" showAs="Buchanan (R-FL)"/>
-            <akndiff:voter href="/us/representative/burchett" showAs="Burchett (R-TN)"/>
-            <akndiff:voter href="/us/representative/burlison" showAs="Burlison (R-MO)"/>
-            <akndiff:voter href="/us/representative/bynum" showAs="Bynum (D-OR)"/>
-            <akndiff:voter href="/us/representative/calvert" showAs="Calvert (R-CA)"/>
-            <akndiff:voter href="/us/representative/cammack" showAs="Cammack (R-FL)"/>
-            <akndiff:voter href="/us/representative/carbajal" showAs="Carbajal (D-CA)"/>
-            <akndiff:voter href="/us/representative/carey" showAs="Carey (R-OH)"/>
-            <akndiff:voter href="/us/representative/carter-ga" showAs="Carter (GA) (R-GA)"/>
-            <akndiff:voter href="/us/representative/carter-la" showAs="Carter (LA) (D-LA)"/>
-            <akndiff:voter href="/us/representative/carter-tx" showAs="Carter (TX) (R-TX)"/>
-            <akndiff:voter href="/us/representative/case" showAs="Case (D-HI)"/>
-            <akndiff:voter href="/us/representative/cherfilus-mccormick" showAs="Cherfilus-McCormick (D-FL)"/>
-            <akndiff:voter href="/us/representative/ciscomani" showAs="Ciscomani (R-AZ)"/>
-            <akndiff:voter href="/us/representative/cline" showAs="Cline (R-VA)"/>
-            <akndiff:voter href="/us/representative/cloud" showAs="Cloud (R-TX)"/>
-            <akndiff:voter href="/us/representative/clyde" showAs="Clyde (R-GA)"/>
-            <akndiff:voter href="/us/representative/cohen" showAs="Cohen (D-TN)"/>
-            <akndiff:voter href="/us/representative/cole" showAs="Cole (R-OK)"/>
-            <akndiff:voter href="/us/representative/collins" showAs="Collins (R-GA)"/>
-            <akndiff:voter href="/us/representative/comer" showAs="Comer (R-KY)"/>
-            <akndiff:voter href="/us/representative/conaway" showAs="Conaway (D-NJ)"/>
-            <akndiff:voter href="/us/representative/costa" showAs="Costa (D-CA)"/>
-            <akndiff:voter href="/us/representative/courtney" showAs="Courtney (D-CT)"/>
-            <akndiff:voter href="/us/representative/craig" showAs="Craig (D-MN)"/>
-            <akndiff:voter href="/us/representative/crane" showAs="Crane (R-AZ)"/>
-            <akndiff:voter href="/us/representative/crank" showAs="Crank (R-CO)"/>
-            <akndiff:voter href="/us/representative/crawford" showAs="Crawford (R-AR)"/>
-            <akndiff:voter href="/us/representative/crenshaw" showAs="Crenshaw (R-TX)"/>
-            <akndiff:voter href="/us/representative/cuellar" showAs="Cuellar (D-TX)"/>
-            <akndiff:voter href="/us/representative/davids-ks" showAs="Davids (KS) (D-KS)"/>
-            <akndiff:voter href="/us/representative/davidson" showAs="Davidson (R-OH)"/>
-            <akndiff:voter href="/us/representative/davis-nc" showAs="Davis (NC) (D-NC)"/>
-            <akndiff:voter href="/us/representative/de-la-cruz" showAs="De La Cruz (R-TX)"/>
-            <akndiff:voter href="/us/representative/delauro" showAs="DeLauro (D-CT)"/>
-            <akndiff:voter href="/us/representative/delbene" showAs="DelBene (D-WA)"/>
-            <akndiff:voter href="/us/representative/deluzio" showAs="Deluzio (D-PA)"/>
-            <akndiff:voter href="/us/representative/desjarlais" showAs="DesJarlais (R-TN)"/>
-            <akndiff:voter href="/us/representative/diaz-balart" showAs="Diaz-Balart (R-FL)"/>
-            <akndiff:voter href="/us/representative/donalds" showAs="Donalds (R-FL)"/>
-            <akndiff:voter href="/us/representative/downing" showAs="Downing (R-MT)"/>
-            <akndiff:voter href="/us/representative/dunn-fl" showAs="Dunn (FL) (R-FL)"/>
-            <akndiff:voter href="/us/representative/edwards" showAs="Edwards (R-NC)"/>
-            <akndiff:voter href="/us/representative/elfreth" showAs="Elfreth (D-MD)"/>
-            <akndiff:voter href="/us/representative/ellzey" showAs="Ellzey (R-TX)"/>
-            <akndiff:voter href="/us/representative/emmer" showAs="Emmer (R-MN)"/>
-            <akndiff:voter href="/us/representative/estes" showAs="Estes (R-KS)"/>
-            <akndiff:voter href="/us/representative/evans-co" showAs="Evans (CO) (R-CO)"/>
-            <akndiff:voter href="/us/representative/ezell" showAs="Ezell (R-MS)"/>
-            <akndiff:voter href="/us/representative/fallon" showAs="Fallon (R-TX)"/>
-            <akndiff:voter href="/us/representative/fedorchak" showAs="Fedorchak (R-ND)"/>
-            <akndiff:voter href="/us/representative/feenstra" showAs="Feenstra (R-IA)"/>
-            <akndiff:voter href="/us/representative/fields" showAs="Fields (D-LA)"/>
-            <akndiff:voter href="/us/representative/figures" showAs="Figures (D-AL)"/>
-            <akndiff:voter href="/us/representative/fine" showAs="Fine (R-FL)"/>
-            <akndiff:voter href="/us/representative/fischbach" showAs="Fischbach (R-MN)"/>
-            <akndiff:voter href="/us/representative/fitzgerald" showAs="Fitzgerald (R-WI)"/>
-            <akndiff:voter href="/us/representative/fitzpatrick" showAs="Fitzpatrick (R-PA)"/>
-            <akndiff:voter href="/us/representative/fleischmann" showAs="Fleischmann (R-TN)"/>
-            <akndiff:voter href="/us/representative/flood" showAs="Flood (R-NE)"/>
-            <akndiff:voter href="/us/representative/fong" showAs="Fong (R-CA)"/>
-            <akndiff:voter href="/us/representative/foster" showAs="Foster (D-IL)"/>
-            <akndiff:voter href="/us/representative/foushee" showAs="Foushee (D-NC)"/>
-            <akndiff:voter href="/us/representative/foxx" showAs="Foxx (R-NC)"/>
-            <akndiff:voter href="/us/representative/franklin-scott" showAs="Franklin, Scott (R-FL)"/>
-            <akndiff:voter href="/us/representative/friedman" showAs="Friedman (D-CA)"/>
-            <akndiff:voter href="/us/representative/fry" showAs="Fry (R-SC)"/>
-            <akndiff:voter href="/us/representative/fulcher" showAs="Fulcher (R-ID)"/>
-            <akndiff:voter href="/us/representative/garamendi" showAs="Garamendi (D-CA)"/>
-            <akndiff:voter href="/us/representative/garbarino" showAs="Garbarino (R-NY)"/>
-            <akndiff:voter href="/us/representative/gill-tx" showAs="Gill (TX) (R-TX)"/>
-            <akndiff:voter href="/us/representative/gillen" showAs="Gillen (D-NY)"/>
-            <akndiff:voter href="/us/representative/gimenez" showAs="Gimenez (R-FL)"/>
-            <akndiff:voter href="/us/representative/golden-me" showAs="Golden (ME) (D-ME)"/>
-            <akndiff:voter href="/us/representative/goldman-tx" showAs="Goldman (TX) (R-TX)"/>
-            <akndiff:voter href="/us/representative/gonzales-tony" showAs="Gonzales, Tony (R-TX)"/>
-            <akndiff:voter href="/us/representative/gonzalez-v" showAs="Gonzalez, V. (D-TX)"/>
-            <akndiff:voter href="/us/representative/gooden" showAs="Gooden (R-TX)"/>
-            <akndiff:voter href="/us/representative/goodlander" showAs="Goodlander (D-NH)"/>
-            <akndiff:voter href="/us/representative/gosar" showAs="Gosar (R-AZ)"/>
-            <akndiff:voter href="/us/representative/gottheimer" showAs="Gottheimer (D-NJ)"/>
-            <akndiff:voter href="/us/representative/graves" showAs="Graves (R-MO)"/>
-            <akndiff:voter href="/us/representative/gray" showAs="Gray (D-CA)"/>
-            <akndiff:voter href="/us/representative/green-tn" showAs="Green (TN) (R-TN)"/>
-            <akndiff:voter href="/us/representative/greene-ga" showAs="Greene (GA) (R-GA)"/>
-            <akndiff:voter href="/us/representative/griffith" showAs="Griffith (R-VA)"/>
-            <akndiff:voter href="/us/representative/grothman" showAs="Grothman (R-WI)"/>
-            <akndiff:voter href="/us/representative/guest" showAs="Guest (R-MS)"/>
-            <akndiff:voter href="/us/representative/guthrie" showAs="Guthrie (R-KY)"/>
-            <akndiff:voter href="/us/representative/hageman" showAs="Hageman (R-WY)"/>
-            <akndiff:voter href="/us/representative/hamadeh-az" showAs="Hamadeh (AZ) (R-AZ)"/>
-            <akndiff:voter href="/us/representative/harder-ca" showAs="Harder (CA) (D-CA)"/>
-            <akndiff:voter href="/us/representative/haridopolos" showAs="Haridopolos (R-FL)"/>
-            <akndiff:voter href="/us/representative/harrigan" showAs="Harrigan (R-NC)"/>
-            <akndiff:voter href="/us/representative/harris-md" showAs="Harris (MD) (R-MD)"/>
-            <akndiff:voter href="/us/representative/harris-nc" showAs="Harris (NC) (R-NC)"/>
-            <akndiff:voter href="/us/representative/harshbarger" showAs="Harshbarger (R-TN)"/>
-            <akndiff:voter href="/us/representative/hern-ok" showAs="Hern (OK) (R-OK)"/>
-            <akndiff:voter href="/us/representative/higgins-la" showAs="Higgins (LA) (R-LA)"/>
-            <akndiff:voter href="/us/representative/hill-ar" showAs="Hill (AR) (R-AR)"/>
-            <akndiff:voter href="/us/representative/himes" showAs="Himes (D-CT)"/>
-            <akndiff:voter href="/us/representative/hinson" showAs="Hinson (R-IA)"/>
-            <akndiff:voter href="/us/representative/horsford" showAs="Horsford (D-NV)"/>
-            <akndiff:voter href="/us/representative/houchin" showAs="Houchin (R-IN)"/>
-            <akndiff:voter href="/us/representative/houlahan" showAs="Houlahan (D-PA)"/>
-            <akndiff:voter href="/us/representative/hoyer" showAs="Hoyer (D-MD)"/>
-            <akndiff:voter href="/us/representative/hoyle-or" showAs="Hoyle (OR) (D-OR)"/>
-            <akndiff:voter href="/us/representative/hudson" showAs="Hudson (R-NC)"/>
-            <akndiff:voter href="/us/representative/huizenga" showAs="Huizenga (R-MI)"/>
-            <akndiff:voter href="/us/representative/hunt" showAs="Hunt (R-TX)"/>
-            <akndiff:voter href="/us/representative/hurd-co" showAs="Hurd (CO) (R-CO)"/>
-            <akndiff:voter href="/us/representative/issa" showAs="Issa (R-CA)"/>
-            <akndiff:voter href="/us/representative/ivey" showAs="Ivey (D-MD)"/>
-            <akndiff:voter href="/us/representative/jack" showAs="Jack (R-GA)"/>
-            <akndiff:voter href="/us/representative/jackson-il" showAs="Jackson (IL) (D-IL)"/>
-            <akndiff:voter href="/us/representative/jackson-tx" showAs="Jackson (TX) (R-TX)"/>
-            <akndiff:voter href="/us/representative/james" showAs="James (R-MI)"/>
-            <akndiff:voter href="/us/representative/johnson-la" showAs="Johnson (LA) (R-LA)"/>
-            <akndiff:voter href="/us/representative/johnson-sd" showAs="Johnson (SD) (R-SD)"/>
-            <akndiff:voter href="/us/representative/johnson-tx" showAs="Johnson (TX) (D-TX)"/>
-            <akndiff:voter href="/us/representative/jordan" showAs="Jordan (R-OH)"/>
-            <akndiff:voter href="/us/representative/joyce-oh" showAs="Joyce (OH) (R-OH)"/>
-            <akndiff:voter href="/us/representative/joyce-pa" showAs="Joyce (PA) (R-PA)"/>
-            <akndiff:voter href="/us/representative/kaptur" showAs="Kaptur (D-OH)"/>
-            <akndiff:voter href="/us/representative/kean" showAs="Kean (R-NJ)"/>
-            <akndiff:voter href="/us/representative/keating" showAs="Keating (D-MA)"/>
-            <akndiff:voter href="/us/representative/kelly-ms" showAs="Kelly (MS) (R-MS)"/>
-            <akndiff:voter href="/us/representative/kelly-pa" showAs="Kelly (PA) (R-PA)"/>
-            <akndiff:voter href="/us/representative/kennedy-ny" showAs="Kennedy (NY) (D-NY)"/>
-            <akndiff:voter href="/us/representative/kennedy-ut" showAs="Kennedy (UT) (R-UT)"/>
-            <akndiff:voter href="/us/representative/kiggans-va" showAs="Kiggans (VA) (R-VA)"/>
-            <akndiff:voter href="/us/representative/kiley-ca" showAs="Kiley (CA) (R-CA)"/>
-            <akndiff:voter href="/us/representative/kim" showAs="Kim (R-CA)"/>
-            <akndiff:voter href="/us/representative/knott" showAs="Knott (R-NC)"/>
-            <akndiff:voter href="/us/representative/kustoff" showAs="Kustoff (R-TN)"/>
-            <akndiff:voter href="/us/representative/lahood" showAs="LaHood (R-IL)"/>
-            <akndiff:voter href="/us/representative/lalota" showAs="LaLota (R-NY)"/>
-            <akndiff:voter href="/us/representative/lamalfa" showAs="LaMalfa (R-CA)"/>
-            <akndiff:voter href="/us/representative/landsman" showAs="Landsman (D-OH)"/>
-            <akndiff:voter href="/us/representative/langworthy" showAs="Langworthy (R-NY)"/>
-            <akndiff:voter href="/us/representative/larsen-wa" showAs="Larsen (WA) (D-WA)"/>
-            <akndiff:voter href="/us/representative/larson-ct" showAs="Larson (CT) (D-CT)"/>
-            <akndiff:voter href="/us/representative/latimer" showAs="Latimer (D-NY)"/>
-            <akndiff:voter href="/us/representative/latta" showAs="Latta (R-OH)"/>
-            <akndiff:voter href="/us/representative/lawler" showAs="Lawler (R-NY)"/>
-            <akndiff:voter href="/us/representative/lee-nv" showAs="Lee (NV) (D-NV)"/>
-            <akndiff:voter href="/us/representative/letlow" showAs="Letlow (R-LA)"/>
-            <akndiff:voter href="/us/representative/levin" showAs="Levin (D-CA)"/>
-            <akndiff:voter href="/us/representative/loudermilk" showAs="Loudermilk (R-GA)"/>
-            <akndiff:voter href="/us/representative/lucas" showAs="Lucas (R-OK)"/>
-            <akndiff:voter href="/us/representative/luna" showAs="Luna (R-FL)"/>
-            <akndiff:voter href="/us/representative/luttrell" showAs="Luttrell (R-TX)"/>
-            <akndiff:voter href="/us/representative/lynch" showAs="Lynch (D-MA)"/>
-            <akndiff:voter href="/us/representative/mace" showAs="Mace (R-SC)"/>
-            <akndiff:voter href="/us/representative/mackenzie" showAs="Mackenzie (R-PA)"/>
-            <akndiff:voter href="/us/representative/magaziner" showAs="Magaziner (D-RI)"/>
-            <akndiff:voter href="/us/representative/malliotakis" showAs="Malliotakis (R-NY)"/>
-            <akndiff:voter href="/us/representative/maloy" showAs="Maloy (R-UT)"/>
-            <akndiff:voter href="/us/representative/mann" showAs="Mann (R-KS)"/>
-            <akndiff:voter href="/us/representative/mannion" showAs="Mannion (D-NY)"/>
-            <akndiff:voter href="/us/representative/mast" showAs="Mast (R-FL)"/>
-            <akndiff:voter href="/us/representative/mcbride" showAs="McBride (D-DE)"/>
-            <akndiff:voter href="/us/representative/mccaul" showAs="McCaul (R-TX)"/>
-            <akndiff:voter href="/us/representative/mcclain" showAs="McClain (R-MI)"/>
-            <akndiff:voter href="/us/representative/mcclain-delaney" showAs="McClain Delaney (D-MD)"/>
-            <akndiff:voter href="/us/representative/mcclintock" showAs="McClintock (R-CA)"/>
-            <akndiff:voter href="/us/representative/mccormick" showAs="McCormick (R-GA)"/>
-            <akndiff:voter href="/us/representative/mcdonald-rivet" showAs="McDonald Rivet (D-MI)"/>
-            <akndiff:voter href="/us/representative/mcdowell" showAs="McDowell (R-NC)"/>
-            <akndiff:voter href="/us/representative/mcguire" showAs="McGuire (R-VA)"/>
-            <akndiff:voter href="/us/representative/messmer" showAs="Messmer (R-IN)"/>
-            <akndiff:voter href="/us/representative/meuser" showAs="Meuser (R-PA)"/>
-            <akndiff:voter href="/us/representative/mfume" showAs="Mfume (D-MD)"/>
-            <akndiff:voter href="/us/representative/miller-il" showAs="Miller (IL) (R-IL)"/>
-            <akndiff:voter href="/us/representative/miller-oh" showAs="Miller (OH) (R-OH)"/>
-            <akndiff:voter href="/us/representative/miller-wv" showAs="Miller (WV) (R-WV)"/>
-            <akndiff:voter href="/us/representative/miller-meeks" showAs="Miller-Meeks (R-IA)"/>
-            <akndiff:voter href="/us/representative/mills" showAs="Mills (R-FL)"/>
-            <akndiff:voter href="/us/representative/min" showAs="Min (D-CA)"/>
-            <akndiff:voter href="/us/representative/moolenaar" showAs="Moolenaar (R-MI)"/>
-            <akndiff:voter href="/us/representative/moore-al" showAs="Moore (AL) (R-AL)"/>
-            <akndiff:voter href="/us/representative/moore-nc" showAs="Moore (NC) (R-NC)"/>
-            <akndiff:voter href="/us/representative/moore-ut" showAs="Moore (UT) (R-UT)"/>
-            <akndiff:voter href="/us/representative/moore-wv" showAs="Moore (WV) (R-WV)"/>
-            <akndiff:voter href="/us/representative/moran" showAs="Moran (R-TX)"/>
-            <akndiff:voter href="/us/representative/morelle" showAs="Morelle (D-NY)"/>
-            <akndiff:voter href="/us/representative/morrison" showAs="Morrison (D-MN)"/>
-            <akndiff:voter href="/us/representative/moskowitz" showAs="Moskowitz (D-FL)"/>
-            <akndiff:voter href="/us/representative/mrvan" showAs="Mrvan (D-IN)"/>
-            <akndiff:voter href="/us/representative/murphy" showAs="Murphy (R-NC)"/>
-            <akndiff:voter href="/us/representative/neal" showAs="Neal (D-MA)"/>
-            <akndiff:voter href="/us/representative/nehls" showAs="Nehls (R-TX)"/>
-            <akndiff:voter href="/us/representative/newhouse" showAs="Newhouse (R-WA)"/>
-            <akndiff:voter href="/us/representative/norman" showAs="Norman (R-SC)"/>
-            <akndiff:voter href="/us/representative/nunn-ia" showAs="Nunn (IA) (R-IA)"/>
-            <akndiff:voter href="/us/representative/obernolte" showAs="Obernolte (R-CA)"/>
-            <akndiff:voter href="/us/representative/ogles" showAs="Ogles (R-TN)"/>
-            <akndiff:voter href="/us/representative/olszewski" showAs="Olszewski (D-MD)"/>
-            <akndiff:voter href="/us/representative/onder" showAs="Onder (R-MO)"/>
-            <akndiff:voter href="/us/representative/owens" showAs="Owens (R-UT)"/>
-            <akndiff:voter href="/us/representative/palmer" showAs="Palmer (R-AL)"/>
-            <akndiff:voter href="/us/representative/panetta" showAs="Panetta (D-CA)"/>
-            <akndiff:voter href="/us/representative/pappas" showAs="Pappas (D-NH)"/>
-            <akndiff:voter href="/us/representative/patronis" showAs="Patronis (R-FL)"/>
-            <akndiff:voter href="/us/representative/pelosi" showAs="Pelosi (D-CA)"/>
-            <akndiff:voter href="/us/representative/perez" showAs="Perez (D-WA)"/>
-            <akndiff:voter href="/us/representative/perry" showAs="Perry (R-PA)"/>
-            <akndiff:voter href="/us/representative/peters" showAs="Peters (D-CA)"/>
-            <akndiff:voter href="/us/representative/pfluger" showAs="Pfluger (R-TX)"/>
-            <akndiff:voter href="/us/representative/pou" showAs="Pou (D-NJ)"/>
-            <akndiff:voter href="/us/representative/quigley" showAs="Quigley (D-IL)"/>
-            <akndiff:voter href="/us/representative/reschenthaler" showAs="Reschenthaler (R-PA)"/>
-            <akndiff:voter href="/us/representative/riley-ny" showAs="Riley (NY) (D-NY)"/>
-            <akndiff:voter href="/us/representative/rogers-al" showAs="Rogers (AL) (R-AL)"/>
-            <akndiff:voter href="/us/representative/rogers-ky" showAs="Rogers (KY) (R-KY)"/>
-            <akndiff:voter href="/us/representative/rose" showAs="Rose (R-TN)"/>
-            <akndiff:voter href="/us/representative/ross" showAs="Ross (D-NC)"/>
-            <akndiff:voter href="/us/representative/rouzer" showAs="Rouzer (R-NC)"/>
-            <akndiff:voter href="/us/representative/roy" showAs="Roy (R-TX)"/>
-            <akndiff:voter href="/us/representative/ruiz" showAs="Ruiz (D-CA)"/>
-            <akndiff:voter href="/us/representative/rulli" showAs="Rulli (R-OH)"/>
-            <akndiff:voter href="/us/representative/rutherford" showAs="Rutherford (R-FL)"/>
-            <akndiff:voter href="/us/representative/ryan" showAs="Ryan (D-NY)"/>
-            <akndiff:voter href="/us/representative/salazar" showAs="Salazar (R-FL)"/>
-            <akndiff:voter href="/us/representative/salinas" showAs="Salinas (D-OR)"/>
-            <akndiff:voter href="/us/representative/scalise" showAs="Scalise (R-LA)"/>
-            <akndiff:voter href="/us/representative/schmidt" showAs="Schmidt (R-KS)"/>
-            <akndiff:voter href="/us/representative/schneider" showAs="Schneider (D-IL)"/>
-            <akndiff:voter href="/us/representative/scholten" showAs="Scholten (D-MI)"/>
-            <akndiff:voter href="/us/representative/schrier" showAs="Schrier (D-WA)"/>
-            <akndiff:voter href="/us/representative/schweikert" showAs="Schweikert (R-AZ)"/>
-            <akndiff:voter href="/us/representative/scott-austin" showAs="Scott, Austin (R-GA)"/>
-            <akndiff:voter href="/us/representative/scott-david" showAs="Scott, David (D-GA)"/>
-            <akndiff:voter href="/us/representative/self" showAs="Self (R-TX)"/>
-            <akndiff:voter href="/us/representative/sessions" showAs="Sessions (R-TX)"/>
-            <akndiff:voter href="/us/representative/sewell" showAs="Sewell (D-AL)"/>
-            <akndiff:voter href="/us/representative/sherrill" showAs="Sherrill (D-NJ)"/>
-            <akndiff:voter href="/us/representative/shreve" showAs="Shreve (R-IN)"/>
-            <akndiff:voter href="/us/representative/simpson" showAs="Simpson (R-ID)"/>
-            <akndiff:voter href="/us/representative/smith-mo" showAs="Smith (MO) (R-MO)"/>
-            <akndiff:voter href="/us/representative/smith-ne" showAs="Smith (NE) (R-NE)"/>
-            <akndiff:voter href="/us/representative/smith-nj" showAs="Smith (NJ) (R-NJ)"/>
-            <akndiff:voter href="/us/representative/smucker" showAs="Smucker (R-PA)"/>
-            <akndiff:voter href="/us/representative/sorensen" showAs="Sorensen (D-IL)"/>
-            <akndiff:voter href="/us/representative/spartz" showAs="Spartz (R-IN)"/>
-            <akndiff:voter href="/us/representative/stanton" showAs="Stanton (D-AZ)"/>
-            <akndiff:voter href="/us/representative/stauber" showAs="Stauber (R-MN)"/>
-            <akndiff:voter href="/us/representative/stefanik" showAs="Stefanik (R-NY)"/>
-            <akndiff:voter href="/us/representative/steil" showAs="Steil (R-WI)"/>
-            <akndiff:voter href="/us/representative/steube" showAs="Steube (R-FL)"/>
-            <akndiff:voter href="/us/representative/stevens" showAs="Stevens (D-MI)"/>
-            <akndiff:voter href="/us/representative/strickland" showAs="Strickland (D-WA)"/>
-            <akndiff:voter href="/us/representative/strong" showAs="Strong (R-AL)"/>
-            <akndiff:voter href="/us/representative/stutzman" showAs="Stutzman (R-IN)"/>
-            <akndiff:voter href="/us/representative/subramanyam" showAs="Subramanyam (D-VA)"/>
-            <akndiff:voter href="/us/representative/suozzi" showAs="Suozzi (D-NY)"/>
-            <akndiff:voter href="/us/representative/swalwell" showAs="Swalwell (D-CA)"/>
-            <akndiff:voter href="/us/representative/sykes" showAs="Sykes (D-OH)"/>
-            <akndiff:voter href="/us/representative/takano" showAs="Takano (D-CA)"/>
-            <akndiff:voter href="/us/representative/taylor" showAs="Taylor (R-OH)"/>
-            <akndiff:voter href="/us/representative/tenney" showAs="Tenney (R-NY)"/>
-            <akndiff:voter href="/us/representative/thompson-ca" showAs="Thompson (CA) (D-CA)"/>
-            <akndiff:voter href="/us/representative/thompson-pa" showAs="Thompson (PA) (R-PA)"/>
-            <akndiff:voter href="/us/representative/tiffany" showAs="Tiffany (R-WI)"/>
-            <akndiff:voter href="/us/representative/timmons" showAs="Timmons (R-SC)"/>
-            <akndiff:voter href="/us/representative/titus" showAs="Titus (D-NV)"/>
-            <akndiff:voter href="/us/representative/torres-ca" showAs="Torres (CA) (D-CA)"/>
-            <akndiff:voter href="/us/representative/torres-ny" showAs="Torres (NY) (D-NY)"/>
-            <akndiff:voter href="/us/representative/tran" showAs="Tran (D-CA)"/>
-            <akndiff:voter href="/us/representative/turner-oh" showAs="Turner (OH) (R-OH)"/>
-            <akndiff:voter href="/us/representative/valadao" showAs="Valadao (R-CA)"/>
-            <akndiff:voter href="/us/representative/van-drew" showAs="Van Drew (R-NJ)"/>
-            <akndiff:voter href="/us/representative/van-duyne" showAs="Van Duyne (R-TX)"/>
-            <akndiff:voter href="/us/representative/van-orden" showAs="Van Orden (R-WI)"/>
-            <akndiff:voter href="/us/representative/vasquez" showAs="Vasquez (D-NM)"/>
-            <akndiff:voter href="/us/representative/veasey" showAs="Veasey (D-TX)"/>
-            <akndiff:voter href="/us/representative/vindman" showAs="Vindman (D-VA)"/>
-            <akndiff:voter href="/us/representative/wagner" showAs="Wagner (R-MO)"/>
-            <akndiff:voter href="/us/representative/walberg" showAs="Walberg (R-MI)"/>
-            <akndiff:voter href="/us/representative/wasserman-schultz" showAs="Wasserman Schultz (D-FL)"/>
-            <akndiff:voter href="/us/representative/weber-tx" showAs="Weber (TX) (R-TX)"/>
-            <akndiff:voter href="/us/representative/webster-fl" showAs="Webster (FL) (R-FL)"/>
-            <akndiff:voter href="/us/representative/westerman" showAs="Westerman (R-AR)"/>
-            <akndiff:voter href="/us/representative/whitesides" showAs="Whitesides (D-CA)"/>
-            <akndiff:voter href="/us/representative/wied" showAs="Wied (R-WI)"/>
-            <akndiff:voter href="/us/representative/williams-tx" showAs="Williams (TX) (R-TX)"/>
-            <akndiff:voter href="/us/representative/wilson-fl" showAs="Wilson (FL) (D-FL)"/>
-            <akndiff:voter href="/us/representative/wilson-sc" showAs="Wilson (SC) (R-SC)"/>
-            <akndiff:voter href="/us/representative/wittman" showAs="Wittman (R-VA)"/>
-            <akndiff:voter href="/us/representative/womack" showAs="Womack (R-AR)"/>
-            <akndiff:voter href="/us/representative/yakym" showAs="Yakym (R-IN)"/>
-            <akndiff:voter href="/us/representative/zinke" showAs="Zinke (R-MT)"/>
+      base="/us/bill/119/s/331/eng@2025-03-03"
+      result="/us/bill/119/s/331/eng@2025-03-14">
+        <akndiff:vote date="2025-03-14" result="approved" source="/us/senate/119/1/vote/127">
+          <akndiff:for count="84">
+            <akndiff:voter href="/us/senator/tammy-baldwin" showAs="Tammy Baldwin (D-WI)"/>
+            <akndiff:voter href="/us/senator/jim-banks" showAs="Jim Banks (R-IN)"/>
+            <akndiff:voter href="/us/senator/john-barrasso" showAs="John Barrasso (R-WY)"/>
+            <akndiff:voter href="/us/senator/michael-bennet" showAs="Michael Bennet (D-CO)"/>
+            <akndiff:voter href="/us/senator/marsha-blackburn" showAs="Marsha Blackburn (R-TN)"/>
+            <akndiff:voter href="/us/senator/richard-blumenthal" showAs="Richard Blumenthal (D-CT)"/>
+            <akndiff:voter href="/us/senator/john-boozman" showAs="John Boozman (R-AR)"/>
+            <akndiff:voter href="/us/senator/katie-britt" showAs="Katie Britt (R-AL)"/>
+            <akndiff:voter href="/us/senator/ted-budd" showAs="Ted Budd (R-NC)"/>
+            <akndiff:voter href="/us/senator/maria-cantwell" showAs="Maria Cantwell (D-WA)"/>
+            <akndiff:voter href="/us/senator/shelley-capito" showAs="Shelley Capito (R-WV)"/>
+            <akndiff:voter href="/us/senator/bill-cassidy" showAs="Bill Cassidy (R-LA)"/>
+            <akndiff:voter href="/us/senator/susan-collins" showAs="Susan Collins (R-ME)"/>
+            <akndiff:voter href="/us/senator/christopher-coons" showAs="Christopher Coons (D-DE)"/>
+            <akndiff:voter href="/us/senator/john-cornyn" showAs="John Cornyn (R-TX)"/>
+            <akndiff:voter href="/us/senator/catherine-cortez-masto" showAs="Catherine Cortez Masto (D-NV)"/>
+            <akndiff:voter href="/us/senator/tom-cotton" showAs="Tom Cotton (R-AR)"/>
+            <akndiff:voter href="/us/senator/kevin-cramer" showAs="Kevin Cramer (R-ND)"/>
+            <akndiff:voter href="/us/senator/mike-crapo" showAs="Mike Crapo (R-ID)"/>
+            <akndiff:voter href="/us/senator/ted-cruz" showAs="Ted Cruz (R-TX)"/>
+            <akndiff:voter href="/us/senator/john-curtis" showAs="John Curtis (R-UT)"/>
+            <akndiff:voter href="/us/senator/steve-daines" showAs="Steve Daines (R-MT)"/>
+            <akndiff:voter href="/us/senator/richard-durbin" showAs="Richard Durbin (D-IL)"/>
+            <akndiff:voter href="/us/senator/joni-ernst" showAs="Joni Ernst (R-IA)"/>
+            <akndiff:voter href="/us/senator/john-fetterman" showAs="John Fetterman (D-PA)"/>
+            <akndiff:voter href="/us/senator/deb-fischer" showAs="Deb Fischer (R-NE)"/>
+            <akndiff:voter href="/us/senator/ruben-gallego" showAs="Ruben Gallego (D-AZ)"/>
+            <akndiff:voter href="/us/senator/kirsten-gillibrand" showAs="Kirsten Gillibrand (D-NY)"/>
+            <akndiff:voter href="/us/senator/lindsey-graham" showAs="Lindsey Graham (R-SC)"/>
+            <akndiff:voter href="/us/senator/chuck-grassley" showAs="Chuck Grassley (R-IA)"/>
+            <akndiff:voter href="/us/senator/bill-hagerty" showAs="Bill Hagerty (R-TN)"/>
+            <akndiff:voter href="/us/senator/maggie-hassan" showAs="Maggie Hassan (D-NH)"/>
+            <akndiff:voter href="/us/senator/josh-hawley" showAs="Josh Hawley (R-MO)"/>
+            <akndiff:voter href="/us/senator/martin-heinrich" showAs="Martin Heinrich (D-NM)"/>
+            <akndiff:voter href="/us/senator/john-hickenlooper" showAs="John Hickenlooper (D-CO)"/>
+            <akndiff:voter href="/us/senator/john-hoeven" showAs="John Hoeven (R-ND)"/>
+            <akndiff:voter href="/us/senator/jon-husted" showAs="Jon Husted (R-OH)"/>
+            <akndiff:voter href="/us/senator/cindy-hyde-smith" showAs="Cindy Hyde-Smith (R-MS)"/>
+            <akndiff:voter href="/us/senator/ron-johnson" showAs="Ron Johnson (R-WI)"/>
+            <akndiff:voter href="/us/senator/james-justice" showAs="James Justice (R-WV)"/>
+            <akndiff:voter href="/us/senator/timothy-kaine" showAs="Timothy Kaine (D-VA)"/>
+            <akndiff:voter href="/us/senator/mark-kelly" showAs="Mark Kelly (D-AZ)"/>
+            <akndiff:voter href="/us/senator/john-kennedy" showAs="John Kennedy (R-LA)"/>
+            <akndiff:voter href="/us/senator/andy-kim" showAs="Andy Kim (D-NJ)"/>
+            <akndiff:voter href="/us/senator/angus-king" showAs="Angus King (I-ME)"/>
+            <akndiff:voter href="/us/senator/amy-klobuchar" showAs="Amy Klobuchar (D-MN)"/>
+            <akndiff:voter href="/us/senator/james-lankford" showAs="James Lankford (R-OK)"/>
+            <akndiff:voter href="/us/senator/mike-lee" showAs="Mike Lee (R-UT)"/>
+            <akndiff:voter href="/us/senator/ben-lujan" showAs="Ben Lujan (D-NM)"/>
+            <akndiff:voter href="/us/senator/cynthia-lummis" showAs="Cynthia Lummis (R-WY)"/>
+            <akndiff:voter href="/us/senator/roger-marshall" showAs="Roger Marshall (R-KS)"/>
+            <akndiff:voter href="/us/senator/mitch-mcconnell" showAs="Mitch McConnell (R-KY)"/>
+            <akndiff:voter href="/us/senator/david-mccormick" showAs="David McCormick (R-PA)"/>
+            <akndiff:voter href="/us/senator/ashley-moody" showAs="Ashley Moody (R-FL)"/>
+            <akndiff:voter href="/us/senator/jerry-moran" showAs="Jerry Moran (R-KS)"/>
+            <akndiff:voter href="/us/senator/bernie-moreno" showAs="Bernie Moreno (R-OH)"/>
+            <akndiff:voter href="/us/senator/markwayne-mullin" showAs="Markwayne Mullin (R-OK)"/>
+            <akndiff:voter href="/us/senator/lisa-murkowski" showAs="Lisa Murkowski (R-AK)"/>
+            <akndiff:voter href="/us/senator/patty-murray" showAs="Patty Murray (D-WA)"/>
+            <akndiff:voter href="/us/senator/jon-ossoff" showAs="Jon Ossoff (D-GA)"/>
+            <akndiff:voter href="/us/senator/rand-paul" showAs="Rand Paul (R-KY)"/>
+            <akndiff:voter href="/us/senator/gary-peters" showAs="Gary Peters (D-MI)"/>
+            <akndiff:voter href="/us/senator/john-reed" showAs="John Reed (D-RI)"/>
+            <akndiff:voter href="/us/senator/pete-ricketts" showAs="Pete Ricketts (R-NE)"/>
+            <akndiff:voter href="/us/senator/james-risch" showAs="James Risch (R-ID)"/>
+            <akndiff:voter href="/us/senator/jacky-rosen" showAs="Jacky Rosen (D-NV)"/>
+            <akndiff:voter href="/us/senator/mike-rounds" showAs="Mike Rounds (R-SD)"/>
+            <akndiff:voter href="/us/senator/brian-schatz" showAs="Brian Schatz (D-HI)"/>
+            <akndiff:voter href="/us/senator/eric-schmitt" showAs="Eric Schmitt (R-MO)"/>
+            <akndiff:voter href="/us/senator/charles-schumer" showAs="Charles Schumer (D-NY)"/>
+            <akndiff:voter href="/us/senator/rick-scott" showAs="Rick Scott (R-FL)"/>
+            <akndiff:voter href="/us/senator/tim-scott" showAs="Tim Scott (R-SC)"/>
+            <akndiff:voter href="/us/senator/jeanne-shaheen" showAs="Jeanne Shaheen (D-NH)"/>
+            <akndiff:voter href="/us/senator/tim-sheehy" showAs="Tim Sheehy (R-MT)"/>
+            <akndiff:voter href="/us/senator/elissa-slotkin" showAs="Elissa Slotkin (D-MI)"/>
+            <akndiff:voter href="/us/senator/tina-smith" showAs="Tina Smith (D-MN)"/>
+            <akndiff:voter href="/us/senator/dan-sullivan" showAs="Dan Sullivan (R-AK)"/>
+            <akndiff:voter href="/us/senator/john-thune" showAs="John Thune (R-SD)"/>
+            <akndiff:voter href="/us/senator/thomas-tillis" showAs="Thomas Tillis (R-NC)"/>
+            <akndiff:voter href="/us/senator/tommy-tuberville" showAs="Tommy Tuberville (R-AL)"/>
+            <akndiff:voter href="/us/senator/mark-warner" showAs="Mark Warner (D-VA)"/>
+            <akndiff:voter href="/us/senator/sheldon-whitehouse" showAs="Sheldon Whitehouse (D-RI)"/>
+            <akndiff:voter href="/us/senator/roger-wicker" showAs="Roger Wicker (R-MS)"/>
+            <akndiff:voter href="/us/senator/todd-young" showAs="Todd Young (R-IN)"/>
           </akndiff:for>
-          <akndiff:against count="104">
-            <akndiff:voter href="/us/representative/aguilar" showAs="Aguilar (D-CA)"/>
-            <akndiff:voter href="/us/representative/ansari" showAs="Ansari (D-AZ)"/>
-            <akndiff:voter href="/us/representative/balint" showAs="Balint (D-VT)"/>
-            <akndiff:voter href="/us/representative/barragn" showAs="Barragán (D-CA)"/>
-            <akndiff:voter href="/us/representative/bell" showAs="Bell (D-MO)"/>
-            <akndiff:voter href="/us/representative/bera" showAs="Bera (D-CA)"/>
-            <akndiff:voter href="/us/representative/beyer" showAs="Beyer (D-VA)"/>
-            <akndiff:voter href="/us/representative/bonamici" showAs="Bonamici (D-OR)"/>
-            <akndiff:voter href="/us/representative/brown" showAs="Brown (D-OH)"/>
-            <akndiff:voter href="/us/representative/brownley" showAs="Brownley (D-CA)"/>
-            <akndiff:voter href="/us/representative/budzinski" showAs="Budzinski (D-IL)"/>
-            <akndiff:voter href="/us/representative/carson" showAs="Carson (D-IN)"/>
-            <akndiff:voter href="/us/representative/casar" showAs="Casar (D-TX)"/>
-            <akndiff:voter href="/us/representative/casten" showAs="Casten (D-IL)"/>
-            <akndiff:voter href="/us/representative/castor-fl" showAs="Castor (FL) (D-FL)"/>
-            <akndiff:voter href="/us/representative/castro-tx" showAs="Castro (TX) (D-TX)"/>
-            <akndiff:voter href="/us/representative/chu" showAs="Chu (D-CA)"/>
-            <akndiff:voter href="/us/representative/cisneros" showAs="Cisneros (D-CA)"/>
-            <akndiff:voter href="/us/representative/clark-ma" showAs="Clark (MA) (D-MA)"/>
-            <akndiff:voter href="/us/representative/clarke-ny" showAs="Clarke (NY) (D-NY)"/>
-            <akndiff:voter href="/us/representative/cleaver" showAs="Cleaver (D-MO)"/>
-            <akndiff:voter href="/us/representative/clyburn" showAs="Clyburn (D-SC)"/>
-            <akndiff:voter href="/us/representative/crockett" showAs="Crockett (D-TX)"/>
-            <akndiff:voter href="/us/representative/crow" showAs="Crow (D-CO)"/>
-            <akndiff:voter href="/us/representative/davis-il" showAs="Davis (IL) (D-IL)"/>
-            <akndiff:voter href="/us/representative/dean-pa" showAs="Dean (PA) (D-PA)"/>
-            <akndiff:voter href="/us/representative/degette" showAs="DeGette (D-CO)"/>
-            <akndiff:voter href="/us/representative/desaulnier" showAs="DeSaulnier (D-CA)"/>
-            <akndiff:voter href="/us/representative/dexter" showAs="Dexter (D-OR)"/>
-            <akndiff:voter href="/us/representative/dingell" showAs="Dingell (D-MI)"/>
-            <akndiff:voter href="/us/representative/doggett" showAs="Doggett (D-TX)"/>
-            <akndiff:voter href="/us/representative/escobar" showAs="Escobar (D-TX)"/>
-            <akndiff:voter href="/us/representative/espaillat" showAs="Espaillat (D-NY)"/>
-            <akndiff:voter href="/us/representative/evans-pa" showAs="Evans (PA) (D-PA)"/>
-            <akndiff:voter href="/us/representative/fletcher" showAs="Fletcher (D-TX)"/>
-            <akndiff:voter href="/us/representative/frankel-lois" showAs="Frankel, Lois (D-FL)"/>
-            <akndiff:voter href="/us/representative/frost" showAs="Frost (D-FL)"/>
-            <akndiff:voter href="/us/representative/garcia-ca" showAs="Garcia (CA) (D-CA)"/>
-            <akndiff:voter href="/us/representative/garca-il" showAs="García (IL) (D-IL)"/>
-            <akndiff:voter href="/us/representative/garcia-tx" showAs="Garcia (TX) (D-TX)"/>
-            <akndiff:voter href="/us/representative/goldman-ny" showAs="Goldman (NY) (D-NY)"/>
-            <akndiff:voter href="/us/representative/gomez" showAs="Gomez (D-CA)"/>
-            <akndiff:voter href="/us/representative/green-al-tx" showAs="Green, Al (TX) (D-TX)"/>
-            <akndiff:voter href="/us/representative/hayes" showAs="Hayes (D-CT)"/>
-            <akndiff:voter href="/us/representative/huffman" showAs="Huffman (D-CA)"/>
-            <akndiff:voter href="/us/representative/jacobs" showAs="Jacobs (D-CA)"/>
-            <akndiff:voter href="/us/representative/jayapal" showAs="Jayapal (D-WA)"/>
-            <akndiff:voter href="/us/representative/jeffries" showAs="Jeffries (D-NY)"/>
-            <akndiff:voter href="/us/representative/johnson-ga" showAs="Johnson (GA) (D-GA)"/>
-            <akndiff:voter href="/us/representative/kamlager-dove" showAs="Kamlager-Dove (D-CA)"/>
-            <akndiff:voter href="/us/representative/kelly-il" showAs="Kelly (IL) (D-IL)"/>
-            <akndiff:voter href="/us/representative/khanna" showAs="Khanna (D-CA)"/>
-            <akndiff:voter href="/us/representative/krishnamoorthi" showAs="Krishnamoorthi (D-IL)"/>
-            <akndiff:voter href="/us/representative/lee-pa" showAs="Lee (PA) (D-PA)"/>
-            <akndiff:voter href="/us/representative/leger-fernandez" showAs="Leger Fernandez (D-NM)"/>
-            <akndiff:voter href="/us/representative/liccardo" showAs="Liccardo (D-CA)"/>
-            <akndiff:voter href="/us/representative/lieu" showAs="Lieu (D-CA)"/>
-            <akndiff:voter href="/us/representative/lofgren" showAs="Lofgren (D-CA)"/>
-            <akndiff:voter href="/us/representative/massie" showAs="Massie (R-KY)"/>
-            <akndiff:voter href="/us/representative/matsui" showAs="Matsui (D-CA)"/>
-            <akndiff:voter href="/us/representative/mcbath" showAs="McBath (D-GA)"/>
-            <akndiff:voter href="/us/representative/mcclellan" showAs="McClellan (D-VA)"/>
-            <akndiff:voter href="/us/representative/mccollum" showAs="McCollum (D-MN)"/>
-            <akndiff:voter href="/us/representative/mcgarvey" showAs="McGarvey (D-KY)"/>
-            <akndiff:voter href="/us/representative/mcgovern" showAs="McGovern (D-MA)"/>
-            <akndiff:voter href="/us/representative/mciver" showAs="McIver (D-NJ)"/>
-            <akndiff:voter href="/us/representative/meeks" showAs="Meeks (D-NY)"/>
-            <akndiff:voter href="/us/representative/menendez" showAs="Menendez (D-NJ)"/>
-            <akndiff:voter href="/us/representative/moore-wi" showAs="Moore (WI) (D-WI)"/>
-            <akndiff:voter href="/us/representative/moulton" showAs="Moulton (D-MA)"/>
-            <akndiff:voter href="/us/representative/mullin" showAs="Mullin (D-CA)"/>
-            <akndiff:voter href="/us/representative/nadler" showAs="Nadler (D-NY)"/>
-            <akndiff:voter href="/us/representative/neguse" showAs="Neguse (D-CO)"/>
-            <akndiff:voter href="/us/representative/ocasio-cortez" showAs="Ocasio-Cortez (D-NY)"/>
-            <akndiff:voter href="/us/representative/omar" showAs="Omar (D-MN)"/>
-            <akndiff:voter href="/us/representative/pallone" showAs="Pallone (D-NJ)"/>
-            <akndiff:voter href="/us/representative/pettersen" showAs="Pettersen (D-CO)"/>
-            <akndiff:voter href="/us/representative/pingree" showAs="Pingree (D-ME)"/>
-            <akndiff:voter href="/us/representative/pocan" showAs="Pocan (D-WI)"/>
-            <akndiff:voter href="/us/representative/pressley" showAs="Pressley (D-MA)"/>
-            <akndiff:voter href="/us/representative/ramirez" showAs="Ramirez (D-IL)"/>
-            <akndiff:voter href="/us/representative/raskin" showAs="Raskin (D-MD)"/>
-            <akndiff:voter href="/us/representative/rivas" showAs="Rivas (D-CA)"/>
-            <akndiff:voter href="/us/representative/snchez" showAs="Sánchez (D-CA)"/>
-            <akndiff:voter href="/us/representative/scanlon" showAs="Scanlon (D-PA)"/>
-            <akndiff:voter href="/us/representative/schakowsky" showAs="Schakowsky (D-IL)"/>
-            <akndiff:voter href="/us/representative/scott-va" showAs="Scott (VA) (D-VA)"/>
-            <akndiff:voter href="/us/representative/sherman" showAs="Sherman (D-CA)"/>
-            <akndiff:voter href="/us/representative/simon" showAs="Simon (D-CA)"/>
-            <akndiff:voter href="/us/representative/smith-wa" showAs="Smith (WA) (D-WA)"/>
-            <akndiff:voter href="/us/representative/soto" showAs="Soto (D-FL)"/>
-            <akndiff:voter href="/us/representative/stansbury" showAs="Stansbury (D-NM)"/>
-            <akndiff:voter href="/us/representative/thanedar" showAs="Thanedar (D-MI)"/>
-            <akndiff:voter href="/us/representative/thompson-ms" showAs="Thompson (MS) (D-MS)"/>
-            <akndiff:voter href="/us/representative/tlaib" showAs="Tlaib (D-MI)"/>
-            <akndiff:voter href="/us/representative/tokuda" showAs="Tokuda (D-HI)"/>
-            <akndiff:voter href="/us/representative/tonko" showAs="Tonko (D-NY)"/>
-            <akndiff:voter href="/us/representative/trahan" showAs="Trahan (D-MA)"/>
-            <akndiff:voter href="/us/representative/underwood" showAs="Underwood (D-IL)"/>
-            <akndiff:voter href="/us/representative/vargas" showAs="Vargas (D-CA)"/>
-            <akndiff:voter href="/us/representative/velzquez" showAs="Velázquez (D-NY)"/>
-            <akndiff:voter href="/us/representative/waters" showAs="Waters (D-CA)"/>
-            <akndiff:voter href="/us/representative/watson-coleman" showAs="Watson Coleman (D-NJ)"/>
-            <akndiff:voter href="/us/representative/williams-ga" showAs="Williams (GA) (D-GA)"/>
+          <akndiff:against count="16">
+            <akndiff:voter href="/us/senator/angela-alsobrooks" showAs="Angela Alsobrooks (D-MD)"/>
+            <akndiff:voter href="/us/senator/lisa-blunt-rochester" showAs="Lisa Blunt Rochester (D-DE)"/>
+            <akndiff:voter href="/us/senator/cory-booker" showAs="Cory Booker (D-NJ)"/>
+            <akndiff:voter href="/us/senator/tammy-duckworth" showAs="Tammy Duckworth (D-IL)"/>
+            <akndiff:voter href="/us/senator/mazie-hirono" showAs="Mazie Hirono (D-HI)"/>
+            <akndiff:voter href="/us/senator/edward-markey" showAs="Edward Markey (D-MA)"/>
+            <akndiff:voter href="/us/senator/jeff-merkley" showAs="Jeff Merkley (D-OR)"/>
+            <akndiff:voter href="/us/senator/christopher-murphy" showAs="Christopher Murphy (D-CT)"/>
+            <akndiff:voter href="/us/senator/alex-padilla" showAs="Alex Padilla (D-CA)"/>
+            <akndiff:voter href="/us/senator/bernie-sanders" showAs="Bernie Sanders (I-VT)"/>
+            <akndiff:voter href="/us/senator/adam-schiff" showAs="Adam Schiff (D-CA)"/>
+            <akndiff:voter href="/us/senator/chris-van-hollen" showAs="Chris Van Hollen (D-MD)"/>
+            <akndiff:voter href="/us/senator/raphael-warnock" showAs="Raphael Warnock (D-GA)"/>
+            <akndiff:voter href="/us/senator/elizabeth-warren" showAs="Elizabeth Warren (D-MA)"/>
+            <akndiff:voter href="/us/senator/peter-welch" showAs="Peter Welch (D-VT)"/>
+            <akndiff:voter href="/us/senator/ron-wyden" showAs="Ron Wyden (D-OR)"/>
           </akndiff:against>
-          <akndiff:abstain count="7">
-            <akndiff:voter href="/us/representative/beatty" showAs="Beatty (D-OH)"/>
-            <akndiff:voter href="/us/representative/correa" showAs="Correa (D-CA)"/>
-            <akndiff:voter href="/us/representative/finstad" showAs="Finstad (R-MN)"/>
-            <akndiff:voter href="/us/representative/lee-fl" showAs="Lee (FL) (R-FL)"/>
-            <akndiff:voter href="/us/representative/meng" showAs="Meng (D-NY)"/>
-            <akndiff:voter href="/us/representative/norcross" showAs="Norcross (D-NJ)"/>
-            <akndiff:voter href="/us/representative/randall" showAs="Randall (D-WA)"/>
-          </akndiff:abstain>
+          <akndiff:abstain/>
         </akndiff:vote>
-
+        <akndiff:articleChange article="sec_1" type="insert">
+          <akndiff:new>This Act may be cited as the Halt All Lethal Trafficking of Fentanyl Act or the HALT Fentanyl Act.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="sec_2" type="insert" after="sec_1">
+          <akndiff:new>Section 202(c) of the Controlled Substances Act (21 U.S.C. 812(c)) is amended by adding at the end of schedule I the following: Unless specifically exempted or unless listed in another schedule, any material, compound, mixture, or preparation which contains any quantity of a fentanyl-related substance, or which contains the salts, isomers, and salts of isomers of a fentanyl-related substance whenever the existence of such salts, isomers, and salts of isomers is possible within the specific chemical designation. For purposes of paragraph (1), except as provided in paragraph (3), the term fentanyl-related substance means any substance that is structurally related to fentanyl by 1 or more of the following modifications: By replacement of the phenyl portion of the phenethyl group by any monocycle, whether or not further substituted in or on the monocycle. By substitution in or on the phenethyl group with alkyl, alkenyl, alkoxyl, hydroxyl, halo, haloalkyl, amino, or nitro groups. By substitution in or on the piperidine ring with alkyl, alkenyl, alkoxyl, ester, ether, hydroxyl, halo, haloalkyl, amino, or nitro groups. By replacement of the aniline ring with any aromatic monocycle whether or not further substituted in or on the aromatic monocycle. By replacement of the N-propionyl group with another acyl group. A substance that satisfies the definition of the term fentanyl-related substance in paragraph (2) shall nonetheless not be treated as a fentanyl-related substance subject to this schedule if the substance— is controlled by action of the Attorney General under section 201; or is otherwise expressly listed in a schedule other than this schedule. The Attorney General may by order publish in the Federal Register a list of substances that satisfy the definition of the term fentanyl-related substance in paragraph (2). The absence of a substance from a list published under subparagraph (A) does not negate the control status of the substance under this schedule if the substance satisfies the definition of the term fentanyl-related substance in paragraph (2).</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="sec_3" type="insert" after="sec_2">
+          <akndiff:new>(a) Alternative registration process for schedule I research 21 U.S.C. 823 Section 303 of the Controlled Substances Act () is amended— (1) by redesignating the second subsection (l) (relating to required training for prescribers) as subsection (m); and (2) by adding at the end the following: (n) Special provisions for practitioners conducting certain research with schedule I controlled substances (1) In general Notwithstanding subsection (g), a practitioner may conduct research described in paragraph (2) of this subsection with 1 or more schedule I substances in accordance with subparagraph (A) or (B) of paragraph (3) of this subsection. (2) Research subject to expedited procedures Research described in this paragraph is research that— (A) 21 U.S.C. 355(i) is with respect to a drug that is the subject of an investigational use exemption under section 505(i) of the Federal Food, Drug, and Cosmetic Act (); or (B) is— (i) conducted by the Department of Health and Human Services, the Department of Defense, or the Department of Veterans Affairs; or (ii) funded partly or entirely by a grant, contract, cooperative agreement, or other transaction from the Department of Health and Human Services, the Department of Defense, or the Department of Veterans Affairs. (3) Expedited procedures (A) Researcher with a current schedule I or II research registration (i) In general If a practitioner is registered to conduct research with a controlled substance in schedule I or II, the practitioner may conduct research under this subsection on and after the date that is 30 days after the date on which the practitioner sends a notice to the Attorney General containing the following information, with respect to each substance with which the practitioner will conduct the research: (ii) Verification of information by HHS or VA Upon request from the Attorney General, the Secretary of Health and Human Services, the Department of Defense, or the Secretary of Veterans Affairs, as appropriate, shall verify information submitted by an applicant under clause (i)(III). (B) Researcher without a current schedule I or II research registration (i) In general If a practitioner is not registered to conduct research with a controlled substance in schedule I or II, the practitioner may send a notice to the Attorney General containing the information listed in subparagraph (A)(i), with respect to each substance with which the practitioner will conduct the research. (ii) Attorney General action The Attorney General shall— (4) Electronic submissions The Attorney General shall provide a means to permit a practitioner to submit a notification under paragraph (3) electronically. (5) Limitation on amounts A practitioner conducting research with a schedule I substance under this subsection may only possess the amounts of schedule I substance identified in— (A) the notification to the Attorney General under paragraph (3); or (B) a supplemental notification that the practitioner may send if the practitioner needs additional amounts for the research, which supplemental notification shall include— (i) the name of the practitioner; (ii) the additional quantity needed of the substance; and (iii) an attestation that the research to be conducted with the substance is consistent with the scope of the research that was the subject of the notification under paragraph (3). (6) Importation and exportation requirements not affected Nothing in this subsection alters the requirements of part A of title III, regarding the importation and exportation of controlled substances. (7) Inspector General report Halt All Lethal Trafficking of Fentanyl Act Not later than 1 year after the date of enactment of the, the Inspector General of the Department of Justice shall complete a study, and submit to Congress a report thereon, about research described in paragraph (2) of this subsection with fentanyl. . (b) Separate registrations not required for additional researcher in same institution (1) In general 21 U.S.C. 822(c) Section 302(c) of the Controlled Substances Act () is amended by adding at the end the following: (4) An agent or employee of a research institution that is conducting research with a controlled substance if— (A) the agent or employee is acting within the scope of the professional practice of the agent or employee; (B) another agent or employee of the institution is registered to conduct research with a controlled substance in the same schedule; (C) the researcher who is so registered— (i) informs the Attorney General of the name, position title, and employing institution of the agent or employee who is not separately registered; (ii) authorizes that agent or employee to perform research under the registration of the registered researcher; and (iii) affirms that any act taken by that agent or employee involving a controlled substance shall be attributable to the registered researcher, as if the researcher had directly committed the act, for purposes of any proceeding under section 304(a) to suspend or revoke the registration of the registered researcher; and (D) the Attorney General does not, within 30 days of receiving the information, authorization, and affirmation described in subparagraph (C), refuse, for a reason listed in section 304(a), to allow the agent or employee to possess the substance without a separate registration. . (2) Technical correction 21 U.S.C. 822(c)(3) (25) (27) Section 302(c)(3) of the Controlled Substances Act () is amended by strikingand inserting. (c) Single registration for related research sites 21 U.S.C. 822(e) Section 302(e) of the Controlled Substances Act () is amended by adding at the end the following: (4) (A) Notwithstanding paragraph (1), a person registered to conduct research with a controlled substance under section 303(g) may conduct the research under a single registration if— (i) the research occurs exclusively on sites all of which are— (ii) before commencing the research, the researcher notifies the Attorney General of each site where— (B) A site described in subparagraph (A) shall be included in a registration described in that subparagraph only if the researcher has notified the Attorney General of the site— (i) in the application for the registration; or (ii) before the research is conducted, or before the controlled substance is stored or administered, at the site. (C) The Attorney General may, in consultation with the Secretary, issue regulations addressing, with respect to research sites described in subparagraph (A)— (i) the manner in which controlled substances may be delivered to the research sites; (ii) the storage and security of controlled substances at the research sites; (iii) the maintenance of records for the research sites; and (iv) any other matters necessary to ensure effective controls against diversion at the research sites. . (d) New inspection not required in certain situations 21 U.S.C. 822(f) Section 302(f) of the Controlled Substances Act () is amended— (1) (f) The (f)(1) The by strikingand inserting; and (2) by adding at the end the following: (2) (A) If a person is registered to conduct research with a controlled substance and applies for a registration, or for a modification of a registration, to conduct research with a second controlled substance that is in the same schedule as the first controlled substance, or is in a schedule with a higher numerical designation than the schedule of the first controlled substance, a new inspection by the Attorney General of the registered location is not required. (B) Nothing in subparagraph (A) shall prohibit the Attorney General from conducting an inspection that the Attorney General determines necessary to ensure that a registrant maintains effective controls against diversion. . (e) Continuation of research on substances newly added to schedule I 21 U.S.C. 822 Section 302 of the Controlled Substances Act () is amended by adding at the end the following: (h) Continuation of research on substances newly added to schedule I If a person is conducting research on a substance when the substance is added to schedule I, and the person is already registered to conduct research with a controlled substance in schedule I— (1) not later than 90 days after the scheduling of the newly scheduled substance, the person shall submit a completed application for registration or modification of existing registration, to conduct research on the substance, in accordance with regulations issued by the Attorney General for purposes of this paragraph; (2) the person may, notwithstanding subsections (a) and (b), continue to conduct the research on the substance until— (A) the person withdraws the application described in paragraph (1) of this subsection; or (B) the Attorney General serves on the person an order to show cause proposing the denial of the application under section 304(c); (3) if the Attorney General serves an order to show cause as described in paragraph (2)(B) and the person requests a hearing, the hearing shall be held on an expedited basis and not later than 45 days after the request is made, except that the hearing may be held at a later time if so requested by the person; and (4) if the person sends a copy of the application described in paragraph (1) to a manufacturer or distributor of the substance, receipt of the copy by the manufacturer or distributor shall constitute sufficient evidence that the person is authorized to receive the substance. . (f) Treatment of certain manufacturing activities as coincident to research 21 U.S.C. 822 Section 302 of the Controlled Substances Act (), as amended by subsection (e), is amended by adding at the end the following: (i) Treatment of certain manufacturing activities as coincident to research (1) In general Except as provided in paragraph (3), a person who is registered to perform research on a controlled substance may perform manufacturing activities with small quantities of that substance, including activities described in paragraph (2), without being required to obtain a manufacturing registration, if— (A) the activities are performed for the purpose of the research; and (B) the activities and the quantities of the substance involved in the activities are stated in— (i) a notification submitted to the Attorney General under section 303(n); (ii) a research protocol filed with an application for registration approval under section 303(g); or (iii) a notification to the Attorney General that includes— (2) Activities included Activities permitted under paragraph (1) include— (A) processing the substance to create extracts, tinctures, oils, solutions, derivatives, or other forms of the substance consistent with— (i) the information provided as part of a notification submitted to the Attorney General under section 303(n); or (ii) a research protocol filed with an application for registration approval under section 303(g); and (B) 21 U.S.C. 355(i) dosage form development studies performed for the purpose of requesting an investigational new drug exemption under section 505(i) of the Federal Food, Drug, and Cosmetic Act (). (3) Exception regarding marihuana The authority under paragraph (1) to manufacture substances does not include the authority to grow marihuana. . (g) Transparency regarding special procedures 21 U.S.C. 823 Section 303 of the Controlled Substances Act (), as amended by subsection (a), is amended by adding at the end the following: (o) Transparency regarding special procedures (1) In general If the Attorney General determines, with respect to a controlled substance, that an application by a practitioner to conduct research with the substance should be considered under a process, or subject to criteria, different from the process or criteria applicable to applications to conduct research with other controlled substances in the same schedule, the Attorney General shall make public, including by posting on the website of the Drug Enforcement Administration— (A) the identities of all substances for which such determinations have been made; (B) the process and criteria that shall be applied to applications to conduct research with those substances; and (C) how the process and criteria described in subparagraph (B) differ from the process and criteria applicable to applications to conduct research with other controlled substances in the same schedule. (2) Timing of posting The Attorney General shall make information described in paragraph (1) public upon making a determination described in that paragraph, regardless of whether a practitioner has submitted such an application at that time. .</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="sec_4" type="insert" after="sec_3">
+          <akndiff:new>Public Law 117–328 Effective as if included in the enactment of— (1) Public Law 117–328 303(g) 303(h) section 1252(a) of division FF of(136 Stat. 5681) is amended, in the matter being inserted into section 302(e) of the Controlled Substances Act, by strikingand inserting; (2) Public Law 117–328 section 1262 of division FF of(136 Stat. 5681) is amended— (A) in subsection (a)— (i) 303(g) 303(h) in the matter preceding paragraph (1), by strikingand inserting; (ii) (g)(1) (h)(1) in the matter being stricken by subsection (a)(2), by strikingand inserting; and (iii) (g) Practitioners (h) Practitioners in the matter being inserted by subsection (a)(2), by strikingand inserting; and (B) in subsection (b)— (i) 303(g)(1) 303(h)(1) in the matter being stricken by paragraph (1), by strikingand inserting; (ii) 303(g) 303(h) in the matter being inserted by paragraph (1), by strikingand inserting; (iii) 303(g)(2) 303(h)(2) in the matter being stricken by paragraph (2)(A), by strikingand inserting; (iv) 303(g)(2)(B) 303(h)(2)(B) in the matter being stricken by paragraph (3), by strikingand inserting; (v) 303(g) 303(h) in the matter being stricken by paragraph (5), by strikingand inserting; and (vi) 303(g) 303(h) in the matter being stricken by paragraph (6), by strikingand inserting; and (3) Public Law 117–328 section 1263(b) of division FF of(136 Stat. 5685) is amended— (A) 303(g)(2) 303(h)(2) by strikingand inserting; and (B) 21 U.S.C. 823(g)(2) () 21 U.S.C. 823(h)(2) () by strikingand inserting.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="sec_5" type="insert" after="sec_4">
+          <akndiff:new>(a) Interim final rules The Attorney General— (1) shall, not later than 6 months after the date of enactment of this Act, issue rules to implement this Act and the amendments made by this Act; and (2) may issue the rules under paragraph (1) as interim final rules. (b) Procedure for final rule (1) Effectiveness of interim final rules A rule issued by the Attorney General as an interim final rule under subsection (a) shall become immediately effective as an interim final rule without requiring the Attorney General to demonstrate good cause therefor, notwithstanding subparagraph (B) of the undesignated matter following paragraph (4) of section 553(b) of title 5, United States Code. (2) Opportunity for comment and hearing An interim final rule issued under subsection (a) shall give interested persons the opportunity to comment and to request a hearing. (3) Final rule After the conclusion of such proceedings, the Attorney General shall issue a final rule to implement this Act and the amendments made by this Act in accordance with section 553 of title 5, United States Code.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="sec_6" type="insert" after="sec_5">
+          <akndiff:new>(a) In general 21 U.S.C. 841(b)(1) Section 401(b)(1) of the Controlled Substances Act () is amended— (1) or a fentanyl-related substance any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide in subparagraph (A)(vi), by insertingafter; and (2) or a fentanyl-related substance any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide in subparagraph (B)(vi), by insertingafter. (b) Importation and exportation 21 U.S.C. 960(b) Section 1010(b) of the Controlled Substances Import and Export Act () is amended— (1) or a fentanyl-related substance any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide in paragraph (1)(F), by insertingafter; and (2) or a fentanyl-related substance any analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide in paragraph (2)(F), by insertingafter. (c) Definition of fentanyl-related substance 21 U.S.C. 802 Section 102 of the Controlled Substances Act () is amended by adding at the end the following: (60) fentanyl-related substance The termhas the meaning given the term in subsection (e)(2) of schedule I of section 202(c). .</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="sec_7" type="insert" after="sec_6">
+          <akndiff:new>(a) In general Irrespective of the date on which the rules required by section 5 are finalized, the amendments made by this Act apply beginning as of the date of enactment of this Act. (b) Rule of construction 21 U.S.C. 841(b)(1) 21 U.S.C. 960(b) Nothing in the amendments made by this Act may be construed as evidence that, in applying sections 401(b)(1) of the Controlled Substances Act () and 1010(b) of the Controlled Substances Import and Export Act () with respect to conduct occurring before the date of the enactment of this Act, a fentanyl-related substance (as defined by such amendments) is not an analogue of N-phenyl-N-[1-(2-phenylethyl)-4-piperidinyl] propanamide. (c) Sense of Congress 21 U.S.C. 801 et seq. Congress agrees with the interpretation of the Controlled Substances Act () in United States v. McCray, 346 F. Supp. 3d 363 (W.D.N.Y. 2018).</akndiff:new>
+        </akndiff:articleChange>
     </akndiff:changeSet>
   </amendment>
 </akomaNtoso>

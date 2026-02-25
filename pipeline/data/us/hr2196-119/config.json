@@ -1,0 +1,38 @@
+{
+  "billId": {
+    "type": "hr",
+    "number": 2196,
+    "congress": 119
+  },
+  "title": "To provide for an extension of the legislative authority of the National Emergency Medical Services Memorial Foundation to establish a commemorative work in the District of Columbia and its environs.",
+  "slug": "hr2196-119-national-emergency-medical-services-memorial-exten",
+  "timeline": [
+    {
+      "index": 0,
+      "type": "bill",
+      "label": "Introduced in House",
+      "date": "2025-03-18",
+      "versionCode": "IH"
+    },
+    {
+      "index": 1,
+      "type": "amendment",
+      "label": "Reported in House",
+      "date": "2026-02-24",
+      "versionCode": "RH",
+      "chamber": "House"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196ih.xml",
+      "filename": "01-ih.xml",
+      "type": "bill-xml"
+    },
+    {
+      "url": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196rh.xml",
+      "filename": "02-rh.xml",
+      "type": "bill-xml"
+    }
+  ]
+}
