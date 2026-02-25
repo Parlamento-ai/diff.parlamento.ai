@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
             xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
-  <amendment name="lo-3-2018-proteccion-datos-personales-amendment-3">
+  <amendment name="ley-34-2002-servicios-sociedad-informacion-amendment-10">
     <meta>
       <identification source="#parlamento-ai">
         <FRBRWork>
-          <FRBRthis value="/es/lo/2018/12/05/3"/>
-          <FRBRuri value="/es/lo/2018/12/05/3"/>
-          <FRBRdate date="2021-06-16" name="modificacion"/>
+          <FRBRthis value="/es/l/2002/07/11/34"/>
+          <FRBRuri value="/es/l/2002/07/11/34"/>
+          <FRBRdate date="2022-07-14" name="modificacion"/>
           <FRBRauthor href="/es/congreso"/>
           <FRBRcountry value="es"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/es/lo/2018/12/05/3/spa@2021-06-16"/>
-          <FRBRuri value="/es/lo/2018/12/05/3/spa@2021-06-16"/>
-          <FRBRdate date="2021-06-16" name="version"/>
+          <FRBRthis value="/es/l/2002/07/11/34/spa@2022-07-14"/>
+          <FRBRuri value="/es/l/2002/07/11/34/spa@2022-07-14"/>
+          <FRBRdate date="2022-07-14" name="version"/>
           <FRBRlanguage language="spa"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/es/lo/2018/12/05/3/spa@2021-06-16/akn"/>
-          <FRBRuri value="/es/lo/2018/12/05/3/spa@2021-06-16/akn"/>
+          <FRBRthis value="/es/l/2002/07/11/34/spa@2022-07-14/akn"/>
+          <FRBRuri value="/es/l/2002/07/11/34/spa@2022-07-14/akn"/>
           <FRBRdate date="2026-02-24" name="generacion"/>
         </FRBRManifestation>
       </identification>
     </meta>
     <preface>
-      <longTitle><p><docTitle>Modificada por los arts. 2, 44.3 y la disposición adicional 15, por Ley Orgánica 7/2021, de 26 </docTitle></p></longTitle>
-      <p>Modificacion de Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.</p>
+      <longTitle><p><docTitle>Modificada por art. 11, por Ley 15/2022, de 12 de julio</docTitle></p></longTitle>
+      <p>Modificacion de Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.</p>
     </preface>
     <amendmentBody>
       <amendmentContent>
-        <p>Modificacion de Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.</p>
+        <p>Modificacion de Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.</p>
       </amendmentContent>
     </amendmentBody>
     <akndiff:changeSet
-      base="/es/lo/2018/12/05/3/spa@2021-01-19"
-      result="/es/lo/2018/12/05/3/spa@2021-06-16">
-      <akndiff:vote date="2021-05-20" result="approved" source="https://www.congreso.es/es/opendata/votaciones">
-        <akndiff:for count="277">
+      base="/es/l/2002/07/11/34/spa@2020-11-13"
+      result="/es/l/2002/07/11/34/spa@2022-07-14">
+      <akndiff:vote date="2022-05-26" result="approved" source="https://www.congreso.es/es/opendata/votaciones">
+        <akndiff:for count="293">
           <akndiff:voter href="/es/diputado/meijon-couselo" showAs="Meijón Couselo, Guillermo Antonio"/>
           <akndiff:voter href="/es/diputado/sahuquillo-garcia" showAs="Sahuquillo García, Luis Carlos"/>
           <akndiff:voter href="/es/diputado/canales-duque" showAs="Canales Duque, Mariana de Gracia"/>
@@ -72,6 +72,7 @@
           <akndiff:voter href="/es/diputado/serrada-pariente" showAs="Serrada Pariente, David"/>
           <akndiff:voter href="/es/diputado/cantera-de-castro" showAs="Cantera de Castro, Zaida"/>
           <akndiff:voter href="/es/diputado/garcia-lopez" showAs="García López, Maribel"/>
+          <akndiff:voter href="/es/diputado/rego-candamil" showAs="Rego Candamil, Néstor"/>
           <akndiff:voter href="/es/diputado/santiago-romero" showAs="Santiago Romero, Enrique Fernando"/>
           <akndiff:voter href="/es/diputado/marra-dominguez" showAs="Marra Domínguez, María Ángeles"/>
           <akndiff:voter href="/es/diputado/cerqueiro-gonzalez" showAs="Cerqueiro González, Javier"/>
@@ -81,13 +82,15 @@
           <akndiff:voter href="/es/diputado/postigo-quintana" showAs="Postigo Quintana, Jesús"/>
           <akndiff:voter href="/es/diputado/renau-martinez" showAs="Renau Martínez, Germán"/>
           <akndiff:voter href="/es/diputado/ros-martinez" showAs="Ros Martínez, Susana"/>
+          <akndiff:voter href="/es/diputado/sayas-lopez" showAs="Sayas López, Sergio"/>
           <akndiff:voter href="/es/diputado/aceves-galindo" showAs="Aceves Galindo, José Luis"/>
           <akndiff:voter href="/es/diputado/moraleja-gomez" showAs="Moraleja Gómez, Tristana María"/>
-          <akndiff:voter href="/es/diputado/cambronero-piqueras" showAs="Cambronero Piqueras, Pablo"/>
           <akndiff:voter href="/es/diputado/lima-cid" showAs="Lima Cid, Fuensanta"/>
           <akndiff:voter href="/es/diputado/martinez-granados" showAs="Martínez Granados, María Carmen"/>
           <akndiff:voter href="/es/diputado/lopez-alvarez" showAs="López Álvarez, Patxi"/>
+          <akndiff:voter href="/es/diputado/inarritu-garcia" showAs="Iñarritu García, Jon"/>
           <akndiff:voter href="/es/diputado/matute-garcia-de-jalon" showAs="Matute García de Jalón, Oskar"/>
+          <akndiff:voter href="/es/diputado/ruiz-de-pinedo-undiano" showAs="Ruiz de Pinedo Undiano, Iñaki"/>
           <akndiff:voter href="/es/diputado/pozueta-fernandez" showAs="Pozueta Fernández, Isabel"/>
           <akndiff:voter href="/es/diputado/andres-barea" showAs="Andrés Barea, Josefa"/>
           <akndiff:voter href="/es/diputado/sanchez-serna" showAs="Sánchez Serna, Javier"/>
@@ -104,6 +107,9 @@
           <akndiff:voter href="/es/diputado/vicente-viondi" showAs="Vicente Viondi, Daniel"/>
           <akndiff:voter href="/es/diputado/prieto-nieto" showAs="Prieto Nieto, Ana"/>
           <akndiff:voter href="/es/diputado/navarro-lacoba" showAs="Navarro Lacoba, Carmen"/>
+          <akndiff:voter href="/es/diputado/vehi-cantenys" showAs="Vehí Cantenys, Mireia"/>
+          <akndiff:voter href="/es/diputado/botran-pahissa" showAs="Botran Pahissa, Albert"/>
+          <akndiff:voter href="/es/diputado/vallugera-balana" showAs="Vallugera Balañà, Pilar"/>
           <akndiff:voter href="/es/diputado/echaniz-salgado" showAs="Echániz Salgado, José Ignacio"/>
           <akndiff:voter href="/es/diputado/sarria-morell" showAs="Sarrià Morell, Vicent Manuel"/>
           <akndiff:voter href="/es/diputado/moro-almaraz" showAs="Moro Almaraz, María Jesús"/>
@@ -132,10 +138,12 @@
           <akndiff:voter href="/es/diputado/vazquez-blanco" showAs="Vázquez Blanco, Ana Belén"/>
           <akndiff:voter href="/es/diputado/delgado-arce" showAs="Delgado Arce, Celso Luis"/>
           <akndiff:voter href="/es/diputado/bas-corugeira" showAs="Bas Corugeira, Javier"/>
+          <akndiff:voter href="/es/diputado/gago-bugarin" showAs="Gago Bugarín, Diego"/>
           <akndiff:voter href="/es/diputado/diaz-gomez" showAs="Díaz Gómez, Guillermo"/>
           <akndiff:voter href="/es/diputado/rodriguez-herrer" showAs="Rodríguez Herrer, María Elvira"/>
           <akndiff:voter href="/es/diputado/jerez-juan" showAs="Jerez Juan, Miguel Ángel"/>
           <akndiff:voter href="/es/diputado/sumelzo-jordan" showAs="Sumelzo Jordán, Susana"/>
+          <akndiff:voter href="/es/diputado/garcia-adanero" showAs="García Adanero, Carlos"/>
           <akndiff:voter href="/es/diputado/borrego-cortes" showAs="Borrego Cortés, Isabel María"/>
           <akndiff:voter href="/es/diputado/pedreno-molina" showAs="Pedreño Molina, Juan Luis"/>
           <akndiff:voter href="/es/diputado/mateu-isturiz" showAs="Mateu Istúriz, Jaime Miguel"/>
@@ -148,7 +156,6 @@
           <akndiff:voter href="/es/diputado/hoyo-julia" showAs="Hoyo Juliá, Belén"/>
           <akndiff:voter href="/es/diputado/marcos-dominguez" showAs="Marcos Domínguez, Pilar"/>
           <akndiff:voter href="/es/diputado/soler-mur" showAs="Soler Mur, Alejandro"/>
-          <akndiff:voter href="/es/diputado/gonzalez-ramos" showAs="González Ramos, Manuel Gabriel"/>
           <akndiff:voter href="/es/diputado/gutierrez-diaz-de-otazu" showAs="Gutiérrez Díaz de Otazu, Fernando Adolfo"/>
           <akndiff:voter href="/es/diputado/narvaez-bandera" showAs="Narváez Bandera, María Dolores"/>
           <akndiff:voter href="/es/diputado/de-luna-tobarra" showAs="De Luna Tobarra, Llanos"/>
@@ -158,17 +165,25 @@
           <akndiff:voter href="/es/diputado/oramas-gonzalez-moro" showAs="Oramas González-Moro, Ana María"/>
           <akndiff:voter href="/es/diputado/cerdan-leon" showAs="Cerdán León, Santos"/>
           <akndiff:voter href="/es/diputado/gonzalez-perez" showAs="González Pérez, Ariagona"/>
-          <akndiff:voter href="/es/diputado/gonzalez-terol" showAs="González Terol, Antonio"/>
           <akndiff:voter href="/es/diputado/olano-vela" showAs="Olano Vela, Jaime Eduardo de"/>
           <akndiff:voter href="/es/diputado/rodriguez-gomez-de-celis" showAs="Rodríguez Gómez de Celis, Alfonso"/>
-          <akndiff:voter href="/es/diputado/gimenez-gimenez" showAs="Giménez Giménez, Sara"/>
           <akndiff:voter href="/es/diputado/diaz-perez" showAs="Díaz Pérez, Yolanda"/>
+          <akndiff:voter href="/es/diputado/capdevila-i-esteve" showAs="Capdevila i Esteve, Joan"/>
           <akndiff:voter href="/es/diputado/padilla-ruiz" showAs="Padilla Ruiz, Esther"/>
           <akndiff:voter href="/es/diputado/gomez-reino-varela" showAs="Gómez-Reino Varela, Antonio"/>
           <akndiff:voter href="/es/diputado/ramos-esteban" showAs="Ramos Esteban, César Joaquín"/>
-          <akndiff:voter href="/es/diputado/jimenez-becerril-barrio" showAs="Jiménez-Becerril Barrio, María Teresa"/>
           <akndiff:voter href="/es/diputado/gutierrez-prieto" showAs="Gutiérrez Prieto, Sergio"/>
           <akndiff:voter href="/es/diputado/bermudez-de-castro-fernandez" showAs="Bermúdez de Castro Fernández, José Antonio"/>
+          <akndiff:voter href="/es/diputado/granollers-cunillera" showAs="Granollers Cunillera, Inés"/>
+          <akndiff:voter href="/es/diputado/salvador-i-duch" showAs="Salvador i Duch, Jordi"/>
+          <akndiff:voter href="/es/diputado/rosique-i-saltor" showAs="Rosique i Saltor, Marta"/>
+          <akndiff:voter href="/es/diputado/eritja-ciuro" showAs="Eritja Ciuró, Francesc Xavier"/>
+          <akndiff:voter href="/es/diputado/rufian-romero" showAs="Rufián Romero, Gabriel"/>
+          <akndiff:voter href="/es/diputado/telechea-i-lozano" showAs="Telechea i Lozano, Carolina"/>
+          <akndiff:voter href="/es/diputado/carvalho-dantas" showAs="Carvalho Dantas, María"/>
+          <akndiff:voter href="/es/diputado/pujol-i-farre" showAs="Pujol i Farré, Norma"/>
+          <akndiff:voter href="/es/diputado/bassa-coll" showAs="Bassa Coll, Montserrat"/>
+          <akndiff:voter href="/es/diputado/margall-sastre" showAs="Margall Sastre, Joan"/>
           <akndiff:voter href="/es/diputado/zaragoza-alonso" showAs="Zaragoza Alonso, José"/>
           <akndiff:voter href="/es/diputado/ramirez-carner" showAs="Ramírez Carner, Arnau"/>
           <akndiff:voter href="/es/diputado/aranda-vargas" showAs="Aranda Vargas, Francisco"/>
@@ -204,7 +219,6 @@
           <akndiff:voter href="/es/diputado/errejon-galvan" showAs="Errejón Galván, Íñigo"/>
           <akndiff:voter href="/es/diputado/sabanes-nadal" showAs="Sabanés Nadal, Inés"/>
           <akndiff:voter href="/es/diputado/velarde-gomez" showAs="Velarde Gómez, Martina"/>
-          <akndiff:voter href="/es/diputado/marquez-guerrero" showAs="Márquez Guerrero, María"/>
           <akndiff:voter href="/es/diputado/gonzalez-vazquez" showAs="González Vázquez, Marta"/>
           <akndiff:voter href="/es/diputado/botella-gomez" showAs="Botella Gómez, Ana María"/>
           <akndiff:voter href="/es/diputado/herrero-bono" showAs="Herrero Bono, José Alberto"/>
@@ -232,7 +246,6 @@
           <akndiff:voter href="/es/diputado/carcedo-roces" showAs="Carcedo Roces, María Luisa"/>
           <akndiff:voter href="/es/diputado/fernandez-castanon" showAs="Fernández Castañón, Sofía"/>
           <akndiff:voter href="/es/diputado/rodriguez-gomez" showAs="Rodríguez Gómez, María del Pilar"/>
-          <akndiff:voter href="/es/diputado/sanchez-perez-castejon" showAs="Sánchez Pérez-Castejón, Pedro"/>
           <akndiff:voter href="/es/diputado/soto-burillo" showAs="Soto Burillo, Juan Luis"/>
           <akndiff:voter href="/es/diputado/sanchez-jodar" showAs="Sánchez Jódar, Marisol"/>
           <akndiff:voter href="/es/diputado/gazquez-collado" showAs="Gázquez Collado, Paloma"/>
@@ -245,20 +258,17 @@
           <akndiff:voter href="/es/diputado/hernanz-costa" showAs="Hernanz Costa, Sofía"/>
           <akndiff:voter href="/es/diputado/pisarello-prados" showAs="Pisarello Prados, Gerardo"/>
           <akndiff:voter href="/es/diputado/asens-llodra" showAs="Asens Llodrà, Jaume"/>
-          <akndiff:voter href="/es/diputado/cancela-rodriguez" showAs="Cancela Rodríguez, Pilar"/>
           <akndiff:voter href="/es/diputado/elizo-serrano" showAs="Elizo Serrano, María Gloria"/>
           <akndiff:voter href="/es/diputado/cuatrecasas-asua" showAs="Cuatrecasas Asua, Juan"/>
           <akndiff:voter href="/es/diputado/garcia-chavarria" showAs="García Chavarría, María Montserrat"/>
           <akndiff:voter href="/es/diputado/almodobar-barcelo" showAs="Almodóbar Barceló, Agustín"/>
           <akndiff:voter href="/es/diputado/guitarte-gimeno" showAs="Guitarte Gimeno, Tomás"/>
-          <akndiff:voter href="/es/diputado/casado-blanco" showAs="Casado Blanco, Pablo"/>
           <akndiff:voter href="/es/diputado/alvarez-de-toledo-peralta-ramos" showAs="Álvarez de Toledo Peralta-Ramos, Cayetana"/>
           <akndiff:voter href="/es/diputado/hispan-iglesias-de-ussel" showAs="Hispán Iglesias de Ussel, Pablo"/>
           <akndiff:voter href="/es/diputado/garcia-egea" showAs="García Egea, Teodoro"/>
           <akndiff:voter href="/es/diputado/sancho-guardia" showAs="Sancho Guardia, Alfredo"/>
           <akndiff:voter href="/es/diputado/nasarre-oliva" showAs="Nasarre Oliva, Begoña"/>
           <akndiff:voter href="/es/diputado/bueno-campanario" showAs="Bueno Campanario, Eva Patricia"/>
-          <akndiff:voter href="/es/diputado/montesinos-aguayo" showAs="Montesinos Aguayo, Pablo"/>
           <akndiff:voter href="/es/diputado/espana-reina" showAs="España Reina, Carolina"/>
           <akndiff:voter href="/es/diputado/cortes-carballo" showAs="Cortés Carballo, Mario"/>
           <akndiff:voter href="/es/diputado/caballero-gutierrez" showAs="Caballero Gutiérrez, Helena"/>
@@ -272,13 +282,11 @@
           <akndiff:voter href="/es/diputado/munoz-dalda" showAs="Muñoz Dalda, Lucía"/>
           <akndiff:voter href="/es/diputado/mayoral-perales" showAs="Mayoral Perales, Rafael"/>
           <akndiff:voter href="/es/diputado/moneo-diez" showAs="Moneo Díez, María Sandra"/>
-          <akndiff:voter href="/es/diputado/rodriguez-rodriguez" showAs="Rodríguez Rodríguez, Alberto"/>
           <akndiff:voter href="/es/diputado/mariscal-anaya" showAs="Mariscal Anaya, Guillermo"/>
           <akndiff:voter href="/es/diputado/martinez-ferro" showAs="Martínez Ferro, María Valentina"/>
           <akndiff:voter href="/es/diputado/duran-peralta" showAs="Durán Peralta, José Carlos"/>
           <akndiff:voter href="/es/diputado/lopez-cano" showAs="López Cano, Ignacio"/>
           <akndiff:voter href="/es/diputado/guijarro-garcia" showAs="Guijarro García, Txema"/>
-          <akndiff:voter href="/es/diputado/vera-ruiz-herrera" showAs="Vera Ruíz-Herrera, Noelia"/>
           <akndiff:voter href="/es/diputado/montesinos-de-miguel" showAs="Montesinos de Miguel, Macarena"/>
           <akndiff:voter href="/es/diputado/casares-hontanon" showAs="Casares Hontañón, Pedro"/>
           <akndiff:voter href="/es/diputado/saavedra-munoz" showAs="Saavedra Muñoz, Marisa"/>
@@ -315,27 +323,28 @@
           <akndiff:voter href="/es/diputado/calvo-gomez" showAs="Calvo Gómez, Pilar"/>
           <akndiff:voter href="/es/diputado/perez-merino" showAs="Pérez Merino, María Mercedes"/>
           <akndiff:voter href="/es/diputado/lopez-bas-valero" showAs="López-Bas Valero, Juan Ignacio"/>
-        </akndiff:for>
-        <akndiff:against count="5">
-          <akndiff:voter href="/es/diputado/rego-candamil" showAs="Rego Candamil, Néstor"/>
-          <akndiff:voter href="/es/diputado/sayas-lopez" showAs="Sayas López, Sergio"/>
-          <akndiff:voter href="/es/diputado/garcia-adanero" showAs="García Adanero, Carlos"/>
-          <akndiff:voter href="/es/diputado/botran-pahissa" showAs="Botran Pahissa, Albert"/>
-          <akndiff:voter href="/es/diputado/vehi-cantenys" showAs="Vehí Cantenys, Mireia"/>
-        </akndiff:against>
-        <akndiff:abstain count="67">
-          <akndiff:voter href="/es/diputado/jara-moreno" showAs="Jara Moreno, Mercedes"/>
-          <akndiff:voter href="/es/diputado/segura-just" showAs="Segura Just, Juan Carlos"/>
           <akndiff:voter href="/es/diputado/alvarez-i-garcia" showAs="Álvarez i García, Gerard"/>
+          <akndiff:voter href="/es/diputado/bustamante-martin" showAs="Bustamante Martín, Miguel Ángel"/>
+          <akndiff:voter href="/es/diputado/gonzalez-laso" showAs="González Laso, Natividad"/>
+          <akndiff:voter href="/es/diputado/delgado-ramos" showAs="Delgado Ramos, Juan Antonio"/>
+          <akndiff:voter href="/es/diputado/tarno-blanco" showAs="Tarno Blanco, Ricardo"/>
+          <akndiff:voter href="/es/diputado/diaz-rodriguez" showAs="Díaz Rodríguez, José Carlos"/>
+          <akndiff:voter href="/es/diputado/manglano-albacar" showAs="Manglano Albacar, Percival"/>
+          <akndiff:voter href="/es/diputado/gonzalez-munoz" showAs="González Muñoz, Ángel Luis"/>
+        </akndiff:for>
+        <akndiff:against/>
+        <akndiff:abstain count="50">
           <akndiff:voter href="/es/diputado/abascal-conde" showAs="Abascal Conde, Santiago"/>
-          <akndiff:voter href="/es/diputado/inarritu-garcia" showAs="Iñarritu García, Jon"/>
-          <akndiff:voter href="/es/diputado/ruiz-de-pinedo-undiano" showAs="Ruiz de Pinedo Undiano, Iñaki"/>
+          <akndiff:voter href="/es/diputado/segura-just" showAs="Segura Just, Juan Carlos"/>
           <akndiff:voter href="/es/diputado/rueda-perello" showAs="Rueda Perelló, Patricia"/>
-          <akndiff:voter href="/es/diputado/gonzalez-coello-de-portugal" showAs="González Coello de Portugal, Víctor"/>
+          <akndiff:voter href="/es/diputado/cambronero-piqueras" showAs="Cambronero Piqueras, Pablo"/>
+          <akndiff:voter href="/es/diputado/jara-moreno" showAs="Jara Moreno, Mercedes"/>
+          <akndiff:voter href="/es/diputado/de-meer-mendez" showAs="De Meer Méndez, Rocío"/>
+          <akndiff:voter href="/es/diputado/fernandez-rios" showAs="Fernández Ríos, Tomás"/>
+          <akndiff:voter href="/es/diputado/utrilla-cano" showAs="Utrilla Cano, Julio"/>
+          <akndiff:voter href="/es/diputado/lopez-alvarez" showAs="López Álvarez, María Teresa"/>
           <akndiff:voter href="/es/diputado/espinosa-de-los-monteros-de-simon" showAs="Espinosa de los Monteros de Simón, Iván"/>
-          <akndiff:voter href="/es/diputado/olona-choclan" showAs="Olona Choclán, Macarena"/>
           <akndiff:voter href="/es/diputado/requejo-novoa" showAs="Requejo Novoa, Pedro Jesús"/>
-          <akndiff:voter href="/es/diputado/vallugera-balana" showAs="Vallugera Balañà, Pilar"/>
           <akndiff:voter href="/es/diputado/ramirez-del-rio" showAs="Ramírez del Río, José"/>
           <akndiff:voter href="/es/diputado/manso-olivar" showAs="Manso Olivar, Rubén Silvano"/>
           <akndiff:voter href="/es/diputado/chamorro-delmo" showAs="Chamorro Delmo, Ricardo"/>
@@ -349,26 +358,14 @@
           <akndiff:voter href="/es/diputado/mariscal-zabala" showAs="Mariscal Zabala, Manuel"/>
           <akndiff:voter href="/es/diputado/salva-verd" showAs="Salvá Verd, Antonio"/>
           <akndiff:voter href="/es/diputado/jimenez-revuelta" showAs="Jiménez Revuelta, Rodrigo"/>
-          <akndiff:voter href="/es/diputado/capdevila-i-esteve" showAs="Capdevila i Esteve, Joan"/>
           <akndiff:voter href="/es/diputado/romero-vilches" showAs="Romero Vilches, María de los Reyes"/>
           <akndiff:voter href="/es/diputado/del-valle-rodriguez" showAs="Del Valle Rodríguez, Emilio Jesús"/>
           <akndiff:voter href="/es/diputado/mendez-monasterio" showAs="Méndez Monasterio, Lourdes"/>
-          <akndiff:voter href="/es/diputado/granollers-cunillera" showAs="Granollers Cunillera, Inés"/>
-          <akndiff:voter href="/es/diputado/salvador-i-duch" showAs="Salvador i Duch, Jordi"/>
-          <akndiff:voter href="/es/diputado/rosique-i-saltor" showAs="Rosique i Saltor, Marta"/>
-          <akndiff:voter href="/es/diputado/eritja-ciuro" showAs="Eritja Ciuró, Francesc Xavier"/>
-          <akndiff:voter href="/es/diputado/rufian-romero" showAs="Rufián Romero, Gabriel"/>
-          <akndiff:voter href="/es/diputado/telechea-i-lozano" showAs="Telechea i Lozano, Carolina"/>
-          <akndiff:voter href="/es/diputado/carvalho-dantas" showAs="Carvalho Dantas, María"/>
-          <akndiff:voter href="/es/diputado/pujol-i-farre" showAs="Pujol i Farré, Norma"/>
-          <akndiff:voter href="/es/diputado/bassa-coll" showAs="Bassa Coll, Montserrat"/>
-          <akndiff:voter href="/es/diputado/margall-sastre" showAs="Margall Sastre, Joan"/>
           <akndiff:voter href="/es/diputado/sanchez-del-real" showAs="Sánchez del Real, Víctor Manuel"/>
           <akndiff:voter href="/es/diputado/calvo-liste" showAs="Calvo Liste, Pablo Juan"/>
           <akndiff:voter href="/es/diputado/ruiz-navarro" showAs="Ruiz Navarro, Eduardo Luis"/>
           <akndiff:voter href="/es/diputado/contreras-pelaez" showAs="Contreras Peláez, Francisco José"/>
           <akndiff:voter href="/es/diputado/robles-lopez" showAs="Robles López, Joaquín"/>
-          <akndiff:voter href="/es/diputado/de-las-heras-fernandez" showAs="De las Heras Fernández, Patricia"/>
           <akndiff:voter href="/es/diputado/alcaraz-martos" showAs="Alcaraz Martos, Francisco José"/>
           <akndiff:voter href="/es/diputado/zambrano-garcia-raez" showAs="Zambrano García-Raez, Carlos José"/>
           <akndiff:voter href="/es/diputado/rosety-fernandez-de-castro" showAs="Rosety Fernández de Castro, Agustín"/>
@@ -387,47 +384,20 @@
           <akndiff:voter href="/es/diputado/figaredo-alvarez-sala" showAs="Figaredo Álvarez-Sala, José María"/>
           <akndiff:voter href="/es/diputado/sanchez-garcia" showAs="Sánchez García, José María"/>
           <akndiff:voter href="/es/diputado/ortega-smith-molina" showAs="Ortega Smith-Molina, Francisco Javier"/>
-          <akndiff:voter href="/es/diputado/lopez-alvarez" showAs="López Álvarez, María Teresa"/>
-          <akndiff:voter href="/es/diputado/utrilla-cano" showAs="Utrilla Cano, Julio"/>
-          <akndiff:voter href="/es/diputado/fernandez-rios" showAs="Fernández Ríos, Tomás"/>
-          <akndiff:voter href="/es/diputado/de-meer-mendez" showAs="De Meer Méndez, Rocío"/>
         </akndiff:abstain>
       </akndiff:vote>
-<akndiff:articleChange article="art_2" type="substitute">
-          <akndiff:old>1. Lo dispuesto en los Títulos I a IX y en los artículos 89 a 94 de la presente ley orgánica se aplica a cualquier tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.
-2. Esta ley orgánica no será de aplicación:
-a) A los tratamientos excluidos del ámbito de aplicación del Reglamento general de protección de datos por su artículo 2.2, sin perjuicio de lo dispuesto en los apartados 3 y 4 de este artículo.
-b) A los tratamientos de datos de personas fallecidas, sin perjuicio de lo establecido en el artículo 3.
-c) A los tratamientos sometidos a la normativa sobre protección de materias clasificadas.
-3. Los tratamientos a los que no sea directamente aplicable el Reglamento (UE) 2016/679 por afectar a actividades no comprendidas en el ámbito de aplicación del Derecho de la Unión Europea, se regirán por lo dispuesto en su legislación específica si la hubiere y supletoriamente por lo establecido en el citado reglamento y en la presente ley orgánica. Se encuentran en esta situación, entre otros, los tratamientos realizados al amparo de la legislación orgánica del régimen electoral general, los tratamientos realizados en el ámbito de instituciones penitenciarias y los tratamientos derivados del Registro Civil, los Registros de la Propiedad y Mercantiles.
-4. El tratamiento de datos llevado a cabo con ocasión de la tramitación por los órganos judiciales de los procesos de los que sean competentes, así como el realizado dentro de la gestión de la Oficina Judicial, se regirán por lo dispuesto en el Reglamento (UE) 2016/679 y la presente ley orgánica, sin perjuicio de las disposiciones de la Ley Orgánica 6/1985, de 1 julio, del Poder Judicial, que le sean aplicables.</akndiff:old>
-          <akndiff:new>1. Lo dispuesto en los Títulos I a IX y en los artículos 89 a 94 de la presente ley orgánica se aplica a cualquier tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.
-2. Esta ley orgánica no será de aplicación:
-a) A los tratamientos excluidos del ámbito de aplicación del Reglamento general de protección de datos por su artículo 2.2, sin perjuicio de lo dispuesto en los apartados 3 y 4 de este artículo.
-b) A los tratamientos de datos de personas fallecidas, sin perjuicio de lo establecido en el artículo 3.
-c) A los tratamientos sometidos a la normativa sobre protección de materias clasificadas.
-3. Los tratamientos a los que no sea directamente aplicable el Reglamento (UE) 2016/679 por afectar a actividades no comprendidas en el ámbito de aplicación del Derecho de la Unión Europea, se regirán por lo dispuesto en su legislación específica si la hubiere y supletoriamente por lo establecido en el citado reglamento y en la presente ley orgánica. Se encuentran en esta situación, entre otros, los tratamientos realizados al amparo de la legislación orgánica del régimen electoral general, los tratamientos realizados en el ámbito de instituciones penitenciarias y los tratamientos derivados del Registro Civil, los Registros de la Propiedad y Mercantiles.
-4. El tratamiento de datos llevado a cabo con ocasión de la tramitación por los órganos judiciales de los procesos de los que sean competentes, así como el realizado dentro de la gestión de la Oficina Judicial, se regirán por lo dispuesto en el Reglamento (UE) 2016/679 y la presente ley orgánica, sin perjuicio de las disposiciones de la Ley Orgánica 6/1985, de 1 julio, del Poder Judicial, que le sean aplicables.
-5. El tratamiento de datos llevado a cabo con ocasión de la tramitación por el Ministerio Fiscal de los procesos de los que sea competente, así como el realizado con esos fines dentro de la gestión de la Oficina Fiscal, se regirán por lo dispuesto en el Reglamento (UE) 2016/679 y la presente Ley Orgánica, sin perjuicio de las disposiciones de la Ley 50/1981, de 30 de diciembre, reguladora del Estatuto Orgánico del Ministerio Fiscal, la Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial y de las normas procesales que le sean aplicables.</akndiff:new>
-        </akndiff:articleChange>
-        <akndiff:articleChange article="art_44" type="substitute">
-          <akndiff:old>1. La Agencia Española de Protección de Datos es una autoridad administrativa independiente de ámbito estatal, de las previstas en la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, con personalidad jurídica y plena capacidad pública y privada, que actúa con plena independencia de los poderes públicos en el ejercicio de sus funciones.
-Su denominación oficial, de conformidad con lo establecido en el artículo 109.3 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, será «Agencia Española de Protección de Datos, Autoridad Administrativa Independiente».
-Se relaciona con el Gobierno a través del Ministerio de Justicia.
-2. La Agencia Española de Protección de Datos tendrá la condición de representante común de las autoridades de protección de datos del Reino de España en el Comité Europeo de Protección de Datos.
-3. La Agencia Española de Protección de Datos y el Consejo General del Poder Judicial colaborarán en aras del adecuado ejercicio de las respectivas competencias que la Ley Orgánica 6/1985, de 1 julio, del Poder Judicial, les atribuye en materia de protección de datos personales en el ámbito de la Administración de Justicia.</akndiff:old>
-          <akndiff:new>1. La Agencia Española de Protección de Datos es una autoridad administrativa independiente de ámbito estatal, de las previstas en la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, con personalidad jurídica y plena capacidad pública y privada, que actúa con plena independencia de los poderes públicos en el ejercicio de sus funciones.
-Su denominación oficial, de conformidad con lo establecido en el artículo 109.3 de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, será «Agencia Española de Protección de Datos, Autoridad Administrativa Independiente».
-Se relaciona con el Gobierno a través del Ministerio de Justicia.
-2. La Agencia Española de Protección de Datos tendrá la condición de representante común de las autoridades de protección de datos del Reino de España en el Comité Europeo de Protección de Datos.
-3. La Agencia Española de Protección de Datos, el Consejo General del Poder Judicial y en su caso, la Fiscalía General del Estado, colaborarán en aras del adecuado ejercicio de las respectivas competencias que la Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial, les atribuye en materia de protección de datos personales en el ámbito de la Administración de Justicia.</akndiff:new>
-        </akndiff:articleChange>
-        <akndiff:articleChange article="da_15" type="substitute">
-          <akndiff:old>Cuando no haya podido obtener por otros medios la información necesaria para realizar sus labores de supervisión o inspección, la Comisión Nacional del Mercado de Valores podrá recabar de los operadores que presten servicios de comunicaciones electrónicas disponibles al público y de los prestadores de servicios de la sociedad de la información, los datos que obren en su poder relativos a la comunicación electrónica o servicio de la sociedad de la información proporcionados por dichos prestadores que sean distintos a su contenido y resulten imprescindibles para el ejercicio de dichas labores.
-La cesión de estos datos requerirá la previa obtención de autorización judicial otorgada conforme a las normas procesales.
-Quedan excluidos de lo previsto en este apartado los datos de tráfico que los operadores estuviesen tratando con la exclusiva finalidad de dar cumplimiento a las obligaciones previstas en la Ley 25/2007, de 18 de octubre, de conservación de datos relativos a las comunicaciones electrónicas y a las redes públicas de comunicaciones.</akndiff:old>
-          <akndiff:new>Cuando no haya podido obtener por otros medios la información necesaria para realizar sus labores de supervisión e inspección relacionadas con la detección de delitos graves, la Comisión Nacional del Mercado de Valores podrá recabar de los operadores que presten servicios de comunicaciones electrónicas disponibles al público y de los prestadores de servicios de la sociedad de la información, los datos que obren en su poder relativos a la comunicación electrónica o servicio de la sociedad de la información proporcionados por dichos prestadores que sean distintos a su contenido y resulten imprescindibles para el ejercicio de dichas labores.
-La cesión de estos datos requerirá la previa obtención de autorización judicial otorgada conforme a las normas procesales.</akndiff:new>
+<akndiff:articleChange article="art_11" type="substitute">
+          <akndiff:old>1. Cuando un órgano competente hubiera ordenado, en ejercicio de las competencias que legalmente tenga atribuidas, que se interrumpa la prestación de un servicio de la sociedad de la información o la retirada de determinados contenidos provenientes de prestadores establecidos en España, y para ello fuera necesaria la colaboración de los prestadores de servicios de intermediación, dicho órgano podrá ordenar a los citados prestadores que suspendan el correspondiente servicio de intermediación utilizado para la provisión del servicio de la sociedad de la información o de los contenidos cuya interrupción o retirada hayan sido ordenados respectivamente.
+2. Si para garantizar la efectividad de la resolución que acuerde la interrupción de la prestación de un servicio o la retirada de contenidos procedentes de un prestador establecido en un Estado no perteneciente a la Unión Europea o al Espacio Económico Europeo, el órgano competente estimara necesario impedir el acceso desde España a los mismos, y para ello fuera necesaria la colaboración de los prestadores de servicios de intermediación establecidos en España, dicho órgano podrá ordenar a los citados prestadores de servicios de intermediación que suspendan el correspondiente servicio de intermediación utilizado para la provisión del servicio de la sociedad de la información o de los contenidos cuya interrupción o retirada hayan sido ordenados respectivamente.
+3. En la adopción y cumplimiento de las medidas a que se refieren los apartados anteriores, se respetarán, en todo caso, las garantías, normas y procedimientos previstos en el ordenamiento jurídico para proteger los derechos a la intimidad personal y familiar, a la protección de los datos personales, a la libertad de expresión o a la libertad de información, cuando estos pudieran resultar afectados.
+En todos los casos en que la Constitución, las normas reguladoras de los respectivos derechos y libertades o las que resulten aplicables a las diferentes materias atribuyan competencia a los órganos jurisdiccionales de forma excluyente para intervenir en el ejercicio de actividades o derechos, sólo la autoridad judicial competente podrá adoptar las medidas previstas en este artículo. En particular, la autorización del secuestro de páginas de Internet o de su restricción cuando ésta afecte a los derechos y libertades de expresión e información y demás amparados en los términos establecidos en el artículo 20 de la Constitución solo podrá ser decidida por los órganos jurisdiccionales competentes.
+4. Las medidas a que hace referencia este artículo serán objetivas, proporcionadas y no discriminatorias, y se adoptarán de forma cautelar o en ejecución de las resoluciones que se dicten, conforme a los procedimientos administrativos legalmente establecidos o a los previstos en la legislación procesal que corresponda.</akndiff:old>
+          <akndiff:new>1. Cuando un órgano competente hubiera ordenado, en ejercicio de las competencias que legalmente tenga atribuidas, que se interrumpa la prestación de un servicio de la sociedad de la información o la retirada de determinados contenidos provenientes de prestadores establecidos en España, y para ello fuera necesaria la colaboración de los prestadores de servicios de intermediación, dicho órgano podrá ordenar a los citados prestadores que suspendan el correspondiente servicio de intermediación utilizado para la provisión del servicio de la sociedad de la información o de los contenidos cuya interrupción o retirada hayan sido ordenados respectivamente.
+2. Si para garantizar la efectividad de la resolución que acuerde la interrupción de la prestación de un servicio o la retirada de contenidos procedentes de un prestador establecido en un Estado no perteneciente a la Unión Europea o al Espacio Económico Europeo, el órgano competente estimara necesario impedir el acceso desde España a los mismos, y para ello fuera necesaria la colaboración de los prestadores de servicios de intermediación establecidos en España, dicho órgano podrá ordenar a los citados prestadores de servicios de intermediación que suspendan el correspondiente servicio de intermediación utilizado para la provisión del servicio de la sociedad de la información o de los contenidos cuya interrupción o retirada hayan sido ordenados respectivamente.
+3. En la adopción y cumplimiento de las medidas a que se refieren los apartados anteriores, se respetarán, en todo caso, las garantías, normas y procedimientos previstos en el ordenamiento jurídico para proteger los derechos a la intimidad personal y familiar, a la protección de los datos personales, a la libertad de expresión o a la libertad de información, cuando estos pudieran resultar afectados.
+En todos los casos en que la Constitución, las normas reguladoras de los respectivos derechos y libertades o las que resulten aplicables a las diferentes materias atribuyan competencia a los órganos jurisdiccionales de forma excluyente para intervenir en el ejercicio de actividades o derechos, sólo la autoridad judicial competente podrá adoptar las medidas previstas en este artículo. En particular, la autorización del secuestro de páginas de Internet o de su restricción cuando ésta afecte a los derechos y libertades de expresión e información y demás amparados en los términos establecidos en el artículo 20 de la Constitución solo podrá ser decidida por los órganos jurisdiccionales competentes.
+4. Las medidas a que hace referencia este artículo serán objetivas, proporcionadas y no discriminatorias, y se adoptarán de forma cautelar o en ejecución de las resoluciones que se dicten, conforme a los procedimientos administrativos legalmente establecidos o a los previstos en la legislación procesal que corresponda.
+En particular, cuando resulte necesario para proteger los derechos de la víctima o grupos o personas discriminadas, los jueces y tribunales podrán acordar, de conformidad con la legislación procesal, motivadamente, y siempre de acuerdo con el principio de proporcionalidad, cualquiera de las medidas de restricción o interrupción de la prestación de servicios o de retirada de datos de páginas de internet que contempla la presente ley.</akndiff:new>
         </akndiff:articleChange>
     </akndiff:changeSet>
   </amendment>

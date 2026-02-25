@@ -1,0 +1,86 @@
+{
+  "boeId": "BOE-A-2022-10757",
+  "metadata": {
+    "identificador": "BOE-A-2022-10757",
+    "rango": "Ley",
+    "titulo": "Ley 11/2022, de 28 de junio, General de Telecomunicaciones.",
+    "numeroOficial": "11/2022",
+    "fechaDisposicion": "2022-06-28",
+    "fechaPublicacion": "2022-06-29",
+    "fechaVigencia": "2022-06-30",
+    "estatusDerogacion": "N",
+    "estadoConsolidacion": "Finalizado",
+    "urlEli": "https://www.boe.es/eli/es/l/2022/06/28/11",
+    "departamento": "Jefatura del Estado"
+  },
+  "modificadaPor": [
+    {
+      "boeId": "BOE-A-2025-26698",
+      "relacion": "SE MODIFICA",
+      "texto": "el art. 65, por Ley 10/2025, de 26 de diciembre"
+    },
+    {
+      "boeId": "BOE-A-2022-15168",
+      "relacion": "CORRECCIÓN de errores",
+      "texto": "en BOE núm. 224, de 17 de septiembre de 2022"
+    },
+    {
+      "boeId": "BOE-A-2023-15071",
+      "relacion": "SE INTERPRETA",
+      "texto": "el art. 66.1.b), por Circular 1/2023, de 26 de junio"
+    },
+    {
+      "boeId": "BOE-A-2022-22128",
+      "relacion": "SE DICTA EN RELACIÓN",
+      "texto": "el anexo I, sobre Tasa por reserva del dominio público radioeléctrico: Ley 31/2022, de 23 de diciembre"
+    }
+  ],
+  "modifica": [
+    {
+      "boeId": "BOE-A-2012-15595",
+      "relacion": "DEROGA",
+      "texto": "la disposición adicional 3 de la Ley 12/2012, de 26 de diciembre"
+    },
+    {
+      "boeId": "BOE-A-2014-4950",
+      "relacion": "DEROGA",
+      "texto": "con la excepción indicada, la Ley 9/2014, de 9 de mayo"
+    },
+    {
+      "boeId": "BOE-A-2015-10565",
+      "relacion": "MODIFICA",
+      "texto": "los arts. 9.2.c), 10.2.c) y AÑADE la disposición adicional 7 a la Ley 39/2015, de 1 de octubre"
+    },
+    {
+      "boeId": "DOUE-L-2018-82056",
+      "relacion": "TRANSPONE",
+      "texto": "la Directiva 2018/1972, de 11 de diciembre"
+    },
+    {
+      "boeId": "DOUE-L-2014-81073",
+      "relacion": "TRANSPONE",
+      "texto": "la Directiva 2014/61/UE, de 15 de mayo"
+    },
+    {
+      "boeId": "DOUE-L-2014-81047",
+      "relacion": "TRANSPONE",
+      "texto": "la Directiva 2014/53/UE, de 16 de abril"
+    },
+    {
+      "boeId": "DOUE-L-2014-80623",
+      "relacion": "TRANSPONE",
+      "texto": "la Directiva 2014/30/UE, de 26 de febrero"
+    },
+    {
+      "boeId": "DOUE-L-2002-81371",
+      "relacion": "TRANSPONE",
+      "texto": "Directiva 2002/58/CE, de 12 de julio"
+    },
+    {
+      "boeId": "DOUE-L-2015-82352",
+      "relacion": "CITA",
+      "texto": "Reglamento (UE) 2015/2120, de 25 de noviembre"
+    }
+  ],
+  "materias": []
+}

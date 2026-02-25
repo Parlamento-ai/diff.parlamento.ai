@@ -1,0 +1,14 @@
+═══════════════════════════════════════════════════════
+  ES AKN Pipeline: ley-34-2002-servicios-sociedad-informacion
+  Title: Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            BOE-A-2002-13758                    2.7s
+  [PASS]  2. Download            texto + metadata                    0.7s
+  [PASS]  3. Convert             14 snapshots                        0.0s
+  [PASS]  4. Configure           ley-34-2002-servicios-sociedad-informacion 0.0s
+  [PASS]  0. Validate            14 snapshots OK                     0.0s
+  [PASS]  5. Generate            15 AKN files                        0.0s
+  [PASS]  6. Enrich              vote enrichment                     144.8s
+
+  RESULT: 7 pass, 0 fail, 0 warn (148.3s)
+═══════════════════════════════════════════════════════

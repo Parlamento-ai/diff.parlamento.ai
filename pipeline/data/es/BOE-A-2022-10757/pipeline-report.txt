@@ -1,0 +1,14 @@
+═══════════════════════════════════════════════════════
+  ES AKN Pipeline: ley-11-2022-general-telecomunicaciones
+  Title: Ley 11/2022, de 28 de junio, General de Telecomunicaciones.
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            BOE-A-2022-10757                    4.8s
+  [PASS]  2. Download            texto + metadata                    3.1s
+  [PASS]  3. Convert             3 snapshots                         0.0s
+  [PASS]  4. Configure           ley-11-2022-general-telecomunicaciones 0.0s
+  [PASS]  0. Validate            3 snapshots OK                      0.0s
+  [PASS]  5. Generate            4 AKN files                         0.0s
+  [PASS]  6. Enrich              vote enrichment                     36.3s
+
+  RESULT: 7 pass, 0 fail, 0 warn (44.3s)
+═══════════════════════════════════════════════════════

@@ -234,6 +234,9 @@ export function parseTextoToSnapshots(xml: string): VersionSnapshot[] {
 			});
 		}
 
+		// Deduplicate eIds — safety net for unknown BOE patterns
+		deduplicateEIds(articles);
+
 		// Determine date: use the fecha_vigencia from a version with this norma
 		const normaVersion = allVersions.find((v) => v.idNorma === norma);
 		const fecha = normaVersion?.fechaVigencia || '';
@@ -272,8 +275,11 @@ function extractVersionContent(versionXml: string): string {
 
 /** Detectar si un titulo es un bloque agrupado ("Arts 301 a 324") */
 function isGroupedBlock(titulo: string): boolean {
-	return /Arts?\s+\d+\s+(a|al)\s+\d+/i.test(titulo);
+	return /Art[ií]culos?\s+\d+\s+(a|al|y)\s+\d+/i.test(titulo);
 }
+
+/** Suffixes used in articles and disposiciones (BOE uses accented quáter) */
+const SUFFIXES = 'bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|novies|decies';
 
 /**
  * Derivar eId SOLO desde el titulo — nunca desde bloqueId.
@@ -283,30 +289,30 @@ function isGroupedBlock(titulo: string): boolean {
 function bloqueIdToEId(bloqueId: string, titulo: string): string {
 	const tituloLower = titulo.toLowerCase();
 
-	// Disposiciones: extraer ordinal del titulo
+	// Disposiciones: extraer ordinal + optional suffix (bis, ter, etc.)
 	if (tituloLower.includes('adicional')) {
-		return `da_${extractOrdinalNum(titulo)}`;
+		return `da_${extractDisposicionId(titulo)}`;
 	}
 	if (tituloLower.includes('transitoria')) {
-		return `dt_${extractOrdinalNum(titulo)}`;
+		return `dt_${extractDisposicionId(titulo)}`;
 	}
 	if (tituloLower.includes('final')) {
-		return `df_${extractOrdinalNum(titulo)}`;
+		return `df_${extractDisposicionId(titulo)}`;
 	}
 	if (tituloLower.includes('derogatoria')) {
-		return `dd_${extractOrdinalNum(titulo)}`;
+		return `dd_${extractDisposicionId(titulo)}`;
 	}
 
-	// Bloques agrupados: "Arts 301 a 324" → art_301_324
-	const rangeMatch = titulo.match(/Arts?\s+(\d+)\s+(?:a|al)\s+(\d+)/i);
+	// Bloques agrupados: "Arts 301 a 324", "Artículos 617 a 622", "Artículos 638 y 639"
+	const rangeMatch = titulo.match(/Art[ií]culos?\s+(\d+)\s+(?:a|al|y)\s+(\d+)/i);
 	if (rangeMatch) {
 		return `art_${rangeMatch[1]}_${rangeMatch[2]}`;
 	}
 
-	// Articulo individual: extraer numero + sufijo (bis, ter, etc.) del titulo
-	const artMatch = titulo.match(/(\d+)\s*(bis|ter|quater|quinquies|sexies|septies|octies|novies|decies)?/i);
+	// Articulo individual: extraer numero + sufijo (bis, ter, quáter, etc.)
+	const artMatch = titulo.match(new RegExp(`(\\d+)\\s*(${SUFFIXES})?`, 'i'));
 	if (artMatch) {
-		const suffix = artMatch[2] ? `_${artMatch[2].toLowerCase()}` : '';
+		const suffix = artMatch[2] ? `_${artMatch[2].toLowerCase().replace('á', 'a')}` : '';
 		return `art_${artMatch[1]}${suffix}`;
 	}
 
@@ -314,7 +320,40 @@ function bloqueIdToEId(bloqueId: string, titulo: string): string {
 	return bloqueId.replace(/[^a-zA-Z0-9_]/g, '_');
 }
 
-const ORDINALS: Record<string, string> = {
+/** Extract ordinal number + optional suffix for disposiciones: "segunda bis" → "2_bis" */
+function extractDisposicionId(titulo: string): string {
+	const num = extractOrdinalNum(titulo);
+	const lower = titulo.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+	const suffixMatch = lower.match(/\b(bis|ter|quater|quinquies|sexies|septies|octies|novies|decies)\b/);
+	if (suffixMatch) {
+		return `${num}_${suffixMatch[1]}`;
+	}
+	return num;
+}
+
+/** Decade stems (normalized, no accents) mapped to their base value */
+const DECADES: Array<[string, number]> = [
+	['sexagesim', 60],
+	['quincuagesim', 50],
+	['cuadragesim', 40],
+	['trigesim', 30],
+	['vigesim', 20],
+];
+
+/** Unit ordinals (normalized, no accents) */
+const UNIT_ORDINALS: Array<[string, number]> = [
+	['primer', 1],
+	['segund', 2],
+	['tercer', 3],
+	['cuart', 4],
+	['quint', 5],
+	['sext', 6],
+	['septim', 7],
+	['octav', 8],
+	['noven', 9],
+];
+
+const SIMPLE_ORDINALS: Record<string, string> = {
 	primera: '1', primero: '1',
 	segunda: '2', segundo: '2',
 	tercera: '3', tercero: '3',
@@ -334,8 +373,7 @@ const ORDINALS: Record<string, string> = {
 	decimoseptima: '17', decimoseptimo: '17',
 	decimoctava: '18', decimoctavo: '18',
 	decimonovena: '19', decimonoveno: '19',
-	vigesima: '20', vigesimo: '20',
-	unica: '1', unico: '1'
+	unica: '0', unico: '0'
 };
 
 function extractOrdinalNum(titulo: string): string {
@@ -348,28 +386,25 @@ function extractOrdinalNum(titulo: string): string {
 		.normalize('NFD')
 		.replace(/[\u0300-\u036f]/g, '');
 
-	// Compound ordinals: "vigesima primera" = 21, "vigesima segunda" = 22, etc.
-	const compoundMatch = lower.match(/vigesim[ao]\s+(primer[ao]|segund[ao]|tercer[ao]|cuart[ao]|quint[ao]|sext[ao]|septim[ao]|octav[ao]|noven[ao])/);
-	if (compoundMatch) {
-		const units: Record<string, number> = {
-			primer: 1, primera: 1, primero: 1,
-			segund: 2, segunda: 2, segundo: 2,
-			tercer: 3, tercera: 3, tercero: 3,
-			cuart: 4, cuarta: 4, cuarto: 4,
-			quint: 5, quinta: 5, quinto: 5,
-			sext: 6, sexta: 6, sexto: 6,
-			septim: 7, septima: 7, septimo: 7,
-			octav: 8, octava: 8, octavo: 8,
-			noven: 9, novena: 9, noveno: 9
-		};
-		for (const [k, v] of Object.entries(units)) {
-			if (compoundMatch[1].startsWith(k)) return String(20 + v);
+	// Compound ordinals: "vigesima primera" = 21, "trigesimosegunda" = 32, etc.
+	// Handles both "vigesima primera" (two words) and "vigesimoprimera" (one word)
+	for (const [decade, base] of DECADES) {
+		if (!lower.includes(decade)) continue;
+		// Extract what comes after the decade stem
+		const after = lower.slice(lower.indexOf(decade) + decade.length).replace(/^[ao]\s*/, '');
+		if (!after || after.match(/^\s*$/)) return String(base); // just "vigesima" = 20
+		// Match unit ordinal in the remainder
+		for (const [unit, val] of UNIT_ORDINALS) {
+			if (after.startsWith(unit) || after.match(new RegExp(`^\\s*${unit}`))) {
+				return String(base + val);
+			}
 		}
+		return String(base); // decade without recognized unit
 	}
 
 	// Simple ordinals — matchear el mas largo primero para evitar
 	// que "decima" matchee dentro de "decimoctava"
-	const sortedOrdinals = Object.entries(ORDINALS).sort((a, b) => b[0].length - a[0].length);
+	const sortedOrdinals = Object.entries(SIMPLE_ORDINALS).sort((a, b) => b[0].length - a[0].length);
 	for (const [word, num] of sortedOrdinals) {
 		if (lower.includes(word)) return num;
 	}
@@ -379,12 +414,24 @@ function extractOrdinalNum(titulo: string): string {
 
 function extractNum(bloqueId: string, titulo: string): string {
 	const tituloLower = titulo.toLowerCase();
-	if (tituloLower.includes('adicional')) return `DA ${extractOrdinalNum(titulo)}`;
-	if (tituloLower.includes('transitoria')) return `DT ${extractOrdinalNum(titulo)}`;
-	if (tituloLower.includes('final')) return `DF ${extractOrdinalNum(titulo)}`;
-	if (tituloLower.includes('derogatoria')) return `DD ${extractOrdinalNum(titulo)}`;
+	if (tituloLower.includes('adicional')) { const n = extractOrdinalNum(titulo); return `DA ${n === '0' ? 'única' : n}`; }
+	if (tituloLower.includes('transitoria')) { const n = extractOrdinalNum(titulo); return `DT ${n === '0' ? 'única' : n}`; }
+	if (tituloLower.includes('final')) { const n = extractOrdinalNum(titulo); return `DF ${n === '0' ? 'única' : n}`; }
+	if (tituloLower.includes('derogatoria')) { const n = extractOrdinalNum(titulo); return `DD ${n === '0' ? 'única' : n}`; }
 	const m = titulo.match(/\d+/);
 	return m ? m[0] : bloqueId;
+}
+
+/** Deduplicate eIds by appending _2, _3 etc. to collisions */
+function deduplicateEIds(articles: ParsedArticle[]): void {
+	const counts = new Map<string, number>();
+	for (const art of articles) {
+		const count = (counts.get(art.eId) || 0) + 1;
+		counts.set(art.eId, count);
+		if (count > 1) {
+			art.eId = `${art.eId}_${count}`;
+		}
+	}
 }
 
 function extractHeading(titulo: string): string {

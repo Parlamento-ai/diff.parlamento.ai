@@ -2,11 +2,9 @@
   ES AKN Pipeline: ley-39-2015-procedimiento-administrativo-comun
   Title: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
 ═══════════════════════════════════════════════════════
-  [PASS]  3. Convert             14 snapshots                        0.3s
-  [PASS]  4. Configure           ley-39-2015-procedimiento-administrativo-comun 0.0s
   [PASS]  0. Validate            14 snapshots OK                     0.0s
-  [PASS]  5. Generate            15 AKN files                        0.3s
-  [WARN]  6. Enrich              not yet implemented                 0.0s
+  [PASS]  5. Generate            15 AKN files                        0.1s
+  [PASS]  6. Enrich              vote enrichment                     48.8s
 
-  RESULT: 4 pass, 0 fail, 1 warn (0.7s)
+  RESULT: 3 pass, 0 fail, 0 warn (49.0s)
 ═══════════════════════════════════════════════════════

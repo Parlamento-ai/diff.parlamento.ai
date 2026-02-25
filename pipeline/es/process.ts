@@ -16,7 +16,7 @@
  *   3. Convert    — BOE XML → version snapshots
  *   4. Configure  — build timeline from snapshots + analisis
  *   5. Generate   — AKN XML files
- *   6. Enrich     — (placeholder)
+ *   6. Enrich     — Congreso vote data
  */
 import { existsSync, mkdirSync, renameSync, writeFileSync } from 'node:fs';
 import { join, resolve, relative } from 'node:path';
@@ -182,10 +182,10 @@ async function main(): Promise<void> {
 	const generated = generate(config, snapshots, outDir);
 	allResults.push({ step: 5, id: 'generate', name: 'Generate', status: 'PASS', detail: `${generated.length} AKN files`, elapsed: Date.now() - t0Gen });
 
-	// Phase 6: ENRICH — placeholder
+	// Phase 6: ENRICH — Congreso vote data
 	const t0Enrich = Date.now();
 	await enrich(config, outDir);
-	allResults.push({ step: 6, id: 'enrich', name: 'Enrich', status: 'WARN', detail: 'not yet implemented', elapsed: Date.now() - t0Enrich });
+	allResults.push({ step: 6, id: 'enrich', name: 'Enrich', status: 'PASS', detail: 'vote enrichment', elapsed: Date.now() - t0Enrich });
 
 	const totalElapsed = Date.now() - startTime;
 	const aknDir = join(outDir, 'akn');

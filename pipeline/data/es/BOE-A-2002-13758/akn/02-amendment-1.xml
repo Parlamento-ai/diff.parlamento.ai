@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-34-2002-servicios-sociedad-informacion-amendment-1">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2002/07/11/34"/>
+          <FRBRuri value="/es/l/2002/07/11/34"/>
+          <FRBRdate date="2003-11-05" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2002/07/11/34/spa@2003-11-05"/>
+          <FRBRuri value="/es/l/2002/07/11/34/spa@2003-11-05"/>
+          <FRBRdate date="2003-11-05" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2002/07/11/34/spa@2003-11-05/akn"/>
+          <FRBRuri value="/es/l/2002/07/11/34/spa@2003-11-05/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por los arts. 21, 22, 38 y 43.1 y SE AÑADE una disposición adicional 6, por la Ley 3</docTitle></p></longTitle>
+      <p>Modificacion de Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2002/07/11/34/spa@2002-10-12"
+      result="/es/l/2002/07/11/34/spa@2003-11-05">
+        <akndiff:articleChange article="art_21" type="substitute">
+          <akndiff:old>Queda prohibido el envío de comunicaciones publicitarias o promocionales por correo electrónico u otro medio de comunicación electrónica equivalente que previamente no hubieran sido solicitadas o expresamente autorizadas por los destinatarios de las mismas.</akndiff:old>
+          <akndiff:new>1. Queda prohibido el envío de comunicaciones publicitarias o promocionales por correo electrónico u otro medio de comunicación electrónica equivalente que previamente no hubieran sido solicitadas o expresamente autorizadas por los destinatarios de las mismas.
+2. Lo dispuesto en el apartado anterior no será de aplicación cuando exista una relación contractual previa, siempre que el prestador hubiera obtenido de forma lícita los datos de contacto del destinatario y los empleara para el envío de comunicaciones comerciales referentes a productos o servicios de su propia empresa que sean similares a los que inicialmente fueron objeto de contratación con el cliente.
+En todo caso, el prestador deberá ofrecer al destinatario la posibilidad de oponerse al tratamiento de sus datos con fines promocionales mediante un procedimiento sencillo y gratuito, tanto en el momento de recogida de los datos como en cada una de las comunicaciones comerciales que le dirija.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_22" type="substitute">
+          <akndiff:old>1. Si el destinatario de servicios debiera facilitar su dirección de correo electrónico durante el proceso de contratación o de suscripción a algún servicio y el prestador pretendiera utilizarla posteriormente para el envío de comunicaciones comerciales, deberá poner en conocimiento de su cliente esa intención y solicitar su consentimiento para la recepción de dichas comunicaciones, antes de finalizar el procedimiento de contratación.
+2. El destinatario podrá revocar en cualquier momento el consentimiento prestado a la recepción de comunicaciones comerciales con la simple notificación de su voluntad al remitente.
+A tal efecto, los prestadores de servicios deberán habilitar procedimientos sencillos y gratuitos para que los destinatarios de servicios puedan revocar el consentimiento que hubieran prestado.
+Asimismo, deberán facilitar información accesible por medios electrónicos sobre dichos procedimientos.</akndiff:old>
+          <akndiff:new>1. El destinatario podrá revocar en cualquier momento el consentimiento prestado a la recepción de comunicaciones comerciales con la simple notificación de su voluntad al remitente.
+A tal efecto, los prestadores de servicios deberán habilitar procedimientos sencillos y gratuitos para que los destinatarios de servicios puedan revocar el consentimiento que hubieran prestado.
+Asimismo, deberán facilitar información accesible por medios electrónicos sobre dichos procedimientos.
+2. Cuando los prestadores de servicios empleen dispositivos de almacenamiento y recuperación de datos en equipos terminales, informarán a los destinatarios de manera clara y completa sobre su utilización y finalidad, ofreciéndoles la posibilidad de rechazar el tratamiento de los datos mediante un procedimiento sencillo y gratuito.
+Lo anterior no impedirá el posible almacenamiento o acceso a datos con el fin de efectuar o facilitar técnicamente la transmisión de una comunicación por una red de comunicaciones electrónicas o, en la medida que resulte estrictamente necesario, para la prestación de un servicio de la sociedad de la información expresamente solicitado por el destinatario.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_38" type="substitute">
+          <akndiff:old>1. Las infracciones de los preceptos de esta Ley se calificarán como muy graves, graves y leves.
+2. Son infracciones muy graves:
+a) El incumplimiento de las órdenes dictadas en virtud del artículo 8 en aquellos supuestos en que hayan sido dictadas por un órgano administrativo.
+b) El incumplimiento de la obligación de suspender la transmisión, el alojamiento de datos, el acceso a la red o la prestación de cualquier otro servicio equivalente de intermediación, cuando un órgano administrativo competente lo ordene, en virtud de lo dispuesto en el artículo 11.
+c) El incumplimiento de la obligación de retener los datos de tráfico generados por las comunicaciones establecidas durante la prestación de un servicio de la sociedad de la información, prevista en el artículo 12.
+d) La utilización de los datos retenidos, en cumplimiento del artículo 12, para fines distintos de los señalados en él.
+3. Son infracciones graves:
+a) El incumplimiento de lo establecido en los párrafos a) y f) del artículo 10.1.
+b) El envío masivo de comunicaciones comerciales por correo electrónico u otro medio de comunicación electrónica equivalente a destinatarios que no hayan autorizado o solicitado expresamente su remisión, o el envío, en el plazo de un año, de más de tres comunicaciones comerciales por los medios aludidos a un mismo destinatario, cuando éste no hubiera solicitado o autorizado su remisión.
+c) No poner a disposición del destinatario del servicio las condiciones generales a que, en su caso, se sujete el contrato, en la forma prevista en el artículo 27.
+d) El incumplimiento habitual de la obligación de confirmar la recepción de una aceptación, cuando no se haya pactado su exclusión o el contrato se haya celebrado con un consumidor.
+e) La resistencia, excusa o negativa a la actuación inspectora de los órganos facultados para llevarla a cabo con arreglo a esta Ley.
+4. Son infracciones leves:
+a) La falta de comunicación al registro público en que estén inscritos, de acuerdo con lo establecido en el artículo 9, del nombre o nombres de dominio o direcciones de Internet que empleen para la prestación de servicios de la sociedad de la información.
+b) No informar en la forma prescrita por el artículo 10.1 sobre los aspectos señalados en los párrafos b), c), d), e) y g) del mismo.
+c) El incumplimiento de lo previsto en el artículo 20 para las comunicaciones comerciales, ofertas promocionales y concursos.
+d) El envío de comunicaciones comerciales por correo electrónico u otro medio de comunicación electrónica equivalente a los destinatarios que no hayan solicitado o autorizado expresamente su remisión, cuando no constituya infracción grave.
+e) No facilitar la información a que se refiere el artículo 27.1, cuando las partes no hayan pactado su exclusión o el destinatario sea un consumidor.
+f) El incumplimiento de la obligación de confirmar la recepción de una petición en los términos establecidos en el artículo 28, cuando no se haya pactado su exclusión o el contrato se haya celebrado con un consumidor, salvo que constituya infracción grave.</akndiff:old>
+          <akndiff:new>1. Las infracciones de los preceptos de esta Ley se calificarán como muy graves, graves y leves.
+2. Son infracciones muy graves:
+a) El incumplimiento de las órdenes dictadas en virtud del artículo 8 en aquellos supuestos en que hayan sido dictadas por un órgano administrativo.
+b) El incumplimiento de la obligación de suspender la transmisión, el alojamiento de datos, el acceso a la red o la prestación de cualquier otro servicio equivalente de intermediación, cuando un órgano administrativo competente lo ordene, en virtud de lo dispuesto en el artículo 11.
+c) El incumplimiento de la obligación de retener los datos de tráfico generados por las comunicaciones establecidas durante la prestación de un servicio de la sociedad de la información, prevista en el artículo 12.
+d) La utilización de los datos retenidos, en cumplimiento del artículo 12, para fines distintos de los señalados en él.
+3. Son infracciones graves:
+a) El incumplimiento de lo establecido en los párrafos a) y f) del artículo 10.1.
+b) El envío masivo de comunicaciones comerciales por correo electrónico u otro medio de comunicación electrónica equivalente, a destinatarios que no hayan autorizado su remisión o se hayan opuesto a ella o el envío, en el plazo de un año, de más de tres comunicaciones comerciales por los medios aludidos a un mismo destinatario, cuando éste no hubiera solicitado o autorizado su remisión o se hubiera opuesto a ella.
+c) No poner a disposición del destinatario del servicio las condiciones generales a que, en su caso, se sujete el contrato, en la forma prevista en el artículo 27.
+d) El incumplimiento habitual de la obligación de confirmar la recepción de una aceptación, cuando no se haya pactado su exclusión o el contrato se haya celebrado con un consumidor.
+e) La resistencia, excusa o negativa a la actuación inspectora de los órganos facultados para llevarla a cabo con arreglo a esta Ley.
+4. Son infracciones leves:
+a) La falta de comunicación al registro público en que estén inscritos, de acuerdo con lo establecido en el artículo 9, del nombre o nombres de dominio o direcciones de Internet que empleen para la prestación de servicios de la sociedad de la información.
+b) No informar en la forma prescrita por el artículo 10.1 sobre los aspectos señalados en los párrafos b), c), d), e) y g) del mismo.
+c) El incumplimiento de lo previsto en el artículo 20 para las comunicaciones comerciales, ofertas promocionales y concursos.
+d) El envío de comunicaciones comerciales por correo electrónico u otro medio de comunicación electrónica equivalente a los destinatarios que no hayan autorizado su remisión o se hayan opuesto a ella, cuando no constituya infracción grave.
+e) No facilitar la información a que se refiere el artículo 27.1, cuando las partes no hayan pactado su exclusión o el destinatario sea un consumidor.
+f) El incumplimiento de la obligación de confirmar la recepción de una petición en los términos establecidos en el artículo 28, cuando no se haya pactado su exclusión o el contrato se haya celebrado con un consumidor, salvo que constituya infracción grave.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="art_43" type="substitute">
+          <akndiff:old>1. La imposición de sanciones por el incumplimiento de lo previsto en esta Ley corresponderá, en el caso de infracciones muy graves, al Ministro de Ciencia y Tecnología, y en el de infracciones graves y leves, al Secretario de Estado de Telecomunicaciones y para la Sociedad de la Información.
+No obstante lo anterior, la imposición de sanciones por incumplimiento de las resoluciones dictadas por los órganos competentes en función de la materia o entidad de que se trate a que se refieren los párrafos a) y b) del artículo 38.2 de esta Ley corresponderá al órgano que dictó la resolución incumplida.
+2. La potestad sancionadora regulada en esta Ley se ejercerá de conformidad con lo establecido al respecto en la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, y en sus normas de desarrollo.</akndiff:old>
+          <akndiff:new>1. La imposición de sanciones por el incumplimiento de lo previsto en esta ley corresponderá, en el caso de infracciones muy graves, al Ministro de Ciencia y Tecnología y en el de infracciones graves y leves, al Secretario de Estado de Telecomunicaciones y para la Sociedad de la Información.
+No obstante lo anterior, la imposición de sanciones por incumplimiento de las resoluciones dictadas por los órganos competentes en función de la materia o entidad de que se trate a que se refieren los párrafos a) y b) del artículo 38.2 de esta ley corresponderá al órgano que dictó la resolución incumplida. Igualmente, corresponderá a la Agencia de Protección de Datos la imposición de sanciones por la comisión de las infracciones tipificadas en los artículos 38.3.b) y 38.4.d) de esta ley.
+2. La potestad sancionadora regulada en esta Ley se ejercerá de conformidad con lo establecido al respecto en la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, y en sus normas de desarrollo.</akndiff:new>
+        </akndiff:articleChange>
+        <akndiff:articleChange article="da_7" type="insert" after="da_6">
+          <akndiff:new>El Ministerio de Ciencia y Tecnología como Departamento de la Administración General del Estado responsable de la propuesta al Gobierno y de la ejecución de las políticas tendentes a promover el desarrollo en España de la Sociedad de la Información, la generación de valor añadido nacional y la consolidación de una industria nacional sólida y eficiente de productos, servicios y contenidos de la Sociedad de la Información, presentará al Gobierno para su aprobación y a las Cortes Generales un plan cuatrienal para el desarrollo de la Sociedad de la Información y de convergencia con Europa con objetivos mensurables, estructurado en torno a acciones concretas, con mecanismos de seguimiento efectivos, que aborde de forma equilibrada todos los frentes de actuación, contemplando diversos horizontes de maduración de las iniciativas y asegurando la cooperación y la coordinación del conjunto de las Administraciones públicas.
+Este plan establecerá, asimismo, los objetivos, las acciones, los recursos y la periodificación del proceso de convergencia con los países de nuestro entorno comunitario en línea con las decisiones y recomendaciones de la Unión Europea.
+En este sentido, el plan deberá:
+Potenciar decididamente las iniciativas de formación y educación en las tecnologías de la información para extender su uso; especialmente, en el ámbito de la educación, la cultura, la gestión de las empresas, el comercio electrónico y la sanidad.
+Profundizar en la implantación del gobierno y la administración electrónica incrementando el nivel de participación ciudadana y mejorando el grado de eficiencia de las Administraciones públicas.</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

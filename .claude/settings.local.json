@@ -38,7 +38,11 @@
       "Bash(python3:*)",
       "WebFetch(domain:www.eu-data-act.com)",
       "WebFetch(domain:www.boe.es)",
-      "WebFetch(domain:www.european-cyber-resilience-act.com)"
+      "WebFetch(domain:www.european-cyber-resilience-act.com)",
+      "WebFetch(domain:www.congreso.es)",
+      "WebFetch(domain:github.com)",
+      "Bash(rm \"C:\\\\Users\\\\josea\\\\OneDrive\\\\Desktop\\\\Work\\\\diff.parlamento.ai\\\\pipeline\\\\data\\\\es\\\\BOE-A-2018-16673\\\\sources\\\\votes.json\" && cd \"C:\\\\Users\\\\josea\\\\OneDrive\\\\Desktop\\\\Work\\\\diff.parlamento.ai\" && npx tsx pipeline/es/process.ts BOE-A-2018-16673 --phase=6 2>&1)",
+      "Bash(rm -f \"C:\\\\Users\\\\josea\\\\OneDrive\\\\Desktop\\\\Work\\\\diff.parlamento.ai\\\\pipeline\\\\data\\\\es\\\\BOE-A-2018-16673\\\\sources\\\\votes.json\" && cd \"C:\\\\Users\\\\josea\\\\OneDrive\\\\Desktop\\\\Work\\\\diff.parlamento.ai\" && npx tsx pipeline/es/process.ts BOE-A-2018-16673 --phase=6 2>&1)"
     ]
   },
   "enableAllProjectMcpServers": true,

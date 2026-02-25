@@ -29,7 +29,9 @@
 		'us-s331-halt-fentanyl': FlagUs,
 		'us-s1582-genius-act': FlagUs,
 		'es-lo3-2018-proteccion-datos': FlagEs,
-		'es-ley39-2015-procedimiento-administrativo': FlagEs
+		'es-ley39-2015-procedimiento-administrativo': FlagEs,
+		'es-lssi-2002': FlagEs,
+		'es-telecom-2022': FlagEs
 	};
 
 	const normOrder = [
@@ -77,6 +79,8 @@
 
 	const esLo3 = $derived(data.boletines.find((b) => b.slug === 'es-lo3-2018-proteccion-datos'));
 	const esLey39 = $derived(data.boletines.find((b) => b.slug === 'es-ley39-2015-procedimiento-administrativo'));
+	const esLssi = $derived(data.boletines.find((b) => b.slug === 'es-lssi-2002'));
+	const esTelecom = $derived(data.boletines.find((b) => b.slug === 'es-telecom-2022'));
 </script>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -368,7 +372,7 @@
 	{/if}
 
 	<!-- ES — España (BOE) -->
-	{#if esLo3 || esLey39}
+	{#if esLo3 || esLey39 || esLssi || esTelecom}
 		<section class="mb-14">
 			<div class="mb-5 max-w-lg mx-auto">
 				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
@@ -396,6 +400,22 @@
 						title={esLey39.title}
 						documentCount={esLey39.documentCount}
 						flag={flagMap[esLey39.slug]}
+					/>
+				{/if}
+				{#if esLssi}
+					<BoletinCard
+						slug={esLssi.slug}
+						title={esLssi.title}
+						documentCount={esLssi.documentCount}
+						flag={flagMap[esLssi.slug]}
+					/>
+				{/if}
+				{#if esTelecom}
+					<BoletinCard
+						slug={esTelecom.slug}
+						title={esTelecom.title}
+						documentCount={esTelecom.documentCount}
+						flag={flagMap[esTelecom.slug]}
 					/>
 				{/if}
 			</div>

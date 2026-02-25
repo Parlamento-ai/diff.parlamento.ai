@@ -1,0 +1,112 @@
+{
+  "boeId": "BOE-A-2002-13758",
+  "slug": "ley-34-2002-servicios-sociedad-informacion",
+  "titulo": "Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.",
+  "rango": "Ley",
+  "eli": "/es/l/2002/07/11/34",
+  "timeline": [
+    {
+      "slug": "act-original",
+      "label": "Ley 34/2002 (original)",
+      "date": "2002-10-12",
+      "type": "act-original"
+    },
+    {
+      "slug": "amendment-1",
+      "label": "Modificada por los arts. 21, 22, 38 y 43.1 y SE AÑADE una disposición adicional 6, por la Ley 3",
+      "date": "2003-11-05",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2003-20253"
+    },
+    {
+      "slug": "amendment-2",
+      "label": "Modificada por los arts. 10, 38, 43, por Ley 59/2003, de 19 de diciembre",
+      "date": "2004-03-20",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2003-23399"
+    },
+    {
+      "slug": "amendment-3",
+      "label": "Modificada por los arts. 12, 38.2 c) y d) y 38.3 a), por Ley 25/2007, de 18 de octubre",
+      "date": "2007-11-08",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2007-18243"
+    },
+    {
+      "slug": "amendment-4",
+      "label": "Modificada por determinados preceptos SE SUPRIME el art. 9 y SE AÑADE el 12 bis, por Ley 56/200",
+      "date": "2007-12-30",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2007-22440"
+    },
+    {
+      "slug": "amendment-5",
+      "label": "Modificada por el art. 8, por Ley 2/2011, de 4 de marzo",
+      "date": "2011-03-06",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2011-4117"
+    },
+    {
+      "slug": "amendment-6",
+      "label": "Modificada por la disposición adicional 5, por Ley 26/2011, de 1 de agosto",
+      "date": "2011-08-03",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2011-13241"
+    },
+    {
+      "slug": "amendment-7",
+      "label": "Modificada por los arts. 20, 21.2, 22 y 31.a), por Real Decreto-ley 13/2012, de 30 de marzo",
+      "date": "2012-04-01",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2012-4442"
+    },
+    {
+      "slug": "amendment-8",
+      "label": "Modificada por determinados preceptos y SE AÑADE el art. 39 bis y las disposiciones adicionales",
+      "date": "2014-05-11",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2014-4950"
+    },
+    {
+      "slug": "amendment-9",
+      "label": "Modificada por el art. 25, SE MODIFICA los arts. 35, 37, 38 y 43 y SE AÑADE el 12 ter y el 36 b",
+      "date": "2020-11-13",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2020-14046"
+    },
+    {
+      "slug": "amendment-10",
+      "label": "Modificada por art. 11, por Ley 15/2022, de 12 de julio",
+      "date": "2022-07-14",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2022-11589"
+    },
+    {
+      "slug": "amendment-11",
+      "label": "Modificada por los arts. 35.1, 37 a 39, 39 bis, 40, SE AÑADE el art. 35 bis y 39 ter, y SE DERO",
+      "date": "2023-05-10",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2023-11022"
+    },
+    {
+      "slug": "amendment-12",
+      "label": "Modificada por determinados preceptos, por Real Decreto-ley 9/2024, de 23 de diciembre",
+      "date": "2024-12-25",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2024-26915"
+    },
+    {
+      "slug": "amendment-13",
+      "label": "Modificada por la modificación de determinados preceptos, en la redacción dada por el Real Decr",
+      "date": "2025-01-23",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2025-1136"
+    },
+    {
+      "slug": "act-final",
+      "label": "Ley 34/2002 (vigente)",
+      "date": "2025-01-23",
+      "type": "act-final"
+    }
+  ]
+}

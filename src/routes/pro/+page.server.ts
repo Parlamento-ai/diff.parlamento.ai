@@ -22,7 +22,9 @@ const DEV_SLUGS = [
 	'us-s331-halt-fentanyl',
 	'us-s1582-genius-act',
 	'es-lo3-2018-proteccion-datos',
-	'es-ley39-2015-procedimiento-administrativo'
+	'es-ley39-2015-procedimiento-administrativo',
+	'es-lssi-2002',
+	'es-telecom-2022'
 ];
 
 export const load: PageServerLoad = async () => {

@@ -20,6 +20,8 @@ const US_S331_DIR = 'pipeline/data/us/s331-119/akn';
 const US_S1582_DIR = 'pipeline/data/us/s1582-119/akn';
 const ES_LO3_2018_DIR = 'pipeline/data/es/BOE-A-2018-16673/akn';
 const ES_LEY39_2015_DIR = 'pipeline/data/es/BOE-A-2015-10565/akn';
+const ES_LSSI_DIR = 'pipeline/data/es/BOE-A-2002-13758/akn';
+const ES_TELECOM_DIR = 'pipeline/data/es/BOE-A-2022-10757/akn';
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
 	'empanadas-de-pino': `${RECETAS_DIR}/receta-empanadas`,
@@ -69,7 +71,11 @@ const BOLETIN_DIRS: Record<string, string> = {
 	// ES — LO 3/2018 Protección de Datos Personales (BOE-A-2018-16673)
 	'es-lo3-2018-proteccion-datos': ES_LO3_2018_DIR,
 	// ES — Ley 39/2015 Procedimiento Administrativo Común (BOE-A-2015-10565)
-	'es-ley39-2015-procedimiento-administrativo': ES_LEY39_2015_DIR
+	'es-ley39-2015-procedimiento-administrativo': ES_LEY39_2015_DIR,
+	// ES — Ley 34/2002 LSSI — Servicios de la Sociedad de la Información (BOE-A-2002-13758)
+	'es-lssi-2002': ES_LSSI_DIR,
+	// ES — Ley 11/2022 General de Telecomunicaciones (BOE-A-2022-10757)
+	'es-telecom-2022': ES_TELECOM_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -86,7 +92,8 @@ const SLUG_MAP: Record<string, string> = {
 	'05-act-final.xml': 'final',
 	'06-act-final.xml': 'final',
 	'07-act-final.xml': 'final',
-	'08-act-final.xml': 'final'
+	'08-act-final.xml': 'final',
+	'15-act-final.xml': 'final'
 };
 
 function fileToSlug(fileName: string): string {
@@ -212,6 +219,20 @@ function slugToLabel(slug: string, boletinSlug?: string): string {
 			'amendment-4': 'Mod. Ley 2/2023 (art. 24)',
 			'amendment-5': 'Mod. Ley 11/2023 (arts. 48-67, DA 23)',
 			'amendment-6': 'Mod. Ley 10/2025 (art. 23)',
+			final: 'Texto Vigente'
+		};
+		return esLabels[slug] || slug;
+	}
+	if (boletinSlug === 'es-lssi-2002') {
+		const esLabels: Record<string, string> = {
+			original: 'Ley 34/2002 LSSI (publicacion original)',
+			final: 'Texto Vigente'
+		};
+		return esLabels[slug] || slug;
+	}
+	if (boletinSlug === 'es-telecom-2022') {
+		const esLabels: Record<string, string> = {
+			original: 'Ley 11/2022 Telecomunicaciones (publicacion original)',
 			final: 'Texto Vigente'
 		};
 		return esLabels[slug] || slug;
@@ -359,7 +380,9 @@ function slugToSource(slug: string, boletinSlug?: string): { url: string; label:
 		// We hardcode known ones; for dynamic lookup we'd need the config
 		const boeIds: Record<string, string> = {
 			'es-lo3-2018-proteccion-datos': 'BOE-A-2018-16673',
-			'es-ley39-2015-procedimiento-administrativo': 'BOE-A-2015-10565'
+			'es-ley39-2015-procedimiento-administrativo': 'BOE-A-2015-10565',
+			'es-lssi-2002': 'BOE-A-2002-13758',
+			'es-telecom-2022': 'BOE-A-2022-10757'
 		};
 		const boeId = boeIds[boletinSlug];
 		if (boeId) {
@@ -727,7 +750,9 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 	if (boletinSlug?.startsWith('es-')) {
 		const boeIds: Record<string, string> = {
 			'es-lo3-2018-proteccion-datos': 'BOE-A-2018-16673',
-			'es-ley39-2015-procedimiento-administrativo': 'BOE-A-2015-10565'
+			'es-ley39-2015-procedimiento-administrativo': 'BOE-A-2015-10565',
+			'es-lssi-2002': 'BOE-A-2002-13758',
+			'es-telecom-2022': 'BOE-A-2022-10757'
 		};
 		const boeId = boeIds[boletinSlug];
 		if (boeId) {

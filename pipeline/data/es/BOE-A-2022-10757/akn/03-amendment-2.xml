@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="ley-11-2022-general-telecomunicaciones-amendment-2">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/l/2022/06/28/11"/>
+          <FRBRuri value="/es/l/2022/06/28/11"/>
+          <FRBRdate date="2025-12-28" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/l/2022/06/28/11/spa@2025-12-28"/>
+          <FRBRuri value="/es/l/2022/06/28/11/spa@2025-12-28"/>
+          <FRBRdate date="2025-12-28" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/l/2022/06/28/11/spa@2025-12-28/akn"/>
+          <FRBRuri value="/es/l/2022/06/28/11/spa@2025-12-28/akn"/>
+          <FRBRdate date="2026-02-24" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Modificada por el art. 65, por Ley 10/2025, de 26 de diciembre</docTitle></p></longTitle>
+      <p>Modificacion de Ley 11/2022, de 28 de junio, General de Telecomunicaciones.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificacion de Ley 11/2022, de 28 de junio, General de Telecomunicaciones.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/l/2022/06/28/11/spa@2023-06-29"
+      result="/es/l/2022/06/28/11/spa@2025-12-28">
+        <akndiff:articleChange article="art_65" type="substitute">
+          <akndiff:old>1. Los derechos específicos de los usuarios finales y consumidores, según corresponda, de redes y servicios de comunicaciones electrónicas disponibles al público son, entre otros, los siguientes, que serán objeto de desarrollo mediante real decreto:
+a) el derecho a celebrar contratos por parte de los usuarios finales con los operadores que presten servicios de comunicaciones electrónicas disponibles al público, así como el contenido mínimo de dichos contratos, en los términos establecidos en el artículo 67;
+b) el derecho a rescindir el contrato anticipadamente y sin penalización en los supuestos contemplados en el artículo 67;
+c) el derecho a la información, que deberá ser veraz, eficaz, suficiente, transparente, comparable, sobre los servicios de comunicaciones electrónicas disponibles al público, en virtud de lo dispuesto en el artículo 68;
+d) el derecho a recibir información completa, comparable, pertinente, fiable, actualizada y de fácil consulta sobre la calidad de los servicios de comunicaciones electrónicas disponibles al público, en los términos establecidos en el artículo 69;
+e) el derecho al cambio de operador, con conservación de los números del plan nacional de numeración en los supuestos y con los requisitos contemplados en el artículo 70;
+f) el derecho a recibir información sobre las medidas adoptadas para garantizar un acceso equivalente para los usuarios finales con discapacidad, según lo dispuesto en el artículo 73;
+g) el derecho a acceder a los servicios de emergencia a través de los servicios de comunicaciones de emergencia de forma gratuita sin tener que utilizar ningún medio de pago, según lo dispuesto en el artículo 74;
+h) el derecho a acceder, a través de su servicio de acceso a internet, a la información y contenidos, así como a distribuirlos, usar y suministrar aplicaciones y servicios y utilizar los equipos terminales de su elección, con independencia de la ubicación del usuario final o del operador o de la ubicación, origen o destino de la información, contenido, aplicación o servicio, en los términos establecidos en el artículo 76;
+i) el derecho a acceder a los servicios de comunicaciones electrónicas de voz, SMS y datos en itinerancia internacional, en particular, la itinerancia en la Unión Europea de conformidad con las condiciones, requisitos y tarifas reguladas en el Reglamento 531/2012 del Parlamento Europeo y del Consejo, de 13 de junio de 2012, relativo a la itinerancia en las redes públicas de comunicaciones móviles en la Unión;
+j) el derecho a la facturación detallada, clara y sin errores, sin perjuicio del derecho a recibir facturas no desglosadas a petición del usuario.
+Mediante real decreto se determinará el nivel básico de detalle en las facturas que los operadores habrán de ofrecer a los usuarios finales de manera gratuita, a fin de que estos puedan comprobar y controlar los gastos generados por el uso de los servicios de acceso a internet o servicios de comunicaciones vocales, o los servicios de comunicaciones interpersonales basados en numeración, así como efectuar un seguimiento adecuado de sus propios gastos y utilización, ejerciendo con ello un nivel razonable de control sobre sus facturas.
+Dichas facturas detalladas incluirán una mención explícita de la identidad del operador;
+k) el derecho de desconexión de determinados servicios.
+Mediante real decreto de determinarán los supuestos, plazos y condiciones en que el usuario, previa solicitud, podrá ejercer el derecho de desconexión de determinados servicios y se contemplará la necesidad de petición expresa para el acceso a servicios de distinta consideración;
+l) el derecho a acceder a servicios de tarificación adicional en las condiciones directamente asociadas al uso de la numeración para dichos servicios;
+m) el derecho de los usuarios finales a solicitar al operador que ofrezca información sobre tarifas alternativas de menor precio, en caso de estar disponibles;
+n) el derecho de los usuarios finales de desactivar la capacidad de terceros proveedores de servicios de aprovechar la factura de un operador de un servicio de acceso a internet o de un proveedor de un servicio de comunicaciones interpersonales disponible para el público, para cobrar por sus productos o servicios;
+ñ) el derecho a detener el desvío automático de llamadas efectuado a su terminal por parte de un tercero;
+o) el derecho a impedir, mediante un procedimiento sencillo y gratuito, la presentación de la identificación de su línea en las llamadas que genere o la presentación de la identificación de su línea al usuario que le realice una llamada.
+Los usuarios finales no podrán ejercer este derecho cuando se trate de comunicaciones de emergencia a través del número de emergencia 112 o comunicaciones efectuadas a entidades que presten servicios de emergencia que se determinen mediante real decreto.
+Por un período de tiempo limitado, los usuarios finales no podrán ejercer este derecho cuando el abonado a la línea de destino haya solicitado la identificación de las llamadas maliciosas o molestas realizadas a su línea;
+p) el derecho a impedir, mediante un procedimiento sencillo y gratuito, la presentación de la identificación de la línea de origen en las llamadas entrantes y a rechazar las llamadas entrantes en que dicha línea no aparezca identificada.
+En este supuesto y en el anterior, los operadores que presten servicios de comunicaciones interpersonales disponibles al público basados en la numeración, así como los que exploten redes públicas de comunicaciones electrónicas, deberán cumplir las condiciones que mediante real decreto se determinen sobre la visualización, restricción y supresión de la identificación de la línea de origen y conectada;
+q) el derecho al reenvío de correos electrónicos o al acceso a los correos electrónicos una vez rescindido el contrato con un proveedor de servicios de acceso a internet.
+Los usuarios finales que rescindan su contrato con un operador de servicios de acceso a internet, y que así lo soliciten, tienen el derecho bien a acceder a sus correos recibidos a las direcciones basadas en la denominación comercial o marca de su operador anterior o bien a que se le reenvíen los correos enviados a esa dirección a la nueva dirección que el usuario final indique. Tanto el acceso como el reenvío será gratuito para el usuario final;
+r) el derecho a una especial protección en la utilización de servicios de tarificación adicional.
+2. Los operadores deberán disponer de un servicio de atención al cliente, gratuito para los usuarios, que puede estar desvinculado de los servicios comerciales, que tenga por objeto facilitar información y atender y resolver las quejas y reclamaciones de sus clientes. Los servicios de atención al cliente mediante el canal telefónico deberán garantizar en todo momento una atención personal directa, más allá de la posibilidad de utilizar complementariamente otros medios técnicos a su alcance para mejorar dicha atención. Los operadores pondrán a disposición de sus clientes métodos para la acreditación documental de las gestiones o reclamaciones realizadas, como el otorgamiento de un número de referencia o la posibilidad de enviar al cliente un documento en soporte duradero.
+3. En lo no previsto en esta ley, a los servicios de comunicaciones interpersonales disponibles al público independientes de la numeración les será de aplicación lo establecido en el texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios, aprobado por el Real Decreto Legislativo 1/2007, de 16 de noviembre, en relación con los contratos de suministro de contenidos y servicios digitales.
+4. Toda la información recibida por los usuarios finales y consumidores de redes y servicios de comunicaciones electrónicos disponibles al público, así como todos los servicios de atención al cliente deberán ser ofrecidos en la lengua oficial del Estado y en la lengua oficial de la Comunidad Autónoma correspondiente, cuando así sea requerido por el usuario final o consumidor.</akndiff:old>
+          <akndiff:new>1. Los derechos específicos de los usuarios finales y consumidores, según corresponda, de redes y servicios de comunicaciones electrónicas disponibles al público son, entre otros, los siguientes, que serán objeto de desarrollo mediante real decreto:
+a) el derecho a celebrar contratos por parte de los usuarios finales con los operadores que presten servicios de comunicaciones electrónicas disponibles al público, así como el contenido mínimo de dichos contratos, en los términos establecidos en el artículo 67;
+b) el derecho a rescindir el contrato anticipadamente y sin penalización en los supuestos contemplados en el artículo 67;
+c) el derecho a la información, que deberá ser veraz, eficaz, suficiente, transparente, comparable, sobre los servicios de comunicaciones electrónicas disponibles al público, en virtud de lo dispuesto en el artículo 68;
+d) el derecho a recibir información completa, comparable, pertinente, fiable, actualizada y de fácil consulta sobre la calidad de los servicios de comunicaciones electrónicas disponibles al público, en los términos establecidos en el artículo 69;
+e) el derecho al cambio de operador, con conservación de los números del plan nacional de numeración en los supuestos y con los requisitos contemplados en el artículo 70;
+f) el derecho a recibir información sobre las medidas adoptadas para garantizar un acceso equivalente para los usuarios finales con discapacidad, según lo dispuesto en el artículo 73;
+g) el derecho a acceder a los servicios de emergencia a través de los servicios de comunicaciones de emergencia de forma gratuita sin tener que utilizar ningún medio de pago, según lo dispuesto en el artículo 74;
+h) el derecho a acceder, a través de su servicio de acceso a internet, a la información y contenidos, así como a distribuirlos, usar y suministrar aplicaciones y servicios y utilizar los equipos terminales de su elección, con independencia de la ubicación del usuario final o del operador o de la ubicación, origen o destino de la información, contenido, aplicación o servicio, en los términos establecidos en el artículo 76;
+i) el derecho a acceder a los servicios de comunicaciones electrónicas de voz, SMS y datos en itinerancia internacional, en particular, la itinerancia en la Unión Europea de conformidad con las condiciones, requisitos y tarifas reguladas en el Reglamento 531/2012 del Parlamento Europeo y del Consejo, de 13 de junio de 2012, relativo a la itinerancia en las redes públicas de comunicaciones móviles en la Unión;
+j) el derecho a la facturación detallada, clara y sin errores, sin perjuicio del derecho a recibir facturas no desglosadas a petición del usuario.
+Mediante real decreto se determinará el nivel básico de detalle en las facturas que los operadores habrán de ofrecer a los usuarios finales de manera gratuita, a fin de que estos puedan comprobar y controlar los gastos generados por el uso de los servicios de acceso a internet o servicios de comunicaciones vocales, o los servicios de comunicaciones interpersonales basados en numeración, así como efectuar un seguimiento adecuado de sus propios gastos y utilización, ejerciendo con ello un nivel razonable de control sobre sus facturas.
+Dichas facturas detalladas incluirán una mención explícita de la identidad del operador;
+k) el derecho de desconexión de determinados servicios.
+Mediante real decreto de determinarán los supuestos, plazos y condiciones en que el usuario, previa solicitud, podrá ejercer el derecho de desconexión de determinados servicios y se contemplará la necesidad de petición expresa para el acceso a servicios de distinta consideración;
+l) el derecho a acceder a servicios de tarificación adicional en las condiciones directamente asociadas al uso de la numeración para dichos servicios;
+m) el derecho de los usuarios finales a solicitar al operador que ofrezca información sobre tarifas alternativas de menor precio, en caso de estar disponibles;
+n) el derecho de los usuarios finales de desactivar la capacidad de terceros proveedores de servicios de aprovechar la factura de un operador de un servicio de acceso a internet o de un proveedor de un servicio de comunicaciones interpersonales disponible para el público, para cobrar por sus productos o servicios;
+ñ) el derecho a detener el desvío automático de llamadas efectuado a su terminal por parte de un tercero;
+o) el derecho a impedir, mediante un procedimiento sencillo y gratuito, la presentación de la identificación de su línea en las llamadas que genere o la presentación de la identificación de su línea al usuario que le realice una llamada.
+Los usuarios finales no podrán ejercer este derecho cuando se trate de comunicaciones de emergencia a través del número de emergencia 112 o comunicaciones efectuadas a entidades que presten servicios de emergencia que se determinen mediante real decreto.
+Por un período de tiempo limitado, los usuarios finales no podrán ejercer este derecho cuando el abonado a la línea de destino haya solicitado la identificación de las llamadas maliciosas o molestas realizadas a su línea;
+p) el derecho a impedir, mediante un procedimiento sencillo y gratuito, la presentación de la identificación de la línea de origen en las llamadas entrantes y a rechazar las llamadas entrantes en que dicha línea no aparezca identificada.
+En este supuesto y en el anterior, los operadores que presten servicios de comunicaciones interpersonales disponibles al público basados en la numeración, así como los que exploten redes públicas de comunicaciones electrónicas, deberán cumplir las condiciones que mediante real decreto se determinen sobre la visualización, restricción y supresión de la identificación de la línea de origen y conectada;
+q) el derecho al reenvío de correos electrónicos o al acceso a los correos electrónicos una vez rescindido el contrato con un proveedor de servicios de acceso a internet.
+Los usuarios finales que rescindan su contrato con un operador de servicios de acceso a internet, y que así lo soliciten, tienen el derecho bien a acceder a sus correos recibidos a las direcciones basadas en la denominación comercial o marca de su operador anterior o bien a que se le reenvíen los correos enviados a esa dirección a la nueva dirección que el usuario final indique. Tanto el acceso como el reenvío será gratuito para el usuario final;
+r) el derecho a una especial protección en la utilización de servicios de tarificación adicional.
+2. Los operadores deberán disponer de un servicio de atención a la clientela, gratuito para los usuarios finales, que tenga por objeto facilitar información y atender y resolver las incidencias, consultas, quejas y reclamaciones de sus clientes. Los operadores decidirán si sus oficinas y locales comerciales abiertos al público, ya sean propios o mediante alguna modalidad de contratación mercantil, forman parte o no del servicio de atención al cliente para la presentación y resolución de las quejas y reclamaciones de sus clientes. Las entidades que formen parte del mismo grupo económico podrán disponer de un departamento o servicio de atención a la clientela único para todo el grupo.
+A los efectos de esta ley, se entenderá por:
+a) Incidencia: cualquier gestión relativa a la ejecución del contrato o de la oferta comercial realizada, tales como la solicitud de baja del servicio en su conjunto o de alguna de las prestaciones adicionales, el alta en una nueva oferta, el cambio de comisiones y otras análogas.
+b) Consulta: solicitud de asesoramiento a la clientela en relación con el bien o servicio contratado o que sea ofertado por la empresa.
+c) Queja o reclamación: cualquier manifestación relativa a la defectuosa prestación del servicio o del incumplimiento o cumplimiento defectuoso de la oferta realizada, comunicada por la clientela al servicio de atención, independiente de su calificación interna como queja, reclamación, incidencia u otras análogas.
+El operador estará obligado a comunicar al usuario final el número de referencia de las reclamaciones, quejas, peticiones o gestiones.
+Los titulares del departamento o servicio de atención al cliente serán los encargados de relacionarse, en su caso, con el servicio administrativo de solución de controversias a que se refiere el artículo 78 y al que remitirán la información que les sea requerida, con indicación del número de referencia asignado a la correspondiente reclamación.
+La presentación de una reclamación por parte del usuario final, ya sea ante el operador o ante algún sistema de resolución extrajudicial de conflictos, incluido el servicio administrativo de solución de controversias a que se refiere el artículo 78, no impedirá o suspenderá las acciones de gestión de cobro relacionadas con ella que ejercite el operador. Igualmente, la presentación de una reclamación por parte del usuario final, ya sea ante el operador o ante algún sistema de resolución extrajudicial de conflictos, incluido el servicio administrativo de solución de controversias a que se refiere el artículo 78, no impedirá que, en caso de retraso en el pago total o parcial por el usuario durante un período superior a un mes desde la presentación a éste del documento de cargo correspondiente a la facturación del servicio de comunicaciones electrónicas, el operador pueda acordar, previo aviso al usuario, su suspensión temporal. Asimismo, la presentación de una reclamación por parte del usuario final, ya sea ante el operador o ante algún sistema de resolución extrajudicial de conflictos, incluido el servicio administrativo de solución de controversias a que se refiere el artículo 78, no impedirá que, en caso de retraso en el pago total o parcial del servicio por un período superior a tres meses o la suspensión temporal, en dos ocasiones, del contrato por mora en el pago de los servicios correspondientes, el operador pueda acordar, previo aviso al usuario, la interrupción definitiva del servicio y la correspondiente resolución del contrato.
+El operador podrá prestar el servicio de atención a la clientela mediante el empleo de contestadores automáticos u otros medios análogos, si bien, en última instancia, deberá garantizar una atención personalizada, sin que ello implique el derecho a acceder a una persona física supervisora.
+El operador deberá admitir, en todo caso, la misma vía por la que se inició la relación contractual, así como la vía telefónica para la presentación de incidencias, consultas, quejas o reclamaciones, con incidencia contractual. Si el medio habilitado por el operador para la atención de incidencias, consultas quejas o reclamaciones con incidencia contractual es telefónico, éste estará obligado a informar al consumidor de su derecho a solicitar un documento que acredite la presentación y contenido de la incidencia, consulta, queja o reclamación mediante cualquier soporte duradero que permita tal acreditación. El operador, si utiliza el medio telefónico, deberá grabar el número significativo de llamadas que se determine reglamentariamente.
+3. En lo no previsto en esta ley, a los servicios de comunicaciones interpersonales disponibles al público independientes de la numeración les será de aplicación lo establecido en el texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios, aprobado por el Real Decreto Legislativo 1/2007, de 16 de noviembre, en relación con los contratos de suministro de contenidos y servicios digitales.
+4. Toda la información recibida por los usuarios finales y consumidores de redes y servicios de comunicaciones electrónicos disponibles al público, así como todos los servicios de atención al cliente deberán ser ofrecidos en la lengua oficial del Estado y en la lengua oficial de la Comunidad Autónoma correspondiente, cuando así sea requerido por el usuario final o consumidor.</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

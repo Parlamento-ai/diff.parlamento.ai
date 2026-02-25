@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response>
+  <status>
+    <code>200</code>
+    <text>ok</text>
+  </status>
+  <data>
+    <analisis>
+      <materias>
+        <materia codigo="1508">Administración electrónica</materia>
+        <materia codigo="1232">Comisiones de Control y Seguimiento</materia>
+        <materia codigo="7894">Comunicaciones electrónicas</materia>
+        <materia codigo="1624">Consumidores y usuarios</materia>
+        <materia codigo="1664">Contratos</materia>
+        <materia codigo="2282">Defensa de la competencia</materia>
+        <materia codigo="3089">Dominio Público Radioeléctrico</materia>
+        <materia codigo="3111">Edificaciones</materia>
+        <materia codigo="3254">Equipos de telecomunicación</materia>
+        <materia codigo="4506">Internet</materia>
+        <materia codigo="5703">Procedimiento administrativo</materia>
+        <materia codigo="7854">Protección de datos personales</materia>
+        <materia codigo="5821">Radiodifusión</materia>
+        <materia codigo="5923">Redes de telecomunicación</materia>
+        <materia codigo="6015">Registros administrativos</materia>
+        <materia codigo="6627">Servicios de telecomunicación</materia>
+        <materia codigo="6836">Tasas</materia>
+        <materia codigo="6854">Telecomunicaciones</materia>
+        <materia codigo="6858">Telefonía móvil</materia>
+        <materia codigo="6860">Teléfonos</materia>
+      </materias>
+      <notas>
+        <nota>Entrada en vigor:, en los términos expuestos en la disposición final 6, el 30 de junio de 2022.</nota>
+      </notas>
+      <referencias>
+        <anteriores>
+          <anterior>
+            <id_norma>BOE-A-2012-15595</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>la disposición adicional 3 de la Ley 12/2012, de 26 de diciembre</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2014-4950</id_norma>
+            <relacion codigo="210">DEROGA</relacion>
+            <texto>con la excepción indicada, la Ley 9/2014, de 9 de mayo</texto>
+          </anterior>
+          <anterior>
+            <id_norma>BOE-A-2015-10565</id_norma>
+            <relacion codigo="270">MODIFICA</relacion>
+            <texto>los arts. 9.2.c), 10.2.c) y AÑADE la disposición adicional 7 a la Ley 39/2015, de 1 de octubre</texto>
+          </anterior>
+          <anterior>
+            <id_norma>DOUE-L-2018-82056</id_norma>
+            <relacion codigo="426">TRANSPONE</relacion>
+            <texto>la Directiva 2018/1972, de 11 de diciembre</texto>
+          </anterior>
+          <anterior>
+            <id_norma>DOUE-L-2014-81073</id_norma>
+            <relacion codigo="426">TRANSPONE</relacion>
+            <texto>la Directiva 2014/61/UE, de 15 de mayo</texto>
+          </anterior>
+          <anterior>
+            <id_norma>DOUE-L-2014-81047</id_norma>
+            <relacion codigo="426">TRANSPONE</relacion>
+            <texto>la Directiva 2014/53/UE, de 16 de abril</texto>
+          </anterior>
+          <anterior>
+            <id_norma>DOUE-L-2014-80623</id_norma>
+            <relacion codigo="426">TRANSPONE</relacion>
+            <texto>la Directiva 2014/30/UE, de 26 de febrero</texto>
+          </anterior>
+          <anterior>
+            <id_norma>DOUE-L-2002-81371</id_norma>
+            <relacion codigo="426">TRANSPONE</relacion>
+            <texto>Directiva 2002/58/CE, de 12 de julio</texto>
+          </anterior>
+          <anterior>
+            <id_norma>DOUE-L-2015-82352</id_norma>
+            <relacion codigo="330">CITA</relacion>
+            <texto>Reglamento (UE) 2015/2120, de 25 de noviembre</texto>
+          </anterior>
+        </anteriores>
+        <posteriores>
+          <posterior>
+            <id_norma>BOE-A-2025-26698</id_norma>
+            <relacion codigo="270">SE MODIFICA</relacion>
+            <texto>el art. 65, por Ley 10/2025, de 26 de diciembre</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2022-15168</id_norma>
+            <relacion codigo="201">CORRECCIÓN de errores</relacion>
+            <texto>en BOE núm. 224, de 17 de septiembre de 2022</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2023-15071</id_norma>
+            <relacion codigo="402">SE INTERPRETA</relacion>
+            <texto>el art. 66.1.b), por Circular 1/2023, de 26 de junio</texto>
+          </posterior>
+          <posterior>
+            <id_norma>BOE-A-2022-22128</id_norma>
+            <relacion codigo="331">SE DICTA EN RELACIÓN</relacion>
+            <texto>el anexo I, sobre Tasa por reserva del dominio público radioeléctrico: Ley 31/2022, de 23 de diciembre</texto>
+          </posterior>
+        </posteriores>
+      </referencias>
+    </analisis>
+  </data>
+</response>

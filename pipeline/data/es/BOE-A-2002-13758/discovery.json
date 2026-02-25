@@ -1,0 +1,151 @@
+{
+  "boeId": "BOE-A-2002-13758",
+  "metadata": {
+    "identificador": "BOE-A-2002-13758",
+    "rango": "Ley",
+    "titulo": "Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico.",
+    "numeroOficial": "34/2002",
+    "fechaDisposicion": "2002-07-11",
+    "fechaPublicacion": "2002-07-12",
+    "fechaVigencia": "2002-10-12",
+    "estatusDerogacion": "N",
+    "estadoConsolidacion": "Finalizado",
+    "urlEli": "https://www.boe.es/eli/es/l/2002/07/11/34",
+    "departamento": "Jefatura del Estado"
+  },
+  "modificadaPor": [
+    {
+      "boeId": "BOE-A-2020-14046",
+      "relacion": "SE DEROGA",
+      "texto": "el art. 25, SE MODIFICA los arts. 35, 37, 38 y 43 y SE AÑADE el 12 ter y el 36 bis, por Ley 6/2020, de 11 de noviembre"
+    },
+    {
+      "boeId": "BOE-A-2010-5292",
+      "relacion": "SE DEROGA",
+      "texto": "el anexo.a).6, por Ley 7/2010, de 31 de marzo"
+    },
+    {
+      "boeId": "BOE-A-2007-18243",
+      "relacion": "SE DEROGA",
+      "texto": "los arts. 12, 38.2 c) y d) y 38.3 a), por Ley 25/2007, de 18 de octubre"
+    },
+    {
+      "boeId": "BOE-A-2025-1136",
+      "relacion": "SE DEJA SIN EFECTO",
+      "texto": "la modificación de determinados preceptos, en la redacción dada por el Real Decreto-ley 9/2024, de 23 de diciembre, por Resolución de 22 de enero de 2025"
+    },
+    {
+      "boeId": "BOE-A-2024-26915",
+      "relacion": "SE MODIFICA",
+      "texto": "determinados preceptos, por Real Decreto-ley 9/2024, de 23 de diciembre"
+    },
+    {
+      "boeId": "BOE-A-2023-11022",
+      "relacion": "SE MODIFICA",
+      "texto": "los arts. 35.1, 37 a 39, 39 bis, 40, SE AÑADE el art. 35 bis y 39 ter, y SE DEROGA la disposición adicional 5, por Ley 11/2023, de 8 de mayo"
+    },
+    {
+      "boeId": "BOE-A-2022-11589",
+      "relacion": "SE MODIFICA",
+      "texto": "art. 11, por Ley 15/2022, de 12 de julio"
+    },
+    {
+      "boeId": "BOE-A-2014-4950",
+      "relacion": "SE MODIFICA",
+      "texto": "determinados preceptos y SE AÑADE el art. 39 bis y las disposiciones adicionales 8 y 9, por Ley 9/2014, de 9 de mayo"
+    },
+    {
+      "boeId": "BOE-A-2012-4442",
+      "relacion": "SE MODIFICA",
+      "texto": "los arts. 20, 21.2, 22 y 31.a), por Real Decreto-ley 13/2012, de 30 de marzo"
+    },
+    {
+      "boeId": "BOE-A-2011-13241",
+      "relacion": "SE MODIFICA",
+      "texto": "la disposición adicional 5, por Ley 26/2011, de 1 de agosto"
+    },
+    {
+      "boeId": "BOE-A-2011-4117",
+      "relacion": "SE MODIFICA",
+      "texto": "el art. 8, por Ley 2/2011, de 4 de marzo"
+    },
+    {
+      "boeId": "BOE-A-2007-22440",
+      "relacion": "SE MODIFICA",
+      "texto": "determinados preceptos SE SUPRIME el art. 9 y SE AÑADE el 12 bis, por Ley 56/2007, de 28 de diciembre"
+    },
+    {
+      "boeId": "BOE-A-2003-23399",
+      "relacion": "SE MODIFICA",
+      "texto": "los arts. 10, 38, 43, por Ley 59/2003, de 19 de diciembre"
+    },
+    {
+      "boeId": "BOE-A-2003-20253",
+      "relacion": "SE MODIFICA",
+      "texto": "los arts. 21, 22, 38 y 43.1 y SE AÑADE una disposición adicional 6, por la Ley 32/2003, de 3 de noviembre"
+    },
+    {
+      "boeId": "BOE-A-2002-15886",
+      "relacion": "CORRECCIÓN de errores",
+      "texto": "en BOE num. 187, de 6 de agosto de 2002"
+    },
+    {
+      "boeId": "BOE-A-2025-994",
+      "relacion": "SE CORRIGEN errores",
+      "texto": "del Real Decreto-ley 9/2024, de 23 de diciembre, en BOE núm. 19 de 22 de enero de 2025"
+    },
+    {
+      "boeId": "BOE-A-2005-16699",
+      "relacion": "SE DICTA DE CONFORMIDAD",
+      "texto": "regulando el distintivo público de confianza: Real Decreto 1163/2005, de 30 de septiembre"
+    },
+    {
+      "boeId": "BOE-A-2005-8902",
+      "relacion": "SE DICTA DE CONFORMIDAD",
+      "texto": "con la disposición adicional 6, aprobando el plan nacional de nombres de dominio de internet bajo el Código \".es\": Orden ITC/1542/2005, de 19 de mayo"
+    },
+    {
+      "boeId": "BOE-A-2004-3632",
+      "relacion": "SE DICTA DE CONFORMIDAD",
+      "texto": "creando el distintivo público de confianza: Real Decreto 292/2004, de 20 de febrero"
+    },
+    {
+      "boeId": "BOE-A-2003-6050",
+      "relacion": "SE DICTA DE CONFORMIDAD",
+      "texto": "con la disposición adicional 6, aprobando el plan nacional de nombres de dominio de internet bajo el Código \".es\": Orden CTE/0662/2003, de 18 de marzo"
+    }
+  ],
+  "modifica": [
+    {
+      "boeId": "BOE-A-1998-9802",
+      "relacion": "MODIFICA",
+      "texto": "art. 37.1, las disposiciones adicional 6.10 y derogatoria única y AÑADE una disposición transitoria 12 a la Ley 11/1998, de 24 de abril"
+    },
+    {
+      "boeId": "BOE-A-1889-4763",
+      "relacion": "MODIFICA",
+      "texto": "art. 1262 del Código Civil de 24 de julio de 1889 (Gazeta)"
+    },
+    {
+      "boeId": "BOE-A-1885-6627",
+      "relacion": "MODIFICA",
+      "texto": "art. 54 del Código de Comercio, publicado por Real Decreto de 22 de agosto de 1885 (Gazeta)"
+    },
+    {
+      "boeId": "DOUE-L-2000-81295",
+      "relacion": "TRANSPONE",
+      "texto": "la Directiva 2000/31/CE, de 8 de junio"
+    },
+    {
+      "boeId": "DOUE-L-1998-81007",
+      "relacion": "TRANSPONE",
+      "texto": "Directiva 98/27/CE, de 19 de mayo"
+    },
+    {
+      "boeId": "BOE-A-1999-16831",
+      "relacion": "CITA",
+      "texto": "Real Decreto 1337/1999, de 31 de julio"
+    }
+  ],
+  "materias": []
+}

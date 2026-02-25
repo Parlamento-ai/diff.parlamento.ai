@@ -1,0 +1,35 @@
+{
+  "boeId": "BOE-A-2022-10757",
+  "slug": "ley-11-2022-general-telecomunicaciones",
+  "titulo": "Ley 11/2022, de 28 de junio, General de Telecomunicaciones.",
+  "rango": "Ley",
+  "eli": "/es/l/2022/06/28/11",
+  "timeline": [
+    {
+      "slug": "act-original",
+      "label": "Ley 11/2022 (original)",
+      "date": "2022-06-30",
+      "type": "act-original"
+    },
+    {
+      "slug": "amendment-1",
+      "label": "Modificada por el art. 66.1.b), por Circular 1/2023, de 26 de junio",
+      "date": "2023-06-29",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2023-15071"
+    },
+    {
+      "slug": "amendment-2",
+      "label": "Modificada por el art. 65, por Ley 10/2025, de 26 de diciembre",
+      "date": "2025-12-28",
+      "type": "amendment",
+      "modifyingLaw": "BOE-A-2025-26698"
+    },
+    {
+      "slug": "act-final",
+      "label": "Ley 11/2022 (vigente)",
+      "date": "2025-12-28",
+      "type": "act-final"
+    }
+  ]
+}

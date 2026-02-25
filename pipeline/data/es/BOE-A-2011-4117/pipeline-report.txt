@@ -1,0 +1,14 @@
+═══════════════════════════════════════════════════════
+  ES AKN Pipeline: ley-2-2011-economia-sostenible
+  Title: Ley 2/2011, de 4 de marzo, de Economía Sostenible.
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            BOE-A-2011-4117                     3.1s
+  [PASS]  2. Download            texto + metadata                    0.0s
+  [PASS]  3. Convert             23 snapshots                        0.1s
+  [PASS]  4. Configure           ley-2-2011-economia-sostenible      0.0s
+  [PASS]  0. Validate            23 snapshots OK                     0.0s
+  [PASS]  5. Generate            24 AKN files                        0.3s
+  [PASS]  6. Enrich              vote enrichment                     443.2s
+
+  RESULT: 7 pass, 0 fail, 0 warn (446.8s)
+═══════════════════════════════════════════════════════
