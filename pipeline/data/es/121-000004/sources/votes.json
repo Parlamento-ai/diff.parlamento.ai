@@ -1,0 +1,1399 @@
+{
+  "121/000004/0000@amendment-aprobacion-por-el-pleno": null,
+  "121/000004/0000@amendment-aprobacion-definitiva": {
+    "date": "2025-03-20",
+    "result": "approved",
+    "source": "https://www.congreso.es/es/opendata/votaciones",
+    "expediente": "121/000004",
+    "voteType": "Votación separada de las enmiendas",
+    "for": [
+      {
+        "name": "Palencia Rubio, Héctor",
+        "group": "GP"
+      },
+      {
+        "name": "Cabezón Casas, Tomás",
+        "group": "GP"
+      },
+      {
+        "name": "Ramírez Moreno, María de las Nieves",
+        "group": "GS"
+      },
+      {
+        "name": "Conde Bajén, Agustín",
+        "group": "GP"
+      },
+      {
+        "name": "Pérez Ortiz, Isabel María",
+        "group": "GS"
+      },
+      {
+        "name": "Bravo Baena, Juan",
+        "group": "GP"
+      },
+      {
+        "name": "Sahuquillo García, Luis Carlos",
+        "group": "GS"
+      },
+      {
+        "name": "Rey de las Heras, Luis Alfonso",
+        "group": "GS"
+      },
+      {
+        "name": "Rojas García, Carlos",
+        "group": "GP"
+      },
+      {
+        "name": "Castilla Álvarez, María Carmen",
+        "group": "GS"
+      },
+      {
+        "name": "Pérez Osma, Daniel",
+        "group": "GP"
+      },
+      {
+        "name": "Senderos Oraá, Daniel",
+        "group": "GS"
+      },
+      {
+        "name": "Jerez Antequera, Juan Carlos",
+        "group": "GS"
+      },
+      {
+        "name": "Perea i Conillas, María Mercè",
+        "group": "GS"
+      },
+      {
+        "name": "Aranda Vargas, Francisco",
+        "group": "GS"
+      },
+      {
+        "name": "Verdejo Vicente, Ferran",
+        "group": "GS"
+      },
+      {
+        "name": "Serrada Pariente, David",
+        "group": "GS"
+      },
+      {
+        "name": "García Félix, Manuel",
+        "group": "GP"
+      },
+      {
+        "name": "Tellado Filgueira, Miguel",
+        "group": "GP"
+      },
+      {
+        "name": "Pérez López, Álvaro",
+        "group": "GP"
+      },
+      {
+        "name": "Muñoz de la Iglesia, Ester",
+        "group": "GP"
+      },
+      {
+        "name": "Fagúndez Campo, Antidio",
+        "group": "GS"
+      },
+      {
+        "name": "Franco González, Silvia",
+        "group": "GP"
+      },
+      {
+        "name": "Fernández Benéitez, Andrea",
+        "group": "GS"
+      },
+      {
+        "name": "Delgado Arce, Celso Luis",
+        "group": "GP"
+      },
+      {
+        "name": "Velasco Morillo, Elvira",
+        "group": "GP"
+      },
+      {
+        "name": "Zaragoza Alonso, José",
+        "group": "GS"
+      },
+      {
+        "name": "Valido García, Cristina",
+        "group": "GMx"
+      },
+      {
+        "name": "Poblador Pacheco, María Araceli",
+        "group": "GS"
+      },
+      {
+        "name": "Serrano Martínez, Juan Francisco",
+        "group": "GS"
+      },
+      {
+        "name": "Jiménez Linuesa, Beatriz",
+        "group": "GP"
+      },
+      {
+        "name": "Garrido Valenzuela, Irene",
+        "group": "GP"
+      },
+      {
+        "name": "Verano Domínguez, Bella",
+        "group": "GP"
+      },
+      {
+        "name": "Cuesta Rodríguez, María del Socorro",
+        "group": "GP"
+      },
+      {
+        "name": "Pérez Coronado, Pablo",
+        "group": "GP"
+      },
+      {
+        "name": "Ramajo Prada, Óscar",
+        "group": "GP"
+      },
+      {
+        "name": "Teniente Sánchez, Cristina",
+        "group": "GP"
+      },
+      {
+        "name": "Lorente Anaya, Macarena",
+        "group": "GP"
+      },
+      {
+        "name": "García López, Maribel",
+        "group": "GS"
+      },
+      {
+        "name": "Díaz Marín, Raúl",
+        "group": "GS"
+      },
+      {
+        "name": "Rodríguez Calleja, Patricia",
+        "group": "GP"
+      },
+      {
+        "name": "Rallo Lombarte, Artemi",
+        "group": "GS"
+      },
+      {
+        "name": "Floriano Corrales, Carlos Javier",
+        "group": "GP"
+      },
+      {
+        "name": "Cerdán León, Santos",
+        "group": "GS"
+      },
+      {
+        "name": "Ros Martínez, Susana",
+        "group": "GS"
+      },
+      {
+        "name": "Román Jasanada, Antonio",
+        "group": "GP"
+      },
+      {
+        "name": "Ramírez Martín, María Lourdes",
+        "group": "GP"
+      },
+      {
+        "name": "Martín Martínez, Andreu",
+        "group": "GS"
+      },
+      {
+        "name": "Martínez Seijo, María Luz",
+        "group": "GS"
+      },
+      {
+        "name": "Aceves Galindo, José Luis",
+        "group": "GS"
+      },
+      {
+        "name": "Fúnez de Gregorio, Carmen",
+        "group": "GP"
+      },
+      {
+        "name": "Hoyo Juliá, Belén",
+        "group": "GP"
+      },
+      {
+        "name": "Ruiz Boix, Juan Carlos",
+        "group": "GS"
+      },
+      {
+        "name": "Acedo Reyes, Sofía",
+        "group": "GP"
+      },
+      {
+        "name": "Prieto Serrano, María Isabel",
+        "group": "GP"
+      },
+      {
+        "name": "Sánchez Díaz, María Carmen",
+        "group": "GS"
+      },
+      {
+        "name": "Gallardo Barrena, Pedro Ignacio",
+        "group": "GP"
+      },
+      {
+        "name": "Cobo Carmona, Ana",
+        "group": "GS"
+      },
+      {
+        "name": "Vázquez Jiménez, María del Mar",
+        "group": "GP"
+      },
+      {
+        "name": "Salvador i Duch, Jordi",
+        "group": "GR"
+      },
+      {
+        "name": "Valero Morales, Juan Antonio",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Marqués Atés, Amador",
+        "group": "GS"
+      },
+      {
+        "name": "Mínguez García, Montse",
+        "group": "GS"
+      },
+      {
+        "name": "Plaza García, Inés",
+        "group": "GS"
+      },
+      {
+        "name": "Fernández González, María Mercedes",
+        "group": "GP"
+      },
+      {
+        "name": "Garre Murcia, Cristóbal",
+        "group": "GP"
+      },
+      {
+        "name": "Cortés Carballo, Mario",
+        "group": "GP"
+      },
+      {
+        "name": "Gil de Reboleño Lastortres, Esther",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Martínez Hierro, Lander",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Pérez Recuerda, Isabel Gema",
+        "group": "GP"
+      },
+      {
+        "name": "Tarno Blanco, Ricardo",
+        "group": "GP"
+      },
+      {
+        "name": "Puente Santiago, Óscar",
+        "group": "GS"
+      },
+      {
+        "name": "Sanz Martínez, Luisa",
+        "group": "GS"
+      },
+      {
+        "name": "Guijarro García, Txema",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Morales Álvarez, Álvaro",
+        "group": "GS"
+      },
+      {
+        "name": "Ramírez Carner, Arnau",
+        "group": "GS"
+      },
+      {
+        "name": "Peña Camarero, Esther",
+        "group": "GS"
+      },
+      {
+        "name": "Arribas Maroto, Manuel",
+        "group": "GS"
+      },
+      {
+        "name": "Redondo Cárdenas, Gonzalo",
+        "group": "GS"
+      },
+      {
+        "name": "Merino Martínez, Javier",
+        "group": "GP"
+      },
+      {
+        "name": "Ramos Esteban, César Joaquín",
+        "group": "GS"
+      },
+      {
+        "name": "Rodríguez Serra, Santi",
+        "group": "GP"
+      },
+      {
+        "name": "Martínez Gómez, Antonio",
+        "group": "GP"
+      },
+      {
+        "name": "Argota Castro, Trinidad Carmen",
+        "group": "GS"
+      },
+      {
+        "name": "Maldonado López, Adriana",
+        "group": "GS"
+      },
+      {
+        "name": "Andrés Añón, Carmen",
+        "group": "GS"
+      },
+      {
+        "name": "De las Cuevas Cortés, Félix",
+        "group": "GP"
+      },
+      {
+        "name": "Fabra Part, Alberto",
+        "group": "GP"
+      },
+      {
+        "name": "Clavell López, Óscar",
+        "group": "GP"
+      },
+      {
+        "name": "Lamuà Estañol, Marc",
+        "group": "GS"
+      },
+      {
+        "name": "Cercas Mena, Blanca",
+        "group": "GS"
+      },
+      {
+        "name": "Romero Pozo, Rafaela",
+        "group": "GS"
+      },
+      {
+        "name": "García Gurrutxaga, María Luisa",
+        "group": "GS"
+      },
+      {
+        "name": "Guijarro Ceballos, María",
+        "group": "GS"
+      },
+      {
+        "name": "Folch Blanc, Javier José",
+        "group": "GP"
+      },
+      {
+        "name": "Garrido Jiménez, Elisa",
+        "group": "GS"
+      },
+      {
+        "name": "Bermúdez de Castro Fernández, José Antonio",
+        "group": "GP"
+      },
+      {
+        "name": "Tomás Olivares, Violante",
+        "group": "GP"
+      },
+      {
+        "name": "López Álvarez, Patxi",
+        "group": "GS"
+      },
+      {
+        "name": "Cofiño Fernández, Rafael",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Santiago Romero, Enrique Fernando",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Rodríguez Salas, José Antonio",
+        "group": "GS"
+      },
+      {
+        "name": "Pose Mesura, Modesto",
+        "group": "GS"
+      },
+      {
+        "name": "Sancho Íñiguez, Herminio Rufino",
+        "group": "GS"
+      },
+      {
+        "name": "Requena Ruiz, Juan Diego",
+        "group": "GP"
+      },
+      {
+        "name": "Mesquida Mayans, Joan",
+        "group": "GP"
+      },
+      {
+        "name": "Santana Aguilera, Ada",
+        "group": "GS"
+      },
+      {
+        "name": "Álvarez González, Alicia",
+        "group": "GS"
+      },
+      {
+        "name": "Agüera Gago, Cristina",
+        "group": "GP"
+      },
+      {
+        "name": "Iniesta Egido, Isabel",
+        "group": "GS"
+      },
+      {
+        "name": "Sáez Cruz, Emilio",
+        "group": "GS"
+      },
+      {
+        "name": "Adrio Taracido, María",
+        "group": "GS"
+      },
+      {
+        "name": "Rodríguez Gómez de Celis, Alfonso",
+        "group": "GS"
+      },
+      {
+        "name": "Noriega Gómez, Javier",
+        "group": "GP"
+      },
+      {
+        "name": "Diouf Dioh, Luc Andre",
+        "group": "GS"
+      },
+      {
+        "name": "Álvarez Fanjul, Beatriz",
+        "group": "GP"
+      },
+      {
+        "name": "Borrego Cortés, Isabel María",
+        "group": "GP"
+      },
+      {
+        "name": "Martín Rodríguez, Margarita",
+        "group": "GS"
+      },
+      {
+        "name": "Sayas López, Sergio",
+        "group": "GP"
+      },
+      {
+        "name": "Catalán Higueras, Alberto",
+        "group": "GMx"
+      },
+      {
+        "name": "Martín García, Pedro Samuel",
+        "group": "GP"
+      },
+      {
+        "name": "Moro Almaraz, María Jesús",
+        "group": "GP"
+      },
+      {
+        "name": "Sánchez Ojeda, Carlos Alberto",
+        "group": "GP"
+      },
+      {
+        "name": "Crespín Rubio, Rafaela",
+        "group": "GS"
+      },
+      {
+        "name": "Lima García, Laura María",
+        "group": "GP"
+      },
+      {
+        "name": "Rojas Manrique, Juan Antonio",
+        "group": "GP"
+      },
+      {
+        "name": "Rivera Arias, Engracia",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Abades Martínez, Cristina",
+        "group": "GP"
+      },
+      {
+        "name": "Olano Vela, Jaime Eduardo de",
+        "group": "GP"
+      },
+      {
+        "name": "Celaya Brey, Javier",
+        "group": "GP"
+      },
+      {
+        "name": "Argüelles García, Silverio",
+        "group": "GP"
+      },
+      {
+        "name": "Micó Micó, Àgueda",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Ibáñez Mezquita, Alberto",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "González López, Nahuel",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Faneca López, María Luisa",
+        "group": "GS"
+      },
+      {
+        "name": "Cruz Santana, Gabriel",
+        "group": "GS"
+      },
+      {
+        "name": "Blanquer Alcaraz, Patricia",
+        "group": "GS"
+      },
+      {
+        "name": "Mellado Sierra, Valle",
+        "group": "GS"
+      },
+      {
+        "name": "Parra Gallego, Agustín",
+        "group": "GP"
+      },
+      {
+        "name": "Martín Blanco, Nacho",
+        "group": "GP"
+      },
+      {
+        "name": "De Luna Tobarra, Llanos",
+        "group": "GP"
+      },
+      {
+        "name": "Belmonte Gómez, Rafael Benigno",
+        "group": "GP"
+      },
+      {
+        "name": "Rojo Blas, Alberto",
+        "group": "GS"
+      },
+      {
+        "name": "Sánchez Torregrosa, Maribel",
+        "group": "GP"
+      },
+      {
+        "name": "Nasarre Oliva, Begoña",
+        "group": "GS"
+      },
+      {
+        "name": "Ibáñez Hernando, Ángel",
+        "group": "GP"
+      },
+      {
+        "name": "Quintanilla Navarro, Miguel Ángel",
+        "group": "GP"
+      },
+      {
+        "name": "Martínez Salmerón, Joaquín",
+        "group": "GS"
+      },
+      {
+        "name": "Alía Aguado, María Pilar",
+        "group": "GP"
+      },
+      {
+        "name": "Velasco Retamosa, José Manuel",
+        "group": "GP"
+      },
+      {
+        "name": "Armengol Socias, Francina",
+        "group": "GS"
+      },
+      {
+        "name": "Herrera García, Milena",
+        "group": "GS"
+      },
+      {
+        "name": "Corujo Berriel, María Dolores",
+        "group": "GS"
+      },
+      {
+        "name": "Marí Bosó, José Vicente",
+        "group": "GP"
+      },
+      {
+        "name": "Sánchez Pérez-Castejón, Pedro",
+        "group": "GS"
+      },
+      {
+        "name": "Mercadal Baquero, Pepe",
+        "group": "GS"
+      },
+      {
+        "name": "Leal Fernández, Isaura",
+        "group": "GS"
+      },
+      {
+        "name": "Vidal Matas, Vicenç",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "García Morís, Roberto",
+        "group": "GS"
+      },
+      {
+        "name": "Vázquez Blanco, Ana Belén",
+        "group": "GP"
+      },
+      {
+        "name": "Quintana Carballo, Rosa",
+        "group": "GP"
+      },
+      {
+        "name": "Moraleja Gómez, Tristana María",
+        "group": "GP"
+      },
+      {
+        "name": "Puy Fraga, Pedro",
+        "group": "GP"
+      },
+      {
+        "name": "González Vázquez, Marta",
+        "group": "GP"
+      },
+      {
+        "name": "Pueyo Sanz, Jorge",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Hernando Fraile, Rafael Antonio",
+        "group": "GP"
+      },
+      {
+        "name": "Moneo Díez, María Sandra",
+        "group": "GP"
+      },
+      {
+        "name": "Sastre Uyá, Miguel Ángel",
+        "group": "GP"
+      },
+      {
+        "name": "Belda Pérez-Pedrero, Enrique",
+        "group": "GP"
+      },
+      {
+        "name": "Bendodo Benasayag, Elías",
+        "group": "GP"
+      },
+      {
+        "name": "Parra Aparicio, Julia",
+        "group": "GP"
+      },
+      {
+        "name": "Melgarejo Moreno, Joaquín",
+        "group": "GP"
+      },
+      {
+        "name": "Pascual Rocamora, Sandra",
+        "group": "GP"
+      },
+      {
+        "name": "Martínez Labella, Ana",
+        "group": "GP"
+      },
+      {
+        "name": "Navarro Lacoba, Carmen",
+        "group": "GP"
+      },
+      {
+        "name": "Montesinos de Miguel, Macarena",
+        "group": "GP"
+      },
+      {
+        "name": "Sánchez Pérez, César",
+        "group": "GP"
+      },
+      {
+        "name": "Martínez Ramírez, Carmen",
+        "group": "GS"
+      },
+      {
+        "name": "Sarrià Morell, Vicent Manuel",
+        "group": "GS"
+      },
+      {
+        "name": "Trenzano Rubio, Marta",
+        "group": "GS"
+      },
+      {
+        "name": "Granollers Cunillera, Inés",
+        "group": "GR"
+      },
+      {
+        "name": "Álvaro Vidal, Francesc-Marc",
+        "group": "GR"
+      },
+      {
+        "name": "Vallugera Balañà, Pilar",
+        "group": "GR"
+      },
+      {
+        "name": "Jordà i Roura, Teresa",
+        "group": "GR"
+      },
+      {
+        "name": "Martín Urriza, Carlos",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "González Gracia, Juan Antonio",
+        "group": "GS"
+      },
+      {
+        "name": "Simancas Simancas, Rafael",
+        "group": "GS"
+      },
+      {
+        "name": "Lucas Ayala, Francisco",
+        "group": "GS"
+      },
+      {
+        "name": "Rives Arcayna, Caridad",
+        "group": "GS"
+      },
+      {
+        "name": "Gutiérrez Prieto, Sergio",
+        "group": "GS"
+      },
+      {
+        "name": "Cantalapiedra Álvarez, María de las Mercedes",
+        "group": "GP"
+      },
+      {
+        "name": "Delgado-Taramona Hernández, Jimena",
+        "group": "GP"
+      },
+      {
+        "name": "Muñoz Abrines, Pedro",
+        "group": "GP"
+      },
+      {
+        "name": "Rego Candamil, Néstor",
+        "group": "GMx"
+      },
+      {
+        "name": "Gavin i Valls, Isidre",
+        "group": "GJxCAT"
+      },
+      {
+        "name": "Nogueras i Camero, Míriam",
+        "group": "GJxCAT"
+      },
+      {
+        "name": "Cervera Pinart, Josep Maria",
+        "group": "GJxCAT"
+      },
+      {
+        "name": "Calvo Gómez, Pilar",
+        "group": "GJxCAT"
+      },
+      {
+        "name": "Cruset Domènech, Josep Maria",
+        "group": "GJxCAT"
+      },
+      {
+        "name": "Madrenas i Mir, Marta",
+        "group": "GJxCAT"
+      },
+      {
+        "name": "Reynal Reillo, Esperanza",
+        "group": "GP"
+      },
+      {
+        "name": "Gil Santiago, Carlos",
+        "group": "GP"
+      },
+      {
+        "name": "De Rosa Torner, Fernando",
+        "group": "GP"
+      },
+      {
+        "name": "Navarro López, Pedro",
+        "group": "GP"
+      },
+      {
+        "name": "Alfonso Cendón, Javier",
+        "group": "GS"
+      },
+      {
+        "name": "Bolaños García, Félix",
+        "group": "GS"
+      },
+      {
+        "name": "Alfonso Silvestre, Alma",
+        "group": "GP"
+      },
+      {
+        "name": "Mariscal Anaya, Guillermo",
+        "group": "GP"
+      },
+      {
+        "name": "Taboadela Álvarez, Obdulia",
+        "group": "GS"
+      },
+      {
+        "name": "Sémper Pascual, Borja",
+        "group": "GP"
+      },
+      {
+        "name": "Aragonés Mendiguchía, Carlos",
+        "group": "GP"
+      },
+      {
+        "name": "Madrid Olmo, Bartolomé",
+        "group": "GP"
+      },
+      {
+        "name": "López Cano, Ignacio",
+        "group": "GS"
+      },
+      {
+        "name": "García Adanero, Carlos",
+        "group": "GP"
+      },
+      {
+        "name": "Sierra Caballero, Francisco",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Alonso Cantorné, Fèlix",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "De los Santos González, Jaime Miguel",
+        "group": "GP"
+      },
+      {
+        "name": "Narbona Ruiz, Cristina",
+        "group": "GS"
+      },
+      {
+        "name": "Guinart Moreno, Lídia",
+        "group": "GS"
+      },
+      {
+        "name": "Azorín Salar, Lázaro",
+        "group": "GS"
+      },
+      {
+        "name": "Clemente Muñoz, Raquel",
+        "group": "GP"
+      },
+      {
+        "name": "Herrero Bono, José Alberto",
+        "group": "GP"
+      },
+      {
+        "name": "Sánchez Sierra, María del Mar",
+        "group": "GP"
+      },
+      {
+        "name": "Carazo Hermoso, Eduardo",
+        "group": "GP"
+      },
+      {
+        "name": "Matute García de Jalón, Oskar",
+        "group": "GEH Bildu"
+      },
+      {
+        "name": "Pozueta Fernández, Isabel",
+        "group": "GEH Bildu"
+      },
+      {
+        "name": "Iñarritu García, Jon",
+        "group": "GEH Bildu"
+      },
+      {
+        "name": "Fullaondo la Cruz, Marije",
+        "group": "GEH Bildu"
+      },
+      {
+        "name": "Soler Mur, Alejandro",
+        "group": "GS"
+      },
+      {
+        "name": "Beamonte Mesa, Luis María",
+        "group": "GP"
+      },
+      {
+        "name": "Macías Gata, Alfonso Carlos",
+        "group": "GP"
+      },
+      {
+        "name": "Cavacasillas Rodríguez, Antonio",
+        "group": "GP"
+      },
+      {
+        "name": "Aizpurua Arzallus, Mertxe",
+        "group": "GEH Bildu"
+      },
+      {
+        "name": "Vaquero Montero, Maribel",
+        "group": "GV (EAJ-PNV)"
+      },
+      {
+        "name": "Esteban Bravo, Aitor",
+        "group": "GV (EAJ-PNV)"
+      },
+      {
+        "name": "Agirretxea Urresti, Joseba Andoni",
+        "group": "GV (EAJ-PNV)"
+      },
+      {
+        "name": "Legarda Uriarte, Mikel",
+        "group": "GV (EAJ-PNV)"
+      },
+      {
+        "name": "Romaní Cantera, José Ignacio",
+        "group": "GP"
+      },
+      {
+        "name": "Sagastizabal Unzetabarrenetxea, Idoia",
+        "group": "GV (EAJ-PNV)"
+      },
+      {
+        "name": "Martínez Barbero, Verónica",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Santos Maraver, Agustín",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Rufián Romero, Gabriel",
+        "group": "GR"
+      },
+      {
+        "name": "Gamarra Ruiz-Clavijo, Concepción",
+        "group": "GP"
+      },
+      {
+        "name": "Álvarez de Toledo Peralta-Ramos, Cayetana",
+        "group": "GP"
+      },
+      {
+        "name": "Cruz-Guzmán García, María Soledad",
+        "group": "GP"
+      },
+      {
+        "name": "Marcos Ortega, Milagros",
+        "group": "GP"
+      },
+      {
+        "name": "Cobo Pérez, Noelia",
+        "group": "GS"
+      },
+      {
+        "name": "Paniagua Núñez, Miguel Ángel",
+        "group": "GP"
+      },
+      {
+        "name": "Cobo Vega, Manuel",
+        "group": "GP"
+      },
+      {
+        "name": "Vidal Sáez, Aina",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Badia Casas, Eloi",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Boada Danés, Júlia",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Fernández Herranz, Sandra",
+        "group": "GP"
+      },
+      {
+        "name": "Alós López, Ana Isabel",
+        "group": "GP"
+      },
+      {
+        "name": "Casares Hontañón, Pedro",
+        "group": "GS"
+      },
+      {
+        "name": "Montero Cuadrado, María Jesús",
+        "group": "GS"
+      },
+      {
+        "name": "Andala Ubbi, Teslem",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Pedreño Molina, Juan Luis",
+        "group": "GP"
+      },
+      {
+        "name": "Llamazares Domingo, Esther",
+        "group": "GP"
+      },
+      {
+        "name": "Carballedo Berlanga, María Eugenia",
+        "group": "GP"
+      },
+      {
+        "name": "Díaz Pérez, Yolanda",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Núñez González, Noelia",
+        "group": "GP"
+      },
+      {
+        "name": "Nacarino-Brabo Jiménez, Aurora",
+        "group": "GP"
+      },
+      {
+        "name": "Conde López, Francisco José",
+        "group": "GP"
+      },
+      {
+        "name": "Hispán Iglesias de Ussel, Pablo",
+        "group": "GP"
+      },
+      {
+        "name": "Guardiola Salmerón, Mirian",
+        "group": "GP"
+      },
+      {
+        "name": "Conesa Coma, Ignasi",
+        "group": "GS"
+      },
+      {
+        "name": "Losada Fernández, José",
+        "group": "GS"
+      },
+      {
+        "name": "Lorenzo Cazorla, Juan Antonio",
+        "group": "GS"
+      },
+      {
+        "name": "Rodríguez Palacios, Javier",
+        "group": "GS"
+      },
+      {
+        "name": "Gutiérrez Santiago, Víctor",
+        "group": "GS"
+      },
+      {
+        "name": "Soldevilla Novials, Alba",
+        "group": "GS"
+      },
+      {
+        "name": "Rodríguez Suárez, Esther",
+        "group": "GS"
+      },
+      {
+        "name": "Moreno Fernández, Mª Isabel",
+        "group": "GS"
+      },
+      {
+        "name": "Ruiz de Diego, Víctor Javier",
+        "group": "GS"
+      },
+      {
+        "name": "Mayoral de Lamo, Alberto",
+        "group": "GS"
+      },
+      {
+        "name": "Camino Miñana, Víctor",
+        "group": "GS"
+      },
+      {
+        "name": "López Zamora, Cristina",
+        "group": "GS"
+      },
+      {
+        "name": "Mayoral Pérez, Jesús",
+        "group": "GS"
+      },
+      {
+        "name": "Almodóvar Sánchez, Emilia",
+        "group": "GS"
+      },
+      {
+        "name": "Torres Tejada, María",
+        "group": "GP"
+      },
+      {
+        "name": "Paré Aregall, Josep",
+        "group": "GS"
+      },
+      {
+        "name": "Gracia Blanco, Marta",
+        "group": "GS"
+      },
+      {
+        "name": "López Tagliafico, Candela",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Núñez Guijarro, José Enrique",
+        "group": "GP"
+      },
+      {
+        "name": "Uriarte Bengoechea, Edurne",
+        "group": "GP"
+      },
+      {
+        "name": "Lago Peñas, Manuel",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "De la Rosa Baena, Olvido",
+        "group": "GS"
+      },
+      {
+        "name": "Otero Rodríguez, Patricia",
+        "group": "GS"
+      },
+      {
+        "name": "Barrio Baroja, Carmelo",
+        "group": "GP"
+      },
+      {
+        "name": "García Chavarría, María Montserrat",
+        "group": "GS"
+      },
+      {
+        "name": "Hita Téllez, Guillermo",
+        "group": "GS"
+      },
+      {
+        "name": "Bayón Rolo, Juan Andrés",
+        "group": "GP"
+      },
+      {
+        "name": "Vedrina Conesa, María Elisa",
+        "group": "GP"
+      },
+      {
+        "name": "Sainz Martín, María",
+        "group": "GS"
+      },
+      {
+        "name": "Moreno Borrás, Cristina",
+        "group": "GP"
+      },
+      {
+        "name": "Otero García, Mercedes",
+        "group": "GS"
+      },
+      {
+        "name": "Almirón Ruiz, Oriol",
+        "group": "GS"
+      },
+      {
+        "name": "Canelo Matito, Andrea",
+        "group": "GS"
+      },
+      {
+        "name": "Pagès i Massó, Josep",
+        "group": "GJxCAT"
+      },
+      {
+        "name": "Montávez Aguillaume, Vicente",
+        "group": "GS"
+      },
+      {
+        "name": "Molina León, Ainhoa",
+        "group": "GP"
+      },
+      {
+        "name": "Estrems Fayos, Etna",
+        "group": "GR"
+      },
+      {
+        "name": "Recas Martín, Alda",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Quintero Hernández, Jonay",
+        "group": "GS"
+      },
+      {
+        "name": "Cuevas Larrosa, Raúl",
+        "group": "GP"
+      },
+      {
+        "name": "Gómez Piña, Luis Antonio",
+        "group": "GS"
+      },
+      {
+        "name": "Ogou i Corbi, Viviane",
+        "group": "GSUMAR"
+      },
+      {
+        "name": "Otero Gabirondo, Mikel",
+        "group": "GEH Bildu"
+      }
+    ],
+    "against": [
+      {
+        "name": "Alcaraz Martos, Francisco José",
+        "group": "GVOX"
+      },
+      {
+        "name": "Aguirre Gil de Biedma, Rocío",
+        "group": "GVOX"
+      },
+      {
+        "name": "Santana Perera, Noemí",
+        "group": "GMx"
+      },
+      {
+        "name": "Aizcorbe Torra, Juan José",
+        "group": "GVOX"
+      },
+      {
+        "name": "Sánchez García, José María",
+        "group": "GVOX"
+      },
+      {
+        "name": "Sáez Alonso-Muñumer, Pablo",
+        "group": "GVOX"
+      },
+      {
+        "name": "Ramírez del Río, José",
+        "group": "GVOX"
+      },
+      {
+        "name": "López Maraver, Ángel",
+        "group": "GVOX"
+      },
+      {
+        "name": "García Gomis, David",
+        "group": "GVOX"
+      },
+      {
+        "name": "Gil Lázaro, Ignacio",
+        "group": "GVOX"
+      },
+      {
+        "name": "González-Robatto Perote, Jacobo",
+        "group": "GVOX"
+      },
+      {
+        "name": "Del Valle Rodríguez, Emilio Jesús",
+        "group": "GVOX"
+      },
+      {
+        "name": "Flores Juberías, Carlos",
+        "group": "GVOX"
+      },
+      {
+        "name": "Velarde Gómez, Martina",
+        "group": "GMx"
+      },
+      {
+        "name": "Figaredo Álvarez-Sala, José María",
+        "group": "GVOX"
+      },
+      {
+        "name": "Hoces Íñiguez, Ignacio",
+        "group": "GVOX"
+      },
+      {
+        "name": "Méndez Monasterio, Lourdes",
+        "group": "GVOX"
+      },
+      {
+        "name": "Campos Asensi, Jorge",
+        "group": "GVOX"
+      },
+      {
+        "name": "Fernández Ríos, Tomás",
+        "group": "GVOX"
+      },
+      {
+        "name": "Armario González, Blanca",
+        "group": "GVOX"
+      },
+      {
+        "name": "Rodríguez Almeida, Andrés Alberto",
+        "group": "GVOX"
+      },
+      {
+        "name": "Belarra Urteaga, Ione",
+        "group": "GMx"
+      },
+      {
+        "name": "Mariscal Zabala, Manuel",
+        "group": "GVOX"
+      },
+      {
+        "name": "Ruiz Solás, María de la Cabeza",
+        "group": "GVOX"
+      },
+      {
+        "name": "De Meer Méndez, Rocío",
+        "group": "GVOX"
+      },
+      {
+        "name": "Sánchez Serna, Javier",
+        "group": "GMx"
+      },
+      {
+        "name": "Rueda Perelló, Patricia",
+        "group": "GVOX"
+      },
+      {
+        "name": "Chamorro Delmo, Ricardo",
+        "group": "GVOX"
+      },
+      {
+        "name": "Romero Vilches, María de los Reyes",
+        "group": "GVOX"
+      },
+      {
+        "name": "Asarta Cuevas, Alberto",
+        "group": "GVOX"
+      },
+      {
+        "name": "Abascal Conde, Santiago",
+        "group": "GVOX"
+      },
+      {
+        "name": "Robles López, Joaquín",
+        "group": "GVOX"
+      },
+      {
+        "name": "Ortega Smith-Molina, Francisco Javier",
+        "group": "GVOX"
+      },
+      {
+        "name": "Mejías Sánchez, Carina",
+        "group": "GVOX"
+      },
+      {
+        "name": "Rodríguez de Millán Parro, María José",
+        "group": "GVOX"
+      },
+      {
+        "name": "Hernández Quero, Carlos",
+        "group": "GVOX"
+      },
+      {
+        "name": "Fernández Hernández, Pedro",
+        "group": "GVOX"
+      }
+    ],
+    "abstain": []
+  }
+}

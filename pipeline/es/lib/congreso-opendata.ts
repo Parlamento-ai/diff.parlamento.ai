@@ -38,35 +38,29 @@ interface CongresoIniciativa {
 }
 
 /**
- * Scrape the Congreso opendata/iniciativas HTML page to find the JSON URL
- * for "Proyectos de Ley". Returns the full URL or null.
+ * Scrape the Congreso opendata/iniciativas HTML page to find JSON URLs.
+ * Returns a map of dataset name → URL.
  */
-async function findProyectosJsonUrl(): Promise<string | null> {
+async function findOpendataJsonUrls(): Promise<Record<string, string>> {
 	const res = await fetch(OPENDATA_URL, { headers: HEADERS });
 	if (!res.ok) throw new Error(`Congreso opendata page returned ${res.status}`);
 	const html = await res.text();
 
-	// Look for JSON links on the page
 	const jsonRe = /href="((?:https?:\/\/www\.congreso\.es)?\/webpublica\/opendata\/iniciativas\/[^"]*\.json)"/gi;
-	const urls: string[] = [];
+	const urls: Record<string, string> = {};
 	let m: RegExpExecArray | null;
 	while ((m = jsonRe.exec(html)) !== null) {
 		const url = m[1].startsWith('http') ? m[1] : `https://www.congreso.es${m[1]}`;
-		urls.push(url);
+		if (/proyectos/i.test(url)) urls.proyectos = url;
+		else if (/proposiciones/i.test(url)) urls.proposiciones = url;
 	}
-
-	// Find the one for Proyectos de Ley
-	const proyectos = urls.find((u) => /proyectos/i.test(u));
-	return proyectos || urls[0] || null;
+	return urls;
 }
 
 /**
- * Download and parse the full Proyectos de Ley JSON from Congreso Open Data.
+ * Fetch and parse a Congreso Open Data JSON file.
  */
-export async function fetchProyectosDeLey(): Promise<CongresoIniciativa[]> {
-	const jsonUrl = await findProyectosJsonUrl();
-	if (!jsonUrl) throw new Error('Could not find Proyectos de Ley JSON URL on Congreso opendata page');
-
+async function fetchCongresoJson(jsonUrl: string): Promise<CongresoIniciativa[]> {
 	console.log(`  JSON URL: ${jsonUrl}`);
 	const res = await fetch(jsonUrl, { headers: HEADERS });
 	if (!res.ok) throw new Error(`Congreso JSON returned ${res.status}: ${jsonUrl}`);
@@ -79,6 +73,24 @@ export async function fetchProyectosDeLey(): Promise<CongresoIniciativa[]> {
 		if (arr) return arr as CongresoIniciativa[];
 	}
 	throw new Error('Unexpected JSON structure from Congreso');
+}
+
+/**
+ * Download and parse the full Proyectos de Ley JSON from Congreso Open Data.
+ */
+export async function fetchProyectosDeLey(): Promise<CongresoIniciativa[]> {
+	const urls = await findOpendataJsonUrls();
+	if (!urls.proyectos) throw new Error('Could not find Proyectos de Ley JSON URL on Congreso opendata page');
+	return fetchCongresoJson(urls.proyectos);
+}
+
+/**
+ * Download and parse the full Proposiciones de Ley JSON from Congreso Open Data.
+ */
+export async function fetchProposicionesDeLey(): Promise<CongresoIniciativa[]> {
+	const urls = await findOpendataJsonUrls();
+	if (!urls.proposiciones) throw new Error('Could not find Proposiciones de Ley JSON URL on Congreso opendata page');
+	return fetchCongresoJson(urls.proposiciones);
 }
 
 /**
@@ -176,28 +188,47 @@ export function findProyecto(
 }
 
 /**
- * Full discovery: fetch JSON, find proyecto, return discovery data.
+ * Full discovery: fetch JSON, find proyecto/proposición, return discovery data.
+ * Searches Proyectos de Ley first, then Proposiciones de Ley.
  */
 export async function discoverProyecto(expediente: string): Promise<{
 	discovery: TramitacionDiscovery;
 	rawJson: CongresoIniciativa[];
 }> {
 	console.log('\n=== Phase 1: DISCOVER ===\n');
-	console.log(`  Fetching Congreso Open Data for Proyectos de Ley...`);
 
-	const proyectos = await fetchProyectosDeLey();
-	console.log(`  Found ${proyectos.length} proyectos de ley`);
+	const urls = await findOpendataJsonUrls();
 
-	const discovery = findProyecto(proyectos, expediente);
-	if (!discovery) {
-		// Show available expedientes to help debug
-		const available = proyectos.slice(0, 5).map((p) => p.NUMEXPEDIENTE.replace(/\/0000$/, ''));
-		throw new Error(
-			`Expediente ${expediente} not found in Congreso JSON. ` +
-			`Available: ${available.join(', ')}...`
-		);
+	// Try Proyectos de Ley first
+	if (urls.proyectos) {
+		console.log(`  Fetching Congreso Open Data for Proyectos de Ley...`);
+		const proyectos = await fetchCongresoJson(urls.proyectos);
+		console.log(`  Found ${proyectos.length} proyectos de ley`);
+		const discovery = findProyecto(proyectos, expediente);
+		if (discovery) {
+			printDiscovery(discovery);
+			return { discovery, rawJson: proyectos };
+		}
 	}
 
+	// Try Proposiciones de Ley
+	if (urls.proposiciones) {
+		console.log(`  Not found in Proyectos — trying Proposiciones de Ley...`);
+		const proposiciones = await fetchCongresoJson(urls.proposiciones);
+		console.log(`  Found ${proposiciones.length} proposiciones de ley`);
+		const discovery = findProyecto(proposiciones, expediente);
+		if (discovery) {
+			printDiscovery(discovery);
+			return { discovery, rawJson: proposiciones };
+		}
+	}
+
+	throw new Error(
+		`Expediente ${expediente} not found in Proyectos nor Proposiciones de Ley.`
+	);
+}
+
+function printDiscovery(discovery: TramitacionDiscovery): void {
 	console.log(`  Title: ${discovery.titulo.slice(0, 80)}`);
 	console.log(`  Situación: ${discovery.situacion}`);
 	console.log(`  Comisión: ${discovery.comision}`);
@@ -206,6 +237,4 @@ export async function discoverProyecto(expediente: string): Promise<{
 	for (const bocg of discovery.bocgUrls) {
 		console.log(`    Phase ${bocg.phase}: ${bocg.label} — ${bocg.url.split('/').pop()}`);
 	}
-
-	return { discovery, rawJson: proyectos };
 }

@@ -23,11 +23,11 @@ const ES_LO3_2018_DIR = 'pipeline/data/es/BOE-A-2018-16673/akn';
 const ES_LEY39_2015_DIR = 'pipeline/data/es/BOE-A-2015-10565/akn';
 const ES_LSSI_DIR = 'pipeline/data/es/BOE-A-2002-13758/akn';
 const ES_TELECOM_DIR = 'pipeline/data/es/BOE-A-2022-10757/akn';
-// ES Tramitación — Proyectos de Ley en tramitación parlamentaria
+// ES Tramitación — Proyectos y Proposiciones de Ley en tramitación parlamentaria
 const ES_TRAM_ECONOMIA_SOCIAL_DIR = 'pipeline/data/es/121-000036/akn';
 const ES_TRAM_DESPERDICIO_DIR = 'pipeline/data/es/121-000004/akn';
-const ES_TRAM_MENORES_DIR = 'pipeline/data/es/121-000052/akn';
-const ES_TRAM_JORNADA_DIR = 'pipeline/data/es/121-000058/akn';
+const ES_TRAM_DONANTES_DIR = 'pipeline/data/es/122-000097/akn';
+const ES_TRAM_ALCOHOL_DIR = 'pipeline/data/es/122-000139-proposicion-reduccion-tasa/akn';
 const BOLETIN_DIRS: Record<string, string> = {
 	// Ejemplos ficticios (recetas)
 	'empanadas-de-pino': `${RECETAS_DIR}/receta-empanadas`,
@@ -84,11 +84,11 @@ const BOLETIN_DIRS: Record<string, string> = {
 	'es-lssi-2002': ES_LSSI_DIR,
 	// ES — Ley 11/2022 General de Telecomunicaciones (BOE-A-2022-10757)
 	'es-telecom-2022': ES_TELECOM_DIR,
-	// ES Tramitación — Proyectos de Ley en tramitación parlamentaria
+	// ES Tramitación — Proyectos y Proposiciones de Ley en tramitación parlamentaria
 	'es-tram-economia-social': ES_TRAM_ECONOMIA_SOCIAL_DIR,
 	'es-tram-desperdicio-alimentario': ES_TRAM_DESPERDICIO_DIR,
-	'es-tram-menores-digitales': ES_TRAM_MENORES_DIR,
-	'es-tram-jornada-laboral': ES_TRAM_JORNADA_DIR
+	'es-tram-donantes-organos': ES_TRAM_DONANTES_DIR,
+	'es-tram-alcohol-conduccion': ES_TRAM_ALCOHOL_DIR
 };
 
 const SLUG_MAP: Record<string, string> = {
@@ -805,8 +805,8 @@ export function getSourceDocuments(boletinSlug: string, versionSlug: string): So
 		const tramDirs: Record<string, string> = {
 			'es-tram-economia-social': '121-000036',
 			'es-tram-desperdicio-alimentario': '121-000004',
-			'es-tram-menores-digitales': '121-000052',
-			'es-tram-jornada-laboral': '121-000058'
+			'es-tram-donantes-organos': '122-000097',
+			'es-tram-alcohol-conduccion': '122-000139-proposicion-reduccion-tasa'
 		};
 		const dataDir = tramDirs[boletinSlug] || boletinSlug.replace('es-tram-', '');
 		const esBase = `pipeline/data/es/${dataDir}/sources`;

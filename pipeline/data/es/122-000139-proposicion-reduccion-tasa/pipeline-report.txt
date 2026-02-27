@@ -1,0 +1,14 @@
+═══════════════════════════════════════════════════════
+  ES-TRAMITACION AKN Pipeline: 122-000139-proposicion-reduccion-tasa
+  Title: Proposición de Ley sobre la reducción de la tasa máxima de alcohol en 
+la conducción y la prohibición de la difusión de la ubicación de 
+controles en redes sociales.
+═══════════════════════════════════════════════════════
+  [PASS]  1. Discover            5 BOCGs                             2.0s
+  [PASS]  2. Download            3 PDFs                              0.5s
+  [PASS]  3. Convert             2 snapshots                         0.0s
+  [PASS]  4. Generate            2 AKN files                         0.0s
+  [PASS]  5. Enrich              no plenary votes                    0.0s
+
+  RESULT: 5 pass, 0 fail, 0 warn (2.5s)
+═══════════════════════════════════════════════════════

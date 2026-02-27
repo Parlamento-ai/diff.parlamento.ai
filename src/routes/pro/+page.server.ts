@@ -28,8 +28,8 @@ const DEV_SLUGS = [
 	'es-telecom-2022',
 	'es-tram-economia-social',
 	'es-tram-desperdicio-alimentario',
-	'es-tram-menores-digitales',
-	'es-tram-jornada-laboral'
+	'es-tram-donantes-organos',
+	'es-tram-alcohol-conduccion'
 ];
 
 export const load: PageServerLoad = async () => {

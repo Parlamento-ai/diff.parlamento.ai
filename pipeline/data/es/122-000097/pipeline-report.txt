@@ -1,10 +1,13 @@
 ═══════════════════════════════════════════════════════
-  ES-TRAMITACION AKN Pipeline: 121-000036-integral-impulso-economia
-  Title: Proyecto de Ley integral de impulso de la economía social.
+  ES-TRAMITACION AKN Pipeline: 122-000097-proposicion-mejora-proteccion
+  Title: Proposición de Ley para la mejora de la protección de las personas 
+donantes en vivo de órganos o tejidos para su posterior trasplante.
 ═══════════════════════════════════════════════════════
-  [PASS]  3. Convert             3 snapshots                         0.1s
+  [PASS]  1. Discover            15 BOCGs                            1.9s
+  [PASS]  2. Download            4 PDFs                              7.3s
+  [PASS]  3. Convert             3 snapshots                         0.0s
   [PASS]  4. Generate            3 AKN files                         0.0s
-  [PASS]  5. Enrich              no plenary votes                    0.0s
+  [PASS]  5. Enrich              no plenary votes                    13.9s
 
-  RESULT: 3 pass, 0 fail, 0 warn (0.1s)
+  RESULT: 5 pass, 0 fail, 0 warn (23.1s)
 ═══════════════════════════════════════════════════════

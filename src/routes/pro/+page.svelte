@@ -35,8 +35,8 @@
 		'es-telecom-2022': FlagEs,
 		'es-tram-economia-social': FlagEs,
 		'es-tram-desperdicio-alimentario': FlagEs,
-		'es-tram-menores-digitales': FlagEs,
-		'es-tram-jornada-laboral': FlagEs
+		'es-tram-donantes-organos': FlagEs,
+		'es-tram-alcohol-conduccion': FlagEs
 	};
 
 	const normOrder = [
@@ -90,8 +90,8 @@
 
 	const esTramEconomiaSocial = $derived(data.boletines.find((b) => b.slug === 'es-tram-economia-social'));
 	const esTramDesperdicio = $derived(data.boletines.find((b) => b.slug === 'es-tram-desperdicio-alimentario'));
-	const esTramMenores = $derived(data.boletines.find((b) => b.slug === 'es-tram-menores-digitales'));
-	const esTramJornada = $derived(data.boletines.find((b) => b.slug === 'es-tram-jornada-laboral'));
+	const esTramDonantes = $derived(data.boletines.find((b) => b.slug === 'es-tram-donantes-organos'));
+	const esTramAlcohol = $derived(data.boletines.find((b) => b.slug === 'es-tram-alcohol-conduccion'));
 </script>
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -443,7 +443,7 @@
 	{/if}
 
 	<!-- ES — Tramitación parlamentaria (Congreso) -->
-	{#if esTramEconomiaSocial || esTramDesperdicio || esTramMenores || esTramJornada}
+	{#if esTramEconomiaSocial || esTramDesperdicio || esTramDonantes || esTramAlcohol}
 		<section class="mb-14">
 			<div class="mb-5 max-w-lg mx-auto">
 				<h2 class="text-lg font-semibold text-gray-900 flex items-center gap-2">
@@ -451,7 +451,7 @@
 					Tramitacion parlamentaria — España (Congreso)
 				</h2>
 				<p class="text-xs text-gray-400 mt-1.5 leading-relaxed">
-					Pipeline desde datos abiertos del Congreso + PDFs del BOCG. Evolución completa de proyectos de ley
+					Pipeline desde datos abiertos del Congreso + PDFs del BOCG. Evolución completa de proyectos y proposiciones de ley
 					durante su tramitación parlamentaria: texto original, ponencia, dictamen, pleno y aprobación definitiva,
 					con diff artículo por artículo entre cada fase legislativa.
 				</p>
@@ -467,15 +467,6 @@
 						firstVersion="bill-original"
 					/>
 				{/if}
-				{#if esTramMenores}
-					<BoletinCard
-						slug={esTramMenores.slug}
-						title={esTramMenores.title}
-						documentCount={esTramMenores.documentCount}
-						flag={flagMap[esTramMenores.slug]}
-						firstVersion="bill-original"
-					/>
-				{/if}
 				{#if esTramEconomiaSocial}
 					<BoletinCard
 						slug={esTramEconomiaSocial.slug}
@@ -485,12 +476,21 @@
 						firstVersion="bill-original"
 					/>
 				{/if}
-				{#if esTramJornada}
+				{#if esTramDonantes}
+				<BoletinCard
+					slug={esTramDonantes.slug}
+					title={esTramDonantes.title}
+					documentCount={esTramDonantes.documentCount}
+					flag={flagMap[esTramDonantes.slug]}
+					firstVersion="bill-original"
+				/>
+			{/if}
+			{#if esTramAlcohol}
 					<BoletinCard
-						slug={esTramJornada.slug}
-						title={esTramJornada.title}
-						documentCount={esTramJornada.documentCount}
-						flag={flagMap[esTramJornada.slug]}
+						slug={esTramAlcohol.slug}
+						title={esTramAlcohol.title}
+						documentCount={esTramAlcohol.documentCount}
+						flag={flagMap[esTramAlcohol.slug]}
 						firstVersion="bill-original"
 					/>
 				{/if}

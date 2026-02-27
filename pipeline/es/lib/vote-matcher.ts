@@ -128,6 +128,97 @@ export async function findVoteForLaw(boeId: string, dateHint?: string): Promise<
 	};
 }
 
+/**
+ * Find Congreso vote data by expediente (direct match, no keywords).
+ *
+ * Used by the tramitación pipeline where we already know the expediente.
+ * Searches Tue/Thu plenary dates backwards from dateHint.
+ *
+ * @param expediente - e.g. "121/000036"
+ * @param dateHint - YYYY-MM-DD date to start searching backwards from
+ * @param titulo - optional law title, used to detect "Orgánica" for rango
+ */
+export async function findVoteByExpediente(
+	expediente: string,
+	dateHint: string,
+	titulo?: string
+): Promise<VoteMatch | null> {
+	const legislatura = getLegislatura(dateHint);
+	if (!legislatura) return null;
+
+	// Strip /0000 suffix — Congreso Open Data uses "121/000004/0000" but vote pages use "121/000004"
+	const cleanExp = expediente.replace(/\/0000$/, '');
+
+	// Determine rango from title (default: ordinaria)
+	const rango = titulo && normalize(titulo).includes('organica') ? 'orgánica' : 'ordinaria';
+
+	const start = new Date(dateHint);
+	const MAX_DAYS = 90;
+
+	// Generate candidate plenary dates (Tue/Thu)
+	const candidates: string[] = [];
+	for (let dayOffset = 0; dayOffset <= MAX_DAYS; dayOffset++) {
+		const d = new Date(start);
+		d.setDate(d.getDate() - dayOffset);
+		const dayOfWeek = d.getUTCDay();
+		if (dayOffset === 0 || dayOfWeek === 2 || dayOfWeek === 4) {
+			candidates.push(d.toISOString().slice(0, 10));
+		}
+	}
+
+	// Fetch HTML pages in parallel batches of 5
+	const BATCH = 5;
+	for (let i = 0; i < candidates.length; i += BATCH) {
+		const batch = candidates.slice(i, i + BATCH);
+		const pages = await Promise.all(
+			batch.map((date) => fetchVotePage(legislatura, date).then((p) => ({ date, page: p })))
+		);
+
+		for (const { date, page } of pages) {
+			if (!page) continue;
+			if (page.groups.length === 0) continue;
+
+			// Direct expediente match — much more reliable than keywords
+			const group = page.groups.find((g) => g.expediente === cleanExp);
+			if (!group) continue;
+
+			console.log(`      Fecha del pleno: ${date} — expediente ${group.expediente} (${group.jsonUrls.length} votos)`);
+
+			const vote = await findVoteInGroup(group.jsonUrls, rango);
+			if (!vote) continue;
+
+			// Convert Congreso date format DD/MM/YYYY → YYYY-MM-DD
+			const dateParts = vote.date.split('/');
+			const voteDate =
+				dateParts.length === 3
+					? `${dateParts[2]}-${dateParts[1].padStart(2, '0')}-${dateParts[0].padStart(2, '0')}`
+					: date;
+
+			const voteResult: 'approved' | 'rejected' =
+				vote.totales.afavor > vote.totales.enContra ? 'approved' : 'rejected';
+
+			return {
+				date: voteDate,
+				result: voteResult,
+				source: `https://www.congreso.es/es/opendata/votaciones`,
+				expediente: group.expediente,
+				voteType: getVoteTypeLabel(vote),
+				for: vote.votaciones
+					.filter((v) => v.voto === 'Sí')
+					.map((v) => ({ name: v.diputado, group: v.grupo })),
+				against: vote.votaciones
+					.filter((v) => v.voto === 'No')
+					.map((v) => ({ name: v.diputado, group: v.grupo })),
+				abstain: vote.votaciones
+					.filter((v) => v.voto === 'Abstención')
+					.map((v) => ({ name: v.diputado, group: v.grupo }))
+			};
+		}
+	}
+
+	return null;
+}
+
 interface StructuredResult {
 	vote: CongresoVote;
 	expediente: string;

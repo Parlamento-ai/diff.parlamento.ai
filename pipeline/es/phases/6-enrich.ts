@@ -86,7 +86,7 @@ export async function enrich(config: PipelineConfig, outDir: string): Promise<vo
 }
 
 /** Inject <akndiff:vote> as first child of <akndiff:changeSet>, replacing any existing vote */
-function injectVoteIntoXml(xml: string, vote: VoteMatch): string {
+export function injectVoteIntoXml(xml: string, vote: VoteMatch): string {
 	const voteXml = buildVoteXml(vote);
 
 	// Remove existing vote if present (for re-runs)
@@ -102,7 +102,7 @@ function injectVoteIntoXml(xml: string, vote: VoteMatch): string {
 }
 
 /** Build AKN vote XML with individual voter elements */
-function buildVoteXml(vote: VoteMatch): string {
+export function buildVoteXml(vote: VoteMatch): string {
 	const forXml = buildVoterGroupXml(vote.for, 'for');
 	const againstXml = buildVoterGroupXml(vote.against, 'against');
 	const abstainXml = buildVoterGroupXml(vote.abstain, 'abstain');

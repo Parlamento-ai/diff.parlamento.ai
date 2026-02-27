@@ -1,0 +1,23 @@
+{
+  "expediente": "122/000139/0000",
+  "slug": "122-000139-proposicion-reduccion-tasa",
+  "titulo": "Proposición de Ley sobre la reducción de la tasa máxima de alcohol en \nla conducción y la prohibición de la difusión de la ubicación de \ncontroles en redes sociales.",
+  "timeline": [
+    {
+      "slug": "bill-original",
+      "label": "Texto Original",
+      "date": "2024-11-08",
+      "type": "bill",
+      "bocgPhase": 1,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-157-1.PDF"
+    },
+    {
+      "slug": "amendment-dictamen-de-comision",
+      "label": "Dictamen de Comisión",
+      "date": "2025-06-24",
+      "type": "amendment",
+      "bocgPhase": 5,
+      "sourceUrl": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-157-5.PDF"
+    }
+  ]
+}

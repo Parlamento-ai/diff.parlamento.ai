@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="http://parlamento.ai/ns/akndiff/1.0">
+  <amendment name="122-000139-proposicion-reduccion-tasa-amendment-dictamen-de-comision">
+    <meta>
+      <identification source="#parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa"/>
+          <FRBRuri value="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa"/>
+          <FRBRdate date="2025-06-24" name="modificacion"/>
+          <FRBRauthor href="/es/congreso"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa/spa@2025-06-24"/>
+          <FRBRuri value="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa/spa@2025-06-24"/>
+          <FRBRdate date="2025-06-24" name="version"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa/spa@2025-06-24/akn"/>
+          <FRBRuri value="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa/spa@2025-06-24/akn"/>
+          <FRBRdate date="2026-02-25" name="generacion"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle><p><docTitle>Dictamen de Comisión</docTitle></p></longTitle>
+      <p>Modificación de Proposición de Ley sobre la reducción de la tasa máxima de alcohol en 
+la conducción y la prohibición de la difusión de la ubicación de 
+controles en redes sociales.</p>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Modificación de Proposición de Ley sobre la reducción de la tasa máxima de alcohol en 
+la conducción y la prohibición de la difusión de la ubicación de 
+controles en redes sociales.</p>
+      </amendmentContent>
+    </amendmentBody>
+    <akndiff:changeSet
+      base="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa/spa@2024-11-08"
+      result="/es/congreso/proyecto/122-000139-proposicion-reduccion-tasa/spa@2025-06-24">
+        <akndiff:articleChange article="art_unico" type="substitute">
+          <akndiff:old>Vehículos a Motor y Seguridad Vial, aprobado por el Real Decreto Legislativo 6/2015, de 30 de octubre. El texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial, aprobado por el Real Decreto Legislativo 6/2015, de 30 de octubre, queda modificado como sigue: Uno. Se añade el apartado 7 al artículo 13, con la siguiente redacción: «7. Se prohíbe la difusión por cualquier medio, público o privado, de todo dato o información relativa a la ubicación de controles policiales de alcohol y drogas, así como de cualquier otro establecido por razones de seguridad vial.» Dos. Se añade el párrafo z4) al artículo 76, con la siguiente redacción: «z4) Conducir con tasas de alcohol superiores a 0,1 miligramos por litro de aire espirado o 0,2 gramos por litro en sangre, hasta 0,25 miligramos por litro de aire espirado o 0,5 gramos por litro en sangre.» Tres. Se modifica el párrafo c) del artículo 77, que queda redactado del siguiente modo: «c) Conducir con tasas de alcohol superiores a 0,25 miligramos por litro de aire espirado o 0,5 gramos por litro en sangre, o con presencia en el organismo de drogas.» Cuatro. Se añade el párrafo y) al artículo 77, con la siguiente redacción: «y) La difusión por cualquier medio, público o privado, de todo dato o información relativa a la ubicación de controles policiales de alcohol y drogas, así como de cualquier otro establecido por razones de seguridad vial.» Cinco. Se modifica el párrafo a) del apartado 2 del artículo 80, que queda redactado del siguiente modo: «a) Las infracciones previstas en el artículo 77c) cuando la tasa de alcohol exceda de 0,5 miligramos por litro de aire espirado o 1 gramos por litro en sangre, y d) serán sancionadas con multa de 1.000 euros.» Seis. Se añade el párrafo h) al artículo 82, con la siguiente redacción: «h) En el supuesto de difusión por cualquier medio, público o privado, de todo dato o información relativa a la ubicación de controles policiales de alcohol y drogas, así como de cualquier otro establecido por razones de seguridad vial, el responsable de la infracción será la persona física que difunda el contenido, aunque se sirva para ello de plataformas o servicios de la sociedad de la información, o se trate de redifusiones con origen en otros datos o informaciones de terceros.» Siete. Se modifica el punto 1 del anexo II, que queda redactado del siguiente modo: «Puntos 1. Conducir con una tasa de alcohol superior a las siguientes: Valores miligramos por litro aire espirado, superior a más de 0,5, o 1 gramos por 6 litro en sangre. Valores miligramos por litro aire espirado, superior a 0,25 hasta 0,50, o superior 4 a 0,5 hasta 1 gramos por litro en sangre (incluido). Valores miligramos por litro aire espirado, superior a 0,10 hasta 0,25, o superior 2» a 0,2 hasta 0,5 gramos por litro en sangre (incluido).</akndiff:old>
+          <akndiff:new>Vehículos a Motor y Seguridad Vial, aprobado por el Real Decreto Legislativo 6/2015, de 30 de octubre. El texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial, aprobado por el Real Decreto Legislativo 6/2015, de 30 de octubre, queda modificado como sigue: Uno. (Suprimido). Dos. Se añade el párrafo z4) al artículo 76, con la siguiente redacción: «z4) Conducir con tasas de alcohol superiores a 0,1 miligramos por litro de aire espirado o 0,2 gramos por litro en sangre, hasta 0,25 miligramos por litro de aire espirado o 0,5 gramos por litro en sangre.» Tres. Se modifica el párrafo c) del artículo 77, que queda redactado del siguiente modo: «c) Conducir con tasas de alcohol superiores a 0,25 miligramos por litro de aire espirado o 0,5 gramos por litro en sangre, o con presencia en el organismo de drogas.» Cuatro. (Suprimido). Cinco. Se modifica el párrafo a) del apartado 2 del artículo 80, que queda redactado del siguiente modo: «a) Las infracciones previstas en el artículo 77c) cuando la tasa de alcohol exceda de 0,5 miligramos por litro de aire espirado o 1 gramos por litro en sangre, y d) serán sancionadas con multa de 1.000 euros.» Seis. (Suprimido). Siete. Se modifica el punto 1 del anexo II, que queda redactado del siguiente modo: «Puntos 1. Conducir con una tasa de alcohol superior a las siguientes: Valores miligramos por litro aire espirado, superior a más de 0,5, o 1 gramos por litro en 6 sangre. Valores miligramos por litro aire espirado, superior a 0,25 hasta 0,50, o superior a 0,5 4 hasta 1 gramos por litro en sangre (incluido). Valores miligramos por litro aire espirado, superior a 0,10 hasta 0,25, o superior a 0,2 2» hasta 0,5 gramos por litro en sangre (incluido).</akndiff:new>
+        </akndiff:articleChange>
+    </akndiff:changeSet>
+  </amendment>
+</akomaNtoso>

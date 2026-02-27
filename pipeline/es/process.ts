@@ -1,228 +1,89 @@
 #!/usr/bin/env tsx
 /**
- * Pipeline ES — Generate AKN Diff XMLs from a Spanish BOE ID
+ * Pipeline ES — Unified dispatcher for Spanish legislative pipeline
+ *
+ * Auto-detects mode from the identifier format:
+ *   BOE-A-YYYY-NNNNN  → BOE pipeline (published laws)
+ *   121/NNNNNN         → Tramitación pipeline (bills in progress)
  *
  * Usage:
- *   npx tsx pipeline/es/process.ts <BOE-ID> [--phase=N]
- *
- * Examples:
- *   npx tsx pipeline/es/process.ts BOE-A-2018-16673
- *   npx tsx pipeline/es/process.ts BOE-A-2018-16673 --phase=5
- *   npx tsx pipeline/es/process.ts BOE-A-1889-4763
- *
- * Phases:
- *   1. Discover   — metadata + analisis from BOE API
- *   2. Download   — full consolidated text
- *   3. Convert    — BOE XML → version snapshots
- *   4. Configure  — build timeline from snapshots + analisis
- *   5. Generate   — AKN XML files
- *   6. Enrich     — Congreso vote data
+ *   npx tsx pipeline/es/process.ts BOE-A-2018-16673           # BOE mode
+ *   npx tsx pipeline/es/process.ts 121/000036                  # Tramitación mode
+ *   npx tsx pipeline/es/process.ts 121/000036 --phase=3        # Resume from phase 3
  */
-import { existsSync, mkdirSync, renameSync, writeFileSync } from 'node:fs';
-import { join, resolve, relative } from 'node:path';
-import { discover } from './phases/1-discover.js';
-import { configure } from './phases/2-configure.js';
-import { download } from './phases/3-download.js';
-import { convert } from './phases/4-convert.js';
-import { generate } from './phases/5-generate.js';
-import { enrich } from './phases/6-enrich.js';
-import type { Discovery, PipelineConfig, VersionSnapshot } from './types.js';
-import type { StepResult, PipelineManifest } from '../shared/types.js';
-import { loadJson, formatReport } from '../shared/report.js';
-import { validateSnapshots } from './lib/boe-parser.js';
+import { runBOE } from './run-boe.js';
+import { runTramitacion } from './run-tramitacion.js';
 
-function parseArgs(): { boeId: string; startPhase: number } {
+type Mode = 'boe' | 'tramitacion';
+
+function detectMode(identifier: string): Mode | null {
+	if (/^BOE-[A-Z]-\d{4}-\d+$/.test(identifier)) return 'boe';
+	if (/^\d{3}\/\d{6}$/.test(identifier)) return 'tramitacion';
+	return null;
+}
+
+function parseArgs(): { identifier: string; mode: Mode; startPhase: number } {
 	const args = process.argv.slice(2);
 
 	if (args.length === 0 || args[0] === '--help' || args[0] === '-h') {
 		console.log(`
-Pipeline Espana — AKN Diff Generator
+Pipeline España — Unified AKN Diff Generator
 
 Usage:
-  npx tsx pipeline/es/process.ts <BOE-ID> [options]
+  npx tsx pipeline/es/process.ts <identifier> [options]
 
-BOE ID format: BOE-A-YYYY-NNNNN
-  BOE-A-2018-16673   LO 3/2018 Proteccion de Datos
-  BOE-A-1889-4763    Codigo Civil
+Identifier formats (auto-detected):
+  BOE-A-2018-16673   → BOE mode (published laws, 6 phases)
+  121/000036          → Tramitación mode (bills in progress, 5 phases)
+
+Examples:
+  npx tsx pipeline/es/process.ts BOE-A-2018-16673
+  npx tsx pipeline/es/process.ts BOE-A-2018-16673 --phase=5
+  npx tsx pipeline/es/process.ts 121/000036
+  npx tsx pipeline/es/process.ts 121/000036 --phase=3
 
 Options:
-  --phase=N    Start from phase N (1-6, default: 1)
+  --phase=N    Start from phase N (default: 1)
+               BOE: 1-6, Tramitación: 1-5
   -h, --help   Show this help
 `);
 		process.exit(0);
 	}
 
-	const boeId = args[0];
+	const identifier = args[0];
+	const mode = detectMode(identifier);
+
+	if (!mode) {
+		console.error(`Error: Unrecognized identifier format: "${identifier}"`);
+		console.error('  Expected BOE-A-YYYY-NNNNN (e.g. BOE-A-2018-16673)');
+		console.error('  or 121/NNNNNN (e.g. 121/000036)');
+		process.exit(1);
+	}
+
 	let startPhase = 1;
+	const maxPhase = mode === 'boe' ? 6 : 5;
 
 	for (const arg of args.slice(1)) {
 		if (arg.startsWith('--phase=')) {
 			startPhase = parseInt(arg.split('=')[1], 10);
-			if (isNaN(startPhase) || startPhase < 1 || startPhase > 6) {
-				console.error('Error: --phase must be 1-6');
+			if (isNaN(startPhase) || startPhase < 1 || startPhase > maxPhase) {
+				console.error(`Error: --phase must be 1-${maxPhase} for ${mode} mode`);
 				process.exit(1);
 			}
 		}
 	}
 
-	return { boeId, startPhase };
+	return { identifier, mode, startPhase };
 }
 
 async function main(): Promise<void> {
-	const { boeId, startPhase } = parseArgs();
+	const { identifier, mode, startPhase } = parseArgs();
 
-	// Directorio temporal con boeId; se renombra al slug en fase 4
-	let outDir = resolve('pipeline', 'data', 'es', boeId);
-
-	console.log(`\n╔══════════════════════════════════════╗`);
-	console.log(`║  Pipeline Espana — ${boeId.padEnd(17)}║`);
-	console.log(`╚══════════════════════════════════════╝`);
-	console.log(`  Starting from phase: ${startPhase}`);
-
-	if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
-
-	const startTime = Date.now();
-	const allResults: StepResult[] = [];
-
-	// Phase 1: DISCOVER — metadata + analisis
-	let discovery: Discovery;
-	if (startPhase <= 1) {
-		const t0 = Date.now();
-		discovery = await discover(boeId, outDir);
-		allResults.push({ step: 1, id: 'discover', name: 'Discover', status: 'PASS', detail: boeId, elapsed: Date.now() - t0 });
+	if (mode === 'boe') {
+		await runBOE(identifier, startPhase);
 	} else {
-		console.log('\n=== Phase 1: DISCOVER (loading cached) ===');
-		discovery = loadJson(join(outDir, 'discovery.json'), 'discovery.json');
+		await runTramitacion(identifier, startPhase);
 	}
-
-	// Phase 2: DOWNLOAD — texto completo
-	if (startPhase <= 2) {
-		const t0 = Date.now();
-		// download solo necesita el boeId, no el config completo
-		await downloadTexto(boeId, outDir);
-		allResults.push({ step: 2, id: 'download', name: 'Download', status: 'PASS', detail: 'texto + metadata', elapsed: Date.now() - t0 });
-	} else {
-		console.log('\n=== Phase 2: DOWNLOAD (skipped) ===');
-	}
-
-	// Phase 3: CONVERT — BOE XML → snapshots
-	let snapshots: VersionSnapshot[];
-	if (startPhase <= 3) {
-		const t0 = Date.now();
-		snapshots = convertTexto(boeId, outDir);
-		allResults.push({ step: 3, id: 'convert', name: 'Convert', status: 'PASS', detail: `${snapshots.length} snapshots`, elapsed: Date.now() - t0 });
-	} else {
-		console.log('\n=== Phase 3: CONVERT (loading cached) ===');
-		snapshots = loadJson(join(outDir, 'sources', 'snapshots.json'), 'snapshots.json');
-	}
-
-	// Phase 4: CONFIGURE — timeline desde snapshots + analisis
-	let config: PipelineConfig;
-	if (startPhase <= 4) {
-		const t0 = Date.now();
-		config = configure(discovery, outDir, snapshots);
-
-		// Intentar renombrar directorio al slug (puede fallar en OneDrive/Windows)
-		const slugDir = resolve('pipeline', 'data', 'es', config.slug);
-		if (slugDir !== outDir) {
-			try {
-				if (!existsSync(slugDir)) {
-					renameSync(outDir, slugDir);
-					outDir = slugDir;
-					console.log(`  Renamed output dir to ${config.slug}`);
-				} else {
-					outDir = slugDir;
-				}
-			} catch {
-				console.log(`  Using dir name: ${boeId} (rename skipped)`);
-			}
-		}
-
-		allResults.push({ step: 4, id: 'configure', name: 'Configure', status: 'PASS', detail: config.slug, elapsed: Date.now() - t0 });
-	} else {
-		console.log('\n=== Phase 4: CONFIGURE (loading cached) ===');
-		config = loadJson(join(outDir, 'config.json'), 'config.json');
-	}
-
-	console.log(`  Output: ${outDir}`);
-
-	// VALIDACION OBLIGATORIA — si falla, no se generan AKN
-	const t0Val = Date.now();
-	const validationErrors = validateSnapshots(snapshots);
-	if (validationErrors.length > 0) {
-		console.log('\n=== VALIDACION DE INTEGRIDAD ===\n');
-		for (const err of validationErrors) {
-			console.error(`  [ERROR] ${err.detail}`);
-		}
-		console.error(`\n  ${validationErrors.length} errores de integridad encontrados.`);
-		console.error('  Pipeline ABORTADA — los datos no son confiables para esta ley.');
-		console.error('  Los AKN NO fueron generados.\n');
-		allResults.push({ step: 0, id: 'validate', name: 'Validate', status: 'FAIL', detail: `${validationErrors.length} errores`, elapsed: Date.now() - t0Val });
-
-		const totalElapsed = Date.now() - startTime;
-		const manifest: PipelineManifest = {
-			country: 'es',
-			slug: config.slug,
-			title: config.titulo,
-			aknFiles: [],
-			elapsed: totalElapsed,
-			results: allResults
-		};
-		const report = formatReport(manifest);
-		console.log(report);
-		const reportPath = join(outDir, 'pipeline-report.txt');
-		writeFileSync(reportPath, report, 'utf-8');
-		process.exit(1);
-	}
-	allResults.push({ step: 0, id: 'validate', name: 'Validate', status: 'PASS', detail: `${snapshots.length} snapshots OK`, elapsed: Date.now() - t0Val });
-	console.log(`\n  Validacion: ${snapshots.length} snapshots, 0 errores de integridad`);
-
-	// Phase 5: GENERATE — AKN XMLs
-	const t0Gen = Date.now();
-	const generated = generate(config, snapshots, outDir);
-	allResults.push({ step: 5, id: 'generate', name: 'Generate', status: 'PASS', detail: `${generated.length} AKN files`, elapsed: Date.now() - t0Gen });
-
-	// Phase 6: ENRICH — Congreso vote data
-	const t0Enrich = Date.now();
-	await enrich(config, outDir);
-	allResults.push({ step: 6, id: 'enrich', name: 'Enrich', status: 'PASS', detail: 'vote enrichment', elapsed: Date.now() - t0Enrich });
-
-	const totalElapsed = Date.now() - startTime;
-	const aknDir = join(outDir, 'akn');
-	const relAknDir = relative(resolve('.'), aknDir);
-
-	const manifest: PipelineManifest = {
-		country: 'es',
-		slug: config.slug,
-		title: config.titulo,
-		aknFiles: generated,
-		elapsed: totalElapsed,
-		results: allResults
-	};
-
-	const report = formatReport(manifest);
-	console.log(report);
-
-	const reportPath = join(outDir, 'pipeline-report.txt');
-	writeFileSync(reportPath, report, 'utf-8');
-	console.log(`\nReport saved: ${reportPath}`);
-	console.log(`\n  Generated ${generated.length} AKN files in ${relAknDir}/`);
-
-	const fail = allResults.filter((r) => r.status === 'FAIL').length;
-	if (fail > 0) process.exit(1);
-}
-
-// ── Wrappers que no dependen de PipelineConfig ──────────────────────────
-
-async function downloadTexto(boeId: string, outDir: string): Promise<void> {
-	// Reutiliza la logica de download pero con un config minimo
-	const minConfig = { boeId } as PipelineConfig;
-	await download(minConfig, outDir);
-}
-
-function convertTexto(boeId: string, outDir: string): VersionSnapshot[] {
-	const minConfig = { boeId } as PipelineConfig;
-	return convert(minConfig, outDir);
 }
 
 main().catch((err) => {
