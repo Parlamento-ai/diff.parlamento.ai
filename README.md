@@ -7,6 +7,25 @@ Partimos de un problema concreto: no existe una herramienta pública para ver qu
 
 ## Changelog
 
+
+---
+**28/04/26**
+
+Después de varios tests en varios países, llegamos a la conclusión de que **sí es posible reconstruir los AKN** a base de los datos públicos de los gobiernos. Algunos van a requerir mucho trabajo, pero sí es posible.
+
+La próxima etapa sería construir un verdadero prototipo en el cual puedo ver datos parlamentarios de distintas organizaciones en el mismo formato. La primera idea fue basar todo en XML, hacer una web de links, pero rápidamente nos dijimos que no era la mejor idea, porque van a ser las queries bastante difíciles y no nos obliga a hacernos la pregunta correcta: Podemos combinar varios parlamentos en un solo esquema sin perder muchos datos y sin readaptar todo para cada país?
+
+Si hacemos todo en XML, va a ser más difícil ver si la estructura es sólida. El XML va a ser un buen formato de distribución, pero no necesariamente de estocaje.
+
+El plan va a ser crear un esquema SQL con el objetivo de englobar todo el rito parlamentario de varios países.
+
+Vamos a estar atentos a:
+1. Campos que son subutilizados en algunos países, o sea que no completan todos los tipos de información que tenemos en la base de datos.
+2. Informaciones que no son correctamente representadas en nuestro esquema. Información que tendremos que lanzar dentro de un binary object genérico para guardarlas, o sea que no son nativas a nuestro tipo.
+
+(En este documento)[research/schema/schema-research-plan.md] iremos en detalle sobre cómo hacer este experimento. 
+
+
 ---
 **20/02/2026**
 
