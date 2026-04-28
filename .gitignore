@@ -28,3 +28,7 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 test-results/
+
+# Research experiment build artifact (regenerated from YAML corpus)
+research/schema/research.db
+research/schema/research.db-*

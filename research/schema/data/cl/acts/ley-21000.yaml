@@ -1,0 +1,30 @@
+# Example act — fictitious, for build-script testing only.
+
+type: act
+nativeId: "ley-21000"
+title: "Ley N° 21.000 — Sobre protección de la vida privada y datos personales"
+language: es
+sourceUrl: "https://www.bcn.cl/leychile/navegar?idNorma=1234567"
+publishedAt: "2018-03-20"
+lastActivityAt: "2026-01-15"
+
+topics:
+  - protección de datos
+
+body:
+  preamble: "Teniendo presente que el Congreso Nacional ha dado su aprobación..."
+
+act:
+  status: in_force
+  promulgatedAt: "2018-03-15"
+  effectiveAt: "2018-04-01"
+  issuingBody: "Congreso Nacional"
+
+versions:
+  - version: 1
+    publishedAt: "2018-03-20"
+    sourceUrl: "https://www.bcn.cl/leychile/navegar?idNorma=1234567&idVersion=2018-03-20"
+  - version: 2
+    publishedAt: "2026-01-15"
+    sourceUrl: "https://www.bcn.cl/leychile/navegar?idNorma=1234567&idVersion=2026-01-15"
+    note: "Texto consolidado tras la promulgación del boletín 12345-07"
