@@ -138,6 +138,109 @@
 			order they show up in our running story.
 		</p>
 
+		<!-- Every-document preamble -->
+		<article class="mb-8 rounded border border-gray-300 bg-gray-50 p-5">
+			<header class="mb-3">
+				<h3 class="text-lg font-bold">Every document has these</h3>
+				<p class="text-sm text-gray-600">
+					No matter the type — bill, act, journal, judgment — every document carries this same
+					core set of fields. The type-specific cards below only show what's <em>extra</em>.
+				</p>
+			</header>
+
+			<table class="w-full text-sm">
+				<thead class="border-b border-gray-300 text-left text-xs text-gray-500 uppercase">
+					<tr>
+						<th class="py-2 pr-4 font-bold">field</th>
+						<th class="py-2 pr-4 font-bold">kind</th>
+						<th class="py-2 font-bold">example</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-gray-200">
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">id</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">id</td>
+						<td class="py-2 text-gray-700"
+							><code class="rounded bg-gray-100 px-1 text-xs"
+								>3f9a-4c2b-…-b81e</code
+							> — UUID we generate ourselves</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">type</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">status</td>
+						<td class="py-2 text-gray-700">
+							<code class="rounded bg-gray-100 px-1 text-xs">bill</code>
+							<span class="text-gray-500"
+								>— which kind of document this is. One of 14 values.</span
+							>
+						</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">countryCode</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"cl", "es", "eu", "pe", "us"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">nativeId</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">id</td>
+						<td class="py-2 text-gray-700"
+							>"12345-07" — the id the gov site itself uses</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">title</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700"
+							>"Modifica la ley N° 21.000 para fortalecer..."</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">topics</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">list of text</td>
+						<td class="py-2 text-gray-700">["protección de datos", "tecnología"]</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">language</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"es"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">body</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">structured blob</td>
+						<td class="py-2 text-gray-700"
+							>shape varies by type — a bill has summary + fundamentos + articles, an act has
+							preamble + articles + annexes, etc.</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">sourceUrl</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700"
+							>"https://www.camara.cl/legislacion/ProyectosDeLey/..."</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">publishedAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2025-08-12</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">lastActivityAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2026-01-15</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">countrySpecific</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">free-form blob</td>
+						<td class="py-2 text-gray-700"
+							>the country-specific dumping ground — anything that doesn't fit elsewhere</td
+						>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+
 		<!-- The Bill -->
 		<article class="mb-6 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
@@ -161,6 +264,61 @@
 				<li>Whether it modifies an existing law, and which one.</li>
 				<li>Its urgency tier (in Chile: simple, suma, discusión inmediata).</li>
 			</ul>
+
+			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to a bill</p>
+			<table class="w-full text-sm">
+				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
+					<tr>
+						<th class="py-2 pr-4 font-bold">field</th>
+						<th class="py-2 pr-4 font-bold">kind</th>
+						<th class="py-2 font-bold">example</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-gray-100">
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">subtype</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"moción"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">status</td>
+						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: submitted, in_committee, floor_debate, second_chamber, reconciliation, passed, enacted, rejected, withdrawn, archived">status</td>
+						<td class="py-2 text-gray-700">
+							<code class="rounded bg-gray-100 px-1 text-xs">passed</code>
+							<span class="text-gray-500">— hover the "status" tag for the full list</span>
+						</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">statusLocal</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700"
+							>"Tramitación terminada — pendiente de promulgación"</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">submittedAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2025-08-12</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">urgency</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"simple"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">sponsors</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">list of people</td>
+						<td class="py-2 text-gray-700"
+							>[&#123; name: "Diputada Pérez", party: "PPD", chamber: "Cámara" &#125;, …]</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">amendsActId</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
+						<td class="py-2 text-gray-700">→ <em>Ley 21.000</em></td>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 
 		<!-- Bill events -->
@@ -185,6 +343,53 @@
 				of a step (a comisión report, a vote record, a batch of indicaciones) become their own
 				documents and link back to the event.
 			</p>
+
+			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields per event row</p>
+			<table class="w-full text-sm">
+				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
+					<tr>
+						<th class="py-2 pr-4 font-bold">field</th>
+						<th class="py-2 pr-4 font-bold">kind</th>
+						<th class="py-2 font-bold">example</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-gray-100">
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">sequence</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">number</td>
+						<td class="py-2 text-gray-700">2</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">occurredAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2025-10-03</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">actionType</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"committee_report" — our normalized step name</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">actionTypeLocal</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700"
+							>"Primer informe de la Comisión de Futuro" — the country's wording</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">chamber</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"Cámara de Diputadas y Diputados"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">producedDocumentId</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
+						<td class="py-2 text-gray-700"
+							>→ <em>Informe N° 47 de la Comisión de Futuro</em></td
+						>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 
 		<!-- The Act -->
@@ -208,6 +413,52 @@
 				<li>Whether it's still in force, partially repealed, or superseded.</li>
 				<li>Where it was officially published — i.e. which Journal entry.</li>
 			</ul>
+
+			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to an act</p>
+			<table class="w-full text-sm">
+				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
+					<tr>
+						<th class="py-2 pr-4 font-bold">field</th>
+						<th class="py-2 pr-4 font-bold">kind</th>
+						<th class="py-2 font-bold">example</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-gray-100">
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">status</td>
+						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: in_force, partially_repealed, repealed, superseded, suspended">status</td>
+						<td class="py-2 text-gray-700">
+							<code class="rounded bg-gray-100 px-1 text-xs">in_force</code>
+							<span class="text-gray-500">— hover the "status" tag for the full list</span>
+						</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">promulgatedAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2018-03-15</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">effectiveAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2018-04-01</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">repealedAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">— (empty while still in force)</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">issuingBody</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"Congreso Nacional"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">publicationJournalId</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
+						<td class="py-2 text-gray-700">→ <em>DO-2018-03-20</em></td>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 
 		<!-- The Amendment -->
@@ -239,6 +490,78 @@
 				<li>Who proposed it, when it was submitted.</li>
 				<li>How the vote went — for, against, abstain — and the final outcome.</li>
 			</ul>
+
+			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to an amendment</p>
+			<table class="w-full text-sm">
+				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
+					<tr>
+						<th class="py-2 pr-4 font-bold">field</th>
+						<th class="py-2 pr-4 font-bold">kind</th>
+						<th class="py-2 font-bold">example</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-gray-100">
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">targetBillId</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
+						<td class="py-2 text-gray-700">→ <em>Boletín 12345-07</em></td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">targetLocator</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"art. 3 inciso 2"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">textOld</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"sanción de UF 100"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">textNew</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"sanción de UF 500"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">justification</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700"
+							>"La sanción original es muy baja para disuadir grandes empresas..."</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">submitter</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">person</td>
+						<td class="py-2 text-gray-700"
+							>&#123; name: "Senadora Núñez", party: "FA", chamber: "Senado" &#125;</td
+						>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">submittedAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2025-12-01</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">outcome</td>
+						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: pending, approved, rejected, withdrawn, inadmissible, merged">status</td>
+						<td class="py-2 text-gray-700">
+							<code class="rounded bg-gray-100 px-1 text-xs">approved</code>
+							<span class="text-gray-500">— hover the "status" tag for the full list</span>
+						</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">votedAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2025-12-05</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">voteRecord</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">structured blob</td>
+						<td class="py-2 text-gray-700"
+							>&#123; for: 22, against: 17, abstain: 4, forNames: […], … &#125;</td
+						>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 
 		<!-- The Journal -->
@@ -264,6 +587,49 @@
 				linked to it. One issue might publish a dozen acts, decrees, and notices in a specific
 				order — that ordering matters legally, and we preserve it.
 			</p>
+
+			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to a journal issue</p>
+			<table class="w-full text-sm">
+				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
+					<tr>
+						<th class="py-2 pr-4 font-bold">field</th>
+						<th class="py-2 pr-4 font-bold">kind</th>
+						<th class="py-2 font-bold">example</th>
+					</tr>
+				</thead>
+				<tbody class="divide-y divide-gray-100">
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">issueNumber</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">id</td>
+						<td class="py-2 text-gray-700">"43.521"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">issuedAt</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
+						<td class="py-2 text-gray-700">2026-01-15</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">publisher</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700">"Diario Oficial de la República de Chile"</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">scope</td>
+						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: national, regional, eu, municipal">status</td>
+						<td class="py-2 text-gray-700">
+							<code class="rounded bg-gray-100 px-1 text-xs">national</code>
+							<span class="text-gray-500">— hover the "status" tag for the full list</span>
+						</td>
+					</tr>
+					<tr class="align-top">
+						<td class="py-2 pr-4 font-mono text-xs">regionCode</td>
+						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
+						<td class="py-2 text-gray-700"
+							>— (empty for national; e.g. "AND" for an Andalucía gazette)</td
+						>
+					</tr>
+				</tbody>
+			</table>
 		</article>
 
 		<!-- Supporting cast -->
