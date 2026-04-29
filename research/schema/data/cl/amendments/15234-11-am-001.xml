@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Cooking-world amendment, Comisión de Salud, on boletín 15234-11.
+  Proposes raising the cap from the bill's 50g to 75g — the textbook
+  README "receta" example. Approved on 2026-02-25, folded into the
+  bill before the floor vote.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <amendment name="amendment">
+    <meta>
+      <identification source="#camara">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/amendment/2026-02-19/15234-11-am-001/!main"/>
+          <FRBRuri value="/akn/cl/amendment/2026-02-19/15234-11-am-001"/>
+          <FRBRdate date="2026-02-19" name="generation"/>
+          <FRBRauthor href="#camara"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/cl/amendment/2026-02-19/15234-11-am-001/spa@/!main"/>
+          <FRBRuri value="/akn/cl/amendment/2026-02-19/15234-11-am-001/spa@"/>
+          <FRBRdate date="2026-02-19" name="generation"/>
+          <FRBRauthor href="#camara"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/cl/amendment/2026-02-19/15234-11-am-001/spa@.xml"/>
+          <FRBRuri value="/akn/cl/amendment/2026-02-19/15234-11-am-001/spa@.xml"/>
+          <FRBRdate date="2026-02-19" name="generation"/>
+          <FRBRauthor href="#camara"/>
+        </FRBRManifestation>
+      </identification>
+      <classification source="#camara">
+        <keyword value="alimentacion" showAs="alimentación" dictionary="#camara-topics"/>
+      </classification>
+      <lifecycle source="#camara">
+        <eventRef date="2026-02-19" refersTo="#submitted"
+                  source="#evt-am-1" showAs="Indicación presentada en Comisión"/>
+        <eventRef date="2026-02-25" refersTo="#voted"
+                  source="#evt-am-2" showAs="Aprobada en Comisión de Salud"/>
+      </lifecycle>
+      <references source="#camara">
+        <TLCPerson eId="dip-fuentes" href="/akn/cl/person/dip-fuentes"
+                  showAs="Diputada Fuentes">
+          <akndiff:party>PS</akndiff:party>
+          <akndiff:chamber>Cámara de Diputadas y Diputados</akndiff:chamber>
+        </TLCPerson>
+        <TLCOrganization eId="com-salud" href="/akn/cl/org/com-salud"
+                         showAs="Comisión de Salud"/>
+      </references>
+      <proprietary source="#camara">
+        <akndiff:nativeId>15234-11-am-001</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.camara.cl/legislacion/ProyectosDeLey/indicaciones.aspx?prmID=15234&amp;prmIndicacion=001</akndiff:sourceUrl>
+        <akndiff:targetBill href="/akn/cl/bill/2026-01-22/15234-11" locator="#art_1"/>
+        <akndiff:outcome normalized="approved">aprobada en general y particular</akndiff:outcome>
+        <akndiff:vote>
+          <akndiff:date>2026-02-25</akndiff:date>
+          <akndiff:result>approved</akndiff:result>
+          <akndiff:for>
+            <akndiff:voter href="#dip-fuentes" showAs="Diputada Fuentes"/>
+            <akndiff:voter href="#dip-mella" showAs="Diputado Mella"/>
+            <akndiff:voter href="#dip-rojas" showAs="Diputada Rojas"/>
+          </akndiff:for>
+          <akndiff:against>
+            <akndiff:voter href="#dip-soto" showAs="Diputado Soto"/>
+          </akndiff:against>
+          <akndiff:abstain/>
+        </akndiff:vote>
+        <akndiff:researchNotes>
+          The amendment targets a single article in the bill, so the
+          locator (`#art_1`) is enough. But Chilean indicaciones are
+          often presented as a numbered LIST against multiple articles
+          at once ("Indicación N° 1 al artículo 2°, indicación N° 2
+          al artículo 5°..."). When that case shows up we'll either
+          need multiple AKN amendment docs, or the schema needs a
+          1:N target side-table. Worth flagging during synthesis.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Indicación N° 1 al boletín
+           <ref href="/akn/cl/bill/2026-01-22/15234-11">15234-11</ref> —
+           sustitución del límite máximo de azúcar propuesto</p>
+      </longTitle>
+    </preface>
+    <amendmentBody>
+      <amendmentContent>
+        <p>Reemplázase, en el artículo único del proyecto, la frase
+           "50 gramos de azúcar" por "75 gramos de azúcar".</p>
+      </amendmentContent>
+      <amendmentJustification>
+        <p>El límite de 50 gramos propuesto en el proyecto original implicaría
+           reformular la totalidad de las recetas tradicionales, generando un
+           costo desproporcionado para las pastelerías de menor tamaño. Un
+           límite de 75 gramos permite una transición progresiva sin
+           comprometer el objetivo sanitario.</p>
+      </amendmentJustification>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

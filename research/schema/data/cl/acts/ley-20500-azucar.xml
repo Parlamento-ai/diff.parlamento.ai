@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Cooking-world example, current state (consolidated text after the
+  2026 amendment). The bill (boletín 15234-11) proposed lowering the
+  sugar cap from 100g to 50g; the Comisión de Salud raised it to 75g
+  via an amendment; the chamber approved that compromise.
+
+  Prior version: ley-20500-azucar.v1.xml (2019, original 100g rule).
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/act/2019-06-10/ley-20500-azucar/!main"/>
+          <FRBRuri value="/akn/cl/act/2019-06-10/ley-20500-azucar"/>
+          <FRBRdate date="2019-06-10" name="promulgation"/>
+          <FRBRauthor href="#congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/cl/act/2019-06-10/ley-20500-azucar/spa@2026-03-20/!main"/>
+          <FRBRuri value="/akn/cl/act/2019-06-10/ley-20500-azucar/spa@2026-03-20"/>
+          <FRBRdate date="2026-03-20" name="generation"/>
+          <FRBRauthor href="#congreso"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/cl/act/2019-06-10/ley-20500-azucar/spa@2026-03-20.xml"/>
+          <FRBRuri value="/akn/cl/act/2019-06-10/ley-20500-azucar/spa@2026-03-20.xml"/>
+          <FRBRdate date="2026-03-20" name="generation"/>
+          <FRBRauthor href="#congreso"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-03-20" showAs="Diario Oficial 43.589"
+                   name="diario-oficial"
+                   href="/akn/cl/officialGazette/2026-03-20/DO-2026-03-20"/>
+      <classification source="#congreso">
+        <keyword value="alimentacion" showAs="alimentación" dictionary="#congreso-topics"/>
+        <keyword value="salud-publica" showAs="salud pública" dictionary="#congreso-topics"/>
+        <keyword value="pasteleria" showAs="pastelería" dictionary="#congreso-topics"/>
+      </classification>
+      <lifecycle source="#congreso">
+        <eventRef date="2019-06-10" refersTo="#promulgation"
+                  source="#evt-prom" showAs="Promulgación"/>
+        <eventRef date="2019-07-01" refersTo="#commencement"
+                  source="#evt-eff" showAs="Entrada en vigencia"/>
+        <eventRef date="2026-03-20" refersTo="#amendment"
+                  source="#evt-am" showAs="Texto consolidado tras boletín 15234-11"/>
+      </lifecycle>
+      <proprietary source="#congreso">
+        <akndiff:nativeId>ley-20500-azucar</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.bcn.cl/leychile/navegar?idNorma=2050000</akndiff:sourceUrl>
+        <akndiff:actStatus normalized="in_force">en vigencia</akndiff:actStatus>
+        <akndiff:issuingBody>Congreso Nacional</akndiff:issuingBody>
+        <akndiff:priorVersion version="1" date="2019-06-15"
+                              href="ley-20500-azucar.v1.xml"
+                              sourceUrl="https://www.bcn.cl/leychile/navegar?idNorma=2050000&amp;idVersion=2019-06-15"
+                              changeNote="Texto original promulgado (100g de azúcar)"/>
+        <akndiff:researchNotes>
+          AKN's `<lifecycle>` happily holds promulgation + commencement +
+          amendment events on the same act, but there's no first-class
+          way to express that the 2026 amendment event was CAUSED by a
+          specific bill. We're leaning on the `showAs` text ("tras
+          boletín 15234-11") plus the inbound link from the bill's
+          `<ref href="/akn/cl/act/.../ley-20500-azucar">`. Worth checking
+          whether a structured back-pointer would help cross-country
+          synthesis or whether the link table already covers it.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Ley N° 20.500 — Sobre composición de productos de pastelería
+           (texto consolidado a marzo de 2026)</p>
+      </longTitle>
+    </preface>
+    <body>
+      <article eId="art_1">
+        <num>Artículo 1°</num>
+        <heading>Objeto</heading>
+        <content>
+          <p>La presente ley regula la composición nutricional de los productos
+             de pastelería elaborados industrialmente y comercializados en el
+             territorio nacional.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <num>Artículo 2°</num>
+        <heading>Contenido máximo de azúcar</heading>
+        <content>
+          <p>Toda receta de producto de pastelería deberá agregar como máximo
+             75 gramos de azúcar por kilogramo de masa terminada.</p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <num>Artículo 3°</num>
+        <heading>Fiscalización</heading>
+        <content>
+          <p>El Ministerio de Salud, por intermedio de la Autoridad Sanitaria
+             Regional, fiscalizará el cumplimiento de la presente ley.</p>
+        </content>
+      </article>
+    </body>
+  </act>
+</akomaNtoso>

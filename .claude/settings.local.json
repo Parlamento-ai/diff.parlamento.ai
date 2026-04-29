@@ -54,7 +54,9 @@
       "Bash(sqlite3 research/schema/research.db \".tables\")",
       "Bash(sqlite3 research/schema/research.db \"SELECT countryCode, type, COUNT\\(*\\) FROM diff_documents GROUP BY countryCode, type ORDER BY countryCode, type;\")",
       "Bash(sqlite3 research/schema/research.db \"PRAGMA table_info\\(diff_documents\\);\")",
-      "Bash(sqlite3 research/schema/research.db \"SELECT country_code, type, COUNT\\(*\\) FROM diff_documents GROUP BY country_code, type ORDER BY country_code, type;\")"
+      "Bash(sqlite3 research/schema/research.db \"SELECT country_code, type, COUNT\\(*\\) FROM diff_documents GROUP BY country_code, type ORDER BY country_code, type;\")",
+      "Bash(tee /tmp/demo-dev.log)",
+      "Bash(sqlite3 research/schema/research.db \"SELECT country_code, type, count\\(*\\) FROM diff_documents GROUP BY country_code, type ORDER BY country_code, type;\")"
     ]
   },
   "enableAllProjectMcpServers": true,

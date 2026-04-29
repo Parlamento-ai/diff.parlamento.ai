@@ -3,109 +3,112 @@
 
 	const countryNames: Record<string, string> = {
 		cl: 'Chile',
-		es: 'Spain',
-		eu: 'European Union',
-		pe: 'Peru',
-		us: 'United States'
+		es: 'España',
+		eu: 'Unión Europea',
+		pe: 'Perú',
+		us: 'Estados Unidos'
 	};
 </script>
 
 <svelte:head>
-	<title>The schema, explained — research demo</title>
+	<title>El esquema, explicado — research demo</title>
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-6 py-12 font-sans text-base leading-relaxed text-gray-800">
-	<a href="/demo" class="text-sm text-blue-600 hover:underline">← back to demo</a>
+	<a href="/demo" class="text-sm text-blue-600 hover:underline">← volver al demo</a>
 
 	<header class="mt-6 mb-12">
-		<h1 class="mb-3 text-3xl font-bold tracking-tight">The schema, explained</h1>
+		<h1 class="mb-3 text-3xl font-bold tracking-tight">El esquema, explicado</h1>
 		<p class="text-gray-600">
-			This page is the philosophy behind the database we're building — not a field reference.
-			It explains the bet we're making, how we're tackling complexity, and where we are right
-			now. If you want field-level detail, read
+			Esta página es la filosofía detrás de la base de datos que estamos construyendo — no es
+			una referencia de campos. Explica la apuesta que estamos haciendo, cómo manejamos la
+			complejidad y dónde estamos hoy. Si querés detalle a nivel de campos, leé directamente
 			<a
 				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v3-schema.ts"
 				class="text-blue-600 hover:underline"
 				target="_blank"
 				rel="noopener">v3-schema.ts</a
-			>
-			directly.
+			>.
 		</p>
 	</header>
 
-	<!-- ─────────────────────────────── 1. The problem -->
+	<!-- ─────────────────────────────── 1. El problema -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">1. The problem</h2>
+		<h2 class="mb-3 text-xl font-bold">1. El problema</h2>
 		<p class="mb-4">
-			Every parliament names the same things differently. A Chilean
-			<em>boletín</em> is a Spanish <em>proyecto de ley</em> is a US
-			<em>bill</em> is an EU <em>proposal</em>. The shapes look similar, but each country also
-			has its own quirks — urgencias in Chile, conference reports in the US, ordinary vs.
-			organic laws in Spain.
+			Cada parlamento llama a las mismas cosas de forma distinta. Un <em>boletín</em> chileno
+			es un <em>proyecto de ley</em> español es un <em>bill</em> estadounidense es una
+			<em>proposal</em> europea. Las formas se parecen, pero cada país además tiene sus propias
+			particularidades — urgencias en Chile, conference reports en EE.UU., leyes orgánicas vs.
+			ordinarias en España.
 		</p>
 		<p class="mb-4">
-			An international standard exists — <strong>Akoma Ntoso</strong> (AKN) — designed to
-			model parliamentary documents universally. It's serious work, well-maintained, and
-			almost nobody implemented it. Most parliaments rolled their own XML, then drifted.
+			Existe un estándar internacional — <strong>Akoma Ntoso</strong> (AKN) — diseñado para
+			modelar documentos parlamentarios de forma universal. Es un trabajo serio, bien
+			mantenido, y casi nadie lo implementó. La mayoría de los parlamentos hicieron su propio
+			XML y después se alejaron del estándar.
 		</p>
 		<p>
-			What we want is one schema that holds Chile, Spain, the EU, Peru, and the US side by
-			side, queryable as if they were one parliament. Same shape, different data. No
-			per-country branches.
+			Lo que queremos es un solo esquema que contenga Chile, España, la UE, Perú y EE.UU. lado
+			a lado, consultable como si fueran un mismo parlamento. Misma forma, datos distintos.
+			Sin ramas por país.
 		</p>
 	</section>
 
-	<!-- ─────────────────────────────── 2. The bet -->
+	<!-- ─────────────────────────────── 2. La apuesta -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">2. The bet</h2>
+		<h2 class="mb-3 text-xl font-bold">2. La apuesta</h2>
 		<p class="mb-4">
-			Roughly 90% of the parliamentary ritual is genuinely shared across countries. The
-			remaining 10% is real difference, but principled — handled by a small set of escape
-			hatches, not by forking the schema.
+			Aproximadamente el 90% del rito parlamentario es genuinamente compartido entre países.
+			El 10% restante es diferencia real, pero acotada — manejada con un conjunto chico de
+			escapes con nombre, no bifurcando el esquema.
 		</p>
 		<p class="mb-4">
-			This experiment exists to falsify or confirm that bet. It's not "we believe AKN will
-			work" — it's "we'll load five countries into one schema and see what breaks."
+			Este experimento existe para falsear o confirmar esa apuesta. No es "creemos que AKN va
+			a funcionar" — es "vamos a cargar cinco países en un mismo esquema y ver qué se rompe".
 		</p>
 
 		<div class="my-6 rounded border-l-4 border-amber-400 bg-amber-50 p-4 text-sm">
-			<p class="mb-2 font-bold text-amber-900">What "broken" looks like</p>
+			<p class="mb-2 font-bold text-amber-900">Cómo se ve "roto"</p>
 			<ul class="list-disc space-y-1 pl-5 text-amber-950">
 				<li>
-					A field is full in one country and empty in four → we wrongly generalized a
-					country-specific concept.
+					Un campo está lleno en un país y vacío en cuatro → generalizamos mal un concepto
+					específico de un país.
 				</li>
 				<li>
-					A field is empty in every country → dead schema; remove it.
+					Un campo está vacío en todos los países → esquema muerto; lo sacamos.
 				</li>
 				<li>
-					Real data has nowhere to go and gets dumped into a "country specific" blob → we
-					missed a concept that may belong as a real column.
+					Datos reales no tienen dónde ir y terminan en un blob "country specific" → nos
+					perdimos un concepto que probablemente debería ser una columna real.
 				</li>
 			</ul>
 		</div>
 	</section>
 
-	<!-- ─────────────────────────────── 3. How we tackle the complexity -->
+	<!-- ─────────────────────────────── 3. Cómo manejamos la complejidad -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">3. How we tackle the complexity</h2>
+		<h2 class="mb-3 text-xl font-bold">3. Cómo manejamos la complejidad</h2>
 		<p class="mb-6 text-gray-600">
-			Three architectural moves, each with a reason behind it.
+			Tres movimientos arquitectónicos, cada uno con su razón.
 		</p>
 
-		<!-- Move A: XML as source of truth -->
+		<!-- Movimiento A: XML como fuente de verdad -->
 		<article class="mb-8 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
-				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Move A</p>
-				<h3 class="text-lg font-bold">XML files are the source of truth. SQL is a projection.</h3>
+				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Movimiento A</p>
+				<h3 class="text-lg font-bold">
+					Los archivos XML son la fuente de verdad. SQL es una proyección.
+				</h3>
 			</header>
 			<p class="mb-4 text-sm">
-				Every document we model lives as a standalone <code
+				Cada documento que modelamos vive como un archivo <code
 					class="rounded bg-gray-100 px-1 text-xs">.xml</code
 				>
-				file in <code class="rounded bg-gray-100 px-1 text-xs">research/schema/data/</code>,
-				shaped after AKN. The SQLite database is rebuilt from scratch on every run by
-				walking those files and extracting columns. Nobody edits the database directly.
+				independiente en <code class="rounded bg-gray-100 px-1 text-xs"
+					>research/schema/data/</code
+				>, con la forma de AKN. La base SQLite se reconstruye desde cero en cada corrida,
+				recorriendo esos archivos y extrayendo columnas. Nadie edita la base directamente.
 			</p>
 
 			<div class="my-5 rounded border border-gray-200 bg-gray-50 p-5">
@@ -124,7 +127,7 @@
 						</marker>
 					</defs>
 
-					<!-- XML files (left) -->
+					<!-- Archivos XML (izquierda) -->
 					<g>
 						<rect
 							x="40"
@@ -140,13 +143,13 @@
 							>data/**/*.xml</text
 						>
 						<text x="140" y="100" text-anchor="middle" font-size="11" fill="#6b7280"
-							>committed, reviewable</text
+							>versionado, revisable</text
 						>
 						<text x="140" y="118" text-anchor="middle" font-size="11" fill="#6b7280"
-							>diffable in PRs</text
+							>diffeable en PRs</text
 						>
 						<text x="140" y="140" text-anchor="middle" font-size="11" fill="#374151"
-							font-weight="600">source of truth</text
+							font-weight="600">fuente de verdad</text
 						>
 					</g>
 
@@ -180,7 +183,7 @@
 							fill="#92400e">build script</text
 						>
 						<text x="345" y="125" text-anchor="middle" font-size="10" fill="#6b7280"
-							>extract + insert</text
+							>extrae + inserta</text
 						>
 					</g>
 
@@ -204,224 +207,225 @@
 							>gitignored</text
 						>
 						<text x="560" y="118" text-anchor="middle" font-size="11" fill="#6b7280"
-							>rebuilt every run</text
+							>se reconstruye cada vez</text
 						>
 						<text x="560" y="140" text-anchor="middle" font-size="11" fill="#374151"
-							font-weight="600">projection / index</text
+							font-weight="600">proyección / índice</text
 						>
 					</g>
 				</svg>
 			</div>
 
-			<p class="mb-2 text-sm font-bold text-gray-700">Why</p>
+			<p class="mb-2 text-sm font-bold text-gray-700">Por qué</p>
 			<ul class="list-disc space-y-1.5 pl-5 text-sm text-gray-700">
 				<li>
-					A binary <code class="rounded bg-gray-100 px-1 text-xs">.db</code> can't be reviewed
-					in a PR or merged across contributors. Text files can.
+					Un <code class="rounded bg-gray-100 px-1 text-xs">.db</code> binario no se puede revisar
+					en un PR ni mergear entre contribuyentes. Los archivos de texto sí.
 				</li>
 				<li>
-					A schema change becomes a code change <em>plus</em> a sweep across the corpus. If
-					the sweep is painful, the schema change is wrong — that's the feedback loop we
-					want.
+					Un cambio de esquema se vuelve un cambio de código <em>más</em> un barrido por todo
+					el corpus. Si el barrido es doloroso, el cambio de esquema está mal — ese es el bucle
+					de feedback que queremos.
 				</li>
 				<li>
-					Anyone clones the repo and runs one command to rebuild the full experiment. No
-					hidden state.
+					Cualquiera clona el repo y corre un comando para reconstruir el experimento
+					completo. Sin estado oculto.
 				</li>
 			</ul>
 		</article>
 
-		<!-- Move B: Three buckets per field -->
+		<!-- Movimiento B: Tres baldes por campo -->
 		<article class="mb-8 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
-				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Move B</p>
+				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Movimiento B</p>
 				<h3 class="text-lg font-bold">
-					Every field falls into one of three buckets.
+					Cada campo cae en uno de tres baldes.
 				</h3>
 			</header>
 			<p class="mb-4 text-sm">
-				Once XML is the source of truth, the question becomes: which fields also need to be
-				SQL columns? We answered it with a three-way split — and the placement of every
-				field is recorded in the schema file itself.
+				Una vez que el XML es la fuente de verdad, la pregunta pasa a ser: ¿qué campos
+				además necesitan ser columnas SQL? La respondimos con una división de tres vías — y
+				la ubicación de cada campo está registrada en el propio archivo del esquema.
 			</p>
 
 			<div class="my-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
 				<div class="rounded border border-gray-300 bg-gray-50 p-4">
 					<p class="mb-1 text-xs font-bold tracking-wider text-gray-500 uppercase">
-						SQL only
+						Solo SQL
 					</p>
-					<p class="mb-2 text-sm font-bold">Plumbing</p>
+					<p class="mb-2 text-sm font-bold">Cañería</p>
 					<p class="text-xs text-gray-600">
-						IDs, fingerprints, timestamps, scraping metadata. Never appears in the XML.
-						Overwritten in place. No history.
+						IDs, fingerprints, timestamps, metadatos de scraping. Nunca aparece en el XML.
+						Se sobrescribe en su lugar. Sin historial.
 					</p>
 				</div>
 				<div class="rounded border border-gray-300 bg-gray-50 p-4">
 					<p class="mb-1 text-xs font-bold tracking-wider text-gray-500 uppercase">
-						XML only
+						Solo XML
 					</p>
-					<p class="mb-2 text-sm font-bold">Deep content</p>
+					<p class="mb-2 text-sm font-bold">Contenido profundo</p>
 					<p class="text-xs text-gray-600">
-						Articles, paragraphs, justifications, internal cross-references. Anything
-						nested, recursive, or country-specific the demo doesn't query in aggregate.
+						Artículos, párrafos, fundamentos, referencias internas. Cualquier cosa anidada,
+						recursiva o específica de un país que el demo no consulta en agregado.
 					</p>
 				</div>
 				<div class="rounded border border-blue-300 bg-blue-50 p-4">
-					<p class="mb-1 text-xs font-bold tracking-wider text-blue-700 uppercase">Both</p>
-					<p class="mb-2 text-sm font-bold">Queryable index</p>
+					<p class="mb-1 text-xs font-bold tracking-wider text-blue-700 uppercase">Ambos</p>
+					<p class="mb-2 text-sm font-bold">Índice consultable</p>
 					<p class="text-xs text-blue-900">
-						A small, hand-picked set of fields the demo needs in joins and filters.
-						Stored as columns <em>and</em> present in the XML. <strong>XML wins</strong>
-						 if they disagree — the column is regenerated.
+						Un conjunto chico y elegido a mano de campos que el demo necesita en joins y
+						filtros. Almacenados como columnas <em>y</em> presentes en el XML.
+						<strong>El XML manda</strong> si discrepan — la columna se regenera.
 					</p>
 				</div>
 			</div>
 
-			<p class="mb-2 text-sm font-bold text-gray-700">Why</p>
+			<p class="mb-2 text-sm font-bold text-gray-700">Por qué</p>
 			<ul class="list-disc space-y-1.5 pl-5 text-sm text-gray-700">
 				<li>
-					The previous version of the schema had a generic <code
+					La versión anterior del esquema tenía una columna <code
 						class="rounded bg-gray-100 px-1 text-xs">body</code
 					>
-					JSON column that absorbed everything we couldn't model. It was the schema
-					admitting it had hit a wall. Buckets force the question to be answered explicitly.
+					genérica en JSON que absorbía todo lo que no podíamos modelar. Era el esquema
+					reconociendo que había chocado contra una pared. Los baldes obligan a responder
+					la pregunta de forma explícita.
 				</li>
 				<li>
-					Adding a field to the "both" bucket is cheap: write an extractor, add a column,
-					rebuild. So we can start small and promote a field the day a query needs it.
+					Agregar un campo al balde "ambos" es barato: escribís un extractor, agregás una
+					columna, reconstruís. Así podemos arrancar chico y promover un campo el día que
+					una consulta lo necesita.
 				</li>
 				<li>
-					Versioning is now trivial — we just store the whole XML per version. No JSON
-					snapshot dance, no per-column history tables.
+					El versionado se vuelve trivial — guardamos el XML completo por versión. Sin
+					malabares con snapshots JSON, sin tablas de historial por columna.
 				</li>
 			</ul>
 		</article>
 
-		<!-- Move C: Escape hatches with feedback loops -->
+		<!-- Movimiento C: Escapes con bucles de feedback -->
 		<article class="mb-2 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
-				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Move C</p>
+				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Movimiento C</p>
 				<h3 class="text-lg font-bold">
-					Escape hatches are visible, not hidden.
+					Los escapes son visibles, no ocultos.
 				</h3>
 			</header>
 			<p class="mb-4 text-sm">
-				The 10% that doesn't fit the shared shape goes into named escape hatches. The
-				point isn't to make the misfit disappear — it's to make it
-				<em>countable</em>, so the schema can evolve toward what the data actually is.
+				El 10% que no encaja en la forma compartida va a escapes con nombre. La idea no es
+				hacer desaparecer el desencaje — es hacerlo <em>contable</em>, para que el esquema
+				pueda evolucionar hacia lo que los datos realmente son.
 			</p>
 
 			<div class="my-5 space-y-3">
 				<div class="rounded border border-gray-200 p-3 text-sm">
 					<p class="mb-1 font-bold text-gray-800">
-						<code class="rounded bg-gray-100 px-1 text-xs">countrySpecific</code> blob
+						Blob <code class="rounded bg-gray-100 px-1 text-xs">countrySpecific</code>
 					</p>
 					<p class="text-gray-700">
-						A free-form JSON field on every document. When a country tracks something we
-						don't have a column for, it goes here. We watch what accumulates: once the
-						same shape shows up in 2+ countries, we promote it to a real column.
+						Un campo JSON libre en cada documento. Cuando un país registra algo para lo
+						que no tenemos columna, va acá. Miramos qué se acumula: cuando la misma forma
+						aparece en 2+ países, la promovemos a columna real.
 					</p>
 				</div>
 				<div class="rounded border border-gray-200 p-3 text-sm">
 					<p class="mb-1 font-bold text-gray-800">
-						<code class="rounded bg-gray-100 px-1 text-xs">statusLocal</code> alongside
+						<code class="rounded bg-gray-100 px-1 text-xs">statusLocal</code> al lado de
 						<code class="rounded bg-gray-100 px-1 text-xs">status</code>
 					</p>
 					<p class="text-gray-700">
-						The country's own wording for a stage ("Tramitación terminada — pendiente de
-						promulgación") is preserved alongside our normalized status ("passed"). We
-						never throw the country's voice away.
+						La frase del propio país para una etapa ("Tramitación terminada — pendiente de
+						promulgación") se preserva al lado de nuestro status normalizado ("passed").
+						Nunca tiramos la voz del país.
 					</p>
 				</div>
 				<div class="rounded border border-gray-200 p-3 text-sm">
-					<p class="mb-1 font-bold text-gray-800">Append-only timelines</p>
+					<p class="mb-1 font-bold text-gray-800">Timelines append-only</p>
 					<p class="text-gray-700">
-						We don't model the rules of each country's procedure (BPMN-style). We just
-						log every observed step with a normalized <code
+						No modelamos las reglas del proceso de cada país (estilo BPMN). Solo
+						registramos cada paso observado con un <code
 							class="rounded bg-gray-100 px-1 text-xs">actionType</code
 						>
-						and the country's local label. The shape of the procedure emerges from the
-						log, not from a model we authored.
+						normalizado y la etiqueta local del país. La forma del proceso emerge del log,
+						no de un modelo que escribimos nosotros.
 					</p>
 				</div>
 			</div>
 
-			<p class="mb-2 text-sm font-bold text-gray-700">Why</p>
+			<p class="mb-2 text-sm font-bold text-gray-700">Por qué</p>
 			<ul class="list-disc space-y-1.5 pl-5 text-sm text-gray-700">
 				<li>
-					An escape hatch is a confession — naming it explicitly is what makes the
-					confession useful. Hiding the misfit inside a generic JSON column would be the
-					same mistake we made with the old <code
-						class="rounded bg-gray-100 px-1 text-xs">body</code
-					> field.
+					Un escape es una confesión — nombrarlo explícitamente es lo que la hace útil.
+					Esconder el desencaje en una columna JSON genérica sería el mismo error que
+					cometimos con el viejo campo
+					<code class="rounded bg-gray-100 px-1 text-xs">body</code>.
 				</li>
 				<li>
-					Schema evolution gets steered by what's in the hatches, not by guesses. The
-					schema tightens over time as patterns surface.
+					La evolución del esquema se guía por lo que hay en los escapes, no por
+					adivinanzas. El esquema se va ajustando a medida que aparecen patrones.
 				</li>
 			</ul>
 		</article>
 	</section>
 
-	<!-- ─────────────────────────────── 4. The two metrics -->
+	<!-- ─────────────────────────────── 4. Las dos métricas -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">4. The two metrics that steer everything</h2>
+		<h2 class="mb-3 text-xl font-bold">4. Las dos métricas que guían todo</h2>
 		<p class="mb-6 text-gray-600">
-			Both metrics fall out of the work for free, as long as we keep the corpus honest.
+			Las dos métricas salen del trabajo solas, mientras mantengamos el corpus honesto.
 		</p>
 
 		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 			<div class="rounded border border-gray-200 bg-white p-5">
 				<p class="mb-2 text-sm font-bold tracking-wider text-gray-500 uppercase">
-					Coverage
+					Cobertura
 				</p>
 				<p class="mb-3 text-lg font-bold">
-					What % of a country's public legislative data fits the schema?
+					¿Qué % de los datos legislativos públicos del país entra en el esquema?
 				</p>
 				<p class="text-sm text-gray-700">
-					Low coverage means data exists but our schema can't hold it. Tells us where the
-					schema is too narrow.
+					Cobertura baja significa que existen datos pero nuestro esquema no los puede
+					contener. Nos dice dónde el esquema es muy angosto.
 				</p>
 			</div>
 			<div class="rounded border border-gray-200 bg-white p-5">
 				<p class="mb-2 text-sm font-bold tracking-wider text-gray-500 uppercase">
-					Completeness
+					Completitud
 				</p>
 				<p class="mb-3 text-lg font-bold">
-					What % of the schema's fields end up populated, per country?
+					¿Qué % de los campos del esquema termina poblado, por país?
 				</p>
 				<p class="text-sm text-gray-700">
-					Low completeness means our schema asks for things this country doesn't track.
-					Tells us where the schema is too wide.
+					Completitud baja significa que nuestro esquema pide cosas que ese país no
+					registra. Nos dice dónde el esquema es muy ancho.
 				</p>
 			</div>
 		</div>
 
 		<p class="mt-6 text-sm text-gray-600">
-			Together they triangulate the right shape: high coverage and high completeness across
-			five countries means the bet held. Anything else is a signal pointing at a specific
-			fix.
+			Juntas triangulan la forma correcta: cobertura alta y completitud alta en los cinco
+			países significa que la apuesta se sostuvo. Cualquier otra cosa es una señal apuntando
+			a una corrección concreta.
 		</p>
 	</section>
 
-	<!-- ─────────────────────────────── 5. Where we are right now -->
+	<!-- ─────────────────────────────── 5. Dónde estamos hoy -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">5. Where we are right now</h2>
+		<h2 class="mb-3 text-xl font-bold">5. Dónde estamos hoy</h2>
 		<p class="mb-4 text-gray-600">
-			This section reads from the live <code class="rounded bg-gray-100 px-1 text-xs"
-				>research.db</code
-			>. If it looks empty, the build hasn't been run.
+			Esta sección lee del <code class="rounded bg-gray-100 px-1 text-xs">research.db</code>
+			en vivo. Si se ve vacía, el build no se corrió.
 		</p>
 
 		<div class="mb-6 rounded border border-gray-200 bg-white p-5">
 			<p class="mb-3 text-sm font-bold text-gray-700">
-				Phase 1 — one bill end-to-end, per country
+				Fase 1 — un proyecto de ley de punta a punta, por país
 			</p>
 			<p class="mb-4 text-sm text-gray-600">
-				For each of the five target countries, we model one bill that became law: the bill
-				itself, the act it amended, a few trámite events, an amendment, the journal entry
-				that promulgated it. Five countries × ~7 documents = ~35 files. Small enough to keep
-				in your head, big enough to surface real friction.
+				Para cada uno de los cinco países objetivo, modelamos un proyecto de ley que se
+				convirtió en ley: el proyecto en sí, la ley que modificó, algunos eventos de
+				trámite, una indicación, la entrada del diario oficial que la promulgó. Cinco
+				países × ~7 documentos = ~35 archivos. Lo suficientemente chico como para tenerlo
+				en la cabeza, lo suficientemente grande como para que aparezca fricción real.
 			</p>
 
 			<div class="grid grid-cols-1 gap-2 sm:grid-cols-5">
@@ -438,7 +442,7 @@
 							{countryNames[code]}
 						</p>
 						<p class="mt-1 text-xs">
-							{total === 0 ? 'not loaded yet' : `${total} doc${total === 1 ? '' : 's'}`}
+							{total === 0 ? 'aún no cargado' : `${total} doc${total === 1 ? '' : 's'}`}
 						</p>
 					</div>
 				{/each}
@@ -447,13 +451,13 @@
 
 		{#if data.total > 0}
 			<div class="mb-6 rounded border border-gray-200 bg-white p-5">
-				<p class="mb-3 text-sm font-bold text-gray-700">What's loaded</p>
+				<p class="mb-3 text-sm font-bold text-gray-700">Qué está cargado</p>
 				<table class="w-full text-sm">
 					<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
 						<tr>
-							<th class="py-2 pr-4 font-bold">country</th>
-							<th class="py-2 pr-4 font-bold">type</th>
-							<th class="py-2 font-bold">count</th>
+							<th class="py-2 pr-4 font-bold">país</th>
+							<th class="py-2 pr-4 font-bold">tipo</th>
+							<th class="py-2 font-bold">cantidad</th>
 						</tr>
 					</thead>
 					<tbody class="divide-y divide-gray-100">
@@ -478,63 +482,65 @@
 		{/if}
 
 		<div class="rounded border-l-4 border-blue-400 bg-blue-50 p-4 text-sm">
-			<p class="mb-2 font-bold text-blue-900">What we expect Phase 1 to surface</p>
+			<p class="mb-2 font-bold text-blue-900">Qué esperamos que la Fase 1 saque a la luz</p>
 			<ul class="list-disc space-y-1 pl-5 text-blue-950">
 				<li>
-					Concepts we generalized too eagerly — fields full in Chile and empty everywhere
-					else.
+					Conceptos que generalizamos demasiado rápido — campos llenos en Chile y vacíos en
+					todos los demás.
 				</li>
 				<li>
-					Concepts we missed — country data getting dumped into <code
-						class="rounded bg-blue-100 px-1 text-xs">countrySpecific</code
-					> for the same reason in two or more countries.
+					Conceptos que nos perdimos — datos del país terminando en
+					<code class="rounded bg-blue-100 px-1 text-xs">countrySpecific</code> por la misma
+					razón en dos o más países.
 				</li>
 				<li>
-					Queries that should be one join and turn out to be five — those are the schema
-					telling us its shape is wrong, even if every file loads.
+					Consultas que deberían ser un solo join y resultan ser cinco — eso es el esquema
+					diciéndonos que su forma está mal, incluso si todos los archivos cargan.
 				</li>
 			</ul>
 		</div>
 	</section>
 
-	<!-- ─────────────────────────────── 6. What we deliberately didn't model -->
+	<!-- ─────────────────────────────── 6. Lo que deliberadamente no modelamos -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">6. What we deliberately didn't model</h2>
+		<h2 class="mb-3 text-xl font-bold">6. Lo que deliberadamente no modelamos</h2>
 		<p class="mb-4 text-gray-600">
-			Boundaries matter. A few things we could have built and chose not to:
+			Los límites importan. Algunas cosas que podríamos haber construido y elegimos no
+			construir:
 		</p>
 		<ul class="list-disc space-y-3 pl-5 text-sm">
 			<li>
-				<strong>No persons table.</strong> Sponsors and proposers are JSON blobs on each
-				document. The day someone asks "all bills by Diputada Pérez across countries" we'll
-				lift this into a real table — not before.
+				<strong>Sin tabla de personas.</strong> Patrocinadores y autores se guardan como
+				blobs JSON en cada documento. El día que alguien pregunte "todos los proyectos de la
+				Diputada Pérez en los cinco países", lo levantamos a una tabla real — no antes.
 			</li>
 			<li>
-				<strong>No cross-country ontology.</strong> Chile's "Cámara de Diputados" and
-				Spain's "Congreso de los Diputados" are separate strings. AKN gives the framework
-				for linking them; we haven't built the mapping and won't until a query needs it.
+				<strong>Sin ontología cross-país.</strong> La "Cámara de Diputados" de Chile y el
+				"Congreso de los Diputados" de España son strings separados. AKN nos da el marco para
+				vincularlos; no construimos el mapeo y no lo vamos a hacer hasta que una consulta
+				lo necesite.
 			</li>
 			<li>
-				<strong>No process model.</strong> We log what happened, not what
-				<em>should</em> happen. A full BPMN model of each country's procedure was explored
-				and parked.
+				<strong>Sin modelo de proceso.</strong> Registramos lo que pasó, no lo que
+				<em>debería</em> pasar. Un modelo BPMN completo del proceso de cada país lo
+				exploramos y lo dejamos en pausa.
 			</li>
 			<li>
-				<strong>No silent normalization.</strong> Every country-specific label is preserved
-				alongside our normalized one. We never throw the country's voice away.
+				<strong>Sin normalización silenciosa.</strong> Cada etiqueta específica del país se
+				preserva al lado de nuestra etiqueta normalizada. Nunca tiramos la voz del país.
 			</li>
 		</ul>
 	</section>
 
 	<footer class="mt-16 border-t border-gray-200 pt-6 text-sm text-gray-500">
 		<p>
-			Active schema:
+			Esquema activo:
 			<a
 				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v3-schema.ts"
 				class="text-blue-600 hover:underline"
 				target="_blank"
 				rel="noopener">research/schema/v3-schema.ts</a
-			>. Research plan:
+			>. Plan de investigación:
 			<a
 				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/schema-research-plan.md"
 				class="text-blue-600 hover:underline"

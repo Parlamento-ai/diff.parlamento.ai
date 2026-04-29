@@ -7,8 +7,10 @@
 
 	const SITE_URL = 'https://diff.parlamento.ai';
 
-	// Hide main nav/footer for standalone pages like /fake/*
-	const isStandalone = $derived($page.url.pathname.startsWith('/fake'));
+	// Hide main nav/footer for standalone pages like /fake/* and /demo/*
+	const isStandalone = $derived(
+		$page.url.pathname.startsWith('/fake') || $page.url.pathname.startsWith('/demo')
+	);
 
 	const baseMetaTags: MetaTagsProps = {
 		title: 'Diff — Comparado Legislativo',

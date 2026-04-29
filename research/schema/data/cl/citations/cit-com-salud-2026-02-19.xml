@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Cooking-world citation: Comisión de Salud convened on 2026-02-19 to
+  discuss boletín 15234-11. Agenda lists the bill itself plus the
+  amendment that was about to be filed at this session.
+
+  Note: AKN doesn't have a `<citation>` root element; we author it as
+  an `akndiff:` extension type. See the citation-type-proposal in the
+  03/02/2026 changelog entry. The loader recognises `citation` as one
+  of our DocumentTypes, so it loads even though there's no detail
+  table extractor yet.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <citation name="citation">
+    <meta>
+      <identification source="#camara">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/citation/2026-02-19/cit-com-salud-2026-02-19/!main"/>
+          <FRBRuri value="/akn/cl/citation/2026-02-19/cit-com-salud-2026-02-19"/>
+          <FRBRdate date="2026-02-15" name="generation"/>
+          <FRBRauthor href="#camara"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRdate date="2026-02-15" name="generation"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRdate date="2026-02-15" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-02-15" showAs="Citación Comisión de Salud"
+                   name="citacion"/>
+      <references source="#camara">
+        <TLCOrganization eId="com-salud" href="/akn/cl/org/com-salud"
+                         showAs="Comisión de Salud"/>
+      </references>
+      <proprietary source="#camara">
+        <akndiff:nativeId>cit-com-salud-2026-02-19</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.camara.cl/comisiones/citaciones.aspx?prmComision=salud&amp;prmFecha=2026-02-19</akndiff:sourceUrl>
+        <akndiff:convenedBody>Comisión de Salud — Cámara de Diputadas y Diputados</akndiff:convenedBody>
+        <akndiff:scheduledFor>2026-02-19T10:30:00-04:00</akndiff:scheduledFor>
+        <akndiff:location>Sala 2, edificio B, Congreso Nacional, Valparaíso</akndiff:location>
+        <akndiff:researchNotes>
+          Citation as a real first-class type is still our proposal,
+          not standard AKN. Calling it `<citation>` and treating
+          agenda items as `<componentRef>` works, but the moment
+          someone wants a list of "every meeting that discussed bill
+          X" we'll have to either index `componentRef` hrefs by target
+          or add a side table. The link extractor already gives us
+          half of that for free.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Citación a sesión ordinaria de la Comisión de Salud — 19 de febrero
+           de 2026, 10:30 horas</p>
+      </longTitle>
+    </preface>
+    <collectionBody>
+      <componentRef src="/akn/cl/bill/2026-01-22/15234-11"
+                    showAs="Boletín 15234-11 — Modificación de la Ley N° 20.500 sobre azúcar en pastelería"
+                    eId="agenda_1"/>
+      <componentRef src="/akn/cl/amendment/2026-02-19/15234-11-am-001"
+                    showAs="Indicación N° 1 — sustitución del límite a 75 gramos"
+                    eId="agenda_2"/>
+    </collectionBody>
+  </citation>
+</akomaNtoso>

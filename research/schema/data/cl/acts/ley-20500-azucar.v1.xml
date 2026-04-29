@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Cooking-world example: the act in its ORIGINAL state, before the
+  2026 amendment. Promulgated in 2019 with the "100g de azúcar" rule.
+  Loaded indirectly from ley-20500-azucar.xml's <akndiff:priorVersion>.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/act/2019-06-10/ley-20500-azucar/!main"/>
+          <FRBRuri value="/akn/cl/act/2019-06-10/ley-20500-azucar"/>
+          <FRBRdate date="2019-06-10" name="promulgation"/>
+          <FRBRauthor href="#congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRdate date="2019-06-15" name="generation"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRdate date="2019-06-15" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Ley N° 20.500 — Sobre composición de productos de pastelería</p>
+      </longTitle>
+    </preface>
+    <body>
+      <article eId="art_1">
+        <num>Artículo 1°</num>
+        <heading>Objeto</heading>
+        <content>
+          <p>La presente ley regula la composición nutricional de los productos
+             de pastelería elaborados industrialmente y comercializados en el
+             territorio nacional.</p>
+        </content>
+      </article>
+      <article eId="art_2">
+        <num>Artículo 2°</num>
+        <heading>Contenido máximo de azúcar</heading>
+        <content>
+          <p>Toda receta de producto de pastelería deberá agregar como máximo
+             100 gramos de azúcar por kilogramo de masa terminada.</p>
+        </content>
+      </article>
+      <article eId="art_3">
+        <num>Artículo 3°</num>
+        <heading>Fiscalización</heading>
+        <content>
+          <p>El Ministerio de Salud, por intermedio de la Autoridad Sanitaria
+             Regional, fiscalizará el cumplimiento de la presente ley.</p>
+        </content>
+      </article>
+    </body>
+  </act>
+</akomaNtoso>

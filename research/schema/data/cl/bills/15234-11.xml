@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Cooking-world bill, Cámara de Diputados, boletín 15234-11.
+  Originally proposed reducing the sugar cap from 100g to 50g; ended
+  up at 75g after the Comisión de Salud's amendment was accepted.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <bill name="bill">
+    <meta>
+      <identification source="#camara">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/bill/2026-01-22/15234-11/!main"/>
+          <FRBRuri value="/akn/cl/bill/2026-01-22/15234-11"/>
+          <FRBRdate date="2026-01-22" name="generation"/>
+          <FRBRauthor href="#camara"/>
+          <FRBRcountry value="cl"/>
+          <FRBRsubtype value="moción"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/cl/bill/2026-01-22/15234-11/spa@/!main"/>
+          <FRBRuri value="/akn/cl/bill/2026-01-22/15234-11/spa@"/>
+          <FRBRdate date="2026-01-22" name="generation"/>
+          <FRBRauthor href="#camara"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/cl/bill/2026-01-22/15234-11/spa@.xml"/>
+          <FRBRuri value="/akn/cl/bill/2026-01-22/15234-11/spa@.xml"/>
+          <FRBRdate date="2026-01-22" name="generation"/>
+          <FRBRauthor href="#camara"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-01-22" showAs="Boletín 15234-11" name="boletin"/>
+      <classification source="#camara">
+        <keyword value="alimentacion" showAs="alimentación" dictionary="#camara-topics"/>
+        <keyword value="salud-publica" showAs="salud pública" dictionary="#camara-topics"/>
+      </classification>
+      <lifecycle source="#camara">
+        <eventRef date="2026-01-22" refersTo="#submitted"
+                  source="#evt-1" showAs="Ingreso del proyecto"
+                  chamber="diputados"/>
+        <eventRef date="2026-02-12" refersTo="#committee_referral"
+                  source="#evt-2" showAs="Pasa a la Comisión de Salud"
+                  chamber="diputados"/>
+        <eventRef date="2026-02-26" refersTo="#committee_report"
+                  source="#evt-3" showAs="Primer informe de la Comisión de Salud"
+                  chamber="diputados"/>
+        <eventRef date="2026-03-04" refersTo="#passed_chamber"
+                  source="#evt-4" showAs="Aprobado en general y particular"
+                  chamber="diputados"/>
+        <eventRef date="2026-03-11" refersTo="#passed_second_chamber"
+                  source="#evt-5" showAs="Aprobado por el Senado sin modificaciones"
+                  chamber="senado"/>
+        <eventRef date="2026-03-18" refersTo="#enacted"
+                  source="#evt-6" showAs="Promulgación"
+                  chamber="ejecutivo"/>
+      </lifecycle>
+      <references source="#camara">
+        <TLCPerson eId="dip-rojas" href="/akn/cl/person/dip-rojas"
+                  showAs="Diputada Rojas">
+          <akndiff:party>FA</akndiff:party>
+          <akndiff:chamber>Cámara de Diputadas y Diputados</akndiff:chamber>
+        </TLCPerson>
+        <TLCPerson eId="dip-mella" href="/akn/cl/person/dip-mella"
+                  showAs="Diputado Mella">
+          <akndiff:party>DC</akndiff:party>
+          <akndiff:chamber>Cámara de Diputadas y Diputados</akndiff:chamber>
+        </TLCPerson>
+        <TLCRole eId="role-sponsor" href="/ontology/roles/sponsor" showAs="sponsor"/>
+      </references>
+      <proprietary source="#camara">
+        <akndiff:nativeId>15234-11</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmID=15234</akndiff:sourceUrl>
+        <akndiff:billStatus normalized="enacted">Tramitación terminada — promulgada</akndiff:billStatus>
+        <akndiff:urgency>simple</akndiff:urgency>
+        <akndiff:sponsor refersTo="#dip-rojas" role="#role-sponsor"/>
+        <akndiff:sponsor refersTo="#dip-mella" role="#role-sponsor"/>
+        <akndiff:researchNotes>
+          The trámite events here are richer than what the schema's
+          BillEventTable extracts: each `<eventRef>` carries a
+          `chamber` attribute (diputados / senado / ejecutivo) that the
+          loader currently drops. When we get to events extraction,
+          chamber should ride along — it's the cheapest way to draw the
+          bicameral path on the timeline UI without inventing a side
+          table.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Modifica la <ref href="/akn/cl/act/2019-06-10/ley-20500-azucar">ley
+           N° 20.500</ref> reduciendo el contenido máximo de azúcar permitido
+           en productos de pastelería</p>
+      </longTitle>
+    </preface>
+    <preamble>
+      <p>El consumo excesivo de azúcar en productos de pastelería industrial
+         contribuye al alza sostenida en las tasas de diabetes infantil
+         registrada en los últimos cinco años por el Ministerio de Salud.</p>
+      <p>El límite vigente de 100 gramos por kilogramo, fijado en la
+         <ref href="/akn/cl/act/2019-06-10/ley-20500-azucar">ley N° 20.500</ref>,
+         se encuentra hoy desalineado con las recomendaciones de la
+         Organización Mundial de la Salud.</p>
+    </preamble>
+    <body>
+      <article eId="art_1">
+        <num>Artículo único</num>
+        <content>
+          <p>Reemplázase, en el artículo 2° de la
+             <ref href="/akn/cl/act/2019-06-10/ley-20500-azucar">ley N° 20.500</ref>,
+             la frase "100 gramos de azúcar" por "50 gramos de azúcar".</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>
