@@ -59,12 +59,12 @@
                               sourceUrl="https://www.bcn.cl/leychile/navegar?idNorma=2050000&amp;idVersion=2019-06-15"
                               changeNote="Texto original promulgado (100g de azúcar)"/>
         <akndiff:researchNotes>
-          AKN's `<lifecycle>` happily holds promulgation + commencement +
+          AKN's `&lt;lifecycle&gt;` happily holds promulgation + commencement +
           amendment events on the same act, but there's no first-class
           way to express that the 2026 amendment event was CAUSED by a
           specific bill. We're leaning on the `showAs` text ("tras
           boletín 15234-11") plus the inbound link from the bill's
-          `<ref href="/akn/cl/act/.../ley-20500-azucar">`. Worth checking
+          `&lt;ref href="/akn/cl/act/.../ley-20500-azucar"&gt;`. Worth checking
           whether a structured back-pointer would help cross-country
           synthesis or whether the link table already covers it.
         </akndiff:researchNotes>

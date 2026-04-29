@@ -59,7 +59,7 @@
 			{/if}
 
 			<a
-				href="/demo/schema"
+				href="/docs/akndb/overview"
 				class="ml-auto text-xs text-gray-500 hover:text-gray-900 hover:underline"
 			>
 				schema philosophy →

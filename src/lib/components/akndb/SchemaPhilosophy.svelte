@@ -1,5 +1,16 @@
 <script lang="ts">
-	let { data } = $props();
+	interface CountryRow {
+		type: string;
+		n: number;
+	}
+
+	interface Props {
+		byCountry: Record<string, CountryRow[]>;
+		total: number;
+		targetCountries: string[];
+	}
+
+	let { byCountry, total, targetCountries }: Props = $props();
 
 	const countryNames: Record<string, string> = {
 		cl: 'Chile',
@@ -10,14 +21,8 @@
 	};
 </script>
 
-<svelte:head>
-	<title>El esquema, explicado — research demo</title>
-</svelte:head>
-
-<div class="mx-auto max-w-3xl px-6 py-12 font-sans text-base leading-relaxed text-gray-800">
-	<a href="/demo" class="text-sm text-blue-600 hover:underline">← volver al demo</a>
-
-	<header class="mt-6 mb-12">
+<div class="font-sans text-base leading-relaxed text-gray-800">
+	<header class="mb-12">
 		<h1 class="mb-3 text-3xl font-bold tracking-tight">El esquema, explicado</h1>
 		<p class="text-gray-600">
 			Esta página es la filosofía detrás de la base de datos que estamos construyendo — no es
@@ -75,9 +80,7 @@
 					Un campo está lleno en un país y vacío en cuatro → generalizamos mal un concepto
 					específico de un país.
 				</li>
-				<li>
-					Un campo está vacío en todos los países → esquema muerto; lo sacamos.
-				</li>
+				<li>Un campo está vacío en todos los países → esquema muerto; lo sacamos.</li>
 				<li>
 					Datos reales no tienen dónde ir y terminan en un blob "country specific" → nos
 					perdimos un concepto que probablemente debería ser una columna real.
@@ -89,9 +92,7 @@
 	<!-- ─────────────────────────────── 3. Cómo manejamos la complejidad -->
 	<section class="mb-14">
 		<h2 class="mb-3 text-xl font-bold">3. Cómo manejamos la complejidad</h2>
-		<p class="mb-6 text-gray-600">
-			Tres movimientos arquitectónicos, cada uno con su razón.
-		</p>
+		<p class="mb-6 text-gray-600">Tres movimientos arquitectónicos, cada uno con su razón.</p>
 
 		<!-- Movimiento A: XML como fuente de verdad -->
 		<article class="mb-8 rounded border border-gray-200 bg-white p-5">
@@ -148,7 +149,12 @@
 						<text x="140" y="118" text-anchor="middle" font-size="11" fill="#6b7280"
 							>diffeable en PRs</text
 						>
-						<text x="140" y="140" text-anchor="middle" font-size="11" fill="#374151"
+						<text
+							x="140"
+							y="140"
+							text-anchor="middle"
+							font-size="11"
+							fill="#374151"
 							font-weight="600">fuente de verdad</text
 						>
 					</g>
@@ -209,7 +215,12 @@
 						<text x="560" y="118" text-anchor="middle" font-size="11" fill="#6b7280"
 							>se reconstruye cada vez</text
 						>
-						<text x="560" y="140" text-anchor="middle" font-size="11" fill="#374151"
+						<text
+							x="560"
+							y="140"
+							text-anchor="middle"
+							font-size="11"
+							fill="#374151"
 							font-weight="600">proyección / índice</text
 						>
 					</g>
@@ -238,9 +249,7 @@
 		<article class="mb-8 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
 				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Movimiento B</p>
-				<h3 class="text-lg font-bold">
-					Cada campo cae en uno de tres baldes.
-				</h3>
+				<h3 class="text-lg font-bold">Cada campo cae en uno de tres baldes.</h3>
 			</header>
 			<p class="mb-4 text-sm">
 				Una vez que el XML es la fuente de verdad, la pregunta pasa a ser: ¿qué campos
@@ -306,9 +315,7 @@
 		<article class="mb-2 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
 				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Movimiento C</p>
-				<h3 class="text-lg font-bold">
-					Los escapes son visibles, no ocultos.
-				</h3>
+				<h3 class="text-lg font-bold">Los escapes son visibles, no ocultos.</h3>
 			</header>
 			<p class="mb-4 text-sm">
 				El 10% que no encaja en la forma compartida va a escapes con nombre. La idea no es
@@ -429,27 +436,29 @@
 			</p>
 
 			<div class="grid grid-cols-1 gap-2 sm:grid-cols-5">
-				{#each data.targetCountries as code (code)}
-					{@const docs = data.byCountry[code]}
-					{@const total = docs?.reduce((s, d) => s + d.n, 0) ?? 0}
+				{#each targetCountries as code (code)}
+					{@const docs = byCountry[code]}
+					{@const countryTotal = docs?.reduce((s, d) => s + d.n, 0) ?? 0}
 					<div
-						class="rounded border p-3 text-sm {total > 0
+						class="rounded border p-3 text-sm {countryTotal > 0
 							? 'border-green-300 bg-green-50'
 							: 'border-gray-200 bg-gray-50 text-gray-400'}"
 					>
 						<p class="text-xs tracking-wider uppercase">{code}</p>
-						<p class="font-bold {total > 0 ? 'text-green-900' : ''}">
+						<p class="font-bold {countryTotal > 0 ? 'text-green-900' : ''}">
 							{countryNames[code]}
 						</p>
 						<p class="mt-1 text-xs">
-							{total === 0 ? 'aún no cargado' : `${total} doc${total === 1 ? '' : 's'}`}
+							{countryTotal === 0
+								? 'aún no cargado'
+								: `${countryTotal} doc${countryTotal === 1 ? '' : 's'}`}
 						</p>
 					</div>
 				{/each}
 			</div>
 		</div>
 
-		{#if data.total > 0}
+		{#if total > 0}
 			<div class="mb-6 rounded border border-gray-200 bg-white p-5">
 				<p class="mb-3 text-sm font-bold text-gray-700">Qué está cargado</p>
 				<table class="w-full text-sm">
@@ -461,8 +470,8 @@
 						</tr>
 					</thead>
 					<tbody class="divide-y divide-gray-100">
-						{#each data.targetCountries as code (code)}
-							{#each data.byCountry[code] ?? [] as row (code + row.type)}
+						{#each targetCountries as code (code)}
+							{#each byCountry[code] ?? [] as row (code + row.type)}
 								<tr>
 									<td class="py-2 pr-4 text-gray-700">{countryNames[code]}</td>
 									<td class="py-2 pr-4 font-mono text-xs">{row.type}</td>
@@ -474,7 +483,7 @@
 					<tfoot class="border-t border-gray-200 text-sm">
 						<tr>
 							<td class="py-2 pr-4 font-bold" colspan="2">Total</td>
-							<td class="py-2 font-bold">{data.total}</td>
+							<td class="py-2 font-bold">{total}</td>
 						</tr>
 					</tfoot>
 				</table>

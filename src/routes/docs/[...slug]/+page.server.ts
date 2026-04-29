@@ -5,8 +5,10 @@ import { Marked } from 'marked';
 import { markedHighlight } from 'marked-highlight';
 import hljs from 'highlight.js/lib/core';
 import xml from 'highlight.js/lib/languages/xml';
+import { sql } from 'drizzle-orm';
 import { docs, slugToFile } from '$lib/docs';
 import { loadManifest, loadDocument } from '$lib/server/explorer-loader';
+import { getDb, schema } from '../../demo/db';
 import type { PageServerLoad } from './$types';
 
 hljs.registerLanguage('xml', xml);
@@ -24,8 +26,45 @@ const marked = new Marked(
 	})
 );
 
+type CountRow = { countryCode: string; type: string; n: number };
+
 export const load: PageServerLoad = async ({ params }) => {
 	const slug = params.slug;
+
+	// AKN.db overview — schema philosophy with live counts
+	if (slug === 'akndb/overview') {
+		const db = getDb();
+		const rows = db
+			.select({
+				countryCode: schema.DocumentTable.countryCode,
+				type: schema.DocumentTable.type,
+				n: sql<number>`count(*)`.as('n')
+			})
+			.from(schema.DocumentTable)
+			.groupBy(schema.DocumentTable.countryCode, schema.DocumentTable.type)
+			.all() as CountRow[];
+
+		const byCountry: Record<string, { type: string; n: number }[]> = {};
+		let total = 0;
+		for (const r of rows) {
+			(byCountry[r.countryCode] ??= []).push({ type: r.type, n: r.n });
+			total += r.n;
+		}
+		const targetCountries = ['cl', 'es', 'eu', 'pe', 'us'];
+
+		return {
+			mode: 'akndb-overview' as const,
+			byCountry,
+			total,
+			targetCountries,
+			title: 'AKN.db Overview',
+			section: 'akndb',
+			pageMetaTags: Object.freeze({
+				title: 'AKN.db Overview — Diff Docs',
+				openGraph: { title: 'AKN.db Overview — Diff Docs' }
+			})
+		};
+	}
 
 	// Explorer overview page
 	if (slug === 'explorer/overview') {

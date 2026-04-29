@@ -8,6 +8,7 @@
 	const isExplorerDoc = $derived(activeSlug.startsWith('explorer/') && activeSlug !== 'explorer/overview' && activeSlug.split('/').length > 2);
 
 	const akndiffDocs = $derived(data.docs.filter((d: any) => d.section === 'akndiff'));
+	const akndbDocs = $derived(data.docs.filter((d: any) => d.section === 'akndb'));
 	const explorerDocs = $derived(data.docs.filter((d: any) => d.section === 'explorer'));
 	const aknDocs = $derived(data.docs.filter((d: any) => d.section === 'akn'));
 
@@ -60,6 +61,28 @@
 										{activeSlug === doc.slug
 											? 'bg-addition-200/60 text-addition-800 font-medium'
 											: 'text-addition-800/70 hover:text-addition-800 hover:bg-addition-100'}"
+								>
+									{doc.title}
+								</a>
+							</li>
+						{/each}
+					</ul>
+				</div>
+
+				<!-- AKN.db section -->
+				<div class="rounded-[10px] border border-blue-200 bg-blue-50 p-3 shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
+					<h3 class="text-xs font-bold font-mono uppercase tracking-wider text-blue-800 px-2 py-1 mb-1">
+						AKN.db
+					</h3>
+					<ul class="space-y-0.5">
+						{#each akndbDocs as doc (doc.slug)}
+							<li>
+								<a
+									href="/docs/{doc.slug}"
+									class="block px-2 py-1.5 text-sm rounded-md transition-colors
+										{activeSlug === doc.slug
+											? 'bg-blue-200/60 text-blue-800 font-medium'
+											: 'text-blue-800/70 hover:text-blue-800 hover:bg-blue-100'}"
 								>
 									{doc.title}
 								</a>
@@ -133,7 +156,7 @@
 							href="/docs/{doc.slug}"
 							class="shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors whitespace-nowrap
 								{activeSlug === doc.slug
-									? (doc.section === 'akndiff' ? 'bg-addition-50 text-addition-800' : doc.section === 'explorer' ? 'bg-purple-50 text-purple-800' : 'bg-gray-100 text-gray-800')
+									? (doc.section === 'akndiff' ? 'bg-addition-50 text-addition-800' : doc.section === 'akndb' ? 'bg-blue-50 text-blue-800' : doc.section === 'explorer' ? 'bg-purple-50 text-purple-800' : 'bg-gray-100 text-gray-800')
 									: 'text-gray-500 hover:bg-gray-50'}"
 						>
 							{doc.title}
