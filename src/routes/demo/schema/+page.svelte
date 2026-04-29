@@ -1,1147 +1,546 @@
 <script lang="ts">
-	// All examples on this page are synthetic — they illustrate the schema,
-	// they don't read from research.db. We'll wire it to real data once the
-	// build script seeds enough of the supporting cast (amendments, journals,
-	// judgments). For now, prose + diagrams.
+	let { data } = $props();
+
+	const countryNames: Record<string, string> = {
+		cl: 'Chile',
+		es: 'Spain',
+		eu: 'European Union',
+		pe: 'Peru',
+		us: 'United States'
+	};
 </script>
 
 <svelte:head>
-	<title>How the schema works — research demo</title>
+	<title>The schema, explained — research demo</title>
 </svelte:head>
 
-<div class="mx-auto max-w-3xl px-6 py-10 font-sans text-base leading-relaxed text-gray-800">
+<div class="mx-auto max-w-3xl px-6 py-12 font-sans text-base leading-relaxed text-gray-800">
 	<a href="/demo" class="text-sm text-blue-600 hover:underline">← back to demo</a>
 
-	<header class="mt-6 mb-10">
-		<h1 class="mb-3 text-3xl font-bold tracking-tight">How the schema works</h1>
+	<header class="mt-6 mb-12">
+		<h1 class="mb-3 text-3xl font-bold tracking-tight">The schema, explained</h1>
 		<p class="text-gray-600">
-			We follow one Chilean bill — <strong>boletín 12345-07</strong> — from someone proposing it
-			to it becoming a law printed in the <em>Diario Oficial</em>. Every concept in the schema
-			gets introduced as it shows up in the story. No SQL.
+			This page is the philosophy behind the database we're building — not a field reference.
+			It explains the bet we're making, how we're tackling complexity, and where we are right
+			now. If you want field-level detail, read
+			<a
+				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v3-schema.ts"
+				class="text-blue-600 hover:underline"
+				target="_blank"
+				rel="noopener">v3-schema.ts</a
+			>
+			directly.
 		</p>
 	</header>
 
-	<!-- ─────────────────────────────── 1. The big idea -->
+	<!-- ─────────────────────────────── 1. The problem -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">1. The big idea</h2>
+		<h2 class="mb-3 text-xl font-bold">1. The problem</h2>
 		<p class="mb-4">
-			A parliament produces <strong>documents</strong>. Documents <strong>point at each other</strong>.
-			Documents have <strong>versions</strong>. That's the whole schema. Everything below is
-			variations on those three ideas.
+			Every parliament names the same things differently. A Chilean
+			<em>boletín</em> is a Spanish <em>proyecto de ley</em> is a US
+			<em>bill</em> is an EU <em>proposal</em>. The shapes look similar, but each country also
+			has its own quirks — urgencias in Chile, conference reports in the US, ordinary vs.
+			organic laws in Spain.
 		</p>
-
-		<div class="my-6 rounded border border-gray-200 bg-gray-50 p-6">
-			<svg viewBox="0 0 700 220" class="w-full" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<marker
-						id="arrowhead"
-						viewBox="0 0 10 10"
-						refX="9"
-						refY="5"
-						markerWidth="6"
-						markerHeight="6"
-						orient="auto-start-reverse"
-					>
-						<path d="M0,0 L10,5 L0,10 z" fill="#374151" />
-					</marker>
-				</defs>
-
-				<!-- Document A with version stack -->
-				<g>
-					<rect
-						x="80"
-						y="80"
-						width="180"
-						height="80"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="170" y="115" text-anchor="middle" font-weight="bold" font-size="16"
-						>A document</text
-					>
-					<text x="170" y="138" text-anchor="middle" font-size="12" fill="#6b7280"
-						>(a bill, an act, a journal…)</text
-					>
-					<!-- Version stack lines behind -->
-					<rect
-						x="86"
-						y="74"
-						width="180"
-						height="80"
-						rx="6"
-						fill="none"
-						stroke="#9ca3af"
-						stroke-dasharray="2 2"
-					/>
-					<rect
-						x="92"
-						y="68"
-						width="180"
-						height="80"
-						rx="6"
-						fill="none"
-						stroke="#d1d5db"
-						stroke-dasharray="2 2"
-					/>
-					<text x="290" y="78" font-size="11" fill="#6b7280">v1, v2, v3 …</text>
-				</g>
-
-				<!-- Arrow to Document B -->
-				<line
-					x1="270"
-					y1="120"
-					x2="430"
-					y2="120"
-					stroke="#374151"
-					stroke-width="2"
-					marker-end="url(#arrowhead)"
-				/>
-				<text x="350" y="110" text-anchor="middle" font-size="12" fill="#374151" font-weight="500"
-					>points at</text
-				>
-
-				<!-- Document B -->
-				<g>
-					<rect
-						x="440"
-						y="80"
-						width="180"
-						height="80"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="530" y="115" text-anchor="middle" font-weight="bold" font-size="16"
-						>Another document</text
-					>
-					<text x="530" y="138" text-anchor="middle" font-size="12" fill="#6b7280"
-						>(of any other type)</text
-					>
-				</g>
-			</svg>
-		</div>
-
-		<p class="text-sm text-gray-500">
-			A document is the unit. A pointer between documents is the connective tissue. A new version
-			is what we save when a document's text changes — we never overwrite. That's it.
+		<p class="mb-4">
+			An international standard exists — <strong>Akoma Ntoso</strong> (AKN) — designed to
+			model parliamentary documents universally. It's serious work, well-maintained, and
+			almost nobody implemented it. Most parliaments rolled their own XML, then drifted.
+		</p>
+		<p>
+			What we want is one schema that holds Chile, Spain, the EU, Peru, and the US side by
+			side, queryable as if they were one parliament. Same shape, different data. No
+			per-country branches.
 		</p>
 	</section>
 
-	<!-- ─────────────────────────────── 2. Meet the cast -->
+	<!-- ─────────────────────────────── 2. The bet -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">2. Meet the cast</h2>
+		<h2 class="mb-3 text-xl font-bold">2. The bet</h2>
+		<p class="mb-4">
+			Roughly 90% of the parliamentary ritual is genuinely shared across countries. The
+			remaining 10% is real difference, but principled — handled by a small set of escape
+			hatches, not by forking the schema.
+		</p>
+		<p class="mb-4">
+			This experiment exists to falsify or confirm that bet. It's not "we believe AKN will
+			work" — it's "we'll load five countries into one schema and see what breaks."
+		</p>
+
+		<div class="my-6 rounded border-l-4 border-amber-400 bg-amber-50 p-4 text-sm">
+			<p class="mb-2 font-bold text-amber-900">What "broken" looks like</p>
+			<ul class="list-disc space-y-1 pl-5 text-amber-950">
+				<li>
+					A field is full in one country and empty in four → we wrongly generalized a
+					country-specific concept.
+				</li>
+				<li>
+					A field is empty in every country → dead schema; remove it.
+				</li>
+				<li>
+					Real data has nowhere to go and gets dumped into a "country specific" blob → we
+					missed a concept that may belong as a real column.
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- ─────────────────────────────── 3. How we tackle the complexity -->
+	<section class="mb-14">
+		<h2 class="mb-3 text-xl font-bold">3. How we tackle the complexity</h2>
 		<p class="mb-6 text-gray-600">
-			Each box below is one type of document the schema knows about. They're introduced in the
-			order they show up in our running story.
+			Three architectural moves, each with a reason behind it.
 		</p>
 
-		<!-- Every-document preamble -->
-		<article class="mb-8 rounded border border-gray-300 bg-gray-50 p-5">
+		<!-- Move A: XML as source of truth -->
+		<article class="mb-8 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
-				<h3 class="text-lg font-bold">Every document has these</h3>
-				<p class="text-sm text-gray-600">
-					No matter the type — bill, act, journal, judgment — every document carries this same
-					core set of fields. The type-specific cards below only show what's <em>extra</em>.
-				</p>
+				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Move A</p>
+				<h3 class="text-lg font-bold">XML files are the source of truth. SQL is a projection.</h3>
 			</header>
-
-			<table class="w-full text-sm">
-				<thead class="border-b border-gray-300 text-left text-xs text-gray-500 uppercase">
-					<tr>
-						<th class="py-2 pr-4 font-bold">field</th>
-						<th class="py-2 pr-4 font-bold">kind</th>
-						<th class="py-2 font-bold">example</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-200">
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">id</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">id</td>
-						<td class="py-2 text-gray-700"
-							><code class="rounded bg-gray-100 px-1 text-xs"
-								>3f9a-4c2b-…-b81e</code
-							> — UUID we generate ourselves</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">type</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">status</td>
-						<td class="py-2 text-gray-700">
-							<code class="rounded bg-gray-100 px-1 text-xs">bill</code>
-							<span class="text-gray-500"
-								>— which kind of document this is. One of 14 values.</span
-							>
-						</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">countryCode</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"cl", "es", "eu", "pe", "us"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">nativeId</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">id</td>
-						<td class="py-2 text-gray-700"
-							>"12345-07" — the id the gov site itself uses</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">title</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700"
-							>"Modifica la ley N° 21.000 para fortalecer..."</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">topics</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">list of text</td>
-						<td class="py-2 text-gray-700">["protección de datos", "tecnología"]</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">language</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"es"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">body</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">structured blob</td>
-						<td class="py-2 text-gray-700"
-							>shape varies by type — a bill has summary + fundamentos + articles, an act has
-							preamble + articles + annexes, etc.</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">sourceUrl</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700"
-							>"https://www.camara.cl/legislacion/ProyectosDeLey/..."</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">publishedAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2025-08-12</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">lastActivityAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2026-01-15</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">countrySpecific</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">free-form blob</td>
-						<td class="py-2 text-gray-700"
-							>the country-specific dumping ground — anything that doesn't fit elsewhere</td
-						>
-					</tr>
-				</tbody>
-			</table>
-		</article>
-
-		<!-- The Bill -->
-		<article class="mb-6 rounded border border-gray-200 bg-white p-5">
-			<header class="mb-3">
-				<h3 class="text-lg font-bold">The Bill — <em>someone proposes a change</em></h3>
-				<p class="text-sm text-gray-500">
-					A proposal to create a new law or modify an existing one.
-				</p>
-			</header>
-			<div class="rounded bg-amber-50 p-3 text-sm">
-				<p class="mb-1 font-bold text-amber-900">Example</p>
-				<p class="text-amber-950">
-					<strong>Boletín 12345-07</strong> — "Modifica la ley N° 21.000 para fortalecer la
-					protección de datos personales", proposed by Diputada Pérez and Diputado Soto in
-					August 2025.
-				</p>
-			</div>
-			<p class="mt-3 mb-1 text-sm font-bold text-gray-700">What we track about it</p>
-			<ul class="list-disc space-y-1 pl-5 text-sm">
-				<li>Who proposed it (name, party, chamber).</li>
-				<li>When it was submitted, and what stage it's at right now.</li>
-				<li>Whether it modifies an existing law, and which one.</li>
-				<li>Its urgency tier (in Chile: simple, suma, discusión inmediata).</li>
-			</ul>
-
-			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to a bill</p>
-			<table class="w-full text-sm">
-				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
-					<tr>
-						<th class="py-2 pr-4 font-bold">field</th>
-						<th class="py-2 pr-4 font-bold">kind</th>
-						<th class="py-2 font-bold">example</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-100">
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">subtype</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"moción"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">status</td>
-						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: submitted, in_committee, floor_debate, second_chamber, reconciliation, passed, enacted, rejected, withdrawn, archived">status</td>
-						<td class="py-2 text-gray-700">
-							<code class="rounded bg-gray-100 px-1 text-xs">passed</code>
-							<span class="text-gray-500">— hover the "status" tag for the full list</span>
-						</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">statusLocal</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700"
-							>"Tramitación terminada — pendiente de promulgación"</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">submittedAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2025-08-12</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">urgency</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"simple"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">sponsors</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">list of people</td>
-						<td class="py-2 text-gray-700"
-							>[&#123; name: "Diputada Pérez", party: "PPD", chamber: "Cámara" &#125;, …]</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">amendsActId</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
-						<td class="py-2 text-gray-700">→ <em>Ley 21.000</em></td>
-					</tr>
-				</tbody>
-			</table>
-		</article>
-
-		<!-- Bill events -->
-		<article class="mb-6 rounded border border-gray-200 bg-white p-5">
-			<header class="mb-3">
-				<h3 class="text-lg font-bold">The Bill's trámite — <em>each step on the way</em></h3>
-				<p class="text-sm text-gray-500">
-					A timeline of every observed step the bill goes through.
-				</p>
-			</header>
-			<div class="rounded bg-amber-50 p-3 text-sm">
-				<p class="mb-1 font-bold text-amber-900">Example — boletín 12345-07's trámite</p>
-				<ol class="list-decimal space-y-1 pl-5 text-amber-950">
-					<li>Aug 12, 2025 — Ingreso del proyecto (Cámara).</li>
-					<li>Oct 3, 2025 — Primer informe de la Comisión de Futuro.</li>
-					<li>Dec 18, 2025 — Aprobado en general y particular (Senado).</li>
-					<li>Jan 15, 2026 — Promulgada como Ley 21.567.</li>
-				</ol>
-			</div>
-			<p class="mt-3 text-sm">
-				It's append-only — we never go back and edit a step, we just add the next one. Sub-products
-				of a step (a comisión report, a vote record, a batch of indicaciones) become their own
-				documents and link back to the event.
+			<p class="mb-4 text-sm">
+				Every document we model lives as a standalone <code
+					class="rounded bg-gray-100 px-1 text-xs">.xml</code
+				>
+				file in <code class="rounded bg-gray-100 px-1 text-xs">research/schema/data/</code>,
+				shaped after AKN. The SQLite database is rebuilt from scratch on every run by
+				walking those files and extracting columns. Nobody edits the database directly.
 			</p>
 
-			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields per event row</p>
-			<table class="w-full text-sm">
-				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
-					<tr>
-						<th class="py-2 pr-4 font-bold">field</th>
-						<th class="py-2 pr-4 font-bold">kind</th>
-						<th class="py-2 font-bold">example</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-100">
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">sequence</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">number</td>
-						<td class="py-2 text-gray-700">2</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">occurredAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2025-10-03</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">actionType</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"committee_report" — our normalized step name</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">actionTypeLocal</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700"
-							>"Primer informe de la Comisión de Futuro" — the country's wording</td
+			<div class="my-5 rounded border border-gray-200 bg-gray-50 p-5">
+				<svg viewBox="0 0 700 200" class="w-full" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<marker
+							id="arrowA"
+							viewBox="0 0 10 10"
+							refX="9"
+							refY="5"
+							markerWidth="6"
+							markerHeight="6"
+							orient="auto-start-reverse"
 						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">chamber</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"Cámara de Diputadas y Diputados"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">producedDocumentId</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
-						<td class="py-2 text-gray-700"
-							>→ <em>Informe N° 47 de la Comisión de Futuro</em></td
-						>
-					</tr>
-				</tbody>
-			</table>
-		</article>
+							<path d="M0,0 L10,5 L0,10 z" fill="#374151" />
+						</marker>
+					</defs>
 
-		<!-- The Act -->
-		<article class="mb-6 rounded border border-gray-200 bg-white p-5">
-			<header class="mb-3">
-				<h3 class="text-lg font-bold">The Act — <em>the existing law being modified</em></h3>
-				<p class="text-sm text-gray-500">A law that has been promulgated and is in force.</p>
-			</header>
-			<div class="rounded bg-amber-50 p-3 text-sm">
-				<p class="mb-1 font-bold text-amber-900">Example</p>
-				<p class="text-amber-950">
-					<strong>Ley 21.000</strong> — "Sobre protección de la vida privada y datos personales",
-					promulgated in March 2018, in force since April 2018. This is the law that boletín
-					12345-07 wants to amend.
-				</p>
+					<!-- XML files (left) -->
+					<g>
+						<rect
+							x="40"
+							y="50"
+							width="200"
+							height="110"
+							rx="6"
+							fill="#fff"
+							stroke="#374151"
+							stroke-width="2"
+						/>
+						<text x="140" y="78" text-anchor="middle" font-weight="bold" font-size="14"
+							>data/**/*.xml</text
+						>
+						<text x="140" y="100" text-anchor="middle" font-size="11" fill="#6b7280"
+							>committed, reviewable</text
+						>
+						<text x="140" y="118" text-anchor="middle" font-size="11" fill="#6b7280"
+							>diffable in PRs</text
+						>
+						<text x="140" y="140" text-anchor="middle" font-size="11" fill="#374151"
+							font-weight="600">source of truth</text
+						>
+					</g>
+
+					<!-- Build script -->
+					<g>
+						<line
+							x1="240"
+							y1="105"
+							x2="450"
+							y2="105"
+							stroke="#374151"
+							stroke-width="2"
+							marker-end="url(#arrowA)"
+						/>
+						<rect
+							x="280"
+							y="78"
+							width="130"
+							height="32"
+							rx="4"
+							fill="#fef3c7"
+							stroke="#b45309"
+							stroke-width="1.5"
+						/>
+						<text
+							x="345"
+							y="98"
+							text-anchor="middle"
+							font-size="12"
+							font-weight="bold"
+							fill="#92400e">build script</text
+						>
+						<text x="345" y="125" text-anchor="middle" font-size="10" fill="#6b7280"
+							>extract + insert</text
+						>
+					</g>
+
+					<!-- SQLite -->
+					<g>
+						<rect
+							x="460"
+							y="50"
+							width="200"
+							height="110"
+							rx="6"
+							fill="#fff"
+							stroke="#374151"
+							stroke-width="2"
+							stroke-dasharray="4 3"
+						/>
+						<text x="560" y="78" text-anchor="middle" font-weight="bold" font-size="14"
+							>research.db</text
+						>
+						<text x="560" y="100" text-anchor="middle" font-size="11" fill="#6b7280"
+							>gitignored</text
+						>
+						<text x="560" y="118" text-anchor="middle" font-size="11" fill="#6b7280"
+							>rebuilt every run</text
+						>
+						<text x="560" y="140" text-anchor="middle" font-size="11" fill="#374151"
+							font-weight="600">projection / index</text
+						>
+					</g>
+				</svg>
 			</div>
-			<p class="mt-3 mb-1 text-sm font-bold text-gray-700">What we track about it</p>
-			<ul class="list-disc space-y-1 pl-5 text-sm">
-				<li>When it was promulgated, when it took effect, when (if ever) it was repealed.</li>
-				<li>Who issued it (Congreso, Presidente, an EU institution…).</li>
-				<li>Whether it's still in force, partially repealed, or superseded.</li>
-				<li>Where it was officially published — i.e. which Journal entry.</li>
-			</ul>
 
-			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to an act</p>
-			<table class="w-full text-sm">
-				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
-					<tr>
-						<th class="py-2 pr-4 font-bold">field</th>
-						<th class="py-2 pr-4 font-bold">kind</th>
-						<th class="py-2 font-bold">example</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-100">
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">status</td>
-						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: in_force, partially_repealed, repealed, superseded, suspended">status</td>
-						<td class="py-2 text-gray-700">
-							<code class="rounded bg-gray-100 px-1 text-xs">in_force</code>
-							<span class="text-gray-500">— hover the "status" tag for the full list</span>
-						</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">promulgatedAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2018-03-15</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">effectiveAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2018-04-01</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">repealedAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">— (empty while still in force)</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">issuingBody</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"Congreso Nacional"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">publicationJournalId</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
-						<td class="py-2 text-gray-700">→ <em>DO-2018-03-20</em></td>
-					</tr>
-				</tbody>
-			</table>
+			<p class="mb-2 text-sm font-bold text-gray-700">Why</p>
+			<ul class="list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+				<li>
+					A binary <code class="rounded bg-gray-100 px-1 text-xs">.db</code> can't be reviewed
+					in a PR or merged across contributors. Text files can.
+				</li>
+				<li>
+					A schema change becomes a code change <em>plus</em> a sweep across the corpus. If
+					the sweep is painful, the schema change is wrong — that's the feedback loop we
+					want.
+				</li>
+				<li>
+					Anyone clones the repo and runs one command to rebuild the full experiment. No
+					hidden state.
+				</li>
+			</ul>
 		</article>
 
-		<!-- The Amendment -->
-		<article class="mb-6 rounded border border-gray-200 bg-white p-5">
+		<!-- Move B: Three buckets per field -->
+		<article class="mb-8 rounded border border-gray-200 bg-white p-5">
 			<header class="mb-3">
-				<h3 class="text-lg font-bold">The Amendment — <em>a tweak proposed mid-flight</em></h3>
-				<p class="text-sm text-gray-500">
-					A modification to a bill while it's still being debated. In Chile: an
-					<em>indicación</em>.
-				</p>
-			</header>
-			<div class="rounded bg-amber-50 p-3 text-sm">
-				<p class="mb-1 font-bold text-amber-900">Example — synthetic</p>
-				<p class="text-amber-950">
-					During the debate on boletín 12345-07, Senadora Núñez proposes:
-				</p>
-				<p class="mt-2 text-amber-950">
-					<em>"In article 3, replace 'sanción de UF 100' with 'sanción de UF 500'."</em>
-				</p>
-				<p class="mt-2 text-amber-950">
-					Justification: the original fine is too low to deter large companies. The amendment
-					targets boletín 12345-07, was voted on Dec 5, 2025, and was approved.
-				</p>
-			</div>
-			<p class="mt-3 mb-1 text-sm font-bold text-gray-700">What we track about it</p>
-			<ul class="list-disc space-y-1 pl-5 text-sm">
-				<li>What bill it targets, and which article inside that bill.</li>
-				<li>The old text, the new text, and the proposer's justification.</li>
-				<li>Who proposed it, when it was submitted.</li>
-				<li>How the vote went — for, against, abstain — and the final outcome.</li>
-			</ul>
-
-			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to an amendment</p>
-			<table class="w-full text-sm">
-				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
-					<tr>
-						<th class="py-2 pr-4 font-bold">field</th>
-						<th class="py-2 pr-4 font-bold">kind</th>
-						<th class="py-2 font-bold">example</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-100">
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">targetBillId</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">link to a document</td>
-						<td class="py-2 text-gray-700">→ <em>Boletín 12345-07</em></td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">targetLocator</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"art. 3 inciso 2"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">textOld</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"sanción de UF 100"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">textNew</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"sanción de UF 500"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">justification</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700"
-							>"La sanción original es muy baja para disuadir grandes empresas..."</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">submitter</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">person</td>
-						<td class="py-2 text-gray-700"
-							>&#123; name: "Senadora Núñez", party: "FA", chamber: "Senado" &#125;</td
-						>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">submittedAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2025-12-01</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">outcome</td>
-						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: pending, approved, rejected, withdrawn, inadmissible, merged">status</td>
-						<td class="py-2 text-gray-700">
-							<code class="rounded bg-gray-100 px-1 text-xs">approved</code>
-							<span class="text-gray-500">— hover the "status" tag for the full list</span>
-						</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">votedAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2025-12-05</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">voteRecord</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">structured blob</td>
-						<td class="py-2 text-gray-700"
-							>&#123; for: 22, against: 17, abstain: 4, forNames: […], … &#125;</td
-						>
-					</tr>
-				</tbody>
-			</table>
-		</article>
-
-		<!-- The Journal -->
-		<article class="mb-6 rounded border border-gray-200 bg-white p-5">
-			<header class="mb-3">
+				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Move B</p>
 				<h3 class="text-lg font-bold">
-					The Journal — <em>the official gazette where laws get published</em>
+					Every field falls into one of three buckets.
 				</h3>
-				<p class="text-sm text-gray-500">
-					An issue of the official publication of record. The legal moment a law becomes real.
-				</p>
 			</header>
-			<div class="rounded bg-amber-50 p-3 text-sm">
-				<p class="mb-1 font-bold text-amber-900">Example</p>
-				<p class="text-amber-950">
-					<strong>DO-2026-01-15</strong> — issue 43.521 of the Diario Oficial de la República
-					de Chile. This issue contains, among other things, the promulgated text of Ley 21.567
-					(the new law that boletín 12345-07 became).
-				</p>
-			</div>
-			<p class="mt-3 text-sm">
-				A journal issue is itself a document, and its contents are <em>other</em> documents
-				linked to it. One issue might publish a dozen acts, decrees, and notices in a specific
-				order — that ordering matters legally, and we preserve it.
+			<p class="mb-4 text-sm">
+				Once XML is the source of truth, the question becomes: which fields also need to be
+				SQL columns? We answered it with a three-way split — and the placement of every
+				field is recorded in the schema file itself.
 			</p>
 
-			<p class="mt-4 mb-2 text-sm font-bold text-gray-700">Fields specific to a journal issue</p>
-			<table class="w-full text-sm">
-				<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
-					<tr>
-						<th class="py-2 pr-4 font-bold">field</th>
-						<th class="py-2 pr-4 font-bold">kind</th>
-						<th class="py-2 font-bold">example</th>
-					</tr>
-				</thead>
-				<tbody class="divide-y divide-gray-100">
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">issueNumber</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">id</td>
-						<td class="py-2 text-gray-700">"43.521"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">issuedAt</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">date</td>
-						<td class="py-2 text-gray-700">2026-01-15</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">publisher</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700">"Diario Oficial de la República de Chile"</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">scope</td>
-						<td class="py-2 pr-4 text-xs text-gray-500" title="One of: national, regional, eu, municipal">status</td>
-						<td class="py-2 text-gray-700">
-							<code class="rounded bg-gray-100 px-1 text-xs">national</code>
-							<span class="text-gray-500">— hover the "status" tag for the full list</span>
-						</td>
-					</tr>
-					<tr class="align-top">
-						<td class="py-2 pr-4 font-mono text-xs">regionCode</td>
-						<td class="py-2 pr-4 text-xs text-gray-500">text</td>
-						<td class="py-2 text-gray-700"
-							>— (empty for national; e.g. "AND" for an Andalucía gazette)</td
-						>
-					</tr>
-				</tbody>
-			</table>
+			<div class="my-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
+				<div class="rounded border border-gray-300 bg-gray-50 p-4">
+					<p class="mb-1 text-xs font-bold tracking-wider text-gray-500 uppercase">
+						SQL only
+					</p>
+					<p class="mb-2 text-sm font-bold">Plumbing</p>
+					<p class="text-xs text-gray-600">
+						IDs, fingerprints, timestamps, scraping metadata. Never appears in the XML.
+						Overwritten in place. No history.
+					</p>
+				</div>
+				<div class="rounded border border-gray-300 bg-gray-50 p-4">
+					<p class="mb-1 text-xs font-bold tracking-wider text-gray-500 uppercase">
+						XML only
+					</p>
+					<p class="mb-2 text-sm font-bold">Deep content</p>
+					<p class="text-xs text-gray-600">
+						Articles, paragraphs, justifications, internal cross-references. Anything
+						nested, recursive, or country-specific the demo doesn't query in aggregate.
+					</p>
+				</div>
+				<div class="rounded border border-blue-300 bg-blue-50 p-4">
+					<p class="mb-1 text-xs font-bold tracking-wider text-blue-700 uppercase">Both</p>
+					<p class="mb-2 text-sm font-bold">Queryable index</p>
+					<p class="text-xs text-blue-900">
+						A small, hand-picked set of fields the demo needs in joins and filters.
+						Stored as columns <em>and</em> present in the XML. <strong>XML wins</strong>
+						 if they disagree — the column is regenerated.
+					</p>
+				</div>
+			</div>
+
+			<p class="mb-2 text-sm font-bold text-gray-700">Why</p>
+			<ul class="list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+				<li>
+					The previous version of the schema had a generic <code
+						class="rounded bg-gray-100 px-1 text-xs">body</code
+					>
+					JSON column that absorbed everything we couldn't model. It was the schema
+					admitting it had hit a wall. Buckets force the question to be answered explicitly.
+				</li>
+				<li>
+					Adding a field to the "both" bucket is cheap: write an extractor, add a column,
+					rebuild. So we can start small and promote a field the day a query needs it.
+				</li>
+				<li>
+					Versioning is now trivial — we just store the whole XML per version. No JSON
+					snapshot dance, no per-column history tables.
+				</li>
+			</ul>
 		</article>
 
-		<!-- Supporting cast -->
-		<h3 class="mt-10 mb-2 text-base font-bold">Supporting cast</h3>
-		<p class="mb-4 text-sm text-gray-600">
-			These show up less often in our running story but are part of the same cast.
-		</p>
-		<dl class="space-y-3 rounded border border-gray-200 bg-white p-5 text-sm">
-			<div>
-				<dt class="font-bold">Question</dt>
-				<dd class="text-gray-700">
-					A formal query a parliamentarian asks an executive body — "Minister, what's the
-					status of program X?" — usually with a statutory deadline for the response.
-				</dd>
-			</div>
-			<div>
-				<dt class="font-bold">Communication</dt>
-				<dd class="text-gray-700">
-					An official letter between institutions: chamber to senate, executive to
-					legislature, etc. Mostly a transmission of, or reference to, another document.
-				</dd>
-			</div>
-			<div>
-				<dt class="font-bold">Judgment</dt>
-				<dd class="text-gray-700">
-					A court decision — useful when courts strike down or interpret a law. Linked back
-					to the act it interprets.
-				</dd>
-			</div>
-			<div>
-				<dt class="font-bold">Debate</dt>
-				<dd class="text-gray-700">
-					The transcript of a legislative session. We keep a thin pointer here; the actual
-					transcript content lives in the main parlamento.ai app.
-				</dd>
-			</div>
-			<div>
-				<dt class="font-bold">Citation</dt>
-				<dd class="text-gray-700">
-					The agenda of a session — when, where, and what's on the docket. Like the debate, a
-					thin pointer.
-				</dd>
-			</div>
-			<div>
-				<dt class="font-bold">Document collection</dt>
-				<dd class="text-gray-700">
-					A folder. Groups related documents into a navigable package — e.g. "everything
-					connected to boletín 12345-07": the bill, its informes, its indicaciones, the
-					debate, the final law, the journal entry.
-				</dd>
-			</div>
-		</dl>
-	</section>
-
-	<!-- ─────────────────────────────── 3. How they connect -->
-	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">3. How they connect</h2>
-		<p class="mb-4">
-			Anything in the schema can point at anything else. Each pointer has a <strong>type</strong>
-			— a verb that says what kind of relationship it is. The pointers, taken together, form a
-			graph that you can navigate like the web.
-		</p>
-
-		<p class="mb-3 text-sm text-gray-600">
-			Reading our running story as sentences:
-		</p>
-		<ul class="mb-6 list-disc space-y-2 pl-5 text-sm">
-			<li>
-				<em>Boletín 12345-07</em>
-				<span class="mx-1 rounded bg-blue-100 px-2 py-0.5 font-mono text-xs text-blue-900"
-					>amends</span
-				>
-				<em>Ley 21.000</em>
-			</li>
-			<li>
-				<em>Indicación de la Senadora Núñez</em>
-				<span class="mx-1 rounded bg-blue-100 px-2 py-0.5 font-mono text-xs text-blue-900"
-					>modifies</span
-				>
-				<em>boletín 12345-07</em>
-			</li>
-			<li>
-				<em>Diario Oficial DO-2026-01-15</em>
-				<span class="mx-1 rounded bg-blue-100 px-2 py-0.5 font-mono text-xs text-blue-900"
-					>promulgates</span
-				>
-				<em>Ley 21.567 (the new act)</em>
-			</li>
-			<li>
-				<em>Boletín 12345-07</em>
-				<span class="mx-1 rounded bg-blue-100 px-2 py-0.5 font-mono text-xs text-blue-900"
-					>cites</span
-				>
-				<em>Sentencia Rol 8421-2024</em>
-			</li>
-			<li>
-				<em>Oficio N° 234 de la Cámara</em>
-				<span class="mx-1 rounded bg-blue-100 px-2 py-0.5 font-mono text-xs text-blue-900"
-					>transmits</span
-				>
-				<em>boletín 12345-07 al Senado</em>
-			</li>
-		</ul>
-
-		<!-- Graph diagram -->
-		<div class="my-6 rounded border border-gray-200 bg-gray-50 p-6">
-			<p class="mb-3 text-xs text-gray-500">
-				The same story as a graph — five documents, five typed pointers between them.
+		<!-- Move C: Escape hatches with feedback loops -->
+		<article class="mb-2 rounded border border-gray-200 bg-white p-5">
+			<header class="mb-3">
+				<p class="text-xs font-bold tracking-wider text-gray-500 uppercase">Move C</p>
+				<h3 class="text-lg font-bold">
+					Escape hatches are visible, not hidden.
+				</h3>
+			</header>
+			<p class="mb-4 text-sm">
+				The 10% that doesn't fit the shared shape goes into named escape hatches. The
+				point isn't to make the misfit disappear — it's to make it
+				<em>countable</em>, so the schema can evolve toward what the data actually is.
 			</p>
-			<svg viewBox="0 0 720 360" class="w-full" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<marker
-						id="arrow3"
-						viewBox="0 0 10 10"
-						refX="9"
-						refY="5"
-						markerWidth="6"
-						markerHeight="6"
-						orient="auto-start-reverse"
-					>
-						<path d="M0,0 L10,5 L0,10 z" fill="#1e40af" />
-					</marker>
-				</defs>
 
-				<!-- Boletín 12345-07 (center-left) -->
-				<g>
-					<rect
-						x="40"
-						y="140"
-						width="160"
-						height="60"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="120" y="165" text-anchor="middle" font-weight="bold" font-size="13"
-						>Boletín 12345-07</text
-					>
-					<text x="120" y="183" text-anchor="middle" font-size="11" fill="#6b7280">bill</text>
-				</g>
+			<div class="my-5 space-y-3">
+				<div class="rounded border border-gray-200 p-3 text-sm">
+					<p class="mb-1 font-bold text-gray-800">
+						<code class="rounded bg-gray-100 px-1 text-xs">countrySpecific</code> blob
+					</p>
+					<p class="text-gray-700">
+						A free-form JSON field on every document. When a country tracks something we
+						don't have a column for, it goes here. We watch what accumulates: once the
+						same shape shows up in 2+ countries, we promote it to a real column.
+					</p>
+				</div>
+				<div class="rounded border border-gray-200 p-3 text-sm">
+					<p class="mb-1 font-bold text-gray-800">
+						<code class="rounded bg-gray-100 px-1 text-xs">statusLocal</code> alongside
+						<code class="rounded bg-gray-100 px-1 text-xs">status</code>
+					</p>
+					<p class="text-gray-700">
+						The country's own wording for a stage ("Tramitación terminada — pendiente de
+						promulgación") is preserved alongside our normalized status ("passed"). We
+						never throw the country's voice away.
+					</p>
+				</div>
+				<div class="rounded border border-gray-200 p-3 text-sm">
+					<p class="mb-1 font-bold text-gray-800">Append-only timelines</p>
+					<p class="text-gray-700">
+						We don't model the rules of each country's procedure (BPMN-style). We just
+						log every observed step with a normalized <code
+							class="rounded bg-gray-100 px-1 text-xs">actionType</code
+						>
+						and the country's local label. The shape of the procedure emerges from the
+						log, not from a model we authored.
+					</p>
+				</div>
+			</div>
 
-				<!-- Ley 21.000 (right) -->
-				<g>
-					<rect
-						x="500"
-						y="140"
-						width="160"
-						height="60"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="580" y="165" text-anchor="middle" font-weight="bold" font-size="13"
-						>Ley 21.000</text
-					>
-					<text x="580" y="183" text-anchor="middle" font-size="11" fill="#6b7280">act</text>
-				</g>
-
-				<!-- Indicación (above-left) -->
-				<g>
-					<rect
-						x="40"
-						y="20"
-						width="160"
-						height="60"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="120" y="45" text-anchor="middle" font-weight="bold" font-size="13"
-						>Indicación Núñez</text
-					>
-					<text x="120" y="63" text-anchor="middle" font-size="11" fill="#6b7280"
-						>amendment</text
-					>
-				</g>
-
-				<!-- Diario Oficial (right) -->
-				<g>
-					<rect
-						x="500"
-						y="20"
-						width="160"
-						height="60"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="580" y="45" text-anchor="middle" font-weight="bold" font-size="13"
-						>DO-2026-01-15</text
-					>
-					<text x="580" y="63" text-anchor="middle" font-size="11" fill="#6b7280">journal</text>
-				</g>
-
-				<!-- Sentencia (bottom) -->
-				<g>
-					<rect
-						x="270"
-						y="280"
-						width="180"
-						height="60"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="360" y="305" text-anchor="middle" font-weight="bold" font-size="13"
-						>Rol 8421-2024</text
-					>
-					<text x="360" y="323" text-anchor="middle" font-size="11" fill="#6b7280">judgment</text
-					>
-				</g>
-
-				<!-- Indicación → boletín  (modifies) -->
-				<line
-					x1="120"
-					y1="80"
-					x2="120"
-					y2="138"
-					stroke="#1e40af"
-					stroke-width="1.5"
-					marker-end="url(#arrow3)"
-				/>
-				<text x="125" y="115" font-size="11" fill="#1e40af">modifies</text>
-
-				<!-- Boletín → ley (amends) -->
-				<line
-					x1="200"
-					y1="170"
-					x2="498"
-					y2="170"
-					stroke="#1e40af"
-					stroke-width="1.5"
-					marker-end="url(#arrow3)"
-				/>
-				<text x="349" y="160" text-anchor="middle" font-size="11" fill="#1e40af">amends</text>
-
-				<!-- Diario → ley (promulgates) -->
-				<line
-					x1="580"
-					y1="80"
-					x2="580"
-					y2="138"
-					stroke="#1e40af"
-					stroke-width="1.5"
-					marker-end="url(#arrow3)"
-				/>
-				<text x="585" y="115" font-size="11" fill="#1e40af">promulgates</text>
-
-				<!-- Boletín → sentencia (cites) -->
-				<line
-					x1="180"
-					y1="200"
-					x2="290"
-					y2="280"
-					stroke="#1e40af"
-					stroke-width="1.5"
-					marker-end="url(#arrow3)"
-				/>
-				<text x="200" y="250" font-size="11" fill="#1e40af">cites</text>
-			</svg>
-		</div>
-
-		<h3 class="mt-8 mb-2 text-base font-bold">All the relationship verbs we use</h3>
-		<p class="mb-3 text-sm text-gray-600">
-			Twelve verbs cover everything we've seen so far. They're directional — "A
-			<code class="rounded bg-gray-100 px-1 text-xs">amends</code> B" is different from "B
-			<code class="rounded bg-gray-100 px-1 text-xs">amends</code> A".
-		</p>
-		<dl class="grid grid-cols-1 gap-x-6 gap-y-2 rounded border border-gray-200 bg-white p-5 text-sm sm:grid-cols-2">
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">amends</dt>
-				<dd class="text-gray-700">a bill that proposes to change an act</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">modifies</dt>
-				<dd class="text-gray-700">an indicación changing a bill</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">promulgates</dt>
-				<dd class="text-gray-700">a journal issue making a law official</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">contains</dt>
-				<dd class="text-gray-700">a journal or dossier holding other docs</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">refers_to</dt>
-				<dd class="text-gray-700">a generic "this is about that"</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">cites</dt>
-				<dd class="text-gray-700">an explicit citation in the text</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">mentions</dt>
-				<dd class="text-gray-700">a softer, in-passing reference</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">replaces</dt>
-				<dd class="text-gray-700">a new act fully superseding an old one</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">consolidates</dt>
-				<dd class="text-gray-700">a "clean" version merging an act + its amendments</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">derives_from</dt>
-				<dd class="text-gray-700">one document came out of another</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">interprets</dt>
-				<dd class="text-gray-700">a court ruling on what a law means</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">responds_to</dt>
-				<dd class="text-gray-700">an answer to a parliamentary question</dd>
-			</div>
-			<div>
-				<dt class="font-mono text-xs font-bold text-blue-900">transmits</dt>
-				<dd class="text-gray-700">a communication carrying another document</dd>
-			</div>
-		</dl>
+			<p class="mb-2 text-sm font-bold text-gray-700">Why</p>
+			<ul class="list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+				<li>
+					An escape hatch is a confession — naming it explicitly is what makes the
+					confession useful. Hiding the misfit inside a generic JSON column would be the
+					same mistake we made with the old <code
+						class="rounded bg-gray-100 px-1 text-xs">body</code
+					> field.
+				</li>
+				<li>
+					Schema evolution gets steered by what's in the hatches, not by guesses. The
+					schema tightens over time as patterns surface.
+				</li>
+			</ul>
+		</article>
 	</section>
 
-	<!-- ─────────────────────────────── 4. Versions and changes -->
+	<!-- ─────────────────────────────── 4. The two metrics -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">4. Versions and changes</h2>
-		<p class="mb-4">
-			The novelty in this project is the part where we track <em>what actually changed</em>.
-			Akoma Ntoso (the standard we're inspired by) doesn't have a computable diff between two
-			versions of a law — that's the gap we filled with what we called <em>AKN Diff</em>.
+		<h2 class="mb-3 text-xl font-bold">4. The two metrics that steer everything</h2>
+		<p class="mb-6 text-gray-600">
+			Both metrics fall out of the work for free, as long as we keep the corpus honest.
 		</p>
 
-		<p class="mb-4">
-			The idea is simple. A document like an act has multiple <strong>versions</strong> over
-			time: version 1 is the original 2018 text, version 2 is what it looks like after our
-			boletín passes. Between two versions, we store a <strong>change set</strong> — a list of
-			"this article used to say X, now it says Y."
-		</p>
-
-		<div class="my-6 rounded border border-gray-200 bg-gray-50 p-6">
-			<svg viewBox="0 0 720 200" class="w-full" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-					<marker
-						id="arrow4"
-						viewBox="0 0 10 10"
-						refX="9"
-						refY="5"
-						markerWidth="6"
-						markerHeight="6"
-						orient="auto-start-reverse"
-					>
-						<path d="M0,0 L10,5 L0,10 z" fill="#374151" />
-					</marker>
-				</defs>
-
-				<!-- Act v1 -->
-				<g>
-					<rect
-						x="40"
-						y="60"
-						width="200"
-						height="80"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="140" y="90" text-anchor="middle" font-weight="bold" font-size="14"
-						>Ley 21.000 — v1</text
-					>
-					<text x="140" y="110" text-anchor="middle" font-size="11" fill="#6b7280"
-						>(2018, original)</text
-					>
-					<text x="140" y="125" text-anchor="middle" font-size="10" fill="#9ca3af"
-						>art. 3: "sanción de UF 100"</text
-					>
-				</g>
-
-				<!-- Change set arrow -->
-				<g>
-					<line
-						x1="240"
-						y1="100"
-						x2="480"
-						y2="100"
-						stroke="#374151"
-						stroke-width="2"
-						marker-end="url(#arrow4)"
-					/>
-					<rect
-						x="280"
-						y="60"
-						width="160"
-						height="60"
-						rx="6"
-						fill="#fef3c7"
-						stroke="#b45309"
-						stroke-width="1.5"
-					/>
-					<text x="360" y="85" text-anchor="middle" font-weight="bold" font-size="13"
-						>change set</text
-					>
-					<text x="360" y="105" text-anchor="middle" font-size="11" fill="#92400e"
-						>art. 3: UF 100 → 500</text
-					>
-				</g>
-
-				<!-- Act v2 -->
-				<g>
-					<rect
-						x="480"
-						y="60"
-						width="200"
-						height="80"
-						rx="6"
-						fill="#fff"
-						stroke="#374151"
-						stroke-width="2"
-					/>
-					<text x="580" y="90" text-anchor="middle" font-weight="bold" font-size="14"
-						>Ley 21.000 — v2</text
-					>
-					<text x="580" y="110" text-anchor="middle" font-size="11" fill="#6b7280"
-						>(2026, after boletín)</text
-					>
-					<text x="580" y="125" text-anchor="middle" font-size="10" fill="#9ca3af"
-						>art. 3: "sanción de UF 500"</text
-					>
-				</g>
-			</svg>
+		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<div class="rounded border border-gray-200 bg-white p-5">
+				<p class="mb-2 text-sm font-bold tracking-wider text-gray-500 uppercase">
+					Coverage
+				</p>
+				<p class="mb-3 text-lg font-bold">
+					What % of a country's public legislative data fits the schema?
+				</p>
+				<p class="text-sm text-gray-700">
+					Low coverage means data exists but our schema can't hold it. Tells us where the
+					schema is too narrow.
+				</p>
+			</div>
+			<div class="rounded border border-gray-200 bg-white p-5">
+				<p class="mb-2 text-sm font-bold tracking-wider text-gray-500 uppercase">
+					Completeness
+				</p>
+				<p class="mb-3 text-lg font-bold">
+					What % of the schema's fields end up populated, per country?
+				</p>
+				<p class="text-sm text-gray-700">
+					Low completeness means our schema asks for things this country doesn't track.
+					Tells us where the schema is too wide.
+				</p>
+			</div>
 		</div>
 
-		<p class="mb-4 text-sm">
-			A change set has one row per modified article. Each row is one of: <em>modify</em>,
-			<em>insert</em>, <em>repeal</em>, <em>renumber</em>, <em>renumber + modify</em>, or
-			<em>replace block</em>. With those building blocks we can reconstruct any state of the law
-			from any earlier state, by replaying the change sets in order.
-		</p>
-
-		<p class="text-sm text-gray-600">
-			One quirk: an amendment that's <em>still being debated</em> has a change set with no
-			"result" version yet — we know what's <em>proposed</em>, not what'll be consolidated. So
-			the result version is optional; the base version is required.
+		<p class="mt-6 text-sm text-gray-600">
+			Together they triangulate the right shape: high coverage and high completeness across
+			five countries means the bet held. Anything else is a signal pointing at a specific
+			fix.
 		</p>
 	</section>
 
-	<!-- ─────────────────────────────── 5. What we left out -->
+	<!-- ─────────────────────────────── 5. Where we are right now -->
 	<section class="mb-14">
-		<h2 class="mb-3 text-xl font-bold">5. What we deliberately left out</h2>
+		<h2 class="mb-3 text-xl font-bold">5. Where we are right now</h2>
 		<p class="mb-4 text-gray-600">
-			The schema is research-grade. A few things we could have modeled more rigorously, on
-			purpose didn't:
+			This section reads from the live <code class="rounded bg-gray-100 px-1 text-xs"
+				>research.db</code
+			>. If it looks empty, the build hasn't been run.
+		</p>
+
+		<div class="mb-6 rounded border border-gray-200 bg-white p-5">
+			<p class="mb-3 text-sm font-bold text-gray-700">
+				Phase 1 — one bill end-to-end, per country
+			</p>
+			<p class="mb-4 text-sm text-gray-600">
+				For each of the five target countries, we model one bill that became law: the bill
+				itself, the act it amended, a few trámite events, an amendment, the journal entry
+				that promulgated it. Five countries × ~7 documents = ~35 files. Small enough to keep
+				in your head, big enough to surface real friction.
+			</p>
+
+			<div class="grid grid-cols-1 gap-2 sm:grid-cols-5">
+				{#each data.targetCountries as code (code)}
+					{@const docs = data.byCountry[code]}
+					{@const total = docs?.reduce((s, d) => s + d.n, 0) ?? 0}
+					<div
+						class="rounded border p-3 text-sm {total > 0
+							? 'border-green-300 bg-green-50'
+							: 'border-gray-200 bg-gray-50 text-gray-400'}"
+					>
+						<p class="text-xs tracking-wider uppercase">{code}</p>
+						<p class="font-bold {total > 0 ? 'text-green-900' : ''}">
+							{countryNames[code]}
+						</p>
+						<p class="mt-1 text-xs">
+							{total === 0 ? 'not loaded yet' : `${total} doc${total === 1 ? '' : 's'}`}
+						</p>
+					</div>
+				{/each}
+			</div>
+		</div>
+
+		{#if data.total > 0}
+			<div class="mb-6 rounded border border-gray-200 bg-white p-5">
+				<p class="mb-3 text-sm font-bold text-gray-700">What's loaded</p>
+				<table class="w-full text-sm">
+					<thead class="border-b border-gray-200 text-left text-xs text-gray-500 uppercase">
+						<tr>
+							<th class="py-2 pr-4 font-bold">country</th>
+							<th class="py-2 pr-4 font-bold">type</th>
+							<th class="py-2 font-bold">count</th>
+						</tr>
+					</thead>
+					<tbody class="divide-y divide-gray-100">
+						{#each data.targetCountries as code (code)}
+							{#each data.byCountry[code] ?? [] as row (code + row.type)}
+								<tr>
+									<td class="py-2 pr-4 text-gray-700">{countryNames[code]}</td>
+									<td class="py-2 pr-4 font-mono text-xs">{row.type}</td>
+									<td class="py-2 text-gray-700">{row.n}</td>
+								</tr>
+							{/each}
+						{/each}
+					</tbody>
+					<tfoot class="border-t border-gray-200 text-sm">
+						<tr>
+							<td class="py-2 pr-4 font-bold" colspan="2">Total</td>
+							<td class="py-2 font-bold">{data.total}</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		{/if}
+
+		<div class="rounded border-l-4 border-blue-400 bg-blue-50 p-4 text-sm">
+			<p class="mb-2 font-bold text-blue-900">What we expect Phase 1 to surface</p>
+			<ul class="list-disc space-y-1 pl-5 text-blue-950">
+				<li>
+					Concepts we generalized too eagerly — fields full in Chile and empty everywhere
+					else.
+				</li>
+				<li>
+					Concepts we missed — country data getting dumped into <code
+						class="rounded bg-blue-100 px-1 text-xs">countrySpecific</code
+					> for the same reason in two or more countries.
+				</li>
+				<li>
+					Queries that should be one join and turn out to be five — those are the schema
+					telling us its shape is wrong, even if every file loads.
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- ─────────────────────────────── 6. What we deliberately didn't model -->
+	<section class="mb-14">
+		<h2 class="mb-3 text-xl font-bold">6. What we deliberately didn't model</h2>
+		<p class="mb-4 text-gray-600">
+			Boundaries matter. A few things we could have built and chose not to:
 		</p>
 		<ul class="list-disc space-y-3 pl-5 text-sm">
 			<li>
-				<strong>No persons table.</strong> Sponsors, amendment proposers, and questioners are
-				stored as JSON blobs on each document. The day a customer asks "all bills by Diputada
-				Pérez across countries", we'll lift this into a real table.
+				<strong>No persons table.</strong> Sponsors and proposers are JSON blobs on each
+				document. The day someone asks "all bills by Diputada Pérez across countries" we'll
+				lift this into a real table — not before.
 			</li>
 			<li>
-				<strong>No cross-country ontology.</strong> Chile's "Cámara de Diputados" and Spain's
-				"Congreso de los Diputados" are separate strings, not linked concepts. AKN gives us the
-				framework to do this; we haven't built the mapping.
+				<strong>No cross-country ontology.</strong> Chile's "Cámara de Diputados" and
+				Spain's "Congreso de los Diputados" are separate strings. AKN gives the framework
+				for linking them; we haven't built the mapping and won't until a query needs it.
 			</li>
 			<li>
-				<strong>No process model.</strong> The trámite log captures what happened, not what
-				<em>should</em> happen. A full BPMN model of each country's ritual is out of scope for
-				now (we explored it on Feb 10 and parked it).
+				<strong>No process model.</strong> We log what happened, not what
+				<em>should</em> happen. A full BPMN model of each country's procedure was explored
+				and parked.
 			</li>
 			<li>
-				<strong>No status translations.</strong> The UI translates from a fixed set of
-				statuses; the country's own phrasing is preserved alongside, never normalized away.
-			</li>
-			<li>
-				<strong>A "country specific" dumping ground.</strong> When a country tracks something
-				we don't have a home for, it goes into a free-form blob on the document. Watching what
-				accumulates there is how we'll discover new shared fields. Once the same shape shows up
-				in 2+ countries, we promote it to a real column.
+				<strong>No silent normalization.</strong> Every country-specific label is preserved
+				alongside our normalized one. We never throw the country's voice away.
 			</li>
 		</ul>
 	</section>
 
 	<footer class="mt-16 border-t border-gray-200 pt-6 text-sm text-gray-500">
 		<p>
-			The active schema is
+			Active schema:
 			<a
 				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v3-schema.ts"
 				class="text-blue-600 hover:underline"
 				target="_blank"
 				rel="noopener">research/schema/v3-schema.ts</a
-			>. v3 inverts the architecture: the AKN XML blob on each document IS
-			the document, and every column on this page is now extracted from
-			that XML at build time. Earlier versions
-			(<a
-				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v1-schema.ts"
-				class="text-blue-600 hover:underline"
-				target="_blank"
-				rel="noopener">v1</a
-			>,
+			>. Research plan:
 			<a
-				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v2-schema.ts"
+				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/schema-research-plan.md"
 				class="text-blue-600 hover:underline"
 				target="_blank"
-				rel="noopener">v2</a
-			>) are kept for reference. If something on this page disagrees with
-			the active schema, the page is wrong.
+				rel="noopener">schema-research-plan.md</a
+			>.
 		</p>
 	</footer>
 </div>

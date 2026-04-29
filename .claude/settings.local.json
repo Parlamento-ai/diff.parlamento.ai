@@ -47,7 +47,14 @@
       "Bash(npm run *)",
       "Bash(sqlite3 /Users/lb/work/diff-law/research/schema/research.db -header -column \"SELECT d.country_code, d.type, d.native_id, substr\\(d.title, 1, 50\\) AS title FROM diff_documents d ORDER BY d.type;\")",
       "Bash(sqlite3 /Users/lb/work/diff-law/research/schema/research.db -header -column \"SELECT df.native_id AS from_doc, l.relation, dt.native_id AS to_doc FROM diff_document_links l JOIN diff_documents df ON df.id = l.from_id JOIN diff_documents dt ON dt.id = l.to_id;\")",
-      "Bash(sqlite3 /Users/lb/work/diff-law/research/schema/research.db -header -column \"SELECT sequence, action_type, action_type_local FROM diff_bill_events ORDER BY sequence;\")"
+      "Bash(sqlite3 /Users/lb/work/diff-law/research/schema/research.db -header -column \"SELECT sequence, action_type, action_type_local FROM diff_bill_events ORDER BY sequence;\")",
+      "Bash(yarn dev *)",
+      "Bash(git -C /Users/lb/work/diff-law diff research/schema/loader.ts)",
+      "Bash(git -C /Users/lb/work/diff-law log --all --oneline --diff-filter=D -- 'src/routes/fake/**')",
+      "Bash(sqlite3 research/schema/research.db \".tables\")",
+      "Bash(sqlite3 research/schema/research.db \"SELECT countryCode, type, COUNT\\(*\\) FROM diff_documents GROUP BY countryCode, type ORDER BY countryCode, type;\")",
+      "Bash(sqlite3 research/schema/research.db \"PRAGMA table_info\\(diff_documents\\);\")",
+      "Bash(sqlite3 research/schema/research.db \"SELECT country_code, type, COUNT\\(*\\) FROM diff_documents GROUP BY country_code, type ORDER BY country_code, type;\")"
     ]
   },
   "enableAllProjectMcpServers": true,

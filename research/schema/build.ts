@@ -8,13 +8,16 @@
  * v3 round trip:
  *   1. Wipe research.db.
  *   2. Recreate every table from the current schema.
- *   3. Walk data/<country>/<type>/*.yaml in dependency order. For each
- *      file: parse YAML wrapper, parse + extract from the AKN XML,
- *      insert the document row + the type-specific detail row + any
- *      version rows + (for bills) any extracted events.
- *   4. Resolve cross-document links in a second pass — the loader
- *      pulled hrefs out of every <ref>/<componentRef>/etc., here we
- *      look them up by (country, type, nativeId) and write rows.
+ *   3. Walk data/<country>/<type>/*.xml in dependency order. Skip
+ *      `.vN.xml` siblings — those are prior versions, loaded indirectly
+ *      via <akndiff:priorVersion href="..."> declarations on the
+ *      current-state file. For each current-state .xml: parse + extract
+ *      from the AKN XML, insert the document row + the type-specific
+ *      detail row + any prior-version rows + (for bills) any extracted
+ *      events.
+ *   4. Resolve cross-document links in a second pass — the loader pulled
+ *      hrefs out of every <ref>/<componentRef>/etc., here we look them
+ *      up by (country, type, nativeId) and write rows.
  *   5. Print a summary.
  *
  * Failure mode: print the offending file path + reason, then exit
@@ -31,6 +34,7 @@ import { getTableConfig, type SQLiteTable } from 'drizzle-orm/sqlite-core';
 import * as schema from './current';
 import {
 	fingerprintOf,
+	isPriorVersionFile,
 	LoaderError,
 	parseDocFile,
 	toEpochMs,
@@ -167,7 +171,12 @@ function walkCorpus(): { docs: ParsedDoc[]; countries: string[] } {
 		);
 		for (const typeDir of types) {
 			const dir = join(countryDir, typeDir);
-			const files = readdirSync(dir).filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'));
+			// .xml files are documents. .vN.xml siblings are prior versions
+			// loaded indirectly through <akndiff:priorVersion> declarations
+			// on their current-state parent.
+			const files = readdirSync(dir).filter(
+				(f) => f.endsWith('.xml') && !isPriorVersionFile(f)
+			);
 			for (const file of files) {
 				docs.push(parseDocFile(join(dir, file), country));
 			}
@@ -231,7 +240,8 @@ function insertDocument(db: Db, doc: ParsedDoc): string {
 			scrapingId: `research:${doc.countryCode}:${doc.type}:${doc.nativeId}`,
 			fingerprint: fingerprintOf(doc.xml),
 			publishedAt: new Date(publishedAt),
-			lastActivityAt: new Date(lastActivityAt)
+			lastActivityAt: new Date(lastActivityAt),
+			researchNotes: doc.researchNotes ?? null
 		})
 		.run();
 	return id;

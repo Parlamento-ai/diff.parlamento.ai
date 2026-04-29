@@ -24,7 +24,13 @@ The work happens in iterations, across multiple contributors, across multiple co
 - A contributor working on Spain can't review what someone did for Chile without booting a tool.
 - The "experiment" can't be reproduced — there's no clean line between "the schema" and "the data we shaped to fit the schema."
 
-So: **text files (YAML) are the source of truth. The SQLite database is a build artifact, regenerated from scratch on every run.**
+So: **AKN-shaped XML files are the source of truth. The SQLite database is a build artifact, regenerated from scratch on every run.**
+
+> **Note (v3):** earlier drafts of this plan used YAML wrappers around an inline XML
+> blob. v3 dropped that — every document is a standalone `.xml` file now, with the
+> plumbing the SQL needs (`nativeId`, `sourceUrl`, status, sponsors, prior-version
+> pointers) authored inside our `akndiff:` namespace under `<meta><proprietary>`.
+> The folder layout below still holds; just read `.yaml` as `.xml`.
 
 This forces three good things:
 
@@ -165,6 +171,19 @@ From the 28/04 entry, restated:
 2. **Misrepresented data**: information that exists in a country but has nowhere to go in our schema except a `countrySpecific` blob. These are the candidates for new shared columns — once we see the same shape in 2+ countries.
 
 Both signals come for free if we keep the YAML honest. Don't omit a field just because the schema doesn't have a home for it — drop it into `countrySpecific` and let the synthesis surface it later.
+
+## Capturing edge cases as you go: `researchNotes`
+
+Every document has a free-form `researchNotes` text field on `diff_documents`. It is NOT extracted — it lives in `<akndiff:researchNotes>` under `<meta><proprietary>` of the XML, and the loader copies it verbatim to the column.
+
+This is the contributor's notebook. While modeling a country, if you hit any of the signals above — a column that's empty because the source has nothing to fill it with, an awkward field you had to bend, a concept the schema doesn't know how to hold, a shape you had to flatten — write it down on the document where you noticed it. Concrete examples:
+
+- "EU 'rapporteur' role doesn't map cleanly to sponsors — flattened as `role='rapporteur'` but loses the committee link."
+- "No promulgation date in the source; used adoption date instead."
+- "Five fields on `BillTable` end up empty for this country — see CL bills, this might mean those fields are CL-specific."
+- "Source publishes amendments as a single PDF blob; had to manually split into per-article changes."
+
+Phase 3's synthesis is where these notes pay off: instead of digging back through everyone's memory, we grep `researchNotes` across the corpus and the friction surfaces itself. Keep the notes per-document, not per-country — the country-level patterns are what we'll discover by reading them in aggregate.
 
 ## Definition of done
 

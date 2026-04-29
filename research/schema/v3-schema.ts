@@ -466,7 +466,32 @@ export const DocumentTable = sqliteTable(
 		 * type equivalent — bills use submission, acts use
 		 * promulgation, etc., normalized to one field here).
 		 */
-		publishedAt: integer('published_at', { mode: 'timestamp_ms' }).notNull()
+		publishedAt: integer('published_at', { mode: 'timestamp_ms' }).notNull(),
+
+		// ── Research notes (free-form, contributor-authored) ────────────
+
+		/**
+		 * Free-form notes from the contributor who modeled this document.
+		 * NOT extracted from the XML — authored directly alongside the
+		 * data.
+		 *
+		 * The point: when someone is adding a country and hits a weird
+		 * edge case, they have an organized place to record it instead
+		 * of losing it. Examples of what belongs here:
+		 *   - "EU 'rapporteur' role doesn't map cleanly to sponsors —
+		 *      flattened as role='rapporteur' but loses committee link."
+		 *   - "No promulgation date in the source; used adoption date.
+		 *      Watch this when comparing across countries."
+		 *   - "Five fields on BillTable end up empty for this country —
+		 *      see CL bills, this might mean those fields are CL-specific."
+		 *   - "Source publishes amendments as a single PDF blob; had to
+		 *      manually split into per-article changes."
+		 *
+		 * Read by humans during the synthesis pass (Phase 3). Surfaces
+		 * the underused fields and misrepresented data the research
+		 * plan is watching for. Null when there's nothing to note.
+		 */
+		researchNotes: text('research_notes')
 	},
 	(t) => ({
 		naturalKey: uniqueIndex('diff_docs_natural_key').on(

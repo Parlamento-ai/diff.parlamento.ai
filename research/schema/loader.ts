@@ -1,26 +1,37 @@
 /**
- * YAML → row mapping for the v3 research schema.
+ * .xml file → row mapping for the v3 research schema.
  *
- * v3 inverts v2: the AKN XML is the source of truth, SQL columns are
- * a derived index. The YAML on disk is a thin wrapper carrying:
- *   - identity / plumbing the build script needs without parsing
- *     (`type`, `nativeId`, `sourceUrl`)
- *   - the canonical AKN XML under `xml:`
- *   - an optional `versions:` array, each with its own `xml:`
+ * v3 inverts v2: the AKN XML IS the document. There is no YAML wrapper.
+ * Plumbing the SQL needs but AKN core doesn't model lives in
+ * `<akndiff:*>` elements under `<meta><proprietary>`.
  *
- * EVERYTHING ELSE (title, status, sponsors, events, links, dates) is
- * extracted from the XML by this loader. If the XML disagrees with
- * any column we extract, the XML wins — the column is regenerated.
+ * What we extract from one .xml file:
+ *   - type            ← the AKN root element under <akomaNtoso>
+ *                       (<bill>, <act>, <officialGazette>, ...)
+ *   - nativeId        ← <akndiff:nativeId>
+ *   - sourceUrl       ← <akndiff:sourceUrl>
+ *   - title           ← <longTitle> (or <FRBRalias>)
+ *   - topics          ← <keyword showAs="...">
+ *   - language        ← <FRBRlanguage language="...">
+ *   - publishedAt     ← per-type lifecycle event date
+ *   - per-type detail (status, sponsors, dates, ...)
+ *   - events (bills)  ← <lifecycle><eventRef>
+ *   - links           ← <ref>, <componentRef>, <mref>, ...
+ *   - prior versions  ← <akndiff:priorVersion href="..."> sibling files
+ *
+ * Filenames:
+ *   - The current state of doc N is at  <type>s/N.xml.
+ *   - Prior versions live alongside  <type>s/N.v1.xml,  N.v2.xml, etc.
+ *   - The walker skips `.vN.xml` files; they're loaded indirectly via
+ *     the `<akndiff:priorVersion>` declarations in the current XML.
  *
  * Validation is "throw on mismatch". The entrypoint (build.ts) catches
- * and prints the file path + reason. We do NOT validate against OASIS
- * AKN XSDs in this rig — the corpus is small enough that misshapen
- * XML is caught by extraction failing loudly. XSD validation is a
- * later pass.
+ * and prints the file path + reason. We don't validate against OASIS
+ * AKN XSDs in this rig — XSD validation is a later pass.
  */
 
 import { readFileSync } from 'node:fs';
-import { parse as parseYaml } from 'yaml';
+import { dirname, join } from 'node:path';
 import { XMLParser } from 'fast-xml-parser';
 import type { DocumentType } from './current';
 
@@ -69,20 +80,22 @@ export type ParsedDoc = {
 	filePath: string;
 	countryCode: string;
 
-	// from the YAML wrapper (plumbing)
+	// extracted from the XML
 	type: DocumentType;
 	nativeId: string;
 	sourceUrl: string;
-
-	// the source of truth
 	xml: string;
-
-	// extracted from the current XML
 	title: string;
 	language: string;
 	topics: string[];
 	publishedAt: string;
 	lastActivityAt: string;
+	/**
+	 * Free-form notes the contributor authored alongside the data, in
+	 * <akndiff:researchNotes> under <meta><proprietary>. Optional.
+	 * NOT extracted — read verbatim from that element's text content.
+	 */
+	researchNotes?: string;
 
 	// extracted, type-specific
 	bill?: {
@@ -136,9 +149,8 @@ function requireField<T>(filePath: string, value: T | null | undefined, name: st
 }
 
 /**
- * Date strings → epoch ms. Accepts 'YYYY-MM-DD' (treated as UTC midnight)
- * and full ISO strings. We don't try to be clever about timezones; the
- * experiment doesn't need it.
+ * Date strings → epoch ms. Accepts 'YYYY-MM-DD' (UTC midnight) and
+ * full ISO strings. The experiment doesn't need timezone subtlety.
  */
 export function toEpochMs(filePath: string, name: string, value: unknown): number {
 	if (value instanceof Date) return value.getTime();
@@ -153,41 +165,22 @@ export function toEpochMs(filePath: string, name: string, value: unknown): numbe
 	throw new LoaderError(filePath, `field '${name}' is not a valid date: ${JSON.stringify(value)}`);
 }
 
-const KNOWN_TYPES: ReadonlySet<DocumentType> = new Set([
-	'bill',
-	'act',
-	'amendment',
-	'judgment',
-	'journal',
-	'document_collection',
-	'question',
-	'communication',
-	'debate',
-	'citation',
-	'change_set',
-	'statement',
-	'portion',
-	'doc'
-]);
-
 // ──────────────────────────────────────────────────────────────────────
 // XML parser config — fast-xml-parser, namespace-stripped.
 // ──────────────────────────────────────────────────────────────────────
 //
 // We parse with `removeNSPrefix: true`. AKN core and `akndiff:` elements
-// look identical to the extractor afterwards, which is what we want:
-// `<keyword>` and `<akndiff:keyword>` would both surface as `keyword`.
-// We don't currently rely on this collision, but it keeps the extractor
-// simple. If the corpus grows enough that we need to disambiguate, we
-// flip `removeNSPrefix` off and key by the full prefixed name.
+// look identical to the extractor afterwards, which is what we want
+// today: `<keyword>` and `<akndiff:keyword>` would both surface as
+// `keyword`. If the corpus grows enough that the namespaces need to be
+// disambiguated, flip `removeNSPrefix` off and key by prefixed name.
 
 const xmlParser = new XMLParser({
 	ignoreAttributes: false,
 	attributeNamePrefix: '@_',
 	removeNSPrefix: true,
-	// Force these elements to always be arrays even when there's only
-	// one — saves the extractor from sprinkling `Array.isArray()`
-	// everywhere.
+	// Force these elements to always be arrays, even when there's only
+	// one — saves the extractor from sprinkling `Array.isArray()`.
 	isArray: (name) =>
 		new Set([
 			'eventRef',
@@ -201,6 +194,7 @@ const xmlParser = new XMLParser({
 			'componentRef',
 			'passiveRef',
 			'authorialNote',
+			'priorVersion',
 			'article',
 			'p'
 		]).has(name)
@@ -219,7 +213,7 @@ function parseXmlOrThrow(filePath: string, xml: string, where: string): XmlNode 
 	}
 }
 
-/** Walk an XML tree and collect every node where `pred` returns true. */
+/** Walk an XML tree and yield every node. */
 function* walk(node: unknown): IterableIterator<XmlNode> {
 	if (!node || typeof node !== 'object') return;
 	if (Array.isArray(node)) {
@@ -236,8 +230,17 @@ function findFirst(root: unknown, key: string): XmlNode | undefined {
 	for (const n of walk(root)) {
 		if (key in n) {
 			const v = n[key];
-			if (Array.isArray(v)) return v[0] as XmlNode;
+			if (Array.isArray(v)) {
+				const first = v[0];
+				return typeof first === 'object' && first !== null ? (first as XmlNode) : undefined;
+			}
 			if (typeof v === 'object' && v !== null) return v as XmlNode;
+			// Text-only element, e.g. <akndiff:nativeId>ley-21000</akndiff:nativeId>.
+			// fast-xml-parser collapses those to a bare string. Synthesize a
+			// node so the rest of the extractor doesn't have to care.
+			if (typeof v === 'string' || typeof v === 'number' || typeof v === 'boolean') {
+				return { '#text': String(v) };
+			}
 		}
 	}
 	return undefined;
@@ -248,8 +251,17 @@ function findAll(root: unknown, key: string): XmlNode[] {
 	for (const n of walk(root)) {
 		if (key in n) {
 			const v = n[key];
-			if (Array.isArray(v)) out.push(...(v as XmlNode[]));
-			else if (typeof v === 'object' && v !== null) out.push(v as XmlNode);
+			if (Array.isArray(v)) {
+				for (const item of v) {
+					if (typeof item === 'object' && item !== null) out.push(item as XmlNode);
+					else if (typeof item === 'string' || typeof item === 'number' || typeof item === 'boolean') {
+						out.push({ '#text': String(item) });
+					}
+				}
+			} else if (typeof v === 'object' && v !== null) out.push(v as XmlNode);
+			else if (typeof v === 'string' || typeof v === 'number' || typeof v === 'boolean') {
+				out.push({ '#text': String(v) });
+			}
 		}
 	}
 	return out;
@@ -281,13 +293,51 @@ function attr(node: XmlNode | undefined, name: string): string | undefined {
 }
 
 // ──────────────────────────────────────────────────────────────────────
-// Extractors — XML → projected SQL columns.
+// Type discrimination
 // ──────────────────────────────────────────────────────────────────────
 
 /**
- * Pull the document title. AKN puts it in `<longTitle><p>...</p></longTitle>`
- * inside `<preface>`. Fall back to the first `<FRBRalias>` if missing.
+ * Every AKN-shaped document has exactly one root child of <akomaNtoso>:
+ * <bill>, <act>, <officialGazette>, etc. Map that element name to our
+ * DocumentType union.
  */
+const AKN_ROOT_TO_TYPE: Record<string, DocumentType> = {
+	bill: 'bill',
+	act: 'act',
+	amendment: 'amendment',
+	judgment: 'judgment',
+	officialGazette: 'journal',
+	doc: 'doc',
+	statement: 'statement',
+	debate: 'debate',
+	portion: 'portion',
+	documentCollection: 'document_collection',
+	communication: 'communication',
+	question: 'question',
+	citation: 'citation',
+	changeSet: 'change_set'
+};
+
+function inferType(filePath: string, xmlRoot: XmlNode): DocumentType {
+	const akn = xmlRoot.akomaNtoso as XmlNode | undefined;
+	if (!akn) {
+		throw new LoaderError(filePath, 'XML root is not <akomaNtoso>');
+	}
+	for (const key of Object.keys(akn)) {
+		if (key.startsWith('@_') || key === '#text') continue;
+		const t = AKN_ROOT_TO_TYPE[key];
+		if (t) return t;
+	}
+	throw new LoaderError(
+		filePath,
+		`<akomaNtoso> contains no recognized AKN root element (one of: ${Object.keys(AKN_ROOT_TO_TYPE).join(', ')})`
+	);
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// Extractors — XML → projected SQL columns.
+// ──────────────────────────────────────────────────────────────────────
+
 function extractTitle(filePath: string, xmlRoot: XmlNode): string {
 	const longTitle = findFirst(xmlRoot, 'longTitle');
 	if (longTitle) {
@@ -316,7 +366,6 @@ function extractTopics(xmlRoot: XmlNode): string[] {
 function extractLanguage(xmlRoot: XmlNode): string {
 	const lang = findFirst(xmlRoot, 'FRBRlanguage');
 	const code = attr(lang, 'language') ?? 'spa';
-	// AKN uses ISO 639-3 ('spa'); the rest of our system uses ISO 639-1 ('es').
 	const map: Record<string, string> = {
 		spa: 'es',
 		eng: 'en',
@@ -329,33 +378,32 @@ function extractLanguage(xmlRoot: XmlNode): string {
 }
 
 /**
- * The single "publishedAt" column on DocumentTable normalizes per type:
- *   - bill → submission date
- *   - act → promulgation date
+ * The single "publishedAt" column normalizes per type:
+ *   - bill    → submission date
+ *   - act     → promulgation date
  *   - journal → issue date
- *   - else → first FRBRdate name="generation"
+ *   - else    → first <FRBRdate name="generation">
  */
 function extractPublishedAt(filePath: string, type: DocumentType, xmlRoot: XmlNode): string {
 	if (type === 'bill') {
-		const ev = findAll(xmlRoot, 'eventRef').find((e) => attr(e, 'refersTo') === '#submitted');
-		if (ev) {
-			const d = attr(ev, 'date');
-			if (d) return d;
-		}
+		const ev = findAll(xmlRoot, 'eventRef').find(
+			(e) => attr(e, 'refersTo') === '#submitted'
+		);
+		const d = attr(ev, 'date');
+		if (d) return d;
 	}
 	if (type === 'act') {
-		const ev = findAll(xmlRoot, 'eventRef').find((e) => attr(e, 'refersTo') === '#promulgation');
-		if (ev) {
-			const d = attr(ev, 'date');
-			if (d) return d;
-		}
+		const ev = findAll(xmlRoot, 'eventRef').find(
+			(e) => attr(e, 'refersTo') === '#promulgation'
+		);
+		const d = attr(ev, 'date');
+		if (d) return d;
 	}
 	if (type === 'journal') {
 		const pub = findFirst(xmlRoot, 'publication');
 		const d = attr(pub, 'date');
 		if (d) return d;
 	}
-	// Generic fallback: first <FRBRdate name="generation"> under FRBRWork.
 	const work = findFirst(xmlRoot, 'FRBRWork');
 	if (work) {
 		const dates = findAll(work, 'FRBRdate');
@@ -390,17 +438,12 @@ function extractEvents(xmlRoot: XmlNode): ExtractedEvent[] {
  * Walk every AKN linking element and pull href + relation. This is the
  * heart of v3's "links extracted not authored" rule.
  *
- * Hrefs come in two shapes here:
- *
- *   Internal AKN URIs: `/akn/<country>/<type>/<date>/<nativeId>` — we
- *   parse out (country, type, nativeId) so the build script can resolve
- *   to a real document id during the second pass.
- *
- *   Anchor refs: `#some-eId` — internal cross-references, not edges to
- *   other documents. Skipped at extraction time.
- *
- *   External http(s) URLs: kept verbatim on the row but left
- *   unresolved.
+ * Hrefs come in three shapes:
+ *   - Internal AKN URIs: `/akn/<country>/<type>/<date>/<nativeId>` —
+ *     parsed into (country, type, nativeId) for resolution.
+ *   - Anchor refs: `#some-eId` — internal cross-references, not edges.
+ *     Skipped at extraction time.
+ *   - External http(s) URLs: kept verbatim, left unresolved.
  */
 function extractLinks(xmlRoot: XmlNode): ExtractedLink[] {
 	const out: ExtractedLink[] = [];
@@ -409,7 +452,7 @@ function extractLinks(xmlRoot: XmlNode): ExtractedLink[] {
 		for (const n of findAll(xmlRoot, key)) {
 			const href = attr(n, 'href') ?? attr(n, 'src');
 			if (!href) continue;
-			if (href.startsWith('#')) continue; // internal anchor
+			if (href.startsWith('#')) continue;
 			const parsed = parseAknHref(href);
 			out.push({
 				relation: inferRelation(key, defaultRelation),
@@ -429,10 +472,6 @@ function extractLinks(xmlRoot: XmlNode): ExtractedLink[] {
 	visit('componentRef', 'contains');
 	visit('authorialNote', 'cites');
 
-	// Promotion: a bill's body containing a <ref> to an act is normally
-	// a `mentions`. But if the AKN proprietary block declares the bill
-	// amends an act, prefer 'amends' for that target. We don't have
-	// that explicit element yet; left as a future extractor refinement.
 	return out;
 }
 
@@ -458,30 +497,12 @@ function parseAknHref(
 	const parts = href.replace(/^\/akn\//, '').split('/');
 	if (parts.length < 3) return undefined;
 	const [country, aknType, third, fourth] = parts;
-	const aknToType: Record<string, DocumentType> = {
-		bill: 'bill',
-		act: 'act',
-		amendment: 'amendment',
-		judgment: 'judgment',
-		officialGazette: 'journal',
-		journal: 'journal',
-		statement: 'statement',
-		debate: 'debate',
-		doc: 'doc',
-		portion: 'portion',
-		documentCollection: 'document_collection',
-		communication: 'communication',
-		question: 'question',
-		citation: 'citation',
-		changeSet: 'change_set'
-	};
-	const type = aknToType[aknType];
+	const type = AKN_ROOT_TO_TYPE[aknType];
 	if (!type) return undefined;
-	// AKN URIs typically encode date before the work id:
-	// /akn/cl/act/2018-03-15/ley-21000  → nativeId = 'ley-21000'
-	// /akn/cl/journal/DO-2026-01-15     → nativeId = 'DO-2026-01-15' (no date)
 	const dateLike = /^\d{4}-\d{2}-\d{2}$/.test(third);
-	const nativeId = dateLike ? fourth?.split('!')[0]?.split('@')[0] : third?.split('!')[0]?.split('@')[0];
+	const nativeId = dateLike
+		? fourth?.split('!')[0]?.split('@')[0]
+		: third?.split('!')[0]?.split('@')[0];
 	if (!nativeId) return undefined;
 	return { country, type, nativeId };
 }
@@ -507,8 +528,6 @@ function extractBill(filePath: string, xmlRoot: XmlNode): ParsedDoc['bill'] {
 	const urgencyNode = findFirst(xmlRoot, 'urgency');
 	const urgency = urgencyNode ? textOf(urgencyNode) : undefined;
 
-	// Sponsors: <akndiff:sponsor refersTo="#dip-perez"/> + the matching
-	// <TLCPerson eId="dip-perez" showAs="Diputada Pérez">...</TLCPerson>.
 	const persons = new Map<string, XmlNode>();
 	for (const p of findAll(xmlRoot, 'TLCPerson')) {
 		const id = attr(p, 'eId');
@@ -595,60 +614,100 @@ function extractJournal(filePath: string, xmlRoot: XmlNode): ParsedDoc['journal'
 	};
 }
 
+// ─── Prior version files ──────────────────────────────────────────────
+
+/**
+ * Read every <akndiff:priorVersion href="..." date="..." version="..."/>
+ * declared on the current XML, resolve hrefs relative to the current
+ * file, and load the sibling .xml content. The build script writes one
+ * row per entry into diff_document_versions.
+ */
+function extractVersions(filePath: string, xmlRoot: XmlNode): ExtractedVersion[] {
+	const out: ExtractedVersion[] = [];
+	const decls = findAll(xmlRoot, 'priorVersion');
+	const baseDir = dirname(filePath);
+	for (const d of decls) {
+		const href = attr(d, 'href');
+		if (!href) {
+			throw new LoaderError(filePath, '<akndiff:priorVersion> missing href');
+		}
+		const versionStr = attr(d, 'version');
+		const date = attr(d, 'date');
+		if (!versionStr || !date) {
+			throw new LoaderError(
+				filePath,
+				`<akndiff:priorVersion href="${href}"> needs version + date attributes`
+			);
+		}
+		const versionPath = join(baseDir, href);
+		let xml: string;
+		try {
+			xml = readFileSync(versionPath, 'utf8');
+		} catch (err) {
+			throw new LoaderError(
+				filePath,
+				`<akndiff:priorVersion href="${href}"> cannot be read: ${(err as Error).message}`
+			);
+		}
+		// Validate that the sibling parses — we discard the parsed AST,
+		// the build only stores the raw string.
+		parseXmlOrThrow(filePath, xml, `priorVersion[${href}]`);
+		out.push({
+			version: Number(versionStr),
+			publishedAt: date,
+			xml,
+			changeNote: attr(d, 'changeNote'),
+			sourceUrl: attr(d, 'sourceUrl')
+		});
+	}
+	return out;
+}
+
 // ──────────────────────────────────────────────────────────────────────
-// Main entrypoint: parse one YAML file into a ParsedDoc.
+// Main entrypoint: parse one .xml file into a ParsedDoc.
 // ──────────────────────────────────────────────────────────────────────
+
+/**
+ * Returns true for files that look like a prior-version sibling
+ * (e.g. `ley-21000.v1.xml`). The walker uses this to skip them — they
+ * load indirectly via `<akndiff:priorVersion>` declarations on their
+ * current-state parent.
+ */
+export function isPriorVersionFile(filename: string): boolean {
+	return /\.v\d+\.xml$/i.test(filename);
+}
 
 export function parseDocFile(filePath: string, countryCode: string): ParsedDoc {
-	const raw = readFileSync(filePath, 'utf8');
-	let parsed: Record<string, unknown>;
-	try {
-		parsed = parseYaml(raw) as Record<string, unknown>;
-	} catch (err) {
-		throw new LoaderError(filePath, `YAML parse error: ${(err as Error).message}`);
-	}
-	if (!parsed || typeof parsed !== 'object') {
-		throw new LoaderError(filePath, 'top-level YAML is not an object');
-	}
+	const xml = readFileSync(filePath, 'utf8');
+	const xmlRoot = parseXmlOrThrow(filePath, xml, 'root');
 
-	const type = requireField(filePath, parsed.type as DocumentType, 'type');
-	if (!KNOWN_TYPES.has(type)) {
-		throw new LoaderError(
-			filePath,
-			`unknown type '${type}'. Known: ${[...KNOWN_TYPES].join(', ')}`
-		);
-	}
-	const nativeId = requireField(filePath, parsed.nativeId as string, 'nativeId');
-	const sourceUrl = requireField(filePath, parsed.sourceUrl as string, 'sourceUrl');
-	const xml = requireField(filePath, parsed.xml as string, 'xml');
+	const type = inferType(filePath, xmlRoot);
 
-	const xmlRoot = parseXmlOrThrow(filePath, xml, 'xml');
+	const nativeIdNode = findFirst(xmlRoot, 'nativeId');
+	const nativeId = requireField(
+		filePath,
+		nativeIdNode ? textOf(nativeIdNode) : undefined,
+		'akndiff:nativeId'
+	);
+
+	const sourceUrlNode = findFirst(xmlRoot, 'sourceUrl');
+	const sourceUrl = requireField(
+		filePath,
+		sourceUrlNode ? textOf(sourceUrlNode) : undefined,
+		'akndiff:sourceUrl'
+	);
+
+	const researchNotesNode = findFirst(xmlRoot, 'researchNotes');
+	const researchNotesText = researchNotesNode ? textOf(researchNotesNode).trim() : '';
+	const researchNotes = researchNotesText ? researchNotesText : undefined;
 
 	const title = extractTitle(filePath, xmlRoot);
 	const language = extractLanguage(xmlRoot);
 	const topics = extractTopics(xmlRoot);
 	const publishedAt = extractPublishedAt(filePath, type, xmlRoot);
 
-	const versions: ExtractedVersion[] = [];
-	if (Array.isArray(parsed.versions)) {
-		for (const v of parsed.versions as Array<Record<string, unknown>>) {
-			const vXml = requireField(filePath, v.xml as string, 'versions[].xml');
-			parseXmlOrThrow(filePath, vXml, 'versions[].xml'); // validate parses
-			versions.push({
-				version: requireField(filePath, v.version as number, 'versions[].version'),
-				publishedAt: requireField(
-					filePath,
-					v.publishedAt as string,
-					'versions[].publishedAt'
-				),
-				xml: vXml,
-				changeNote: (v.changeNote as string) ?? undefined,
-				sourceUrl: (v.sourceUrl as string) ?? undefined
-			});
-		}
-	}
+	const versions = extractVersions(filePath, xmlRoot);
 
-	// lastActivityAt: latest event date if any, else publishedAt.
 	const events = type === 'bill' ? extractEvents(xmlRoot) : [];
 	const lastActivityAt =
 		[...events].map((e) => e.occurredAt).sort().pop() ??
@@ -668,6 +727,7 @@ export function parseDocFile(filePath: string, countryCode: string): ParsedDoc {
 		topics,
 		publishedAt,
 		lastActivityAt,
+		researchNotes,
 		events,
 		links,
 		versions
@@ -681,9 +741,8 @@ export function parseDocFile(filePath: string, countryCode: string): ParsedDoc {
 }
 
 // ──────────────────────────────────────────────────────────────────────
-// Fingerprints — cheap and deterministic. In v3 we hash the canonical
-// XML directly: same bytes → same fingerprint. Just enough for the
-// schema's NOT NULL constraint.
+// Fingerprints — cheap and deterministic. Same bytes → same fingerprint.
+// Just enough for the schema's NOT NULL constraint.
 // ──────────────────────────────────────────────────────────────────────
 
 export function fingerprintOf(input: string): string {
