@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Example journal issue — fictitious, for build-script testing only.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <officialGazette name="officialGazette">
+    <meta>
+      <identification source="#do-cl">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/officialGazette/2026-01-15/DO-2026-01-15/!main"/>
+          <FRBRuri value="/akn/cl/officialGazette/2026-01-15/DO-2026-01-15"/>
+          <FRBRdate date="2026-01-15" name="generation"/>
+          <FRBRauthor href="#do-cl"/>
+          <FRBRcountry value="cl"/>
+          <FRBRnumber value="43.521"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRdate date="2026-01-15" name="generation"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRdate date="2026-01-15" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-01-15" showAs="Diario Oficial 43.521"
+                   name="diario-oficial" number="43.521"/>
+      <proprietary source="#do-cl">
+        <akndiff:nativeId>DO-2026-01-15</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php?date=15-01-2026</akndiff:sourceUrl>
+        <akndiff:publisher>Diario Oficial de la República de Chile</akndiff:publisher>
+        <akndiff:scope>national</akndiff:scope>
+      </proprietary>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Diario Oficial de la República de Chile — N° 43.521</p>
+      </longTitle>
+    </preface>
+    <collectionBody>
+      <componentRef src="/akn/cl/act/2018-03-15/ley-21000"
+                    showAs="Ley N° 21.000 (texto consolidado)"
+                    eId="cmp_1">
+        <ref href="/akn/cl/act/2018-03-15/ley-21000"/>
+      </componentRef>
+    </collectionBody>
+  </officialGazette>
+</akomaNtoso>

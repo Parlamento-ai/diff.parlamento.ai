@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Example bill — fictitious, for build-script testing only.
+
+  Filename = nativeId. Country = parent folder. Type = the AKN root
+  element under <akomaNtoso> (here: <bill>). Plumbing the AKN core
+  doesn't have a home for lives in <akndiff:*> elements under
+  <meta><proprietary>.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <bill name="bill">
+    <meta>
+      <identification source="#camara">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/bill/2025-08-12/12345-07/!main"/>
+          <FRBRuri value="/akn/cl/bill/2025-08-12/12345-07"/>
+          <FRBRdate date="2025-08-12" name="generation"/>
+          <FRBRauthor href="#camara"/>
+          <FRBRcountry value="cl"/>
+          <FRBRsubtype value="moción"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/cl/bill/2025-08-12/12345-07/spa@/!main"/>
+          <FRBRuri value="/akn/cl/bill/2025-08-12/12345-07/spa@"/>
+          <FRBRdate date="2025-08-12" name="generation"/>
+          <FRBRauthor href="#camara"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/cl/bill/2025-08-12/12345-07/spa@.xml"/>
+          <FRBRuri value="/akn/cl/bill/2025-08-12/12345-07/spa@.xml"/>
+          <FRBRdate date="2025-08-12" name="generation"/>
+          <FRBRauthor href="#camara"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2025-08-12" showAs="Boletín 12345-07" name="boletin"/>
+      <classification source="#camara">
+        <keyword value="proteccion-datos" showAs="protección de datos" dictionary="#camara-topics"/>
+        <keyword value="tecnologia" showAs="tecnología" dictionary="#camara-topics"/>
+      </classification>
+      <lifecycle source="#camara">
+        <eventRef date="2025-08-12" refersTo="#submitted"
+                  source="#evt-1" showAs="Ingreso del proyecto"/>
+        <eventRef date="2025-10-03" refersTo="#committee_report"
+                  source="#evt-2" showAs="Primer informe de la Comisión de Futuro"/>
+        <eventRef date="2025-12-18" refersTo="#passed_chamber"
+                  source="#evt-3" showAs="Aprobado en general y particular"/>
+      </lifecycle>
+      <references source="#camara">
+        <TLCPerson eId="dip-perez" href="/akn/cl/person/dip-perez"
+                  showAs="Diputada Pérez">
+          <akndiff:party>PPD</akndiff:party>
+          <akndiff:chamber>Cámara de Diputadas y Diputados</akndiff:chamber>
+        </TLCPerson>
+        <TLCPerson eId="dip-soto" href="/akn/cl/person/dip-soto"
+                  showAs="Diputado Soto">
+          <akndiff:party>RN</akndiff:party>
+          <akndiff:chamber>Cámara de Diputadas y Diputados</akndiff:chamber>
+        </TLCPerson>
+        <TLCRole eId="role-sponsor" href="/ontology/roles/sponsor" showAs="sponsor"/>
+      </references>
+      <proprietary source="#camara">
+        <!-- Plumbing the SQL needs that AKN core doesn't model. -->
+        <akndiff:nativeId>12345-07</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.camara.cl/legislacion/ProyectosDeLey/tramitacion.aspx?prmID=12345</akndiff:sourceUrl>
+        <!-- Country-specific status + the data we used to put in YAML. -->
+        <akndiff:billStatus normalized="passed">Tramitación terminada — pendiente de promulgación</akndiff:billStatus>
+        <akndiff:urgency>simple</akndiff:urgency>
+        <akndiff:sponsor refersTo="#dip-perez" role="#role-sponsor"/>
+        <akndiff:sponsor refersTo="#dip-soto" role="#role-sponsor"/>
+      </proprietary>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Modifica la ley N° 21.000 para fortalecer la protección de datos personales</p>
+      </longTitle>
+    </preface>
+    <preamble>
+      <p>Refuerza las sanciones de la ley 21.000 y amplía las facultades de la Agencia.</p>
+      <p>El avance tecnológico ha superado el marco vigente de la ley 21.000.</p>
+    </preamble>
+    <body>
+      <article eId="art_1">
+        <num>Artículo 1°</num>
+        <content>
+          <p>Modifícase la <ref href="/akn/cl/act/2018-03-15/ley-21000">ley N° 21.000</ref> en el sentido siguiente: …</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

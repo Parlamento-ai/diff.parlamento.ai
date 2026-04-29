@@ -5,17 +5,20 @@
  * Usage:
  *   npm run research:build
  *
- * What it does (and only what it does):
+ * v3 round trip:
  *   1. Wipe research.db.
  *   2. Recreate every table from the current schema.
- *   3. Walk data/<country>/<type>/*.yaml in dependency order.
- *      For each file: parse, validate, insert, log.
- *   4. Resolve cross-document links in a second pass.
+ *   3. Walk data/<country>/<type>/*.yaml in dependency order. For each
+ *      file: parse YAML wrapper, parse + extract from the AKN XML,
+ *      insert the document row + the type-specific detail row + any
+ *      version rows + (for bills) any extracted events.
+ *   4. Resolve cross-document links in a second pass — the loader
+ *      pulled hrefs out of every <ref>/<componentRef>/etc., here we
+ *      look them up by (country, type, nativeId) and write rows.
  *   5. Print a summary.
  *
- * Failure mode: print the offending file path + reason, then exit non-zero.
- * No "best effort" loading. If your YAML doesn't fit the schema, the
- * schema or the YAML needs to change — we want to feel that pain.
+ * Failure mode: print the offending file path + reason, then exit
+ * non-zero. No "best effort" loading.
  */
 
 import { existsSync, readdirSync, rmSync, statSync } from 'node:fs';
@@ -31,7 +34,7 @@ import {
 	LoaderError,
 	parseDocFile,
 	toEpochMs,
-	type LinkRef,
+	type ExtractedLink,
 	type ParsedDoc
 } from './loader';
 
@@ -132,7 +135,6 @@ function createAllTables(sqlite: Database.Database) {
 		const sql = `CREATE TABLE "${cfg.name}" (\n${all}\n)`;
 		sqlite.exec(sql);
 
-		// Indexes
 		for (const idx of cfg.indexes) {
 			const idxCfg = idx.config;
 			const idxCols = idxCfg.columns.map((c) => `"${(c as { name: string }).name}"`).join(', ');
@@ -213,9 +215,7 @@ const docKey = (country: string, type: string, nativeId: string): DocKey =>
 function insertDocument(db: Db, doc: ParsedDoc): string {
 	const id = crypto.randomUUID();
 	const publishedAt = toEpochMs(doc.filePath, 'publishedAt', doc.publishedAt);
-	const lastActivityAt = doc.lastActivityAt
-		? toEpochMs(doc.filePath, 'lastActivityAt', doc.lastActivityAt)
-		: publishedAt;
+	const lastActivityAt = toEpochMs(doc.filePath, 'lastActivityAt', doc.lastActivityAt);
 
 	db.insert(schema.DocumentTable)
 		.values({
@@ -223,14 +223,13 @@ function insertDocument(db: Db, doc: ParsedDoc): string {
 			type: doc.type,
 			countryCode: doc.countryCode,
 			nativeId: doc.nativeId,
+			xml: doc.xml,
 			title: doc.title,
-			topics: doc.topics ?? [],
-			language: doc.language ?? 'es',
-			body: doc.body ?? {},
-			countrySpecific: doc.countrySpecific ?? {},
-			sourceUrl: doc.sourceUrl ?? '',
+			topics: doc.topics,
+			language: doc.language,
+			sourceUrl: doc.sourceUrl,
 			scrapingId: `research:${doc.countryCode}:${doc.type}:${doc.nativeId}`,
-			fingerprint: fingerprintOf({ body: doc.body, title: doc.title }),
+			fingerprint: fingerprintOf(doc.xml),
 			publishedAt: new Date(publishedAt),
 			lastActivityAt: new Date(lastActivityAt)
 		})
@@ -241,48 +240,50 @@ function insertDocument(db: Db, doc: ParsedDoc): string {
 function insertDetail(db: Db, doc: ParsedDoc, documentId: string) {
 	switch (doc.type) {
 		case 'bill': {
-			const b = doc.bill ?? {};
+			if (!doc.bill) return;
 			db.insert(schema.BillTable)
 				.values({
 					documentId,
-					subtype: (b.subtype as string) ?? null,
-					status: (b.status as 'submitted') ?? 'submitted',
-					statusLocal: (b.statusLocal as string) ?? '',
-					submittedAt: new Date(toEpochMs(doc.filePath, 'bill.submittedAt', b.submittedAt)),
-					sponsors: (b.sponsors as []) ?? [],
-					urgency: (b.urgency as string) ?? null
+					subtype: doc.bill.subtype ?? null,
+					status: doc.bill.status as 'submitted',
+					statusLocal: doc.bill.statusLocal,
+					submittedAt: new Date(toEpochMs(doc.filePath, 'bill.submittedAt', doc.bill.submittedAt)),
+					sponsors: doc.bill.sponsors,
+					urgency: doc.bill.urgency ?? null
 				})
 				.run();
 			return;
 		}
 		case 'act': {
-			const a = doc.act ?? {};
+			if (!doc.act) return;
 			db.insert(schema.ActTable)
 				.values({
 					documentId,
-					status: (a.status as 'in_force') ?? 'in_force',
-					promulgatedAt: new Date(toEpochMs(doc.filePath, 'act.promulgatedAt', a.promulgatedAt)),
-					effectiveAt: a.effectiveAt
-						? new Date(toEpochMs(doc.filePath, 'act.effectiveAt', a.effectiveAt))
+					status: doc.act.status as 'in_force',
+					promulgatedAt: new Date(
+						toEpochMs(doc.filePath, 'act.promulgatedAt', doc.act.promulgatedAt)
+					),
+					effectiveAt: doc.act.effectiveAt
+						? new Date(toEpochMs(doc.filePath, 'act.effectiveAt', doc.act.effectiveAt))
 						: null,
-					repealedAt: a.repealedAt
-						? new Date(toEpochMs(doc.filePath, 'act.repealedAt', a.repealedAt))
+					repealedAt: doc.act.repealedAt
+						? new Date(toEpochMs(doc.filePath, 'act.repealedAt', doc.act.repealedAt))
 						: null,
-					issuingBody: (a.issuingBody as string) ?? ''
+					issuingBody: doc.act.issuingBody
 				})
 				.run();
 			return;
 		}
 		case 'journal': {
-			const j = doc.journal ?? {};
+			if (!doc.journal) return;
 			db.insert(schema.JournalTable)
 				.values({
 					documentId,
-					issueNumber: (j.issueNumber as string) ?? '',
-					issuedAt: new Date(toEpochMs(doc.filePath, 'journal.issuedAt', j.issuedAt)),
-					publisher: (j.publisher as string) ?? '',
-					scope: (j.scope as string) ?? 'national',
-					regionCode: (j.regionCode as string) ?? null
+					issueNumber: doc.journal.issueNumber,
+					issuedAt: new Date(toEpochMs(doc.filePath, 'journal.issuedAt', doc.journal.issuedAt)),
+					publisher: doc.journal.publisher,
+					scope: doc.journal.scope,
+					regionCode: doc.journal.regionCode ?? null
 				})
 				.run();
 			return;
@@ -294,18 +295,22 @@ function insertDetail(db: Db, doc: ParsedDoc, documentId: string) {
 }
 
 function insertVersions(db: Db, doc: ParsedDoc, documentId: string): number {
-	if (!doc.versions?.length) return 0;
+	if (!doc.versions.length) return 0;
 	for (const v of doc.versions) {
 		db.insert(schema.DocumentVersionTable)
 			.values({
 				documentId,
-				version: v.version as number,
+				version: v.version,
 				publishedAt: new Date(toEpochMs(doc.filePath, 'version.publishedAt', v.publishedAt)),
-				sourceUrl: (v.sourceUrl as string) ?? '',
-				storageUrl: (v.storageUrl as string) ?? null,
-				extractedText: (v.extractedText as string) ?? null,
-				mimeType: (v.mimeType as string) ?? null,
-				fingerprint: fingerprintOf(v)
+				xml: v.xml,
+				schemaVersion: schema.SCHEMA_VERSION,
+				changeNote: v.changeNote ?? null,
+				documentType: doc.type,
+				sourceUrl: v.sourceUrl ?? null,
+				storageUrl: null,
+				extractedText: null,
+				mimeType: 'application/akn+xml',
+				fingerprint: fingerprintOf(v.xml)
 			})
 			.run();
 	}
@@ -313,52 +318,81 @@ function insertVersions(db: Db, doc: ParsedDoc, documentId: string): number {
 }
 
 function insertEvents(db: Db, doc: ParsedDoc, documentId: string): number {
-	if (doc.type !== 'bill' || !doc.events?.length) return 0;
+	if (doc.type !== 'bill' || !doc.events.length) return 0;
 	for (const e of doc.events) {
 		db.insert(schema.BillEventTable)
 			.values({
 				billId: documentId,
-				sequence: e.sequence as number,
+				sequence: e.sequence,
 				occurredAt: new Date(toEpochMs(doc.filePath, 'event.occurredAt', e.occurredAt)),
-				actionType: (e.actionType as string) ?? '',
-				actionTypeLocal: (e.actionTypeLocal as string) ?? '',
-				chamber: (e.chamber as string) ?? null,
-				details: (e.details as Record<string, unknown>) ?? {}
+				actionType: e.actionType,
+				actionTypeLocal: e.actionTypeLocal,
+				chamber: e.chamber ?? null,
+				details: {}
 			})
 			.run();
 	}
 	return doc.events.length;
 }
 
+type LinkOutcome =
+	| { ok: true; toId: string }
+	| { ok: false; reason: 'unresolved' | 'external' | 'no-target' };
+
+function resolveLink(link: ExtractedLink, idIndex: Map<DocKey, string>): LinkOutcome {
+	if (!link.toCountry || !link.toType || !link.toNativeId) {
+		// External URL or non-AKN href — kept on the row but unresolved.
+		// Not an error.
+		return { ok: false, reason: 'external' };
+	}
+	const toId = idIndex.get(docKey(link.toCountry, link.toType, link.toNativeId));
+	if (!toId) return { ok: false, reason: 'unresolved' };
+	return { ok: true, toId };
+}
+
 function resolveLinks(
 	db: Db,
 	docs: Array<{ doc: ParsedDoc; id: string }>,
 	idIndex: Map<DocKey, string>
-): { ok: number; bad: Array<{ doc: ParsedDoc; link: LinkRef }> } {
+): { ok: number; skipped: number; bad: Array<{ doc: ParsedDoc; link: ExtractedLink }> } {
 	let ok = 0;
-	const bad: Array<{ doc: ParsedDoc; link: LinkRef }> = [];
+	let skipped = 0;
+	const bad: Array<{ doc: ParsedDoc; link: ExtractedLink }> = [];
 	for (const { doc, id: fromId } of docs) {
-		for (const link of doc.links ?? []) {
-			const toId = idIndex.get(docKey(link.toCountry, link.toType, link.toNativeId));
-			if (!toId) {
+		// De-dupe identical (relation, toId) edges within one source doc —
+		// the same href can appear multiple times in one XML and we only
+		// want one active row per edge.
+		const seen = new Set<string>();
+		for (const link of doc.links) {
+			const outcome = resolveLink(link, idIndex);
+			if (!outcome.ok) {
+				if (outcome.reason === 'external') {
+					skipped++;
+					continue;
+				}
 				bad.push({ doc, link });
 				continue;
 			}
+			const dedupeKey = `${link.relation}::${outcome.toId}`;
+			if (seen.has(dedupeKey)) continue;
+			seen.add(dedupeKey);
 			db.insert(schema.DocumentLinkTable)
 				.values({
 					fromId,
-					toId,
+					toId: outcome.toId,
 					relation: link.relation as 'amends',
+					aknElement: link.aknElement,
+					href: link.href,
 					ordinal: link.ordinal ?? null,
-					source: (link.source as 'gov_site') ?? 'manual',
-					confidence: link.confidence ?? null,
-					details: link.details ?? {}
+					source: 'extracted',
+					confidence: null,
+					details: {}
 				})
 				.run();
 			ok++;
 		}
 	}
-	return { ok, bad };
+	return { ok, skipped, bad };
 }
 
 // ──────────────────────────────────────────────────────────────────────
@@ -366,7 +400,7 @@ function resolveLinks(
 // ──────────────────────────────────────────────────────────────────────
 
 async function main() {
-	console.log(C.bold('\nRebuilding research.db from YAML corpus\n'));
+	console.log(C.bold('\nRebuilding research.db from YAML corpus (v3 schema)\n'));
 
 	const { sqlite, db } = wipeAndOpen();
 	try {
@@ -386,9 +420,7 @@ async function main() {
 		// Insert order across types: acts and journals first (so bills can
 		// link to them in the second pass without forward-reference fuss),
 		// then everything else. The link resolver is a separate pass anyway,
-		// so this ordering only matters for type-specific FK columns
-		// (e.g. bill.amendsActId — currently we don't populate it during
-		// insert, so this is just for tidy logs).
+		// so this ordering only matters for type-specific FK columns.
 		const TYPE_ORDER: ParsedDoc['type'][] = [
 			'act',
 			'journal',
@@ -417,7 +449,7 @@ async function main() {
 				insertDetail(db, doc, id);
 				const nVersions = insertVersions(db, doc, id);
 				const nEvents = insertEvents(db, doc, id);
-				const nLinks = doc.links?.length ?? 0;
+				const nLinks = doc.links.length;
 
 				idIndex.set(docKey(doc.countryCode, doc.type, doc.nativeId), id);
 				inserted.push({ doc, id });
@@ -444,15 +476,18 @@ async function main() {
 
 		// Pass 2 — links.
 		console.log('');
-		logStep('Resolving cross-document links');
-		const { ok, bad } = resolveLinks(db, inserted, idIndex);
+		logStep('Resolving cross-document links from extracted <ref> elements');
+		const { ok, skipped, bad } = resolveLinks(db, inserted, idIndex);
 		console.log(`  ${C.green(`✓ ${ok} links resolved`)}`);
+		if (skipped) {
+			console.log(`  ${C.dim(`(${skipped} external/non-AKN hrefs skipped)`)}`);
+		}
 		if (bad.length) {
 			for (const { doc, link } of bad) {
 				logFail(
 					`${doc.countryCode}/${doc.type}s`,
 					relative(DATA_DIR, doc.filePath),
-					`unresolved link → ${link.toCountry}/${link.toType}/${link.toNativeId}`
+					`unresolved link → ${link.href} (${link.toCountry}/${link.toType}/${link.toNativeId})`
 				);
 			}
 			process.exitCode = 1;

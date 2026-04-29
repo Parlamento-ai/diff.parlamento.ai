@@ -6,4 +6,4 @@
  * the line below and update the YAML corpus to match.
  */
 
-export * from './v1-schema';
+export * from './v3-schema';

@@ -1120,13 +1120,28 @@
 
 	<footer class="mt-16 border-t border-gray-200 pt-6 text-sm text-gray-500">
 		<p>
-			The actual schema lives in
+			The active schema is
 			<a
+				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v3-schema.ts"
+				class="text-blue-600 hover:underline"
+				target="_blank"
+				rel="noopener">research/schema/v3-schema.ts</a
+			>. v3 inverts the architecture: the AKN XML blob on each document IS
+			the document, and every column on this page is now extracted from
+			that XML at build time. Earlier versions
+			(<a
 				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v1-schema.ts"
 				class="text-blue-600 hover:underline"
 				target="_blank"
-				rel="noopener">research/schema/v1-schema.ts</a
-			>. If something on this page disagrees with it, the page is wrong.
+				rel="noopener">v1</a
+			>,
+			<a
+				href="https://github.com/Parlamento-ai/diff.parlamento.ai/blob/main/research/schema/v2-schema.ts"
+				class="text-blue-600 hover:underline"
+				target="_blank"
+				rel="noopener">v2</a
+			>) are kept for reference. If something on this page disagrees with
+			the active schema, the page is wrong.
 		</p>
 	</footer>
 </div>

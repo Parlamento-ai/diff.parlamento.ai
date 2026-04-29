@@ -73,16 +73,30 @@
 	{#if versions.length}
 		<section class="mb-8">
 			<h2 class="mb-2 font-bold uppercase">Versions ({versions.length})</h2>
-			<ul>
+			<ul class="space-y-4">
 				{#each versions as v (v.id)}
-					<li class="border-b border-gray-100 py-1">
-						<span class="font-bold">v{v.version}</span>
-						<span class="ml-2">{fmtDate(v.publishedAt)}</span>
-						{#if v.sourceUrl}
-							<a href={v.sourceUrl} class="ml-2 text-blue-600 hover:underline" target="_blank"
-								>{v.sourceUrl}</a
+					<li class="border-b border-gray-100 pb-3">
+						<div>
+							<span class="font-bold">v{v.version}</span>
+							<span class="ml-2">{fmtDate(v.publishedAt)}</span>
+							{#if v.changeNote}
+								<span class="ml-2 text-gray-500">— {v.changeNote}</span>
+							{/if}
+							{#if v.sourceUrl}
+								<a
+									href={v.sourceUrl}
+									class="ml-2 text-blue-600 hover:underline"
+									target="_blank">{v.sourceUrl}</a
+								>
+							{/if}
+						</div>
+						<details class="mt-2">
+							<summary class="cursor-pointer text-xs text-gray-500 hover:text-gray-800"
+								>show AKN XML ({v.xml.length} bytes)</summary
 							>
-						{/if}
+							<pre
+								class="mt-2 overflow-x-auto rounded bg-gray-50 p-3 text-xs">{v.xml}</pre>
+						</details>
 					</li>
 				{/each}
 			</ul>
@@ -132,17 +146,12 @@
 		</div>
 	</section>
 
-	{#if doc.body && Object.keys(doc.body).length}
-		<section class="mb-8">
-			<h2 class="mb-2 font-bold uppercase">Body</h2>
-			<pre class="overflow-x-auto bg-gray-50 p-3 text-xs">{JSON.stringify(doc.body, null, 2)}</pre>
-		</section>
-	{/if}
-
-	{#if doc.countrySpecific && Object.keys(doc.countrySpecific).length}
-		<section class="mb-8">
-			<h2 class="mb-2 font-bold uppercase">Country-specific</h2>
-			<pre class="overflow-x-auto bg-gray-50 p-3 text-xs">{JSON.stringify(doc.countrySpecific, null, 2)}</pre>
-		</section>
-	{/if}
+	<section class="mb-8">
+		<h2 class="mb-2 font-bold uppercase">AKN XML (current state)</h2>
+		<p class="mb-2 text-xs text-gray-500">
+			The source of truth for this document. The columns above are projections
+			extracted from this blob at build time.
+		</p>
+		<pre class="overflow-x-auto rounded bg-gray-50 p-3 text-xs">{doc.xml}</pre>
+	</section>
 </div>

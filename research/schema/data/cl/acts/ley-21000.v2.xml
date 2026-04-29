@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/act/2018-03-15/ley-21000/!main"/>
+          <FRBRuri value="/akn/cl/act/2018-03-15/ley-21000"/>
+          <FRBRdate date="2018-03-15" name="promulgation"/>
+          <FRBRauthor href="#congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRdate date="2026-01-15" name="generation"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRdate date="2026-01-15" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+    </meta>
+    <body>
+      <article eId="art_1">
+        <num>Artículo 1°</num>
+        <content><p>La presente ley regula el tratamiento de datos personales (texto consolidado).</p></content>
+      </article>
+    </body>
+  </act>
+</akomaNtoso>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Example act — fictitious, for build-script testing only.
+
+  Prior versions live in sibling files (ley-21000.v1.xml, ley-21000.v2.xml)
+  declared via <akndiff:priorVersion>. The current state is THIS file.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#congreso">
+        <FRBRWork>
+          <FRBRthis value="/akn/cl/act/2018-03-15/ley-21000/!main"/>
+          <FRBRuri value="/akn/cl/act/2018-03-15/ley-21000"/>
+          <FRBRdate date="2018-03-15" name="promulgation"/>
+          <FRBRauthor href="#congreso"/>
+          <FRBRcountry value="cl"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/cl/act/2018-03-15/ley-21000/spa@2026-01-15/!main"/>
+          <FRBRuri value="/akn/cl/act/2018-03-15/ley-21000/spa@2026-01-15"/>
+          <FRBRdate date="2026-01-15" name="generation"/>
+          <FRBRauthor href="#congreso"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/cl/act/2018-03-15/ley-21000/spa@2026-01-15.xml"/>
+          <FRBRuri value="/akn/cl/act/2018-03-15/ley-21000/spa@2026-01-15.xml"/>
+          <FRBRdate date="2026-01-15" name="generation"/>
+          <FRBRauthor href="#congreso"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2018-03-20" showAs="Diario Oficial 41.000"
+                   name="diario-oficial"
+                   href="/akn/cl/journal/2018-03-20/DO-2018-03-20"/>
+      <classification source="#congreso">
+        <keyword value="proteccion-datos" showAs="protección de datos" dictionary="#congreso-topics"/>
+      </classification>
+      <lifecycle source="#congreso">
+        <eventRef date="2018-03-15" refersTo="#promulgation"
+                  source="#evt-prom" showAs="Promulgación"/>
+        <eventRef date="2018-04-01" refersTo="#commencement"
+                  source="#evt-eff" showAs="Entrada en vigencia"/>
+        <eventRef date="2026-01-15" refersTo="#amendment"
+                  source="#evt-am" showAs="Texto consolidado tras boletín 12345-07"/>
+      </lifecycle>
+      <proprietary source="#congreso">
+        <akndiff:nativeId>ley-21000</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.bcn.cl/leychile/navegar?idNorma=1234567</akndiff:sourceUrl>
+        <akndiff:actStatus normalized="in_force">en vigencia</akndiff:actStatus>
+        <akndiff:issuingBody>Congreso Nacional</akndiff:issuingBody>
+        <!--
+          Prior versions, oldest → newest. Each href is a sibling .xml
+          file. The build script reads them and writes one row per
+          version into diff_document_versions.
+        -->
+        <akndiff:priorVersion version="1" date="2018-03-20"
+                              href="ley-21000.v1.xml"
+                              sourceUrl="https://www.bcn.cl/leychile/navegar?idNorma=1234567&amp;idVersion=2018-03-20"
+                              changeNote="Texto original promulgado"/>
+        <akndiff:priorVersion version="2" date="2026-01-15"
+                              href="ley-21000.v2.xml"
+                              sourceUrl="https://www.bcn.cl/leychile/navegar?idNorma=1234567&amp;idVersion=2026-01-15"
+                              changeNote="Texto consolidado tras la promulgación del boletín 12345-07"/>
+      </proprietary>
+    </meta>
+    <preface>
+      <longTitle>
+        <p>Ley N° 21.000 — Sobre protección de la vida privada y datos personales</p>
+      </longTitle>
+    </preface>
+    <preamble>
+      <p>Teniendo presente que el Congreso Nacional ha dado su aprobación al siguiente proyecto de ley.</p>
+    </preamble>
+    <body>
+      <article eId="art_1">
+        <num>Artículo 1°</num>
+        <content>
+          <p>La presente ley regula el tratamiento de datos personales.</p>
+        </content>
+      </article>
+    </body>
+  </act>
+</akomaNtoso>
