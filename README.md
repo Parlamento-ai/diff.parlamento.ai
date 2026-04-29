@@ -9,6 +9,15 @@ Partimos de un problema concreto: no existe una herramienta pública para ver qu
 
 
 ---
+**29/04/26**
+
+Decidimos apostar en XML como formato para la base de datos. El problema que tuvimos pasando SQL es que incluso después de varias vueltas, seguíamos con un `body` que era un JSON que contenía la información más importante sobre cada tipo. Los datos que intentamos representar tienen mucho nesting. 
+
+Por ende, lo decidido es que tenemos una base de datos SQL en la cual hay un campo que guarda todo el XML en texto. Luego, los campos SQL son derivados del XML para ayudar a navegar todos estos datos. Lo bueno es que los campos derivados pueden ser recalculados según la necesidad cambiante del proyecto, porque el XML, en teoría, tiene toda la información.
+
+Pero aún todo sigue muy en fase de testeo.
+
+---
 **28/04/26**
 
 Después de varios tests en varios países, llegamos a la conclusión de que **sí es posible reconstruir los AKN** a base de los datos públicos de los gobiernos. Algunos van a requerir mucho trabajo, pero sí es posible.
