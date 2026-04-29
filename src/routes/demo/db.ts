@@ -1,8 +1,9 @@
 /**
  * Connection to the research SQLite database.
  *
- * The DB is rebuilt by `npm run research:build` from the YAML corpus
- * under research/schema/data/. It's a build artifact, not committed.
+ * The DB is rebuilt by `npm run research:build` from the XML corpus
+ * under research/schema/data/. The checked-in snapshot lets static deploys
+ * prerender a populated demo without rebuilding the research corpus first.
  *
  * This module is server-only — never import it from a .svelte file
  * outside of +page.server.ts / +layout.server.ts.

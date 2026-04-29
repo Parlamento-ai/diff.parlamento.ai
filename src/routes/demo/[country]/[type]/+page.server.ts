@@ -1,12 +1,23 @@
 import { error } from '@sveltejs/kit';
 import { and, desc, eq } from 'drizzle-orm';
 import { getDb, schema } from '../../db';
+import { ENTITY_TYPE_INFO, ENTITY_TYPES, isEntityType } from '../../entity-types';
 
-export const prerender = false;
+export const prerender = true;
+
+export function entries() {
+	const db = getDb();
+	const countries = db.select({ country: schema.CountryTable.code }).from(schema.CountryTable).all();
+	return countries.flatMap(({ country }) => ENTITY_TYPES.map((type) => ({ country, type })));
+}
 
 export async function load({ params }) {
 	const db = getDb();
 	const { country, type } = params;
+
+	if (!isEntityType(type)) {
+		throw error(404, `Unknown entity type: ${type}`);
+	}
 
 	const docs = db
 		.select({
@@ -28,9 +39,5 @@ export async function load({ params }) {
 		.orderBy(desc(schema.DocumentTable.publishedAt))
 		.all();
 
-	if (!docs.length) {
-		throw error(404, `No ${type} documents for ${country}`);
-	}
-
-	return { country, type, docs };
+	return { country, type, typeInfo: ENTITY_TYPE_INFO[type], docs };
 }

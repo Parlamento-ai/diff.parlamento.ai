@@ -2,7 +2,12 @@ import { error, redirect } from '@sveltejs/kit';
 import { eq } from 'drizzle-orm';
 import { getDb, schema } from '../db';
 
-export const prerender = false;
+export const prerender = true;
+
+export function entries() {
+	const db = getDb();
+	return db.select({ country: schema.CountryTable.code }).from(schema.CountryTable).all();
+}
 
 export async function load({ params, parent }) {
 	const { country } = params;

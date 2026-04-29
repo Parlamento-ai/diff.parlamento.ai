@@ -8,6 +8,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		prerender: {
+			entries: ['*', '/demo', '/demo/schema'],
 			handleHttpError({ path, message }) {
 				// Ignore links to research/ files (source references in docs, not routes)
 				if (path.startsWith('/research/')) return;

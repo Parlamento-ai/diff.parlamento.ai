@@ -1,8 +1,20 @@
 import { error } from '@sveltejs/kit';
-import { and, eq, or } from 'drizzle-orm';
+import { and, eq } from 'drizzle-orm';
 import { getDb, schema } from '../../../db';
 
-export const prerender = false;
+export const prerender = true;
+
+export function entries() {
+	const db = getDb();
+	return db
+		.select({
+			country: schema.DocumentTable.countryCode,
+			type: schema.DocumentTable.type,
+			nativeId: schema.DocumentTable.nativeId
+		})
+		.from(schema.DocumentTable)
+		.all();
+}
 
 export async function load({ params }) {
 	const db = getDb();

@@ -1,7 +1,8 @@
 import { sql } from 'drizzle-orm';
 import { getDb, schema } from './db';
+import { ENTITY_TYPES } from './entity-types';
 
-export const prerender = false;
+export const prerender = true;
 
 type Row = { countryCode: string; type: string; n: number };
 
@@ -23,17 +24,23 @@ export async function load() {
 		.from(schema.CountryTable)
 		.all();
 
-	const typesByCountry: Record<string, { type: string; n: number }[]> = {};
+	const countsByCountry: Record<string, Record<string, number>> = {};
 	for (const r of rows) {
-		(typesByCountry[r.countryCode] ??= []).push({ type: r.type, n: r.n });
-	}
-	for (const code of Object.keys(typesByCountry)) {
-		typesByCountry[code].sort((a, b) => a.type.localeCompare(b.type));
+		(countsByCountry[r.countryCode] ??= {})[r.type] = r.n;
 	}
 
 	const countryList = countries
-		.filter((c) => typesByCountry[c.code]?.length)
+		.filter((c) => countsByCountry[c.code])
 		.sort((a, b) => a.code.localeCompare(b.code));
+
+	const typesByCountry: Record<string, { type: string; n: number }[]> = {};
+	for (const country of countryList) {
+		const counts = countsByCountry[country.code] ?? {};
+		typesByCountry[country.code] = ENTITY_TYPES.map((type) => ({
+			type,
+			n: counts[type] ?? 0
+		}));
+	}
 
 	return { countries: countryList, typesByCountry };
 }

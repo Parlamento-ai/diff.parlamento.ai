@@ -29,6 +29,5 @@ vite.config.ts.timestamp-*
 
 test-results/
 
-# Research experiment build artifact (regenerated from YAML corpus)
-research/schema/research.db
+# Research experiment SQLite sidecars
 research/schema/research.db-*

@@ -1,7 +1,7 @@
 import { sql } from 'drizzle-orm';
 import { getDb, schema } from '../db';
 
-export const prerender = false;
+export const prerender = true;
 
 type CountRow = { countryCode: string; type: string; n: number };
 
