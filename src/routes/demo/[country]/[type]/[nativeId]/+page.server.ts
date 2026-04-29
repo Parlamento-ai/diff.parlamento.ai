@@ -85,30 +85,101 @@ export async function load({ params }) {
 		.where(eq(schema.DocumentLinkTable.toId, doc.id))
 		.all();
 
-	// Type-specific detail row.
+	// Each entity type has its own SQL table keyed by documentId. We also
+	// surface the underlying SQL table name so the raw-view in the UI can
+	// label both the shared row and the type-specific row clearly.
+	const fetchDetail = (
+		table:
+			| typeof schema.BillTable
+			| typeof schema.ActTable
+			| typeof schema.AmendmentTable
+			| typeof schema.JudgmentTable
+			| typeof schema.JournalTable
+			| typeof schema.DocumentCollectionTable
+			| typeof schema.QuestionTable
+			| typeof schema.CommunicationTable
+			| typeof schema.DebateTable
+			| typeof schema.CitationTable
+			| typeof schema.ChangeSetTable
+			| typeof schema.StatementTable
+			| typeof schema.PortionTable
+			| typeof schema.GenericDocTable
+	): Record<string, unknown> | null =>
+		(db
+			.select()
+			.from(table as never)
+			.where(eq((table as { documentId: never }).documentId, doc.id))
+			.get() as Record<string, unknown> | undefined) ?? null;
+
 	let detail: Record<string, unknown> | null = null;
-	if (doc.type === 'bill') {
-		detail =
-			db
-				.select()
-				.from(schema.BillTable)
-				.where(eq(schema.BillTable.documentId, doc.id))
-				.get() ?? null;
-	} else if (doc.type === 'act') {
-		detail =
-			db
-				.select()
-				.from(schema.ActTable)
-				.where(eq(schema.ActTable.documentId, doc.id))
-				.get() ?? null;
-	} else if (doc.type === 'journal') {
-		detail =
-			db
-				.select()
-				.from(schema.JournalTable)
-				.where(eq(schema.JournalTable.documentId, doc.id))
-				.get() ?? null;
+	let detailTableName: string | null = null;
+	switch (doc.type) {
+		case 'bill':
+			detailTableName = 'diff_bills';
+			detail = fetchDetail(schema.BillTable);
+			break;
+		case 'act':
+			detailTableName = 'diff_acts';
+			detail = fetchDetail(schema.ActTable);
+			break;
+		case 'amendment':
+			detailTableName = 'diff_amendments';
+			detail = fetchDetail(schema.AmendmentTable);
+			break;
+		case 'judgment':
+			detailTableName = 'diff_judgments';
+			detail = fetchDetail(schema.JudgmentTable);
+			break;
+		case 'journal':
+			detailTableName = 'diff_journals';
+			detail = fetchDetail(schema.JournalTable);
+			break;
+		case 'document_collection':
+			detailTableName = 'diff_document_collections';
+			detail = fetchDetail(schema.DocumentCollectionTable);
+			break;
+		case 'question':
+			detailTableName = 'diff_questions';
+			detail = fetchDetail(schema.QuestionTable);
+			break;
+		case 'communication':
+			detailTableName = 'diff_communications';
+			detail = fetchDetail(schema.CommunicationTable);
+			break;
+		case 'debate':
+			detailTableName = 'diff_debates';
+			detail = fetchDetail(schema.DebateTable);
+			break;
+		case 'citation':
+			detailTableName = 'diff_citations';
+			detail = fetchDetail(schema.CitationTable);
+			break;
+		case 'change_set':
+			detailTableName = 'diff_change_sets';
+			detail = fetchDetail(schema.ChangeSetTable);
+			break;
+		case 'statement':
+			detailTableName = 'diff_statements';
+			detail = fetchDetail(schema.StatementTable);
+			break;
+		case 'portion':
+			detailTableName = 'diff_portions';
+			detail = fetchDetail(schema.PortionTable);
+			break;
+		case 'doc':
+			detailTableName = 'diff_generic_docs';
+			detail = fetchDetail(schema.GenericDocTable);
+			break;
 	}
 
-	return { doc, detail, versions, events, outgoing, incoming };
+	return {
+		doc,
+		detail,
+		detailTableName,
+		documentTableName: 'diff_documents',
+		versions,
+		events,
+		outgoing,
+		incoming
+	};
 }

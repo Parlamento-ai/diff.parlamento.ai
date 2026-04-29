@@ -1,10 +1,31 @@
 <script lang="ts">
+	import hljs from 'highlight.js/lib/core';
+	import xmlLang from 'highlight.js/lib/languages/xml';
+
+	hljs.registerLanguage('xml', xmlLang);
+
 	let { data } = $props();
-	const { doc, detail, versions, events, outgoing, incoming } = $derived(data);
+	const { doc, detail, detailTableName, documentTableName, versions, events, outgoing, incoming } =
+		$derived(data);
+
+	let showRaw = $state(false);
+
+	const highlightedDocXml = $derived(hljs.highlight(doc.xml, { language: 'xml' }).value);
 
 	function fmtDate(d: Date | string | number | null | undefined): string {
 		if (!d) return '—';
 		return new Date(d).toISOString().slice(0, 10);
+	}
+
+	function highlightXml(xml: string): string {
+		return hljs.highlight(xml, { language: 'xml' }).value;
+	}
+
+	function renderValue(v: unknown): string {
+		if (v === null || v === undefined) return '—';
+		if (v instanceof Date) return fmtDate(v);
+		if (typeof v === 'object') return JSON.stringify(v, null, 2);
+		return String(v);
 	}
 </script>
 
@@ -24,34 +45,6 @@
 			Published {fmtDate(doc.publishedAt)} · Last activity {fmtDate(doc.lastActivityAt)}
 		</div>
 	</header>
-
-	<section class="mb-8">
-		<h2 class="mb-2 font-bold uppercase">Detail ({doc.type})</h2>
-		{#if detail}
-			<table class="w-full">
-				<tbody>
-					{#each Object.entries(detail) as [k, v] (k)}
-						<tr class="border-b border-gray-100">
-							<td class="py-1 pr-4 align-top text-gray-500">{k}</td>
-							<td class="py-1">
-								{#if v === null || v === undefined}
-									<span class="text-gray-300">—</span>
-								{:else if v instanceof Date}
-									{fmtDate(v)}
-								{:else if typeof v === 'object'}
-									<pre class="text-xs whitespace-pre-wrap">{JSON.stringify(v, null, 2)}</pre>
-								{:else}
-									{String(v)}
-								{/if}
-							</td>
-						</tr>
-					{/each}
-				</tbody>
-			</table>
-		{:else}
-			<p class="text-gray-400">No type-specific row.</p>
-		{/if}
-	</section>
 
 	{#if events.length}
 		<section class="mb-8">
@@ -95,7 +88,7 @@
 								>show AKN XML ({v.xml.length} bytes)</summary
 							>
 							<pre
-								class="mt-2 overflow-x-auto rounded bg-gray-50 p-3 text-xs">{v.xml}</pre>
+								class="mt-2 overflow-x-auto rounded bg-gray-50 p-3 text-xs"><code class="hljs">{@html highlightXml(v.xml)}</code></pre>
 						</details>
 					</li>
 				{/each}
@@ -146,12 +139,116 @@
 		</div>
 	</section>
 
-	<section class="mb-8">
-		<h2 class="mb-2 font-bold uppercase">AKN XML (current state)</h2>
-		<p class="mb-2 text-xs text-gray-500">
-			The source of truth for this document. The columns above are projections
-			extracted from this blob at build time.
-		</p>
-		<pre class="overflow-x-auto rounded bg-gray-50 p-3 text-xs">{doc.xml}</pre>
+	<section class="mt-12 border-t border-gray-200 pt-6">
+		<button
+			type="button"
+			onclick={() => (showRaw = !showRaw)}
+			class="flex w-full items-center justify-between border border-gray-300 bg-gray-50 px-4 py-2 text-left text-xs font-bold tracking-wider uppercase hover:bg-gray-100"
+		>
+			<span>Raw database state</span>
+			<span class="text-gray-500">{showRaw ? '▼ hide' : '▶ show'}</span>
+		</button>
+
+		{#if showRaw}
+			<p class="mt-3 text-xs text-gray-500">
+				Exact rows stored in SQLite, plus the AKN XML blob from which the columns above
+				were projected. The shared <code>{documentTableName}</code> row holds fields
+				common to every document type; the type-specific row holds fields unique to
+				<code>{doc.type}</code>.
+			</p>
+
+			<div class="mt-6">
+				<h3 class="mb-2 text-xs font-bold tracking-wider text-gray-700 uppercase">
+					Shared document table — <code>{documentTableName}</code>
+				</h3>
+				<table class="w-full">
+					<tbody>
+						{#each Object.entries(doc) as [k, v] (k)}
+							{#if k !== 'xml'}
+								<tr class="border-b border-gray-100">
+									<td class="w-48 py-1 pr-4 align-top text-gray-500">{k}</td>
+									<td class="py-1">
+										{#if v === null || v === undefined}
+											<span class="text-gray-300">—</span>
+										{:else if typeof v === 'object' && !(v instanceof Date)}
+											<pre class="text-xs whitespace-pre-wrap">{JSON.stringify(v, null, 2)}</pre>
+										{:else}
+											{renderValue(v)}
+										{/if}
+									</td>
+								</tr>
+							{/if}
+						{/each}
+					</tbody>
+				</table>
+			</div>
+
+			<div class="mt-6">
+				<h3 class="mb-2 text-xs font-bold tracking-wider text-gray-700 uppercase">
+					Type-specific table —
+					{#if detailTableName}
+						<code>{detailTableName}</code>
+					{:else}
+						<span class="text-gray-400">(none for this type)</span>
+					{/if}
+				</h3>
+				{#if detail}
+					<table class="w-full">
+						<tbody>
+							{#each Object.entries(detail) as [k, v] (k)}
+								<tr class="border-b border-gray-100">
+									<td class="w-48 py-1 pr-4 align-top text-gray-500">{k}</td>
+									<td class="py-1">
+										{#if v === null || v === undefined}
+											<span class="text-gray-300">—</span>
+										{:else if typeof v === 'object' && !(v instanceof Date)}
+											<pre class="text-xs whitespace-pre-wrap">{JSON.stringify(v, null, 2)}</pre>
+										{:else}
+											{renderValue(v)}
+										{/if}
+									</td>
+								</tr>
+							{/each}
+						</tbody>
+					</table>
+				{:else}
+					<p class="text-gray-400">No row found in the type-specific table.</p>
+				{/if}
+			</div>
+
+			<div class="mt-6">
+				<h3 class="mb-2 text-xs font-bold tracking-wider text-gray-700 uppercase">
+					AKN XML — <code>{documentTableName}.xml</code>
+				</h3>
+				<pre
+					class="overflow-x-auto rounded bg-gray-50 p-3 text-xs"><code class="hljs">{@html highlightedDocXml}</code></pre>
+			</div>
+		{/if}
 	</section>
 </div>
+
+<style>
+	:global(.hljs) {
+		background: transparent;
+		color: #1f2937;
+	}
+	:global(.hljs-tag) {
+		color: #0369a1;
+	}
+	:global(.hljs-name) {
+		color: #0e7490;
+	}
+	:global(.hljs-attr) {
+		color: #b45309;
+	}
+	:global(.hljs-string) {
+		color: #15803d;
+	}
+	:global(.hljs-comment) {
+		color: #9ca3af;
+		font-style: italic;
+	}
+	:global(.hljs-meta) {
+		color: #6b7280;
+	}
+</style>
