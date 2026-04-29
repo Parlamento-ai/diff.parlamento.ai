@@ -1,7 +1,7 @@
 export interface DocEntry {
 	slug: string;
 	title: string;
-	section: 'akndiff' | 'explorer' | 'akn';
+	section: 'akndiff' | 'akndb' | 'explorer' | 'akn';
 }
 
 export const docs: DocEntry[] = [
@@ -10,6 +10,8 @@ export const docs: DocEntry[] = [
 	{ slug: 'akndiff/changeset', title: 'The changeSet element', section: 'akndiff' },
 	{ slug: 'akndiff/voting', title: 'The vote element', section: 'akndiff' },
 	{ slug: 'akndiff/examples', title: 'Examples walkthrough', section: 'akndiff' },
+	// AKN.db
+	{ slug: 'akndb/overview', title: 'Overview', section: 'akndb' },
 	// Explorer
 	{ slug: 'explorer/overview', title: 'Overview', section: 'explorer' },
 	{ slug: 'explorer/act', title: 'act', section: 'explorer' },
