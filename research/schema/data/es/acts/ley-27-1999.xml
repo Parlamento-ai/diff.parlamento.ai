@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ley 27/1999, de 16 de julio, de Cooperativas.
+
+  This is the BASE of the Spanish graph for Phase 1 of the schema research.
+  It is the existing Act that bill 121/000036 (XV Legislatura) eventually
+  amended via Ley 1/2026 of 8 April 2026. By modeling this Act first, the
+  later docs (Ley 1/2026, the bill, the BOE journal entry, the citation,
+  the amendment) will resolve their hrefs INTO this file and the
+  document graph will reconstruct itself.
+
+  Source: BOE-A-1999-15681. Full original BOE XML preserved at
+  research/schema/data/es/_sources/ley-27-1999-cooperativas.xml (gitignored,
+  but reproducible from https://www.boe.es/diario_boe/xml.php?id=BOE-A-1999-15681).
+
+  Modeling decisions and frictions are recorded inside <akndiff:researchNotes>
+  below.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#cortes-generales">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/act/1999-07-16/ley-27-1999/!main"/>
+          <FRBRuri value="/akn/es/act/1999-07-16/ley-27-1999"/>
+          <FRBRdate date="1999-07-16" name="promulgation"/>
+          <FRBRauthor href="#cortes-generales"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/act/1999-07-16/ley-27-1999/spa@2026-04-09/!main"/>
+          <FRBRuri value="/akn/es/act/1999-07-16/ley-27-1999/spa@2026-04-09"/>
+          <FRBRdate date="2026-04-09" name="generation"/>
+          <FRBRauthor href="#cortes-generales"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/act/1999-07-16/ley-27-1999/spa@2026-04-09.xml"/>
+          <FRBRuri value="/akn/es/act/1999-07-16/ley-27-1999/spa@2026-04-09.xml"/>
+          <FRBRdate date="2026-04-09" name="generation"/>
+          <FRBRauthor href="#cortes-generales"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="1999-07-17" showAs="BOE núm. 170, de 17 de julio de 1999"
+                   name="boe"
+                   href="/akn/es/officialGazette/1999-07-17/BOE-1999-170"/>
+
+      <classification source="#boe">
+        <keyword value="cooperativas" showAs="cooperativas" dictionary="#boe-materias"/>
+        <keyword value="economia-social" showAs="economía social" dictionary="#boe-materias"/>
+        <keyword value="sociedades-mercantiles" showAs="sociedades mercantiles" dictionary="#boe-materias"/>
+        <keyword value="trabajo-asociado" showAs="trabajo asociado" dictionary="#boe-materias"/>
+        <keyword value="registro-cooperativas" showAs="Registro de Sociedades Cooperativas" dictionary="#boe-materias"/>
+      </classification>
+
+      <lifecycle source="#cortes-generales">
+        <eventRef date="1999-07-16" refersTo="#promulgation"
+                  source="#evt-prom"
+                  showAs="Promulgación por el Rey"/>
+        <eventRef date="1999-07-17" refersTo="#publication"
+                  source="#evt-pub"
+                  showAs="Publicación en BOE núm. 170"/>
+        <eventRef date="1999-08-06" refersTo="#commencement"
+                  source="#evt-eff"
+                  showAs="Entrada en vigor (20 días desde publicación)"/>
+        <eventRef date="2026-04-09" refersTo="#amendment"
+                  source="#evt-am-2026"
+                  showAs="Texto consolidado tras Ley 1/2026, integral de impulso de la economía social"/>
+      </lifecycle>
+
+      <references source="#cortes-generales">
+        <TLCOrganization eId="cortes-generales"
+                         href="/akn/es/org/cortes-generales"
+                         showAs="Cortes Generales"/>
+        <TLCOrganization eId="jefatura-estado"
+                         href="/akn/es/org/jefatura-estado"
+                         showAs="Jefatura del Estado"/>
+        <TLCPerson eId="rey-juan-carlos-i"
+                   href="/akn/es/person/juan-carlos-i"
+                   showAs="JUAN CARLOS I, Rey de España"/>
+        <TLCPerson eId="presidente-aznar"
+                   href="/akn/es/person/jose-maria-aznar"
+                   showAs="José María Aznar López, Presidente del Gobierno"/>
+      </references>
+
+      <proprietary source="#cortes-generales">
+        <akndiff:nativeId>ley-27-1999</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.boe.es/eli/es/l/1999/07/16/27</akndiff:sourceUrl>
+        <akndiff:actStatus normalized="in_force">vigente</akndiff:actStatus>
+        <akndiff:issuingBody>Jefatura del Estado</akndiff:issuingBody>
+
+        <akndiff:researchNotes>
+        1. BOE serializes laws as a FLAT sequence of `&lt;p class="X"&gt;` elements
+           where the class (titulo_num, capitulo_num, articulo, parrafo,
+           disposicion_*) carries the structural meaning. AKN expects NESTED
+           structure (&lt;title&gt; > &lt;chapter&gt; > &lt;article&gt; > &lt;content&gt;).
+           BOE has no explicit "end of chapter" marker, so the hierarchy
+           must be reconstructed by reading sibling markers in order — lossy
+           if not careful.
+
+        2. ELI URI (https://www.boe.es/eli/es/l/1999/07/16/27) is the standard
+           European legal URI. AKN has its own URI scheme
+           (/akn/es/act/1999-07-16/ley-27-1999). The schema only stores AKN's.
+           Two parallel identifier systems for the same legal resource; ELI is
+           preserved only as akndiff:sourceUrl, not as a first-class field.
+
+        3. BOE's `&lt;analisis&gt;` block contains a STRUCTURED cross-reference
+           graph: every law this Act modifies (departing) and every law that
+           modifies this Act (incoming), with the verb (MODIFICA / DEROGA /
+           AÑADE / SUPRIME) and the affected articles for each. v3's link
+           extractor walks only `&lt;ref&gt;` inside body — it ignores this
+           entire structured block. Major data loss.
+
+        4. AKN's &lt;preamble&gt; is intended for short formulaic intros ("Sabed:
+           que las Cortes Generales..."). Spanish laws place the Exposición
+           de Motivos there, which can run to 38+ paragraphs. Stretch.
+
+        5. ActTable has NO field for `rango`. Spanish constitutional law
+           distinguishes Ley / Ley Orgánica (mayoría absoluta, derechos
+           fundamentales) / Real Decreto-ley (ejecutivo + convalidación) /
+           Real Decreto. All currently collapse to type='act'. Important
+           legal distinction lost.
+
+        6. BOE publishes regional co-official language versions (Catalan,
+           Galician) of this law as separate consolidated PDFs. The schema
+           models language as a single field on the document (FRBRlanguage).
+           Multilingual publications would need separate document rows per
+           language pointing to the same FRBRWork — not supported as
+           first-class today.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Ley 27/1999, de 16 de julio, de Cooperativas.</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>JUAN CARLOS I</p>
+      <p>REY DE ESPAÑA</p>
+      <p>A todos los que la presente vieren y entendieren.</p>
+      <p>Sabed: Que las Cortes Generales han aprobado y Yo vengo en sancionar la siguiente Ley.</p>
+
+      <p>EXPOSICIÓN DE MOTIVOS</p>
+
+      <p>Las sociedades cooperativas, como verdaderas instituciones socioeconómicas, han de hacer frente a las constantes transformaciones que, de forma progresiva, se producen en el mundo actual. Los cambios tecnológicos, económicos y en la organización de trabajo que dan especial protagonismo a las pequeñas y medianas empresas, junto a la aparición de los nuevos «yacimientos de empleo», abren a las cooperativas amplias expectativas para su expansión, pero, a la vez, exigen que su formulación jurídica encuentre sólidos soportes para su consolidación como empresa.</p>
+
+      <p>Para las sociedades cooperativas, en un mundo cada vez más competitivo y riguroso en las reglas del mercado, la competitividad se ha convertido en un valor consustancial a su naturaleza cooperativa, pues en vano podría mantener sus valores sociales si fallasen la eficacia y rentabilidad propias de su carácter empresarial.</p>
+
+      <p>El mandato de la Constitución Española, que en el apartado 2 de su artículo 129 ordena a los poderes públicos el fomento, mediante una legislación adecuada de las sociedades cooperativas, motiva que el legislador contemple la necesidad de ofrecer un cauce adecuado que canalice las iniciativas colectivas de los ciudadanos que desarrollen actividades generadoras de riqueza y empleo estable. El fomento del cooperativismo como fórmula que facilita la integración económica y laboral de los españoles en el mercado, hace perfectamente compatibles los requisitos de rentabilidad y competitividad propios de las economías más desarrolladas con los valores que dan forma a las cooperativas desde hace más de ciento cincuenta años.</p>
+
+      <p>Los valores éticos que dan vida a los principios cooperativos formulados por la alianza cooperativa internacional, especialmente en los que encarnan la solidaridad, la democracia, igualdad y vocación social tienen cabida en la nueva Ley que los consagra como elementos indispensables para construir una empresa viable con la que los socios se identifican al apreciar en ella la realización de un proyecto que garantiza su empleo y vida profesional.</p>
+
+      <p>Era necesaria una Ley de Cooperativas que, reforzando los principios básicos del espíritu del cooperativismo, fuera un útil instrumento jurídico para hacer frente a los grandes desafíos económicos y empresariales que representa la entrada en la Unión Monetaria Europea.</p>
+
+      <p>Las nuevas demandas sociales de solidaridad y las nuevas actividades generadoras de empleo, son atendidas por la Ley, ofreciendo el autoempleo colectivo como fórmula para la inserción social, la atención a colectivos especialmente con dificultades de inserción laboral y la participación pública en este sector.</p>
+
+      <p>La nueva Ley es también el resultado de la necesidad de aplicar en beneficio del sector cooperativo, una serie de cambios legislativos que se han producido tanto en el ámbito nacional como en el comunitario.</p>
+
+      <p>Desde 1989, buena parte del Derecho de sociedades ha sido modificado, para adaptarlo a las Directivas europeas sobre la materia. Con ello, se han introducido algunas novedosas regulaciones que parece muy conveniente incorporar también a la legislación cooperativa, como las que afectan, entre otras, a la publicidad societaria, al depósito de cuentas anuales, a las transformaciones y fusiones, a las competencias de los órganos de administración y a los derechos y obligaciones de los socios.</p>
+
+      <p>Respecto a la legislación nacional, la nueva Ley tiene en cuenta la aportación que supuso la Ley General de Cooperativas 3/1987, de 2 de abril, que adaptó a las exigencias del Estado de las Autonomías, el régimen jurídico de las sociedades cooperativas. El asumir las Comunidades Autónomas la competencia exclusiva en esta materia significa, en la práctica, que el ámbito de aplicación de la nueva Ley ha sido ampliamente reformulado.</p>
+
+      <p>La Ley ofrece un marco de flexibilidad, donde las propias cooperativas puedan entrar a autorregularse, y establece los principios que, con carácter general, deben ser aplicados en su actuación, huyendo del carácter reglamentista que en muchos aspectos, dificulta la actividad societaria.</p>
+
+      <p>Un objetivo prioritario es reforzar la consolidación empresarial de la cooperativa, para lo que ha sido preciso flexibilizar su régimen económico y societario y acoger novedades en materia de financiación empresarial.</p>
+
+      <p>Dentro de estas perspectivas, la Ley se estructura en tres Títulos con ciento veinte artículos, trece disposiciones adicionales, cuatro disposiciones transitorias, tres disposiciones derogatorias y seis disposiciones finales.</p>
+
+      <p>I. El Título I define el concepto de sociedad cooperativa, sus clases, reduciendo su número al unificar las cooperativas de enseñanza y las educacionales, regulando su constitución. Se crean las Secciones, que permiten desarrollar actividades económicas y sociales específicas dentro de su ámbito.</p>
+
+      <p>II. En el Título II, de la acción de la Administración General del Estado, se reconoce como tarea de interés general la promoción, estímulo y desarrollo de las sociedades cooperativas y se recogen los principios generales que deben presidir la organización del Registro de Sociedades Cooperativas.</p>
+
+      <p>III. En el Título III, mantiene las formas de asociación de las sociedades cooperativas facilitando la creación de estas agrupaciones, a los efectos de incentivar el movimiento cooperativo en el ámbito estatal.</p>
+
+      <p>IV. En las disposiciones adicionales es de destacar la creación del Consejo para el Fomento de la Economía Social como órgano asesor y consultivo de la Administración General del Estado.</p>
+    </preamble>
+
+    <body>
+
+      <!-- ───────────────────── TÍTULO I ───────────────────── -->
+      <title eId="tit_1">
+        <num>TÍTULO I</num>
+        <heading>De la sociedad cooperativa</heading>
+
+        <chapter eId="tit_1__chp_1">
+          <num>CAPÍTULO I</num>
+          <heading>Disposiciones generales</heading>
+
+          <article eId="art_1">
+            <num>Artículo 1</num>
+            <heading>Concepto y denominación</heading>
+            <content>
+              <p>1. La cooperativa es una sociedad constituida por personas que se asocian, en régimen de libre adhesión y baja voluntaria, para la realización de actividades empresariales, encaminadas a satisfacer sus necesidades y aspiraciones económicas y sociales, con estructura y funcionamiento democrático, conforme a los principios formulados por la alianza cooperativa internacional, en los términos resultantes de la presente Ley.</p>
+              <p>2. Cualquier actividad económica lícita podrá ser organizada y desarrollada mediante una sociedad constituida al amparo de la presente Ley.</p>
+              <p>3. La denominación de la sociedad incluirá necesariamente las palabras «Sociedad Cooperativa» o su abreviatura «S. Coop.». Esta denominación será exclusiva, y reglamentariamente podrán establecerse sus requisitos.</p>
+              <p>4. Las sociedades cooperativas podrán revestir la forma de cooperativa de primero y segundo grado, de acuerdo con las especificidades previstas en esta Ley.</p>
+            </content>
+          </article>
+
+          <article eId="art_2">
+            <num>Artículo 2</num>
+            <heading>Ámbito de aplicación</heading>
+            <content>
+              <p>La presente Ley será de aplicación:</p>
+              <p>A) A las sociedades cooperativas que desarrollen su actividad cooperativizada en el territorio de varias Comunidades Autónomas, excepto cuando en una de ellas se desarrolle con carácter principal.</p>
+              <p>B) A las sociedades cooperativas que realicen principalmente su actividad cooperativizada en las ciudades de Ceuta y Melilla.</p>
+            </content>
+          </article>
+
+          <article eId="art_3">
+            <num>Artículo 3</num>
+            <heading>Domicilio</heading>
+            <content>
+              <p>La sociedad cooperativa fijará su domicilio social dentro del territorio español, en el lugar donde realice principalmente su actividad o centralice su gestión administrativa y dirección.</p>
+            </content>
+          </article>
+
+          <article eId="art_4">
+            <num>Artículo 4</num>
+            <heading>Operaciones con terceros</heading>
+            <content>
+              <p>Estructura preservada. Texto íntegro en BOE-A-1999-15681 (artículo 4). El esquema solo necesita el num + heading; el cuerpo se renderiza desde la fuente original cuando el demo lo necesita.</p>
+            </content>
+          </article>
+
+          <article eId="art_5">
+            <num>Artículo 5</num>
+            <heading>Secciones</heading>
+            <content>
+              <p>Estructura preservada. Texto íntegro en BOE-A-1999-15681 (artículo 5).</p>
+            </content>
+          </article>
+
+          <article eId="art_6">
+            <num>Artículo 6</num>
+            <heading>Clases de cooperativas</heading>
+            <content>
+              <p>Las sociedades cooperativas de primer grado podrán clasificarse de la siguiente forma: cooperativas de trabajo asociado; de consumidores y usuarios; de viviendas; agrarias; de explotación comunitaria de la tierra; de servicios; del mar; de transportistas; de seguros; sanitarias; de enseñanza; de crédito.</p>
+            </content>
+          </article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_2">
+          <num>CAPÍTULO II</num>
+          <heading>De la constitución de la sociedad cooperativa</heading>
+
+          <article eId="art_7">
+            <num>Artículo 7</num>
+            <heading>Constitución e inscripción</heading>
+            <content>
+              <p>La sociedad cooperativa se constituirá mediante escritura pública, que deberá ser inscrita en el Registro de Sociedades Cooperativas previsto en esta Ley. Con la inscripción adquirirá personalidad jurídica.</p>
+            </content>
+          </article>
+
+          <article eId="art_8"><num>Artículo 8</num><heading>Número mínimo de socios</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_9"><num>Artículo 9</num><heading>Sociedad cooperativa en constitución</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_10"><num>Artículo 10</num><heading>Escritura de constitución</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_11"><num>Artículo 11</num><heading>Estatutos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_12"><num>Artículo 12</num><heading>Asamblea constituyente</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_13"><num>Artículo 13</num><heading>Inscripción de la cooperativa</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_14"><num>Artículo 14</num><heading>Operaciones anteriores a la inscripción</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_3">
+          <num>CAPÍTULO III</num>
+          <heading>De los socios</heading>
+          <article eId="art_15">
+            <num>Artículo 15</num>
+            <heading>Personas que pueden ser socios</heading>
+            <content>
+              <p>1. Pueden ser socios, en función de la actividad cooperativizada, tanto las personas físicas como jurídicas, públicas o privadas y las comunidades de bienes.</p>
+              <p>2. Si los Estatutos no lo prohíben, en las cooperativas de primer grado, podrán ser socios las personas jurídicas, públicas o privadas y las comunidades de bienes.</p>
+            </content>
+          </article>
+          <article eId="art_16"><num>Artículo 16</num><heading>Obligaciones de los socios</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_17"><num>Artículo 17</num><heading>Derechos de los socios</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_18"><num>Artículo 18</num><heading>Responsabilidad del socio por las deudas sociales</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_19"><num>Artículo 19</num><heading>Normas de disciplina social</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_20"><num>Artículo 20</num><heading>Procedimiento sancionador y recursos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_21"><num>Artículo 21</num><heading>Baja del socio</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_22"><num>Artículo 22</num><heading>Baja obligatoria</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_23"><num>Artículo 23</num><heading>Asociados (suprimido)</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_24"><num>Artículo 24</num><heading>Socio colaborador</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_4">
+          <num>CAPÍTULO IV</num>
+          <heading>De los órganos de la sociedad cooperativa</heading>
+          <article eId="art_25">
+            <num>Artículo 25</num>
+            <heading>Órganos de la sociedad</heading>
+            <content>
+              <p>Son órganos de la sociedad cooperativa los siguientes: la Asamblea General; el Consejo Rector; la Intervención. Asimismo, la sociedad cooperativa podrá prever la existencia de un Comité de Recursos y de otras instancias de carácter consultivo o asesor.</p>
+            </content>
+          </article>
+          <article eId="art_26"><num>Artículo 26</num><heading>Asamblea General</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_27"><num>Artículo 27</num><heading>Clases de Asambleas Generales</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_28"><num>Artículo 28</num><heading>Competencia de la Asamblea</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_29"><num>Artículo 29</num><heading>Convocatoria</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_30"><num>Artículo 30</num><heading>Constitución</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_31"><num>Artículo 31</num><heading>Voto</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_32"><num>Artículo 32</num><heading>Adopción de acuerdos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_33"><num>Artículo 33</num><heading>Acta de la Asamblea</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_34"><num>Artículo 34</num><heading>Impugnación de acuerdos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_35"><num>Artículo 35</num><heading>Asamblea General de Delegados</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_36"><num>Artículo 36</num><heading>Consejo Rector</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_37"><num>Artículo 37</num><heading>Composición</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_38"><num>Artículo 38</num><heading>Elección, nombramiento y aceptación</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_39"><num>Artículo 39</num><heading>Duración, cese y vacantes</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_40"><num>Artículo 40</num><heading>Funcionamiento</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_41"><num>Artículo 41</num><heading>Impugnación de acuerdos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_42"><num>Artículo 42</num><heading>Retribución</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_43"><num>Artículo 43</num><heading>Responsabilidad</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_44"><num>Artículo 44</num><heading>Dirección y otros apoderamientos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_45"><num>Artículo 45</num><heading>Conflicto de intereses con la cooperativa</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_46"><num>Artículo 46</num><heading>Intervención</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_47"><num>Artículo 47</num><heading>Comité de Recursos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_5">
+          <num>CAPÍTULO V</num>
+          <heading>Del régimen económico</heading>
+          <article eId="art_48"><num>Artículo 48</num><heading>Capital social</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_49"><num>Artículo 49</num><heading>Aportaciones obligatorias</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_50"><num>Artículo 50</num><heading>Aportaciones voluntarias</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_51"><num>Artículo 51</num><heading>Otras aportaciones financieras</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_52"><num>Artículo 52</num><heading>Acreditación y transmisión de las aportaciones</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_53"><num>Artículo 53</num><heading>Reembolso</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_54"><num>Artículo 54</num><heading>Actualización de aportaciones</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_55"><num>Artículo 55</num><heading>Intereses por aportaciones</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_56"><num>Artículo 56</num><heading>Fondo de Reserva Obligatorio</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_57"><num>Artículo 57</num><heading>Fondo de Educación y Promoción</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_58"><num>Artículo 58</num><heading>Ejercicio económico</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_59"><num>Artículo 59</num><heading>Determinación de resultados</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_60"><num>Artículo 60</num><heading>Aplicación de los excedentes</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_61"><num>Artículo 61</num><heading>Imputación de pérdidas</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_62"><num>Artículo 62</num><heading>Documentación social y contabilidad</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_63"><num>Artículo 63</num><heading>Auditoría de cuentas</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_6">
+          <num>CAPÍTULO VI</num>
+          <heading>De los libros sociales</heading>
+          <article eId="art_64"><num>Artículo 64</num><heading>Documentación social</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_65"><num>Artículo 65</num><heading>Cuentas anuales</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_66"><num>Artículo 66</num><heading>Auditoría</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_7">
+          <num>CAPÍTULO VII</num>
+          <heading>De la modificación de estatutos, fusión, escisión, transformación, disolución y liquidación</heading>
+          <article eId="art_67"><num>Artículo 67</num><heading>Modificación de estatutos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_68"><num>Artículo 68</num><heading>Cambio de domicilio</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_69"><num>Artículo 69</num><heading>Concepto de fusión</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_70"><num>Artículo 70</num><heading>Proyecto de fusión</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_71"><num>Artículo 71</num><heading>Acuerdos de fusión</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_72"><num>Artículo 72</num><heading>Derecho de separación de socios</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_73"><num>Artículo 73</num><heading>Escritura e inscripción de la fusión</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_74"><num>Artículo 74</num><heading>Fusión especial</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_75"><num>Artículo 75</num><heading>Escisión</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_76"><num>Artículo 76</num><heading>Transformación</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_77"><num>Artículo 77</num><heading>Disolución</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_78"><num>Artículo 78</num><heading>Período de liquidación</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_79"><num>Artículo 79</num><heading>Adjudicación del haber social</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_80"><num>Artículo 80</num><heading>Reactivación</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_8">
+          <num>CAPÍTULO VIII</num>
+          <heading>De las cooperativas de segundo grado, grupo cooperativo y otras formas de colaboración económica</heading>
+          <article eId="art_81"><num>Artículo 81</num><heading>Cooperativas de segundo grado</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_82"><num>Artículo 82</num><heading>Cooperativas de integración (suprimida)</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_83"><num>Artículo 83</num><heading>Acuerdos intercooperativos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_84"><num>Artículo 84</num><heading>Grupo cooperativo</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_85"><num>Artículo 85</num><heading>Otras formas de colaboración económica</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_9">
+          <num>CAPÍTULO IX</num>
+          <heading>De las cooperativas de primer grado en función del objeto cooperativizado</heading>
+          <article eId="art_86"><num>Artículo 86</num><heading>Cooperativas de trabajo asociado</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_87"><num>Artículo 87</num><heading>Pérdida de la condición de socio trabajador</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_88"><num>Artículo 88</num><heading>Cuestiones contenciosas</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_10">
+          <num>CAPÍTULO X</num>
+          <heading>De las clases de cooperativas</heading>
+          <article eId="art_89"><num>Artículo 89</num><heading>Cooperativas de consumidores y usuarios</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_90"><num>Artículo 90</num><heading>Cooperativas de viviendas</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_91"><num>Artículo 91</num><heading>Cooperativas agrarias</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_92"><num>Artículo 92</num><heading>Cooperativas de explotación comunitaria de la tierra</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_93"><num>Artículo 93</num><heading>Cooperativas de servicios</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_94"><num>Artículo 94</num><heading>Cooperativas del mar</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_95"><num>Artículo 95</num><heading>Cooperativas de transportistas</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_96"><num>Artículo 96</num><heading>Cooperativas de seguros</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_97"><num>Artículo 97</num><heading>Cooperativas sanitarias</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_98"><num>Artículo 98</num><heading>Cooperativas de enseñanza</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_99"><num>Artículo 99</num><heading>Cooperativas de crédito</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_100"><num>Artículo 100</num><heading>Cooperativas de iniciativa social</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_101"><num>Artículo 101</num><heading>Cooperativas integrales</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_102"><num>Artículo 102</num><heading>Cooperativas mixtas</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+
+        <chapter eId="tit_1__chp_11">
+          <num>CAPÍTULO XI</num>
+          <heading>De las normas de funcionamiento internas</heading>
+          <article eId="art_103"><num>Artículo 103</num><heading>Reglamento de régimen interior</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+          <article eId="art_104"><num>Artículo 104</num><heading>Censura de cuentas y libros</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        </chapter>
+      </title>
+
+      <!-- ───────────────────── TÍTULO II ───────────────────── -->
+      <title eId="tit_2">
+        <num>TÍTULO II</num>
+        <heading>De la acción de la Administración General del Estado</heading>
+        <article eId="art_105"><num>Artículo 105</num><heading>Promoción del cooperativismo</heading><content><p>La promoción, estímulo y desarrollo de las sociedades cooperativas y de sus estructuras de integración económica y representativa es tarea de interés general que compete a la Administración General del Estado.</p></content></article>
+        <article eId="art_106"><num>Artículo 106</num><heading>Registro de Sociedades Cooperativas</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_107"><num>Artículo 107</num><heading>Funciones del Registro</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_108"><num>Artículo 108</num><heading>Inspección y régimen sancionador</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+      </title>
+
+      <!-- ───────────────────── TÍTULO III ───────────────────── -->
+      <title eId="tit_3">
+        <num>TÍTULO III</num>
+        <heading>Del asociacionismo cooperativo</heading>
+        <article eId="art_109"><num>Artículo 109</num><heading>Derecho de asociación</heading><content><p>Las sociedades cooperativas podrán asociarse libremente entre sí para la mejor defensa y promoción de sus intereses comunes y para la consecución de sus objetivos económicos y sociales.</p></content></article>
+        <article eId="art_110"><num>Artículo 110</num><heading>Uniones, federaciones y confederaciones</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_111"><num>Artículo 111</num><heading>Adquisición de personalidad jurídica</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_112"><num>Artículo 112</num><heading>Funciones</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_113"><num>Artículo 113</num><heading>Acuerdos que limitan la libertad cooperativa</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_114"><num>Artículo 114</num><heading>Disolución</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_115"><num>Artículo 115</num><heading>Confederación</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_116"><num>Artículo 116</num><heading>Inscripción y publicidad</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_117"><num>Artículo 117</num><heading>Régimen económico</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_118"><num>Artículo 118</num><heading>Recursos públicos</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_119"><num>Artículo 119</num><heading>Tutela administrativa</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+        <article eId="art_120"><num>Artículo 120</num><heading>Disposiciones aplicables</heading><content><p>Estructura preservada. Texto íntegro en BOE-A-1999-15681.</p></content></article>
+      </title>
+
+      <!-- ───────────────────── DISPOSICIONES ADICIONALES ───────────────────── -->
+      <hcontainer name="adicionales" eId="add">
+
+        <article eId="add_1">
+          <num>Disposición adicional primera</num>
+          <heading>Calificación como entidades sin ánimo de lucro</heading>
+          <content>
+            <p>Podrán ser calificadas como sociedades cooperativas sin ánimo de lucro las que gestionen servicios de interés colectivo o de titularidad pública, así como las que realicen actividades económicas que conduzcan a la integración laboral de las personas que sufran cualquier clase de exclusión social y en sus Estatutos recojan expresamente:</p>
+            <p>a) Que los resultados positivos que se produzcan en un ejercicio económico no podrán ser distribuidos entre sus socios.</p>
+            <p>b) Las aportaciones de los socios al capital social, tanto obligatorias como voluntarias, no podrán devengar un interés superior al interés legal del dinero.</p>
+            <p>c) El carácter gratuito del desempeño de los cargos del Consejo Rector.</p>
+            <p>d) Las retribuciones de los socios trabajadores no podrán superar el 150 por 100 de las retribuciones que establezca el convenio colectivo aplicable.</p>
+          </content>
+        </article>
+
+        <article eId="add_2">
+          <num>Disposición adicional segunda</num>
+          <heading>Creación del Consejo para el Fomento de la Economía Social</heading>
+          <content>
+            <p>Se crea el Consejo para el Fomento de la Economía Social, como órgano asesor y consultivo para las actividades relacionadas con la economía social, integrado, a través del Ministerio de Trabajo y Asuntos Sociales, en la Administración General del Estado, aunque sin participar en la estructura jerárquica de ésta.</p>
+            <p>Actuará como un órgano de colaboración y coordinación del movimiento asociativo y la Administración General del Estado.</p>
+            <p>De conformidad con las competencias que le sean atribuidas, y de acuerdo con el ámbito de esta Ley, tendrá las siguientes funciones: 1. Colaborar en la elaboración de proposiciones sobre cualquier disposición legal o reglamentaria que afecten a entidades de la economía social. 2. Elaborar los informes que se soliciten por el Ministerio de Trabajo y Asuntos Sociales y demás Departamentos ministeriales. 3. Informar los programas de desarrollo y fomento de la economía social. 4. Realizar estudios sobre cuestiones y problemas que afecten a la economía social. 5. Velar por que el funcionamiento de las empresas y entidades se adecuen a los principios configuradores propios de este sector. 6. Cuantas otras funciones y competencias se le atribuyan por disposiciones legales y reglamentarias.</p>
+            <p>El Consejo para el Fomento de la Economía Social estará compuesto por representantes de la Administración General del Estado, de las Administraciones autonómicas, de las asociaciones de cooperativas, de las mutualidades de previsión social, de sociedades laborales, y cinco personas de reconocido prestigio en el ámbito de la economía social designadas por el Ministerio de Trabajo y Asuntos Sociales.</p>
+          </content>
+        </article>
+
+        <article eId="add_3">
+          <num>Disposición adicional tercera</num>
+          <heading>Derechos de los acreedores personales de los socios</heading>
+          <content>
+            <p>Los acreedores personales de los socios no tendrán derecho alguno sobre los bienes de las cooperativas ni sobre las aportaciones de los socios al capital social, que son inembargables. Todo ello, sin menoscabo de los derechos que pueda ejercer el acreedor sobre los reembolsos, intereses y retornos que correspondan al socio.</p>
+          </content>
+        </article>
+
+        <article eId="add_4">
+          <num>Disposición adicional cuarta</num>
+          <heading>Suspensión de pagos y quiebras</heading>
+          <content>
+            <p>A las sociedades cooperativas les será aplicable la legislación sobre suspensión de pagos y quiebra.</p>
+          </content>
+        </article>
+
+        <article eId="add_5">
+          <num>Disposición adicional quinta</num>
+          <heading>Normas especiales</heading>
+          <content>
+            <p>1. Las sociedades cooperativas tendrán la condición de mayoristas y podrán detallar como minoristas en la distribución o venta, con independencia de la calificación que les corresponda a efectos fiscales.</p>
+            <p>2. Las entregas de bienes y prestaciones de servicios proporcionadas por las sociedades cooperativas a sus socios, ya sean producidos por ellas o adquiridos a terceros para el cumplimiento de sus fines sociales, no tendrán la consideración de ventas.</p>
+            <p>3. Las cooperativas de consumidores y usuarios, las cooperativas agrarias y las cooperativas de transportistas, además de la condición de mayoristas, tendrán también la condición de consumidores directos para abastecerse de terceros.</p>
+            <p>4. Se considerarán actividades cooperativas internas y operaciones de transformación primaria las que realicen las cooperativas agrarias con productos destinados exclusivamente a las explotaciones de sus socios.</p>
+            <p>5. Las cooperativas de trabajo asociado gozarán de prioridad en caso de empate en los concursos y subastas para los contratos de obras o servicios del Estado.</p>
+            <p>6. Las cooperativas de viviendas tendrán derecho a la adquisición de terrenos de gestión pública por el sistema de adjudicación directa.</p>
+            <p>7. Las sociedades cooperativas estarán sujetas a lo establecido en la Ley 26/1984, de 19 de julio, Ley General para la Defensa de los Consumidores y Usuarios.</p>
+            <p>8. Los aranceles notariales y registrales tendrán una reducción igual a la que se le concede al Estado.</p>
+          </content>
+        </article>
+
+        <article eId="add_6">
+          <num>Disposición adicional sexta</num>
+          <heading>Contabilización separada</heading>
+          <content>
+            <p>Será causa de pérdida de la condición de cooperativa fiscalmente protegida la falta de contabilización separada de las operaciones cooperativizadas realizadas con terceros no socios.</p>
+          </content>
+        </article>
+
+        <article eId="add_7">
+          <num>Disposición adicional séptima</num>
+          <heading>Régimen de las sociedades mixtas</heading>
+          <content>
+            <p>La parte del resultado cooperativo correspondiente a la proporción de los votos que ostenten los socios titulares de partes sociales con voto, tendrá la misma consideración que los resultados extracooperativos a efectos de su tributación en el Impuesto sobre Sociedades.</p>
+          </content>
+        </article>
+
+        <article eId="add_8">
+          <num>Disposición adicional octava</num>
+          <heading>Cooperativas integrales</heading>
+          <content>
+            <p>Se considerarán especialmente protegidas las cooperativas integrales cuando, respecto a todas y cada una de sus actividades, se cumplan los requisitos exigidos para ser consideradas especialmente protegidas.</p>
+          </content>
+        </article>
+
+        <article eId="add_9">
+          <num>Disposición adicional novena</num>
+          <heading>Sociedades cooperativas calificadas como entidades sin ánimo de lucro</heading>
+          <content>
+            <p>El régimen tributario aplicable a las sociedades cooperativas calificadas como entidades sin ánimo de lucro será el establecido en la Ley 20/1990, de 19 de diciembre, de Régimen Fiscal de Cooperativas.</p>
+          </content>
+        </article>
+
+        <article eId="add_10">
+          <num>Disposición adicional décima</num>
+          <heading>Arbitraje</heading>
+          <content>
+            <p>1. Las discrepancias o controversias que puedan plantearse en las cooperativas, entre el Consejo Rector o los apoderados, el Comité de Recursos y los socios, incluso en el período de liquidación, podrán ser sometidas a arbitraje de derecho regulado por la Ley 36/1988, de 5 de diciembre; no obstante, si la disputa afectase principalmente a los principios cooperativos podrá acudirse al arbitraje de equidad.</p>
+            <p>2. Dado el carácter negocial y dispositivo de los acuerdos sociales, no quedan excluidas de la posibilidad anterior ni las pretensiones de nulidad de la Asamblea General, ni la impugnación de acuerdos asamblearios o rectores; pero el árbitro no podrá pronunciarse sobre aquellos extremos que estén fuera del poder de disposición de las partes.</p>
+          </content>
+        </article>
+
+        <article eId="add_11">
+          <num>Disposición adicional undécima</num>
+          <heading>Programas anuales para el impulso, promoción y fomento del cooperativismo</heading>
+          <content>
+            <p>El Ministerio de Trabajo y Asuntos Sociales elaborará y llevará a cabo programas anuales para el impulso, promoción y fomento del cooperativismo, previo informe del Consejo para el Fomento de la Economía Social.</p>
+          </content>
+        </article>
+
+        <article eId="add_12">
+          <num>Disposición adicional duodécima</num>
+          <heading>Medidas de fomento para la creación de empleo</heading>
+          <content>
+            <p>Serán de aplicación a los socios trabajadores de las cooperativas de trabajo asociado y a los socios de trabajo de las otras clases de cooperativas todas las normas e incentivos sobre trabajadores por cuenta ajena que tengan por objeto la consolidación y creación de empleos estables, tanto las relativas a la Seguridad Social como a las modalidades de contratación.</p>
+          </content>
+        </article>
+
+        <article eId="add_13">
+          <num>Disposición adicional decimotercera</num>
+          <heading>Regímenes forales</heading>
+          <content>
+            <p>Esta Ley se aplicará sin perjuicio de los específicos regímenes forales vigentes en materia tributaria establecidos en las normas y convenios vigentes en la materia.</p>
+          </content>
+        </article>
+      </hcontainer>
+
+      <!-- ───────────────────── DISPOSICIONES TRANSITORIAS ───────────────────── -->
+      <hcontainer name="transitorias" eId="trans">
+
+        <article eId="trans_1">
+          <num>Disposición transitoria primera</num>
+          <heading>Aplicación temporal de la Ley</heading>
+          <content>
+            <p>Los expedientes en materia de cooperativas iniciados antes de la vigencia de esta Ley se tramitarán y resolverán con arreglo a las disposiciones hasta ahora en vigor. El contenido de las escrituras y de los Estatutos de las sociedades cooperativas existentes a la entrada en vigor de esta Ley, no podrá ser aplicado si se opone a ésta, entendiéndose modificado o completado por cuantas normas prohibitivas o imperativas se contienen en la misma.</p>
+          </content>
+        </article>
+
+        <article eId="trans_2">
+          <num>Disposición transitoria segunda</num>
+          <heading>Adaptación de las sociedades cooperativas a las previsiones de la Ley</heading>
+          <content>
+            <p>Las sociedades cooperativas, constituidas con anterioridad a la fecha de entrada en vigor de esta Ley, dispondrán de un plazo de tres años a partir de la fecha de entrada en vigor de la misma, para adaptar sus Estatutos a lo establecido en esta Ley.</p>
+            <p>El acuerdo de adaptación de Estatutos deberá adoptarse en Asamblea General, siendo suficiente el voto a favor de más de la mitad de socios presentes y representados. Cualquier consejero o socio estará legitimado para solicitar del Consejo Rector la convocatoria de la Asamblea General con esta finalidad y si, transcurridos dos meses desde la solicitud no se hubiese hecho la convocatoria, podrán solicitarla del Juez de Primera Instancia del domicilio social.</p>
+            <p>Transcurridos tres años desde la entrada en vigor de la presente Ley no se inscribirá en el Registro de Sociedades Cooperativas documento alguno de sociedades cooperativas sometidas a esta Ley hasta tanto no se haya inscrito la adaptación de sus Estatutos sociales.</p>
+          </content>
+        </article>
+
+        <article eId="trans_3">
+          <num>Disposición transitoria tercera</num>
+          <heading>Consolidación de denominaciones</heading>
+          <content>
+            <p>Los certificados y registro de denominaciones realizados por el Registro de Sociedades Cooperativas hasta la entrada en vigor de la presente Ley, se entenderán a todos los efectos como consolidados.</p>
+          </content>
+        </article>
+
+        <article eId="trans_4">
+          <num>Disposición transitoria cuarta</num>
+          <heading>Adaptación de la remuneración de las aportaciones voluntarias</heading>
+          <content>
+            <p>Las cooperativas dispondrán de un plazo de tres años, contados a partir de la fecha de entrada en vigor de la presente Ley, para adaptar la remuneración de las aportaciones voluntarias al capital social, suscritas con anterioridad a la entrada en vigor de esta Ley, a las previsiones contenidas en la misma.</p>
+          </content>
+        </article>
+      </hcontainer>
+
+      <!-- ───────────────────── DISPOSICIONES DEROGATORIAS ───────────────────── -->
+      <hcontainer name="derogatorias" eId="derog">
+
+        <article eId="derog_1">
+          <num>Disposición derogatoria primera</num>
+          <heading>Derogación de la Ley de 2 de abril de 1987</heading>
+          <content>
+            <p>Quedan derogadas cuantas normas se opongan a lo dispuesto en la presente Ley y, en particular la Ley 3/1987, de 2 de abril, General de Cooperativas, excepto lo establecido en el capítulo III de su Título I, hasta tanto se cumpla la previsión recogida en la disposición final primera de la presente Ley.</p>
+          </content>
+        </article>
+
+        <article eId="derog_2">
+          <num>Disposición derogatoria segunda</num>
+          <heading>Supresión de las cooperativas de integración</heading>
+          <content>
+            <p>Se suprimen las cooperativas de integración creadas al amparo de lo dispuesto en la disposición adicional tercera del Real Decreto 84/1993, de 22 de enero, por el que se aprueba el Reglamento de desarrollo de la Ley 13/1989, de 26 de mayo, de Cooperativas de Crédito.</p>
+          </content>
+        </article>
+
+        <article eId="derog_3">
+          <num>Disposición derogatoria tercera</num>
+          <heading>Supresión del Consejo de Fomento de la Economía Social</heading>
+          <content>
+            <p>Se deroga el apartado 2 del artículo 9 bis adicionado al Real Decreto 1888/1996, de 2 de agosto, de estructura orgánica básica del Ministerio de Trabajo y Asuntos Sociales.</p>
+          </content>
+        </article>
+      </hcontainer>
+
+      <!-- ───────────────────── DISPOSICIONES FINALES ───────────────────── -->
+      <hcontainer name="finales" eId="final">
+
+        <article eId="final_1">
+          <num>Disposición final primera</num>
+          <heading>Registro de Sociedades Cooperativas</heading>
+          <content>
+            <p>El Gobierno, a propuesta del Ministro de Trabajo y Asuntos Sociales, procederá a aprobar en un plazo no superior a seis meses a partir de la publicación de esta Ley, el Reglamento del Registro de Sociedades Cooperativas.</p>
+          </content>
+        </article>
+
+        <article eId="final_2">
+          <num>Disposición final segunda</num>
+          <heading>Creación de nuevas clases de cooperativas</heading>
+          <content>
+            <p>El Gobierno, a propuesta del Ministro de Trabajo y Asuntos Sociales y previo informe del Consejo para el Fomento de la Economía Social, podrá crear nuevas clases de cooperativas, cuando sea preciso para el desarrollo de cualquier sector del cooperativismo.</p>
+          </content>
+        </article>
+
+        <article eId="final_3">
+          <num>Disposición final tercera</num>
+          <heading>Legalización de libros y depósito de cuentas</heading>
+          <content>
+            <p>El Gobierno, a propuesta de los Ministros de Justicia y de Trabajo y Asuntos Sociales, dictará las normas necesarias para que las cooperativas tengan que legalizar los libros y depositar sus cuentas anuales en un solo Registro.</p>
+          </content>
+        </article>
+
+        <article eId="final_4">
+          <num>Disposición final cuarta</num>
+          <heading>Cuentas consolidadas del grupo cooperativo</heading>
+          <content>
+            <p>El Gobierno, a propuesta del Ministro de Economía y Hacienda, dictará las normas necesarias en las que se establecerá en qué casos el grupo cooperativo vendrá obligado a formular las cuentas anuales y el informe de gestión consolidados.</p>
+          </content>
+        </article>
+
+        <article eId="final_5">
+          <num>Disposición final quinta</num>
+          <heading>Normas para la aplicación y desarrollo de la Ley</heading>
+          <content>
+            <p>El Gobierno, a propuesta del Ministro de Trabajo y Asuntos Sociales, podrá dictar normas para la aplicación y desarrollo de la presente Ley.</p>
+          </content>
+        </article>
+
+        <article eId="final_6">
+          <num>Disposición final sexta</num>
+          <heading>Aplicación a las cooperativas de las disposiciones de Seguridad Social para la contratación a tiempo parcial (suprimida por Ley 1/2026)</heading>
+          <content>
+            <p>Las disposiciones de Seguridad Social previstas para la contratación a tiempo parcial, serán objeto de las modificaciones y adaptación que resulten precisas para su aplicación en el ámbito de las sociedades cooperativas de trabajo asociado e integral. A tal efecto, el Gobierno procederá en el plazo de un año desde la entrada en vigor de la presente Ley al correspondiente desarrollo reglamentario, en aplicación de lo previsto en la disposición adicional cuarta de la Ley General de la Seguridad Social.</p>
+            <p>Nota: esta disposición final fue suprimida por la Ley 1/2026, de 8 de abril, integral de impulso de la economía social.</p>
+          </content>
+        </article>
+      </hcontainer>
+    </body>
+
+    <conclusions>
+      <p>Por tanto,</p>
+      <p>Mando a todos los españoles, particulares y autoridades, que guarden y hagan guardar esta Ley.</p>
+      <p>Madrid, 16 de julio de 1999.</p>
+      <signature>
+        <person refersTo="#rey-juan-carlos-i">JUAN CARLOS R.</person>
+      </signature>
+      <signature>
+        <p>El Presidente del Gobierno,</p>
+        <person refersTo="#presidente-aznar">JOSÉ MARÍA AZNAR LÓPEZ</person>
+      </signature>
+    </conclusions>
+  </act>
+</akomaNtoso>

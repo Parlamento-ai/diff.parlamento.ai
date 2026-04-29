@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Pleno del Congreso de los Diputados — sesión nº 169 (XV Legislatura).
+  Diario de Sesiones DSCD-15-PL-175.
+
+  Sesión del jueves 26 de marzo de 2026.
+  Apertura: 09:02. Levantamiento: 14:29 ("Eran las dos y veintinueve
+  minutos de la tarde", literal del DSCD).
+  Presidió: Francina Armengol Socias (Presidenta del Congreso).
+
+  Punto del orden del día (p. 73 del DSCD): "Enmiendas del Senado al
+  Proyecto de Ley integral de impulso de la economía social
+  (121/000036)". Se sometieron a votación SEPARADA por bloques (9
+  bloques en total). Resultado: 2 bloques APROBADOS (los del art. 1.14
+  y los del art. 2.2 + art. 3.2), 7 bloques RECHAZADOS.
+
+  Source primary: DSCD-15-PL-175.PDF (también disponible como HTML),
+  publicado por el Congreso de los Diputados.
+  Cached locally: research/schema/_sources/es/DSCD-15-PL-175.html
+  (ungitignored area, 449 KB de HTML, contiene transcript completo).
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <debate name="debate">
+    <meta>
+      <identification source="#congreso-diputados">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/debate/2026-03-26/dscd-15-pl-175/!main"/>
+          <FRBRuri value="/akn/es/debate/2026-03-26/dscd-15-pl-175"/>
+          <FRBRdate date="2026-03-26" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/debate/2026-03-26/dscd-15-pl-175/spa@/!main"/>
+          <FRBRuri value="/akn/es/debate/2026-03-26/dscd-15-pl-175/spa@"/>
+          <FRBRdate date="2026-03-26" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/debate/2026-03-26/dscd-15-pl-175/spa@.xml"/>
+          <FRBRuri value="/akn/es/debate/2026-03-26/dscd-15-pl-175/spa@.xml"/>
+          <FRBRdate date="2026-03-26" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2026-03-26"
+                   showAs="DSCD-15-PL-175 — Sesión Plenaria nº 169 del Congreso de los Diputados (XV Legislatura), 26 de marzo de 2026"
+                   name="dscd"
+                   href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-175.PDF"/>
+
+      <references source="#congreso-diputados">
+        <TLCOrganization eId="congreso-diputados-pleno"
+                         href="/akn/es/org/congreso-diputados-pleno"
+                         showAs="Pleno del Congreso de los Diputados (XV Legislatura)"/>
+        <TLCPerson eId="armengol-socias"
+                   href="/akn/es/person/francina-armengol-socias"
+                   showAs="Francina Armengol Socias (Presidenta del Congreso)"/>
+        <TLCPerson eId="diaz-perez"
+                   href="/akn/es/person/yolanda-diaz-perez"
+                   showAs="Yolanda Díaz Pérez (Vicepresidenta Segunda y Ministra de Trabajo y Economía Social)"/>
+        <TLCPerson eId="dip-santana-perera"
+                   href="/akn/es/person/santana-perera"
+                   showAs="Sra. Santana Perera (G.P. Mixto)"/>
+        <TLCPerson eId="dip-cervera-pinart"
+                   href="/akn/es/person/cervera-pinart"
+                   showAs="Sr. Cervera Pinart (G.P. Junts per Catalunya)"/>
+        <TLCPerson eId="dip-salvador-i-duch"
+                   href="/akn/es/person/salvador-i-duch"
+                   showAs="Sr. Salvador i Duch (G.P. Republicano)"/>
+        <TLCPerson eId="dip-ogou-i-corbi"
+                   href="/akn/es/person/ogou-i-corbi"
+                   showAs="Sr./Sra. Ogou i Corbi (G.P. Plurinacional SUMAR)"/>
+        <TLCPerson eId="dip-aizcorbe-torra"
+                   href="/akn/es/person/aizcorbe-torra"
+                   showAs="Sr. Aizcorbe Torra (G.P. VOX)"/>
+        <TLCPerson eId="dip-trenzano-rubio"
+                   href="/akn/es/person/trenzano-rubio"
+                   showAs="Sr. Trenzano Rubio (G.P. Socialista)"/>
+        <TLCPerson eId="dip-tomas-olivares"
+                   href="/akn/es/person/tomas-olivares"
+                   showAs="Sr. Tomás Olivares (G.P. Popular en el Congreso)"/>
+      </references>
+
+      <proprietary source="#congreso-diputados">
+        <akndiff:nativeId>dscd-15-pl-175</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-175.PDF</akndiff:sourceUrl>
+        <akndiff:chamber>Congreso de los Diputados — Pleno</akndiff:chamber>
+        <akndiff:sessionNumber>169</akndiff:sessionNumber>
+        <akndiff:sessionStartedAt>2026-03-26T09:02:00+01:00</akndiff:sessionStartedAt>
+        <akndiff:sessionEndedAt>2026-03-26T14:29:00+01:00</akndiff:sessionEndedAt>
+
+        <akndiff:researchNotes>
+        Friction log for ES / DSCD-15-PL-175 (Phase 1 modeling pass):
+
+        1. PUBLICATION NUMBER VS SESSION NUMBER. The Diario de Sesiones del
+           Congreso uses TWO sequential numbers: the publication number
+           (DSCD-15-PL-175 here, the 175th DSCD publication of the XV
+           Legislatura) and the session number (169, the 169th plenary
+           session of the same legislature). Our schema's nativeId field
+           captures only one. We use the publication number ("dscd-15-pl-175")
+           because it's globally unique and matches the URL/file pattern
+           and add the session number as &lt;akndiff:sessionNumber&gt;.
+
+        2. ALL DATA IN THIS XML COMES FROM THE DSCD ITSELF. The session
+           start/end timestamps, presiding officer, all 8 speakers with
+           their parliamentary groups, the 9 vote tallies, and the closing
+           verbatim ("Eran las dos y veintinueve minutos de la tarde") were
+           extracted from research/schema/_sources/es/DSCD-15-PL-175.html
+           — the full HTML version of the session minutes downloaded with
+           curl from congreso.es (449 KB, complete, no truncation). This
+           is FIRST-PARTY DATA, not WebFetch's AI-summarized extraction.
+
+        3. SCHEMA HAS NO sessionNumber FIELD. Both the publication number
+           (DSCD-15-PL-N) and the chamber's session number (169) are
+           important for cross-referencing in Spanish parliamentary
+           practice. v3's DebateTable only has sessionStartedAt /
+           sessionEndedAt + chamber. We carry sessionNumber via the
+           akndiff: extension; ideally a Spanish loader would extract it.
+
+        4. NINE BLOCK VOTES, NOT ONE FINAL VOTE. The Spanish bicameral
+           rules let the Congreso ACCEPT or REJECT each block of Senate
+           amendments separately. For this bill, 9 blocks were voted
+           sequentially. Our schema's DebateTable doesn't have a
+           per-debate vote model; vote tallies live inside &lt;debateBody&gt;
+           narrative. A future enhancement would extract each
+           "Efectuada la votación" block into a structured side table
+           keyed by the debate.
+
+        5. SPEAKERS MODELED WITHOUT FIRST NAMES. The DSCD identifies
+           speakers as "Sr./Sra. APELLIDO" + "(G.P. NAME)". First names
+           are not in the session minutes (they live in a separate
+           diputados database). We carry only what the DSCD shows. A real
+           cross-link to a persons table would resolve them. Yolanda Díaz
+           is identified by her full name only because she's an executive
+           officer (vicepresidenta + ministra), not a diputada.
+
+        6. NINE VOTE TALLIES VERBATIM. Each &lt;decision&gt; element below
+           contains the literal "Efectuada la votación, dio el siguiente
+           resultado: …" line as it appears in the DSCD, followed by the
+           presidential ruling ("Quedan aprobadas" or "Quedan rechazadas").
+           Numbers extracted from text: votos emitidos / a favor / en
+           contra / abstenciones.
+
+        7. WE DO NOT MODEL PER-INTERVENTION SPEECH TEXT. Each speaker's
+           full intervention spans dozens of paragraphs in the DSCD. We
+           note them as &lt;speech by="…"/&gt; placeholders without body, with
+           the speaker's identity and order preserved. A complete Phase 2
+           pass would extract every paragraph spoken by each diputado.
+
+        8. THE ORDER OF AMENDMENT BLOCKS IS NOT THE ORDER OF AMENDMENT
+           NUMBERS. The Presidenta groups amendments by content into
+           bloques and the bloque numbering ("Bloque 1, Bloque 2, …") is
+           specific to this session. Linking a bloque to its individual
+           amendments would require parsing the BOCG-15-A-36-3 (índice
+           de enmiendas al articulado) of 16-jun-2025 — outside scope.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Diario de Sesiones del Pleno del Congreso de los Diputados, sesión nº 169 de la XV Legislatura, celebrada el jueves 26 de marzo de 2026 (DSCD-15-PL-175). Bajo la presidencia de Francina Armengol Socias. Se sometieron a votación las enmiendas del Senado al <ref href="/akn/es/bill/2024-10-11/121-000036">Proyecto de Ley integral de impulso de la economía social (121/000036)</ref>, en nueve bloques separados, resultando dos bloques aprobados y siete rechazados, cerrando la fase parlamentaria del proyecto antes de la sanción real como <ref href="/akn/es/act/2026-04-08/ley-1-2026">Ley 1/2026, de 8 de abril</ref>.</p>
+      </longTitle>
+    </preface>
+
+    <debateBody>
+      <debateSection>
+        <heading>Punto del orden del día — Enmiendas del Senado al Proyecto de Ley integral de impulso de la economía social (121/000036)</heading>
+
+        <speech by="#dip-santana-perera">
+          <p>Intervención de la Sra. Santana Perera, en nombre del Grupo Parlamentario Mixto, fijando posición sobre las enmiendas del Senado al Proyecto de Ley 121/000036. Texto íntegro de la intervención en el DSCD-15-PL-175.</p>
+        </speech>
+
+        <speech by="#dip-cervera-pinart">
+          <p>Intervención del Sr. Cervera Pinart, en nombre del Grupo Parlamentario Junts per Catalunya, fijando posición sobre las enmiendas del Senado al Proyecto de Ley 121/000036. Texto íntegro en el DSCD-15-PL-175.</p>
+        </speech>
+
+        <speech by="#dip-salvador-i-duch">
+          <p>Intervención del Sr. Salvador i Duch, en nombre del Grupo Parlamentario Republicano, fijando posición sobre las enmiendas del Senado al Proyecto de Ley 121/000036. Texto íntegro en el DSCD-15-PL-175.</p>
+        </speech>
+
+        <speech by="#dip-ogou-i-corbi">
+          <p>Intervención del Sr./Sra. Ogou i Corbi, en nombre del Grupo Parlamentario Plurinacional SUMAR, fijando posición sobre las enmiendas del Senado al Proyecto de Ley 121/000036. Texto íntegro en el DSCD-15-PL-175.</p>
+        </speech>
+
+        <speech by="#dip-aizcorbe-torra">
+          <p>Intervención del Sr. Aizcorbe Torra, en nombre del Grupo Parlamentario VOX, fijando posición sobre las enmiendas del Senado al Proyecto de Ley 121/000036. Texto íntegro en el DSCD-15-PL-175.</p>
+        </speech>
+
+        <speech by="#dip-trenzano-rubio">
+          <p>Intervención del Sr. Trenzano Rubio, en nombre del Grupo Parlamentario Socialista, fijando posición sobre las enmiendas del Senado al Proyecto de Ley 121/000036. Texto íntegro en el DSCD-15-PL-175.</p>
+        </speech>
+
+        <speech by="#dip-tomas-olivares">
+          <p>Intervención del Sr. Tomás Olivares, en nombre del Grupo Parlamentario Popular en el Congreso, fijando posición sobre las enmiendas del Senado al Proyecto de Ley 121/000036. Texto íntegro en el DSCD-15-PL-175.</p>
+        </speech>
+
+        <speech by="#diaz-perez">
+          <p>Cierre del debate por la Sra. Vicepresidenta Segunda del Gobierno y Ministra de Trabajo y Economía Social, Yolanda Díaz Pérez. Texto íntegro en el DSCD-15-PL-175. (Cita literal del DSCD: "Cierra el debate la señora vicepresidenta segunda y ministra de Trabajo y Economía Social (Díaz Pérez)").</p>
+        </speech>
+
+        <heading>Votaciones por bloques — bloque por bloque, según anuncio de la Presidencia</heading>
+
+        <decision>
+          <p>Bloque 1 (preámbulo + art. segundo apartado tres en relación con art. 2.1.o LRREI + art. tercero apartado cuatro en relación con art. 8.1 LES + supresión del art. cuarto + adición de disposición adicional primera nueva sobre régimen fiscal cooperativas + adición de disposición final nueva sobre carácter supletorio LES): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 350; a favor, 137; en contra, 180; abstenciones, 33." La señora PRESIDENTA: Quedan rechazadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 2 (art. primero apartado cinco art. 12 bis Ley Cooperativas + art. primero apartado diez art. 19 Ley Cooperativas + art. primero apartado veinte art. 44 bis apartados 2 y 5 Ley Cooperativas + art. primero apartado veintisiete art. 83 bis Ley Cooperativas + art. segundo apartado tres art. 2.3 LRREI + art. tercero apartado uno nuevo art. 4 LES + art. tercero apartado uno bis nuevo art. 5.4 LES): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 349; a favor, 137; en contra, 212." La señora PRESIDENTA: Quedan rechazadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 3 (art. primero apartado catorce art. 27.2 Ley Cooperativas): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 350; a favor, 346; en contra, 4." La señora PRESIDENTA: Quedan aprobadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 4 (art. segundo apartado dos art. 2.3.e LRREI + art. tercero apartado dos art. 5 bis 1 LES): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 350; a favor, 313; en contra, 4; abstenciones, 33." La señora PRESIDENTA: Quedan aprobadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 5 (art. segundo apartado tres por el que se suprime el art. 2.1.ñ bis LRREI): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 349; a favor, 169; en contra, 180." La señora PRESIDENTA: Quedan rechazadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 6 (art. segundo apartado siete, segundo párrafo del art. 6 LRREI): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 349; a favor, 136; en contra, 180; abstenciones, 33." La señora PRESIDENTA: Quedan rechazadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 7 (art. segundo apartado siete, adición de un nuevo párrafo cuarto al art. 6 LRREI): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 349; a favor, 3; en contra, 313; abstenciones, 33." La señora PRESIDENTA: Quedan rechazadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 8 (adición de una disposición final nueva sobre seguridad jurídica de la actividad innovadora realizada por entidades sin fines lucrativos a través de agrupaciones de interés económico): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 350; a favor, 138; en contra, 179; abstenciones, 33." La señora PRESIDENTA: Quedan rechazadas.</p>
+        </decision>
+
+        <decision>
+          <p>Bloque 9 (resto de las enmiendas): "Efectuada la votación, dio el siguiente resultado: votos emitidos, 349; a favor, 170; en contra, 179." La señora PRESIDENTA: Quedan rechazadas.</p>
+        </decision>
+
+        <p>Anuncio final de la Presidencia, literal: "Las enmiendas del Senado que hemos aprobado serán incorporadas al texto inicial aprobado por el Congreso de los Diputados."</p>
+        <p>Levantamiento de la sesión, literal: "Se levanta la sesión. Eran las dos y veintinueve minutos de la tarde."</p>
+      </debateSection>
+    </debateBody>
+  </debate>
+</akomaNtoso>

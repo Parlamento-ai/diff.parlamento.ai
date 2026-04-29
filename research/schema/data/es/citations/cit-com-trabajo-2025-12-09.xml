@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Convocatoria de la Comisión de Trabajo, Economía Social, Inclusión,
+  Seguridad Social y Migraciones del Congreso de los Diputados para
+  la sesión del martes 9 de diciembre de 2025.
+
+  Esta sesión aprobó el Dictamen sobre el Proyecto de Ley 121/000036
+  (integral de impulso de la economía social) con competencia legislativa
+  plena por 19 votos a favor y 18 en contra. Es la sesión que cierra la
+  fase Congreso del trámite, antes del envío del texto al Senado.
+
+  Source primary: DSCD-15-CO-482 (Diario de Sesiones de Comisiones,
+  XV Legislatura, Congreso de los Diputados, núm. 482).
+
+  AKN no tiene un tipo nativo &lt;citation&gt; — esto es una extensión
+  akndiff: del proyecto. Ver el changelog del 03/02/2026 en el README.
+
+  Nota: el archivo se llama por la fecha de la sesión real (2025-12-09).
+  El BOCG-15-A-36-5 que publicó el dictamen aprobado salió 13 días
+  después (22-dic-2025) — ese es un evento posterior, no esta citación.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <citation name="citation">
+    <meta>
+      <identification source="#congreso-diputados">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/citation/2025-12-09/cit-com-trabajo-2025-12-09/!main"/>
+          <FRBRuri value="/akn/es/citation/2025-12-09/cit-com-trabajo-2025-12-09"/>
+          <FRBRdate date="2025-12-09" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRdate date="2025-12-09" name="generation"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRdate date="2025-12-09" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2025-12-09" showAs="Sesión Comisión Trabajo, Economía Social, Inclusión, SS y Migraciones — DSCD-15-CO-482"
+                   name="convocatoria-comision"/>
+
+      <references source="#congreso-diputados">
+        <TLCOrganization eId="comision-trabajo"
+                         href="/akn/es/org/comision-trabajo-economia-social"
+                         showAs="Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y Migraciones"/>
+      </references>
+
+      <proprietary source="#congreso-diputados">
+        <akndiff:nativeId>cit-com-trabajo-2025-12-09</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.congreso.es/public_oficiales/L15/CONG/DS/CO/DSCD-15-CO-482.PDF</akndiff:sourceUrl>
+        <akndiff:convenedBody>Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y Migraciones — Congreso de los Diputados (XV Legislatura)</akndiff:convenedBody>
+        <akndiff:scheduledFor>2025-12-09</akndiff:scheduledFor>
+
+        <akndiff:researchNotes>
+        Friction log for ES / cit-com-trabajo-2025-12-09 (rewritten 2026-04-29):
+
+        FUENTE: DSCD-15-CO-482 + ficha del expediente (verificadas).
+        Fecha de sesión: 9-dic-2025 (NO 22-dic-2025 que era publicación
+        BOCG del dictamen aprobado). Resultado: 19 sí / 18 no.
+
+        1. CITATION ES UNA EXTENSIÓN akndiff, NO AKN NATIVO. AKN core
+           no tiene &lt;citation&gt; root element. Esta extensión va a
+           fallar validación contra OASIS XSDs si alguna vez intentamos
+           interop con tooling AKN-nativo.
+
+        2. NO MODELAMOS HORA NI UBICACIÓN EXACTAS. La hora de inicio
+           y la sala de la Comisión están en el cuerpo del DSCD-15-CO-482,
+           pero requieren parsear el PDF (los DSCD de Comisión vienen
+           solo en PDF). Lo dejamos sin esos campos en lugar de poner
+           placeholders. La fecha sí es real y verificable.
+
+        3. AGENDA ITEMS COMO componentRef. La sesión deliberó y aprobó
+           el Dictamen de la Ponencia sobre el Proyecto de Ley 121/000036,
+           con competencia legislativa plena (es decir, sin necesidad de
+           paso por el Pleno del Congreso antes del envío al Senado).
+           El bill y el Informe de la Ponencia van como agenda.
+
+        4. NO HAY CAMPO PARA "VOTE OUTCOME" EN LA CITACIÓN. La votación
+           19-18 se sabe del DSCD-15-CO-482 pero no encaja en el
+           CitationTable del esquema (que solo tiene convenedBody,
+           scheduledFor, location, externalRef). El voto vive en el
+           citado debate XML asociado, no acá.
+
+        5. NÚMERO DE COMISIÓN. La Comisión de Trabajo, Economía Social,
+           Inclusión, Seguridad Social y Migraciones tiene un código
+           interno en el Congreso (común "128" en URLs). El esquema no
+           tiene campo dedicado para ese código.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Sesión de la Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y Migraciones del Congreso de los Diputados (XV Legislatura) celebrada el martes 9 de diciembre de 2025 (DSCD-15-CO-482) — orden del día con deliberación y votación con competencia legislativa plena del Dictamen sobre el <ref href="/akn/es/bill/2024-10-11/121-000036">Proyecto de Ley integral de impulso de la economía social (121/000036)</ref>, aprobado por 19 votos a favor y 18 en contra.</p>
+      </longTitle>
+    </preface>
+
+    <collectionBody>
+      <componentRef src="/akn/es/bill/2024-10-11/121-000036"
+                    showAs="Proyecto de Ley 121/000036 — integral de impulso de la economía social — deliberación y votación del Dictamen con competencia legislativa plena"
+                    eId="agenda_1"/>
+      <componentRef src="/akn/es/amendment/2025-12-15/121-000036-am-ponencia"
+                    showAs="Informe de la Ponencia (BOCG-15-A-36-4) sobre el Proyecto 121/000036, base del debate"
+                    eId="agenda_2"/>
+    </collectionBody>
+  </citation>
+</akomaNtoso>

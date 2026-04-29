@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Proyecto de Ley 121/000036 (XV Legislatura) — integral de impulso de
+  la economía social.
+
+  This is the parliamentary BILL that became Ley 1/2026, de 8 de abril
+  (BOE-A-2026-7967).
+
+  Source primary: ficha oficial del expediente publicada por el Congreso
+  de los Diputados, descargada con curl como
+    research/schema/_sources/es/ficha-121-000036.html
+  (128 KB de HTML completo, no resumen). Cross-checks:
+    - DSCD-15-PL-175 (sesión Pleno 26-mar-2026) para los 9 votos del
+      último Pleno por bloques de enmiendas del Senado.
+    - DSCD-15-CO-482 (sesión Comisión 9-dic-2025) para la aprobación
+      con competencia legislativa plena (19 sí / 18 no).
+    - BOCG-15-A-36-1 a BOCG-15-A-36-7 (publicaciones del trámite).
+    - BOCG Senado 357_3127, 368_3180, 369_3199, 370_3207, 380_3200,
+      380_3272, 380_3276, 380_3277, 384_3305, 385_3310, 391_3351, 391_3353
+      (publicaciones del trámite Senado).
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <bill name="bill">
+    <meta>
+      <identification source="#congreso-diputados">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/bill/2024-10-11/121-000036/!main"/>
+          <FRBRuri value="/akn/es/bill/2024-10-11/121-000036"/>
+          <FRBRdate date="2024-10-11" name="generation"/>
+          <FRBRauthor href="#gobierno"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="proyecto-de-ley"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/bill/2024-10-11/121-000036/spa@/!main"/>
+          <FRBRuri value="/akn/es/bill/2024-10-11/121-000036/spa@"/>
+          <FRBRdate date="2024-10-11" name="generation"/>
+          <FRBRauthor href="#gobierno"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/bill/2024-10-11/121-000036/spa@.xml"/>
+          <FRBRuri value="/akn/es/bill/2024-10-11/121-000036/spa@.xml"/>
+          <FRBRdate date="2024-10-11" name="generation"/>
+          <FRBRauthor href="#gobierno"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2024-10-18" showAs="BOCG Congreso, Serie A, núm. 36-1, de 18/10/2024 (Iniciativa)"
+                   name="bocg"
+                   href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-36-1.PDF"/>
+
+      <classification source="#congreso">
+        <keyword value="economia-social" showAs="economía social" dictionary="#congreso-topics"/>
+        <keyword value="cooperativas" showAs="cooperativas" dictionary="#congreso-topics"/>
+        <keyword value="empresas-insercion" showAs="empresas de inserción" dictionary="#congreso-topics"/>
+        <keyword value="igualdad-genero" showAs="igualdad de género" dictionary="#congreso-topics"/>
+      </classification>
+
+      <lifecycle source="#congreso-diputados">
+        <eventRef date="2024-10-11" refersTo="#submitted"
+                  source="#evt-01"
+                  showAs="Presentación por el Gobierno"
+                  chamber="congreso"/>
+        <eventRef date="2024-10-18" refersTo="#published"
+                  source="#evt-02"
+                  showAs="Publicación de la iniciativa en BOCG-15-A-36-1"
+                  chamber="congreso"/>
+        <eventRef date="2024-10-18" refersTo="#amendments_period_opened"
+                  source="#evt-03"
+                  showAs="Apertura del plazo de enmiendas (cierre inicial 06/11/2024 18:00, prorrogado sucesivamente)"
+                  chamber="congreso"/>
+        <eventRef date="2025-02-27" refersTo="#admitted"
+                  source="#evt-04"
+                  showAs="Calificación por la Mesa de la Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y Migraciones"
+                  chamber="congreso"/>
+        <eventRef date="2025-03-06" refersTo="#totality_amendments_published"
+                  source="#evt-05"
+                  showAs="BOCG-15-A-36-2 — Enmiendas a la totalidad"
+                  chamber="congreso"/>
+        <eventRef date="2025-03-13" refersTo="#totality_debate"
+                  source="#evt-06"
+                  showAs="Debate de totalidad — enmiendas de devolución rechazadas (33 sí / 175 no / 137 abstenciones)"
+                  chamber="congreso"/>
+        <eventRef date="2025-06-05" refersTo="#amendments_period_closed"
+                  source="#evt-07"
+                  showAs="Cierre del plazo de enmiendas al articulado tras múltiples ampliaciones"
+                  chamber="congreso"/>
+        <eventRef date="2025-06-16" refersTo="#article_amendments_published"
+                  source="#evt-08"
+                  showAs="BOCG-15-A-36-3 — Enmiendas e índice de enmiendas al articulado"
+                  chamber="congreso"/>
+        <eventRef date="2025-12-09" refersTo="#passed_chamber"
+                  source="#evt-09"
+                  showAs="Aprobación por la Comisión con competencia legislativa plena (DSCD-15-CO-482, 19 sí / 18 no)"
+                  chamber="congreso"/>
+        <eventRef date="2025-12-15" refersTo="#committee_report_published"
+                  source="#evt-10"
+                  showAs="BOCG-15-A-36-4 — Informe de la Ponencia"
+                  chamber="congreso"/>
+        <eventRef date="2025-12-22" refersTo="#dictamen_published"
+                  source="#evt-11"
+                  showAs="BOCG-15-A-36-5 — Aprobación por la Comisión con competencia legislativa plena (publicación)"
+                  chamber="congreso"/>
+        <eventRef date="2025-12-23" refersTo="#sent_to_senate"
+                  source="#evt-12"
+                  showAs="Texto remitido al Senado (BOCG Senado 357_3127)"
+                  chamber="senado"/>
+        <eventRef date="2026-02-16" refersTo="#senate_amendments_published"
+                  source="#evt-13"
+                  showAs="BOCG Senado 368_3180 — Enmiendas (Senado)"
+                  chamber="senado"/>
+        <eventRef date="2026-02-18" refersTo="#senate_amendments_index"
+                  source="#evt-14"
+                  showAs="BOCG Senado 369_3199 — Índice de enmiendas (Senado)"
+                  chamber="senado"/>
+        <eventRef date="2026-03-09" refersTo="#senate_committee_report"
+                  source="#evt-15"
+                  showAs="BOCG Senado 380_3272 — Informe de la Ponencia (Senado) + 380_3277 Dictamen de la Comisión (Senado)"
+                  chamber="senado"/>
+        <eventRef date="2026-03-18" refersTo="#senate_pleno_vote"
+                  source="#evt-16"
+                  showAs="DS_P_15_118 — Pleno del Senado, votación del Dictamen y de los votos particulares"
+                  chamber="senado"/>
+        <eventRef date="2026-03-26" refersTo="#passed_second_chamber"
+                  source="#evt-17"
+                  showAs="DSCD-15-PL-175 (sesión 169) — Pleno del Congreso vota las enmiendas del Senado en NUEVE bloques separados: bloques 3 y 4 APROBADOS, bloques 1, 2, 5, 6, 7, 8 y 9 RECHAZADOS"
+                  chamber="congreso"/>
+        <eventRef date="2026-03-27" refersTo="#senate_amendments_back"
+                  source="#evt-18"
+                  showAs="BOCG-15-A-36-6 (Congreso) + BOCG Senado 391_3351 + 391_3353 — Aprobación por el Senado y publicación de las enmiendas con el texto definitivo"
+                  chamber="ambos"/>
+        <eventRef date="2026-04-08" refersTo="#enacted"
+                  source="#evt-19"
+                  showAs="BOCG-15-A-36-7 — Aprobación definitiva. Sanción real y conversión en Ley 1/2026, de 8 de abril (BOE-A-2026-7967)"
+                  chamber="ejecutivo"/>
+      </lifecycle>
+
+      <references source="#congreso-diputados">
+        <TLCOrganization eId="gobierno"
+                         href="/akn/es/org/gobierno"
+                         showAs="Gobierno de España"/>
+        <TLCOrganization eId="ministerio-trabajo"
+                         href="/akn/es/org/ministerio-trabajo-economia-social"
+                         showAs="Ministerio de Trabajo y Economía Social"/>
+        <TLCOrganization eId="comision-trabajo"
+                         href="/akn/es/org/comision-trabajo-economia-social"
+                         showAs="Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y Migraciones"/>
+        <TLCRole eId="role-author-gov"
+                 href="/akn/es/ontology/roles/government-bill-author"
+                 showAs="Gobierno como autor de Proyecto de Ley"/>
+      </references>
+
+      <proprietary source="#congreso-diputados">
+        <akndiff:nativeId>121-000036</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.congreso.es/es/iniciativas-organo?p_p_id=iniciativas&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_iniciativas_mode=mostrarDetalle&amp;_iniciativas_legislatura=XV&amp;_iniciativas_id=121/000036</akndiff:sourceUrl>
+        <akndiff:billStatus normalized="enacted">Concluido — aprobado con modificaciones (Ley 1/2026, de 8 de abril)</akndiff:billStatus>
+        <akndiff:urgency>ordinaria</akndiff:urgency>
+
+        <akndiff:sponsor refersTo="#gobierno" role="#role-author-gov"/>
+
+        <akndiff:researchNotes>
+        1. SPONSOR IS NOT A PERSON. Este es un Proyecto de Ley, autor: el
+           Gobierno (entidad colegiada). BillTable.sponsors espera persons
+           {name, role, party, chamber, externalId}. Modelar "el Gobierno"
+           con party=null, chamber=null funciona pero rompe el contrato
+           per-person. Aplica también a EU (COM proposals) y a Proposiciones
+           españolas (autor: Grupo Parlamentario, no individuo).
+
+        2. PROYECTO DE LEY vs PROPOSICIÓN DE LEY no es un campo del esquema.
+           Mismo trámite, diferente origen y sponsor. Lo capturamos como
+           subtype="proyecto-de-ley" en FRBRWork pero no es queryable
+           desde la detail table.
+
+        3. BICAMERAL CHAMBER ATTRIBUTE EN EVENTS. Cada eventRef lleva
+           chamber= ("congreso", "senado", "ambos", "ejecutivo"). El loader
+           v3 NO extrae este atributo (línea ~430 de loader.ts). Misma
+           fricción documentada en data/cl/bills/15234-11.xml — gap
+           reproducible cross-país.
+
+        4. 9-BLOCK VOTE NO REPRESENTABLE EN UN SOLO eventRef. El evento
+           #passed_second_chamber consolida 9 votaciones distintas en un
+           único string showAs. La granularidad por bloque vive en el
+           debate XML asociado. Una query "todas las votaciones aprobadas
+           en este trámite" no puede ejecutarse sin parsear el debate.
+
+        5. STATUS NORMALIZATION ES LOSSY. statusLocal preserva "aprobado
+           con modificaciones" pero el normalized status es solo "enacted".
+           Distinguir bills aprobados CON vs SIN modificaciones no es
+           consultable por columna SQL.
+
+        6. URGENCIA NO COMPARABLE CROSS-PAÍS. España: ordinaria, urgencia,
+           lectura única, competencia legislativa plena. Chile: simple,
+           suma urgencia, discusión inmediata. BillTable.urgency es
+           free-text, lo cual permite ambos pero impide query
+           "all urgent bills cross-country".
+
+        7. NO HAY LinkRelation PARA "BILL BECAME ACT". El bill produjo la
+           Ley 1/2026. Relación 1:1 conceptualmente fundamental, pero el
+           esquema solo tiene amendsActId (apunta a la ley que el bill
+           MODIFICA, no a la ley en la que se CONVIERTE). Falta
+           LinkRelation 'enacted_as' o columna becameActId.
+
+        8. AMPLIACIONES DEL PLAZO DE ENMIENDAS. El plazo inicial (hasta
+           06/11/2024) se prorrogó 23 veces hasta 04/06/2025. El esquema
+           modela apertura y cierre como dos events; las prórrogas
+           individuales se pierden. En España es la regla, no la excepción.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Proyecto de Ley integral de impulso de la economía social, presentado por el Gobierno el 11 de octubre de 2024 a la XV Legislatura del Congreso de los Diputados con número de expediente 121/000036, que modifica entre otras la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio, de Cooperativas</ref>, la Ley 44/2007 de empresas de inserción, la Ley 5/2011 de Economía Social y la Ley 20/1990 sobre Régimen Fiscal de las Cooperativas, y que tras su tramitación bicameral se convirtió en la <ref href="/akn/es/act/2026-04-08/ley-1-2026">Ley 1/2026, de 8 de abril</ref>.</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>EXPOSICIÓN DE MOTIVOS</p>
+      <p>El Gobierno presenta a las Cortes Generales este proyecto de ley con el objetivo de actualizar el marco normativo de la economía social, ajustando el modelo eficaz vigente a las nuevas circunstancias económicas y sociales. La iniciativa nace del análisis prospectivo del ecosistema económico-social español tras el período de transformación acelerada posterior a la crisis sanitaria.</p>
+      <p>El proyecto se estructura en cuatro artículos modificativos de las normas sujetas a reforma, complementados con disposiciones transitorias, derogatoria y finales que ajustan otras normas relacionadas (Ley 31/1995 de Prevención de Riesgos Laborales, Ley 9/2017 de Contratos del Sector Público, Ley 19/2021 del Ingreso Mínimo Vital, Real Decreto-ley 1/2023 de incentivos a la contratación).</p>
+      <p>El artículo primero modifica la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de Cooperativas</ref>, recogiendo ajustes para optimizar la eficacia del funcionamiento interno en lo relativo a participación digital, derechos telemáticos e igualdad efectiva entre mujeres y hombres.</p>
+      <p>El artículo segundo reforma la Ley 44/2007 de empresas de inserción, alineando su régimen con el modelo laboral de contratación indefinida tras la reforma del Real Decreto-ley 32/2021. Se introduce el contrato para la transición al empleo ordinario.</p>
+      <p>El artículo tercero modifica la Ley 5/2011 de Economía Social, clarificando el catálogo de entidades, incorporando el concepto de empresa social y de Servicios de Interés Económico General.</p>
+      <p>El artículo cuarto reforma la Ley 20/1990 de Régimen Fiscal de las Cooperativas para introducir como cooperativa especialmente protegida la cooperativa de viviendas en régimen de cesión de uso.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_1_anuncio">
+        <num>Texto inicial del Proyecto de Ley</num>
+        <heading>Articulado propuesto a la Cámara</heading>
+        <content>
+          <p>El cuerpo articulado completo del Proyecto de Ley se publicó en el BOCG Congreso de los Diputados, Serie A, núm. 36-1, de 18 de octubre de 2024 (BOCG-15-A-36-1.PDF, ~50 páginas).</p>
+          <p>El articulado fue posteriormente modificado durante el trámite parlamentario por el Informe de la Ponencia (BOCG-15-A-36-4 de 15-dic-2025) y por el Dictamen de la Comisión (BOCG-15-A-36-5 de 22-dic-2025), tras lo cual fue aprobado por la Comisión con competencia legislativa plena el 9-dic-2025 por 19 votos a favor y 18 en contra (DSCD-15-CO-482).</p>
+          <p>El texto remitido al Senado (BOCG Senado 357_3127 de 23-dic-2025) recibió en el Senado las enmiendas del Grupo Popular (con mayoría absoluta en esa Cámara) y fue devuelto al Congreso. El Pleno del Congreso, el 26-mar-2026 (DSCD-15-PL-175, sesión nº 169), votó las enmiendas del Senado en nueve bloques separados, aprobando dos (bloques 3 y 4: art. 1.14 sobre voto delegado de socios, y art. 2.2 + art. 3.2 sobre Servicios de Interés Económico General) y rechazando siete.</p>
+          <p>El texto definitivo aprobado se publicó en BOCG-15-A-36-7 de 8-abr-2026 y se sancionó como <ref href="/akn/es/act/2026-04-08/ley-1-2026">Ley 1/2026, de 8 de abril, integral de impulso de la economía social</ref>, publicada en el BOE el 9-abr-2026 (BOE-A-2026-7967).</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

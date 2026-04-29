@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Boletín Oficial del Estado núm. 87, de 9 de abril de 2026.
+
+  This is the BOE issue that promulgated Ley 1/2026 (BOE-A-2026-7967),
+  closing the legislative cycle that started with Proyecto de Ley
+  121/000036 in October 2024.
+
+  Many other documents were published in this same BOE issue
+  (resoluciones, órdenes, anuncios, etc.). For this Phase 1 modeling we
+  only reference Ley 1/2026 — the document that closes our story.
+  Modeling every disposition published on a given BOE day is out of
+  scope; the schema's officialGazette doesn't require us to.
+
+  Source: https://www.boe.es/boe/dias/2026/04/09/index.php
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <officialGazette name="officialGazette">
+    <meta>
+      <identification source="#aebOe">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/officialGazette/2026-04-09/BOE-2026-087/!main"/>
+          <FRBRuri value="/akn/es/officialGazette/2026-04-09/BOE-2026-087"/>
+          <FRBRdate date="2026-04-09" name="generation"/>
+          <FRBRauthor href="#aebOe"/>
+          <FRBRcountry value="es"/>
+          <FRBRnumber value="87"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/officialGazette/2026-04-09/BOE-2026-087/spa@2026-04-09/!main"/>
+          <FRBRuri value="/akn/es/officialGazette/2026-04-09/BOE-2026-087/spa@2026-04-09"/>
+          <FRBRdate date="2026-04-09" name="generation"/>
+          <FRBRauthor href="#aebOe"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/officialGazette/2026-04-09/BOE-2026-087/spa@2026-04-09.xml"/>
+          <FRBRuri value="/akn/es/officialGazette/2026-04-09/BOE-2026-087/spa@2026-04-09.xml"/>
+          <FRBRdate date="2026-04-09" name="generation"/>
+          <FRBRauthor href="#aebOe"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2026-04-09" showAs="BOE núm. 87, de 9 de abril de 2026"
+                   name="boe"/>
+
+      <references source="#aebOe">
+        <TLCOrganization eId="aebOe"
+                         href="/akn/es/org/agencia-estatal-boe"
+                         showAs="Agencia Estatal Boletín Oficial del Estado"/>
+        <TLCConcept eId="publisher"
+                    href="/akn/es/concept/publisher"
+                    showAs="Publisher"/>
+      </references>
+
+      <proprietary source="#aebOe">
+        <akndiff:nativeId>BOE-2026-087</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.boe.es/boe/dias/2026/04/09/index.php</akndiff:sourceUrl>
+        <akndiff:publisher>Agencia Estatal Boletín Oficial del Estado</akndiff:publisher>
+        <akndiff:scope>national</akndiff:scope>
+
+        <akndiff:researchNotes>
+        Friction log for ES / BOE-2026-087 (Phase 1 modeling pass):
+
+        1. JOURNAL ISSUE NUMBER FORMAT. Spanish BOE numbers issues with a
+           plain integer (87, 88, 89...) reset annually. Chile's Diario
+           Oficial uses a continuous integer (43.521, 43.522...). The
+           schema's JournalTable.issueNumber is text, so both fit; but
+           query "show me BOE núm. 87" needs to know whether to expect
+           "87", "087", or "BOE-87". We use "87" (no leading zeros) to
+           match BOE's own ELI URI pattern (.../boe/dias/2026/04/09/...).
+           The padded form "087" appears in our nativeId
+           (BOE-2026-087) so files sort lexicographically.
+
+        2. NATIVE ID OVERLAP. BOE assigns BOE-A-YYYY-NNNN identifiers
+           to individual dispositions WITHIN an issue (e.g., Ley 1/2026 is
+           BOE-A-2026-7967). The journal issue itself doesn't have an
+           official BOE-X identifier — we synthesized "BOE-2026-087" for
+           our nativeId. There's no risk of collision because BOE-A vs
+           BOE- prefixes differ, but document the convention here.
+
+        3. MANY DISPOSITIONS PER ISSUE. A typical BOE issue contains
+           dozens of dispositions (laws, royal decrees, orders,
+           resolutions, announcements). Modeling each as a separate
+           document with its own XML and componentRef from the journal
+           issue is technically correct AKN but explodes the corpus.
+           For Phase 1 we only model Ley 1/2026 (BOE-A-2026-7967). All
+           other BOE-A-2026-7XXX dispositions of this same issue are
+           ignored. A real production import would need to fetch the
+           sumario API and componentRef every disposition; we'd pile up
+           thousands of journal entries quickly.
+
+        4. NO componentRef LINKING. Per friction #3, we don't include
+           &lt;componentRef&gt; entries pointing at every disposition of
+           this issue (only one, the Ley). Means the journal page in
+           the demo will look almost empty. Honest: we are missing data
+           that exists.
+
+        5. SCOPE = "national" IS A FIXED VOCABULARY. The schema's scope
+           field says 'national' | 'regional' | 'eu' | 'municipal'. Spain
+           has BOE (national), but also DOG (Galicia), DOGC (Cataluña),
+           BOA (Aragón), etc. — 17 autonomous community gazettes.
+           "regional" works for those. But Spain also has the BORME
+           (Boletín Oficial del Registro Mercantil), which is national
+           but specialized. Plus IBERLEX historic compilations. The
+           schema's enum is too coarse for Spain's real publication
+           landscape. Documented; not a fix needed today.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Boletín Oficial del Estado de la Jefatura del Estado, núm. 87, de 9 de abril de 2026.</p>
+      </longTitle>
+    </preface>
+
+    <publisher>
+      <p>Agencia Estatal Boletín Oficial del Estado</p>
+    </publisher>
+
+    <scope>
+      <p>national</p>
+    </scope>
+
+    <collectionBody>
+      <componentRef src="/akn/es/act/2026-04-08/ley-1-2026"
+                    showAs="Ley 1/2026, de 8 de abril, integral de impulso de la economía social (BOE-A-2026-7967, pp. 51121–51171)"
+                    eId="disp_BOE-A-2026-7967"/>
+    </collectionBody>
+  </officialGazette>
+</akomaNtoso>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Informe de la Ponencia sobre el Proyecto de Ley 121/000036 — published in
+  BOCG-15-A-36-4 of 15 December 2025.
+
+  This is the consolidated report of the Ponencia (sub-committee) of the
+  Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y
+  Migraciones, accepting/rejecting/modifying the individual amendments
+  submitted to the bill's articulado during the amendment period of
+  June-December 2025.
+
+  IMPORTANT MODELING DECISION (see researchNotes #1): the schema's
+  amendment type is designed for INDIVIDUAL amendments. The Spanish
+  "Informe de la Ponencia" is a CONSOLIDATED amendment instrument — it
+  bundles the disposition of dozens of individual amendments. We model it
+  as a single document because that's how it lives in the BOCG, with the
+  understanding that each individual amendment cited inside is NOT
+  individually represented in our corpus.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <amendment name="amendment">
+    <meta>
+      <identification source="#congreso-diputados">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/amendment/2025-12-15/121-000036-am-ponencia/!main"/>
+          <FRBRuri value="/akn/es/amendment/2025-12-15/121-000036-am-ponencia"/>
+          <FRBRdate date="2025-12-15" name="generation"/>
+          <FRBRauthor href="#ponencia-comision-trabajo"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/amendment/2025-12-15/121-000036-am-ponencia/spa@/!main"/>
+          <FRBRuri value="/akn/es/amendment/2025-12-15/121-000036-am-ponencia/spa@"/>
+          <FRBRdate date="2025-12-15" name="generation"/>
+          <FRBRauthor href="#ponencia-comision-trabajo"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/amendment/2025-12-15/121-000036-am-ponencia/spa@.xml"/>
+          <FRBRuri value="/akn/es/amendment/2025-12-15/121-000036-am-ponencia/spa@.xml"/>
+          <FRBRdate date="2025-12-15" name="generation"/>
+          <FRBRauthor href="#ponencia-comision-trabajo"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2025-12-15" showAs="BOCG Congreso Serie A, núm. 36-4"
+                   name="bocg"
+                   href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-36-4.PDF"/>
+
+      <classification source="#congreso">
+        <keyword value="enmienda" showAs="enmienda" dictionary="#congreso-topics"/>
+        <keyword value="ponencia" showAs="informe de la Ponencia" dictionary="#congreso-topics"/>
+        <keyword value="economia-social" showAs="economía social" dictionary="#congreso-topics"/>
+      </classification>
+
+      <lifecycle source="#congreso-diputados">
+        <eventRef date="2025-06-16" refersTo="#period_opened"
+                  source="#evt-1"
+                  showAs="Apertura del plazo de enmiendas al articulado"/>
+        <eventRef date="2025-09-19" refersTo="#period_closed"
+                  source="#evt-2"
+                  showAs="Cierre del plazo de enmiendas (fin de prórroga)"/>
+        <eventRef date="2025-10-10" refersTo="#ponencia_constituted"
+                  source="#evt-3"
+                  showAs="Constitución de la Ponencia"/>
+        <eventRef date="2025-12-15" refersTo="#ponencia_report"
+                  source="#evt-4"
+                  showAs="Informe de la Ponencia (BOCG-15-A-36-4)"/>
+        <eventRef date="2025-12-22" refersTo="#approved"
+                  source="#evt-5"
+                  showAs="Aprobación en Comisión con competencia legislativa plena"/>
+      </lifecycle>
+
+      <references source="#congreso-diputados">
+        <TLCOrganization eId="ponencia-comision-trabajo"
+                         href="/akn/es/org/ponencia-trabajo-economia-social-XV"
+                         showAs="Ponencia de la Comisión de Trabajo, Economía Social, Inclusión, SS y Migraciones (XV Legislatura)"/>
+        <TLCOrganization eId="comision-trabajo"
+                         href="/akn/es/org/comision-trabajo-economia-social"
+                         showAs="Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y Migraciones"/>
+      </references>
+
+      <proprietary source="#congreso-diputados">
+        <akndiff:nativeId>121-000036-am-ponencia</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-36-4.PDF</akndiff:sourceUrl>
+        <akndiff:targetBill href="/akn/es/bill/2024-10-11/121-000036"/>
+        <akndiff:outcome normalized="approved">Informe aprobado por la Ponencia y elevado a la Comisión</akndiff:outcome>
+
+        <akndiff:researchNotes>
+        1. CONSOLIDATED AMENDMENT vs INDIVIDUAL AMENDMENT. AmendmentTable
+           es per-amendment (una indicación, un submitter, un outcome).
+           El "Informe de la Ponencia" español agrupa ~50 enmiendas
+           individuales con disposición individual (aceptada / rechazada /
+           transaccional) en un solo BOCG. Modelar como single document
+           pierde la granularidad. Query "todas las enmiendas a 121/000036"
+           devuelve 1 fila, no 50.
+
+        2. SUBMITTER ES GRUPO PARLAMENTARIO, NO INDIVIDUAL. Las enmiendas
+           españolas las firma el Grupo, no el diputado. AmendmentTable.
+           submitter {name, party, chamber, externalId} asume per-person.
+           Mismo problema cross-doc que sponsor en bill (researchNotes #1
+           de bills/121-000036.xml).
+
+        3. targetBillId APUNTA A UN BILL ÚNICO, PERO LAS ENMIENDAS EVOLUCIONAN.
+           Algunas enmiendas se presentaron contra el texto original
+           (BOCG-15-A-36-1), otras contra consolidaciones intermedias
+           post-totalidad. AmendmentTable.targetBillId es un solo pointer;
+           si hay múltiples versiones del bill, no se puede indicar QUÉ
+           versión se enmendó. Matiz temporal perdido.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Informe de la Ponencia sobre el <ref href="/akn/es/bill/2024-10-11/121-000036">Proyecto de Ley integral de impulso de la economía social (121/000036, XV Legislatura)</ref>, publicado en BOCG-15-A-36-4 de 15 de diciembre de 2025.</p>
+      </longTitle>
+    </preface>
+
+    <amendmentBody>
+      <amendmentHeading>
+        <p>La Ponencia, designada en el seno de la Comisión de Trabajo, Economía Social, Inclusión, Seguridad Social y Migraciones para informar el <ref href="/akn/es/bill/2024-10-11/121-000036">Proyecto de Ley integral de impulso de la economía social (121/000036)</ref>, ha estudiado el escrito presentado por el Gobierno y las enmiendas formuladas al articulado por los Grupos Parlamentarios durante el plazo abierto del 16 de junio al 19 de septiembre de 2025. En reunión celebrada el día 15 de diciembre de 2025, la Ponencia ha acordado presentar a la Comisión el siguiente Informe.</p>
+      </amendmentHeading>
+
+      <amendmentContent>
+        <p>De las enmiendas formuladas al articulado, la Ponencia acepta las siguientes (modificaciones técnicas y de redacción que mejoran la coherencia interna del Proyecto): bloque de enmiendas al artículo primero (modificación de la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999</ref>) afectando los apartados 1 a 7; bloque al artículo segundo (modificación de la Ley 44/2007); bloque al artículo tercero (modificación de la Ley 5/2011); bloque al artículo cuarto (modificación de la Ley 20/1990).</p>
+        <p>La Ponencia rechaza las enmiendas de devolución y las enmiendas al articulado que cuestionan el modelo de Comisión de Igualdad o que limitarían el alcance del nuevo régimen de comunicaciones electrónicas.</p>
+        <p>La Ponencia propone incorporaciones nuevas en el bloque de disposiciones finales, en particular la modificación de la Ley 19/2021 del Ingreso Mínimo Vital y del Real Decreto-ley 1/2023 de incentivos a la contratación, para alinear los regímenes de bonificación con el nuevo contrato para la transición al empleo ordinario que el Proyecto introduce en la Ley 44/2007.</p>
+        <p>El texto final propuesto al Pleno de la Comisión coincide sustancialmente con el aprobado posteriormente como <ref href="/akn/es/act/2026-04-08/ley-1-2026">Ley 1/2026, de 8 de abril, integral de impulso de la economía social</ref>.</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>Las modificaciones aceptadas por la Ponencia obedecen a la mejora de la técnica normativa, a la garantía de coherencia interna del articulado, y a la armonización con el conjunto del ordenamiento aplicable a las entidades de la economía social. La incorporación de las disposiciones finales sobre Ingreso Mínimo Vital y Real Decreto-ley de incentivos resulta necesaria para asegurar la operatividad efectiva del nuevo contrato para la transición al empleo ordinario regulado en la modificación de la Ley 44/2007.</p>
+      </amendmentJustification>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

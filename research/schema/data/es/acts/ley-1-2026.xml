@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ley 1/2026, de 8 de abril, integral de impulso de la economía social.
+
+  This is a "MODIFYING LAW" — its entire body consists of changes to OTHER
+  laws. It modifies four laws in its main articles (Ley 27/1999 de Cooperativas,
+  Ley 44/2007 de Empresas de Inserción, Ley 5/2011 de Economía Social, Ley
+  20/1990 de Régimen Fiscal de Cooperativas) and four more in its
+  disposiciones finales (Ley 31/1995, Ley 9/2017, Ley 19/2021, RDL 1/2023).
+
+  Of those eight target laws we only model Ley 27/1999 in this experiment;
+  the other seven are referenced by external https URLs so the link
+  resolver doesn't fail on them.
+
+  Source: BOE-A-2026-7967 published in BOE núm. 87 of 9 April 2026.
+  A correction of errors followed in BOE-A-2026-8021 (10 April 2026) — that
+  represents version 2 of this act and is captured as a research note rather
+  than a priorVersion sibling for this iteration.
+
+  Originated from Proyecto de Ley 121/000036 (XV Legislatura).
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#cortes-generales">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/act/2026-04-08/ley-1-2026/!main"/>
+          <FRBRuri value="/akn/es/act/2026-04-08/ley-1-2026"/>
+          <FRBRdate date="2026-04-08" name="promulgation"/>
+          <FRBRauthor href="#cortes-generales"/>
+          <FRBRcountry value="es"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/act/2026-04-08/ley-1-2026/spa@2026-04-10/!main"/>
+          <FRBRuri value="/akn/es/act/2026-04-08/ley-1-2026/spa@2026-04-10"/>
+          <FRBRdate date="2026-04-10" name="generation"/>
+          <FRBRauthor href="#cortes-generales"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/act/2026-04-08/ley-1-2026/spa@2026-04-10.xml"/>
+          <FRBRuri value="/akn/es/act/2026-04-08/ley-1-2026/spa@2026-04-10.xml"/>
+          <FRBRdate date="2026-04-10" name="generation"/>
+          <FRBRauthor href="#cortes-generales"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2026-04-09" showAs="BOE núm. 87, de 9 de abril de 2026"
+                   name="boe"
+                   href="/akn/es/officialGazette/2026-04-09/BOE-2026-087"/>
+
+      <classification source="#boe">
+        <keyword value="economia-social" showAs="economía social" dictionary="#boe-materias"/>
+        <keyword value="cooperativas" showAs="cooperativas" dictionary="#boe-materias"/>
+        <keyword value="empresas-insercion" showAs="empresas de inserción" dictionary="#boe-materias"/>
+        <keyword value="igualdad-genero" showAs="igualdad de género" dictionary="#boe-materias"/>
+        <keyword value="discapacidad" showAs="discapacidad" dictionary="#boe-materias"/>
+        <keyword value="ingreso-minimo-vital" showAs="Ingreso Mínimo Vital" dictionary="#boe-materias"/>
+        <keyword value="contratos-publicos" showAs="contratos del sector público" dictionary="#boe-materias"/>
+      </classification>
+
+      <lifecycle source="#cortes-generales">
+        <eventRef date="2026-04-08" refersTo="#promulgation"
+                  source="#evt-prom"
+                  showAs="Sanción real (FELIPE VI)"/>
+        <eventRef date="2026-04-09" refersTo="#publication"
+                  source="#evt-pub"
+                  showAs="Publicación en BOE núm. 87"/>
+        <eventRef date="2026-04-10" refersTo="#commencement"
+                  source="#evt-eff"
+                  showAs="Entrada en vigor (al día siguiente de publicación, salvo art. 3 bis 1 párr. 2 — diferido un año)"/>
+        <eventRef date="2026-04-10" refersTo="#correction"
+                  source="#evt-corr"
+                  showAs="Corrección de errores (BOE-A-2026-8021)"/>
+      </lifecycle>
+
+      <references source="#cortes-generales">
+        <TLCOrganization eId="cortes-generales"
+                         href="/akn/es/org/cortes-generales"
+                         showAs="Cortes Generales"/>
+        <TLCOrganization eId="jefatura-estado"
+                         href="/akn/es/org/jefatura-estado"
+                         showAs="Jefatura del Estado"/>
+        <TLCOrganization eId="gobierno"
+                         href="/akn/es/org/gobierno"
+                         showAs="Gobierno de España"/>
+        <TLCPerson eId="rey-felipe-vi"
+                   href="/akn/es/person/felipe-vi"
+                   showAs="FELIPE VI, Rey de España"/>
+        <TLCPerson eId="presidente-sanchez"
+                   href="/akn/es/person/pedro-sanchez"
+                   showAs="Pedro Sánchez Pérez-Castejón, Presidente del Gobierno"/>
+      </references>
+
+      <proprietary source="#cortes-generales">
+        <akndiff:nativeId>ley-1-2026</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.boe.es/eli/es/l/2026/04/08/1</akndiff:sourceUrl>
+        <akndiff:actStatus normalized="in_force">vigente</akndiff:actStatus>
+        <akndiff:issuingBody>Jefatura del Estado</akndiff:issuingBody>
+
+        <akndiff:researchNotes>
+        1. MODIFYING-LAW SUBTYPE. The entire body of this Act is changes to
+           OTHER acts (eight of them). The schema's ActTable doesn't
+           distinguish between a self-contained Act and a modifying Act.
+           For consumers, what they want when navigating to a modifying law
+           is the diff against the targets, not the modifying prose itself.
+           Real friction — likely covers ~50% of legislative production
+           cross-country.
+
+        2. BOE's analisis/referencias/anteriores block is a STRUCTURED graph
+           of every prior law this Act modifies (with verb MODIFICA / DEROGA
+           / AÑADE / SUPRIME and articles affected). The schema's link
+           extractor walks only `&lt;ref&gt;` inside body — ignores this
+           entire structured block. Eight perfect outgoing links with
+           rich relation metadata that we lose.
+
+        3. RANGO = LEY (not Ley Orgánica). The schema's ActTable has no
+           `rango` field. Spanish law distinguishes Leyes from Leyes
+           Orgánicas (latter require absolute majority + modify fundamental
+           rights). Cross-cutting friction also flagged on Ley 27/1999.
+
+        4. CORRECTION OF ERRORS. BOE-A-2026-8021 is a formal "Corrección
+           de errores" published one day after the law — legally a version 2
+           of this Act available at promulgation+1day. The schema's
+           priorVersion mechanism handles this, but the source publishing
+           pattern (correction immediately after law) is something the
+           schema might want to model explicitly rather than as another
+           generic prior version.
+
+        5. ENTRY INTO FORCE IS NON-UNIFORM. Disposición final 5 says the
+           law enters into force on 10 April 2026 EXCEPT the obligation in
+           the new article 3 bis 1 párrafo 2 of Ley 27/1999, which enters
+           into force ONE YEAR later. ActTable.effectiveAt is a single
+           timestamp; we model the global entry, not the deferred
+           per-provision entry. Spanish (and EU, US) laws routinely defer
+           specific provisions — generalizable friction.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Ley 1/2026, de 8 de abril, integral de impulso de la economía social.</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>FELIPE VI</p>
+      <p>REY DE ESPAÑA</p>
+      <p>A todos los que la presente vieren y entendieren.</p>
+      <p>Sabed: Que las Cortes Generales han aprobado y Yo vengo en sancionar la siguiente ley:</p>
+
+      <p>PREÁMBULO</p>
+      <p>I</p>
+
+      <p>Las transformaciones de la economía y de nuestra sociedad, sometidas a una aceleración sin precedentes tras la crisis sanitaria y el contexto de incertidumbre actual, hacen necesaria la adecuación y actualización de las normas incluidas en esta ley. Se diseña, de este modo, un marco legal comprensivo e integral favorable al mejor desarrollo de la actividad de los principales actores de la economía social, contribuyendo con ello a una mayor cohesión social y a un progreso más sostenible.</p>
+
+      <p>Con esta ley se pretende actualizar el marco normativo de la economía social, ajustando un modelo eficaz a las nuevas circunstancias económicas y sociales.</p>
+
+      <p>En lo que atañe a la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio, de Cooperativas</ref>, se busca su adecuación y actualización de manera que se recojan los ajustes necesarios para optimizar la eficacia del funcionamiento interno de las mismas en lo referido a las formas de participación y el ejercicio de derechos digitales o telemáticos. Por otro lado, el principio cooperativo de igualdad ha impulsado los avances de las cooperativas hacia una igualdad efectiva entre mujeres y hombres. Es el momento de acompañar este esfuerzo con las adaptaciones necesarias de la citada Ley 27/1999, de 16 de julio, de acuerdo con la singularidad de esta forma empresarial, para una proyección adecuada de los instrumentos de igualdad previstos en la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres.</p>
+
+      <p>Por su parte, la Ley 44/2007, de 13 de diciembre, para la regulación del régimen de las empresas de inserción, debe modificarse teniendo en cuenta que las sucesivas crisis económicas y sus consecuencias a lo largo de las dos últimas décadas han profundizado en las brechas de desigualdad existentes y han dado lugar a la aparición de nuevos factores que incrementan el riesgo de exclusión social.</p>
+
+      <p>Por último, en relación con la Ley 5/2011, de 29 de marzo, de Economía Social, el avance y desarrollo de la actividad de la economía social ha llevado a la necesidad de ahondar en la clasificación de las entidades que la componen.</p>
+
+      <p>II</p>
+
+      <p>Los objetivos de esta ley se alinean con el Plan de Acción Europeo para la Economía Social que fija como meta dar un mayor apoyo a la economía social no solo en términos de creación de puestos de trabajo, sino también buscando incrementar el impacto social que tienen estas organizaciones en toda la Unión Europea.</p>
+
+      <p>Así, son objetivos de la futura norma, en primer lugar, la actualización y adecuación de la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio</ref>, como forma de potenciar el papel tractor que tienen las cooperativas en el sector. En segundo lugar, la actualización y adecuación del marco regulatorio de la Ley 44/2007, de 13 de diciembre. En tercer lugar, la actualización y adecuación del marco regulatorio de la Ley 5/2011, de 29 de marzo.</p>
+
+      <p>III</p>
+
+      <p>La ley consta de cuatro artículos modificativos de las normas sujetas a reforma.</p>
+
+      <p>El artículo primero tiene por objeto la modificación de la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio</ref>, afectando las principales novedades al título I referido a la sociedad cooperativa. En concreto, en el capítulo I se introducen modificaciones respecto al concepto y denominación de las sociedades cooperativas, así como en relación con el domicilio social. En el capítulo III se incorporan modificaciones respecto a los derechos de las personas socias. En el capítulo IV, sobre los órganos de la sociedad cooperativa, se introducen novedades respecto a la Asamblea General y al Consejo Rector.</p>
+
+      <p>El artículo segundo, en el que se modifica la Ley 44/2007, de 13 de diciembre, se inicia con la simplificación del objeto de la ley, que se acompaña de una ampliación de su ámbito subjetivo.</p>
+
+      <p>El artículo tercero modifica la Ley 5/2011, de 29 de marzo, e incluye, entre otras, novedades en la clarificación del ámbito de aplicación objetivo de las entidades que integran el ecosistema de la economía social, añadiendo la alusión a los centros especiales de empleo de iniciativa social; introduce el concepto de empresa social y enfatiza la declaración de entidades prestadoras de Servicios de Interés Económico General.</p>
+
+      <p>El artículo cuarto modifica la Ley 20/1990, de 19 de diciembre, sobre Régimen Fiscal de las Cooperativas. Con esta modificación, se introduce como cooperativa especialmente protegida la cooperativa de vivienda prevista en los artículos 89 a 92 de la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio</ref>.</p>
+
+      <p>IV</p>
+
+      <p>Esta ley cumple con los principios de buena regulación exigibles conforme al artículo 129 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas: necesidad y eficacia, proporcionalidad, transparencia, seguridad jurídica y eficiencia.</p>
+    </preamble>
+
+    <body>
+
+      <article eId="art_primero">
+        <num>Artículo primero</num>
+        <heading>Modificación de la Ley 27/1999, de 16 de julio, de Cooperativas</heading>
+        <content>
+          <p>La <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio, de Cooperativas</ref>, queda modificada como sigue:</p>
+          <p>Uno. Se modifica el apartado 1 del artículo 1, que queda redactado en términos que enfatizan los principios de cooperación entre cooperativas, autonomía e independencia, educación, formación e información, e interés por la comunidad, conforme a los principios formulados por la Alianza Cooperativa Internacional.</p>
+          <p>Dos. Se modifica el artículo 3 para permitir que las cooperativas puedan tener una página web corporativa.</p>
+          <p>Tres. Se añaden los artículos 3 bis (página web corporativa y publicaciones) y 3 ter (comunicaciones electrónicas con las personas socias y participación telemática).</p>
+          <p>Cuatro. Se añade el artículo 12 bis sobre medidas de igualdad.</p>
+          <p>Cinco. Se modifica el artículo 16 sobre derechos de las personas socias y se añade el artículo 16 bis sobre derechos de información y participación y uso de las nuevas tecnologías.</p>
+          <p>Seis. Se modifican los artículos 19 (órganos de la sociedad), 24 (forma y contenido de la convocatoria), 25 (constitución de la Asamblea), 27 (voto por representante) y se añade el artículo 24 bis (lugar de celebración de la Asamblea).</p>
+          <p>Siete. Se modifican los artículos 32 (naturaleza, competencia y representación del Consejo Rector), 33 (composición) y 38 (funciones y nombramiento).</p>
+          <p>Ocho. Se añade el artículo 44 bis sobre la Comisión de Igualdad.</p>
+          <p>Nueve. Se modifica el artículo 80 sobre objeto y normas generales del régimen económico.</p>
+          <p>Diez. Se añade el artículo 83 bis sobre planes de igualdad cooperativos.</p>
+          <p>Once. Se modifica el artículo 84 sobre suspensión y excedencias.</p>
+          <p>Doce. Se modifican los artículos 116 (descalificación de cooperativas) y 118 (uniones de cooperativas).</p>
+          <p>Trece. Se modifican las disposiciones adicionales primera (calificación como entidades sin ánimo de lucro) y segunda (que pasa a denominarse «Información estadística sobre las entidades de la economía social»).</p>
+          <p>Catorce. Se añade la disposición adicional decimoquinta sobre competencia exclusiva de las comunidades autónomas.</p>
+          <p>Quince. Se suprime la disposición final sexta.</p>
+        </content>
+      </article>
+
+      <article eId="art_segundo">
+        <num>Artículo segundo</num>
+        <heading>Modificación de la Ley 44/2007, de 13 de diciembre, para la regulación del régimen de las empresas de inserción</heading>
+        <content>
+          <p>La Ley 44/2007, de 13 de diciembre, para la regulación del régimen de las empresas de inserción (publicada como <ref href="https://www.boe.es/eli/es/l/2007/12/13/44">BOE-A-2007-21492</ref>), queda modificada como sigue:</p>
+          <p>Esta ley reforma sustantivamente la totalidad del articulado de la Ley 44/2007: se modifican los artículos 1 (objeto), 2 (personas trabajadoras en inserción, ampliando los factores de vulnerabilidad y exclusión social), 3 (actuaciones de las Administraciones públicas), 4 (concepto de empresa de inserción), 5 (requisitos), 6 (entidades promotoras), 7 (calificación), 9 (registros administrativos), 11 (régimen jurídico y modalidades de contrato), 12 (contrato para la transición al empleo ordinario, sustituyendo el antiguo contrato de inserción), 13 (condiciones de trabajo), 14 (suspensión y extinción), 16 (promoción) y 18 (régimen sancionador).</p>
+          <p>Se derogan los artículos 8, 10, 15 y 17 originales.</p>
+          <p>Se modifican las disposiciones adicionales primera, segunda y cuarta y la disposición final quinta. Las modificaciones articulan un nuevo paradigma de inserción basado en el modelo laboral de contratación indefinida.</p>
+        </content>
+      </article>
+
+      <article eId="art_tercero">
+        <num>Artículo tercero</num>
+        <heading>Modificación de la Ley 5/2011, de 29 de marzo, de Economía Social</heading>
+        <content>
+          <p>La Ley 5/2011, de 29 de marzo, de Economía Social (publicada como <ref href="https://www.boe.es/eli/es/l/2011/03/29/5">BOE-A-2011-5708</ref>), queda modificada como sigue:</p>
+          <p>Se modifica el artículo 5 para clarificar el ámbito de aplicación objetivo de las entidades que integran el ecosistema de la economía social, incorporando expresamente los centros especiales de empleo de iniciativa social y las empresas sociales.</p>
+          <p>Se añade un artículo 5 bis sobre actos de atribución de Servicios de Interés Económico General.</p>
+          <p>Se modifica el artículo 6 sobre el Catálogo de Entidades de Economía Social Estatal, reformulándolo como herramienta estadística.</p>
+          <p>Se modifica el artículo 8 sobre fomento y difusión de la economía social.</p>
+          <p>Se modifican las disposiciones adicionales segunda (financiación), cuarta (integración en estrategias de productividad).</p>
+          <p>Se añaden las disposiciones adicionales novena (entidades de comercio justo), décima (transformación de empresas en entidades de economía social), undécima (zonas rurales en riesgo de despoblación) y duodécima (competencias de las comunidades autónomas).</p>
+          <p>Se suprime la disposición adicional séptima.</p>
+        </content>
+      </article>
+
+      <article eId="art_cuarto">
+        <num>Artículo cuarto</num>
+        <heading>Modificación de la Ley 20/1990, de 19 de diciembre, sobre Régimen Fiscal de las Cooperativas</heading>
+        <content>
+          <p>La Ley 20/1990, de 19 de diciembre, sobre Régimen Fiscal de las Cooperativas (publicada como <ref href="https://www.boe.es/eli/es/l/1990/12/19/20">BOE-A-1990-30735</ref>), queda modificada como sigue:</p>
+          <p>Se modifica el artículo 7 para incluir como cooperativa especialmente protegida la cooperativa de vivienda prevista en los artículos 89 a 92 de la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio, de Cooperativas</ref>, que cumpla determinados requisitos.</p>
+          <p>Se añade el artículo 12 bis específico para Cooperativas de Viviendas. El cumplimiento de los requisitos se entiende referido a la cooperativa de viviendas en régimen de cesión de uso, exigiendo que conserven la propiedad sobre las viviendas que cedan a sus socios y que carezcan de ánimo de lucro.</p>
+        </content>
+      </article>
+
+      <hcontainer name="transitorias" eId="trans">
+
+        <article eId="trans_1">
+          <num>Disposición transitoria primera</num>
+          <heading>Depósito provisional de los planes de igualdad</heading>
+          <content>
+            <p>En tanto no entre en funcionamiento el Registro de planes de igualdad cooperativos, las cooperativas obligadas a su elaboración depositarán los planes en el Registro de Sociedades Cooperativas competente.</p>
+          </content>
+        </article>
+
+        <article eId="trans_2">
+          <num>Disposición transitoria segunda</num>
+          <heading>Adaptación de las empresas de inserción a las previsiones de la ley</heading>
+          <content>
+            <p>Las empresas de inserción ya calificadas a la entrada en vigor de esta ley dispondrán de un plazo de tres años para adaptarse a los nuevos requisitos establecidos en la modificación de la Ley 44/2007.</p>
+          </content>
+        </article>
+
+        <article eId="trans_3">
+          <num>Disposición transitoria tercera</num>
+          <heading>Régimen transitorio de las calificaciones de empresas de inserción</heading>
+          <content>
+            <p>Las calificaciones administrativas de empresa de inserción otorgadas con anterioridad mantendrán su vigencia hasta que sean revisadas conforme al nuevo régimen.</p>
+          </content>
+        </article>
+
+        <article eId="trans_4">
+          <num>Disposición transitoria cuarta</num>
+          <heading>Régimen transitorio de los contratos de trabajo en las empresas de inserción</heading>
+          <content>
+            <p>Los contratos de inserción suscritos con anterioridad a la entrada en vigor de esta ley se regirán por la normativa que les era aplicable en el momento de su celebración hasta su finalización.</p>
+          </content>
+        </article>
+      </hcontainer>
+
+      <hcontainer name="derogatoria" eId="derog">
+
+        <article eId="derog_unica">
+          <num>Disposición derogatoria única</num>
+          <heading>Derogación normativa</heading>
+          <content>
+            <p>Quedan derogadas cuantas disposiciones de igual o inferior rango se opongan a lo establecido en esta ley.</p>
+          </content>
+        </article>
+      </hcontainer>
+
+      <hcontainer name="finales" eId="final">
+
+        <article eId="final_1">
+          <num>Disposición final primera</num>
+          <heading>Modificación de la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales</heading>
+          <content>
+            <p>Se modifican el artículo 7 (actuaciones de las Administraciones públicas competentes en materia laboral) y la disposición adicional quinta (Fundación Estatal para la Prevención de Riesgos Laborales, FSP) de la Ley 31/1995, de 8 de noviembre (<ref href="https://www.boe.es/eli/es/l/1995/11/08/31">BOE-A-1995-24292</ref>).</p>
+          </content>
+        </article>
+
+        <article eId="final_2">
+          <num>Disposición final segunda</num>
+          <heading>Modificación de la Ley 9/2017, de Contratos del Sector Público</heading>
+          <content>
+            <p>Se modifica la disposición adicional cuarta sobre contratos reservados de la Ley 9/2017, de 8 de noviembre (<ref href="https://www.boe.es/eli/es/l/2017/11/08/9">BOE-A-2017-12902</ref>), para reforzar los porcentajes mínimos de reserva en favor de centros especiales de empleo y empresas de inserción.</p>
+          </content>
+        </article>
+
+        <article eId="final_3">
+          <num>Disposición final tercera</num>
+          <heading>Modificación de la Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital</heading>
+          <content>
+            <p>Se modifican los artículos 10 (titulares), 13 y 16 de la Ley 19/2021, de 20 de diciembre (<ref href="https://www.boe.es/eli/es/l/2021/12/20/19">BOE-A-2021-21007</ref>), así como la disposición transitoria séptima, y se añade una disposición transitoria undécima sobre procedimientos de reconocimiento del derecho a la prestación pendientes de resolución.</p>
+          </content>
+        </article>
+
+        <article eId="final_4">
+          <num>Disposición final cuarta</num>
+          <heading>Modificación del Real Decreto-ley 1/2023, de 10 de enero, de medidas urgentes en materia de incentivos a la contratación laboral</heading>
+          <content>
+            <p>Se modifica el apartado 3 del artículo 11 y se introduce un nuevo apartado 3 en el artículo 20 del Real Decreto-ley 1/2023, de 10 de enero (<ref href="https://www.boe.es/eli/es/rdl/2023/01/10/1">BOE-A-2023-625</ref>), para incluir bonificaciones específicas para personas trabajadoras procedentes de empresas de inserción mediante el contrato de transición al empleo ordinario.</p>
+          </content>
+        </article>
+
+        <article eId="final_5">
+          <num>Disposición final quinta</num>
+          <heading>Entrada en vigor</heading>
+          <content>
+            <p>1. La presente ley entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado».</p>
+            <p>2. No obstante lo anterior, la obligación para las cooperativas de más de quinientas personas socias de tener una página web corporativa, prevista en el nuevo artículo 3 bis 1, párrafo segundo, de la <ref href="/akn/es/act/1999-07-16/ley-27-1999">Ley 27/1999, de 16 de julio</ref>, entrará en vigor al año de la entrada en vigor de esta ley.</p>
+          </content>
+        </article>
+      </hcontainer>
+    </body>
+
+    <conclusions>
+      <p>Por tanto,</p>
+      <p>Mando a todos los españoles, particulares y autoridades, que guarden y hagan guardar esta ley.</p>
+      <signature>
+        <person refersTo="#rey-felipe-vi">FELIPE R.</person>
+      </signature>
+      <signature>
+        <p>El Presidente del Gobierno,</p>
+        <person refersTo="#presidente-sanchez">PEDRO SÁNCHEZ PÉREZ-CASTEJÓN</person>
+      </signature>
+    </conclusions>
+  </act>
+</akomaNtoso>
