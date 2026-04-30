@@ -12,6 +12,7 @@ export const docs: DocEntry[] = [
 	{ slug: 'akndiff/examples', title: 'Examples walkthrough', section: 'akndiff' },
 	// AKN.db
 	{ slug: 'akndb/overview', title: 'Overview', section: 'akndb' },
+	{ slug: 'akndb/document-types', title: 'Tipos de documento', section: 'akndb' },
 	// Explorer
 	{ slug: 'explorer/overview', title: 'Overview', section: 'explorer' },
 	{ slug: 'explorer/act', title: 'act', section: 'explorer' },

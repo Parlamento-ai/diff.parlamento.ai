@@ -31,6 +31,19 @@ type CountRow = { countryCode: string; type: string; n: number };
 export const load: PageServerLoad = async ({ params }) => {
 	const slug = params.slug;
 
+	// AKN.db document types — overview of all 14 types and their links
+	if (slug === 'akndb/document-types') {
+		return {
+			mode: 'akndb-document-types' as const,
+			title: 'Tipos de documento',
+			section: 'akndb',
+			pageMetaTags: Object.freeze({
+				title: 'Tipos de documento — AKN.db',
+				openGraph: { title: 'Tipos de documento — AKN.db' }
+			})
+		};
+	}
+
 	// AKN.db overview — schema philosophy with live counts
 	if (slug === 'akndb/overview') {
 		const db = getDb();
