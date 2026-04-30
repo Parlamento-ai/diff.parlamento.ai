@@ -196,7 +196,7 @@ Pero después de reflexionar y buscar, vimos que la citación era el único conc
 
 Decidimos no limitarnos por cómo funciona el formato AKN desde tan temprano. De todas formas, es un proyecto de búsqueda y exploración más que de implementación. Por ende, decidimos darle una oportunidad a nuestra idea de tipo "orden del día". 
 
-Hicimos un primer test de cómo podría ser. [En este documento está detallado todo con las motivaciones](/Users/lb/work/diff-law/research/2026-02-03/citation-type-proposal.md), se nos ocurrió hacer un formato que también intente ser mecánicamente compatible con CalDAV, tal vez es un poco 'gadget', pero muestra la motivación a una máxima estandarización y compatibilidad.  
+Hicimos un primer test de cómo podría ser. [En este documento está detallado todo con las motivaciones](research/2026-02-03/citation-type-proposal.md), se nos ocurrió hacer un formato que también intente ser mecánicamente compatible con CalDAV, tal vez es un poco 'gadget', pero muestra la motivación a una máxima estandarización y compatibilidad.  
 
 El formato aún merece revisión. 
 
@@ -303,7 +303,7 @@ Vamos a estar atentos a:
 1. Campos que son subutilizados en algunos países, o sea que no completan todos los tipos de información que tenemos en la base de datos.
 2. Informaciones que no son correctamente representadas en nuestro esquema. Información que tendremos que lanzar dentro de un binary object genérico para guardarlas, o sea que no son nativas a nuestro tipo.
 
-(En este documento)[research/schema/schema-research-plan.md] iremos en detalle sobre cómo hacer este experimento. 
+[En este documento](research/schema/schema-research-plan.md) iremos en detalle sobre cómo hacer este experimento. 
 
 
 ---
