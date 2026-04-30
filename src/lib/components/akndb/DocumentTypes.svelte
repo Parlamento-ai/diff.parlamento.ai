@@ -241,9 +241,9 @@
 			o de convención de dominio.
 		</p>
 
-		<div class="overflow-x-auto rounded-lg border border-gray-200 bg-white p-4">
+		<div class="overflow-x-auto p-4">
 			<svg
-				viewBox="0 0 1100 1000"
+				viewBox="0 0 1100 770"
 				class="mx-auto block w-full"
 				style="min-width: 820px; max-width: 980px;"
 				xmlns="http://www.w3.org/2000/svg"
@@ -363,14 +363,14 @@
 				<!-- ═════════════ TIER 6 — estructurales / escapes ═════════════ -->
 				<!-- doc — document_collection — portion -->
 				<g>
-					<rect x="80" y="820" width="170" height="64" rx="8" fill="#f1f5f9" stroke="#334155" stroke-width="2" />
-					<text x="165" y="848" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#0f172a">doc</text>
-					<text x="165" y="868" text-anchor="middle" font-size="11" fill="#0f172a">genérico</text>
+					<rect x="80" y="680" width="170" height="64" rx="8" fill="#f1f5f9" stroke="#334155" stroke-width="2" />
+					<text x="165" y="708" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#0f172a">doc</text>
+					<text x="165" y="728" text-anchor="middle" font-size="11" fill="#0f172a">genérico</text>
 				</g>
 				<g>
-					<rect x="430" y="820" width="240" height="64" rx="8" fill="#cffafe" stroke="#0e7490" stroke-width="2" />
-					<text x="550" y="848" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#155e75">document_collection</text>
-					<text x="550" y="868" text-anchor="middle" font-size="11" fill="#155e75">dossier / expediente</text>
+					<rect x="430" y="680" width="240" height="64" rx="8" fill="#cffafe" stroke="#0e7490" stroke-width="2" />
+					<text x="550" y="708" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#155e75">document_collection</text>
+					<text x="550" y="728" text-anchor="middle" font-size="11" fill="#155e75">dossier / expediente</text>
 				</g>
 
 				<!-- ═════════════ FLECHAS SÓLIDAS (core) ═════════════ -->
@@ -409,8 +409,8 @@
 				<!-- document_collection → bill : ancla / agrupa
 				     straight up the center lane (x=550 is clear of all left/right column boxes) -->
 				<g>
-					<line x1="550" y1="820" x2="550" y2="284" stroke="#374151" stroke-width="2" marker-end="url(#arrow)" />
-					<text x="560" y="650" font-size="12" fill="#374151" font-style="italic">ancla / agrupa</text>
+					<line x1="550" y1="680" x2="550" y2="284" stroke="#374151" stroke-width="2" marker-end="url(#arrow)" />
+					<text x="560" y="510" font-size="12" fill="#374151" font-style="italic">ancla / agrupa</text>
 				</g>
 
 
@@ -463,8 +463,8 @@
 
 				<!-- doc → document_collection : miembro de -->
 				<g>
-					<line x1="250" y1="852" x2="430" y2="852" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
-					<text x="340" y="844" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">miembro de</text>
+					<line x1="250" y1="712" x2="430" y2="712" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
+					<text x="340" y="704" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">miembro de</text>
 				</g>
 			</svg>
 		</div>
@@ -524,15 +524,6 @@
 				<li>
 					<code class="rounded bg-blue-100 px-1 text-xs">change_set</code> es una extensión de
 					AKN-Diff, no un tipo nativo de AKN.
-				</li>
-				<li>
-					<code class="rounded bg-blue-100 px-1 text-xs">change_set</code> apunta a versiones
-					de documento (<code class="rounded bg-blue-100 px-1 text-xs">document_version</code
-					>), no estrictamente a un bill o act.
-				</li>
-				<li>
-					El XML de AKN es la fuente de verdad; las columnas SQL son proyecciones / índices
-					para consultas frecuentes.
 				</li>
 			</ol>
 		</div>
