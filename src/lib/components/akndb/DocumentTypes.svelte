@@ -319,11 +319,11 @@
 				</g>
 
 				<!-- ═════════════ TIER 3 — alrededor del bill ═════════════ -->
-				<!-- communication (far left) — amendment — citation — (right edge empty) -->
+				<!-- communication aligns with bill on the left; amendment & citation flank bill below. -->
 				<g>
-					<rect x="80" y="380" width="170" height="64" rx="8" fill="#ede9fe" stroke="#5b21b6" stroke-width="2" />
-					<text x="165" y="408" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#4c1d95">communication</text>
-					<text x="165" y="428" text-anchor="middle" font-size="11" fill="#4c1d95">entre órganos</text>
+					<rect x="80" y="220" width="170" height="64" rx="8" fill="#ede9fe" stroke="#5b21b6" stroke-width="2" />
+					<text x="165" y="248" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#4c1d95">communication</text>
+					<text x="165" y="268" text-anchor="middle" font-size="11" fill="#4c1d95">entre órganos</text>
 				</g>
 				<g>
 					<rect x="290" y="380" width="170" height="64" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2" />
@@ -331,17 +331,17 @@
 					<text x="375" y="428" text-anchor="middle" font-size="11" fill="#78350f">indicación</text>
 				</g>
 				<g>
-					<rect x="640" y="380" width="170" height="64" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2" />
-					<text x="725" y="408" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#134e4a">citation</text>
-					<text x="725" y="428" text-anchor="middle" font-size="11" fill="#134e4a">orden del día</text>
+					<rect x="850" y="220" width="170" height="64" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="2" />
+					<text x="935" y="248" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#134e4a">citation</text>
+					<text x="935" y="268" text-anchor="middle" font-size="11" fill="#134e4a">orden del día</text>
 				</g>
 
 				<!-- ═════════════ TIER 4 — debajo de cada lateral ═════════════ -->
-				<!-- question (under communication) — change_set (under amendment) — debate (under citation) -->
+				<!-- question (left, aligned with amendment) — change_set (under amendment) — debate (under citation) -->
 				<g>
-					<rect x="80" y="540" width="170" height="64" rx="8" fill="#ffedd5" stroke="#c2410c" stroke-width="2" />
-					<text x="165" y="568" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#7c2d12">question</text>
-					<text x="165" y="588" text-anchor="middle" font-size="11" fill="#7c2d12">pregunta parl.</text>
+					<rect x="80" y="380" width="170" height="64" rx="8" fill="#ffedd5" stroke="#c2410c" stroke-width="2" />
+					<text x="165" y="408" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#7c2d12">question</text>
+					<text x="165" y="428" text-anchor="middle" font-size="11" fill="#7c2d12">pregunta parl.</text>
 				</g>
 				<g>
 					<rect x="290" y="540" width="170" height="64" rx="8" fill="#ffe4e6" stroke="#be123c" stroke-width="2" />
@@ -349,21 +349,15 @@
 					<text x="375" y="588" text-anchor="middle" font-size="11" fill="#881337">AKN-Diff redline</text>
 				</g>
 				<g>
-					<rect x="640" y="540" width="170" height="64" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2" />
-					<text x="725" y="568" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#4c1d95">debate</text>
-					<text x="725" y="588" text-anchor="middle" font-size="11" fill="#4c1d95">sesión</text>
+					<rect x="850" y="380" width="170" height="64" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2" />
+					<text x="935" y="408" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="15" fill="#4c1d95">debate</text>
+					<text x="935" y="428" text-anchor="middle" font-size="11" fill="#4c1d95">sesión</text>
 				</g>
 
-				<!-- ═════════════ TIER 5 — document_version & statement ═════════════ -->
 				<g>
-					<rect x="290" y="700" width="170" height="64" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="2" stroke-dasharray="4 3" />
-					<text x="375" y="728" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#312e81">document_version</text>
-					<text x="375" y="748" text-anchor="middle" font-size="11" fill="#312e81">snapshot XML</text>
-				</g>
-				<g>
-					<rect x="640" y="700" width="170" height="64" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2" />
-					<text x="725" y="728" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#831843">statement</text>
-					<text x="725" y="748" text-anchor="middle" font-size="11" fill="#831843">intervención</text>
+					<rect x="850" y="540" width="170" height="64" rx="8" fill="#fce7f3" stroke="#be185d" stroke-width="2" />
+					<text x="935" y="568" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#831843">statement</text>
+					<text x="935" y="588" text-anchor="middle" font-size="11" fill="#831843">intervención</text>
 				</g>
 
 				<!-- ═════════════ TIER 6 — estructurales / escapes ═════════════ -->
@@ -411,11 +405,6 @@
 					<text x="430" y="335" text-anchor="end" font-size="12" fill="#374151" font-style="italic">indica</text>
 				</g>
 
-				<!-- change_set → document_version : base/result -->
-				<g>
-					<line x1="375" y1="604" x2="375" y2="700" stroke="#374151" stroke-width="2" marker-end="url(#arrow)" />
-					<text x="385" y="658" font-size="12" fill="#374151" font-style="italic">base/result</text>
-				</g>
 
 				<!-- document_collection → bill : ancla / agrupa
 				     straight up the center lane (x=550 is clear of all left/right column boxes) -->
@@ -433,56 +422,43 @@
 					<text x="365" y="498" text-anchor="end" font-size="11" fill="#6b7280" font-style="italic">puede generar</text>
 				</g>
 
-				<!-- citation → bill : agenda cita -->
+				<!-- citation → bill : agenda cita
+				     direct horizontal arrow on bill's right side -->
 				<g>
-					<line x1="640" y1="395" x2="635" y2="280" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
-					<text x="645" y="345" font-size="11" fill="#6b7280" font-style="italic">agenda cita</text>
+					<line x1="850" y1="252" x2="635" y2="252" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
+					<text x="742" y="244" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">agenda cita</text>
 				</g>
 
 				<!-- citation → debate : convoca / precede -->
 				<g>
-					<line x1="725" y1="444" x2="725" y2="540" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
-					<text x="735" y="498" font-size="11" fill="#6b7280" font-style="italic">convoca / precede</text>
+					<line x1="935" y1="284" x2="935" y2="380" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
+					<text x="945" y="338" font-size="11" fill="#6b7280" font-style="italic">convoca / precede</text>
 				</g>
 
 				<!-- bill → debate : discutido en
-				     drop down from right side of bill, then across to debate's top -->
+				     diagonal from bill's bottom-right toward debate's top-left -->
 				<g>
-					<path
-						d="M 615 284 L 615 510 L 725 510 L 725 540"
-						fill="none"
-						stroke="#9ca3af"
-						stroke-width="1.5"
-						stroke-dasharray="4 3"
-						marker-end="url(#arrow-light)"
-					/>
-					<text x="625" y="500" font-size="11" fill="#6b7280" font-style="italic">discutido en</text>
+					<line x1="635" y1="284" x2="850" y2="395" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
+					<text x="700" y="335" font-size="11" fill="#6b7280" font-style="italic">discutido en</text>
 				</g>
 
 				<!-- statement → debate : contenido en -->
 				<g>
-					<line x1="725" y1="700" x2="725" y2="604" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
-					<text x="735" y="658" font-size="11" fill="#6b7280" font-style="italic">contenido en</text>
+					<line x1="935" y1="540" x2="935" y2="444" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
+					<text x="945" y="498" font-size="11" fill="#6b7280" font-style="italic">contenido en</text>
 				</g>
 
 				<!-- communication → bill : transmite
-				     up from communication, over the top of amendment, then onto bill's left -->
+				     direct horizontal arrow on bill's left side -->
 				<g>
-					<path
-						d="M 215 380 L 215 330 L 465 330"
-						fill="none"
-						stroke="#9ca3af"
-						stroke-width="1.5"
-						stroke-dasharray="4 3"
-						marker-end="url(#arrow-light)"
-					/>
-					<text x="270" y="322" font-size="11" fill="#6b7280" font-style="italic">transmite</text>
+					<line x1="250" y1="252" x2="465" y2="252" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
+					<text x="357" y="244" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">transmite</text>
 				</g>
 
 				<!-- question → communication : respondida por -->
 				<g>
-					<line x1="165" y1="540" x2="165" y2="444" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
-					<text x="175" y="498" font-size="11" fill="#6b7280" font-style="italic">respondida por</text>
+					<line x1="165" y1="380" x2="165" y2="284" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-light)" />
+					<text x="175" y="338" font-size="11" fill="#6b7280" font-style="italic">respondida por</text>
 				</g>
 
 				<!-- doc → document_collection : miembro de -->
