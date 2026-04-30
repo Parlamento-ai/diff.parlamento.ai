@@ -14,10 +14,8 @@
   bloques en total). Resultado: 2 bloques APROBADOS (los del art. 1.14
   y los del art. 2.2 + art. 3.2), 7 bloques RECHAZADOS.
 
-  Source primary: DSCD-15-PL-175.PDF (también disponible como HTML),
-  publicado por el Congreso de los Diputados.
-  Cached locally: research/schema/_sources/es/DSCD-15-PL-175.html
-  (ungitignored area, 449 KB de HTML, contiene transcript completo).
+  Fuente oficial: DSCD-15-PL-175 publicado por el Congreso de los Diputados
+    https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-175.PDF
 -->
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
             xmlns:akndiff="https://akndiff.io/ns/akndiff">
@@ -108,10 +106,9 @@
            start/end timestamps, presiding officer, all 8 speakers with
            their parliamentary groups, the 9 vote tallies, and the closing
            verbatim ("Eran las dos y veintinueve minutos de la tarde") were
-           extracted from research/schema/_sources/es/DSCD-15-PL-175.html
-           — the full HTML version of the session minutes downloaded with
-           curl from congreso.es (449 KB, complete, no truncation). This
-           is FIRST-PARTY DATA, not WebFetch's AI-summarized extraction.
+           extracted from the official Diario de Sesiones DSCD-15-PL-175
+           publicado por el Congreso de los Diputados. First-party data,
+           not AI-summarized extraction.
 
         3. SCHEMA HAS NO sessionNumber FIELD. Both the publication number
            (DSCD-15-PL-N) and the chamber's session number (169) are

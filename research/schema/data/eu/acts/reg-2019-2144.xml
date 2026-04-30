@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Regulation (EU) 2019/2144 of the European Parliament and of the Council
+  of 27 November 2019 on type-approval requirements for motor vehicles
+  and their trailers, and systems, components and separate technical units
+  intended for such vehicles, as regards their general safety and the
+  protection of vehicle occupants and vulnerable road users.
+
+  This is one of the 9 prior acts AMENDED by the AI Act (Reg (EU) 2024/1689),
+  via its Article 109. Modeled here as a STUB so the link resolver does not
+  fail on the AI Act's references — same role as Ley 27/1999 plays for
+  Spanish Ley 1/2026 in the ES corpus, except this one is more minimal
+  because the substantive content is not the focus of the EU experiment.
+
+  ELI: http://data.europa.eu/eli/reg/2019/2144/oj
+  CELEX: 32019R2144
+  Source: https://eur-lex.europa.eu/eli/reg/2019/2144/oj/eng
+  Procedure file: 2018/0145(COD)
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#european-parliament-and-council">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/act/2019-11-27/reg-2019-2144/!main"/>
+          <FRBRuri value="/akn/eu/act/2019-11-27/reg-2019-2144"/>
+          <FRBRdate date="2019-11-27" name="generation"/>
+          <FRBRauthor href="#european-parliament-and-council"/>
+          <FRBRcountry value="eu"/>
+          <FRBRsubtype value="regulation"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/act/2019-11-27/reg-2019-2144/eng@2019-12-16/!main"/>
+          <FRBRuri value="/akn/eu/act/2019-11-27/reg-2019-2144/eng@2019-12-16"/>
+          <FRBRdate date="2019-12-16" name="generation"/>
+          <FRBRauthor href="#european-parliament-and-council"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/act/2019-11-27/reg-2019-2144/eng@2019-12-16.xml"/>
+          <FRBRuri value="/akn/eu/act/2019-11-27/reg-2019-2144/eng@2019-12-16.xml"/>
+          <FRBRdate date="2019-12-16" name="generation"/>
+          <FRBRauthor href="#european-parliament-and-council"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2019-12-16"
+                   showAs="Official Journal of the European Union, L 325/1, 16 December 2019"
+                   name="oj"
+                   href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2019:325:TOC"/>
+
+      <classification source="#eur-lex">
+        <keyword value="motor-vehicles" showAs="motor vehicles" dictionary="#eur-lex-subjects"/>
+        <keyword value="type-approval" showAs="type-approval" dictionary="#eur-lex-subjects"/>
+        <keyword value="general-safety" showAs="general safety" dictionary="#eur-lex-subjects"/>
+        <keyword value="vulnerable-road-users" showAs="vulnerable road users" dictionary="#eur-lex-subjects"/>
+        <keyword value="vehicle-safety-systems" showAs="vehicle safety systems" dictionary="#eur-lex-subjects"/>
+      </classification>
+
+      <lifecycle source="#european-parliament-and-council">
+        <eventRef date="2018-05-17" refersTo="#commission_proposal"
+                  source="#evt-01"
+                  showAs="European Commission proposal COM(2018)286 final"
+                  chamber="commission"/>
+        <eventRef date="2019-04-16" refersTo="#ep_first_reading"
+                  source="#evt-02"
+                  showAs="European Parliament first reading position adopted in plenary"
+                  chamber="parliament"/>
+        <eventRef date="2019-11-08" refersTo="#council_adoption"
+                  source="#evt-03"
+                  showAs="Council of the EU formal adoption"
+                  chamber="council"/>
+        <eventRef date="2019-11-27" refersTo="#promulgation"
+                  source="#evt-04"
+                  showAs="Signed by the Presidents of the EP and Council (mapped to #promulgation per EU convention; see AI Act researchNote 8)"
+                  chamber="parliament_and_council"/>
+        <eventRef date="2019-12-16" refersTo="#publication"
+                  source="#evt-05"
+                  showAs="Published in the Official Journal of the European Union (OJ L 325, p. 1)"
+                  chamber="oj"/>
+        <eventRef date="2020-01-05" refersTo="#commencement"
+                  source="#evt-06"
+                  showAs="Entry into force (20 days after OJ publication)"/>
+        <eventRef date="2022-07-06" refersTo="#general_application"
+                  source="#evt-07"
+                  showAs="General application from 6 July 2022"/>
+        <eventRef date="2024-08-01" refersTo="#amended_by_ai_act"
+                  source="#evt-08"
+                  showAs="Amended by Reg (EU) 2024/1689 (AI Act) Art 109 — adds requirement to take into account AI Act Chapter III Section 2 when adopting Art 11(2) implementing acts on AI safety components"
+                  chamber="parliament_and_council"/>
+      </lifecycle>
+
+      <references source="#european-parliament-and-council">
+        <TLCOrganization eId="european-parliament-and-council"
+                         href="/akn/eu/org/european-parliament-and-council"
+                         showAs="European Parliament and Council of the European Union (co-legislators)"/>
+        <TLCOrganization eId="european-commission"
+                         href="/akn/eu/org/european-commission"
+                         showAs="European Commission"/>
+      </references>
+
+      <proprietary source="#european-parliament-and-council">
+        <akndiff:nativeId>reg-2019-2144</akndiff:nativeId>
+        <akndiff:sourceUrl>https://eur-lex.europa.eu/eli/reg/2019/2144/oj/eng</akndiff:sourceUrl>
+        <akndiff:actStatus normalized="in_force">in force (general application from 6 July 2022; subsequently amended by Reg 2024/1689 Art 109)</akndiff:actStatus>
+        <akndiff:issuingBody>European Parliament and Council of the European Union</akndiff:issuingBody>
+        <akndiff:celexNumber>32019R2144</akndiff:celexNumber>
+        <akndiff:procedureFile>2018/0145(COD)</akndiff:procedureFile>
+
+        <akndiff:researchNotes>
+        STUB. Modeled minimally to resolve the AI Act's two outgoing
+        references to /akn/eu/act/2019-11-27/reg-2019-2144 (one in the
+        long title, one in Article 109 amending clause).
+
+        Same role as ley-27-1999 plays for Spanish Ley 1/2026 — the prior
+        act that the new modifying act amends. Spanish modeling kept
+        ley-27-1999 fully structural (120 articles as shells) because the
+        ES experiment was specifically about modifying-law dynamics.
+        For EU we kept this stub minimal because the substantive content
+        of the prior act (motor vehicle safety) is not what the AI Act
+        experiment is testing; the schema friction being captured is the
+        cross-act amending pattern (AI Act researchNote 2 confirms this
+        is cross-country).
+
+        No new EU-specific frictions surfaced from this stub that aren't
+        already in the AI Act researchNotes.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><b>REGULATION (EU) 2019/2144 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL</b> of 27 November 2019 on type-approval requirements for motor vehicles and their trailers, and systems, components and separate technical units intended for such vehicles, as regards their general safety and the protection of vehicle occupants and vulnerable road users, amending Regulation (EU) 2018/858 of the European Parliament and of the Council and repealing Regulations (EC) No 78/2009, (EC) No 79/2009 and (EC) No 661/2009 of the European Parliament and of the Council and Commission Regulations (EC) No 631/2009, (EU) No 406/2010, (EU) No 672/2010, (EU) No 1003/2010, (EU) No 1005/2010, (EU) No 1008/2010, (EU) No 1009/2010, (EU) No 19/2011, (EU) No 109/2011, (EU) No 458/2011, (EU) No 65/2012, (EU) No 130/2012, (EU) No 347/2012, (EU) No 351/2012, (EU) No 1230/2012 and (EU) 2015/166 (Text with EEA relevance).</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION, Having regard to the Treaty on the Functioning of the European Union, and in particular Article 114 thereof, [...] Whereas: [38 recitals on road safety policy, vulnerable road users, advanced driver-assistance systems, automated vehicles, repeal of older fragmented type-approval acts ...] HAVE ADOPTED THIS REGULATION:</p>
+    </preamble>
+
+    <body>
+      <chapter eId="cpt_I">
+        <num>CHAPTER I</num>
+        <heading>SUBJECT MATTER, SCOPE AND DEFINITIONS</heading>
+        <article eId="cpt_I.art_1"><num>Article 1</num><heading>Subject matter</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32019R2144.</p></content></article>
+        <article eId="cpt_I.art_2"><num>Article 2</num><heading>Scope</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_I.art_3"><num>Article 3</num><heading>Definitions</heading><content><p>Estructura preservada.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_II">
+        <num>CHAPTER II</num>
+        <heading>OBLIGATIONS OF MANUFACTURERS</heading>
+        <article eId="cpt_II.art_4"><num>Article 4</num><heading>General obligations and technical requirements</heading><content><p>Estructura preservada.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_III">
+        <num>CHAPTER III</num>
+        <heading>SPECIFIC REQUIREMENTS RELATING TO VEHICLES</heading>
+        <article eId="cpt_III.art_5"><num>Article 5</num><heading>Specific provisions concerning motor vehicles</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_III.art_6"><num>Article 6</num><heading>Advanced vehicle systems for all motor vehicle categories</heading><content><p>Estructura preservada — intelligent speed assistance, alcohol interlock interface, drowsiness warning, distraction warning, emergency stop signal, reversing detection, event data recorder.</p></content></article>
+        <article eId="cpt_III.art_7"><num>Article 7</num><heading>Specific requirements relating to passenger cars and light commercial vehicles</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_III.art_8"><num>Article 8</num><heading>Specific requirements relating to passenger cars and light commercial vehicles concerning protection of vulnerable road users</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_III.art_9"><num>Article 9</num><heading>Specific requirements relating to buses, coaches and heavy commercial vehicles</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_III.art_10"><num>Article 10</num><heading>Specific requirements concerning automated vehicles and fully automated vehicles</heading><content><p>Estructura preservada — type-approval framework for automated and fully automated vehicles, the most directly AI-relevant article (later affected by AI Act Art 109 amendment).</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_IV">
+        <num>CHAPTER IV</num>
+        <heading>OBLIGATIONS OF MEMBER STATES</heading>
+        <article eId="cpt_IV.art_11"><num>Article 11</num><heading>Type-approval procedures and obligations of approval authorities</heading><content><p>Estructura preservada. <b>Para 3 added by AI Act (Reg 2024/1689) Art 109:</b> "When adopting the implementing acts pursuant to paragraph 2, concerning artificial intelligence systems which are safety components within the meaning of Regulation (EU) 2024/1689, the requirements set out in Chapter III, Section 2, of that Regulation shall be taken into account."</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_V">
+        <num>CHAPTER V</num>
+        <heading>FINAL PROVISIONS</heading>
+        <article eId="cpt_V.art_12"><num>Article 12</num><heading>Amendment of Regulation (EU) 2018/858</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_V.art_13"><num>Article 13</num><heading>Penalties</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_V.art_14"><num>Article 14</num><heading>Reporting and review</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_V.art_15"><num>Article 15</num><heading>Transitional provisions</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_V.art_16"><num>Article 16</num><heading>Repeals</heading><content><p>Estructura preservada — repeals 18 prior Regulations (EC/EU) 2009-2015.</p></content></article>
+        <article eId="cpt_V.art_17"><num>Article 17</num><heading>Entry into force and application</heading><content><p>Entry into force: 5 January 2020 (20 days after OJ publication). General application: 6 July 2022.</p></content></article>
+      </chapter>
+
+      <hcontainer name="annex" eId="anx_I">
+        <num>ANNEX I</num>
+        <heading>List of requirements referred to in Article 4(5) and Article 5(1)</heading>
+        <content><p>Estructura preservada.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_II">
+        <num>ANNEX II</num>
+        <heading>List of UN Regulations as referred to in Article 4(2)</heading>
+        <content><p>Estructura preservada.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_III">
+        <num>ANNEX III</num>
+        <heading>Correlation table</heading>
+        <content><p>Estructura preservada.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_IV">
+        <num>ANNEX IV</num>
+        <heading>Repealed Regulations</heading>
+        <content><p>Estructura preservada — list of 18 Regulations repealed by this Regulation.</p></content>
+      </hcontainer>
+    </body>
+
+    <conclusions>
+      <p>This Regulation shall be binding in its entirety and directly applicable in all Member States.</p>
+      <p>Done at Strasbourg, 27 November 2019.</p>
+      <signature>
+        <p>For the European Parliament</p>
+        <p>The President</p>
+        <p>D. M. SASSOLI</p>
+      </signature>
+      <signature>
+        <p>For the Council</p>
+        <p>The President</p>
+        <p>T. TUPPURAINEN</p>
+      </signature>
+    </conclusions>
+  </act>
+</akomaNtoso>

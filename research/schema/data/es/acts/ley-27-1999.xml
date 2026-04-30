@@ -9,9 +9,9 @@
   the amendment) will resolve their hrefs INTO this file and the
   document graph will reconstruct itself.
 
-  Source: BOE-A-1999-15681. Full original BOE XML preserved at
-  research/schema/data/es/_sources/ley-27-1999-cooperativas.xml (gitignored,
-  but reproducible from https://www.boe.es/diario_boe/xml.php?id=BOE-A-1999-15681).
+  Fuente oficial: BOE-A-1999-15681
+    https://www.boe.es/diario_boe/xml.php?id=BOE-A-1999-15681
+    https://www.boe.es/eli/es/l/1999/07/16/27
 
   Modeling decisions and frictions are recorded inside <akndiff:researchNotes>
   below.

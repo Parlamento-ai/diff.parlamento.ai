@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  COM(2021)206 final — Commission proposal for a Regulation of the
+  European Parliament and of the Council laying down harmonised rules on
+  artificial intelligence (Artificial Intelligence Act) and amending
+  certain Union legislative acts.
+
+  This is the parliamentary BILL that became Regulation (EU) 2024/1689
+  (AI Act). Procedure file: 2021/0106(COD) — Ordinary Legislative
+  Procedure.
+
+  Sponsor: European Commission (organization, not person — same friction
+  as Spanish "Gobierno" sponsor in Proyecto de Ley 121/000036).
+
+  The text proposed by the Commission was substantially modified during
+  the trilogue (2023-06 to 2023-12-08) following the EP's first reading
+  mandate (2023-06-14) and Council's general approach (2022-12-06).
+  The final text adopted on 2024-03-13 (EP P9_TA(2024)0138) and
+  2024-05-21 (Council) is what became Reg (EU) 2024/1689.
+
+  Fuente oficial primaria: EUR-Lex CELEX:52021PC0206 (Commission proposal)
+    https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206
+  OEIL procedure file 2021/0106(COD) (canonical cross-institutional events)
+    https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?reference=2021/0106(COD)
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <bill name="bill">
+    <meta>
+      <identification source="#european-commission">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/bill/2021-04-21/com-2021-206/!main"/>
+          <FRBRuri value="/akn/eu/bill/2021-04-21/com-2021-206"/>
+          <FRBRdate date="2021-04-21" name="generation"/>
+          <FRBRauthor href="#european-commission"/>
+          <FRBRcountry value="eu"/>
+          <FRBRsubtype value="commission-proposal"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/bill/2021-04-21/com-2021-206/eng@/!main"/>
+          <FRBRuri value="/akn/eu/bill/2021-04-21/com-2021-206/eng@"/>
+          <FRBRdate date="2021-04-21" name="generation"/>
+          <FRBRauthor href="#european-commission"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/bill/2021-04-21/com-2021-206/eng@.xml"/>
+          <FRBRuri value="/akn/eu/bill/2021-04-21/com-2021-206/eng@.xml"/>
+          <FRBRdate date="2021-04-21" name="generation"/>
+          <FRBRauthor href="#european-commission"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2021-04-21"
+                   showAs="COM(2021)206 final, 21 April 2021"
+                   name="com-register"
+                   href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206"/>
+
+      <classification source="#oeil">
+        <keyword value="artificial-intelligence" showAs="artificial intelligence" dictionary="#oeil-subjects"/>
+        <keyword value="ai-systems" showAs="AI systems regulation" dictionary="#oeil-subjects"/>
+        <keyword value="ordinary-legislative-procedure" showAs="ordinary legislative procedure" dictionary="#oeil-subjects"/>
+        <keyword value="single-market" showAs="Single Market harmonisation" dictionary="#oeil-subjects"/>
+        <keyword value="fundamental-rights" showAs="fundamental rights protection" dictionary="#oeil-subjects"/>
+        <keyword value="product-safety" showAs="product safety" dictionary="#oeil-subjects"/>
+      </classification>
+
+      <lifecycle source="#oeil">
+        <eventRef date="2021-04-21" refersTo="#submitted"
+                  source="#evt-01"
+                  showAs="Commission adoption of COM(2021)206 final by the College of Commissioners (Brussels)"
+                  chamber="commission"/>
+        <eventRef date="2021-04-22" refersTo="#transmitted_to_legislators"
+                  source="#evt-02"
+                  showAs="Transmitted to the European Parliament and the Council of the European Union"
+                  chamber="commission"/>
+        <eventRef date="2021-09-22" refersTo="#eesc_opinion"
+                  source="#evt-03"
+                  showAs="European Economic and Social Committee opinion adopted (INT/940)"
+                  chamber="eesc"/>
+        <eventRef date="2021-12-29" refersTo="#ecb_opinion"
+                  source="#evt-04"
+                  showAs="European Central Bank opinion adopted (CON/2021/40 — request received 3 Nov 2021, opinion adopted 29 Dec 2021)"
+                  chamber="ecb"/>
+        <eventRef date="2021-12-02" refersTo="#cor_opinion"
+                  source="#evt-05"
+                  showAs="European Committee of the Regions opinion adopted (CDR 2682/2021, SEDEC commission, rapporteur Guido Rink, NL)"
+                  chamber="cor"/>
+        <eventRef date="2022-04-20" refersTo="#ep_committee_referral"
+                  source="#evt-06"
+                  showAs="EP joint committee referral: IMCO (Internal Market and Consumer Protection) + LIBE (Civil Liberties, Justice and Home Affairs) — co-rapporteurs Brando Benifei (S&amp;D, IMCO) and Dragoş Tudorache (Renew Europe, LIBE)"
+                  chamber="parliament"/>
+        <eventRef date="2022-12-06" refersTo="#council_general_approach"
+                  source="#evt-07"
+                  showAs="Council of the EU general approach adopted (Czech Presidency)"
+                  chamber="council"/>
+        <eventRef date="2023-05-11" refersTo="#ep_committee_report"
+                  source="#evt-08"
+                  showAs="IMCO/LIBE joint committee report adopted (84 in favour, 7 against, 12 abstentions) — substantially amends Commission proposal"
+                  chamber="parliament"/>
+        <eventRef date="2023-06-14" refersTo="#ep_first_reading_mandate"
+                  source="#evt-09"
+                  showAs="EP plenary vote on negotiating mandate (Strasbourg) — 499 in favour, 28 against, 93 abstentions; entry into trilogue negotiations approved"
+                  chamber="parliament"/>
+        <eventRef date="2023-06-21" refersTo="#trilogue_started"
+                  source="#evt-10"
+                  showAs="Inter-institutional trilogue negotiations started (Commission + EP + Council)"
+                  chamber="trilogue"/>
+        <eventRef date="2023-12-08" refersTo="#trilogue_political_agreement"
+                  source="#evt-11"
+                  showAs="Trilogue political agreement reached after marathon talks across 6, 7 and 8 December 2023 (Spanish Presidency of the Council; Carme Artigas, Spanish Secretary of State for Digitalisation and AI, led negotiations for the Council)"
+                  chamber="trilogue"/>
+        <eventRef date="2024-02-02" refersTo="#council_coreper_endorsement"
+                  source="#evt-12"
+                  showAs="COREPER (Permanent Representatives Committee) unanimous endorsement of trilogue compromise"
+                  chamber="council"/>
+        <eventRef date="2024-02-13" refersTo="#ep_committee_final_vote"
+                  source="#evt-13"
+                  showAs="IMCO/LIBE joint committee final vote on trilogue text (71 in favour, 8 against, 7 abstentions)"
+                  chamber="parliament"/>
+        <eventRef date="2024-03-13" refersTo="#passed_chamber"
+                  source="#evt-14"
+                  showAs="EP first reading position adopted in plenary (Strasbourg) — 523 in favour, 46 against, 49 abstentions; published as P9_TA(2024)0138"
+                  chamber="parliament"/>
+        <eventRef date="2024-05-21" refersTo="#passed_second_chamber"
+                  source="#evt-15"
+                  showAs="Council of the EU formal final adoption (unanimously) — text matches the EP first reading position so no second reading needed"
+                  chamber="council"/>
+        <eventRef date="2024-06-13" refersTo="#enacted"
+                  source="#evt-16"
+                  showAs="Signed by Roberta Metsola (EP President) and the President of the Council; act becomes Reg (EU) 2024/1689"
+                  chamber="parliament_and_council"/>
+      </lifecycle>
+
+      <references source="#oeil">
+        <TLCOrganization eId="european-commission"
+                         href="/akn/eu/org/european-commission"
+                         showAs="European Commission"/>
+        <TLCOrganization eId="european-parliament"
+                         href="/akn/eu/org/european-parliament"
+                         showAs="European Parliament"/>
+        <TLCOrganization eId="council-of-the-eu"
+                         href="/akn/eu/org/council-of-the-eu"
+                         showAs="Council of the European Union"/>
+        <TLCOrganization eId="imco-committee"
+                         href="/akn/eu/org/ep-committee-imco"
+                         showAs="EP Committee on the Internal Market and Consumer Protection (IMCO)"/>
+        <TLCOrganization eId="libe-committee"
+                         href="/akn/eu/org/ep-committee-libe"
+                         showAs="EP Committee on Civil Liberties, Justice and Home Affairs (LIBE)"/>
+        <TLCOrganization eId="eesc"
+                         href="/akn/eu/org/eesc"
+                         showAs="European Economic and Social Committee"/>
+        <TLCOrganization eId="ecb"
+                         href="/akn/eu/org/ecb"
+                         showAs="European Central Bank"/>
+        <TLCOrganization eId="cor"
+                         href="/akn/eu/org/cor"
+                         showAs="European Committee of the Regions"/>
+        <TLCPerson eId="benifei-brando"
+                   href="/akn/eu/person/brando-benifei"
+                   showAs="Brando Benifei (S&amp;D, Italy) — IMCO co-rapporteur"/>
+        <TLCPerson eId="tudorache-dragos"
+                   href="/akn/eu/person/dragos-tudorache"
+                   showAs="Dragoş Tudorache (Renew Europe, Romania) — LIBE co-rapporteur"/>
+        <TLCRole eId="role-rapporteur"
+                 href="/akn/eu/ontology/roles/ep-rapporteur"
+                 showAs="EP rapporteur (lead committee member responsible for the file)"/>
+        <TLCRole eId="role-co-rapporteur"
+                 href="/akn/eu/ontology/roles/ep-co-rapporteur"
+                 showAs="EP co-rapporteur (joint committee setup)"/>
+      </references>
+
+      <proprietary source="#oeil">
+        <akndiff:nativeId>com-2021-206</akndiff:nativeId>
+        <akndiff:sourceUrl>https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?reference=2021/0106(COD)</akndiff:sourceUrl>
+        <akndiff:billStatus normalized="enacted">Procedure completed — Act adopted as Reg (EU) 2024/1689 of 13 June 2024</akndiff:billStatus>
+        <akndiff:urgency>ordinary</akndiff:urgency>
+        <akndiff:procedureFile>2021/0106(COD)</akndiff:procedureFile>
+        <akndiff:celexProposal>52021PC0206</akndiff:celexProposal>
+
+        <akndiff:sponsor refersTo="#european-commission" role="#role-author-commission"/>
+        <akndiff:rapporteur refersTo="#benifei-brando" role="#role-co-rapporteur" committee="#imco-committee"/>
+        <akndiff:rapporteur refersTo="#tudorache-dragos" role="#role-co-rapporteur" committee="#libe-committee"/>
+
+        <akndiff:researchNotes>
+        Friction log for EU bill com-2021-206 — Phase 1.
+        Each note maps to a SPECIFIC schema field that strains under EU reality.
+
+        1. SPONSOR IS THE EUROPEAN COMMISSION (organization). Same friction
+           as Spanish Proyecto de Ley 121/000036 where sponsor is Gobierno.
+           BillTable.sponsors expects person shape {name, role, party,
+           chamber, externalId}; we use the institution. CROSS-COUNTRY
+           CONFIRMED: schema needs polymorphic sponsor (person | organization).
+
+        2. RAPPORTEUR ROLE NOT IN SCHEMA. EP bills have rapporteurs (lead
+           committee member responsible for the file) — distinct from
+           sponsor. AI Act had TWO co-rapporteurs because of the joint
+           IMCO/LIBE committee setup. We carry them as akndiff:rapporteur
+           extension elements with committee= attribute. BillTable.sponsors
+           cannot represent the sponsor/rapporteur distinction. Same
+           structural gap noted in original ES checklist for EU.
+
+        3. JOINT COMMITTEE REFERRAL. EP referred the file JOINTLY to IMCO
+           and LIBE under Rule 58 (formerly Rule 55). Schema's chamber
+           field on events accepts a string ("parliament") but doesn't
+           model multiple committees within one chamber being co-responsible.
+
+        4. CONSULTATIVE OPINIONS BY EESC, ECB, CoR are formal procedural
+           steps required by the Treaties (TFEU Arts 304, 282(5), 307).
+           They produce documents (opinions) that are NOT bills, amendments,
+           debates or any other modeled type. We capture them as eventRef
+           with chamber= the committee name; no document side is modeled.
+           Schema has no opinion type — same gap noted in AI Act
+           researchNote 12 of the prior version (now consolidated here).
+
+        5. PARALLEL TRACK BICAMERALISM (vs ES sequential). ES events flow
+           Congreso → Senado → Congreso (linear). EU bill events show
+           PARALLEL tracks: EP committee work (2022-2023) overlapped with
+           Council work (Council general approach 2022-12-06 happened
+           BEFORE EP first reading mandate 2023-06-14). They reconciled
+           in trilogue. The chamber attribute on eventRef captures which
+           institution acted but does not model that EP and Council were
+           working SIMULTANEOUSLY on the SAME draft. Cross-country friction
+           confirmed (also flagged in AI Act researchNote 9).
+
+        6. TRILOGUE = NEW INSTITUTIONAL FORM. The trilogue is an informal
+           inter-institutional negotiation between Commission, EP, Council
+           that produces the political agreement. Not a bill, amendment,
+           or debate; events happen in closed session. We use chamber=
+           "trilogue" as a non-canonical value. Schema has no concept of
+           inter-institutional negotiation as a phase.
+
+        7. PROCEDURE FILE 2021/0106(COD) IS THE CROSS-INSTITUTIONAL
+           REFERENCE. Used by Commission, EP, Council, OEIL, EUR-Lex
+           uniformly. ES expediente (121/000036) is per-chamber. We carry
+           in akndiff:procedureFile but it's not a real column.
+           Cross-country friction (also in AI Act researchNote 10).
+
+        8. EP FIRST READING ADOPTED ON FIRST TRY (no Council second
+           reading). The EU's ordinary legislative procedure normally has
+           up to three readings. Here the trilogue agreement let EP and
+           Council adopt the SAME text in first reading — final adoption
+           in single round each. Loader-extracted events stop at
+           #passed_second_chamber even though there's no real "second
+           chamber reading" — Council just formally adopts. Status
+           normalization is fine but the event type vocabulary
+           (passed_second_chamber) is misleading for EU.
+
+        9. P9_TA(2024)0138 IS THE EP "POSITION" — equivalent to ES
+           dictamen but produced by the plenary, not a committee.
+           Includes the consolidated text + the recorded vote (523-46-49).
+           Our amendment XML (ep-p9-ta-2024-0138.xml) models this; here
+           we link to it via the eventRef showAs.
+
+       10. NO "WITHDRAWN BY COMMISSION" PATH MODELED. The Commission can
+           withdraw its proposal at any time before adoption (didn't happen
+           here). The schema's BillStatus union has 'withdrawn' but no
+           special semantics for "Commission-withdrawn" vs "EP-rejected".
+           Out of scope for AI Act but a Phase 2 friction.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><b>Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL</b> laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts. {SEC(2021) 167 final} - {SWD(2021) 84 final} - {SWD(2021) 85 final}. COM(2021) 206 final, 2021/0106(COD), Brussels, 21.4.2021.</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>EXPLANATORY MEMORANDUM. The Commission's proposal is accompanied by an Explanatory Memorandum (EM) and an Impact Assessment (SWD(2021)84 + 85). The proposal aims to lay down harmonised rules for the development, placement on the market and use of AI systems in the Union, following a proportionate risk-based approach. Subsequent to this proposal, the EP (in its 2023-06-14 mandate and 2024-03-13 first reading) and the Council (in its 2022-12-06 general approach) substantially amended the text. The final adopted version is in <ref href="/akn/eu/act/2024-06-13/reg-2024-1689">Reg (EU) 2024/1689</ref>.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_proposal_summary">
+        <num>Proposal text submitted</num>
+        <heading>Articulated text proposed by the Commission</heading>
+        <content>
+          <p>The Commission's proposed articulated text was published as <b>COM(2021)206 final</b> on 21 April 2021 (CELEX:52021PC0206 — full text accessible at EUR-Lex). It contained 85 articles + 9 annexes structured into 12 titles, addressing: prohibited AI practices, high-risk AI systems classification (Annex III, then 8 areas), high-risk requirements (Title III Chapter 2), provider/user obligations, conformity assessment, EU database, transparency obligations for limited-risk systems, codes of conduct, governance (European Artificial Intelligence Board), penalties, and final provisions.</p>
+          <p>The proposal was substantially amended throughout the trilogue (2023-06-21 to 2023-12-08) following the EP's first reading negotiating mandate (P9_A(0138)/2023, 14 June 2023) and the Council's general approach (15698/22, 6 December 2022). Major additions during trilogue: full Chapter V on general-purpose AI models with systemic risk (initially absent), expansion of prohibited practices in Article 5, fundamental rights impact assessment by deployers (Article 27), AI Office and Scientific Panel under Title VI, three-tier penalty system, and the staged application schedule across 36 months.</p>
+          <p>The final consolidated text adopted on 2024-03-13 (EP) and 2024-05-21 (Council) — published as P9_TA(2024)0138 (EP first reading position, see <ref href="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138">amendment doc</ref>) and finally as <ref href="/akn/eu/act/2024-06-13/reg-2024-1689">Regulation (EU) 2024/1689</ref> — has 113 articles + 13 annexes, organised into 13 chapters. Substantial structural growth vs the original 85-article proposal.</p>
+        </content>
+      </article>
+    </body>
+  </bill>
+</akomaNtoso>

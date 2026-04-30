@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Official Journal of the European Union — L series — entry L_2024/1689,
+  12 July 2024 (publication of the AI Act).
+
+  IMPORTANT: this is NOT a traditional OJ "issue" with multiple
+  dispositions. Since the OJ format reform of 1 October 2023, each EU
+  legislative act has its own per-act unique ID (L_YYYY/N) instead of being
+  numbered sequentially within an OJ L issue (e.g., the old format
+  "L 277, p. 1"). One OJ entry = one act.
+
+  This is the EU degenerate case of the journal type: OJ "issue" L_2024/1689
+  contains exactly ONE disposition (the AI Act). Compare to ES BOE núm. 87
+  which contains 50+ dispositions of various rangos.
+
+  Source: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202401689
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <officialGazette name="journal">
+    <meta>
+      <identification source="#publications-office-eu">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/officialGazette/2024-07-12/oj-l-2024-1689/!main"/>
+          <FRBRuri value="/akn/eu/officialGazette/2024-07-12/oj-l-2024-1689"/>
+          <FRBRdate date="2024-07-12" name="generation"/>
+          <FRBRauthor href="#publications-office-eu"/>
+          <FRBRcountry value="eu"/>
+          <FRBRsubtype value="oj-l"/>
+          <FRBRnumber value="L_2024/1689"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/officialGazette/2024-07-12/oj-l-2024-1689/eng@/!main"/>
+          <FRBRuri value="/akn/eu/officialGazette/2024-07-12/oj-l-2024-1689/eng@"/>
+          <FRBRdate date="2024-07-12" name="generation"/>
+          <FRBRauthor href="#publications-office-eu"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/officialGazette/2024-07-12/oj-l-2024-1689/eng@.xml"/>
+          <FRBRuri value="/akn/eu/officialGazette/2024-07-12/oj-l-2024-1689/eng@.xml"/>
+          <FRBRdate date="2024-07-12" name="generation"/>
+          <FRBRauthor href="#publications-office-eu"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2024-07-12"
+                   showAs="Official Journal of the European Union, L series, entry 2024/1689, 12 July 2024"
+                   name="oj-l"
+                   href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202401689"/>
+
+      <classification source="#publications-office-eu">
+        <keyword value="oj-l-series" showAs="OJ L series" dictionary="#oj-classification"/>
+        <keyword value="legislation" showAs="legislation (binding acts)" dictionary="#oj-classification"/>
+        <keyword value="post-2023-format" showAs="post-2023 OJ format (per-act ID)" dictionary="#oj-classification"/>
+      </classification>
+
+      <lifecycle source="#publications-office-eu">
+        <eventRef date="2024-07-12" refersTo="#published"
+                  source="#evt-pub"
+                  showAs="Issue published online and made authentic by Publications Office of the EU"/>
+      </lifecycle>
+
+      <references source="#publications-office-eu">
+        <TLCOrganization eId="publications-office-eu"
+                         href="/akn/eu/org/publications-office"
+                         showAs="Publications Office of the European Union (OP, Luxembourg)"/>
+      </references>
+
+      <proprietary source="#publications-office-eu">
+        <akndiff:nativeId>oj-l-2024-1689</akndiff:nativeId>
+        <akndiff:sourceUrl>https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202401689</akndiff:sourceUrl>
+        <akndiff:journalIssueNumber>L_2024/1689</akndiff:journalIssueNumber>
+        <akndiff:journalScope>eu</akndiff:journalScope>
+
+        <akndiff:researchNotes>
+        Friction log for EU OJ L_2024/1689 — Phase 1.
+
+        1. NEW OJ FORMAT 2023+ → ONE-DOC PER ENTRY. Since 1 October 2023,
+           the EU Official Journal has replaced the prior "L 277/p. 1"
+           format (numbered issues containing many dispositions) with
+           per-act unique IDs (L_YYYY/N). Each Regulation/Directive has
+           its own OJ "entry" effectively. JournalTable's contract assumes
+           one issue contains many dispositions — like ES BOE núm. 87 with
+           50+ dispositions of varying rangos. For EU post-2023, the
+           journal is degenerate: 1 entry = 1 disposition. The schema
+           technically loads it but the relationship "documents in this
+           issue" returns N=1, which makes the journal model less useful
+           cross-country.
+
+        2. NO PAGE NUMBERS, NO CUMULATIVE INDEX. Pre-2023 OJ L had page
+           numbers per issue ("L 277, p. 1") and a cumulative table of
+           contents per issue. Post-2023, no pages, no per-issue index;
+           each entry is its own URL. The journal type's
+           issueNumber/issuedAt fields work fine but lose semantic value
+           (issueNumber is "L_2024/1689" which is the SAME as the act's
+           OJ reference — no separate journal identity).
+
+        3. PUBLICATIONS OFFICE OF THE EU AS PUBLISHER. JournalTable.publisher
+           is free text; we use "Publications Office of the European Union".
+           No friction.
+
+        4. SCOPE: 'eu' VALUE. JournalTable.scope is enum-like
+           (national/regional/eu/municipal). 'eu' fits. No friction.
+
+        5. MULTILINGUAL OFFICIAL VERSION. The OJ publishes the act
+           simultaneously in all 24 EU official languages, all equally
+           authentic. Schema's language field on DocumentTable is single-
+           valued (we picked 'eng'). The 24-language equal-authenticity is
+           a multilingual stretch beyond ES (which has co-official catalan/
+           gallego as separate consolidated PDFs). Cross-country friction
+           amplification.
+
+        6. SPLIT JOURNAL SERIES. EU OJ has L (Legislation), C (Communication
+           - non-binding), C-A (calls/recruitment), S (tenders, separate
+           database). Each act is published in its appropriate series.
+           Schema's scope field doesn't model series-within-publisher; we
+           encode L vs C in akndiff:journalIssueNumber prefix only.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p>Official Journal of the European Union — L series — entry 2024/1689 of 12 July 2024.</p>
+      </longTitle>
+    </preface>
+
+    <body>
+      <p>This OJ entry contains the publication of <ref href="/akn/eu/act/2024-06-13/reg-2024-1689">Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act)</ref>. (Text with EEA relevance.)</p>
+
+      <p>Per the post-2023 OJ format reform, this is a per-act unique entry: one OJ "issue" = one act. The act text occupies the entirety of this entry, in all 24 EU official languages.</p>
+    </body>
+  </officialGazette>
+</akomaNtoso>

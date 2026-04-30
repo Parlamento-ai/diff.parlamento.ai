@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EP plenary voting time agenda — Strasbourg, Wednesday 13 March 2024.
+
+  This is the EU equivalent of the Spanish "citation" type (sesión de
+  Comisión). The EP has fixed plenary voting time slots (typically
+  noon Tuesday/Wednesday/Thursday in Strasbourg, or noon Wednesday in
+  Brussels mini-plenaries). The vote on the AI Act first reading
+  position took place during the 13 March 2024 voting time.
+
+  In Spanish ES this was DSCD-15-CO-482 (Comisión de Trabajo session
+  9-dic-2025 where the bill was approved 19-18). In EU, the analogous
+  document is the OJ-Agenda for plenary or — more granularly — the
+  voting list (P8/P9 OJQ "Order of votes"). We model the agenda for
+  Wednesday 13 March 2024 voting time, which contained the AI Act
+  vote as one item among many.
+
+  Agenda format: each plenary day has its own agenda OJ document
+  (Order of business / Ordre du jour). The voting time is item N within
+  that agenda. The agenda is adopted on Monday by the plenary before
+  the week's business begins.
+
+  Fuente oficial: EP Order of Business OJ-9-2024-03-13
+    https://www.europarl.europa.eu/doceo/document/OJ-9-2024-03-13_EN.html
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <citation name="citation">
+    <meta>
+      <identification source="#european-parliament">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/citation/2024-03-13/ep-agenda-2024-03-13/!main"/>
+          <FRBRuri value="/akn/eu/citation/2024-03-13/ep-agenda-2024-03-13"/>
+          <FRBRdate date="2024-03-13" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+          <FRBRcountry value="eu"/>
+          <FRBRsubtype value="ep-plenary-agenda"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/citation/2024-03-13/ep-agenda-2024-03-13/eng@/!main"/>
+          <FRBRuri value="/akn/eu/citation/2024-03-13/ep-agenda-2024-03-13/eng@"/>
+          <FRBRdate date="2024-03-13" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/citation/2024-03-13/ep-agenda-2024-03-13/eng@.xml"/>
+          <FRBRuri value="/akn/eu/citation/2024-03-13/ep-agenda-2024-03-13/eng@.xml"/>
+          <FRBRdate date="2024-03-13" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2024-03-11"
+                   showAs="OJ-9-2024-03-13 — Agenda (Order of business) for the EP plenary, Strasbourg, Wednesday 13 March 2024"
+                   name="ep-oj-agenda"
+                   href="https://www.europarl.europa.eu/doceo/document/OJ-9-2024-03-13_EN.html"/>
+
+      <classification source="#european-parliament">
+        <keyword value="ep-plenary-agenda" showAs="EP plenary agenda" dictionary="#ep-procedure"/>
+        <keyword value="voting-time" showAs="voting time" dictionary="#ep-procedure"/>
+        <keyword value="ai-act" showAs="AI Act first reading vote" dictionary="#ep-procedure"/>
+      </classification>
+
+      <lifecycle source="#european-parliament">
+        <eventRef date="2024-03-11" refersTo="#agenda_adopted"
+                  source="#evt-adopt"
+                  showAs="Agenda for the week (Monday 11 to Thursday 14 March 2024) adopted by the plenary on Monday 11 March 2024"
+                  chamber="parliament"/>
+        <eventRef date="2024-03-13" refersTo="#scheduled"
+                  source="#evt-sched"
+                  showAs="Wednesday 13 March 2024 voting time, Strasbourg — AI Act first reading position vote scheduled at item N of the voting list"
+                  chamber="parliament"/>
+        <eventRef date="2024-03-13T12:00:00+01:00" refersTo="#held"
+                  source="#evt-held"
+                  showAs="Voting time held at noon (Strasbourg time) — AI Act adopted 523/46/49"
+                  chamber="parliament"/>
+      </lifecycle>
+
+      <references source="#european-parliament">
+        <TLCOrganization eId="european-parliament"
+                         href="/akn/eu/org/european-parliament"
+                         showAs="European Parliament (in plenary)"/>
+        <TLCOrganization eId="ep-conference-of-presidents"
+                         href="/akn/eu/org/ep-conference-of-presidents"
+                         showAs="EP Conference of Presidents (sets the draft agenda)"/>
+      </references>
+
+      <proprietary source="#european-parliament">
+        <akndiff:nativeId>ep-agenda-2024-03-13</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.europarl.europa.eu/doceo/document/OJ-9-2024-03-13_EN.html</akndiff:sourceUrl>
+        <akndiff:convenedBody>European Parliament (in plenary, Strasbourg)</akndiff:convenedBody>
+        <akndiff:scheduledFor>2024-03-13T12:00:00+01:00</akndiff:scheduledFor>
+        <akndiff:location>Strasbourg, Hemicycle (Louise Weiss building)</akndiff:location>
+        <akndiff:agendaReference>OJ-9-2024-03-13</akndiff:agendaReference>
+
+        <akndiff:researchNotes>
+        Friction log for EU EP plenary agenda OJ-9-2024-03-13 — Phase 1.
+
+        1. EP AGENDA IS WEEK-LEVEL, NOT SESSION-LEVEL. The Conference of
+           Presidents adopts the draft agenda for the entire week of
+           plenary (Monday-Thursday in Strasbourg, or Wed-only in Brussels).
+           Each day has its own published agenda OJ. We model 13 March 2024
+           specifically. Spanish ES citation modeled a single Comisión
+           session (DSCD-15-CO-482, 9-dic-2025); EU equivalent is one day
+           of plenary, but the agenda is part of a weekly bundle.
+           CitationTable.scheduledFor takes a single timestamp, fits both.
+
+        2. AGENDA ITEMS REFERENCE BILLS BY THEIR PROCEDURE FILE. The agenda
+           item for the AI Act vote references it as "2021/0106(COD) —
+           A9-0188/2023 — Brando Benifei / Dragoş Tudorache". Schema's
+           citation type carries agenda items inside body XML (no side
+           table). Same as ES (agenda items live in body). No new schema
+           friction beyond what was noted for ES.
+
+        3. CITATION TYPE NOT IN AKN CORE. The akndiff:citation extension
+           was Spain's research artifact — interop with AKN-native tools
+           would not recognize it. Same friction as ES. Cross-country
+           confirmed.
+
+        4. NO CONVENING DECISION SEPARATE FROM AGENDA. Spain has a
+           specific "convocation" act (the Mesa decision). EU just has
+           the Conference of Presidents adopting the draft agenda by
+           internal procedure — no formal convening document beyond the
+           agenda itself. CitationTable.convenedBody captures the
+           plenary, but the convoking authority (CoP) is different from
+           the convened body (EP plenary). Same nuance as ES.
+
+        5. MULTILINGUAL OFFICIAL VERSIONS. Like all EP documents, the
+           agenda is published simultaneously in 24 official languages.
+           Schema language=eng. Multilingual stretch confirmed
+           (cross-doc-type pattern).
+
+        6. AGENDA ADOPTED 2 DAYS BEFORE THE SESSION. The agenda for the
+           week is adopted on Monday by plenary; we model it as published
+           on 2024-03-11 (Monday) but scheduled for 2024-03-13 (Wednesday).
+           Spanish citation also has a publication-date/session-date
+           distinction (BOCG vs DSCD-CO). Cross-country confirmed.
+
+        7. NO SESSION OUTCOME ON THE AGENDA ITSELF. The agenda lists what
+           WAS scheduled, not what happened. Outcomes (vote results,
+           postponements) live in P9_PV (minutes) and P9_TA (adopted texts).
+           ES citation also doesn't capture vote outcome. Same gap
+           cross-country.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><b>EP plenary agenda (Order of business) — Strasbourg, Wednesday 13 March 2024</b> — OJ-9-2024-03-13. Voting time at noon. Agenda includes the vote on the EP first reading position on the AI Act (procedure 2021/0106(COD), report A9-0188/2023, co-rapporteurs Brando Benifei and Dragoş Tudorache).</p>
+      </longTitle>
+    </preface>
+
+    <body>
+      <p>The agenda for Wednesday 13 March 2024 voting time (12:00, Strasbourg) included multiple items. The AI Act vote was item P9_TA(2024)0138 in the voting list — the EP first reading position on the proposal for a regulation laying down harmonised rules on artificial intelligence (<ref href="/akn/eu/bill/2021-04-21/com-2021-206">COM(2021)0206 – C9-0146/2021 – 2021/0106(COD)</ref>). The vote was preceded by the substantive debate held the previous afternoon (<ref href="/akn/eu/debate/2024-03-12/ep-cre-2024-03-12">CRE-9-2024-03-12 ITM-006</ref>).</p>
+
+      <p>The AI Act vote was conducted by RECORDED VOTE (electronic, with each MEP's individual vote recorded). Result: <ref href="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138">523 in favour / 46 against / 49 abstentions</ref>. Position adopted; transmitted to the Council for first reading consideration.</p>
+
+      <p>Other agenda items at the same voting time included files on consumer credit, packaging waste, soil monitoring, and a non-AI-related Council recommendation. Full agenda in source OJ-9-2024-03-13.</p>
+    </body>
+  </citation>
+</akomaNtoso>

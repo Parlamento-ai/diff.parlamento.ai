@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Regulation (EU) 2024/1689 of the European Parliament and of the Council
+  of 13 June 2024 laying down harmonised rules on artificial intelligence
+  and amending Regulations (EC) No 300/2008, (EU) No 167/2013,
+  (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and
+  Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828
+  (Artificial Intelligence Act).
+
+  This is a HYBRID act:
+   - Substantive new framework (Chapters I-XII, 113 articles): regulates
+     AI systems, defines prohibited practices, classifies high-risk
+     systems, establishes governance and enforcement.
+   - Final provisions (Chapter XIII, articles 102-110): AMENDS 9 prior
+     Union acts via individual modifying articles — same modifying-law
+     pattern as Spanish Ley 1/2026 (which amends 8 prior laws).
+
+  Of the 9 modified acts, only Reg (EU) 2019/2144 is modeled in this
+  corpus (as a stub). The other 8 are referenced via external https URLs
+  so the link resolver does not error on them.
+
+  Fuente oficial primaria: EUR-Lex CELEX:32024R1689
+    https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+    https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202401689
+  OEIL procedure file 2021/0106(COD)
+    https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?reference=2021/0106(COD)
+
+  Modeling style: lean per ES Phase 1 convention. Body articles are
+  shells with real eId+num+heading; full text is referenced to the
+  source CELEX. Preamble's 180 recitals are summarized by theme
+  (verbatim text in source) — schema's preamble has no recital element.
+  Annexes are first-class shells.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act">
+    <meta>
+      <identification source="#european-parliament-and-council">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/act/2024-06-13/reg-2024-1689/!main"/>
+          <FRBRuri value="/akn/eu/act/2024-06-13/reg-2024-1689"/>
+          <FRBRdate date="2024-06-13" name="generation"/>
+          <FRBRauthor href="#european-parliament-and-council"/>
+          <FRBRcountry value="eu"/>
+          <FRBRsubtype value="regulation"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/act/2024-06-13/reg-2024-1689/eng@2024-07-12/!main"/>
+          <FRBRuri value="/akn/eu/act/2024-06-13/reg-2024-1689/eng@2024-07-12"/>
+          <FRBRdate date="2024-07-12" name="generation"/>
+          <FRBRauthor href="#european-parliament-and-council"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/act/2024-06-13/reg-2024-1689/eng@2024-07-12.xml"/>
+          <FRBRuri value="/akn/eu/act/2024-06-13/reg-2024-1689/eng@2024-07-12.xml"/>
+          <FRBRdate date="2024-07-12" name="generation"/>
+          <FRBRauthor href="#european-parliament-and-council"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2024-07-12"
+                   showAs="Official Journal of the European Union, L 2024/1689, 12 July 2024"
+                   name="oj"
+                   href="/akn/eu/officialGazette/2024-07-12/oj-l-2024-1689"/>
+
+      <classification source="#eur-lex">
+        <keyword value="artificial-intelligence" showAs="artificial intelligence" dictionary="#eur-lex-subjects"/>
+        <keyword value="harmonised-rules" showAs="harmonised rules (Single Market)" dictionary="#eur-lex-subjects"/>
+        <keyword value="high-risk-ai" showAs="high-risk AI systems" dictionary="#eur-lex-subjects"/>
+        <keyword value="prohibited-ai-practices" showAs="prohibited AI practices" dictionary="#eur-lex-subjects"/>
+        <keyword value="general-purpose-ai" showAs="general-purpose AI models" dictionary="#eur-lex-subjects"/>
+        <keyword value="ai-governance" showAs="AI governance and enforcement" dictionary="#eur-lex-subjects"/>
+        <keyword value="fundamental-rights" showAs="fundamental rights protection" dictionary="#eur-lex-subjects"/>
+        <keyword value="conformity-assessment" showAs="conformity assessment" dictionary="#eur-lex-subjects"/>
+        <keyword value="biometric-systems" showAs="biometric identification systems" dictionary="#eur-lex-subjects"/>
+      </classification>
+
+      <lifecycle source="#european-parliament-and-council">
+        <eventRef date="2021-04-21" refersTo="#commission_proposal"
+                  source="#evt-01"
+                  showAs="European Commission proposal COM(2021)206 final adopted by the College of Commissioners"
+                  chamber="commission"/>
+        <eventRef date="2024-03-13" refersTo="#ep_first_reading"
+                  source="#evt-02"
+                  showAs="European Parliament first reading position adopted in plenary (Strasbourg) — P9_TA(2024)0138, 523 in favour, 46 against, 49 abstentions"
+                  chamber="parliament"/>
+        <eventRef date="2024-05-21" refersTo="#council_adoption"
+                  source="#evt-03"
+                  showAs="Council of the EU formal adoption (unanimously)"
+                  chamber="council"/>
+        <eventRef date="2024-06-13" refersTo="#promulgation"
+                  source="#evt-04"
+                  showAs="Signed by the President of the European Parliament (Roberta Metsola) and the President of the Council — equivalent to promulgation in EU procedure (mapped to #promulgation for schema compatibility, see researchNote 8)"
+                  chamber="parliament_and_council"/>
+        <eventRef date="2024-07-12" refersTo="#publication"
+                  source="#evt-05"
+                  showAs="Published in the Official Journal of the European Union (L series, 12 July 2024)"
+                  chamber="oj"/>
+        <eventRef date="2024-08-01" refersTo="#commencement"
+                  source="#evt-06"
+                  showAs="Entry into force (20 days after publication in the OJ)"/>
+        <eventRef date="2025-02-02" refersTo="#partial_application_chapters_I_II"
+                  source="#evt-07"
+                  showAs="Chapters I and II become applicable (general provisions and prohibited AI practices) — 6 months after entry into force"/>
+        <eventRef date="2025-08-02" refersTo="#partial_application_gpai_governance"
+                  source="#evt-08"
+                  showAs="Chapter III Section 4 (notified bodies), Chapter V (GPAI models), Chapter VII (governance), Chapter XII (penalties, except Art 101) and Article 78 (confidentiality) become applicable — 12 months after entry into force, per Art 113"/>
+        <eventRef date="2026-08-02" refersTo="#general_application"
+                  source="#evt-09"
+                  showAs="General application of all remaining provisions — 24 months after entry into force"/>
+        <eventRef date="2027-08-02" refersTo="#high_risk_application"
+                  source="#evt-10"
+                  showAs="Article 6(1) becomes applicable — classification of AI systems as high-risk when used as safety components of products covered by Annex I harmonisation legislation; 36 months after entry into force"/>
+      </lifecycle>
+
+      <references source="#european-parliament-and-council">
+        <TLCOrganization eId="european-parliament-and-council"
+                         href="/akn/eu/org/european-parliament-and-council"
+                         showAs="European Parliament and Council of the European Union (co-legislators)"/>
+        <TLCOrganization eId="european-parliament"
+                         href="/akn/eu/org/european-parliament"
+                         showAs="European Parliament"/>
+        <TLCOrganization eId="council-of-the-eu"
+                         href="/akn/eu/org/council-of-the-eu"
+                         showAs="Council of the European Union"/>
+        <TLCOrganization eId="european-commission"
+                         href="/akn/eu/org/european-commission"
+                         showAs="European Commission"/>
+        <TLCOrganization eId="european-economic-social-committee"
+                         href="/akn/eu/org/eesc"
+                         showAs="European Economic and Social Committee (EESC)"/>
+        <TLCOrganization eId="european-central-bank"
+                         href="/akn/eu/org/ecb"
+                         showAs="European Central Bank (ECB)"/>
+        <TLCOrganization eId="committee-of-the-regions"
+                         href="/akn/eu/org/cor"
+                         showAs="European Committee of the Regions (CoR)"/>
+        <TLCPerson eId="metsola-roberta"
+                   href="/akn/eu/person/roberta-metsola"
+                   showAs="Roberta Metsola (President of the European Parliament, signatory)"/>
+      </references>
+
+      <proprietary source="#european-parliament-and-council">
+        <akndiff:nativeId>reg-2024-1689</akndiff:nativeId>
+        <akndiff:sourceUrl>https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng</akndiff:sourceUrl>
+        <akndiff:actStatus normalized="in_force">in force (staged application per Art 113: Chapters I-II from 2025-02-02; Chapter III Section 4 + V + VII + XII + Art 78 from 2025-08-02; general application 2026-08-02; Art 6(1) high-risk under Annex I product-safety legislation from 2027-08-02)</akndiff:actStatus>
+        <akndiff:issuingBody>European Parliament and Council of the European Union (co-legislators in ordinary legislative procedure)</akndiff:issuingBody>
+        <akndiff:celexNumber>32024R1689</akndiff:celexNumber>
+        <akndiff:procedureFile>2021/0106(COD)</akndiff:procedureFile>
+
+        <!--
+          The AI Act amends 9 prior Union acts. Listed here for traceability;
+          modeled in Phase 1 only Reg (EU) 2019/2144 (as a stub). The other 8
+          are referenced via external https URLs in the body so the link
+          resolver does not error on them.
+        -->
+        <akndiff:amendsActsList>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/reg/2008/300/oj/eng"
+                              showAs="Regulation (EC) No 300/2008 — civil aviation security"/>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/reg/2013/167/oj/eng"
+                              showAs="Regulation (EU) No 167/2013 — agricultural and forestry vehicles"/>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/reg/2013/168/oj/eng"
+                              showAs="Regulation (EU) No 168/2013 — two- or three-wheel vehicles and quadricycles"/>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/reg/2018/858/oj/eng"
+                              showAs="Regulation (EU) 2018/858 — motor vehicles approval and market surveillance"/>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/reg/2018/1139/oj/eng"
+                              showAs="Regulation (EU) 2018/1139 — civil aviation (EASA)"/>
+          <akndiff:amendsAct ref="/akn/eu/act/2019-11-27/reg-2019-2144"
+                              showAs="Regulation (EU) 2019/2144 — motor vehicles general safety (MODELED)"/>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/dir/2014/90/oj/eng"
+                              showAs="Directive 2014/90/EU — marine equipment"/>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/dir/2016/797/oj/eng"
+                              showAs="Directive (EU) 2016/797 — interoperability of the rail system"/>
+          <akndiff:amendsAct ref="https://eur-lex.europa.eu/eli/dir/2020/1828/oj/eng"
+                              showAs="Directive (EU) 2020/1828 — representative actions for collective consumer interests"/>
+        </akndiff:amendsActsList>
+
+        <akndiff:researchNotes>
+        Friction log for EU / Regulation (EU) 2024/1689 (AI Act) — Phase 1.
+        Each note maps to a SPECIFIC schema field that strains under EU reality.
+
+        1. CO-LEGISLATOR AUTHORSHIP. ActTable.issuingBody is a free-text
+           field. EU regulations are issued JOINTLY by the European Parliament
+           AND the Council via the ordinary legislative procedure — neither
+           alone is the author. We use the joint name "European Parliament
+           and Council of the European Union", but that's a string, not a
+           queryable join to two separate organisations. Same shape friction
+           as ES (Cortes Generales = Congreso + Senado) but EU's case is
+           more institutionally distinct because EP and Council are not in
+           a hierarchy.
+
+        2. MODIFYING-LAW PATTERN, CROSS-COUNTRY CONFIRMED. The AI Act
+           amends 9 prior acts. Spanish Ley 1/2026 amends 8. Schema's
+           ActTable has no actSubtype field for self_contained vs modifying.
+           Articles 102-110 of the AI Act each modify a different prior act,
+           same structural pattern as ES articulos primero/segundo/tercero/
+           cuarto. Reproducible cross-country friction. Confirms ES finding
+           §9.2 needs a v4 actSubtype column.
+
+        3. STAGED APPLICATION DATES. ActTable.effectiveAt is a single
+           timestamp. AI Act has FOUR different application dates per
+           chapter (Art 113): Cap I-II → 2025-02-02, Cap V/VII/XII →
+           2025-08-02, general → 2026-08-02, Art 6(1) high-risk → 2027-08-02.
+           ES had ONE deferred provision (final 5.2). EU has FOUR.
+           Cross-country confirmed; the deferred-applicability friction is
+           qualitatively the same but quantitatively much worse in EU.
+
+        4. FOUR PARALLEL IDENTIFIERS. DocumentTable.nativeId is a single
+           text column. The same EU act has CELEX (32024R1689), ELI URI
+           (eli/reg/2024/1689/oj), OJ reference (L_2024/1689), and procedure
+           file (2021/0106(COD)). ES has TWO (BOE-A-2026-7967 + ELI). EU
+           has FOUR. We carry CELEX + procedureFile as akndiff: extensions
+           but they are not indexed for queries — fetch-by-CELEX requires
+           a body XML scan.
+
+        5. NEW OJ-L FORMAT (post-2023): ONE DOC PER ENTRY. JournalTable
+           assumes one issue (issueNumber) contains many dispositions
+           (BOE núm. 87 carries 50+ docs). Since 2023 the EU OJ uses
+           per-act unique IDs (L_2024/1689) — each Regulation has its own
+           OJ "issue" effectively. Our journal modeling becomes degenerate
+           in EU (1 issue = 1 doc). Real schema friction for the
+           journal/disposition relationship.
+
+        6. RECITALS: 180 OF THEM IN THE PREAMBLE. AKN's preamble accepts
+           free prose, no dedicated &lt;recital&gt; element exists. Spanish
+           Exposición de Motivos was 38 paragraphs (already noted as
+           stretch). EU's 180 numbered recitals are 5x. We summarize them
+           structurally rather than transcribe verbatim, matching ES style.
+           Cross-country amplification of ES friction §9.4 (preamble
+           limitation).
+
+        7. ANNEXES (13) ARE FIRST-CLASS LEGAL CONTENT. The schema doesn't
+           extract annexes as queryable structures — they live as
+           &lt;hcontainer name="annex"&gt; inside body XML. AI Act's Annex
+           III (high-risk AI areas) is referenced 50+ times across articles
+           and IS the operational rule that triggers Chapter III obligations.
+           Annex XIII contains the criteria the Commission shall apply when
+           designating GPAI with systemic risk per Art 51. Annexes here are
+           NOT appendices — they are the substantive rules. A v4 schema
+           should extract annexes to a side table for queries like "list
+           all use cases under Annex III pt N".
+
+        8. NO "PROMULGATION" EVENT IN EU. The EU has no concept of
+           promulgation in the national-legal sense. Acts become final upon
+           SIGNATURE by the Presidents of both co-legislators (Parliament
+           and Council) on the same date, then enter into force after
+           publication in the OJ + 20 days. The loader's extractAct()
+           REQUIRES eventRef[refersTo="#promulgation"] (loader.ts ~L567).
+           To make the build pass we mapped the signature event to
+           refersTo="#promulgation" — semantically equivalent for EU but
+           strictly the EU vocabulary is "signature". Real cross-jurisdictional
+           friction: the schema's vocabulary is borrowed from national-legal
+           patterns (CL/ES) where promulgation is a distinct executive act
+           after parliamentary approval.
+
+        9. EP/COUNCIL PARALLEL AMENDMENT TRACKS, then TRILOGUE. ES is
+           sequential bicameralism (Congreso → Senado → return to Congreso).
+           EU is PARALLEL: EP and Council both amend the Commission's
+           proposal independently, then reconcile in trilogue, then both
+           sign together. BillEventTable.chamber accepts a string but the
+           sequence of events implicitly assumes chamber → second_chamber.
+           For EU we use chamber="parliament" and chamber="council" on
+           PARALLEL events with overlapping dates. The schema doesn't
+           prevent this but doesn't model it either; queries like "what was
+           the bill's state on date T" become ambiguous.
+
+       10. CROSS-INSTITUTIONAL PROCEDURE CODE (COD). ES expediente
+           (121/000036) is per-chamber. The EU procedure file 2021/0106(COD)
+           applies across Commission, EP, Council — it's the canonical
+           cross-institutional reference. No dedicated schema field; carried
+           in akndiff:procedureFile. Worth promoting to a real column if
+           cross-country procedure tracking matters in v4.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><b>REGULATION (EU) 2024/1689 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL</b> of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and <ref href="/akn/eu/act/2019-11-27/reg-2019-2144">(EU) 2019/2144</ref> and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act). (Text with EEA relevance).</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION,</p>
+
+      <p>Having regard to the Treaty on the Functioning of the European Union, and in particular Articles 16 and 114 thereof,</p>
+      <p>Having regard to the proposal from the European Commission,</p>
+      <p>After transmission of the draft legislative act to the national parliaments,</p>
+      <p>Having regard to the opinion of the European Economic and Social Committee,</p>
+      <p>Having regard to the opinion of the European Central Bank,</p>
+      <p>Having regard to the opinion of the European Committee of the Regions,</p>
+      <p>Acting in accordance with the ordinary legislative procedure,</p>
+
+      <p>Whereas:</p>
+
+      <!--
+        180 RECITALES NUMERADOS (1)–(180) — preserved structurally, not
+        verbatim, per ES Phase 1 convention. Schema's preamble accepts free
+        prose only (no &lt;recital&gt; element). See researchNote 6.
+        Verbatim text of every recital is in CELEX:32024R1689
+        (https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng).
+
+        The 180 recitals cover the following major themes (with starting
+        recital numbers approximated from the source):
+      -->
+
+      <p>(1)–(8) Purpose, scope and policy objectives. The Regulation establishes a uniform legal framework for the development, placing on the market, putting into service and use of AI systems in the Union. Aims: trustworthy and human-centric AI, high level of protection of health, safety and fundamental rights, free movement of AI-based goods and services, prevention of fragmentation across Member States. Legal bases: Articles 16 and 114 TFEU.</p>
+
+      <p>(9)–(20) AI definition and risk-based approach. Definition of AI system aligned with the OECD definition; distinguishes general-purpose AI models from AI systems built on them. Risk-based approach: prohibited practices, high-risk systems, transparency-only systems, minimal-risk systems.</p>
+
+      <p>(21)–(45) Prohibited AI practices (Article 5). Manipulative and exploitative techniques; social scoring by public authorities; predictive policing based solely on profiling; untargeted scraping of facial images; emotion recognition in workplace and education; biometric categorisation inferring sensitive attributes; real-time remote biometric identification in publicly accessible spaces for law enforcement (with narrowly defined exceptions).</p>
+
+      <p>(46)–(85) High-risk AI systems classification and requirements. Two routes to high-risk: AI as safety component of products under Annex I harmonisation legislation, OR AI listed in Annex III use cases. Requirements (Section 2 of Chapter III): risk management, data governance, technical documentation, record-keeping (logging), transparency to deployers, human oversight, accuracy/robustness/cybersecurity.</p>
+
+      <p>(86)–(105) Obligations of providers, deployers, importers, distributors and authorised representatives along the AI value chain. CE marking, EU declaration of conformity, registration in the EU database, fundamental rights impact assessment by certain deployers (Article 27).</p>
+
+      <p>(106)–(125) General-purpose AI models (Chapter V), added in trilogue 2023. Two tiers: GPAI models, and GPAI models with systemic risk (presumption: training compute &gt; 10^25 FLOPs). Obligations: technical documentation, downstream provider information, copyright (TDM opt-out per Dir 2019/790 Art 4(3)), training-data summary. Systemic-risk additions: model evaluation, systemic-risk assessment, serious-incident reporting, cybersecurity. Codes of practice facilitated by the AI Office.</p>
+
+      <p>(126)–(140) Governance: AI Office (Commission DG-CONNECT), European Artificial Intelligence Board (Member-State representatives), Advisory Forum (stakeholders), Scientific Panel (independent experts).</p>
+
+      <p>(141)–(160) Market surveillance, post-market monitoring, serious incident reporting, EU database for high-risk systems (Article 71), conformity assessment procedures, notified bodies, harmonised standards and common specifications.</p>
+
+      <p>(161)–(170) Innovation support: AI regulatory sandboxes (Article 57), real-world testing (Article 60), measures for SMEs and start-ups, simplified obligations for microenterprises.</p>
+
+      <p>(171)–(180) Penalties (Article 99) — three tiers tied to category of breach; entry into force and staged application; relationship with the Charter of Fundamental Rights, GDPR, the Law Enforcement Directive, copyright law, product safety legislation, sectoral financial services and aviation/automotive type-approval frameworks. Final recital recalls subsidiarity and proportionality.</p>
+
+      <p>HAVE ADOPTED THIS REGULATION:</p>
+    </preamble>
+
+    <body>
+
+      <chapter eId="cpt_I">
+        <num>CHAPTER I</num>
+        <heading>GENERAL PROVISIONS</heading>
+        <article eId="cpt_I.art_1"><num>Article 1</num><heading>Subject matter</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+        <article eId="cpt_I.art_2"><num>Article 2</num><heading>Scope</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+        <article eId="cpt_I.art_3"><num>Article 3</num><heading>Definitions (68 defined terms)</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689 — 68 numbered definitions including 'AI system', 'risk', 'provider', 'deployer', 'general-purpose AI model', 'systemic risk', etc.</p></content></article>
+        <article eId="cpt_I.art_4"><num>Article 4</num><heading>AI literacy</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_II">
+        <num>CHAPTER II</num>
+        <heading>PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES</heading>
+        <article eId="cpt_II.art_5"><num>Article 5</num><heading>Prohibited AI practices</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689 — eight prohibited practices including subliminal manipulation, exploitation of vulnerabilities, social scoring, predictive policing based solely on profiling, untargeted scraping of facial images, emotion recognition in workplace/education, biometric categorisation inferring sensitive attributes, and 'real-time' remote biometric identification in publicly accessible spaces for law enforcement (with narrowly defined exceptions in para 1(h)). Penalties for breach: up to EUR 35M or 7% of worldwide turnover (Art 99(3)).</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_III">
+        <num>CHAPTER III</num>
+        <heading>HIGH-RISK AI SYSTEMS</heading>
+
+        <section eId="cpt_III.sct_1">
+          <num>SECTION 1</num>
+          <heading>Classification of AI systems as high-risk</heading>
+          <article eId="cpt_III.sct_1.art_6"><num>Article 6</num><heading>Classification rules for high-risk AI systems</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689. Two routes to high-risk: (a) AI as safety component of products under Annex I; (b) AI listed in Annex III use cases.</p></content></article>
+          <article eId="cpt_III.sct_1.art_7"><num>Article 7</num><heading>Amendments to Annex III</heading><content><p>Estructura preservada. Commission empowered to amend Annex III by delegated act per Article 97.</p></content></article>
+        </section>
+
+        <section eId="cpt_III.sct_2">
+          <num>SECTION 2</num>
+          <heading>Requirements for high-risk AI systems</heading>
+          <article eId="cpt_III.sct_2.art_8"><num>Article 8</num><heading>Compliance with the requirements</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+          <article eId="cpt_III.sct_2.art_9"><num>Article 9</num><heading>Risk management system</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+          <article eId="cpt_III.sct_2.art_10"><num>Article 10</num><heading>Data and data governance</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+          <article eId="cpt_III.sct_2.art_11"><num>Article 11</num><heading>Technical documentation</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689 — minimum elements per Annex IV.</p></content></article>
+          <article eId="cpt_III.sct_2.art_12"><num>Article 12</num><heading>Record-keeping</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+          <article eId="cpt_III.sct_2.art_13"><num>Article 13</num><heading>Transparency and provision of information to deployers</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+          <article eId="cpt_III.sct_2.art_14"><num>Article 14</num><heading>Human oversight</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+          <article eId="cpt_III.sct_2.art_15"><num>Article 15</num><heading>Accuracy, robustness and cybersecurity</heading><content><p>Estructura preservada. Texto íntegro en CELEX:32024R1689.</p></content></article>
+        </section>
+
+        <section eId="cpt_III.sct_3">
+          <num>SECTION 3</num>
+          <heading>Obligations of providers and deployers of high-risk AI systems and other parties</heading>
+          <article eId="cpt_III.sct_3.art_16"><num>Article 16</num><heading>Obligations of providers of high-risk AI systems</heading><content><p>Estructura preservada. 12 obligations enumerated.</p></content></article>
+          <article eId="cpt_III.sct_3.art_17"><num>Article 17</num><heading>Quality management system</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_3.art_18"><num>Article 18</num><heading>Documentation keeping</heading><content><p>Estructura preservada — 10-year retention.</p></content></article>
+          <article eId="cpt_III.sct_3.art_19"><num>Article 19</num><heading>Automatically generated logs</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_3.art_20"><num>Article 20</num><heading>Corrective actions and duty of information</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_3.art_21"><num>Article 21</num><heading>Cooperation with competent authorities</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_3.art_22"><num>Article 22</num><heading>Authorised representatives of providers of high-risk AI systems</heading><content><p>Estructura preservada — required for third-country providers.</p></content></article>
+          <article eId="cpt_III.sct_3.art_23"><num>Article 23</num><heading>Obligations of importers</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_3.art_24"><num>Article 24</num><heading>Obligations of distributors</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_3.art_25"><num>Article 25</num><heading>Responsibilities along the AI value chain</heading><content><p>Estructura preservada — substantial-modification clause triggers re-classification as provider.</p></content></article>
+          <article eId="cpt_III.sct_3.art_26"><num>Article 26</num><heading>Obligations of deployers of high-risk AI systems</heading><content><p>Estructura preservada — 12 paragraphs incl. ex-ante judicial authorisation for post-remote biometric identification.</p></content></article>
+          <article eId="cpt_III.sct_3.art_27"><num>Article 27</num><heading>Fundamental rights impact assessment for high-risk AI systems</heading><content><p>Estructura preservada — FRIA produced by deployer (public bodies, private entities providing public services, certain Annex III deployers) before first use.</p></content></article>
+        </section>
+
+        <section eId="cpt_III.sct_4">
+          <num>SECTION 4</num>
+          <heading>Notifying authorities and notified bodies</heading>
+          <article eId="cpt_III.sct_4.art_28"><num>Article 28</num><heading>Notifying authorities</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_29"><num>Article 29</num><heading>Application of a conformity assessment body for notification</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_30"><num>Article 30</num><heading>Notification procedure</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_31"><num>Article 31</num><heading>Requirements relating to notified bodies</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_32"><num>Article 32</num><heading>Presumption of conformity with requirements relating to notified bodies</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_33"><num>Article 33</num><heading>Subsidiaries of notified bodies and subcontracting</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_34"><num>Article 34</num><heading>Operational obligations of notified bodies</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_35"><num>Article 35</num><heading>Identification numbers and lists of notified bodies</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_36"><num>Article 36</num><heading>Changes to notifications</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_37"><num>Article 37</num><heading>Challenge to the competence of notified bodies</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_38"><num>Article 38</num><heading>Coordination of notified bodies</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_4.art_39"><num>Article 39</num><heading>Conformity assessment bodies of third countries</heading><content><p>Estructura preservada.</p></content></article>
+        </section>
+
+        <section eId="cpt_III.sct_5">
+          <num>SECTION 5</num>
+          <heading>Standards, conformity assessment, certificates, registration</heading>
+          <article eId="cpt_III.sct_5.art_40"><num>Article 40</num><heading>Harmonised standards and standardisation deliverables</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_5.art_41"><num>Article 41</num><heading>Common specifications</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_5.art_42"><num>Article 42</num><heading>Presumption of conformity with certain requirements</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_5.art_43"><num>Article 43</num><heading>Conformity assessment</heading><content><p>Estructura preservada — internal control (Annex VI) or notified-body assessment (Annex VII).</p></content></article>
+          <article eId="cpt_III.sct_5.art_44"><num>Article 44</num><heading>Certificates</heading><content><p>Estructura preservada — 4-5 year validity.</p></content></article>
+          <article eId="cpt_III.sct_5.art_45"><num>Article 45</num><heading>Information obligations of notified bodies</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_5.art_46"><num>Article 46</num><heading>Derogation from conformity assessment procedure</heading><content><p>Estructura preservada — 15-day standstill for objections.</p></content></article>
+          <article eId="cpt_III.sct_5.art_47"><num>Article 47</num><heading>EU declaration of conformity</heading><content><p>Estructura preservada — content per Annex V.</p></content></article>
+          <article eId="cpt_III.sct_5.art_48"><num>Article 48</num><heading>CE marking</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_III.sct_5.art_49"><num>Article 49</num><heading>Registration</heading><content><p>Estructura preservada — registration in EU database (Article 71).</p></content></article>
+        </section>
+      </chapter>
+
+      <chapter eId="cpt_IV">
+        <num>CHAPTER IV</num>
+        <heading>TRANSPARENCY OBLIGATIONS FOR PROVIDERS AND DEPLOYERS OF CERTAIN AI SYSTEMS</heading>
+        <article eId="cpt_IV.art_50"><num>Article 50</num><heading>Transparency obligations for providers and deployers of certain AI systems</heading><content><p>Estructura preservada. AI watermarking, deepfake disclosure, emotion-recognition / biometric-categorisation deployer disclosure.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_V">
+        <num>CHAPTER V</num>
+        <heading>GENERAL-PURPOSE AI MODELS</heading>
+        <section eId="cpt_V.sct_1">
+          <num>SECTION 1</num><heading>Classification rules</heading>
+          <article eId="cpt_V.sct_1.art_51"><num>Article 51</num><heading>Classification of general-purpose AI models as general-purpose AI models with systemic risk</heading><content><p>Estructura preservada. Presumption: training compute &gt; 10^25 FLOPs.</p></content></article>
+          <article eId="cpt_V.sct_1.art_52"><num>Article 52</num><heading>Procedure</heading><content><p>Estructura preservada.</p></content></article>
+        </section>
+        <section eId="cpt_V.sct_2">
+          <num>SECTION 2</num><heading>Obligations for providers of general-purpose AI models</heading>
+          <article eId="cpt_V.sct_2.art_53"><num>Article 53</num><heading>Obligations for providers of general-purpose AI models</heading><content><p>Estructura preservada — technical documentation (Annex XI), downstream-provider information (Annex XII), copyright TDM opt-out, training-data summary.</p></content></article>
+          <article eId="cpt_V.sct_2.art_54"><num>Article 54</num><heading>Authorised representatives of providers of general-purpose AI models</heading><content><p>Estructura preservada.</p></content></article>
+        </section>
+        <section eId="cpt_V.sct_3">
+          <num>SECTION 3</num><heading>Obligations of providers of general-purpose AI models with systemic risk</heading>
+          <article eId="cpt_V.sct_3.art_55"><num>Article 55</num><heading>Obligations of providers of general-purpose AI models with systemic risk</heading><content><p>Estructura preservada — model evaluation, systemic-risk mitigation, serious-incident reporting, cybersecurity.</p></content></article>
+        </section>
+        <section eId="cpt_V.sct_4">
+          <num>SECTION 4</num><heading>Codes of practice</heading>
+          <article eId="cpt_V.sct_4.art_56"><num>Article 56</num><heading>Codes of practice</heading><content><p>Estructura preservada — facilitated by AI Office.</p></content></article>
+        </section>
+      </chapter>
+
+      <chapter eId="cpt_VI">
+        <num>CHAPTER VI</num>
+        <heading>MEASURES IN SUPPORT OF INNOVATION</heading>
+        <article eId="cpt_VI.art_57"><num>Article 57</num><heading>AI regulatory sandboxes</heading><content><p>Estructura preservada — at least one national sandbox per Member State by 2 August 2026.</p></content></article>
+        <article eId="cpt_VI.art_58"><num>Article 58</num><heading>Detailed arrangements for, and functioning of, AI regulatory sandboxes</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_VI.art_59"><num>Article 59</num><heading>Further processing of personal data for developing certain AI systems in the public interest in the AI regulatory sandbox</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_VI.art_60"><num>Article 60</num><heading>Testing of high-risk AI systems in real world conditions outside AI regulatory sandboxes</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_VI.art_61"><num>Article 61</num><heading>Informed consent to participate in testing in real world conditions outside AI regulatory sandboxes</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_VI.art_62"><num>Article 62</num><heading>Measures for providers and deployers, in particular SMEs, including start-ups</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_VI.art_63"><num>Article 63</num><heading>Derogations for specific operators</heading><content><p>Estructura preservada — simplified QMS for microenterprises.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_VII">
+        <num>CHAPTER VII</num>
+        <heading>GOVERNANCE</heading>
+        <section eId="cpt_VII.sct_1">
+          <num>SECTION 1</num><heading>Governance at Union level</heading>
+          <article eId="cpt_VII.sct_1.art_64"><num>Article 64</num><heading>AI Office</heading><content><p>Estructura preservada — Commission DG-CONNECT.</p></content></article>
+          <article eId="cpt_VII.sct_1.art_65"><num>Article 65</num><heading>Establishment and structure of the European Artificial Intelligence Board</heading><content><p>Estructura preservada — one rep per Member State + EDPS observer.</p></content></article>
+          <article eId="cpt_VII.sct_1.art_66"><num>Article 66</num><heading>Tasks of the Board</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_VII.sct_1.art_67"><num>Article 67</num><heading>Advisory forum</heading><content><p>Estructura preservada — stakeholders, FRA, ENISA, CEN, CENELEC, ETSI permanent.</p></content></article>
+          <article eId="cpt_VII.sct_1.art_68"><num>Article 68</num><heading>Scientific panel of independent experts</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_VII.sct_1.art_69"><num>Article 69</num><heading>Access to the pool of experts by the Member States</heading><content><p>Estructura preservada.</p></content></article>
+        </section>
+        <section eId="cpt_VII.sct_2">
+          <num>SECTION 2</num><heading>National competent authorities</heading>
+          <article eId="cpt_VII.sct_2.art_70"><num>Article 70</num><heading>Designation of national competent authorities and single points of contact</heading><content><p>Estructura preservada — by 2 August 2025.</p></content></article>
+        </section>
+      </chapter>
+
+      <chapter eId="cpt_VIII">
+        <num>CHAPTER VIII</num>
+        <heading>EU DATABASE FOR HIGH-RISK AI SYSTEMS LISTED IN ANNEX III</heading>
+        <article eId="cpt_VIII.art_71"><num>Article 71</num><heading>EU database for high-risk AI systems listed in Annex III</heading><content><p>Estructura preservada — public except secure non-public sections for law enforcement / migration / asylum / border control.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_IX">
+        <num>CHAPTER IX</num>
+        <heading>POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE</heading>
+        <section eId="cpt_IX.sct_1"><num>SECTION 1</num><heading>Post-market monitoring</heading>
+          <article eId="cpt_IX.sct_1.art_72"><num>Article 72</num><heading>Post-market monitoring by providers and post-market monitoring plan for high-risk AI systems</heading><content><p>Estructura preservada — Commission template by 2 February 2026.</p></content></article>
+        </section>
+        <section eId="cpt_IX.sct_2"><num>SECTION 2</num><heading>Sharing of information on serious incidents</heading>
+          <article eId="cpt_IX.sct_2.art_73"><num>Article 73</num><heading>Reporting of serious incidents</heading><content><p>Estructura preservada — 15-day default; 2-day for widespread infringement / critical infrastructure malfunction; 10-day for death.</p></content></article>
+        </section>
+        <section eId="cpt_IX.sct_3"><num>SECTION 3</num><heading>Enforcement</heading>
+          <article eId="cpt_IX.sct_3.art_74"><num>Article 74</num><heading>Market surveillance and control of AI systems in the Union market</heading><content><p>Estructura preservada — Reg (EU) 2019/1020 applies; EDPS for Union institutions.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_75"><num>Article 75</num><heading>Mutual assistance, market surveillance and control of general-purpose AI systems</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_76"><num>Article 76</num><heading>Supervision of testing in real world conditions by market surveillance authorities</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_77"><num>Article 77</num><heading>Powers of authorities protecting fundamental rights</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_78"><num>Article 78</num><heading>Confidentiality</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_79"><num>Article 79</num><heading>Procedure at national level for dealing with AI systems presenting a risk</heading><content><p>Estructura preservada — 3-month standstill for Commission decision.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_80"><num>Article 80</num><heading>Procedure for dealing with AI systems classified by the provider as non-high-risk in application of Annex III</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_81"><num>Article 81</num><heading>Union safeguard procedure</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_82"><num>Article 82</num><heading>Compliant AI systems which present a risk</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_83"><num>Article 83</num><heading>Formal non-compliance</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_3.art_84"><num>Article 84</num><heading>Union AI testing support structures</heading><content><p>Estructura preservada.</p></content></article>
+        </section>
+        <section eId="cpt_IX.sct_4"><num>SECTION 4</num><heading>Remedies</heading>
+          <article eId="cpt_IX.sct_4.art_85"><num>Article 85</num><heading>Right to lodge a complaint with a market surveillance authority</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_4.art_86"><num>Article 86</num><heading>Right to explanation of individual decision-making</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_4.art_87"><num>Article 87</num><heading>Reporting of infringements and protection of reporting persons</heading><content><p>Estructura preservada — Whistleblower Directive (EU) 2019/1937 applies.</p></content></article>
+        </section>
+        <section eId="cpt_IX.sct_5"><num>SECTION 5</num><heading>Supervision, investigation, enforcement and monitoring in respect of providers of general-purpose AI models</heading>
+          <article eId="cpt_IX.sct_5.art_88"><num>Article 88</num><heading>Enforcement of the obligations of providers of general-purpose AI models</heading><content><p>Estructura preservada — exclusive Commission/AI Office competence.</p></content></article>
+          <article eId="cpt_IX.sct_5.art_89"><num>Article 89</num><heading>Monitoring actions</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_5.art_90"><num>Article 90</num><heading>Alerts of systemic risks by the scientific panel</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_5.art_91"><num>Article 91</num><heading>Power to request documentation and information</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_5.art_92"><num>Article 92</num><heading>Power to conduct evaluations</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_5.art_93"><num>Article 93</num><heading>Power to request measures</heading><content><p>Estructura preservada.</p></content></article>
+          <article eId="cpt_IX.sct_5.art_94"><num>Article 94</num><heading>Procedural rights of economic operators of the general-purpose AI model</heading><content><p>Estructura preservada — Reg 2019/1020 Art 18 mutatis mutandis.</p></content></article>
+        </section>
+      </chapter>
+
+      <chapter eId="cpt_X">
+        <num>CHAPTER X</num>
+        <heading>CODES OF CONDUCT AND GUIDELINES</heading>
+        <article eId="cpt_X.art_95"><num>Article 95</num><heading>Codes of conduct for voluntary application of specific requirements</heading><content><p>Estructura preservada.</p></content></article>
+        <article eId="cpt_X.art_96"><num>Article 96</num><heading>Guidelines from the Commission on the implementation of this Regulation</heading><content><p>Estructura preservada.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_XI">
+        <num>CHAPTER XI</num>
+        <heading>DELEGATION OF POWER AND COMMITTEE PROCEDURE</heading>
+        <article eId="cpt_XI.art_97"><num>Article 97</num><heading>Exercise of the delegation</heading><content><p>Estructura preservada — 5-year delegation from 1 August 2024, tacitly extended.</p></content></article>
+        <article eId="cpt_XI.art_98"><num>Article 98</num><heading>Committee procedure</heading><content><p>Estructura preservada — Reg (EU) 182/2011 examination procedure.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_XII">
+        <num>CHAPTER XII</num>
+        <heading>PENALTIES</heading>
+        <article eId="cpt_XII.art_99"><num>Article 99</num><heading>Penalties</heading><content><p>Estructura preservada — three-tier administrative fines: up to EUR 35M or 7% worldwide turnover for Art 5 prohibited practices; up to EUR 15M or 3% for other operator/notified-body breaches; up to EUR 7.5M or 1% for incorrect information. SME-friendly cap: lower of percentages or amount.</p></content></article>
+        <article eId="cpt_XII.art_100"><num>Article 100</num><heading>Administrative fines on Union institutions, bodies, offices and agencies</heading><content><p>Estructura preservada — EDPS imposes; up to EUR 1.5M for Art 5 breaches, EUR 750K for others.</p></content></article>
+        <article eId="cpt_XII.art_101"><num>Article 101</num><heading>Fines for providers of general-purpose AI models</heading><content><p>Estructura preservada — up to 3% worldwide turnover or EUR 15M, imposed by Commission.</p></content></article>
+      </chapter>
+
+      <chapter eId="cpt_XIII">
+        <num>CHAPTER XIII</num>
+        <heading>FINAL PROVISIONS</heading>
+        <article eId="cpt_XIII.art_102"><num>Article 102</num><heading>Amendment to Regulation (EC) No 300/2008</heading><content><p>Adds subparagraph to <ref href="https://eur-lex.europa.eu/eli/reg/2008/300/oj/eng">Reg (EC) 300/2008</ref> Art 4(3) requiring Chapter III Section 2 of this Regulation be taken into account when adopting AI safety equipment specifications.</p></content></article>
+        <article eId="cpt_XIII.art_103"><num>Article 103</num><heading>Amendment to Regulation (EU) No 167/2013</heading><content><p>Adds subparagraph to <ref href="https://eur-lex.europa.eu/eli/reg/2013/167/oj/eng">Reg (EU) 167/2013</ref> Art 17(5) on AI safety components in agricultural/forestry vehicles.</p></content></article>
+        <article eId="cpt_XIII.art_104"><num>Article 104</num><heading>Amendment to Regulation (EU) No 168/2013</heading><content><p>Adds subparagraph to <ref href="https://eur-lex.europa.eu/eli/reg/2013/168/oj/eng">Reg (EU) 168/2013</ref> Art 22(5) on AI safety components in two/three-wheel vehicles.</p></content></article>
+        <article eId="cpt_XIII.art_105"><num>Article 105</num><heading>Amendment to Directive 2014/90/EU</heading><content><p>Adds new paragraph to <ref href="https://eur-lex.europa.eu/eli/dir/2014/90/oj/eng">Directive 2014/90/EU</ref> Art 8 on AI safety components in marine equipment.</p></content></article>
+        <article eId="cpt_XIII.art_106"><num>Article 106</num><heading>Amendment to Directive (EU) 2016/797</heading><content><p>Adds new paragraph to <ref href="https://eur-lex.europa.eu/eli/dir/2016/797/oj/eng">Directive (EU) 2016/797</ref> Art 5 on AI safety components in rail interoperability.</p></content></article>
+        <article eId="cpt_XIII.art_107"><num>Article 107</num><heading>Amendment to Regulation (EU) 2018/858</heading><content><p>Adds new paragraph to <ref href="https://eur-lex.europa.eu/eli/reg/2018/858/oj/eng">Reg (EU) 2018/858</ref> Art 5 on AI safety components in motor-vehicle approval.</p></content></article>
+        <article eId="cpt_XIII.art_108"><num>Article 108</num><heading>Amendments to Regulation (EU) 2018/1139</heading><content><p>Six paragraphs added to <ref href="https://eur-lex.europa.eu/eli/reg/2018/1139/oj/eng">Reg (EU) 2018/1139</ref> Arts 17, 19, 43, 47, 57, 58 — most-modified target act.</p></content></article>
+        <article eId="cpt_XIII.art_109"><num>Article 109</num><heading>Amendment to Regulation (EU) 2019/2144</heading><content><p>Adds paragraph to <ref href="/akn/eu/act/2019-11-27/reg-2019-2144">Reg (EU) 2019/2144</ref> Art 11 on AI safety components in motor-vehicle general safety. This is the only target act fully MODELED in this corpus.</p></content></article>
+        <article eId="cpt_XIII.art_110"><num>Article 110</num><heading>Amendment to Directive (EU) 2020/1828</heading><content><p>Adds point (68) to Annex I of <ref href="https://eur-lex.europa.eu/eli/dir/2020/1828/oj/eng">Directive (EU) 2020/1828</ref> — adds AI Act to the list of acts protected by the representative-action mechanism.</p></content></article>
+        <article eId="cpt_XIII.art_111"><num>Article 111</num><heading>AI systems already placed on the market or put into service and general-purpose AI models already placed on the market</heading><content><p>Estructura preservada — transitional provisions for pre-existing AI systems and GPAI models.</p></content></article>
+        <article eId="cpt_XIII.art_112"><num>Article 112</num><heading>Evaluation and review</heading><content><p>Estructura preservada — annual review of Annex III and Art 5; quadrennial Commission evaluation by 2 August 2028.</p></content></article>
+        <article eId="cpt_XIII.art_113"><num>Article 113</num><heading>Entry into force and application</heading><content><p>Entry into force: 20 days after OJ publication (1 August 2024). General application: 2 August 2026. Chapters I and II from 2 February 2025. Chapter III Section 4, Chapter V, Chapter VII, Chapter XII (except Art 101) and Article 78 from 2 August 2025. Article 6(1) from 2 August 2027.</p></content></article>
+      </chapter>
+
+      <!--
+        ANNEXES — In Akoma Ntoso, annexes can be modeled either as <attachment>
+        elements outside the body or as <hcontainer name="annex"> inside the
+        body. Schema doesn't extract annexes to a side table — they live as
+        body XML. See researchNote 7. Each annex preserved as a shell with
+        real heading; full content in the source CELEX:32024R1689.
+      -->
+
+      <hcontainer name="annex" eId="anx_I">
+        <num>ANNEX I</num>
+        <heading>List of Union harmonisation legislation</heading>
+        <content><p>Estructura preservada. Section A (NLF-based, 12 acts: Machinery 2006/42/EC, Toys 2009/48/EC, Recreational craft, Lifts, ATEX, Radio equipment, Pressure equipment, Cableways, PPE, Gas appliances, MDR 2017/745, IVDR 2017/746). Section B (other, 8 acts: Civil aviation security 300/2008, Agricultural vehicles 167/2013, Two/three-wheel 168/2013, Marine equipment 2014/90, Rail 2016/797, Motor vehicles 2018/858, Civil aviation 2018/1139, General safety motor vehicles 2019/2144).</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_II">
+        <num>ANNEX II</num>
+        <heading>List of criminal offences referred to in Article 5(1)(h)(iii)</heading>
+        <content><p>Estructura preservada. Lists criminal offences for which 'real-time' remote biometric identification in publicly accessible spaces by law enforcement is exceptionally permitted, based on Council Framework Decision 2002/584/JHA: terrorism, trafficking, sexual exploitation of children, drugs, arms, murder, organ trafficking, kidnapping, ICC crimes, aircraft/ship seizure, rape, environmental crime, organised robbery, sabotage, criminal organisation participation.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_III">
+        <num>ANNEX III</num>
+        <heading>High-risk AI systems referred to in Article 6(2)</heading>
+        <content><p>Estructura preservada. Annex III is the OPERATIONAL list that drives Chapter III obligations — referenced 50+ times in articles. Eight areas: 1. Biometrics (remote identification, categorisation, emotion recognition); 2. Critical infrastructure (digital, road traffic, water/gas/heat/electricity); 3. Education and vocational training; 4. Employment and workers' management; 5. Access to essential private and public services (incl. credit scoring, insurance pricing, emergency dispatch); 6. Law enforcement (victim risk, polygraph, evidence reliability, recidivism risk, profiling); 7. Migration, asylum and border control management; 8. Administration of justice and democratic processes (judicial assistance, election influence).</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_IV">
+        <num>ANNEX IV</num>
+        <heading>Technical documentation referred to in Article 11(1)</heading>
+        <content><p>Estructura preservada. Nine elements of technical documentation provider must produce: general description, detailed description (development methods/architecture/data/training/oversight/cybersecurity), monitoring/control description, performance metrics, risk management system description, change history, harmonised standards applied, EU declaration of conformity copy, post-market monitoring system description.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_V">
+        <num>ANNEX V</num>
+        <heading>EU declaration of conformity</heading>
+        <content><p>Estructura preservada. Mandatory content of the EU declaration of conformity (Art 47).</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_VI">
+        <num>ANNEX VI</num>
+        <heading>Conformity assessment procedure based on internal control</heading>
+        <content><p>Estructura preservada. Procedure used for Annex III pts 2-8 high-risk systems and for Annex III pt 1 systems where harmonised standards are followed.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_VII">
+        <num>ANNEX VII</num>
+        <heading>Conformity based on an assessment of the quality management system and an assessment of the technical documentation</heading>
+        <content><p>Estructura preservada. Notified-body conformity assessment procedure required for Annex III pt 1 systems where harmonised standards are not fully applied.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_VIII">
+        <num>ANNEX VIII</num>
+        <heading>Information to be submitted upon the registration of high-risk AI systems in accordance with Article 49</heading>
+        <content><p>Estructura preservada. Sections A (provider registration per Art 49(1)), B (provider registration per Art 49(2) — non-high-risk Annex III), C (deployer registration per Art 49(3) — public bodies).</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_IX">
+        <num>ANNEX IX</num>
+        <heading>Information to be submitted upon the registration of high-risk AI systems listed in Annex III in relation to testing in real world conditions in accordance with Article 60</heading>
+        <content><p>Estructura preservada.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_X">
+        <num>ANNEX X</num>
+        <heading>Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice</heading>
+        <content><p>Estructura preservada. Lists EU large-scale IT systems with embedded AI: SIS, VIS, Eurodac, ETIAS, EES, ECRIS-TCN — these are subject to extended transitional period (compliance by 31 December 2030 per Art 111(1)).</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_XI">
+        <num>ANNEX XI</num>
+        <heading>Technical documentation referred to in Article 53(1)(a) — technical documentation for providers of general-purpose AI models</heading>
+        <content><p>Estructura preservada.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_XII">
+        <num>ANNEX XII</num>
+        <heading>Transparency information referred to in Article 53(1)(b) — for downstream providers integrating GPAI models</heading>
+        <content><p>Estructura preservada.</p></content>
+      </hcontainer>
+
+      <hcontainer name="annex" eId="anx_XIII">
+        <num>ANNEX XIII</num>
+        <heading>Criteria for the designation of general-purpose AI models with systemic risk referred to in Article 51</heading>
+        <content><p>Estructura preservada. Seven criteria the Commission shall apply: (a) parameter count, (b) data set size/quality (token count), (c) compute (FLOPs/training time), (d) input/output modalities, (e) capability benchmarks, (f) Union end-user reach, (g) Union business-user reach. This annex IS the substantive rule for Art 51(b) systemic-risk designation, not an appendix.</p></content>
+      </hcontainer>
+
+    </body>
+
+    <conclusions>
+      <p>This Regulation shall be binding in its entirety and directly applicable in all Member States.</p>
+      <p>Done at Brussels, 13 June 2024.</p>
+      <signature>
+        <p>For the European Parliament</p>
+        <p>The President</p>
+        <person refersTo="#metsola-roberta">R. METSOLA</person>
+      </signature>
+      <signature>
+        <p>For the Council</p>
+        <p>The President</p>
+        <p>(Belgian Presidency, first half 2024)</p>
+      </signature>
+    </conclusions>
+  </act>
+</akomaNtoso>

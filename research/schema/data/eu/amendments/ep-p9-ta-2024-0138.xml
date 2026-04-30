@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  P9_TA(2024)0138 — European Parliament first reading position adopted on
+  13 March 2024 in the AI Act procedure (2021/0106(COD)).
+
+  This is the EU equivalent of Spanish Informe de Ponencia: a CONSOLIDATED
+  text + recorded vote that crystallizes the parliamentary chamber's
+  position on a Commission proposal. Like the ES Informe de Ponencia
+  (BOCG-15-A-36-4), it consolidates many individual amendments into one
+  textual decision.
+
+  In EU procedure, P9_TA(YYYY)NNNN ("Texts Adopted") is the canonical
+  series for plenary-adopted positions. This particular item P9_TA(2024)0138
+  is the FIRST READING POSITION of the European Parliament — under the
+  ordinary legislative procedure, this is the EP's formal answer to the
+  Commission proposal, accepted (here unanimously substantially) by the
+  Council on 2024-05-21 without modifications.
+
+  Recorded vote: 523 in favour, 46 against, 49 abstentions (Strasbourg
+  plenary, 13 March 2024). Substantially modified the original
+  Commission proposal COM(2021)206 — added Chapter V on GPAI models,
+  expanded prohibited practices in Article 5, introduced FRIA in
+  Article 27, restructured penalties into three tiers, set the staged
+  application schedule.
+
+  Fuente oficial: EP Texts Adopted P9_TA(2024)0138
+    https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <amendment name="amendment">
+    <meta>
+      <identification source="#european-parliament">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138/!main"/>
+          <FRBRuri value="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138"/>
+          <FRBRdate date="2024-03-13" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+          <FRBRcountry value="eu"/>
+          <FRBRsubtype value="ep-first-reading-position"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138/eng@/!main"/>
+          <FRBRuri value="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138/eng@"/>
+          <FRBRdate date="2024-03-13" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138/eng@.xml"/>
+          <FRBRuri value="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138/eng@.xml"/>
+          <FRBRdate date="2024-03-13" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2024-03-13"
+                   showAs="P9_TA(2024)0138 — Texts Adopted, EP plenary 13 March 2024 (Strasbourg)"
+                   name="ep-texts-adopted"
+                   href="https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html"/>
+
+      <classification source="#european-parliament">
+        <keyword value="first-reading-position" showAs="EP first reading position" dictionary="#ep-procedure"/>
+        <keyword value="codecision" showAs="ordinary legislative procedure (codecision)" dictionary="#ep-procedure"/>
+        <keyword value="consolidated-text" showAs="consolidated text + recorded vote" dictionary="#ep-procedure"/>
+      </classification>
+
+      <lifecycle source="#european-parliament">
+        <eventRef date="2024-03-13" refersTo="#submitted"
+                  source="#evt-01"
+                  showAs="Adopted in EP plenary, Strasbourg, 13 March 2024 (recorded vote 523/46/49)"
+                  chamber="parliament"/>
+        <eventRef date="2024-03-13" refersTo="#voted"
+                  source="#evt-02"
+                  showAs="Recorded vote: 523 in favour, 46 against, 49 abstentions"
+                  chamber="parliament"/>
+        <eventRef date="2024-03-13" refersTo="#approved"
+                  source="#evt-03"
+                  showAs="Position approved as P9_TA(2024)0138 — text transmitted to the Council for first reading consideration"
+                  chamber="parliament"/>
+      </lifecycle>
+
+      <references source="#european-parliament">
+        <TLCOrganization eId="european-parliament"
+                         href="/akn/eu/org/european-parliament"
+                         showAs="European Parliament (in plenary, Strasbourg)"/>
+        <TLCOrganization eId="imco-libe-joint"
+                         href="/akn/eu/org/ep-committee-imco-libe-joint"
+                         showAs="EP joint committee IMCO + LIBE (responsible)"/>
+        <TLCPerson eId="benifei-brando"
+                   href="/akn/eu/person/brando-benifei"
+                   showAs="Brando Benifei (S&amp;D, Italy) — IMCO co-rapporteur"/>
+        <TLCPerson eId="tudorache-dragos"
+                   href="/akn/eu/person/dragos-tudorache"
+                   showAs="Dragoş Tudorache (Renew Europe, Romania) — LIBE co-rapporteur"/>
+      </references>
+
+      <proprietary source="#european-parliament">
+        <akndiff:nativeId>ep-p9-ta-2024-0138</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html</akndiff:sourceUrl>
+        <akndiff:amendmentOutcome normalized="approved">Adopted by EP plenary 523-46-49</akndiff:amendmentOutcome>
+        <akndiff:targetBillRef href="/akn/eu/bill/2021-04-21/com-2021-206"/>
+        <akndiff:targetLocator>full-text consolidated (no specific locator — replaces entire Commission proposal)</akndiff:targetLocator>
+        <akndiff:procedureFile>2021/0106(COD)</akndiff:procedureFile>
+
+        <akndiff:submitter>
+          <akndiff:institution refersTo="#european-parliament"/>
+          <akndiff:committee refersTo="#imco-libe-joint"/>
+          <akndiff:rapporteur refersTo="#benifei-brando"/>
+          <akndiff:rapporteur refersTo="#tudorache-dragos"/>
+        </akndiff:submitter>
+
+        <akndiff:voteRecord date="2024-03-13" result="approved">
+          <akndiff:for count="523"/>
+          <akndiff:against count="46"/>
+          <akndiff:abstain count="49"/>
+          <akndiff:total count="618"/>
+        </akndiff:voteRecord>
+
+        <akndiff:researchNotes>
+        Friction log for EU EP first reading position P9_TA(2024)0138 — Phase 1.
+
+        1. CONSOLIDATED-TEXT-AS-AMENDMENT, CROSS-COUNTRY CONFIRMED.
+           The EP first reading position is a SINGLE document that
+           CONSOLIDATES hundreds of individual amendments tabled in IMCO
+           and LIBE committees plus plenary amendments. AmendmentTable
+           assumes one-amendment-one-doc, but the EU pattern (like ES
+           Informe de Ponencia BOCG-15-A-36-4) is one consolidated
+           document per chamber position. Reproducible cross-country
+           friction confirmed.
+
+        2. SUBMITTER IS THE INSTITUTION (European Parliament), NOT A
+           PERSON OR PARTY. AmendmentTable.submitter is JSON
+           {name, party?, chamber?, externalId?} — assumes person.
+           Same shape friction as ES Informe de Ponencia (submitted by
+           Ponencia of Comisión de Trabajo, not individual). We model
+           submitter as JSON {name: "European Parliament", chamber:
+           "parliament"} but there's no real party because EP plenary
+           is the body, not a political group.
+
+        3. RAPPORTEUR-AS-SUBMITTER alternative model. The act of TABLING
+           the position in plenary is performed by the rapporteurs (Benifei
+           + Tudorache here). They are persons, but they're not "submitting"
+           in their personal capacity — they speak for the joint committee.
+           Schema's submitter doesn't model "person acting on behalf of
+           committee on behalf of institution". We carry rapporteurs in
+           akndiff:submitter/akndiff:rapporteur extension elements.
+
+        4. RECORDED VOTE WITH ABSTAIN COUNT, NOT NAMES. EP plenary recorded
+           vote captures aggregate counts (523 for / 46 against / 49
+           abstain). Individual MEP-level vote records ARE published
+           separately (in P9_PV(2024)03-13 minutes) but we don't model
+           that level. Schema's AmendmentTable has no voteRecord at all
+           — votes live in body XML or as akndiff:voteRecord extension.
+           Same friction as ES debate (per-block votes) but here at
+           amendment level.
+
+        5. FULL-TEXT REPLACEMENT, NOT TARGETED EDITS. P9_TA(2024)0138
+           replaces the ENTIRE Commission proposal text — not specific
+           articles. AmendmentTable.targetLocator is for AKN locator
+           strings like "#art_3__para_2"; here the locator concept
+           degenerates because the whole proposal is replaced.
+
+        6. NO COUNCIL EQUIVALENT TRACK MODELED. The Council also adopted
+           a "general approach" (15698/22, 6 December 2022) that amended
+           the Commission proposal in PARALLEL with EP work. Council general
+           approach is NOT in the AmendmentTable; we capture it only as
+           a lifecycle event on the bill XML. EU schema needs to model
+           the parallel Council position as a sibling amendment doc.
+
+        7. P9_TA REFERENCE NOT IN SCHEMA. P9_TA(2024)0138 is the canonical
+           EP-internal reference. We use it as nativeId. Same shape as
+           ES BOCG-15-A-36-4 (canonical chamber-internal reference).
+           No friction.
+
+        8. TRILOGUE OUTCOME (the political agreement of 2023-12-08) IS
+           NOT MODELED AS A DOCUMENT. The trilogue produced a 4-column
+           comparative table (Commission text / EP mandate / Council
+           general approach / final agreed text) shared informally. That
+           table is not a public AKN-conformable document; it's the
+           working artifact of the negotiation. The final compromise text
+           is what becomes P9_TA(2024)0138. Schema-side: no representation
+           of negotiation working documents.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><b>European Parliament legislative resolution of 13 March 2024</b> on the proposal for a regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts (<ref href="/akn/eu/bill/2021-04-21/com-2021-206">COM(2021)206</ref> – C9-0146/2021 – 2021/0106(COD)). (Ordinary legislative procedure: first reading.)</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>The European Parliament,</p>
+      <p>– having regard to the Commission proposal to Parliament and the Council (COM(2021)206),</p>
+      <p>– having regard to Article 294(2) and Articles 16 and 114 of the Treaty on the Functioning of the European Union, pursuant to which the Commission submitted the proposal to Parliament,</p>
+      <p>– having regard to the opinion of the European Economic and Social Committee of 22 September 2021,</p>
+      <p>– after consulting the Committee of the Regions,</p>
+      <p>– having regard to the provisional agreement approved by the responsible committees under Rule 74(4) of its Rules of Procedure and the undertaking given by the Council representative by letter of 2 February 2024 to approve Parliament's position, in accordance with Article 294(4) of the Treaty on the Functioning of the European Union,</p>
+      <p>– having regard to Rule 59 of its Rules of Procedure,</p>
+      <p>– having regard to the joint deliberations of the Committee on the Internal Market and Consumer Protection and the Committee on Civil Liberties, Justice and Home Affairs under Rule 58 of the Rules of Procedure,</p>
+      <p>– having regard to the opinions of the Committee on Industry, Research and Energy, the Committee on Culture and Education, the Committee on Legal Affairs, the Committee on the Environment, Public Health and Food Safety, and the Committee on Transport and Tourism,</p>
+      <p>– having regard to the report of the Committee on the Internal Market and Consumer Protection and the Committee on Civil Liberties, Justice and Home Affairs (A9-0188/2023),</p>
+      <p>1. Adopts its position at first reading hereinafter set out;</p>
+      <p>2. Calls on the Commission to refer the matter to Parliament again if it replaces, substantially amends or intends to substantially amend its proposal;</p>
+      <p>3. Instructs its President to forward its position to the Council, the Commission and the national parliaments.</p>
+    </preamble>
+
+    <body>
+      <article eId="art_position">
+        <num>Position of the European Parliament</num>
+        <heading>Adopted at first reading on 13 March 2024 with a view to the adoption of Regulation (EU) 2024/...... of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)</heading>
+        <content>
+          <p>The full consolidated text of the EP first reading position is in the source HTML at https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138_EN.html and in the source PDF P9_TA(2024)0138. Structure: 113 articles + 13 annexes + 180 recitals — substantially amended from the original Commission proposal COM(2021)206 (which had 85 articles + 9 annexes). Major changes:</p>
+          <p>(a) Added Chapter V on general-purpose AI models with systemic risk (initially absent from the Commission proposal). Two-tier classification with 10^25 FLOPs presumption.</p>
+          <p>(b) Expanded prohibited AI practices in Article 5 — added biometric categorisation inferring sensitive attributes, untargeted facial-image scraping, emotion recognition in workplace/education.</p>
+          <p>(c) Added fundamental rights impact assessment by certain deployers (Article 27).</p>
+          <p>(d) Restructured penalties into three tiers (Article 99) with absolute caps + percentage of worldwide turnover.</p>
+          <p>(e) Set staged application schedule across 36 months (Article 113).</p>
+          <p>(f) Added EU AI Office under Commission (Article 64) and reorganised governance into Chapter VII.</p>
+          <p>(g) Added the 9 amending articles (102-110) modifying prior Union acts on civil aviation, motor vehicles, marine equipment, rail, etc.</p>
+          <p>The text matches what was subsequently formally adopted by the Council on 21 May 2024 and signed on 13 June 2024 as <ref href="/akn/eu/act/2024-06-13/reg-2024-1689">Regulation (EU) 2024/1689</ref>.</p>
+        </content>
+      </article>
+    </body>
+  </amendment>
+</akomaNtoso>

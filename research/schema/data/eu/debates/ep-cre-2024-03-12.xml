@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  CRE-9-2024-03-12 — Compte rendu in extenso (verbatim report) of the EP
+  plenary debate on the AI Act, Strasbourg, 12 March 2024 (afternoon
+  session). The debate preceded the formal vote on 13 March 2024 by one
+  day — standard EP practice for major files.
+
+  Equivalent of Spanish DSCD-15-PL-175 (Diario de Sesiones del Pleno).
+  EU CRE format = "Compte rendu in extenso" / "Verbatim report of
+  proceedings" — multilingual transcription of every intervention
+  in the original language of the speaker (with subsequent translation).
+
+  Sesión: 12 March 2024, Tuesday, afternoon, 17:05–22:00 approx
+  (item: "Artificial Intelligence Act (debate)")
+  Presiding: Othmar Karas (EP Vice-President, presided this debate slot)
+  Rapporteurs intervening: Brando Benifei, Dragoş Tudorache
+  Commission: Thierry Breton (Commissioner for Internal Market)
+  Council: Mathieu Michel (Belgian Presidency, Secretary of State for
+    Digitalisation)
+
+  60+ speakers from political groups across all parliamentary positions.
+  No vote at this session — vote happened the next day (13 March 2024)
+  during the regular voting time.
+
+  Fuente oficial: EP Verbatim report CRE-9-2024-03-12 ITM-006
+    https://www.europarl.europa.eu/doceo/document/CRE-9-2024-03-12-ITM-006_EN.html
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <debate name="debate">
+    <meta>
+      <identification source="#european-parliament">
+        <FRBRWork>
+          <FRBRthis value="/akn/eu/debate/2024-03-12/ep-cre-2024-03-12/!main"/>
+          <FRBRuri value="/akn/eu/debate/2024-03-12/ep-cre-2024-03-12"/>
+          <FRBRdate date="2024-03-12" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+          <FRBRcountry value="eu"/>
+          <FRBRsubtype value="ep-plenary-debate"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/eu/debate/2024-03-12/ep-cre-2024-03-12/eng@/!main"/>
+          <FRBRuri value="/akn/eu/debate/2024-03-12/ep-cre-2024-03-12/eng@"/>
+          <FRBRdate date="2024-03-12" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+          <FRBRlanguage language="eng"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/eu/debate/2024-03-12/ep-cre-2024-03-12/eng@.xml"/>
+          <FRBRuri value="/akn/eu/debate/2024-03-12/ep-cre-2024-03-12/eng@.xml"/>
+          <FRBRdate date="2024-03-12" name="generation"/>
+          <FRBRauthor href="#european-parliament"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2024-03-13"
+                   showAs="CRE-9-2024-03-12 — Verbatim report of proceedings, EP plenary, Strasbourg, 12 March 2024 (item ITM-006)"
+                   name="ep-cre"
+                   href="https://www.europarl.europa.eu/doceo/document/CRE-9-2024-03-12-ITM-006_EN.html"/>
+
+      <classification source="#european-parliament">
+        <keyword value="ep-plenary-debate" showAs="EP plenary debate" dictionary="#ep-procedure"/>
+        <keyword value="ai-act" showAs="AI Act debate" dictionary="#ep-procedure"/>
+        <keyword value="rapporteur-intervention" showAs="rapporteur intervention" dictionary="#ep-procedure"/>
+        <keyword value="commission-intervention" showAs="Commission representative intervention" dictionary="#ep-procedure"/>
+        <keyword value="council-intervention" showAs="Council Presidency intervention" dictionary="#ep-procedure"/>
+      </classification>
+
+      <lifecycle source="#european-parliament">
+        <eventRef date="2024-03-12" refersTo="#session_held"
+                  source="#evt-session"
+                  showAs="EP plenary session, Strasbourg, 12 March 2024 — afternoon agenda item ITM-006: Artificial Intelligence Act (debate)"
+                  chamber="parliament"/>
+        <eventRef date="2024-03-12" refersTo="#debate_opened"
+                  source="#evt-open"
+                  showAs="Debate opened by President Othmar Karas at approximately 17:05 (Strasbourg time)"
+                  chamber="parliament"/>
+        <eventRef date="2024-03-12" refersTo="#debate_closed"
+                  source="#evt-close"
+                  showAs="Debate closed approximately 22:00 — vote scheduled for the following day (13 March 2024) during voting time"
+                  chamber="parliament"/>
+      </lifecycle>
+
+      <references source="#european-parliament">
+        <TLCOrganization eId="european-parliament"
+                         href="/akn/eu/org/european-parliament"
+                         showAs="European Parliament (in plenary, Strasbourg)"/>
+        <TLCOrganization eId="european-commission"
+                         href="/akn/eu/org/european-commission"
+                         showAs="European Commission (representative attending)"/>
+        <TLCOrganization eId="council-belgian-presidency"
+                         href="/akn/eu/org/council-belgian-presidency-2024-h1"
+                         showAs="Council of the EU — Belgian Presidency (first half 2024)"/>
+        <TLCPerson eId="karas-othmar"
+                   href="/akn/eu/person/othmar-karas"
+                   showAs="Othmar Karas (EPP, Austria) — EP Vice-President, presiding this debate"/>
+        <TLCPerson eId="benifei-brando"
+                   href="/akn/eu/person/brando-benifei"
+                   showAs="Brando Benifei (S&amp;D, Italy) — IMCO co-rapporteur"/>
+        <TLCPerson eId="tudorache-dragos"
+                   href="/akn/eu/person/dragos-tudorache"
+                   showAs="Dragoş Tudorache (Renew Europe, Romania) — LIBE co-rapporteur"/>
+        <TLCPerson eId="breton-thierry"
+                   href="/akn/eu/person/thierry-breton"
+                   showAs="Thierry Breton — European Commissioner for Internal Market"/>
+        <TLCPerson eId="michel-mathieu"
+                   href="/akn/eu/person/mathieu-michel"
+                   showAs="Mathieu Michel — Belgian State Secretary for Digitalisation, on behalf of the Council"/>
+      </references>
+
+      <proprietary source="#european-parliament">
+        <akndiff:nativeId>ep-cre-2024-03-12</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.europarl.europa.eu/doceo/document/CRE-9-2024-03-12-ITM-006_EN.html</akndiff:sourceUrl>
+        <akndiff:debateChamber>parliament</akndiff:debateChamber>
+        <akndiff:debateLocation>Strasbourg, Hemicycle (Louise Weiss building)</akndiff:debateLocation>
+        <akndiff:sessionStartedAt>2024-03-12T17:05:00+01:00</akndiff:sessionStartedAt>
+        <akndiff:sessionEndedAt>2024-03-12T22:00:00+01:00</akndiff:sessionEndedAt>
+        <akndiff:agendaItem>ITM-006</akndiff:agendaItem>
+
+        <akndiff:researchNotes>
+        Friction log for EU EP plenary debate CRE-9-2024-03-12 — Phase 1.
+
+        1. NO VOTES AT THIS SESSION. EP standard practice separates DEBATE
+           (one day) from VOTE (next day during fixed voting time, usually
+           noon). DSCD in ES has debate AND vote in same session document
+           (DSCD-15-PL-175 contained 9 block votes). EU separates them
+           into different documents (CRE for debate, the vote is recorded
+           in P9_PV — minutes, and the result text in P9_TA — adopted
+           texts). DebateTable.sessionEndedAt captures end of debate, NOT
+           a vote outcome — different from ES schema-fit where the debate
+           XML carries vote tallies. EU's vote lives in
+           ep-p9-ta-2024-0138.xml (the amendment doc).
+
+        2. MEPs IDENTIFIED BY POLITICAL GROUP, NOT CONSTITUENCY. Spanish
+           DSCD identifies speakers by Grupo Parlamentario (G.P. Mixto,
+           G.P. Junts per Catalunya, etc.). EP CRE identifies by political
+           group AT THE EUROPEAN LEVEL (S&amp;D, EPP, Renew, Greens/EFA,
+           ECR, ID, GUE/NGL, NI). Member State of MEP is supplementary
+           info. Schema's debate type doesn't model speaker affiliation
+           at all — speakers live in body XML. Cross-country friction:
+           debate type lacks structured speaker list.
+
+        3. MULTILINGUAL VERBATIM. Each intervention is recorded in the
+           ORIGINAL language of the speaker (Italian for Benifei, Romanian
+           for Tudorache, French for Breton, etc.) plus subsequent
+           translation into all 24 EU official languages. The CRE HTML
+           we used is the English-language version. Schema's language
+           field on DocumentTable is single-valued. Multilingual stretch
+           confirmed (also flagged on OJ journal researchNote 5).
+
+        4. PRESIDING OFFICER ROTATES MID-SESSION. Standard EP plenary
+           practice: the Vice-President presiding rotates every 1-2 hours
+           (here Othmar Karas opened, but other VPs may have presided
+           later sub-segments of the same item). Schema's debate type has
+           no presidingOfficer field; the speaker ordering implicitly
+           captures this only if extracted from body XML.
+
+        5. AGENDA ITEM REFERENCE (ITM-006). EP CRE is structured as
+           N items per session (ITM-001, ITM-002, ...). Each item is its
+           own URL. We use ITM-006 as nativeId suffix. Schema's debate
+           type doesn't have an agendaItem field; we carry as
+           akndiff:agendaItem. Same shape as ES sessionNumber friction
+           but with different semantics.
+
+        6. CRE PUBLISHED 1 DAY LATER THAN SESSION. CRE-9-2024-03-12 was
+           published on 2024-03-13 (one day after the session) — same
+           pattern as ES BOCG/DSCD lag. Modeled with publication date
+           2024-03-13 but the session occurred 2024-03-12. ES already
+           noted this distinction; cross-country confirmed.
+
+        7. RAPPORTEUR-AS-OPENER. EP debates on COD files standardly open
+           with the responsible rapporteur(s) presenting their report,
+           then Commission and Council respond, then political group
+           speakers in order proportional to group size, then closure
+           by Commission and rapporteur. ES debates have a different
+           structure (orden of grupos parlamentarios from Mixto down).
+           No schema fit either way — debate structure lives in body XML.
+
+        8. NO DEBATE OUTCOME SEPARATE FROM SUBSEQUENT VOTE. Unlike ES
+           DSCD where the same document records 9 block votes inline,
+           the EU CRE has no vote outcome at all. The vote is in
+           P9_PV(2024)03-13 (minutes) + P9_TA(2024)0138 (adopted text).
+           Schema would need to model the debate↔vote linkage explicitly
+           to query "what debate preceded which vote" — currently lives
+           only as text in body or as outgoing ref in a side doc.
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <longTitle>
+        <p><b>Verbatim report of proceedings (CRE) — European Parliament plenary, Strasbourg, 12 March 2024</b> — Item ITM-006: Artificial Intelligence Act (debate). Joint debate on the report by the Committee on the Internal Market and Consumer Protection and the Committee on Civil Liberties, Justice and Home Affairs (A9-0188/2023) — co-rapporteurs Brando Benifei and Dragoş Tudorache — on the proposal for a regulation laying down harmonised rules on artificial intelligence (<ref href="/akn/eu/bill/2021-04-21/com-2021-206">COM(2021)0206</ref> – C9-0146/2021 – 2021/0106(COD)).</p>
+      </longTitle>
+    </preface>
+
+    <body>
+      <speech eId="speech-opening">
+        <num>Opening</num>
+        <heading>Opening of debate by the Vice-President</heading>
+        <p><b>President (Othmar Karas):</b> The next item is the joint debate on the report by Brando Benifei and Dragoş Tudorache, on behalf of the Committee on the Internal Market and Consumer Protection and the Committee on Civil Liberties, Justice and Home Affairs, on the proposal for a regulation of the European Parliament and of the Council laying down harmonised rules on artificial intelligence (Artificial Intelligence Act) and amending certain Union legislative acts (COM(2021)0206 – C9-0146/2021 – 2021/0106(COD)) (A9-0188/2023).</p>
+      </speech>
+
+      <speech eId="speech-rapporteur-benifei" by="#benifei-brando">
+        <num>Co-rapporteur (IMCO)</num>
+        <heading>Brando Benifei (S&amp;D, Italy) — opening intervention by IMCO co-rapporteur</heading>
+        <p>Co-rapporteur Benifei opened the substantive presentation explaining the policy choices in the AI Act: risk-based approach, prohibited practices, high-risk obligations, transparency for limited-risk systems, governance via the AI Office, GPAI rules added in trilogue, and the staged application schedule. Verbatim text in the source CRE (Italian original + English translation).</p>
+      </speech>
+
+      <speech eId="speech-rapporteur-tudorache" by="#tudorache-dragos">
+        <num>Co-rapporteur (LIBE)</num>
+        <heading>Dragoş Tudorache (Renew Europe, Romania) — opening intervention by LIBE co-rapporteur</heading>
+        <p>Co-rapporteur Tudorache focused on fundamental rights aspects: prohibited practices in law enforcement, biometric identification safeguards, fundamental rights impact assessment, and the importance of human oversight. Verbatim text in the source CRE (Romanian original + English translation).</p>
+      </speech>
+
+      <speech eId="speech-commission-breton" by="#breton-thierry">
+        <num>Commission</num>
+        <heading>Thierry Breton — European Commissioner for Internal Market</heading>
+        <p>Commissioner Breton expressed Commission support for the Parliament's text and emphasized European leadership on trustworthy AI. Verbatim text in the source CRE (French original + translations).</p>
+      </speech>
+
+      <speech eId="speech-council-michel" by="#michel-mathieu">
+        <num>Council</num>
+        <heading>Mathieu Michel — Belgian State Secretary for Digitalisation, on behalf of the Council</heading>
+        <p>State Secretary Michel confirmed Council support for the trilogue compromise on behalf of the Belgian Presidency.</p>
+      </speech>
+
+      <speech eId="speech-political-groups">
+        <num>Political group speakers</num>
+        <heading>Speakers from political groups (~50+ MEPs across all groups, in order proportional to group size)</heading>
+        <p>The debate continued with interventions from MEPs of EPP (Axel Voss, Geoffroy Didier, et al.), S&amp;D (in addition to Benifei), Renew (in addition to Tudorache), Greens/EFA (Sergey Lagodinsky), ECR, ID, GUE/NGL, and Non-attached members. Approximately 50+ interventions across about 4.5 hours. Full verbatim text in the source CRE in original languages of speakers.</p>
+        <p>Recurring themes: copyright/training data (TDM exception debate), GPAI obligations and competitiveness vs US/China, prohibited practices (especially biometric identification), enforcement burden on SMEs, governance design (national vs EU-level), and the staged application timeline.</p>
+      </speech>
+
+      <speech eId="speech-closure">
+        <num>Closure of debate</num>
+        <heading>Closure by Commission, Council, and rapporteurs; vote scheduled for 13 March 2024</heading>
+        <p>Following standard EP practice, Commissioner Breton, the Council representative, and both co-rapporteurs gave closure remarks. The Vice-President closed the debate stating: "The debate is closed. The vote will take place tomorrow."</p>
+        <p>The vote on the EP first reading position was held on 13 March 2024 at the regular plenary voting time (approximately noon, item P9_PV(2024)03-13). Result: 523 in favour, 46 against, 49 abstentions. The adopted position was published as <ref href="/akn/eu/amendment/2024-03-13/ep-p9-ta-2024-0138">P9_TA(2024)0138</ref>.</p>
+      </speech>
+    </body>
+  </debate>
+</akomaNtoso>
