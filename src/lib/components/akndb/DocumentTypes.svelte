@@ -495,7 +495,7 @@
 			</div>
 		</div>
 
-		<div class="mt-6 rounded border-l-4 border-blue-400 bg-blue-50 p-4 text-sm">
+		<div class="mt-6 border-l-4 border-blue-400 bg-blue-50 p-4 text-sm">
 			<p class="mb-2 font-bold text-blue-900">Notas para leer el diagrama</p>
 			<ol class="list-decimal space-y-1 pl-5 text-blue-950">
 				<li>
@@ -551,7 +551,7 @@
 		<div class="space-y-3">
 			{#each types as t (t.key)}
 				<article
-					class="rounded-lg border-l-4 bg-white p-5 shadow-[0_1px_3px_rgba(0,0,0,0.04)] {colorClasses[
+					class="border-l-4 bg-white p-5 shadow-[0_1px_3px_rgba(0,0,0,0.04)] {colorClasses[
 						t.color
 					]}"
 				>
@@ -584,7 +584,7 @@
 		<h2 class="mb-3 text-xl font-bold">3. Aclaraciones útiles</h2>
 
 		<div class="space-y-4">
-			<div class="rounded border-l-4 border-amber-400 bg-amber-50 p-4 text-sm">
+			<div class="border-l-4 border-amber-400 bg-amber-50 p-4 text-sm">
 				<p class="mb-2 font-bold text-amber-900">¿Una indicación puede pegarse a un act?</p>
 				<p class="text-amber-950">
 					En nuestro esquema, no. <code class="rounded bg-amber-100 px-1 text-xs">amendment</code>
@@ -597,7 +597,7 @@
 				</p>
 			</div>
 
-			<div class="rounded border-l-4 border-rose-400 bg-rose-50 p-4 text-sm">
+			<div class="border-l-4 border-rose-400 bg-rose-50 p-4 text-sm">
 				<p class="mb-2 font-bold text-rose-900">change_set vs amendment</p>
 				<p class="text-rose-950">
 					El <code class="rounded bg-rose-100 px-1 text-xs">amendment</code> es el "mensaje de
@@ -609,7 +609,7 @@
 				</p>
 			</div>
 
-			<div class="rounded border-l-4 border-blue-400 bg-blue-50 p-4 text-sm">
+			<div class="border-l-4 border-blue-400 bg-blue-50 p-4 text-sm">
 				<p class="mb-2 font-bold text-blue-900">Las relaciones débiles viven en links</p>
 				<p class="text-blue-950">
 					El diagrama solo muestra las relaciones fuertes. Cualquier <code
@@ -624,7 +624,7 @@
 				</p>
 			</div>
 
-			<div class="rounded border-l-4 border-gray-400 bg-gray-50 p-4 text-sm">
+			<div class="border-l-4 border-gray-400 bg-gray-50 p-4 text-sm">
 				<p class="mb-2 font-bold text-gray-900">Tipos no nativos de AKN</p>
 				<p class="text-gray-700">
 					<code class="rounded bg-gray-100 px-1 text-xs">citation</code>,
