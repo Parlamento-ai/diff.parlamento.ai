@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-04-30T21:16:46.500Z",
+  "source": "static/akn-xsd/akomantoso30.xsd",
+  "topLevelTypes": [
+    "amendmentList",
+    "officialGazette",
+    "documentCollection",
+    "act",
+    "bill",
+    "debateReport",
+    "debate",
+    "statement",
+    "amendment",
+    "judgment",
+    "portion",
+    "doc"
+  ],
+  "types": [
+    {
+      "name": "amendmentList",
+      "doc": "Element amendmentList is used for describing the structure and content of a collection of amendments",
+      "nodeCount": 76
+    },
+    {
+      "name": "officialGazette",
+      "doc": "Element officialGazette is used for describing the structure and content of an issue of an official gazette",
+      "nodeCount": 76
+    },
+    {
+      "name": "documentCollection",
+      "doc": "Element documentCollection is used for describing the structure and content of a collection of other documents chosen and combined for any reason whatsoever",
+      "nodeCount": 76
+    },
+    {
+      "name": "act",
+      "doc": "Element act is used for describing the structure and content of an act",
+      "nodeCount": 104
+    },
+    {
+      "name": "bill",
+      "doc": "Element bill is used for describing the structure and content of a bill",
+      "nodeCount": 104
+    },
+    {
+      "name": "debateReport",
+      "doc": "Element debateReport is used for describing the structure and content of a report",
+      "nodeCount": 136
+    },
+    {
+      "name": "debate",
+      "doc": "Element debate is used for describing the structure and content of a debate record",
+      "nodeCount": 80
+    },
+    {
+      "name": "statement",
+      "doc": "Element statement is used for describing the structure and content of an official document of a body that may or may not be normative in structure (e.g., statements, resolutions, etc.).",
+      "nodeCount": 136
+    },
+    {
+      "name": "amendment",
+      "doc": "Element amendment is used for describing the structure and content of an amendment",
+      "nodeCount": 64
+    },
+    {
+      "name": "judgment",
+      "doc": "Element judgment is used for describing the structure and content of a judgment",
+      "nodeCount": 63
+    },
+    {
+      "name": "portion",
+      "doc": "Element portion is used for describing the structure and content of an independent portion of a document",
+      "nodeCount": 81
+    },
+    {
+      "name": "doc",
+      "doc": "Element doc is used for describing the structure and content of any other document that is not included in the list of document explicitly managed by Akoma Ntoso",
+      "nodeCount": 136
+    }
+  ]
+}

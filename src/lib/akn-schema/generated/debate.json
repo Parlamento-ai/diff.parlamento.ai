@@ -1,0 +1,1093 @@
+{
+  "name": "debate",
+  "doc": "Element debate is used for describing the structure and content of a debate record",
+  "root": {
+    "kind": "element",
+    "name": "debate",
+    "typeRef": "debateStructure",
+    "doc": "Element debate is used for describing the structure and content of a debate record",
+    "card": {
+      "min": 1,
+      "max": 1
+    },
+    "attributes": [
+      {
+        "name": "name",
+        "typeRef": "xsd:string",
+        "use": "required"
+      },
+      {
+        "name": "contains",
+        "typeRef": "versionType",
+        "use": "optional",
+        "default": "originalVersion"
+      }
+    ],
+    "children": [
+      {
+        "kind": "element",
+        "name": "meta",
+        "card": {
+          "min": 1,
+          "max": 1
+        },
+        "attributes": [],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "identification",
+            "typeRef": "identification",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "publication",
+            "typeRef": "publication",
+            "card": {
+              "min": 0,
+              "max": 1
+            },
+            "doc": "The element publication is the metadata container specifying an official publication event for the FRBR expression of the document."
+          },
+          {
+            "kind": "cycle",
+            "name": "classification",
+            "typeRef": "classification",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "lifecycle",
+            "typeRef": "lifecycle",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "workflow",
+            "typeRef": "workflow",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "analysis",
+            "typeRef": "analysis",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "temporalData",
+            "typeRef": "temporalData",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "references",
+            "typeRef": "refItems",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            },
+            "doc": "The element references is a metadata container of all the references to entities external to the document mentioned in the document. They include references to legal documents of any form,a s well as references to people, organizations, events, roles, concepts, and anything else is managed by the Akoma Ntoso ontology."
+          },
+          {
+            "kind": "cycle",
+            "name": "notes",
+            "typeRef": "notes",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "proprietary",
+            "typeRef": "proprietary",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            },
+            "doc": "The element proprietary is a metadata container of any additional metadata property that does not belong to the Akoma Ntoso properties. Anything can be placed in this element."
+          },
+          {
+            "kind": "cycle",
+            "name": "presentation",
+            "typeRef": "presentation",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            },
+            "doc": "The element presentation is a metadata container of any presentation specification for the visual rendering of Akoam Ntoso elements. Anything can be placed in this element."
+          }
+        ],
+        "childMode": "sequence"
+      },
+      {
+        "kind": "element",
+        "name": "coverPage",
+        "typeRef": "basicopt",
+        "doc": "the element coverPage is used as a container of the text that acts as a cover page",
+        "card": {
+          "min": 0,
+          "max": 1
+        },
+        "attributes": [
+          {
+            "name": "class",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "style",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "title",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "status",
+            "typeRef": "statusType",
+            "use": "optional"
+          },
+          {
+            "name": "period",
+            "typeRef": "temporalGroupRef",
+            "use": "optional"
+          },
+          {
+            "name": "eId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "wId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "GUID",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "refersTo",
+            "use": "optional"
+          },
+          {
+            "name": "xml:lang",
+            "use": "optional"
+          },
+          {
+            "name": "xml:space",
+            "use": "optional"
+          },
+          {
+            "name": "xml:id",
+            "use": "optional"
+          },
+          {
+            "name": "alternativeTo",
+            "typeRef": "eIdRef",
+            "use": "optional"
+          }
+        ],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "foreign",
+            "typeRef": "anyOtherType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element foreign is a generic container for elements not belonging to the Akoma Ntoso namespace (e.g., mathematical formulas). It is a block element and thus can be placed in a container."
+          },
+          {
+            "kind": "cycle",
+            "name": "block",
+            "typeRef": "block",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element block is a generic element for a block. It can be placed in a container instead of any of the other blocks. The attribute name is required and gives a name to the element."
+          },
+          {
+            "kind": "cycle",
+            "name": "blockList",
+            "typeRef": "blockListType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element blockList is used as in a block context as a container of many individual item elements to be treated as in a list"
+          },
+          {
+            "kind": "cycle",
+            "name": "blockContainer",
+            "typeRef": "blockContainerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element blockContainer is used as a container of many individual block elements in a block context"
+          },
+          {
+            "kind": "cycle",
+            "name": "tblock",
+            "typeRef": "itemType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element tblock (titled block) is used to specify a container for blocks introduced by heading elements, similarly to a hierarchical structure"
+          },
+          {
+            "kind": "cycle",
+            "name": "toc",
+            "typeRef": "toc",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "ul",
+            "typeRef": "listItems",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element ul is an HTML element and is used in Akoma Ntoso as in HTML, for an unordered list of list item (elements li)"
+          },
+          {
+            "kind": "cycle",
+            "name": "ol",
+            "typeRef": "listItems",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element ol is an HTML element and is used in Akoma Ntoso as in HTML, for an ordered list of list item (elements li)"
+          },
+          {
+            "kind": "cycle",
+            "name": "table",
+            "typeRef": "table",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "p",
+            "typeRef": "inline",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element p is an HTML element and is used in Akoma Ntoso as in HTML, for the generic paragraph of text (a block)"
+          },
+          {
+            "kind": "cycle",
+            "name": "longTitle",
+            "typeRef": "blocksreq",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element longTitle is the section of the preface or coverPage that is called long title"
+          },
+          {
+            "kind": "cycle",
+            "name": "formula",
+            "typeRef": "formula",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element formula is a section of the preface or preamble that contains a formulaic expression that is systematically or frequently present in a preface or a preamble and has e precise legal meaning (e.g. an enacting formula). Use the refersTo attribute for the specification of the actual type of formula."
+          },
+          {
+            "kind": "cycle",
+            "name": "container",
+            "typeRef": "containerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element container is a generic element for a container."
+          }
+        ],
+        "childMode": "choice"
+      },
+      {
+        "kind": "element",
+        "name": "preface",
+        "typeRef": "prefaceopt",
+        "doc": "the element preface is used as a container of all prefacing material (e.g. headers, formulas, etc.)",
+        "card": {
+          "min": 0,
+          "max": 1
+        },
+        "attributes": [
+          {
+            "name": "class",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "style",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "title",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "status",
+            "typeRef": "statusType",
+            "use": "optional"
+          },
+          {
+            "name": "period",
+            "typeRef": "temporalGroupRef",
+            "use": "optional"
+          },
+          {
+            "name": "eId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "wId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "GUID",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "refersTo",
+            "use": "optional"
+          },
+          {
+            "name": "xml:lang",
+            "use": "optional"
+          },
+          {
+            "name": "xml:space",
+            "use": "optional"
+          },
+          {
+            "name": "xml:id",
+            "use": "optional"
+          },
+          {
+            "name": "alternativeTo",
+            "typeRef": "eIdRef",
+            "use": "optional"
+          }
+        ],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "foreign",
+            "typeRef": "anyOtherType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element foreign is a generic container for elements not belonging to the Akoma Ntoso namespace (e.g., mathematical formulas). It is a block element and thus can be placed in a container."
+          },
+          {
+            "kind": "cycle",
+            "name": "block",
+            "typeRef": "block",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element block is a generic element for a block. It can be placed in a container instead of any of the other blocks. The attribute name is required and gives a name to the element."
+          },
+          {
+            "kind": "cycle",
+            "name": "blockList",
+            "typeRef": "blockListType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element blockList is used as in a block context as a container of many individual item elements to be treated as in a list"
+          },
+          {
+            "kind": "cycle",
+            "name": "blockContainer",
+            "typeRef": "blockContainerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element blockContainer is used as a container of many individual block elements in a block context"
+          },
+          {
+            "kind": "cycle",
+            "name": "tblock",
+            "typeRef": "itemType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element tblock (titled block) is used to specify a container for blocks introduced by heading elements, similarly to a hierarchical structure"
+          },
+          {
+            "kind": "cycle",
+            "name": "toc",
+            "typeRef": "toc",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "ul",
+            "typeRef": "listItems",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element ul is an HTML element and is used in Akoma Ntoso as in HTML, for an unordered list of list item (elements li)"
+          },
+          {
+            "kind": "cycle",
+            "name": "ol",
+            "typeRef": "listItems",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element ol is an HTML element and is used in Akoma Ntoso as in HTML, for an ordered list of list item (elements li)"
+          },
+          {
+            "kind": "cycle",
+            "name": "table",
+            "typeRef": "table",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "p",
+            "typeRef": "inline",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element p is an HTML element and is used in Akoma Ntoso as in HTML, for the generic paragraph of text (a block)"
+          },
+          {
+            "kind": "cycle",
+            "name": "longTitle",
+            "typeRef": "blocksreq",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element longTitle is the section of the preface or coverPage that is called long title"
+          },
+          {
+            "kind": "cycle",
+            "name": "formula",
+            "typeRef": "formula",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element formula is a section of the preface or preamble that contains a formulaic expression that is systematically or frequently present in a preface or a preamble and has e precise legal meaning (e.g. an enacting formula). Use the refersTo attribute for the specification of the actual type of formula."
+          },
+          {
+            "kind": "cycle",
+            "name": "container",
+            "typeRef": "containerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element container is a generic element for a container."
+          }
+        ],
+        "childMode": "choice"
+      },
+      {
+        "kind": "element",
+        "name": "debateBody",
+        "typeRef": "debateBodyType",
+        "doc": "the element debateBody is the container of the main hierarchy of a debate",
+        "card": {
+          "min": 1,
+          "max": 1
+        },
+        "attributes": [
+          {
+            "name": "class",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "style",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "title",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "status",
+            "typeRef": "statusType",
+            "use": "optional"
+          },
+          {
+            "name": "period",
+            "typeRef": "temporalGroupRef",
+            "use": "optional"
+          },
+          {
+            "name": "eId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "wId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "GUID",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "refersTo",
+            "use": "optional"
+          },
+          {
+            "name": "xml:lang",
+            "use": "optional"
+          },
+          {
+            "name": "xml:space",
+            "use": "optional"
+          },
+          {
+            "name": "xml:id",
+            "use": "optional"
+          },
+          {
+            "name": "alternativeTo",
+            "typeRef": "eIdRef",
+            "use": "optional"
+          }
+        ],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "administrationOfOath",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain the administration of an oath"
+          },
+          {
+            "kind": "cycle",
+            "name": "rollCall",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain a roll call of individuals"
+          },
+          {
+            "kind": "cycle",
+            "name": "prayers",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain prayers"
+          },
+          {
+            "kind": "cycle",
+            "name": "oralStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain oral statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "writtenStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain written statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "personalStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain written statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "ministerialStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain written statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "resolutions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain resolutions"
+          },
+          {
+            "kind": "cycle",
+            "name": "nationalInterest",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain resolutions"
+          },
+          {
+            "kind": "cycle",
+            "name": "declarationOfVote",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to the declaration of votes"
+          },
+          {
+            "kind": "cycle",
+            "name": "communication",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain communications from the house"
+          },
+          {
+            "kind": "cycle",
+            "name": "petitions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to petitions"
+          },
+          {
+            "kind": "cycle",
+            "name": "papers",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to the display of papers"
+          },
+          {
+            "kind": "cycle",
+            "name": "noticesOfMotion",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to the notices of motions"
+          },
+          {
+            "kind": "cycle",
+            "name": "questions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to questions"
+          },
+          {
+            "kind": "cycle",
+            "name": "address",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to addresses"
+          },
+          {
+            "kind": "cycle",
+            "name": "proceduralMotions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to procedural motions"
+          },
+          {
+            "kind": "cycle",
+            "name": "pointOfOrder",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to points of order"
+          },
+          {
+            "kind": "cycle",
+            "name": "adjournment",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain adjournment notices"
+          },
+          {
+            "kind": "cycle",
+            "name": "debateSection",
+            "typeRef": "debateSection",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a generic structural container for all other parts of a debates that are not explicitly supported with a named element"
+          }
+        ],
+        "childMode": "sequence"
+      },
+      {
+        "kind": "element",
+        "name": "conclusions",
+        "typeRef": "basicopt",
+        "doc": "the element conclusion is used as a container of all concluding material (e.g. dates, signatures, formulas, etc.)",
+        "card": {
+          "min": 0,
+          "max": 1
+        },
+        "attributes": [
+          {
+            "name": "class",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "style",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "title",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "status",
+            "typeRef": "statusType",
+            "use": "optional"
+          },
+          {
+            "name": "period",
+            "typeRef": "temporalGroupRef",
+            "use": "optional"
+          },
+          {
+            "name": "eId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "wId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "GUID",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "refersTo",
+            "use": "optional"
+          },
+          {
+            "name": "xml:lang",
+            "use": "optional"
+          },
+          {
+            "name": "xml:space",
+            "use": "optional"
+          },
+          {
+            "name": "xml:id",
+            "use": "optional"
+          },
+          {
+            "name": "alternativeTo",
+            "typeRef": "eIdRef",
+            "use": "optional"
+          }
+        ],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "foreign",
+            "typeRef": "anyOtherType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element foreign is a generic container for elements not belonging to the Akoma Ntoso namespace (e.g., mathematical formulas). It is a block element and thus can be placed in a container."
+          },
+          {
+            "kind": "cycle",
+            "name": "block",
+            "typeRef": "block",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element block is a generic element for a block. It can be placed in a container instead of any of the other blocks. The attribute name is required and gives a name to the element."
+          },
+          {
+            "kind": "cycle",
+            "name": "blockList",
+            "typeRef": "blockListType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element blockList is used as in a block context as a container of many individual item elements to be treated as in a list"
+          },
+          {
+            "kind": "cycle",
+            "name": "blockContainer",
+            "typeRef": "blockContainerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element blockContainer is used as a container of many individual block elements in a block context"
+          },
+          {
+            "kind": "cycle",
+            "name": "tblock",
+            "typeRef": "itemType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element tblock (titled block) is used to specify a container for blocks introduced by heading elements, similarly to a hierarchical structure"
+          },
+          {
+            "kind": "cycle",
+            "name": "toc",
+            "typeRef": "toc",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "ul",
+            "typeRef": "listItems",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element ul is an HTML element and is used in Akoma Ntoso as in HTML, for an unordered list of list item (elements li)"
+          },
+          {
+            "kind": "cycle",
+            "name": "ol",
+            "typeRef": "listItems",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element ol is an HTML element and is used in Akoma Ntoso as in HTML, for an ordered list of list item (elements li)"
+          },
+          {
+            "kind": "cycle",
+            "name": "table",
+            "typeRef": "table",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "p",
+            "typeRef": "inline",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element p is an HTML element and is used in Akoma Ntoso as in HTML, for the generic paragraph of text (a block)"
+          },
+          {
+            "kind": "cycle",
+            "name": "longTitle",
+            "typeRef": "blocksreq",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element longTitle is the section of the preface or coverPage that is called long title"
+          },
+          {
+            "kind": "cycle",
+            "name": "formula",
+            "typeRef": "formula",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element formula is a section of the preface or preamble that contains a formulaic expression that is systematically or frequently present in a preface or a preamble and has e precise legal meaning (e.g. an enacting formula). Use the refersTo attribute for the specification of the actual type of formula."
+          },
+          {
+            "kind": "cycle",
+            "name": "container",
+            "typeRef": "containerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element container is a generic element for a container."
+          }
+        ],
+        "childMode": "choice"
+      },
+      {
+        "kind": "element",
+        "name": "attachments",
+        "card": {
+          "min": 0,
+          "max": 1
+        },
+        "attributes": [],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "attachment",
+            "typeRef": "docContainerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element attachment is used as a container of individual attachment elements"
+          }
+        ],
+        "childMode": "sequence"
+      },
+      {
+        "kind": "element",
+        "name": "components",
+        "card": {
+          "min": 0,
+          "max": 1
+        },
+        "attributes": [
+          {
+            "name": "eId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "wId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "GUID",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          }
+        ],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "component",
+            "typeRef": "docContainerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element component is a container of a subdocument specified in a composite document"
+          }
+        ],
+        "childMode": "sequence"
+      }
+    ],
+    "childMode": "sequence"
+  }
+}

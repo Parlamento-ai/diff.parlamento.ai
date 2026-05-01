@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Marked } from 'marked';
@@ -77,6 +77,59 @@ export const load: PageServerLoad = async ({ params }) => {
 				openGraph: { title: 'AKN.db Overview — Diff Docs' }
 			})
 		};
+	}
+
+	// Bare explorer/<typeName> sidebar slugs (act, bill, debate, ...) redirect to the
+	// schema reference page for that type. The schema view is the canonical "type details".
+	const TOP_LEVEL_AKN_TYPES = new Set([
+		'amendmentList',
+		'officialGazette',
+		'documentCollection',
+		'act',
+		'bill',
+		'debateReport',
+		'debate',
+		'statement',
+		'amendment',
+		'judgment',
+		'portion',
+		'doc'
+	]);
+	if (slug.startsWith('explorer/')) {
+		const tail = slug.slice('explorer/'.length);
+		if (TOP_LEVEL_AKN_TYPES.has(tail)) {
+			redirect(307, `/docs/explorer/schema/${tail}`);
+		}
+	}
+
+	// AKN schema explorer — per-type structural view (reads vendored OASIS XSD via build-time JSON)
+	if (slug.startsWith('explorer/schema/')) {
+		const typeName = slug.slice('explorer/schema/'.length);
+		try {
+			const schemaPath = join(process.cwd(), 'src/lib/akn-schema/generated', `${typeName}.json`);
+			const raw = await readFile(schemaPath, 'utf-8');
+			const parsed = JSON.parse(raw) as { name: string; doc?: string; root: unknown };
+			const indexPath = join(process.cwd(), 'src/lib/akn-schema/generated/index.json');
+			const indexRaw = await readFile(indexPath, 'utf-8');
+			const indexJson = JSON.parse(indexRaw) as {
+				topLevelTypes: string[];
+				types: { name: string; doc?: string; nodeCount: number }[];
+			};
+			return {
+				mode: 'schema-type' as const,
+				schema: parsed,
+				typeName,
+				topLevelTypes: indexJson.topLevelTypes,
+				title: `<${typeName}> — Schema reference`,
+				section: 'explorer' as const,
+				pageMetaTags: Object.freeze({
+					title: `<${typeName}> schema — AKN reference`,
+					openGraph: { title: `<${typeName}> schema — AKN reference` }
+				})
+			};
+		} catch {
+			error(404, `Schema not found for type: ${typeName}`);
+		}
 	}
 
 	// Explorer overview page

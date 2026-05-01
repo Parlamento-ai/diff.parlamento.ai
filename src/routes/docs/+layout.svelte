@@ -130,11 +130,15 @@
 					</h3>
 					<ul class="space-y-0.5">
 						{#each aknDocs as doc (doc.slug)}
+							{@const isSchemaEntry = doc.slug.startsWith('explorer/schema/')}
+							{@const isActive = isSchemaEntry
+								? activeSlug.startsWith('explorer/schema/')
+								: activeSlug === doc.slug}
 							<li>
 								<a
 									href="/docs/{doc.slug}"
 									class="block px-2 py-1.5 text-sm rounded-md transition-colors
-										{activeSlug === doc.slug
+										{isActive
 											? 'bg-gray-100 text-gray-900 font-medium'
 											: 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}"
 								>

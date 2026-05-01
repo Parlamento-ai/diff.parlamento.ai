@@ -36,7 +36,8 @@ export const docs: DocEntry[] = [
 	{ slug: 'akn/inline-elements', title: 'Inline elements', section: 'akn' },
 	{ slug: 'akn/debates', title: 'Debates', section: 'akn' },
 	{ slug: 'akn/naming-convention', title: 'Naming convention', section: 'akn' },
-	{ slug: 'akn/national-profiles', title: 'National profiles', section: 'akn' }
+	{ slug: 'akn/national-profiles', title: 'National profiles', section: 'akn' },
+	{ slug: 'explorer/schema/act', title: 'Schema reference', section: 'akn' }
 ];
 
 /** Map from URL slug to actual filename on disk */

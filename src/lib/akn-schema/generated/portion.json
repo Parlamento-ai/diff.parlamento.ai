@@ -1,0 +1,885 @@
+{
+  "name": "portion",
+  "doc": "Element portion is used for describing the structure and content of an independent portion of a document",
+  "root": {
+    "kind": "element",
+    "name": "portion",
+    "typeRef": "portionStructure",
+    "doc": "Element portion is used for describing the structure and content of an independent portion of a document",
+    "card": {
+      "min": 1,
+      "max": 1
+    },
+    "attributes": [
+      {
+        "name": "includedIn",
+        "typeRef": "referenceRef",
+        "use": "required"
+      }
+    ],
+    "children": [
+      {
+        "kind": "element",
+        "name": "meta",
+        "card": {
+          "min": 1,
+          "max": 1
+        },
+        "attributes": [],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "identification",
+            "typeRef": "identification",
+            "card": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "publication",
+            "typeRef": "publication",
+            "card": {
+              "min": 0,
+              "max": 1
+            },
+            "doc": "The element publication is the metadata container specifying an official publication event for the FRBR expression of the document."
+          },
+          {
+            "kind": "cycle",
+            "name": "classification",
+            "typeRef": "classification",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "lifecycle",
+            "typeRef": "lifecycle",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "workflow",
+            "typeRef": "workflow",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "analysis",
+            "typeRef": "analysis",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "temporalData",
+            "typeRef": "temporalData",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "references",
+            "typeRef": "refItems",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            },
+            "doc": "The element references is a metadata container of all the references to entities external to the document mentioned in the document. They include references to legal documents of any form,a s well as references to people, organizations, events, roles, concepts, and anything else is managed by the Akoma Ntoso ontology."
+          },
+          {
+            "kind": "cycle",
+            "name": "notes",
+            "typeRef": "notes",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            }
+          },
+          {
+            "kind": "cycle",
+            "name": "proprietary",
+            "typeRef": "proprietary",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            },
+            "doc": "The element proprietary is a metadata container of any additional metadata property that does not belong to the Akoma Ntoso properties. Anything can be placed in this element."
+          },
+          {
+            "kind": "cycle",
+            "name": "presentation",
+            "typeRef": "presentation",
+            "card": {
+              "min": 0,
+              "max": "unbounded"
+            },
+            "doc": "The element presentation is a metadata container of any presentation specification for the visual rendering of Akoam Ntoso elements. Anything can be placed in this element."
+          }
+        ],
+        "childMode": "sequence"
+      },
+      {
+        "kind": "element",
+        "name": "portionBody",
+        "typeRef": "portionBodyType",
+        "doc": "the element portionBody is the container of a portion of another document",
+        "card": {
+          "min": 1,
+          "max": 1
+        },
+        "attributes": [
+          {
+            "name": "class",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "style",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "title",
+            "typeRef": "xsd:string",
+            "use": "optional"
+          },
+          {
+            "name": "status",
+            "typeRef": "statusType",
+            "use": "optional"
+          },
+          {
+            "name": "period",
+            "typeRef": "temporalGroupRef",
+            "use": "optional"
+          },
+          {
+            "name": "eId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "wId",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "GUID",
+            "typeRef": "noWhiteSpace",
+            "use": "optional"
+          },
+          {
+            "name": "refersTo",
+            "use": "optional"
+          },
+          {
+            "name": "xml:lang",
+            "use": "optional"
+          },
+          {
+            "name": "xml:space",
+            "use": "optional"
+          },
+          {
+            "name": "xml:id",
+            "use": "optional"
+          },
+          {
+            "name": "alternativeTo",
+            "typeRef": "eIdRef",
+            "use": "optional"
+          }
+        ],
+        "children": [
+          {
+            "kind": "cycle",
+            "name": "recitals",
+            "typeRef": "recitalHierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element recitals is the section of the preamble that contains recitals"
+          },
+          {
+            "kind": "cycle",
+            "name": "recital",
+            "typeRef": "itemType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element recital is the individual element of the preface that is called recital"
+          },
+          {
+            "kind": "cycle",
+            "name": "citations",
+            "typeRef": "citationHierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element citations is the section of the preamble that contains citations"
+          },
+          {
+            "kind": "cycle",
+            "name": "citation",
+            "typeRef": "itemType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element citation is the individual element of the preface that is called citation"
+          },
+          {
+            "kind": "cycle",
+            "name": "longTitle",
+            "typeRef": "blocksreq",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element longTitle is the section of the preface or coverPage that is called long title"
+          },
+          {
+            "kind": "cycle",
+            "name": "formula",
+            "typeRef": "formula",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element formula is a section of the preface or preamble that contains a formulaic expression that is systematically or frequently present in a preface or a preamble and has e precise legal meaning (e.g. an enacting formula). Use the refersTo attribute for the specification of the actual type of formula."
+          },
+          {
+            "kind": "cycle",
+            "name": "coverPage",
+            "typeRef": "basicopt",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element coverPage is used as a container of the text that acts as a cover page"
+          },
+          {
+            "kind": "cycle",
+            "name": "preface",
+            "typeRef": "prefaceopt",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element preface is used as a container of all prefacing material (e.g. headers, formulas, etc.)"
+          },
+          {
+            "kind": "cycle",
+            "name": "preamble",
+            "typeRef": "preambleopt",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element preamble is used as a container of the text that opens the main body of the document as a preamble"
+          },
+          {
+            "kind": "cycle",
+            "name": "container",
+            "typeRef": "containerType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element container is a generic element for a container."
+          },
+          {
+            "kind": "cycle",
+            "name": "administrationOfOath",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain the administration of an oath"
+          },
+          {
+            "kind": "cycle",
+            "name": "rollCall",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain a roll call of individuals"
+          },
+          {
+            "kind": "cycle",
+            "name": "prayers",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain prayers"
+          },
+          {
+            "kind": "cycle",
+            "name": "oralStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain oral statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "writtenStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain written statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "personalStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain written statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "ministerialStatements",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain written statements by participants"
+          },
+          {
+            "kind": "cycle",
+            "name": "resolutions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain resolutions"
+          },
+          {
+            "kind": "cycle",
+            "name": "nationalInterest",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain resolutions"
+          },
+          {
+            "kind": "cycle",
+            "name": "declarationOfVote",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to the declaration of votes"
+          },
+          {
+            "kind": "cycle",
+            "name": "communication",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain communications from the house"
+          },
+          {
+            "kind": "cycle",
+            "name": "petitions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to petitions"
+          },
+          {
+            "kind": "cycle",
+            "name": "papers",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to the display of papers"
+          },
+          {
+            "kind": "cycle",
+            "name": "noticesOfMotion",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to the notices of motions"
+          },
+          {
+            "kind": "cycle",
+            "name": "questions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to questions"
+          },
+          {
+            "kind": "cycle",
+            "name": "address",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to addresses"
+          },
+          {
+            "kind": "cycle",
+            "name": "proceduralMotions",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to procedural motions"
+          },
+          {
+            "kind": "cycle",
+            "name": "pointOfOrder",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that are relevant to points of order"
+          },
+          {
+            "kind": "cycle",
+            "name": "adjournment",
+            "typeRef": "althierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a structural container for parts of a debates that contain adjournment notices"
+          },
+          {
+            "kind": "cycle",
+            "name": "debateSection",
+            "typeRef": "debateSection",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a generic structural container for all other parts of a debates that are not explicitly supported with a named element"
+          },
+          {
+            "kind": "cycle",
+            "name": "div",
+            "typeRef": "blocksreq",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "The element div is an HTML element, but is NOT used in Akoma Ntoso as in HTML. Instead of being used as a generic block, Akoma Ntoso uses div as a generic container (as in common practice)"
+          },
+          {
+            "kind": "cycle",
+            "name": "hcontainer",
+            "typeRef": "hcontainer",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element hcontainer is a generic element for a hierarchical container. It can be placed in a hierarchy instead of any of the other hierarchical containers. The attribute name is required and gives a name to the element."
+          },
+          {
+            "kind": "cycle",
+            "name": "clause",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"clause\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "section",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"section\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "part",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"part\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "paragraph",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"paragraph\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "chapter",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"chapter\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "title",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"title\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "article",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"article\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "book",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"book\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "tome",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"tome\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "division",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"division\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "list",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"list\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "point",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"point\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "indent",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"indent\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "alinea",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"alinea\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "rule",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"rule\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subrule",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subrule\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "proviso",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"proviso\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subsection",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subsection\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subpart",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subpart\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subparagraph",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subparagraph\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subchapter",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subchapter\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subtitle",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subtitle\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subdivision",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subdivision\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "subclause",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"subclause\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "sublist",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"sublist\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "level",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"level\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "transitional",
+            "typeRef": "hierarchy",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "this element is a hierarchical container called \"transitional\" either explicitly or due to the local tradition"
+          },
+          {
+            "kind": "cycle",
+            "name": "speechGroup",
+            "typeRef": "speechGroup",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element speechGroup is a container of speech elements. This element is meant to pooint out, in a complex sequence of individual speech elements, the main contributor, i.e., the individual speech who was introducedand expected and that is causing the complex sequence that follows. Attributes by, as and to are those of the main speech."
+          },
+          {
+            "kind": "cycle",
+            "name": "speech",
+            "typeRef": "speechType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element speech is a container of a single speech utterance in a debate. Dialogs between speakers need a speech element each"
+          },
+          {
+            "kind": "cycle",
+            "name": "question",
+            "typeRef": "speechType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element question is a container of a single official question as proposed by an MP to a person holding an official position"
+          },
+          {
+            "kind": "cycle",
+            "name": "answer",
+            "typeRef": "speechType",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element answer is a container of a single official answer to a question"
+          },
+          {
+            "kind": "cycle",
+            "name": "other",
+            "typeRef": "blocksreq",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element other is a container of parts of a debate that are not speeches, nor scene comments (e.g., lists of papers, etc.)"
+          },
+          {
+            "kind": "cycle",
+            "name": "scene",
+            "typeRef": "inline",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element scene is a container of descriptions of the scene elements happening in a given moment during a debate (e.g., applauses)"
+          },
+          {
+            "kind": "cycle",
+            "name": "narrative",
+            "typeRef": "inline",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element narrative is a block element in a debate to mark description in the third person of events taking place in the meeting, e.g. \"Mr X. takes the Chair\""
+          },
+          {
+            "kind": "cycle",
+            "name": "summary",
+            "typeRef": "inline",
+            "card": {
+              "min": 1,
+              "max": 1
+            },
+            "doc": "the element summary is a block element in a debate to mark summaries of speeches that are individually not interesting (e.g.: \"Question put and agreed to\")"
+          }
+        ],
+        "childMode": "choice"
+      }
+    ],
+    "childMode": "sequence"
+  }
+}
