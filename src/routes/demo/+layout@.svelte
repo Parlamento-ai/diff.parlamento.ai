@@ -59,10 +59,10 @@
 			{/if}
 
 			<a
-				href="/docs/akndb/overview"
+				href="/demo/notes"
 				class="ml-auto text-xs text-gray-500 hover:text-gray-900 hover:underline"
 			>
-				schema philosophy →
+				research notes →
 			</a>
 		</div>
 
