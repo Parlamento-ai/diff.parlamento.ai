@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
 import { and, eq } from 'drizzle-orm';
 import { getDb, schema } from '../../../db';
-import { parseBill } from '$lib/bill/parse';
+import { parseBill, parseLinkedTimelineDocument } from '$lib/bill/parse';
 import { analyzeAknDocument } from '$lib/aknlint/analyze';
 import { billProfile } from '../../../../../../research/schema/profiles/bill';
 
@@ -51,6 +51,7 @@ export async function load({ params }) {
 			type: schema.DocumentTable.type,
 			nativeId: schema.DocumentTable.nativeId,
 			title: schema.DocumentTable.title,
+			xml: schema.DocumentTable.xml,
 			publishedAt: schema.DocumentTable.publishedAt,
 			lastActivityAt: schema.DocumentTable.lastActivityAt,
 			relation: schema.DocumentLinkTable.relation
@@ -68,10 +69,39 @@ export async function load({ params }) {
 		)
 		.all();
 
+	parsed.timeline = [
+		...parsed.timeline,
+		...incomingAmendments.flatMap((amendment) =>
+			parseLinkedTimelineDocument({
+				xml: amendment.xml,
+				origin: {
+					type: 'amendment',
+					nativeId: amendment.nativeId,
+					title: amendment.title,
+					href: `/demo/${amendment.country}/${amendment.type}/${amendment.nativeId}`
+				}
+			})
+		)
+	].sort((a, b) => {
+		if (a.date !== b.date) return a.date < b.date ? -1 : 1;
+		const aSource = a.origin?.type ?? 'bill';
+		const bSource = b.origin?.type ?? 'bill';
+		if (aSource !== bSource) return aSource === 'bill' ? -1 : 1;
+		return a.id.localeCompare(b.id);
+	});
+
 	return {
 		doc,
 		parsed,
-		amendments: incomingAmendments,
+		amendments: incomingAmendments.map((amendment) => ({
+			country: amendment.country,
+			type: amendment.type,
+			nativeId: amendment.nativeId,
+			title: amendment.title,
+			publishedAt: amendment.publishedAt,
+			lastActivityAt: amendment.lastActivityAt,
+			relation: amendment.relation
+		})),
 		lint
 	};
 }

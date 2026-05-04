@@ -76,6 +76,9 @@
 
 	function rowTooltip(row: TimelineRow): string {
 		const parts: string[] = [];
+		if (row.origin?.type === 'amendment') {
+			parts.push(`This event comes from linked amendment document ${row.origin.nativeId}.`);
+		}
 		if (row.lifecycle && row.step) {
 			parts.push(
 				`This event appears as both a <workflow>/<step> (the procedural fact: who did what) and a <lifecycle>/<eventRef> (the resulting new version of the bill).`
@@ -312,8 +315,9 @@
 								<span class="date mono">{row.date || '—'}</span>
 								<span class="content">
 									<span class="label">{row.label}</span>
-									{#if row.chamber || row.modifications.length || row.warnings.length}
+									{#if row.origin || row.chamber || row.modifications.length || row.warnings.length}
 										<span class="meta">
+											{#if row.origin?.type === 'amendment'}<span class="origin-chip">amendment</span>{/if}
 											{#if row.chamber}<span class="chamber">{row.chamber}</span>{/if}
 											{#if row.modifications.length}
 												<span class="mod-count" title="{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'}">
@@ -354,6 +358,22 @@
 						<div class="event-label">{selectedRow.label}</div>
 
 						<div class="origin-grid">
+							{#if selectedRow.origin}
+								<div class="origin">
+									<div class="origin-head">
+										From linked <AknTerm term={selectedRow.origin.type} /> document
+									</div>
+									<dl class="kv">
+										<dt>nativeId</dt>
+										<dd class="mono">{selectedRow.origin.nativeId}</dd>
+										{#if selectedRow.origin.title}
+											<dt>title</dt>
+											<dd>{selectedRow.origin.title}</dd>
+										{/if}
+									</dl>
+								</div>
+							{/if}
+
 							{#if selectedRow.lifecycle}
 								<div class="origin">
 									<div class="origin-head">
@@ -739,6 +759,13 @@
 		font-family: var(--font-heading);
 		font-size: 9px;
 		color: #6b7280;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+	.origin-chip {
+		font-family: var(--font-heading);
+		font-size: 9px;
+		color: #92400e;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
 	}

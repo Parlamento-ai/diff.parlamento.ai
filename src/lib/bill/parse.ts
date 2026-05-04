@@ -57,11 +57,19 @@ export type TimelineRow = {
 	label: string;
 	chamber?: string;
 	agent?: string;
+	origin?: TimelineOrigin;
 	lifecycle?: LifecycleEvent;
 	step?: WorkflowStep;
 	modifications: Modification[];
 	kind: 'procedural' | 'version' | 'amendment' | 'terminal';
 	warnings: string[];
+};
+
+export type TimelineOrigin = {
+	type: 'bill' | 'amendment';
+	nativeId: string;
+	title?: string;
+	href?: string;
 };
 
 export type BodyNode = {
@@ -92,6 +100,11 @@ export type ParsedBill = {
 	warnings: string[];
 	/** Map from eId in body → list of timeline row ids that touched it. */
 	spanToEvents: Record<string, string[]>;
+};
+
+export type TimelineDocument = {
+	xml: string;
+	origin: TimelineOrigin;
 };
 
 const TERMINAL_REFS = new Set([
@@ -245,98 +258,7 @@ export function parseBill(xml: string): ParsedBill {
 	}
 
 	const references = parseReferences(asObj(meta?.['references']));
-	const refIndex = new Map(references.map((r) => [r.eId, r]));
-
-	const lifecycleEvents = parseLifecycle(asObj(meta?.['lifecycle']));
-	const workflowSteps = parseWorkflow(asObj(meta?.['workflow']));
-	const analysis = asObj(meta?.['analysis']);
-	const modifications = parseAnalysis(analysis);
-
-	// Group by TLCEvent id (the `source` attr on eventRef/step). Missing
-	// id → synthetic per-row id so the timeline still renders.
-	type Bucket = {
-		id: string;
-		lifecycle?: LifecycleEvent;
-		step?: WorkflowStep;
-		modifications: Modification[];
-	};
-	const buckets = new Map<string, Bucket>();
-	let synthetic = 0;
-	const bucketFor = (key: string | undefined): Bucket => {
-		const id = key ?? `__syn_${synthetic++}`;
-		let b = buckets.get(id);
-		if (!b) {
-			b = { id, modifications: [] };
-			buckets.set(id, b);
-		}
-		return b;
-	};
-
-	for (const ev of lifecycleEvents) {
-		const b = bucketFor(stripHash(ev.tlcEventId));
-		b.lifecycle = ev;
-	}
-	for (const s of workflowSteps) {
-		const key = stripHash(s.source) ?? stripHash(s.refersTo);
-		const b = bucketFor(key);
-		b.step = s;
-	}
-	for (const m of modifications) {
-		const key = stripHash(m.source);
-		// If we don't know which event caused this modification, drop it
-		// into a dedicated bucket so it still surfaces.
-		const b = bucketFor(key);
-		b.modifications.push(m);
-	}
-
-	const timeline: TimelineRow[] = [];
-	for (const b of buckets.values()) {
-		const ev = b.lifecycle;
-		const st = b.step;
-		const date = ev?.date ?? st?.date ?? '';
-		const refType = stripHash(ev?.source);
-		const isTerminal = refType ? TERMINAL_REFS.has(refType) : false;
-		const hasMods = b.modifications.length > 0;
-		const kind: TimelineRow['kind'] = isTerminal
-			? 'terminal'
-			: hasMods
-				? 'amendment'
-				: ev
-					? 'version'
-					: 'procedural';
-
-		const rowWarnings: string[] = [];
-
-		// Dangling event link on a step
-		if ((st?.source || st?.refersTo) && !ev) {
-			const key = stripHash(st.source) ?? stripHash(st.refersTo)!;
-			if (!references.find((r) => r.eId === key) && !buckets.has(key)) {
-				rowWarnings.push(
-					`<step> event link "${st.source ?? st.refersTo}" does not resolve to any TLCEvent or lifecycle event.`
-				);
-			}
-		}
-
-		const label =
-			ev?.showAs ??
-			st?.outcome ??
-			st?.showAs ??
-			(refType ? humanize(refType) : 'event') ??
-			'event';
-
-		timeline.push({
-			id: b.id,
-			date,
-			label,
-			chamber: ev?.chamber,
-			agent: st?.agent ? refIndex.get(stripHash(st.agent) ?? '')?.showAs ?? st.agent : undefined,
-			lifecycle: ev,
-			step: st,
-			modifications: b.modifications,
-			kind,
-			warnings: rowWarnings
-		});
-	}
+	const timeline = parseTimelineFromMeta(meta, references);
 	timeline.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 
 	let bodyNode = asObj(bill['body']);
@@ -378,6 +300,132 @@ export function parseBill(xml: string): ParsedBill {
 		spanToEvents,
 		warnings
 	};
+}
+
+export function parseLinkedTimelineDocument(doc: TimelineDocument): TimelineRow[] {
+	let parsed: N;
+	try {
+		parsed = parser.parse(doc.xml) as N;
+	} catch {
+		return [];
+	}
+
+	const akn = asObj(parsed['akomaNtoso']) ?? parsed;
+	const root = findAknDocumentRoot(akn);
+	const meta = asObj(root?.['meta']);
+	if (!meta) return [];
+
+	const references = parseReferences(asObj(meta['references']));
+	return parseTimelineFromMeta(meta, references, doc.origin).sort((a, b) =>
+		a.date < b.date ? -1 : a.date > b.date ? 1 : 0
+	);
+}
+
+function findAknDocumentRoot(akn: N): N | undefined {
+	for (const [key, value] of Object.entries(akn)) {
+		if (key.startsWith('@_') || key === '#text') continue;
+		const obj = asObj(value);
+		if (obj) return obj;
+	}
+	return undefined;
+}
+
+function parseTimelineFromMeta(
+	meta: N | undefined,
+	references: Reference[],
+	origin?: TimelineOrigin
+): TimelineRow[] {
+	const refIndex = new Map(references.map((r) => [r.eId, r]));
+	const lifecycleEvents = parseLifecycle(asObj(meta?.['lifecycle']));
+	const workflowSteps = parseWorkflow(asObj(meta?.['workflow']));
+	const modifications = parseAnalysis(asObj(meta?.['analysis']));
+
+	type Bucket = {
+		id: string;
+		lifecycle?: LifecycleEvent;
+		step?: WorkflowStep;
+		modifications: Modification[];
+	};
+	const buckets = new Map<string, Bucket>();
+	let synthetic = 0;
+	const bucketFor = (key: string | undefined): Bucket => {
+		const baseId = key ?? `__syn_${synthetic++}`;
+		const id = origin ? `${origin.type}:${origin.nativeId}:${baseId}` : baseId;
+		let b = buckets.get(id);
+		if (!b) {
+			b = { id, modifications: [] };
+			buckets.set(id, b);
+		}
+		return b;
+	};
+
+	for (const ev of lifecycleEvents) {
+		const b = bucketFor(stripHash(ev.tlcEventId));
+		b.lifecycle = ev;
+	}
+	for (const s of workflowSteps) {
+		const key = stripHash(s.source) ?? stripHash(s.refersTo);
+		const b = bucketFor(key);
+		b.step = s;
+	}
+	for (const m of modifications) {
+		const key = stripHash(m.source);
+		const b = bucketFor(key);
+		b.modifications.push(m);
+	}
+
+	const timeline: TimelineRow[] = [];
+	for (const b of buckets.values()) {
+		const ev = b.lifecycle;
+		const st = b.step;
+		const date = ev?.date ?? st?.date ?? '';
+		const refType = stripHash(ev?.source);
+		const isTerminal = refType ? TERMINAL_REFS.has(refType) : false;
+		const hasMods = b.modifications.length > 0;
+		const kind: TimelineRow['kind'] = origin?.type === 'amendment'
+			? 'amendment'
+			: isTerminal
+				? 'terminal'
+				: hasMods
+					? 'amendment'
+					: ev
+						? 'version'
+						: 'procedural';
+
+		const rowWarnings: string[] = [];
+
+		if ((st?.source || st?.refersTo) && !ev) {
+			const key = stripHash(st.source) ?? stripHash(st.refersTo)!;
+			if (!references.find((r) => r.eId === key) && !buckets.has(key)) {
+				rowWarnings.push(
+					`<step> event link "${st.source ?? st.refersTo}" does not resolve to any TLCEvent or lifecycle event.`
+				);
+			}
+		}
+
+		const label =
+			ev?.showAs ??
+			st?.outcome ??
+			st?.showAs ??
+			(refType ? humanize(refType) : 'event') ??
+			'event';
+
+		timeline.push({
+			id: b.id,
+			date,
+			label,
+			chamber: ev?.chamber,
+			agent: st?.agent ? refIndex.get(stripHash(st.agent) ?? '')?.showAs ?? st.agent : undefined,
+			origin,
+			lifecycle: ev,
+			step: st,
+			modifications: b.modifications,
+			kind,
+			warnings: rowWarnings
+		});
+	}
+
+	return timeline;
 }
 
 function parseIdentification(id: N | undefined): Identification {
