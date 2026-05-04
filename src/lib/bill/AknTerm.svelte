@@ -39,7 +39,7 @@
 	.akn-term {
 		position: relative;
 		cursor: help;
-		border-bottom: 1px dotted #9ca3af;
+		border-bottom: 1px dotted var(--color-brand-dark, #0e542c);
 		display: inline;
 	}
 	.akn-term:focus {
@@ -54,24 +54,29 @@
 		position: absolute;
 		left: 0;
 		top: 100%;
-		margin-top: 4px;
+		margin-top: 6px;
 		z-index: 50;
 		min-width: 240px;
 		max-width: 360px;
 		background: #111827;
 		color: #f9fafb;
-		padding: 8px 10px;
+		padding: 10px 12px;
 		font-size: 11px;
-		line-height: 1.5;
-		border-radius: 2px;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+		line-height: 1.55;
+		border-radius: 6px;
+		box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.18);
+		font-family: var(--font-body, system-ui, sans-serif);
+		font-weight: 400;
+		text-transform: none;
+		letter-spacing: 0;
 	}
 	.tip-term {
 		display: block;
 		font-weight: 700;
-		color: #fde68a;
-		font-family: ui-monospace, monospace;
+		color: var(--color-brand, #B9F8CF);
+		font-family: var(--font-mono, ui-monospace, monospace);
 		margin-bottom: 4px;
+		font-size: 11px;
 	}
 	.tip-body {
 		display: block;
@@ -84,13 +89,14 @@
 	}
 	.tip-link {
 		display: inline-block;
-		margin-top: 6px;
-		color: #fde68a;
+		margin-top: 8px;
+		color: var(--color-brand, #B9F8CF);
 		text-decoration: underline;
-		text-underline-offset: 2px;
+		text-underline-offset: 3px;
 		pointer-events: auto;
+		font-weight: 600;
 	}
 	.tip-link:hover {
-		color: #fef3c7;
+		color: #ffffff;
 	}
 </style>

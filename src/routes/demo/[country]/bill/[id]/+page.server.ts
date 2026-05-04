@@ -2,6 +2,8 @@ import { error } from '@sveltejs/kit';
 import { and, eq } from 'drizzle-orm';
 import { getDb, schema } from '../../../db';
 import { parseBill } from '$lib/bill/parse';
+import { analyzeAknDocument } from '$lib/aknlint/analyze';
+import { billProfile } from '../../../../../../research/schema/profiles/bill';
 
 export const prerender = true;
 
@@ -38,6 +40,7 @@ export async function load({ params }) {
 	}
 
 	const parsed = parseBill(doc.xml);
+	const lint = analyzeAknDocument(doc.xml, billProfile);
 
 	// Amendments that reference this bill — via DocumentLinkTable. Any
 	// amendment whose XML carries an akndiff:targetBill or a <ref href>
@@ -68,6 +71,7 @@ export async function load({ params }) {
 	return {
 		doc,
 		parsed,
-		amendments: incomingAmendments
+		amendments: incomingAmendments,
+		lint
 	};
 }

@@ -7,6 +7,28 @@
 	const doc = $derived(data.doc);
 	const parsed = $derived(data.parsed);
 	const amendments = $derived(data.amendments);
+	const lint = $derived(data.lint);
+
+	type Tab = 'document' | 'lint';
+	let activeTab = $state<Tab>('document');
+
+	const completenessPct = $derived(Math.round(lint.completeness * 100));
+	const errorCount = $derived(lint.findings.filter((f) => f.severity === 'error').length);
+	const warnCount = $derived(lint.findings.filter((f) => f.severity === 'warn').length);
+	const infoCount = $derived(lint.findings.filter((f) => f.severity === 'info').length);
+
+	function scoreClass(pct: number) {
+		if (pct >= 90) return 'score-good';
+		if (pct >= 70) return 'score-mid';
+		return 'score-low';
+	}
+
+	function statusGlyph(status: string) {
+		if (status === 'ok') return '✓';
+		if (status === 'optional-missing') return '◦';
+		if (status === 'invalid') return '✗';
+		return '·';
+	}
 
 	let selectedId = $state<string | null>(null);
 	let spanFocusEid = $state<string | null>(null);
@@ -87,6 +109,19 @@
 		}
 	}
 
+	function modKindClass(k: Modification['kind']) {
+		switch (k) {
+			case 'substitution':
+				return 'mod-sub';
+			case 'insertion':
+				return 'mod-ins';
+			case 'repeal':
+				return 'mod-rep';
+			default:
+				return 'mod-unk';
+		}
+	}
+
 	function eventsThatTouched(eId: string): TimelineRow[] {
 		const ids = new Set(parsed.spanToEvents[eId] ?? []);
 		return parsed.timeline.filter((r) => ids.has(r.id));
@@ -98,177 +133,302 @@
 </svelte:head>
 
 <div class="page">
-	<header class="head">
-		<a href="/demo/{doc.countryCode}/bill" class="back">← bills</a>
-		<div class="ident">
-			<div class="row">
-				<span class="muted"><AknTerm term="bill" /></span>
-				<span class="muted">·</span>
-				<span class="muted">{doc.countryCode}</span>
-				<span class="muted">·</span>
-				<span class="mono">{doc.nativeId}</span>
-				{#if parsed.identification.subtype}
-					<span class="muted">·</span>
-					<span>{parsed.identification.subtype}</span>
-				{/if}
-			</div>
-			<h1>{doc.title}</h1>
-			<div class="frbr">
-				{#if parsed.identification.frbrExpression}
-					<span class="muted">
-						<AknTerm term="FRBR expression" />:
-					</span>
-					<span class="mono">{parsed.identification.frbrExpression}</span>
-				{/if}
-				{#if parsed.identification.expressionDate}
-					<span class="muted">expression date</span>
-					<span class="mono">{parsed.identification.expressionDate}</span>
-				{/if}
-				{#if parsed.identification.language}
-					<span class="muted">lang</span>
-					<span class="mono">{parsed.identification.language}</span>
-				{/if}
-			</div>
-			{#if parsed.warnings.length}
-				<div class="warnings">
-					{#each parsed.warnings as w (w)}
-						<div class="warn">⚠ {w}</div>
-					{/each}
-				</div>
+	<a href="/demo/{doc.countryCode}/bill" class="back">← bills</a>
+
+	<!-- ─── HEADER CARD ─── -->
+	<header class="head card">
+		<div class="head-tag">
+			<span class="tag-mono">
+				<AknTerm term="bill" />
+			</span>
+			<span class="tag-sep">·</span>
+			<span class="tag-mono">{doc.countryCode}</span>
+			<span class="tag-sep">·</span>
+			<span class="tag-mono ink">{doc.nativeId}</span>
+			{#if parsed.identification.subtype}
+				<span class="tag-sep">·</span>
+				<span class="tag-sub">{parsed.identification.subtype}</span>
 			{/if}
 		</div>
+
+		<h1>{doc.title}</h1>
+
+		<dl class="head-frbr">
+			{#if parsed.identification.frbrExpression}
+				<dt><AknTerm term="FRBR expression" /></dt>
+				<dd class="mono ink">{parsed.identification.frbrExpression}</dd>
+			{/if}
+			{#if parsed.identification.expressionDate}
+				<dt>expression date</dt>
+				<dd class="mono ink">{parsed.identification.expressionDate}</dd>
+			{/if}
+			{#if parsed.identification.language}
+				<dt>language</dt>
+				<dd class="mono ink">{parsed.identification.language}</dd>
+			{/if}
+		</dl>
+
+		{#if parsed.warnings.length}
+			<div class="warnings">
+				{#each parsed.warnings as w (w)}
+					<div class="warn-card">⚠ {w}</div>
+				{/each}
+			</div>
+		{/if}
 	</header>
 
+	<!-- ─── TAB STRIP ─── -->
+	<nav class="tabs" aria-label="Document views">
+		<button
+			type="button"
+			class="tab"
+			class:tab-active={activeTab === 'document'}
+			onclick={() => (activeTab = 'document')}
+		>
+			Document
+		</button>
+		<button
+			type="button"
+			class="tab"
+			class:tab-active={activeTab === 'lint'}
+			onclick={() => (activeTab = 'lint')}
+		>
+			AKN lint
+			<span class="tab-score {scoreClass(completenessPct)}">{completenessPct}%</span>
+			{#if errorCount}<span class="tab-pip pip-err">{errorCount}</span>{/if}
+			{#if warnCount}<span class="tab-pip pip-warn">{warnCount}</span>{/if}
+		</button>
+	</nav>
+
+	{#if activeTab === 'lint'}
+		<section class="lint-view">
+			<header class="lint-summary card">
+				<div class="lint-summary-main">
+					<div class="lint-score-block">
+						<span class="lint-score-num {scoreClass(completenessPct)}">{completenessPct}<span class="pct">%</span></span>
+						<span class="lint-score-label">completeness</span>
+					</div>
+					<dl class="lint-counts">
+						<div><dt>errors</dt><dd class="cnt-err">{errorCount}</dd></div>
+						<div><dt>warnings</dt><dd class="cnt-warn">{warnCount}</dd></div>
+						<div><dt>notes</dt><dd class="cnt-info">{infoCount}</dd></div>
+					</dl>
+				</div>
+				<p class="hint lint-hint">
+					Each facet is a slice of the document scored against an
+					expectation profile (<code>research/schema/profiles/{lint.docType}.ts</code>).
+					Optional fields show as notes; their absence does not lower the score.
+				</p>
+			</header>
+
+			<div class="facets">
+				{#each lint.facets as facet (facet.id)}
+					{@const pct = Math.round(facet.score * 100)}
+					<article class="facet card">
+						<header class="facet-head">
+							<div class="facet-title">
+								<h3>{facet.label}</h3>
+								<span class="facet-score {scoreClass(pct)}">{pct}%</span>
+								<span class="facet-meta">{facet.earned}/{facet.total} weighted</span>
+							</div>
+							<p class="facet-rationale">{facet.rationale}</p>
+						</header>
+
+						<div class="facet-body">
+							<table class="exp-table">
+								<thead>
+									<tr>
+										<th class="th-status"></th>
+										<th>Expectation</th>
+										<th class="th-xpath">XPath</th>
+										<th class="th-w">w</th>
+										<th class="th-count">matches</th>
+									</tr>
+								</thead>
+								<tbody>
+									{#each facet.expectations as exp (exp.id)}
+										<tr class="exp-row exp-{exp.status}">
+											<td class="exp-status" title={exp.status}>
+												<span class="status-glyph">{statusGlyph(exp.status)}</span>
+											</td>
+											<td class="exp-id">
+												<span class="mono">{exp.id}</span>
+												{#if exp.kind !== 'presence'}
+													<span class="exp-kind">{exp.kind}</span>
+												{/if}
+											</td>
+											<td class="exp-xpath mono">{exp.xpath}</td>
+											<td class="exp-w mono">{exp.weight}</td>
+											<td class="exp-count mono">
+												{exp.matchCount}{#if exp.value && exp.kind === 'enum'} <span class="exp-val">→ {exp.value}</span>{/if}
+											</td>
+										</tr>
+									{/each}
+								</tbody>
+							</table>
+
+							{#if facet.findings.length}
+								<ul class="findings">
+									{#each facet.findings as f, i (i)}
+										<li class="finding sev-{f.severity}">
+											<div class="finding-head">
+												<span class="finding-sev">{f.severity}</span>
+												<span class="finding-id mono">{f.expectation}</span>
+											</div>
+											<div class="finding-msg">{f.message}</div>
+											<div class="finding-rationale">{f.rationale}</div>
+											<code class="finding-xpath">{f.xpath}</code>
+										</li>
+									{/each}
+								</ul>
+							{/if}
+						</div>
+					</article>
+				{/each}
+			</div>
+		</section>
+	{:else}
 	<div class="cols">
+		<!-- ─── TIMELINE (LEFT) ─── -->
 		<aside class="timeline">
-			<h2>Timeline</h2>
+			<h2 class="eyebrow">Timeline</h2>
 			<p class="hint">
 				One row per event, joined across <AknTerm term="lifecycle" />,
 				<AknTerm term="workflow" /> and <AknTerm term="analysis" /> via shared
 				<AknTerm term="TLCEvent" /> ids.
 			</p>
-			<ol>
-				{#each parsed.timeline as row (row.id)}
-					{@const selected = row.id === selectedId}
-					<li class="row k-{row.kind}" class:selected>
-						<button
-							type="button"
-							onclick={() => selectEvent(row.id)}
-							title={rowTooltip(row)}
-						>
-							<span class="date mono">{row.date || '—'}</span>
-							<span class="dot" aria-hidden="true">●</span>
-							<span class="label">{row.label}</span>
-							<span class="meta">
-								{#if row.chamber}<span class="chamber">{row.chamber}</span>{/if}
-								{#if row.lifecycle}<span class="badge">version</span>{/if}
-								{#if row.modifications.length}
-									<span class="badge mod">{row.modifications.length} change(s)</span>
+
+			{#if parsed.timeline.length}
+				<ol class="spine">
+					{#each parsed.timeline as row (row.id)}
+						{@const selected = row.id === selectedId}
+						<li class="row k-{row.kind}" class:selected>
+							<button
+								type="button"
+								onclick={() => selectEvent(row.id)}
+								title={`${row.label}${row.chamber ? ` · ${row.chamber}` : ''}\n\n${rowTooltip(row)}`}
+							>
+								<span class="line">
+									<span class="date mono">{row.date || '—'}</span>
+									<span class="square" aria-hidden="true"></span>
+									<span class="label">{row.label}</span>
+								</span>
+								{#if row.chamber || row.modifications.length || row.warnings.length}
+									<span class="meta">
+										{#if row.chamber}<span class="chamber">{row.chamber}</span>{/if}
+										{#if row.modifications.length}
+											<span class="badge b-mod">{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'}</span>
+										{/if}
+										{#if row.warnings.length}
+											<span class="badge b-warn" title={row.warnings.join('\n')}>⚠</span>
+										{/if}
+									</span>
 								{/if}
-								{#if row.warnings.length}
-									<span class="badge warn-badge" title={row.warnings.join('\n')}>⚠</span>
-								{/if}
-							</span>
-							<span class="kind">{rowKindLabel(row.kind)}</span>
-						</button>
-					</li>
-				{/each}
-			</ol>
-			{#if !parsed.timeline.length}
+							</button>
+						</li>
+					{/each}
+				</ol>
+			{:else}
 				<p class="empty">No events found in this bill.</p>
 			{/if}
 		</aside>
 
+		<!-- ─── DETAIL (RIGHT) ─── -->
 		<section class="detail">
 			{#if selectedRow}
-				<h2>Event detail</h2>
+				<h2 class="eyebrow">Event detail</h2>
 
-				<div class="card">
+				<div class="card event-card k-{selectedRow.kind}">
 					<div class="card-head">
-						<span class="mono">{selectedRow.date || '—'}</span>
+						<span class="mono ink">{selectedRow.date || '—'}</span>
 						{#if selectedRow.chamber}
-							<span class="muted">· <AknTerm term="chamber" />: {selectedRow.chamber}</span>
+							<span class="card-head-sep">·</span>
+							<span class="muted"><AknTerm term="chamber" />: {selectedRow.chamber}</span>
 						{/if}
+						<span class="card-head-spacer"></span>
+						<span class="kind-tag">{rowKindLabel(selectedRow.kind)}</span>
 					</div>
 					<div class="card-body">
-						<div class="label">{selectedRow.label}</div>
+						<div class="event-label">{selectedRow.label}</div>
 
-						{#if selectedRow.lifecycle}
-							<div class="origin">
-								<div class="origin-head">
-									From <AknTerm term="lifecycle" />/<AknTerm term="eventRef" />:
+						<div class="origin-grid">
+							{#if selectedRow.lifecycle}
+								<div class="origin">
+									<div class="origin-head">
+										From <AknTerm term="lifecycle" />/<AknTerm term="eventRef" />
+									</div>
+									<dl class="kv">
+										{#if selectedRow.lifecycle.type}
+											<dt><AknTerm term="refersTo" /></dt>
+											<dd class="mono">{selectedRow.lifecycle.source}</dd>
+										{/if}
+										{#if selectedRow.lifecycle.tlcEventId}
+											<dt><AknTerm term="source" /></dt>
+											<dd class="mono">{selectedRow.lifecycle.tlcEventId}</dd>
+										{/if}
+										{#if selectedRow.lifecycle.chamber}
+											<dt><AknTerm term="chamber" /></dt>
+											<dd>{selectedRow.lifecycle.chamber}</dd>
+										{/if}
+										{#if selectedRow.lifecycle.showAs}
+											<dt>showAs</dt>
+											<dd>{selectedRow.lifecycle.showAs}</dd>
+										{/if}
+									</dl>
 								</div>
-								<dl>
-									{#if selectedRow.lifecycle.type}
-										<dt><AknTerm term="refersTo" /></dt>
-										<dd class="mono">{selectedRow.lifecycle.source}</dd>
-									{/if}
-									{#if selectedRow.lifecycle.tlcEventId}
-										<dt><AknTerm term="source" /></dt>
-										<dd class="mono">{selectedRow.lifecycle.tlcEventId}</dd>
-									{/if}
-									{#if selectedRow.lifecycle.chamber}
-										<dt><AknTerm term="chamber" /></dt>
-										<dd>{selectedRow.lifecycle.chamber}</dd>
-									{/if}
-									{#if selectedRow.lifecycle.showAs}
-										<dt>showAs</dt>
-										<dd>{selectedRow.lifecycle.showAs}</dd>
-									{/if}
-								</dl>
-							</div>
-						{/if}
+							{/if}
 
-						{#if selectedRow.step}
-							<div class="origin">
-								<div class="origin-head">
-									From <AknTerm term="workflow" />/<AknTerm term="step" />:
+							{#if selectedRow.step}
+								<div class="origin">
+									<div class="origin-head">
+										From <AknTerm term="workflow" />/<AknTerm term="step" />
+									</div>
+									<dl class="kv">
+										{#if selectedRow.step.agent}
+											<dt><AknTerm term="agent" /></dt>
+											<dd>{selectedRow.step.agent}</dd>
+										{/if}
+										{#if selectedRow.step.role}
+											<dt><AknTerm term="role" /></dt>
+											<dd>{selectedRow.step.role}</dd>
+										{/if}
+										{#if selectedRow.step.outcome}
+											<dt><AknTerm term="outcome" /></dt>
+											<dd>{selectedRow.step.outcome}</dd>
+										{/if}
+										{#if selectedRow.step.refersTo}
+											<dt><AknTerm term="refersTo" /></dt>
+											<dd class="mono">{selectedRow.step.refersTo}</dd>
+										{/if}
+									</dl>
 								</div>
-								<dl>
-									{#if selectedRow.step.agent}
-										<dt><AknTerm term="agent" /></dt>
-										<dd>{selectedRow.step.agent}</dd>
-									{/if}
-									{#if selectedRow.step.role}
-										<dt><AknTerm term="role" /></dt>
-										<dd>{selectedRow.step.role}</dd>
-									{/if}
-									{#if selectedRow.step.outcome}
-										<dt><AknTerm term="outcome" /></dt>
-										<dd>{selectedRow.step.outcome}</dd>
-									{/if}
-									{#if selectedRow.step.refersTo}
-										<dt><AknTerm term="refersTo" /></dt>
-										<dd class="mono">{selectedRow.step.refersTo}</dd>
-									{/if}
-								</dl>
-							</div>
-						{/if}
+							{/if}
+						</div>
 
 						{#if selectedRow.modifications.length}
-							<div class="origin">
+							<div class="origin origin-full">
 								<div class="origin-head">
-									From <AknTerm term="analysis" />/<AknTerm term="activeModifications" />:
+									From <AknTerm term="analysis" />/<AknTerm term="activeModifications" />
 								</div>
 								<ul class="mods">
 									{#each selectedRow.modifications as m, i (i)}
-										<li class="mod-row">
-											<span class="mod-glyph">{modKindGlyph(m.kind)}</span>
+										<li class="mod-row {modKindClass(m.kind)}">
+											<span class="mod-glyph" aria-hidden="true">{modKindGlyph(m.kind)}</span>
 											<span class="mod-kind">{m.kind}</span>
 											{#if m.targetEid}
 												<button
 													type="button"
-													class="mod-target"
+													class="eid-pill"
 													onclick={() => m.targetEid && focusSpan(m.targetEid)}
 													title="scroll to span in body view"
 												>
-													<AknTerm term="eId" />={m.targetEid}
+													<AknTerm term="eId" />=<span class="ink">{m.targetEid}</span>
 												</button>
 											{/if}
 											{#if m.old || m.new}
 												<div class="diff">
-													{#if m.old}<div class="old">– {m.old}</div>{/if}
-													{#if m.new}<div class="new">+ {m.new}</div>{/if}
+													{#if m.old}<div class="diff-old">{m.old}</div>{/if}
+													{#if m.new}<div class="diff-new">{m.new}</div>{/if}
 												</div>
 											{/if}
 										</li>
@@ -280,7 +440,7 @@
 						{#if selectedRow.warnings.length}
 							<div class="row-warnings">
 								{#each selectedRow.warnings as w (w)}
-									<div class="warn">⚠ {w}</div>
+									<div class="warn-card">⚠ {w}</div>
 								{/each}
 							</div>
 						{/if}
@@ -289,13 +449,17 @@
 
 				{#if amendments.length && (selectedRow.kind === 'amendment' || selectedRow.lifecycle?.type === 'committee_report' || selectedRow.lifecycle?.type === 'ponencia_report')}
 					<div class="card subtle">
-						<div class="card-head">Linked <AknTerm term="amendment" /> documents</div>
+						<div class="card-head">
+							<span class="muted">Linked <AknTerm term="amendment" /> documents</span>
+						</div>
 						<div class="card-body">
 							<ul class="amend-list">
 								{#each amendments as a (a.nativeId)}
 									<li>
 										<a href="/demo/{a.country}/{a.type}/{a.nativeId}">
-											<span class="mono">{a.nativeId}</span> — {a.title}
+											<span class="mono ink">{a.nativeId}</span>
+											<span class="amend-sep">—</span>
+											<span>{a.title}</span>
 										</a>
 									</li>
 								{/each}
@@ -307,7 +471,7 @@
 				<p class="empty">Select an event from the timeline.</p>
 			{/if}
 
-			<h2 class="body-head">Body</h2>
+			<h2 class="eyebrow body-eyebrow">Body</h2>
 			<p class="hint">
 				The bill's &lt;<AknTerm term="body" />&gt;. When an event is selected, spans it
 				touched are highlighted. Click an <AknTerm term="eId" /> to see which events touched
@@ -318,15 +482,22 @@
 				{@const events = eventsThatTouched(spanFocusEid)}
 				<div class="card span-focus">
 					<div class="card-head">
-						Events that touched <span class="mono">eId={spanFocusEid}</span>
+						<span class="muted">Events that touched</span>
+						<span class="mono ink">eId={spanFocusEid}</span>
+						<span class="card-head-spacer"></span>
+						<button type="button" class="dismiss" onclick={() => (spanFocusEid = null)}>
+							dismiss ✕
+						</button>
 					</div>
 					<div class="card-body">
 						{#if events.length}
 							<ul class="amend-list">
 								{#each events as e (e.id)}
 									<li>
-										<button type="button" onclick={() => selectEvent(e.id)}>
-											<span class="mono">{e.date}</span> — {e.label}
+										<button type="button" class="event-link" onclick={() => selectEvent(e.id)}>
+											<span class="mono ink">{e.date}</span>
+											<span class="amend-sep">—</span>
+											<span>{e.label}</span>
 										</button>
 									</li>
 								{/each}
@@ -334,296 +505,489 @@
 						{:else}
 							<p class="empty">No events recorded as touching this span.</p>
 						{/if}
-						<button type="button" class="dismiss" onclick={() => (spanFocusEid = null)}>
-							dismiss
-						</button>
 					</div>
 				</div>
 			{/if}
 
 			{#if parsed.body.length}
-				<div class="body-tree">
-					<BodyView
-						nodes={parsed.body}
-						{highlightedEids}
-						spanToEvents={parsed.spanToEvents}
-						onSpanClick={focusSpan}
-					/>
+				<div class="body-tree card subtle">
+					<div class="card-body">
+						<BodyView
+							nodes={parsed.body}
+							{highlightedEids}
+							spanToEvents={parsed.spanToEvents}
+							onSpanClick={focusSpan}
+						/>
+					</div>
 				</div>
 			{:else}
 				<p class="empty">This bill has no &lt;body&gt; content recorded.</p>
 			{/if}
 		</section>
 	</div>
+	{/if}
 </div>
 
 <style>
+	/* ─── Page shell ─── */
 	.page {
 		max-width: 1280px;
 		margin: 0 auto;
-		padding: 24px 16px 80px;
-		font-family: ui-sans-serif, system-ui, sans-serif;
-		font-size: 13px;
+		padding: 24px 24px 96px;
+		font-family: var(--font-mono);
+		font-size: 12.5px;
+		line-height: 1.55;
 		color: #1f2937;
 	}
-	.head {
-		border-bottom: 1px solid #e5e7eb;
-		padding-bottom: 16px;
-		margin-bottom: 16px;
-	}
+
 	.back {
+		display: inline-block;
+		margin-bottom: 14px;
+		font-family: var(--font-mono);
 		font-size: 12px;
-		color: #2563eb;
+		color: var(--color-brand-dark);
 		text-decoration: none;
+		border-bottom: 1px dotted transparent;
+		transition: border-color 0.1s ease;
 	}
 	.back:hover {
-		text-decoration: underline;
+		border-bottom-color: var(--color-brand-dark);
 	}
-	.ident {
-		margin-top: 8px;
+
+	/* ─── Header card ─── */
+	.head {
+		padding: 18px 22px 20px;
+		margin-bottom: 28px;
+		background-color: #ffffff;
 	}
-	.row {
+	.head-tag {
 		display: flex;
 		gap: 6px;
 		align-items: baseline;
-		font-size: 12px;
-	}
-	h1 {
-		font-size: 18px;
-		margin: 6px 0 6px;
-		font-weight: 700;
-	}
-	h2 {
-		font-size: 13px;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		color: #374151;
-		margin: 0 0 8px;
-	}
-	.frbr {
+		font-family: var(--font-mono);
 		font-size: 11px;
-		display: flex;
-		gap: 8px;
-		flex-wrap: wrap;
-		align-items: baseline;
-	}
-	.muted {
 		color: #6b7280;
+		margin-bottom: 10px;
 	}
-	.mono {
-		font-family: ui-monospace, monospace;
+	.tag-mono :global(.text) {
+		font-family: var(--font-mono);
 	}
-	.warnings {
-		margin-top: 8px;
+	.tag-sep {
+		color: #d6d0c2;
 	}
-	.warn {
-		color: #92400e;
-		background: #fffbeb;
-		border-left: 2px solid #d97706;
-		padding: 4px 8px;
+	.tag-sub {
+		color: #4b5563;
+	}
+	.head h1 {
+		font-family: var(--font-heading);
+		font-size: 22px;
+		line-height: 1.25;
+		font-weight: 600;
+		margin: 0 0 14px;
+		color: #111827;
+		max-width: 70ch;
+	}
+	.head-frbr {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		gap: 4px 16px;
+		margin: 0;
 		font-size: 11px;
-		margin-top: 2px;
+		padding-top: 12px;
+		border-top: 1px solid #e7e2d7;
 	}
+	.head-frbr dt {
+		color: #6b7280;
+		font-family: var(--font-heading);
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		align-self: center;
+	}
+	.head-frbr dd {
+		margin: 0;
+		font-family: var(--font-mono);
+		font-size: 11.5px;
+		word-break: break-all;
+	}
+
+	.warnings {
+		margin-top: 12px;
+	}
+	.warn-card {
+		background: #fffbeb;
+		border: 2px solid #111827;
+		box-shadow: var(--shadow-sm);
+		color: #78350f;
+		padding: 6px 10px;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		border-radius: 4px;
+		margin-top: 6px;
+	}
+
+	/* ─── Two columns ─── */
 	.cols {
 		display: grid;
-		grid-template-columns: 320px 1fr;
-		gap: 24px;
+		grid-template-columns: 260px 1fr;
+		gap: 28px;
+		align-items: start;
 	}
-	.timeline ol {
-		list-style: none;
-		padding: 0;
-		margin: 0;
+
+	/* ─── Eyebrows ─── */
+	.eyebrow {
+		font-family: var(--font-heading);
+		font-size: 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: #4b5563;
+		margin: 0 0 8px;
+	}
+	.body-eyebrow {
+		margin-top: 32px;
 	}
 	.hint {
 		font-size: 11px;
 		color: #6b7280;
-		margin: 0 0 12px;
-		line-height: 1.5;
+		margin: 0 0 14px;
+		line-height: 1.55;
+		max-width: 60ch;
 	}
-	.row.k-procedural .dot {
-		color: #6b7280;
+
+	/* ─── Timeline (spine) ─── */
+	.timeline {
+		position: sticky;
+		top: 96px;
 	}
-	.row.k-version .dot {
-		color: #2563eb;
-	}
-	.row.k-amendment .dot {
-		color: #d97706;
-	}
-	.row.k-terminal .dot {
-		color: #15803d;
-	}
-	.timeline button {
-		display: grid;
-		grid-template-columns: 80px 14px 1fr;
-		gap: 6px;
-		align-items: baseline;
-		width: 100%;
-		text-align: left;
-		background: none;
-		border: none;
-		border-bottom: 1px solid #f3f4f6;
-		padding: 6px 4px;
-		cursor: pointer;
-		font-family: inherit;
-		font-size: inherit;
-		color: inherit;
-	}
-	.timeline button:hover {
-		background: #f9fafb;
-	}
-	.row.selected button {
-		background: #fef3c7;
-	}
-	.date {
-		font-size: 11px;
-		color: #6b7280;
-	}
-	.dot {
-		font-size: 10px;
-	}
-	.label {
-		font-size: 12px;
-		line-height: 1.3;
-	}
-	.meta {
-		grid-column: 3;
-		display: flex;
-		gap: 6px;
-		flex-wrap: wrap;
-		margin-top: 4px;
-	}
-	.kind {
-		grid-column: 3;
-		font-size: 10px;
-		color: #9ca3af;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-	}
-	.chamber {
-		font-size: 10px;
-		color: #4b5563;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-	}
-	.badge {
-		font-size: 10px;
-		padding: 0 4px;
-		background: #e5e7eb;
-		color: #374151;
-	}
-	.badge.mod {
-		background: #fed7aa;
-		color: #9a3412;
-	}
-	.badge.warn-badge {
-		background: #fde68a;
-		color: #92400e;
-	}
-	.detail .card {
-		border: 1px solid #e5e7eb;
-		margin: 0 0 12px;
-	}
-	.detail .card.subtle {
-		border-color: #f3f4f6;
-	}
-	.card-head {
-		padding: 6px 10px;
-		border-bottom: 1px solid #f3f4f6;
-		font-size: 11px;
-		color: #4b5563;
-		display: flex;
-		gap: 8px;
-		align-items: baseline;
-	}
-	.card-body {
-		padding: 10px;
-	}
-	.label {
-		font-weight: 600;
-		margin-bottom: 8px;
-	}
-	.origin {
-		margin-top: 12px;
-	}
-	.origin-head {
-		font-size: 11px;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		color: #6b7280;
-		margin-bottom: 4px;
-	}
-	dl {
-		display: grid;
-		grid-template-columns: 100px 1fr;
-		gap: 2px 12px;
-		margin: 0;
-		font-size: 12px;
-	}
-	dt {
-		color: #6b7280;
-	}
-	dd {
-		margin: 0;
-	}
-	.mods {
+	.spine {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 	}
-	.mod-row {
-		padding: 6px 0;
-		border-bottom: 1px dotted #e5e7eb;
-		font-size: 12px;
+	.row button {
 		display: flex;
-		flex-wrap: wrap;
-		gap: 6px;
-		align-items: baseline;
-	}
-	.mod-glyph {
-		font-family: ui-monospace, monospace;
-		color: #d97706;
-	}
-	.mod-kind {
-		font-weight: 600;
-	}
-	.mod-target {
+		flex-direction: column;
+		gap: 4px;
+		width: 100%;
+		text-align: left;
 		background: none;
 		border: none;
-		color: #2563eb;
-		text-decoration: underline dotted;
+		border-left: 3px solid transparent;
+		padding: 7px 8px 7px 8px;
 		cursor: pointer;
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		transition: background-color 0.1s ease;
+		border-bottom: 1px dotted #e7e2d7;
+	}
+	.row:last-child button {
+		border-bottom: none;
+	}
+	.row button:hover {
+		background: #fbfaf7;
+	}
+	.row.selected button {
+		background: #f4fbe9;
+		border-left-color: var(--color-brand);
+	}
+	.line {
+		display: block;
+	}
+	.date {
+		font-size: 10.5px;
+		color: #6b7280;
+		white-space: nowrap;
+		margin-right: 6px;
+	}
+	.square {
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		background: #9ca3af;
+		border: 1px solid #111827;
+		margin-right: 8px;
+		vertical-align: 1px;
+	}
+	.row.k-procedural .square { background: #9ca3af; }
+	.row.k-version .square { background: var(--color-brand-dark); }
+	.row.k-amendment .square { background: #d97706; }
+	.row.k-terminal .square { background: var(--color-deletion-500); }
+	.row.selected .square {
+		border-width: 2px;
+	}
+	.label {
+		font-family: var(--font-mono);
+		font-size: 11.5px;
+		line-height: 1.4;
+		color: #111827;
+		word-break: break-word;
+	}
+	.row:not(.selected) .label {
+		display: -webkit-inline-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.row.selected .label {
+		color: #0a0f1c;
+		font-weight: 500;
+	}
+	.meta {
+		display: flex;
+		gap: 4px;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-left: 22px;
+	}
+	.chamber {
+		font-family: var(--font-heading);
+		font-size: 9px;
+		color: #4b5563;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		padding: 0 4px;
+		background: #f3f4f6;
+		border-radius: 3px;
+	}
+
+	/* ─── Badges ─── */
+	.badge {
+		font-family: var(--font-mono);
+		font-size: 10px;
+		padding: 1px 6px;
+		border-radius: 3px;
+		border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+		display: inline-block;
+		line-height: 1.4;
+	}
+	.b-version {
+		background: var(--color-brand);
+		color: var(--color-brand-dark);
+	}
+	.b-mod {
+		background: #fef3c7;
+		color: #92400e;
+	}
+	.b-warn {
+		background: var(--color-deletion-100);
+		color: var(--color-deletion-800);
+	}
+
+	/* ─── Cards (override .card) ─── */
+	.card {
+		background-color: #ffffff;
+		border: 2px solid #111827;
+		border-radius: 8px;
+		box-shadow: var(--shadow-sm);
+	}
+	.event-card {
+		box-shadow: var(--shadow-md);
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 16px;
+	}
+	.event-card::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 4px;
+		background: var(--color-brand);
+	}
+	.event-card.k-procedural::before { background: #9ca3af; }
+	.event-card.k-version::before { background: var(--color-brand); }
+	.event-card.k-amendment::before { background: #fbbf24; }
+	.event-card.k-terminal::before { background: var(--color-deletion-500); }
+
+	.card.subtle {
+		border-color: #d6d0c2;
+		box-shadow: none;
+		background-color: #fbfaf7;
+	}
+	.card-head {
+		padding: 9px 14px 9px 18px;
+		border-bottom: 1px solid #e7e2d7;
+		font-size: 11px;
+		color: #4b5563;
+		display: flex;
+		gap: 8px;
+		align-items: center;
+	}
+	.card-head-sep {
+		color: #d6d0c2;
+	}
+	.card-head-spacer {
+		flex: 1;
+	}
+	.kind-tag {
+		font-family: var(--font-heading);
+		font-size: 9px;
+		color: #6b7280;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+	}
+	.card-body {
+		padding: 16px 18px;
+	}
+	.event-label {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		font-weight: 500;
+		color: #0a0f1c;
+		margin-bottom: 16px;
+		line-height: 1.4;
+	}
+
+	/* ─── Origin sub-panels ─── */
+	.origin-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 12px;
+	}
+	.origin {
+		background: #fbfaf7;
+		border: 1px solid #e7e2d7;
+		border-radius: 6px;
+		padding: 12px 14px;
+	}
+	.origin-full {
+		grid-column: 1 / -1;
+		margin-top: 12px;
+	}
+	.origin-head {
+		font-family: var(--font-heading);
+		font-size: 9.5px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #6b7280;
+		margin-bottom: 10px;
+		font-weight: 600;
+	}
+	.kv {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		gap: 4px 14px;
+		margin: 0;
+		font-size: 11.5px;
+	}
+	.kv dt {
+		color: #6b7280;
+	}
+	.kv dd {
+		margin: 0;
+		color: #1f2937;
+		word-break: break-word;
+	}
+
+	/* ─── Modifications ─── */
+	.mods {
+		list-style: none;
 		padding: 0;
-		font-family: ui-monospace, monospace;
-		font-size: 12px;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	.mod-row {
+		display: grid;
+		grid-template-columns: 22px max-content 1fr;
+		column-gap: 8px;
+		row-gap: 6px;
+		align-items: center;
+		padding: 8px 10px 8px 8px;
+		background: #ffffff;
+		border: 1px solid #e7e2d7;
+		border-left: 3px solid #9ca3af;
+		border-radius: 4px;
+		font-size: 11.5px;
+	}
+	.mod-row.mod-sub { border-left-color: #d97706; }
+	.mod-row.mod-ins { border-left-color: var(--color-addition-500); }
+	.mod-row.mod-rep { border-left-color: var(--color-deletion-500); }
+	.mod-glyph {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		text-align: center;
+		font-weight: 700;
+		color: #4b5563;
+	}
+	.mod-row.mod-sub .mod-glyph { color: #d97706; }
+	.mod-row.mod-ins .mod-glyph { color: var(--color-addition-500); }
+	.mod-row.mod-rep .mod-glyph { color: var(--color-deletion-500); }
+	.mod-kind {
+		font-weight: 600;
+		font-family: var(--font-heading);
+		font-size: 11px;
+		color: #1f2937;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.eid-pill {
+		background: #f3f4f6;
+		border: 1px solid #d1d5db;
+		padding: 1px 6px;
+		border-radius: 3px;
+		font-family: var(--font-mono);
+		font-size: 10.5px;
+		color: #4b5563;
+		cursor: pointer;
+		transition: all 0.1s ease;
+		justify-self: start;
+	}
+	.eid-pill:hover {
+		background: var(--color-brand);
+		border-color: var(--color-brand-dark);
+		color: var(--color-brand-dark);
+	}
+	.eid-pill .ink {
+		color: #0a0f1c;
 	}
 	.diff {
-		flex-basis: 100%;
-		padding: 4px 8px;
-		background: #f9fafb;
-		font-family: ui-monospace, monospace;
+		grid-column: 1 / -1;
+		font-family: var(--font-mono);
 		font-size: 11px;
-		line-height: 1.5;
+		line-height: 1.55;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
 	}
-	.old {
-		color: #991b1b;
+	.diff-old {
+		color: var(--color-deletion-800);
+		background: var(--color-deletion-50);
+		border-left: 2px solid var(--color-deletion-500);
+		padding: 4px 8px;
+		border-radius: 0 3px 3px 0;
 	}
-	.new {
-		color: #166534;
+	.diff-new {
+		color: var(--color-addition-800);
+		background: var(--color-addition-50);
+		border-left: 2px solid var(--color-addition-500);
+		padding: 4px 8px;
+		border-radius: 0 3px 3px 0;
 	}
+
+	/* ─── Linked amendments / span-focus list ─── */
 	.amend-list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 	}
 	.amend-list li {
-		padding: 4px 0;
-		border-bottom: 1px dotted #e5e7eb;
-		font-size: 12px;
+		padding: 6px 0;
+		border-bottom: 1px dotted #e7e2d7;
+		font-size: 11.5px;
+	}
+	.amend-list li:last-child {
+		border-bottom: none;
 	}
 	.amend-list a,
-	.amend-list button {
-		color: #2563eb;
+	.event-link {
+		color: var(--color-brand-dark);
 		text-decoration: none;
 		background: none;
 		border: none;
@@ -631,34 +995,411 @@
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
+		text-align: left;
+		display: inline-flex;
+		gap: 6px;
+		align-items: baseline;
+		flex-wrap: wrap;
 	}
 	.amend-list a:hover,
-	.amend-list button:hover {
+	.event-link:hover {
 		text-decoration: underline;
+		text-underline-offset: 3px;
 	}
+	.amend-sep {
+		color: #d6d0c2;
+	}
+
+	/* ─── Span focus ─── */
+	.span-focus {
+		border-color: #d97706;
+		box-shadow: var(--shadow-sm);
+		margin-bottom: 16px;
+	}
+	.span-focus .card-head {
+		background: #fffbeb;
+	}
+	.dismiss {
+		font-family: var(--font-mono);
+		font-size: 10.5px;
+		background: #ffffff;
+		border: 1px solid #d6d0c2;
+		padding: 2px 8px;
+		cursor: pointer;
+		border-radius: 3px;
+		color: #6b7280;
+	}
+	.dismiss:hover {
+		border-color: #111827;
+		color: #111827;
+	}
+
+	/* ─── Body tree wrapper ─── */
+	.body-tree :global(.card-body) {
+		padding: 14px 16px;
+	}
+
+	/* ─── Misc ─── */
+	.muted { color: #6b7280; }
+	.mono { font-family: var(--font-mono); }
+	.ink { color: var(--color-brand-dark); }
 	.empty {
 		font-size: 12px;
 		color: #9ca3af;
-	}
-	.body-head {
-		margin-top: 24px;
-	}
-	.span-focus {
-		border-color: #d97706;
-	}
-	.dismiss {
-		margin-top: 8px;
-		font-size: 11px;
-		background: none;
-		border: 1px solid #e5e7eb;
-		padding: 2px 8px;
-		cursor: pointer;
+		font-style: italic;
+		padding: 8px 0;
 	}
 	.row-warnings {
-		margin-top: 12px;
+		margin-top: 14px;
 	}
-	.body-tree {
-		border-top: 1px solid #f3f4f6;
-		padding-top: 8px;
+
+	/* ─── Tabs ─── */
+	.tabs {
+		display: flex;
+		gap: 4px;
+		margin: 0 0 18px;
+		border-bottom: 2px solid #111827;
+	}
+	.tab {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		background: #f3f0e8;
+		border: 2px solid #111827;
+		border-bottom: none;
+		border-radius: 6px 6px 0 0;
+		padding: 7px 14px 8px;
+		font-family: var(--font-heading);
+		font-size: 11px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #4b5563;
+		cursor: pointer;
+		transform: translateY(2px);
+	}
+	.tab:hover {
+		background: #ebe6d9;
+	}
+	.tab-active {
+		background: #ffffff;
+		color: #0a0f1c;
+	}
+	.tab-score {
+		font-family: var(--font-mono);
+		font-size: 10.5px;
+		padding: 1px 6px;
+		border-radius: 3px;
+		font-weight: 500;
+		letter-spacing: 0;
+	}
+	.score-good {
+		background: #ecfdf5;
+		color: #065f46;
+		border: 1px solid #6ee7b7;
+	}
+	.score-mid {
+		background: #fef3c7;
+		color: #92400e;
+		border: 1px solid #fcd34d;
+	}
+	.score-low {
+		background: var(--color-deletion-50);
+		color: var(--color-deletion-800);
+		border: 1px solid var(--color-deletion-500);
+	}
+	.tab-pip {
+		font-family: var(--font-mono);
+		font-size: 10px;
+		padding: 0 5px;
+		border-radius: 8px;
+		font-weight: 500;
+		letter-spacing: 0;
+	}
+	.pip-err {
+		background: var(--color-deletion-500);
+		color: #ffffff;
+	}
+	.pip-warn {
+		background: #fbbf24;
+		color: #78350f;
+	}
+
+	/* ─── Lint view ─── */
+	.lint-view {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	.lint-summary {
+		padding: 16px 22px 14px;
+	}
+	.lint-summary-main {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+		flex-wrap: wrap;
+	}
+	.lint-score-block {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.lint-score-num {
+		font-family: var(--font-heading);
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 1;
+		padding: 4px 10px;
+		border-radius: 6px;
+	}
+	.lint-score-num .pct {
+		font-size: 18px;
+		opacity: 0.7;
+		margin-left: 2px;
+	}
+	.lint-score-label {
+		font-family: var(--font-heading);
+		font-size: 9.5px;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: #6b7280;
+		margin-top: 6px;
+	}
+	.lint-counts {
+		display: flex;
+		gap: 22px;
+		margin: 0;
+	}
+	.lint-counts > div {
+		display: flex;
+		flex-direction: column;
+	}
+	.lint-counts dt {
+		font-family: var(--font-heading);
+		font-size: 9.5px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #6b7280;
+	}
+	.lint-counts dd {
+		margin: 4px 0 0;
+		font-family: var(--font-mono);
+		font-size: 22px;
+		font-weight: 600;
+	}
+	.cnt-err { color: var(--color-deletion-800); }
+	.cnt-warn { color: #92400e; }
+	.cnt-info { color: #4b5563; }
+	.lint-hint {
+		margin-top: 14px;
+		max-width: 80ch;
+	}
+	.lint-hint code {
+		background: #f3f0e8;
+		padding: 1px 5px;
+		border-radius: 3px;
+		font-size: 10.5px;
+	}
+
+	.facets {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
+	.facet {
+		padding: 0;
+		overflow: hidden;
+	}
+	.facet-head {
+		padding: 14px 18px 12px;
+		border-bottom: 1px solid #e7e2d7;
+		background: #fbfaf7;
+	}
+	.facet-title {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		flex-wrap: wrap;
+	}
+	.facet-title h3 {
+		margin: 0;
+		font-family: var(--font-heading);
+		font-size: 14px;
+		font-weight: 600;
+		color: #0a0f1c;
+	}
+	.facet-score {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		padding: 1px 7px;
+		border-radius: 3px;
+	}
+	.facet-meta {
+		font-family: var(--font-mono);
+		font-size: 10.5px;
+		color: #6b7280;
+	}
+	.facet-rationale {
+		margin: 8px 0 0;
+		font-size: 11.5px;
+		color: #4b5563;
+		line-height: 1.55;
+		max-width: 80ch;
+	}
+	.facet-body {
+		padding: 12px 16px 16px;
+	}
+
+	.exp-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 11px;
+	}
+	.exp-table th {
+		text-align: left;
+		font-family: var(--font-heading);
+		font-size: 9.5px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #6b7280;
+		font-weight: 600;
+		padding: 4px 8px 6px;
+		border-bottom: 1px solid #e7e2d7;
+	}
+	.exp-table td {
+		padding: 5px 8px;
+		border-bottom: 1px dotted #efeae0;
+		vertical-align: top;
+	}
+	.th-status { width: 22px; }
+	.th-w { width: 36px; text-align: right; }
+	.th-count { width: 110px; }
+	.th-xpath { width: 38%; }
+	.exp-status {
+		text-align: center;
+		font-family: var(--font-mono);
+		font-size: 13px;
+		font-weight: 700;
+	}
+	.exp-ok .status-glyph { color: var(--color-addition-500); }
+	.exp-missing .status-glyph { color: var(--color-deletion-500); }
+	.exp-invalid .status-glyph { color: var(--color-deletion-500); }
+	.exp-optional-missing .status-glyph { color: #9ca3af; }
+	.exp-row.exp-missing { background: var(--color-deletion-50); }
+	.exp-row.exp-invalid { background: var(--color-deletion-50); }
+	.exp-row.exp-optional-missing { color: #6b7280; }
+	.exp-id .mono {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		color: #1f2937;
+	}
+	.exp-kind {
+		display: inline-block;
+		font-family: var(--font-heading);
+		font-size: 9px;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #6b7280;
+		padding: 0 4px;
+		margin-left: 4px;
+		background: #f3f0e8;
+		border-radius: 2px;
+	}
+	.exp-xpath {
+		font-size: 10.5px;
+		color: #4b5563;
+		word-break: break-all;
+	}
+	.exp-w {
+		text-align: right;
+		color: #6b7280;
+	}
+	.exp-count {
+		font-size: 11px;
+	}
+	.exp-val {
+		color: #4b5563;
+	}
+
+	.findings {
+		list-style: none;
+		padding: 0;
+		margin: 14px 0 0;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	.finding {
+		padding: 10px 12px;
+		border: 1px solid #e7e2d7;
+		border-left-width: 3px;
+		border-radius: 4px;
+		background: #ffffff;
+	}
+	.finding.sev-error {
+		border-left-color: var(--color-deletion-500);
+		background: var(--color-deletion-50);
+	}
+	.finding.sev-warn {
+		border-left-color: #fbbf24;
+		background: #fffbeb;
+	}
+	.finding.sev-info {
+		border-left-color: #9ca3af;
+		background: #fbfaf7;
+	}
+	.finding-head {
+		display: flex;
+		gap: 8px;
+		align-items: baseline;
+		margin-bottom: 4px;
+	}
+	.finding-sev {
+		font-family: var(--font-heading);
+		font-size: 9px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #6b7280;
+	}
+	.finding.sev-error .finding-sev { color: var(--color-deletion-800); }
+	.finding.sev-warn .finding-sev { color: #92400e; }
+	.finding-id {
+		font-size: 11px;
+		color: #1f2937;
+	}
+	.finding-msg {
+		font-size: 12px;
+		color: #1f2937;
+		margin-bottom: 4px;
+	}
+	.finding-rationale {
+		font-size: 11px;
+		color: #4b5563;
+		line-height: 1.55;
+		margin-bottom: 6px;
+	}
+	.finding-xpath {
+		display: inline-block;
+		font-family: var(--font-mono);
+		font-size: 10.5px;
+		color: #6b7280;
+		background: #f3f0e8;
+		padding: 1px 5px;
+		border-radius: 3px;
+	}
+
+	/* ─── Responsive ─── */
+	@media (max-width: 900px) {
+		.cols {
+			grid-template-columns: 1fr;
+		}
+		.timeline {
+			position: static;
+		}
+		.page {
+			padding: 16px 16px 64px;
+		}
 	}
 </style>
