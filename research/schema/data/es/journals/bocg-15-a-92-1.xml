@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <officialGazette name="bocg-congreso" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/officialGazette/2026-04-13/bocg-15-a-92-1/!main"/>
+          <FRBRuri value="/akn/es/officialGazette/2026-04-13/bocg-15-a-92-1"/>
+          <FRBRalias value="BOCG Congreso Serie A nº 92-1 — Proyecto de reforma del artículo 43 CE" name="title"/>
+          <FRBRdate date="2026-04-13" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="bocg-serie-a"/>
+          <FRBRnumber value="92-1"/>
+          <FRBRname value="bocg-15-a-92-1"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/officialGazette/2026-04-13/bocg-15-a-92-1/spa@2026-04-13/!main"/>
+          <FRBRuri value="/akn/es/officialGazette/2026-04-13/bocg-15-a-92-1/spa@2026-04-13"/>
+          <FRBRdate date="2026-04-13" name="expression"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/officialGazette/2026-04-13/bocg-15-a-92-1/spa@2026-04-13/!main.xml"/>
+          <FRBRuri value="/akn/es/officialGazette/2026-04-13/bocg-15-a-92-1/spa@2026-04-13.akn"/>
+          <FRBRdate date="2026-04-13" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-13" name="bocg-congreso" showAs="BOCG Congreso, Serie A, núm. 92-1, de 13 de abril de 2026" number="92-1"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-09" refersTo="#mesa-acuerdo" source="#diff-parlamento-ai" eId="mesa-acuerdo-2026-04-09"/>
+        <eventRef date="2026-04-13" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-13"/>
+        <eventRef date="2026-04-20" refersTo="#enmienda-deadline" source="#diff-parlamento-ai" eId="enmiendas-2026-04-20"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="congreso-diputados" href="/akn/ontology/organization/es/congreso-diputados" showAs="Congreso de los Diputados"/>
+        <TLCOrganization eId="cortes-generales" href="/akn/ontology/organization/es/cortes-generales" showAs="Cortes Generales"/>
+        <TLCOrganization eId="comision-constitucional-congreso" href="/akn/ontology/organization/es/congreso-diputados/comision-constitucional" showAs="Comisión Constitucional del Congreso"/>
+        <TLCOrganization eId="mesa-camara" href="/akn/ontology/organization/es/congreso-diputados/mesa" showAs="Mesa de la Cámara"/>
+        <TLCOrganization eId="gobierno-espana" href="/akn/ontology/organization/es/gobierno" showAs="Gobierno de España"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCPerson eId="fernando-galindo-elola-olaso" href="/akn/ontology/person/es/fernando-galindo-elola-olaso" showAs="Fernando Galindo Elola-Olaso"/>
+        <TLCRole eId="secretario-general-congreso" href="/akn/ontology/role/es/secretario-general-congreso" showAs="Secretario General del Congreso de los Diputados"/>
+        <TLCConcept eId="proyecto-reforma-constitucional" href="/akn/ontology/concept/es/proyecto-reforma-constitucional" showAs="proyecto de reforma constitucional"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCConcept eId="art-43-ce" href="/akn/ontology/concept/es/art-43-ce" showAs="artículo 43 de la Constitución Española"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (Proyecto de reforma del artículo 43 CE)"/>
+        <TLCReference eId="ce-1978" href="/akn/es/act/1978-12-27/constitucion-espanola" showAs="Constitución Española de 1978"/>
+        <TLCReference eId="lo-2-2010" href="/akn/es/act/2010-03-03/lo-2-2010" showAs="LO 2/2010 de salud sexual y reproductiva e IVE"/>
+        <TLCReference eId="lo-1-2023" href="/akn/es/act/2023-02-28/lo-1-2023" showAs="LO 1/2023 modificadora de LO 2/2010"/>
+        <TLCReference eId="stc-44-2023" href="/akn/es/judgment/2023-05-09/stc-44-2023" showAs="STC 44/2023 de 9 de mayo"/>
+        <TLCEvent eId="mesa-acuerdo" href="/akn/ontology/event/mesa-acuerdo" showAs="Acuerdo de la Mesa de la Cámara"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación en BOCG"/>
+        <TLCEvent eId="enmienda-deadline" href="/akn/ontology/event/enmienda-deadline" showAs="Fin del plazo de enmiendas"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>bocg-15-a-92-1</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-1.PDF</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Friction log para ES / journal bocg-15-a-92-1:
+
+1. JOURNAL OFICIAL. BOCG = Boletín Oficial de las Cortes Generales. Serie A = Proyectos de Ley.
+   Núm 92-1 = primera publicación del expediente 102/000001.
+
+2. CONTENIDO. Es la publicación oficial del bill (proyecto de reforma del art. 43 CE):
+   acuerdo de la Mesa para encomendar dictamen a la Comisión Constitucional + texto íntegro
+   del proyecto remitido por el Gobierno (Exposición de motivos + Artículo único + Disposición final única).
+
+3. PROCEDIMIENTO. La Mesa de la Cámara, en reunión del 9-abr-2026:
+   - Encomienda dictamen por el procedimiento de URGENCIA a la Comisión Constitucional
+     (artículos 93 y 109 RC, por remisión del 146.1 RC).
+   - Acuerda publicar en el BOCG.
+   - Establece plazo de presentación de enmiendas hasta el 20-abr-2026 a las 14h.
+
+4. FIRMANTE. P.D. Fernando Galindo Elola-Olaso, Secretario General del Congreso de los Diputados.
+
+5. CVE TÉCNICO. cve: BOCG-15-A-92-1 (identificador único en sistema BOE).
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>BOLETÍN OFICIAL DE LAS CORTES GENERALES — CONGRESO DE LOS DIPUTADOS — XV LEGISLATURA</docTitle>
+      <docNumber>Serie A — Núm. 92-1</docNumber>
+      <docDate date="2026-04-13">13 de abril de 2026</docDate>
+      <p><b>PROYECTOS DE LEY</b></p>
+      <p><b>PROYECTO DE REFORMA CONSTITUCIONAL</b></p>
+      <p><b>102/000001</b> Proyecto de reforma del artículo 43 de la Constitución Española.</p>
+    </preface>
+    <preamble>
+      <p>La Mesa de la Cámara, en su reunión del día de hoy, ha adoptado el acuerdo que se indica respecto del asunto de referencia.</p>
+      <p>(102) Proyecto de reforma constitucional.</p>
+      <p>Autor: Gobierno</p>
+      <p>Proyecto de reforma del artículo 43 de la Constitución Española.</p>
+      <p>Acuerdo:</p>
+      <p>Encomendar Dictamen por el procedimiento de urgencia, conforme a los artículos 93 y 109, por remisión del artículo 146.1, todos ellos del Reglamento del Congreso, a la Comisión Constitucional. Asimismo, publicar en el Boletín Oficial de las Cortes Generales, estableciendo, de acuerdo con el artículo 91 del Reglamento, un plazo de presentación de enmiendas que finalizará el día 20 de abril de 2026, a las 14 horas.</p>
+      <p>En ejecución de dicho acuerdo se ordena la publicación de conformidad con el artículo 97 del Reglamento de la Cámara.</p>
+      <p>Palacio del Congreso de los Diputados, 9 de abril de 2026.—P.D. El Secretario General del Congreso de los Diputados, Fernando Galindo Elola-Olaso.</p>
+    </preamble>
+    <body>
+      <hcontainer name="seccion-bill" eId="sec_bill">
+        <heading>PROYECTO DE REFORMA DEL ARTÍCULO 43 DE LA CONSTITUCIÓN ESPAÑOLA</heading>
+        <hcontainer name="exposicion-motivos" eId="em">
+          <heading>Exposición de motivos</heading>
+          <hcontainer name="parte" eId="em_i">
+            <num>I</num>
+            <p>En los años de vigencia de nuestra Constitución, España se ha consolidado como una sociedad democrática avanzada en el reconocimiento y garantía de los derechos fundamentales proclamados en el Título Primero de nuestra Norma Fundamental. Sin embargo, los textos constitucionales no pueden permanecer intangibles si se quiere que continúen sirviendo con fidelidad a los objetivos que se han marcado desde su origen. Las generaciones posteriores a la constituyente tienen el derecho y la obligación de revisar sus formulaciones, adaptándolas y mejorándolas, de cara a lograr una mayor garantía del ejercicio de los derechos que la propia Constitución proclama. En consecuencia, el avance en el reconocimiento jurídico de los derechos y, en lo que ahora interesa, el fortalecimiento de los derechos de libertad y de autodeterminación de las mujeres, así como su protección frente a eventuales dinámicas regresivas, abogan por la incorporación en la Constitución de un mandato a los poderes públicos dirigido a garantizar el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo que deriva del artículo 15 de la Constitución, mediante el establecimiento de las prestaciones y servicios que sean necesarios.</p>
+            <p>El derecho de la mujer a decidir libremente respecto a su proyecto de vida y, en consecuencia, su derecho a interrumpir voluntariamente el embarazo «forma parte del contenido constitucionalmente protegido del derecho fundamental a la integridad física y moral (artículo 15 CE) en conexión con la dignidad de la persona y el libre desarrollo de su personalidad como principios rectores del orden político y la paz social (artículo 10.1 CE)», tal y como afirma sin ambages el Tribunal Constitucional español en el fundamento jurídico tercero de la STC 44/2023, de 9 de mayo.</p>
+            <p>En conexión con ello, el Tribunal Constitucional también ha determinado que la interrupción voluntaria del embarazo se vincula con el derecho a la protección de la salud, reconocido en el artículo 43 de la Constitución, entendiendo que existe un deber del Estado de «garantizar que la realización del aborto se llevará a cabo dentro de los límites previstos por el legislador y en las condiciones médicas adecuadas para salvaguardar el derecho a la vida y a la salud de la mujer» (STC 53/1985, de 11 de abril, FJ 12). Quedan así perfectamente imbricados el derecho a la interrupción voluntaria del embarazo reconocido en el artículo 15 de la Constitución con el derecho a la protección de la salud previsto en su artículo 43.1, que se concreta en el deber de los poderes públicos de «organizar y tutelar la salud pública mediante medidas preventivas y mediante las prestaciones y servicios necesarios» (artículo 43.2 CE).</p>
+            <p>El Tribunal Constitucional ha entendido que del derecho a la protección de la salud se desprende un «contenido mínimo que hace reconocible el mandato imperativo que los poderes públicos deben asegurar y prestar (artículo 43 CE) en cualquier circunstancia a cualquier persona con el fin de preservar el derecho fundamental a la vida y la integridad física contenido en el artículo 15 CE» (STC 118/2019, de 16 de octubre, FJ 4). De ello se deriva que, en el ámbito de la interrupción voluntaria del embarazo, forman parte del derecho a la protección de la salud cuantas prestaciones sanitarias, asistenciales y de todo orden sean necesarias para garantizar que su práctica se realice en las mejores condiciones, siendo exigible su garantía a los poderes públicos, mediante el establecimiento de las prestaciones y servicios que sean necesarios.</p>
+          </hcontainer>
+          <hcontainer name="parte" eId="em_ii">
+            <num>II</num>
+            <p>Esta libertad básica de las mujeres fue perseguida penalmente durante muchos años en nuestro país, hasta que la Ley Orgánica 9/1985, de 5 de julio, de reforma del artículo 417 bis del Código Penal, despenalizó determinados supuestos de interrupción voluntaria del embarazo. Ahora bien, fue a partir de la Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo, cuando España se incorporó al conjunto de países más avanzados en la protección de los derechos de las mujeres, estableciendo que los poderes públicos están obligados a no interferir en estas decisiones, que corresponden exclusivamente al ámbito de autodeterminación personal de las mujeres en las primeras semanas de la gestación. Esta ley orgánica también incorporó obligaciones vinculadas a la responsabilidad institucional de todas las administraciones públicas competentes en la garantía del libre ejercicio del derecho a la interrupción voluntaria del embarazo, y fue avalada por el Tribunal Constitucional en la mencionada Sentencia 44/2023, de 9 de mayo.</p>
+            <p>Posteriormente, la Ley Orgánica 4/2022, de 12 de abril, por la que se modifica la Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal, introdujo en el Código Penal el artículo 172 quater para penalizar el acoso a las mujeres que acuden a clínicas para la interrupción voluntaria del embarazo, reforma que cuenta con el aval del Tribunal Constitucional en la Sentencia 75/2024, de 8 de mayo. Finalmente, en virtud de la Ley Orgánica 1/2023, de 28 de febrero, por la que se modifica la Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo, entre otras modificaciones tendentes a garantizar la vigencia efectiva de los derechos sexuales y reproductivos de las mujeres, se revirtió la modificación operada por la Ley Orgánica 11/2015, de 21 de septiembre, reconociendo de nuevo el derecho de las menores de edad de 16 y 17 años a interrumpir voluntariamente su embarazo sin necesidad de consentimiento de sus padres, tutores o representantes legales.</p>
+            <p>Por último, en el ámbito de la Unión Europea, el Parlamento Europeo aprobó el 11 de abril de 2024 la «Resolución sobre la inclusión del derecho al aborto en la Carta de los Derechos Fundamentales de la Unión Europea» [2024/2655 (RSP)], en la que insta al Consejo Europeo a que ponga en marcha una Convención para la revisión de los Tratados, tal como solicitó en sus Resoluciones de 9 de junio de 2022 y de 22 de noviembre de 2023, y a que adopte la propuesta incluida en su Resolución de 22 de noviembre de 2023 de añadir a la Carta la asistencia sanitaria sexual y reproductiva y el derecho al aborto seguro y legal.</p>
+          </hcontainer>
+          <hcontainer name="parte" eId="em_iii">
+            <num>III</num>
+            <p>Si bien el desarrollo legislativo y jurisprudencial en materia de reconocimiento y garantía de la interrupción voluntaria del embarazo ha resultado determinante para la protección de la vida, la integridad y la salud de las mujeres, la relevancia de los bienes jurídicos implicados, unida a la necesidad de reforzar la obligación de los poderes públicos de asegurar de manera real y efectiva la prestación que permite una interrupción del embarazo en condiciones de igualdad y de seguridad, exige avanzar un paso más constitucionalizando la obligación de los poderes públicos de garantizar y hacer efectivo el libre ejercicio de este derecho mediante el establecimiento de cuantas prestaciones y servicios sean necesarios.</p>
+            <p>Con este reconocimiento constitucional, el derecho a la interrupción voluntaria del embarazo queda reforzado con la obligación, indisponible para los poderes públicos, de garantizar su ejercicio en condiciones sanitarias apropiadas, estableciendo las prestaciones y servicios necesarios para tal fin. Con esta reforma constitucional España avanza en el reconocimiento social y jurídico del derecho a la autodeterminación de las mujeres y a su necesaria protección frente a dinámicas regresivas.</p>
+            <p>En cuanto a su ubicación sistemática, la protección de la vertiente prestacional del derecho a la interrupción voluntaria del embarazo encuentra acomodo en el artículo 43 de la Constitución, que reconoce el derecho a la protección de la salud e insta a los poderes públicos a establecer las prestaciones y los servicios necesarios para tal fin.</p>
+            <p>El nuevo precepto hace hincapié en la necesidad de que los poderes públicos aseguren, en condiciones de igualdad real y efectiva y, por tanto, en todo el territorio del Estado, la garantía real del ejercicio de este derecho, mediante el establecimiento de las prestaciones sanitarias, asistenciales y de todo orden que sean necesarias para su práctica, exigencia que está inescindiblemente unida a la protección de los derechos fundamentales vinculados a dicho derecho, tal y como refleja la jurisprudencia del Tribunal Constitucional.</p>
+            <p>Con esta reforma constitucional, España se coloca a la vanguardia de los países europeos más avanzados en la protección de los derechos de las mujeres, garantizando la obligación de los poderes públicos, no solo de no interferir en la libertad de las mujeres de decidir interrumpir voluntariamente su embarazo en las primeras semanas de la gestación, que corresponde exclusivamente al ámbito de su autodeterminación personal, sino de hacerlo efectivo mediante el establecimiento de cuantas prestaciones y servicios sean necesarios para tal fin.</p>
+            <p>Con esta finalidad, se propone añadir un nuevo apartado 4 al actual artículo 43 de la Constitución, en los siguientes términos:</p>
+          </hcontainer>
+        </hcontainer>
+        <article eId="art_unico">
+          <num>Artículo único.</num>
+          <p>El artículo 43 de la Constitución Española queda redactado en los siguientes términos:</p>
+          <quotedStructure startQuote="«" endQuote="»">
+            <article eId="art_43_nuevo">
+              <num>Artículo 43.</num>
+              <paragraph eId="art_43_nuevo__para_1"><num>1.</num><content><p>Se reconoce el derecho a la protección de la salud.</p></content></paragraph>
+              <paragraph eId="art_43_nuevo__para_2"><num>2.</num><content><p>Compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios. La ley establecerá los derechos y deberes de todos al respecto.</p></content></paragraph>
+              <paragraph eId="art_43_nuevo__para_3"><num>3.</num><content><p>Los poderes públicos fomentarán la educación sanitaria, la educación física y el deporte. Asimismo, facilitarán la adecuada utilización del ocio.</p></content></paragraph>
+              <paragraph eId="art_43_nuevo__para_4"><num>4.</num><content><p>Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio.</p></content></paragraph>
+            </article>
+          </quotedStructure>
+        </article>
+        <hcontainer name="disposicion-final" eId="disp_fin_unica">
+          <num>Disposición final única.</num>
+          <p>La presente reforma del artículo 43 de la Constitución Española entrará en vigor el mismo día de la publicación de su texto oficial en el «Boletín Oficial del Estado». Se publicará también en las demás lenguas de España.</p>
+        </hcontainer>
+      </hcontainer>
+    </body>
+    <conclusions>
+      <p>cve: BOCG-15-A-92-1</p>
+      <p>https://www.congreso.es CONGRESO DE LOS DIPUTADOS Calle Floridablanca, s/n. 28071 Madrid</p>
+      <p>D. L.: M-12.580/1961 Teléf.: 91 390 60 00</p>
+      <p>Edición electrónica preparada por la Agencia Estatal Boletín Oficial del Estado – https://www.boe.es</p>
+    </conclusions>
+  </officialGazette>
+</akomaNtoso>

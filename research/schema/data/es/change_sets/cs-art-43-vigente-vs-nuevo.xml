@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <changeSet name="change-set" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/changeSet/2026-04-07/cs-art-43-vigente-vs-nuevo/!main"/>
+          <FRBRuri value="/akn/es/changeSet/2026-04-07/cs-art-43-vigente-vs-nuevo"/>
+          <FRBRalias value="Diff art. 43 CE vigente (3 apartados, 1978) vs propuesto (4 apartados, 2026)" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="change-set-textual"/>
+          <FRBRname value="cs-art-43-vigente-vs-nuevo"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/changeSet/2026-04-07/cs-art-43-vigente-vs-nuevo/spa@2026-04-07/!main"/>
+          <FRBRuri value="/akn/es/changeSet/2026-04-07/cs-art-43-vigente-vs-nuevo/spa@2026-04-07"/>
+          <FRBRdate date="2026-04-07" name="expression"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/changeSet/2026-04-07/cs-art-43-vigente-vs-nuevo/spa@2026-04-07/!main.xml"/>
+          <FRBRuri value="/akn/es/changeSet/2026-04-07/cs-art-43-vigente-vs-nuevo/spa@2026-04-07.akn"/>
+          <FRBRdate date="2026-04-07" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-07" name="change-set-derivado" showAs="Diff art. 43 CE vigente vs propuesto — derivado por diff.parlamento.ai" number="cs-art-43-vigente-vs-nuevo"/>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="change-set-textual" href="/akn/ontology/concept/es/change-set-textual" showAs="change set textual"/>
+        <TLCReference eId="ce-1978-art-43" href="/akn/es/act/1978-12-27/constitucion-espanola/!main/art_43" showAs="Artículo 43 CE vigente"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>cs-art-43-vigente-vs-nuevo</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://diff.parlamento.ai/derived/cs-art-43-vigente-vs-nuevo</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Doc 30: change_set cs-art-43-vigente-vs-nuevo.
+
+Diferencia textual entre el art. 43 CE VIGENTE (texto original de la Constitución de 1978,
+3 apartados) y el art. 43 CE PROPUESTO por el bill 102/000001 (4 apartados, agregando un
+nuevo apartado 4 sobre interrupción voluntaria del embarazo).
+
+CAMBIO. INSERCIÓN PURA — los apartados 1, 2 y 3 quedan EXACTAMENTE iguales. Solo se
+AGREGA un apartado 4 nuevo.
+
+EFECTO. Constitucionaliza por primera vez en España el derecho de las mujeres a la
+interrupción voluntaria del embarazo, en su dimensión PRESTACIONAL (los poderes públicos
+deben garantizar su ejercicio mediante prestaciones y servicios), no como derecho
+fundamental autónomo.
+
+VERIFICABILIDAD. Ambos textos verificables al 100%:
+- Texto vigente: Constitución Española 1978 consolidada (Doc 2 ce-1978.xml)
+- Texto propuesto: BOCG-15-A-92-1 publicado oficialmente (Doc 7)
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>CHANGE SET — Artículo 43 CE vigente vs propuesto</docTitle>
+      <docDate date="2026-04-07">7 de abril de 2026</docDate>
+      <docProponent>diff.parlamento.ai (derivado)</docProponent>
+    </preface>
+    <mainBody>
+      <hcontainer name="change-set" eId="cs">
+        <heading>Diferencias textuales entre el art. 43 CE vigente y el art. 43 CE propuesto</heading>
+        <akndiff:changeSet eId="cs_art_43">
+          <akndiff:from version="vigente" date="1978-12-27">
+            <article>
+              <num>Artículo 43.</num>
+              <paragraph><num>1.</num><content><p>Se reconoce el derecho a la protección de la salud.</p></content></paragraph>
+              <paragraph><num>2.</num><content><p>Compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios. La ley establecerá los derechos y deberes de todos al respecto.</p></content></paragraph>
+              <paragraph><num>3.</num><content><p>Los poderes públicos fomentarán la educación sanitaria, la educación física y el deporte. Asimismo, facilitarán la adecuada utilización del ocio.</p></content></paragraph>
+            </article>
+          </akndiff:from>
+          <akndiff:to version="propuesto" date="2026-04-07">
+            <article>
+              <num>Artículo 43.</num>
+              <paragraph><num>1.</num><content><p>Se reconoce el derecho a la protección de la salud.</p></content></paragraph>
+              <paragraph><num>2.</num><content><p>Compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios. La ley establecerá los derechos y deberes de todos al respecto.</p></content></paragraph>
+              <paragraph><num>3.</num><content><p>Los poderes públicos fomentarán la educación sanitaria, la educación física y el deporte. Asimismo, facilitarán la adecuada utilización del ocio.</p></content></paragraph>
+              <paragraph akndiff:role="inserted"><num>4.</num><content><p>Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio.</p></content></paragraph>
+            </article>
+          </akndiff:to>
+          <akndiff:explanation>
+            <p>El cambio es una INSERCIÓN PURA. Los apartados 1, 2 y 3 mantienen su redacción original de 1978. Se incorpora únicamente un nuevo apartado 4 dedicado a constitucionalizar el derecho de las mujeres a la interrupción voluntaria del embarazo en su vertiente prestacional.</p>
+            <p>La estructura del cambio (única inserción al final) facilita la operación textual, pero su efecto jurídico es sustantivo: introduce por primera vez en el texto constitucional español una mención expresa a la IVE, vinculando la obligación de garantía a los poderes públicos.</p>
+          </akndiff:explanation>
+        </akndiff:changeSet>
+      </hcontainer>
+    </mainBody>
+  </changeSet>
+</akomaNtoso>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <statement name="nota-oficial-cm" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-moncloa-7-abr-2026/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-moncloa-7-abr-2026"/>
+          <FRBRalias value="Nota oficial del Consejo de Ministros — Aprobación del proyecto de reforma del artículo 43 CE" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#moncloa"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="nota-oficial-cm"/>
+          <FRBRname value="nota-moncloa-7-abr-2026"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-moncloa-7-abr-2026/spa@2026-04-07/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-moncloa-7-abr-2026/spa@2026-04-07"/>
+          <FRBRdate date="2026-04-07" name="expression"/>
+          <FRBRauthor href="#moncloa"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-moncloa-7-abr-2026/spa@2026-04-07/!main.xml"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-moncloa-7-abr-2026/spa@2026-04-07.akn"/>
+          <FRBRdate date="2026-04-07" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-07" name="nota-oficial-cm" showAs="La Moncloa — Presidencia del Gobierno — 2026-04-07"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-07" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-07"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="moncloa" href="/akn/ontology/organization/es/moncloa" showAs="La Moncloa — Presidencia del Gobierno"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>nota-moncloa-7-abr-2026</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/070426-enlace-aborto.aspx</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Statement: Nota oficial del Consejo de Ministros — Aprobación del proyecto de reforma del artículo 43 CE
+
+Autor: La Moncloa — Presidencia del Gobierno
+Fecha publicación: 2026-04-07
+URL fuente: https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/070426-enlace-aborto.aspx
+Subtipo: nota-oficial-cm
+
+Long title: Nota oficial publicada en La Moncloa el 7-abr-2026 anunciando la aprobación por el Consejo de Ministros del proyecto de reforma constitucional del artículo 43 CE para constitucionalizar el derecho a la interrupción voluntaria del embarazo.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Nota oficial del Consejo de Ministros — Aprobación del proyecto de reforma del artículo 43 CE</docTitle>
+      <docDate date="2026-04-07">2026-04-07</docDate>
+      <docProponent>La Moncloa — Presidencia del Gobierno</docProponent>
+      <p akndiff:role="source-url">https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/070426-enlace-aborto.aspx</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Nota oficial del Consejo de Ministros — Aprobación del proyecto de reforma del artículo 43 CE</heading>
+        <p akndiff:role="list-item">— Inicio &gt;</p>
+        <p akndiff:role="list-item">— Consejo de Ministros &gt;</p>
+        <p akndiff:role="list-item">— Resúmenes</p>
+        <p>Consejo de Ministros</p>
+        <p akndiff:role="heading"><b>El Gobierno aprueba el proyecto de reforma constitucional para blindar el derecho a la interrupción voluntaria del embarazo</b></p>
+        <p>Consejo de Ministros - 7.4.2026</p>
+        <p>La propuesta busca garantizar el ejercicio del derecho en condiciones de igualdad en todo el territorial nacional. Además, el Ejecutivo ha reforzado la lucha contra la violencia de género y ha activado ayudas para las zonas afectadas por borrascas.</p>
+        <p>Pool Moncloa/Jorge Villar</p>
+        <p>Intervenciones destacadas en este vídeo</p>
+        <p akndiff:role="list-item">— Saiz</p>
+        <p akndiff:role="list-item">— Redondo</p>
+        <p akndiff:role="list-item">— Medios</p>
+        <p akndiff:role="list-item">— Elma Saiz Delgado Ministra de Inclusión, Seguridad Social y Migraciones 00:00 Inicio de su intervención 01:06 España supera la cifra histórica de 22 millones de afiliados a la Seguridad Social 07:22 Medida para paliar los efectos de las borrascas Nils y Therese</p>
+        <p akndiff:role="list-item">— 00:00 Inicio de su intervención</p>
+        <p akndiff:role="list-item">— 01:06 España supera la cifra histórica de 22 millones de afiliados a la Seguridad Social</p>
+        <p akndiff:role="list-item">— 07:22 Medida para paliar los efectos de las borrascas Nils y Therese</p>
+        <p akndiff:role="list-item">— Ana Redondo García Ministra de Igualdad 08:44 Inicio de su intervención 09:12 Blindaje de los derechos sexuales y reproductivos de las mujeres en la Constitución 10:07 Derecho de las mujeres a interrumpir su embarazo en la dimensión prestacional 17:52 España, país de referencia en material de Igualdad 19:52 Refuerzo del Pacto de Estado contra la violencia de género</p>
+        <p akndiff:role="list-item">— 08:44 Inicio de su intervención</p>
+        <p akndiff:role="list-item">— 09:12 Blindaje de los derechos sexuales y reproductivos de las mujeres en la Constitución</p>
+        <p akndiff:role="list-item">— 10:07 Derecho de las mujeres a interrumpir su embarazo en la dimensión prestacional</p>
+        <p akndiff:role="list-item">— 17:52 España, país de referencia en material de Igualdad</p>
+        <p akndiff:role="list-item">— 19:52 Refuerzo del Pacto de Estado contra la violencia de género</p>
+        <p akndiff:role="list-item">— Medios de comunicación Respuestas a los medios de comunicación 21:01 Respuestas a los medios de comunicación</p>
+        <p akndiff:role="list-item">— 21:01 Respuestas a los medios de comunicación</p>
+        <p>La Moncloa, Madrid</p>
+        <p>El Consejo de Ministros ha remitido a las Cortes el proyecto de reforma de la Constitución Española para reconocer y blindar los derechos sexuales y reproductivos de las mujeres. La modificación incorpora un cuarto apartado al artículo 43 con la siguiente redacción: &quot;Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio&quot;.</p>
+        <p>La ministra de Igualdad, Ana Redondo, ha destacado que el nuevo párrafo ha sido validado por el Consejo de Estado, que considera que la propuesta acordada por el Consejo de Ministros el pasado 14 de octubre , &quot;con algunas modificaciones que hemos acogido, es completamente constitucional&quot;.</p>
+        <p akndiff:role="heading"><b>Garantía del ejercicio del derecho a la interrupción voluntaria del embarazo</b></p>
+        <p>Redondo ha explicado que la interrupción voluntaria del embarazo no está en riesgo como derecho subjetivo porque el Tribunal Constitucional ha reiterado que está conectado con la dignidad, el libre desarrollo de la personalidad y la integridad física y moral reconocidos en la Carta Magna.</p>
+        <p>Sin embargo, ha añadido, sí está en peligro el ejercicio real y efectivo de ese derecho en todo el territorio nacional, como reflejan los datos del último estudio presentado por el Ministerio de Sanidad. Solamente el 20% de las interrupciones voluntarias del embarazo se practica en centros integrados en la sanidad pública. Además, la situación es muy dispar entre unas comunidades autónomas y otras: si alrededor del 60% de las interrupciones se produce en la sanidad pública en Cantabria, Galicia, La Rioja y Navarra, ese porcentaje apenas llega al 1% en Madrid y Andalucía. &quot;Esto está generando una diferencia sustancial entre mujeres de primera y de segunda en torno a sus derechos sexuales, dependiendo de donde residan&quot;, ha señalado la ministra de Igualdad.</p>
+        <p akndiff:role="heading"><b>Apoyo social, refuerzo de la jurisprudencia y coherencia</b></p>
+        <p>Ana Redondo ha sintetizado la motivación de la reforma constitucional en tres razones.</p>
+        <p>La ministra de Igualdad, Ana Redondo, durante la rueda de prensa posterior al Consejo de Ministros. | Pool Moncloa/Borja Puig de la Bellacasa</p>
+        <p>En primer lugar, se trata de responder al &quot;movimiento ultrarreacionario que ha puesto en la diana los derechos sexuales y reproductivos de las mujeres a nivel global y también en nuestro país&quot;, según ha indicado la ministra. Redondo ha subrayado que, frente a ese movimiento institucionalizado en contra de las leyes de interrupción voluntaria del embarazo, la inmensa mayoría de la sociedad española es favorable a ese derecho.</p>
+        <p>El proyecto busca, en segundo lugar, reforzar la jurisprudencia del Tribunal Constitucional y aumentar las razones jurídicas para el aval del derecho de las mujeres a interrumpir voluntariamente su embarazo.</p>
+        <p>La tercera razón esgrimida por la titular de Igualdad es la coherencia: &quot;Somos una ciudadanía que abraza la democracia, los derechos de las mujeres y la igualdad, y tenemos que blindarla también en la Constitución&quot;. Ana Redondo ha remarcado que la legislación española ha ido avanzando en el reconocimiento del derecho de las mujeres sobre su propio proyecto vital, desde la ley de 1985 sobre la despenalización de determinados supuestos del aborto hasta la reforma del año 2023. España es un referente en materia de igualdad y, con este proyecto, sigue a otros países avanzados como Francia o Luxemburgo, ha argumentado la ministra.</p>
+        <p akndiff:role="heading"><b>Necesidad de una mayoría cualificada para la aprobación</b></p>
+        <p>Al formar parte el artículo 43 del capítulo relativo a los principios rectores de la política social y económica, su modificación debe realizarse a través del procedimiento de reforma ordinaria, el mismo que se ha seguido en las tres reformas de la Constitución aprobadas hasta la fecha.</p>
+        <p>El cambio, según ha reconocido Ana Redondo, &quot;exige mayorías cualificadas, grandes consensos y mucho diálogo&quot;. En concreto, requerirá el apoyo de, al menos, las tres quintas partes tanto del Congreso de los Diputados como del Senado; si no se llega a una mayoría tan amplia, una comisión paritaria Congreso-Senado volverá a redactar y a proponer un texto que será votado nuevamente. Si tampoco sale delante de esa manera, la reforma podrá aprobarse con el voto favorable de dos tercios del Congreso y la mayoría absoluta del Senado. Además, una décima parte de los diputados o de los senadores podrá solicitar un referéndum de ratificación de la propuesta.</p>
+        <p akndiff:role="heading"><b>Refuerzo del Pacto de Estado contra la Violencia de Género</b></p>
+        <p>La ministra de Inclusión, Seguridad Social y Migraciones, y portavoz del Gobierno, Elma Saiz, y la ministra de Igualdad, Ana Redondo, entran en la sala donde se celebra la rueda de prensa posterior al Consejo de Ministros. | Pool Moncloa/Borja Puig de la Bellacasa</p>
+        <p>El Gobierno también ha autorizado la distribución de 180 millones de euros a las comunidades y a las ciudades autónomas de Ceuta y Melilla para luchar contra la violencia de género. Ana Redondo ha apuntado que la propuesta de reparto se concretará en la Conferencia Sectorial de Igualdad que se celebrará el 15 de abril.</p>
+        <p>La titular de Igualdad ha detallado que, de la cifra total, 160 millones se destinarán a las comunidades y a Ceuta y Melilla para que mantengan &quot;todos los servicios y las investigaciones que profundizan en la violencia de género&quot;. Se dedicarán, por tanto, a financiar proyectos o programas para luchar contra la violencia de género promovidos por ellas.</p>
+        <p>Redondo también ha indicado que los 19,8 millones de euros restantes se dedicarán a distintos programas y planes autonómicos &quot;para la prevención y el acompañamiento de víctimas de violencias sexuales&quot;.</p>
+        <p>Durante su exposición, la ministra ha reiterado el compromiso &quot;indiscutible, firme y completo&quot; del Gobierno con respecto a los derechos de las mujeres y contra todo tipo de violencias: &quot;Violencia de género, violencias sexuales, en definitiva, contra las violencias machistas&quot;.</p>
+        <p akndiff:role="heading"><b>Declaración de zona gravemente afectada a territorios de 13 comunidades autónomas</b></p>
+        <p>La ministra de Inclusión, Seguridad Social y Migraciones y portavoz del Gobierno, Elma Saiz, ha informado de que el Gobierno ha aprobado la declaración de zona gravemente afectada por una emergencia de protección civil a los territorios que padecieron emergencias registradas entre el 10 de febrero y el 30 de marzo de 2026. Un período, ha dicho, &quot;marcado por una fuerte inestabilidad atmosférica y una sucesión de fenómenos adversos de distinta naturaleza&quot; como las borrascas Nils y Therese o el incendio forestal en el parque natural de Sierra Espuña (Murcia), que calcinó más de 400 hectáreas.</p>
+        <p>La ministra de Inclusión, Seguridad Social y Migraciones, y portavoz del Gobierno, Elma Saiz, durante la rueda de prensa posterior al Consejo de Ministros. | Pool Moncloa/Borja Puig de la Bellacasa</p>
+        <p>Tal y como ha explicado Saiz, esta medida activa las ayudas destinadas a paliar daños personales y materiales en viviendas y enseres. Asimismo, prevé fondos para las corporaciones locales y las empresas y otros destinados a reparar infraestructuras municipales, redes viarias provinciales e insulares y el resto de infraestructuras públicas.</p>
+        <p>La declaración afecta a 13 de las 17 comunidades autónomas. En concreto, se incluyen zonas de Asturias, Cantabria, Castilla-La Mancha, Castilla y León, Cataluña, Comunidad de Madrid, Extremadura, Galicia, Illes Balears, Canarias, La Rioja, Región de Murcia y País Vasco. Las ayudas se aplicarán sobre la base del principio de solidaridad interterritorial y de manera subsidiaria, complementando las del resto de administraciones.</p>
+        <p akndiff:role="heading"><b>Asuntos de actualidad</b></p>
+        <p>Elma Saiz ha celebrado la &quot;cifra histórica&quot; que España alcanzó en marzo con más de 22 millones de afiliaciones a la Seguridad Social &quot;en términos desestacionalizados&quot;, un tipo de registro &quot;que recomiendan los expertos y economistas&quot; porque evita que los festivos o la estacionalidad puedan &quot;distorsionar el comportamiento del mercado laboral&quot;.</p>
+        <p>&quot;Lo que muestra esta tendencia es un crecimiento del empleo sostenido, sostenible e imparable. En España se ha creado más de medio millón de empleos en el último año. Son 2,2 millones desde la puesta en marcha de la reforma laboral, y más de 3,3 millones desde el año 2018, absorbiendo incluso el duro impacto de la pandemia&quot;, ha remarcado la portavoz del Gobierno. Las cifras forman parte de un informe que ha presentado en el Consejo de Ministros.</p>
+        <p>La ministra de Igualdad, Ana Redondo, y la ministra de Inclusión, Seguridad Social y Migraciones, y portavoz del Gobierno, Elma Saiz, durante la rueda de prensa posterior al Consejo de Ministros. | Pool Moncloa/Borja Puig de la Bellacasa</p>
+        <p>&quot;Son datos que cobran más valor si miramos a nuestro entorno. Sólo en 2025, el 41% de todo el empleo en la Unión Europea se generó en nuestro país, es decir, cuatro de cada 10 empleos en Europa tienen su origen en España&quot;, ha insistido la titular de Inclusión, Seguridad Social y Migraciones.</p>
+        <p>La portavoz ha destacado especialmente el avance en la afiliación de las mujeres, una dinámica que &quot;está permitiendo corregir problemas estructurales&quot; y recortar brechas: &quot;Hoy tenemos 10,4 millones de mujeres trabajando, otro récord absoluto. Representan el 47,4% de toda nuestra fuerza laboral&quot;.</p>
+        <p>Asimismo, ha señalado Elma Saiz que esta evolución se refleja en otros indicadores, como el crecimiento de los trabajadores autónomos, que se mantienen por encima de los 3,4 millones de afiliados, 40.000 más en el último año, un incremento que &quot;se centra en sectores de alto valor añadido como la informática, la consultoría o las telecomunicaciones&quot;. También la afiliación de trabajadores extranjeros ha alcanzado cifras récord, superando los 3,15 millones de ocupados, lo que representa el 14% del total.</p>
+        <p>&quot;Esta inercia positiva está contribuyendo a resolver problemas como la incorporación laboral de los jóvenes y de los mayores de 55 años. Ambos colectivos presentan desde el año 2021 ritmos de afiliación por encima de la media&quot;, ha asegurado Saiz. La portavoz ha concluido subrayando que la calidad del empleo ha mejorado notablemente, ya que &quot;cerca del 90% de los contratos son indefinidos, reduciéndose drásticamente la temporalidad y la precariedad&quot; y &quot;la mitad de los empleos creados en los últimos dos años y medio pertenecen a las cinco ramas de actividad con mayores salarios&quot;.</p>
+      </hcontainer>
+    </mainBody>
+  </statement>
+</akomaNtoso>

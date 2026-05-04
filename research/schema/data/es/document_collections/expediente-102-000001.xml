@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <documentCollection name="expediente-parlamentario" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/documentCollection/2026-04-07/expediente-102-000001/!main"/>
+          <FRBRuri value="/akn/es/documentCollection/2026-04-07/expediente-102-000001"/>
+          <FRBRalias value="Expediente parlamentario completo 102/000001 — Reforma del artículo 43 CE" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="expediente-parlamentario"/>
+          <FRBRnumber value="102/000001"/>
+          <FRBRname value="expediente-102-000001"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/documentCollection/2026-04-07/expediente-102-000001/spa@2026-05-04/!main"/>
+          <FRBRuri value="/akn/es/documentCollection/2026-04-07/expediente-102-000001/spa@2026-05-04"/>
+          <FRBRdate date="2026-05-04" name="expression"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/documentCollection/2026-04-07/expediente-102-000001/spa@2026-05-04/!main.xml"/>
+          <FRBRuri value="/akn/es/documentCollection/2026-04-07/expediente-102-000001/spa@2026-05-04.akn"/>
+          <FRBRdate date="2026-05-04" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-07" name="expediente-congreso" showAs="Expediente 102/000001 — Congreso de los Diputados, XV Legislatura" number="102/000001"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2025-10-14" refersTo="#anteproyecto-cm" source="#diff-parlamento-ai" eId="anteproyecto-2025-10-14"/>
+        <eventRef date="2026-02-26" refersTo="#dictamen-ce" source="#diff-parlamento-ai" eId="dictamen-2026-02-26"/>
+        <eventRef date="2026-04-07" refersTo="#proyecto-cm" source="#diff-parlamento-ai" eId="proyecto-2026-04-07"/>
+        <eventRef date="2026-04-13" refersTo="#publicacion-bocg" source="#diff-parlamento-ai" eId="bocg-2026-04-13"/>
+        <eventRef date="2026-04-20" refersTo="#enmiendas-totalidad" source="#diff-parlamento-ai" eId="enmiendas-2026-04-20"/>
+        <eventRef date="2026-04-27" refersTo="#mocion-senado" source="#diff-parlamento-ai" eId="mocion-2026-04-27"/>
+        <eventRef date="2026-04-30" refersTo="#enmiendas-rechazadas" source="#diff-parlamento-ai" eId="rechazo-2026-04-30"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="congreso-diputados" href="/akn/ontology/organization/es/congreso-diputados" showAs="Congreso de los Diputados"/>
+        <TLCOrganization eId="senado" href="/akn/ontology/organization/es/senado" showAs="Senado"/>
+        <TLCOrganization eId="cortes-generales" href="/akn/ontology/organization/es/cortes-generales" showAs="Cortes Generales"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="expediente-parlamentario" href="/akn/ontology/concept/es/expediente-parlamentario" showAs="expediente parlamentario"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCEvent eId="anteproyecto-cm" href="/akn/ontology/event/anteproyecto-cm" showAs="Aprobación anteproyecto en CM"/>
+        <TLCEvent eId="dictamen-ce" href="/akn/ontology/event/dictamen-ce" showAs="Dictamen del Consejo de Estado"/>
+        <TLCEvent eId="proyecto-cm" href="/akn/ontology/event/proyecto-cm" showAs="Aprobación proyecto final en CM"/>
+        <TLCEvent eId="publicacion-bocg" href="/akn/ontology/event/publicacion-bocg" showAs="Publicación en BOCG"/>
+        <TLCEvent eId="enmiendas-totalidad" href="/akn/ontology/event/enmiendas-totalidad" showAs="Presentación enmiendas totalidad"/>
+        <TLCEvent eId="mocion-senado" href="/akn/ontology/event/mocion-senado" showAs="Aprobación moción Senado"/>
+        <TLCEvent eId="enmiendas-rechazadas" href="/akn/ontology/event/enmiendas-rechazadas" showAs="Rechazo enmiendas totalidad en Pleno"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>expediente-102-000001</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.congreso.es/es/iniciativas?p_p_id=iniciativas&amp;p_p_lifecycle=0&amp;_iniciativas_mode=mostrarDetalle&amp;_iniciativas_legislatura=XV&amp;_iniciativas_id=102/000001</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Doc 28: document_collection — Expediente parlamentario 102/000001.
+
+Es el ÍNDICE MAESTRO del expediente parlamentario completo de la reforma constitucional
+del artículo 43 CE. Agrupa los 30 documentos AKN del corpus.
+
+Cubre todo el ciclo de tramitación documentado:
+- Fase pre-parlamentaria (2025-10 a 2026-04): anteproyecto + dictamen CE + proyecto final
+- Fase Congreso (2026-04 a 2026-05): publicación + enmiendas + debate de totalidad
+- Fase Senado (paralela 2026-04): moción 661/001976 instando paralización
+
+Estado al 4-may-2026: en plazo de enmiendas al articulado (tras superar debate de totalidad).
+Probable rechazo final por falta de 3/5 en el Senado donde el PP tiene mayoría absoluta.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>EXPEDIENTE PARLAMENTARIO 102/000001 — Reforma constitucional del artículo 43 CE</docTitle>
+      <docNumber>102/000001</docNumber>
+      <docDate date="2026-04-07">7 de abril de 2026 (apertura formal)</docDate>
+      <docProponent>Gobierno de España (Consejo de Ministros)</docProponent>
+    </preface>
+    <collectionBody>
+      <component eId="cmp_bill">
+        <componentInfo>
+          <eventRef refersTo="#proyecto-cm"/>
+        </componentInfo>
+        <documentRef href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 — Proyecto de reforma del artículo 43 CE"/>
+      </component>
+      <component eId="cmp_act_ce">
+        <documentRef href="/akn/es/act/1978-12-27/constitucion-espanola" showAs="Constitución Española de 1978"/>
+      </component>
+      <component eId="cmp_act_lo_2_2010">
+        <documentRef href="/akn/es/act/2010-03-03/lo-2-2010" showAs="LO 2/2010 de salud sexual y reproductiva e IVE"/>
+      </component>
+      <component eId="cmp_act_lo_1_2023">
+        <documentRef href="/akn/es/act/2023-02-28/lo-1-2023" showAs="LO 1/2023 modificadora de LO 2/2010"/>
+      </component>
+      <component eId="cmp_act_lo_3_2007">
+        <documentRef href="/akn/es/act/2007-03-22/lo-3-2007" showAs="LO 3/2007 de igualdad efectiva de mujeres y hombres"/>
+      </component>
+      <component eId="cmp_amendment">
+        <documentRef href="/akn/es/amendment/2026-04-21/102-000001-am-totalidad" showAs="Enmiendas a la totalidad PP+VOX"/>
+      </component>
+      <component eId="cmp_journal_92_1">
+        <documentRef href="/akn/es/officialGazette/2026-04-13/bocg-15-a-92-1" showAs="BOCG Congreso Serie A nº 92-1 (proyecto)"/>
+      </component>
+      <component eId="cmp_journal_92_2">
+        <documentRef href="/akn/es/officialGazette/2026-04-23/bocg-15-a-92-2" showAs="BOCG Congreso Serie A nº 92-2 (enmiendas)"/>
+      </component>
+      <component eId="cmp_debate_pleno">
+        <documentRef href="/akn/es/debate/2026-04-30/atcd-15-pl-20260430" showAs="ATCD Pleno Congreso 30-abr — debate enmiendas totalidad"/>
+      </component>
+      <component eId="cmp_debate_senado">
+        <documentRef href="/akn/es/debate/2026-04-27/ds-c-15-679" showAs="DS-C Senado 27-abr — Comisión Constitucional"/>
+      </component>
+      <component eId="cmp_cit_pleno">
+        <documentRef href="/akn/es/citation/2026-04-28/cit-pleno-congreso-2026-04-30" showAs="Convocatoria Pleno Congreso sesión 175"/>
+      </component>
+      <component eId="cmp_cit_senado">
+        <documentRef href="/akn/es/citation/2026-04-27/cit-com-constitucional-senado-2026-04-27" showAs="Convocatoria Comisión Constitucional Senado sesión 24"/>
+      </component>
+      <component eId="cmp_communication">
+        <documentRef href="/akn/es/communication/2026-04-20/mocion-661-001976" showAs="Moción 661/001976 (paralización reforma)"/>
+      </component>
+      <component eId="cmp_stmt_moncloa">
+        <documentRef href="/akn/es/statement/2026-04-07/nota-moncloa-7-abr-2026" showAs="Nota Moncloa CM 7-abr"/>
+      </component>
+      <component eId="cmp_stmt_igualdad">
+        <documentRef href="/akn/es/statement/2026-04-07/nota-igualdad-7-abr-2026" showAs="Nota Min. Igualdad 7-abr"/>
+      </component>
+      <component eId="cmp_stmt_igualdad_prest">
+        <documentRef href="/akn/es/statement/2026-04-08/nota-igualdad-vertiente-prestacional" showAs="Nota Min. Igualdad — vertiente prestacional"/>
+      </component>
+      <component eId="cmp_stmt_sanidad">
+        <documentRef href="/akn/es/statement/2026-04-07/nota-sanidad-7-abr-2026" showAs="Nota Min. Sanidad 7-abr"/>
+      </component>
+      <component eId="cmp_stmt_pnv">
+        <documentRef href="/akn/es/statement/2026-04-09/comunicado-pnv-reforma" showAs="Comunicado oficial EAJ-PNV"/>
+      </component>
+      <component eId="cmp_stmt_presno_9">
+        <documentRef href="/akn/es/statement/2026-04-09/analisis-presno-9-abr" showAs="Análisis Presno Linera 9-abr"/>
+      </component>
+      <component eId="cmp_stmt_presno_28">
+        <documentRef href="/akn/es/statement/2026-04-28/analisis-presno-28-abr" showAs="Análisis Presno Linera 28-abr"/>
+      </component>
+      <component eId="cmp_stmt_hayderecho">
+        <documentRef href="/akn/es/statement/2026-04-19/analisis-hayderecho-arroyo-19-abr" showAs="Análisis Hay Derecho Arroyo 19-abr"/>
+      </component>
+      <component eId="cmp_doc_acuerdo_anteproyecto">
+        <documentRef href="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025" showAs="Acuerdo CM 14-oct-2025 (anteproyecto)"/>
+      </component>
+      <component eId="cmp_doc_acuerdo_proyecto">
+        <documentRef href="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026" showAs="Acuerdo CM 7-abr-2026 (proyecto final)"/>
+      </component>
+      <component eId="cmp_doc_dictamen_ce">
+        <documentRef href="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026" showAs="Dictamen Pleno Consejo de Estado 26-feb-2026"/>
+      </component>
+      <component eId="cmp_doc_voto_particular">
+        <documentRef href="/akn/es/doc/2026-02-26/voto-particular-rodriguez-minon" showAs="Voto particular Herrero y Rodríguez de Miñón"/>
+      </component>
+      <component eId="cmp_judgment_44">
+        <documentRef href="/akn/es/judgment/2023-05-09/stc-44-2023" showAs="STC 44/2023 (avala LO 2/2010)"/>
+      </component>
+      <component eId="cmp_judgment_92">
+        <documentRef href="/akn/es/judgment/2024-06-18/stc-92-2024" showAs="STC 92/2024 (ratifica STC 44/2023)"/>
+      </component>
+      <component eId="cmp_changeset_anteproy">
+        <documentRef href="/akn/es/changeSet/2026-04-07/cs-anteproyecto-vs-proyecto" showAs="Diff anteproyecto vs proyecto final"/>
+      </component>
+      <component eId="cmp_changeset_art_43">
+        <documentRef href="/akn/es/changeSet/2026-04-07/cs-art-43-vigente-vs-nuevo" showAs="Diff art. 43 vigente vs nuevo"/>
+      </component>
+      <component eId="cmp_portion">
+        <documentRef href="/akn/es/portion/2026-04-07/art-43-apartado-4-nuevo" showAs="Apartado 4 nuevo del art. 43 CE"/>
+      </component>
+    </collectionBody>
+  </documentCollection>
+</akomaNtoso>

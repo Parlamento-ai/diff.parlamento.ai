@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <doc name="dictamen-consejo-estado" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026/!main"/>
+          <FRBRuri value="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026"/>
+          <FRBRalias value="Dictamen del Pleno del Consejo de Estado de 26 de febrero de 2026 sobre el anteproyecto de reforma del artículo 43 CE" name="title"/>
+          <FRBRdate date="2026-02-26" name="generation"/>
+          <FRBRauthor href="#consejo-estado"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="dictamen-consejo-estado"/>
+          <FRBRname value="dictamen-ce-26-feb-2026"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026/spa@2026-02-26/!main"/>
+          <FRBRuri value="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026/spa@2026-02-26"/>
+          <FRBRdate date="2026-02-26" name="expression"/>
+          <FRBRauthor href="#consejo-estado"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026/spa@2026-02-26/!main.xml"/>
+          <FRBRuri value="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026/spa@2026-02-26.akn"/>
+          <FRBRdate date="2026-02-26" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-02-26" name="dictamen-consejo-estado" showAs="Pleno del Consejo de Estado — 2026-02-26"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-02-26" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-02-26"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="consejo-estado" href="/akn/ontology/organization/es/consejo-estado" showAs="Pleno del Consejo de Estado"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>dictamen-ce-26-feb-2026</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.consejo-estado.es/dictamenes/2026/126</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Doc 24: Dictamen del Pleno del Consejo de Estado — 26 de febrero de 2026.
+
+GAP DOCUMENTAL. El dictamen oficial del Consejo de Estado no se publica habitualmente
+en formato accesible (acceso restringido a las partes solicitantes — Gobierno y la propia
+institución). Su existencia y contenido están documentados a través de:
+  - Citaciones literales en la EXPOSICIÓN DE MOTIVOS del bill 102/000001 (Doc 1).
+  - Citaciones literales extensas en la JUSTIFICACIÓN de las enmiendas a la totalidad del
+    BOCG-15-A-92-2 (Doc 6 + Doc 8).
+  - Reseñas de prensa especializada (El País, La Vanguardia, ConfidencialDigital).
+
+ESTRUCTURA RECONSTRUIDA. Este XML reconstruye el dictamen desde las citaciones literales
+disponibles, manteniendo la fidelidad textual de cada cita y agregando la metadata oficial
+conocida (fecha, votación 16-4, votos particulares).
+
+VOTACIÓN. 16 a favor, 4 en contra, con dos votos particulares (uno concurrente y uno
+discrepante — el de Herrero y Rodríguez de Miñón).
+
+EFECTO. La recomendación del dictamen llevó al Gobierno a modificar la redacción del
+nuevo apartado 4 del art. 43 CE de "Se reconoce..." a "Los poderes públicos garantizarán...",
+adoptada en el proyecto final del 7-abr-2026.
+
+MARCAR COMO RECONSTRUIDO. Este documento se marca como reconstruido a partir de citas
+literales disponibles. Para una versión textualmente exhaustiva habría que solicitar el
+documento al propio Consejo de Estado.
+
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Dictamen del Pleno del Consejo de Estado de 26 de febrero de 2026 sobre el anteproyecto de reforma del artículo 43 CE</docTitle>
+      <docDate date="2026-02-26">2026-02-26</docDate>
+      <docProponent>Pleno del Consejo de Estado</docProponent>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Dictamen del Pleno del Consejo de Estado de 26 de febrero de 2026 sobre el anteproyecto de reforma del artículo 43 CE</heading>
+        <p akndiff:role="heading"><b>Dictamen del Pleno del Consejo de Estado — 26 de febrero de 2026</b></p>
+        <p>Asunto: Anteproyecto de Ley Orgánica de reforma del artículo 43 de la Constitución Española.</p>
+        <p>Solicitante: Gobierno de España (a través del Ministerio de Igualdad y el Ministerio de la Presidencia, Justicia y Relaciones con las Cortes).</p>
+        <p>Resultado de la votación: Mayoría aprobatoria de 16 votos a favor y 4 en contra; con dos votos particulares.</p>
+        <p akndiff:role="heading"><b>Posición mayoritaria (16 consejeros)</b></p>
+        <p>El Pleno del Consejo de Estado, en su sesión del 26 de febrero de 2026, emitió dictamen FAVORABLE al anteproyecto de reforma constitucional, con observaciones de redacción que sugirieron la modificación del texto inicial («Se reconoce el derecho...») por la fórmula prestacional finalmente adoptada por el Gobierno («Los poderes públicos garantizarán...»). El dictamen recuerda que «Las reformas constitucionales deben tramitarse, en primer lugar, a través de los procedimientos establecidos a tal fin» y que, «si son parciales, encuentran los límites sustantivos inherentes a la necesidad de respetar las categorías jurídicas establecidas en la Constitución y de preservar su coherencia interna, en los términos establecidos por la jurisprudencia del Tribunal Constitucional».</p>
+        <p>El dictamen constata que la elección del procedimiento del artículo 167 CE (procedimiento ordinario) en lugar del artículo 168 CE (procedimiento agravado) responde a una decisión del Gobierno fundada en consideraciones de oportunidad política. El Consejo de Estado reflexiona: «No evita mostrar claramente que uno de los motivos por los que se acude a reformar el artículo 43 de la Constitución (capítulo tercero del título I &quot;De los principios rectores de la política social y económica&quot;), en lugar del artículo 15 de la Constitución (sección 1.ª del Capítulo Segundo del Título I &quot;De los derechos fundamentales y de las libertades públicas&quot;), es que el procedimiento de reforma constitucional del artículo 167 aplicable al artículo 43 exige unas mayorías que, aun reforzadas, son inferiores a las del procedimiento de reforma del artículo 168 que habría que utilizar en una eventual reforma del artículo 15 de la Constitución, y no obliga, como este, a la disolución de las Cortes Generales y convocatoria de elecciones».</p>
+        <p>Concluye afirmando que los motivos aducidos por el Gobierno son «consideraciones de oportunidad política que, desde un punto de vista constitucional, no deberían ser tenidas en cuenta a la hora de elegir el precepto objeto de la reforma. La decisión de reformar uno u otro precepto constitucional ha de realizarse atendiendo únicamente al contenido de la reforma propuesta, en el marco de la Constitución. El procedimiento de reforma aplicado debe ser la consecuencia de esta decisión y no su causa».</p>
+        <p akndiff:role="heading"><b>Voto particular concurrente y voto particular discrepante</b></p>
+        <p>Al dictamen se acompañaron dos votos particulares: (i) un voto particular concurrente que matizaba la fundamentación pero coincidía con el sentido favorable; y (ii) un VOTO PARTICULAR DISCREPANTE de Don Miguel Herrero y Rodríguez de Miñón, ponente del texto constitucional de 1978 y consejero permanente del Consejo de Estado, al que se adhieren los consejeros Sr. Michavila Núñez, Sr. Sanz Alonso y Sr. Aparicio Pérez, calificando el proyecto como «fraude constitucional» (ver Doc 25 voto-particular-rodriguez-minon.xml).</p>
+        <p akndiff:role="heading"><b>Recomendación final</b></p>
+        <p>El dictamen se elevó al Gobierno con la recomendación de modificar la fórmula del nuevo apartado 4 del artículo 43 CE, de la fórmula declarativa («Se reconoce el derecho...») a la fórmula prestacional («Los poderes públicos garantizarán...»). El Gobierno asumió esta recomendación y aprobó el proyecto final el 7-abr-2026.</p>
+      </hcontainer>
+    </mainBody>
+  </doc>
+</akomaNtoso>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <statement name="analisis-juridico" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/statement/2026-04-19/analisis-hayderecho-arroyo-19-abr/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-19/analisis-hayderecho-arroyo-19-abr"/>
+          <FRBRalias value="Análisis jurídico — Reforma art. 43 CE (Hay Derecho, 19-abr-2026)" name="title"/>
+          <FRBRdate date="2026-04-19" name="generation"/>
+          <FRBRauthor href="#antonio-arroyo-gil"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="analisis-juridico"/>
+          <FRBRname value="analisis-hayderecho-arroyo-19-abr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/statement/2026-04-19/analisis-hayderecho-arroyo-19-abr/spa@2026-04-19/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-19/analisis-hayderecho-arroyo-19-abr/spa@2026-04-19"/>
+          <FRBRdate date="2026-04-19" name="expression"/>
+          <FRBRauthor href="#antonio-arroyo-gil"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/statement/2026-04-19/analisis-hayderecho-arroyo-19-abr/spa@2026-04-19/!main.xml"/>
+          <FRBRuri value="/akn/es/statement/2026-04-19/analisis-hayderecho-arroyo-19-abr/spa@2026-04-19.akn"/>
+          <FRBRdate date="2026-04-19" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-19" name="analisis-juridico" showAs="Antonio Arroyo Gil (jurista, Fundación Hay Derecho) — 2026-04-19"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-19" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-19"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="antonio-arroyo-gil" href="/akn/ontology/organization/es/antonio-arroyo-gil" showAs="Antonio Arroyo Gil (jurista, Fundación Hay Derecho)"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>analisis-hayderecho-arroyo-19-abr</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://hayderecho.expansion.com/2026/04/19/analisis-reforma-art-43-CE</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Statement: Análisis jurídico — Reforma art. 43 CE (Hay Derecho, 19-abr-2026)
+
+Autor: Antonio Arroyo Gil (jurista, Fundación Hay Derecho)
+Fecha publicación: 2026-04-19
+URL fuente: https://hayderecho.expansion.com/2026/04/19/analisis-reforma-art-43-CE
+Subtipo: analisis-juridico
+
+Long title: Análisis jurídico publicado en Fundación Hay Derecho por el jurista Antonio Arroyo Gil el 19-abr-2026 sobre el proyecto de reforma constitucional del artículo 43 CE: procedimiento, contenido y críticas.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Análisis jurídico — Reforma art. 43 CE (Hay Derecho, 19-abr-2026)</docTitle>
+      <docDate date="2026-04-19">2026-04-19</docDate>
+      <docProponent>Antonio Arroyo Gil (jurista, Fundación Hay Derecho)</docProponent>
+      <p akndiff:role="source-url">https://hayderecho.expansion.com/2026/04/19/analisis-reforma-art-43-CE</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Análisis jurídico — Reforma art. 43 CE (Hay Derecho, 19-abr-2026)</heading>
+        <p>El Consejo de Ministros de 7 de abril de 2026 ha aprobado el proyecto de reforma del artículo 43 de la Constitución Española (CE) con el siguiente texto:</p>
+        <p>“Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio”.</p>
+        <p>A partir de ahora se ha de seguir el procedimiento previsto en el art. 167 CE. Más allá de que el mismo pueda concluir exitosamente con la aprobación de la reforma, lo que no va a resultar nada sencillo, a la vista de la aritmética parlamentaria, son varias las dudas que se plantean. Teniendo en cuenta que ya ha habido diversos análisis llevados a cabo por distintos colegas sobre el sentido y alcance de esta reforma ( Miguel Ángel Presno , Octavio Salazar , o Itziar Gómez , entre otros), con los que estoy en lo sustancial de acuerdo, seguidamente, y con el fin de no reiterar argumentos de sobra conocidos, me voy a limitar a señalar un par de cuestiones que, salvo error u omisión por mi parte, me parece que no han sido suficientemente destacadas en relación con el pretendido blindaje constitucional de la interrupción voluntaria del embarazo (IVE) .</p>
+        <p>Según ha anunciado el propio Gobierno, y tal y como se deriva de la Exposición de motivos del Proyecto de reforma del artículo 43 de la Constitución Española (publicado en el BOE el 13 de abril de 2026), lo que se persigue con esta iniciativa es constitucionalizar la vertiente prestacional del derecho fundamental a la interrupción voluntaria del embarazo (IVE), dado que la vertiente individual del mismo (la libertad de decisión de la mujer) se encuentra ya protegida -de acuerdo con la jurisprudencia del Tribunal Constitucional- en el art. 15 CE (derecho a la integridad física y moral), en conexión con el art. 10.1 CE (dignidad humana y libre desarrollo de la personalidad). Es decir, a lo que aspira esta reforma constitucional -según el Gobierno- es a establecer una obligación de los poderes públicos de garantizar que el ejercicio de este derecho fundamental se pueda llevar a efecto en todo el territorio del Estado en condiciones de igualdad real y efectiva , tal y como, por lo demás, se deriva de las previsiones contenidas en los arts.  9.2 y 139.1 CE.</p>
+        <p>Sucede, sin embargo, que los derechos fundamentales son , como es unánimemente aceptado, derechos constitucionales; es decir, derechos que se encuentran reconocidos y garantizados en el propio texto constitucional . En concreto, en nuestro caso, en el Capítulo II del Título I de la Constitución (arts. 14-38 CE).</p>
+        <p>Y, a este respecto, el Tribunal Constitucional español ha decidido -en la STC 44/2023- y ratificado -en la STC 92/2024- que la IVE (regulada en la Ley Orgánica 2/2010, de 3 de marzo, modificada por la Ley Orgánica 1/2023, de 28 de febrero) es un derecho fundamental ; más específicamente, una manifestación del derecho fundamental a la integridad física y moral, reconocido en el art. 15 CE.</p>
+        <p>Aunque estas sentencias son, tanto en su argumentación como en el sentido de su fallo, muy controvertidas (puede verse aquí una crítica), lo cierto es que, de conformidad con las mismas, no cabe duda alguna de que el aborto es un derecho fundamental. Y lo es no porque lo diga el Tribunal Constitucional, sino porque -cabe entender- eso es lo que se deriva de la Constitución misma. Porque -insisto- los derechos fundamentales son derechos constitucionales, que es algo muy diferente a sostener que son derechos que puede “crear” el Tribunal Constitucional. En realidad, este no habría hecho otra cosa más que “descubrir” que el aborto -como se señalaba anteriormente- es una manifestación -que se encontraba oculta, muy oculta, al parecer- del derecho a la integridad física y moral (art. 15 CE). Dicho más llanamente: el derecho fundamental al aborto forma parte del contenido (tácito) del art. 15 CE. Solo había que darse cuenta de ello, que es lo que hizo el Tribunal Constitucional en las referidas sentencias.</p>
+        <p>Sin embargo, parece que en la comunidad jurídica (e, incluso, en el propio Gobierno) existe una fuerte sospecha de que ese “descubrimiento” podría, en un futuro, quedar en mero “espejismo” , si es que, como no se puede en absoluto descartar, por más que sea una operación compleja, un día el Tribunal Constitucional, que seguirá siendo el mismo órgano constitucional, pero estará integrado por otros miembros (magistrados), decide que, en realidad, el aborto no es un derecho fundamental.</p>
+        <p>Pues bien, si algo así ocurriera de poco serviría la reforma constitucional que pretende llevar a efecto el Gobierno mediante la introducción del apartado 4 en el art. 43 CE. La razón es bien conocida: el art. 43 CE forma parte de los principios rectores de la política social y económica (Capítulo III del Título I CE), y, por tanto, no es constitucionalmente apto para reconocer derechos fundamentales.</p>
+        <p>Con todo, el problema principal no sería ese, porque, en realidad, eso es algo que ya se da por descontado que puede llegar a suceder; el problema verdaderamente preocupante es que, de ocurrir lo que se anuncia, nuestra Constitución contendría un precepto (el apartado 4 del art. 43 CE) que se refiere a un derecho (supuestamente fundamental, esto es, constitucional) que, en realidad, no existe ya (porque el que lo descubrió en el pasado -el Tribunal Constitucional- más adelante se dio cuenta de que se había equivocado) .</p>
+        <p>De este modo, la reforma constitucional susodicha, por más que se quiera presentar como un intento de “reforzar la jurisprudencia del Tribunal Constitucional y aumentar las razones jurídicas para el aval del derecho de las mujeres a interrumpir voluntariamente su embarazo” -Gobierno dixit- , en realidad, lo que estaría haciendo es poner en riesgo no solo la coherencia interna de la Constitución, sino también su propio valor normativo (a lo que ya habría contribuido el Tribunal Constitucional con las sentencias mencionadas). Y no en relación con cualquier cuestión “menor”, sino nada menos que con respecto a la determinación de cuáles son nuestros derechos fundamentales. Porque -conviene insistir en ello- un derecho fundamental es algo demasiado serio como para quedar al albur de lo que decida una coyuntural mayoría en el seno del Tribunal Constitucional.</p>
+        <p>No se me oculta que esta crítica merece ser matizada, pues, a decir verdad, no es tan infrecuente que el Tribunal Constitucional vaya “descubriendo” manifestaciones ocultas de ciertos derechos fundamentales (el ejemplo del derecho a la tutela judicial efectiva puede valernos). Pero eso, se diga expresamente o no, está sujeto a ciertas condiciones, entre las que no ocupa un lugar menor la relativa a la unidad conceptual y finalidad común que debe de existir entre el derecho fundamental expresamente reconocido en la Constitución y la manifestación “oculta” del mismo que el Tribunal saca a la luz. Unidad conceptual y finalidad común que en el caso que nos ocupa difícilmente se puede sostener. Y es que el aborto tiene, por expresarlo de esta manera, una entidad suficiente (y autónoma) como para considerarlo simplemente una manifestación del derecho a la integridad física y moral.</p>
+        <p>Por tanto, si se quiere reconocer expresamente en el texto constitucional el derecho fundamental a la IVE, y dotarle de las máximas garantías, lo que hay que hacer es reformar la Constitución por la vía a tal efecto prevista, que no es otra que la agravada a que se refiere el art. 168 CE , a fin de incluir en la Sección Primera del Capítulo II del Título I de la Constitución explícitamente ese derecho. Tan fácil y tan difícil como eso. Lo demás no es más que practicar el peligroso juego del malabarismo constitucional.</p>
+        <p>Negada, de esta manera, la virtualidad de la reforma constitucional en marcha para blindar la “fundamentalidad” del derecho a la IVE, y dando por hecho que un día el Tribunal Constitucional decidiera revertir su decisión y declarar que este derecho, en realidad, no es fundamental, cabría preguntarse, finalmente, si dicha reforma carecería de efecto alguno en relación con la posible reforma que un futuro legislador decidiera llevar a cabo de esta cuestión . Lógicamente, y por más que se trate de un principio rector de la política social y económica, que en el texto constitucional exista una referencia expresa al “derecho de las mujeres a la interrupción voluntaria del embarazo” no puede ser irrelevante para el legislador, que ha de respetar, en todo caso, la Constitución. Y es que, aunque el reconocimiento, el respeto y la protección de estos principios del Capítulo III se limite a informar la legislación positiva, la práctica judicial y la actuación de los poderes públicos, de modo que solo podrán ser alegados ante la jurisdicción ordinaria de acuerdo con lo que dispongan las leyes que los desarrollen (art. 53.3 CE), en la medida en que la Constitución -tras la reforma- partiría de la existencia de ese derecho de las mujeres a la IVA, el legislador futuro estaría obligado a mantener, por mandato constitucional, la existencia de ese derecho, si bien con la configuración que desease darle, que ya no tendría por qué responder necesariamente a un modelo de plazos como el actual .</p>
+        <p>En conclusión, la reforma constitucional no serviría para garantizar el carácter de fundamental del derecho a la IVE, pero sí obligaría al legislador futuro a mantener el reconocimiento de este derecho (con la configuración que considere pertinente), garantizando que su ejercicio se lleve a cabo “en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio”.</p>
+        <p>Las opiniones expresadas en este blog son exclusiva responsabilidad de sus autores y no reflejan necesariamente la posición de Hay Derecho sobre ningún asunto. La fundación no se hace responsable de los comentarios u opiniones vertidas en los artículos publicados en el Blog Hay Derecho .</p>
+        <p>Antonio Arroyo Gil</p>
+        <p>Antonio Arroyo Gil</p>
+        <p>Doctor Europeo en Derecho por la Universidad Autónoma de Madrid (UAM), es en la actualidad Profesor Titular de Derecho constitucional en esta universidad [acreditado Catedrático desde noviembre de 2024].</p>
+        <p>De junio de 2022 a junio de 2025 prestó sus servicios en el Tribunal Constitucional como Letrado de adscripción temporal.</p>
+        <p>Desde octubre de 2016 hasta mayo de 2022 ha sido, asimismo, Asesor de la Fundación Democracia y Gobierno Local , de la que fue letrado durante once años (2005-2010 y 2012-2016).</p>
+        <p>De noviembre de 2017 a noviembre de 2021 fue Profesor-Tutor del Máster Universitario en Derecho Constitucional, del CEPC-UIMP .</p>
+        <p>De octubre de 2010 a diciembre de 2011 fue Asesor, primero, y Jefe de Gabinete, después, del Secretario de Estado de Asuntos Constitucionales y Parlamentarios (Ministerio de la Presidencia – Gobierno de España).</p>
+        <p>Es autor de numerosas publicaciones científicas, principalmente, sobre organización territorial del poder (federalismo alemán y austriaco, Estado autonómico español, autonomía local, etc.), derechos fundamentales, Unión Europea y estados excepcionales, en distintas revistas especializadas u obras colectivas, así como de los libros :</p>
+        <p akndiff:role="list-item">— El federalismo alemán en la encrucijada (Sobre el intento de modernización del orden federativo en la República Federal de Alemania), CEPC, Madrid, 2006 [por el obtuvo el Primer Premio Manuel Giménez Abad para trabajos de investigación sobre la descentralización política y territorial]; y</p>
+        <p akndiff:role="list-item">— La reforma constitucional del federalismo alemán (Estudio crítico de la 52ª. Ley de modificación de la Ley Fundamental de Bonn, de 28 de agosto de 2006), IEA, Barceona, 2009 [por el que obtuvo – ex aequo – el Primer Premio Josep María Vilaseca i Marcet del Institut d’Estudis Autonòmics de la Generalitat de Catalunya, para trabajos de investigación sobre el federalismo y la autonomía política].</p>
+        <p akndiff:role="list-item">— Guía práctica sobre la Ley de Racionalización y Sostenibilidad de la Administración Local (LRSAL) [en colaboración con F. Fernández-Figueroa (coord.); C. Lucas; J. M. Pardellas; y A. Serrano], Fundación Democracia y Gobierno Local, Madrid, 2014.</p>
+        <p akndiff:role="list-item">— Distribución y delimitación de competencias , Col. Debate Constitucionales, Marcial Pons, Madrid, 2019.</p>
+        <p>Superblog: profundizar más</p>
+        <p>Superblog: profundizar más</p>
+        <p>https://www.hayderecho.com/wp-content/uploads/2025/07/tribunal-constitucional.jpg 1080 1920 Antonio Arroyo Gil https://www.hayderecho.com/wp-content/uploads/2026/03/Logo-hay-derecho-ok-blanco.png Antonio Arroyo Gil 2026-04-19 07:00:58 2026-04-17 11:59:52 La reforma constitucional del aborto</p>
+        <p>https://www.hayderecho.com/wp-content/uploads/2025/07/tribunal-constitucional.jpg 1080 1920</p>
+        <p>https://www.hayderecho.com/wp-content/uploads/2025/07/tribunal-constitucional.jpg</p>
+        <p>1080</p>
+        <p>1920</p>
+        <p>Antonio Arroyo Gil https://www.hayderecho.com/wp-content/uploads/2026/03/Logo-hay-derecho-ok-blanco.png</p>
+        <p>https://www.hayderecho.com/wp-content/uploads/2026/03/Logo-hay-derecho-ok-blanco.png</p>
+        <p>2026-04-19 07:00:58</p>
+        <p>2026-04-17 11:59:52</p>
+        <p>La reforma constitucional del aborto</p>
+      </hcontainer>
+    </mainBody>
+  </statement>
+</akomaNtoso>

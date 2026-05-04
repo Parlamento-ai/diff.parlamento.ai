@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <communication name="mocion-senado" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/communication/2026-04-20/mocion-661-001976/!main"/>
+          <FRBRuri value="/akn/es/communication/2026-04-20/mocion-661-001976"/>
+          <FRBRalias value="Moción 661/001976 — GP Popular en el Senado, instando al Gobierno a no continuar con la tramitación de la reforma del art. 43 CE" name="title"/>
+          <FRBRdate date="2026-04-20" name="generation"/>
+          <FRBRauthor href="#grupo-popular-senado"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="mocion-comision"/>
+          <FRBRnumber value="661/001976"/>
+          <FRBRname value="mocion-661-001976"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/communication/2026-04-20/mocion-661-001976/spa@2026-04-27/!main"/>
+          <FRBRuri value="/akn/es/communication/2026-04-20/mocion-661-001976/spa@2026-04-27"/>
+          <FRBRdate date="2026-04-27" name="expression"/>
+          <FRBRauthor href="#grupo-popular-senado"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/communication/2026-04-20/mocion-661-001976/spa@2026-04-27/!main.xml"/>
+          <FRBRuri value="/akn/es/communication/2026-04-20/mocion-661-001976/spa@2026-04-27.akn"/>
+          <FRBRdate date="2026-04-27" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-20" name="senado-iniciativas" showAs="Moción 661/001976 registrada en el Senado el 20-abr-2026" number="661/001976"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-20" refersTo="#entrada-registro" source="#diff-parlamento-ai" eId="entrada-registro-2026-04-20"/>
+        <eventRef date="2026-04-21" refersTo="#entrada-comision" source="#diff-parlamento-ai" eId="entrada-comision-2026-04-21"/>
+        <eventRef date="2026-04-21" refersTo="#calificacion-presidencia" source="#diff-parlamento-ai" eId="calificacion-presidencia-2026-04-21"/>
+        <eventRef date="2026-04-27" refersTo="#debate-comision" source="#diff-parlamento-ai" eId="debate-comision-2026-04-27"/>
+        <eventRef date="2026-04-27" refersTo="#aprobada" source="#diff-parlamento-ai" eId="aprobada-2026-04-27"/>
+        <eventRef date="2026-04-28" refersTo="#calificacion-mesa" source="#diff-parlamento-ai" eId="calificacion-mesa-2026-04-28"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="senado" href="/akn/ontology/organization/es/senado" showAs="Senado de España"/>
+        <TLCOrganization eId="comision-constitucional-senado" href="/akn/ontology/organization/es/senado/comision-constitucional" showAs="Comisión Constitucional del Senado"/>
+        <TLCOrganization eId="grupo-popular-senado" href="/akn/ontology/organization/es/senado/grupo-parlamentario/popular" showAs="Grupo Parlamentario Popular en el Senado"/>
+        <TLCOrganization eId="grupo-socialista-senado" href="/akn/ontology/organization/es/senado/grupo-parlamentario/socialista" showAs="Grupo Parlamentario Socialista del Senado"/>
+        <TLCOrganization eId="gobierno-espana" href="/akn/ontology/organization/es/gobierno" showAs="Gobierno de España"/>
+        <TLCOrganization eId="consejo-estado" href="/akn/ontology/organization/es/consejo-estado" showAs="Consejo de Estado"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCPerson eId="senador-tirado-ochoa" href="/akn/ontology/person/es/tirado-ochoa" showAs="Senador Tirado Ochoa (GP Popular Senado)"/>
+        <TLCRole eId="portavoz-mocion" href="/akn/ontology/role/es/portavoz-mocion" showAs="Portavoz de moción"/>
+        <TLCConcept eId="mocion-comision" href="/akn/ontology/concept/es/mocion-comision" showAs="moción en comisión"/>
+        <TLCConcept eId="paralizar-reforma-constitucional" href="/akn/ontology/concept/es/paralizar-reforma-constitucional" showAs="paralizar reforma constitucional"/>
+        <TLCConcept eId="consenso-constitucional" href="/akn/ontology/concept/es/consenso-constitucional" showAs="consenso constitucional"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCReference eId="ce-1978" href="/akn/es/act/1978-12-27/constitucion-espanola" showAs="Constitución Española de 1978"/>
+        <TLCReference eId="art-167-ce" href="/akn/es/act/1978-12-27/constitucion-espanola/!main/art_167" showAs="Artículo 167 CE (procedimiento ordinario reforma)"/>
+        <TLCReference eId="art-168-ce" href="/akn/es/act/1978-12-27/constitucion-espanola/!main/art_168" showAs="Artículo 168 CE (procedimiento agravado reforma)"/>
+        <TLCReference eId="debate-comision-senado" href="/akn/es/debate/2026-04-27/ds-c-15-679" showAs="DS-C nº 679 — Debate en Comisión Constitucional"/>
+        <TLCEvent eId="entrada-registro" href="/akn/ontology/event/entrada-registro" showAs="Entrada en registro"/>
+        <TLCEvent eId="entrada-comision" href="/akn/ontology/event/entrada-comision" showAs="Entrada en Comisión"/>
+        <TLCEvent eId="calificacion-presidencia" href="/akn/ontology/event/calificacion-presidencia" showAs="Calificación por Presidencia"/>
+        <TLCEvent eId="debate-comision" href="/akn/ontology/event/debate-comision" showAs="Debate en Comisión"/>
+        <TLCEvent eId="aprobada" href="/akn/ontology/event/aprobada" showAs="Aprobada"/>
+        <TLCEvent eId="calificacion-mesa" href="/akn/ontology/event/calificacion-mesa" showAs="Calificación por la Mesa"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>mocion-661-001976</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.senado.es/web/ficopendataservlet?legis=15&amp;tipoFich=3&amp;tipoEx=661&amp;numEx=001976</akndiff:sourceUrl>
+
+        <akndiff:transcriptId provider="parlamento-ai">13988</akndiff:transcriptId>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Friction log para ES / communication mocion-661-001976:
+
+1. MOCIÓN EN COMISIÓN (Senado). Iniciativa parlamentaria del GP Popular en el Senado
+   presentada el 20-abr-2026 (entrada en registro).
+
+2. CONTENIDO. Insta al Gobierno a no continuar con la tramitación del proyecto de
+   reforma del art. 43 CE (102/000001) en tanto no se alcance el consenso necesario.
+
+3. TRAMITACIÓN.
+   - 20-abr-2026: Entrada en registro
+   - 21-abr-2026: Entrada en Comisión + Calificación de la Presidencia
+   - 27-abr-2026: Debate en Comisión Constitucional + Votación → APROBADA (18-12)
+   - 28-abr-2026: Calificación de la Mesa
+
+4. RELACIÓN CON BILL 102/000001. Es la respuesta política del PP (mayoría en Senado)
+   al proyecto de reforma del Gobierno. La moción no es jurídicamente vinculante para
+   el Gobierno pero sienta posición política y anticipa el bloqueo en el Senado.
+
+5. AUTORIDADES. GP Popular en el Senado. Defensor: senador Tirado Ochoa (titular
+   intervención principal). Enmienda transaccional negociada con el GP Socialista.
+
+6. FUENTES.
+   - fichaExpediente XML oficial Senado (datos cabecera, tramitaciones, intervinientes)
+   - DS-C-15-679 (texto literal del debate)
+   - Vinculado en parlamento-ai DB transcriptId 13988
+
+7. ESTADO. APROBADA SIN MODIFICACIONES.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>MOCIÓN EN COMISIÓN — Núm. expediente 661/001976</docTitle>
+      <docNumber>661/001976</docNumber>
+      <docProponent>Grupo Parlamentario Popular en el Senado</docProponent>
+      <docDate date="2026-04-20">20 de abril de 2026</docDate>
+      <p akndiff:role="situacion">Situación: Aprobado sin modificaciones</p>
+      <p akndiff:role="legislatura">Legislatura: XV</p>
+      <p akndiff:role="organo-competente">Órgano competente: Comisión Constitucional</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="titulo-mocion" eId="titulo">
+        <heading>Título de la Moción</heading>
+        <p>Moción por la que se recuerda la importancia de preservar el consenso social y político básico en torno a la Constitución, y se insta al Gobierno a no continuar con la tramitación de su proyecto de reforma del artículo 43 de la Constitución en tanto no se alcance el consenso necesario.</p>
+      </hcontainer>
+      <hcontainer name="defensa-mocion" eId="defensa">
+        <heading>Defensa de la moción — Senador Tirado Ochoa (GP Popular en el Senado)</heading>
+        <p>Señorías, hoy no estamos ante un simple debate jurídico ni ante una discrepancia política más. Estamos ante algo más grave: la utilización de la Constitución con fines que nada tienen que ver con el constitucionalismo. La Constitución de 1978 no es un instrumento al servicio del Gobierno de turno ni un recurso de coyuntura política, sino el gran acuerdo que permitió a este país convivir en libertad, integrando sensibilidades distintas bajo el mismo marco común. Y precisamente por eso exigimos respeto a su letra, a sus procedimientos y, sobre todo, al consenso que la hizo posible.</p>
+        <p>Reformar la Constitución no es un acto ordinario ni puede responder a la oportunidad política del momento. Nuestra norma fundamental lo deja claro en su título X, con los procedimientos de los artículos 167 y 168, que exigen mayorías reforzadas para obligar al acuerdo. Pero, más allá de esos requisitos jurídicos, existe una exigencia aún más profunda: la cultura constitucional que impone diálogo previo, maduración de las propuestas, serenidad y voluntad de integración. El Consejo de Estado ya añadió en 2006 que una reforma solo es legítima si responde a una demanda real, si es prudente, si está suficientemente trabajada, si nace del diálogo y si genera el consenso comparable con el originario. Nada de eso ocurre hoy. No ha habido diálogo, no ha habido acuerdo, no existe una demanda social prioritaria y no hay ninguna expectativa real de que esta reforma prospere. Y, además, se construye sobre una premisa falsa, que es necesario blindar el aborto en la Constitución, cuando la realidad es que el aborto ya está regulado por una ley orgánica vigente y avalada por el Tribunal Constitucional. No hay vacío jurídico, no hay urgencia y no hay base política para impulsar una reforma sin consenso.</p>
+      </hcontainer>
+      <hcontainer name="parte-dispositiva" eId="dispositiva">
+        <heading>Parte dispositiva — Texto de la moción</heading>
+        <p>El Senado, en el ejercicio de sus funciones constitucionales, recuerda la importancia de preservar el consenso social y político básico en torno a la Constitución de 1978, y en consecuencia <b>insta al Gobierno a no continuar con la tramitación de su proyecto de reforma del artículo 43 de la Constitución en tanto no se alcance el consenso necesario</b> entre las principales fuerzas políticas, conforme al espíritu integrador y de diálogo que inspiró el texto constitucional original.</p>
+      </hcontainer>
+      <hcontainer name="resultado" eId="resultado">
+        <heading>Resultado de la votación (27-abr-2026)</heading>
+        <p akndiff:role="resultado">APROBADA. Votos a favor: 18. En contra: 12. Abstenciones: 0.</p>
+        <p akndiff:role="estado">Estado: Aprobada sin modificaciones (con calificación de la Mesa el 28-abr-2026).</p>
+      </hcontainer>
+    </mainBody>
+  </communication>
+</akomaNtoso>

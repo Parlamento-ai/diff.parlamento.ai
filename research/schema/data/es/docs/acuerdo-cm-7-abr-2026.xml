@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <doc name="acuerdo-consejo-ministros" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026/!main"/>
+          <FRBRuri value="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026"/>
+          <FRBRalias value="Referencia del Consejo de Ministros del 7 de abril de 2026 — Aprobación del PROYECTO de reforma del artículo 43 CE (entre otros acuerdos)" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#consejo-ministros"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="acuerdo-consejo-ministros"/>
+          <FRBRname value="acuerdo-cm-7-abr-2026"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026/spa@2026-04-07/!main"/>
+          <FRBRuri value="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026/spa@2026-04-07"/>
+          <FRBRdate date="2026-04-07" name="expression"/>
+          <FRBRauthor href="#consejo-ministros"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026/spa@2026-04-07/!main.xml"/>
+          <FRBRuri value="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026/spa@2026-04-07.akn"/>
+          <FRBRdate date="2026-04-07" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-07" name="acuerdo-consejo-ministros" showAs="Consejo de Ministros — Gobierno de España — 2026-04-07"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-07" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-07"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="consejo-ministros" href="/akn/ontology/organization/es/consejo-ministros" showAs="Consejo de Ministros — Gobierno de España"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001"/>
+        <TLCReference eId="acuerdo-cm-anteproyecto" href="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025" showAs="Acuerdo CM 14-oct-2025 (anteproyecto)"/>
+        <TLCReference eId="dictamen-ce" href="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026" showAs="Dictamen Consejo de Estado"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+        <akndiff:nativeId>acuerdo-cm-7-abr-2026</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/070426-cm.aspx</akndiff:sourceUrl>
+        <akndiff:researchNotes>
+          <akndiff:note><![CDATA[
+Doc 23: Referencia completa del Consejo de Ministros del 7-abr-2026.
+
+ASUNTO PRINCIPAL DEL CORPUS. La sesión del CM aprobó el PROYECTO DE REFORMA DEL
+ARTÍCULO 43 DE LA CONSTITUCIÓN (asunto del expediente 102/000001). Tras dictamen
+del Consejo de Estado de 26-feb-2026 (recibido el 9-mar-2026), se incorporaron las
+mejoras y se elevó el texto final al CM con la fórmula:
+"Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la
+ interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva
+ con cuantas prestaciones y servicios sean necesarios para dicho ejercicio."
+
+CONTENIDO COMPLETO. Este XML modela la REFERENCIA COMPLETA del CM del 7-abr-2026,
+incluyendo TODOS los acuerdos adoptados ese día (no sólo el de la reforma art. 43),
+manteniendo fidelidad 100% con la fuente HTML oficial de La Moncloa.
+
+ESTRUCTURA. La fuente tiene dos secciones: SUMARIO (lista breve de todos los acuerdos)
+y AMPLIACIÓN DE CONTENIDOS (descripción detallada de los acuerdos más relevantes).
+
+SIGUIENTE PASO. El proyecto se remite a las Cortes Generales el mismo día.
+Publicado como BOCG-15-A-92-1 el 13-abr-2026 (ver journal Doc 7).
+]]></akndiff:note>
+        </akndiff:researchNotes>
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Referencia del Consejo de Ministros del 7 de abril de 2026 — Aprobación del PROYECTO de reforma del artículo 43 CE (entre otros acuerdos)</docTitle>
+      <docDate date="2026-04-07">7 de abril de 2026</docDate>
+      <docProponent>Consejo de Ministros — Gobierno de España</docProponent>
+      <p akndiff:role="navegacion">Inicio &gt; Consejo de Ministros &gt; Referencias</p>
+      <p akndiff:role="header">Referencia Consejo de Ministros 7.4.2026</p>
+      <p akndiff:role="origen">Compartir en La Moncloa</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="sumario" eId="sumario">
+        <heading>SUMARIO</heading>
+
+        <hcontainer name="ministerio" eId="sumario__trabajo">
+          <heading>Trabajo y Economía Social</heading>
+          <p>REAL DECRETO por el que se modifica el Real Decreto 221/2008, de 15 de febrero, por el que se crea y regula el Consejo Estatal de Responsabilidad Social de las Empresas.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__transicion-ecologica">
+          <heading>Para la Transición Ecológica y el Reto Demográfico</heading>
+          <p>ACUERDO por el que se autoriza la contribución voluntaria de la Agencia Estatal de Meteorología al consorcio ACCORD en 2026, por un importe global de 12.000 euros.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__exteriores-1">
+          <heading>Asuntos Exteriores, Unión Europea y Cooperación</heading>
+          <p>ACUERDO por el que se dispone la remisión a las Cortes Generales del Acuerdo entre el Reino de España y el Banco Asiático de Desarrollo relativo al centro de prestación de servicios informáticos y resiliencia del Banco Asiático de Desarrollo y se autoriza la manifestación del consentimiento para obligarse por el mencionado Acuerdo.</p>
+          <p>ACUERDO por el que se toma conocimiento de la entrada en vigor de las Enmiendas de 2023 y 2024 a la parte A del Código de formación, titulación y guardia para la gente del mar (Código de formación), 1978, adoptadas respectivamente mediante las Resoluciones MSC.541(107) y MSC.560(108).</p>
+          <p>ACUERDO por el que se toma conocimiento de la entrada en vigor de las Enmiendas de 2023 al Convenio internacional sobre normas de formación, titulación y guardia para la gente del mar (Convenio de formación), 1978, adoptadas mediante la Resolución MSC.540(107).</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__presidencia">
+          <heading>Presidencia, Justicia y Relaciones con las Cortes</heading>
+          <p akndiff:role="acuerdo-corpus-relevante"><b>PROYECTO de reforma del artículo 43 de la Constitución Española.</b></p>
+          <p>REAL DECRETO por el que se aprueba el Estatuto de la Agencia Estatal de Meteorología.</p>
+          <p>ACUERDO por el que se declara «Zona afectada gravemente por una emergencia de protección civil» el territorio afectado como consecuencia de las emergencias de protección civil acaecidas entre el 10 de febrero de 2026 y el 30 de marzo de 2026.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__transportes">
+          <heading>Transportes y Movilidad Sostenible</heading>
+          <p>ACUERDO por el que se autoriza la celebración del contrato de obras de ejecución del proyecto para la mejora de la protección de la plataforma en líneas de alta velocidad. Eje sur. 5 lotes. Valor estimado del contrato: 38.143.121,16 euros.</p>
+          <p>ACUERDO por el que se toma razón de la declaración de emergencia, y de su posterior ampliación, para las obras de reparación debido a los daños por inundaciones generados por la DANA del 10 al 12 de julio de 2025 en la carretera N-232A, punto kilométrico 208+900, en el término municipal de Fuentes de Ebro, provincia de Zaragoza, subsanando la situación de grave peligro existente, por importe de 759.899,76 euros.</p>
+          <p>ACUERDO por el que se autoriza la contribución voluntaria, en el ámbito del Ministerio de Transportes y Movilidad Sostenible, a EuroGeographics para el ejercicio 2026, por un importe total de 31.938 euros.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__educacion">
+          <heading>Educación, Formación Profesional y Deportes</heading>
+          <p>REAL DECRETO por el que se establece el título de Formación Profesional de Grado Superior de Técnico Superior en Diseño y construcción artesanal de instrumentos musicales de cuerda, se fijan los aspectos básicos del currículo y las ofertas de grados C, B y A incluidos en este título.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__industria">
+          <heading>Industria y Turismo</heading>
+          <p>REAL DECRETO por el que se modifican diversas normas reglamentarias en materia de seguridad industrial en lo que respecta a los procedimientos de emergencia en caso de una emergencia del mercado interior, y por el que se modifica el Real Decreto 212/2002, de 22 de febrero, por el que se regulan las emisiones sonoras en el entorno debidas a determinadas máquinas de uso al aire libre, en lo que respecta a las obligaciones de información y a los métodos para medir el ruido aéreo emitido por las máquinas de uso al aire libre.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__cultura">
+          <heading>Cultura</heading>
+          <p>REAL DECRETO por el que se declaran los hórreos del norte de la Península Ibérica como Manifestación Representativa del Patrimonio Cultural Inmaterial.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__igualdad">
+          <heading>Igualdad</heading>
+          <p>ACUERDO por el que se autoriza la propuesta de distribución territorial entre las comunidades autónomas y las ciudades de Ceuta y Melilla, para su sometimiento a la Conferencia Sectorial de Igualdad, para la ejecución de créditos presupuestarios en 2026 destinados al desarrollo del Pacto de Estado contra la Violencia de Género, por importe de 160.000.000 de euros.</p>
+          <p>ACUERDO por el que se autoriza la propuesta de distribución territorial entre las comunidades autónomas y las ciudades de Ceuta y Melilla, para su sometimiento a la Conferencia Sectorial de Igualdad, de los créditos consignados en el presupuesto de gastos de la Delegación del Gobierno contra la Violencia de Género, por importe de 19.800.000 euros.</p>
+        </hcontainer>
+
+        <hcontainer name="ministerio" eId="sumario__inclusion">
+          <heading>Inclusión, Seguridad Social y Migraciones</heading>
+          <p>INFORME sobre el balance de la afiliación a la Seguridad Social: la gran transformación del mercado de trabajo.</p>
+        </hcontainer>
+      </hcontainer>
+
+      <hcontainer name="ampliacion-contenidos" eId="ampliacion">
+        <heading>AMPLIACIÓN DE CONTENIDOS</heading>
+        <hcontainer name="seccion" eId="ampliacion__asuntos-generales">
+          <heading>ASUNTOS GENERALES</heading>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__cerse">
+            <heading>Trabajo y Economía Social — REACTIVACIÓN DEL CONSEJO ESTATAL DE RESPONSABILIDAD SOCIAL DE LAS EMPRESAS</heading>
+            <p>El Consejo de Ministros ha aprobado la reactivación del Consejo Estatal de Responsabilidad Social de las Empresas (CERSE), un órgano consultivo que tiene como objetivo garantizar el funcionamiento ético de las empresas en materia social, que llevaba una década inactivo.</p>
+            <p>El Consejo Estatal de Responsabilidad Social de las Empresas fue creado y regulado por el Real Decreto 221/2008, de 15 de febrero, modificado por el real decreto aprobado que recoge, entre otros aspectos, una disposición que habilita al Ministerio de Trabajo y Economía Social a desarrollar un Sello de Empresa Socialmente Responsable.</p>
+            <p>La necesidad de relanzar el CERSE surge con el objetivo de impulsar la Responsabilidad Social Empresarial, en un contexto de desafíos medioambientales y sociolaborales, en los que el CERSE, como órgano consultivo, adquiere una especial relevancia.</p>
+            <p akndiff:role="subheading"><b>Objetivos y competencias</b></p>
+            <p>La reactivación del CERSE tiene como meta convertirlo en el observatorio de la RSE en España, para contar con un espacio estable donde empresas, sindicatos, otros actores y las administraciones públicas se sienten a trabajar juntos.</p>
+            <p>Un espacio que no se quede en el debate, sino que sirva para analizar qué está pasando en las empresas, proponer mejoras concretas, evaluar si se cumplen los estándares y acompañar los cambios necesarios. Para impulsar acuerdos, fijar criterios claros, hacer seguimiento de cómo avanzar en derechos laborales, igualdad o sostenibilidad, y garantizar que las buenas prácticas empresariales se extienden.</p>
+            <p>Entre las competencias más relevantes que asume el Consejo destacan:</p>
+            <p akndiff:role="list-item">— La determinación de las condiciones necesarias para el reconocimiento como empresa socialmente responsable</p>
+            <p akndiff:role="list-item">— La elaboración de informes en cualquier proyecto normativo con incidencia en materia de RSE</p>
+            <p akndiff:role="list-item">— La realización de informes anuales en materia de RSE basados en los objetivos, características, indicadores y estándares internacionales</p>
+            <p akndiff:role="list-item">— La implantación efectiva de las Líneas Directrices de la Organización para la Cooperación y el Desarrollo Económico (OCDE) para Empresas Multinacionales sobre Conducta Empresarial Responsable</p>
+            <p akndiff:role="list-item">— La incentivación de la creación de alianzas entre las empresas y demás instituciones públicas y privadas para la difusión, el desarrollo y la innovación en materia de RSE.</p>
+            <p akndiff:role="list-item">— La promoción de la participación de las partes interesadas en planes de diligencia debida, de respeto de los Derechos Humanos y de compromiso en materia medioambiental, con especial consideración a los procesos de diálogo social y la información contenida en los procesos de evaluación desarrollados.</p>
+            <p akndiff:role="list-item">— El fomento de acciones de responsabilidad social de las empresas en materia de igualdad</p>
+            <p akndiff:role="list-item">— Colaborar y cooperar con otros consejos análogos, incluidos el Consejo de Finanzas Sostenibles y los de nivel internacional</p>
+            <p akndiff:role="list-item">— La elaboración de análisis de los indicadores obligatorios y estándares voluntarios para la eventual propuesta de modificaciones, así como recomendaciones para la confección del conjunto de características e indicadores de autoevaluación en materia de responsabilidad social</p>
+            <p akndiff:role="list-item">— El seguimiento del grado de implantación de las políticas de RSE en las grandes empresas, a través de la evaluación del informe anual de responsabilidad social empresarial que deben comunicar al CERSE.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__aemet-1">
+            <heading>Para la Transición Ecológica y el Reto Demográfico — ESTATUTO DE LA AGENCIA ESTATAL DE METEOROLOGÍA</heading>
+            <p>El Consejo de Ministros ha aprobado un real decreto por el que se adopta un nuevo Estatuto de la Agencia Estatal de Meteorología (AEMET), con el objetivo de adaptar su régimen jurídico a lo previsto en la Ley 40/2015, de 1 de octubre, y reforzar su capacidad de respuesta ante los retos actuales y futuros.</p>
+            <p>La norma actualiza referencias normativas y aspectos técnicos, revisa las funciones de los órganos de Gobierno de la AEMET —incluyendo el Consejo Rector y la Comisión de Control— y adecua su estructura al modelo de agencias estatales, estableciendo una separación entre funciones de gobierno y ejecutivas. Así, se configura como potestativa la existencia de una Comisión Permanente, de conformidad con lo previsto en la citada ley y su carácter de «proveedor de servicios meteorológicos».</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__banco-asiatico">
+            <heading>Asuntos Exteriores, Unión Europea y el Reto Demográfico — ACUERDO ENTRE ESPAÑA Y EL BANCO ASIÁTICO DE DESARROLLO</heading>
+            <p>El Consejo de Ministros ha aprobado el Acuerdo por el que se dispone la remisión a las Cortes Generales del Acuerdo entre el Reino de España y el Banco Asiático de Desarrollo relativo al centro de prestación de servicios informáticos y resiliencia del Banco Asiático de Desarrollo y se autoriza la manifestación del consentimiento para obligarse por el mencionado Acuerdo.</p>
+            <p>El Banco Asiático de Desarrollo (BAsD) es una organización multilateral financiera, creada en 1966, para el desarrollo económico en Asia y Pacífico. Su objetivo principal es la erradicación de la pobreza y facilitar ayudas para mejorar el nivel de vida de la población de la región a través de préstamos y colaboración técnica.</p>
+            <p>El Acuerdo por el que se establece el BAsD se adoptó en Manila el 4 de diciembre de 1965 y entró en vigor el 22 de agosto de 1966. El Acuerdo constitutivo tiene plena vigencia en España desde el 30 de mayo de 1986.</p>
+            <p>El presente Acuerdo fue firmado en Manila el 28 de octubre de 2025 por el presidente del Banco Asiático y de Desarrollo, Masato Kanda, en representación del BAsD y en Madrid el 25 de noviembre de 2025 por el ministro de Economía, Comercio y Empresa, Carlos Cuerpo Caballero, en representación del Reino de España. La firma y su aplicación provisional fueron autorizadas por el Consejo de Ministros con fecha 29 de julio de 2025.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__convenio-formacion">
+            <heading>Asuntos Exteriores, Unión Europea y Cooperación — ENMIENDAS AL CONVENIO INTERNACIONAL SOBRE NORMAS DE FORMACIÓN, TITULACIÓN Y GUARDIA PARA LA GENTE DEL MAR</heading>
+            <p>El Consejo de Ministros ha aprobado el Acuerdo por el que se toma conocimiento de la entrada en vigor de las Enmiendas de 2023 al Convenio internacional sobre normas de formación, titulación y guardia para la gente del mar (Convenio de formación), 1978, adoptadas mediante la Resolución MSC.540(107).</p>
+            <p>El Convenio de Formación, Titulación y Guardia, adoptado por la OMI en 1978, establece los estándares internacionales mínimos para la formación y titulación del personal marítimo. Es obligatorio para buques en viajes internacionales, garantizando seguridad y eficiencia, y se actualiza constantemente según la tecnología y prácticas marítimas.</p>
+            <p>La Resolución MSC.540(107) modifica dos reglas del capítulo I del Convenio en lo relativo a la tendencia mundial a la digitalización, así como una solución para la gestión y el control de los certificados y títulos de la gente de mar expedidos con arreglo al Convenio de Formación de 1978.</p>
+            <p>Las Enmiendas fueron adoptadas el 8 de junio de 2023, aceptadas el 1 de julio de 2024 y su entrada en vigor se produjo el 1 de enero de 2025, de conformidad con el artículo XII 1) a) ix) del Convenio de formación.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__codigo-formacion">
+            <heading>Asuntos Exteriores, Unión Europea y Cooperación — ENMIENDAS A LA PARTE A DEL CÓDIGO DE FORMACIÓN, TITULACIÓN Y GUARDIA PARA LA GENTE DEL MAR</heading>
+            <p>El Consejo de Ministros ha aprobado el Acuerdo por el que se toma conocimiento de la entrada en vigor de las Enmiendas de 2023 y 2024 a la parte A del Código de formación, titulación y guardia para la gente del mar (Código de formación), 1978, adoptadas respectivamente mediante las Resoluciones MSC.541(107) y MSC.560(108).</p>
+            <p>El Convenio de Formación, Titulación y Guardia, adoptado por la OMI en 1978, establece los estándares internacionales mínimos para la formación y titulación del personal marítimo. Es obligatorio para buques en viajes internacionales, garantizando seguridad y eficiencia, y se actualiza constantemente según la tecnología y prácticas marítimas.</p>
+            <p>La Resolución MSC.541(107) enmienda la sección A-I/2 del capítulo I, «Normas relativas a las disposiciones generales» para homogenizar a nivel internacional los criterios en el formato de títulos en la versión electrónica.</p>
+            <p>Las Enmiendas fueron adoptadas el 8 de junio de 2023, aceptadas el 1 de julio de 2024 y su entrada en vigor se produjo el 1 de enero de 2025, de conformidad con el artículo XII 1) a) ix) del Convenio de formación de 1978.</p>
+            <p>La Resolución MSC.560(108) modifica el Código de formación (Parte A, Sección A-VI/1) para incorporar obligatoriamente la competencia de «contribuir a la prevención y la respuesta a la violencia y el acoso, incluidos la intimidación, el acoso y las agresiones sexuales», integrándose en los cursos de formación básica en seguridad existentes, no requiriendo un curso independiente nuevo. El objetivo de dicha enmienda es abordar la seguridad personal y mejorar el entorno laboral a bordo, enfocándose en la lucha contra la violencia y el acoso.</p>
+            <p>Dichas Enmiendas fueron adoptadas el 23 de mayo de 2024, aceptadas el 1 de julio de 2025 y su entrada en vigor se produjo el 1 de enero de 2026, de conformidad con el artículo XII 1) a) ix) del Convenio de formación de 1978.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__reforma-art-43">
+            <heading>Presidencia, Justicia y Relaciones con las Cortes — PROYECTO DE REFORMA DEL ARTÍCULO 43 DE LA CONSTITUCIÓN ESPAÑOLA</heading>
+            <p akndiff:role="acuerdo-corpus-relevante">El Consejo de Ministros ha aprobado el proyecto de reforma del artículo 43 de la Constitución Española, para constitucionalizar la vertiente prestacional del derecho a la interrupción voluntaria del embarazo (IVE).</p>
+            <p>Esta iniciativa trae causa de un acuerdo previo aprobado el 14 de octubre de 2025 y por el que se solicitó al Consejo de Estado la emisión del dictamen preceptivo sobre la propuesta, recibido el 9 de marzo de 2026. De esta forma, el proyecto de reforma que se ha elevado al Consejo de Ministros incorpora las mejoras realizadas por el Consejo de Estado y propone añadir un apartado 4 al artículo 43 de la Constitución con el siguiente tenor literal: «Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio».</p>
+            <p>La nueva redacción constitucionaliza la vertiente prestacional del derecho a la interrupción voluntaria del embarazo, al tiempo que la libertad de decisión de la mujer queda protegida por los artículos 10.1 y 15 de la Constitución Española, de acuerdo con la jurisprudencia del Tribunal Constitucional, estableciendo que los poderes públicos deben garantizar su ejercicio en condiciones de igualdad real y efectiva. Esta previsión se incluye en consonancia con el artículo 9.2 de la Constitución y con el objetivo principal de asegurar la igualdad en el ejercicio del derecho a la IVE en todo el territorio nacional.</p>
+            <p>A partir de este momento, la reforma propuesta seguirá los cauces establecidos, conforme al procedimiento previsto en el artículo 167 de la Constitución, y requerirá la aprobación por mayoría de tres quintos tanto en el Congreso como en el Senado. En caso de descuerdo, sería necesaria la creación de una Comisión Mixta Congreso-Senado que propondría un nuevo texto, que se sometería de nuevo a votación. De no lograrse, el texto podría aprobarse, por mayoría de dos tercios de los votos en el Congreso y mayoría absoluta en el Senado.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__aemet-2">
+            <heading>Presidencia, Justicia y Relaciones con las Cortes — ESTATUTO DE LA AGENCIA ESTATAL DE METEOROLOGÍA</heading>
+            <p>El Consejo de Ministros ha aprobado un real decreto por el que se adopta un nuevo Estatuto de la Agencia Estatal de Meteorología (AEMET), con el objetivo de adaptar su régimen jurídico a lo previsto en la Ley 40/2015, de 1 de octubre, y reforzar su capacidad de respuesta ante los retos actuales y futuros.</p>
+            <p>La norma actualiza referencias normativas y aspectos técnicos, revisa las funciones de los órganos de Gobierno de la AEMET —incluyendo el Consejo Rector y la Comisión de Control— y adecua su estructura al modelo de agencias estatales, estableciendo una separación entre funciones de gobierno y ejecutivas. Así, se configura como potestativa la existencia de una Comisión Permanente, de conformidad con lo previsto en la citada ley y su carácter de «proveedor de servicios meteorológicos».</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__plataforma-ferroviaria">
+            <heading>Transportes y Movilidad Sostenible — MEJORA DE LOS ELEMENTOS DE PROTECCIÓN DE LA PLATAFORMA FERROVIARIA EN LAS LÍNEAS DE ALTA VELOCIDAD DEL EJE SUR</heading>
+            <p>El Consejo de Ministros ha autorizado la licitación, con un valor estimado de 38,14 millones de euros (IVA no incluido) y a través de Adif Alta Velocidad, del contrato para la mejora de los elementos de protección de la plataforma ferroviaria en las líneas de alta velocidad (LAV) del Eje Sur: las LAV Madrid-Sevilla, Córdoba-Málaga, Antequera-Granada y La Sagra-Toledo.</p>
+            <p>El contrato contempla la instalación de elementos tanto en vías cercanas a la plataforma ferroviaria como en pasos superiores, con el fin de impedir la invasión o caída de vehículos sobre la infraestructura. De esta forma se minimizará el riesgo de incidencias de esta naturaleza que afectan a la explotación ferroviaria y el servicio a los viajeros.</p>
+            <p>La tipología de actuaciones previstas incluye el montaje de barreras metálicas y de hormigón y de pretiles sobre estructuras existentes, así como el montaje de cerramiento ferroviario y de paneles direccionales de señalización.</p>
+            <p>El contrato autorizado se divide en cinco lotes, correspondientes a bases de mantenimiento de las líneas del Eje Sur: Mora, Calatrava, Hornachuelos, Antequera-Granada y Granada.</p>
+            <p>Estas actuaciones contribuyen a la consecución del Objetivo de Desarrollo Sostenible (ODS) 9 (Industria, Innovación e Infraestructura), que tiene entre sus metas el desarrollo de infraestructuras fiables, sostenibles, resilientes y de calidad.</p>
+            <p akndiff:role="caption">LAV Sevilla. Tramo Cordoba-Puertollano</p>
+            <p akndiff:role="caption">LAV Granada</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__formacion-profesional">
+            <heading>Educación, Formación Profesional y Deportes — FORMACIÓN PROFESIONAL DE GRADO SUPERIOR DE TÉCNICO SUPERIOR EN DISEÑO Y CONSTRUCCIÓN ARTESANAL DE INSTRUMENTOS MUSICALES DE CUERDA</heading>
+            <p>El Consejo de Ministros ha aprobado el título de Formación Profesional de Grado Superior de Técnico Superior en Diseño y Construcción Artesanal de Instrumentos Musicales de Cuerda, una titulación de 2.000 horas que responde a la creciente demanda de profesionales cualificados en el ámbito artesano musical.</p>
+            <p>Este título se enmarca en la familia profesional de Artes y Artesanías y tiene como objetivo formar especialistas capaces de diseñar, construir, ensamblar, mantener y reparar instrumentos musicales de cuerda, así como arcos y otros accesorios vinculados a estos oficios tradicionales.</p>
+            <p>La titulación combina tradición, excelencia e innovación, ofreciendo un perfil profesional altamente especializado y con proyección en un sector en auge. El alumnado adquirirá competencias en técnicas específicas de construcción artesanal, cumpliendo estándares de calidad, normativa de prevención de riesgos laborales y criterios de sostenibilidad ambiental.</p>
+            <p>Además, la formación incluye contenidos relacionados con la gestión integral de talleres artesanos, el asesoramiento a la clientela y la elaboración de documentación técnica y administrativa asociada a los procesos productivos.</p>
+            <p>Entre las principales salidas profesionales destacan:</p>
+            <p akndiff:role="list-item">— Guitarreros</p>
+            <p akndiff:role="list-item">— Constructores de bandurrias y laúdes españoles</p>
+            <p akndiff:role="list-item">— Luthieres de instrumentos musicales de arco</p>
+            <p akndiff:role="list-item">— Constructores de instrumentos musicales de arco</p>
+            <p akndiff:role="list-item">— Reparadores de arcos de instrumentos de cuerda</p>
+            <p akndiff:role="list-item">— Arqueteros</p>
+            <p akndiff:role="list-item">— Constructores de arcos de instrumentos musicales de cuerda</p>
+            <p akndiff:role="list-item">— Reparadores de instrumentos musicales de cuerda frotada y pulsada</p>
+            <p akndiff:role="list-item">— Mantenedores de instrumentos musicales de cuerda frotada y pulsada</p>
+            <p>Las personas tituladas podrán desarrollar su actividad en talleres artesanales, empresas de construcción y restauración de instrumentos musicales, así como en industrias vinculadas a la fabricación de accesorios.</p>
+            <p>Este título incorpora elementos formativos innovadores orientados a la organización y gestión eficiente de talleres, reforzando la profesionalización del sector y su capacidad para responder a la creciente demanda de instrumentos personalizados y de alta calidad.</p>
+            <p>Asimismo, la formación integra técnicas tradicionales y contemporáneas, contribuyendo a la preservación de oficios históricos y del patrimonio cultural, al tiempo que impulsa la innovación musical y la proyección de la artesanía en mercados nacionales e internacionales.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__industria-mercado-interior">
+            <heading>Industria y Turismo — REAL DECRETO PARA REFORZAR LOS PROCEDIMIENTOS DE EMERGENCIA EN EL MERCADO INTERIOR Y ACTUALIZAR LA NORMATIVA SOBRE EMISIONES SONORAS DE MAQUINARIA</heading>
+            <p>El Consejo de Ministros ha aprobado un Real Decreto que adapta diversas normas de seguridad industrial a los nuevos procedimientos europeos de emergencia para garantizar el funcionamiento del mercado interior en situaciones de crisis.</p>
+            <p>La norma introduce mecanismos ágiles para la evaluación y autorización de productos designados como esenciales, reforzando la cooperación entre autoridades competentes y asegurando la disponibilidad de bienes críticos cuando se active el modo de emergencia del mercado interior.</p>
+            <p>Asimismo, el Real Decreto incorpora las últimas actualizaciones europeas en materia de emisiones sonoras de maquinaria de uso al aire libre, modificando el RD 212/2002 para incluir nuevas obligaciones de información y los métodos revisados para la medición del ruido, en línea con el Reglamento (UE) 2024/1208.</p>
+            <p>La norma no implica impactos económicos significativos, ya que solo despliega procedimientos excepcionales en caso de emergencia y mantiene el funcionamiento ordinario del mercado.</p>
+            <p>Con esta actualización, España se alinea con el marco europeo vigente, reforzando la resiliencia industrial y la capacidad de respuesta ante futuras crisis.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__horreos">
+            <heading>Cultura — LOS HÓRREOS DEL NORTE DE LA PENÍNSULA IBÉRICA DECLARADOS MANIFESTACIÓN REPRESENTATIVA DEL PATRIMONIO CULTURAL INMATERIAL</heading>
+            <p>El Consejo de Ministros ha aprobado el Real Decreto por el que se reconocen los hórreos del norte de la península ibérica como vehículos de transmisión y expresión simbólica de identidad como Manifestación Representativa del Patrimonio Cultural Inmaterial. Este reconocimiento pone de relieve no solo las actividades, oficios y conocimientos tradicionales asociados a estas construcciones, sino también un capital inmaterial contemporáneo y complejo que las comunidades han elaborado en torno a ellas.</p>
+            <p>Los hórreos, presentes en Galicia, Asturias, León, Cantabria y País Vasco, desempeñan un papel esencial como marcadores culturales y expresiones de identidad colectiva, vinculados a prácticas sociales, saberes transmitidos, memorias compartidas y representaciones.</p>
+            <p>El objetivo de esta declaración es garantizar la salvaguarda de esta dimensión inmaterial, incorporándola de forma explícita en los procesos de identificación, documentación, estudio y difusión de este patrimonio, reforzando su reconocimiento y asegurando su transmisión intergeneracional.</p>
+            <p>Estos valores simbólicos configuran un capital cultural que contribuye a la cohesión social y al fortalecimiento de las identidades locales y regionales, manteniéndose vivo gracias a la interacción constante entre las comunidades portadoras y el bien, lo que asegura la continuidad y recreación de sus significados en el tiempo.</p>
+            <p akndiff:role="subheading"><b>Los hórreos del norte de la península ibérica</b></p>
+            <p>Los hórreos son arquitecturas populares que se diseñaron para guardar las cosechas y alimentos y ponerlas a salvo de los roedores y alimañas. Su principal seña de identidad es que se levantan sobre pilotes o pies derechos que los aíslan del suelo para favorecer su ventilación interna y evitar el acceso de los animales.</p>
+            <p>En España, este tipo de construcciones se localizan en la fachada atlántico-cantábrica, en los territorios de Galicia, Asturias, León, Cantabria, Navarra y País Vasco. Más allá de esta materialidad, los hórreos poseen un valor inmaterial que reside en su función simbólica y social: han sido y siguen siendo lugares de memoria, hitos visuales y espacios cargados de significados asociados a prácticas, relatos y modos de vida tradicionales.</p>
+            <p>Sin embargo, se han detectado una serie de riesgos para su mantenimiento como pueden ser la desvinculación funcional del hórreo y su homogeneización, la desconexión intergeneracional o la pérdida de los contextos culturales. Por ello, las medidas de salvaguarda se orientan a la preservación de su dimensión simbólica y social, junto con la conservación material y los oficios tradicionales vinculados a ella.</p>
+            <p>La declaración de los hórreos del norte de la península ibérica como Manifestación Representativa del Patrimonio Cultural Inmaterial ayudará a garantizar su conservación, asegurando que las medidas de protección vayan más allá de su materialidad, asegurando su valor simbólico y de identidad social.</p>
+          </hcontainer>
+
+          <hcontainer name="acuerdo-detallado" eId="amp__violencia-genero">
+            <heading>Igualdad — DISTRIBUCIÓN TERRITORIAL DE FONDOS DESTINADOS A LA LUCHA CONTRA LA VIOLENCIA DE GÉNERO</heading>
+            <p>El Consejo de Ministros ha acordado autorizar la distribución de 180 millones de euros a las comunidades autónomas y a Ceuta y Melilla, destinados a la lucha contra la violencia de género. El reparto de las cuantías se concretará en la Conferencia Sectorial de Igualdad.</p>
+            <p>De la cifra total, 160 millones de euros están destinados al desarrollo del Pacto de Estado contra la Violencia de Género, renovado en 2025. Se dedicarán, por tanto, a financiar proyectos o programas de lucha contra la violencia de género que deberán ser promovidos por las comunidades y las ciudades autónomas de Ceuta y Melilla en el ámbito de sus competencias, a lo largo de 2026.</p>
+            <p>La asignación de los fondos se realizará teniendo en cuenta diferentes variables relativas a los datos de cada una de las comunidades o ciudades autónomas, que tienen en cuenta cuestiones como la insularidad, si se trata de una ciudad fronteriza, la distribución de mujeres, en especial las de más de 65 años, las mujeres extranjeras, las que presentan alguna discapacidad, mujeres paradas o con trabajos temporales; la densidad de población o la población rural.</p>
+            <p>Los 19,8 millones restantes se dedicarán a distintos programas y planes autonómicos destinados a las víctimas de violencia de género y de violencias sexuales.</p>
+            <p>En concreto, esta cuantía, recogida en el presupuesto de gastos de la Delegación del Gobierno contra la Violencia de Género, financiará cuatro tipos de programas para su desarrollo a lo largo de 2026. De esta forma, 8,5 millones corresponderán a programas para la asistencia social integral a las víctimas de violencia de género y otras formas de violencia contra las mujeres, un millón irán a programas para la implementación de planes personalizados, 9,5 millones para programas de apoyo a víctimas de agresiones y/o abusos sexuales y los 800.000 euros restantes serán para programas de prevención de abusos sexuales en menores tuteladas.</p>
+          </hcontainer>
+        </hcontainer>
+      </hcontainer>
+    </mainBody>
+  </doc>
+</akomaNtoso>

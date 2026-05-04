@@ -1,0 +1,2121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><Resultado>
+    <Informacion>
+        <Sesion>177</Sesion>
+        <NumeroVotacion>12</NumeroVotacion>
+        <Fecha>30/4/2026</Fecha>
+        <Titulo>Debates de totalidad de iniciativas de reforma constitucional.</Titulo>
+        <TextoExpediente>Votaci�n conjunta de las enmiendas a la totalidad de devoluci�n al Proyecto de reforma del art�culo 43 de la Constituci�n Espa�ola, presentadas por los Grupos Parlamentarios Popular en el Congreso y VOX.</TextoExpediente>
+        <TituloSubGrupo/>
+        <TextoSubGrupo/>
+    </Informacion>
+    <Totales>
+        <Asentimiento>No</Asentimiento>
+        <Presentes>348</Presentes>
+        <AFavor>171</AFavor>
+        <EnContra>177</EnContra>
+        <Abstenciones>0</Abstenciones>
+        <NoVotan>2</NoVotan>
+    </Totales>
+    <Votaciones>
+        <Votacion>
+            <Asiento>2412</Asiento>
+            <Diputado>Rufi�n Romero, Gabriel</Diputado>
+            <Grupo>GR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1513</Asiento>
+            <Diputado>Cobo P�rez, Noelia</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2202</Asiento>
+            <Diputado>Vidal S�ez, Aina</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>6</Asiento>
+            <Diputado>Pisarello Prados, Gerardo</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2404</Asiento>
+            <Diputado>Badia Casas, Eloi</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2302</Asiento>
+            <Diputado>Boada Dan�s, J�lia</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2303</Asiento>
+            <Diputado>Andala Ubbi, Teslem</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1103</Asiento>
+            <Diputado>D�az P�rez, Yolanda</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4706</Asiento>
+            <Diputado>Conesa Coma, Ignasi</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1818</Asiento>
+            <Diputado>Losada Fern�ndez, Jos�</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1612</Asiento>
+            <Diputado>Lorenzo Cazorla, Juan Antonio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1404</Asiento>
+            <Diputado>Rodr�guez Palacios, Javier</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1304</Asiento>
+            <Diputado>Guti�rrez Santiago, V�ctor</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4605</Asiento>
+            <Diputado>Soldevilla Novials, Alba</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4701</Asiento>
+            <Diputado>Rodr�guez Su�rez, Esther</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1816</Asiento>
+            <Diputado>Moreno Fern�ndez, M� Isabel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4604</Asiento>
+            <Diputado>Ruiz de Diego, V�ctor Javier</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1613</Asiento>
+            <Diputado>Mayoral de Lamo, Alberto</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1401</Asiento>
+            <Diputado>Camino Mi�ana, V�ctor</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>L�pez Zamora, Cristina</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4802</Asiento>
+            <Diputado>Mayoral P�rez, Jes�s</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4601</Asiento>
+            <Diputado>Almod�var S�nchez, Emilia</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4703</Asiento>
+            <Diputado>Par� Aregall, Josep</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4603</Asiento>
+            <Diputado>Gracia Blanco, Marta</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2403</Asiento>
+            <Diputado>L�pez Tagliafico, Candela</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2307</Asiento>
+            <Diputado>Lago Pe�as, Manuel</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1814</Asiento>
+            <Diputado>De la Rosa Baena, Olvido</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1604</Asiento>
+            <Diputado>Otero Rodr�guez, Patricia</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1708</Asiento>
+            <Diputado>Garc�a Chavarr�a, Mar�a Montserrat</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Hita T�llez, Guillermo</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1815</Asiento>
+            <Diputado>Sainz Mart�n, Mar�a</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1812</Asiento>
+            <Diputado>Otero Garc�a, Mercedes</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1804</Asiento>
+            <Diputado>Almir�n Ruiz, Oriol</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Canelo Matito, Andrea</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1614</Asiento>
+            <Diputado>Pag�s i Mass�, Josep</Diputado>
+            <Grupo>GJxCAT</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1819</Asiento>
+            <Diputado>Mont�vez Aguillaume, Vicente</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2409</Asiento>
+            <Diputado>Estrems Fayos, Etna</Diputado>
+            <Grupo>GR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2408</Asiento>
+            <Diputado>Recas Mart�n, Alda</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1807</Asiento>
+            <Diputado>Quintero Hern�ndez, Jonay</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1810</Asiento>
+            <Diputado>G�mez Pi�a, Luis Antonio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2507</Asiento>
+            <Diputado>Ogou i Corbi, Viviane</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2601</Asiento>
+            <Diputado>Otero Gabirondo, Mikel</Diputado>
+            <Grupo>GEH Bildu</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2309</Asiento>
+            <Diputado>Renteria Lasanta, Nerea</Diputado>
+            <Grupo>GV (EAJ-PNV)</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1820</Asiento>
+            <Diputado>Blanco Arr�e, Gabriel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1808</Asiento>
+            <Diputado>Cacho Isla, Iv�n</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1412</Asiento>
+            <Diputado>Antu�ano Colina, Pablo</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4806</Asiento>
+            <Diputado>J�dar P�rez, Irene</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1806</Asiento>
+            <Diputado>Gonz�lez Herdaro, Ana</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2308</Asiento>
+            <Diputado>Vergara Rom�n, Laura</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1402</Asiento>
+            <Diputado>Diouf Dioh, Luc Andre</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4602</Asiento>
+            <Diputado>Mart�n Rodr�guez, Margarita</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1311</Asiento>
+            <Diputado>Cresp�n Rubio, Rafaela</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Rivera Arias, Engracia</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2508</Asiento>
+            <Diputado>Mic� Mic�, �gueda</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2203</Asiento>
+            <Diputado>Ib��ez Mezquita, Alberto</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2407</Asiento>
+            <Diputado>Gonz�lez L�pez, Nahuel</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1507</Asiento>
+            <Diputado>Faneca L�pez, Mar�a Luisa</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1711</Asiento>
+            <Diputado>Cruz Santana, Gabriel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2512</Asiento>
+            <Diputado>Velarde G�mez, Martina</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1205</Asiento>
+            <Diputado>Blanquer Alcaraz, Patricia</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1602</Asiento>
+            <Diputado>Mellado Sierra, Valle</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1701</Asiento>
+            <Diputado>Rojo Blas, Alberto</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1203</Asiento>
+            <Diputado>Nasarre Oliva, Bego�a</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1305</Asiento>
+            <Diputado>Mart�nez Salmer�n, Joaqu�n</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1</Asiento>
+            <Diputado>Armengol Socias, Francina</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1409</Asiento>
+            <Diputado>Herrera Garc�a, Milena</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1410</Asiento>
+            <Diputado>Corujo Berriel, Mar�a Dolores</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1608</Asiento>
+            <Diputado>Mercadal Baquero, Pepe</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>7</Asiento>
+            <Diputado>Leal Fern�ndez, Isaura</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2305</Asiento>
+            <Diputado>Vidal Matas, Vicen�</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1411</Asiento>
+            <Diputado>Garc�a Mor�s, Roberto</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1512</Asiento>
+            <Diputado>Mart�nez Ram�rez, Carmen</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1710</Asiento>
+            <Diputado>Sarri� Morell, Vicent Manuel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1805</Asiento>
+            <Diputado>Trenzano Rubio, Marta</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2516</Asiento>
+            <Diputado>Granollers Cunillera, In�s</Diputado>
+            <Grupo>GR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>�lvaro Vidal, Francesc-Marc</Diputado>
+            <Grupo>GR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2514</Asiento>
+            <Diputado>Vallugera Bala��, Pilar</Diputado>
+            <Grupo>GR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Jord� i Roura, Teresa</Diputado>
+            <Grupo>GR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2306</Asiento>
+            <Diputado>Mart�n Urriza, Carlos</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1510</Asiento>
+            <Diputado>Gonz�lez Gracia, Juan Antonio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1210</Asiento>
+            <Diputado>Simancas Simancas, Rafael</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4807</Asiento>
+            <Diputado>Rives Arcayna, Caridad</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Guti�rrez Prieto, Sergio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2513</Asiento>
+            <Diputado>Rego Candamil, N�stor</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1514</Asiento>
+            <Diputado>Gavin i Valls, Isidre</Diputado>
+            <Grupo>GJxCAT</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1517</Asiento>
+            <Diputado>Nogueras i Camero, M�riam</Diputado>
+            <Grupo>GJxCAT</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1615</Asiento>
+            <Diputado>Cervera Pinart, Josep Maria</Diputado>
+            <Grupo>GJxCAT</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1616</Asiento>
+            <Diputado>Calvo G�mez, Pilar</Diputado>
+            <Grupo>GJxCAT</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1516</Asiento>
+            <Diputado>Cruset Dom�nech, Josep Maria</Diputado>
+            <Grupo>GJxCAT</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1515</Asiento>
+            <Diputado>Madrenas i Mir, Marta</Diputado>
+            <Grupo>GJxCAT</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1204</Asiento>
+            <Diputado>Alfonso Cend�n, Javier</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Bola�os Garc�a, F�lix</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1406</Asiento>
+            <Diputado>Taboadela �lvarez, Obdulia</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2510</Asiento>
+            <Diputado>Belarra Urteaga, Ione</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1508</Asiento>
+            <Diputado>L�pez Cano, Ignacio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2506</Asiento>
+            <Diputado>Sierra Caballero, Francisco</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2405</Asiento>
+            <Diputado>Alonso Cantorn�, F�lix</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1207</Asiento>
+            <Diputado>Narbona Ruiz, Cristina</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1307</Asiento>
+            <Diputado>Guinart Moreno, L�dia</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1609</Asiento>
+            <Diputado>Azor�n Salar, L�zaro</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2502</Asiento>
+            <Diputado>Matute Garc�a de Jal�n, Oskar</Diputado>
+            <Grupo>GEH Bildu</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2503</Asiento>
+            <Diputado>Pozueta Fern�ndez, Isabel</Diputado>
+            <Grupo>GEH Bildu</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2603</Asiento>
+            <Diputado>I�arritu Garc�a, Jon</Diputado>
+            <Grupo>GEH Bildu</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2602</Asiento>
+            <Diputado>Fullaondo la Cruz, Marije</Diputado>
+            <Grupo>GEH Bildu</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2509</Asiento>
+            <Diputado>S�nchez Serna, Javier</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1208</Asiento>
+            <Diputado>Soler Mur, Alejandro</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2501</Asiento>
+            <Diputado>Aizpurua Arzallus, Mertxe</Diputado>
+            <Grupo>GEH Bildu</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2207</Asiento>
+            <Diputado>Vaquero Montero, Maribel</Diputado>
+            <Grupo>GV (EAJ-PNV)</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2310</Asiento>
+            <Diputado>Agirretxea Urresti, Joseba Andoni</Diputado>
+            <Grupo>GV (EAJ-PNV)</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2206</Asiento>
+            <Diputado>Legarda Uriarte, Mikel</Diputado>
+            <Grupo>GV (EAJ-PNV)</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2205</Asiento>
+            <Diputado>Sagastizabal Unzetabarrenetxea, Idoia</Diputado>
+            <Grupo>GV (EAJ-PNV)</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2201</Asiento>
+            <Diputado>Mart�nez Barbero, Ver�nica</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2301</Asiento>
+            <Diputado>Santos Maraver, Agust�n</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1414</Asiento>
+            <Diputado>Ram�rez Moreno, Mar�a de las Nieves</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1817</Asiento>
+            <Diputado>P�rez Ortiz, Isabel Mar�a</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1408</Asiento>
+            <Diputado>Sahuquillo Garc�a, Luis Carlos</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1714</Asiento>
+            <Diputado>Rey de las Heras, Luis Alfonso</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1306</Asiento>
+            <Diputado>Castilla �lvarez, Mar�a Carmen</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Senderos Ora�, Daniel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4606</Asiento>
+            <Diputado>Jerez Antequera, Juan Carlos</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1309</Asiento>
+            <Diputado>Perea i Conillas, Mar�a Merc�</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1502</Asiento>
+            <Diputado>Aranda Vargas, Francisco</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1704</Asiento>
+            <Diputado>Verdejo Vicente, Ferran</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1506</Asiento>
+            <Diputado>Serrada Pariente, David</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1501</Asiento>
+            <Diputado>Fag�ndez Campo, Antidio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1607</Asiento>
+            <Diputado>Fern�ndez Ben�itez, Andrea</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2511</Asiento>
+            <Diputado>Santana Perera, Noem�</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1209</Asiento>
+            <Diputado>Zaragoza Alonso, Jos�</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1716</Asiento>
+            <Diputado>Valido Garc�a, Cristina</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1813</Asiento>
+            <Diputado>Poblador Pacheco, Mar�a Araceli</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1302</Asiento>
+            <Diputado>Serrano Mart�nez, Juan Francisco</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1206</Asiento>
+            <Diputado>Garc�a L�pez, Maribel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1802</Asiento>
+            <Diputado>D�az Mar�n, Ra�l</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1413</Asiento>
+            <Diputado>Rallo Lombarte, Artemi</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1308</Asiento>
+            <Diputado>Ros Mart�nez, Susana</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4705</Asiento>
+            <Diputado>Mart�n Mart�nez, Andreu</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1415</Asiento>
+            <Diputado>Mart�nez Seijo, Mar�a Luz</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1505</Asiento>
+            <Diputado>Aceves Galindo, Jos� Luis</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1310</Asiento>
+            <Diputado>Ruiz Boix, Juan Carlos</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1511</Asiento>
+            <Diputado>S�nchez D�az, Mar�a Carmen</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1605</Asiento>
+            <Diputado>Cobo Carmona, Ana</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2410</Asiento>
+            <Diputado>Salvador i Duch, Jordi</Diputado>
+            <Grupo>GR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2304</Asiento>
+            <Diputado>Valero Morales, Juan Antonio</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1703</Asiento>
+            <Diputado>Marqu�s At�s, Amador</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1202</Asiento>
+            <Diputado>M�nguez Garc�a, Montse</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1705</Asiento>
+            <Diputado>Plaza Garc�a, In�s</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4</Asiento>
+            <Diputado>Gil de Rebole�o Lastortres, Esther</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2402</Asiento>
+            <Diputado>Mart�nez Hierro, Lander</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Puente Santiago, �scar</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1713</Asiento>
+            <Diputado>Sanz Mart�nez, Luisa</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2401</Asiento>
+            <Diputado>Guijarro Garc�a, Txema</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1809</Asiento>
+            <Diputado>Morales �lvarez, �lvaro</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1603</Asiento>
+            <Diputado>Ram�rez Carner, Arnau</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1303</Asiento>
+            <Diputado>Pe�a Camarero, Esther</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1504</Asiento>
+            <Diputado>Arribas Maroto, Manuel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4803</Asiento>
+            <Diputado>Redondo C�rdenas, Gonzalo</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1509</Asiento>
+            <Diputado>Ramos Esteban, C�sar Joaqu�n</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1712</Asiento>
+            <Diputado>Argota Castro, Trinidad Carmen</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1405</Asiento>
+            <Diputado>Maldonado L�pez, Adriana</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1702</Asiento>
+            <Diputado>Andr�s A��n, Carmen</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1503</Asiento>
+            <Diputado>Lamu� Esta�ol, Marc</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4704</Asiento>
+            <Diputado>Cercas Mena, Blanca</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1407</Asiento>
+            <Diputado>Romero Pozo, Rafaela</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1709</Asiento>
+            <Diputado>Garc�a Gurrutxaga, Mar�a Luisa</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1301</Asiento>
+            <Diputado>Garrido Jim�nez, Elisa</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1201</Asiento>
+            <Diputado>L�pez �lvarez, Patxi</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2505</Asiento>
+            <Diputado>Cofi�o Fern�ndez, Rafael</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2204</Asiento>
+            <Diputado>Santiago Romero, Enrique Fernando</Diputado>
+            <Grupo>GSUMAR</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1403</Asiento>
+            <Diputado>Rodr�guez Salas, Jos� Antonio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1801</Asiento>
+            <Diputado>Pose Mesura, Modesto</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1611</Asiento>
+            <Diputado>Sancho ��iguez, Herminio Rufino</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4702</Asiento>
+            <Diputado>Santana Aguilera, Ada</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1706</Asiento>
+            <Diputado>�lvarez Gonz�lez, Alicia</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>4804</Asiento>
+            <Diputado>Iniesta Egido, Isabel</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1601</Asiento>
+            <Diputado>S�ez Cruz, Emilio</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1707</Asiento>
+            <Diputado>Adrio Taracido, Mar�a</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2</Asiento>
+            <Diputado>Rodr�guez G�mez de Celis, Alfonso</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3603</Asiento>
+            <Diputado>Palencia Rubio, H�ctor</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3612</Asiento>
+            <Diputado>Cabez�n Casas, Tom�s</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2611</Asiento>
+            <Diputado>Alcaraz Martos, Francisco Jos�</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3606</Asiento>
+            <Diputado>Conde Baj�n, Agust�n</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3309</Asiento>
+            <Diputado>Bravo Baena, Juan</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3510</Asiento>
+            <Diputado>Rojas Garc�a, Carlos</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2805</Asiento>
+            <Diputado>Fern�ndez Hern�ndez, Pedro</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2816</Asiento>
+            <Diputado>P�rez Osma, Daniel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3815</Asiento>
+            <Diputado>Garc�a F�lix, Manuel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3208</Asiento>
+            <Diputado>Tellado Filgueira, Miguel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3205</Asiento>
+            <Diputado>P�rez L�pez, �lvaro</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3209</Asiento>
+            <Diputado>Mu�oz de la Iglesia, Ester</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5701</Asiento>
+            <Diputado>Franco Gonz�lez, Silvia</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5605</Asiento>
+            <Diputado>Delgado Arce, Celso Luis</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3704</Asiento>
+            <Diputado>Velasco Morillo, Elvira</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5705</Asiento>
+            <Diputado>Jim�nez Linuesa, Beatriz</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3507</Asiento>
+            <Diputado>Garrido Valenzuela, Irene</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3609</Asiento>
+            <Diputado>Verano Dom�nguez, Bella</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3802</Asiento>
+            <Diputado>Cuesta Rodr�guez, Mar�a</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3613</Asiento>
+            <Diputado>P�rez Coronado, Pablo</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3810</Asiento>
+            <Diputado>Ramajo Prada, �scar</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3503</Asiento>
+            <Diputado>Teniente S�nchez, Cristina</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3813</Asiento>
+            <Diputado>Lorente Anaya, Macarena</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3610</Asiento>
+            <Diputado>Rodr�guez Calleja, Patricia</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2613</Asiento>
+            <Diputado>Aizcorbe Torra, Juan Jos�</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2607</Asiento>
+            <Diputado>S�nchez Garc�a, Jos� Mar�a</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3605</Asiento>
+            <Diputado>Floriano Corrales, Carlos Javier</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3509</Asiento>
+            <Diputado>Rom�n Jasanada, Antonio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2812</Asiento>
+            <Diputado>Ram�rez Mart�n, Mar�a Lourdes</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3402</Asiento>
+            <Diputado>S�ez Alonso-Mu�umer, Pablo</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3310</Asiento>
+            <Diputado>F�nez de Gregorio, Carmen</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3604</Asiento>
+            <Diputado>Hoyo Juli�, Bel�n</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Acedo Reyes, Sof�a</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2609</Asiento>
+            <Diputado>Ram�rez del R�o, Jos�</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3716</Asiento>
+            <Diputado>Prieto Serrano, Mar�a Isabel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3502</Asiento>
+            <Diputado>L�pez Maraver, �ngel</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3713</Asiento>
+            <Diputado>Gallardo Barrena, Pedro Ignacio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2709</Asiento>
+            <Diputado>V�zquez Jim�nez, Mar�a del Mar</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3515</Asiento>
+            <Diputado>Fern�ndez Gonz�lez, Mar�a Mercedes</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3808</Asiento>
+            <Diputado>Garre Murcia, Crist�bal</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3705</Asiento>
+            <Diputado>Cort�s Carballo, Mario</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3807</Asiento>
+            <Diputado>P�rez Recuerda, Isabel Gema</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5801</Asiento>
+            <Diputado>Tarno Blanco, Ricardo</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3601</Asiento>
+            <Diputado>Merino Mart�nez, Javier</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3820</Asiento>
+            <Diputado>Rodr�guez Serra, Santi</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3804</Asiento>
+            <Diputado>Mart�nez G�mez, Antonio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2806</Asiento>
+            <Diputado>Garc�a Gomis, David</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3611</Asiento>
+            <Diputado>De las Cuevas Cort�s, F�lix</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3407</Asiento>
+            <Diputado>Fabra Part, Alberto</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3504</Asiento>
+            <Diputado>Clavell L�pez, �scar</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3712</Asiento>
+            <Diputado>Folch Blanc, Javier Jos�</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2614</Asiento>
+            <Diputado>Gil L�zaro, Ignacio</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Berm�dez de Castro Fern�ndez, Jos� Antonio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2713</Asiento>
+            <Diputado>Tom�s Olivares, Violante</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2604</Asiento>
+            <Diputado>Gonz�lez-Robatto Perote, Jacobo</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Del Valle Rodr�guez, Emilio Jes�s</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3506</Asiento>
+            <Diputado>Requena Ruiz, Juan Diego</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2708</Asiento>
+            <Diputado>Mesquida Mayans, Joan</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3708</Asiento>
+            <Diputado>Ag�era Gago, Cristina</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2819</Asiento>
+            <Diputado>Noriega G�mez, Javier</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3306</Asiento>
+            <Diputado>�lvarez Fanjul, Beatriz</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3404</Asiento>
+            <Diputado>Borrego Cort�s, Isabel Mar�a</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3304</Asiento>
+            <Diputado>Sayas L�pez, Sergio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1715</Asiento>
+            <Diputado>Catal�n Higueras, Alberto</Diputado>
+            <Grupo>GMx</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3805</Asiento>
+            <Diputado>Mart�n Garc�a, Pedro Samuel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3511</Asiento>
+            <Diputado>Moro Almaraz, Mar�a Jes�s</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3819</Asiento>
+            <Diputado>S�nchez Ojeda, Carlos Alberto</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3801</Asiento>
+            <Diputado>Lima Garc�a, Laura Mar�a</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3818</Asiento>
+            <Diputado>Rojas Manrique, Juan Antonio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2704</Asiento>
+            <Diputado>Flores Juber�as, Carlos</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2716</Asiento>
+            <Diputado>Abades Mart�nez, Cristina</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3204</Asiento>
+            <Diputado>Olano Vela, Jaime Eduardo de</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2815</Asiento>
+            <Diputado>Celaya Brey, Javier</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3614</Asiento>
+            <Diputado>Arg�elles Garc�a, Silverio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2808</Asiento>
+            <Diputado>Parra Gallego, Agust�n</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5606</Asiento>
+            <Diputado>Mart�n Blanco, Nacho</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2715</Asiento>
+            <Diputado>De Luna Tobarra, Llanos</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3809</Asiento>
+            <Diputado>Belmonte G�mez, Rafael Benigno</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3508</Asiento>
+            <Diputado>S�nchez Torregrosa, Maribel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3206</Asiento>
+            <Diputado>Ib��ez Hernando, �ngel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5703</Asiento>
+            <Diputado>Quintanilla Navarro, Miguel �ngel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2711</Asiento>
+            <Diputado>Al�a Aguado, Mar�a Pilar</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3816</Asiento>
+            <Diputado>Velasco Retamosa, Jos� Manuel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3411</Asiento>
+            <Diputado>Mar� Bos�, Jos� Vicente</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Figaredo �lvarez-Sala, Jos� Mar�a</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2612</Asiento>
+            <Diputado>Hoces ��iguez, Ignacio</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3608</Asiento>
+            <Diputado>V�zquez Blanco, Ana Bel�n</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5601</Asiento>
+            <Diputado>Quintana Carballo, Rosa</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3707</Asiento>
+            <Diputado>Moraleja G�mez, Tristana Mar�a</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3406</Asiento>
+            <Diputado>Puy Fraga, Pedro</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5</Asiento>
+            <Diputado>Gonz�lez V�zquez, Marta</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3305</Asiento>
+            <Diputado>Hernando Fraile, Rafael Antonio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2610</Asiento>
+            <Diputado>M�ndez Monasterio, Lourdes</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3517</Asiento>
+            <Diputado>Moneo D�ez, Mar�a Sandra</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3701</Asiento>
+            <Diputado>Sastre Uy�, Miguel �ngel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2605</Asiento>
+            <Diputado>Campos Asensi, Jorge</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3714</Asiento>
+            <Diputado>Belda P�rez-Pedrero, Enrique</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3311</Asiento>
+            <Diputado>Bendodo Benasayag, El�as</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2810</Asiento>
+            <Diputado>Parra Aparicio, Julia</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3711</Asiento>
+            <Diputado>Melgarejo Moreno, Joaqu�n</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2821</Asiento>
+            <Diputado>Pascual Rocamora, Sandra</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3811</Asiento>
+            <Diputado>Mart�nez Labella, Ana</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2706</Asiento>
+            <Diputado>Fern�ndez R�os, Tom�s</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>9</Asiento>
+            <Diputado>Navarro Lacoba, Carmen</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3207</Asiento>
+            <Diputado>Montesinos de Miguel, Macarena</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3710</Asiento>
+            <Diputado>S�nchez P�rez, C�sar</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5802</Asiento>
+            <Diputado>Cantalapiedra �lvarez, Mar�a de las Mercedes</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2809</Asiento>
+            <Diputado>Delgado-Taramona Hern�ndez, Jimena</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3408</Asiento>
+            <Diputado>Mu�oz Abrines, Pedro</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3702</Asiento>
+            <Diputado>Reynal Reillo, Esperanza</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5603</Asiento>
+            <Diputado>De Rosa Torner, Fernando</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2705</Asiento>
+            <Diputado>Armario Gonz�lez, Blanca</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3703</Asiento>
+            <Diputado>Navarro L�pez, Pedro</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3715</Asiento>
+            <Diputado>Alfonso Silvestre, Alma</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>8</Asiento>
+            <Diputado>Mariscal Anaya, Guillermo</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2615</Asiento>
+            <Diputado>Rodr�guez Almeida, Andr�s Alberto</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>S�mper Pascual, Borja</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3616</Asiento>
+            <Diputado>Aragon�s Mendiguch�a, Carlos</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2814</Asiento>
+            <Diputado>Madrid Olmo, Bartolom�</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3501</Asiento>
+            <Diputado>Mariscal Zabala, Manuel</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5604</Asiento>
+            <Diputado>Garc�a Adanero, Carlos</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3307</Asiento>
+            <Diputado>De los Santos Gonz�lez, Jaime Miguel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Clemente Mu�oz, Raquel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3602</Asiento>
+            <Diputado>Herrero Bono, Jos� Alberto</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3414</Asiento>
+            <Diputado>S�nchez Sierra, Mar�a del Mar</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3615</Asiento>
+            <Diputado>Carazo Hermoso, Eduardo</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3301</Asiento>
+            <Diputado>Ruiz Sol�s, Mar�a de la Cabeza</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>De Meer M�ndez, Roc�o</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2606</Asiento>
+            <Diputado>Rueda Perell�, Patricia</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2802</Asiento>
+            <Diputado>Chamorro Delmo, Ricardo</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3514</Asiento>
+            <Diputado>Beamonte Mesa, Luis Mar�a</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2813</Asiento>
+            <Diputado>Mac�as Gata, Alfonso Carlos</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5704</Asiento>
+            <Diputado>Cavacasillas Rodr�guez, Antonio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3303</Asiento>
+            <Diputado>Romero Vilches, Mar�a de los Reyes</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5702</Asiento>
+            <Diputado>Roman� Cantera, Jos� Ignacio</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3312</Asiento>
+            <Diputado>Gamarra Ruiz-Clavijo, Concepci�n</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3413</Asiento>
+            <Diputado>�lvarez de Toledo Peralta-Ramos, Cayetana</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2803</Asiento>
+            <Diputado>Asarta Cuevas, Alberto</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3201</Asiento>
+            <Diputado>Abascal Conde, Santiago</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2608</Asiento>
+            <Diputado>Robles L�pez, Joaqu�n</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3505</Asiento>
+            <Diputado>Cruz-Guzm�n Garc�a, Mar�a Soledad</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5602</Asiento>
+            <Diputado>Marcos Ortega, Milagros</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2714</Asiento>
+            <Diputado>Paniagua N��ez, Miguel �ngel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Cobo Vega, Manuel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2804</Asiento>
+            <Diputado>Ortega Smith-Molina, Francisco Javier</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2703</Asiento>
+            <Diputado>Mej�as S�nchez, Carina</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3410</Asiento>
+            <Diputado>Al�s L�pez, Ana Isabel</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3706</Asiento>
+            <Diputado>Pedre�o Molina, Juan Luis</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>-1</Asiento>
+            <Diputado>Llamazares Domingo, Esther</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2710</Asiento>
+            <Diputado>Carballedo Berlanga, Mar�a Eugenia</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3202</Asiento>
+            <Diputado>Rodr�guez de Mill�n Parro, Mar�a Jos�</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3302</Asiento>
+            <Diputado>Hern�ndez Quero, Carlos</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3210</Asiento>
+            <Diputado>N��ez Feij�o, Alberto</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3415</Asiento>
+            <Diputado>Varela Pazos, Marta</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2712</Asiento>
+            <Diputado>Nacarino-Brabo Jim�nez, Aurora</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3405</Asiento>
+            <Diputado>Conde L�pez, Francisco Jos�</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3513</Asiento>
+            <Diputado>Hisp�n Iglesias de Ussel, Pablo</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3409</Asiento>
+            <Diputado>Guardiola Salmer�n, Mirian</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2820</Asiento>
+            <Diputado>Torres Tejada, Mar�a</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2707</Asiento>
+            <Diputado>Aguirre Gil de Biedma, Roc�o</Diputado>
+            <Grupo>GVOX</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3512</Asiento>
+            <Diputado>N��ez Guijarro, Jos� Enrique</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3403</Asiento>
+            <Diputado>Uriarte Bengoechea, Edurne</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>5706</Asiento>
+            <Diputado>Barrio Baroja, Carmelo</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2818</Asiento>
+            <Diputado>Bay�n Rolo, Juan Andr�s</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2817</Asiento>
+            <Diputado>Vedrina Conesa, Mar�a Elisa</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3806</Asiento>
+            <Diputado>Moreno Borr�s, Cristina</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3803</Asiento>
+            <Diputado>Molina Le�n, Ainhoa</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>2807</Asiento>
+            <Diputado>Cuevas Larrosa, Ra�l</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3817</Asiento>
+            <Diputado>Simarro Vicens, Carlos</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3607</Asiento>
+            <Diputado>Rodr�guez Herrer, Mar�a Elvira</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>3812</Asiento>
+            <Diputado>Aznar Teruel, Evarist</Diputado>
+            <Grupo>GP</Grupo>
+            <Voto>S�</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1312</Asiento>
+            <Diputado>Montero Cuadrado, Mar�a Jes�s</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No vota</Voto>
+        </Votacion>
+        <Votacion>
+            <Asiento>1101</Asiento>
+            <Diputado>S�nchez P�rez-Castej�n, Pedro</Diputado>
+            <Grupo>GS</Grupo>
+            <Voto>No vota</Voto>
+        </Votacion>
+    </Votaciones>
+</Resultado>

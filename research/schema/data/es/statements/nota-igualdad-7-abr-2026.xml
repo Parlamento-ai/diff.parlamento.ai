@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <statement name="nota-ministerial" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-igualdad-7-abr-2026/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-igualdad-7-abr-2026"/>
+          <FRBRalias value="Comunicado oficial Ministerio de Igualdad — Reforma art. 43 CE" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#ministerio-igualdad"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="nota-ministerial"/>
+          <FRBRname value="nota-igualdad-7-abr-2026"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-igualdad-7-abr-2026/spa@2026-04-07/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-igualdad-7-abr-2026/spa@2026-04-07"/>
+          <FRBRdate date="2026-04-07" name="expression"/>
+          <FRBRauthor href="#ministerio-igualdad"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-igualdad-7-abr-2026/spa@2026-04-07/!main.xml"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-igualdad-7-abr-2026/spa@2026-04-07.akn"/>
+          <FRBRdate date="2026-04-07" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-07" name="nota-ministerial" showAs="Ministerio de Igualdad — 2026-04-07"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-07" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-07"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="ministerio-igualdad" href="/akn/ontology/organization/es/ministerio-igualdad" showAs="Ministerio de Igualdad"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>nota-igualdad-7-abr-2026</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.igualdad.gob.es/comunicacion/notasprensa/Paginas/2026/070426-aborto-CE.aspx</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Statement: Comunicado oficial Ministerio de Igualdad — Reforma art. 43 CE
+
+Autor: Ministerio de Igualdad
+Fecha publicación: 2026-04-07
+URL fuente: https://www.igualdad.gob.es/comunicacion/notasprensa/Paginas/2026/070426-aborto-CE.aspx
+Subtipo: nota-ministerial
+
+Long title: Comunicado del Ministerio de Igualdad de 7-abr-2026 sobre la aprobación por el Consejo de Ministros del proyecto de reforma constitucional para garantizar el derecho de las mujeres a la interrupción voluntaria del embarazo en igualdad real y efectiva.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Comunicado oficial Ministerio de Igualdad — Reforma art. 43 CE</docTitle>
+      <docDate date="2026-04-07">2026-04-07</docDate>
+      <docProponent>Ministerio de Igualdad</docProponent>
+      <p akndiff:role="source-url">https://www.igualdad.gob.es/comunicacion/notasprensa/Paginas/2026/070426-aborto-CE.aspx</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Comunicado oficial Ministerio de Igualdad — Reforma art. 43 CE</heading>
+        <p akndiff:role="heading"><b>El Consejo de Ministros aprueba el anteproyecto de reforma del artículo 43 de la Constitución española para blindar el derecho a la interrupción del embarazo</b></p>
+        <p>● Ana Redondo ha insistido en que esta reforma viene a dar respuesta a “la ola reaccionaria nacional e internacional que pretende recortar los derechos de las mujeres”</p>
+        <p>14 de octubre de 2025</p>
+        <p>El Consejo de Ministros y Ministras ha aprobado el anteproyecto de reforma del artículo 43 de la Constitución para blindar y garantizar el derecho a la interrupción voluntaria del embarazo.</p>
+        <p>La ministra de Igualdad, Ana Redondo, ha explicado, que el objetivo es “dar un paso más en la garantía y el reconocimiento de los derechos de las mujeres”. Para ello se va a incorporar un nuevo apartado cuarto al artículo 43 con la siguiente redacción: “Se reconoce el derecho de las mujeres a la interrupción voluntaria del embarazo. El ejercicio de este derecho, en todo caso, será garantizado por los poderes públicos, asegurando su prestación en condiciones de igualdad efectiva, así como la protección de los derechos fundamentales de las mujeres”. Este apartado se incluirá en el Título I, dedicado a los derechos y deberes fundamentales, concretamente en el Capítulo III, referido a los principios rectores de la política social y económica.</p>
+        <p>Ana Redondo ha aseverado que la jurisprudencia del Tribunal Constitucional ha sido “clara y constante” al conectar el derecho a la interrupción voluntaria del embarazo con otros derechos fundamentales, como el artículo 10, relativo a la dignidad de la persona y el libre desarrollo de la personalidad; el artículo 15, sobre la integridad física y moral; el artículo 139.1, que garantiza la igualdad de derechos en todo el territorio nacional; y el artículo 9.2, que obliga a los poderes públicos a remover los obstáculos que impidan la igualdad real y efectiva.</p>
+        <p>Además, ha asegurado que con esta reforma “se refuerza un sistema completo de protección, que recoge tanto la legislación vigente como la doctrina constitucional, garantizando que este derecho se ejerza en condiciones de igualdad y seguridad jurídica en todo el país”.</p>
+        <p>La reforma se tramitará mediante el procedimiento ordinario y requerirá un informe del Consejo de Estado y la aprobación por mayoría de tres quintos tanto en el Congreso como en el Senado. En caso de desacuerdo, sería necesaria la creación de una Comisión Mixta Congreso-Senado, que elaboraría un texto alternativo, sometido de nuevo a votación. Si de nuevo, no se alcanzase un acuerdo, la reforma podría aprobarse con una mayoría de dos tercios del Congreso y mayoría absoluta en el Senado.</p>
+        <p>La ministra de Igualdad también ha recordado que existe la posibilidad de un referéndum de ratificación si lo solicita una décima parte de los diputados o senadores, aunque ha confiado en alcanzar las mayorías cualificadas necesarias para sacar adelante la reforma.</p>
+        <p>Ana Redondo ha subrayado que esta modificación de la Constitución responde a una razón política “urgente” ante la ola reaccionaria y regresiva nacional e internacional que pretende recortar los derechos de las mujeres, especialmente de los derechos sexuales y reproductivos. “Lo hemos visto en Estados Unidos, en varios países europeos y también en España, con iniciativas de gobiernos autonómicos que han cuestionado o dificultado el acceso a este derecho. Desde Castilla y León hasta Madrid, hemos asistido a propuestas o medidas contrarias a la ley vigente, desde el intento de imponer la escucha del latido fetal hasta la negativa a crear registros de objetores de conciencia”. La ministra ha defendido que, ante este contexto, es esencial blindar el derecho en la Constitución “para impedir que futuras mayorías puedan limitarlo o revertirlo”.</p>
+        <p>Por otro lado, ha remarcado que el objetivo de esta reforma también es fortalecer la sanidad pública, ya que se incorpora este derecho en el marco del artículo 43, vinculado al derecho a la salud y al sistema público sanitario. “En determinadas comunidades autónomas, gobernadas fundamentalmente por el Partido Popular, se está produciendo una reducción, una rebaja de la calidad del servicio público de salud y se está apostando claramente por una privatización y por una externalización de servicios que afectan específicamente a la interrupción voluntaria del embarazo y a las mujeres”. Redondo ha destacado que se refuerza constitucionalmente la obligación contemplada en la ley de que cada comunidad autónoma debe contar con al menos un hospital público de referencia para realizar estas intervenciones.</p>
+        <p>Para terminar, la ministra de Igualdad ha insistido en que esta reforma se dirige “a las mujeres de este país, y el movimiento feminista”. Además, ha recordado que nos encontramos celebrando 50 años de España en libertad y el 40 aniversario de la primera ley de interrupción voluntaria del embarazo (1985).</p>
+        <p>“Las mujeres de este país han luchado por la libertad sobre su propio cuerpo, por la dignidad sobre su proyecto vital y por esa integridad física y moral que ahora pretendemos reconocer constitucionalmente. Por lo tanto, las reconocemos en la lucha, las acompañamos y blindamos la prestación del derecho en la sanidad pública”, ha concluido.</p>
+        <p>Este sitio web utiliza cookies propias y de terceros para mantener la sesión, ofrecerle una mejor experiencia de usuario y obtener datos estadísticos de navegación de los usuarios. Para más información vea la</p>
+      </hcontainer>
+    </mainBody>
+  </statement>
+</akomaNtoso>

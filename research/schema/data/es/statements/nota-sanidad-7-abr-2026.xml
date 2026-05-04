@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <statement name="nota-ministerial" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-sanidad-7-abr-2026/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-sanidad-7-abr-2026"/>
+          <FRBRalias value="Comunicado oficial Ministerio de Sanidad — Reforma constitucional del art. 43" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#ministerio-sanidad"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="nota-ministerial"/>
+          <FRBRname value="nota-sanidad-7-abr-2026"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-sanidad-7-abr-2026/spa@2026-04-07/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-sanidad-7-abr-2026/spa@2026-04-07"/>
+          <FRBRdate date="2026-04-07" name="expression"/>
+          <FRBRauthor href="#ministerio-sanidad"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/statement/2026-04-07/nota-sanidad-7-abr-2026/spa@2026-04-07/!main.xml"/>
+          <FRBRuri value="/akn/es/statement/2026-04-07/nota-sanidad-7-abr-2026/spa@2026-04-07.akn"/>
+          <FRBRdate date="2026-04-07" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-07" name="nota-ministerial" showAs="Ministerio de Sanidad — 2026-04-07"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-07" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-07"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="ministerio-sanidad" href="/akn/ontology/organization/es/ministerio-sanidad" showAs="Ministerio de Sanidad"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>nota-sanidad-7-abr-2026</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.sanidad.gob.es/gabinete/notasPrensa/070426-aborto.htm</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Statement: Comunicado oficial Ministerio de Sanidad — Reforma constitucional del art. 43
+
+Autor: Ministerio de Sanidad
+Fecha publicación: 2026-04-07
+URL fuente: https://www.sanidad.gob.es/gabinete/notasPrensa/070426-aborto.htm
+Subtipo: nota-ministerial
+
+Long title: Comunicado del Ministerio de Sanidad de 7-abr-2026 valorando la aprobación por el Consejo de Ministros del proyecto de reforma constitucional del art. 43 CE en lo relativo a la integración del derecho a la interrupción voluntaria del embarazo en el sistema sanitario público.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Comunicado oficial Ministerio de Sanidad — Reforma constitucional del art. 43</docTitle>
+      <docDate date="2026-04-07">2026-04-07</docDate>
+      <docProponent>Ministerio de Sanidad</docProponent>
+      <p akndiff:role="source-url">https://www.sanidad.gob.es/gabinete/notasPrensa/070426-aborto.htm</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Comunicado oficial Ministerio de Sanidad — Reforma constitucional del art. 43</heading>
+        <p akndiff:role="list-item">— Inicio</p>
+        <p akndiff:role="heading"><b>El Gobierno da luz verde al proyecto de reforma para constitucionalizar la vertiente prestacional del derecho a la interrupción voluntaria del embarazo</b></p>
+        <p akndiff:role="list-item">— Se propone añadir un apartado 4 al
+artículo 43 de la Constitución Española que
+garantice el ejercicio del derecho en condiciones de igualdad en
+todo el territorio nacional con cuantas prestaciones y servicios
+sean necesarios.</p>
+        <p akndiff:role="list-item">— Con esta iniciativa, España avanza en el
+reconocimiento social y jurídico del derecho a la
+autodeterminación de las mujeres y a su necesaria
+protección frente a dinámicas
+regresivas.</p>
+        <p>Madrid, 07 de abril de 2026 .- El Consejo de
+Ministras y Ministros ha aprobado, a propuesta del Ministerio de
+Igualdad, del Ministerio de la Presidencia, Justicia y Relaciones
+con las Cortes y del Ministerio de Sanidad, el proyecto de reforma
+del artículo 43 de la Constitución Española,
+para constitucionalizar la vertiente prestacional del derecho a la
+interrupción voluntaria del embarazo (IVE).</p>
+        <p>Esta iniciativa trae causa de un acuerdo previo que ya
+aprobó el Gobierno el pasado 14 de octubre de 2025 y por el
+que se solicitó al Consejo de Estado la emisión del
+dictamen preceptivo sobre la propuesta, recibido el 9 de marzo de
+este año. De esta forma, el proyecto de reforma que se ha
+elevado ahora al Consejo de Ministras y Ministros incorpora las
+mejoras realizadas por el Consejo de Estado y propone añadir
+un apartado 4 al artículo 43 de la Constitución con
+el siguiente tenor literal: “Los poderes públicos
+garantizarán el ejercicio del derecho de las mujeres a la
+interrupción voluntaria del embarazo en condiciones de
+igualdad real y efectiva con cuantas prestaciones y servicios sean
+necesarios para dicho ejercicio”.</p>
+        <p>La nueva redacción constitucionaliza con claridad la
+vertiente prestacional del derecho a la interrupción
+voluntaria del embarazo, al tiempo que la libertad de
+decisión de la mujer queda protegida por los
+artículos 10.1 y 15 de la Constitución
+Española, de acuerdo con la jurisprudencia del Tribunal
+Constitucional, estableciendo que los poderes públicos deben
+garantizar su ejercicio en condiciones de igualdad real y efectiva.
+Esta previsión se incluye en consonancia con el
+artículo 9.2 de la Constitución y con el objetivo
+principal de asegurar la igualdad en el ejercicio del derecho a la
+IVE en todo el territorio nacional.</p>
+        <p>A partir de este momento, la reforma impulsada por el Gobierno
+seguirá los cauces establecidos, conforme al procedimiento
+previsto en el artículo 167 de la Constitución, y
+requerirá la aprobación por mayoría de tres
+quintos tanto en el Congreso como en el Senado. En caso de
+descuerdo, sería necesaria la creación de una
+Comisión Mixta Congreso-Senado que propondría un
+nuevo texto, que se sometería de nuevo a votación. De
+no lograrse, el texto podría aprobarse, por mayoría
+de dos tercios de los votos en el Congreso y mayoría
+absoluta en el Senado.</p>
+        <p>En definitiva, con esta reforma constitucional, el derecho a la
+interrupción voluntaria del embarazo queda reforzado con la
+obligación, indisponible para los poderes públicos,
+incluido el legislador, de garantizar su ejercicio en condiciones
+sanitarias apropiadas. España avanza en el reconocimiento
+social y jurídico del derecho a la autodeterminación
+de las mujeres y a su necesaria protección frente a
+dinámicas regresivas y vuelve a colocarse a la vanguardia de
+los países europeos más avanzados en la
+protección de los derechos de las mujeres.</p>
+        <p akndiff:role="list-item">— Traducir</p>
+        <p akndiff:role="list-item">— Compartir</p>
+        <p akndiff:role="list-item">— Me gusta</p>
+        <p akndiff:role="list-item">— Descargar página actual en pdf</p>
+        <p akndiff:role="list-item">— Web temáticas</p>
+        <p akndiff:role="list-item">— RSS</p>
+      </hcontainer>
+    </mainBody>
+  </statement>
+</akomaNtoso>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Enmiendas a la totalidad de devolución presentadas al Proyecto de reforma del
+  artículo 43 de la Constitución Española (102/000001) — publicadas en
+  BOCG-15-A-92-2 de 23 de abril de 2026.
+
+  Dos enmiendas a la totalidad de devolución:
+    - ENMIENDA NÚM. 5 — Grupo Parlamentario Popular en el Congreso (firma:
+      Ester Muñoz de la Iglesia, Portavoz GP Popular, 20-abr-2026)
+    - ENMIENDA NÚM. 6 — Grupo Parlamentario VOX (firma: José María Figaredo
+      Álvarez-Sala, Portavoz adjunto GP VOX, 20-abr-2026)
+
+  Ambas RECHAZADAS por el Pleno del Congreso de los Diputados el 30-abr-2026
+  (sesión nº 177, votación nº 12): 348 presentes, 171 a favor (PP+Vox+UPN),
+  177 en contra (PSOE+Sumar+ERC+EH Bildu+Junts+PNV+Podemos+BNG+CC), 0
+  abstenciones, 2 no votan. El proyecto continúa en plazo de enmiendas al
+  articulado en la Comisión Constitucional.
+
+  Fuente oficial: https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-2.PDF
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <amendment name="amendment">
+    <meta>
+      <identification source="#congreso-diputados">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/amendment/2026-04-21/102-000001-am-totalidad/!main"/>
+          <FRBRuri value="/akn/es/amendment/2026-04-21/102-000001-am-totalidad"/>
+          <FRBRdate date="2026-04-21" name="generation"/>
+          <FRBRauthor href="#gp-popular-congreso"/>
+          <FRBRauthor href="#gp-vox-congreso"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="enmiendas-totalidad-devolucion"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/amendment/2026-04-21/102-000001-am-totalidad/spa@/!main"/>
+          <FRBRuri value="/akn/es/amendment/2026-04-21/102-000001-am-totalidad/spa@"/>
+          <FRBRdate date="2026-04-21" name="generation"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/amendment/2026-04-21/102-000001-am-totalidad/spa@.xml"/>
+          <FRBRuri value="/akn/es/amendment/2026-04-21/102-000001-am-totalidad/spa@.xml"/>
+          <FRBRdate date="2026-04-21" name="generation"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2026-04-21"
+                   showAs="BOCG Congreso, Serie A, núm. 92-2, de 23/04/2026 (Enmiendas a la totalidad)"
+                   name="bocg"
+                   href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-2.PDF"/>
+
+      <classification source="#congreso-diputados">
+        <keyword value="enmienda-totalidad" showAs="enmienda a la totalidad" dictionary="#congreso-topics"/>
+        <keyword value="devolucion" showAs="devolución del proyecto al Gobierno" dictionary="#congreso-topics"/>
+        <keyword value="reforma-art-43-ce" showAs="reforma artículo 43 CE" dictionary="#congreso-topics"/>
+        <keyword value="aborto" showAs="aborto" dictionary="#congreso-topics"/>
+        <keyword value="fraude-constitucional" showAs="fraude constitucional (alegado)" dictionary="#congreso-topics"/>
+      </classification>
+
+      <lifecycle source="#congreso-diputados">
+        <eventRef date="2026-04-20" refersTo="#presentacion-enmiendas"
+                  source="#evt-presentacion"
+                  showAs="Presentación de las enmiendas a la totalidad por GP Popular y GP VOX (cierre del plazo a las 14:00 del 20-abr-2026)"
+                  chamber="congreso"/>
+        <eventRef date="2026-04-21" refersTo="#calificacion-mesa-enmiendas"
+                  source="#evt-calificacion"
+                  showAs="Calificación por la Mesa del Congreso (P.D. Secretario General Fernando Galindo Elola-Olaso)"
+                  chamber="congreso"/>
+        <eventRef date="2026-04-23" refersTo="#publicacion"
+                  source="#evt-publicacion"
+                  showAs="Publicación en BOCG-15-A-92-2"
+                  chamber="congreso"/>
+        <eventRef date="2026-04-30" refersTo="#votacion-rechazo"
+                  source="#evt-votacion"
+                  showAs="RECHAZADAS por el Pleno del Congreso (sesión 177, votación 12): 348 presentes, 171 a favor (PP+Vox+UPN), 177 en contra (PSOE+Sumar+ERC+EH Bildu+Junts+PNV+Podemos+BNG+CC), 0 abstenciones, 2 no votan"
+                  chamber="congreso"/>
+      </lifecycle>
+
+      <references source="#congreso-diputados">
+        <TLCEvent eId="evt-presentacion"
+                  href="/akn/es/event/2026-04-20/presentacion-enmiendas-totalidad"
+                  showAs="Presentación enmiendas a la totalidad (20-abr-2026)"/>
+        <TLCEvent eId="evt-calificacion"
+                  href="/akn/es/event/2026-04-21/calificacion-mesa-enmiendas-totalidad"
+                  showAs="Calificación por la Mesa del Congreso (21-abr-2026)"/>
+        <TLCEvent eId="evt-publicacion"
+                  href="/akn/es/event/2026-04-23/publicacion-bocg-15-a-92-2"
+                  showAs="Publicación BOCG-15-A-92-2 (23-abr-2026)"/>
+        <TLCEvent eId="evt-votacion"
+                  href="/akn/es/event/2026-04-30/rechazo-enmiendas-totalidad"
+                  showAs="Rechazo por el Pleno del Congreso (30-abr-2026)"/>
+        <TLCOrganization eId="gp-popular-congreso"
+                         href="/akn/es/org/grupo-parlamentario-popular-congreso"
+                         showAs="Grupo Parlamentario Popular en el Congreso"/>
+        <TLCOrganization eId="gp-vox-congreso"
+                         href="/akn/es/org/grupo-parlamentario-vox-congreso"
+                         showAs="Grupo Parlamentario VOX en el Congreso"/>
+        <TLCOrganization eId="mesa-congreso"
+                         href="/akn/es/org/mesa-congreso-diputados"
+                         showAs="Mesa del Congreso de los Diputados"/>
+        <TLCOrganization eId="comision-constitucional-congreso"
+                         href="/akn/es/org/comision-constitucional-congreso"
+                         showAs="Comisión Constitucional del Congreso de los Diputados"/>
+        <TLCPerson eId="dip-ester-munoz"
+                   href="/akn/es/person/ester-munoz-de-la-iglesia"
+                   showAs="Ester Muñoz de la Iglesia, Portavoz del Grupo Parlamentario Popular en el Congreso (firmante enmienda nº 5)"/>
+        <TLCPerson eId="dip-jose-maria-figaredo"
+                   href="/akn/es/person/jose-maria-figaredo-alvarez-sala"
+                   showAs="José María Figaredo Álvarez-Sala, Portavoz adjunto del Grupo Parlamentario VOX (firmante enmienda nº 6)"/>
+        <TLCPerson eId="rodriguez-minon"
+                   href="/akn/es/person/miguel-herrero-rodriguez-minon"
+                   showAs="Miguel Herrero y Rodríguez de Miñón, Consejero permanente del Consejo de Estado y ponente del texto constitucional (autor del voto particular citado por la enmienda PP)"/>
+      </references>
+
+      <proprietary source="#congreso-diputados">
+        <akndiff:nativeId>102-000001-am-totalidad</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-2.PDF</akndiff:sourceUrl>
+        <akndiff:targetBill href="/akn/es/bill/2026-04-07/102-000001"/>
+        <akndiff:targetLocator>#totalidad</akndiff:targetLocator>
+        <akndiff:amendmentType>enmienda-totalidad-devolucion</akndiff:amendmentType>
+        <akndiff:outcome normalized="rejected">Rechazadas por el Pleno del Congreso de los Diputados el 30-abr-2026 (sesión 177, votación 12): 171 a favor / 177 en contra / 0 abstenciones / 2 no votan. El proyecto continúa su tramitación en la Comisión Constitucional</akndiff:outcome>
+        <akndiff:votedAt>2026-04-30T12:51:59+02:00</akndiff:votedAt>
+
+        <akndiff:vote date="2026-04-30" result="rejected" source="#evt-votacion">
+          <akndiff:date>2026-04-30T12:51:59+02:00</akndiff:date>
+          <akndiff:sessionNumber>177</akndiff:sessionNumber>
+          <akndiff:voteNumber>12</akndiff:voteNumber>
+          <akndiff:totalPresent>348</akndiff:totalPresent>
+          <akndiff:total>171/177/0/2</akndiff:total>
+          <akndiff:for>
+            <akndiff:count>171</akndiff:count>
+            <akndiff:groupSummary>GP Popular en el Congreso + GP VOX + UPN (a favor de las enmiendas: devolver el proyecto al Gobierno)</akndiff:groupSummary>
+          </akndiff:for>
+          <akndiff:against>
+            <akndiff:count>177</akndiff:count>
+            <akndiff:groupSummary>GP Socialista + GP Sumar + GP Republicano (ERC) + EH Bildu + GP Junts + GP Vasco (PNV) + Podemos + BNG + Coalición Canaria (en contra de las enmiendas: el proyecto continúa)</akndiff:groupSummary>
+          </akndiff:against>
+          <akndiff:abstain>
+            <akndiff:count>0</akndiff:count>
+          </akndiff:abstain>
+          <akndiff:notVote>
+            <akndiff:count>2</akndiff:count>
+          </akndiff:notVote>
+        </akndiff:vote>
+
+        <akndiff:submitter refersTo="#gp-popular-congreso" enmiendaNumero="5"/>
+        <akndiff:submitter refersTo="#gp-vox-congreso" enmiendaNumero="6"/>
+
+        <akndiff:identifier scheme="bocg" value="BOCG-15-A-92-2" isCanonical="true"/>
+
+        <akndiff:researchNotes><![CDATA[
+        Friction log para ES / amendment 102-000001-am-totalidad (modelado completo Fase 4 del experimento Reforma art. 43 CE):
+
+        1. AMENDMENT CONSOLIDADA (no per-amendment). Una publicación BOCG agrupa varias enmiendas en un solo documento físico (BOCG-15-A-92-2 contiene la nº 5 de PP + nº 6 de VOX). El schema AKN amendment se diseñó para una sola enmienda con un solo submitter; aquí lo modelamos como un único documento amendment con dos akndiff:submitter y dos secciones <amendmentContent> + <amendmentJustification>. Esta fricción es la misma documentada en el ejemplo previo de Ley 1/2026 (data/es/amendments/121-000036-am-ponencia.xml).
+
+        2. SUBMITTER ES GRUPO PARLAMENTARIO, NO INDIVIDUAL. AmendmentTable.submitter espera persona individual. Aquí los autores son grupos parlamentarios completos (representados por su portavoz). Modelamos con akndiff:submitter refiriendo a la TLCOrganization del grupo, no a la persona del portavoz.
+
+        3. ENMIENDA A LA TOTALIDAD ≠ ENMIENDA AL ARTICULADO. Hay dos modalidades en España: a la totalidad (devolución al Gobierno o texto alternativo, votada en debate de totalidad en Pleno) y al articulado (modificaciones puntuales, votadas en Comisión). Esta es del primer tipo. Capturamos en akndiff:amendmentType.
+
+        4. RECHAZADAS PERO PRESERVADAS. Aunque rechazadas el 30-abr-2026, las enmiendas forman parte del expediente parlamentario y deben preservarse en el corpus AKN. Su outcome es 'rejected' pero el documento sigue siendo válido históricamente.
+
+        5. CITA A VOTO PARTICULAR DICTAMEN CE. La enmienda PP cita extensamente el voto particular de Miguel Herrero y Rodríguez de Miñón al Dictamen del Consejo de Estado del 26-feb-2026. Ese voto particular es otro documento del corpus (modelado como doc voto-particular-rodriguez-minon). Relación: amendment cites doc.
+
+        6. VOTACIÓN CON DETALLE POR DIPUTADO. La votación nº 12 de la sesión 177 está disponible como JSON oficial del Congreso (vot_177_12.json descargado en source-materials/votaciones/) con voto individual de los 348 diputados. Resultado consolidado en akndiff:vote arriba.
+        ]]></akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <p><b>PROYECTOS DE LEY</b></p>
+      <p><b>ENMIENDAS A LA TOTALIDAD</b></p>
+      <p><b>102/000001</b> Proyecto de reforma del artículo 43 de la Constitución Española.</p>
+      <longTitle>
+        <p>Enmiendas a la totalidad de devolución presentadas al <ref href="/akn/es/bill/2026-04-07/102-000001">Proyecto de reforma del artículo 43 de la Constitución Española (expediente 102/000001)</ref> por el Grupo Parlamentario Popular en el Congreso (Enmienda núm. 5) y por el Grupo Parlamentario VOX (Enmienda núm. 6), publicadas en BOCG-15-A-92-2 de 23 de abril de 2026 y rechazadas por el Pleno del Congreso de los Diputados el 30 de abril de 2026 (sesión 177, votación 12: 171 a favor / 177 en contra). Texto íntegro del BOCG-15-A-92-2.</p>
+      </longTitle>
+    </preface>
+
+    <amendmentBody>
+      <amendmentHeading>
+        <p>En cumplimiento de lo dispuesto en el artículo 97 del Reglamento de la Cámara, se ordena la publicación en el Boletín Oficial de las Cortes Generales de las enmiendas a la totalidad presentadas en relación con el Proyecto de reforma del artículo 43 de la Constitución Española.</p>
+        <p>Palacio del Congreso de los Diputados, 21 de abril de 2026.—P.D. El Secretario General del Congreso de los Diputados, Fernando Galindo Elola-Olaso.</p>
+      </amendmentHeading>
+
+      <amendmentContent>
+        <p>A la Mesa de la Comisión Constitucional</p>
+        <p>El Grupo Parlamentario Popular en el Congreso al amparo de lo dispuesto en el artículo 110 y siguientes del Reglamento de la Cámara, presenta la siguiente enmienda al <ref href="/akn/es/bill/2026-04-07/102-000001">Proyecto de reforma del artículo 43 de la Constitución Española</ref>.</p>
+        <p>Palacio del Congreso de los Diputados, 20 de abril de 2026.—Ester Muñoz de la Iglesia, Portavoz Grupo Parlamentario Popular en el Congreso.</p>
+        <p>ENMIENDA NÚM. 5 Grupo Parlamentario Popular en el Congreso Enmienda a la totalidad de devolución</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>JUSTIFICACIÓN Exposición de motivos</p>
+
+        <p>El Gobierno justifica este Proyecto de reforma del artículo 43 de la Constitución Española en la necesidad de un «reconocimiento constitucional expreso» del «derecho a la interrupción voluntaria del embarazo», lo que, a su juicio, supone un paso más en el «reconocimiento social y jurídico del derecho a la autodeterminación de las mujeres y a su necesaria protección frente a dinámicas regresivas».</p>
+
+        <p>Así mismo, indica que la incorporación de ese derecho en el artículo 43 de la <ref href="/akn/es/act/1978-12-27/constitucion-espanola">Constitución</ref>, que reconoce el derecho a la protección de la salud y encomienda a los poderes públicos organizar la salud pública mediante medidas preventivas, prestaciones y servicios, se justifica «por la mayor sencillez y celeridad que ofrece la tramitación de la reforma constitucional conforme al procedimiento del artículo 167 de la Constitución», que «favorece la viabilidad política del acuerdo y permite culminar la reforma en un tiempo razonable, sin interrumpir el normal funcionamiento de las Cortes Generales».</p>
+
+        <p>Admite, por tanto, el uso instrumental por motivos estrictamente de oportunidad política del procedimiento de reforma y del propio contenido sustancial de la misma.</p>
+
+        <p>La elección de un procedimiento de reforma que, por propio reconocimiento del Gobierno, lejos de apoyarse en el texto constitucional, admite que podría haberse planteado una reforma del artículo 15 de la Constitución, que reconoce el derecho fundamental a la vida y a la integridad física y moral. Pero, en este último caso, exigiría recurrir al procedimiento agravado del artículo 168 de la Constitución, que implicaría la disolución inmediata de las Cortes Generales y convocatoria de elecciones generales.</p>
+
+        <p>El proyecto de reforma incorpora un nuevo apartado 4 al artículo 43 de la Constitución con el siguiente texto:</p>
+
+        <p>«4. Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio».</p>
+
+        <p>Puesto de manifiesto tanto en la Exposición de Motivos como en la memoria explicativa del proyecto de reforma «el fraude auto confirmado»—, en palabras del ponente del texto constitucional y consejero permanente del Consejo de Estado, Don Miguel Herrero y Rodríguez de Miñón, en voto particular al dictamen evacuado al efecto y al que se adhieren los consejeros Sr. Michavila Núñez, Sr. Sanz Alonso y Sr. Aparicio Pérez, la iniciativa no merece su consideración.</p>
+
+        <p>Dicho voto particular fundamenta sólidamente que «el proyecto propone un fraude a la Constitución».</p>
+
+        <p>En primer lugar, porque al amparo del artículo 167 de la Constitución, se persigue un «resultado prohibido por el ordenamiento jurídico y contrario a él, como es modificar un aspecto del artículo 15 sin acudir al procedimiento del artículo 168».</p>
+
+        <p>Asistimos a una actuación en claro fraude de ley, inequívocamente definido en el artículo 6.4 del Código Civil, que bajo la apariencia de licitud persigue esquivar la aplicación de la norma establecida para el caso.</p>
+
+        <p>Tras afirmar que el derecho de la mujer a interrumpir voluntariamente el embarazo «forma parte del contenido constitucionalmente protegido del derecho fundamental a la integridad física y moral (artículo 15 CE)», inserto en el Capítulo segundo, Sección primera del Título I de la Constitución y, por lo tanto protegido por el artículo 168 («Cuando se propusiere la revisión total de la Constitución o una parcial que afecte al Título preliminar, al Capítulo segundo, Sección primera del Título I, o al Título II, se procederá a la aprobación del principio por mayoría de dos tercios de cada Cámara, y a la disolución inmediata de las Cortes»), más abajo vienen a afirmar que como ese procedimiento no se adapta a sus pretensiones, optan por el que consideran que se ajusta más a su estrategia política.</p>
+
+        <p>Así, eludiendo la letra y el espíritu del precepto constitucional previamente invocado y que no se ajusta a su conveniencia, expresan claramente que «la incorporación del derecho a la interrupción voluntaria del embarazo en el artículo 43 de la Constitución se justifica por la mayor sencillez y celeridad que ofrece la tramitación de la reforma constitucional conforme al procedimiento del artículo 167 de la Constitución» en comparación con el procedimiento del artículo 168 de la Constitución aplicable en el caso de que hubieran planteado una reforma del artículo 15 de la Constitución.</p>
+
+        <p>El «fraude auto confirmado» es evidente en la simple explicación del Gobierno al procedimiento de reforma por la vía del artículo 167 CE que impulsan: «favorece la viabilidad política del acuerdo y permite culminar la reforma en un tiempo razonable, sin interrumpir el normal funcionamiento de las Cortes Generales». Es un procedimiento «ágil pero garantista, idóneo para dotar de protección constitucional efectiva el derecho a la interrupción voluntaria del embarazo».</p>
+
+        <p>Incluso el propio Consejo de Estado, en su dictamen, no puede dejar de advertir que la elección del procedimiento se debe más a la mayor facilidad del procedimiento de reforma del art. 167 de la Constitución, que el aplicable a los derechos fundamentales del art. 168, que anticiparía el fin de la legislatura, verdadero fondo de la cuestión que aboca a considerar el proyecto un «fraude a la Constitución».</p>
+
+        <p>Recuerda que «Las reformas constitucionales deben tramitarse, en primer lugar, a través de los procedimientos establecidos a tal fin» y «Además de la observancia de los procedimientos previstos en cada uno de estos supuestos, las reformas constitucionales, si son parciales, encuentran los límites sustantivos inherentes a la necesidad de respetar las categorías jurídicas establecidas en la Constitución y de preservar su coherencia interna, en los términos establecidos por la jurisprudencia del Tribunal Constitucional».</p>
+
+        <p>No evita mostrar claramente que uno de los motivos por los se acude a reformar el artículo 43 de la Constitución (capítulo tercero del título I «De los principios rectores de la política social y económica»), en lugar del artículo 15 de la Constitución (sección 1.ª del Capítulo Segundo del Título I «De los derechos fundamentales y de las libertades públicas»), «es que el procedimiento de reforma constitucional del artículo 167 aplicable al artículo 43 exige unas mayorías que, aun reforzadas, son inferiores a las del procedimiento de reforma del artículo 168 que habría que utilizar en una eventual reforma del artículo 15 de la Constitución, y no obliga, como este, a la disolución de las Cortes Generales y convocatoria de elecciones».</p>
+
+        <p>Concluye afirmando que los motivos aducidos por el Gobierno son «consideraciones de oportunidad política que, desde un punto de vista constitucional, no deberían ser tenidas en cuenta a la hora de elegir el precepto objeto de la reforma. La decisión de reformar uno u otro precepto constitucional ha de realizarse atendiendo únicamente al contenido de la reforma propuesta, en el marco de la Constitución. El procedimiento de reforma aplicado debe ser la consecuencia de esta decisión y no su causa».</p>
+
+        <p>En segundo lugar, el proyecto presentado presenta numerosas inconsistencias.</p>
+
+        <p>De una parte, tanto en la exposición de motivos como en la memoria explicativa se expone de manera reiterada que el derecho que ahora mediante esta reforma se dice que se pretende «constitucionalizar» ya está recogido en el artículo 15 de la Constitución, artículo al que incorporan la correspondencia oportuna con otro artículo, el 10.1 CE.</p>
+
+        <p>Una fórmula para modificar la Constitución que responde al ánimo de evitar futuras contrarreformas y la «protección frente a eventuales dinámicas regresivas» es manifiestamente ilícita.</p>
+
+        <p>Retomando el voto particular «Nuestra Constitución se caracteriza por su flexibilidad solo atenuada en extremos muy concretos expresamente previstos en el artículo 168 de la misma por una mayor rigidez. Opción esta del constituyente que el constituyente constituido, esto es, la potestad de reforma no puede desconocer».</p>
+
+        <p>Por otra parte, hay que notar también que ese deseo de evitar que se produzca «un cambio jurisprudencial» que dé lugar a un «retroceso en el reconocimiento y garantía» de la interrupción voluntaria del embarazo, encierra una intención muy peligrosa, ya que se cuestiona la independencia de determinadas instituciones, a las que el Gobierno desprecia y viene a decir que debe procurarles instrucciones expresas sobre cómo interpretar y aplicar la Constitución (en clara referencia al Tribunal Constitucional).</p>
+
+        <p>En consecuencia, y al estar esta materia anclada en el artículo 15, cualquier modificación constitucional debe hacerse necesariamente dentro de la sección de derechos fundamentales, activando el procedimiento del artículo 168.</p>
+
+        <p>Por otro lado, no se puede «quebrantar la Constitución con argumentos de tipo político» o de «oportunidad» del momento.</p>
+
+        <p>En conclusión, esta reforma carece de justificación jurídica mínimamente sólida y lejos de perseguir como fin último reforzar la garantía del ejercicio de derechos de las mujeres, busca un beneficio electoral.</p>
+
+        <p>Por todo lo expuesto, el Grupo Parlamentario Popular entiende que este proyecto de reforma supone un fraude constitucional, por lo que solicitamos la devolución del Proyecto de reforma del artículo 43 de la Constitución Española al Gobierno.</p>
+      </amendmentJustification>
+
+      <amendmentContent>
+        <p>A la Mesa de la Comisión Constitucional</p>
+        <p>El Grupo Parlamentario VOX al amparo de lo dispuesto en el artículo 110 y siguientes del Reglamento de la Cámara, presenta la siguiente enmienda al <ref href="/akn/es/bill/2026-04-07/102-000001">Proyecto de reforma del artículo 43 de la Constitución Española</ref>.</p>
+        <p>Palacio del Congreso de los Diputados, 20 de abril de 2026.—José María Figaredo Álvarez-Sala, Portavoz adjunto Grupo Parlamentario VOX.</p>
+        <p>ENMIENDA NÚM. 6 Grupo Parlamentario VOX Enmienda a la totalidad de devolución El Grupo Parlamentario VOX (GPVOX), al amparo de lo establecido en los artículos 110 y siguientes y 146 del vigente Reglamento del Congreso de los Diputados, presenta la siguiente Enmienda a la totalidad de devolución al Gobierno del Proyecto de reforma del artículo 43 de la Constitución Española (núm. de expediente: 102/000001).</p>
+      </amendmentContent>
+
+      <amendmentJustification>
+        <p>JUSTIFICACIÓN</p>
+
+        <p>El Consejo de Estado en su Dictamen de 26 de febrero de 2026 ya ha señalado con claridad el fraude de ley constitucional de la propuesta que el Gobierno de España ha remitido a esta Cámara para reformar el artículo 43 de la Constitución con la exclusiva finalidad de eludir las mayorías reforzadas y la disolución de las Cortes Generales y la consecuente convocatoria de elecciones, en franca violencia al principio de soberanía nacional. Nada más que decir. Es la práctica habitual de un Gobierno que vive en el fango de la corrupción económica, política y moral.</p>
+
+        <p>Este Gobierno solo ofrece muerte, represión, persecución y violencia política. En defensa de la democracia, Sánchez se ha reunido en solo una semana con el gobierno de la tiranía comunista de China donde se reprimen las más elementales libertades, con campos de concentración y persecución implacable a la disidencia y oposición; con Lula, que persigue a la oposición llenando sus cárceles de presos políticos; con Gustavo Petro, guerrillero que debe su gobierno a las estructuras criminales del narco o quien con su complicidad estratégica, desde Méjico, inunda nuestras calles de droga.</p>
+
+        <p>Un Gobierno que se ha convertido en enemigo de la seguridad y de la libertad, especialmente de las mujeres, con la suelta de pederastas, violadores y terroristas, el indulto a golpistas y miembros del conglomerado terrorista «antifa» y una constante permisividad con los crímenes cometidos por quienes entran ilegalmente en España pegando una patada en la puerta, ofreciendo soledad y suicidio a quienes padecen problemas de cualquier índole, provocados o agravados por sus nefastas políticas, y una infinidad de despropósitos e injusticias nunca antes vistas.</p>
+
+        <p>Los poderes públicos deberían asistir a aquellos españoles que necesitan ayuda por razones familiares, económicas o de salud, o con la crianza de los niños nacidos en situaciones difíciles. Mientras cientos de miles de españoles siguen pendientes de una cita sanitaria, de una prestación a la dependencia o del apoyo de las Administraciones Públicas para paliar los efectos de la nefasta política económica y el expolio fiscal, este Gobierno busca solo instrumentalizar el dolor personal y familiar para, otra vez, lanzar cortinas de humo a su corrupción, a su indecencia, a su traición.</p>
+
+        <p>Es la vida, la libertad, la seguridad y los derechos sanitarios de los españoles lo que amenaza este Gobierno, con regularizaciones masivas de quienes deberían ser repatriados a su país o con normas como el Real Decreto 180/2026 de 11 de marzo que precisamente abren en canal el derecho a la protección de la salud y la atención sanitaria de los españoles, reconociéndolo a cualquier persona extranjera que no tenga su residencia legal en España.</p>
+
+        <p>El artículo 15 de la Constitución española reconoce el derecho de todos a la vida. La reforma constitucional planteada contraviene este precepto y encubre, bajo la apariencia de derechos a la salud sexual y reproductiva, un atentado contra la dignidad de la naturaleza de la persona.</p>
+
+        <p>En consecuencia, frente a un Gobierno que ha desolado nuestro sistema sanitario y los derechos de los españoles, se postula la devolución al Gobierno del Proyecto de reforma del artículo 43 de la Constitución Española.</p>
+      </amendmentJustification>
+
+      <amendmentHeading>
+        <p>NOTA AL FINAL DE LA PUBLICACIÓN: La presente publicación recoge la reproducción literal de las enmiendas presentadas en el registro electrónico de la Dirección de Comisiones de la Secretaría General del Congreso de los Diputados.</p>
+      </amendmentHeading>
+    </amendmentBody>
+  </amendment>
+</akomaNtoso>

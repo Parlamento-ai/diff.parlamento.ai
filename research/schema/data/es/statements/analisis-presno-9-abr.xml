@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <statement name="analisis-juridico" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/statement/2026-04-09/analisis-presno-9-abr/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-09/analisis-presno-9-abr"/>
+          <FRBRalias value="Análisis jurídico — Reforma art. 43 CE (primera valoración 9-abr-2026)" name="title"/>
+          <FRBRdate date="2026-04-09" name="generation"/>
+          <FRBRauthor href="#miguel-angel-presno-linera"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="analisis-juridico"/>
+          <FRBRname value="analisis-presno-9-abr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/statement/2026-04-09/analisis-presno-9-abr/spa@2026-04-09/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-09/analisis-presno-9-abr/spa@2026-04-09"/>
+          <FRBRdate date="2026-04-09" name="expression"/>
+          <FRBRauthor href="#miguel-angel-presno-linera"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/statement/2026-04-09/analisis-presno-9-abr/spa@2026-04-09/!main.xml"/>
+          <FRBRuri value="/akn/es/statement/2026-04-09/analisis-presno-9-abr/spa@2026-04-09.akn"/>
+          <FRBRdate date="2026-04-09" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-09" name="analisis-juridico" showAs="Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo) — 2026-04-09"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-09" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-09"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="miguel-angel-presno-linera" href="/akn/ontology/organization/es/miguel-angel-presno-linera" showAs="Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo)"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>analisis-presno-9-abr</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://presnolinera.wordpress.com/2026/04/09/sobre-la-reforma-del-articulo-43-CE</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Statement: Análisis jurídico — Reforma art. 43 CE (primera valoración 9-abr-2026)
+
+Autor: Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo)
+Fecha publicación: 2026-04-09
+URL fuente: https://presnolinera.wordpress.com/2026/04/09/sobre-la-reforma-del-articulo-43-CE
+Subtipo: analisis-juridico
+
+Long title: Análisis jurídico-constitucional publicado por el Catedrático Miguel Ángel Presno Linera (UNIOVI) el 9-abr-2026 sobre el proyecto de reforma del art. 43 CE aprobado por el Consejo de Ministros el 7-abr-2026.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Análisis jurídico — Reforma art. 43 CE (primera valoración 9-abr-2026)</docTitle>
+      <docDate date="2026-04-09">2026-04-09</docDate>
+      <docProponent>Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo)</docProponent>
+      <p akndiff:role="source-url">https://presnolinera.wordpress.com/2026/04/09/sobre-la-reforma-del-articulo-43-CE</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Análisis jurídico — Reforma art. 43 CE (primera valoración 9-abr-2026)</heading>
+        <p>El 14 de octubre de 2025, el Consejo de Ministros aprobó el Acuerdo por el que se tomaba conocimiento del Anteproyecto de reforma del artículo 43 de la Constitución Española (CE). Concretamente, se pretendía incorporar un nuevo apartado cuarto al artículo 43 con la siguiente redacción: «Se reconoce el derecho de las mujeres a la interrupción voluntaria del embarazo. El ejercicio de este derecho, en todo caso, será garantizado por los poderes públicos, asegurando su prestación en condiciones de igualdad efectiva, así como la protección de los derechos fundamentales de las mujeres».</p>
+        <p>Aunque no es frecuente incorporar a los textos constitucionales la interrupción voluntaria del embarazo (IVE en lo sucesivo) nada impide hacerlo y, en ese sentido, Francia lo ha hecho, como excepción en nuestro entorno constitucional comparado, al disponer el artículo 34 de su Constitución que «la ley determinará las condiciones bajo las cuales se ejerce la libertad garantizada a la mujer de recurrir a la interrupción voluntaria del embarazo».</p>
+        <p>Pues bien, si lo que se pretendía con la iniciativa gubernamental era la mención expresa del derecho a la IVE para garantizar su iusfundamentalidad, habría que llevarla a cabo mediante una reforma del 15 CE, pues es ahí, según la vigente jurisprudencia constitucional, donde encaja lo que esa concreción del derecho a la integridad física y moral de la mujer; en efecto, el Tribunal Constitucional, respondiendo a sendos recursos contra la en su versión original y en la adoptada tras una reforma en 2023, ha dicho que “la interrupción voluntaria del embarazo, como manifestación del derecho de la mujer a adoptar decisiones y hacer elecciones libres y responsables, sin violencia, coacción ni discriminación, con respeto a su propio cuerpo y proyecto de vida, forma parte del contenido constitucionalmente protegido del derecho fundamental a la integridad física y moral (art. 15 CE) en conexión con la dignidad de la persona y el libre desarrollo de su personalidad como principios rectores del orden político y la paz social (art. 10.1 CE)” ( STC 44/2023, FJ 3.B.b ); “la interrupción voluntaria del embarazo forma parte del contenido constitucionalmente protegido del derecho fundamental a la integridad física y moral (art. 15 CE)” ( STC 92/2024, FJ. 2.c ) .</p>
+        <p>De ser así las cosas, el procedimiento a emplear sería, como es sabido, el previsto en el artículo 168 CE para la reforma de un artículo comprendido en la Sección Primera del Capítulo Segundo del Título Primero: aprobación del principio por mayoría de 2/3 de cada Cámara, disolución inmediata de las Cortes, las Cámaras elegidas deberían ratificar la decisión y proceder al estudio del nuevo texto constitucional, que debería ser aprobado por mayoría de 2/3 de ambas Cámaras. Aprobada la reforma por las Cortes Generales, sería sometida a referéndum para su ratificación.</p>
+        <p>En términos prácticos, una vez concluida esa reforma constitucional, la interrupción voluntaria del embarazo seguiría siendo una facultad iusfundamental pero con una mención expresa en la CE.</p>
+        <p>Otra posibilidad para que una eventual reforma constitucional no alterase la condición iusfundamental de la IVE actualmente reconocida, sería incluir la mención expresa a esa libertad en la Sección Segunda del Capítulo Segundo del Título Primero (artículos 30 a 38) aunque, a diferencia del artículo 15 o, en su caso, del 18 CE, en dicha Sección no hay ningún artículo en el que encaje materialmente una facultad con ese contenido. Esta alternativa tendría a su favor una menor complejidad procedimental pues, en tal caso, el camino a seguir sería el previsto en el artículo 167 CE: “aprobación por mayoría de 3/5 de cada una de las Cámaras; si no hubiera acuerdo entre ambas, se intentaría obtenerlo mediante la creación de una Comisión de composición paritaria de Diputados y Senadores, que presentaría un texto que sería votado por el Congreso y el Senado. De no lograrse la aprobación mediante el procedimiento del apartado anterior, y siempre que el texto hubiere obtenido el voto favorable de la mayoría absoluta del Senado, el Congreso, por mayoría de 2/3, podría aprobar la reforma. Aprobada la reforma por las Cortes Generales, sería sometida a referéndum para su ratificación cuando así lo solicitasen, dentro de los quince días siguientes a su aprobación, una décima parte de los miembros de cualquiera de las Cámaras.</p>
+        <p>De esta manera, y partiendo igualmente de la jurisprudencia constitucional consolidada en la actualidad, la IVE seguiría siendo una facultad derivada de un derecho fundamental aunque, en esta hipótesis, su ejercicio no estaría garantizado ante los Tribunales ordinarios por un procedimiento basado en los principios de preferencia y sumariedad ni, en su caso, a través del recurso de amparo ante el Tribunal Constitucional. Tampoco habría un desarrollo legal reservado a la Ley Orgánica pero, obviamente, la Ley ordinaria que lo llevara a cabo debería respetar su contenido esencial.</p>
+        <p>Sin embargo, la opción por la que se decantó el Gobierno a la hora de aprobar el Anteproyecto en octubre de 2025 fue la de la reforma del artículo 43 con el argumento de su coherencia con el reconocimiento en dicho precepto del derecho a la salud. Desde un punto de vista formal, en tal caso, y como en la segunda opción antes mencionada, el procedimiento a seguir para la reforma constitucional sería el previsto en el artículo 167 CE pero, a diferencia de las dos primeras posibilidades, entonces la IVE dejaría de ser una facultad iusfundamental y pasaría a formar parte de un principio rector de la política social y económica, que, como tal y en palabras del artículo 53.3 CE, informaría la legislación positiva, la práctica judicial y la actuación de los poderes públicos y sólo podría ser alegado ante la jurisdicción ordinaria de acuerdo con lo que dispusiera la ley que lo desarrollase.</p>
+        <p>En otras palabras, una reforma constitucional de esa naturaleza, y en claro contraste con la situación actual, privaría a la IVE de la condición de facultad iusfundamental que goza de un procedimiento judicial de protección preferente y sumario; dejaría, además, de contar con la garantía del recurso de amparo y del actual contenido esencial de libertad, de manera que la futura ley ordinaria que desarrollase esa concreción del principio rector de la política social y económica reconocido en el artículo 43 CE podría hacerlo en unos términos similares al sistema vigente hasta la entrada en vigor de la Ley Orgánica 2/2010, es decir, podría articular un sistema circunscrito a unas indicaciones o supuestos en los que se encontrara la mujer que pretendiese la interrupción voluntaria de su embarazo.</p>
+        <p>Finalmente, el 7 de abril de 2026 se conoció, tras su aprobación por el Consejo de Ministros, el texto del Proyecto de reforma del artículo 43 en el que desaparece la primera parte del texto del Anteproyecto –«Se reconoce el derecho de las mujeres a la interrupción voluntaria del embarazo»- y la propuesta queda como sigue: «Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio».</p>
+        <p>Cabe apreciar, en primer lugar, que ya no se habla del “derecho a la interrupción voluntaria del embarazo” y que el Consejo de Ministros, seis meses después del Anteproyecto, ya no ve  necesario “garantizar el derecho de las mujeres a la interrupción voluntaria del embarazo” porque, como ha explicado la Ministra de Igualdad, Ana Redondo , “la interrupción voluntaria del embarazo no está en riesgo como derecho subjetivo porque el Tribunal Constitucional ha reiterado que está conectado con la dignidad, el libre desarrollo de la personalidad y la integridad física y moral reconocidos en la Carta Magna”.</p>
+        <p>Así pues, el Proyecto de reforma se limita a prescribir a los poderes públicos que el acceso a la IVE se haga en términos que garanticen condiciones de igualdad real y efectiva disponiendo para ello de las prestaciones y servicios necesarios. De esta manera, se llevaría a la CE algo que en la actualidad está, en esencia, ya contemplado en la Ley Orgánica 2/2010 , cuyo artículo 12 dispone que “se garantiza el acceso a la interrupción voluntaria del embarazo en las condiciones que se determinan en esta Ley. Estas condiciones se interpretarán en el modo más favorable para la protección y eficacia de los derechos fundamentales de la mujer que solicita la intervención, en particular, su derecho al libre desarrollo de la personalidad, a la vida, a la integridad física y moral, a la intimidad, a la libertad ideológica y a la no discriminación”; más adelante, el artículo 18, que no tiene carácter orgánico porque es desarrollo del artículo 43 y no del 15 CE, establece que “las usuarias del Sistema Nacional de Salud tendrán acceso a la interrupción voluntaria del embarazo en condiciones de igualdad efectiva. Las administraciones sanitarias que no puedan ofrecer dicho procedimiento en su ámbito geográfico remitirán a las usuarias al centro o servicio autorizado para este procedimiento, en las mejores condiciones de proximidad de su domicilio, garantizando la accesibilidad y calidad de la intervención y la seguridad de las usuarias”.</p>
+        <p>En mi opinión, lo verdaderamente relevante es que el Proyecto asuma que la fundamentalidad de ese derecho está asegurada mientras se siga entendiendo como parte del artículo 15 CE y no como un añadido al artículo 43, pues en este segundo caso, y como ya se ha dicho, convertiría la IVE en un mero principio rector de la política social y económica.</p>
+        <p>En segundo lugar, y aunque esta reforma no se apruebe, un hipotético desarrollo legal del derecho en un sentido más restrictivo estaría muy limitado por el propio carácter fundamental del derecho, de manera que no se podrá menoscabar su contenido esencial de libertad -deberá existir una IVE que dejé decidir a la mujer, durante un cierto tiempo, sobre la continuidad de su embarazo-; además, no se podría articular un sistema que, en la práctica, dificulte el ejercicio del derecho ni, obviamente, imponga algún tipo de trato peyorativo para algunas mujeres.</p>
+        <p>En tercer término, lo que sí podría aportar la eventual reforma del artículo 43 CE es la garantía del contenido prestacional del derecho, es decir, la obligación de que la IVE siga teniendo el carácter de prestación pública asegurada por las autoridades sanitarias y no meramente una libertad para que la mujer que quiera interrumpir su embarazo acuda a un centro privado pero dicho carácter prestacional exigiría, si finalmente es parte del artículo 43, que se reconociera previamente en una Ley y no sería exigible de manera directa antes de que existiera dicha previsión legal.</p>
+        <p>Puede parecer un tanto extraño que una facultad -la IVE- que es parte de un derecho fundamental -la integridad física y moral- se garantice en parte a través de un principio rector de la política social y económica -la salud contemplada en el artículo 43 CE-, pero eso ya ocurre con carácter general con el derecho a la integridad física, pues sin que se trate de dos contenidos superpuestos sí se ha reconocido por el TC y también, incluso más extensamente, por el Tribunal Europeo de Derechos Humanos, que existen unos deberes positivos del Estado en relación con la asistencia sanitaria como instrumento para garantizar adecuadamente los derechos a la vida y la integridad física.</p>
+        <p>En suma, en la actualidad la IVE es una facultad iusfundamental derivada del artículo 15 CE y su carácter prestacional está reconocido en la Ley Orgánica 2/2010; si se aprobara la reforma del artículo 43 CE no habría un «blindaje» de la misma sino que la IVE seguiría vinculada al artículo 15 como derecho fundamental y su garantía prestacional se incorporaría al artículo 43 como parte del derecho a salud.</p>
+        <p>Pd. Agradezco a Patricia García Majado y a Daniel Jove Villares su paciente, nocturna y generosa interlocución a propósito de algunos de los temas aquí tratados.</p>
+        <p akndiff:role="heading"><b>Comparte esto:</b></p>
+        <p akndiff:role="heading"><b>Relacionado</b></p>
+      </hcontainer>
+    </mainBody>
+  </statement>
+</akomaNtoso>

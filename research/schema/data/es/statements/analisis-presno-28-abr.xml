@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <statement name="analisis-juridico" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/statement/2026-04-28/analisis-presno-28-abr/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-28/analisis-presno-28-abr"/>
+          <FRBRalias value="Análisis jurídico — Reforma art. 43 CE (segunda valoración 28-abr-2026, vísperas Pleno)" name="title"/>
+          <FRBRdate date="2026-04-28" name="generation"/>
+          <FRBRauthor href="#miguel-angel-presno-linera"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="analisis-juridico"/>
+          <FRBRname value="analisis-presno-28-abr"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/statement/2026-04-28/analisis-presno-28-abr/spa@2026-04-28/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-28/analisis-presno-28-abr/spa@2026-04-28"/>
+          <FRBRdate date="2026-04-28" name="expression"/>
+          <FRBRauthor href="#miguel-angel-presno-linera"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/statement/2026-04-28/analisis-presno-28-abr/spa@2026-04-28/!main.xml"/>
+          <FRBRuri value="/akn/es/statement/2026-04-28/analisis-presno-28-abr/spa@2026-04-28.akn"/>
+          <FRBRdate date="2026-04-28" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-28" name="analisis-juridico" showAs="Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo) — 2026-04-28"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-28" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-28"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="miguel-angel-presno-linera" href="/akn/ontology/organization/es/miguel-angel-presno-linera" showAs="Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo)"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>analisis-presno-28-abr</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://presnolinera.wordpress.com/2026/04/28/segunda-reforma-art-43-CE</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Statement: Análisis jurídico — Reforma art. 43 CE (segunda valoración 28-abr-2026, vísperas Pleno)
+
+Autor: Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo)
+Fecha publicación: 2026-04-28
+URL fuente: https://presnolinera.wordpress.com/2026/04/28/segunda-reforma-art-43-CE
+Subtipo: analisis-juridico
+
+Long title: Segundo análisis jurídico-constitucional publicado por el Catedrático Miguel Ángel Presno Linera (UNIOVI) el 28-abr-2026, en vísperas del Pleno del Congreso del 30-abr donde se debatieron las enmiendas a la totalidad.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Análisis jurídico — Reforma art. 43 CE (segunda valoración 28-abr-2026, vísperas Pleno)</docTitle>
+      <docDate date="2026-04-28">2026-04-28</docDate>
+      <docProponent>Miguel Ángel Presno Linera (Catedrático de Derecho Constitucional, Universidad de Oviedo)</docProponent>
+      <p akndiff:role="source-url">https://presnolinera.wordpress.com/2026/04/28/segunda-reforma-art-43-CE</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Análisis jurídico — Reforma art. 43 CE (segunda valoración 28-abr-2026, vísperas Pleno)</heading>
+        <p>El Consejo de Estado en Pleno, en sesión celebrada el día 26 de febrero de 2026, aprobó, por mayoría, el dictamen sobre el Anteproyecto de reforma del artículo 43 de la Constitución para incorporar el derecho de las mujeres a la interrupción voluntaria del embarazo; se acompañan dos votos particulares: el del Consejero Herrero y Rodriguez de Miñón, al que se adhieren los Consejeros Michavila Núñez, Sanz Alonso y Aparicio Pérez, y el voto particular del Consejero López Calderón.</p>
+        <p>Por lo que respecta a las conclusiones de la mayoría, cabe destacar que, en primer lugar, cuestionan la apelación al Derecho comparado en la que se apoya el Anteproyecto, pues «solo es útil y valiosa para el constituyente español cuando refleje una tendencia generalizada en el ámbito de la reforma y se realice sin prescindir de su contexto y con conocimiento y fidelidad a su contenido, lo que aconseja actuar siempre con prudencia».</p>
+        <p>En segundo lugar, y por lo que se refiere a la justificación en la memoria explicativa de que la reforma del artículo 43 se debe a «la mayor sencillez y celeridad que ofrece la tramitación de la reforma constitucional de reforma del artículo 167 de la Constitución», lo cual «favorece la viabilidad política del acuerdo y permite culminar la reforma en un tiempo razonable, sin interrumpir el normal funcionamiento de las Cortes Generales», el dictamen concluye algo por lo demás obvio: «se trata de consideraciones de oportunidad política que, desde un punto de vista constitucional, no deberían ser tenidas en cuenta a la hora de elegir el precepto objeto de la reforma. La decisión de reformar uno u otro precepto constitucional ha de realizarse atendiendo únicamente al contenido de la reforma propuesta, en el marco de la Constitución. El procedimiento de reforma aplicado debe ser la consecuencia de esta decisión y no su causa».</p>
+        <p>En tercer lugar, el Anteproyecto, admite que la STC 44/2023 constitucionaliza, vía interpretativa, este derecho, pero, añade, «nada obsta para que un eventual cambio jurisprudencial pueda dar lugar a una regresión, esto es, a un retroceso en el reconocimiento y garantía de este derecho». Para el Consejo de Estado, «esta consideración de nuevo constituye un juicio de oportunidad política que, como tal, no debería incluirse en el texto de la iniciativa. Se ha de velar porque el proyecto se limite a sus estrictos términos jurídico-constitucionales, con toda sobriedad».</p>
+        <p>El Consejo de Estado insiste en que el fundamento constitucional de la interrupción voluntaria del embarazo está, tal y como ha concluido el Tribunal Constitucional en la citada STC 44/2023 , en el artículo 15 CE en relación con el artículo 10.1 CE y el propio artículo 1.1 y no en el artículo 43 CE. No obstante, «una vez que la mujer toma la decisión de interrumpir voluntariamente su embarazo amparada en tales derechos y libertades, los poderes públicos deberán adoptar las medidas oportunas para garantizar que su práctica se realice en las mejores condiciones, y es aquí donde entra en juego el derecho a la protección de la salud reconocido, como principio rector de la política social y económica, en el artículo 43 de la Constitución… [todo ello] implica… que la libre opción realizada por mujer gestante, al amparo de sus derechos fundamentales … obliga a los poderes públicos a garantizar un contenido mínimo de prestaciones asistenciales y sanitarias para la protección de su salud durante la realización o práctica del aborto, dando cumplimiento al mandato normativo contenido en el artículo 43 de la Constitución».</p>
+        <p>En consecuencia, el Consejo de Estado concluye, a mi juicio de manera correcta, que nada obsta para que el artículo 43 pueda ser reformado en los términos previstos para dicho cambio por la propia CE, algo por lo demás evidente.</p>
+        <p>A continuación, sugiere que la redacción más apropiada puede ser la siguiente: «Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo con cuantas prestaciones y servicios sean necesarios para hacerlo efectivo».</p>
+        <p>El dictamen incluye, como se ha anticipado, dos votos particulares: el primero, del Consejero Herrero y Rodriguez de Miñón al que se adhieren los Consejeros Michavila Núñez, Sanz Alonso y Aparicio Pérez, sostiene, en primer lugar, que el Anteproyecto supone un fraude a la Constitución «atendiendo al artículo 6.4 del título preliminar del Código Civil en su última redacción de 1974, «actos realizados al amparo del texto de una norma» en este caso al amparo del artículo 167 de la Constitución, que persiguen un resultado prohibido por el ordenamiento jurídico y contrario a él, como es modificar un aspecto del artículo 15 sin acudir al procedimiento del artículo 168. La más autorizada doctrina así define el fraude de ley, actuación aparentemente lícita que en realidad persigue evitar la aplicación de la norma establecida para la ocasión (Muñoz Machado)». Discrepo de esta crítica: por una parte, la interpretación constitucional no puede hacerse al amparo de una norma infraconstitucional como es el Código Civil; por otra, no hace falta acudir a ese instrumento porque bastaría con advertir que sería inconstitucional una modificación que obviase los procedimientos de reforma previstos en el Título X CE.</p>
+        <p>La segunda crítica aduce que «la  propuesta es un texto inútil puesto que, como expresamente se dice en la consulta, se trata de evitar futuras contrarreformas, propuesta manifiestamente ilícita»; en mi opinión, no es que se trate de evitar posteriores reformas constitucionales, algo obviamente posible, sino un cambio en la jurisprudencia constitucional que deje de considerar facultad iusfundamental la decisión de interrumpir el embarazo. Sí coincido con la crítica de la inutilidad de esa eventual reforma, pues, precisamente, llevar esa facultad al artículo 43 sería tanto como “desfundamentalizarla”.</p>
+        <p>El segundo voto particular es el del Consejero López Calderón, quien concluye que «la doctrina establecida por el Tribunal Constitucional ya obliga a los poderes públicos a garantizar un contenido mínimo de prestaciones asistenciales y sanitarias para la protección de la salud durante la realización o práctica del aborto, por lo que resulta reiterativo volver a introducirlo en el mismo artículo 43»; añade que, siendo así las cosas, el dictamen tendría que ser contrario a la reforma.</p>
+        <p>En mi opinión, no sería descartable, al menos en teoría, que la legislación pudiera eliminar el carácter prestacional del derecho a la interrupción voluntaria del embarazo, por lo que la eventual reforma del artículo 43 CE sí podría suponer la garantía del contenido prestacional del derecho, es decir, la obligación de que la interrupción voluntaria del embarazo siga teniendo el carácter de prestación pública asegurada por las autoridades sanitarias y no meramente una libertad para que la mujer que quiera interrumpir su embarazo acuda a un centro privado.</p>
+        <p>Como es conocido, en el Proyecto que se presentó en el Congreso de los Diputados se acoge plenamente la propuesta aprobada por la mayoría del Consejo de Estado y eso ha supuesto que el Gobierno rectifique y asuma que el derecho a interrumpir voluntariamente el embarazo «forma parte del contenido constitucionalmente protegido del derecho fundamental a la integridad física y moral (artículo 15 CE) en conexión con la dignidad de la persona y el libre desarrollo de su personalidad como principios rectores del orden político y la paz social (artículo 10.1 CE)» (Exposición de Motivos del Proyecto).</p>
+        <p>Pd. Un comentario más detallado del Proyecto de reforma puede leerse aquí.</p>
+        <p akndiff:role="heading"><b>Comparte esto:</b></p>
+        <p akndiff:role="heading"><b>Relacionado</b></p>
+      </hcontainer>
+    </mainBody>
+  </statement>
+</akomaNtoso>

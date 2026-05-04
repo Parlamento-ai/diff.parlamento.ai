@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+<debate name="ds-c-senado-comision" contains="originalVersion">
+<meta>
+<identification source="#diff-parlamento-ai">
+<FRBRWork>
+<FRBRthis value="/akn/es/debate/2026-04-27/ds-c-15-679/!main"/>
+<FRBRuri value="/akn/es/debate/2026-04-27/ds-c-15-679"/>
+<FRBRalias value="DS-C nº 679 — Comisión Constitucional Senado 27-abr-2026 — Moción 661/001976" name="title"/>
+<FRBRdate date="2026-04-27" name="generation"/>
+<FRBRauthor href="#senado"/>
+<FRBRcountry value="es"/>
+<FRBRsubtype value="diario-sesiones-comision"/>
+<FRBRnumber value="679"/>
+<FRBRname value="ds-c-15-679"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="/akn/es/debate/2026-04-27/ds-c-15-679/spa@2026-04-27/!main"/>
+<FRBRuri value="/akn/es/debate/2026-04-27/ds-c-15-679/spa@2026-04-27"/>
+<FRBRdate date="2026-04-27" name="expression"/>
+<FRBRauthor href="#senado"/>
+<FRBRlanguage language="spa"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="/akn/es/debate/2026-04-27/ds-c-15-679/spa@2026-04-27/!main.xml"/>
+<FRBRuri value="/akn/es/debate/2026-04-27/ds-c-15-679/spa@2026-04-27.akn"/>
+<FRBRdate date="2026-04-27" name="manifestation"/>
+<FRBRauthor href="#diff-parlamento-ai"/>
+<FRBRformat value="application/akn+xml"/>
+</FRBRManifestation>
+</identification>
+<publication date="2026-04-27" name="ds-c-senado" showAs="DS-C Senado, núm. 679, Comisión Constitucional, 27-abr-2026" number="679"/>
+<lifecycle source="#diff-parlamento-ai">
+<eventRef date="2026-04-27" refersTo="#sesion" source="#diff-parlamento-ai" eId="sesion-2026-04-27"/>
+<eventRef date="2026-04-27" refersTo="#mocion-aprobada" source="#diff-parlamento-ai" eId="mocion-aprobada-2026-04-27"/>
+</lifecycle>
+<references source="#diff-parlamento-ai">
+<TLCOrganization eId="senado" href="/akn/ontology/organization/es/senado" showAs="Senado de España"/>
+<TLCOrganization eId="comision-constitucional-senado" href="/akn/ontology/organization/es/senado/comision-constitucional" showAs="Comisión Constitucional del Senado"/>
+<TLCOrganization eId="grupo-popular-senado" href="/akn/ontology/organization/es/senado/grupo-parlamentario/popular" showAs="Grupo Parlamentario Popular en el Senado"/>
+<TLCOrganization eId="grupo-socialista-senado" href="/akn/ontology/organization/es/senado/grupo-parlamentario/socialista" showAs="Grupo Parlamentario Socialista del Senado"/>
+<TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+<TLCPerson eId="pio-garcia-escudero" href="/akn/ontology/person/es/pio-garcia-escudero" showAs="Pío García-Escudero Márquez"/>
+<TLCRole eId="presidente-comision-constitucional-senado" href="/akn/ontology/role/es/presidente-comision-constitucional-senado" showAs="Presidente Comisión Constitucional del Senado"/>
+<TLCConcept eId="mocion" href="/akn/ontology/concept/es/mocion" showAs="moción"/>
+<TLCConcept eId="paralizar-reforma" href="/akn/ontology/concept/es/paralizar-reforma" showAs="paralizar reforma constitucional"/>
+<TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001"/>
+<TLCReference eId="mocion-661-001976" href="/akn/es/communication/2026-04-20/mocion-661-001976" showAs="Moción 661/001976"/>
+<TLCEvent eId="sesion" href="/akn/ontology/event/sesion" showAs="Sesión"/>
+<TLCEvent eId="mocion-aprobada" href="/akn/ontology/event/mocion-aprobada" showAs="Moción aprobada"/>
+</references><proprietary source="#diff-parlamento-ai">
+  <akndiff:nativeId>ds-c-15-679</akndiff:nativeId>
+  <akndiff:sourceUrl>https://www.senado.es/legis15/publicaciones/pdf/senado/ds/DS_C_15_679.PDF</akndiff:sourceUrl>
+  <akndiff:transcriptId provider="parlamento-ai">13988</akndiff:transcriptId>
+  <akndiff:researchNotes>
+<akndiff:note><![CDATA[
+Friction log para ES / debate ds-c-15-679:
+
+1. DIARIO DE SESIONES DEL SENADO. Comisión Constitucional, sesión 24 (DS-C nº 679).
+ El XML extrae únicamente la parte relativa a la moción 661/001976 sobre paralización
+ de la reforma del artículo 43 CE (la 5ª moción del orden del día).
+
+2. CONTENIDO. Defensa de la moción por GP Popular en el Senado, intervenciones de los
+ demás grupos (PSOE, ERC-EH Bildu, EAJ-PNV, etc.), turno de portavoces y votación final.
+
+3. RESULTADO. La moción fue APROBADA en votación: 18 votos a favor, 12 en contra.
+ Se insta al Gobierno a NO continuar con la tramitación del proyecto de reforma del
+ art. 43 CE en tanto no se alcance el consenso necesario.
+
+4. PRESIDENCIA. EXCMO. SR. D. PÍO GARCÍA-ESCUDERO MÁRQUEZ.
+
+5. VINCULACIÓN PARLAMENTO-AI. transcriptId 13988 contiene el video YouTube de esta sesión.
+]]></akndiff:note>
+</akndiff:researchNotes>
+</proprietary>
+</meta>
+<preface>
+<docTitle>DIARIO DE SESIONES DEL SENADO — XV LEGISLATURA — COMISIÓN CONSTITUCIONAL</docTitle>
+<docNumber>Núm. 679 — Sesión 24</docNumber>
+<docDate date="2026-04-27">27 de abril de 2026</docDate>
+<docProponent>Senado de España</docProponent>
+<p><b>PRESIDENCIA DEL EXCMO. SR. D. PÍO GARCÍA-ESCUDERO MÁRQUEZ</b></p>
+<p><b>MOCIÓN POR LA QUE SE RECUERDA LA IMPORTANCIA DE PRESERVAR EL CONSENSO SOCIAL Y POLÍTICO BÁSICO EN TORNO A LA CONSTITUCIÓN, Y SE INSTA AL GOBIERNO A NO CONTINUAR CON LA TRAMITACIÓN DE SU PROYECTO DE REFORMA DEL ARTÍCULO 43 DE LA CONSTITUCIÓN EN TANTO NO SE ALCANCE EL CONSENSO NECESARIO.</b></p>
+<p>(Núm. exp. 661/001976) — Autor: GRUPO PARLAMENTARIO POPULAR EN EL SENADO</p>
+</preface>
+<debateBody>
+<debateSection name="debate-mocion" eId="ds_debate">
+<heading>Debate de la moción 661/001976 sobre paralización de la reforma del art. 43 CE</heading>
+<p>— MOCIÓN POR LA QUE SE RECUERDA LA IMPORTANCIA DE PRESERVAR EL CONSENSO</p>
+<p>SOCIAL Y POLÍTICO BÁSICO EN TORNO A LA CONSTITUCIÓN, Y SE INSTA AL GOBIERNO A NO</p>
+<p>CONTINUAR CON LA TRAMITACIÓN DE SU PROYECTO DE REFORMA DEL ARTÍCULO 43 DE LA</p>
+<p>CONSTITUCIÓN EN TANTO NO SE ALCANCE EL CONSENSO NECESARIO.</p>
+<p>(Núm. exp. 661/001976)</p>
+<p>Autor: GRUPO PARLAMENTARIO POPULAR EN EL SENADO</p>
+<p>El señor presidente lee el título que figura en el orden del día.</p>
+<speech eId="debate_sp_1" by="#speaker_debate_1">
+<from>El señor PRESIDENTE</from>
+<p>Pasamos a la moción número cinco. A esta moción se ha presentado una enmienda por el Grupo Parlamentario Socialista.</p>
+<p>Para la defensa de la moción, por parte del Grupo Parlamentario Popular, tiene la palabra el senador Tirado.</p>
+</speech>
+<speech eId="debate_sp_2" by="#speaker_debate_2">
+<from>El señor TIRADO OCHOA</from>
+<p>Gracias, presidente. Señorías, hoy no estamos ante un simple debate jurídico ni ante una discrepancia política más. Estamos ante algo más grave: la utilización de la Constitución con fines que nada tienen que ver con el constitucionalismo. La Constitución de 1978 no es un instrumento al servicio del Gobierno de turno ni un recurso de coyuntura política, sino el gran acuerdo que permitió a este país convivir en libertad, integrando sensibilidades distintas bajo el mismo marco común. Y precisamente por eso exigimos respeto a su letra, a sus procedimientos y, sobre todo, al consenso que la hizo posible. Reformar la Constitución no es un acto ordinario ni puede responder a la oportunidad política del momento. Nuestra norma fundamental lo deja claro en su título X, con los procedimientos de los artículos 167 y 168, que exigen mayorías reforzadas para obligar al acuerdo. Pero, más allá de esos requisitos jurídicos, existe una exigencia aún más profunda: la cultura constitucional que impone diálogo previo, maduración de las propuestas, serenidad y voluntad de integración. El Consejo de Estado ya añadió en 2006 que una reforma solo es legítima si responde a una demanda real, si es prudente, si está suficientemente trabajada, si nace del diálogo y si genera el consenso comparable con el originario. Nada de eso ocurre hoy. No ha habido diálogo, no ha habido acuerdo, no existe una demanda social prioritaria y no hay ninguna expectativa real de que esta reforma prospere. Y, además, se construye sobre una premisa falsa, que es necesario brindar el aborto en la Constitución, cuando la realidad es que el aborto ya está regulado por una ley orgánica vigente y avalada por el Tribunal Constitucional. No hay vacío jurídico, no hay urgencia y no hay un problema que resolver. Pero es que, además, señorías, se intenta trasladar a la sociedad una idea que no es cierta desde el punto de vista constitucional. Se habla de blindar un derecho fundamental, pero deliberadamente se evita el cauce que corresponde a los derechos fundamentales. Y pregunto, ¿por qué? Porque hacerlo obligaría a acudir al procedimiento agravado del artículo 168, con la consiguiente disolución de las Cortes, convocatoria de elecciones y referéndum. Y eso es precisamente lo que ustedes, el Gobierno de Pedro Sánchez, quiere evitar. Por eso, lo introducen en el artículo 43; por eso fuerzan su encaje en un precepto que no regula derechos fundamentales, no para reforzar el derecho, sino para esquivar los controles que la propia Constitución establece. Y eso, señorías, tiene nombre. Es una trampa, es un engaño a esta Cámara y a los ciudadanos. Por tanto, cuando no hay necesidad jurídica, cuando no hay consenso político y cuando, además, se intenta eludir el procedimiento constitucional adecuado, lo que se impulsa no es una reforma, sino una maniobra, una maniobra que reabre un debate que en la práctica está resuelto, que construye un problema que no existe y que se activa en un momento político perfectamente elegido, porque no estamos ante una prioridad del país, sino ante una operación diseñada para generar un falso debate, polarizar a la sociedad y condicionar el clima político en vísperas de una cita electoral autonómica. Y es aquí donde la moción es clara. Lo que se denuncia es que el Gobierno está utilizando la Constitución como un instrumento de oportunismo político, como una cortina de humo para desviar la atención de los problemas reales y de su propia situación. No es una reforma constitucional, es una estrategia de distracción. Y utilizar la Constitución con ese propósito no es solo irresponsable, es profundamente desleal con el sistema democrático, porque la Constitución no está para dividir ni para generar ruido y mucho menos para tapar nada y menos todavía para tapar la corrupción del Gobierno socialista. Está para garantizar derechos, para dar estabilidad y para unir. Y cuando se utiliza de otra forma se banaliza. Y cuando se banaliza la Constitución, se erosiona el consenso que la sostiene y se debilita la confianza en las instituciones. Nuestra historia reciente demuestra que las reformas constitucionales que han prosperado lo han hecho desde el acuerdo, desde propuestas compartidas y desde la responsabilidad institucional. Ese es</p>
+<p>el camino del constitucionalismo. Todo lo que se aparta de ahí no es reforma, es utilización. Por eso, esta moción es una advertencia y una exigencia, una advertencia de que hay límites que no deben cruzarse y una exigencia clara al Gobierno: que desista de la tramitación de esta reforma mientras no exista el consenso necesario y que se abandone definitivamente cualquier intento de utilizar la Constitución para generar debates artificiales y réditos políticos a corto plazo. Porque reformar la Constitución —termino— no es imponer, es acordar. Y cuando no hay acuerdo, lo responsable es no continuar. Lo responsable y lo digno en una democracia constitucional, cuando no hay consenso, y menos todavía el consenso que originó la Constitución, lo suyo, es desistir.</p>
+<p>Muchas gracias.</p>
+</speech>
+<speech eId="debate_sp_3" by="#speaker_debate_3">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senador Tirado. Para la defensa de la enmienda del Grupo Parlamentario Socialista, tiene la palabra la senadora Díaz.</p>
+</speech>
+<speech eId="debate_sp_4" by="#speaker_debate_4">
+<from>La señora DÍAZ PACHECO</from>
+<p>Buenas tardes, señorías. Gracias, presidente. Estarán conmigo en que siempre que en este país se ha avanzado en los derechos sobre la libertad de las mujeres para decidir su maternidad ha habido reticencia y ha habido resistencia. De hecho, hemos tenido recursos en el Tribunal Constitucional durante una década. Yo me he acercado, señor Tirado, a esta moción desde una mirada honesta y limpia, buscando el entendimiento y el diálogo. Y la he leído desde esa mirada, como le decía, que entiendo que merecen las mujeres, porque la Constitución garantiza los derechos de todos los españoles, de las mujeres también. Y las modificaciones en la Constitución, que tienden a blindar esos derechos, siempre son positivas. Cuando yo leí la Exposición de Motivos, me di cuenta de que esta moción no buscaba el entendimiento y el diálogo, porque desde el primer párrafo se utiliza la Constitución del 31 como un elemento de enfrentamiento entre españoles. Y si se continúa avanzando por esa exposición de motivos, se introducen elementos que no son ciertos. Habla de que la oportunidad política —usted lo acaba de volver a decir aquí esta tarde— de esta enmienda responde a un proceso electoral en Andalucía. Se aprobó esta modificación en octubre de 2025, antes del carrusel electoral al que nos han sometido en España, que ha tenido otro interés, pero no un interés general de los españoles. Y, casualmente, en el último estadio del carrusel electoral ha tocado a mi comunidad autónoma. En este texto que nos presentan hoy aquí, incluso han utilizado la parte como el todo. Ha hecho referencia en su intervención a un dictamen del Consejo de Estado de 2006. Pero, en cambio, la moción hace referencia a un dictamen del Consejo de Estado posterior a octubre de 2025 y nos lo presenta en la moción como si ese dictamen fuera el que votaron por 16 votos a favor los miembros de ese consejo, con 4 votos particulares, cuando en realidad el texto de la moción del Grupo Popular no es el acuerdo que adopta el Consejo de Estado, que lo ha asumido el Gobierno y que lo ha introducido dentro del nuevo texto que se ha aprobado. Es el voto particular del señor Herrero de Miñón. Y Herrero de Miñón, un hombre al que aprecio y con el que discrepo en la misma proporción, en este caso, es contrario a la modificación del artículo 43 y también es contrario a otros elementos que van en la línea de la libertad de las mujeres. También discrepo con él de que el encaje territorial de este país, al que han hecho referencia en la tarde de hoy, se base en la simetría entre los lugares y los territorios de España. Él es partidario de las dos velocidades y yo como andaluza siempre estaré por la igualdad entre todos los españoles nazcan donde nazcan y ahí es de donde reside parte de ese elemento que usted no ha encontrado, que es el de demanda social y necesidad social, al que después me referiré. ¿Por qué?</p>
+</speech>
+<speech eId="debate_sp_5" by="#speaker_debate_5">
+<from>El señor PRESIDENTE</from>
+<p>Vaya terminando, señoría.</p>
+</speech>
+<speech eId="debate_sp_6" by="#speaker_debate_6">
+<from>La señora DÍAZ PACHECO</from>
+<p>Porque no tiene los mismos derechos quien intenta abortar, quien intenta interrumpir su embarazo en un pueblo de Castilla y León que quien lo hace en una gran ciudad. Mi pregunta es muy concreta: ¿cuál es realmente la postura de su partido en este tema? Y si el trámite fuera por otro artículo, ¿el Partido Popular ya estaría de acuerdo en votarlo?</p>
+</speech>
+<speech eId="debate_sp_7" by="#speaker_debate_7">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senadora Díaz. Tiene la palabra el senador Tirado para indicar si acepta o no la enmienda.</p>
+</speech>
+<speech eId="debate_sp_8" by="#speaker_debate_8">
+<from>El señor TIRADO OCHOA</from>
+<p>Muy brevemente quiero manifestar que no aceptaremos la enmienda del Grupo Socialista y no lo haremos porque es una enmienda, con todos mis respetos, incoherente,</p>
+<p>contradictoria, paradójica e incomprensible; una enmienda que les delata. Porque vienen a reconocer que la han impulsado, esta reforma, sin consenso previo, sin que haya existido un diálogo sostenido y sereno. Señorías, una reforma constitucional se debe pactar antes de su propuesta formal, y ustedes no lo han hecho.</p>
+<p>Señorías, socialistas, les recuerdo que los grupos parlamentarios somos soberanos. Las reformas constitucionales deben partir del consenso y ustedes la han impulsado desde la imposición, sin tener garantizada una mayoría para su aprobación y, por lo tanto, con un afán de hacer ruido, polarizar y dividir en contra del espíritu constitucional, que es el que siempre defenderá el Grupo Popular, el del consenso, el del acuerdo y el del diálogo.</p>
+</speech>
+<speech eId="debate_sp_9" by="#speaker_debate_9">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senador Tirado. Pasamos al turno de portavoces. Por el Grupo Parlamentario Mixto, tiene la palabra la senadora Caballero.</p>
+</speech>
+<speech eId="debate_sp_10" by="#speaker_debate_10">
+<from>La señora CABALLERO MARTÍNEZ</from>
+<p>Gracias. Simplemente quería decir que, efectivamente, estamos viendo cómo se están utilizando según qué temas, que son importantes, que son cruciales y que afectan a derechos, como cortinas de humo que, de vez en cuando, saca el Gobierno y sacan los socialistas para tapar otros intereses y otros casos que tienen mucho que tapar. Hace no mucho llenaron los ayuntamientos, los parlamentos, también con esta cuestión y ya fuimos muy claros. A nosotros no nos gusta frivolizar. No creemos que estén ustedes en condiciones, en estos últimos tiempos, de dar lecciones sobre los derechos de las mujeres, cuando estamos viendo qué políticas se han llevado, cuando se han reducido las penas a los violadores, cuando tienen dirigentes que han tratado a la mujer de forma repulsiva, como meros objetos, cuando han tapado durante casi dos años el tema de las pulseras antimaltrato. Bueno, nosotros, desde luego, creemos que esto es algo más serio. Si se exigen para reformar la Constitución unas mayorías, creo que lo mínimo que se puede decir es: trabajen ese consenso y preséntenlo en la Cámara correspondiente, en el Congreso, y entonces pues ya se debatirá. Pero desde luego, hoy este tema no está en la calle, no es ningún debate, no ha salido entre los cincuenta primeros problemas que tienen los españoles, que ya tenemos bastantes problemas. Todas las mujeres en todos los lugares de España tienen derecho, y pueden hacerlo, a abortar, según las condiciones que están en la ley y esto no va a cambiar en absoluto nada. Simplemente les va a dar a ustedes un discurso que es lo que les gusta, que es lo que han dicho, que todos los avances los hace el Partido Socialista. Vamos, estamos siempre en que ustedes están siempre buscando ponerse medallas y así no se gobierna y así no se legisla Gracias.</p>
+</speech>
+<speech eId="debate_sp_11" by="#speaker_debate_11">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senadora Caballero. Por el Grupo Parlamentario Vasco, tiene la palabra la senadora Beltrán de Heredia.</p>
+</speech>
+<speech eId="debate_sp_12" by="#speaker_debate_12">
+<from>La señora BELTRÁN DE HEREDIA ARRONIZ</from>
+<p>Gracias, presidente. Tengo que decir que lo primero que me ha sorprendido es que pida consenso el Partido Popular al presentar esta moción, que pida acuerdo previo a llevar una propuesta a debate a las Cortes. Entonces, ¿para qué están las Cortes?, pregunto. Simplemente es una reflexión. Quiero decirle que no vamos a apoyar esta moción porque, conociendo la trayectoria del Partido Popular, también en lo que respecta a los derechos de las mujeres y, en concreto, al derecho a su salud sexual y reproductiva, esta moción es solamente un trampantojo, de verdad. Votaron en contra de la Ley Orgánica 2/2010. La recurrieron ante el Tribunal Constitucional, y trece años después la sentencia no solo rechazó su recurso, sino que consagró jurisprudencialmente la interrupción voluntaria del embarazo en el ámbito de los derechos fundamentales. Votaron en contra de la reforma de la Ley Orgánica en 2023 y allí donde gobiernan están obstaculizando deliberadamente el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo, incumpliendo, además, el deber que tienen las comunidades autónomas de prestar una asistencia en condiciones médicas adecuadas, seguras y con garantías también en cuanto a los tiempos de respuesta. Desde nuestro grupo estamos de acuerdo con el objetivo que persigue la reforma. Por un lado, prevenir los posibles retrocesos de derechos reproductivos ya consolidados mediante modificaciones de leyes orgánicas y, además, que ninguna Administración autonómica o estatal pueda desmantelar la prestación sanitaria para la interrupción voluntaria del embarazo de los sistemas públicos de sanidad.</p>
+<p>Dicho esto, también he de añadir que a nuestro grupo le surgen ciertas dudas jurídicas respecto a la fórmula empleada por el riesgo de que se debilite lo que pretenden blindar. Y me explico, el derecho a la interrupción voluntaria del embarazo está elevado ya por jurisprudencia constitucional a rango constitucional como derecho fundamental a la luz del artículo 15 de la Constitución española. Y el riesgo real, desde nuestro punto de vista, es que, al consagrar la interrupción voluntaria del embarazo como principio rector del artículo 43, es decir, al constitucionalizar la vertiente prestacional del derecho, esto provoque que el derecho al aborto salga del paraguas de los derechos fundamentales sobre el que descansa actualmente.</p>
+<p>Consideramos que hay que ser especialmente escrupulosos y rigurosos para evitar cualquier duda sobre la posible desconstitucionalización parcial del derecho de aborto al sacarlo de la excepción de derechos fundamentales, dejando a las mujeres en una posición de menor protección a la actual. Desde el PNV compartimos el objetivo de que la Constitución española reconozca con claridad y sin ambigüedades el derecho de las mujeres a decidir sobre su propio cuerpo. Y es por eso que compartiendo el objetivo, también tenemos que ser exigentes en el rigor jurídico de la propuesta, con garantías de que se refuerce lo que ya existe sin arriesgarse a debilitarlo, que se busquen las mayorías necesarias para que la propuesta prospere, pero no queremos una tramitación de urgencia teñida de oportunidad política sobre el fondo de una campaña electoral. Creemos que ni en el momento ni en las formas ha acertado el Gobierno con esta propuesta.</p>
+<p>Muchas gracias.</p>
+</speech>
+<speech eId="debate_sp_13" by="#speaker_debate_13">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senadora Beltrán de Heredia. Por el Grupo Parlamentario Izquierdos por la Independencia, tiene la palabra el senador Queralt.</p>
+</speech>
+<speech eId="debate_sp_14" by="#speaker_debate_14">
+<from>El señor QUERALT JIMÉNEZ</from>
+<p>Muchas gracias, señor presidente. Yo desconocía que hubiera un código del consenso. Después miraré en el Aranzadi a ver si se ha publicado recientemente, porque ahí se adquiere muy buena cobertura. Desconozco si hay un código de consenso y qué artículos lo regulan. Yo lo que siempre leo es esto, ya lo dije una vez: que el voto femenino se ganó por 4 votos. ¿Es ilegítimo el voto de las mujeres? Por 4 votos, menos puntos de los que lleva el Barça al Madrid: 4 votos, 4 votos, lo siento. (Risas). Entonces, claro, reformar ese consenso y recuperar el consenso constitucional, ¿los que votaron que no a la Constitución?, ¿los que recurrieron la ley del 83?, ¿los que recurrieron la ley del 2010?, ¿los que recurrieron la ley del 2022? ¿Este es el consenso? ¿Este es? Por eso digo que me falta el código del consenso para descodificar esto. Yo aquí lo que veo es que lo que hay es confianza, porque ya sabemos qué cosas se le ocurre al PP a veces cuando tiene mayoría absoluta. Quiere desmontar, y de hecho ha desmontado muchos derechos que después ha costado mucho volverlos a montar. Y de milagro, quizás porque las mujeres que votan al Partido Popular, como el resto de mujeres sensatas, si tienen necesidad de abortar, abortan. La cosa se paró, pero se paró por ahí, no por falta de consenso. Entonces, yo lo que les rogaría es que leyeran el dictamen del Consejo de Estado de la cruz a la fecha, no solamente el voto particular; léanlo de la cruz a la fecha, que es una buena obra jurídica. Y no voy a entrar en el debate jurídico porque no me interesa en absoluto, porque me interesan otras cosas; me interesa evitar la agresión en derechos que son fundamentales para las mujeres. El primero es la disposición sobre su propia salud, su propio cuerpo y su salud reproductiva. Esto no puede quedar ahí en manos de si hay consenso o no hay consenso, porque eso ataca directamente a la dignidad humana y a la dignidad de las mujeres. Entonces eso tiene quedar negro sobre blanco de forma indeleble y sin el más mínimo atisbo de sospecha de regresión. Aquí lo que yo veo con todo esto es una maniobra similar a la que ha pasado en Estados Unidos. El Partido Popular tampoco se esfuerza mucho en su fábrica de ideas, sino que importa; yo creo que entrarán, como las neveras Kelvinator, por la base de Torrejón de Ardoz, que por ahí entraban las primeras neveras Kelvinator en los años cincuenta o últimos de los sesenta, como las guitarras eléctricas. Y entonces aquí ha llegado la reforma del aborto, la derogación, mejor dicho, que hizo el Tribunal Supremo norteamericano en junio de 2022, diciendo: el derecho al aborto no es un derecho constitucional, es un tema federal. ¿Qué ha pasado? Catorce Estados han prohibido ya el aborto —catorce Estados ya han prohibido el aborto— y más de veinte lo someten a cuantiosísimas dificultades; en algunos formalmente existente, pero en la práctica… De hecho, solamente dos o tres Estados tienen un aborto equiparable al que es la generalidad en Europa.</p>
+<p>Yo creo que, ante ese peligro de regresión, sí hay una demanda social. Hay una demanda social de no querer volver atrás, y eso sí genera consenso. No voy a entrar —lo he dicho antes— en el debate jurídico porque yo creo que es entorpecer —si son galgos o podencos— la decisión política que motiva esta reforma.</p>
+</speech>
+<speech eId="debate_sp_15" by="#speaker_debate_15">
+<from>El señor PRESIDENTE</from>
+<p>Vaya terminando, señoría.</p>
+</speech>
+<speech eId="debate_sp_16" by="#speaker_debate_16">
+<from>El señor QUERALT JIMÉNEZ</from>
+<p>Acabo ahora mismo, señor presidente. Es evitar el retroceso, que siempre está en peligro, viendo, además, los pactos que se suscriben. Muchísimas gracias.</p>
+</speech>
+<speech eId="debate_sp_17" by="#speaker_debate_17">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senador Queralt. Por el Grupo Parlamentario Socialista, tiene la palabra la senadora Díaz.</p>
+</speech>
+<speech eId="debate_sp_18" by="#speaker_debate_18">
+<from>La señora DÍAZ PACHECO</from>
+<p>Gracias, señor presidente. Las mujeres no son iguales en este país, y hay una demanda social porque cuando quieren interrumpir voluntariamente su embarazo no encuentran las mismas dificultades en un sitio que en otro. Evidentemente, es oportuna una reforma, cuando lo que estamos recibiendo son declaraciones, mociones y posicionamientos dentro de su fuerza política que están cuestionando el derecho de las mujeres a decidir sobre su propia maternidad. Mire, yo vengo de Andalucía y sé perfectamente la diferencia que hay entre abortar, entre interrumpir el embarazo en un centro público o hacerlo en un centro privado. Se decía aquí por parte del Grupo Parlamentario Vasco que hay que tener cuidado en no retroceder en la protección del derecho a la libertad de las mujeres. Por eso, el Gobierno ha elegido, dentro de la facultad que le otorga el Consejo de Estado, cuál es el vehículo más adecuado para garantizar la prestación sin desregularizar y sin desproteger el derecho. Y eso, ¿por qué lo ha hecho? No es gratuito ni arbitrario. De cada cinco mujeres que interrumpen su embarazo en España, solo una lo hace en el sistema público de salud. Pero es que hay lugares, como el mío —lo decía antes—, o Madrid, donde una de cada cien puede acceder a la interrupción de su embarazo en un centro público. Y eso no es baladí, porque, además de garantizar el anonimato, están la seguridad y las garantías que les da el sistema público de salud. Y todos estaremos de acuerdo en su defensa. Incluso podríamos tener un debate sobre que las herramientas que se utilizan en el sistema público de salud son más farmacológicas y, en cambio, en el sistema privado son más de intervención quirúrgica, aunque no es hoy el día para entrar en él. Pero cualquier mujer, en cualquier rincón de España, debe tener el mismo derecho, y no puede recibir como respuesta lo que ha pasado, por ejemplo, en la Comunidad de Madrid, donde su presidenta ha dicho literalmente: «Váyanse a otro lado a abortar». Una mujer recibe eso —no lo he dicho yo, lo ha dicho la presidenta de la Comunidad de Madrid— en el momento, además, en que tiene que afrontar una decisión que no suele ser fácil, porque ya sabe que va a tener el escarnio público, incluso por parte de dirigentes. Sabe que se va a tener que enfrentar incluso a partidos que llevan mociones a ayuntamientos, como el de Elche, de rechazo a esa interrupción voluntaria del embarazo, y que, en el mejor de los casos, lo único que le van a permitir es trasladarse a kilómetros y kilómetros de su lugar de residencia, de su familia, de su entorno, de sus seres queridos, y tener que hacerlo en la soledad y en la clandestinidad al marcharse fuera. Señoría, yo le he hecho dos preguntas con mucha sinceridad en mi primera intervención. La primera, cuál es su posición, cuál es la posición de su partido; si su partido está de acuerdo o no en que el sistema público de salud lo garantice. Porque yo le he oído decir al señor Feijóo que él quiere garantizar el derecho, pero también le he oído decir a la señora Ayuso que se vayan a otro lado. Y he visto al alcalde de Elche manifestando que él es provida y que no está de acuerdo con esa libertad que tienen las mujeres. También le he preguntado: si fuéramos por otro artículo, ¿tendríamos el apoyo del Partido Popular? Tampoco me lo ha dicho. Ha vuelto al consenso, al diálogo... Estamos en las Cortes Generales. Es ahí donde se tiene que llevar a cabo ese consenso. Me decía: «Tiene que ir al Congreso el jueves. Se va a debatir en el Congreso de los Diputados». Y yo le pregunto: ¿cuál es la posición del Grupo Parlamentario Popular? ¿Es la posición de Feijóo? ¿Es la posición de Ayuso? ¿Es la posición del alcalde de Elche? ¿Les cuesta tanto, de verdad, posicionarse? ¿O es tan porosa la posición que es influenciable por parte de otras fuerzas políticas con las que tienen que llegar a acuerdos…</p>
+</speech>
+<speech eId="debate_sp_19" by="#speaker_debate_19">
+<from>El señor PRESIDENTE</from>
+<p>Vaya terminando, señoría.</p>
+</speech>
+<speech eId="debate_sp_20" by="#speaker_debate_20">
+<from>La señora DÍAZ PACHECO</from>
+<p>… y por eso, en un tema de este calado, la ideología y la moral se ponen por delante del derecho de las mujeres?</p>
+<p>Si no fuera necesario, seguro que noventa y nueve de cada cien mujeres de Andalucía, de Madrid y de otros lugares de España no tendrían que ir al sistema privado porque el sistema público no las ampara.</p>
+<p>Muchísimas gracias. (Las señorías del Grupo Parlamentario Socialista golpean repetidamente la mesa con la palma de la mano).</p>
+</speech>
+<speech eId="debate_sp_21" by="#speaker_debate_21">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senadora Díaz. Por el Grupo Parlamentario Popular, tiene la palabra el señor Tirado.</p>
+</speech>
+<speech eId="debate_sp_22" by="#speaker_debate_22">
+<from>El señor TIRADO OCHOA</from>
+<p>Gracias, señor presidente. Señorías, el sanchismo está en la deconstrucción de las instituciones, todo ello para beneficiar los intereses político-personales de Pedro Sánchez. Señorías, vivimos tiempos oscuros con el sanchismo. Es lamentable, pero es verdad. Sánchez está dañando la calidad democrática en todas las tramitaciones que lleva hacia delante. Sánchez inicia la tramitación de su proyecto de reforma del artículo 43 de la Constitución saltándose el necesario consenso y sabiendo que no tiene mayorías. Porque busca algo distinto. Busca y va con un ánimo divisivo y meramente oportunista. Y como hablan de demanda social, simplemente les pido que miren las encuestas del CIS en relación con lo que estamos hablando. Sánchez solo quiere polarizar para desviar así la atención de sus escándalos de corrupción y su pésima gestión. Pero esas cortinas de humo no van a servir para tapar el bochornoso, el incalificable espectáculo que hemos visto del comité federal llamado de Puerto Hurraco, del que todos hemos sentido vergüenza. Y no se pueden utilizar cosas muy serias, tramitaciones constitucionales, para tapar las vergüenzas que hemos tapado. Y estamos en manos de ese señor. ¿Me está mirando, señoría? Míreme. (La señora Díaz Pacheco: ¿Me está hablando a mí?.— Rumores). Sí, señoría. Estamos en manos de ese señor, que hizo lo que hizo en ese comité; y usted estaba allí presente. Por eso el señor Sánchez no respeta absolutamente nada, y menos todavía el espíritu de la Constitución más longeva de España, la del 78. Sánchez es todo lo contrario al consenso, al acuerdo, al diálogo. Sánchez dejó claro, y lo dijo al principio de la legislatura, que venía a levantar muros entre españoles. Las reformas constitucionales deben mantener el apoyo y el consenso social que en su día tuvo la aprobación inicial de la Constitución; al menos el mismo, si no más. Sánchez está dispuesto a erosionar, a dañar las instituciones y la Constitución, con tal de estar un día más en el poder. Señorías, estamos ante una pretendida reforma constitucional que es una estafa, una cortina de humo para tratar de tapar, como les he dicho, toda la corrupción que cerca al Gobierno. Señorías, por muchos intentos desesperados de Sánchez de desviar la atención, por mucho que en la Moncloa se duplique el gasto para el maquillaje de Sánchez y sus ministros, no pueden ocultar que el Gobierno de Sánchez es un Gobierno agónico, agotado, sin presupuestos ni mayorías parlamentarias para aprobar leyes. La reforma que ustedes plantean es para ponerla al servicio de los intereses partidistas y espurios de Pedro Sánchez. Cualquier reforma constitucional debe reforzar el nivel de consenso e integración que en su momento tuvo la aprobación de dicha Constitución. Y voy a finalizar con la cita de un gran constitucionalista, don Manuel Aragón. Decía: «Hay que poner la Constitución por encima de la pugna política partidista. Como acuerdo que une y no que separa». Es, pues, una de las condiciones más importantes del constitucionalismo: ese acuerdo que una, y no esas reformas que traen ustedes para dividir sin consenso, que reflejan la actitud que usted sufrió de un Sánchez…</p>
+</speech>
+<speech eId="debate_sp_23" by="#speaker_debate_23">
+<from>El señor PRESIDENTE</from>
+<p>Vaya terminado, señoría.</p>
+</speech>
+<speech eId="debate_sp_24" by="#speaker_debate_24">
+<from>El señor TIRADO OCHOA</from>
+<p>… que lo que hizo fue engañar, mentir e intentar ocultar falsas urnas. (Rumores).</p>
+<p>Muchas gracias. (Las señorías del Grupo Parlamentario Popular en el Senado golpean repetidamente la mesa con la palma de la mano).</p>
+<p>El señor PRESIDENTE Muchas gracias, senador Tirado. Bien, terminado el debate de las mociones…</p>
+</speech>
+<speech eId="debate_sp_25" by="#speaker_debate_25">
+<from>El señor QUERALT JIMÉNEZ</from>
+<p>Señor presidente, para una cuestión de orden, si me lo permite.</p>
+</speech>
+<speech eId="debate_sp_26" by="#speaker_debate_26">
+<from>El señor PRESIDENTE</from>
+<p>Dígame, senador Queralt.</p>
+</speech>
+<speech eId="debate_sp_27" by="#speaker_debate_27">
+<from>El señor QUERALT JIMÉNEZ</from>
+<p>¿Hay que mirar al parlante o los senadores podemos mirar donde queramos? (Risas).</p>
+</speech>
+<speech eId="debate_sp_28" by="#speaker_debate_28">
+<from>El señor PRESIDENTE</from>
+<p>No le he entendido. ¿Lo puede repetir?</p>
+</speech>
+<speech eId="debate_sp_29" by="#speaker_debate_29">
+<from>El señor QUERALT JIMÉNEZ</from>
+<p>Digo que si cuando habla un senador le tenemos que mirar a él o podemos mirar donde queramos.</p>
+<p>Muchas gracias.</p>
+</speech>
+<speech eId="debate_sp_30" by="#speaker_debate_30">
+<from>El señor PRESIDENTE</from>
+<p>Haga usted lo que quiera, senador.</p>
+</speech>
+<speech eId="debate_sp_31" by="#speaker_debate_31">
+<from>La señora DÍAZ PACHECO</from>
+<p>Y para una cuestión de orden, presidente. Yo no sé si yo estoy aquí en mi calidad de senadora o en mi calidad de militante del PSOE, porque este señor se ha referido a mí en varias ocasiones como militante del PSOE. (Rumores). Lo digo simplemente para que tengamos el decoro que debe tener la Cámara Alta. Muchas gracias.</p>
+</speech>
+<speech eId="debate_sp_32" by="#speaker_debate_32">
+<from>El señor PRESIDENTE</from>
+<p>Senadora Díaz, contésteme. ¿Usted es miembro del Grupo Parlamentario Socialista?</p>
+</speech>
+<speech eId="debate_sp_33" by="#speaker_debate_33">
+<from>La señora DÍAZ PACHECO</from>
+<p>Estoy aquí como senadora del Reino de España y espero que todos tengamos el decoro que corresponde a esta Cámara.</p>
+</speech>
+<speech eId="debate_sp_34" by="#speaker_debate_34">
+<from>El señor PRESIDENTE</from>
+<p>Pero ¿usted pertenece al Grupo Parlamentario Socialista? ¿Y el señor Tirado pertenece al Grupo Parlamentario Popular?</p>
+</speech>
+<speech eId="debate_sp_35" by="#speaker_debate_35">
+<from>La señora DÍAZ PACHECO</from>
+<p>Sí, y este señor ha hecho alusiones fuera de lugar en una intervención que creo que no corresponde. Y creo que todos tenemos la obligación de tener el decoro que merece la Cámara Alta, que usted sé que, como presidente, siempre mantiene.</p>
+</speech>
+<speech eId="debate_sp_36" by="#speaker_debate_36">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias, senadora Díaz, pero me parece que discusiones así, de última hora... ¿Qué quiere que le diga?</p>
+</speech>
+<speech eId="debate_sp_37" by="#speaker_debate_37">
+<from>La señora DÍAZ PACHECO</from>
+<p>Que mantenga el decoro.</p>
+</speech>
+<speech eId="debate_sp_38" by="#speaker_debate_38">
+<from>El señor PRESIDENTE</from>
+<p>Una vez terminado el debate de las mociones, pido al letrado que compruebe las asistencias y que por parte de los grupos se comuniquen las sustituciones.</p>
+<p>El señor letrado comprueba las asistencias.</p>
+</speech>
+<speech eId="debate_sp_39" by="#speaker_debate_39">
+<from>El señor PRESIDENTE</from>
+<p>Muchas gracias. Vamos a proceder a la votación de las mociones.</p>
+<p>— MOCIÓN POR LA QUE SE CONDENA EL ACTO DE DESTRUCCIÓN DE LA FOTOGRAFÍA DE AURORA PICORNELL POR EL PRESIDENTE DEL PARLAMENTO DE LAS ILLES BALEARS Y SE INSTA AL GOBIERNO A LA ADOPCIÓN DE DETERMINADAS MEDIDAS EN DEFENSA DE SU DIGNIDAD Y MEMORIA, ASÍ COMO LAS DE TODOS LOS REPRESALIADOS Y ASESINADOS DEL FRANQUISMO, ANTE LOS ATAQUES DE ODIO DE LA EXTREMA DERECHA. (Votación). (Núm. exp. 661/000546) Autor: GRUPO PARLAMENTARIO IZQUIERDAS POR LA INDEPENDENCIA (ESQUERRA REPUBLICANA-EUSKAL HERRIA BILDU)</p>
+<p>El señor presidente lee el título que figura en el orden del día.</p>
+</speech>
+<speech eId="debate_sp_40" by="#speaker_debate_40">
+<from>El señor PRESIDENTE</from>
+<p>Se vota con la incorporación de la enmienda del Grupo Parlamentario Socialista, que ha sido aceptada por los proponentes.</p>
+<p>Efectuada la votación, dio el siguiente resultado: votos a favor, 12; en contra, 17; abstenciones, 1.</p>
+</speech>
+<speech eId="debate_sp_41" by="#speaker_debate_41">
+<from>El señor PRESIDENTE</from>
+<p>Queda rechazada.</p>
+<p>— MOCIÓN RELATIVA A LA RENOVACIÓN DE LOS MAGISTRADOS DEL TRIBUNAL CONSTITUCIONAL. (Votación). (Núm. exp. 661/001896) Autor: GRUPO PARLAMENTARIO SOCIALISTA</p>
+<p>El señor presidente lee el título que figura en el orden del día.</p>
+</speech>
+<speech eId="debate_sp_42" by="#speaker_debate_42">
+<from>El señor PRESIDENTE</from>
+<p>Se vota tal y como ha sido presentada.</p>
+<p>Efectuada la votación, dio el siguiente resultado: votos a favor, 9; en contra, 17; abstenciones, 4.</p>
+</speech>
+<speech eId="debate_sp_43" by="#speaker_debate_43">
+<from>El señor PRESIDENTE</from>
+<p>Queda rechazada.</p>
+<p>— MOCIÓN RELATIVA AL RECONOCIMIENTO Y POTENCIACIÓN DE LOS LUGARES DE MEMORIA DEMOCRÁTICA COMO LUGARES PEDAGÓGICOS PARA QUE LOS ESTUDIANTES CONOZCAN LAS CONSECUENCIAS DE LOS MOVIMIENTOS POLÍTICOS AUTORITARIOS. (Votación). (Núm. exp. 661/001973 Autor: GRUPO PARLAMENTARIO SOCIALISTA</p>
+<p>El señor presidente lee el título que figura en el orden del día.</p>
+</speech>
+<speech eId="debate_sp_44" by="#speaker_debate_44">
+<from>El señor PRESIDENTE</from>
+<p>Se vota tal y como ha sido presentada.</p>
+<p>Efectuada la votación, dio el siguiente resultado: votos a favor 13; en contra, 17.</p>
+</speech>
+<speech eId="debate_sp_45" by="#speaker_debate_45">
+<from>El señor PRESIDENTE</from>
+<p>Queda, por tanto, rechazada.</p>
+<p>— MOCIÓN POR LA QUE SE RINDE HOMENAJE A LA MEMORIA DE ADOLFO SUÁREZ GONZÁLEZ CON OCASIÓN DEL 50.º ANIVERSARIO DE SU NOMBRAMIENTO COMO PRESIDENTE DEL GOBIERNO, SE RECONOCE Y VALORA SU PAPEL DECISIVO EN EL ÉXITO DE LA TRANSICIÓN Y SE INSTA AL GOBIERNO A CONMEMORAR ESTA EFEMÉRIDE. (Votación). (Núm. exp. 661/001975) Autor: GRUPO PARLAMENTARIO POPULAR EN EL SENADO</p>
+<p>El señor presidente lee el título que figura en el orden del día.</p>
+</speech>
+<speech eId="debate_sp_46" by="#speaker_debate_46">
+<from>El señor PRESIDENTE</from>
+<p>Se somete a votación tal y como ha sido presentada.</p>
+<p>Efectuada la votación, dio el siguiente resultado: votos a favor, 27; en contra, 3.</p>
+</speech>
+<speech eId="debate_sp_47" by="#speaker_debate_47">
+<from>El señor PRESIDENTE</from>
+<p>Queda, por tanto, aprobada.</p>
+<p>— MOCIÓN POR LA QUE SE RECUERDA LA IMPORTANCIA DE PRESERVAR EL CONSENSO SOCIAL Y POLÍTICO BÁSICO EN TORNO A LA CONSTITUCIÓN, Y SE INSTA AL GOBIERNO A NO CONTINUAR CON LA TRAMITACIÓN DE SU PROYECTO DE REFORMA DEL ARTÍCULO 43 DE LA CONSTITUCIÓN EN TANTO NO SE ALCANCE EL CONSENSO NECESARIO. (Votación). (Núm. exp. 661/001976) Autor: GRUPO PARLAMENTARIO POPULAR EN EL SENADO</p>
+<p>El señor presidente lee el título que figura en el orden del día</p>
+</speech>
+<speech eId="debate_sp_48" by="#speaker_debate_48">
+<from>El señor PRESIDENTE</from>
+<p>Se vota tal y como ha sido presentada.</p>
+<p>Efectuada la votación, dio el siguiente resultado: votos a favor,18; en contra, 12.</p>
+</speech>
+<speech eId="debate_sp_49" by="#speaker_debate_49">
+<from>El señor PRESIDENTE</from>
+<p>Queda aprobada. Señorías, terminados el debate y la votación, se levanta la sesión.</p>
+<p>Eran las dieciocho horas y cincuenta y cinco minutos.</p>
+</speech>
+<p akndiff:role="result">Efectuada la votación, dio el siguiente resultado: votos a favor, 18; en contra, 12. Queda aprobada.</p>
+</debateSection>
+</debateBody>
+</debate>
+</akomaNtoso>

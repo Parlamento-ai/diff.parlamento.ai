@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <doc name="acuerdo-consejo-ministros" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025/!main"/>
+          <FRBRuri value="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025"/>
+          <FRBRalias value="Acuerdo del Consejo de Ministros de 14 de octubre de 2025 — Aprobación del ANTEPROYECTO de reforma del artículo 43 CE" name="title"/>
+          <FRBRdate date="2025-10-14" name="generation"/>
+          <FRBRauthor href="#consejo-ministros"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="acuerdo-consejo-ministros"/>
+          <FRBRname value="acuerdo-cm-14-oct-2025"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025/spa@2025-10-14/!main"/>
+          <FRBRuri value="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025/spa@2025-10-14"/>
+          <FRBRdate date="2025-10-14" name="expression"/>
+          <FRBRauthor href="#consejo-ministros"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025/spa@2025-10-14/!main.xml"/>
+          <FRBRuri value="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025/spa@2025-10-14.akn"/>
+          <FRBRdate date="2025-10-14" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2025-10-14" name="acuerdo-consejo-ministros" showAs="Consejo de Ministros — Gobierno de España — 2025-10-14"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2025-10-14" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2025-10-14"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="consejo-ministros" href="/akn/ontology/organization/es/consejo-ministros" showAs="Consejo de Ministros — Gobierno de España"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>acuerdo-cm-14-oct-2025</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/141025-cm.aspx</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Doc 22: Acuerdo Consejo de Ministros 14-oct-2025 — anteproyecto de reforma art. 43 CE.
+
+1. PRIMER HITO. El Consejo de Ministros aprobó el ANTEPROYECTO el 14-oct-2025.
+   Texto inicial: "Se reconoce el derecho de las mujeres a la interrupción voluntaria del embarazo".
+
+2. EVOLUCIÓN. El texto cambió tras el dictamen del Consejo de Estado (26-feb-2026)
+   a la fórmula final aprobada el 7-abr-2026: "Los poderes públicos garantizarán..."
+
+3. FUENTE. https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/141025-cm.aspx
+
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Acuerdo del Consejo de Ministros de 14 de octubre de 2025 — Aprobación del ANTEPROYECTO de reforma del artículo 43 CE</docTitle>
+      <docDate date="2025-10-14">2025-10-14</docDate>
+      <docProponent>Consejo de Ministros — Gobierno de España</docProponent>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Acuerdo del Consejo de Ministros de 14 de octubre de 2025 — Aprobación del ANTEPROYECTO de reforma del artículo 43 CE</heading>
+        <p akndiff:role="list-item">— Inicio &gt;</p>
+        <p akndiff:role="list-item">— Consejo de Ministros &gt;</p>
+        <p akndiff:role="list-item">— Resúmenes</p>
+        <p>Escuchar</p>
+        <p>Escuchar</p>
+        <p akndiff:role="heading"><b>El Gobierno inicia el proceso para garantizar la interrupción voluntaria del embarazo en la Constitución</b></p>
+        <p>Consejo de Ministros - 14.10.2025</p>
+        <p>14.10.2025</p>
+        <p>El Gobierno ha activado, además, el procedimiento para que todas las comunidades autónomas cumplan la obligación de contar con un registro de objetores respecto a ese derecho de las mujeres.</p>
+        <p>Pool Moncloa/Javier Amescua</p>
+        <p>Pool Moncloa/Javier Amescua</p>
+        <p>Intervenciones destacadas en este vídeo</p>
+        <p akndiff:role="list-item">— Alegría</p>
+        <p>Alegría</p>
+        <p akndiff:role="list-item">— Redondo</p>
+        <p>Redondo</p>
+        <p akndiff:role="list-item">— García</p>
+        <p>García</p>
+        <p akndiff:role="list-item">— Rodríguez</p>
+        <p>Rodríguez</p>
+        <p akndiff:role="list-item">— Medios</p>
+        <p>Medios</p>
+        <p>Pilar Alegría Continente</p>
+        <p>Ministra de Educación, Formación Profesional y Deportes y portavoz del Gobierno</p>
+        <p akndiff:role="list-item">— 00:00 Inicio intervención</p>
+        <p>00:00</p>
+        <p>Inicio intervención</p>
+        <p akndiff:role="list-item">— 00:44 España ha jugado un papel clave y valiente en el proceso de paz de Oriente Próximo</p>
+        <p>00:44</p>
+        <p>España ha jugado un papel clave y valiente en el proceso de paz de Oriente Próximo</p>
+        <p>Ana Redondo García</p>
+        <p>Ministra de Igualdad</p>
+        <p akndiff:role="list-item">— 04:03 Inicio de la intervención</p>
+        <p>04:03</p>
+        <p>Inicio de la intervención</p>
+        <p akndiff:role="list-item">— 05:28 Propuesta de texto de reforma del artículo 43 de la Constitución</p>
+        <p>05:28</p>
+        <p>Propuesta de texto de reforma del artículo 43 de la Constitución</p>
+        <p akndiff:role="list-item">— 06:08 Garantizamos el derecho al aborto como una prestación sanitaria pública</p>
+        <p>06:08</p>
+        <p>Garantizamos el derecho al aborto como una prestación sanitaria pública</p>
+        <p akndiff:role="list-item">— 09:52 Medida contra la ola reaccionaria que recorta derechos a las mujeres</p>
+        <p>09:52</p>
+        <p>Medida contra la ola reaccionaria que recorta derechos a las mujeres</p>
+        <p>Mónica García Gómez</p>
+        <p>Ministra de Sanidad</p>
+        <p akndiff:role="list-item">— 16:31 Inicio de la intervención</p>
+        <p>16:31</p>
+        <p akndiff:role="list-item">— 16:34 Requerimiento a las comunidades que no tienen un registro de objetores de conciencia</p>
+        <p>16:34</p>
+        <p>Requerimiento a las comunidades que no tienen un registro de objetores de conciencia</p>
+        <p akndiff:role="list-item">— 18:20 Todas las comunidades aprobaron el protocolo de objetores de conciencia</p>
+        <p>18:20</p>
+        <p>Todas las comunidades aprobaron el protocolo de objetores de conciencia</p>
+        <p akndiff:role="list-item">— 19:24 Madrid, Baleares y Aragón tienen un mes para responder al requerimiento</p>
+        <p>19:24</p>
+        <p>Madrid, Baleares y Aragón tienen un mes para responder al requerimiento</p>
+        <p>Isabel Rodríguez García</p>
+        <p>Ministra de Vivienda y Agenda Urbana</p>
+        <p akndiff:role="list-item">— 21:54 Inicio intervención</p>
+        <p>21:54</p>
+        <p akndiff:role="list-item">— 22:18 Nuestro objetivo es tener cuanto antes un parque público de vivienda</p>
+        <p>22:18</p>
+        <p>Nuestro objetivo es tener cuanto antes un parque público de vivienda</p>
+        <p akndiff:role="list-item">— 23:09 Incorporación de terrenos penitenciarios a la entidad estatal de vivienda</p>
+        <p>23:09</p>
+        <p>Incorporación de terrenos penitenciarios a la entidad estatal de vivienda</p>
+        <p akndiff:role="list-item">— 25:41 Vivienda en centros urbanos para consolidar la convivencia en los barrios</p>
+        <p>25:41</p>
+        <p>Vivienda en centros urbanos para consolidar la convivencia en los barrios</p>
+        <p>Medios de comunicación</p>
+        <p>Respuestas a los medios de comunicación</p>
+        <p akndiff:role="list-item">— 35:00 Respuestas a la prensa</p>
+        <p>35:00</p>
+        <p>Respuestas a la prensa</p>
+        <p>Compartir en</p>
+        <p>La Moncloa, Madrid</p>
+        <p>El Consejo de Ministros ha aprobado el anteproyecto de reforma del artículo 43 de la Constitución para garantizar el derecho de las mujeres a la interrupción voluntaria del embarazo.</p>
+        <p>La ministra de Igualdad, Ana Redondo, ha precisado que se añadirá a la Carta Magna el artículo 43.4 con este texto: &quot;Se reconoce el derecho de las mujeres a la interrupción voluntaria del embarazo. El ejercicio de este derecho, en todo caso, será garantizado por los poderes públicos, asegurando su prestación en condiciones de igualdad efectiva, así como la protección de los derechos fundamentales de las mujeres&quot;.</p>
+        <p>Redondo ha añadido que se reconocerá así una garantía prestacional: &quot;Estamos garantizando los derechos de las mujeres a la libre interrupción del embarazo como una prestación que tiene que ser satisfecha dentro del sistema sanitario público&quot;.</p>
+        <p>La titular de Igualdad ha argumentado que la decisión adoptada hoy responde a la ola reaccionaria, tanto nacional como internacional, que pretende recortar los derechos de las mujeres y devolverlas a situaciones pasadas, a momentos superados donde la mujer tenía que ejercer determinados roles ligados a una tradición patriarcal y machista. &quot;Los derechos de las mujeres están en el foco de la ola reaccionaria, son el objeto directo de los recortes y, por eso, es importante avanzar&quot;, ha señalado.</p>
+        <p>La ministra ha remarcado que otro objetivo de la reforma es fortalecer la sanidad pública, ya que se incorpora este derecho en el marco del artículo 43 de la Constitución, vinculado al derecho a la salud y al sistema público sanitario. En determinadas comunidades autónomas, ha subrayado, se está reduciendo la calidad del servicio público de salud y se está apostando claramente por una privatización y por una externalización de servicios que afectan específicamente a la interrupción voluntaria del embarazo. &quot;Queremos garantizar, dentro de la cartera pública de servicios, la interrupción voluntaria del embarazo y, por lo tanto, hacer que este derecho se preste en la sanidad pública&quot;, ha remarcado.</p>
+        <p>Ana Redondo ha reiterado que el Gobierno no va a tolerar recortes ni retrocesos de derechos y tomará todas las medidas necesarias para que no se produzcan en el presente ni el futuro.</p>
+        <p>En este sentido, la ministra ha repasado la lucha de las mujeres en su reivindicación histórica de decidir sobre su propio cuerpo y ha recordado que celebramos 50 años de España en libertad y el 40 aniversario de la primera ley de interrupción voluntaria del embarazo.</p>
+        <p akndiff:role="heading"><b>Tramitación de la reforma del articulo 43 de la Constitución</b></p>
+        <p>La ministra de Igualdad, Ana Redondo, durante la rueda de prensa posterior al Consejo de Ministros</p>
+        <p>La ministra de Igualdad, Ana Redondo, durante la rueda de prensa posterior al Consejo de Ministros</p>
+        <p>La reforma se tramitará mediante el procedimiento contemplado en el artículo 167 de la Constitución y requerirá un informe del Consejo de Estado y la aprobación por mayoría de tres quintos tanto en el Congreso como en el Senado, según ha explicado la ministra. En caso de descuerdo, sería necesaria la creación de una Comisión Mixta Congreso-Senado que propondría un nuevo texto, que se sometería de nuevo a votación. La aprobación requeriría entonces dos tercios de los votos en el Congreso y mayoría absoluta en el Senado. Ana Redondo también ha recordado que existe la posibilidad de convocar un referéndum de ratificación si lo solicita una décima parte de los diputados o senadores.</p>
+        <p>La ministra ha reclamado a los partidos de la oposición que estén a la altura de este reto y se sumen a la defensa de los derechos de las mujeres: &quot;Haremos una labor pedagógica de informar y explicar el proyecto. Nos reuniremos con todo el arco parlamentario&quot;.</p>
+        <p>&quot;Una inmensa mayoría de la ciudadanía española está por esta reforma constitucional y lo que pretendemos es trasladar esa mayoría amplia social a la mayoría institucional, a la mayoría parlamentaria, que es la que tiene que avalar esta reforma. Vamos a trabajar sin tregua, sin pausa&quot;, ha concluido.</p>
+        <p akndiff:role="heading"><b>Registro de objetores de la interrupción voluntaria del embarazo</b></p>
+        <p>La ministra de Sanidad, Mónica García, durante la rueda de prensa posterior al Consejo de Ministros | Pool Moncloa / Jose Manuel Álvarez</p>
+        <p>La ministra de Sanidad, Mónica García, durante la rueda de prensa posterior al Consejo de Ministros | Pool Moncloa / Jose Manuel Álvarez</p>
+        <p>La ministra de Sanidad, Mónica García, durante la rueda de prensa posterior al Consejo de Ministros</p>
+        <p>El Consejo de Ministros ha abordado la obligación de las comunidades autónomas de contar con un registro de profesionales sanitarios objetores de conciencia respecto a la interrupción voluntaria del embarazo. La ministra de Sanidad, Mónica García, ha explicado que el Ejecutivo va a plantear un requerimiento formal a las tres comunidades que no cumplen con ese mandato de la ley orgánica sobre la salud sexual y reproductiva. &quot;La ley se cumple, punto&quot;, ha afirmado.</p>
+        <p>El registro, según ha detallado la titular de Sanidad, no es algo opcional ni una &quot;ocurrencia&quot;, sino una obligación legal y una herramienta esencial para garantizar que los derechos de los y las profesionales sean compatibles con el derecho de las mujeres a interrumpir voluntariamente el embarazo en condiciones de equidad, seguridad y respeto.</p>
+        <p>Mónica García ha recordado que el 16 de diciembre de 2024 el Pleno del Consejo Interterritorial del Sistema Nacional de Salud (SNS) aprobó, con el voto favorable de todas las comunidades autónomas, el protocolo del registro de objetores que desarrolla lo previsto en la ley. El acta de esa reunión fue aprobada y firmada el 4 de abril de 2025, y Sanidad ha realizado desde entonces un seguimiento exhaustivo de la implantación del registro a través de la Alta Inspección del SNS.</p>
+        <p akndiff:role="heading"><b>Un mes de plazo para contestar al requerimiento del Gobierno</b></p>
+        <p>Según ha indicado la ministra, la &quot;inmensa mayoría&quot; de las comunidades ha cumplido la obligación o la están tramitando; las excepciones son Aragón, Baleares y la Comunidad de Madrid. &quot;Son tres comunidades que no han hecho nada, pero solo la Comunidad de Madrid ha sido explícita en su incumplimiento de la ley&quot;, ha precisado Mónica García. La ministra ha apuntado que la comunidad madrileña sí respeta la ley en lo relativo al registro de conciencia en materia de eutanasia. &quot;Es un procedimiento normal dentro de nuestro sistema jurídico y de nuestro sistema sanitario&quot;, ha defendido.</p>
+        <p>Las tres comunidades disponen de un mes para responder al requerimiento del Gobierno y dejar de incumplir la ley. Transcurrido ese plazo, el Ejecutivo cuenta con dos meses para acudir a los tribunales y plantear un recurso contencioso-administrativo.</p>
+        <p>La titular de Sanidad ha subrayado que la jurisprudencia del Tribunal Constitucional configura la objeción de conciencia como un procedimiento activo e individual. &quot;Saltarse este procedimiento no solamente vulnera los derechos de las mujeres, sino también los derechos de los profesionales que quieren ejercer de manera activa e individual su derecho a la objeción&quot;, ha sostenido.</p>
+        <p akndiff:role="heading"><b>Más terrenos para construir viviendas públicas</b></p>
+        <p>El Consejo de Ministros ha autorizado incorporar a la Entidad Estatal de Vivienda ocho infraestructuras y terrenos penitenciarios propiedad hasta ahora del Ministerio del Interior. La ministra de Vivienda y Agenda Urbana, Isabel Rodríguez, ha enmarcado este acuerdo en el compromiso del Ejecutivo de emplear todos los recursos del Estado para garantizar el derecho a la vivienda. &quot;Nuestro objetivo es tener cuanto antes el parque público de vivienda que garantice ese derecho&quot;, ha destacado. La ministra de Vivienda y Agenda Urbana, Isabel Rodríguez, durante la rueda de prensa posterior al Consejo de Ministros | Pool Moncloa / Jose Manuel Álvarez</p>
+        <p>La ministra de Vivienda y Agenda Urbana, Isabel Rodríguez, durante la rueda de prensa posterior al Consejo de Ministros | Pool Moncloa / Jose Manuel Álvarez</p>
+        <p>La ministra de Vivienda y Agenda Urbana, Isabel Rodríguez, durante la rueda de prensa posterior al Consejo de Ministros</p>
+        <p>Rodríguez ha recordado que se trata de la tercera incorporación de activos a la nueva entidad estatal, tras la conversión de antiguos cuarteles en terrenos para vivienda y la adscripción a esa entidad estatal de viviendas englobadas en la Sociedad de Gestión de Activos Procedentes de la Reestructuración Bancaria (SAREB).</p>
+        <p akndiff:role="heading"><b>Colaboración con los ayuntamientos y los vecinos</b></p>
+        <p>En las parcelas traspasadas hoy, que suman un valor de 78 millones de euros, podrán construirse viviendas públicas que beneficiarán a 1.332 familias en cinco comunidades autónomas. Isabel Rodríguez ha subrayado, además, que en esos lugares se produjeron situaciones de represión y de privación de libertades y derechos &quot;que es necesario recordar y resignificar&quot;.</p>
+        <p>La ministra ha remarcado, igualmente, que los terrenos se encuentran en centros urbanos, por lo que servirán para consolidar la convivencia en los barrios. Con este fin, el Ministerio de Vivienda y Agenda Urbana va a trabajar en esos desarrollos urbanísticos con los vecinos de esas zonas, así como con las Administraciones competentes. Isabel Rodríguez se ha dirigido esta misma mañana a los ayuntamientos involucrados para agilizar todo lo posible la tramitación que conlleva convertir los terrenos en casas.</p>
+        <p>El desarrollo más importante en cuanto al número de viviendas y a su valor para la memoria democrática es el de los terrenos de la cárcel de Carabanchel, en Madrid. En sus 27.000 metros cuadrados se podrán construir hasta 508 viviendas que, además, darán continuidad a las actuaciones en el nuevo barrio de Campamento .</p>
+        <p>El resto de los terrenos se ubican en Sevilla, Córdoba, Dénia (Alicante), Huesca, Zaragoza, Segovia y Briviesca (Burgos).</p>
+        <p>También en el ámbito del Ministerio de Vivienda y Agenda Urbana, el Consejo de Ministros ha regulado la composición y el funcionamiento del Consejo de Calidad de la Arquitectura, recogido en la Ley de Arquitectura que se aprobó en la legislatura anterior.</p>
+        <p akndiff:role="heading"><b>Otros asuntos de actualidad: Plan de Paz para Oriente Próximo</b></p>
+        <p>La ministra de Educación y Formación Profesional y Deportes, y portavoz del Gobierno, Pilar Alegría, durante la rueda de prensa posterior al Consejo de Ministros | Pool Moncloa / Jose Manuel Álvarez</p>
+        <p>La ministra de Educación y Formación Profesional y Deportes, y portavoz del Gobierno, Pilar Alegría, durante la rueda de prensa posterior al Consejo de Ministros | Pool Moncloa / Jose Manuel Álvarez</p>
+        <p>La ministra de Educación y Formación Profesional y Deportes, y portavoz del Gobierno, Pilar Alegría, durante la rueda de prensa posterior al Consejo de Ministros</p>
+        <p>La ministra de Educación, Formación Profesional y Deportes y portavoz del Gobierno, Pilar Alegría, se ha referido durante su intervención en la rueda de prensa a la firma del Plan de Paz para Oriente Próximo que ha tenido lugar esta semana en Egipto. Un acto que, de acuerdo con la portavoz, &quot;abre un horizonte de esperanza en Gaza&quot; de cara a la consolidación de una paz &quot;justa y duradera&quot; en la zona.</p>
+        <p>La ministra ha subrayado que España ha desempeñado &quot;un papel clave y también valiente&quot; en este proceso, en el que &quot;abrió camino&quot; al ser uno de los primeros países que reclamaron el reconocimiento de los dos Estados . Por ello, ha continuado Alegría, tras la liberación de los rehenes y la reanudación del acceso de la ayuda humanitaria, &quot;es importante seguir avanzando para consolidar la paz, trabajar en la reconstrucción de Gaza y progresar en esa solución de reconocimiento de los dos Estados&quot;.</p>
+        <p akndiff:role="heading"><b>Más información</b></p>
+        <p akndiff:role="list-item">— Referencia del Consejo de Ministros</p>
+        <p>Referencia del Consejo de Ministros</p>
+        <p akndiff:role="list-item">— Transcripción de la rueda de prensa</p>
+        <p>Transcripción de la rueda de prensa</p>
+        <p akndiff:role="list-item">— Galería fotográfica</p>
+        <p>Galería fotográfica</p>
+        <p akndiff:role="heading"><b>Más noticias</b></p>
+        <p akndiff:role="list-item">— El presidente del Gobierno asiste en Egipto al acto de firma del Plan de Paz para Oriente...</p>
+        <p>El presidente del Gobierno asiste en Egipto al acto de firma del Plan de Paz para Oriente...</p>
+        <p akndiff:role="list-item">— Pedro Sánchez: &quot;Si la vivienda es una de las mayores preocupaciones de las familias, es...</p>
+        <p>Pedro Sánchez: &quot;Si la vivienda es una de las mayores preocupaciones de las familias, es...</p>
+        <p akndiff:role="heading"><b>Etiquetas:</b></p>
+        <p akndiff:role="list-item">— Gobierno de España</p>
+        <p akndiff:role="list-item">— Comunidades Autónomas</p>
+        <p akndiff:role="list-item">— Sanidad</p>
+        <p akndiff:role="list-item">— Vivienda pública</p>
+        <p akndiff:role="list-item">— Vivienda</p>
+        <p akndiff:role="list-item">— Derechos sociales</p>
+        <p akndiff:role="list-item">— Internacional</p>
+        <p akndiff:role="list-item">— Magreb y Oriente Próximo</p>
+        <p akndiff:role="list-item">— Igualdad</p>
+      </hcontainer>
+    </mainBody>
+  </doc>
+</akomaNtoso>

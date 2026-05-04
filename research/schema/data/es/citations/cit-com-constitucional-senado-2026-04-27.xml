@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <citation name="convocatoria-comision-senado" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/citation/2026-04-27/cit-com-constitucional-senado-2026-04-27/!main"/>
+          <FRBRuri value="/akn/es/citation/2026-04-27/cit-com-constitucional-senado-2026-04-27"/>
+          <FRBRalias value="Convocatoria Comisión Constitucional Senado sesión 24 (27-abr-2026) — incluye moción 661/001976 sobre reforma art. 43 CE" name="title"/>
+          <FRBRdate date="2026-04-27" name="generation"/>
+          <FRBRauthor href="#senado"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="orden-del-dia-comision-senado"/>
+          <FRBRnumber value="24"/>
+          <FRBRname value="cit-com-constitucional-senado-2026-04-27"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/citation/2026-04-27/cit-com-constitucional-senado-2026-04-27/spa@2026-04-27/!main"/>
+          <FRBRuri value="/akn/es/citation/2026-04-27/cit-com-constitucional-senado-2026-04-27/spa@2026-04-27"/>
+          <FRBRdate date="2026-04-27" name="expression"/>
+          <FRBRauthor href="#senado"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/citation/2026-04-27/cit-com-constitucional-senado-2026-04-27/spa@2026-04-27/!main.xml"/>
+          <FRBRuri value="/akn/es/citation/2026-04-27/cit-com-constitucional-senado-2026-04-27/spa@2026-04-27.akn"/>
+          <FRBRdate date="2026-04-27" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-27" name="agenda-comision-senado" showAs="Convocatoria Comisión Constitucional Senado, sesión 24, 27-abr-2026" number="24"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-22" refersTo="#convocatoria-publicada" source="#diff-parlamento-ai" eId="convocatoria-2026-04-22"/>
+        <eventRef date="2026-04-27T16:00:00" refersTo="#sesion-inicio" source="#diff-parlamento-ai" eId="sesion-inicio-2026-04-27"/>
+        <eventRef date="2026-04-27T18:55:00" refersTo="#sesion-fin" source="#diff-parlamento-ai" eId="sesion-fin-2026-04-27"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="senado" href="/akn/ontology/organization/es/senado" showAs="Senado de España"/>
+        <TLCOrganization eId="comision-constitucional-senado" href="/akn/ontology/organization/es/senado/comision-constitucional" showAs="Comisión Constitucional del Senado"/>
+        <TLCOrganization eId="grupo-popular-senado" href="/akn/ontology/organization/es/senado/grupo-parlamentario/popular" showAs="Grupo Parlamentario Popular en el Senado"/>
+        <TLCOrganization eId="grupo-socialista-senado" href="/akn/ontology/organization/es/senado/grupo-parlamentario/socialista" showAs="Grupo Parlamentario Socialista en el Senado"/>
+        <TLCOrganization eId="grupo-izquierdas-independencia" href="/akn/ontology/organization/es/senado/grupo-parlamentario/izquierdas-por-la-independencia" showAs="Grupo Parlamentario Izquierdas por la Independencia"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCPerson eId="pio-garcia-escudero" href="/akn/ontology/person/es/pio-garcia-escudero" showAs="Pío García-Escudero Márquez"/>
+        <TLCRole eId="presidente-comision-constitucional-senado" href="/akn/ontology/role/es/presidente-comision-constitucional-senado" showAs="Presidente Comisión Constitucional del Senado"/>
+        <TLCConcept eId="orden-del-dia" href="/akn/ontology/concept/es/orden-del-dia" showAs="orden del día"/>
+        <TLCConcept eId="convocatoria-comision" href="/akn/ontology/concept/es/convocatoria-comision" showAs="convocatoria de Comisión"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCReference eId="mocion-661-001976" href="/akn/es/communication/2026-04-20/mocion-661-001976" showAs="Moción 661/001976 (paralización reforma art. 43 CE)"/>
+        <TLCReference eId="debate-comision" href="/akn/es/debate/2026-04-27/ds-c-15-679" showAs="DS-C nº 679 — Comisión Constitucional Senado"/>
+        <TLCEvent eId="convocatoria-publicada" href="/akn/ontology/event/convocatoria-publicada" showAs="Convocatoria publicada"/>
+        <TLCEvent eId="sesion-inicio" href="/akn/ontology/event/sesion-inicio" showAs="Inicio sesión"/>
+        <TLCEvent eId="sesion-fin" href="/akn/ontology/event/sesion-fin" showAs="Fin sesión"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>cit-com-constitucional-senado-2026-04-27</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.senado.es/web/actividadparlamentaria/sesionescomision/detalleordendiacomision/index.html?legis=15&amp;id1=S011003&amp;id2=24</akndiff:sourceUrl>
+
+        <akndiff:transcriptId provider="parlamento-ai">13988</akndiff:transcriptId>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Friction log para ES / citation cit-com-constitucional-senado-2026-04-27:
+
+1. CONVOCATORIA OFICIAL. Orden del día de la Comisión Constitucional del Senado para
+   la sesión 24, celebrada el lunes 27-abr-2026 a las 16h, presidida por el EXCMO.
+   SR. D. PÍO GARCÍA-ESCUDERO MÁRQUEZ.
+
+2. PUNTO RELEVANTE. La 5ª moción del orden del día es la 661/001976, presentada por
+   el GP Popular en el Senado, sobre "preservar el consenso social y político básico
+   en torno a la Constitución" y "no continuar con la tramitación de su proyecto de
+   reforma del artículo 43 de la Constitución en tanto no se alcance el consenso necesario".
+
+3. RESULTADO. La moción fue APROBADA en votación: 18 a favor, 12 en contra.
+
+4. FUENTE. El orden del día está embebido como cabecera del DS-C nº 679 (Diario de
+   Sesiones de la Comisión), líneas 1-50 del PDF. Adicionalmente, la convocatoria se
+   scrapea por parlamento-ai a través del subgroup "Comisión Constitucional Senado".
+
+5. VINCULACIÓN PARLAMENTO-AI. transcriptId 13988 contiene la información de esta sesión.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>CORTES GENERALES — DIARIO DE SESIONES — SENADO — XV LEGISLATURA</docTitle>
+      <docNumber>Núm. 679</docNumber>
+      <docDate date="2026-04-27">27 de abril de 2026</docDate>
+      <p><b>COMISIÓN CONSTITUCIONAL</b></p>
+      <p><b>PRESIDENCIA DEL EXCMO. SR. D. PÍO GARCÍA-ESCUDERO MÁRQUEZ</b></p>
+      <p>Sesión celebrada el lunes, 27 de abril de 2026</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="orden-del-dia" eId="orden_dia">
+        <heading>ORDEN DEL DÍA</heading>
+        <hcontainer name="seccion-debate" eId="orden_dia__debate">
+          <heading>Debate</heading>
+          <hcontainer name="punto-mocion" eId="punto_1">
+            <num>1</num>
+            <p>Moción por la que se condena el acto de destrucción de la fotografía de Aurora Picornell por el Presidente del Parlamento de las Illes Balears y se insta al Gobierno a la adopción de determinadas medidas en defensa de su dignidad y memoria, así como las de todos los represaliados y asesinados del franquismo, ante los ataques de odio de la extrema derecha.</p>
+            <p akndiff:role="reference">(Núm. exp. 661/000546)</p>
+            <p akndiff:role="autor">Autor: GRUPO PARLAMENTARIO IZQUIERDAS POR LA INDEPENDENCIA (ESQUERRA REPUBLICANA-EUSKAL HERRIA BILDU)</p>
+          </hcontainer>
+          <hcontainer name="punto-mocion" eId="punto_2">
+            <num>2</num>
+            <p>Moción relativa a la renovación de los magistrados del Tribunal Constitucional.</p>
+            <p akndiff:role="reference">(Núm. exp. 661/001896)</p>
+            <p akndiff:role="autor">Autor: GRUPO PARLAMENTARIO SOCIALISTA</p>
+          </hcontainer>
+          <hcontainer name="punto-mocion" eId="punto_3">
+            <num>3</num>
+            <p>Moción relativa al reconocimiento y potenciación de los lugares de memoria democrática como lugares pedagógicos para que los estudiantes conozcan las consecuencias de los movimientos políticos autoritarios.</p>
+            <p akndiff:role="reference">(Núm. exp. 661/001973)</p>
+            <p akndiff:role="autor">Autor: GRUPO PARLAMENTARIO SOCIALISTA</p>
+          </hcontainer>
+          <hcontainer name="punto-mocion" eId="punto_4">
+            <num>4</num>
+            <p>Moción por la que se rinde homenaje a la memoria de Adolfo Suárez González con ocasión del 50.º aniversario de su nombramiento como Presidente del Gobierno, se reconoce y valora su papel decisivo en el éxito de la Transición y se insta al Gobierno a conmemorar esta efeméride.</p>
+            <p akndiff:role="reference">(Núm. exp. 661/001975)</p>
+            <p akndiff:role="autor">Autor: GRUPO PARLAMENTARIO POPULAR EN EL SENADO</p>
+          </hcontainer>
+          <hcontainer name="punto-mocion" eId="punto_5">
+            <num>5</num>
+            <p akndiff:role="punto-clave"><b>Moción por la que se recuerda la importancia de preservar el consenso social y político básico en torno a la Constitución, y se insta al Gobierno a no continuar con la tramitación de su proyecto de reforma del artículo 43 de la Constitución en tanto no se alcance el consenso necesario.</b></p>
+            <p akndiff:role="reference">(Núm. exp. 661/001976)</p>
+            <p akndiff:role="autor">Autor: GRUPO PARLAMENTARIO POPULAR EN EL SENADO</p>
+            <p akndiff:role="resultado">Aprobada el 27-abr-2026: 18 a favor, 12 en contra.</p>
+          </hcontainer>
+        </hcontainer>
+      </hcontainer>
+    </mainBody>
+  </citation>
+</akomaNtoso>

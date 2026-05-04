@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <changeSet name="change-set" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/changeSet/2026-04-07/cs-anteproyecto-vs-proyecto/!main"/>
+          <FRBRuri value="/akn/es/changeSet/2026-04-07/cs-anteproyecto-vs-proyecto"/>
+          <FRBRalias value="Diff anteproyecto (14-oct-2025) vs proyecto final (7-abr-2026) del nuevo apartado 4 del art. 43 CE" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="change-set-textual"/>
+          <FRBRname value="cs-anteproyecto-vs-proyecto"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/changeSet/2026-04-07/cs-anteproyecto-vs-proyecto/spa@2026-04-07/!main"/>
+          <FRBRuri value="/akn/es/changeSet/2026-04-07/cs-anteproyecto-vs-proyecto/spa@2026-04-07"/>
+          <FRBRdate date="2026-04-07" name="expression"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/changeSet/2026-04-07/cs-anteproyecto-vs-proyecto/spa@2026-04-07/!main.xml"/>
+          <FRBRuri value="/akn/es/changeSet/2026-04-07/cs-anteproyecto-vs-proyecto/spa@2026-04-07.akn"/>
+          <FRBRdate date="2026-04-07" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-07" name="change-set-derivado" showAs="Diff anteproyecto vs proyecto — derivado por diff.parlamento.ai" number="cs-anteproyecto-vs-proyecto"/>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="change-set-textual" href="/akn/ontology/concept/es/change-set-textual" showAs="change set textual"/>
+        <TLCReference eId="acuerdo-anteproyecto" href="/akn/es/doc/2025-10-14/acuerdo-cm-14-oct-2025" showAs="Acuerdo CM anteproyecto"/>
+        <TLCReference eId="acuerdo-proyecto" href="/akn/es/doc/2026-04-07/acuerdo-cm-7-abr-2026" showAs="Acuerdo CM proyecto final"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001"/>
+        <TLCReference eId="dictamen-ce" href="/akn/es/doc/2026-02-26/dictamen-ce-26-feb-2026" showAs="Dictamen Consejo de Estado"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>cs-anteproyecto-vs-proyecto</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://diff.parlamento.ai/derived/cs-anteproyecto-vs-proyecto</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Doc 29: change_set cs-anteproyecto-vs-proyecto.
+
+Diferencia textual entre el ANTEPROYECTO (Consejo de Ministros 14-oct-2025) y el
+PROYECTO FINAL (Consejo de Ministros 7-abr-2026) del nuevo apartado 4 del art. 43 CE.
+
+CAMBIO PRINCIPAL. El cambio reflejó la recomendación del Dictamen del Consejo de Estado
+(26-feb-2026) que sugirió pasar de una fórmula DECLARATIVA («Se reconoce el derecho...»)
+a una fórmula PRESTACIONAL («Los poderes públicos garantizarán...»).
+
+EFECTO JURÍDICO. Este cambio refuerza la dimensión PRESTACIONAL del derecho (vincula
+explícitamente a los poderes públicos a garantizar el ejercicio del derecho mediante
+prestaciones y servicios) y debilita la posibilidad de ser interpretado como mero
+reconocimiento programático.
+
+VERIFICABILIDAD. Ambos textos son verificables públicamente:
+- Anteproyecto: prensa especializada de oct-2025 (El País, La Vanguardia)
+- Proyecto final: BOCG-15-A-92-1 (Doc 7), texto literal verificado
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>CHANGE SET — Anteproyecto vs Proyecto final del apartado 4 del art. 43 CE</docTitle>
+      <docDate date="2026-04-07">7 de abril de 2026</docDate>
+      <docProponent>diff.parlamento.ai (derivado)</docProponent>
+    </preface>
+    <mainBody>
+      <hcontainer name="change-set" eId="cs">
+        <heading>Diferencias textuales entre el anteproyecto y el proyecto final del nuevo apartado 4 del art. 43 CE</heading>
+        <akndiff:changeSet eId="cs_apartado_4">
+          <akndiff:from version="anteproyecto" date="2025-10-14">
+            <p>«4. Se reconoce el derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva.»</p>
+          </akndiff:from>
+          <akndiff:to version="proyecto-final" date="2026-04-07">
+            <p>«4. Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio.»</p>
+          </akndiff:to>
+          <akndiff:explanation>
+            <p>El cambio recoge la recomendación del Dictamen del Consejo de Estado de 26-feb-2026 (mayoría 16-4) y modifica la fórmula declarativa («Se reconoce...») por una fórmula prestacional («Los poderes públicos garantizarán...»). El resultado refuerza la dimensión PRESTACIONAL del derecho a la interrupción voluntaria del embarazo, vinculando explícitamente a los poderes públicos a garantizar su ejercicio mediante prestaciones y servicios necesarios.</p>
+            <p>El proyecto final también incorpora la fórmula complementaria «con cuantas prestaciones y servicios sean necesarios para dicho ejercicio», que no estaba en el anteproyecto, ampliando así el alcance prestacional del precepto.</p>
+          </akndiff:explanation>
+        </akndiff:changeSet>
+      </hcontainer>
+    </mainBody>
+  </changeSet>
+</akomaNtoso>

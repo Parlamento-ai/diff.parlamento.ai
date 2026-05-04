@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <doc name="voto-particular-consejo-estado" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/doc/2026-02-26/voto-particular-rodriguez-minon/!main"/>
+          <FRBRuri value="/akn/es/doc/2026-02-26/voto-particular-rodriguez-minon"/>
+          <FRBRalias value="Voto particular discrepante de Herrero y Rodríguez de Miñón al Dictamen del Pleno del Consejo de Estado de 26 de febrero de 2026" name="title"/>
+          <FRBRdate date="2026-02-26" name="generation"/>
+          <FRBRauthor href="#herrero-rodriguez-de-minon"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="voto-particular-consejo-estado"/>
+          <FRBRname value="voto-particular-rodriguez-minon"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/doc/2026-02-26/voto-particular-rodriguez-minon/spa@2026-02-26/!main"/>
+          <FRBRuri value="/akn/es/doc/2026-02-26/voto-particular-rodriguez-minon/spa@2026-02-26"/>
+          <FRBRdate date="2026-02-26" name="expression"/>
+          <FRBRauthor href="#herrero-rodriguez-de-minon"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/doc/2026-02-26/voto-particular-rodriguez-minon/spa@2026-02-26/!main.xml"/>
+          <FRBRuri value="/akn/es/doc/2026-02-26/voto-particular-rodriguez-minon/spa@2026-02-26.akn"/>
+          <FRBRdate date="2026-02-26" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-02-26" name="voto-particular-consejo-estado" showAs="Miguel Herrero y Rodríguez de Miñón (Consejero Permanente del Consejo de Estado) — 2026-02-26"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-02-26" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-02-26"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="herrero-rodriguez-de-minon" href="/akn/ontology/organization/es/herrero-rodriguez-de-minon" showAs="Miguel Herrero y Rodríguez de Miñón (Consejero Permanente del Consejo de Estado)"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>voto-particular-rodriguez-minon</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.consejo-estado.es/dictamenes/2026/126/voto-particular</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Doc 25: Voto particular discrepante de Herrero y Rodríguez de Miñón.
+
+GAP DOCUMENTAL. El voto particular original al Dictamen del Consejo de Estado no es
+público. Su contenido se reconstruye a partir de las citas literales contenidas en:
+  - Enmienda nº 5 (PP) al BOCG-15-A-92-2 (Doc 6 + Doc 8): cita extensamente el voto
+    particular como base de su argumentación de "fraude constitucional".
+  - Enmienda nº 6 (VOX) al BOCG-15-A-92-2: lo invoca como referencia.
+  - Reseñas de prensa especializada.
+
+AUTOR. Don Miguel Herrero y Rodríguez de Miñón, ponente del texto constitucional de 1978
+(uno de los siete "padres de la Constitución"), Consejero Permanente del Consejo de Estado.
+
+ADHESIONES. Consejeros Sr. Michavila Núñez, Sr. Sanz Alonso y Sr. Aparicio Pérez.
+
+POSICIÓN. Califica el proyecto como FRAUDE CONSTITUCIONAL por usar art. 167 CE
+(procedimiento ordinario) en lugar de art. 168 CE (procedimiento agravado) para modificar
+materia que afecta al art. 15 CE (derecho fundamental a la vida).
+
+EFECTO. Su tesis fue asumida por el GP Popular y por el GP VOX como fundamento de las
+enmiendas a la totalidad de devolución, rechazadas en el Pleno del Congreso del 30-abr-2026.
+
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Voto particular discrepante de Herrero y Rodríguez de Miñón al Dictamen del Pleno del Consejo de Estado de 26 de febrero de 2026</docTitle>
+      <docDate date="2026-02-26">2026-02-26</docDate>
+      <docProponent>Miguel Herrero y Rodríguez de Miñón (Consejero Permanente del Consejo de Estado)</docProponent>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Voto particular discrepante de Herrero y Rodríguez de Miñón al Dictamen del Pleno del Consejo de Estado de 26 de febrero de 2026</heading>
+        <p akndiff:role="heading"><b>Voto particular discrepante al Dictamen del Consejo de Estado de 26 de febrero de 2026</b></p>
+        <p>Autor: Don Miguel Herrero y Rodríguez de Miñón, Consejero Permanente del Consejo de Estado, ponente del texto constitucional de 1978.</p>
+        <p>Adhesiones: Consejeros Sr. Michavila Núñez, Sr. Sanz Alonso y Sr. Aparicio Pérez.</p>
+        <p akndiff:role="heading"><b>Tesis principal: Fraude constitucional</b></p>
+        <p>El voto particular fundamenta sólidamente que «el proyecto propone un fraude a la Constitución».</p>
+        <p>En primer lugar, porque al amparo del artículo 167 de la Constitución, se persigue un «resultado prohibido por el ordenamiento jurídico y contrario a él, como es modificar un aspecto del artículo 15 sin acudir al procedimiento del artículo 168».</p>
+        <p>Asistimos a una actuación en claro fraude de ley, inequívocamente definido en el artículo 6.4 del Código Civil, que bajo la apariencia de licitud persigue esquivar la aplicación de la norma establecida para el caso.</p>
+        <p akndiff:role="heading"><b>Argumentación: el contenido es del art. 15, no del art. 43</b></p>
+        <p>El voto particular afirma que el derecho de la mujer a interrumpir voluntariamente el embarazo «forma parte del contenido constitucionalmente protegido del derecho fundamental a la integridad física y moral (artículo 15 CE)», inserto en el Capítulo segundo, Sección primera del Título I de la Constitución y, por lo tanto protegido por el artículo 168 («Cuando se propusiere la revisión total de la Constitución o una parcial que afecte al Título preliminar, al Capítulo segundo, Sección primera del Título I, o al Título II, se procederá a la aprobación del principio por mayoría de dos tercios de cada Cámara, y a la disolución inmediata de las Cortes»).</p>
+        <p>Más abajo, el propio Gobierno viene a afirmar que como ese procedimiento no se adapta a sus pretensiones, optan por el que consideran que se ajusta más a su estrategia política.</p>
+        <p>Así, eludiendo la letra y el espíritu del precepto constitucional previamente invocado y que no se ajusta a su conveniencia, el Gobierno expresa claramente que «la incorporación del derecho a la interrupción voluntaria del embarazo en el artículo 43 de la Constitución se justifica por la mayor sencillez y celeridad que ofrece la tramitación de la reforma constitucional conforme al procedimiento del artículo 167 de la Constitución» en comparación con el procedimiento del artículo 168 de la Constitución aplicable en el caso de que hubieran planteado una reforma del artículo 15 de la Constitución.</p>
+        <p>El «fraude auto confirmado» es evidente en la simple explicación del Gobierno al procedimiento de reforma por la vía del artículo 167 CE que impulsan: «favorece la viabilidad política del acuerdo y permite culminar la reforma en un tiempo razonable, sin interrumpir el normal funcionamiento de las Cortes Generales». Es un procedimiento «ágil pero garantista, idóneo para dotar de protección constitucional efectiva el derecho a la interrupción voluntaria del embarazo».</p>
+        <p akndiff:role="heading"><b>Sobre la flexibilidad y rigidez constitucional</b></p>
+        <p>Nuestra Constitución se caracteriza por su flexibilidad solo atenuada en extremos muy concretos expresamente previstos en el artículo 168 de la misma por una mayor rigidez. Opción esta del constituyente que el constituyente constituido, esto es, la potestad de reforma, no puede desconocer.</p>
+        <p akndiff:role="heading"><b>Conclusión</b></p>
+        <p>En consecuencia, y al estar esta materia anclada en el artículo 15, cualquier modificación constitucional debe hacerse necesariamente dentro de la sección de derechos fundamentales, activando el procedimiento del artículo 168.</p>
+        <p>Por otro lado, no se puede «quebrantar la Constitución con argumentos de tipo político» o de «oportunidad» del momento.</p>
+        <p>Esta reforma carece de justificación jurídica mínimamente sólida y lejos de perseguir como fin último reforzar la garantía del ejercicio de derechos de las mujeres, busca un beneficio electoral.</p>
+      </hcontainer>
+    </mainBody>
+  </doc>
+</akomaNtoso>

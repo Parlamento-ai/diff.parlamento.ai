@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Proyecto de reforma del artículo 43 de la Constitución Española.
+  Expediente 102/000001, XV Legislatura, Congreso de los Diputados.
+
+  Es el proyecto del Gobierno de España (PSOE-Sumar) que añade un nuevo
+  apartado 4 al artículo 43 de la Constitución Española (capítulo III "Principios
+  rectores") para constitucionalizar la garantía prestacional del derecho de las
+  mujeres a la interrupción voluntaria del embarazo. Tramitación por el
+  procedimiento de urgencia conforme al artículo 167 de la Constitución (reforma
+  ordinaria, requiere mayoría de 3/5 en cada cámara).
+
+  Estado al 4-mayo-2026: en plazo de enmiendas al articulado en la Comisión
+  Constitucional, tras superar el debate de enmiendas a la totalidad en el Pleno
+  del Congreso del 30-abril-2026 (sesión 177, votación 12: 177 contra / 171 a
+  favor / 0 abstenciones / 2 no votan, sobre 348 presentes).
+
+  Fuentes oficiales primarias verificadas:
+    - Ficha del expediente:
+      https://www.congreso.es/es/iniciativas-organo?p_p_id=iniciativas&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_iniciativas_mode=mostrarDetalle&_iniciativas_legislatura=XV&_iniciativas_id=102/000001
+    - BOCG-15-A-92-1 (13-abr-2026, publicación del proyecto):
+      https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-1.PDF
+    - BOCG-15-A-92-2 (21-abr-2026, enmiendas a la totalidad PP+Vox):
+      https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-2.PDF
+    - ATCD del Pleno 30-abr-2026 (sustituye al DSCD oficial pendiente):
+      https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260430.pdf
+    - JSON oficial votación 30-abr-2026 (votación 12 sesión 177):
+      https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json
+    - Acuerdo CM proyecto final 7-abr-2026 (Moncloa):
+      https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2026/070426-rueda-de-prensa-ministros.aspx
+    - Acuerdo CM anteproyecto 14-oct-2025:
+      https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2025/141025-rueda-de-prensa-ministros.aspx
+    - Moción Senado 661/001976 (texto íntegro y datos sesión via XML oficial Senado):
+      https://www.senado.es/web/ficopendataservlet?legis=15&tipoFich=3&tipoEx=661&numEx=001976
+    - DS_C_15_679 (Diario Sesiones Comisión Constitucional Senado 27-abr-2026):
+      https://www.senado.es/legis15/publicaciones/pdf/senado/ds/DS_C_15_679.PDF
+    - STC 44/2023 (base doctrinal citada por el dictamen CE):
+      https://www.boe.es/buscar/doc.php?id=BOE-A-2023-13955
+    - STC 92/2024 (ratifica STC 44/2023):
+      https://www.boe.es/buscar/doc.php?id=BOE-A-2024-15427
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <bill name="bill" contains="originalVersion">
+    <meta>
+      <identification source="#congreso-diputados">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/bill/2026-04-07/102-000001/!main"/>
+          <FRBRuri value="/akn/es/bill/2026-04-07/102-000001"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#gobierno"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="proyecto-de-reforma-constitucional"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/bill/2026-04-07/102-000001/spa@2026-04-13/!main"/>
+          <FRBRuri value="/akn/es/bill/2026-04-07/102-000001/spa@2026-04-13"/>
+          <FRBRdate date="2026-04-13" name="publication"/>
+          <FRBRauthor href="#gobierno"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/bill/2026-04-07/102-000001/spa@2026-04-13.xml"/>
+          <FRBRuri value="/akn/es/bill/2026-04-07/102-000001/spa@2026-04-13.xml"/>
+          <FRBRdate date="2026-04-13" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2026-04-13"
+                   showAs="BOCG Congreso, Serie A, núm. 92-1, de 13/04/2026 (Texto del proyecto)"
+                   name="bocg"
+                   href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-1.PDF"/>
+
+      <classification source="#congreso-diputados">
+        <keyword value="reforma-constitucional" showAs="reforma constitucional" dictionary="#congreso-topics"/>
+        <keyword value="articulo-43-ce" showAs="artículo 43 de la Constitución Española" dictionary="#congreso-topics"/>
+        <keyword value="interrupcion-voluntaria-embarazo" showAs="interrupción voluntaria del embarazo (IVE)" dictionary="#congreso-topics"/>
+        <keyword value="aborto" showAs="aborto" dictionary="#congreso-topics"/>
+        <keyword value="derechos-mujeres" showAs="derechos de las mujeres" dictionary="#congreso-topics"/>
+        <keyword value="igualdad-genero" showAs="igualdad de género" dictionary="#congreso-topics"/>
+        <keyword value="salud-publica" showAs="salud pública" dictionary="#congreso-topics"/>
+        <keyword value="derechos-sexuales-reproductivos" showAs="derechos sexuales y reproductivos" dictionary="#congreso-topics"/>
+        <keyword value="autodeterminacion-personal" showAs="autodeterminación personal" dictionary="#congreso-topics"/>
+        <keyword value="principios-rectores-titulo-i" showAs="principios rectores de la política social y económica (capítulo III, título I CE)" dictionary="#congreso-topics"/>
+      </classification>
+
+      <lifecycle source="#congreso-diputados">
+        <eventRef date="2025-10-14" refersTo="#anteproyecto-aprobado-cm"
+                  source="#evt-anteproyecto-cm"
+                  showAs="Aprobación del Anteproyecto por el Consejo de Ministros y acuerdo de solicitud de dictamen al Consejo de Estado"
+                  chamber="ejecutivo"/>
+        <eventRef date="2026-02-26" refersTo="#dictamen-consejo-estado"
+                  source="#evt-dictamen-ce"
+                  showAs="Dictamen del Pleno del Consejo de Estado: aprobado por 16 votos a favor / 4 en contra, con 2 votos particulares (Herrero y Rodríguez de Miñón con adhesiones de Michavila Núñez, Sanz Alonso y Aparicio Pérez; López Calderón). Avala constitucionalidad pero recomienda encaje natural en art. 15 CE en lugar de art. 43"
+                  chamber="ejecutivo"/>
+        <eventRef date="2026-04-07" refersTo="#submitted"
+                  source="#evt-proyecto-cm"
+                  showAs="Aprobación del Proyecto Final por el Consejo de Ministros (con redacción modificada tras dictamen CE: 'Se reconoce el derecho...' → 'Los poderes públicos garantizarán...') y remisión a las Cortes Generales — presentación formal del proyecto"
+                  chamber="ejecutivo"/>
+        <eventRef date="2026-04-09" refersTo="#calificacion-mesa-congreso"
+                  source="#evt-calificacion-mesa"
+                  showAs="Calificación por la Mesa del Congreso de los Diputados: encomienda dictamen a la Comisión Constitucional por el procedimiento de urgencia (arts. 93, 109 por remisión 146.1 del Reglamento del Congreso); apertura del plazo de enmiendas a la totalidad hasta el 20-abr-2026 a las 14:00 (art. 91 del Reglamento)"
+                  chamber="congreso"/>
+        <eventRef date="2026-04-13" refersTo="#publicacion-bocg-92-1"
+                  source="#evt-publicacion-proyecto"
+                  showAs="Publicación del proyecto en BOCG-15-A-92-1 (Serie A — Proyectos de Ley)"
+                  chamber="congreso"/>
+        <eventRef date="2026-04-20" refersTo="#cierre-plazo-enmiendas-totalidad"
+                  source="#evt-cierre-plazo-enmiendas"
+                  showAs="Cierre del plazo de presentación de enmiendas a la totalidad (a las 14:00, conforme al acuerdo de la Mesa)"
+                  chamber="congreso"/>
+        <eventRef date="2026-04-21" refersTo="#publicacion-bocg-92-2"
+                  source="#evt-publicacion-enmiendas-totalidad"
+                  showAs="Publicación de las enmiendas a la totalidad (de devolución) presentadas por los Grupos Parlamentarios Popular en el Congreso y VOX en BOCG-15-A-92-2"
+                  chamber="congreso"/>
+        <eventRef date="2026-04-27" refersTo="#mocion-senado-paralizar"
+                  source="#evt-mocion-senado"
+                  showAs="Aprobación por la Comisión Constitucional del Senado (sesión 24, S011003-24-1) de la moción 661/001976 del Grupo Parlamentario Popular en el Senado, que insta al Gobierno a no continuar con la tramitación del proyecto en tanto no se alcance el consenso necesario; cobertura del debate en DS_C_15_679"
+                  chamber="senado"/>
+        <eventRef date="2026-04-30" refersTo="#debate-totalidad-pleno-congreso"
+                  source="#evt-debate-totalidad"
+                  showAs="Debate de las enmiendas a la totalidad en el Pleno del Congreso (sesión 177, votación 12, 30-abr-2026 12:51): RECHAZADAS las enmiendas con 348 presentes, 171 a favor (PP+Vox+UPN), 177 en contra (PSOE+Sumar+ERC+EH Bildu+Junts+PNV+Podemos+BNG+CC), 0 abstenciones, 2 no votan. El proyecto continúa su tramitación en la Comisión Constitucional"
+                  chamber="congreso"/>
+      </lifecycle>
+
+      <workflow source="#congreso-diputados">
+        <step date="2025-10-14" refersTo="#anteproyecto-aprobado-cm"
+              source="#evt-anteproyecto-cm"
+              agent="#consejo-ministros" role="#role-iniciador-legislativo"
+              outcome="anteproyecto-aprobado">
+          <p>El Consejo de Ministros aprueba el anteproyecto de reforma constitucional del artículo 43 CE y acuerda solicitar dictamen del Consejo de Estado conforme a los artículos 21 y 22 de la Ley Orgánica 3/1980 del Consejo de Estado.</p>
+        </step>
+        <step date="2026-02-26" refersTo="#dictamen-consejo-estado"
+              source="#evt-dictamen-ce"
+              agent="#consejo-estado" role="#role-organo-consultivo"
+              outcome="dictamen-favorable-con-reservas">
+          <p>El Pleno del Consejo de Estado emite dictamen sobre el anteproyecto. Aprobado por mayoría (16 a favor, 4 en contra) con dos votos particulares: el de Miguel Herrero y Rodríguez de Miñón (con adhesiones de Michavila Núñez, Sanz Alonso y Aparicio Pérez), que califica la reforma de "fraude a la Constitución" por usar el procedimiento del art. 167 en lugar del art. 168, y el de López Calderón. La tesis mayoritaria avala la constitucionalidad pero recomienda que el encaje natural sería el artículo 15 CE (derechos fundamentales) en lugar del artículo 43 CE (principios rectores).</p>
+        </step>
+        <step date="2026-04-07" refersTo="#proyecto-aprobado-cm"
+              source="#evt-proyecto-cm"
+              agent="#consejo-ministros" role="#role-iniciador-legislativo"
+              outcome="proyecto-aprobado-y-remitido">
+          <p>El Consejo de Ministros aprueba el proyecto final, que incorpora las observaciones del dictamen CE modificando la redacción ("Se reconoce el derecho..." → "Los poderes públicos garantizarán..."). Acuerda la remisión a las Cortes Generales. Comparecencia de la Ministra de Igualdad Ana Redondo y la Ministra de Sanidad Elma Saiz en rueda de prensa posterior.</p>
+        </step>
+        <step date="2026-04-09" refersTo="#calificacion-mesa-congreso"
+              source="#evt-calificacion-mesa"
+              agent="#mesa-congreso" role="#role-mesa-camara"
+              outcome="calificado-tramitacion-urgencia">
+          <p>La Mesa del Congreso de los Diputados, en su reunión del 9 de abril de 2026, califica el proyecto de reforma constitucional 102/000001, encomendando dictamen por el procedimiento de urgencia (arts. 93 y 109 por remisión del 146.1 del Reglamento del Congreso) a la Comisión Constitucional, y abre el plazo de enmiendas a la totalidad que finalizará el 20-abr-2026 a las 14:00 (art. 91 del Reglamento). Acuerdo firmado por el Secretario General del Congreso, Fernando Galindo Elola-Olaso.</p>
+        </step>
+        <step date="2026-04-13" refersTo="#publicacion-bocg-92-1"
+              source="#evt-publicacion-proyecto"
+              agent="#congreso-diputados" role="#role-publicacion-oficial"
+              outcome="publicado">
+          <p>Publicación oficial del texto del proyecto en BOCG Congreso de los Diputados, Serie A — Proyectos de Ley, núm. 92-1.</p>
+        </step>
+        <step date="2026-04-20" refersTo="#cierre-plazo-enmiendas-totalidad"
+              source="#evt-cierre-plazo-enmiendas"
+              agent="#mesa-congreso" role="#role-mesa-camara"
+              outcome="plazo-cerrado">
+          <p>Cierre del plazo de presentación de enmiendas a la totalidad de devolución a las 14:00, conforme al acuerdo de calificación de la Mesa.</p>
+        </step>
+        <step date="2026-04-21" refersTo="#publicacion-bocg-92-2"
+              source="#evt-publicacion-enmiendas-totalidad"
+              agent="#congreso-diputados" role="#role-publicacion-oficial"
+              outcome="publicado">
+          <p>Publicación en BOCG-15-A-92-2 de las enmiendas a la totalidad presentadas por el Grupo Parlamentario Popular en el Congreso y por el Grupo Parlamentario VOX. Ambas son enmiendas de devolución del proyecto al Gobierno.</p>
+        </step>
+        <step date="2026-04-27" refersTo="#mocion-senado-paralizar"
+              source="#evt-mocion-senado"
+              agent="#comision-constitucional-senado" role="#role-comision"
+              outcome="mocion-aprobada-no-vinculante">
+          <p>La Comisión Constitucional del Senado (sesión nº 24, código S011003-24-1) aprueba por mayoría absoluta del Grupo Popular la moción 661/001976 que insta al Gobierno a "no continuar con la tramitación de su proyecto de reforma del artículo 43 de la Constitución en tanto no se alcance el consenso necesario". Carácter no vinculante. Intervinientes verificados: Estefanía Beltrán de Heredia Arroniz (GPV), María Mar Caballero Martínez (GPMX-UPN). Cobertura del debate en DS_C_15_679.</p>
+        </step>
+        <step date="2026-04-30" refersTo="#debate-totalidad-pleno-congreso"
+              source="#evt-debate-totalidad"
+              agent="#pleno-congreso" role="#role-pleno"
+              outcome="enmiendas-totalidad-rechazadas-bill-continua">
+          <p>El Pleno del Congreso de los Diputados (sesión nº 177) celebra el debate de las enmiendas a la totalidad de devolución. Tras intervenciones verificadas de Silvia Franco (GP Popular), Joaquín Robles López (GP VOX), Verónica Martínez (GP Sumar), Cristina Narbona (GP Socialista), Pilar Vallugera (GP ERC), Pilar Calvo (GP Junts), Maribel Vaquero (GP PNV), Ione Belarra (GP Podemos), Néstor Rego (GP BNG), Águeda Micó (GP Mixto-Compromís) y Alberto Catalán (GP Mixto-UPN), y cierre del debate por la Ministra de Igualdad Ana Redondo, se vota la totalidad (votación nº 12, 12:51:59): 348 presentes, 171 a favor de las enmiendas (PP+Vox+UPN), 177 en contra (PSOE+Sumar+ERC+EH Bildu+Junts+PNV+Podemos+BNG+CC), 0 abstenciones, 2 no votan. Las enmiendas a la totalidad quedan RECHAZADAS y el proyecto continúa su tramitación en la Comisión Constitucional.</p>
+        </step>
+      </workflow>
+
+      <analysis source="#congreso-diputados">
+        <activeModifications>
+          <textualMod type="insertion" eId="mod_insercion_apartado_4_art_43">
+            <source href="#evt-publicacion-proyecto"/>
+            <destination href="/akn/es/act/1978-12-27/constitucion-espanola/!main#art_43"/>
+            <new>
+              <quotedStructure>
+                <hcontainer name="apartado" eId="art_43__para_4">
+                  <num>4.</num>
+                  <content>
+                    <p>Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio.</p>
+                  </content>
+                </hcontainer>
+              </quotedStructure>
+            </new>
+            <previous>
+              <p>El artículo 43 de la Constitución Española vigente solo contiene los apartados 1, 2 y 3. La reforma INSERTA un nuevo apartado 4 sin modificar los apartados existentes.</p>
+            </previous>
+          </textualMod>
+        </activeModifications>
+        <passiveModifications>
+          <p>Este proyecto es la fuente de un cambio textual que, de aprobarse en ambas cámaras por 3/5 (art. 167 CE), modificará la Constitución Española. No es modificado por otras normas.</p>
+        </passiveModifications>
+        <parliamentary>
+          <p>Procedimiento de reforma ordinaria (art. 167 CE). Requisito: aprobación por mayoría de 3/5 en cada cámara (Congreso: 210 de 350; Senado: 159 de 265 actuales). En caso de no alcanzarse en el Senado pero sí en el Congreso por 2/3 con mayoría absoluta del Senado, se constituye Comisión Mixta. Tramitación bicameral plena, sin disolución de Cortes ni referéndum (a diferencia del art. 168 CE para reforma agravada).</p>
+        </parliamentary>
+      </analysis>
+
+      <references source="#congreso-diputados">
+        <!-- Eventos -->
+        <TLCEvent eId="evt-anteproyecto-cm"
+                  href="/akn/es/event/2025-10-14/aprobacion-anteproyecto-cm"
+                  showAs="Aprobación del anteproyecto por el Consejo de Ministros (14-oct-2025)"/>
+        <TLCEvent eId="evt-dictamen-ce"
+                  href="/akn/es/event/2026-02-26/dictamen-consejo-estado"
+                  showAs="Dictamen del Pleno del Consejo de Estado (26-feb-2026)"/>
+        <TLCEvent eId="evt-proyecto-cm"
+                  href="/akn/es/event/2026-04-07/aprobacion-proyecto-cm"
+                  showAs="Aprobación del proyecto final por el Consejo de Ministros (7-abr-2026)"/>
+        <TLCEvent eId="evt-calificacion-mesa"
+                  href="/akn/es/event/2026-04-09/calificacion-mesa-congreso"
+                  showAs="Calificación por la Mesa del Congreso (9-abr-2026)"/>
+        <TLCEvent eId="evt-publicacion-proyecto"
+                  href="/akn/es/event/2026-04-13/publicacion-bocg-92-1"
+                  showAs="Publicación del proyecto en BOCG-15-A-92-1 (13-abr-2026)"/>
+        <TLCEvent eId="evt-cierre-plazo-enmiendas"
+                  href="/akn/es/event/2026-04-20/cierre-plazo-enmiendas-totalidad"
+                  showAs="Cierre del plazo de enmiendas a la totalidad (20-abr-2026)"/>
+        <TLCEvent eId="evt-publicacion-enmiendas-totalidad"
+                  href="/akn/es/event/2026-04-21/publicacion-bocg-92-2"
+                  showAs="Publicación de las enmiendas a la totalidad en BOCG-15-A-92-2 (21-abr-2026)"/>
+        <TLCEvent eId="evt-mocion-senado"
+                  href="/akn/es/event/2026-04-27/mocion-661-001976-senado"
+                  showAs="Aprobación de la moción 661/001976 por la Comisión Constitucional del Senado (27-abr-2026)"/>
+        <TLCEvent eId="evt-debate-totalidad"
+                  href="/akn/es/event/2026-04-30/debate-totalidad-pleno-congreso"
+                  showAs="Debate y rechazo de las enmiendas a la totalidad en el Pleno del Congreso (30-abr-2026)"/>
+
+        <!-- Organizaciones del Estado y de las Cortes -->
+        <TLCOrganization eId="gobierno"
+                         href="/akn/es/org/gobierno-espana"
+                         showAs="Gobierno de España (PSOE-Sumar)"/>
+        <TLCOrganization eId="consejo-ministros"
+                         href="/akn/es/org/consejo-ministros"
+                         showAs="Consejo de Ministros del Gobierno de España"/>
+        <TLCOrganization eId="consejo-estado"
+                         href="/akn/es/org/consejo-estado"
+                         showAs="Consejo de Estado (órgano consultivo supremo, LO 3/1980)"/>
+        <TLCOrganization eId="cortes-generales"
+                         href="/akn/es/org/cortes-generales"
+                         showAs="Cortes Generales"/>
+        <TLCOrganization eId="congreso-diputados"
+                         href="/akn/es/org/congreso-diputados"
+                         showAs="Congreso de los Diputados (XV Legislatura)"/>
+        <TLCOrganization eId="mesa-congreso"
+                         href="/akn/es/org/mesa-congreso-diputados"
+                         showAs="Mesa del Congreso de los Diputados"/>
+        <TLCOrganization eId="comision-constitucional-congreso"
+                         href="/akn/es/org/comision-constitucional-congreso"
+                         showAs="Comisión Constitucional del Congreso de los Diputados"/>
+        <TLCOrganization eId="pleno-congreso"
+                         href="/akn/es/org/pleno-congreso-diputados"
+                         showAs="Pleno del Congreso de los Diputados"/>
+        <TLCOrganization eId="senado"
+                         href="/akn/es/org/senado-espana"
+                         showAs="Senado de España (XV Legislatura)"/>
+        <TLCOrganization eId="mesa-senado"
+                         href="/akn/es/org/mesa-senado"
+                         showAs="Mesa del Senado de España"/>
+        <TLCOrganization eId="comision-constitucional-senado"
+                         href="/akn/es/org/comision-constitucional-senado"
+                         showAs="Comisión Constitucional del Senado (S011003)"/>
+        <TLCOrganization eId="ministerio-igualdad"
+                         href="/akn/es/org/ministerio-igualdad"
+                         showAs="Ministerio de Igualdad"/>
+        <TLCOrganization eId="ministerio-sanidad"
+                         href="/akn/es/org/ministerio-sanidad"
+                         showAs="Ministerio de Sanidad"/>
+
+        <!-- Grupos Parlamentarios (XV Legislatura) -->
+        <TLCOrganization eId="gp-socialista-congreso"
+                         href="/akn/es/org/grupo-parlamentario-socialista-congreso"
+                         showAs="Grupo Parlamentario Socialista en el Congreso (PSOE)"/>
+        <TLCOrganization eId="gp-sumar-congreso"
+                         href="/akn/es/org/grupo-parlamentario-sumar-congreso"
+                         showAs="Grupo Parlamentario Plurinacional SUMAR"/>
+        <TLCOrganization eId="gp-popular-congreso"
+                         href="/akn/es/org/grupo-parlamentario-popular-congreso"
+                         showAs="Grupo Parlamentario Popular en el Congreso (PP)"/>
+        <TLCOrganization eId="gp-vox-congreso"
+                         href="/akn/es/org/grupo-parlamentario-vox-congreso"
+                         showAs="Grupo Parlamentario VOX en el Congreso"/>
+        <TLCOrganization eId="gp-republicano-congreso"
+                         href="/akn/es/org/grupo-parlamentario-republicano-congreso"
+                         showAs="Grupo Parlamentario Republicano (ERC)"/>
+        <TLCOrganization eId="gp-junts-congreso"
+                         href="/akn/es/org/grupo-parlamentario-junts-congreso"
+                         showAs="Grupo Parlamentario Junts per Catalunya"/>
+        <TLCOrganization eId="gp-vasco-congreso"
+                         href="/akn/es/org/grupo-parlamentario-vasco-congreso"
+                         showAs="Grupo Parlamentario Vasco (EAJ-PNV)"/>
+        <TLCOrganization eId="gp-mixto-congreso"
+                         href="/akn/es/org/grupo-parlamentario-mixto-congreso"
+                         showAs="Grupo Parlamentario Mixto del Congreso (incluye Podemos, BNG, CC, UPN, EH Bildu y otros)"/>
+        <TLCOrganization eId="gp-popular-senado"
+                         href="/akn/es/org/grupo-parlamentario-popular-senado"
+                         showAs="Grupo Parlamentario Popular en el Senado (mayoría absoluta)"/>
+
+        <!-- Personas clave verificadas -->
+        <TLCPerson eId="pedro-sanchez"
+                   href="/akn/es/person/pedro-sanchez-perez-castejon"
+                   showAs="Pedro Sánchez Pérez-Castejón, Presidente del Gobierno"/>
+        <TLCPerson eId="ana-redondo"
+                   href="/akn/es/person/ana-redondo-garcia"
+                   showAs="Ana Redondo García, Ministra de Igualdad"/>
+        <TLCPerson eId="elma-saiz"
+                   href="/akn/es/person/elma-saiz-delgado"
+                   showAs="Elma Saiz Delgado, Ministra de Inclusión, Seguridad Social y Migraciones (compareció junto a Redondo el 7-abr-2026)"/>
+        <TLCPerson eId="fernando-galindo-elola-olaso"
+                   href="/akn/es/person/fernando-galindo-elola-olaso"
+                   showAs="Fernando Galindo Elola-Olaso, Secretario General del Congreso de los Diputados (firmante del acuerdo de calificación de la Mesa)"/>
+        <TLCPerson eId="dip-silvia-franco"
+                   href="/akn/es/person/silvia-franco"
+                   showAs="Silvia Franco, diputada (Grupo Parlamentario Popular)"/>
+        <TLCPerson eId="dip-joaquin-robles-lopez"
+                   href="/akn/es/person/joaquin-robles-lopez"
+                   showAs="Joaquín Robles López, diputado (Grupo Parlamentario VOX)"/>
+        <TLCPerson eId="dip-veronica-martinez"
+                   href="/akn/es/person/veronica-martinez"
+                   showAs="Verónica Martínez, diputada (Grupo Parlamentario Sumar)"/>
+        <TLCPerson eId="dip-cristina-narbona"
+                   href="/akn/es/person/cristina-narbona"
+                   showAs="Cristina Narbona, diputada (Grupo Parlamentario Socialista)"/>
+        <TLCPerson eId="dip-pilar-vallugera"
+                   href="/akn/es/person/pilar-vallugera"
+                   showAs="Pilar Vallugera, diputada (Grupo Parlamentario Republicano - ERC)"/>
+        <TLCPerson eId="dip-pilar-calvo"
+                   href="/akn/es/person/pilar-calvo"
+                   showAs="Pilar Calvo, diputada (Grupo Parlamentario Junts)"/>
+        <TLCPerson eId="dip-maribel-vaquero"
+                   href="/akn/es/person/maribel-vaquero"
+                   showAs="Maribel Vaquero, diputada (Grupo Parlamentario Vasco - PNV)"/>
+        <TLCPerson eId="dip-ione-belarra"
+                   href="/akn/es/person/ione-belarra"
+                   showAs="Ione Belarra, diputada (Podemos, GP Mixto)"/>
+        <TLCPerson eId="dip-nestor-rego"
+                   href="/akn/es/person/nestor-rego"
+                   showAs="Néstor Rego, diputado (BNG, GP Mixto)"/>
+        <TLCPerson eId="dip-agueda-mico"
+                   href="/akn/es/person/agueda-mico"
+                   showAs="Águeda Micó, diputada (Compromís, GP Mixto)"/>
+        <TLCPerson eId="dip-alberto-catalan"
+                   href="/akn/es/person/alberto-catalan"
+                   showAs="Alberto Catalán, diputado (UPN, GP Mixto)"/>
+        <TLCPerson eId="sen-vicente-tirado"
+                   href="/akn/es/person/vicente-tirado"
+                   showAs="Vicente Tirado, senador (Grupo Parlamentario Popular en el Senado)"/>
+        <TLCPerson eId="sen-susana-diaz"
+                   href="/akn/es/person/susana-diaz"
+                   showAs="Susana Díaz, senadora (Grupo Parlamentario Socialista en el Senado)"/>
+        <TLCPerson eId="sen-maria-mar-caballero"
+                   href="/akn/es/person/maria-mar-caballero-martinez"
+                   showAs="María Mar Caballero Martínez, senadora (UPN, GP Mixto Senado)"/>
+        <TLCPerson eId="sen-beltran-heredia-arroniz"
+                   href="/akn/es/person/estefania-beltran-heredia-arroniz"
+                   showAs="Estefanía Beltrán de Heredia Arroniz, senadora (GP Vasco - PNV)"/>
+
+        <!-- Roles -->
+        <TLCRole eId="role-iniciador-legislativo"
+                 href="/akn/es/role/iniciador-legislativo"
+                 showAs="Iniciador del procedimiento legislativo (art. 87.1 CE)"/>
+        <TLCRole eId="role-organo-consultivo"
+                 href="/akn/es/role/organo-consultivo-supremo"
+                 showAs="Órgano consultivo supremo del Gobierno (art. 107 CE, LO 3/1980)"/>
+        <TLCRole eId="role-mesa-camara"
+                 href="/akn/es/role/mesa-camara-parlamentaria"
+                 showAs="Mesa de la cámara parlamentaria (órgano rector)"/>
+        <TLCRole eId="role-comision"
+                 href="/akn/es/role/comision-parlamentaria"
+                 showAs="Comisión parlamentaria competente"/>
+        <TLCRole eId="role-pleno"
+                 href="/akn/es/role/pleno-camara"
+                 showAs="Pleno de la cámara"/>
+        <TLCRole eId="role-publicacion-oficial"
+                 href="/akn/es/role/publicacion-oficial-cortes"
+                 showAs="Publicación oficial en el Boletín Oficial de las Cortes Generales"/>
+
+        <!-- Conceptos -->
+        <TLCConcept eId="concept-reforma-constitucional-ordinaria"
+                    href="/akn/es/concept/reforma-constitucional-ordinaria-art-167-ce"
+                    showAs="Procedimiento de reforma constitucional ordinaria (art. 167 CE: 3/5 de cada cámara)"/>
+        <TLCConcept eId="concept-tramitacion-urgencia"
+                    href="/akn/es/concept/tramitacion-urgencia-congreso"
+                    showAs="Tramitación por procedimiento de urgencia (arts. 93-94 Reglamento del Congreso)"/>
+        <TLCConcept eId="concept-enmienda-totalidad-devolucion"
+                    href="/akn/es/concept/enmienda-totalidad-devolucion"
+                    showAs="Enmienda a la totalidad de devolución del proyecto al Gobierno"/>
+        <TLCConcept eId="concept-derecho-ive"
+                    href="/akn/es/concept/derecho-interrupcion-voluntaria-embarazo"
+                    showAs="Derecho a la interrupción voluntaria del embarazo (vinculado a arts. 15, 10.1 y 43 CE; doctrina STC 44/2023, 92/2024, 75/2024, 53/1985, 118/2019)"/>
+
+        <!-- Referencias jurídicas -->
+        <TLCReference eId="ref-stc-44-2023"
+                      href="/akn/es/judgment/2023-05-09/stc-44-2023"
+                      showAs="STC 44/2023 de 9 de mayo (Tribunal Constitucional, BOE-A-2023-13955) — base doctrinal del proyecto, citada literalmente en la exposición de motivos"/>
+        <TLCReference eId="ref-stc-53-1985"
+                      href="/akn/es/judgment/1985-04-11/stc-53-1985"
+                      showAs="STC 53/1985 de 11 de abril (Tribunal Constitucional, BOE-T-1985-9096) — primera sentencia histórica sobre IVE, citada en la exposición de motivos"/>
+        <TLCReference eId="ref-stc-118-2019"
+                      href="/akn/es/judgment/2019-10-16/stc-118-2019"
+                      showAs="STC 118/2019 de 16 de octubre (citada en la exposición de motivos sobre contenido mínimo del derecho a la protección de la salud)"/>
+        <TLCReference eId="ref-stc-75-2024"
+                      href="/akn/es/judgment/2024-05-08/stc-75-2024"
+                      showAs="STC 75/2024 de 8 de mayo (citada en la exposición de motivos como aval de LO 4/2022 sobre acoso en clínicas IVE)"/>
+        <TLCReference eId="ref-lo-9-1985"
+                      href="/akn/es/act/1985-07-05/lo-9-1985"
+                      showAs="Ley Orgánica 9/1985 de 5 de julio (despenalización inicial de supuestos de IVE — art. 417 bis CP, citada en exposición de motivos)"/>
+        <TLCReference eId="ref-lo-2-2010"
+                      href="/akn/es/act/2010-03-03/lo-2-2010"
+                      showAs="Ley Orgánica 2/2010 de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo (BOE-A-2010-3514)"/>
+        <TLCReference eId="ref-lo-1-2023"
+                      href="/akn/es/act/2023-02-28/lo-1-2023"
+                      showAs="Ley Orgánica 1/2023 de 28 de febrero (modifica LO 2/2010, BOE-A-2023-5364, citada en exposición de motivos)"/>
+        <TLCReference eId="ref-lo-4-2022"
+                      href="/akn/es/act/2022-04-12/lo-4-2022"
+                      showAs="Ley Orgánica 4/2022 de 12 de abril (modifica CP introduciendo art. 172 quater sobre acoso clínicas IVE, citada en exposición de motivos)"/>
+        <TLCReference eId="ref-lo-11-2015"
+                      href="/akn/es/act/2015-09-21/lo-11-2015"
+                      showAs="Ley Orgánica 11/2015 de 21 de septiembre (revertida por LO 1/2023 sobre consentimiento parental menores 16-17 años, citada en exposición de motivos)"/>
+        <TLCReference eId="ref-lo-3-2007"
+                      href="/akn/es/act/2007-03-22/lo-3-2007"
+                      showAs="Ley Orgánica 3/2007 de 22 de marzo, para la igualdad efectiva de mujeres y hombres (BOE-A-2007-6115)"/>
+        <TLCReference eId="ref-ce-1978"
+                      href="/akn/es/act/1978-12-27/constitucion-espanola"
+                      showAs="Constitución Española de 1978 (BOE-A-1978-31229) — texto que se reforma"/>
+        <TLCReference eId="ref-resolucion-pe-2024-2655"
+                      href="/akn/eu/resolution/2024-04-11/2024-2655-rsp"
+                      showAs="Resolución del Parlamento Europeo de 11 de abril de 2024 [2024/2655 (RSP)] sobre la inclusión del derecho al aborto en la Carta de Derechos Fundamentales de la UE (citada en exposición de motivos)"/>
+
+        <!-- Reglamento -->
+        <TLCReference eId="ref-reglamento-congreso"
+                      href="/akn/es/regulation/1982-02-10/reglamento-congreso"
+                      showAs="Reglamento del Congreso de los Diputados (referencias arts. 91, 93, 109, 146.1 sobre tramitación de urgencia y plazo enmiendas)"/>
+      </references>
+
+      <proprietary source="#congreso-diputados">
+        <akndiff:nativeId>102-000001</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.congreso.es/es/iniciativas-organo?p_p_id=iniciativas&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;_iniciativas_mode=mostrarDetalle&amp;_iniciativas_legislatura=XV&amp;_iniciativas_id=102/000001</akndiff:sourceUrl>
+        <akndiff:billStatus normalized="floor_debate">En plazo de enmiendas al articulado en la Comisión Constitucional, tras superar las enmiendas a la totalidad en el Pleno (30-abr-2026: 177 contra / 171 a favor)</akndiff:billStatus>
+        <akndiff:urgency>tramitación de urgencia (arts. 93 y 109 por remisión 146.1 del Reglamento del Congreso)</akndiff:urgency>
+        <akndiff:procedureFile>102/000001</akndiff:procedureFile>
+        <akndiff:expedientCode>102-000001</akndiff:expedientCode>
+        <akndiff:legislatura>XV</akndiff:legislatura>
+        <akndiff:reformType>reforma constitucional ordinaria (art. 167 CE)</akndiff:reformType>
+        <akndiff:requiredMajority>3/5 de cada cámara</akndiff:requiredMajority>
+
+        <!-- Sponsor: el Gobierno (no es persona individual, sino órgano colegiado) -->
+        <akndiff:sponsor refersTo="#gobierno" role="#role-iniciador-legislativo"/>
+
+        <!-- Resultado verificado de la votación de totalidad (sesión 177, votación 12) -->
+        <akndiff:vote date="2026-04-30" result="enmiendas-totalidad-rechazadas-bill-continua"
+                      source="#evt-debate-totalidad">
+          <akndiff:date>2026-04-30T12:51:59+02:00</akndiff:date>
+          <akndiff:sessionNumber>177</akndiff:sessionNumber>
+          <akndiff:voteNumber>12</akndiff:voteNumber>
+          <akndiff:totalPresent>348</akndiff:totalPresent>
+          <akndiff:total>171/177/0/2</akndiff:total>
+          <akndiff:for>
+            <akndiff:count>171</akndiff:count>
+            <akndiff:groupSummary>GP Popular en el Congreso + GP VOX + UPN (a favor de devolver el proyecto al Gobierno)</akndiff:groupSummary>
+          </akndiff:for>
+          <akndiff:against>
+            <akndiff:count>177</akndiff:count>
+            <akndiff:groupSummary>GP Socialista + GP Sumar + GP Republicano (ERC) + GP Junts + GP Vasco (PNV) + Podemos + EH Bildu + BNG + Coalición Canaria (en contra de la devolución; el proyecto continúa)</akndiff:groupSummary>
+          </akndiff:against>
+          <akndiff:abstain>
+            <akndiff:count>0</akndiff:count>
+          </akndiff:abstain>
+          <akndiff:notVote>
+            <akndiff:count>2</akndiff:count>
+          </akndiff:notVote>
+        </akndiff:vote>
+
+        <!-- Identificadores oficiales paralelos del expediente -->
+        <akndiff:identifier scheme="expediente-congreso" value="102/000001" isCanonical="true"/>
+        <akndiff:identifier scheme="bocg-publicacion-proyecto" value="BOCG-15-A-92-1"/>
+        <akndiff:identifier scheme="bocg-publicacion-enmiendas" value="BOCG-15-A-92-2"/>
+
+        <akndiff:researchNotes><![CDATA[
+        Friction log para ES / bill 102-000001 (modelado completo Fase 4 con opción B, lifecycle+workflow+analysis):
+
+        1. SPONSOR ES EL GOBIERNO (entidad colegiada), NO una persona. BillTable.sponsors espera persona individual con party+chamber+externalId. Para el proyecto 102/000001, el autor formal es "El Gobierno", representado por el Consejo de Ministros. Esta fricción ya estaba documentada en el modelado de la Ley 1/2026 (bill 121-000036) y persiste idéntica aquí. Modelamos sponsor como organización (#gobierno) en akndiff:sponsor; no en BillTable.sponsors-array (queda vacío en la proyección SQL).
+
+        2. PROYECTO DE REFORMA CONSTITUCIONAL ≠ PROYECTO DE LEY ORDINARIA. La serie 102 (reforma constitucional) es distinta de la serie 121 (proyecto de ley) y 122 (proposición de ley) del Congreso. AKN no distingue subtypes de bill a nivel de schema; lo capturamos en FRBRsubtype="proyecto-de-reforma-constitucional" y en akndiff:reformType. La SQL DocumentTable.type sigue siendo 'bill' para todos.
+
+        3. WORKFLOW + ANALYSIS SON LAS PRIMERAS SECCIONES PRIMARIAS DEL PROYECTO. Según el commit "better bill page", el corpus actual (Ley 1/2026, AI Act) solo tiene <lifecycle>, no <workflow> ni <analysis>. Este bill 102/000001 es el PRIMER ejemplo del proyecto que cubre las 3 secciones AKN core. La nueva vista UI (/demo/[country]/bill/[id]/) está diseñada para mostrarlas unificadas; este bill activa ese modo completo.
+
+        4. ENTRADA EN VIGOR DIFERIDA. La disposición final única dice "entrará en vigor el mismo día de la publicación de su texto oficial en el Boletín Oficial del Estado". Es decir, NO entrará en vigor cuando el proyecto se apruebe en las Cortes (eso solo lo aprueba), sino cuando se publique en el BOE como reforma constitucional definitiva. Esto añade un sub-evento que aún no tiene lugar en el rito. El AKN core no captura claramente esa cadena: aprobación parlamentaria → sanción real → publicación BOE → entrada en vigor.
+
+        5. VOTACIÓN POR BLOQUE PARLAMENTARIO NO MODELADA EN AKN CORE. La votación oficial publicada por el Congreso en el JSON (https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion177/20260430/Votacion012/VOT_20260430125200.json) contiene el voto individual de los 348 diputados presentes. Ese detalle vive en el debate XML asociado (atcd-15-pl-20260430.xml) y en la extensión akndiff:vote del propio analysis. AKN core (<analysis><parliamentary><voting><count>) solo permite agregados, no voto-por-diputado.
+
+        6. WORKFLOW STEPS COMO PROCEDIMIENTO Y DECISIÓN. AKN <workflow><step> permite expresar quién hizo qué (agent, role, outcome) pero no el "porqué" (motivación política). Las posiciones políticas verificadas de los 12 grupos parlamentarios (con citas literales de Franco, Robles, Vallugera, Calvo, Vaquero, Belarra, Rego, Micó, Catalán, Tirado, Díaz, etc.) se modelan como statement separados, no en <step>.
+
+        7. INSERCIÓN EN <analysis><activeModifications>. Modelamos la inserción del nuevo apartado 4 al art. 43 CE como un <textualMod type="insertion"> con destination apuntando al eId art_43 del act ce-1978. El texto del nuevo apartado va dentro de <quotedStructure>. Este es el primer ejemplo del proyecto que usa esta estructura para una reforma constitucional.
+
+        8. CHANGE_SET TEXTUAL TAMBIÉN EXISTE. Además de <analysis> dentro del bill, hay un documento change_set separado (cs-art-43-vigente-vs-nuevo) que materializa el diff completo del art. 43 (vigente vs. propuesto), siguiendo el modelo akndiff:changeSet. Y un segundo change_set (cs-anteproyecto-vs-proyecto) captura el cambio de redacción introducido tras el dictamen CE entre la versión de oct-2025 ("Se reconoce el derecho...") y abr-2026 ("Los poderes públicos garantizarán...").
+
+        9. PRECEDENTES PROCEDIMENTALES. Este bill cita (vía <TLCReference>) las STC 44/2023 y 92/2024 como base doctrinal. Esa relación está modelada en DocumentLinkTable como derives_from. Las 3 reformas constitucionales previas al art. 167 CE (1992 art. 13.2, 2011 art. 135, 2024 art. 49) NO se modelan en este corpus porque no son del expediente actual; solo se mencionan en researchNotes como contexto histórico.
+
+        10. GAPS ESTRUCTURALES SUSTITUIDOS. El PDF íntegro del Dictamen del Consejo de Estado del 26-feb-2026 NO está publicado online por el sistema español de transparencia. Ver doc dictamen-ce-26-feb-2026 y los statement análisis-presno-28-abr.html y análisis-hayderecho-19-abr.html que reconstruyen ~95% del contenido vía análisis jurídico especializado. Este es el único gap real del corpus, documentado para Fase 5 del experimento.
+        ]]></akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <p><b>PROYECTOS DE LEY</b></p>
+      <p><b>PROYECTO DE REFORMA CONSTITUCIONAL</b></p>
+      <p><b>102/000001</b> Proyecto de reforma del artículo 43 de la Constitución Española.</p>
+      <longTitle>
+        <p>Proyecto de reforma del artículo 43 de la Constitución Española, presentado por el Gobierno de España (PSOE-Sumar) y aprobado por el Consejo de Ministros el 7 de abril de 2026; remitido a las Cortes Generales y calificado por la Mesa del Congreso de los Diputados el 9 de abril de 2026 con número de expediente <ref href="/akn/es/bill/2026-04-07/102-000001">102/000001</ref> de la XV Legislatura, encomendando dictamen por el procedimiento de urgencia a la Comisión Constitucional. Reforma ordinaria del artículo 167 de la <ref href="/akn/es/act/1978-12-27/constitucion-espanola">Constitución Española</ref> que añade un nuevo apartado 4 al artículo 43 CE para garantizar prestacionalmente el derecho de las mujeres a la interrupción voluntaria del embarazo.</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>El presente preamble reproduce literalmente el acuerdo de la Mesa de la Cámara y la exposición de motivos del proyecto, tal y como fueron publicados en el BOCG-15-A-92-1 de 13 de abril de 2026 (cve: BOCG-15-A-92-1).</p>
+
+      <p>ACUERDO DE LA MESA DE LA CÁMARA</p>
+
+      <p>La Mesa de la Cámara, en su reunión del día de hoy, ha adoptado el acuerdo que se indica respecto del asunto de referencia.</p>
+
+      <p>(102) Proyecto de reforma constitucional.</p>
+
+      <p>Autor: <ref href="/akn/es/org/gobierno-espana">Gobierno</ref>.</p>
+
+      <p>Proyecto de reforma del artículo 43 de la Constitución Española.</p>
+
+      <p>Acuerdo:</p>
+
+      <p>Encomendar Dictamen por el procedimiento de urgencia, conforme a los artículos 93 y 109, por remisión del artículo 146.1, todos ellos del <ref href="/akn/es/regulation/1982-02-10/reglamento-congreso">Reglamento del Congreso</ref>, a la <ref href="/akn/es/org/comision-constitucional-congreso">Comisión Constitucional</ref>. Asimismo, publicar en el Boletín Oficial de las Cortes Generales, estableciendo, de acuerdo con el artículo 91 del Reglamento, un plazo de presentación de enmiendas que finalizará el día 20 de abril de 2026, a las 14 horas.</p>
+
+      <p>En ejecución de dicho acuerdo se ordena la publicación de conformidad con el artículo 97 del Reglamento de la Cámara.</p>
+
+      <p>Palacio del Congreso de los Diputados, 9 de abril de 2026.—P.D. <ref href="/akn/es/person/fernando-galindo-elola-olaso">El Secretario General del Congreso de los Diputados, Fernando Galindo Elola-Olaso</ref>.</p>
+
+      <p><b>PROYECTO DE REFORMA DEL ARTÍCULO 43 DE LA CONSTITUCIÓN ESPAÑOLA</b></p>
+
+      <p>Exposición de motivos</p>
+
+      <p>I</p>
+
+      <p>En los años de vigencia de nuestra Constitución, España se ha consolidado como una sociedad democrática avanzada en el reconocimiento y garantía de los derechos fundamentales proclamados en el Título Primero de nuestra Norma Fundamental. Sin embargo, los textos constitucionales no pueden permanecer intangibles si se quiere que continúen sirviendo con fidelidad a los objetivos que se han marcado desde su origen. Las generaciones posteriores a la constituyente tienen el derecho y la obligación de revisar sus formulaciones, adaptándolas y mejorándolas, de cara a lograr una mayor garantía del ejercicio de los derechos que la propia Constitución proclama. En consecuencia, el avance en el reconocimiento jurídico de los derechos y, en lo que ahora interesa, el fortalecimiento de los derechos de libertad y de autodeterminación de las mujeres, así como su protección frente a eventuales dinámicas regresivas, abogan por la incorporación en la Constitución de un mandato a los poderes públicos dirigido a garantizar el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo que deriva del artículo 15 de la Constitución, mediante el establecimiento de las prestaciones y servicios que sean necesarios.</p>
+
+      <p>El derecho de la mujer a decidir libremente respecto a su proyecto de vida y, en consecuencia, su derecho a interrumpir voluntariamente el embarazo «forma parte del contenido constitucionalmente protegido del derecho fundamental a la integridad física y moral (artículo 15 CE) en conexión con la dignidad de la persona y el libre desarrollo de su personalidad como principios rectores del orden político y la paz social (artículo 10.1 CE)», tal y como afirma sin ambages el Tribunal Constitucional español en el fundamento jurídico tercero de la <ref href="/akn/es/judgment/2023-05-09/stc-44-2023">STC 44/2023, de 9 de mayo</ref>.</p>
+
+      <p>En conexión con ello, el Tribunal Constitucional también ha determinado que la interrupción voluntaria del embarazo se vincula con el derecho a la protección de la salud, reconocido en el artículo 43 de la Constitución, entendiendo que existe un deber del Estado de «garantizar que la realización del aborto se llevará a cabo dentro de los límites previstos por el legislador y en las condiciones médicas adecuadas para salvaguardar el derecho a la vida y a la salud de la mujer» (<ref href="/akn/es/judgment/1985-04-11/stc-53-1985">STC 53/1985, de 11 de abril</ref>, FJ 12). Quedan así perfectamente imbricados el derecho a la interrupción voluntaria del embarazo reconocido en el artículo 15 de la Constitución con el derecho a la protección de la salud previsto en su artículo 43.1, que se concreta en el deber de los poderes públicos de «organizar y tutelar la salud pública mediante medidas preventivas y mediante las prestaciones y servicios necesarios» (artículo 43.2 CE).</p>
+
+      <p>El Tribunal Constitucional ha entendido que del derecho a la protección de la salud se desprende un «contenido mínimo que hace reconocible el mandato imperativo que los poderes públicos deben asegurar y prestar (artículo 43 CE) en cualquier circunstancia a cualquier persona con el fin de preservar el derecho fundamental a la vida y la integridad física contenido en el artículo 15 CE» (STC 118/2019, de 16 de octubre, FJ 4). De ello se deriva que, en el ámbito de la interrupción voluntaria del embarazo, forman parte del derecho a la protección de la salud cuantas prestaciones sanitarias, asistenciales y de todo orden sean necesarias para garantizar que su práctica se realice en las mejores condiciones, siendo exigible su garantía a los poderes públicos, mediante el establecimiento de las prestaciones y servicios que sean necesarios.</p>
+
+      <p>II</p>
+
+      <p>Esta libertad básica de las mujeres fue perseguida penalmente durante muchos años en nuestro país, hasta que la Ley Orgánica 9/1985, de 5 de julio, de reforma del artículo 417 bis del Código Penal, despenalizó determinados supuestos de interrupción voluntaria del embarazo. Ahora bien, fue a partir de la <ref href="/akn/es/act/2010-03-03/lo-2-2010">Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo</ref>, cuando España se incorporó al conjunto de países más avanzados en la protección de los derechos de las mujeres, estableciendo que los poderes públicos están obligados a no interferir en estas decisiones, que corresponden exclusivamente al ámbito de autodeterminación personal de las mujeres en las primeras semanas de la gestación. Esta ley orgánica también incorporó obligaciones vinculadas a la responsabilidad institucional de todas las administraciones públicas competentes en la garantía del libre ejercicio del derecho a la interrupción voluntaria del embarazo, y fue avalada por el Tribunal Constitucional en la mencionada Sentencia 44/2023, de 9 de mayo.</p>
+
+      <p>Posteriormente, la Ley Orgánica 4/2022, de 12 de abril, por la que se modifica la Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal, introdujo en el Código Penal el artículo 172 quater para penalizar el acoso a las mujeres que acuden a clínicas para la interrupción voluntaria del embarazo, reforma que cuenta con el aval del Tribunal Constitucional en la <ref href="/akn/es/judgment/2024-05-08/stc-75-2024">Sentencia 75/2024, de 8 de mayo</ref>. Finalmente, en virtud de la <ref href="/akn/es/act/2023-02-28/lo-1-2023">Ley Orgánica 1/2023, de 28 de febrero</ref>, por la que se modifica la Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo, entre otras modificaciones tendentes a garantizar la vigencia efectiva de los derechos sexuales y reproductivos de las mujeres, se revirtió la modificación operada por la Ley Orgánica 11/2015, de 21 de septiembre, reconociendo de nuevo el derecho de las menores de edad de 16 y 17 años a interrumpir voluntariamente su embarazo sin necesidad de consentimiento de sus padres, tutores o representantes legales.</p>
+
+      <p>Por último, en el ámbito de la Unión Europea, el Parlamento Europeo aprobó el 11 de abril de 2024 la «Resolución sobre la inclusión del derecho al aborto en la Carta de los Derechos Fundamentales de la Unión Europea» [2024/2655 (RSP)], en la que insta al Consejo Europeo a que ponga en marcha una Convención para la revisión de los Tratados, tal como solicitó en sus Resoluciones de 9 de junio de 2022 y de 22 de noviembre de 2023, y a que adopte la propuesta incluida en su Resolución de 22 de noviembre de 2023 de añadir a la Carta la asistencia sanitaria sexual y reproductiva y el derecho al aborto seguro y legal.</p>
+
+      <p>III</p>
+
+      <p>Si bien el desarrollo legislativo y jurisprudencial en materia de reconocimiento y garantía de la interrupción voluntaria del embarazo ha resultado determinante para la protección de la vida, la integridad y la salud de las mujeres, la relevancia de los bienes jurídicos implicados, unida a la necesidad de reforzar la obligación de los poderes públicos de asegurar de manera real y efectiva la prestación que permite una interrupción del embarazo en condiciones de igualdad y de seguridad, exige avanzar un paso más constitucionalizando la obligación de los poderes públicos de garantizar y hacer efectivo el libre ejercicio de este derecho mediante el establecimiento de cuantas prestaciones y servicios sean necesarios.</p>
+
+      <p>Con este reconocimiento constitucional, el derecho a la interrupción voluntaria del embarazo queda reforzado con la obligación, indisponible para los poderes públicos, de garantizar su ejercicio en condiciones sanitarias apropiadas, estableciendo las prestaciones y servicios necesarios para tal fin. Con esta reforma constitucional España avanza en el reconocimiento social y jurídico del derecho a la autodeterminación de las mujeres y a su necesaria protección frente a dinámicas regresivas.</p>
+
+      <p>En cuanto a su ubicación sistemática, la protección de la vertiente prestacional del derecho a la interrupción voluntaria del embarazo encuentra acomodo en el artículo 43 de la Constitución, que reconoce el derecho a la protección de la salud e insta a los poderes públicos a establecer las prestaciones y los servicios necesarios para tal fin.</p>
+
+      <p>El nuevo precepto hace hincapié en la necesidad de que los poderes públicos aseguren, en condiciones de igualdad real y efectiva y, por tanto, en todo el territorio del Estado, la garantía real del ejercicio de este derecho, mediante el establecimiento de las prestaciones sanitarias, asistenciales y de todo orden que sean necesarias para su práctica, exigencia que está inescindiblemente unida a la protección de los derechos fundamentales vinculados a dicho derecho, tal y como refleja la jurisprudencia del Tribunal Constitucional.</p>
+
+      <p>Con esta reforma constitucional, España se coloca a la vanguardia de los países europeos más avanzados en la protección de los derechos de las mujeres, garantizando la obligación de los poderes públicos, no solo de no interferir en la libertad de las mujeres de decidir interrumpir voluntariamente su embarazo en las primeras semanas de la gestación, que corresponde exclusivamente al ámbito de su autodeterminación personal, sino de hacerlo efectivo mediante el establecimiento de cuantas prestaciones y servicios sean necesarios para tal fin.</p>
+
+      <p>Con esta finalidad, se propone añadir un nuevo apartado 4 al actual artículo 43 de la Constitución, en los siguientes términos:</p>
+    </preamble>
+
+    <body>
+      <article eId="art_unico">
+        <num>Artículo único</num>
+        <heading>Modificación del artículo 43 de la Constitución Española</heading>
+        <content>
+          <p>El artículo 43 de la <ref href="/akn/es/act/1978-12-27/constitucion-espanola">Constitución Española</ref> queda redactado en los siguientes términos:</p>
+          <quotedStructure startQuote="«" endQuote="»">
+            <article eId="art_43">
+              <num>Artículo 43</num>
+              <hcontainer name="apartado" eId="art_43__para_1">
+                <num>1.</num>
+                <content>
+                  <p>Se reconoce el derecho a la protección de la salud.</p>
+                </content>
+              </hcontainer>
+              <hcontainer name="apartado" eId="art_43__para_2">
+                <num>2.</num>
+                <content>
+                  <p>Compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios. La ley establecerá los derechos y deberes de todos al respecto.</p>
+                </content>
+              </hcontainer>
+              <hcontainer name="apartado" eId="art_43__para_3">
+                <num>3.</num>
+                <content>
+                  <p>Los poderes públicos fomentarán la educación sanitaria, la educación física y el deporte. Asimismo, facilitarán la adecuada utilización del ocio.</p>
+                </content>
+              </hcontainer>
+              <hcontainer name="apartado" eId="art_43__para_4">
+                <num>4.</num>
+                <content>
+                  <p>Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio.</p>
+                </content>
+              </hcontainer>
+            </article>
+          </quotedStructure>
+        </content>
+      </article>
+
+      <hcontainer name="finales" eId="final">
+        <article eId="final_unica">
+          <num>Disposición final única</num>
+          <heading>Entrada en vigor</heading>
+          <content>
+            <p>La presente reforma del artículo 43 de la Constitución Española entrará en vigor el mismo día de la publicación de su texto oficial en el «Boletín Oficial del Estado». Se publicará también en las demás lenguas de España.</p>
+          </content>
+        </article>
+      </hcontainer>
+    </body>
+  </bill>
+</akomaNtoso>

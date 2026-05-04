@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<fichaExpediente>
+<datosCabecera>
+<titulo><![CDATA[Moción por la que se recuerda la importancia de preservar el consenso social y político básico en torno a la Constitución, y se insta al Gobierno a no continuar con la tramitación de su proyecto de reforma del artículo 43 de la Constitución en tanto no se alcance el consenso necesario. ]]></titulo>
+<situacion><![CDATA[Aprobado sin modificaciones]]></situacion>
+<tipo><![CDATA[Moción en Comisión.]]></tipo>
+<fechaPresentacion><![CDATA[20-ABR-2026]]></fechaPresentacion>
+<fechaCalificacion><![CDATA[28-ABR-2026]]></fechaCalificacion>
+<legislatura><![CDATA[15]]></legislatura>
+<numero><![CDATA[661/001976]]></numero>
+<expRelacionados><![CDATA[NO]]></expRelacionados>
+<procedimiento><![CDATA[Ordinario]]></procedimiento>
+<observaciones><![CDATA[ ]]></observaciones>
+<autores>
+<autor>
+<autorTratam><![CDATA[GRUPO PARLAMENTARIO POPULAR EN EL SENADO]]></autorTratam>
+<autorNombre><![CDATA[1]]></autorNombre>
+<autorCargo><![CDATA[]]></autorCargo>
+</autor>
+</autores>
+<organosCompetentes>
+<organoCompetente><![CDATA[Comisión Constitucional]]></organoCompetente>
+</organosCompetentes>
+<areasTematicas>
+</areasTematicas>
+</datosCabecera>
+<publicaciones>
+<boletines>
+</boletines>
+<diariosSesiones>
+<diarioSesiones>
+<dsCamara><![CDATA[S]]></dsCamara>
+<dsOrgano><![CDATA[Comisión Constitucional]]></dsOrgano>
+<dsNumpag><![CDATA[18]]></dsNumpag>
+<dsNumero><![CDATA[679]]></dsNumero>
+<dsFecha><![CDATA[27-ABR-2026]]></dsFecha>
+<dsDescripcion><![CDATA[]]></dsDescripcion>
+<dsURL><![CDATA[/legis15/publicaciones/pdf/senado/ds/DS_C_15_679.PDF]]></dsURL>
+</diarioSesiones>
+</diariosSesiones>
+<boes>
+</boes>
+</publicaciones>
+<plazos>
+</plazos>
+<tramitaciones>
+<tramitacion>
+<tramFecha><![CDATA[20-ABR-2026]]></tramFecha>
+<tramDescripcion><![CDATA[Entrada en registro]]></tramDescripcion>
+</tramitacion>
+<tramitacion>
+<tramFecha><![CDATA[21-ABR-2026]]></tramFecha>
+<tramDescripcion><![CDATA[Entrada en Comisión]]></tramDescripcion>
+</tramitacion>
+<tramitacion>
+<tramFecha><![CDATA[21-ABR-2026]]></tramFecha>
+<tramDescripcion><![CDATA[Calificación de la Presidencia]]></tramDescripcion>
+</tramitacion>
+<tramitacion>
+<tramFecha><![CDATA[27-ABR-2026]]></tramFecha>
+<tramDescripcion><![CDATA[Debate en Comisión]]></tramDescripcion>
+</tramitacion>
+<tramitacion>
+<tramFecha><![CDATA[28-ABR-2026]]></tramFecha>
+<tramDescripcion><![CDATA[Calificación de la Mesa]]></tramDescripcion>
+</tramitacion>
+</tramitaciones>
+<ponentes>
+</ponentes>
+<enmiendas>
+</enmiendas>
+<votaciones>
+</votaciones>
+<sesiones>
+<sesion>
+<sesNombreOrgano><![CDATA[Comisión Constitucional]]></sesNombreOrgano>
+<sesCodOrgano><![CDATA[S011003]]></sesCodOrgano>
+<sesNumero><![CDATA[24]]></sesNumero>
+<sesNumeroConv><![CDATA[1]]></sesNumeroConv>
+<sesTipo><![CDATA[Reunión de Comisión]]></sesTipo>
+<sesFecha><![CDATA[27-ABR-2026]]></sesFecha>
+<sesEstado><![CDATA[Celebrada]]></sesEstado>
+</sesion>
+</sesiones>
+<intervenciones>
+<intervencion>
+<intCodAutor><![CDATA[62707]]></intCodAutor>
+<intNombre><![CDATA[BELTRÁN DE HEREDIA ARRONIZ, ESTEFANÍA (GPV)]]></intNombre>
+<intCargo><![CDATA[]]></intCargo>
+<intTotal><![CDATA[1]]></intTotal>
+</intervencion>
+<intervencion>
+<intCodAutor><![CDATA[58901]]></intCodAutor>
+<intNombre><![CDATA[CABALLERO MARTÍNEZ, MARÍA MAR (GPMX)]]></intNombre>
+<intCargo><![CDATA[]]></intCargo>
+<intTotal><![CDATA[1]]></intTotal>
+</intervencion>
+<intervencion>
+<intCodAutor><![CDATA[57910]]></intCodAutor>
+<intNombre><![CDATA[DÍAZ PACHECO, SUSANA (GPS)]]></intNombre>
+<intCargo><![CDATA[]]></intCargo>
+<intTotal><![CDATA[1]]></intTotal>
+</intervencion>
+<intervencion>
+<intCodAutor><![CDATA[58114]]></intCodAutor>
+<intNombre><![CDATA[QUERALT JIMÉNEZ, JOAN JOSEP (GPERB)]]></intNombre>
+<intCargo><![CDATA[]]></intCargo>
+<intTotal><![CDATA[1]]></intTotal>
+</intervencion>
+<intervencion>
+<intCodAutor><![CDATA[58104]]></intCodAutor>
+<intNombre><![CDATA[TIRADO OCHOA, VICENTE (GPP)]]></intNombre>
+<intCargo><![CDATA[]]></intCargo>
+<intTotal><![CDATA[1]]></intTotal>
+</intervencion>
+</intervenciones>
+</fichaExpediente>
+

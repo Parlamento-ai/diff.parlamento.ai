@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <portion includedIn="/akn/es/bill/2026-04-07/102-000001/!main">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/portion/2026-04-07/art-43-apartado-4-nuevo/!main"/>
+          <FRBRuri value="/akn/es/portion/2026-04-07/art-43-apartado-4-nuevo"/>
+          <FRBRalias value="Apartado 4 nuevo del art. 43 CE — extracto citable independiente" name="title"/>
+          <FRBRdate date="2026-04-07" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="portion-articulo"/>
+          <FRBRname value="art-43-apartado-4-nuevo"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/portion/2026-04-07/art-43-apartado-4-nuevo/spa@2026-04-07/!main"/>
+          <FRBRuri value="/akn/es/portion/2026-04-07/art-43-apartado-4-nuevo/spa@2026-04-07"/>
+          <FRBRdate date="2026-04-07" name="expression"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/portion/2026-04-07/art-43-apartado-4-nuevo/spa@2026-04-07/!main.xml"/>
+          <FRBRuri value="/akn/es/portion/2026-04-07/art-43-apartado-4-nuevo/spa@2026-04-07.akn"/>
+          <FRBRdate date="2026-04-07" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-13" name="bocg-congreso" showAs="Extracto del BOCG-15-A-92-1 (apartado 4 nuevo art. 43 CE)" number="92-1"/>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="congreso-diputados" href="/akn/ontology/organization/es/congreso-diputados" showAs="Congreso de los Diputados"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (incluye este portion)"/>
+        <TLCReference eId="ce-1978-art-43" href="/akn/es/act/1978-12-27/constitucion-espanola/!main/art_43" showAs="Artículo 43 CE vigente (que se modifica)"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>art-43-apartado-4-nuevo</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-92-1.PDF</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Doc 31: portion art-43-apartado-4-nuevo.
+
+Extracto independiente y citable del nuevo apartado 4 del art. 43 CE propuesto por
+el bill 102/000001. Se utiliza para citarlo como fragmento autónomo desde otros
+documentos del corpus (statements, debates, judgments, etc.) sin necesidad de citar
+todo el bill.
+
+CONTENIDO. Texto literal del apartado 4 nuevo según el proyecto final aprobado por
+el Consejo de Ministros el 7-abr-2026 y publicado en el BOCG-15-A-92-1 el 13-abr-2026.
+
+PROPÓSITO TÉCNICO. En AKN un <portion> es una porción identificable de un documento
+mayor (el bill 102/000001, ver atributo includedIn). Permite citar fragmentos
+específicos sin perder la trazabilidad al documento completo.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <portionBody>
+      <paragraph eId="art_43__para_4">
+        <num>4.</num>
+        <content>
+          <p>Los poderes públicos garantizarán el ejercicio del derecho de las mujeres a la interrupción voluntaria del embarazo en condiciones de igualdad real y efectiva con cuantas prestaciones y servicios sean necesarios para dicho ejercicio.</p>
+        </content>
+      </paragraph>
+    </portionBody>
+  </portion>
+</akomaNtoso>

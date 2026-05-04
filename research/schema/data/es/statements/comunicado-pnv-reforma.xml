@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <statement name="comunicado-partido" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/statement/2026-04-09/comunicado-pnv-reforma/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-09/comunicado-pnv-reforma"/>
+          <FRBRalias value="Comunicado oficial EAJ-PNV — Posición sobre la reforma del art. 43 CE" name="title"/>
+          <FRBRdate date="2026-04-09" name="generation"/>
+          <FRBRauthor href="#eaj-pnv"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="comunicado-partido"/>
+          <FRBRname value="comunicado-pnv-reforma"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/statement/2026-04-09/comunicado-pnv-reforma/spa@2026-04-09/!main"/>
+          <FRBRuri value="/akn/es/statement/2026-04-09/comunicado-pnv-reforma/spa@2026-04-09"/>
+          <FRBRdate date="2026-04-09" name="expression"/>
+          <FRBRauthor href="#eaj-pnv"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/statement/2026-04-09/comunicado-pnv-reforma/spa@2026-04-09/!main.xml"/>
+          <FRBRuri value="/akn/es/statement/2026-04-09/comunicado-pnv-reforma/spa@2026-04-09.akn"/>
+          <FRBRdate date="2026-04-09" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-09" name="comunicado-partido" showAs="EAJ-PNV (Partido Nacionalista Vasco) — 2026-04-09"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-09" refersTo="#publication" source="#diff-parlamento-ai" eId="publication-2026-04-09"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="eaj-pnv" href="/akn/ontology/organization/es/eaj-pnv" showAs="EAJ-PNV (Partido Nacionalista Vasco)"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="reforma-art-43-ce" href="/akn/ontology/concept/es/reforma-art-43-ce" showAs="reforma del artículo 43 CE"/>
+        <TLCConcept eId="ive" href="/akn/ontology/concept/es/ive" showAs="interrupción voluntaria del embarazo"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCEvent eId="publication" href="/akn/ontology/event/publication" showAs="Publicación"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>comunicado-pnv-reforma</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.eaj-pnv.eus/notas-prensa/reforma-art-43-CE</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Statement: Comunicado oficial EAJ-PNV — Posición sobre la reforma del art. 43 CE
+
+Autor: EAJ-PNV (Partido Nacionalista Vasco)
+Fecha publicación: 2026-04-09
+URL fuente: https://www.eaj-pnv.eus/notas-prensa/reforma-art-43-CE
+Subtipo: comunicado-partido
+
+Long title: Comunicado oficial de EAJ-PNV (Partido Nacionalista Vasco) sobre el proyecto de reforma constitucional del artículo 43 CE, fijando su posición política respecto al consenso necesario y el procedimiento elegido por el Gobierno.
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>Comunicado oficial EAJ-PNV — Posición sobre la reforma del art. 43 CE</docTitle>
+      <docDate date="2026-04-09">2026-04-09</docDate>
+      <docProponent>EAJ-PNV (Partido Nacionalista Vasco)</docProponent>
+      <p akndiff:role="source-url">https://www.eaj-pnv.eus/notas-prensa/reforma-art-43-CE</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="contenido" eId="contenido">
+        <heading>Comunicado oficial EAJ-PNV — Posición sobre la reforma del art. 43 CE</heading>
+        <p akndiff:role="list-item">— NOTICIAS</p>
+        <p akndiff:role="list-item">— MEDIATECA</p>
+        <p akndiff:role="list-item">— DOCUMENTOS</p>
+        <p akndiff:role="list-item">— AGENDA</p>
+        <p akndiff:role="heading"><b>CONTACTO</b></p>
+        <p akndiff:role="list-item">— Nuestras sedes</p>
+        <p akndiff:role="list-item">— Afíliate</p>
+        <p akndiff:role="list-item">— Suscríbete al boletín</p>
+        <p akndiff:role="heading"><b>CONOCE EAJ-PNV</b></p>
+        <p akndiff:role="list-item">— Organización interna</p>
+        <p akndiff:role="list-item">— Historia e ideología</p>
+        <p akndiff:role="list-item">— Asamblea general</p>
+        <p akndiff:role="list-item">— Transparencia</p>
+        <p akndiff:role="list-item">— Cuentas Anuales</p>
+        <p akndiff:role="list-item">— Euzko Gaztedi</p>
+        <p akndiff:role="heading"><b>SÍGUENOS</b></p>
+        <p akndiff:role="heading"><b>&quot;La reforma del aborto propuesta por el Gobierno español traerá desigualdad entre las mujeres&quot;</b></p>
+        <p>La parlamentaria jeltzale, Leixuri Arrizabalaga, ha mostrado su conformidad con la actual legislación y ha asegurado que la reforma propuesta por el Gobierno traerá &quot;desigualdad entre las mujeres ya que las que tengan recursos económicos podrán abortar en otros países y las que no, pondrán en riesgo sus vidas&quot;.﻿</p>
+        <p>20 Febrero 2014 20 Febrero 2014 | Noticia</p>
+        <p>20 Febrero 2014 20 Febrero 2014 | Noticia</p>
+        <p>20</p>
+        <p>Febrero 2014</p>
+        <p>20 Febrero 2014</p>
+        <p>Noticia</p>
+        <p>COMPARTE</p>
+        <p>El Parlamento Vasco ha mostrado su rechazo contundente al Proyecto de Ley Orgánica de Protección de la Vida del Concebido y los Derechos de la Embarazada recientemente presentado por el Gobierno de España, por ser un proyecto de ley reaccionario, restrictivo y retrógrado, un ataque a las mujeres y una afrenta a la sociedad laica y plural; y por ello insta al Gobierno de España a retirar inmediatamente y no continuar la tramitación del Anteproyecto de Ley Orgánica por el que se pretende revisar la legislación vigente en España sobre salud sexual y reproductiva e interrupción voluntaria del embarazo. La Cámara vasca pide al Gobierno Vasco a oponerse activamente, mediante todos los medios legales posibles, a la grave injerencia que la reforma de la Ley del aborto planteada por el Gobierno de Rajoy supone en el derecho a una maternidad libremente decidida y, con ello, a desplegar cuantas acciones dentro de nuestro marco competencial sean necesarias para garantizar el derecho de las mujeres a una maternidad libre y responsable. El Parlamento vasco remitirá este acuerdo al Gobierno Vasco, al Gobierno de España, a los ministerios de Salud y Justicia de España, a los grupos políticos con representación en las Cortes Generales españolas y al Parlamento y Consejo de la Unión Europea.</p>
+        <p>Durante el debate, la parlamentaria de EAJ-PNV, Leixuri Arrizabalaga, ha mostrado su conformidad con la actual legislación y ha asegurado que la reforma propuesta por el Gobierno traerá desigualdad entre las mujeres ya que las que tengan recursos económicos podrán abortar en otros países y las que no, pondrán en riesgo sus vidas.</p>
+        <p akndiff:role="heading"><b>Te puede interesar</b></p>
+        <p>Ver más</p>
+        <p>30 Febrero | Congreso</p>
+        <p akndiff:role="heading"><b>El Grupo Vasco critica que el Gobierno propone solo una &quot;reforma simbólica&quot; y no blindar el derecho al aborto en la Constitución</b></p>
+        <p>A pesar de las reservas que genera la modificación del artículo 43 de la Constitución, Vaquero rechaza las enmiendas a la totalidad presentadas por PP y Vox y defiende el compromiso del PNV con las mujeres y sus derechos</p>
+        <p>30 Febrero | Parlamento Europeo</p>
+        <p akndiff:role="heading"><b>EAJ-PNV apoya en la Eurocámara dos resoluciones contra el ciberacoso y a favor de una aplicación más estricta de las leyes digitales</b></p>
+        <p>La eurodiputada jeltzale, Oihane Agirregoitia, recuerda que la normativa europea tiene lagunas y que es necesario mejorarla</p>
+        <p akndiff:role="heading"><b>INSTITUCIONES</b></p>
+        <p akndiff:role="list-item">— Parlamento Vasco</p>
+        <p akndiff:role="list-item">— Parlamento de Navarra</p>
+        <p akndiff:role="list-item">— Congreso</p>
+        <p akndiff:role="list-item">— Senado</p>
+        <p akndiff:role="list-item">— Parlamento Europeo</p>
+        <p akndiff:role="heading"><b>BURU BATZARRAK</b></p>
+        <p akndiff:role="list-item">— Araba Buru Batzar</p>
+        <p akndiff:role="list-item">— Bizkai Buru Batzar</p>
+        <p akndiff:role="list-item">— Gipuzko Buru Batzar</p>
+        <p akndiff:role="list-item">— Ipar Buru Batzar</p>
+        <p akndiff:role="list-item">— Napar Buru Batzar</p>
+        <p akndiff:role="list-item">— Política de cookies</p>
+        <p akndiff:role="list-item">— Cláusula de Confidencialidad</p>
+        <p akndiff:role="list-item">— Canal Interno de Información</p>
+        <p akndiff:role="heading"><b>Configuración de Cookies</b></p>
+        <p akndiff:role="list-item">— Privacidad</p>
+        <p akndiff:role="list-item">— Cookies de personalización de interfaz</p>
+        <p akndiff:role="list-item">— Cookies de funcionalidad</p>
+        <p akndiff:role="list-item">— Cookies de análisis o medición</p>
+        <p akndiff:role="list-item">— Cookies de marketing</p>
+        <p akndiff:role="heading"><b>Privacidad</b></p>
+        <p>EAJ-PNV usa cookies para permitir la navegación a través de su página web con el objetivo de ofrecerte la mejor comunicación posible, para personalizar el contenido y cómo lo ves, y para ofrecerte funciones en redes sociales así como mostrar contenidos para la difusión de videos o compartir contenidos a través de redes sociales.</p>
+        <p>La página web de EAJ-PNV también contiene enlaces a sitios web de terceros con políticas de privacidad ajenas a las de EAJ-PNV que podrás decidir si aceptas o no cuando accedas a ellos.</p>
+        <p>EAJ-PNV , en ningún caso, te mostrará publicidad ni guardará tus datos de navegación o carácter personal sin tu conocimiento. Encontrarás más información en nuestra Política de Cookies .</p>
+        <p>Para asegurar el acceso a la página web y respetar tu derecho a la privacidad, puedes optar por no permitir algunos tipos de cookies.                                        Accede a cada categoría para obtener más información sobre las cookies y cambiar la configuración predeterminada.                                        Ten en cuenta que bloquear algunos tipos de cookies puede afectar negativamente a tu navegación en la página web del EAJ-PNV y a la información que podremos ofrecerte.                                        Podrás modificar en cualquier momento la configuración de cookies que elijas a continuación. Para obtener más información, visita nuestra Política de Cookies .</p>
+        <p akndiff:role="heading"><b>Cookies técnicas (necesarias)</b></p>
+        <p>Son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, identificar la sesión, controlar el tráfico y la comunicación de los datos, acceder a partes de acceso restringido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o compartir contenidos a través de redes sociales.</p>
+        <p>Por defecto, serán cargadas, ya que son necesarias para el funcionamiento de la página web.</p>
+        <p>Nombre Proveedor Descripción Persistencia local_storage_support_test twitter.com La cookie se utiliza en relación a la función de almacenamiento local en el navegador. Esta función permite a la web cargar más rápido mediante la precarga de ciertos procedimientos. Persistente PHPSESSID google.com Conserva los estados de los usuarios en todas las peticiones de la página. Persistente rc::a google.com Esta cookie se utiliza para distinguir entre humanos y bots. Esto es beneficioso para la web con el objeto de elaborar informes válidos sobre el uso de su web Persistente rc::b google.com Esta cookie se utiliza para distinguir entre humanos y bots Sesión rc::c google.com Esta cookie se utiliza para distinguir entre humanos y bots Sesión</p>
+        <p akndiff:role="heading"><b>Cookies de personalización de interfaz</b></p>
+        <p>Permiten recordar tus ajustes de pantalla y de formato de pantalla preferido.</p>
+        <p>Nombre Proveedor Descripción Persistencia lang cdn.syndication.twimg.com Recuerda el idioma seleccionado por un usuario con el que visualizar una página web 1 día</p>
+        <p akndiff:role="heading"><b>Cookies de análisis o medición</b></p>
+        <p>Nos permiten contar las visitas y las fuentes de tráfico y entender cómo utilizas nuestra página web. De esta manera, dispondremos de más datos para mejorar el rendimiento de nuestra página web.</p>
+        <p>Nombre Proveedor Descripción Persistencia _ga eaj-pnv.eus Registra una identificación única que se utiliza para generar datos estadísticos acerca de cómo utiliza el visitante el sitio web. 2 años _gat eaj-pnv.eus Utilizado por Google Analytics para controlar la tasa de peticiones 1 día _gid eaj-pnv.eus Registra una identificación única que se utiliza para generar datos estadísticos acerca de cómo utiliza el visitante el sitio web. 1 día personalization_id twitter.com Establecida por Twitter - La cookie permite al visitante compartir con tenido de la web en su perfil de Twitter. 2 años</p>
+        <p akndiff:role="heading"><b>Cookies de publicidad comportamental</b></p>
+        <p>Son utilizadas para gestionar y personalizar los espacios publicitarios que ves en las páginas web en función del comportamiento de los usuarios, obtenido a través de la observación continuada de sus hábitos de navegación, con la intención de mostrarte anuncios relevantes y más atractivos.</p>
+        <p>Estas cookies son gestionadas por terceros (Facebook, Twitter, Google) al ofrecerte en la página funciones en redes sociales, contenidos para la difusión de videos o compartir contenidos a través de redes sociales.</p>
+        <p>EAJ-PNV no muestra ningún tipo de publicidad, comportamental o de cualquier otro tipo. Tampoco guarda tus datos de navegación o recaba datos de carácter personal, sin tu conocimiento expreso.</p>
+        <p>Nombre Proveedor Descripción Persistencia __widgetsettings twitter.com Establecida por Twitter - La cookie permite al visitante compartir contenido de la web en su perfil de Twitter. Persistente _fbp eaj-pnv.eus Utilizada por Facebook para proporcionar una serie de productos publicitarios como pujas en tiempo real de terceros anunciantes. 3 meses ActivityInfo2 serving-sys.com Utilizada para presentar al visitante contenido y publicidad relevante - El servicio está provisto por grupos de proveedores de publicidad externos, que facilitan ofertas en tiempo real a los anunciantes. 3 meses ads/ga-audiences google.com Utilizada por Google AdWords para reconectar con visitantes que tienen posibilidades de convertirse en clientes, se basa en el comportamiento online del cliente a través de las webs. Sesión fr facebook.com Utilizada por Facebook para proporcionar una serie de productos publicitarios como pujas en tiempo real de terceros anunciantes. 3 meses i/adsct t.co La cookie se utiliza por Twitter para determinar el número de visitantes que acceden a la web a través del contenido publicitario de Twitter. Sesión i/jot twitter.com Establece un identificador único para el visitante que permite a anunciantes externos (terceras partes) dirigirse al visitante con publicidad relevante. Este servicio combinado está provisto por centros de publicidad, que facilitan ofertas en tiempo real a los anunciantes. Sesión IDE doubleclick.net Utilizada por Google DoubleClick para registrar e informar sobre las acciones del usuario en el sitio web tras visualizar o hacer clic en uno de los anuncios del anunciante con el propósito de medir la eficacia de un anuncio y presentar anuncios específicos para el usuario. 1 año NID google.com Registra una identificación única que identifica el dispositivo de un usuario que vuelve. La identificación se utiliza para los anuncios específicos. 6 meses OT_10254 serving-sys.com No clasificado Sesión OT2 serving-sys.com Recopila datos relacionados con las visitas del usuario al sitio web , como el número de visitas, el tiempo medio pasado en el sitio web y qué páginas han sido cargadas, con el propósito de mostrar anuncios específicos. 3 meses pagead/1p-user-list/# google.com Utilizada para rastrear si el visitante ha mostrado un interés específico en productos o eventos a través de múltiples web s y detectar como el visitante navega entre webs - Esto se utiliza para la medida de los esfuerzos publicitarios y facilitar la tasa de emisión entre sitios. Sesión SZMKSessionId eaj-pnv.eus Recoge información del comportamiento del usuario en diferentes webs para mostrar publicidad más relevante - También le permite a la web limitar el número de veces que el usuario está expuesto a un mismo anuncio. Persistente t1 serving-sys.com Recoge información del comportamiento del visitante múltiples webs. Esta información se usa en la web para optimizar la relevancia de la publicidad. 3 meses test_cookie doubleclick.net Utilizada para comprobar si el navegador del usuario admite cookies. 1 día tr facebook.com Utilizada por Facebook para proporcionar una serie de productos publicitarios como pujas en tiempo real de terceros anunciantes. Sesión u2 serving-sys.com Recopila datos relacionados con las visitas del usuario a páginas web para evaluar la eficacia de los anuncios que se muestran en el sitio web. 3 meses</p>
+        <p>ACEPTAR LO SELECCIONADO ACEPTAR TODAS RECHAZAR TODAS</p>
+      </hcontainer>
+    </mainBody>
+  </statement>
+</akomaNtoso>

@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la
+  interrupción voluntaria del embarazo.
+  BOE núm. 55, de 04 de marzo de 2010. Referencia: BOE-A-2010-3514.
+  Texto consolidado al 01-mar-2023, con la modificación operada por la
+  LO 1/2023 de 28 de febrero.
+
+  Esta es la LEY NUCLEAR DEL ABORTO en España. Citada literalmente en la
+  exposición de motivos del bill 102/000001 como la norma que regula el derecho
+  al aborto que ahora se quiere blindar constitucionalmente.
+
+  Fuente oficial: https://www.boe.es/eli/es/lo/2010/03/03/2/con
+  Body XML generado a partir del HTML consolidado del BOE (jerarquía recuperada
+  con BeautifulSoup desde clases CSS estándar: titulo_num, capitulo_num,
+  articulo, parrafo).
+
+  Estructura: Preámbulo + Título Preliminar (Disposiciones generales) + Título I
+  (Responsabilidad institucional, con 2 Capítulos) + Título II (Interrupción
+  voluntaria del embarazo, con 3 Capítulos) + Título III (Protección y garantía
+  de los derechos sexuales y reproductivos, con 4 Capítulos) + 4 Disposiciones
+  adicionales + 1 Disposición derogatoria + 6 Disposiciones finales.
+-->
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+            xmlns:akndiff="https://akndiff.io/ns/akndiff">
+  <act name="act" contains="originalVersion">
+    <meta>
+      <identification source="#cortes-generales">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/act/2010-03-03/lo-2-2010/!main"/>
+          <FRBRuri value="/akn/es/act/2010-03-03/lo-2-2010"/>
+          <FRBRdate date="2010-03-03" name="promulgation"/>
+          <FRBRauthor href="#cortes-generales"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="ley-organica"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/act/2010-03-03/lo-2-2010/spa@2023-03-01/!main"/>
+          <FRBRuri value="/akn/es/act/2010-03-03/lo-2-2010/spa@2023-03-01"/>
+          <FRBRdate date="2023-03-01" name="lastModification"/>
+          <FRBRauthor href="#cortes-generales"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/act/2010-03-03/lo-2-2010/spa@2023-03-01.xml"/>
+          <FRBRuri value="/akn/es/act/2010-03-03/lo-2-2010/spa@2023-03-01.xml"/>
+          <FRBRdate date="2023-03-01" name="generation"/>
+          <FRBRauthor href="#aebOe"/>
+        </FRBRManifestation>
+      </identification>
+
+      <publication date="2010-03-04"
+                   showAs="BOE núm. 55, de 04 de marzo de 2010 (BOE-A-2010-3514)"
+                   name="boe"
+                   href="https://www.boe.es/buscar/act.php?id=BOE-A-2010-3514"/>
+
+      <classification source="#aebOe">
+        <keyword value="salud-sexual-reproductiva" showAs="salud sexual y reproductiva" dictionary="#boe-materias"/>
+        <keyword value="interrupcion-voluntaria-embarazo" showAs="interrupción voluntaria del embarazo (IVE)" dictionary="#boe-materias"/>
+        <keyword value="aborto" showAs="aborto" dictionary="#boe-materias"/>
+        <keyword value="derechos-mujeres" showAs="derechos de las mujeres" dictionary="#boe-materias"/>
+        <keyword value="autodeterminacion" showAs="autodeterminación personal" dictionary="#boe-materias"/>
+        <keyword value="ley-organica" showAs="ley orgánica" dictionary="#boe-materias"/>
+      </classification>
+
+      <lifecycle source="#cortes-generales">
+        <eventRef date="2010-03-03" refersTo="#promulgation"
+                  source="#evt-promulgation"
+                  showAs="Sanción por S.M. el Rey Don Juan Carlos I"/>
+        <eventRef date="2010-03-04" refersTo="#publication"
+                  source="#evt-publication"
+                  showAs="Publicación en el BOE núm. 55 (BOE-A-2010-3514)"/>
+        <eventRef date="2010-07-05" refersTo="#commencement"
+                  source="#evt-commencement"
+                  showAs="Entrada en vigor (4 meses tras publicación, conforme a la Disposición final sexta)"/>
+        <eventRef date="2023-02-28" refersTo="#amendment-lo-1-2023"
+                  source="#evt-modificacion-lo-1-2023"
+                  showAs="Modificación operada por la Ley Orgánica 1/2023 de 28 de febrero — última modificación incorporada al texto consolidado vigente"/>
+        <eventRef date="2023-05-09" refersTo="#avalada-stc-44-2023"
+                  source="#evt-stc-44-2023"
+                  showAs="Avalada por el Tribunal Constitucional en la STC 44/2023, de 9 de mayo (BOE-A-2023-13955)"/>
+      </lifecycle>
+
+      <references source="#cortes-generales">
+        <TLCEvent eId="evt-promulgation"
+                  href="/akn/es/event/2010-03-03/sancion-lo-2-2010"
+                  showAs="Sanción real LO 2/2010 (3-mar-2010)"/>
+        <TLCEvent eId="evt-publication"
+                  href="/akn/es/event/2010-03-04/publicacion-boe-lo-2-2010"
+                  showAs="Publicación BOE (4-mar-2010)"/>
+        <TLCEvent eId="evt-commencement"
+                  href="/akn/es/event/2010-07-05/entrada-vigor-lo-2-2010"
+                  showAs="Entrada en vigor (5-jul-2010)"/>
+        <TLCEvent eId="evt-modificacion-lo-1-2023"
+                  href="/akn/es/event/2023-02-28/modificacion-lo-2-2010-por-lo-1-2023"
+                  showAs="Modificación por LO 1/2023 (28-feb-2023)"/>
+        <TLCEvent eId="evt-stc-44-2023"
+                  href="/akn/es/event/2023-05-09/stc-44-2023"
+                  showAs="Aval del TC: STC 44/2023 (9-may-2023)"/>
+        <TLCOrganization eId="cortes-generales"
+                         href="/akn/es/org/cortes-generales"
+                         showAs="Cortes Generales"/>
+        <TLCOrganization eId="jefatura-estado"
+                         href="/akn/es/org/jefatura-estado"
+                         showAs="Jefatura del Estado"/>
+        <TLCOrganization eId="aebOe"
+                         href="/akn/es/org/agencia-estatal-boe"
+                         showAs="Agencia Estatal Boletín Oficial del Estado"/>
+        <TLCPerson eId="rey-juan-carlos-i"
+                   href="/akn/es/person/juan-carlos-i"
+                   showAs="JUAN CARLOS I, Rey de España"/>
+        <TLCPerson eId="presidente-zapatero"
+                   href="/akn/es/person/jose-luis-rodriguez-zapatero"
+                   showAs="José Luis Rodríguez Zapatero, Presidente del Gobierno"/>
+      </references>
+
+      <proprietary source="#cortes-generales">
+        <akndiff:nativeId>lo-2-2010</akndiff:nativeId>
+        <akndiff:sourceUrl>https://www.boe.es/buscar/act.php?id=BOE-A-2010-3514</akndiff:sourceUrl>
+        <akndiff:eliUri>https://www.boe.es/eli/es/lo/2010/03/03/2/con</akndiff:eliUri>
+        <akndiff:actStatus normalized="in_force">vigente (texto consolidado al 01-mar-2023, con modificación de LO 1/2023 incorporada)</akndiff:actStatus>
+        <akndiff:issuingBody>Jefatura del Estado (Cortes Generales)</akndiff:issuingBody>
+        <akndiff:rangoLegal>Ley Orgánica</akndiff:rangoLegal>
+        <akndiff:identifier scheme="boe" value="BOE-A-2010-3514" isCanonical="true"/>
+        <akndiff:identifier scheme="eli" value="https://www.boe.es/eli/es/lo/2010/03/03/2"/>
+
+        <akndiff:researchNotes><![CDATA[
+        Friction log para ES / act lo-2-2010 (modelado completo Fase 4 del experimento Reforma art. 43 CE):
+
+        1. LEY NUCLEAR DEL ABORTO. Esta es la ley orgánica que regula el derecho a la interrupción voluntaria del embarazo en España desde 2010. Citada literalmente en la exposición de motivos del bill 102/000001 (sección II, primer párrafo): "fue a partir de la Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo, cuando España se incorporó al conjunto de países más avanzados en la protección de los derechos de las mujeres".
+
+        2. AVALADA POR STC 44/2023. El Tribunal Constitucional desestimó el recurso de inconstitucionalidad RI 4523/2010 contra esta LO. El bill cita expresamente: "fue avalada por el Tribunal Constitucional en la mencionada Sentencia 44/2023, de 9 de mayo".
+
+        3. MODIFICADA POR LO 1/2023. La última modificación (incorporada al texto consolidado vigente) fue la LO 1/2023 de 28 de febrero (BOE-A-2023-5364), que entre otras revirtió la modificación operada por la LO 11/2015 de 21 de septiembre, reconociendo de nuevo el derecho de las menores de edad de 16 y 17 años a interrumpir voluntariamente su embarazo sin consentimiento parental. Cobertura del cambio en akndiff:lifecycle.
+
+        4. ESTRUCTURA JERÁRQUICA RECUPERADA DEL HTML BOE. El XML body se generó parseando el HTML consolidado del BOE (no el PDF). El HTML tiene clases CSS estándar (titulo_num, capitulo_num, articulo, parrafo) que permiten extracción fiable de la jerarquía. El PDF del BOE perdió esos headers en pdftotext-layout.
+
+        5. ARTÍCULOS CON SUB-NUMERACIÓN. La LO tiene artículos con bis/ter/quater/quinquies/sexies/septies (resultado de modificaciones sucesivas que añaden artículos sin renumerar): art_5_bis, art_5_ter, art_5_quater, art_5_quinquies, art_5_sexies; art_7_bis, art_7_ter, art_7_quater, art_7_quinquies; art_10_bis, art_10_ter, art_10_quater, art_10_quinquies, art_10_sexies; art_11_bis; art_13_bis; art_18_bis; art_19_bis, art_19_ter. Esta es una característica común de leyes españolas modificadas múltiples veces.
+
+        6. RELACIÓN CON BILL 102/000001. El bill NO modifica esta LO directamente — solo la cita como contexto legal del derecho al aborto. Lo que el bill modifica es la Constitución (art. 43). Por tanto, la relación es citation/mentions, no amends.
+        ]]></akndiff:researchNotes>
+      </proprietary>
+    </meta>
+
+    <preface>
+      <p class="boeIdentification">Jefatura del Estado «BOE» núm. 55, de 04 de marzo de 2010 Referencia: BOE-A-2010-3514 ÍNDICE TEXTO CONSOLIDADO Última modificación: 01 de marzo de 2023</p>
+      <longTitle>
+        <p>Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo, sancionada por S.M. el Rey Don Juan Carlos I el 3 de marzo de 2010, publicada en el Boletín Oficial del Estado núm. 55 de 4 de marzo de 2010 (referencia BOE-A-2010-3514) y entrada en vigor el 5 de julio de 2010 conforme a su Disposición final sexta. Texto consolidado al 1 de marzo de 2023, con la modificación operada por la <ref href="/akn/es/act/2023-02-28/lo-1-2023">Ley Orgánica 1/2023, de 28 de febrero</ref>. Avalada por el Tribunal Constitucional en la <ref href="/akn/es/judgment/2023-05-09/stc-44-2023">STC 44/2023, de 9 de mayo</ref>.</p>
+      </longTitle>
+    </preface>
+
+    <preamble>
+      <p>JUAN CARLOS I</p>
+      <p>REY DE ESPAÑA</p>
+      <p>A todos los que la presente vieren y entendieren.</p>
+      <p>JUAN CARLOS I</p>
+      <p>REY DE ESPAÑA</p>
+      <p>Sabed: Que las Cortes Generales han aprobado y Yo vengo en sancionar la siguiente ley orgánica.</p>
+      <p>PREÁMBULO</p>
+      <p>I</p>
+      <p>El desarrollo de la sexualidad y la capacidad de procreación están directamente vinculados a la dignidad de la persona y al libre desarrollo de la personalidad y son objeto de protección a través de distintos derechos fundamentales, señaladamente, de aquellos que garantizan la integridad física y moral y la intimidad personal y familiar. La decisión de tener hijos y cuándo tenerlos constituye uno de los asuntos más íntimos y personales que las personas afrontan a lo largo de sus vidas, que integra un ámbito esencial de la autodeterminación individual. Los poderes públicos están obligados a no interferir en ese tipo de decisiones, pero, también, deben establecer las condiciones para que se adopten de forma libre y responsable, poniendo al alcance de quienes lo precisen servicios de atención sanitaria, asesoramiento o información.</p>
+      <p>La protección de este ámbito de autonomía personal tiene una singular significación para las mujeres, para quienes el embarazo y la maternidad son hechos que afectan profundamente a sus vidas en todos los sentidos. La especial relación de los derechos de las mujeres con la protección de la salud sexual y reproductiva ha sido puesta de manifiesto por diversos textos internacionales. Así, en el ámbito de Naciones Unidas, la Convención sobre la eliminación de todas las formas de discriminación contra la Mujer , adoptada por la Asamblea General mediante Resolución 34/180, de 18 de diciembre de 1979, establece en su artículo 12 que «Los Estados Partes adoptarán todas las medidas apropiadas para eliminar la discriminación contra la mujer en la esfera de la atención médica a fin de asegurar, en condiciones de igualdad entre hombres y mujeres, el acceso a servicios de atención médica, incluidos los que se refieren a la planificación familiar». Por otro lado, la Plataforma de Acción de Beijing acordada en la IV Conferencia de Naciones Unidas sobre la mujer celebrada en 1995, ha reconocido que «los derechos humanos de las mujeres incluyen el derecho a tener el control y a decidir libre y responsablemente sobre su sexualidad, incluida la salud sexual y reproductiva, libre de presiones, discriminación y violencia». En el ámbito de la Unión Europea, el Parlamento Europeo ha aprobado la Resolución 2001/2128(INI) sobre salud sexual y reproductiva y los derechos asociados, en la que se contiene un conjunto de recomendaciones a los Gobiernos de los Estados miembros en materia de anticoncepción, embarazos no deseados y educación afectivo sexual que tiene como base, entre otras consideraciones, la constatación de las enormes desigualdades entre las mujeres europeas en el acceso a los servicios de salud reproductiva, a la anticoncepción y a la interrupción voluntaria del embarazo en función de sus ingresos, su nivel de renta o el país de residencia.</p>
+      <p>Por su parte, la Convención sobre los Derechos de las Personas con discapacidad de 13 de diciembre de 2006, ratificada por España, establece la obligación de los Estados Partes de respetar «el derecho de las personas con discapacidad a decidir libremente y de manera responsable el número de hijos que quieren tener […] a tener acceso a información, educación sobre reproducción y planificación familiar apropiada para su edad y a que se provean los medios necesarios que les permitan ejercer esos derechos», así como a que «mantengan su fertilidad, en igualdad de condiciones que los demás».</p>
+      <p>La presente Ley pretende adecuar nuestro marco normativo al consenso de la comunidad internacional en esta materia, mediante la actualización de las políticas públicas y la incorporación de nuevos servicios de atención de la salud sexual y reproductiva. La Ley parte de la convicción, avalada por el mejor conocimiento científico, de que una educación afectivo sexual y reproductiva adecuada, el acceso universal a prácticas clínicas efectivas de planificación de la reproducción, mediante la incorporación de anticonceptivos de última generación, cuya eficacia haya sido avalada por la evidencia científica, en la cartera de servicios comunes del Sistema Nacional de Salud y la disponibilidad de programas y servicios de salud sexual y reproductiva es el modo más efectivo de prevenir, especialmente en personas jóvenes, las infecciones de transmisión sexual, los embarazos no deseados y los abortos.</p>
+      <p>La Ley aborda la protección y garantía de los derechos relativos a la salud sexual y reproductiva de manera integral. Introduce en nuestro ordenamiento las definiciones de la Organización Mundial de la Salud sobre salud, salud sexual y salud reproductiva y prevé la adopción de un conjunto de acciones y medidas tanto en el ámbito sanitario como en el educativo. Establece, asimismo, una nueva regulación de la interrupción voluntaria del embarazo fuera del Código Penal que, siguiendo la pauta más extendida en los países de nuestro entorno político y cultural, busca garantizar y proteger adecuadamente los derechos e intereses en presencia, de la mujer y de la vida prenatal.</p>
+      <p>II</p>
+      <p>El primer deber del legislador es adaptar el Derecho a los valores de la sociedad cuyas relaciones ha de regular, procurando siempre que la innovación normativa genere certeza y seguridad en las personas a quienes se destina, pues la libertad sólo encuentra refugio en el suelo firme de la claridad y precisión de la Ley. Ese es el espíritu que inspira la nueva regulación de la interrupción voluntaria del embarazo.</p>
+      <p>Hace un cuarto de siglo, el legislador, respondiendo al problema social de los abortos clandestinos, que ponían en grave riesgo la vida y la salud de las mujeres y atendiendo a la conciencia social mayoritaria que reconocía la relevancia de los derechos de las mujeres en relación con la maternidad, despenalizó ciertos supuestos de aborto. La reforma del Código Penal supuso un avance al posibilitar el acceso de las mujeres a un aborto legal y seguro cuando concurriera alguna de las indicaciones legalmente previstas: grave peligro para la vida o la salud física y psíquica de la embarazada, cuando el embarazo fuera consecuencia de una violación o cuando se presumiera la existencia de graves taras físicas o psíquicas en el feto. A lo largo de estos años, sin embargo, la aplicación de la ley ha generado incertidumbres y prácticas que han afectado a la seguridad jurídica, con consecuencias tanto para la garantía de los derechos de las mujeres como para la eficaz protección del bien jurídico penalmente tutelado y que, en contra del fin de la norma, eventualmente han podido poner en dificultades a los profesionales sanitarios de quienes precisamente depende la vigilancia de la seguridad médica en las intervenciones de interrupción del embarazo.</p>
+      <p>La necesidad de reforzar la seguridad jurídica en la regulación de la interrupción voluntaria del embarazo ha sido enfatizada por el Tribunal Europeo de Derechos Humanos en su sentencia de 20 de marzo de 2007 en la que se afirma, por un lado, que «en este tipo de situaciones las previsiones legales deben, en primer lugar y ante todo, asegurar la claridad de la posición jurídica de la mujer embarazada» y, por otro lado, que «una vez que el legislador decide permitir el aborto, no debe estructurar su marco legal de modo que se limiten las posibilidades reales de obtenerlo».</p>
+      <p>En una sociedad libre, pluralista y abierta, corresponde al legislador, dentro del marco de opciones que la Constitución deja abierto, desarrollar los derechos fundamentales de acuerdo con los valores dominantes y las necesidades de cada momento histórico. La experiencia acumulada en la aplicación del marco legal vigente, el avance del reconocimiento social y jurídico de la autonomía de las mujeres tanto en el ámbito público como en su vida privada, así como la tendencia normativa imperante en los países de nuestro entorno, abogan por una regulación de la interrupción voluntaria del embarazo presidida por la claridad en donde queden adecuadamente garantizadas tanto la autonomía de las mujeres, como la eficaz protección de la vida prenatal como bien jurídico. Por su parte, la Asamblea Parlamentaria del Consejo de Europa, en su Resolución 1607/2008, de 16 abril, reafirmó el derecho de todo ser humano, y en particular de las mujeres, al respeto de su integridad física y a la libre disposición de su cuerpo y en ese contexto, a que la decisión última de recurrir o no a un aborto corresponda a la mujer interesada y, en consecuencia, ha invitado a los Estados miembros a despenalizar el aborto dentro de unos plazos de gestación razonables.</p>
+      <p>En la concreción del modelo legal, se ha considerado de manera especialmente atenta la doctrina constitucional derivada de las sentencias del Tribunal Constitucional en esta materia. Así, en la sentencia 53/1985, el Tribunal, perfectamente dividido en importantes cuestiones de fondo, enunció sin embargo, algunos principios que han sido respaldados por la jurisprudencia posterior y que aquí se toman como punto de partida. Una de esas afirmaciones de principio es la negación del carácter absoluto de los derechos e intereses que entran en conflicto a la hora de regular la interrupción voluntaria del embarazo y, en consecuencia, el deber del legislador de «ponderar los bienes y derechos en función del supuesto planteado, tratando de armonizarlos si ello es posible o, en caso contrario, precisando las condiciones y requisitos en que podría admitirse la prevalencia de uno de ellos» (STC 53/1985). Pues si bien «los no nacidos no pueden considerarse en nuestro ordenamiento como titulares del derecho fundamental a la vida que garantiza el artículo 15 de la Constitución » esto no significa que resulten privados de toda protección constitucional ( STC 116/1999 ). La vida prenatal es un bien jurídico merecedor de protección que el legislador debe hacer eficaz, sin ignorar que la forma en que tal garantía se configure e instrumente estará siempre intermediada por la garantía de los derechos fundamentales de la mujer embarazada.</p>
+      <p>La ponderación que el legislador realiza ha tenido en cuenta la doctrina de la STC 53/1985 y atiende a los cambios cualitativos de la vida en formación que tienen lugar durante el embarazo, estableciendo, de este modo, una concordancia práctica de los derechos y bienes concurrentes a través de un modelo de tutela gradual a lo largo de la gestación.</p>
+      <p>La presente Ley reconoce el derecho a la maternidad libremente decidida, que implica, entre otras cosas, que las mujeres puedan tomar la decisión inicial sobre su embarazo y que esa decisión, consciente y responsable, sea respetada. El legislador ha considerado razonable, de acuerdo con las indicaciones de las personas expertas y el análisis del derecho comparado, dejar un plazo de 14 semanas en el que se garantiza a las mujeres la posibilidad de tomar una decisión libre e informada sobre la interrupción del embarazo, sin interferencia de terceros, lo que la STC 53/1985 denomina «autodeterminación consciente», dado que la intervención determinante de un tercero en la formación de la voluntad de la mujer gestante, no ofrece una mayor garantía para el feto y, a la vez, limita innecesariamente la personalidad de la mujer, valor amparado en el artículo 10.1 de la Constitución .</p>
+      <p>La experiencia ha demostrado que la protección de la vida prenatal es más eficaz a través de políticas activas de apoyo a las mujeres embarazadas y a la maternidad. Por ello, la tutela del bien jurídico en el momento inicial de la gestación se articula a través de la voluntad de la mujer, y no contra ella. La mujer adoptará su decisión tras haber sido informada de todas las prestaciones, ayudas y derechos a los que puede acceder si desea continuar con el embarazo, de las consecuencias médicas, psicológicas y sociales derivadas de la prosecución del embarazo o de la interrupción del mismo, así como de la posibilidad de recibir asesoramiento antes y después de la intervención. La Ley dispone un plazo de reflexión de al menos tres días y, además de exigir la claridad y objetividad de la información, impone condiciones para que ésta se ofrezca en un ámbito y de un modo exento de presión para la mujer.</p>
+      <p>En el desarrollo de la gestación, «tiene –como ha afirmado la STC 53/1985– una especial trascendencia el momento a partir del cual el nasciturus es ya susceptible de vida independiente de la madre». El umbral de la viabilidad fetal se sitúa, en consenso general avalado por la comunidad científica y basado en estudios de las unidades de neonatología, en torno a la vigésimo segunda semana de gestación. Es hasta este momento cuando la Ley permite la interrupción del embarazo siempre que concurra alguna de estas dos indicaciones: «que exista grave riesgo para la vida o la salud de la embarazada», o «que exista riesgo de graves anomalías en el feto». Estos supuestos de interrupción voluntaria del embarazo de carácter médico se regulan con las debidas garantías a fin de acreditar con la mayor seguridad posible la concurrencia de la indicación. A diferencia de la regulación vigente, se establece un límite temporal cierto en la aplicación de la llamada indicación terapéutica, de modo que en caso de existir riesgo para la vida o salud de la mujer más allá de la vigésimo segunda semana de gestación, lo adecuado será la práctica de un parto inducido, con lo que el derecho a la vida e integridad física de la mujer y el interés en la protección de la vida en formación se armonizan plenamente.</p>
+      <p>Más allá de la vigésimo segunda semana, la ley configura dos supuestos excepcionales de interrupción del embarazo. El primero se refiere a aquellos casos en que «se detecten anomalías fetales incompatibles con la vida», en que decae la premisa que hace de la vida prenatal un bien jurídico protegido en tanto que proyección del artículo 15 de la Constitución ( STC 212/1996 ). El segundo supuesto se circunscribe a los casos en que «se detecte en el feto una enfermedad extremadamente grave e incurable en el momento del diagnóstico y así lo confirme un comité clínico». Su comprobación se ha deferido al juicio experto de profesionales médicos conformado de acuerdo con la evidencia científica del momento.</p>
+      <p>La Ley establece además un conjunto de garantías relativas al acceso efectivo a la prestación sanitaria de la interrupción voluntaria del embarazo y a la protección de la intimidad y confidencialidad de las mujeres. Con estas previsiones legales se pretende dar solución a los problemas a que había dado lugar el actual marco regulador tanto de desigualdades territoriales en el acceso a la prestación como de vulneración de la intimidad. Así, se encomienda a la Alta Inspección velar por la efectiva igualdad en el ejercicio de los derechos y el acceso a las prestaciones reconocidas en esta Ley.</p>
+      <p>Asimismo se recoge la objeción de conciencia de los profesionales sanitarios directamente implicados en la interrupción voluntaria del embarazo, que será articulado en un desarrollo futuro de la Ley.</p>
+      <p>Se ha dado nueva redacción al artículo 145 del Código Penal con el fin de limitar la pena impuesta a la mujer que consiente o se practica un aborto fuera de los casos permitidos por la ley eliminando la previsión de pena privativa de libertad, por un lado y, por otro, para precisar la imposición de las penas en sus mitades superiores en determinados supuestos. Asimismo se introduce un nuevo artículo 145 bis, a fin de incorporar la penalidad correspondiente de las conductas de quienes practican una interrupción del embarazo dentro de los casos contemplados por la ley, pero sin cumplir los requisitos exigidos en ella.</p>
+      <p>Finalmente, se ha modificado la Ley 41/2002, de 14 de noviembre , Básica Reguladora de la Autonomía del Paciente con el fin de que la prestación del consentimiento para la práctica de una interrupción voluntaria del embarazo se sujete al régimen general previsto en esta Ley y eliminar la excepcionalidad establecida en este caso.</p>
+      <p>III</p>
+      <p>La Ley se estructura en un Título preliminar, dos Títulos, tres disposiciones adicionales, una disposición derogatoria y seis disposiciones finales.</p>
+      <p>El Título Preliminar establece el objeto, las definiciones, los principios inspiradores de la ley y proclama los derechos que garantiza.</p>
+      <p>El Título Primero, bajo la rúbrica «De la salud sexual y reproductiva, se articula en cuatro capítulos. En el capítulo I se fijan los objetivos de las políticas públicas en materia de salud sexual y reproductiva. El capítulo II contiene las medidas en el ámbito sanitario y el capítulo III se refiere a las relativas al ámbito educativo. El capítulo IV tiene como objeto la previsión de la elaboración de la Estrategia Nacional de Salud Sexual y Reproductiva como instrumento de colaboración de las distintas administraciones públicas para el adecuado desarrollo de las políticas públicas en esta materia.</p>
+      <p>En el Título Segundo se regulan las condiciones de la interrupción voluntaria del embarazo y las garantías en el acceso a la prestación.</p>
+      <p>La disposición adicional primera mandata que la Alta Inspección verifique el cumplimiento efectivo de los derechos y prestaciones reconocidas en esta Ley.</p>
+      <p>La disposición adicional segunda impone al Gobierno la evaluación del coste económico de los servicios y prestaciones incluidos en la Ley así como la adopción de medidas previstas en la Ley 16/2003, de 28 de mayo , de Cohesión y Calidad del Sistema Nacional de Salud.</p>
+      <p>Finalmente, la disposición adicional tercera se refiere al acceso a los métodos anticonceptivos y su inclusión en la cartera de servicios comunes del Sistema Nacional de Salud.</p>
+      <p>La disposición derogatoria deroga el artículo 417 bis del Código Penal introducido en el Código Penal de 1973 por la Ley Orgánica 9/1985, de 5 de julio , y cuya vigencia fue mantenida por el Código Penal de 1995.</p>
+      <p>La disposición final primera da nueva redacción al artículo 145 del Código Penal e introduce un nuevo artículo 145 bis, y la disposición final segunda modifica el apartado cuarto del artículo 9 de la Ley 41/2002, de 14 de noviembre , básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica. Finalmente, las restantes disposiciones finales se refieren al carácter orgánico de la ley, la habilitación al Gobierno para su desarrollo reglamentario, el ámbito territorial de aplicación de la Ley y la entrada en vigor que se fija en cuatro meses desde su publicación, con el fin de que se adopten las medidas necesarias para su plena aplicación.</p>
+    </preamble>
+
+    <body>
+      <hcontainer name="titulo" eId="tit_preliminar">
+        <num>TÍTULO PRELIMINAR</num>
+        <heading>Disposiciones generales</heading>
+        <article eId="tit_preliminar__art_1">
+          <num>Artículo 1.</num>
+          <heading>Objeto</heading>
+          <content><p>Esta ley orgánica tiene por objeto garantizar los derechos fundamentales en el ámbito de la salud sexual y de la salud reproductiva, regular las condiciones de la interrupción voluntaria del embarazo y de los derechos sexuales y reproductivos, así como establecer las obligaciones de los poderes públicos para que la población alcance y mantenga el mayor nivel posible de salud y educación en relación con la sexualidad y la reproducción. Asimismo, se dirige a prevenir y a dar respuesta a todas las manifestaciones de la violencia contra las mujeres en el ámbito reproductivo.</p></content>
+        </article>
+        <article eId="tit_preliminar__art_2">
+          <num>Artículo 2.</num>
+          <heading>Definiciones</heading>
+          <content><p>A los efectos de lo dispuesto en esta ley orgánica, se entenderá por: 1. Salud: El estado de completo bienestar físico, mental y social y no solamente la ausencia de afecciones o enfermedades.</p></content>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_2">
+            <num>2.</num>
+            <content><p>Salud sexual: El estado general de bienestar físico, mental y social, que requiere un entorno libre de coerción, discriminación y violencia y no la mera ausencia de enfermedad o dolencia, en todos los aspectos relacionados con la sexualidad de las personas. Es también un enfoque integral para analizar y responder a las necesidades de la población, así como para garantizar el derecho a la salud y los derechos sexuales.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_3">
+            <num>3.</num>
+            <content><p>Salud reproductiva: El estado general de bienestar físico, mental y social, y no la mera ausencia de enfermedad o dolencia, en todos los aspectos relacionados con la reproducción. Es también un enfoque integral para analizar y responder a las necesidades de la población, así como para garantizar el derecho a la salud y los derechos reproductivos.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_4">
+            <num>4.</num>
+            <content><p>Salud durante la menstruación: El estado integral de bienestar físico, mental y social, y no meramente la ausencia de enfermedad o dolencia, en relación con el ciclo menstrual. Por gestión menstrual se entenderá la manera en que las mujeres deciden abordar su ciclo menstrual, pudiendo servirse para tal gestión de diversos productos menstruales, tales como compresas, tampones, copas menstruales y artículos similares.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_5">
+            <num>5.</num>
+            <content><p>Intervenciones ginecológicas y obstétricas adecuadas: Aquellas que promueven y protegen la salud física y psíquica de las mujeres en el marco de la atención a la salud sexual y reproductiva, en particular, evitando las intervenciones innecesarias.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_6">
+            <num>6.</num>
+            <content><p>Menstruación incapacitante secundaria: Situación de incapacidad derivada de una dismenorrea generada por una patología previamente diagnosticada.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_7">
+            <num>7.</num>
+            <content><p>Violencia contra las mujeres en el ámbito reproductivo: Todo acto basado en la discriminación por motivos de género que atente contra la integridad o la libre elección de las mujeres en el ámbito de la salud sexual y reproductiva, su libre decisión sobre la maternidad, su espaciamiento y oportunidad.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_8">
+            <num>8.</num>
+            <content><p>Esterilización forzosa: Forma de violencia contra las mujeres en el ámbito reproductivo que consiste en la práctica de una intervención quirúrgica que tenga por objeto o por resultado poner fin a la capacidad de una mujer de reproducirse de modo natural sin su consentimiento previo e informado o sin su entendimiento del procedimiento.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_9">
+            <num>9.</num>
+            <content><p>Anticoncepción forzosa: Forma de violencia contra las mujeres en el ámbito reproductivo que consiste en la intervención médica por cualquier vía, también medicamentosa, que tenga análogas consecuencias a la esterilización forzosa.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_2__para_10">
+            <num>10.</num>
+            <content><p>Aborto forzoso: Forma de violencia contra las mujeres en el ámbito reproductivo que consiste en la práctica de un aborto a una mujer sin su consentimiento previo e informado, a excepción de los casos a los que se refiere el artículo 9.2.b) de la Ley 41/2002, de 14 noviembre .</p></content>
+          </hcontainer>
+        </article>
+        <article eId="tit_preliminar__art_3">
+          <num>Artículo 3.</num>
+          <heading>Principios rectores y ámbito de aplicación</heading>
+          <hcontainer name="apartado" eId="tit_preliminar__art_3__para_1">
+            <num>1.</num>
+            <content><p>A efectos de esta ley orgánica, serán principios rectores de la actuación de los poderes públicos los siguientes: a) Respeto, protección y garantía de los derechos humanos y fundamentales. La actuación institucional y profesional llevada a cabo en el marco de esta ley orgánica se orientará a respetar, proteger y garantizar los derechos humanos previstos en los tratados internacionales de derechos humanos. Dentro de tales derechos, los poderes públicos reconocen especialmente: 1.º Que todas las personas, en el ejercicio de sus derechos de libertad, intimidad, la salud y autonomía personal, pueden adoptar libremente decisiones que afectan a su vida sexual y reproductiva sin más límites que los derivados del respeto a los derechos de las demás personas y al orden público garantizado por la Constitución y las leyes. 2.º Los derechos reproductivos y el derecho a la maternidad libremente decidida. 3.º El deber del Estado de garantizar que la interrupción voluntaria del embarazo se realiza respetando el bienestar físico y psicológico de las mujeres. b) Diligencia debida. Es responsabilidad de los poderes públicos a todo nivel actuar con la diligencia debida en la protección de la salud y de los derechos sexuales y reproductivos, garantizando su reconocimiento y ejercicio efectivo. La obligación de actuar con diligencia debida se extenderá́ a todas las esferas de la responsabilidad institucional, e incluye el deber de hacer efectiva la responsabilidad de las autoridades y agentes públicos en caso de incumplimiento. c) Enfoque de género. Las administraciones públicas incluirán un enfoque de género fundamentado en la comprensión de los estereotipos y las relaciones de género, sus raíces y sus consecuencias en la aplicación y la evaluación del impacto de las disposiciones de esta ley orgánica, y promoverán y aplicarán de manera efectiva políticas de igualdad entre mujeres y hombres y para el empoderamiento de las mujeres y las niñas. d) Prohibición de discriminación. Las instituciones públicas garantizarán que las medidas previstas en esta ley orgánica se apliquen sin discriminación alguna por motivos de sexo, género, origen racial o étnico, nacionalidad, religión o creencias, salud, edad, clase social, orientación sexual, identidad de género, discapacidad, estado civil, situación administrativa de extranjería, o cualquier otra condición o circunstancia personal o social. e) Atención a la discriminación interseccional y múltiple. En aplicación de esta ley orgánica, la respuesta institucional tendrá́ en especial consideración a factores superpuestos de discriminación, tales como el origen racial o étnico, la nacionalidad, la discapacidad, la orientación sexual, la identidad de género, la salud, la clase social, la situación administrativa de extranjería u otras circunstancias que implican posiciones desventajosas de determinados sectores para el ejercicio efectivo de sus derechos. f) Accesibilidad. Se garantizará que todas las acciones y medidas que recoge esta ley orgánica sean concebidas desde la accesibilidad universal, para que sean comprensibles y practicables por todas las personas, de modo que los derechos que recoge se hagan efectivos para las personas con discapacidad, con limitaciones idiomáticas o diferencias culturales, para personas mayores, especialmente mujeres, jóvenes y para niñas y niños. g) Empoderamiento. Las instituciones públicas implementarán esta ley orgánica con especial atención al fortalecimiento de la capacidad de agencia y la autonomía de las personas en cada fase del ciclo vital, con énfasis en las mujeres y en la población joven. Este enfoque, además, deberá contribuir a disminuir y eliminar las desigualdades estructurales que constriñen la vivencia del deseo y de la sexualidad plena, así como de otros elementos esenciales de la salud, los derechos sexuales y reproductivos. h) Participación. En el diseño, aplicación y evaluación de los servicios y las políticas públicas previstas en esta ley orgánica, se garantizará la participación de las entidades, asociaciones y organizaciones del movimiento feminista y la sociedad civil, con especial atención a la participación de las mujeres desde una óptica interseccional. i) Cooperación. Todas las políticas que se adopten en ejecución de esta ley orgánica se aplicarán por medio de una cooperación efectiva entre todas las administraciones públicas, instituciones y organizaciones implicadas en garantizar la salud y los derechos sexuales y reproductivos. En el seno de la Conferencia Sectorial de Igualdad, así como en el Consejo Interterritorial del Sistema Nacional de Salud, podrán adoptarse planes y programas conjuntos de actuación entre todas las administraciones públicas competentes con esta finalidad. j) Implicación de los hombres. Fomentar la implicación y la responsabilidad de los hombres en la prevención de embarazos no deseados y de infecciones de transmisión sexual. Las administraciones públicas promoverán, en el marco de sus competencias, la corresponsabilidad en el ámbito de la salud sexual. 2. Los derechos previstos en esta ley orgánica serán de aplicación a todas las personas que se encuentren en España, con independencia de su nacionalidad, de si disfrutan o no de residencia legal o de si son mayores o menores de edad, sin perjuicio de las precisiones establecidas en el artículo 13 bis, y siempre de acuerdo con los términos previstos en la legislación vigente en la materia sanitaria. Todas las referencias de esta ley orgánica a las mujeres relacionadas con los derechos reproductivos serán aplicables a personas trans con capacidad de gestar, lo que incluye lo previsto en relación con la salud durante la menstruación.</p></content>
+          </hcontainer>
+          <hcontainer name="apartado" eId="tit_preliminar__art_3__para_3">
+            <num>3.</num>
+            <content><p>Las obligaciones establecidas en esta ley orgánica serán de aplicación a toda persona, física o jurídica, que se encuentre o actúe en territorio español, cualquiera que fuese su nacionalidad, domicilio o residencia.</p></content>
+          </hcontainer>
+        </article>
+        <article eId="tit_preliminar__art_4">
+          <num>Artículo 4.</num>
+          <heading>Garantía de igualdad en el acceso y equidad territorial</heading>
+          <content><p>El Estado, en el ejercicio de sus competencias de Alta Inspección, velará por el cumplimiento homogéneo de esta ley orgánica en el conjunto del territorio, y, en particular, por el acceso en condiciones de igualdad y con un enfoque de equidad territorial a las prestaciones y servicios establecidos en esta ley orgánica.</p></content>
+        </article>
+      </hcontainer>
+      <hcontainer name="titulo" eId="tit_I">
+        <num>TÍTULO I</num>
+        <heading>Responsabilidad institucional en el ámbito de la salud, los derechos sexuales y reproductivos</heading>
+        <hcontainer name="capitulo" eId="tit_I__cap_I">
+          <num>CAPÍTULO I</num>
+          <heading>Políticas públicas para la promoción de la salud sexual y reproductiva</heading>
+          <article eId="tit_I__cap_I__art_5">
+            <num>Artículo 5.</num>
+            <heading>Objetivos y garantías generales de actuación de los poderes públicos</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5__para_1">
+              <num>1.</num>
+              <content><p>Los poderes públicos, en el desarrollo de sus políticas sanitarias, educativas y de formación profesional, y sociales garantizarán: a) El acceso público, universal y gratuito a los servicios y programas de salud sexual y salud reproductiva. b) La generación y difusión efectiva de información de calidad sobre salud, derechos sexuales y reproductivos. c) El tratamiento de la educación afectivo-sexual y la detección y abordaje de conductas de abuso y violencia, en los términos establecidos en la Ley Orgánica 2/2006, de 3 de mayo , de Educación, en la Ley Orgánica 3/2022, de 31 de marzo , de ordenación e integración de la Formación Profesional, en las pertinentes leyes autonómicas y en los currículos de las diferentes etapas educativas y formativas que ambas normas contemplan. d) El acceso a métodos anticonceptivos seguros y eficaces y a productos de gestión menstrual asequibles. e) La eliminación de toda forma de discriminación y de las barreras que impidan el ejercicio pleno de los derechos sexuales y reproductivos. f) La educación sanitaria integral, con perspectiva de género, de derechos humanos e interseccional, sobre salud sexual y salud reproductiva. g) La información sanitaria sobre anticoncepción y sexo seguro, con especial atención a la prevención de las enfermedades e infecciones de transmisión sexual y de los embarazos no deseados. h) La prevención, sanción y erradicación de cualquier forma de violencia contra las mujeres en relación con la salud, los derechos sexuales y reproductivos. Todas estas medidas se realizarán también en las lenguas oficiales de las comunidades autónomas. i) El acceso a la justicia y los mecanismos de reparación de las personas cuyos derechos sexuales y reproductivos hayan sido vulnerados. j) La generación y difusión efectiva de información de calidad sobre educación en materia menstrual y productos de gestión menstrual. k) La atención específica a las personas con algún tipo de discapacidad, a quienes se garantizará su derecho a la salud sexual y reproductiva, garantizando y estableciendo para ellas entornos accesibles y los apoyos necesarios en función de su discapacidad. 2. Asimismo, en el desarrollo de sus políticas promoverán: a) Acciones de desestigmatización y valoración sociosanitaria del personal involucrado en la prestación con garantías de los servicios de interrupción voluntaria del embarazo. b) La atención con pertinencia cultural a las personas de otros orígenes nacionales, étnicos o raciales, cualquiera que fuere su situación administrativa de extranjería, y atendiendo especialmente a las posibles barreras del idioma, siempre de acuerdo con los términos previstos en la legislación vigente en materia sanitaria. c) La atención pertinente a personas en situación de vulnerabilidad socioeconómica. d) La atención especializada dirigida a personas en diferentes etapas del ciclo vital, con énfasis especial en la infancia y juventud, así como en la fase de la vida adulta de las mujeres en que tienen lugar el climaterio y la menopausia. e) Las relaciones de igualdad, el respeto a las opciones sexuales individuales y la corresponsabilidad en las conductas sexuales. f) La investigación, generación y difusión de conocimiento científico y especializado respecto de la salud, los derechos sexuales y reproductivos con perspectiva de género, interseccional y de derechos humanos. g) Las relaciones de igualdad y respeto mutuo entre hombres y mujeres en el ámbito de la salud sexual y la adopción de programas educativos especialmente diseñados para la convivencia y el respeto de las opciones sexuales individuales. h) La corresponsabilidad en las conductas sexuales, cualquiera que sea la orientación sexual.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_I__cap_I__art_5_bis">
+            <num>Artículo 5 bis.</num>
+            <heading>La salud sexual como estándar de salud</heading>
+            <content><p>Los poderes públicos reconocerán la salud durante la menstruación como parte inherente del derecho a la salud sexual y reproductiva. De la misma forma, combatirán los estereotipos sobre la menstruación que impactan negativamente en el acceso o el ejercicio de los derechos humanos de las mujeres, las adolescentes y las niñas. El Consejo Interterritorial del Sistema Nacional de Salud, en colaboración con las sociedades científicas, aprobará los estándares mínimos de atención sanitaria a la salud durante la menstruación en las mujeres dentro del marco de atención a la salud sexual y reproductiva, con la perspectiva de derechos sexuales y reproductivos y garantizando la equidad en todos los niveles, promoviendo la investigación y la eliminación de la discriminación basada en estereotipos sobre la menstruación.</p></content>
+          </article>
+          <article eId="tit_I__cap_I__art_5_ter">
+            <num>Artículo 5 ter.</num>
+            <heading>Medidas en el ámbito laboral y de la Seguridad Social sobre la salud durante la menstruación</heading>
+            <content><p>A fin de conciliar el derecho a la salud con el empleo, se reconoce a las mujeres con menstruaciones incapacitantes secundarias el derecho a una situación especial de incapacidad temporal en los términos establecidos por el texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto Legislativo 8/2015, de 30 de octubre .</p></content>
+          </article>
+          <article eId="tit_I__cap_I__art_5_quater">
+            <num>Artículo 5 quater.</num>
+            <heading>Medidas de distribución de productos de gestión menstrual</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_quater__para_1">
+              <num>1.</num>
+              <content><p>Los centros educativos garantizarán el acceso gratuito a productos de gestión menstrual en las situaciones en que resulte necesario y a través de los cauces que establezcan para ello.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_quater__para_2">
+              <num>2.</num>
+              <content><p>Se garantizará, asimismo, el acceso gratuito de dichos productos a mujeres en riesgo de exclusión, en los centros que ofrecen servicios sociales, así como en los centros y otros lugares donde permanezcan personas privadas de libertad.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_quater__para_3">
+              <num>3.</num>
+              <content><p>La entrega de productos de gestión menstrual respetará las elecciones de las personas usuarias. Los productos se encontrarán disponibles sin necesidad de mediación alguna, garantizando la protección de la identidad y la confidencialidad.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_quater__para_4">
+              <num>4.</num>
+              <content><p>Los organismos públicos previstos en este artículo optarán de forma preferente y progresiva por los productos de gestión menstrual sostenibles, orgánicos, ecológicos, de rápida descomposición, reutilizables y libres de químicos, con el fin de causar el menor impacto posible al medio ambiente y en la salud de las mujeres y otras personas destinatarias.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_quater__para_5">
+              <num>5.</num>
+              <content><p>Las anteriores medidas se adoptarán de forma progresiva en las dependencias de organismos públicos previstos en este artículo.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_quater__para_6">
+              <num>6.</num>
+              <content><p>Se prohíbe la venta de los productos menstruales que sean entregados por las administraciones públicas en las entidades mencionadas y se promoverá su uso racional.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_I__cap_I__art_5_quinquies">
+            <num>Artículo 5 quinquies.</num>
+            <heading>Medidas en el ámbito de la comercialización de los productos de gestión menstrual</heading>
+            <content><p>Todos los productos de gestión menstrual que se comercialicen en el territorio del Estado deberán ser libres de agentes nocivos para la salud. Los fabricantes estarán obligados a hacer pública la información sobre su composición y posibles efectos en la salud humana, así como sobre su impacto ambiental.</p></content>
+          </article>
+          <article eId="tit_I__cap_I__art_5_sexies">
+            <num>Artículo 5 sexies.</num>
+            <heading>Servicios de asistencia integral especializada y accesible</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_sexies__para_1">
+              <num>1.</num>
+              <content><p>Las administraciones públicas, en el ámbito de sus respectivas competencias, promoverán el derecho a la asistencia integral especializada y accesible, con objeto de la realización de las garantías y el cumplimiento de los objetivos enunciados en los artículos anteriores.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_sexies__para_2">
+              <num>2.</num>
+              <content><p>A tal fin, y en coherencia con lo establecido en el Real Decreto 1030/2006, de 15 de septiembre , por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud y el procedimiento para su actualización, dispondrán servicios especializados, incluidos en la cartera de servicios del Sistema Nacional de Salud, dotados de equipos interdisciplinares que tendrán como objetivos principales la promoción de la salud sexual y la salud reproductiva en todas las fases del ciclo vital, que se constituyen como lugar de referencia para la coordinación con otros órganos institucionales de nivel local y autonómico.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_sexies__para_3">
+              <num>3.</num>
+              <content><p>Además de los servicios especializados dirigidos al conjunto de la población, las administraciones públicas establecerán servicios adaptados y adecuados a las necesidades y demandas de la población joven, que promuevan su participación para el desarrollo y abordaje integral de la sexualidad. También se atenderá de forma especial a la salud afectivo-sexual de las mujeres mayores teniendo en cuenta sus especificidades.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_sexies__para_4">
+              <num>4.</num>
+              <content><p>Estos servicios especializados estarán adaptados a las necesidades de las mujeres con discapacidad.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_I__art_5_sexies__para_5">
+              <num>5.</num>
+              <content><p>Estos servicios especializados estarán adaptados a las lenguas oficiales de las comunidades autónomas.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_I__cap_I__art_6">
+            <num>Artículo 6.</num>
+            <heading>Apoyo a las entidades sin ánimo de lucro y sociedad civil</heading>
+            <content><p>Las administraciones públicas promoverán y fortalecerán la participación de las entidades sin ánimo de lucro, asociaciones, organizaciones sociales y organizaciones sindicales y empresariales más representativas, atendiendo a las diferentes realidades territoriales del Estado que, desde el movimiento feminista y la sociedad civil, actúan en el ámbito de la salud y los derechos sexuales y reproductivos, con especial atención a aquellas cuyas actuaciones tienen lugar en los ámbitos específicos regulados por esta ley orgánica. Quedarán excluidas de este artículo aquellas organizaciones contrarias al derecho recogido en la presente ley orgánica de interrupción voluntaria del embarazo.</p></content>
+          </article>
+        </hcontainer>
+        <hcontainer name="capitulo" eId="tit_I__cap_II">
+          <num>CAPÍTULO II</num>
+          <heading>Medidas en el ámbito de la salud sexual y reproductiva</heading>
+          <article eId="tit_I__cap_II__art_7">
+            <num>Artículo 7.</num>
+            <heading>Atención a la salud sexual</heading>
+            <content><p>Los servicios públicos garantizarán: a) El derecho a la libertad, la autonomía personal y el reconocimiento de las distintas opciones y orientaciones sexuales. b) El enfoque antidiscriminatorio e interseccional en todas sus prácticas, a fin de valorar y abordar de forma integral las circunstancias relativas a la edad, sexo, identidad de género, origen nacional, lengua, étnico o racial, situación administrativa de extranjería, discapacidad y situación económica de las personas. c) La calidad de los servicios de atención a la salud integral y, en especial, de la promoción e implementación de estándares de atención basados en el mejor y más actualizado conocimiento científico disponible respecto de la salud sexual en todas las fases del ciclo vital y sobre los derechos sexuales. d) La información y el acceso a anticonceptivos de última generación, regulares y de urgencia, definitivos y reversibles, cuya eficacia sea avalada por la evidencia científica. e) El fortalecimiento de la prevención y el tratamiento de las infecciones y enfermedades de transmisión sexual, con especial atención al virus de la inmunodeficiencia humana (en adelante, VIH) y virus del papiloma humano (en adelante, VPH), y énfasis en la población joven. f) La implementación y fortalecimiento de servicios públicos de proximidad y en todos los niveles de la atención sanitaria, especializados en salud sexual y conformados por equipos multidisciplinares.</p></content>
+          </article>
+          <article eId="tit_I__cap_II__art_7_bis">
+            <num>Artículo 7 bis.</num>
+            <heading>Atención a la salud reproductiva</heading>
+            <content><p>Los servicios públicos de salud garantizarán: a) La calidad de los servicios de atención a la salud integral y en especial de la promoción e implementación de estándares de atención basados en el mejor y más actualizado conocimiento científico disponible respecto de la salud reproductiva. b) El enfoque antidiscriminatorio e interseccional en todas sus prácticas, a fin de valorar y abordar de forma integral las diferentes circunstancias relativas a la edad, sexo, identidad de género, origen nacional, étnico o racial, situación administrativa de extranjería, discapacidad y situación económica de la población y, especialmente, de las mujeres. c) La provisión de servicios de la más alta calidad posible durante el embarazo, la interrupción del embarazo, el parto y el puerperio. d) La garantía de información accesible sobre los derechos reproductivos, las prestaciones públicas, la cobertura sanitaria durante el embarazo, parto y puerperio, así como sobre los derechos laborales y otro tipo de prestaciones y servicios públicos vinculados a la maternidad y el cuidado de hijos e hijas. e) La regulación de una situación especial de incapacidad temporal para la mujer que interrumpa, voluntariamente o no, su embarazo, en los términos establecidos en el texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto Legislativo 8/2015, de 30 de octubre . f) La regulación de una situación especial de incapacidad temporal para la mujer embarazada desde el día primero de la semana trigésima novena de gestación. g) La provisión de asistencia, apoyo emocional y acompañamiento de la salud mental a las mujeres que lo requieran durante el postparto o en el caso de muerte perinatal. h) La atención perinatal y neonatal con una perspectiva integral de desarrollo saludable. i) La atención integral durante todo el procedimiento de interrupción del embarazo, ofreciendo recursos de acompañamiento y atención especializada, en particular de acompañamiento psicológico específico. j) El incremento de la calidad de los servicios relacionados con la prevención, detección y tratamiento de cánceres relacionados con la sexualidad y la reproducción, y especialmente de los denominados cánceres ginecológicos y de mama. k) La provisión especializada de atención psicológica o sexológica con perspectiva de género.</p></content>
+          </article>
+          <article eId="tit_I__cap_II__art_7_ter">
+            <num>Artículo 7 ter.</num>
+            <heading>Garantía de acceso a la anticoncepción</heading>
+            <content><p>Las administraciones públicas, en el ámbito de sus competencias, garantizarán: a) El acceso público y universal a prácticas clínicas efectivas de planificación de la reproducción, mediante el uso de métodos anticonceptivos, regulares y de urgencia, definitivos y reversibles, con especial atención a aquellos que presenten beneficio clínico incremental frente a las alternativas disponibles, que demuestren seguridad, y anticonceptivos masculinos, siempre que su eficacia y seguridad sea avalada por la evidencia científica rigurosa y de calidad. b) La distribución gratuita de métodos anticonceptivos de barrera en los servicios a que se refiere el artículo 5 sexies, en los centros que ofrecen servicios sociales, en los centros residenciales dependientes de la red de servicios sociales y en los lugares donde permanezcan personas privadas de libertad. c) Además, podrán distribuirse métodos de barrera durante las campañas de educación sexual que en ejercicio de su autonomía se realicen en los centros de educación secundaria.</p></content>
+          </article>
+          <article eId="tit_I__cap_II__art_7_quater">
+            <num>Artículo 7 quater.</num>
+            <heading>Corresponsabilidad</heading>
+            <content><p>Los poderes públicos, especialmente desde el ámbito de la educación y la salud, fomentarán la corresponsabilidad en la anticoncepción. A tal fin, se desarrollarán políticas públicas destinadas a: a) La eliminación de los estereotipos y roles sociales que refuerzan la discriminación de las mujeres en el ámbito de la anticoncepción. b) La investigación, financiación y comercialización de anticonceptivos masculinos que sean seguros y eficaces, y que contribuyan a distribuir de forma equitativa entre hombres y mujeres las responsabilidades de la anticoncepción. c) La consideración de la anticoncepción como un asunto de salud pública y no como una responsabilidad exclusiva de las mujeres.</p></content>
+          </article>
+          <article eId="tit_I__cap_II__art_7_quinquies">
+            <num>Artículo 7 quinquies.</num>
+            <heading>Anticoncepción de urgencia</heading>
+            <content><p>A efectos de lo dispuesto en el artículo 111.2.c).12.ª del texto refundido de la Ley de garantías y uso racional de los medicamentos y productos sanitarios, aprobado por el Real Decreto Legislativo 1/2015, de 24 de julio , se considerarán adecuadas las existencias de los métodos anticonceptivos de urgencia que garanticen la normal prestación del servicio en función de la demanda de cada oficina de farmacia.</p></content>
+          </article>
+          <article eId="tit_I__cap_II__art_8">
+            <num>Artículo 8.</num>
+            <heading>Formación de profesionales de la salud</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_II__art_8__para_1">
+              <num>1.</num>
+              <content><p>La formación de profesionales de la salud se abordará con perspectiva igualitaria entre mujeres y hombres, integral de derechos humanos e interseccional e incluirá: a) La incorporación de los derechos sexuales y reproductivos en los programas curriculares de las carreras con competencias en dichos ámbitos. b) La incorporación de la salud sexual y reproductiva en los programas curriculares de las carreras relacionadas con la medicina y las ciencias de la salud, incluyendo la investigación y formación, con los conocimientos más avanzados, en la práctica clínica de la interrupción voluntaria del embarazo. c) La salud sexual y reproductiva en los programas de formación continuada a lo largo del desempeño de la carrera profesional en las áreas de la salud. d) La realidad y las necesidades de los grupos o sectores sociales más vulnerables, como el de las personas con discapacidad.</p></content>
+            </hcontainer>
+          </article>
+        </hcontainer>
+        <hcontainer name="capitulo" eId="tit_I__cap_III">
+          <num>CAPÍTULO III</num>
+          <heading>Medidas en el ámbito de la educación y la sensibilización relativas a los derechos sexuales y reproductivos</heading>
+          <article eId="tit_I__cap_III__art_9">
+            <num>Artículo 9.</num>
+            <heading>Formación sobre salud sexual y reproductiva en el sistema educativo</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_III__art_9__para_1">
+              <num>1.</num>
+              <content><p>Las administraciones educativas, en el ámbito de sus competencias contemplarán la formación en salud sexual y reproductiva, como parte del desarrollo integral de la personalidad, de la formación en valores, con base en la dignidad de la persona, y con un enfoque interseccional, que contribuya a: a) La promoción de una visión de la sexualidad en términos de igualdad y corresponsabilidad, y diversidad, desde la óptica del placer, el deseo, la libertad y el respeto, con especial atención a la prevención de la violencia de género y la violencia sexual. b) El reconocimiento de la diversidad sexual. c) El desarrollo armónico de la sexualidad en cada etapa del ciclo vital, con especial atención a la adolescencia y juventud. d) La prevención de enfermedades e infecciones de transmisión sexual, especialmente del VIH y del VPH, visibilizando la realidad de las personas VIH+/SIDA, desde el surgimiento del VIH hasta la actualidad, haciendo hincapié en sus necesidades y propuestas para superar la discriminación y olvido en el que viven. e) La prevención de embarazos no deseados. 2. La educación afectivo-sexual, en todas sus dimensiones, forma parte del currículo durante toda la educación obligatoria, y será impartida por personal que habrá recibido la formación adecuada para ello, en consonancia con la Ley Orgánica 3/2020, de 29 de diciembre , por la que se modifica la Ley Orgánica 2/2006, de 3 mayo , de Educación.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_I__cap_III__art_10">
+            <num>Artículo 10.</num>
+            <heading>Apoyo a la comunidad educativa</heading>
+            <content><p>Las administraciones públicas, en el ámbito de sus respectivas competencias, apoyarán a la comunidad educativa en la realización de actividades formativas complementarias relacionadas con la educación sexual, la prevención de infecciones de transmisión sexual y embarazos no deseados, facilitando información adecuada al profesorado, madres, padres y tutores de personas menores o personas con discapacidad.</p></content>
+          </article>
+          <article eId="tit_I__cap_III__art_10_bis">
+            <num>Artículo 10 bis.</num>
+            <heading>Educación para la prevención de las violencias sexuales</heading>
+            <content><p>Las administraciones educativas, en el ámbito de sus competencias incluirán, en los términos establecidos en la Ley Orgánica 3/2020, de 29 de diciembre , y en las disposiciones que la desarrollan y establecen los currículos de las diferentes etapas educativas, la educación afectivo-sexual, la igualdad entre mujeres y hombres y la educación en derechos humanos, como medidas dirigidas a la garantía de la libertad sexual y a la prevención de las violencias sexuales, incluida la que puede producirse en el ámbito digital. Estas medidas serán incluidas, asimismo, con el alcance que corresponda, en las ofertas formativas de Formación Profesional previstas en la Ley Orgánica 3/2022, de 31 de marzo .</p></content>
+          </article>
+          <article eId="tit_I__cap_III__art_10_ter">
+            <num>Artículo 10 ter.</num>
+            <heading>Medidas en el ámbito de la educación menstrual</heading>
+            <content><p>Las administraciones educativas, en el ámbito de sus competencias, garantizarán, en el marco de la educación afectivo-sexual, que el sistema educativo establece en los currículos de las diferentes etapas educativas, el abordaje integral de la salud durante la menstruación con perspectiva de género, interseccional y de derechos humanos en el ámbito de la educación, tanto formal como no formal, con especial atención a la eliminación de los mitos, prejuicios y estereotipos de género que generan el estigma menstrual.</p></content>
+          </article>
+          <article eId="tit_I__cap_III__art_10_quater">
+            <num>Artículo 10 quater.</num>
+            <heading>Medidas en el ámbito de la educación no formal</heading>
+            <content><p>Las administraciones públicas, en el ámbito de sus competencias, impulsarán, en el ámbito de la educación no formal, programas públicos de educación sexual y reproductiva dirigidos a personas adultas y adecuados a sus condiciones, necesidades e intereses diversos, con especial énfasis en las franjas etarias en las que se producen los procesos de climaterio y menopausia.</p></content>
+          </article>
+          <article eId="tit_I__cap_III__art_10_quinquies">
+            <num>Artículo 10 quinquies.</num>
+            <heading>Campañas institucionales de prevención e información</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_III__art_10_quinquies__para_1">
+              <num>1.</num>
+              <content><p>Con el fin de promover los derechos sexuales y reproductivos, las administraciones públicas, en el marco de sus respectivas competencias, impulsarán campañas de concienciación dirigidas a toda la población, que promuevan los derechos previstos en esta ley orgánica, lo que incluye la corresponsabilidad en el ámbito de la anticoncepción, la eliminación de los estereotipos de género en el ámbito de las relaciones sexuales, la promoción de los derechos reproductivos con especial énfasis en la interrupción voluntaria del embarazo, el embarazo, parto y puerperio y la promoción de la salud durante la menstruación en las diferentes etapas de la vida y de la salud durante la menopausia y después de esta. Asimismo, se realizarán campañas de prevención de conductas como la transmisión negligente o intencionada de infecciones de transmisión sexual o la retirada del preservativo sin consentimiento. También se impulsarán campañas que desmitifiquen todas las formas de violencia en el ámbito reproductivo contenidas en la presente ley, como la gestación por sustitución. Las administraciones públicas, en el ámbito de sus competencias, promoverán la difusión en medios de comunicación social, publicidad, internet, redes sociales y empresas de la tecnología de la información y comunicación de contenidos que promuevan la concienciación, conocimiento y diagnóstico precoz de las enfermedades de la salud sexual y reproductiva.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_III__art_10_quinquies__para_2">
+              <num>2.</num>
+              <content><p>Las administraciones públicas impulsarán campañas periódicas de información y prevención de las infecciones de transmisión sexual.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_III__art_10_quinquies__para_3">
+              <num>3.</num>
+              <content><p>Las campañas se realizarán de manera que sean accesibles, tomando en consideración circunstancias, tales como la edad, la discapacidad, o el idioma. Para ello, tendrán especial divulgación en los medios de comunicación de titularidad pública y en los centros educativos y de formación, sociales, sanitarios, culturales y deportivos.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_I__cap_III__art_10_sexies">
+            <num>Artículo 10 sexies.</num>
+            <heading>Formación en los ámbitos de las ciencias jurídicas, las ciencias de la educación y las ciencias sociales</heading>
+            <content><p>Las administraciones educativas, en el ámbito de sus competencias, promoverán la incorporación de contenidos de calidad, adaptados y suficientes sobre salud, derechos sexuales y reproductivos en las titulaciones relacionadas con las ciencias jurídicas, las ciencias de la educación y las ciencias sociales. Asimismo, dichos contenidos se incorporarán a los temarios de oposiciones vinculados al acceso a los cuerpos y escalas de las administraciones públicas relacionadas con los ámbitos de las ciencias de la educación, las ciencias jurídicas y las ciencias sociales.</p></content>
+          </article>
+        </hcontainer>
+        <hcontainer name="capitulo" eId="tit_I__cap_IV">
+          <num>CAPÍTULO IV</num>
+          <heading>Medidas para la aplicación efectiva de la ley</heading>
+          <article eId="tit_I__cap_IV__art_11">
+            <num>Artículo 11.</num>
+            <heading>Elaboración de la Estrategia Estatal de Salud Sexual y Reproductiva</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11__para_1">
+              <num>1.</num>
+              <content><p>Para el cumplimiento de los objetivos previstos en esta ley orgánica, el Consejo Interterritorial del Sistema Nacional de Salud aprobará la Estrategia Estatal de Salud Sexual y Reproductiva, que contará con la colaboración de las sociedades científicas y profesionales y las organizaciones sociales, así como con el informe favorable de la Conferencia Sectorial de Igualdad. Corresponde al Ministerio de Sanidad su planificación, coordinación, desarrollo y evaluación, garantizándose la participación de los departamentos ministeriales cuyas actuaciones incidan especialmente en materia de salud sexual y reproductiva, y en particular del Ministerio de Igualdad; de las comunidades autónomas y ciudades con estatuto de autonomía; así como de las organizaciones representativas de los intereses sociales afectados.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11__para_2">
+              <num>2.</num>
+              <content><p>La Estrategia se elaborará con criterios de calidad y equidad en el Sistema Nacional de Salud, con énfasis en la salud sexual y la salud reproductiva, y estará integrada por medidas en el ámbito de la educación, la formación y la investigación, la interrupción voluntaria del embarazo y las violencias contra las mujeres en estos ámbitos.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11__para_3">
+              <num>3.</num>
+              <content><p>En el marco de la Estrategia se desarrollará un plan operativo que aborde de manera específica el diagnóstico precoz, el diagnóstico y el tratamiento y abordaje integral, con perspectiva de género, de las patologías relacionadas con la salud sexual y reproductiva de las mujeres.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11__para_4">
+              <num>4.</num>
+              <content><p>La Estrategia establecerá mecanismos de evaluación internos y externos de la consecución de sus objetivos. La evaluación interna será bienal y realizada por una Comisión destinada expresamente a estas tareas de evaluación, formada por representantes del Comité Técnico y del Comité Institucional de la Estrategia Estatal de Salud Sexual y Reproductiva. La evaluación externa, que también será bienal, se realizará a cargo de una Comisión diferente a los Comités Técnico e Institucional de la Estrategia o sus representantes designados para la evaluación interna, debiendo garantizar, en cualquier caso, la inclusión de la perspectiva de género en su metodología evaluativa. Tanto en la Comisión de evaluación externa, como en ambos Comités de la Estrategia, se garantizará la representación de la institución responsable de la propuesta y ejecución de la política del Gobierno en materia de igualdad.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11__para_5">
+              <num>5.</num>
+              <content><p>En el marco de la Estrategia, se desarrollará un plan operativo sobre la atención sanitaria al parto normal que aborde de manera específica el impulso de los objetivos, recomendaciones y estándares propuestos contenidos en dicha Estrategia.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_I__cap_IV__art_11_bis">
+            <num>Artículo 11 bis.</num>
+            <heading>Investigación, recopilación y producción de datos</heading>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11_bis__para_1">
+              <num>1.</num>
+              <content><p>La investigación en materia de salud, derechos sexuales y reproductivos se garantizará a través de políticas públicas con enfoque de género e interseccional que permitan obtener la mejor, más amplia y actualizada información científica respecto de la salud sexual, la salud reproductiva, la salud durante la menstruación y la salud durante la menopausia y el climaterio en cada etapa correspondiente del ciclo vital.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11_bis__para_2">
+              <num>2.</num>
+              <content><p>Las administraciones públicas llevarán a cabo y apoyarán la realización de estudios, encuestas y trabajos de investigación sobre las temáticas reguladas por esta ley orgánica, así como aquellos otros que, integrando la perspectiva de género e interseccional, las tengan en cuenta, a fin de obtener y producir el mejor y más actualizado conocimiento que sea posible en el ámbito de la salud, los derechos sexuales y reproductivos. Se promoverá la recogida de datos y la elaboración de estudios sobre las infecciones de transmisión sexual, con la finalidad de analizar su prevalencia y guiar las medidas para su prevención y tratamiento. Asimismo, se promoverán los estudios sobre la crisis de reproducción y sus impactos sociales.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11_bis__para_3">
+              <num>3.</num>
+              <content><p>Se promoverá y garantizará la investigación que permita obtener la mejor, más amplia y actualizada información acerca de la menstruación y la salud durante la menstruación en las diferentes fases del ciclo vital de las mujeres, con un enfoque relativo a la prevención, diagnóstico y tratamiento de patologías que afectan al ciclo menstrual y los efectos que sobre este producen los distintos fármacos.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11_bis__para_4">
+              <num>4.</num>
+              <content><p>En la elaboración de las políticas públicas y en la realización de estudios, encuestas y trabajos de investigación se dará cumplimiento a la normativa vigente en materia de protección de datos de carácter personal.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_I__cap_IV__art_11_bis__para_5">
+              <num>5.</num>
+              <content><p>Los objetivos de la investigación serán buscar soluciones a problemas específicos, explicar fenómenos y realidades, elaborar recomendaciones y propuestas de acción, desarrollar teorías, ampliar conocimientos, establecer principios y reformular planteamientos en relación con la promoción, protección y respeto de los derechos consagrados en esta ley orgánica.</p></content>
+            </hcontainer>
+          </article>
+        </hcontainer>
+      </hcontainer>
+      <hcontainer name="titulo" eId="tit_II">
+        <num>TÍTULO II</num>
+        <heading>De la interrupción voluntaria del embarazo</heading>
+        <hcontainer name="capitulo" eId="tit_II__cap_I">
+          <num>CAPÍTULO I</num>
+          <heading>Condiciones de la interrupción voluntaria del embarazo</heading>
+          <article eId="tit_II__cap_I__art_12">
+            <num>Artículo 12.</num>
+            <heading>Garantía de acceso a la interrupción voluntaria del embarazo</heading>
+            <content><p>Se garantiza el acceso a la interrupción voluntaria del embarazo en las condiciones que se determinan en esta Ley. Estas condiciones se interpretarán en el modo más favorable para la protección y eficacia de los derechos fundamentales de la mujer que solicita la intervención, en particular, su derecho al libre desarrollo de la personalidad, a la vida, a la integridad física y moral, a la intimidad, a la libertad ideológica y a la no discriminación.</p></content>
+          </article>
+          <article eId="tit_II__cap_I__art_13">
+            <num>Artículo 13.</num>
+            <heading>Requisitos comunes</heading>
+            <content><p>Son requisitos necesarios de la interrupción voluntaria del embarazo: a) Que se practique por un médico especialista, preferiblemente en obstetricia y ginecología o bajo su dirección. b) Que se lleve a cabo en centro sanitario público o en un centro privado acreditado. c) Que se realice con el consentimiento expreso informado y por escrito de la mujer embarazada o, en su caso, del representante legal, de conformidad con lo establecido en la Ley 41/2002, de 14 de noviembre , básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica. Podrá prescindirse del consentimiento expreso en el supuesto previsto en el artículo 9.2.b) de la referida ley. En el supuesto de mujeres con medidas de apoyo para el ejercicio de su capacidad jurídica se atenderá a lo dispuesto en el artículo 9.7 de la misma ley.</p></content>
+          </article>
+          <article eId="tit_II__cap_I__art_13_bis">
+            <num>Artículo 13 bis.</num>
+            <heading>Edad</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_13_bis__para_1">
+              <num>1.</num>
+              <content><p>Las mujeres podrán interrumpir voluntariamente su embarazo a partir de los 16 años, sin necesidad del consentimiento de sus representantes legales.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_13_bis__para_2">
+              <num>2.</num>
+              <content><p>En el caso de las menores de 16 años, será de aplicación el régimen previsto en el artículo 9.3.c) de la Ley 41/2002, de 14 de noviembre . En el supuesto de las menores de 16 años embarazadas en situación de desamparo que, en aplicación del artículo 9.3.c) de la Ley 41/2002, de 14 de noviembre , requieran consentimiento por representación, éste podrá darse por parte de la Entidad Pública que haya asumido la tutela en virtud del artículo 172.1 del Código Civil . En el supuesto de las menores de 16 años embarazadas en situación de desamparo cuya tutela no haya sido aún asumida por la Entidad Pública a la que, en el respectivo territorio, esté encomendada la protección de los menores, que, en aplicación del artículo el artículo 9.3.c) de la Ley 41/2002, de 14 de noviembre , requirieran consentimiento por representación, será de aplicación lo previsto en el artículo 172.4 del Código Civil , pudiendo la Entidad Pública que asuma la guarda provisional dar el consentimiento por representación para la interrupción voluntaria del embarazo, a fin de salvaguardar el derecho de la menor a la misma. En caso de discrepancia entre la menor y los llamados a prestar el consentimiento por representación, los conflictos se resolverán conforme a lo dispuesto en la legislación civil por la autoridad judicial, debiendo nombrar a la menor un defensor judicial en el seno del procedimiento y con intervención del Ministerio Fiscal. El procedimiento tendrá carácter urgente en atención a lo dispuesto en el artículo 19.6 de esta ley orgánica.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_I__art_14">
+            <num>Artículo 14.</num>
+            <heading>Interrupción del embarazo dentro de las primeras catorce semanas de gestación</heading>
+            <content><p>Podrá interrumpirse el embarazo dentro de las primeras catorce semanas de gestación a petición de la mujer embarazada.</p></content>
+          </article>
+          <article eId="tit_II__cap_I__art_15">
+            <num>Artículo 15.</num>
+            <heading>Interrupción por causas médicas</heading>
+            <content><p>Excepcionalmente, podrá interrumpirse el embarazo por causas médicas cuando concurra alguna de las circunstancias siguientes: a) Que no se superen las veintidós semanas de gestación y siempre que exista grave riesgo para la vida o la salud de la embarazada y así conste en un dictamen emitido con anterioridad a la intervención por un médico o médica especialista distinto del que la practique o dirija. En caso de urgencia por riesgo vital para la gestante podrá prescindirse del dictamen. b) Que no se superen las veintidós semanas de gestación y siempre que exista riesgo de graves anomalías en el feto y así conste en un dictamen emitido con anterioridad a la intervención por dos médicos especialistas distintos del que la practique o dirija. c) Cuando se detecten anomalías fetales incompatibles con la vida y así conste en un dictamen emitido con anterioridad por un médico o médica especialista, distinto del que practique la intervención, o cuando se detecte en el feto una enfermedad extremadamente grave e incurable en el momento del diagnóstico y así lo confirme un comité clínico.</p></content>
+          </article>
+          <article eId="tit_II__cap_I__art_16">
+            <num>Artículo 16.</num>
+            <heading>Comité clínico</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_16__para_1">
+              <num>1.</num>
+              <content><p>El Comité clínico al que se refiere el artículo anterior estará formado por un equipo pluridisciplinar integrado por dos integrantes del personal médico especialistas en ginecología y obstetricia o expertos en diagnóstico prenatal y un pediatra. La mujer podrá elegir uno de estos especialistas. Ninguno de los miembros del Comité podrá formar parte del Registro de objetores de la interrupción voluntaria del embarazo ni haber formado parte en los últimos tres años.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_16__para_2">
+              <num>2.</num>
+              <content><p>Confirmado el diagnóstico por el Comité, la mujer decidirá sobre la intervención.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_16__para_3">
+              <num>3.</num>
+              <content><p>En cada Comunidad Autónoma habrá, al menos, un Comité clínico en un centro de la red sanitaria pública. Los miembros, titulares y suplentes, designados por las autoridades sanitarias competentes, lo serán por un plazo no inferior a un año. La designación deberá hacerse pública en los diarios oficiales de las respectivas comunidades autónomas.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_16__para_4">
+              <num>4.</num>
+              <content><p>Las especificidades del funcionamiento del Comité clínico se determinarán reglamentariamente.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_I__art_17">
+            <num>Artículo 17.</num>
+            <heading>Información vinculada a la interrupción voluntaria del embarazo</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_17__para_1">
+              <num>1.</num>
+              <content><p>Todas las mujeres que manifiesten su intención de someterse a una interrupción voluntaria del embarazo recibirán información del personal sanitario sobre los distintos métodos de interrupción del embarazo, quirúrgico y farmacológico, las condiciones para la interrupción previstas en esta ley orgánica, los centros públicos y acreditados a los que se podrán dirigir y los trámites para acceder a la prestación, así como las condiciones para su cobertura por el servicio público de salud correspondiente. En el caso de procederse a la interrupción voluntaria del embarazo después de las catorce semanas de gestación por causas médicas, deberá facilitarse toda la información sobre los distintos procedimientos posibles para permitir que la mujer escoja la opción más adecuada para su caso.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_17__para_2">
+              <num>2.</num>
+              <content><p>En los casos en que las mujeres así lo requieran, y nunca como requisito para acceder a la prestación del servicio, podrán recibir información sobre una o varias de las siguientes cuestiones: a) Datos sobre los centros disponibles para recibir información adecuada sobre anticoncepción y sexo seguro. b) Datos sobre los centros que ofrecen asesoramiento antes y después de la interrupción del embarazo. c) Las ayudas públicas disponibles para las mujeres embarazadas y la cobertura sanitaria durante el embarazo y el parto. d) Los derechos laborales vinculados al embarazo y a la maternidad; las prestaciones y ayudas públicas para el cuidado y atención de los hijos; los beneficios fiscales y demás información relevante sobre incentivos y ayudas al nacimiento. La elaboración, contenidos y formato de esta información será determinada reglamentariamente por el Gobierno, prestando especial atención a las necesidades surgidas de las situaciones de extranjería.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_17__para_3">
+              <num>3.</num>
+              <content><p>En el supuesto de interrupción del embarazo previsto en el artículo 15.b), la mujer que así lo requiera expresamente, si bien nunca como requisito para acceder a la prestación del servicio, podrá recibir información sobre los derechos, prestaciones y ayudas públicas existentes relativas al apoyo a la autonomía de las personas con alguna discapacidad, así como la red de organizaciones sociales de asistencia social a estas personas.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_17__para_4">
+              <num>4.</num>
+              <content><p>En todos los supuestos, y con carácter previo a la prestación del consentimiento, se habrá de informar a la mujer embarazada en los términos de los artículos 4 y 10 de la Ley 41/2002, de 14 de noviembre , básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica y específicamente sobre la naturaleza de cada intervención, sus riesgos y sus consecuencias.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_I__art_17__para_5">
+              <num>5.</num>
+              <content><p>La información prevista en este artículo será clara, objetiva y comprensible. En el caso de las personas con discapacidad, se proporcionará en formatos y medios accesibles, adecuados a sus necesidades y las mujeres extranjeras que no hablen castellano serán asistidas por intérprete. En aquellas comunidades autónomas en las que haya lenguas oficiales, esta atención será dispensada en cualquiera de ellas, si así lo solicitare la mujer. Se hará saber a la mujer embarazada que dicha información podrá ser ofrecida, además, verbalmente, siempre que así se solicite. Cuando la información sea ofrecida de forma verbal, se circunscribirá siempre a los contenidos desarrollados reglamentariamente por el Gobierno.</p></content>
+            </hcontainer>
+          </article>
+        </hcontainer>
+        <hcontainer name="capitulo" eId="tit_II__cap_II">
+          <num>CAPÍTULO II</num>
+          <heading>Garantías en el acceso a la prestación</heading>
+          <article eId="tit_II__cap_II__art_18">
+            <num>Artículo 18.</num>
+            <heading>Garantía del acceso a la prestación</heading>
+            <content><p>Las usuarias del Sistema Nacional de Salud tendrán acceso a la interrupción voluntaria del embarazo en condiciones de igualdad efectiva. Las administraciones sanitarias que no puedan ofrecer dicho procedimiento en su ámbito geográfico remitirán a las usuarias al centro o servicio autorizado para este procedimiento, en las mejores condiciones de proximidad de su domicilio, garantizando la accesibilidad y calidad de la intervención y la seguridad de las usuarias.</p></content>
+          </article>
+          <article eId="tit_II__cap_II__art_18_bis">
+            <num>Artículo 18 bis.</num>
+            <heading>Medidas para garantizar la información sobre la prestación</heading>
+            <content><p>Los poderes públicos ofrecerán información pública sobre el proceso, normativa y condiciones para interrumpir voluntariamente un embarazo, garantizando: a) La accesibilidad a un itinerario sencillo y comprensible que tenga en cuenta las diferentes edades, condiciones socioeconómicas, de idioma y de discapacidad de las usuarias. b) El posicionamiento en internet de la información sobre centros públicos que prestan el servicio de interrupción voluntaria del embarazo, con particular atención a la función del Registro General de centros, servicios y establecimientos sanitarios (REGCESS). c) La creación de una línea telefónica especializada en información sobre salud y derechos sexuales y reproductivos, que preste información sobre el derecho a la interrupción del embarazo y el itinerario de la prestación en los servicios públicos.</p></content>
+          </article>
+          <article eId="tit_II__cap_II__art_19">
+            <num>Artículo 19.</num>
+            <heading>Medidas para garantizar la prestación sanitaria pública</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19__para_1">
+              <num>1.</num>
+              <content><p>Con el fin de asegurar la igualdad y calidad asistencial de la prestación de interrupción voluntaria del embarazo, las administraciones sanitarias competentes garantizarán los contenidos básicos de esta prestación que el Gobierno determine, oído el Consejo Interterritorial de Salud. Se garantizará a todas las mujeres igual acceso a la prestación con independencia del lugar donde residan.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19__para_2">
+              <num>2.</num>
+              <content><p>La prestación sanitaria de la interrupción voluntaria del embarazo se realizará en centros de la red sanitaria pública o vinculados a la misma, según lo establecido en el artículo 18. Los centros sanitarios en los que se lleve a cabo esta prestación proporcionarán el método quirúrgico y farmacológico, de acuerdo a los requisitos sanitarios de cada uno de los métodos.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19__para_3">
+              <num>3.</num>
+              <content><p>Los poderes públicos garantizarán, de acuerdo con un reparto geográfico adecuado, accesible y en número suficiente, lo previsto en el artículo 18, en consonancia con lo previsto en el artículo 19 bis.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19__para_4">
+              <num>4.</num>
+              <content><p>La usuaria del Sistema Nacional de Salud podrá recurrir en vía jurisdiccional, mediante el procedimiento para la protección de los derechos fundamentales de la persona regulado en la Ley 29/1998, de 13 de julio , reguladora de la Jurisdicción Contencioso-administrativa, en el caso de que el Comité clínico no confirmase el diagnóstico a que alude la letra c) del artículo 15 y la usuaria considerase que concurren los motivos expresados en el referido apartado.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19__para_5">
+              <num>5.</num>
+              <content><p>Si, excepcionalmente, la administración pública sanitaria no pudiera facilitar en tiempo la prestación, las autoridades sanitarias reconocerán a la mujer embarazada el derecho a acudir a cualquier centro acreditado en el territorio nacional, con el compromiso escrito de asumir directamente el abono de la prestación. En este supuesto, las autoridades competentes de las comunidades autónomas o del Estado asumirán también los gastos devengados por la mujer, hasta el límite que éstas determinen.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19__para_6">
+              <num>6.</num>
+              <content><p>Por su especial sujeción a plazos, la interrupción voluntaria del embarazo será considerada siempre un procedimiento sanitario de urgencia.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_II__art_19_bis">
+            <num>Artículo 19 bis.</num>
+            <heading>Objeción de conciencia</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19_bis__para_1">
+              <num>1.</num>
+              <content><p>Las personas profesionales sanitarias directamente implicadas en la práctica de la interrupción voluntaria del embarazo podrán ejercer la objeción de conciencia, sin que el ejercicio de este derecho individual pueda menoscabar el derecho humano a la vida, la salud y la libertad de las mujeres que decidan interrumpir su embarazo. El rechazo o la negativa a realizar la intervención de interrupción del embarazo por razones de conciencia es una decisión siempre individual del personal sanitario directamente implicado en la realización de la interrupción voluntaria del embarazo, que debe manifestarse con antelación y por escrito. La persona objetora podrá revocar la declaración de objeción en todo momento por los mismos medios por los que la otorgó.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19_bis__para_2">
+              <num>2.</num>
+              <content><p>El acceso o la calidad asistencial de la prestación no se verán afectados por el ejercicio individual del derecho a la objeción de conciencia. A estos efectos, los servicios públicos se organizarán siempre de forma que se garantice el personal sanitario necesario para el acceso efectivo y oportuno a la interrupción voluntaria del embarazo. Asimismo, todo el personal sanitario dispensará siempre tratamiento y atención médica adecuados a las mujeres que lo precisen antes y después de haberse sometido a una interrupción del embarazo.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_II__art_19_ter">
+            <num>Artículo 19 ter.</num>
+            <heading>Registros de personas objetoras de conciencia</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19_ter__para_1">
+              <num>1.</num>
+              <content><p>A efectos organizativos y para una adecuada gestión de la prestación se creará en cada comunidad autónoma y en el Instituto Nacional de Gestión Sanitaria (INGESA) un registro de personas profesionales sanitarias que decidan objetar por motivos de conciencia respecto de la intervención directa en la práctica de la interrupción voluntaria del embarazo.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19_ter__para_2">
+              <num>2.</num>
+              <content><p>Quienes se declaren personas objetoras de conciencia lo serán a los efectos de la práctica directa de la prestación de interrupción voluntaria del embarazo tanto en el ámbito de la sanidad pública como de la privada.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19_ter__para_3">
+              <num>3.</num>
+              <content><p>En el seno del Consejo Interterritorial del Sistema Nacional de Salud, se acordará un protocolo específico que incluya las condiciones mínimas para garantizar el cumplimiento de los objetivos perseguidos con la creación de este Registro, junto a la salvaguarda de la protección de datos de carácter personal, conforme a lo previsto en la disposición adicional cuarta.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_19_ter__para_4">
+              <num>4.</num>
+              <content><p>Se adoptarán las medidas organizativas necesarias para garantizar la no discriminación tanto de las personas profesionales sanitarias no objetoras, evitando que se vean relegadas en exclusiva a la práctica de la interrupción voluntaria del embarazo, como de las personas objetoras para evitar que sufran cualquier discriminación derivada de la objeción.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_II__art_20">
+            <num>Artículo 20.</num>
+            <heading>Protección del derecho a la intimidad, a la confidencialidad y a la protección de datos</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_20__para_1">
+              <num>1.</num>
+              <content><p>Los centros públicos y privados que presten cualquier tipo de asistencia sanitaria en relación con la salud sexual y reproductiva, y, en particular, la interrupción voluntaria del embarazo, garantizarán el derecho a la intimidad y a la confidencialidad de las pacientes en el tratamiento de sus datos de carácter personal.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_20__para_2">
+              <num>2.</num>
+              <content><p>De manera general, el tratamiento de datos de carácter personal y sanitario, así como el ejercicio de los derechos de la paciente, se ajustarán a lo dispuesto en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 ; a la Ley Orgánica 3/2018, de 5 de diciembre , de Protección de Datos Personales y garantía de los derechos digitales, y a la Ley 41/2002, de 14 de noviembre .</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_20__para_3">
+              <num>3.</num>
+              <content><p>Los centros prestadores del servicio deberán contar con sistemas de custodia activa y diligente de las historias clínicas de las pacientes e implantar en el tratamiento de los datos las medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado al riesgo conforme a la normativa vigente de protección de datos de carácter personal.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_II__art_21">
+            <num>Artículo 21.</num>
+            <heading>Tratamiento de datos</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_21__para_1">
+              <num>1.</num>
+              <content><p>En el momento de la solicitud de información sobre la interrupción voluntaria del embarazo, los centros, sin proceder al tratamiento de dato alguno, habrán de informar a la solicitante que los datos identificativos de las pacientes a las que efectivamente se les realice la prestación serán objeto de codificación y separados de los datos de carácter clínico asistencial relacionados con la interrupción voluntaria del embarazo.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_21__para_2">
+              <num>2.</num>
+              <content><p>Los centros que presten la interrupción voluntaria del embarazo establecerán mecanismos apropiados de automatización y codificación de los datos de identificación de las pacientes atendidas, en los términos previstos en esta Ley. A los efectos previstos en el párrafo anterior, se considerarán datos identificativos de la paciente su nombre, apellidos, domicilio, número de teléfono, dirección de correo electrónico, documento nacional de identidad o documento identificativo equivalente, así como cualquier dato que revele su identidad física o genética.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_21__para_3">
+              <num>3.</num>
+              <content><p>En el momento de la primera recogida de datos de la paciente, se le asignará un código que será utilizado para identificarla en todo el proceso.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_21__para_4">
+              <num>4.</num>
+              <content><p>Los centros sustituirán los datos identificativos de la paciente por el código asignado en cualquier información contenida en la historia clínica que guarde relación con la práctica de la interrupción voluntaria del embarazo, de forma que no pueda producirse con carácter general, el acceso a dicha información.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_21__para_5">
+              <num>5.</num>
+              <content><p>Las informaciones relacionadas con la interrupción voluntaria del embarazo deberán ser conservadas en la historia clínica de tal forma que su mera visualización no sea posible salvo por el personal que participe en la práctica de la prestación, sin perjuicio de los accesos a los que se refiere el artículo siguiente.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_II__art_22">
+            <num>Artículo 22.</num>
+            <heading>Acceso y cesión de datos de carácter personal</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_22__para_1">
+              <num>1.</num>
+              <content><p>Únicamente será posible el acceso a los datos de la historia clínica asociados a los que identifican a la paciente, sin su consentimiento, en los casos previstos en las disposiciones legales reguladoras de los derechos y obligaciones en materia de documentación clínica. Cuando el acceso fuera solicitado por otro profesional sanitario a fin de prestar la adecuada asistencia sanitaria de la paciente, aquél se limitará a los datos estricta y exclusivamente necesarios para la adecuada asistencia, quedando constancia de la realización del acceso. En los demás supuestos amparados por la ley, el acceso se realizará mediante autorización expresa del órgano competente en la que se motivarán de forma detallada las causas que la justifican, quedando en todo caso limitado a los datos estricta y exclusivamente necesarios.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_22__para_2">
+              <num>2.</num>
+              <content><p>El informe de alta, las certificaciones médicas y cualquier otra documentación relacionada con la práctica de la interrupción voluntaria del embarazo que sea necesaria a cualquier efecto, será entregada exclusivamente a la paciente o persona autorizada por ella. Esta documentación respetará el derecho de la paciente a la intimidad y confidencialidad en el tratamiento de los datos de carácter personal recogido en este Capítulo.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_22__para_3">
+              <num>3.</num>
+              <content><p>No será posible el tratamiento de la información por el centro sanitario para actividades de publicidad o prospección comercial. No podrá recabarse el consentimiento de la paciente para el tratamiento de los datos para estas actividades.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_II__cap_II__art_23">
+            <num>Artículo 23.</num>
+            <heading>Supresión de datos</heading>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_23__para_1">
+              <num>1.</num>
+              <content><p>Los centros que hayan procedido a una interrupción voluntaria de embarazo deberán suprimir de oficio la totalidad de los datos de la paciente que consten en sus registros administrativos una vez transcurridos cinco años desde la fecha de alta de la intervención. No obstante, la documentación clínica podrá conservarse cuando existan razones epidemiológicas, de investigación o de organización y funcionamiento del Sistema Nacional de Salud, en cuyo caso se procederá a la supresión de todos los datos identificativos de la paciente y del código que se le hubiera asignado como consecuencia de lo dispuesto en los artículos anteriores.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_II__cap_II__art_23__para_2">
+              <num>2.</num>
+              <content><p>Lo dispuesto en el apartado anterior se entenderá sin perjuicio del ejercicio por la paciente de su derecho de supresión, en los términos previstos en el Reglamento General de Protección de Datos y la Ley Orgánica 3/2018, de 5 de diciembre .</p></content>
+            </hcontainer>
+          </article>
+        </hcontainer>
+      </hcontainer>
+      <hcontainer name="titulo" eId="tit_III">
+        <num>TÍTULO III</num>
+        <heading>Protección y garantía de los derechos sexuales y reproductivos</heading>
+        <hcontainer name="capitulo" eId="tit_III__cap_I">
+          <num>CAPÍTULO I</num>
+          <heading>Alcance de la responsabilidad institucional</heading>
+          <article eId="tit_III__cap_I__art_24">
+            <num>Artículo 24.</num>
+            <heading>Responsabilidad institucional</heading>
+            <hcontainer name="apartado" eId="tit_III__cap_I__art_24__para_1">
+              <num>1.</num>
+              <content><p>Las administraciones públicas se abstendrán de realizar cualquier acto que vulnere los derechos sexuales y reproductivos establecidos en esta ley orgánica y se asegurarán de que autoridades, personal funcionario, agentes e instituciones estatales y autonómicas, así como los demás actores que actúen en nombre de las anteriores se comporten de acuerdo con esta obligación.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_I__art_24__para_2">
+              <num>2.</num>
+              <content><p>Las administraciones públicas competentes garantizarán el libre ejercicio del derecho a la interrupción del embarazo en los términos de esta ley orgánica y, especialmente, velarán por evitar que la solicitante sea destinataria de prácticas que pretendan alterar, ya sea para afianzar, revocar o para demorar, la formación de su voluntad sobre la interrupción o no de su embarazo, la comunicación de su decisión y la puesta en práctica de la misma, con la excepción de la información clínica imprescindible y pertinente. Las intervenciones diagnósticas y terapéuticas asociadas con la decisión y la práctica de la interrupción del embarazo deberán basarse, en todo caso, en la evidencia científica.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_I__art_24__para_3">
+              <num>3.</num>
+              <content><p>Las administraciones públicas, en el ámbito de sus competencias, tomarán las medidas integrales y eficaces para prevenir, proteger, investigar, sancionar, erradicar y reparar las vulneraciones de los derechos sexuales y reproductivos de las mujeres.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_III__cap_I__art_25">
+            <num>Artículo 25.</num>
+            <heading>Sensibilización e información</heading>
+            <hcontainer name="apartado" eId="tit_III__cap_I__art_25__para_1">
+              <num>1.</num>
+              <content><p>Las administraciones públicas, en el ámbito de sus competencias, promoverán la adopción de campañas y acciones informativas, accesibles a todas las mujeres tomando en cuenta su situación, que incluyan información sobre sus derechos, y los recursos disponibles en caso de ver vulnerados sus derechos sexuales y reproductivos.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_I__art_25__para_2">
+              <num>2.</num>
+              <content><p>Las campañas se realizarán de manera que sean accesibles al conjunto de la población, tomando en consideración circunstancias tales como la edad, la discapacidad, el idioma, la ruralidad o la eventual residencia en el extranjero de nacionales españolas.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_I__art_25__para_3">
+              <num>3.</num>
+              <content><p>Sin perjuicio de lo previsto en otras normas, las administraciones públicas competentes, en todos los centros sanitarios, incluidos los servicios previstos en el artículo 5 sexies, pondrán en marcha medidas de información y asistencia a quienes vean vulnerados sus derechos sexuales y reproductivos, lo que comprenderá la orientación para el resarcimiento integral de los daños y perjuicios. Las mujeres atendidas deberán ser informadas de la existencia de estos servicios de asistencia.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_III__cap_I__art_26">
+            <num>Artículo 26.</num>
+            <heading>Apoyo a entidades sociales especializadas</heading>
+            <content><p>Las administraciones públicas apoyarán el trabajo de las instituciones sin ánimo de lucro con programas de promoción y difusión de buenas prácticas en el ámbito de la salud ginecológica y obstétrica, así como aquellas que proporcionan acompañamiento y asistencia integral ante vulneraciones de derechos en el ámbito de la salud sexual y reproductiva. Quedarán excluidas de este artículo aquellas organizaciones contrarias al derecho recogido en la presente ley de interrupción voluntaria del embarazo.</p></content>
+          </article>
+        </hcontainer>
+        <hcontainer name="capitulo" eId="tit_III__cap_II">
+          <num>CAPÍTULO II</num>
+          <heading>Protección y garantía de los derechos sexuales y reproductivos en el ámbito ginecológico y obstétrico</heading>
+          <article eId="tit_III__cap_II__art_27">
+            <num>Artículo 27.</num>
+            <heading>Principios</heading>
+            <content><p>Las administraciones públicas competentes promoverán la prestación de servicios de ginecología y obstetricia que respete y garantice los derechos sexuales y reproductivos, tanto en el ámbito de la sanidad pública como en la privada. A tal fin, los servicios públicos destinarán esfuerzos especiales a: a) Requerir de forma preceptiva el consentimiento libre, previo e informado de las mujeres en todos los tratamientos invasivos durante la atención del parto, respetando la autonomía de la mujer y su capacidad para tomar decisiones informadas sobre su salud reproductiva, en los términos establecidos en el artículo 8 de la Ley 41/2002, de 14 de noviembre , básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica. b) Disminuir el intervencionismo, evitando prácticas innecesarias e inadecuadas que no estén avaladas por la evidencia científica y reforzar las prácticas relativas al parto respetado y al consentimiento informado de la paciente incluyendo a tal fin todas las medidas necesarias para incrementar el número de personal especializado. c) Proporcionar un trato respetuoso, y una información clara y suficiente, lo que incluye el respeto a la decisión sobre la forma de alimentación elegida por las madres para sus recién nacidos. d) Garantizar la no separación innecesaria de los recién nacidos de sus madres, y otras personas con vínculo directo con estas.</p></content>
+          </article>
+          <article eId="tit_III__cap_II__art_28">
+            <num>Artículo 28.</num>
+            <heading>Investigación y recogida de datos</heading>
+            <hcontainer name="apartado" eId="tit_III__cap_II__art_28__para_1">
+              <num>1.</num>
+              <content><p>Las administraciones sanitarias, en el ámbito de sus competencias, promoverán la realización de estudios sobre prácticas en el ámbito ginecológico y obstétrico contrarias a los principios establecidos en el artículo anterior y en las recomendaciones nacionales e internacionales sobre el parto respetado, que permitan evaluar y orientar las políticas públicas para su prevención y erradicación.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_II__art_28__para_2">
+              <num>2.</num>
+              <content><p>A los efectos de lo establecido en el apartado anterior, y para analizar la evolución de las citadas políticas públicas y promover buenas prácticas, las administraciones públicas competentes realizarán una recogida de datos periódica, a partir de la información proporcionada por los centros sanitarios.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_III__cap_II__art_29">
+            <num>Artículo 29.</num>
+            <heading>Prevención y formación</heading>
+            <content><p>Las administraciones sanitarias, en el seno del Consejo Interterritorial del Sistema Nacional de Salud, seguirán promoviendo la adecuada formación del personal de los servicios de ginecología y obstetricia, incluido el de enfermería y matronería, para el respeto y la garantía de los derechos de las mujeres, adecuando su práctica profesional a lo dispuesto en el artículo 30.</p></content>
+          </article>
+          <article eId="tit_III__cap_II__art_30">
+            <num>Artículo 30.</num>
+            <heading>Políticas públicas y protocolos</heading>
+            <hcontainer name="apartado" eId="tit_III__cap_II__art_30__para_1">
+              <num>1.</num>
+              <content><p>En la Estrategia de Salud Sexual y Reproductiva se contemplará un apartado de prevención, detección e intervención integral para la garantía de los derechos sexuales y reproductivos en el ámbito ginecológico y obstétrico.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_II__art_30__para_2">
+              <num>2.</num>
+              <content><p>El Consejo Interterritorial del Sistema Nacional de Salud, con implicación del Observatorio de Salud de las Mujeres, aprobará un protocolo común de actuaciones para la garantía de los derechos sexuales y reproductivos en el ámbito ginecológico y obstétrico, que contemplará las medidas necesarias para que el sector sanitario contribuya a garantizar los derechos sexuales y reproductivos en este ámbito.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_II__art_30__para_3">
+              <num>3.</num>
+              <content><p>Tomando como marco el protocolo común, las comunidades autónomas promoverán que los centros sanitarios adopten protocolos específicos para la prevención de praxis profesionales contrarias a lo establecido en este Capítulo, asesoren a las mujeres sobre sus derechos y habiliten cauces para las reclamaciones que puedan formular quienes hayan sido afectadas por estas conductas.</p></content>
+            </hcontainer>
+          </article>
+        </hcontainer>
+        <hcontainer name="capitulo" eId="tit_III__cap_III">
+          <num>CAPÍTULO III</num>
+          <heading>Medidas de prevención y respuesta frente a formas de violencia contra las mujeres en el ámbito de la salud sexual y reproductiva</heading>
+          <article eId="tit_III__cap_III__art_31">
+            <num>Artículo 31.</num>
+            <heading>Actuación frente al aborto forzoso y la esterilización y anticoncepción forzosas</heading>
+            <hcontainer name="apartado" eId="tit_III__cap_III__art_31__para_1">
+              <num>1.</num>
+              <content><p>Los poderes públicos velarán por evitar las actuaciones que permitan los casos de aborto forzoso, anticoncepción y esterilización forzosas, con especial atención a las mujeres con discapacidad.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_III__art_31__para_2">
+              <num>2.</num>
+              <content><p>Las administraciones públicas, en el ámbito de sus competencias, promoverán programas de salud sexual y reproductiva dirigidos a mujeres con discapacidad, que incluyan medidas de prevención y detección de las formas de violencia reproductiva referidas en este artículo, para lo cual se procurará la formación específica necesaria para la especialización profesional.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_III__cap_III__art_32">
+            <num>Artículo 32.</num>
+            <heading>Prevención de la gestación por subrogación o sustitución</heading>
+            <hcontainer name="apartado" eId="tit_III__cap_III__art_32__para_1">
+              <num>1.</num>
+              <content><p>La gestación por subrogación o sustitución es un contrato nulo de pleno derecho, según la Ley 14/2006, de 26 de mayo , sobre técnicas de reproducción humana asistida, por el que se acuerda la gestación, con o sin precio, a cargo de una mujer que renuncia a la filiación materna a favor del contratante o de un tercero.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="tit_III__cap_III__art_32__para_2">
+              <num>2.</num>
+              <content><p>Se promoverá la información, a través de campañas institucionales, de la ilegalidad de estas conductas, así como la nulidad de pleno derecho del contrato por el que se convenga la gestación, con o sin precio, a cargo de una mujer que renuncia a la filiación materna a favor del contratante o de un tercero.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="tit_III__cap_III__art_33">
+            <num>Artículo 33.</num>
+            <heading>Prohibición de la promoción comercial de la gestación por sustitución</heading>
+            <content><p>En coherencia con lo establecido en el párrafo cuarto del artículo 3.a) de la Ley 34/1988, de 11 de noviembre , General de Publicidad, las administraciones públicas legitimadas conforme al artículo 6 de dicha Ley instarán la acción judicial dirigida a la declaración de ilicitud de la publicidad que promueva las prácticas comerciales para la gestación por sustitución y a su cese.</p></content>
+          </article>
+          <article eId="disp_adic_1">
+            <num>Disposición adicional primera.</num>
+            <heading>De las funciones de la Alta Inspección</heading>
+            <hcontainer name="apartado" eId="disp_adic_1__para_1">
+              <num>1.</num>
+              <content><p>El Estado ejercerá la Alta Inspección como función de garantía y verificación del cumplimiento efectivo de los derechos y prestaciones reconocidas en esta ley orgánica en todo el Sistema Nacional de Salud.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_1__para_2">
+              <num>2.</num>
+              <content><p>Para la formulación de propuestas de mejora en equidad y accesibilidad de las prestaciones y con el fin de verificar la aplicación efectiva de los derechos y prestaciones reconocidas en esta ley orgánica en todo el Sistema Nacional de Salud, el Gobierno elaborará un informe anual de situación, sobre la base de los datos presentados por las comunidades autónomas al Consejo Interterritorial del Sistema Nacional de Salud.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_1__para_3">
+              <num>3.</num>
+              <content><p>En la memoria anual sobre el funcionamiento del sistema, regulada en el artículo 78 de la Ley 16/2003, de 28 de mayo , de cohesión y calidad del Sistema Nacional de Salud, y que la Alta Inspección del Sistema Nacional de Salud deberá presentar al Consejo Interterritorial del Sistema Nacional de Salud para su debate, se incluirá un análisis específico sobre la implementación de esta ley orgánica.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_1__para_4">
+              <num>4.</num>
+              <content><p>Para el desarrollo de las funciones de la Alta Inspección, el Gobierno adoptará las disposiciones reglamentarias procedentes en el marco de esta ley orgánica.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="disp_adic_2">
+            <num>Disposición adicional segunda.</num>
+            <heading>Evaluación de costes y adopción de medidas</heading>
+            <content><p>El Gobierno evaluará el coste económico de los servicios y prestaciones públicas incluidas en la Ley adoptando, en su caso, las medidas necesarias de conformidad a lo dispuesto en la Ley 16/2003, de 28 de mayo , de Cohesión y Calidad del Sistema Nacional de Salud.</p></content>
+          </article>
+          <article eId="disp_adic_3">
+            <num>Disposición adicional tercera.</num>
+            <heading>Dispensación gratuita de métodos anticonceptivos</heading>
+            <hcontainer name="apartado" eId="disp_adic_3__para_1">
+              <num>1.</num>
+              <content><p>Se garantizará la financiación con cargo a fondos públicos de los anticonceptivos hormonales, incluidos los métodos reversibles de larga duración, sin aportación por parte de la persona usuaria, tal y como se establece en la normativa específica, cuando se dispensen en los centros sanitarios del Sistema Nacional de Salud.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_3__para_2">
+              <num>2.</num>
+              <content><p>Se garantizará la dispensación gratuita de métodos anticonceptivos de urgencia en los centros sanitarios del Sistema Nacional de Salud, así como en los servicios a los que se refiere el artículo 5 sexies, atendiendo a la organización asistencial de los servicios de salud de las comunidades autónomas y entidades gestoras del Sistema Nacional de Salud.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_3__para_3">
+              <num>3.</num>
+              <content><p>Las administraciones públicas, en el ámbito de sus competencias, velarán por hacer efectivo, en el plazo de un año, la dispensación gratuita de métodos anticonceptivos de barrera en los lugares a que se refiere el artículo 7 ter.b).</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_3__para_4">
+              <num>4.</num>
+              <content><p>En el mismo plazo, las administraciones públicas, en el ámbito de sus competencias y con la coordinación del Ministerio de Sanidad y del Ministerio de Igualdad, concretarán las medidas relativas a la corresponsabilidad establecidas por el artículo 7 quater de esta ley orgánica.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="disp_adic_4">
+            <num>Disposición adicional cuarta.</num>
+            <heading>Protección de datos de carácter personal en los Registros de personas objetoras de conciencia</heading>
+            <hcontainer name="apartado" eId="disp_adic_4__para_1">
+              <num>1.</num>
+              <content><p>Los datos personales que contengan los Registros de personas objetoras de conciencia regulados en el artículo 19 ter se llevarán a cabo conforme a lo dispuesto en el Reglamento (UE) 2016/679, del Parlamento Europeo y del Consejo, de 27 de abril de 2016 , relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento General de Protección de Datos), y en la Ley Orgánica 3/2018, de 5 de diciembre , de Protección de Datos Personales y garantía de los derechos digitales.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_2">
+              <num>2.</num>
+              <content><p>El fundamento jurídico de legitimación para el tratamiento de los datos que recoja el Registro de personas objetoras, de acuerdo con su objetivo y finalidad, se encuentra en las letras g) e i) del apartado 2 de los artículos 9 y concordantes del Reglamento General de Protección de Datos, así como en las letras c) y e) del apartado 1 de su artículo 6.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_3">
+              <num>3.</num>
+              <content><p>Los datos de las personas objetoras recogidos en cada uno de los Registros serán aquellos que resulten estrictamente necesarios para identificar al personal sanitario que desarrolle su actividad en centros sanitarios acreditados para la realización de la interrupción voluntaria del embarazo cuyas funciones conlleven su participación directa en las citadas intervenciones. Los datos objeto de tratamiento deberán ser adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son recogidos, no debiendo incluirse, en ningún caso, el motivo de la objeción.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_4">
+              <num>4.</num>
+              <content><p>La finalidad perseguida con el tratamiento de los datos recabados en virtud del artículo 19 ter es la garantía de la prestación de la interrupción voluntaria del embarazo, adecuando los recursos humanos a la correcta programación de las intervenciones de interrupción voluntaria del embarazo. Los datos no podrán ser utilizados en ningún caso con fines distintos a los establecidos en este precepto.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_5">
+              <num>5.</num>
+              <content><p>Son responsables del tratamiento las Consejerías competentes en materia de sanidad de las comunidades autónomas y el Instituto Nacional de Gestión Sanitaria (INGESA), de acuerdo con sus respectivos ámbitos competenciales.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_6">
+              <num>6.</num>
+              <content><p>Las personas titulares de las Direcciones o Gerencias de los centros sanitarios acreditados para la realización de la interrupción voluntaria del embarazo tienen la consideración de destinatarias de los datos que sean estrictamente necesarios para la correcta planificación del servicio. Asimismo, tendrán esta condición respecto de los datos personales que sean estrictamente necesarios para conocer el número de personas objetoras en cada centro sanitario, acreditado quienes sean responsables de planificar los recursos humanos en cada Comunidad Autónoma y en el Instituto Nacional de Gestión Sanitaria (INGESA), con el fin de garantizar la prestación de la interrupción voluntaria del embarazo.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_7">
+              <num>7.</num>
+              <content><p>Las personas responsables y encargadas del tratamiento, así como todas las personas que intervengan en cualquier fase del mismo, estarán sujetas al deber de confidencialidad regulado por el artículo 5.1.f) del Reglamento general de protección de datos, sin perjuicio de los deberes de secreto profesional que, en su caso, resulten de aplicación.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_8">
+              <num>8.</num>
+              <content><p>La recolección de datos se hará conforme a la legislación vigente, con especial atención a: a) La confidencialidad y la autenticidad de la identificación de la persona titular de los datos mediante certificado electrónico o instrumento similar de identificación segura. b) El cumplimiento del deber de información previa a los interesados en los términos previstos en el artículo 13 del Reglamento general de protección de datos. 9. De acuerdo con la finalidad del tratamiento, se conservarán los datos recogidos durante el tiempo necesario para el cumplimiento del fin para el cual fueron recogidos y, en su caso, podrán conservarse, debidamente bloqueados, por el tiempo necesario para atender a las responsabilidades derivadas de su tratamiento ante los órganos administrativos o jurisdiccionales competentes. Una vez trascurrido dicho periodo de conservación, los datos serán suprimidos definitivamente.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_10">
+              <num>10.</num>
+              <content><p>Las administraciones públicas que sean responsables del tratamiento deberán implementar la protección de datos desde el diseño, de acuerdo con lo previsto en el artículo 25 del Reglamento general de protección de datos, realizando, desde el momento de la concepción del tratamiento, el correspondiente análisis de riesgos y evaluación de impactos para determinar las medidas técnicas y organizativas adecuadas. Estas medidas garantizarán los derechos y libertades de la persona interesada, así como la confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad de los accesos a los datos, teniendo en cuenta, en todo momento, lo previsto en el Real Decreto 311/2022, de 3 de mayo , por el que se regula el Esquema Nacional de Seguridad.</p></content>
+            </hcontainer>
+            <hcontainer name="apartado" eId="disp_adic_4__para_11">
+              <num>11.</num>
+              <content><p>La persona titular de los datos podrá ejercer todos los derechos regulados en los artículos 13 a 22 del Reglamento General de Protección de Datos, excepto el de oposición, al basarse el tratamiento en el cumplimiento de una obligación legal, conforme al artículo 6.1.c) del Reglamento General de Protección de Datos.</p></content>
+            </hcontainer>
+          </article>
+          <article eId="disp_derog_unica">
+            <num>Disposición derogatoria única.</num>
+            <heading>Derogación del artículo 417 bis del Código Penal </heading>
+            <content><p>Queda derogado el artículo 417 bis del Texto Refundido del Código Penal publicado por el Decreto 3096/1973, de 14 de septiembre , redactado conforme a la Ley Orgánica 9/1985, de 5 de julio .</p></content>
+          </article>
+          <article eId="disp_final_1">
+            <num>Disposición final primera.</num>
+            <heading>Modificación de la Ley Orgánica 10/1995, de 23 de noviembre , del Código Penal </heading>
+            <content>
+              <p>Uno.–El artículo 145 del Código Penal queda redactado de la forma siguiente: «Artículo 145. 1. El que produzca el aborto de una mujer, con su consentimiento, fuera de los casos permitidos por la ley será castigado con la pena de prisión de uno a tres años e inhabilitación especial para ejercer cualquier profesión sanitaria, o para prestar servicios de toda índole en clínicas, establecimientos o consultorios ginecológicos, públicos o privados, por tiempo de uno a seis años. El juez podrá imponer la pena en su mitad superior cuando los actos descritos en este apartado se realicen fuera de un centro o establecimiento público o privado acreditado. 2. La mujer que produjere su aborto o consintiere que otra persona se lo cause, fuera de los casos permitidos por la ley, será castigada con la pena de multa de seis a veinticuatro meses. 3. En todo caso, el juez o tribunal impondrá las penas respectivamente previstas en este artículo en su mitad superior cuando la conducta se llevare a cabo a partir de la vigésimo segunda semana de gestación.»</p>
+              <p>Dos.–Se añade un nuevo artículo 145 bis del Código Penal , que tendrá la siguiente redacción: «Artículo 145 bis. 1. Será castigado con la pena de multa de seis a doce meses e inhabilitación especial para prestar servicios de toda índole en clínicas, establecimientos o consultorios ginecológicos, públicos o privados, por tiempo de seis meses a dos años, el que dentro de los casos contemplados en la ley, practique un aborto: a) sin haber comprobado que la mujer haya recibido la información previa relativa a los derechos, prestaciones y ayudas públicas de apoyo a la maternidad; b) sin haber transcurrido el período de espera contemplado en la legislación; c) sin contar con los dictámenes previos preceptivos; d) fuera de un centro o establecimiento público o privado acreditado. En este caso, el juez podrá imponer la pena en su mitad superior. 2. En todo caso, el juez o tribunal impondrá las penas previstas en este artículo en su mitad superior cuando el aborto se haya practicado a partir de la vigésimo segunda semana de gestación. 3. La embarazada no será penada a tenor de este precepto.»</p>
+              <p>Tres.–Se suprime el inciso «417 bis» de la letra a) del apartado primero de la disposición derogatoria única.</p>
+            </content>
+          </article>
+          <article eId="disp_final_2">
+            <num>Disposición final segunda.</num>
+            <heading>Modificación de la Ley 41/2002, de 14 de noviembre , Básica Reguladora de la Autonomía del Paciente y de Derechos y Obligaciones en materia de información y documentación clínica</heading>
+            <content>
+              <p>El apartado 4 del artículo 9 de la Ley 41/2002, de 14 de noviembre , Básica Reguladora de la Autonomía del Paciente y de Derechos y Obligaciones en materia de información y documentación clínica, tendrá la siguiente redacción:</p>
+              <p>«4. La práctica de ensayos clínicos y de técnicas de reproducción humana asistida se rige por lo establecido con carácter general sobre la mayoría de edad y por las disposiciones especiales de aplicación.»</p>
+            </content>
+          </article>
+          <article eId="disp_final_3">
+            <num>Disposición final tercera.</num>
+            <heading>Carácter orgánico</heading>
+            <content><p>Esta ley orgánica se dicta al amparo del artículo 81 de la Constitución . Los preceptos contenidos en el título preliminar, el título I, el capítulo II del título II, el título III, las disposiciones adicionales y las disposiciones finales segunda, cuarta, quinta y sexta no tienen carácter orgánico.</p></content>
+          </article>
+          <article eId="disp_final_4">
+            <num>Disposición final cuarta.</num>
+            <heading>Habilitación para el desarrollo reglamentario</heading>
+            <content><p>El Gobierno adoptará las disposiciones reglamentarias necesarias para la aplicación y desarrollo de la presente Ley. En tanto no entre en vigor el desarrollo reglamentario referido, mantienen su vigencia las disposiciones reglamentarias vigentes sobre la materia que no se opongan a lo dispuesto en la presente Ley.</p></content>
+          </article>
+          <article eId="disp_final_5">
+            <num>Disposición final quinta.</num>
+            <heading>Ámbito territorial de aplicación de la Ley</heading>
+            <content><p>Sin perjuicio de las correspondientes competencias autonómicas, el marco de aplicación de la presente Ley lo será en todo el territorio del Estado. Corresponderá a las autoridades sanitarias competentes garantizar la prestación contenida en la red sanitaria pública, o vinculada a la misma, en la Comunidad Autónoma de residencia de la mujer embarazada, siempre que así lo solicite la embarazada.</p></content>
+          </article>
+          <article eId="disp_final_6">
+            <num>Disposición final sexta.</num>
+            <heading>Entrada en vigor</heading>
+            <content><p>La Ley entrará en vigor en el plazo de cuatro meses a partir del día siguiente al de su publicación en el «Boletín Oficial del Estado». Por tanto, Mando a todos los españoles, particulares y autoridades, que guarden y hagan guardar esta ley orgánica. Madrid, 3 de marzo de 2010.</p></content>
+          </article>
+        </hcontainer>
+      </hcontainer>    </body>
+
+    <conclusions>
+      <p>Por tanto,</p>
+      <p>Mando a todos los españoles, particulares y autoridades, que guarden y hagan guardar esta ley orgánica.</p>
+      <p>Madrid, 3 de marzo de 2010.</p>
+      <signature>
+        <person refersTo="#rey-juan-carlos-i">JUAN CARLOS R.</person>
+      </signature>
+      <signature>
+        <p>El Presidente del Gobierno,</p>
+        <person refersTo="#presidente-zapatero">JOSÉ LUIS RODRÍGUEZ ZAPATERO</person>
+      </signature>
+      <p class="boeDisclaimer">Este documento es de carácter informativo y no tiene valor jurídico.</p>
+    </conclusions>
+  </act>
+</akomaNtoso>

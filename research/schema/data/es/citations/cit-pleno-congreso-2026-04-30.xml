@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:akndiff="https://diff.parlamento.ai/akndiff/v1">
+  <citation name="convocatoria-pleno" contains="originalVersion">
+    <meta>
+      <identification source="#diff-parlamento-ai">
+        <FRBRWork>
+          <FRBRthis value="/akn/es/citation/2026-04-28/cit-pleno-congreso-2026-04-30/!main"/>
+          <FRBRuri value="/akn/es/citation/2026-04-28/cit-pleno-congreso-2026-04-30"/>
+          <FRBRalias value="Convocatoria Pleno Congreso sesión 175 (28-29-30 abril 2026) — incluye debate totalidad reforma art. 43 CE" name="title"/>
+          <FRBRdate date="2026-04-28" name="generation"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRcountry value="es"/>
+          <FRBRsubtype value="orden-del-dia-pleno"/>
+          <FRBRnumber value="175"/>
+          <FRBRname value="cit-pleno-congreso-2026-04-30"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/es/citation/2026-04-28/cit-pleno-congreso-2026-04-30/spa@2026-04-28/!main"/>
+          <FRBRuri value="/akn/es/citation/2026-04-28/cit-pleno-congreso-2026-04-30/spa@2026-04-28"/>
+          <FRBRdate date="2026-04-28" name="expression"/>
+          <FRBRauthor href="#congreso-diputados"/>
+          <FRBRlanguage language="spa"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/es/citation/2026-04-28/cit-pleno-congreso-2026-04-30/spa@2026-04-28/!main.xml"/>
+          <FRBRuri value="/akn/es/citation/2026-04-28/cit-pleno-congreso-2026-04-30/spa@2026-04-28.akn"/>
+          <FRBRdate date="2026-04-28" name="manifestation"/>
+          <FRBRauthor href="#diff-parlamento-ai"/>
+          <FRBRformat value="application/akn+xml"/>
+        </FRBRManifestation>
+      </identification>
+      <publication date="2026-04-28" name="agenda-pleno" showAs="Orden del día Pleno Congreso, sesión 175, publicado 28-abr-2026" number="175"/>
+      <lifecycle source="#diff-parlamento-ai">
+        <eventRef date="2026-04-28" refersTo="#convocatoria-publicada" source="#diff-parlamento-ai" eId="convocatoria-2026-04-28"/>
+        <eventRef date="2026-04-28T15:00:00" refersTo="#sesion-inicio" source="#diff-parlamento-ai" eId="sesion-inicio-2026-04-28-15h"/>
+        <eventRef date="2026-04-30" refersTo="#sesion-fin" source="#diff-parlamento-ai" eId="sesion-fin-2026-04-30"/>
+      </lifecycle>
+      <references source="#diff-parlamento-ai">
+        <TLCOrganization eId="congreso-diputados" href="/akn/ontology/organization/es/congreso-diputados" showAs="Congreso de los Diputados"/>
+        <TLCOrganization eId="pleno-congreso" href="/akn/ontology/organization/es/congreso-diputados/pleno" showAs="Pleno del Congreso"/>
+        <TLCOrganization eId="diff-parlamento-ai" href="/akn/ontology/organization/diff-parlamento-ai" showAs="diff.parlamento.ai"/>
+        <TLCConcept eId="orden-del-dia" href="/akn/ontology/concept/es/orden-del-dia" showAs="orden del día"/>
+        <TLCConcept eId="convocatoria-pleno" href="/akn/ontology/concept/es/convocatoria-pleno" showAs="convocatoria de Pleno"/>
+        <TLCReference eId="bill-102-000001" href="/akn/es/bill/2026-04-07/102-000001" showAs="Bill 102/000001 (proyecto reforma art. 43 CE)"/>
+        <TLCReference eId="debate-pleno" href="/akn/es/debate/2026-04-30/atcd-15-pl-20260430" showAs="ATCD Pleno 30-abr-2026"/>
+        <TLCEvent eId="convocatoria-publicada" href="/akn/ontology/event/convocatoria-publicada" showAs="Convocatoria publicada"/>
+        <TLCEvent eId="sesion-inicio" href="/akn/ontology/event/sesion-inicio" showAs="Inicio sesión"/>
+        <TLCEvent eId="sesion-fin" href="/akn/ontology/event/sesion-fin" showAs="Fin sesión"/>
+      </references>
+      <proprietary source="#diff-parlamento-ai">
+
+        <akndiff:nativeId>cit-pleno-congreso-2026-04-30</akndiff:nativeId>
+
+        <akndiff:sourceUrl>https://www.congreso.es/backoffice_doc/atp/orden_dia/pleno_175_28042026.pdf</akndiff:sourceUrl>
+
+        <akndiff:researchNotes>
+        <akndiff:note><![CDATA[
+Friction log para ES / citation cit-pleno-congreso-2026-04-30:
+
+1. ORDEN DEL DÍA. Convocatoria oficial del Pleno del Congreso para la sesión 175,
+   celebrada los días martes 28, miércoles 29 y jueves 30 de abril de 2026.
+
+2. PUNTO RELEVANTE. Punto 31 (Sección VIII "Debates de totalidad de iniciativas de
+   reforma constitucional"): "Proyecto de reforma del artículo 43 de la Constitución
+   Española." (Núm. expte 102/000001) — debate y votación de las enmiendas a la
+   totalidad presentadas por PP y VOX.
+
+3. RESULTADO. Las enmiendas a la totalidad fueron rechazadas el 30-abr-2026 (177 vs 171).
+
+4. URL FUENTE. https://www.congreso.es/backoffice_doc/atp/orden_dia/pleno_175_28042026.pdf
+]]></akndiff:note>
+      </akndiff:researchNotes>
+
+      </proprietary>
+    </meta>
+    <preface>
+      <docTitle>PLENO DEL CONGRESO DE LOS DIPUTADOS — ORDEN DEL DÍA</docTitle>
+      <docNumber>Sesión nº 175</docNumber>
+      <docDate date="2026-04-28">Martes, 28 de abril de 2026</docDate>
+      <p>El Pleno de la Cámara ha acordado la modificación del orden del día en el sentido de excluir el punto 29, correspondiente a la interpelación urgente del Grupo Parlamentario VOX.</p>
+    </preface>
+    <mainBody>
+      <hcontainer name="orden-del-dia" eId="orden_dia">
+        <heading>Orden del día — Sesión 175 (28-29-30 abril 2026)</heading>
+        <p>PLENO DEL CONGRESO DE LOS DIPUTADOS ORDEN DEL DÍA Sesión nº175</p>
+        <p>Martes, 28 de abril de 2026</p>
+        <p>El Pleno de la Cámara ha acordado la modificación del orden del día en el sentido de excluir el punto 29, correspondiente a la interpelación urgente del Grupo Parlamentario VOX.</p>
+        <p>MARTES, 28 DE ABRIL A las 15 horas</p>
+        <p akndiff:role="heading"><b>I. Toma en consideración de Proposiciones de Ley.</b></p>
+        <p>1. Del Grupo Parlamentario Republicano, para la constitución de un consorcio de inversiones entre la Administración General del Estado y la Generalitat de Cataluña. &quot;BOCG. Congreso de los Diputados&quot;, serie B, número 313-1, de 13 de marzo de 2026. (Núm. expte 122/000262) Procedimiento Criterio del Gobierno</p>
+        <p>2. Del Grupo Parlamentario VOX, de modificación del Código Civil, para la protección de los menores tutelados en situación de desamparo. &quot;BOCG. Congreso de los Diputados&quot;, serie B, número 250-1, de 11 de julio de 2025. (Núm. expte 122/000209) Procedimiento</p>
+        <p akndiff:role="heading"><b>II. Convalidación o derogación de Reales Decretos-leyes. Procedimiento</b></p>
+        <p>3. Real Decreto-ley 8/2026, de 20 de marzo, de medidas en el alquiler en respuesta a las consecuencias económicas y sociales de la Guerra de Irán. (B.O.E. núm. 71, de 21 de marzo de 2026). (Núm. expte 130/000039) Texto</p>
+        <p akndiff:role="heading"><b>III. Proposiciones no de Ley. Procedimiento</b></p>
+        <p>4. Del Grupo Parlamentario VOX, relativa al colapso del Sistema Nacional de Salud provocado por el Gobierno de España. &quot;BOCG. Congreso de los Diputados&quot;, serie D, número 503, de 27 de marzo de 2026. (Núm. expte 162/000745) Enmienda</p>
+        <p akndiff:role="heading"><b>MIÉRCOLES, 29 DE ABRIL</b></p>
+        <p>A las 9 horas</p>
+        <p akndiff:role="heading"><b>V. Preguntas. Procedimiento</b></p>
+        <p akndiff:role="heading"><b>PRESIDENTE DEL GOBIERNO</b></p>
+        <p>17. PREGUNTA del Diputado D. ALBERTO NÚÑEZ FEIJÓO, del Grupo Parlamentario Popular en el Congreso, que formula al Excmo. Sr. Presidente del Gobierno:</p>
+        <p>¿A qué intereses sirve este Gobierno? (Núm. expte 180/001032)</p>
+        <p>10. PREGUNTA de la Diputada Dª MARIBEL VAQUERO MONTERO, del Grupo Parlamentario Vasco (EAJ-PNV), que formula al Excmo. Sr. Presidente del Gobierno:</p>
+        <p>¿Cuáles son sus prioridades y cómo piensa abordarlas con esta aritmética parlamentaria? (Núm. expte 180/001031)</p>
+        <p>9. PREGUNTA del Diputado D. ALBERTO CATALÁN HIGUERAS, del Grupo Parlamentario Mixto, que formula al Excmo. Sr. Presidente del Gobierno:</p>
+        <p>¿Por qué no reflexiona y convoca elecciones? (Núm. expte 180/001027)</p>
+        <p akndiff:role="heading"><b>VICEPRESIDENTE PRIMERO Y MINISTRO DE ECONOMÍA, COMERCIO Y EMPRESA</b></p>
+        <p>18. PREGUNTA de la Diputada Dª ESTER MUÑOZ DE LA IGLESIA, del Grupo Parlamentario Popular en el Congreso, que formula al Excmo. Sr. Vicepresidente Primero y Ministro de Economía, Comercio y Empresa:</p>
+        <p>¿Qué lo diferencia de su predecesora? (Núm. expte 180/001033)</p>
+        <p>19. PREGUNTA del Diputado D. JUAN BRAVO BAENA, del Grupo Parlamentario Popular en el Congreso, que formula al Excmo. Sr. Vicepresidente Primero y Ministro de Economía, Comercio y Empresa:</p>
+        <p>¿Cuál es su prioridad como Vicepresidente Primero? (Núm. expte 180/001034)</p>
+        <p>20. PREGUNTA del Diputado D. GUILLERMO MARISCAL ANAYA, del Grupo Parlamentario Popular en el Congreso, que formula al Excmo. Sr. Vicepresidente Primero y Ministro de Economía, Comercio y Empresa:</p>
+        <p>¿Forma usted parte de un Gobierno responsable? (Núm. expte 180/001035)</p>
+        <p akndiff:role="heading"><b>VICEPRESIDENTA SEGUNDA Y MINISTRA DE TRABAJO Y ECONOMÍA SOCIAL</b></p>
+        <p>21. PREGUNTA del Diputado D. MIGUEL TELLADO FILGUEIRA, del Grupo Parlamentario Popular en el Congreso, que formula a la Excma. Sra. Vicepresidenta Segunda y Ministra de Trabajo y Economía Social:</p>
+        <p>¿Qué opinión cree que tienen los españoles de su Gobierno? (Núm. expte 180/001036)</p>
+        <p akndiff:role="heading"><b>MINISTRO DE HACIENDA</b></p>
+        <p>23. PREGUNTA del Diputado D. ELÍAS BENDODO BENASAYAG, del Grupo Parlamentario Popular en el Congreso, que formula al Excmo. Sr. Ministro de Hacienda:</p>
+        <p>¿Cómo va a garantizar el buen funcionamiento de su Ministerio? (Núm. expte 180/001038)</p>
+        <p akndiff:role="heading"><b>MINISTRO DE POLÍTICA TERRITORIAL Y MEMORIA DEMOCRÁTICA</b></p>
+        <p>24. PREGUNTA de la Diputada Dª MIRIAN GUARDIOLA SALMERÓN, del Grupo Parlamentario Popular en el Congreso, que formula al Excmo. Sr. Ministro de Política Territorial y Memoria Democrática:</p>
+        <p>¿Hasta cuándo va a confundir poder con impunidad? (Núm. expte 180/001039)</p>
+        <p>11. PREGUNTA de la Diputada Dª ISABEL POZUETA FERNÁNDEZ, del Grupo Parlamentario Euskal Herria Bildu, que formula al Excmo. Sr. Ministro de Política Territorial y Memoria Democrática:</p>
+        <p>¿Atenderá el Gobierno a la reclamación de reconocimiento, verdad y justicia sobre los sucesos de Montejurra de 1976? (Núm. expte 180/001029)</p>
+        <p>MINISTRA DE VIVIENDA Y AGENDA URBANA 25. PREGUNTA del Diputado D. SERGIO SAYAS LÓPEZ, del Grupo Parlamentario</p>
+        <p>Popular en el Congreso, que formula a la Excma. Sra. Ministra de Vivienda y Agenda Urbana:</p>
+        <p>¿Cuál es el balance de sus medidas en materia de vivienda? (Núm. expte 180/001040) MINISTRA DE SANIDAD 13. PREGUNTA de la Diputada Dª ETNA ESTREMS FAYOS, del Grupo Parlamentario Republicano, que formula a la Excma. Sra. Ministra de Sanidad:</p>
+        <p>¿Cómo piensan garantizar que haya suficientes médicos en el sistema público de salud? (Núm. expte 180/001028) MINISTRA DE IGUALDAD 26. PREGUNTA del Diputado D. JAIME MIGUEL DE LOS SANTOS GONZÁLEZ, del Grupo Parlamentario Popular en el Congreso, que formula a la Excma. Sra. Ministra de Igualdad:</p>
+        <p>¿Mantiene que su Gobierno es feminista? (Núm. expte 180/001041)</p>
+        <p akndiff:role="heading"><b>PREGUNTAS APLAZADAS</b></p>
+        <p>12. PREGUNTA del Diputado D. JOSEP PAGÈS I MASSÓ, del Grupo Parlamentario Junts per Catalunya, que formula al Excmo. Sr. Ministro de la Presidencia, Justicia y Relaciones con las Cortes:</p>
+        <p>¿Considera que el Gobierno puede legislar sin tener en cuenta el Parlamento? (Núm. expte 180/001030)</p>
+        <p>14. PREGUNTA del Diputado D. AGUSTÍN SANTOS MARAVER, del Grupo Parlamentario Plurinacional SUMAR, que formula al Excmo. Sr. Ministro de Asuntos Exteriores, Unión Europea y Cooperación:</p>
+        <p>¿Dará el Ministerio de Asuntos Exteriores, Unión Europea y Cooperación asistencia consular plena a todos los miembros de la flotilla SUMUD de la misma forma que el Gobierno apoya políticamente la solidaridad con Palestina? (Núm. expte 180/001026)</p>
+        <p>15. PREGUNTA de la Diputada Dª MARÍA JOSÉ RODRÍGUEZ DE MILLÁN PARRO, del Grupo Parlamentario VOX, que formula al Excmo. Sr. Ministro de la Presidencia, Justicia y Relaciones con las Cortes:</p>
+        <p>¿Por qué usan la maquinaria del Estado contra los españoles? (Núm. expte 180/001042)</p>
+        <p>16. PREGUNTA del Diputado D. IGNACIO GIL LÁZARO, del Grupo Parlamentario VOX, que formula al Excmo. Sr. Ministro de la Presidencia, Justicia y Relaciones con las Cortes:</p>
+        <p>¿Por qué el Gobierno desprecia a millones de españoles? (Núm. expte 180/001043)</p>
+        <p>22. PREGUNTA de la Diputada Dª CAYETANA ÁLVAREZ DE TOLEDO PERALTA-RAMOS, del Grupo Parlamentario Popular en el Congreso, que formula al Excmo. Sr. Ministro de la Presidencia, Justicia y Relaciones con las Cortes:</p>
+        <p>¿Confía el Gobierno en la Justicia? (Núm. expte 180/001037)</p>
+        <p akndiff:role="heading"><b>VI. Interpelaciones urgentes. Procedimiento</b></p>
+        <p akndiff:role="heading"><b>MINISTRA DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES</b></p>
+        <p>27. Del Grupo Parlamentario Mixto (Sra. Belarra Urteaga), a la Ministra de Educación, Formación Profesional y Deportes referida a la política del Gobierno en materia educativa. (Núm. expte 172/000197) Texto</p>
+        <p akndiff:role="heading"><b>MINISTRA DE VIVIENDA Y AGENDA URBANA</b></p>
+        <p>28. Del Grupo Parlamentario Popular en el Congreso, a la Ministra de Vivienda y Agenda Urbana sobre las políticas en materia de vivienda de este Gobierno. (Núm. expte 172/000198) Texto</p>
+        <p akndiff:role="heading"><b>INTERPELACIÓN EXCLUIDA</b></p>
+        <p>29. Del Grupo Parlamentario VOX, al Ministro del Interior sobre cuál va a ser la prioridad del Gobierno en materia de seguridad. (Núm. expte 172/000199) Texto</p>
+        <p akndiff:role="heading"><b>III. Proposiciones no de Ley (continuación).</b></p>
+        <p>5. Del Grupo Parlamentario Popular en el Congreso, relativa a los retrasos del Estado en infraestructuras y actuaciones hídricas en Andalucía. &quot;BOCG. Congreso de los Diputados&quot;, serie D, número 513, de 17 de abril de 2026. (Núm. expte 162/000756) Enmienda</p>
+        <p akndiff:role="heading"><b>IV. Mociones consecuencia de interpelaciones urgentes.</b></p>
+        <p>6. Del Grupo Parlamentario Mixto (Sra. Valido García), sobre el impacto de la crisis generada por la guerra de Irán en Canarias y medidas urgentes a poner en marcha para enfrentar sus consecuencias en nuestra Región Ultraperiférica. (Núm. expte 173/000167) Procedimiento Texto Enmiendas</p>
+        <p>7. Del Grupo Parlamentario Popular en el Congreso, sobre la política económica de este Gobierno y cómo impacta a las familias españolas. (Núm. expte 173/000168) Procedimiento Texto Enmienda</p>
+        <p>8. Del Grupo Parlamentario VOX, sobre cuáles van a ser las prioridades del Gobierno en cuanto a la conservación de las infraestructuras en lo que queda de legislatura. (Núm. expte 173/000169) Procedimiento Texto</p>
+        <p akndiff:role="heading"><b>JUEVES, 30 DE ABRIL</b></p>
+        <p>A las 9 horas</p>
+        <p akndiff:role="heading"><b>VII. Convalidación o derogación de Reales Decretos-leyes. Procedimiento</b></p>
+        <p>30. Real Decreto-ley 9/2026, de 14 de abril, de medidas urgentes en materia de transporte. (B.O.E. núm. 92, de 15 de abril de 2026). (Núm. expte 130/000040) Texto</p>
+        <p akndiff:role="heading"><b>VIII. Debates de totalidad de iniciativas de reforma constitucional. Procedimiento</b></p>
+        <p>31. Proyecto de reforma del artículo 43 de la Constitución Española. &quot;BOCG. Congreso de los Diputados&quot;, serie A, número 92-1, de 13 de abril de 2026. (Núm. expte 102/000001) Enmiendas</p>
+      </hcontainer>
+    </mainBody>
+  </citation>
+</akomaNtoso>
