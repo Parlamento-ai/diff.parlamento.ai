@@ -308,22 +308,23 @@
 								onclick={() => selectEvent(row.id)}
 								title={`${row.label}${row.chamber ? ` · ${row.chamber}` : ''}\n\n${rowTooltip(row)}`}
 							>
-								<span class="line">
-									<span class="date mono">{row.date || '—'}</span>
-									<span class="square" aria-hidden="true"></span>
+								<span class="date mono">{row.date || '—'}</span>
+								<span class="content">
 									<span class="label">{row.label}</span>
+									{#if row.chamber || row.modifications.length || row.warnings.length}
+										<span class="meta">
+											{#if row.chamber}<span class="chamber">{row.chamber}</span>{/if}
+											{#if row.modifications.length}
+												<span class="mod-count" title="{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'}">
+													{row.modifications.length}△
+												</span>
+											{/if}
+											{#if row.warnings.length}
+												<span class="warn-mark" title={row.warnings.join('\n')}>⚠</span>
+											{/if}
+										</span>
+									{/if}
 								</span>
-								{#if row.chamber || row.modifications.length || row.warnings.length}
-									<span class="meta">
-										{#if row.chamber}<span class="chamber">{row.chamber}</span>{/if}
-										{#if row.modifications.length}
-											<span class="badge b-mod">{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'}</span>
-										{/if}
-										{#if row.warnings.length}
-											<span class="badge b-warn" title={row.warnings.join('\n')}>⚠</span>
-										{/if}
-									</span>
-								{/if}
 							</button>
 						</li>
 					{/each}
@@ -664,58 +665,51 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		border-left: 1px solid #e7e2d7;
 	}
 	.row button {
-		display: flex;
-		flex-direction: column;
-		gap: 4px;
+		display: grid;
+		grid-template-columns: 58px 1fr;
+		column-gap: 10px;
 		width: 100%;
 		text-align: left;
 		background: none;
 		border: none;
-		border-left: 3px solid transparent;
-		padding: 7px 8px 7px 8px;
+		border-left: 2px solid transparent;
+		margin-left: -1px;
+		padding: 6px 8px 6px 10px;
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
 		color: inherit;
-		transition: background-color 0.1s ease;
-		border-bottom: 1px dotted #e7e2d7;
-	}
-	.row:last-child button {
-		border-bottom: none;
+		transition: background-color 0.1s ease, border-color 0.1s ease;
 	}
 	.row button:hover {
 		background: #fbfaf7;
 	}
 	.row.selected button {
 		background: #f4fbe9;
-		border-left-color: var(--color-brand);
 	}
-	.line {
-		display: block;
+	.row.k-procedural button { border-left-color: #d1d5db; }
+	.row.k-version button { border-left-color: var(--color-brand); }
+	.row.k-amendment button { border-left-color: #fbbf24; }
+	.row.k-terminal button { border-left-color: var(--color-deletion-500); }
+	.row.selected button {
+		border-left-width: 4px;
+		padding-left: 8px;
 	}
 	.date {
 		font-size: 10.5px;
 		color: #6b7280;
 		white-space: nowrap;
-		margin-right: 6px;
+		line-height: 1.45;
+		padding-top: 1px;
 	}
-	.square {
-		display: inline-block;
-		width: 8px;
-		height: 8px;
-		background: #9ca3af;
-		border: 1px solid #111827;
-		margin-right: 8px;
-		vertical-align: 1px;
-	}
-	.row.k-procedural .square { background: #9ca3af; }
-	.row.k-version .square { background: var(--color-brand-dark); }
-	.row.k-amendment .square { background: #d97706; }
-	.row.k-terminal .square { background: var(--color-deletion-500); }
-	.row.selected .square {
-		border-width: 2px;
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		min-width: 0;
 	}
 	.label {
 		font-family: var(--font-mono);
@@ -723,58 +717,37 @@
 		line-height: 1.4;
 		color: #111827;
 		word-break: break-word;
-	}
-	.row:not(.selected) .label {
-		display: -webkit-inline-box;
+		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		line-clamp: 2;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
-		text-overflow: ellipsis;
 	}
 	.row.selected .label {
 		color: #0a0f1c;
-		font-weight: 500;
 	}
 	.meta {
 		display: flex;
-		gap: 4px;
-		flex-wrap: wrap;
+		gap: 6px;
 		align-items: center;
-		padding-left: 22px;
+		font-size: 10px;
+		color: #6b7280;
 	}
 	.chamber {
 		font-family: var(--font-heading);
 		font-size: 9px;
-		color: #4b5563;
+		color: #6b7280;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
-		padding: 0 4px;
-		background: #f3f4f6;
-		border-radius: 3px;
 	}
-
-	/* ─── Badges ─── */
-	.badge {
+	.mod-count {
 		font-family: var(--font-mono);
 		font-size: 10px;
-		padding: 1px 6px;
-		border-radius: 3px;
-		border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
-		display: inline-block;
-		line-height: 1.4;
-	}
-	.b-version {
-		background: var(--color-brand);
-		color: var(--color-brand-dark);
-	}
-	.b-mod {
-		background: #fef3c7;
 		color: #92400e;
 	}
-	.b-warn {
-		background: var(--color-deletion-100);
+	.warn-mark {
 		color: var(--color-deletion-800);
+		font-size: 10px;
 	}
 
 	/* ─── Cards (override .card) ─── */
