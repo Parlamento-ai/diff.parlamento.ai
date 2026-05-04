@@ -35,6 +35,7 @@ export type WorkflowStep = {
 	outcome?: string;
 	agent?: string;
 	role?: string;
+	source?: string;
 	refersTo?: string;
 	showAs?: string;
 };
@@ -275,7 +276,7 @@ export function parseBill(xml: string): ParsedBill {
 		b.lifecycle = ev;
 	}
 	for (const s of workflowSteps) {
-		const key = stripHash(s.refersTo);
+		const key = stripHash(s.source) ?? stripHash(s.refersTo);
 		const b = bucketFor(key);
 		b.step = s;
 	}
@@ -305,12 +306,12 @@ export function parseBill(xml: string): ParsedBill {
 
 		const rowWarnings: string[] = [];
 
-		// Dangling refersTo on a step
-		if (st?.refersTo && !ev) {
-			const key = stripHash(st.refersTo)!;
+		// Dangling event link on a step
+		if ((st?.source || st?.refersTo) && !ev) {
+			const key = stripHash(st.source) ?? stripHash(st.refersTo)!;
 			if (!references.find((r) => r.eId === key) && !buckets.has(key)) {
 				rowWarnings.push(
-					`<step> refersTo "${st.refersTo}" does not resolve to any TLCEvent or lifecycle event.`
+					`<step> event link "${st.source ?? st.refersTo}" does not resolve to any TLCEvent or lifecycle event.`
 				);
 			}
 		}
@@ -432,6 +433,7 @@ function parseWorkflow(wf: N | undefined): WorkflowStep[] {
 		outcome: attr(n, 'outcome'),
 		agent: attr(n, 'as') ?? attr(n, 'by') ?? attr(n, 'agent'),
 		role: attr(n, 'role'),
+		source: attr(n, 'source'),
 		refersTo: attr(n, 'refersTo'),
 		showAs: attr(n, 'showAs')
 	}));
