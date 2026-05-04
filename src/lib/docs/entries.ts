@@ -13,19 +13,24 @@ export const docs: DocEntry[] = [
 	// AKN.db
 	{ slug: 'akndb/overview', title: 'Overview', section: 'akndb' },
 	{ slug: 'akndb/document-types', title: 'Tipos de documento', section: 'akndb' },
-	// Explorer
-	{ slug: 'explorer/overview', title: 'Overview', section: 'explorer' },
-	{ slug: 'explorer/act', title: 'act', section: 'explorer' },
-	{ slug: 'explorer/bill', title: 'bill', section: 'explorer' },
-	{ slug: 'explorer/amendment', title: 'amendment', section: 'explorer' },
-	{ slug: 'explorer/debate', title: 'debate', section: 'explorer' },
-	{ slug: 'explorer/judgment', title: 'judgment', section: 'explorer' },
-	{ slug: 'explorer/officialGazette', title: 'officialGazette', section: 'explorer' },
-	{ slug: 'explorer/documentCollection', title: 'documentCollection', section: 'explorer' },
-	{ slug: 'explorer/doc', title: 'doc', section: 'explorer' },
-	{ slug: 'explorer/citation', title: 'citation*', section: 'explorer' },
-	{ slug: 'explorer/question', title: 'question*', section: 'explorer' },
-	{ slug: 'explorer/communication', title: 'communication*', section: 'explorer' },
+	// Explorer — each chip links directly to its per-type page.
+	// Order: enacted/in-flight law, then debate-family, then court / gazette /
+	// collection / catch-all, then Diff Parlamento extensions (suffixed with *).
+	{ slug: 'explorer/schema/act', title: 'act', section: 'explorer' },
+	{ slug: 'explorer/schema/bill', title: 'bill', section: 'explorer' },
+	{ slug: 'explorer/schema/amendment', title: 'amendment', section: 'explorer' },
+	{ slug: 'explorer/schema/amendmentList', title: 'amendmentList', section: 'explorer' },
+	{ slug: 'explorer/schema/debate', title: 'debate', section: 'explorer' },
+	{ slug: 'explorer/schema/debateReport', title: 'debateReport', section: 'explorer' },
+	{ slug: 'explorer/schema/statement', title: 'statement', section: 'explorer' },
+	{ slug: 'explorer/schema/judgment', title: 'judgment', section: 'explorer' },
+	{ slug: 'explorer/schema/officialGazette', title: 'officialGazette', section: 'explorer' },
+	{ slug: 'explorer/schema/documentCollection', title: 'documentCollection', section: 'explorer' },
+	{ slug: 'explorer/schema/portion', title: 'portion', section: 'explorer' },
+	{ slug: 'explorer/schema/doc', title: 'doc', section: 'explorer' },
+	{ slug: 'explorer/schema/citation', title: 'citation*', section: 'explorer' },
+	{ slug: 'explorer/schema/question', title: 'question*', section: 'explorer' },
+	{ slug: 'explorer/schema/communication', title: 'communication*', section: 'explorer' },
 	// AKN
 	{ slug: 'akn/what-is-akn', title: 'What is Akoma Ntoso?', section: 'akn' },
 	{ slug: 'akn/frbr', title: 'The FRBR model', section: 'akn' },
@@ -36,8 +41,7 @@ export const docs: DocEntry[] = [
 	{ slug: 'akn/inline-elements', title: 'Inline elements', section: 'akn' },
 	{ slug: 'akn/debates', title: 'Debates', section: 'akn' },
 	{ slug: 'akn/naming-convention', title: 'Naming convention', section: 'akn' },
-	{ slug: 'akn/national-profiles', title: 'National profiles', section: 'akn' },
-	{ slug: 'explorer/schema/act', title: 'Schema reference', section: 'akn' }
+	{ slug: 'akn/national-profiles', title: 'National profiles', section: 'akn' }
 ];
 
 /** Map from URL slug to actual filename on disk */

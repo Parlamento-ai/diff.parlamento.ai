@@ -2,6 +2,8 @@
 	import { untrack } from 'svelte';
 	import type { SchemaNode, Cardinality } from '$lib/akn-schema/types';
 	import SchemaNodeView from './SchemaNodeView.svelte';
+	import TypePill from './TypePill.svelte';
+	import { chipStyleOf, categoryOf } from '$lib/docs/type-categories';
 
 	let {
 		node,
@@ -32,12 +34,7 @@
 	<div class="py-0.5 text-gray-400 italic">#text</div>
 {:else if node.kind === 'cycle'}
 	<div class="py-0.5 flex items-center gap-2">
-		<a
-			href="{linkBase}/{node.name}"
-			class="text-gray-700 hover:text-blue-700 hover:underline underline-offset-2"
-		>
-			&lt;{node.name}&gt;
-		</a>
+		<TypePill typeName={node.name} href="{linkBase}/{node.name}" variant="inline" />
 		<span class="text-[10px] px-1.5 py-0.5 rounded {cardClass(node.card)}">{cardLabel(node.card)}</span>
 		<span class="text-[10px] text-gray-400">→ ref</span>
 		{#if node.doc}
@@ -59,6 +56,10 @@
 			{:else}
 				<span class="w-4 inline-block"></span>
 			{/if}
+			<span
+				class="w-1.5 h-1.5 rounded-full {chipStyleOf(node.name).dot}"
+				title={categoryOf(node.name)}
+			></span>
 			<span class="text-gray-800">&lt;{node.name}&gt;</span>
 			<span class="text-[10px] px-1.5 py-0.5 rounded {cardClass(node.card)}">{cardLabel(node.card)}</span>
 			{#if node.typeRef}

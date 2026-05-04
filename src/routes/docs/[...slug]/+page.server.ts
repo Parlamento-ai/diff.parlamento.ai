@@ -6,8 +6,9 @@ import { markedHighlight } from 'marked-highlight';
 import hljs from 'highlight.js/lib/core';
 import xml from 'highlight.js/lib/languages/xml';
 import { sql } from 'drizzle-orm';
-import { docs, slugToFile } from '$lib/docs';
+import { docs, slugToFile, getTermDef } from '$lib/docs';
 import { loadManifest, loadDocument } from '$lib/server/explorer-loader';
+import { loadExample } from '$lib/server/example-loader';
 import { getDb, schema } from '../../demo/db';
 import type { PageServerLoad } from './$types';
 
@@ -105,31 +106,52 @@ export const load: PageServerLoad = async ({ params }) => {
 	// AKN schema explorer — per-type structural view (reads vendored OASIS XSD via build-time JSON)
 	if (slug.startsWith('explorer/schema/')) {
 		const typeName = slug.slice('explorer/schema/'.length);
+
+		// Top-level types have generated XSD JSON; deeper types (lifecycle, eventRef…)
+		// don't, but we still want a docs page when there's a term-definition for them.
+		let parsed: { name: string; doc?: string; root: unknown } | null = null;
 		try {
 			const schemaPath = join(process.cwd(), 'src/lib/akn-schema/generated', `${typeName}.json`);
 			const raw = await readFile(schemaPath, 'utf-8');
-			const parsed = JSON.parse(raw) as { name: string; doc?: string; root: unknown };
-			const indexPath = join(process.cwd(), 'src/lib/akn-schema/generated/index.json');
-			const indexRaw = await readFile(indexPath, 'utf-8');
-			const indexJson = JSON.parse(indexRaw) as {
-				topLevelTypes: string[];
-				types: { name: string; doc?: string; nodeCount: number }[];
-			};
-			return {
-				mode: 'schema-type' as const,
-				schema: parsed,
-				typeName,
-				topLevelTypes: indexJson.topLevelTypes,
-				title: `<${typeName}> — Schema reference`,
-				section: 'explorer' as const,
-				pageMetaTags: Object.freeze({
-					title: `<${typeName}> schema — AKN reference`,
-					openGraph: { title: `<${typeName}> schema — AKN reference` }
-				})
-			};
+			parsed = JSON.parse(raw) as { name: string; doc?: string; root: unknown };
 		} catch {
+			parsed = null;
+		}
+
+		const termDef = getTermDef(typeName);
+
+		// 404 only if we have neither a schema tree nor a term definition.
+		if (!parsed && !termDef) {
 			error(404, `Schema not found for type: ${typeName}`);
 		}
+
+		let exampleHtml: string | undefined;
+		let exampleCaption: string | undefined;
+		let exampleSourceUrl: string | undefined;
+		if (termDef?.exampleSource) {
+			const ex = await loadExample(termDef.exampleSource.file, termDef.exampleSource.anchor);
+			if (ex) {
+				exampleHtml = hljs.highlight(ex.xml, { language: 'xml' }).value;
+				exampleCaption = termDef.exampleSource.caption ?? ex.caption;
+				exampleSourceUrl = ex.sourceUrl;
+			}
+		}
+
+		return {
+			mode: 'schema-type' as const,
+			schema: parsed,
+			typeName,
+			termDef: termDef ?? null,
+			exampleHtml: exampleHtml ?? null,
+			exampleCaption: exampleCaption ?? null,
+			exampleSourceUrl: exampleSourceUrl ?? null,
+			title: `<${typeName}> — Schema reference`,
+			section: 'explorer' as const,
+			pageMetaTags: Object.freeze({
+				title: `<${typeName}> schema — AKN reference`,
+				openGraph: { title: `<${typeName}> schema — AKN reference` }
+			})
+		};
 	}
 
 	// Explorer overview page

@@ -1,30 +1,24 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import type { ExplorerDocType } from '$lib/types/explorer';
+	import { chipStyleOf } from '$lib/docs/type-categories';
 
 	let { data, children } = $props();
 
 	const activeSlug = $derived(page.params.slug || '');
-	const isExplorerDoc = $derived(activeSlug.startsWith('explorer/') && activeSlug !== 'explorer/overview' && activeSlug.split('/').length > 2);
+	const isExplorerDoc = $derived(
+		activeSlug.startsWith('explorer/') &&
+			!activeSlug.startsWith('explorer/schema/') &&
+			activeSlug.split('/').length > 2
+	);
 
 	const akndiffDocs = $derived(data.docs.filter((d: any) => d.section === 'akndiff'));
 	const akndbDocs = $derived(data.docs.filter((d: any) => d.section === 'akndb'));
 	const explorerDocs = $derived(data.docs.filter((d: any) => d.section === 'explorer'));
 	const aknDocs = $derived(data.docs.filter((d: any) => d.section === 'akn'));
 
-	const TYPE_COLORS: Record<string, string> = {
-		act: 'text-emerald-700 bg-emerald-50 border-emerald-200',
-		bill: 'text-blue-700 bg-blue-50 border-blue-200',
-		amendment: 'text-amber-700 bg-amber-50 border-amber-200',
-		debate: 'text-purple-700 bg-purple-50 border-purple-200',
-		judgment: 'text-red-700 bg-red-50 border-red-200',
-		officialGazette: 'text-gray-700 bg-gray-50 border-gray-200',
-		documentCollection: 'text-cyan-700 bg-cyan-50 border-cyan-200',
-		doc: 'text-stone-700 bg-stone-50 border-stone-200',
-		citation: 'text-teal-700 bg-teal-50 border-teal-200',
-		question: 'text-orange-700 bg-orange-50 border-orange-200',
-		communication: 'text-violet-700 bg-violet-50 border-violet-200'
-	};
+	// Pull the type name out of an explorer entry slug ('explorer/schema/bill' → 'bill')
+	const typeOf = (slug: string) => slug.replace(/^explorer\/(schema\/)?/, '');
 </script>
 
 <div class="max-w-7xl mx-auto px-4 py-4">
@@ -98,26 +92,21 @@
 					</h3>
 					<ul class="space-y-0.5">
 						{#each explorerDocs as doc (doc.slug)}
-							{@const docType = doc.slug.replace('explorer/', '')}
+							{@const t = typeOf(doc.slug)}
+							{@const isActive = activeSlug === doc.slug}
 							<li>
-								{#if doc.slug === 'explorer/overview'}
-									<a
-										href="/docs/{doc.slug}"
-										class="block px-2 py-1.5 text-sm rounded-md transition-colors
-											{activeSlug === doc.slug || isExplorerDoc
-												? 'bg-purple-200/60 text-purple-800 font-medium'
-												: 'text-purple-800/70 hover:text-purple-800 hover:bg-purple-100'}"
+								<a
+									href="/docs/{doc.slug}"
+									class="flex items-center gap-1.5 px-2 py-1 text-sm rounded-md transition-colors {isActive
+										? 'bg-purple-200/60'
+										: 'hover:bg-purple-100'}"
+								>
+									<span
+										class="badge text-[10px] py-0 px-1 border {chipStyleOf(t).chip}"
 									>
 										{doc.title}
-									</a>
-								{:else}
-									<a
-										href="/docs/explorer/overview#{docType}"
-										class="flex items-center gap-1.5 px-2 py-1 text-sm rounded-md transition-colors text-purple-800/70 hover:text-purple-800 hover:bg-purple-100"
-									>
-										<span class="badge text-[10px] py-0 px-1 {TYPE_COLORS[docType] || ''}">{docType}</span>
-									</a>
-								{/if}
+									</span>
+								</a>
 							</li>
 						{/each}
 					</ul>
@@ -155,17 +144,21 @@
 		<div class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-[0_-2px_8px_rgba(0,0,0,0.06)] p-2 z-10 overflow-x-auto">
 			<div class="flex gap-1.5 px-2">
 				{#each data.docs as doc (doc.slug)}
-					{#if doc.section !== 'explorer' || doc.slug === 'explorer/overview'}
-						<a
-							href="/docs/{doc.slug}"
-							class="shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors whitespace-nowrap
-								{activeSlug === doc.slug
-									? (doc.section === 'akndiff' ? 'bg-addition-50 text-addition-800' : doc.section === 'akndb' ? 'bg-blue-50 text-blue-800' : doc.section === 'explorer' ? 'bg-purple-50 text-purple-800' : 'bg-gray-100 text-gray-800')
-									: 'text-gray-500 hover:bg-gray-50'}"
-						>
-							{doc.title}
-						</a>
-					{/if}
+					<a
+						href="/docs/{doc.slug}"
+						class="shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors whitespace-nowrap
+							{activeSlug === doc.slug
+								? doc.section === 'akndiff'
+									? 'bg-addition-50 text-addition-800'
+									: doc.section === 'akndb'
+										? 'bg-blue-50 text-blue-800'
+										: doc.section === 'explorer'
+											? 'bg-purple-50 text-purple-800'
+											: 'bg-gray-100 text-gray-800'
+								: 'text-gray-500 hover:bg-gray-50'}"
+					>
+						{doc.title}
+					</a>
 				{/each}
 			</div>
 		</div>

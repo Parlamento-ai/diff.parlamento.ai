@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AKN_TERMS } from './terms';
+	import { AKN_TERMS, termDocsUrl } from './terms';
 
 	type Props = {
 		term: string;
@@ -11,6 +11,7 @@
 
 	const def = $derived(AKN_TERMS[term]);
 	const display = $derived(label ?? term);
+	const docsUrl = $derived(termDocsUrl(term));
 </script>
 
 <span class="akn-term" role="button" tabindex="0">
@@ -21,6 +22,9 @@
 			<span class="tip-body">{def.short}</span>
 			{#if example ?? def.example}
 				<span class="tip-example">e.g. {example ?? def.example}</span>
+			{/if}
+			{#if docsUrl}
+				<a class="tip-link" href={docsUrl}>open docs →</a>
 			{/if}
 		</span>
 	{:else}
@@ -77,5 +81,16 @@
 		margin-top: 4px;
 		color: #d1d5db;
 		font-style: italic;
+	}
+	.tip-link {
+		display: inline-block;
+		margin-top: 6px;
+		color: #fde68a;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		pointer-events: auto;
+	}
+	.tip-link:hover {
+		color: #fef3c7;
 	}
 </style>
