@@ -215,11 +215,15 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 			intro: 'A wrapper that bundles many amendments into a single shipped artifact.',
 			parts: [
 				{ name: 'meta', purpose: 'Identity and references for the package as a whole.' },
+				{ name: 'identification', purpose: 'The FRBR identity of the package.', depth: 1 },
+				{ name: 'references', purpose: 'Sponsors, committees, and the bill being amended.', depth: 1 },
 				{
 					name: 'amendmentBody',
 					purpose:
 						'The list itself — a sequence of <amendment> entries, each with its own content and justification.'
-				}
+				},
+				{ name: 'amendment', purpose: 'One amendment in the package — change plus reasoning.', depth: 1 },
+				{ name: 'amendmentContent', purpose: 'The text of one specific change.', depth: 1 }
 			]
 		}
 	},
@@ -237,11 +241,17 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 					name: 'meta',
 					purpose: 'Identity of the case, the court, the date, and the parties involved.'
 				},
+				{ name: 'identification', purpose: 'The FRBR identity — case name and number.', depth: 1 },
+				{ name: 'references', purpose: 'The judges, the court, and the parties.', depth: 1 },
 				{ name: 'header', purpose: 'The case heading — court, date, parties, case number.' },
 				{
 					name: 'judgmentBody',
 					purpose: 'The body of the decision — background, arguments, ruling.'
 				},
+				{ name: 'background', purpose: 'The facts and procedural history of the case.', depth: 1 },
+				{ name: 'arguments', purpose: 'The legal reasoning — both sides and the court\'s analysis.', depth: 1 },
+				{ name: 'remedies', purpose: 'The relief ordered — damages, injunctions, declarations.', depth: 1 },
+				{ name: 'motivation', purpose: 'The court\'s justification for the ruling.', depth: 1 },
 				{ name: 'conclusions', purpose: 'The disposition — what the court actually orders.' }
 			]
 		}
@@ -287,11 +297,17 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 				'Same shape as a <debate>, but represents the official report — the Hansard-style record rather than the raw transcript.',
 			parts: [
 				{ name: 'meta', purpose: 'Date, chamber, attendees, references.' },
+				{ name: 'identification', purpose: 'The FRBR identity of the report.', depth: 1 },
+				{ name: 'references', purpose: 'Speakers, the chamber, and any documents cited.', depth: 1 },
 				{
 					name: 'debateBody',
 					purpose:
 						'The report — usually edited speeches, questions, and votes. Same building blocks as <debate>.'
-				}
+				},
+				{ name: 'speech', purpose: 'One edited intervention attributed to a speaker.', depth: 1 },
+				{ name: 'question', purpose: 'A parliamentary question recorded in the report.', depth: 1 },
+				{ name: 'answer', purpose: 'The recorded reply.', depth: 1 },
+				{ name: 'vote', purpose: 'A recorded voting block — outcome and tally.', depth: 1 }
 			]
 		}
 	},
@@ -307,12 +323,17 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 				'A statement is intentionally generic — used for anything official that does not fit the named types.',
 			parts: [
 				{ name: 'meta', purpose: 'Identity, date, the body that issued the statement.' },
+				{ name: 'identification', purpose: 'The FRBR identity of the statement.', depth: 1 },
+				{ name: 'references', purpose: 'The issuing body and any people or documents named.', depth: 1 },
 				{ name: 'preface', purpose: 'Optional title and front-matter.' },
+				{ name: 'longTitle', purpose: 'The full title — what the statement is about.', depth: 1 },
 				{
 					name: 'mainBody',
 					purpose:
 						'Free-form text — paragraphs, headings, blocks. No assumed hierarchy of articles.'
-				}
+				},
+				{ name: 'p', purpose: 'A single paragraph of text.', depth: 1 },
+				{ name: 'heading', purpose: 'A section heading inside the body.', depth: 1 }
 			]
 		}
 	},
@@ -331,11 +352,15 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 					purpose:
 						'Identity of the fragment, plus a pointer to the parent document it came from.'
 				},
+				{ name: 'identification', purpose: 'The FRBR identity of the fragment itself.', depth: 1 },
+				{ name: 'references', purpose: 'The parent document this fragment was extracted from.', depth: 1 },
 				{
 					name: 'portionBody',
 					purpose:
 						'The fragment itself — typically a single hierarchy element (article, chapter, section).'
-				}
+				},
+				{ name: 'article', purpose: 'A single article carried as the portion.', depth: 1 },
+				{ name: 'chapter', purpose: 'A single chapter carried as the portion.', depth: 1 }
 			]
 		}
 	},
@@ -350,12 +375,17 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 				'<doc> is the catch-all — it has no fixed shape beyond "metadata + a free-form body."',
 			parts: [
 				{ name: 'meta', purpose: 'Identity, date, author or issuing body.' },
+				{ name: 'identification', purpose: 'The FRBR identity of the document.', depth: 1 },
+				{ name: 'references', purpose: 'Authors, issuing bodies, and anything cited.', depth: 1 },
 				{ name: 'preface', purpose: 'Optional title and front-matter.' },
+				{ name: 'longTitle', purpose: 'The document\'s full title.', depth: 1 },
 				{
 					name: 'mainBody',
 					purpose:
 						'Free-form text — memos, reports, anything that does not fit a stricter type.'
-				}
+				},
+				{ name: 'p', purpose: 'A single paragraph of text.', depth: 1 },
+				{ name: 'heading', purpose: 'A section heading inside the body.', depth: 1 }
 			]
 		},
 		exampleSource: { file: 'akn/03-document-types.md', anchor: 'when-to-use-doc' }
@@ -375,11 +405,16 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 					name: 'meta',
 					purpose: 'Identity of the issue — gazette name, date, issue number.'
 				},
+				{ name: 'identification', purpose: 'The FRBR identity of this issue.', depth: 1 },
+				{ name: 'publication', purpose: 'Publication name, date, issue number.', depth: 1 },
+				{ name: 'references', purpose: 'The publishing authority.', depth: 1 },
 				{
 					name: 'collectionBody',
 					purpose:
 						'A list of <component> entries, each pointing at one published document (act, decree, notice).'
-				}
+				},
+				{ name: 'component', purpose: 'One published document in the issue.', depth: 1 },
+				{ name: 'documentRef', purpose: 'A pointer to the actual published document.', depth: 1 }
 			]
 		}
 	},
@@ -395,11 +430,15 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 				'A document collection is a wrapper that groups several documents that belong together — a bill plus its explanatory memorandum, for example.',
 			parts: [
 				{ name: 'meta', purpose: 'Identity of the collection itself.' },
+				{ name: 'identification', purpose: 'The FRBR identity of the bundle.', depth: 1 },
+				{ name: 'references', purpose: 'The documents bundled and any people involved.', depth: 1 },
 				{
 					name: 'collectionBody',
 					purpose:
 						'A list of <component> entries. Each component carries a <documentRef> pointing at one of the documents in the bundle.'
-				}
+				},
+				{ name: 'component', purpose: 'One document in the bundle.', depth: 1 },
+				{ name: 'documentRef', purpose: 'A pointer to the actual document.', depth: 1 }
 			]
 		},
 		exampleSource: { file: 'akn/03-document-types.md', anchor: 'document-collections' }
@@ -422,11 +461,17 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 					name: 'meta',
 					purpose: 'Identity of the citation, plus references to the people and bodies involved.'
 				},
+				{ name: 'identification', purpose: 'The FRBR identity of the summons.', depth: 1 },
+				{ name: 'references', purpose: 'The person summoned and the chamber doing the summoning.', depth: 1 },
 				{
 					name: 'citationBody',
 					purpose:
 						'Who is being summoned, when, by whom, and on what topic. Designed to be CalDAV-compatible — a citation is also a calendar event.'
-				}
+				},
+				{ name: 'summonedPerson', purpose: 'The minister or official being summoned.', depth: 1 },
+				{ name: 'summoningBody', purpose: 'The committee or chamber issuing the summons.', depth: 1 },
+				{ name: 'topic', purpose: 'What the appearance is about.', depth: 1 },
+				{ name: 'scheduledDate', purpose: 'When the appearance is scheduled.', depth: 1 }
 			]
 		}
 	},
@@ -445,14 +490,20 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 					name: 'meta',
 					purpose: 'Who asked, who is supposed to answer, the date submitted.'
 				},
+				{ name: 'identification', purpose: 'The FRBR identity of the question.', depth: 1 },
+				{ name: 'references', purpose: 'The asking legislator and the responding ministry.', depth: 1 },
 				{
 					name: 'questionBody',
 					purpose: 'The text of the question.'
 				},
+				{ name: 'subject', purpose: 'The topic of the query.', depth: 1 },
+				{ name: 'questionText', purpose: 'The full text of the question.', depth: 1 },
 				{
 					name: 'answerBody',
 					purpose: 'The recorded reply — usually filled in later, when the executive responds.'
-				}
+				},
+				{ name: 'answerText', purpose: 'The text of the executive\'s reply.', depth: 1 },
+				{ name: 'answerDate', purpose: 'When the reply was submitted.', depth: 1 }
 			]
 		}
 	},
@@ -471,10 +522,15 @@ export const TERM_DEFINITIONS: Record<string, TermDef> = {
 					name: 'meta',
 					purpose: 'Sender, recipient, date, subject — and any documents the message refers to.'
 				},
+				{ name: 'identification', purpose: 'The FRBR identity of the message.', depth: 1 },
+				{ name: 'references', purpose: 'Sender and recipient — chambers, ministries, individuals.', depth: 1 },
 				{
 					name: 'communicationBody',
 					purpose: 'The message itself — usually a short formal text.'
-				}
+				},
+				{ name: 'subject', purpose: 'The subject line of the message.', depth: 1 },
+				{ name: 'messageText', purpose: 'The body of the formal communication.', depth: 1 },
+				{ name: 'attachedDocument', purpose: 'Any document the message refers to or transmits.', depth: 1 }
 			]
 		}
 	},

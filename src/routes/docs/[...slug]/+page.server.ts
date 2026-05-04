@@ -145,11 +145,11 @@ export const load: PageServerLoad = async ({ params }) => {
 			exampleHtml: exampleHtml ?? null,
 			exampleCaption: exampleCaption ?? null,
 			exampleSourceUrl: exampleSourceUrl ?? null,
-			title: `<${typeName}> — Schema reference`,
+			title: `${typeName} — Schema reference`,
 			section: 'explorer' as const,
 			pageMetaTags: Object.freeze({
-				title: `<${typeName}> schema — AKN reference`,
-				openGraph: { title: `<${typeName}> schema — AKN reference` }
+				title: `${typeName} — AKN schema reference`,
+				openGraph: { title: `${typeName} — AKN schema reference` }
 			})
 		};
 	}
