@@ -44,6 +44,7 @@ export type Modification = {
 	kind: 'substitution' | 'insertion' | 'repeal' | 'unknown';
 	targetEid?: string;
 	targetHref?: string;
+	targetIsLocal?: boolean;
 	source?: string; // e.g. #evt-09
 	old?: string;
 	new?: string;
@@ -356,6 +357,8 @@ export function parseBill(xml: string): ParsedBill {
 	const spanToEvents: Record<string, string[]> = {};
 	for (const row of timeline) {
 		for (const m of row.modifications) {
+			m.targetIsLocal = isLocalTarget(m.targetHref, identification);
+			if (!m.targetIsLocal) continue;
 			if (!m.targetEid) continue;
 			if (!eIdSet.has(m.targetEid)) {
 				row.warnings.push(
@@ -463,7 +466,7 @@ function pushMods(block: N, out: Modification[]) {
 			out.push({
 				kind: kindTag,
 				targetHref: target,
-				targetEid: target ? stripHash(target.split('/').pop()) : undefined,
+				targetEid: targetEidFromHref(target),
 				source,
 				period,
 				old: oldNode ? textOf(oldNode) : undefined,
@@ -484,13 +487,33 @@ function pushMods(block: N, out: Modification[]) {
 		out.push({
 			kind,
 			targetHref: target,
-			targetEid: target ? stripHash(target.split('/').pop()) : undefined,
+			targetEid: targetEidFromHref(target),
 			source,
 			period: attr(m, 'period'),
 			old: oldNode ? textOf(oldNode) : undefined,
 			new: newNode ? textOf(newNode) : undefined
 		});
 	}
+}
+
+function targetEidFromHref(href: string | undefined): string | undefined {
+	if (!href) return undefined;
+	const hashIndex = href.indexOf('#');
+	if (hashIndex >= 0) return href.slice(hashIndex + 1) || undefined;
+	const lastPathPart = href.split('/').pop();
+	return stripHash(lastPathPart);
+}
+
+function isLocalTarget(href: string | undefined, identification: Identification): boolean {
+	if (!href) return true;
+	if (href.startsWith('#')) return true;
+
+	const targetBase = href.split('#')[0];
+	return [
+		identification.frbrWork,
+		identification.frbrExpression,
+		identification.frbrManifestation
+	].some((localUri) => localUri && targetBase.startsWith(localUri));
 }
 
 const HIERARCHY_TAGS = new Set([

@@ -46,6 +46,7 @@
 	const highlightedEids = $derived(
 		new Set(
 			(selectedRow?.modifications ?? [])
+				.filter((m) => m.targetIsLocal)
 				.map((m) => m.targetEid)
 				.filter((x): x is string => Boolean(x))
 		)
@@ -420,8 +421,9 @@
 												<button
 													type="button"
 													class="eid-pill"
+													disabled={!m.targetIsLocal}
 													onclick={() => m.targetEid && focusSpan(m.targetEid)}
-													title="scroll to span in body view"
+													title={m.targetIsLocal ? 'scroll to span in body view' : (m.targetHref ?? 'target is in another document')}
 												>
 													<AknTerm term="eId" />=<span class="ink">{m.targetEid}</span>
 												</button>
@@ -916,6 +918,16 @@
 		background: var(--color-brand);
 		border-color: var(--color-brand-dark);
 		color: var(--color-brand-dark);
+	}
+	.eid-pill:disabled {
+		cursor: default;
+		border-style: dashed;
+		opacity: 0.85;
+	}
+	.eid-pill:disabled:hover {
+		background: #f3f4f6;
+		border-color: #d1d5db;
+		color: #4b5563;
 	}
 	.eid-pill .ink {
 		color: #0a0f1c;
