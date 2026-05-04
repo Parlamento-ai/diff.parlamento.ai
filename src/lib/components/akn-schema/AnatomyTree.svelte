@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount, tick } from 'svelte';
 	import Self from './AnatomyTree.svelte';
 	import { getTermDef } from '$lib/docs/term-definitions';
 
@@ -23,12 +24,49 @@
 	];
 	const badge = $derived(badgeStyles[depth % badgeStyles.length]);
 
-	// Track which row is expanded — one at a time per tree level keeps the
-	// reader oriented without forcing them to re-collapse before opening another.
 	let openName = $state<string | null>(null);
 
+	function rowId(name: string): string {
+		return `anatomy-row-${name}`;
+	}
+
+	function openFromHash() {
+		if (typeof window === 'undefined') return;
+		const raw = window.location.hash.slice(1);
+		if (!raw) return;
+		const name = decodeURIComponent(raw);
+		// Only act if this name exists in our subtree — otherwise let other
+		// instances handle it. Compare against the names we render here.
+		if (!nodes.some((n) => n.name === name) && depth === 0) {
+			// At the root, also check nested levels by deferring to children.
+			// We don't pre-flatten — the matching child Self instance opens itself.
+		}
+		if (nodes.some((n) => n.name === name)) {
+			openName = name;
+			tick().then(() => {
+				const el = document.getElementById(rowId(name));
+				el?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+			});
+		}
+	}
+
+	onMount(() => {
+		openFromHash();
+		const handler = () => openFromHash();
+		window.addEventListener('hashchange', handler);
+		return () => window.removeEventListener('hashchange', handler);
+	});
+
 	function toggle(name: string) {
-		openName = openName === name ? null : name;
+		const next = openName === name ? null : name;
+		openName = next;
+		// Mirror state into the URL hash so the panel is shareable. Use
+		// history.replaceState to avoid filling the back stack with toggles.
+		if (typeof window !== 'undefined') {
+			const url = new URL(window.location.href);
+			url.hash = next ? encodeURIComponent(next) : '';
+			window.history.replaceState(null, '', url.toString());
+		}
 	}
 </script>
 
@@ -37,7 +75,7 @@
 		{@const def = getTermDef(node.name)}
 		{@const short = def?.short}
 		{@const isOpen = openName === node.name}
-		<li class="space-y-1">
+		<li id={rowId(node.name)} class="space-y-1 scroll-mt-20">
 			<div class="flex items-baseline gap-2 flex-wrap">
 				<button
 					type="button"
