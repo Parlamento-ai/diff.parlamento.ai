@@ -154,23 +154,6 @@
 		setTimeout(() => target.classList.remove('flash-highlight'), 1200);
 	}
 
-	function rowKindLabel(kind: TimelineRow['kind']) {
-		switch (kind) {
-			case 'procedural':
-				return 'procedural';
-			case 'version':
-				return 'new version';
-			case 'amendment':
-				return 'amendment';
-			case 'debate':
-				return 'debate';
-			case 'citation':
-				return 'citation';
-			case 'terminal':
-				return 'terminal';
-		}
-	}
-
 	function rowTooltip(row: TimelineRow): string {
 		const parts: string[] = [];
 		if (row.origin?.type === 'amendment') {
@@ -227,6 +210,134 @@
 		}
 	}
 
+	type Seg =
+		| { t: 'open'; tag: string; selfClose?: boolean }
+		| { t: 'close'; tag: string }
+		| { t: 'attr'; name: string; value: string; indent: number }
+		| { t: 'comment'; text: string; indent: number }
+		| { t: 'ellipsis'; text: string; indent: number }
+		| { t: 'tagLine'; tag: string; indent: number; selfClose?: boolean }
+		| { t: 'closeLine'; tag: string; indent: number };
+
+	function buildProvenanceSnippet(row: TimelineRow): Seg[] {
+		const lines: Seg[] = [];
+		const scope = row.origin?.type ?? 'bill';
+		const scopeRows = parsed.timeline.filter(
+			(r) => (r.origin?.type ?? 'bill') === scope &&
+				(r.origin?.nativeId ?? null) === (row.origin?.nativeId ?? null)
+		);
+		const eventRefSiblings = scopeRows.filter((r) => r.lifecycle && r.id !== row.id).length;
+		const stepSiblings = scopeRows.filter((r) => r.step && r.id !== row.id).length;
+		const modSiblings = scopeRows.reduce(
+			(n, r) => n + (r.id === row.id ? 0 : r.modifications.length),
+			0
+		);
+
+		if (row.origin) {
+			lines.push({
+				t: 'comment',
+				indent: 0,
+				text: `linked from ${row.origin.type} ${row.origin.nativeId}`
+			});
+		}
+
+		// <lifecycle>
+		lines.push({ t: 'tagLine', tag: 'lifecycle', indent: 0 });
+		if (row.lifecycle) {
+			lines.push({ t: 'open', tag: 'eventRef' });
+			pushAttr(lines, 'date', row.lifecycle.date, 2);
+			pushAttr(lines, 'refersTo', row.lifecycle.source, 2);
+			pushAttr(lines, 'source', row.lifecycle.tlcEventId, 2);
+			pushAttr(lines, 'eId', row.lifecycle.eId, 2);
+			pushAttr(lines, 'showAs', row.lifecycle.showAs, 2);
+			pushAttr(lines, 'chamber', row.lifecycle.chamber, 2);
+			lines.push({ t: 'tagLine', tag: 'eventRef', indent: 1, selfClose: true });
+			if (eventRefSiblings > 0) {
+				lines.push({
+					t: 'ellipsis',
+					indent: 1,
+					text: `... ${eventRefSiblings} other eventRef${eventRefSiblings === 1 ? '' : 's'}`
+				});
+			}
+		} else {
+			lines.push({
+				t: 'comment',
+				indent: 1,
+				text: 'no eventRef referencing this event'
+			});
+		}
+		lines.push({ t: 'closeLine', tag: 'lifecycle', indent: 0 });
+
+		// <workflow>
+		lines.push({ t: 'tagLine', tag: 'workflow', indent: 0 });
+		if (row.step) {
+			lines.push({ t: 'open', tag: 'step' });
+			pushAttr(lines, 'date', row.step.date, 2);
+			pushAttr(lines, 'refersTo', row.step.refersTo, 2);
+			pushAttr(lines, 'source', row.step.source, 2);
+			pushAttr(lines, 'by', row.step.agent, 2);
+			pushAttr(lines, 'as', row.step.role, 2);
+			pushAttr(lines, 'outcome', row.step.outcome, 2);
+			pushAttr(lines, 'showAs', row.step.showAs, 2);
+			lines.push({ t: 'tagLine', tag: 'step', indent: 1, selfClose: true });
+			if (stepSiblings > 0) {
+				lines.push({
+					t: 'ellipsis',
+					indent: 1,
+					text: `... ${stepSiblings} other step${stepSiblings === 1 ? '' : 's'}`
+				});
+			}
+		} else {
+			lines.push({
+				t: 'comment',
+				indent: 1,
+				text: 'no step referencing this event'
+			});
+		}
+		lines.push({ t: 'closeLine', tag: 'workflow', indent: 0 });
+
+		// <analysis>
+		lines.push({ t: 'tagLine', tag: 'analysis', indent: 0 });
+		if (row.modifications.length) {
+			lines.push({ t: 'tagLine', tag: 'activeModifications', indent: 1 });
+			lines.push({
+				t: 'comment',
+				indent: 2,
+				text: `${row.modifications.length} change${row.modifications.length === 1 ? '' : 's'} for this event — shown above`
+			});
+			if (modSiblings > 0) {
+				lines.push({
+					t: 'ellipsis',
+					indent: 2,
+					text: `... ${modSiblings} other change${modSiblings === 1 ? '' : 's'} on other events`
+				});
+			}
+			lines.push({ t: 'closeLine', tag: 'activeModifications', indent: 1 });
+		} else {
+			lines.push({
+				t: 'comment',
+				indent: 1,
+				text: 'no activeModifications referencing this event'
+			});
+		}
+		lines.push({ t: 'closeLine', tag: 'analysis', indent: 0 });
+
+		return lines;
+	}
+
+	function pushAttr(lines: Seg[], name: string, value: string | undefined, indent: number) {
+		if (value === undefined || value === '') {
+			lines.push({ t: 'comment', indent, text: `${name}: not set` });
+		} else {
+			lines.push({ t: 'attr', name, value, indent });
+		}
+	}
+
+	function indentStr(n: number): string {
+		return '  '.repeat(n);
+	}
+
+	const provenanceSnippet = $derived(selectedRow ? buildProvenanceSnippet(selectedRow) : []);
 </script>
 
 <svelte:head>
@@ -526,116 +637,81 @@
 			{#if selectedRow}
 				<h2 class="eyebrow">Event detail</h2>
 
+				{@const showAmendments =
+					amendments.length &&
+					(selectedRow.kind === 'amendment' ||
+						selectedRow.lifecycle?.type === 'committee_report' ||
+						selectedRow.lifecycle?.type === 'ponencia_report')}
+
 				<div class="card event-card k-{selectedRow.kind}">
 					<div class="card-head">
 						<span class="mono ink">{selectedRow.date || '—'}</span>
 						{#if selectedRow.chamber}
 							<span class="card-head-sep">·</span>
-							<span class="muted"><AknTerm term="chamber" />: {selectedRow.chamber}</span>
+							<span class="muted">{selectedRow.chamber}</span>
 						{/if}
 						<span class="card-head-spacer"></span>
-						<span class="kind-tag">{rowKindLabel(selectedRow.kind)}</span>
+						{#if selectedRow.origin}
+							<a
+								class="src-badge src-linked"
+								href="/demo/{doc.countryCode}/{selectedRow.origin.type}/{selectedRow.origin.nativeId}"
+								title={selectedRow.origin.title ?? ''}
+							>
+								linked → <span class="mono">{selectedRow.origin.nativeId}</span>
+							</a>
+						{:else}
+							<span class="src-badge src-internal">internal</span>
+						{/if}
 					</div>
 					<div class="card-body">
 						<div class="event-label">{selectedRow.label}</div>
 
-						<div class="origin-grid">
-							{#if selectedRow.origin}
-								<div class="origin">
-									<div class="origin-head">
-										From linked <AknTerm term={selectedRow.origin.type} /> document
-									</div>
-									<dl class="kv">
-										<dt>nativeId</dt>
-										<dd class="mono">{selectedRow.origin.nativeId}</dd>
-										{#if selectedRow.origin.title}
-											<dt>title</dt>
-											<dd>{selectedRow.origin.title}</dd>
-										{/if}
-									</dl>
-								</div>
-							{/if}
-
-							{#if selectedRow.lifecycle}
-								<div class="origin">
-									<div class="origin-head">
-										From <AknTerm term="lifecycle" />/<AknTerm term="eventRef" />
-									</div>
-									<dl class="kv">
-										{#if selectedRow.lifecycle.type}
-											<dt><AknTerm term="refersTo" /></dt>
-											<dd class="mono">{selectedRow.lifecycle.source}</dd>
-										{/if}
-										{#if selectedRow.lifecycle.tlcEventId}
-											<dt><AknTerm term="source" /></dt>
-											<dd class="mono">{selectedRow.lifecycle.tlcEventId}</dd>
-										{/if}
-										{#if selectedRow.lifecycle.chamber}
-											<dt><AknTerm term="chamber" /></dt>
-											<dd>{selectedRow.lifecycle.chamber}</dd>
-										{/if}
-										{#if selectedRow.lifecycle.showAs}
-											<dt>showAs</dt>
-											<dd>{selectedRow.lifecycle.showAs}</dd>
-										{/if}
-									</dl>
-								</div>
-							{/if}
-
-							{#if selectedRow.step}
-								<div class="origin">
-									<div class="origin-head">
-										From <AknTerm term="workflow" />/<AknTerm term="step" />
-									</div>
-									<dl class="kv">
-										{#if selectedRow.step.agent}
-											<dt><AknTerm term="agent" /></dt>
-											<dd>{selectedRow.step.agent}</dd>
-										{/if}
-										{#if selectedRow.step.role}
-											<dt><AknTerm term="role" /></dt>
-											<dd>{selectedRow.step.role}</dd>
-										{/if}
-										{#if selectedRow.step.outcome}
-											<dt><AknTerm term="outcome" /></dt>
-											<dd>{selectedRow.step.outcome}</dd>
-										{/if}
-										{#if selectedRow.step.refersTo}
-											<dt><AknTerm term="refersTo" /></dt>
-											<dd class="mono">{selectedRow.step.refersTo}</dd>
-										{/if}
-									</dl>
-								</div>
-							{/if}
-						</div>
-
 						{#if selectedRow.modifications.length}
-							<div class="origin origin-full">
-								<div class="origin-head">
-									From <AknTerm term="analysis" />/<AknTerm term="activeModifications" />
+							<ul class="mods">
+								{#each selectedRow.modifications as m, i (i)}
+									<li class="mod-row {modKindClass(m.kind)}">
+										<span class="mod-glyph" aria-hidden="true">{modKindGlyph(m.kind)}</span>
+										<span class="mod-kind">{m.kind}</span>
+										{#if m.targetEid}
+											{@const external = !!m.targetHref && !m.targetHref.startsWith('#') && !m.targetIsLocal}
+											<button
+												type="button"
+												class="eid-pill"
+												class:eid-pill-external={external}
+												disabled={!m.targetIsLocal}
+												onclick={() => m.targetEid && m.targetIsLocal && scrollToSpan(m.targetEid)}
+												title={m.targetIsLocal
+													? 'scroll to span in body view'
+													: (m.targetHref ?? 'target is in another document')}
+											>
+												{#if external}<span class="ext-glyph" aria-hidden="true">↗</span>{/if}
+												<span class="ink">{m.targetEid}</span>
+											</button>
+										{/if}
+										{#if m.old || m.new}
+											<div class="diff">
+												{#if m.old}<div class="diff-old">{m.old}</div>{/if}
+												{#if m.new}<div class="diff-new">{m.new}</div>{/if}
+											</div>
+										{/if}
+									</li>
+								{/each}
+							</ul>
+						{/if}
+
+						{#if showAmendments}
+							<div class="linked-inline">
+								<div class="linked-inline-head">
+									linked <AknTerm term="amendment" /> documents
 								</div>
-								<ul class="mods">
-									{#each selectedRow.modifications as m, i (i)}
-										<li class="mod-row {modKindClass(m.kind)}">
-											<span class="mod-glyph" aria-hidden="true">{modKindGlyph(m.kind)}</span>
-											<span class="mod-kind">{m.kind}</span>
-											{#if m.targetEid}
-												<button
-													type="button"
-													class="eid-pill"
-													disabled={!m.targetIsLocal}
-													onclick={() => m.targetEid && m.targetIsLocal && scrollToSpan(m.targetEid)}
-													title={m.targetIsLocal ? 'scroll to span in body view' : (m.targetHref ?? 'target is in another document')}
-												>
-													<AknTerm term="eId" />=<span class="ink">{m.targetEid}</span>
-												</button>
-											{/if}
-											{#if m.old || m.new}
-												<div class="diff">
-													{#if m.old}<div class="diff-old">{m.old}</div>{/if}
-													{#if m.new}<div class="diff-new">{m.new}</div>{/if}
-												</div>
-											{/if}
+								<ul class="amend-list">
+									{#each amendments as a (a.nativeId)}
+										<li>
+											<a href="/demo/{a.country}/{a.type}/{a.nativeId}">
+												<span class="mono ink">{a.nativeId}</span>
+												<span class="amend-sep">—</span>
+												<span>{a.title}</span>
+											</a>
 										</li>
 									{/each}
 								</ul>
@@ -649,29 +725,100 @@
 								{/each}
 							</div>
 						{/if}
+
+						<details class="provenance">
+							<summary>
+								<span class="prov-caret" aria-hidden="true">▸</span>
+								<span class="prov-label">AKN provenance</span>
+								<span class="prov-sources mono">
+									{#if selectedRow.origin}linked·{selectedRow.origin.type}{/if}
+									{#if selectedRow.lifecycle}{selectedRow.origin ? ' · ' : ''}lifecycle{/if}
+									{#if selectedRow.step}{selectedRow.lifecycle || selectedRow.origin ? ' · ' : ''}workflow{/if}
+									{#if selectedRow.modifications.length}{' · '}analysis{/if}
+								</span>
+							</summary>
+
+							<div class="origin-grid">
+								{#if selectedRow.origin}
+									<div class="origin">
+										<div class="origin-head">
+											linked <AknTerm term={selectedRow.origin.type} /> document
+										</div>
+										<dl class="kv">
+											<dt>nativeId</dt>
+											<dd class="mono">{selectedRow.origin.nativeId}</dd>
+											{#if selectedRow.origin.title}
+												<dt>title</dt>
+												<dd>{selectedRow.origin.title}</dd>
+											{/if}
+										</dl>
+									</div>
+								{/if}
+
+								{#if selectedRow.lifecycle}
+									<div class="origin">
+										<div class="origin-head">
+											<AknTerm term="lifecycle" />/<AknTerm term="eventRef" />
+										</div>
+										<dl class="kv">
+											{#if selectedRow.lifecycle.type}
+												<dt><AknTerm term="refersTo" /></dt>
+												<dd class="mono">{selectedRow.lifecycle.source}</dd>
+											{/if}
+											{#if selectedRow.lifecycle.tlcEventId}
+												<dt><AknTerm term="source" /></dt>
+												<dd class="mono">{selectedRow.lifecycle.tlcEventId}</dd>
+											{/if}
+											{#if selectedRow.lifecycle.chamber}
+												<dt><AknTerm term="chamber" /></dt>
+												<dd>{selectedRow.lifecycle.chamber}</dd>
+											{/if}
+											{#if selectedRow.lifecycle.showAs}
+												<dt>showAs</dt>
+												<dd>{selectedRow.lifecycle.showAs}</dd>
+											{/if}
+										</dl>
+									</div>
+								{/if}
+
+								{#if selectedRow.step}
+									<div class="origin">
+										<div class="origin-head">
+											<AknTerm term="workflow" />/<AknTerm term="step" />
+										</div>
+										<dl class="kv">
+											{#if selectedRow.step.agent}
+												<dt><AknTerm term="agent" /></dt>
+												<dd>{selectedRow.step.agent}</dd>
+											{/if}
+											{#if selectedRow.step.role}
+												<dt><AknTerm term="role" /></dt>
+												<dd>{selectedRow.step.role}</dd>
+											{/if}
+											{#if selectedRow.step.outcome}
+												<dt><AknTerm term="outcome" /></dt>
+												<dd>{selectedRow.step.outcome}</dd>
+											{/if}
+											{#if selectedRow.step.refersTo}
+												<dt><AknTerm term="refersTo" /></dt>
+												<dd class="mono">{selectedRow.step.refersTo}</dd>
+											{/if}
+										</dl>
+									</div>
+								{/if}
+
+								{#if selectedRow.modifications.length}
+									<div class="origin origin-full origin-mods-ref">
+										<div class="origin-head">
+											<AknTerm term="analysis" />/<AknTerm term="activeModifications" />
+											<span class="muted">· {selectedRow.modifications.length} change{selectedRow.modifications.length === 1 ? '' : 's'} (shown above)</span>
+										</div>
+									</div>
+								{/if}
+							</div>
+						</details>
 					</div>
 				</div>
-
-				{#if amendments.length && (selectedRow.kind === 'amendment' || selectedRow.lifecycle?.type === 'committee_report' || selectedRow.lifecycle?.type === 'ponencia_report')}
-					<div class="card subtle">
-						<div class="card-head">
-							<span class="muted">Linked <AknTerm term="amendment" /> documents</span>
-						</div>
-						<div class="card-body">
-							<ul class="amend-list">
-								{#each amendments as a (a.nativeId)}
-									<li>
-										<a href="/demo/{a.country}/{a.type}/{a.nativeId}">
-											<span class="mono ink">{a.nativeId}</span>
-											<span class="amend-sep">—</span>
-											<span>{a.title}</span>
-										</a>
-									</li>
-								{/each}
-							</ul>
-						</div>
-					</div>
-				{/if}
 			{:else}
 				<p class="empty">Select an event from the timeline.</p>
 			{/if}
@@ -1103,6 +1250,102 @@
 		text-transform: uppercase;
 		letter-spacing: 0.12em;
 	}
+
+	/* ─── Source badge (internal vs linked) ─── */
+	.src-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		font-family: var(--font-heading);
+		font-size: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		padding: 3px 8px;
+		border-radius: 3px;
+		border: 1px solid transparent;
+		text-decoration: none;
+	}
+	.src-internal {
+		background: #f3f4f6;
+		color: #4b5563;
+		border-color: #e5e7eb;
+	}
+	.src-linked {
+		background: #fef3c7;
+		color: #92400e;
+		border-color: #fde68a;
+		cursor: pointer;
+	}
+	.src-linked:hover {
+		background: #fde68a;
+	}
+	.src-linked .mono {
+		text-transform: none;
+		letter-spacing: 0;
+		font-weight: 500;
+	}
+
+	/* ─── AKN provenance disclosure ─── */
+	.provenance {
+		margin-top: 18px;
+		border-top: 1px dotted #e5e7eb;
+		padding-top: 12px;
+	}
+	.provenance > summary {
+		list-style: none;
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		font-family: var(--font-heading);
+		font-size: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #6b7280;
+		user-select: none;
+	}
+	.provenance > summary::-webkit-details-marker { display: none; }
+	.provenance > summary:hover { color: #1f2937; }
+	.prov-caret {
+		display: inline-block;
+		transition: transform 0.12s ease;
+		font-size: 10px;
+	}
+	.provenance[open] > summary .prov-caret {
+		transform: rotate(90deg);
+	}
+	.prov-sources {
+		font-size: 10px;
+		color: #9ca3af;
+		text-transform: none;
+		letter-spacing: 0;
+		font-weight: 400;
+	}
+	.provenance[open] .origin-grid {
+		margin-top: 12px;
+	}
+	.origin-mods-ref {
+		background: #ffffff;
+		border-style: dashed;
+	}
+
+	/* ─── Linked-inline (linked documents in event card) ─── */
+	.linked-inline {
+		margin-top: 16px;
+		padding-top: 12px;
+		border-top: 1px dotted #e5e7eb;
+	}
+	.linked-inline-head {
+		font-family: var(--font-heading);
+		font-size: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #6b7280;
+		margin-bottom: 8px;
+	}
 	.card-body {
 		padding: 16px 18px;
 	}
@@ -1117,9 +1360,9 @@
 
 	/* ─── Origin sub-panels ─── */
 	.origin-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		gap: 12px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 	}
 	.origin {
 		background: #f9fafb;
@@ -1128,8 +1371,7 @@
 		padding: 12px 14px;
 	}
 	.origin-full {
-		grid-column: 1 / -1;
-		margin-top: 12px;
+		margin-top: 0;
 	}
 	.origin-head {
 		font-family: var(--font-heading);
@@ -1160,7 +1402,7 @@
 	.mods {
 		list-style: none;
 		padding: 0;
-		margin: 0;
+		margin: 0 0 4px;
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
@@ -1228,6 +1470,20 @@
 	}
 	.eid-pill .ink {
 		color: #0a0f1c;
+	}
+	.eid-pill-external {
+		background: #fff7ed;
+		border-color: #fed7aa;
+		border-style: dashed;
+	}
+	.eid-pill-external .ext-glyph {
+		color: #c2410c;
+		font-weight: 700;
+		margin-right: 2px;
+	}
+	.eid-pill-external:disabled:hover {
+		background: #fff7ed;
+		border-color: #fed7aa;
 	}
 	.diff {
 		grid-column: 1 / -1;
