@@ -2,6 +2,7 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { browser } from '$app/environment';
+	import PlusIcon from '~icons/lucide/plus';
 	import AknTerm from '$lib/bill/AknTerm.svelte';
 	import BodyView from '$lib/bill/BodyView.svelte';
 	import type { TimelineRow, Modification } from '$lib/bill/parse';
@@ -58,9 +59,16 @@
 		else url.searchParams.set('tab', tab);
 		goto(url, { replaceState: false, keepFocus: true, noScroll: true });
 	}
-	let titleExpanded = $state(false);
-	let frbrOpen = $state(false);
 	let xmlCopied = $state(false);
+	let titleExpanded = $state(false);
+	let titleEl = $state<HTMLElement | null>(null);
+	let titleTruncated = $state(false);
+
+	$effect(() => {
+		void doc.title;
+		if (!titleEl || titleExpanded) return;
+		titleTruncated = titleEl.scrollWidth > titleEl.clientWidth + 1;
+	});
 
 	function copyXml() {
 		navigator.clipboard.writeText(activeXmlSource.xml).then(() => {
@@ -93,18 +101,6 @@
 		Array.from({ length: xmlLineCount }, (_, i) => i + 1).join('\n')
 	);
 	const xmlGutterWidth = $derived(`${String(xmlLineCount).length}ch`);
-
-	const frbrFields = $derived([
-		{
-			label: 'FRBR expression',
-			value: parsed.identification.frbrExpression,
-			term: 'FRBR expression' as const
-		},
-		{ label: 'expression date', value: parsed.identification.expressionDate, term: null },
-		{ label: 'language', value: parsed.identification.language, term: null }
-	]);
-	const frbrPresent = $derived(frbrFields.filter((f) => f.value).length);
-	const frbrTotal = $derived(frbrFields.length);
 
 	const completenessPct = $derived(Math.round(lint.completeness * 100));
 	const errorCount = $derived(lint.findings.filter((f) => f.severity === 'error').length);
@@ -379,85 +375,32 @@
 	<title>{doc.nativeId} — bill — research demo</title>
 </svelte:head>
 
-<div class="page">
-	<a href="/demo/{doc.countryCode}/bill" class="back">← bills</a>
-
-	<!-- ─── HEADER ─── -->
+<div class="head-band">
 	<header class="head">
-		<div class="head-tag">
-			<span class="tag-mono">
-				<AknTerm term="bill" />
-			</span>
-			<span class="tag-sep">·</span>
-			<span class="tag-mono">{doc.countryCode}</span>
-			{#if parsed.identification.subtype}
-				<span class="tag-sep">·</span>
-				<span class="tag-sub">{parsed.identification.subtype}</span>
+		<div class="head-row" class:head-row-expanded={titleExpanded}>
+			<h1
+				class="head-title"
+				class:head-title-expanded={titleExpanded}
+				title={doc.title}
+				bind:this={titleEl}
+			><span class="head-id">{doc.nativeId}</span>{doc.title}</h1>
+			{#if !titleExpanded && titleTruncated}
+				<button
+					type="button"
+					class="head-title-toggle"
+					onclick={() => (titleExpanded = true)}
+					aria-expanded={false}
+					aria-label="show more"
+				><PlusIcon class="h-3 w-3" /></button>
 			{/if}
 		</div>
-
-		<div class="head-id">{doc.nativeId}</div>
-
 		{#if titleExpanded}
-			<h1>{doc.title}</h1>
 			<button
 				type="button"
-				class="title-toggle title-toggle-collapse"
+				class="head-title-collapse"
 				onclick={() => (titleExpanded = false)}
+				aria-expanded={true}
 			>show less</button>
-		{:else}
-			<h1
-				class="clamped clickable"
-				role="button"
-				tabindex="0"
-				title="Show full title"
-				onclick={() => (titleExpanded = true)}
-				onkeydown={(e) => {
-					if (e.key === 'Enter' || e.key === ' ') {
-						e.preventDefault();
-						titleExpanded = true;
-					}
-				}}
-			>{doc.title}</h1>
-		{/if}
-
-		<button
-			type="button"
-			class="frbr-badge"
-			class:frbr-badge-open={frbrOpen}
-			onclick={() => (frbrOpen = !frbrOpen)}
-			aria-expanded={frbrOpen}
-			aria-controls="frbr-panel"
-		>
-			<span class="frbr-badge-label">FRBR</span>
-			<span class="frbr-badge-count">{frbrPresent}/{frbrTotal}</span>
-			<span class="frbr-badge-caret" aria-hidden="true">{frbrOpen ? '▾' : '▸'}</span>
-		</button>
-
-		{#if frbrOpen}
-			<div class="frbr-panel" id="frbr-panel">
-				<p class="frbr-panel-hint">
-					Identification fields drawn from the document's <AknTerm term="FRBR expression" /> URI.
-					These are the technical pointers AKN uses to address this exact version of the bill.
-				</p>
-				<dl class="frbr-panel-grid">
-					{#each frbrFields as f (f.label)}
-						<div class="frbr-row" class:frbr-row-missing={!f.value}>
-							<span class="frbr-status" aria-hidden="true">{f.value ? '✓' : '◦'}</span>
-							<dt>
-								{#if f.term}<AknTerm term={f.term} />{:else}{f.label}{/if}
-							</dt>
-							<dd class="mono">
-								{#if f.value}
-									<span class="ink">{f.value}</span>
-								{:else}
-									<span class="frbr-missing">not provided</span>
-								{/if}
-							</dd>
-						</div>
-					{/each}
-				</dl>
-			</div>
 		{/if}
 
 		{#if parsed.warnings.length}
@@ -470,19 +413,19 @@
 	</header>
 
 	<!-- ─── TAB STRIP ─── -->
-	<nav class="tabs" aria-label="Document views">
+	<nav class="bill-subnav" aria-label="Document views">
 		<button
 			type="button"
-			class="tab"
-			class:tab-active={activeTab === 'document'}
+			class="subtab"
+			class:subtab-active={activeTab === 'document'}
 			onclick={() => setTab('document')}
 		>
 			Document
 		</button>
 		<button
 			type="button"
-			class="tab"
-			class:tab-active={activeTab === 'lint'}
+			class="subtab"
+			class:subtab-active={activeTab === 'lint'}
 			onclick={() => setTab('lint')}
 		>
 			AKN lint
@@ -492,13 +435,16 @@
 		</button>
 		<button
 			type="button"
-			class="tab"
-			class:tab-active={activeTab === 'xml'}
+			class="subtab"
+			class:subtab-active={activeTab === 'xml'}
 			onclick={() => setTab('xml')}
 		>
 			XML
 		</button>
 	</nav>
+</div>
+
+<div class="page">
 
 	{#if activeTab === 'lint'}
 		<section class="lint-view">
@@ -832,11 +778,15 @@
 		border-bottom-color: var(--color-brand-dark);
 	}
 
-	/* ─── Header ─── */
-	.head {
-		padding: 4px 0 18px;
-		margin-bottom: 22px;
+	/* ─── Header band (full-width) ─── */
+	.head-band {
+		background: #ffffff;
 		border-bottom: 1px solid #e5e7eb;
+	}
+	.head {
+		max-width: 72rem;
+		margin: 0 auto;
+		padding: 18px 16px 14px;
 	}
 	.head-tag {
 		display: flex;
@@ -857,169 +807,87 @@
 	.tag-sub {
 		color: #4b5563;
 	}
+	.head-row {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		min-width: 0;
+	}
 	.head-id {
-		font-family: var(--font-mono);
-		font-size: 22px;
-		font-weight: 500;
-		color: var(--color-brand-dark);
-		line-height: 1.1;
-		margin-bottom: 10px;
-		letter-spacing: -0.01em;
-	}
-	.head h1 {
-		font-family: var(--font-heading);
-		font-size: 17px;
-		line-height: 1.4;
-		font-weight: 500;
-		margin: 0 0 14px;
-		color: #111827;
-		max-width: 80ch;
-		letter-spacing: -0.005em;
-	}
-	.head h1.clamped {
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-	}
-	.head h1.clickable {
-		cursor: pointer;
-		border-radius: 3px;
-		transition: color 0.1s ease;
-	}
-	.head h1.clickable:hover {
-		color: var(--color-brand-dark);
-	}
-	.head h1.clickable:focus-visible {
-		outline: 2px solid var(--color-brand);
-		outline-offset: 2px;
-	}
-	.title-toggle {
 		display: inline-block;
-		background: none;
-		border: none;
-		padding: 2px 6px;
-		margin: 0 0 12px -6px;
+		font-family: var(--font-mono);
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 1;
+		color: #4b5563;
+		background: #f3f4f6;
+		border: 1px solid #e5e7eb;
+		border-radius: 4px;
+		padding: 3px 7px;
+		margin-right: 8px;
+		letter-spacing: 0;
+		vertical-align: 1px;
+		white-space: nowrap;
+	}
+	.head-title {
+		margin: 0;
+		min-width: 0;
+		flex: 1 1 auto;
 		font-family: var(--font-heading);
-		font-size: 10px;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.4;
+		color: #111827;
+		letter-spacing: -0.005em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
+	}
+	.head-title-expanded {
+		white-space: normal;
+		overflow: visible;
+	}
+	.head-title-toggle {
+		flex: none;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		border: none;
+		padding: 0;
 		color: #6b7280;
 		cursor: pointer;
+		line-height: 1;
+		transition: color 0.1s ease;
+	}
+	.head-title-toggle :global(svg) {
+		fill: #6b7280;
+		transition: fill 0.1s ease;
+	}
+	.head-title-toggle:hover :global(svg) {
+		fill: #111827;
+	}
+	.head-title-collapse {
+		display: inline-block;
+		margin: 6px 0 0 -6px;
+		padding: 2px 6px;
+		background: transparent;
+		border: none;
 		border-radius: 3px;
+		font-family: var(--font-heading);
+		font-size: 11px;
+		font-weight: 500;
+		color: #6b7280;
+		cursor: pointer;
 		line-height: 1;
 		transition: background-color 0.1s ease, color 0.1s ease;
 	}
-	.title-toggle:hover {
+	.head-title-collapse:hover {
 		background: #f3f4f6;
 		color: #111827;
 	}
-	.title-toggle-collapse {
-		margin-top: -4px;
-	}
-	/* ─── FRBR inspector badge ─── */
-	.frbr-badge {
-		display: inline-flex;
-		align-items: center;
-		gap: 8px;
-		background: transparent;
-		border: 1px solid #e5e7eb;
-		border-radius: 999px;
-		padding: 3px 10px 3px 12px;
-		font-family: var(--font-heading);
-		font-size: 10px;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: #6b7280;
-		cursor: pointer;
-		transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
-	}
-	.frbr-badge:hover {
-		background: #f3f4f6;
-		border-color: #d1d5db;
-		color: #1f2937;
-	}
-	.frbr-badge-open {
-		background: #f3f4f6;
-		border-color: #d1d5db;
-		color: #1f2937;
-	}
-	.frbr-badge-count {
-		font-family: var(--font-mono);
-		font-size: 10px;
-		font-weight: 500;
-		letter-spacing: 0;
-		color: #9ca3af;
-		text-transform: none;
-	}
-	.frbr-badge-caret {
-		font-size: 9px;
-		color: #9ca3af;
-	}
-	.frbr-panel {
-		margin-top: 10px;
-		padding: 12px 14px;
-		background: #f9fafb;
-		border: 1px solid #e5e7eb;
-		border-radius: 6px;
-	}
-	.frbr-panel-hint {
-		margin: 0 0 10px;
-		font-size: 11px;
-		color: #6b7280;
-		line-height: 1.55;
-		max-width: 70ch;
-	}
-	.frbr-panel-grid {
-		display: flex;
-		flex-direction: column;
-		gap: 6px;
-		margin: 0;
-	}
-	.frbr-row {
-		display: grid;
-		grid-template-columns: 16px max-content 1fr;
-		gap: 4px 14px;
-		align-items: baseline;
-		font-size: 11.5px;
-	}
-	.frbr-status {
-		font-family: var(--font-mono);
-		font-size: 12px;
-		text-align: center;
-		color: #64748b;
-		line-height: 1;
-	}
-	.frbr-row-missing .frbr-status {
-		color: #cbd5e1;
-	}
-	.frbr-row dt {
-		font-family: var(--font-heading);
-		font-size: 10px;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: #6b7280;
-	}
-	.frbr-row dd {
-		margin: 0;
-		font-family: var(--font-mono);
-		font-size: 11px;
-		color: #4b5563;
-		word-break: break-all;
-	}
-	.frbr-row dd .ink {
-		color: #334155;
-	}
-	.frbr-missing {
-		font-family: var(--font-heading);
-		font-size: 10px;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: #9ca3af;
-	}
-
 	.warnings {
 		margin-top: 14px;
 	}
@@ -1496,37 +1364,43 @@
 		margin-top: 14px;
 	}
 
-	/* ─── Tabs ─── */
-	.tabs {
+	/* ─── Bill sub-nav (icon + nativeId + tabs) ─── */
+	.bill-subnav {
 		display: flex;
-		gap: 2px;
-		margin: 0 0 18px;
-		border-bottom: 1px solid #e5e7eb;
+		align-items: center;
+		gap: 4px;
+		max-width: 72rem;
+		margin: 0 auto;
+		padding: 0 16px;
+		overflow-x: auto;
 	}
-	.tab {
+	.subtab {
 		display: inline-flex;
 		align-items: center;
-		gap: 8px;
+		gap: 6px;
 		background: transparent;
 		border: none;
 		border-bottom: 2px solid transparent;
-		padding: 9px 14px 8px;
-		font-family: var(--font-heading);
-		font-size: 11px;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
+		padding: 8px 12px;
+		font-family: var(--font-sans, inherit);
+		font-size: 14px;
+		font-weight: 500;
 		color: #6b7280;
 		cursor: pointer;
 		transition: color 0.1s ease, border-color 0.1s ease;
 		margin-bottom: -1px;
+		white-space: nowrap;
 	}
-	.tab:hover {
-		color: #1f2937;
+	.bill-subnav .subtab:first-of-type {
+		margin-left: -12px;
 	}
-	.tab-active {
-		color: #0a0f1c;
-		border-bottom-color: #334155;
+	.subtab:hover {
+		color: #374151;
+		border-bottom-color: #d1d5db;
+	}
+	.subtab-active {
+		color: #111827;
+		border-bottom-color: #111827;
 	}
 	.tab-score {
 		font-family: var(--font-mono);
