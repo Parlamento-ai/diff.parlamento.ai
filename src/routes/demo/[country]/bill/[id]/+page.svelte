@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
+	import { browser } from '$app/environment';
 	import AknTerm from '$lib/bill/AknTerm.svelte';
 	import BodyView from '$lib/bill/BodyView.svelte';
 	import type { TimelineRow, Modification } from '$lib/bill/parse';
@@ -23,9 +24,13 @@
 			xml: d.xml
 		}))
 	]);
+	function searchParam(name: string) {
+		return browser ? page.url.searchParams.get(name) : null;
+	}
+
 	const activeXmlKey = $derived<string>(
 		(() => {
-			const requested = page.url.searchParams.get('doc');
+			const requested = searchParam('doc');
 			if (!requested) return 'bill';
 			return xmlSources.some((s) => s.key === requested) ? requested : 'bill';
 		})()
@@ -45,9 +50,7 @@
 	type Tab = 'document' | 'lint' | 'xml';
 	const TABS: Tab[] = ['document', 'lint', 'xml'];
 	const activeTab = $derived<Tab>(
-		(TABS.includes(page.url.searchParams.get('tab') as Tab)
-			? (page.url.searchParams.get('tab') as Tab)
-			: 'document')
+		((tab) => (TABS.includes(tab as Tab) ? (tab as Tab) : 'document'))(searchParam('tab'))
 	);
 	function setTab(tab: Tab) {
 		const url = new URL(page.url);
