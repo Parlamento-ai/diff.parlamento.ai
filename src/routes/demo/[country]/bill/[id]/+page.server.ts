@@ -155,6 +155,27 @@ export async function load({ params }) {
 		return a.id.localeCompare(b.id);
 	});
 
+	const linkedDocs = [
+		...incomingAmendments.map((d) => ({
+			type: d.type,
+			nativeId: d.nativeId,
+			title: d.title,
+			xml: d.xml
+		})),
+		...relatedDebates.map((d) => ({
+			type: d.type,
+			nativeId: d.nativeId,
+			title: d.title,
+			xml: d.xml
+		})),
+		...relatedCitations.map((d) => ({
+			type: d.type,
+			nativeId: d.nativeId,
+			title: d.title,
+			xml: d.xml
+		}))
+	];
+
 	return {
 		doc,
 		parsed,
@@ -167,6 +188,7 @@ export async function load({ params }) {
 			lastActivityAt: amendment.lastActivityAt,
 			relation: amendment.relation
 		})),
+		linkedDocs,
 		lint
 	};
 }

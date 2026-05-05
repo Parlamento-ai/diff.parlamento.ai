@@ -72,7 +72,7 @@
 	}
 	.children {
 		margin-left: 14px;
-		border-left: 1px dotted #d6d0c2;
+		border-left: 1px dotted #d1d5db;
 		padding-left: 6px;
 		margin-top: 4px;
 	}
