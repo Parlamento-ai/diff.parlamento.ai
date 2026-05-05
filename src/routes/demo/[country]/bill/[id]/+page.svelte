@@ -122,7 +122,6 @@
 	}
 
 	let selectedId = $state<string | null>(null);
-	let spanFocusEid = $state<string | null>(null);
 
 	$effect(() => {
 		if (!selectedId && parsed.timeline.length) {
@@ -145,11 +144,14 @@
 
 	function selectEvent(id: string) {
 		selectedId = id;
-		spanFocusEid = null;
 	}
 
-	function focusSpan(eId: string) {
-		spanFocusEid = spanFocusEid === eId ? null : eId;
+	function scrollToSpan(eId: string) {
+		const target = document.querySelector<HTMLElement>(`[data-eid="${eId}"]`);
+		if (!target) return;
+		target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		target.classList.add('flash-highlight');
+		setTimeout(() => target.classList.remove('flash-highlight'), 1200);
 	}
 
 	function rowKindLabel(kind: TimelineRow['kind']) {
@@ -225,10 +227,6 @@
 		}
 	}
 
-	function eventsThatTouched(eId: string): TimelineRow[] {
-		const ids = new Set(parsed.spanToEvents[eId] ?? []);
-		return parsed.timeline.filter((r) => ids.has(r.id));
-	}
 </script>
 
 <svelte:head>
@@ -626,7 +624,7 @@
 													type="button"
 													class="eid-pill"
 													disabled={!m.targetIsLocal}
-													onclick={() => m.targetEid && focusSpan(m.targetEid)}
+													onclick={() => m.targetEid && m.targetIsLocal && scrollToSpan(m.targetEid)}
 													title={m.targetIsLocal ? 'scroll to span in body view' : (m.targetHref ?? 'target is in another document')}
 												>
 													<AknTerm term="eId" />=<span class="ink">{m.targetEid}</span>
@@ -678,54 +676,9 @@
 				<p class="empty">Select an event from the timeline.</p>
 			{/if}
 
-			<h2 class="eyebrow body-eyebrow">Body</h2>
-			<p class="hint">
-				The bill's &lt;<AknTerm term="body" />&gt;. When an event is selected, spans it
-				touched are highlighted. Click an <AknTerm term="eId" /> to see which events touched
-				that span.
-			</p>
-
-			{#if spanFocusEid}
-				{@const events = eventsThatTouched(spanFocusEid)}
-				<div class="card span-focus">
-					<div class="card-head">
-						<span class="muted">Events that touched</span>
-						<span class="mono ink">eId={spanFocusEid}</span>
-						<span class="card-head-spacer"></span>
-						<button type="button" class="dismiss" onclick={() => (spanFocusEid = null)}>
-							dismiss ✕
-						</button>
-					</div>
-					<div class="card-body">
-						{#if events.length}
-							<ul class="amend-list">
-								{#each events as e (e.id)}
-									<li>
-										<button type="button" class="event-link" onclick={() => selectEvent(e.id)}>
-											<span class="mono ink">{e.date}</span>
-											<span class="amend-sep">—</span>
-											<span>{e.label}</span>
-										</button>
-									</li>
-								{/each}
-							</ul>
-						{:else}
-							<p class="empty">No events recorded as touching this span.</p>
-						{/if}
-					</div>
-				</div>
-			{/if}
-
 			{#if parsed.body.length}
-				<div class="body-tree card subtle">
-					<div class="card-body">
-						<BodyView
-							nodes={parsed.body}
-							{highlightedEids}
-							spanToEvents={parsed.spanToEvents}
-							onSpanClick={focusSpan}
-						/>
-					</div>
+				<div class="body-tree">
+					<BodyView nodes={parsed.body} {highlightedEids} />
 				</div>
 			{:else}
 				<p class="empty">This bill has no &lt;body&gt; content recorded.</p>
@@ -980,9 +933,6 @@
 		letter-spacing: 0.12em;
 		color: #4b5563;
 		margin: 0 0 8px;
-	}
-	.body-eyebrow {
-		margin-top: 32px;
 	}
 	.hint {
 		font-size: 11px;
@@ -1342,33 +1292,11 @@
 		color: #d1d5db;
 	}
 
-	/* ─── Span focus ─── */
-	.span-focus {
-		border-color: #d97706;
-		box-shadow: var(--shadow-sm);
-		margin-bottom: 16px;
-	}
-	.span-focus .card-head {
-		background: #fffbeb;
-	}
-	.dismiss {
-		font-family: var(--font-mono);
-		font-size: 10.5px;
-		background: #ffffff;
-		border: 1px solid #d1d5db;
-		padding: 2px 8px;
-		cursor: pointer;
-		border-radius: 3px;
-		color: #6b7280;
-	}
-	.dismiss:hover {
-		border-color: #111827;
-		color: #111827;
-	}
-
 	/* ─── Body tree wrapper ─── */
-	.body-tree :global(.card-body) {
-		padding: 14px 16px;
+	.body-tree {
+		margin-top: 28px;
+		padding-top: 24px;
+		border-top: 1px solid #e5e7eb;
 	}
 
 	/* ─── Misc ─── */
