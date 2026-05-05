@@ -809,9 +809,9 @@
 <style>
 	/* ─── Page shell ─── */
 	.page {
-		max-width: 1280px;
+		max-width: 72rem;
 		margin: 0 auto;
-		padding: 24px 24px 96px;
+		padding: 24px 16px 96px;
 		font-family: var(--font-mono);
 		font-size: 12.5px;
 		line-height: 1.55;

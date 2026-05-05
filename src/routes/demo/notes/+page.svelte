@@ -84,7 +84,7 @@
 	<title>Research notes — diff-law</title>
 </svelte:head>
 
-<div class="mx-auto max-w-4xl p-8">
+<div class="mx-auto max-w-6xl px-4 pt-6 pb-8">
 	<header class="mb-6">
 		<div class="flex items-start justify-between gap-4">
 			<div>

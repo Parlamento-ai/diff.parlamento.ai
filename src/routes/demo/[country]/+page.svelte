@@ -15,7 +15,7 @@
 		acts: ScaleIcon
 	} as const;
 
-	const visibleGroups = TAB_GROUPS.filter((g) => g.id !== 'home');
+	const visibleGroups = TAB_GROUPS.filter((g) => g.id !== 'home' && g.id !== 'graph');
 	const counts = $derived(
 		Object.fromEntries(
 			(data.typesByCountry?.[data.country] ?? []).map(
@@ -33,7 +33,7 @@
 	<title>{data.country.toUpperCase()} — research demo</title>
 </svelte:head>
 
-<div class="mx-auto max-w-5xl p-8">
+<div class="mx-auto max-w-6xl px-4 pt-6 pb-8">
 	<header class="mb-8">
 		<div class="font-mono text-xs tracking-wider text-gray-500 uppercase">{data.country}</div>
 		<h1 class="mt-1 text-2xl font-bold">{data.meta?.name ?? data.country}</h1>

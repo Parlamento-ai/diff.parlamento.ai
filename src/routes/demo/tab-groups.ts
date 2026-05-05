@@ -33,6 +33,11 @@ export const TAB_GROUPS = [
 			'portion',
 			'doc'
 		] as EntityType[]
+	},
+	{
+		id: 'graph',
+		label: 'Graph',
+		types: [] as EntityType[]
 	}
 ] as const;
 

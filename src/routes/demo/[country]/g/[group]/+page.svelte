@@ -11,7 +11,7 @@
 	<title>{data.country.toUpperCase()} / {data.groupLabel} — research demo</title>
 </svelte:head>
 
-<div class="mx-auto max-w-4xl p-8">
+<div class="mx-auto max-w-6xl px-4 pt-6 pb-8">
 	<header class="mb-6">
 		<div class="font-mono text-xs tracking-wider text-gray-500 uppercase">
 			{data.country} / {data.group}

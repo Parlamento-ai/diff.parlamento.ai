@@ -33,7 +33,7 @@
 	<title>{doc.nativeId} — research demo</title>
 </svelte:head>
 
-<div class="mx-auto max-w-4xl p-8 font-mono text-sm">
+<div class="mx-auto max-w-6xl px-4 pt-6 pb-8 font-mono text-sm">
 	<a href="/demo" class="text-blue-600 hover:underline">← all docs</a>
 
 	<header class="mt-4 mb-8 border-b border-gray-200 pb-4">
