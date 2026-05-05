@@ -211,13 +211,13 @@
 	}
 
 	type Seg =
-		| { t: 'open'; tag: string; selfClose?: boolean }
-		| { t: 'close'; tag: string }
+		| { t: 'openTag'; tag: string; indent: number } // <tag (no closing bracket; attrs follow)
 		| { t: 'attr'; name: string; value: string; indent: number }
+		| { t: 'closeOpenTag'; selfClose: boolean; indent: number } // /> or >
+		| { t: 'tagLine'; tag: string; indent: number } // <tag>
+		| { t: 'closeLine'; tag: string; indent: number } // </tag>
 		| { t: 'comment'; text: string; indent: number }
-		| { t: 'ellipsis'; text: string; indent: number }
-		| { t: 'tagLine'; tag: string; indent: number; selfClose?: boolean }
-		| { t: 'closeLine'; tag: string; indent: number };
+		| { t: 'ellipsis'; text: string; indent: number };
 
 	function buildProvenanceSnippet(row: TimelineRow): Seg[] {
 		const lines: Seg[] = [];
@@ -244,14 +244,14 @@
 		// <lifecycle>
 		lines.push({ t: 'tagLine', tag: 'lifecycle', indent: 0 });
 		if (row.lifecycle) {
-			lines.push({ t: 'open', tag: 'eventRef' });
+			lines.push({ t: 'openTag', tag: 'eventRef', indent: 1 });
 			pushAttr(lines, 'date', row.lifecycle.date, 2);
 			pushAttr(lines, 'refersTo', row.lifecycle.source, 2);
 			pushAttr(lines, 'source', row.lifecycle.tlcEventId, 2);
 			pushAttr(lines, 'eId', row.lifecycle.eId, 2);
 			pushAttr(lines, 'showAs', row.lifecycle.showAs, 2);
 			pushAttr(lines, 'chamber', row.lifecycle.chamber, 2);
-			lines.push({ t: 'tagLine', tag: 'eventRef', indent: 1, selfClose: true });
+			lines.push({ t: 'closeOpenTag', selfClose: true, indent: 1 });
 			if (eventRefSiblings > 0) {
 				lines.push({
 					t: 'ellipsis',
@@ -271,7 +271,7 @@
 		// <workflow>
 		lines.push({ t: 'tagLine', tag: 'workflow', indent: 0 });
 		if (row.step) {
-			lines.push({ t: 'open', tag: 'step' });
+			lines.push({ t: 'openTag', tag: 'step', indent: 1 });
 			pushAttr(lines, 'date', row.step.date, 2);
 			pushAttr(lines, 'refersTo', row.step.refersTo, 2);
 			pushAttr(lines, 'source', row.step.source, 2);
@@ -279,7 +279,7 @@
 			pushAttr(lines, 'as', row.step.role, 2);
 			pushAttr(lines, 'outcome', row.step.outcome, 2);
 			pushAttr(lines, 'showAs', row.step.showAs, 2);
-			lines.push({ t: 'tagLine', tag: 'step', indent: 1, selfClose: true });
+			lines.push({ t: 'closeOpenTag', selfClose: true, indent: 1 });
 			if (stepSiblings > 0) {
 				lines.push({
 					t: 'ellipsis',
@@ -643,14 +643,14 @@
 						selectedRow.lifecycle?.type === 'committee_report' ||
 						selectedRow.lifecycle?.type === 'ponencia_report')}
 
-				<div class="card event-card k-{selectedRow.kind}">
-					<div class="card-head">
+				<div class="event">
+					<div class="event-head">
 						<span class="mono ink">{selectedRow.date || '—'}</span>
 						{#if selectedRow.chamber}
-							<span class="card-head-sep">·</span>
+							<span class="event-head-sep">·</span>
 							<span class="muted">{selectedRow.chamber}</span>
 						{/if}
-						<span class="card-head-spacer"></span>
+						<span class="event-head-spacer"></span>
 						{#if selectedRow.origin}
 							<a
 								class="src-badge src-linked"
@@ -663,8 +663,7 @@
 							<span class="src-badge src-internal">internal</span>
 						{/if}
 					</div>
-					<div class="card-body">
-						<div class="event-label">{selectedRow.label}</div>
+					<div class="event-label">{selectedRow.label}</div>
 
 						{#if selectedRow.modifications.length}
 							<ul class="mods">
@@ -729,95 +728,18 @@
 						<details class="provenance">
 							<summary>
 								<span class="prov-caret" aria-hidden="true">▸</span>
-								<span class="prov-label">AKN provenance</span>
-								<span class="prov-sources mono">
-									{#if selectedRow.origin}linked·{selectedRow.origin.type}{/if}
-									{#if selectedRow.lifecycle}{selectedRow.origin ? ' · ' : ''}lifecycle{/if}
-									{#if selectedRow.step}{selectedRow.lifecycle || selectedRow.origin ? ' · ' : ''}workflow{/if}
-									{#if selectedRow.modifications.length}{' · '}analysis{/if}
-								</span>
+								<span class="prov-label">source</span>
 							</summary>
 
-							<div class="origin-grid">
-								{#if selectedRow.origin}
-									<div class="origin">
-										<div class="origin-head">
-											linked <AknTerm term={selectedRow.origin.type} /> document
-										</div>
-										<dl class="kv">
-											<dt>nativeId</dt>
-											<dd class="mono">{selectedRow.origin.nativeId}</dd>
-											{#if selectedRow.origin.title}
-												<dt>title</dt>
-												<dd>{selectedRow.origin.title}</dd>
-											{/if}
-										</dl>
-									</div>
-								{/if}
-
-								{#if selectedRow.lifecycle}
-									<div class="origin">
-										<div class="origin-head">
-											<AknTerm term="lifecycle" />/<AknTerm term="eventRef" />
-										</div>
-										<dl class="kv">
-											{#if selectedRow.lifecycle.type}
-												<dt><AknTerm term="refersTo" /></dt>
-												<dd class="mono">{selectedRow.lifecycle.source}</dd>
-											{/if}
-											{#if selectedRow.lifecycle.tlcEventId}
-												<dt><AknTerm term="source" /></dt>
-												<dd class="mono">{selectedRow.lifecycle.tlcEventId}</dd>
-											{/if}
-											{#if selectedRow.lifecycle.chamber}
-												<dt><AknTerm term="chamber" /></dt>
-												<dd>{selectedRow.lifecycle.chamber}</dd>
-											{/if}
-											{#if selectedRow.lifecycle.showAs}
-												<dt>showAs</dt>
-												<dd>{selectedRow.lifecycle.showAs}</dd>
-											{/if}
-										</dl>
-									</div>
-								{/if}
-
-								{#if selectedRow.step}
-									<div class="origin">
-										<div class="origin-head">
-											<AknTerm term="workflow" />/<AknTerm term="step" />
-										</div>
-										<dl class="kv">
-											{#if selectedRow.step.agent}
-												<dt><AknTerm term="agent" /></dt>
-												<dd>{selectedRow.step.agent}</dd>
-											{/if}
-											{#if selectedRow.step.role}
-												<dt><AknTerm term="role" /></dt>
-												<dd>{selectedRow.step.role}</dd>
-											{/if}
-											{#if selectedRow.step.outcome}
-												<dt><AknTerm term="outcome" /></dt>
-												<dd>{selectedRow.step.outcome}</dd>
-											{/if}
-											{#if selectedRow.step.refersTo}
-												<dt><AknTerm term="refersTo" /></dt>
-												<dd class="mono">{selectedRow.step.refersTo}</dd>
-											{/if}
-										</dl>
-									</div>
-								{/if}
-
-								{#if selectedRow.modifications.length}
-									<div class="origin origin-full origin-mods-ref">
-										<div class="origin-head">
-											<AknTerm term="analysis" />/<AknTerm term="activeModifications" />
-											<span class="muted">· {selectedRow.modifications.length} change{selectedRow.modifications.length === 1 ? '' : 's'} (shown above)</span>
-										</div>
-									</div>
-								{/if}
-							</div>
-						</details>
-					</div>
+							<pre class="prov-xml"><code>{#each provenanceSnippet as seg, i (i)}{#if seg.t === 'tagLine'}{indentStr(seg.indent)}<span class="xml-bracket">{'<'}</span><span class="xml-tag">{seg.tag}</span><span class="xml-bracket">{'>'}</span>
+{:else if seg.t === 'closeLine'}{indentStr(seg.indent)}<span class="xml-bracket">{'</'}</span><span class="xml-tag">{seg.tag}</span><span class="xml-bracket">{'>'}</span>
+{:else if seg.t === 'openTag'}{indentStr(seg.indent)}<span class="xml-bracket">{'<'}</span><span class="xml-tag">{seg.tag}</span>
+{:else if seg.t === 'closeOpenTag'}{indentStr(seg.indent)}<span class="xml-bracket">{seg.selfClose ? '/>' : '>'}</span>
+{:else if seg.t === 'attr'}{indentStr(seg.indent)}<span class="xml-attr">{seg.name}</span><span class="xml-bracket">=</span><span class="xml-val">{'"' + seg.value + '"'}</span>
+{:else if seg.t === 'comment'}{indentStr(seg.indent)}<span class="prov-comment">{'<!-- ' + seg.text + ' -->'}</span>
+{:else if seg.t === 'ellipsis'}{indentStr(seg.indent)}<span class="prov-ellipsis">{seg.text}</span>
+{/if}{/each}</code></pre>
+					</details>
 				</div>
 			{:else}
 				<p class="empty">Select an event from the timeline.</p>
@@ -1194,61 +1116,23 @@
 		font-size: 10px;
 	}
 
-	/* ─── Cards (override .card) ─── */
-	.card {
-		background-color: #ffffff;
-		border: 1px solid #e5e7eb;
-		border-radius: 6px;
-		box-shadow: none;
-	}
-	.event-card {
-		box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
-		position: relative;
-		overflow: hidden;
+	/* ─── Event detail (no card chrome) ─── */
+	.event {
 		margin-bottom: 16px;
 	}
-	.event-card::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		width: 4px;
-		background: var(--color-brand);
-	}
-	.event-card.k-procedural::before { background: #9ca3af; }
-	.event-card.k-version::before { background: var(--color-brand); }
-	.event-card.k-amendment::before { background: #fbbf24; }
-	.event-card.k-debate::before { background: #38bdf8; }
-	.event-card.k-citation::before { background: #a78bfa; }
-	.event-card.k-terminal::before { background: var(--color-deletion-500); }
-
-	.card.subtle {
-		border-color: #d1d5db;
-		box-shadow: none;
-		background-color: #f9fafb;
-	}
-	.card-head {
-		padding: 9px 14px 9px 18px;
-		border-bottom: 1px solid #e5e7eb;
-		font-size: 11px;
-		color: #4b5563;
+	.event-head {
 		display: flex;
 		gap: 8px;
 		align-items: center;
+		font-size: 11px;
+		color: #4b5563;
+		margin-bottom: 10px;
 	}
-	.card-head-sep {
+	.event-head-sep {
 		color: #d1d5db;
 	}
-	.card-head-spacer {
+	.event-head-spacer {
 		flex: 1;
-	}
-	.kind-tag {
-		font-family: var(--font-heading);
-		font-size: 9px;
-		color: #6b7280;
-		text-transform: uppercase;
-		letter-spacing: 0.12em;
 	}
 
 	/* ─── Source badge (internal vs linked) ─── */
@@ -1297,17 +1181,14 @@
 		cursor: pointer;
 		display: inline-flex;
 		align-items: center;
-		gap: 8px;
-		font-family: var(--font-heading);
-		font-size: 10px;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: #6b7280;
+		gap: 6px;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		color: #9ca3af;
 		user-select: none;
 	}
 	.provenance > summary::-webkit-details-marker { display: none; }
-	.provenance > summary:hover { color: #1f2937; }
+	.provenance > summary:hover { color: #4b5563; }
 	.prov-caret {
 		display: inline-block;
 		transition: transform 0.12s ease;
@@ -1316,20 +1197,27 @@
 	.provenance[open] > summary .prov-caret {
 		transform: rotate(90deg);
 	}
-	.prov-sources {
-		font-size: 10px;
-		color: #9ca3af;
-		text-transform: none;
-		letter-spacing: 0;
-		font-weight: 400;
+	/* ─── Provenance XML snippet ─── */
+	.prov-xml {
+		margin: 12px 0 0;
+		padding: 12px 14px;
+		background: #f8fafc;
+		border: 1px solid #e5e7eb;
+		border-radius: 6px;
+		font-family: var(--font-mono);
+		font-size: 11.5px;
+		line-height: 1.6;
+		color: #1f2937;
+		white-space: pre-wrap;
+		word-break: break-word;
+		overflow-wrap: anywhere;
 	}
-	.provenance[open] .origin-grid {
-		margin-top: 12px;
-	}
-	.origin-mods-ref {
-		background: #ffffff;
-		border-style: dashed;
-	}
+	.prov-xml :global(.xml-bracket) { color: #94a3b8; }
+	.prov-xml :global(.xml-tag) { color: #1e40af; }
+	.prov-xml :global(.xml-attr) { color: #7c2d92; }
+	.prov-xml :global(.xml-val) { color: #166534; }
+	.prov-xml :global(.prov-comment) { color: #94a3b8; font-style: italic; }
+	.prov-xml :global(.prov-ellipsis) { color: #94a3b8; }
 
 	/* ─── Linked-inline (linked documents in event card) ─── */
 	.linked-inline {
@@ -1346,9 +1234,6 @@
 		color: #6b7280;
 		margin-bottom: 8px;
 	}
-	.card-body {
-		padding: 16px 18px;
-	}
 	.event-label {
 		font-family: var(--font-mono);
 		font-size: 14px;
@@ -1356,46 +1241,6 @@
 		color: #0a0f1c;
 		margin-bottom: 16px;
 		line-height: 1.4;
-	}
-
-	/* ─── Origin sub-panels ─── */
-	.origin-grid {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-	}
-	.origin {
-		background: #f9fafb;
-		border: 1px solid #e5e7eb;
-		border-radius: 6px;
-		padding: 12px 14px;
-	}
-	.origin-full {
-		margin-top: 0;
-	}
-	.origin-head {
-		font-family: var(--font-heading);
-		font-size: 9.5px;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		color: #6b7280;
-		margin-bottom: 10px;
-		font-weight: 600;
-	}
-	.kv {
-		display: grid;
-		grid-template-columns: max-content 1fr;
-		gap: 4px 14px;
-		margin: 0;
-		font-size: 11.5px;
-	}
-	.kv dt {
-		color: #6b7280;
-	}
-	.kv dd {
-		margin: 0;
-		color: #1f2937;
-		word-break: break-word;
 	}
 
 	/* ─── Modifications ─── */
