@@ -69,6 +69,48 @@ export async function load({ params }) {
 		)
 		.all();
 
+	const billHrefs = [
+		parsed.identification.frbrWork,
+		parsed.identification.frbrExpression,
+		parsed.identification.frbrManifestation
+	].filter((href): href is string => Boolean(href));
+
+	const relatedDebates = db
+		.select({
+			country: schema.DocumentTable.countryCode,
+			type: schema.DocumentTable.type,
+			nativeId: schema.DocumentTable.nativeId,
+			title: schema.DocumentTable.title,
+			xml: schema.DocumentTable.xml
+		})
+		.from(schema.DocumentTable)
+		.where(
+			and(
+				eq(schema.DocumentTable.countryCode, country),
+				eq(schema.DocumentTable.type, 'debate')
+			)
+		)
+		.all()
+		.filter((debate) => billHrefs.some((href) => debate.xml.includes(href)));
+
+	const relatedCitations = db
+		.select({
+			country: schema.DocumentTable.countryCode,
+			type: schema.DocumentTable.type,
+			nativeId: schema.DocumentTable.nativeId,
+			title: schema.DocumentTable.title,
+			xml: schema.DocumentTable.xml
+		})
+		.from(schema.DocumentTable)
+		.where(
+			and(
+				eq(schema.DocumentTable.countryCode, country),
+				eq(schema.DocumentTable.type, 'citation')
+			)
+		)
+		.all()
+		.filter((citation) => billHrefs.some((href) => citation.xml.includes(href)));
+
 	parsed.timeline = [
 		...parsed.timeline,
 		...incomingAmendments.flatMap((amendment) =>
@@ -81,12 +123,35 @@ export async function load({ params }) {
 					href: `/demo/${amendment.country}/${amendment.type}/${amendment.nativeId}`
 				}
 			})
+		),
+		...relatedDebates.flatMap((debate) =>
+			parseLinkedTimelineDocument({
+				xml: debate.xml,
+				origin: {
+					type: 'debate',
+					nativeId: debate.nativeId,
+					title: debate.title,
+					href: `/demo/${debate.country}/${debate.type}/${debate.nativeId}`
+				}
+			})
+		),
+		...relatedCitations.flatMap((citation) =>
+			parseLinkedTimelineDocument({
+				xml: citation.xml,
+				origin: {
+					type: 'citation',
+					nativeId: citation.nativeId,
+					title: citation.title,
+					href: `/demo/${citation.country}/${citation.type}/${citation.nativeId}`
+				}
+			})
 		)
 	].sort((a, b) => {
 		if (a.date !== b.date) return a.date < b.date ? -1 : 1;
-		const aSource = a.origin?.type ?? 'bill';
-		const bSource = b.origin?.type ?? 'bill';
-		if (aSource !== bSource) return aSource === 'bill' ? -1 : 1;
+		const sourceOrder = { bill: 0, citation: 1, amendment: 2, debate: 3 };
+		const aSource = sourceOrder[a.origin?.type ?? 'bill'];
+		const bSource = sourceOrder[b.origin?.type ?? 'bill'];
+		if (aSource !== bSource) return aSource - bSource;
 		return a.id.localeCompare(b.id);
 	});
 

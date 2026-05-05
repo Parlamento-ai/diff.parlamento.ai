@@ -22,6 +22,7 @@ export type Reference = {
 };
 
 export type LifecycleEvent = {
+	eId?: string;
 	date: string;
 	type: string; // resolved from refersTo (#submitted -> submitted)
 	source?: string; // raw refersTo on the eventRef (e.g. #submitted)
@@ -61,12 +62,12 @@ export type TimelineRow = {
 	lifecycle?: LifecycleEvent;
 	step?: WorkflowStep;
 	modifications: Modification[];
-	kind: 'procedural' | 'version' | 'amendment' | 'terminal';
+	kind: 'procedural' | 'version' | 'amendment' | 'debate' | 'citation' | 'terminal';
 	warnings: string[];
 };
 
 export type TimelineOrigin = {
-	type: 'bill' | 'amendment';
+	type: 'bill' | 'amendment' | 'debate' | 'citation';
 	nativeId: string;
 	title?: string;
 	href?: string;
@@ -360,7 +361,7 @@ function parseTimelineFromMeta(
 	};
 
 	for (const ev of lifecycleEvents) {
-		const b = bucketFor(stripHash(ev.tlcEventId));
+		const b = bucketFor(lifecycleBucketKey(ev, references));
 		b.lifecycle = ev;
 	}
 	for (const s of workflowSteps) {
@@ -382,15 +383,20 @@ function parseTimelineFromMeta(
 		const refType = stripHash(ev?.source);
 		const isTerminal = refType ? TERMINAL_REFS.has(refType) : false;
 		const hasMods = b.modifications.length > 0;
-		const kind: TimelineRow['kind'] = origin?.type === 'amendment'
-			? 'amendment'
-			: isTerminal
-				? 'terminal'
-				: hasMods
-					? 'amendment'
-					: ev
-						? 'version'
-						: 'procedural';
+		const kind: TimelineRow['kind'] =
+			origin?.type === 'amendment'
+				? 'amendment'
+				: origin?.type === 'debate'
+					? 'debate'
+					: origin?.type === 'citation'
+						? 'citation'
+						: isTerminal
+							? 'terminal'
+							: hasMods
+								? 'amendment'
+								: ev
+									? 'version'
+									: 'procedural';
 
 		const rowWarnings: string[] = [];
 
@@ -407,6 +413,7 @@ function parseTimelineFromMeta(
 			ev?.showAs ??
 			st?.outcome ??
 			st?.showAs ??
+			(refType ? refIndex.get(refType)?.showAs : undefined) ??
 			(refType ? humanize(refType) : 'event') ??
 			'event';
 
@@ -426,6 +433,14 @@ function parseTimelineFromMeta(
 	}
 
 	return timeline;
+}
+
+function lifecycleBucketKey(ev: LifecycleEvent, references: Reference[]): string | undefined {
+	const tlcEventId = stripHash(ev.tlcEventId);
+	if (tlcEventId && references.find((r) => r.eId === tlcEventId && r.tag === 'TLCEvent')) {
+		return tlcEventId;
+	}
+	return ev.eId ?? stripHash(ev.source) ?? tlcEventId;
 }
 
 function parseIdentification(id: N | undefined): Identification {
@@ -468,6 +483,7 @@ function parseReferences(refs: N | undefined): Reference[] {
 function parseLifecycle(lc: N | undefined): LifecycleEvent[] {
 	if (!lc) return [];
 	return asArray(lc['eventRef']).map((n) => ({
+		eId: attr(n, 'eId'),
 		date: attr(n, 'date') ?? '',
 		type: stripHash(attr(n, 'refersTo')) ?? '',
 		source: attr(n, 'refersTo'),

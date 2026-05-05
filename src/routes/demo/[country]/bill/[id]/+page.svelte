@@ -69,6 +69,10 @@
 				return 'new version';
 			case 'amendment':
 				return 'amendment';
+			case 'debate':
+				return 'debate';
+			case 'citation':
+				return 'citation';
 			case 'terminal':
 				return 'terminal';
 		}
@@ -78,6 +82,10 @@
 		const parts: string[] = [];
 		if (row.origin?.type === 'amendment') {
 			parts.push(`This event comes from linked amendment document ${row.origin.nativeId}.`);
+		} else if (row.origin?.type === 'debate') {
+			parts.push(`This event comes from linked debate document ${row.origin.nativeId}.`);
+		} else if (row.origin?.type === 'citation') {
+			parts.push(`This event comes from linked citation document ${row.origin.nativeId}.`);
 		}
 		if (row.lifecycle && row.step) {
 			parts.push(
@@ -317,7 +325,7 @@
 									<span class="label">{row.label}</span>
 									{#if row.origin || row.chamber || row.modifications.length || row.warnings.length}
 										<span class="meta">
-											{#if row.origin?.type === 'amendment'}<span class="origin-chip">amendment</span>{/if}
+											{#if row.origin?.type}<span class="origin-chip o-{row.origin.type}">{row.origin.type}</span>{/if}
 											{#if row.chamber}<span class="chamber">{row.chamber}</span>{/if}
 											{#if row.modifications.length}
 												<span class="mod-count" title="{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'}">
@@ -715,6 +723,8 @@
 	.row.k-procedural button { border-left-color: #d1d5db; }
 	.row.k-version button { border-left-color: var(--color-brand); }
 	.row.k-amendment button { border-left-color: #fbbf24; }
+	.row.k-debate button { border-left-color: #38bdf8; }
+	.row.k-citation button { border-left-color: #a78bfa; }
 	.row.k-terminal button { border-left-color: var(--color-deletion-500); }
 	.row.selected button {
 		border-left-width: 4px;
@@ -765,10 +775,12 @@
 	.origin-chip {
 		font-family: var(--font-heading);
 		font-size: 9px;
-		color: #92400e;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
 	}
+	.origin-chip.o-amendment { color: #92400e; }
+	.origin-chip.o-debate { color: #0369a1; }
+	.origin-chip.o-citation { color: #6d28d9; }
 	.mod-count {
 		font-family: var(--font-mono);
 		font-size: 10px;
@@ -804,6 +816,8 @@
 	.event-card.k-procedural::before { background: #9ca3af; }
 	.event-card.k-version::before { background: var(--color-brand); }
 	.event-card.k-amendment::before { background: #fbbf24; }
+	.event-card.k-debate::before { background: #38bdf8; }
+	.event-card.k-citation::before { background: #a78bfa; }
 	.event-card.k-terminal::before { background: var(--color-deletion-500); }
 
 	.card.subtle {
