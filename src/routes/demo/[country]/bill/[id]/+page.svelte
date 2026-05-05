@@ -187,6 +187,38 @@
 		return parts.join(' ');
 	}
 
+	function kindLabel(k: TimelineRow['kind']): string {
+		return k;
+	}
+
+	function splitDate(iso: string): { day: string; time: string | null } {
+		if (!iso) return { day: '—', time: null };
+		const m = iso.match(/^(\d{4}-\d{2}-\d{2})(?:T(\d{2}:\d{2}))/);
+		if (m) return { day: m[1], time: m[2] };
+		return { day: iso, time: null };
+	}
+
+	function wordCount(s: string | undefined): number {
+		if (!s) return 0;
+		return s.trim().split(/\s+/).filter(Boolean).length;
+	}
+
+	function changeDelta(mods: Modification[]): { added: number; removed: number } {
+		let added = 0;
+		let removed = 0;
+		for (const m of mods) {
+			if (m.kind === 'insertion') {
+				added += wordCount(m.new);
+			} else if (m.kind === 'repeal') {
+				removed += wordCount(m.old);
+			} else if (m.kind === 'substitution') {
+				added += wordCount(m.new);
+				removed += wordCount(m.old);
+			}
+		}
+		return { added, removed };
+	}
+
 	function modKindGlyph(k: Modification['kind']) {
 		switch (k) {
 			case 'substitution':
@@ -602,26 +634,40 @@
 				<ol class="spine">
 					{#each parsed.timeline as row (row.id)}
 						{@const selected = row.id === selectedId}
+						{@const d = splitDate(row.date)}
+						{@const delta = changeDelta(row.modifications)}
 						<li class="row k-{row.kind}" class:selected>
 							<button
 								type="button"
 								onclick={() => selectEvent(row.id)}
 								title={`${row.label}${row.chamber ? ` · ${row.chamber}` : ''}\n\n${rowTooltip(row)}`}
 							>
-								<span class="date mono">{row.date || '—'}</span>
 								<span class="content">
+									<span class="row-head">
+										<span class="date mono">{d.day}</span>
+										{#if d.time}<span class="time mono">{d.time}</span>{/if}
+										<span class="kind-tag">{kindLabel(row.kind)}</span>
+									</span>
 									<span class="label">{row.label}</span>
-									{#if row.origin || row.chamber || row.modifications.length || row.warnings.length}
+									{#if row.chamber || row.origin || row.modifications.length || row.warnings.length}
 										<span class="meta">
-											{#if row.origin?.type}<span class="origin-chip o-{row.origin.type}">{row.origin.type}</span>{/if}
-											{#if row.chamber}<span class="chamber">{row.chamber}</span>{/if}
+											{#if row.chamber}<span class="meta-item chamber">{row.chamber}</span>{/if}
+											{#if row.origin?.type && row.origin.type !== 'bill'}
+												<span class="meta-item from">from {row.origin.type}</span>
+											{/if}
 											{#if row.modifications.length}
-												<span class="mod-count" title="{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'}">
-													{row.modifications.length}△
+												<span class="meta-item delta" title="{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'} · +{delta.added} / −{delta.removed} words">
+													{#if delta.added || delta.removed}
+														{#if delta.added}<span class="d-add">+{delta.added}</span>{/if}
+														{#if delta.removed}<span class="d-rem">−{delta.removed}</span>{/if}
+														<span class="d-unit">words</span>
+													{:else}
+														<span class="d-unit">{row.modifications.length} change{row.modifications.length === 1 ? '' : 's'}</span>
+													{/if}
 												</span>
 											{/if}
 											{#if row.warnings.length}
-												<span class="warn-mark" title={row.warnings.join('\n')}>⚠</span>
+												<span class="meta-item warn" title={row.warnings.join('\n')}>⚠</span>
 											{/if}
 										</span>
 									{/if}
@@ -1023,63 +1069,82 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		border-left: 1px solid #e5e7eb;
+	}
+	.row + .row {
+		margin-top: 0;
 	}
 	.row button {
-		display: grid;
-		grid-template-columns: 58px 1fr;
-		column-gap: 10px;
+		display: block;
 		width: 100%;
 		text-align: left;
 		background: none;
 		border: none;
-		border-left: 2px solid transparent;
-		margin-left: -1px;
-		padding: 6px 8px 6px 10px;
+		padding: 8px 8px 10px 8px;
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
 		color: inherit;
-		transition: background-color 0.1s ease, border-color 0.1s ease;
+		position: relative;
+		transition: background-color 0.1s ease;
 	}
 	.row button:hover {
 		background: #f9fafb;
 	}
+	.row button:focus-visible {
+		outline: 2px solid var(--color-brand);
+		outline-offset: -2px;
+		border-radius: 2px;
+	}
 	.row.selected button {
-		background: #f4fbe9;
+		background: #f1f5f9;
 	}
-	.row.k-procedural button { border-left-color: #d1d5db; }
-	.row.k-version button { border-left-color: var(--color-brand); }
-	.row.k-amendment button { border-left-color: #fbbf24; }
-	.row.k-debate button { border-left-color: #38bdf8; }
-	.row.k-citation button { border-left-color: #a78bfa; }
-	.row.k-terminal button { border-left-color: var(--color-deletion-500); }
-	.row.selected button {
-		border-left-width: 4px;
-		padding-left: 8px;
-	}
-	.date {
-		font-size: 10.5px;
-		color: #6b7280;
-		white-space: nowrap;
-		line-height: 1.45;
-		padding-top: 1px;
-	}
+
 	.content {
 		display: flex;
 		flex-direction: column;
-		gap: 2px;
+		gap: 4px;
 		min-width: 0;
 	}
-	.label {
-		font-family: var(--font-mono);
-		font-size: 11.5px;
+	.row-head {
+		display: flex;
+		gap: 8px;
+		align-items: baseline;
+		font-size: 10.5px;
+		color: #64748b;
+		flex-wrap: wrap;
+	}
+	.date {
+		color: #475569;
+		font-size: 10.5px;
+		letter-spacing: 0;
 		line-height: 1.4;
-		color: #111827;
-		word-break: break-word;
+	}
+	.time {
+		color: #94a3b8;
+		font-size: 10px;
+	}
+	.kind-tag {
+		margin-left: auto;
+		font-family: var(--font-mono);
+		font-size: 10px;
+		font-weight: 400;
+		text-transform: lowercase;
+		letter-spacing: 0;
+		color: #cbd5e1;
+	}
+	.row.selected .kind-tag {
+		color: #94a3b8;
+	}
+	.label {
+		font-family: var(--font-heading);
+		font-size: 12px;
+		line-height: 1.4;
+		color: #1f2937;
+		word-break: normal;
+		overflow-wrap: anywhere;
 		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		line-clamp: 2;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 	}
@@ -1088,35 +1153,49 @@
 	}
 	.meta {
 		display: flex;
-		gap: 6px;
+		gap: 4px 8px;
 		align-items: center;
-		font-size: 10px;
-		color: #6b7280;
-	}
-	.chamber {
+		flex-wrap: wrap;
 		font-family: var(--font-heading);
 		font-size: 9px;
-		color: #6b7280;
+		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
+		color: #94a3b8;
 	}
-	.origin-chip {
-		font-family: var(--font-heading);
-		font-size: 9px;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
+	.meta-item {
+		display: inline-flex;
+		align-items: center;
 	}
-	.origin-chip.o-amendment { color: #92400e; }
-	.origin-chip.o-debate { color: #0369a1; }
-	.origin-chip.o-citation { color: #6d28d9; }
-	.mod-count {
-		font-family: var(--font-mono);
-		font-size: 10px;
-		color: #92400e;
+	.meta-item + .meta-item::before {
+		content: '·';
+		margin-right: 8px;
+		color: #cbd5e1;
+		font-weight: 400;
 	}
-	.warn-mark {
+	.meta-item.warn {
 		color: var(--color-deletion-800);
-		font-size: 10px;
+		font-size: 11px;
+		text-transform: none;
+	}
+	.meta-item.delta {
+		gap: 3px;
+		white-space: nowrap;
+	}
+	.d-add,
+	.d-rem,
+	.d-unit {
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		letter-spacing: inherit;
+		text-transform: inherit;
+	}
+	.d-add { color: var(--color-addition-800, #166534); }
+	.d-rem { color: var(--color-deletion-800, #991b1b); }
+	.d-unit { color: inherit; }
+	.row.selected .meta {
+		color: #64748b;
 	}
 
 	/* ─── Event detail (no card chrome) ─── */

@@ -1,6 +1,7 @@
 import { sql } from 'drizzle-orm';
 import { getDb, schema } from './db';
-import { ENTITY_TYPES } from './entity-types';
+import { ENTITY_TYPES, type EntityType } from './entity-types';
+import { TAB_GROUPS } from './tab-groups';
 
 export const prerender = true;
 
@@ -33,14 +34,23 @@ export async function load() {
 		.filter((c) => countsByCountry[c.code])
 		.sort((a, b) => a.code.localeCompare(b.code));
 
-	const typesByCountry: Record<string, { type: string; n: number }[]> = {};
+	const typesByCountry: Record<string, { type: EntityType; n: number }[]> = {};
+	const groupCountsByCountry: Record<string, Record<string, number>> = {};
+
 	for (const country of countryList) {
 		const counts = countsByCountry[country.code] ?? {};
 		typesByCountry[country.code] = ENTITY_TYPES.map((type) => ({
 			type,
 			n: counts[type] ?? 0
 		}));
+
+		const groupCounts: Record<string, number> = {};
+		for (const g of TAB_GROUPS) {
+			if (!g.types.length) continue;
+			groupCounts[g.id] = g.types.reduce((s, t) => s + (counts[t] ?? 0), 0);
+		}
+		groupCountsByCountry[country.code] = groupCounts;
 	}
 
-	return { countries: countryList, typesByCountry };
+	return { countries: countryList, typesByCountry, groupCountsByCountry };
 }
