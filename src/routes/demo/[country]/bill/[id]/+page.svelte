@@ -11,6 +11,20 @@
 
 	type Tab = 'document' | 'lint';
 	let activeTab = $state<Tab>('document');
+	let titleExpanded = $state(false);
+	let frbrOpen = $state(false);
+
+	const frbrFields = $derived([
+		{
+			label: 'FRBR expression',
+			value: parsed.identification.frbrExpression,
+			term: 'FRBR expression' as const
+		},
+		{ label: 'expression date', value: parsed.identification.expressionDate, term: null },
+		{ label: 'language', value: parsed.identification.language, term: null }
+	]);
+	const frbrPresent = $derived(frbrFields.filter((f) => f.value).length);
+	const frbrTotal = $derived(frbrFields.length);
 
 	const completenessPct = $derived(Math.round(lint.completeness * 100));
 	const errorCount = $derived(lint.findings.filter((f) => f.severity === 'error').length);
@@ -147,38 +161,83 @@
 <div class="page">
 	<a href="/demo/{doc.countryCode}/bill" class="back">← bills</a>
 
-	<!-- ─── HEADER CARD ─── -->
-	<header class="head card">
+	<!-- ─── HEADER ─── -->
+	<header class="head">
 		<div class="head-tag">
 			<span class="tag-mono">
 				<AknTerm term="bill" />
 			</span>
 			<span class="tag-sep">·</span>
 			<span class="tag-mono">{doc.countryCode}</span>
-			<span class="tag-sep">·</span>
-			<span class="tag-mono ink">{doc.nativeId}</span>
 			{#if parsed.identification.subtype}
 				<span class="tag-sep">·</span>
 				<span class="tag-sub">{parsed.identification.subtype}</span>
 			{/if}
 		</div>
 
-		<h1>{doc.title}</h1>
+		<div class="head-id">{doc.nativeId}</div>
 
-		<dl class="head-frbr">
-			{#if parsed.identification.frbrExpression}
-				<dt><AknTerm term="FRBR expression" /></dt>
-				<dd class="mono ink">{parsed.identification.frbrExpression}</dd>
-			{/if}
-			{#if parsed.identification.expressionDate}
-				<dt>expression date</dt>
-				<dd class="mono ink">{parsed.identification.expressionDate}</dd>
-			{/if}
-			{#if parsed.identification.language}
-				<dt>language</dt>
-				<dd class="mono ink">{parsed.identification.language}</dd>
-			{/if}
-		</dl>
+		{#if titleExpanded}
+			<h1>{doc.title}</h1>
+			<button
+				type="button"
+				class="title-toggle title-toggle-collapse"
+				onclick={() => (titleExpanded = false)}
+			>show less</button>
+		{:else}
+			<h1
+				class="clamped clickable"
+				role="button"
+				tabindex="0"
+				title="Show full title"
+				onclick={() => (titleExpanded = true)}
+				onkeydown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						e.preventDefault();
+						titleExpanded = true;
+					}
+				}}
+			>{doc.title}</h1>
+		{/if}
+
+		<button
+			type="button"
+			class="frbr-badge"
+			class:frbr-badge-open={frbrOpen}
+			onclick={() => (frbrOpen = !frbrOpen)}
+			aria-expanded={frbrOpen}
+			aria-controls="frbr-panel"
+		>
+			<span class="frbr-badge-label">FRBR</span>
+			<span class="frbr-badge-count">{frbrPresent}/{frbrTotal}</span>
+			<span class="frbr-badge-caret" aria-hidden="true">{frbrOpen ? '▾' : '▸'}</span>
+		</button>
+
+		{#if frbrOpen}
+			<div class="frbr-panel" id="frbr-panel">
+				<p class="frbr-panel-hint">
+					Identification fields drawn from the document's <AknTerm term="FRBR expression" /> URI.
+					These are the technical pointers AKN uses to address this exact version of the bill.
+				</p>
+				<dl class="frbr-panel-grid">
+					{#each frbrFields as f (f.label)}
+						<div class="frbr-row" class:frbr-row-missing={!f.value}>
+							<span class="frbr-status" aria-hidden="true">{f.value ? '✓' : '◦'}</span>
+							<dt>
+								{#if f.term}<AknTerm term={f.term} />{:else}{f.label}{/if}
+							</dt>
+							<dd class="mono">
+								{#if f.value}
+									<span class="ink">{f.value}</span>
+								{:else}
+									<span class="frbr-missing">not provided</span>
+								{/if}
+							</dd>
+						</div>
+					{/each}
+				</dl>
+			</div>
+		{/if}
 
 		{#if parsed.warnings.length}
 			<div class="warnings">
@@ -585,65 +644,196 @@
 		border-bottom-color: var(--color-brand-dark);
 	}
 
-	/* ─── Header card ─── */
+	/* ─── Header ─── */
 	.head {
-		padding: 18px 22px 20px;
-		margin-bottom: 28px;
-		background-color: #ffffff;
+		padding: 4px 0 18px;
+		margin-bottom: 22px;
+		border-bottom: 1px solid #e5e7eb;
 	}
 	.head-tag {
 		display: flex;
 		gap: 6px;
 		align-items: baseline;
+		flex-wrap: wrap;
 		font-family: var(--font-mono);
 		font-size: 11px;
 		color: #6b7280;
-		margin-bottom: 10px;
+		margin-bottom: 8px;
 	}
 	.tag-mono :global(.text) {
 		font-family: var(--font-mono);
 	}
 	.tag-sep {
-		color: #d6d0c2;
+		color: #d1d5db;
 	}
 	.tag-sub {
 		color: #4b5563;
 	}
+	.head-id {
+		font-family: var(--font-mono);
+		font-size: 22px;
+		font-weight: 500;
+		color: var(--color-brand-dark);
+		line-height: 1.1;
+		margin-bottom: 10px;
+		letter-spacing: -0.01em;
+	}
 	.head h1 {
 		font-family: var(--font-heading);
-		font-size: 22px;
-		line-height: 1.25;
-		font-weight: 600;
+		font-size: 17px;
+		line-height: 1.4;
+		font-weight: 500;
 		margin: 0 0 14px;
 		color: #111827;
-		max-width: 70ch;
+		max-width: 80ch;
+		letter-spacing: -0.005em;
 	}
-	.head-frbr {
-		display: grid;
-		grid-template-columns: max-content 1fr;
-		gap: 4px 16px;
-		margin: 0;
-		font-size: 11px;
-		padding-top: 12px;
-		border-top: 1px solid #e7e2d7;
+	.head h1.clamped {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
-	.head-frbr dt {
-		color: #6b7280;
+	.head h1.clickable {
+		cursor: pointer;
+		border-radius: 3px;
+		transition: color 0.1s ease;
+	}
+	.head h1.clickable:hover {
+		color: var(--color-brand-dark);
+	}
+	.head h1.clickable:focus-visible {
+		outline: 2px solid var(--color-brand);
+		outline-offset: 2px;
+	}
+	.title-toggle {
+		display: inline-block;
+		background: none;
+		border: none;
+		padding: 2px 6px;
+		margin: 0 0 12px -6px;
 		font-family: var(--font-heading);
 		font-size: 10px;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
-		align-self: center;
+		color: #6b7280;
+		cursor: pointer;
+		border-radius: 3px;
+		line-height: 1;
+		transition: background-color 0.1s ease, color 0.1s ease;
 	}
-	.head-frbr dd {
+	.title-toggle:hover {
+		background: #f3f4f6;
+		color: #111827;
+	}
+	.title-toggle-collapse {
+		margin-top: -4px;
+	}
+	/* ─── FRBR inspector badge ─── */
+	.frbr-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		background: transparent;
+		border: 1px solid #e5e7eb;
+		border-radius: 999px;
+		padding: 3px 10px 3px 12px;
+		font-family: var(--font-heading);
+		font-size: 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #6b7280;
+		cursor: pointer;
+		transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
+	}
+	.frbr-badge:hover {
+		background: #f3f4f6;
+		border-color: #d1d5db;
+		color: #1f2937;
+	}
+	.frbr-badge-open {
+		background: #f3f4f6;
+		border-color: #d1d5db;
+		color: #1f2937;
+	}
+	.frbr-badge-count {
+		font-family: var(--font-mono);
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 0;
+		color: #9ca3af;
+		text-transform: none;
+	}
+	.frbr-badge-caret {
+		font-size: 9px;
+		color: #9ca3af;
+	}
+	.frbr-panel {
+		margin-top: 10px;
+		padding: 12px 14px;
+		background: #f9fafb;
+		border: 1px solid #e5e7eb;
+		border-radius: 6px;
+	}
+	.frbr-panel-hint {
+		margin: 0 0 10px;
+		font-size: 11px;
+		color: #6b7280;
+		line-height: 1.55;
+		max-width: 70ch;
+	}
+	.frbr-panel-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		margin: 0;
+	}
+	.frbr-row {
+		display: grid;
+		grid-template-columns: 16px max-content 1fr;
+		gap: 4px 14px;
+		align-items: baseline;
+		font-size: 11.5px;
+	}
+	.frbr-status {
+		font-family: var(--font-mono);
+		font-size: 12px;
+		text-align: center;
+		color: #64748b;
+		line-height: 1;
+	}
+	.frbr-row-missing .frbr-status {
+		color: #cbd5e1;
+	}
+	.frbr-row dt {
+		font-family: var(--font-heading);
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #6b7280;
+	}
+	.frbr-row dd {
 		margin: 0;
 		font-family: var(--font-mono);
-		font-size: 11.5px;
+		font-size: 11px;
+		color: #4b5563;
 		word-break: break-all;
+	}
+	.frbr-row dd .ink {
+		color: #334155;
+	}
+	.frbr-missing {
+		font-family: var(--font-heading);
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #9ca3af;
 	}
 
 	.warnings {
-		margin-top: 12px;
+		margin-top: 14px;
 	}
 	.warn-card {
 		background: #fffbeb;
@@ -695,7 +885,7 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		border-left: 1px solid #e7e2d7;
+		border-left: 1px solid #e5e7eb;
 	}
 	.row button {
 		display: grid;
@@ -715,7 +905,7 @@
 		transition: background-color 0.1s ease, border-color 0.1s ease;
 	}
 	.row button:hover {
-		background: #fbfaf7;
+		background: #f9fafb;
 	}
 	.row.selected button {
 		background: #f4fbe9;
@@ -794,12 +984,12 @@
 	/* ─── Cards (override .card) ─── */
 	.card {
 		background-color: #ffffff;
-		border: 2px solid #111827;
-		border-radius: 8px;
-		box-shadow: var(--shadow-sm);
+		border: 1px solid #e5e7eb;
+		border-radius: 6px;
+		box-shadow: none;
 	}
 	.event-card {
-		box-shadow: var(--shadow-md);
+		box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 		position: relative;
 		overflow: hidden;
 		margin-bottom: 16px;
@@ -821,13 +1011,13 @@
 	.event-card.k-terminal::before { background: var(--color-deletion-500); }
 
 	.card.subtle {
-		border-color: #d6d0c2;
+		border-color: #d1d5db;
 		box-shadow: none;
-		background-color: #fbfaf7;
+		background-color: #f9fafb;
 	}
 	.card-head {
 		padding: 9px 14px 9px 18px;
-		border-bottom: 1px solid #e7e2d7;
+		border-bottom: 1px solid #e5e7eb;
 		font-size: 11px;
 		color: #4b5563;
 		display: flex;
@@ -835,7 +1025,7 @@
 		align-items: center;
 	}
 	.card-head-sep {
-		color: #d6d0c2;
+		color: #d1d5db;
 	}
 	.card-head-spacer {
 		flex: 1;
@@ -866,8 +1056,8 @@
 		gap: 12px;
 	}
 	.origin {
-		background: #fbfaf7;
-		border: 1px solid #e7e2d7;
+		background: #f9fafb;
+		border: 1px solid #e5e7eb;
 		border-radius: 6px;
 		padding: 12px 14px;
 	}
@@ -917,7 +1107,7 @@
 		align-items: center;
 		padding: 8px 10px 8px 8px;
 		background: #ffffff;
-		border: 1px solid #e7e2d7;
+		border: 1px solid #e5e7eb;
 		border-left: 3px solid #9ca3af;
 		border-radius: 4px;
 		font-size: 11.5px;
@@ -1005,7 +1195,7 @@
 	}
 	.amend-list li {
 		padding: 6px 0;
-		border-bottom: 1px dotted #e7e2d7;
+		border-bottom: 1px dotted #e5e7eb;
 		font-size: 11.5px;
 	}
 	.amend-list li:last-child {
@@ -1033,7 +1223,7 @@
 		text-underline-offset: 3px;
 	}
 	.amend-sep {
-		color: #d6d0c2;
+		color: #d1d5db;
 	}
 
 	/* ─── Span focus ─── */
@@ -1049,7 +1239,7 @@
 		font-family: var(--font-mono);
 		font-size: 10.5px;
 		background: #ffffff;
-		border: 1px solid #d6d0c2;
+		border: 1px solid #d1d5db;
 		padding: 2px 8px;
 		cursor: pointer;
 		border-radius: 3px;
@@ -1082,34 +1272,34 @@
 	/* ─── Tabs ─── */
 	.tabs {
 		display: flex;
-		gap: 4px;
+		gap: 2px;
 		margin: 0 0 18px;
-		border-bottom: 2px solid #111827;
+		border-bottom: 1px solid #e5e7eb;
 	}
 	.tab {
 		display: inline-flex;
 		align-items: center;
 		gap: 8px;
-		background: #f3f0e8;
-		border: 2px solid #111827;
-		border-bottom: none;
-		border-radius: 6px 6px 0 0;
-		padding: 7px 14px 8px;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid transparent;
+		padding: 9px 14px 8px;
 		font-family: var(--font-heading);
 		font-size: 11px;
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
-		color: #4b5563;
+		color: #6b7280;
 		cursor: pointer;
-		transform: translateY(2px);
+		transition: color 0.1s ease, border-color 0.1s ease;
+		margin-bottom: -1px;
 	}
 	.tab:hover {
-		background: #ebe6d9;
+		color: #1f2937;
 	}
 	.tab-active {
-		background: #ffffff;
 		color: #0a0f1c;
+		border-bottom-color: #334155;
 	}
 	.tab-score {
 		font-family: var(--font-mono);
@@ -1222,7 +1412,7 @@
 		max-width: 80ch;
 	}
 	.lint-hint code {
-		background: #f3f0e8;
+		background: #f3f4f6;
 		padding: 1px 5px;
 		border-radius: 3px;
 		font-size: 10.5px;
@@ -1239,8 +1429,8 @@
 	}
 	.facet-head {
 		padding: 14px 18px 12px;
-		border-bottom: 1px solid #e7e2d7;
-		background: #fbfaf7;
+		border-bottom: 1px solid #e5e7eb;
+		background: #f9fafb;
 	}
 	.facet-title {
 		display: flex;
@@ -1291,11 +1481,11 @@
 		color: #6b7280;
 		font-weight: 600;
 		padding: 4px 8px 6px;
-		border-bottom: 1px solid #e7e2d7;
+		border-bottom: 1px solid #e5e7eb;
 	}
 	.exp-table td {
 		padding: 5px 8px;
-		border-bottom: 1px dotted #efeae0;
+		border-bottom: 1px dotted #e5e7eb;
 		vertical-align: top;
 	}
 	.th-status { width: 22px; }
@@ -1329,7 +1519,7 @@
 		color: #6b7280;
 		padding: 0 4px;
 		margin-left: 4px;
-		background: #f3f0e8;
+		background: #f3f4f6;
 		border-radius: 2px;
 	}
 	.exp-xpath {
@@ -1358,7 +1548,7 @@
 	}
 	.finding {
 		padding: 10px 12px;
-		border: 1px solid #e7e2d7;
+		border: 1px solid #e5e7eb;
 		border-left-width: 3px;
 		border-radius: 4px;
 		background: #ffffff;
@@ -1373,7 +1563,7 @@
 	}
 	.finding.sev-info {
 		border-left-color: #9ca3af;
-		background: #fbfaf7;
+		background: #f9fafb;
 	}
 	.finding-head {
 		display: flex;
@@ -1411,7 +1601,7 @@
 		font-family: var(--font-mono);
 		font-size: 10.5px;
 		color: #6b7280;
-		background: #f3f0e8;
+		background: #f3f4f6;
 		padding: 1px 5px;
 		border-radius: 3px;
 	}
